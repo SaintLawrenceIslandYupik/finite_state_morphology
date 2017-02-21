@@ -1,0 +1,9 @@
+#!/usr/bin/foma -f
+
+read lexc < ess.lexc
+print net
+apply up aghnaq
+apply up aghneq
+apply up afsengaq*
+apply down aghnaq+Abs+Plural
+
