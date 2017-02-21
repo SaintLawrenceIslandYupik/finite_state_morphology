@@ -1,9 +1,17 @@
 #!/usr/bin/foma -f
-
+clear stack
 read lexc < ess.lexc
+define YupikNouns
+define WeakFinalGH "gh*-" -> q ;
+define FinalGH "gh-" -> q ;
+!define Filter < rules.regex
+read regex YupikNouns .o. WeakFinalGH .o. FinalGH ;
 print net
 apply up aghnaq
 apply up aghneq
-apply up afsengaq*
-apply down aghnaq+Abs+Plural
+apply up afsengaq
+apply down aghnagh-+Abs+Plural
+apply down aghnegh-+Abs+Plural
+apply down aghnagh-+Abs+Sing
+apply down afsengagh*-+Abs+Dual
 
