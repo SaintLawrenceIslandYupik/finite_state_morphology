@@ -1,0 +1,7 @@
+#!/usr/bin/foma -f
+
+read lexc < sample.lexc
+apply up walk
+apply up walks
+apply up walking
+
