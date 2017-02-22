@@ -30,7 +30,7 @@ def BaseFinalEndings    ghw      -> qw ,
                         t e      -> t a ,
                         t e      -> n    || _ .#. ;
                  
-def WeakElision gh -> 0 || WeakMarker _ "+" ,, gh "*" -> 0 || _ "+";
+def WeakElision gh -> 0 || WeakMarker _ "+" ,, gh "*" -> q || _ "+";
 def eElision e -> 0 || V "+" _ ; 
 
 # Whenever a stem is of the form #(C) V' C e (C)/ ,V' is doubled (Jacobson, 1979, p. 10)
