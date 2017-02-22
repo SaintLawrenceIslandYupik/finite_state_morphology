@@ -9,11 +9,11 @@ def Lex
 def StrongVowel [a|i|u];
 def V [e | StrongVowel ];
 
-define Stop                [  p   |   t                 |  k     | {kw}   |  q    | {qw}       ] ;
-define VoicedContinuant    [  v   |   l  | z | y |  r   |  g     |  w     | {gh}  | {ghw}      ] ;
-define VoicelessContinuant [  f   | {ll} |   s   | {rr} | {gg}   | {wh}   | {ghh} | {ghhw} | h ] ;
-define VoicedNasal         [  m   |   n                 | {ng}   | {ngw}                       ] ;
-define VoicelessNasal      [ {mm} | {nn}                | {ngng} | {ngngw}                     ] ;
+define Stop                [  p   |   t                 |  k     |  kw    |  q    |  qw        ] ;
+define VoicedContinuant    [  v   |   l  | z | y |  r   |  g     |  w     |  gh   |  ghw       ] ;
+define VoicelessContinuant [  f   |   ll |   s   |  rr  |  gg    |  wh    |  ghh  |  ghhw  | h ] ;
+define VoicedNasal         [  m   |   n                 |  ng    |  ngw                        ] ;
+define VoicelessNasal      [  mm  |   nn                |  ngng  |  ngngw                      ] ;
 
 define Continuant [ VoicelessContinuant | VoicedContinuant ] ;
 define Nasal      [ VoicelessNasal      | VoicedNasal      ] ;
@@ -23,14 +23,14 @@ define C          [ Stop | Continuant | Nasal ] ;
 
 def WeakMarker [? [a|i|u]] - [a a | i i | u u] ;
 
-def BaseFinalEndings    g h w     -> q w , 
-                        g h ("*") -> q   , 
-                        g         -> k   ,
-                        w         -> k w ,
-                        t e       -> t a ,
-                        t e       -> n    || _ .#. ;
+def BaseFinalEndings    ghw      -> qw , 
+                        gh ("*") -> q   , 
+                        g        -> k   ,
+                        w        -> kw ,
+                        t e      -> t a ,
+                        t e      -> n    || _ .#. ;
                  
-def WeakElision g h -> 0 || WeakMarker _ "+" ,, g h "*" -> 0 || _ "+";
+def WeakElision gh -> 0 || WeakMarker _ "+" ,, gh "*" -> 0 || _ "+";
 def eElision e -> 0 || V "+" _ ; 
 
 # Whenever a stem is of the form #(C) V' C e (C)/ ,V' is doubled (Jacobson, 1979, p. 10)
