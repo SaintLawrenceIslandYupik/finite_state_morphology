@@ -5,6 +5,7 @@ def Exceptions
 #define Exceptions [ y u g "[N]" "[Sg]" .x. y u u k ] ;
 
 read lexc yupiktest.lexc
+#read lexc tiny.lexc
 def Lex
 
 def StrongVowel [a|i|u];
@@ -47,3 +48,11 @@ regex Exceptions .P. [ Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o.
 #set print-space ON
 #print random-lower
 pairs
+print dot > examplefile.dot
+
+apply up tuma
+apply up tuumek
+apply up tuumet
+apply down tume[N][Sg]
+apply down tume[N][Pl]
+apply down tume[N][Dl]
