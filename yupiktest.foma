@@ -2,6 +2,7 @@
 
 read lexc exceptions.lexc
 def Exceptions
+#define Exceptions [ y u g "[N]" "[Sg]" .x. y u u k ] ;
 
 read lexc yupiktest.lexc
 def Lex
@@ -27,10 +28,10 @@ def BaseFinalEndings    ghw      -> qw ,
                         gh ("*") -> q   , 
                         g        -> k   ,
                         w        -> kw ,
-                        t e      -> t a ,
-                        t e      -> n    || _ .#. ;
+                        t e      -> t a  || _ .#. ,,
+                        t e      -> n    || V _ .#. ;
                  
-def WeakElision gh -> 0 || WeakMarker _ "+" ,, gh "*" -> q || _ "+";
+def WeakElision gh -> 0 || WeakMarker _ "+" ,, gh "*" -> gh || _ "+";
 def eElision e -> 0 || V "+" _ ; 
 
 # Whenever a stem is of the form #(C) V' C e (C)/ ,V' is doubled (Jacobson, 1979, p. 10)
@@ -41,6 +42,8 @@ def Cleanup "+" -> 0;
 
 def FinalEtoA e -> a || _ .#. ;
 
-#regex Exceptions .P. [ Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. Cleanup ];
-regex Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. FinalEtoA .o. Cleanup ;
+regex Exceptions .P. [ Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. FinalEtoA .o. Cleanup ];
+#regex                 Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. FinalEtoA .o. Cleanup  ;
+#set print-space ON
+#print random-lower
 pairs

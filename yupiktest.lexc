@@ -6,6 +6,7 @@ Noun;
 
 LEXICON Noun
 
+% Jacobson (2001) Chapter 2 Vocabulary
 afsengagh*       Ninfl; % vole, locally mouse
 aghnagh          Ninfl; % woman
 aghnegh          Ninfl; % day
@@ -19,7 +20,7 @@ ggute            Ninfl; % tooth
 iye              Ninfl; % eye
 kameg            Ninfl; % skin boot, mukluk
 kaviigh          Ninfl; % fox
-kemeq            Ninfl; % flesh; skin
+kemeq            Ninfl; % flesh, skin
 kii              Ninfl; % wound
 kiigh            Ninfl; % summer
 kiighw           Ninfl; % river
@@ -29,7 +30,7 @@ nanugh           Ninfl; % polar bear
 naayghagh        Ninfl; % mountain
 neghqwaagh       Ninfl; % bone
 qikmigh          Ninfl; % dog
-qiighw           Ninfl; % grey hair ; cough
+qiighw           Ninfl; % grey hair , cough
 qulmesiite       Ninfl; % cooking pot
 repa             Ninfl; % hammer
 riigta           Ninfl; % animal's den
@@ -37,11 +38,25 @@ savik            Ninfl; % knife
 sigute           Ninfl; % ear
 siku             Ninfl; % ice
 siqugh*          Ninfl; % needle
-taqegh           Ninfl; % vein
+tafsi            Ninfl; % belt
+taghnughhagh*    Ninfl; % child
+ulaagh           Ninfl; % semi-lunar knife, woman's knife, ulu
+uupa             Ninfl; % sea peach
+uyghag           Ninfl; % stone, rock
+yaquleg          Ninfl; % angel
+yughaghte        Ninfl; % minister, clergyman
+yug              Ninfl; % person, man (male human)
+Yupik            Ninfl; % Siberian / St. Lawrence Island Eskimo person
+
+% Jacobson (2001) Chapter 2 --- Example set 1
+nuna             Ninfl; % land
+tume             Ninfl; % footprint
+piitute          Ninfl; % seed
+
 
 LEXICON Ninfl
 
-[N][Sg]:0   #;
+[N][Sg]:+   #;
 [N][Pl]:+et #;
 [N][Dl]:+ek #;
 
