@@ -9,11 +9,11 @@ def Lex
 def StrongVowel [a|i|u];
 def V [e | StrongVowel ];
 
-define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
-define VoicedContinuant    [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
-define VoicelessContinuant [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ] ;
-define VoicedNasal         [  m   |   n                 | "ng"   | "ngw"                       ] ;
-define VoicelessNasal      [ "mm" | "nn"                | "ngng" | "ngngw"                     ] ;
+define Stop                [  p   |   t                 |  k     | {kw}   |  q    | {qw}       ] ;
+define VoicedContinuant    [  v   |   l  | z | y |  r   |  g     |  w     | {gh}  | {ghw}      ] ;
+define VoicelessContinuant [  f   | {ll} |   s   | {rr} | {gg}   | {wh}   | {ghh} | {ghhw} | h ] ;
+define VoicedNasal         [  m   |   n                 | {ng}   | {ngw}                       ] ;
+define VoicelessNasal      [ {mm} | {nn}                | {ngng} | {ngngw}                     ] ;
 
 define Continuant [ VoicelessContinuant | VoicedContinuant ] ;
 define Nasal      [ VoicelessNasal      | VoicedNasal      ] ;
@@ -39,8 +39,8 @@ def eHopping a -> a a , i -> i i, u -> u u || .#. (C) _ (C) e (C) "+" ,, e -> 0 
 
 def Cleanup "+" -> 0;
 
-
+def FinalEtoA e -> a || _ .#. ;
 
 #regex Exceptions .P. [ Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. Cleanup ];
-regex Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. Cleanup ;
+regex Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. FinalEtoA .o. Cleanup ;
 pairs
