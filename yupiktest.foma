@@ -47,7 +47,7 @@ regex Exceptions .P. [ Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o.
 #regex                 Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. FinalEtoA .o. Cleanup  ;
 #set print-space ON
 #print random-lower
-pairs
+pairs > yupik.pairs
 print dot > examplefile.dot
 
 apply up tuma
