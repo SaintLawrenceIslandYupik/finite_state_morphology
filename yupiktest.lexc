@@ -1,0 +1,19 @@
+Multichar_Symbols [N] [Sg] [Pl] [Dl]
+LEXICON Root
+
+Noun;
+
+LEXICON Noun
+
+afsengagh*         Ninfl; % mouse
+aghnagh          Ninfl; % woman
+aghnegh          Ninfl; % day
+taqegh           Ninfl; % vein
+
+LEXICON Ninfl
+
+[N][Sg]:0   #;
+[N][Pl]:+et #;
+[N][Dl]:+ek #;
+
+

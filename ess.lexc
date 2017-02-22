@@ -1,19 +1,25 @@
-Multichar_Symbols ngngw ngng ghhw gh*- gh- ghw ngw gh* gg gh kw ll mm ng nn qw
+Multichar_Symbols ngngw ngng ghhw ghw ngw gh* gg gh kw ll mm ng nn qw
 		  +Abs +Dual +Plural
                   ~sf -w (e)
-
-
-Definitions
-	FullVowel = a|i|u ;
-	
 
 LEXICON Root
 afsengagh*-	N ;
 aghnagh-		N ;
 aghnegh-		N ;
+taqegh-	N ;
 
 LEXICON N
-+Abs+Sing:    # ;
+gh-+Abs+Sing:q          # ;
+gh*-+Abs+Sing:q         # ;
+te-+Abs+Sing:ta         # ;
+te-+Abs+Sing:n          # ;
+g-+Abs+Sing:k           # ;
+ghw-+Abs+Sing:qw         # ;
+w-+Abs+Sing:kw           # ;
+a-+Abs+Sing:a            # ;
+i-+Abs+Sing:i            # ;
+u-+Abs+Sing:u            # ;
+e-+Abs+Sing:e            # ;
 +Abs+Dual:~sf-w:(e)t	# ;
 +Abs+Plural:~sf-w:(e)k	# ;
 

@@ -1,7 +1,10 @@
 #!/usr/bin/env foma -f
-clear stack
-read lexc < ess.lexc
-define YupikNouns
+
+read lexc yupiktest.lexc
+def Lex
+
+def StrongVowel [a|i|u];
+def V [e | StrongVowel ];
 
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
@@ -12,19 +15,20 @@ define VoicelessNasal      [ "mm" | "nn"                | "ngng" | "ngngw"      
 define Fricative [ VoicelessFricative | VoicedFricative ] ;
 define Nasal     [ VoicelessNasal     | VoicedNasal     ] ;
 
-define C         [ q | Stop | Fricative | Nasal ] ;        
-
-define FullVowel [ a | i | u ] ;
-define V         [ e | a | FullVowel ];
-define FinalGH "gh-" -> q ;
-define WeakFinalGH "gh*-" -> q ;
-define SemiFinalE [..] -> e || FullVowel _ C e C - "~sf" ,,  ! e-hopping
-                     e -> 0 || V C _ C "~sf" ,,              ! e-dropping
-                     "~sf" -> 0 ;                            ! finally remove intermediate symbol ~sf
+define C         [ Stop | Fricative | Nasal ] ;      
 
 
-!define Filter < rules.regex
-read regex YupikNouns .o. SemiFinalE ;
-print net
+def WeakMarker [? [a|i|u]] - [a a | i i | u u] ;
+
+def FinalGH g h ("*") -> q || _ .#. ;
+def WeakElision g h -> 0 || WeakMarker _ "+" ,, g h "*" -> 0 || _ "+";
+def eElision e -> 0 || V "+" _ ; 
+
+# Whenever a stem is of the form #(C) V' C e (C)/ ,V' is doubled (Jacobson, 1979, p. 10)
+
+def eHopping a -> a a , i -> i i, u -> u u || .#. (C) _ (C) e (C) "+" ,, e -> 0 || .#. (C) V (C) _ (C) "+";
+
+def Cleanup "+" -> 0;
+
+regex Lex .o. FinalGH .o. WeakElision .o. eElision .o. eHopping .o. Cleanup;
 pairs
-
