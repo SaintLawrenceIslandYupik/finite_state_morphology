@@ -17,19 +17,11 @@ define Nasal     [ VoicelessNasal     | VoicedNasal     ] ;
 
 define WordBoundary [ .#. ] ;
 
-define C         [ q | Stop | Fricative | Nasal ] ;        
+define C         [ Stop | Fricative | Nasal ] ;        
 
 define FullVowel   [ a   | i   | u   ] ;
 define DoubleVowel [ a a | i i | u u ] ;
-define V         [ e | FullVowel ];
-#define FinalGH "gh-" -> q ;
-#define WeakFinalGH "gh*-" -> q ;
-
-#define WeakMarker [? [a|i|u]] - [a a | i i | u u] ;
-#define WeakMarker [? FullVowel] - DoubleVowel ;
-
-
-#def WeakElision gh -> 0 || WeakMarker _ "+" ,, gh "*" -> gh || _ "+";
+define V           [ e | FullVowel ];
 
 define WeakFinalC  gh     -> 0  || [ WordBoundary | C ] FullVowel _ "-w" ,,
                    "-w"   -> 0  ;
@@ -56,10 +48,6 @@ define UvularDropping gh ":" e -> a || [ ? - a ] a _ ,,
                          ":"   -> 0 || [ ? - FullVowel ]        gh    _            ,,
                          ":"   -> 0 ||     DoubleVowel          gh    _            ;
 
-! kaviigh
-! kaviigh ~sf-w:(e)t
-! kaviigh -w:(e)t
-! kaviigh :(e)t
 
 define InterConsonantalE "(e)" -> e || C (":") _  ,,                      ! convert (e) to e when following a consonant
                          "(e)" -> 0 || V (":") _  ;                       ! otherwise delete it
@@ -72,75 +60,8 @@ def BaseFinalEndings    ghw      -> qw ,
                         t e      -> n    || V _ .#. ,,
                         e        -> a    || _ .#. ;
 
-
-#define Cleanup  ":" -> 0 ;
-                 
-#!define Filter < rules.regex
-#read regex YupikNouns .o. SemiFinalE ;
-#print net
-#pairs
-
-#regex Exceptions .P. [ Lex .o. BaseFinalEndings .o. WeakElision .o. eElision .o. eHopping .o. FinalEtoA .o. Cleanup ];
-
 regex Exceptions .P. [ Lex .o. SemiFinalE .o. FinalE .o. WeakFinalC .o. UnmarkStrongGh .o. InterConsonantalE .o. UvularDropping .o. BaseFinalEndings ];
 
-#pairs
-
-# apply up iye
-# apply up iiyet
-# apply up iiyek
-# apply down iye[N][Abs][Sg]
-# apply down iye[N][Abs][Pl]
-# apply down iye[N][Abs][Du]
-
-# apply up kamek
-# apply up kaamget
-# apply up kaamgek
-# apply down kameg[Abs][Sg]
-# apply down kameg[Abs][Pl]
-# apply down kameg[Abs][Du]
-# 
-# apply up kii
-# apply up kiit
-# apply up kiik
-# apply down kii[Abs][Sg]
-# apply down kii[Abs][Pl]
-# apply down kii[Abs][Du]
-# 
-# apply up ateq
-# apply up aatghet
-# apply up aatghek
-# apply down ategh[Abs][Sg]
-# apply down ategh[Abs][Pl]
-# apply down ategh[Abs][Du]
-# 
-# apply up ayveq
-# apply up ayveghet
-# apply up ayveghek
-# apply down ayvegh[Abs][Sg]
-# apply down ayvegh[Abs][Pl]
-# apply down ayvegh[Abs][Du]
-# 
-# apply up aghnaq
-# apply up aghnat
-# apply up aghnak
-# apply down aghnagh[Abs][Sg]
-# apply down aghnagh[Abs][Pl]
-# apply down aghnagh[Abs][Du]
-# 
-# apply up aghneq
-# apply up aghneghet
-# apply up aghneghek
-# apply down aghnegh[Abs][Sg]
-# apply down aghnegh[Abs][Pl]
-# apply down aghnegh[Abs][Du]
-# 
-# apply up afsengaq
-# apply up afsengaat
-# apply up afsengaak
-# apply down afsengagh*[Abs][Sg]
-# apply down afsengagh*[Abs][Pl]
-# apply down afsengagh*[Abs][Du]
 
 print dot > ess.dot
 
