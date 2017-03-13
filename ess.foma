@@ -23,44 +23,40 @@ define FullVowel   [ a   | i   | u   ] ;
 define DoubleVowel [ a a | i i | u u ] ;
 define V           [ e | FullVowel ];
 
-define WeakFinalC  gh     -> 0  || [ WordBoundary | C ] FullVowel _ "-w" ,,
+define WeakFinalC  gh     -> 0  || [ WordBoundary | C ] FullVowel _ "-w"   ∘
                    "-w"   -> 0  ;
 
 define UnmarkStrongGh gh "*" -> gh ;
 
-define FinalE     [..] -> a || WordBoundary (C) a _ C e   "~f"  ,,  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e   "~f"  ,,  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e   "~f"  ,,  ! e-hopping
-                     e -> 0 || V C _ C "~f" ,,                      ! e-dropping
+define FinalE     [..] -> a || WordBoundary (C) a _ C e   "~f"   ∘  ! e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e   "~f"   ∘  ! e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e   "~f"   ∘  ! e-hopping
+                     e -> 0 ||                    V C _ C "~f"   ∘  ! e-dropping
                   "~f" -> 0 ;                                       ! finally remove intermediate symbol ~f
 
-define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf" ,,  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e C "~sf" ,,  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e C "~sf" ,,  ! e-hopping
-                     e -> 0 || V C _ C "~sf" ,,                     ! e-dropping
+define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf"  ∘  ! e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e C "~sf"  ∘  ! e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e C "~sf"  ∘  ! e-hopping
+                     e -> 0 ||                    V C _ C "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 ;                                       ! finally remove intermediate symbol ~sf
 
-define UvularDropping gh ":" e -> a || [ ? - a ] a _ ,,
-                      gh ":" e -> i || [ ? - i ] i _ ,,
-                      gh ":" e -> u || [ ? - u ] u _ ,,
-                         ":"   -> 0 ||                   [ ? - "gh" ] _            ,,
-                         ":"   -> 0 ||                          gh    _  [ ? - e ] ,,
-                         ":"   -> 0 || [ ? - FullVowel ]        gh    _            ,,
-                         ":"   -> 0 ||     DoubleVowel          gh    _            ;
+define UvularDropping gh ":" e -> a || [ ? - a ] a _    ∘
+                      gh ":" e -> i || [ ? - i ] i _    ∘
+                      gh ":" e -> u || [ ? - u ] u _    ∘
+                         ":"   -> 0 ;
 
-
-define InterConsonantalE "(e)" -> e || C (":") _  ,,                      ! convert (e) to e when following a consonant
-                         "(e)" -> 0 || V (":") _  ;                       ! otherwise delete it
+define InterConsonantalE "(e)" -> e || C (":") _  ∘                  ! convert (e) to e when following a consonant
+                         "(e)" -> 0 || V (":") _  ;                  ! otherwise delete it
 
 def BaseFinalEndings    ghw      -> qw , 
-                        gh ("*") -> q   , 
-                        g        -> k   ,
+                        gh ("*") -> q  , 
+                        g        -> k  ,
                         w        -> kw ,
-                        t e      -> t a  || _ .#. ,,
-                        t e      -> n    || V _ .#. ,,
-                        e        -> a    || _ .#. ;
+                        t e      -> t a  ||   _ WordBoundary  ,, 
+                        t e      -> n    || V _ WordBoundary   ∘
+                        e        -> a    ||   _ WordBoundary ;
 
-regex Exceptions .P. [ Lex .o. SemiFinalE .o. FinalE .o. WeakFinalC .o. UnmarkStrongGh .o. InterConsonantalE .o. UvularDropping .o. BaseFinalEndings ];
+regex Exceptions .P. [ Lex ∘ SemiFinalE ∘ FinalE ∘ WeakFinalC ∘ UnmarkStrongGh ∘ InterConsonantalE ∘ UvularDropping ∘ BaseFinalEndings ];
 
 
 print dot > ess.dot
