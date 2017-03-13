@@ -1,5 +1,7 @@
+all: clean ess.pdf test 
+
 test: yupik.pairs.tsv yupik.pairs.gold.tsv
-	diff yupik.pairs.tsv yupik.pairs.gold.tsv
+	diff yupik.pairs.tsv yupik.pairs.gold.tsv && echo "Success" || echo "Failure"
 
 yupik.pairs ess.dot: ess.foma
 	./ess.foma
