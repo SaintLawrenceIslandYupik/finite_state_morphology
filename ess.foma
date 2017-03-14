@@ -4,7 +4,7 @@ read lexc exceptions.lexc
 def Exceptions
 
 read lexc ess.lexc
-def Lex
+def NounLexicon
 
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
@@ -31,7 +31,7 @@ define UnmarkStrongGh gh "*" -> gh ;
 define FinalE     [..] -> a || WordBoundary (C) a _ C e   "~f"   ∘  ! e-hopping
                   [..] -> i || WordBoundary (C) i _ C e   "~f"   ∘  ! e-hopping
                   [..] -> u || WordBoundary (C) u _ C e   "~f"   ∘  ! e-hopping
-                     e -> 0 ||                    V C _ C "~f"   ∘  ! e-dropping
+                     e -> 0 ||                    V C _   "~f"   ∘  ! e-dropping
                   "~f" -> 0 ;                                       ! finally remove intermediate symbol ~f
 
 define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf"  ∘  ! e-hopping
@@ -56,9 +56,34 @@ def BaseFinalEndings    ghw      -> qw ,
                         t e      -> n    || V _ WordBoundary   ∘
                         e        -> a    ||   _ WordBoundary ;
 
-regex Exceptions .P. [ Lex ∘ SemiFinalE ∘ FinalE ∘ WeakFinalC ∘ UnmarkStrongGh ∘ InterConsonantalE ∘ UvularDropping ∘ BaseFinalEndings ];
+define Nouns Exceptions .P. [ NounLexicon ∘ SemiFinalE ∘ FinalE ∘ WeakFinalC ∘ UnmarkStrongGh ∘ InterConsonantalE ∘ UvularDropping ∘ BaseFinalEndings ];
 
 
+read lexc ess.verbs.lexc
+define VerbLexicon
+
+define IntrInd "(g/t)" -> g || DoubleVowel "~f" _    ∘
+               "(g/t)" -> t ||           C "~f" _    ∘
+               "(g/t)" -> 0 ;
+
+define VowelDominance a i -> i i  ∘
+                      i a -> i i  ∘
+                      u i -> i i  ∘
+                      i u -> i i  ∘
+                      a u -> a a  ∘
+                      u a -> a a  ;
+                      
+
+define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
+
+
+#regex [ Nouns  ∘  VerbLexicon ]
+#push VerbLexicon
+
+define Lexicon  [ Nouns |  Verbs ] ;
+
+
+push Lexicon
 print dot > ess.dot
 
 pairs > yupik.pairs
