@@ -5,6 +5,7 @@ def Exceptions
 
 read lexc ess.lexc
 def NounLexicon
+apply up foo ;
 
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
@@ -77,13 +78,16 @@ define VowelDominance a i -> i i  ∘
 define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
 
 
-#regex [ Nouns  ∘  VerbLexicon ]
-#push VerbLexicon
+!regex [ Nouns  ∘  VerbLexicon ]
+!push VerbLexicon
 
 define Lexicon  [ Nouns |  Verbs ] ;
 
 
 push Lexicon
+
+save stack ess.fomabin
+
 print dot > ess.dot
 
 pairs > yupik.pairs
