@@ -33,6 +33,11 @@ define FinalE     [..] -> a || WordBoundary (C) a _ C e   "~f"   ∘  ! e-hoppin
                   [..] -> i || WordBoundary (C) i _ C e   "~f"   ∘  ! e-hopping
                   [..] -> u || WordBoundary (C) u _ C e   "~f"   ∘  ! e-hopping
                      e -> 0 ||                    V C _   "~f"   ∘  ! e-dropping
+                     e -> 0 ||                        _   "~f" V ∘  ! e-dropping  (Jacobson, 2001), p.19, footnote 1: 
+                                                                    !                 "It is true that all suffixes that begin with a vowel 
+                                                                    !                  in the form in which they are used on a base ending in e 
+                                                                    !                  will cause that e to drop, but nevertheless the sign ~f 
+                                                                    !                  will still be given with such suffixes."
                   "~f" -> 0 ;                                       ! finally remove intermediate symbol ~f
 
 define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf"  ∘  ! e-hopping
@@ -70,29 +75,29 @@ define Nouns
 	];
 
 
-!read lexc ess.verbs.lexc
-!define VerbLexicon
-!
-!define IntrInd "(g/t)" -> g || DoubleVowel "~f" _    ∘
-!               "(g/t)" -> t ||           C "~f" _    ∘
-!               "(g/t)" -> 0 ;
-!
-!define VowelDominance a i -> i i  ∘
-!                      i a -> i i  ∘
-!                      u i -> i i  ∘
-!                      i u -> i i  ∘
-!                      a u -> a a  ∘
-!                      u a -> a a  ;
+read lexc ess.verbs.lexc
+define VerbLexicon
+
+define IntrInd "(g/t)" -> g || DoubleVowel "~f" _    ∘
+               "(g/t)" -> t ||           C "~f" _    ∘
+               "(g/t)" -> 0 ;
+
+define VowelDominance a i -> i i  ∘
+                      i a -> i i  ∘
+                      u i -> i i  ∘
+                      i u -> i i  ∘
+                      a u -> a a  ∘
+                      u a -> a a  ;
                       
 
-!define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
+define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
 
 
 !regex [ Nouns  ∘  VerbLexicon ]
 !push VerbLexicon
 
-!define Lexicon  [ Nouns |  Verbs ] ;
-define Lexicon   Nouns  ;
+define Lexicon  [ Nouns |  Verbs ] ;
+!define Lexicon   Nouns  ;
 
 push Lexicon
 

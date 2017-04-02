@@ -1,5 +1,5 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn qw
-		  [N] [Sg] [Pl] [Du] [Abs]
+		  [N] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl]
                   ~sf ~f -w (e) (g/t)
 
 LEXICON VerbBase
@@ -35,18 +35,18 @@ tuqu             Verb; ! to die
 
 LEXICON Verb
 
-.INTR_IND:~f(g/t)u   VerbInfl; 
+[Intr_Ind]:~f(g/t)u   VerbInfl; 
 
 
 LEXICON VerbInfl
 
-.3SG:q    #;
-.3PL:t    #; 
-.3DU:k    #;
-.1SG:nga  #;
-.1PL:kut  #;
-.1DU:kung #;
-.2SG:ten  #;
-.2PL:si   #;
-.2DU:tek  #;
+[3Sg]:q    #;
+[3Pl]:t    #; 
+[3Du]:k    #;
+[1Sg]:nga  #;
+[1Pl]:kut  #;
+[1Du]:kung #;
+[2Sg]:ten  #;
+[2Pl]:si   #;
+[2Du]:tek  #;
 
