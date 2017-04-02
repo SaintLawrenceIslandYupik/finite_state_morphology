@@ -1,5 +1,5 @@
 Multichar_Symbols ngngw ngng ghhw ghw ngw gg gh kw ll mm ng nn qw
-		  [N] [Sg] [Pl] [Du] [Abs]
+		  [N] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd]
                   ~sf ~f -w (e)
 
 !LEXICON Root
@@ -8,14 +8,15 @@ Multichar_Symbols ngngw ngng ghhw ghw ngw gg gh kw ll mm ng nn qw
 
 
 LEXICON Noun
-sigute           Ninfl; ! ear
+savig           Ninfl; 
 
 
 LEXICON Ninfl
 
-[Abs][Sg]:0     #;
-[Abs][Pl]:~sf-w%:(e)t #;
-[Abs][Du]:~sf-w%:(e)k #;
+![Abs][Sg]:0     #;
+![Abs][Pl]:~sf-w%:(e)t #;
+![Abs][Du]:~sf-w%:(e)k #;
+[Abl_Mod][Unpd][Sg]:~f-wmeng #;
 
 !.ABS_1SG-POSS_SG-POSD:~-ka #;
 
