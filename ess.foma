@@ -3,9 +3,9 @@
 read lexc exceptions.lexc
 def Exceptions
 
+!read lexc tiny.lexc
 read lexc ess.lexc
 def NounLexicon
-apply up foo ;
 
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
@@ -57,38 +57,48 @@ def BaseFinalEndings    ghw      -> qw ,
                         t e      -> n    || V _ WordBoundary   ∘
                         e        -> a    ||   _ WordBoundary ;
 
-define Nouns Exceptions .P. [ NounLexicon ∘ SemiFinalE ∘ FinalE ∘ WeakFinalC ∘ UnmarkStrongGh ∘ InterConsonantalE ∘ UvularDropping ∘ BaseFinalEndings ];
+define Nouns 
+	Exceptions .P. [ 
+		NounLexicon ∘ 
+		SemiFinalE  ∘ 
+!		FinalE      ∘ 
+		WeakFinalC  ∘ 
+		UnmarkStrongGh ∘ 
+		InterConsonantalE ∘ 
+		UvularDropping ∘ 
+		BaseFinalEndings 
+	];
 
 
-read lexc ess.verbs.lexc
-define VerbLexicon
-
-define IntrInd "(g/t)" -> g || DoubleVowel "~f" _    ∘
-               "(g/t)" -> t ||           C "~f" _    ∘
-               "(g/t)" -> 0 ;
-
-define VowelDominance a i -> i i  ∘
-                      i a -> i i  ∘
-                      u i -> i i  ∘
-                      i u -> i i  ∘
-                      a u -> a a  ∘
-                      u a -> a a  ;
+!read lexc ess.verbs.lexc
+!define VerbLexicon
+!
+!define IntrInd "(g/t)" -> g || DoubleVowel "~f" _    ∘
+!               "(g/t)" -> t ||           C "~f" _    ∘
+!               "(g/t)" -> 0 ;
+!
+!define VowelDominance a i -> i i  ∘
+!                      i a -> i i  ∘
+!                      u i -> i i  ∘
+!                      i u -> i i  ∘
+!                      a u -> a a  ∘
+!                      u a -> a a  ;
                       
 
-define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
+!define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
 
 
 !regex [ Nouns  ∘  VerbLexicon ]
 !push VerbLexicon
 
-define Lexicon  [ Nouns |  Verbs ] ;
-
+!define Lexicon  [ Nouns |  Verbs ] ;
+define Lexicon   Nouns  ;
 
 push Lexicon
 
-save stack ess.fomabin
+!save stack ess.fomabin
 
-print dot > ess.dot
+!print dot > ess.dot
 
-pairs > yupik.pairs
+!pairs > yupik.pairs
 
