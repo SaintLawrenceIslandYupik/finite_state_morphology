@@ -23,11 +23,11 @@ interactive: ess.foma *.lexc
 test: test-ch2 test-ch3
 
 
-test-ch2: ess.pairs.ch2_nouns.gold.tsv ess.fomabin
-	@cut -f 1 ess.pairs.ch2_nouns.gold.tsv | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.ch2_nouns.gold.tsv && echo "Jacobson (2001) Chapter 2 noun vocabulary - absolutive singular, dual, & plural - PASS"
+test-ch2: ess.pairs.Ch2.N_ABS.tsv ess.fomabin
+	@cut -f 1 ess.pairs.Ch2.N_ABS.tsv | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch2.N_ABS.tsv && echo "Jacobson (2001) Chapter 2 noun vocabulary - absolutive singular, dual, & plural - PASS"
 
-test-ch3: ess.pairs.ch3_nouns.gold.tsv ess.fomabin
-	@cut -f 1 ess.pairs.ch3_nouns.gold.tsv | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.ch3_nouns.gold.tsv && echo "Jacobson (2001) Chapter 3 noun vocabulary - absolutive singular, dual, & plural - PASS"
+test-ch3: ess.pairs.Ch3.N_ABS.tsv ess.fomabin
+	@cut -f 1 ess.pairs.Ch3.N_ABS.tsv | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch3.N_ABS.tsv && echo "Jacobson (2001) Chapter 3 noun vocabulary - absolutive singular, dual, & plural - PASS"
 
 
 clean:
