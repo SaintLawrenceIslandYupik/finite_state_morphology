@@ -50,9 +50,25 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf"  ∘  ! e-hoppin
                      e -> 0 ||                    V C _ C "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 ;                                       ! finally remove intermediate symbol ~sf
 
+define SemiAndFinalE    
+                  [..] -> a || WordBoundary (C) a _ C e   "~"   ∘  ! final e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e   "~"   ∘  ! final e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e   "~"   ∘  ! final e-hopping
+                     e -> 0 ||                    V C _   "~"   ∘  ! final e-dropping
+                     e -> 0 ||                        _   "~" V ∘  ! final e-dropping  
+                  [..] -> a || WordBoundary (C) a _ C e C "~"   ∘  ! semi-final e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e C "~"   ∘  ! semi-final e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e C "~"   ∘  ! semi-final e-hopping
+                     e -> 0 ||                    V C _ C "~"   ∘  ! semi-final e-dropping
+                   "~" -> 0 ;                                      ! finally remove intermediate symbol ~
+
+
+
+
 define UvularDropping gh ":" e -> a || [ ? - a ] a _    ∘
                       gh ":" e -> i || [ ? - i ] i _    ∘
                       gh ":" e -> u || [ ? - u ] u _    ∘
+                      gh ":"   -> 0 || [ ? - V ] V _    ∘
                          ":"   -> 0 ;
 
 define InterConsonantalE "(e)" -> e || C (":") _  ∘                  ! convert (e) to e when following a consonant
@@ -81,8 +97,8 @@ define Nouns
 	];
 
 
-define IntrInd "(g/t)" -> g || DoubleVowel "~f" _    ∘
-               "(g/t)" -> t ||           C "~f" _    ∘
+define IntrInd "(g/t)" -> g || V V "~f" _    ∘
+               "(g/t)" -> t ||   C "~f" _    ∘
                "(g/t)" -> 0 ;
 
 define VowelDominance a i -> i i  ∘
@@ -91,9 +107,11 @@ define VowelDominance a i -> i i  ∘
                       i u -> i i  ∘
                       a u -> a a  ∘
                       u a -> a a  ;
-                      
 
-define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
+define NasalInsertion "(ng)" -> "ng" || V "~" ":" _  ∘
+                      "(ng)" -> 0 ;
+
+define Verbs [ VerbLexicon ∘ NasalInsertion ∘ SemiAndFinalE ∘ UvularDropping ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
 
 
 define Lexicon  [ Nouns |  Verbs ] ;

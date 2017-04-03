@@ -1,6 +1,6 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl]
-                  ~sf ~f -w (e) (g/t)
+		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→V]
+                  ~sf ~f -w (e) (g/t) (ng)
 
 LEXICON Root
 
@@ -99,6 +99,7 @@ LEXICON Noun
 
 [N][Abl_Mod][Unpd][Sg]:~f-wmeng #;
 
+[N→V]:~%:(ng)u    Verb; ! to be N
 
 
 LEXICON VerbBase
