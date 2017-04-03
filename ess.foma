@@ -65,10 +65,12 @@ define SemiAndFinalE
 
 
 
-define UvularDropping gh ":" e -> a || [ ? - a ] a _    ∘
-                      gh ":" e -> i || [ ? - i ] i _    ∘
-                      gh ":" e -> u || [ ? - u ] u _    ∘
-                      gh ":"   -> 0 || [ ? - V ] V _    ∘
+define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
+                      gh ":" e -> i || [ WordBoundary | C ] i _    ∘
+                      gh ":" e -> u || [ WordBoundary | C ] u _    ∘
+                      gh ":" a -> a || [ WordBoundary | C ] FullVowel _    ∘
+                      gh ":" i -> i || [ WordBoundary | C ] FullVowel _    ∘
+                      gh ":" u -> u || [ WordBoundary | C ] FullVowel _    ∘
                          ":"   -> 0 ;
 
 define InterConsonantalE "(e)" -> e || C (":") _  ∘                  ! convert (e) to e when following a consonant
@@ -111,7 +113,7 @@ define VowelDominance a i -> i i  ∘
 define NasalInsertion "(ng)" -> "ng" || V "~" ":" _  ∘
                       "(ng)" -> 0 ;
 
-define Verbs [ VerbLexicon ∘ NasalInsertion ∘ SemiAndFinalE ∘ UvularDropping ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
+define Verbs [ VerbLexicon ∘ NasalInsertion ∘ SemiAndFinalE ∘ UvularDropping ∘ UnmarkStrongGh ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
 
 
 define Lexicon  [ Nouns |  Verbs ] ;
