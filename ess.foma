@@ -5,7 +5,11 @@ def Exceptions
 
 !read lexc tiny.lexc
 read lexc ess.lexc
-def NounLexicon
+def Lexicon
+
+define NounLexicon [Lexicon.i .o. [ ?* "[N]" ?* ] ].i ;
+define VerbLexicon [Lexicon.i .o. [ ?* "[V]" ?* ] ].i ;
+
 
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
@@ -62,6 +66,8 @@ def BaseFinalEndings    ghw      -> qw ,
                         t e      -> n    || V _ WordBoundary   ∘
                         e        -> a    ||   _ WordBoundary ;
 
+
+
 define Nouns 
 	Exceptions .P. [ 
 		NounLexicon ∘ 
@@ -74,9 +80,6 @@ define Nouns
 		BaseFinalEndings 
 	];
 
-
-read lexc ess.verbs.lexc
-define VerbLexicon
 
 define IntrInd "(g/t)" -> g || DoubleVowel "~f" _    ∘
                "(g/t)" -> t ||           C "~f" _    ∘
@@ -93,17 +96,7 @@ define VowelDominance a i -> i i  ∘
 define Verbs [ VerbLexicon ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
 
 
-!regex [ Nouns  ∘  VerbLexicon ]
-!push VerbLexicon
-
 define Lexicon  [ Nouns |  Verbs ] ;
-!define Lexicon   Nouns  ;
 
 push Lexicon
-
-!save stack ess.fomabin
-
-!print dot > ess.dot
-
-!pairs > yupik.pairs
 
