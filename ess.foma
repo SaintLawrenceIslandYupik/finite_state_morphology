@@ -113,7 +113,16 @@ define VowelDominance a i -> i i  ∘
 define NasalInsertion "(ng)" -> "ng" || V "~" ":" _  ∘
                       "(ng)" -> 0 ;
 
-define Verbs [ VerbLexicon ∘ NasalInsertion ∘ SemiAndFinalE ∘ UvularDropping ∘ UnmarkStrongGh ∘ IntrInd ∘ FinalE ∘ VowelDominance ] ;
+define Verbs [ 
+		VerbLexicon    ∘ 
+		NasalInsertion ∘ 
+		SemiAndFinalE  ∘ 
+		UvularDropping ∘ 
+		UnmarkStrongGh ∘ 
+		IntrInd        ∘ 
+		FinalE         ∘ 
+		VowelDominance 
+	] ;
 
 
 define Lexicon  [ Nouns |  Verbs ] ;
