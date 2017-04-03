@@ -1,6 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→V]
-                  ~sf ~f -w (e) (g/t) (ng)
+		  [Abs1SgPoss] [SgPosd]
+                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z)
 
 LEXICON Root
 
@@ -94,7 +95,7 @@ yaywaali         Noun; ! orphan
 ! Jacobson (2001) Chapter 4 Vocabulary
 aghnaghagh*      Noun; ! girl
 aaw              Noun; ! blood
-ape              Noun; ! grandfather
+apa              Noun; ! grandfather
 ata              Noun; ! father
 avaqutagh        Noun; ! child, offspring
 eltughagh*       Noun; ! grandchild
@@ -138,13 +139,68 @@ LEXICON Noun
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 LEXICON NounInfl
 
+! Absolutive case endings
+! 
+! unpossessed
 [N][Abs][Sg]:0           #;
 [N][Abs][Pl]:~sf-w%:(e)t #;
 [N][Abs][Du]:~sf-w%:(e)k #;
+! 
+! 1st person singular possessor
+[N][Abs][1SgPoss][SgPosd]:~–ka            #;
+[N][Abs][1SgPoss][PlPosd]:~sf-w%:(e)nka   #;
+[N][Abs][1SgPoss][DuPosd]:~sf-w%:(e)gka   #;
+! 2nd person singular possessor
+[N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n     #;
+[N][Abs][2SgPoss][PlPosd]:ten             #;
+[N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  #;
+! 3rd person singular possessor
+[N][Abs][3SgPoss][SgPosd]:~sf%:(ng)a      #;
+[N][Abs][3SgPoss][PlPosd]:~sf%:(ng)i      #;
+[N][Abs][3SgPoss][DuPosd]:~f-wkek         #;
+! 4th person singular possessor
+[N][Abs][4SgPoss][SgPosd]:–ni             #;
+[N][Abs][4SgPoss][PlPosd]:–ni             #;
+[N][Abs][4SgPoss][DuPosd]:~sf-w%:(e)gni   #;
+! 
+! 1st person dual possessor
+[N][Abs][1DuPoss][SgPosd]:(p/v)ung        #;
+[N][Abs][1DuPoss][PlPosd]:–pung           #;
+[N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung #;
+! 2st person dual possessor
+[N][Abs][2DuPoss][SgPosd]:(t/y)ek         #;
+[N][Abs][2DuPoss][PlPosd]:–tek            #;
+[N][Abs][2DuPoss][DuPosd]:~sf-w%:(g)tek   #;
+! 3rd person dual possessor
+[N][Abs][3DuPoss][SgPosd]:~:(ng)ak        #;
+[N][Abs][3DuPoss][PlPosd]:~:(ng)ik        #;
+[N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  #;
+! 4st person dual possessor
+[N][Abs][4DuPoss][SgPosd]:(t/y)ek         #;
+[N][Abs][4DuPoss][PlPosd]:–tek            #;
+[N][Abs][4DuPoss][DuPosd]:~sf-w%:(e)gtek  #;
+! 
+! 1st person plural possessor
+[N][Abs][1PlPoss][SgPosd]:(p/v)ut         #;
+[N][Abs][1PlPoss][PlPosd]:–put            #;
+[N][Abs][1PlPoss][DuPosd]:~sf-w%:(e)gput  #;
+! 2st person plural possessor
+[N][Abs][2PlPoss][SgPosd]:(s/z)i          #;
+[N][Abs][2PlPoss][PlPosd]:–si             #;
+[N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   #;
+! 3st person plural possessor
+[N][Abs][3PlPoss][SgPosd]:~%:(ng)at       #;
+[N][Abs][3PlPoss][PlPosd]:~%:(ng)it       #;
+[N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #;
+! 4st person plural possessor
+[N][Abs][4PlPoss][SgPosd]:(t/y)eng        #;
+[N][Abs][4PlPoss][PlPosd]:–teng           #;
+[N][Abs][4PlPoss][DuPosd]:~sf-w%:(e)gtek  #;
+
+
 
 [N][Abl_Mod][Unpd][Sg]:~f-wmeng #;
 
-!.ABS_1SG-POSS_SG-POSD:~-ka #;
 
 
 
