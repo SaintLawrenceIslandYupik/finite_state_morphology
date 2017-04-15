@@ -202,6 +202,7 @@ define NasalInsertion "(ng)" -> "ng" || V "~" ":" _  ∘
 
 define Rules [
 	Lexicon ∘
+	FinalConsonantDropAssimilation ∘
 	AbsolutiveConsonantChange ∘
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 
@@ -212,7 +213,6 @@ define Rules [
 	UvularDropping ∘ 
 	IntrInd        ∘ 
 	FinalE      ∘ 
-	FinalConsonantDropAssimilation ∘
 	VowelDominance ∘
 	BaseFinalEndings 
 
@@ -267,4 +267,7 @@ push Grammar
 ! aghnameng
 
 
+! ape–leg~:(ng)u~f(g/t)u q
+!        ⇓                    final and semifinal e dropping 
+! ape–l g~:(ng)u~f(g/t)u q
 

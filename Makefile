@@ -34,7 +34,8 @@ test-ch3: ess.pairs.Ch3.N_ABS.tsv ess.pairs.Ch3.N_AblMod.tsv ess.fomabin
 	@cut -f 1 ess.pairs.Ch3.V_IntrInd.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch3.V_IntrInd.tsv && echo "Jacobson (2001) Chapter 3 verb vocabulary - intransitive indicative               - PASS" || echo "Jacobson (2001) Chapter 3 verb vocabulary - intransitive indicative               - FAIL"
 
 test-ch4: ess.pairs.Ch4.tsv ess.fomabin
-	@cut -f 1 ess.pairs.Ch4.tsv  | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch4.tsv                    && echo "Jacobson (2001) Chapter 4                 - incomplete tests                      - PASS" || echo "Jacobson (2001) Chapter 4                 - incomplete tests                      - FAIL"
+	@export  LC_ALL='C'; cut -f 2 ess.pairs.Ch4.tsv  | sort -d -f | uniq | flookup   -w "" ess.fomabin | awk '{printf("%s\t%s\n", $$2, $$1)}' | sort -d -f | uniq | diff - ess.pairs.Ch4.tsv                    && echo "Jacobson (2001) Chapter 4                 - incomplete tests                      - PASS" || echo "Jacobson (2001) Chapter 4                 - incomplete tests                      - FAIL"
+	@cut -f 1 ess.pairs.Ch4.N_ABS.tsv  | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch4.N_ABS.tsv                    && echo "Jacobson (2001) Chapter 4 noun vocabulary - absolutive singular, dual, & plural   - PASS" || echo "Jacobson (2001) Chapter 4 noun vocabulary - absolutive singular, dual, & plural   - FAIL"
 
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin
