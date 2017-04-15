@@ -7,8 +7,8 @@ def Exceptions
 read lexc ess.lexc
 def Lexicon
 
-define NounLexicon [[Lexicon].i .o. [ ?* "[N]" ?* ] ].i ;
-define VerbLexicon [[Lexicon].i .o. [ ?* "[V]" ?* ] ].i ;
+! define NounLexicon [[Lexicon].i .o. [ ?* "[N]" ?* ] ].i ;
+! define VerbLexicon [[Lexicon].i .o. [ ?* "[V]" ?* ] ].i ;
 
 
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
@@ -157,19 +157,6 @@ define AbsolutiveConsonantChange "(s/z)" -> s || C _   ∘
                                  "(t/y)" -> y || V _   ;
                                  
 
-define Nouns  [ 
-		NounLexicon ∘
-		SemiAndFinalE ∘ 
-		SemiFinalE  ∘ 
-		FinalE      ∘ 
-		WeakFinalC  ∘ 
-		UnmarkStrongGh ∘ 
-		InterConsonantalE ∘ 
-		UvularDropping ∘ 
-		FinalConsonantDropAssimilation ∘
-		AbsolutiveConsonantChange ∘
-		BaseFinalEndings 
-	];
 
 
 define IntrInd "(g/t)" -> g || V V "~f" _    ∘
@@ -186,19 +173,51 @@ define VowelDominance a i -> i i  ∘
 define NasalInsertion "(ng)" -> "ng" || V "~" ":" _  ∘
                       "(ng)" -> 0 ;
 
-define Verbs [ 
-		VerbLexicon    ∘ 
-		NasalInsertion ∘ 
-		SemiAndFinalE  ∘ 
-		UvularDropping ∘ 
-		UnmarkStrongGh ∘ 
-		IntrInd        ∘ 
-		FinalE         ∘ 
-		VowelDominance 
-	] ;
+!define Nouns  [ 
+!		NounLexicon ∘
+!		SemiAndFinalE ∘ 
+!		SemiFinalE  ∘ 
+!		FinalE      ∘ 
+!		WeakFinalC  ∘ 
+!		UnmarkStrongGh ∘ 
+!		InterConsonantalE ∘ 
+!		UvularDropping ∘ 
+!		FinalConsonantDropAssimilation ∘
+!		AbsolutiveConsonantChange ∘
+!		BaseFinalEndings 
+!	];
+! 
+!define Verbs [ 
+!		VerbLexicon    ∘ 
+!		UnmarkStrongGh ∘ 
+!		NasalInsertion ∘ 
+!		SemiAndFinalE  ∘ 
+!		UvularDropping ∘ 
+!		IntrInd        ∘ 
+!		FinalE         ∘ 
+!		VowelDominance 
+!	] ;
+! 
+!define Lexicon  Exceptions .P. [ Nouns |  Verbs ] ;
 
+define Rules [
+	Lexicon ∘
+	AbsolutiveConsonantChange ∘
+	IntrInd        ∘ 
+	SemiAndFinalE ∘ 
+	SemiFinalE  ∘ 
+	FinalE      ∘ 
+	WeakFinalC  ∘ 
+	UnmarkStrongGh ∘
+	NasalInsertion ∘ 
+	InterConsonantalE ∘ 
+	UvularDropping ∘ 
+	FinalConsonantDropAssimilation ∘
+	VowelDominance ∘
+	BaseFinalEndings 
 
-define Lexicon  Exceptions .P. [ Nouns |  Verbs ] ;
+];
 
-push Lexicon
+define Grammar [ Exceptions .P. Rules ] ;
+push Grammar
 
