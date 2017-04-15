@@ -28,7 +28,7 @@ define FullVowel   [ a   | i   | u   ] ;
 define DoubleVowel [ a a | i i | u u ] ;
 define V           [ e | FullVowel ];
 
-define WeakFinalC  gh     -> 0  || [ WordBoundary | C ] FullVowel _ "-w"   ∘
+define WeakFinalC  gh     -> 0  || [ WordBoundary | C ] FullVowel _ ("~f") "-w"   ∘
                    "-w"   -> 0  ;
 
 define UnmarkStrongGh gh "*" -> gh ;
@@ -159,8 +159,8 @@ define AbsolutiveConsonantChange "(s/z)" -> s || C _   ∘
 
 
 
-define IntrInd "(g/t)" -> g || V V "~f" _    ∘
-               "(g/t)" -> t ||   C "~f" _    ∘
+define IntrInd "(g/t)" -> g || V V ("~f") _    ∘
+               "(g/t)" -> t ||   C ("~f") _    ∘
                "(g/t)" -> 0 ;
 
 define VowelDominance a i -> i i  ∘
@@ -203,15 +203,15 @@ define NasalInsertion "(ng)" -> "ng" || V "~" ":" _  ∘
 define Rules [
 	Lexicon ∘
 	AbsolutiveConsonantChange ∘
-	IntrInd        ∘ 
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 
-	FinalE      ∘ 
 	WeakFinalC  ∘ 
 	UnmarkStrongGh ∘
 	NasalInsertion ∘ 
 	InterConsonantalE ∘ 
 	UvularDropping ∘ 
+	IntrInd        ∘ 
+	FinalE      ∘ 
 	FinalConsonantDropAssimilation ∘
 	VowelDominance ∘
 	BaseFinalEndings 
@@ -220,4 +220,51 @@ define Rules [
 
 define Grammar [ Exceptions .P. Rules ] ;
 push Grammar
+
+
+
+! aghnagh~:(ng)u~f(g/t)u q
+!           ⇓                nasal insertion
+! aghnagh~:    u~f(g/t)u q
+!        ⇓                   final and semi-final e dropping
+! aghna   :    u~f(g/t)u q
+!         ⇓                  uvular dropping
+! aghna        u  (g/t)u q
+!                  ⇓         (g/t) IntrInd
+! aghna        u   g   u q
+!              ⇓             vowel dominance
+! aghna        a   g   u q
+!                            surface form
+! aghnaaguq
+! 
+! This example shows that "(g/t) IntrInd" must happen *after* "uvular dropping"
+
+
+! megh~f(g/t)u q
+!     ⇓                     final e dropping
+! megh  (g/t)u q
+!        ⇓                  (g/t) IntrInd             
+! megh     t u q
+!                            surface form
+! meghtuq
+
+
+! taake~f(g/t)u q
+!           ⇓               (g/t) IntrInd             
+! taake~f     u q
+!      ⇓                    final e dropping
+! taak        u q
+!                            surface form
+! taakuq
+
+
+! aghnagh~f-wmeng
+!         ⇓                 final e dropping
+! aghnagh  -wmeng
+!           ⇓               weak final c dropping
+! aghna      meng
+!                            surface form
+! aghnameng
+
+
 

@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3
+test: test-ch2 test-ch3 test-ch4
 
 
 test-ch2: ess.pairs.Ch2.N_ABS.tsv ess.fomabin
@@ -33,6 +33,8 @@ test-ch3: ess.pairs.Ch3.N_ABS.tsv ess.pairs.Ch3.N_AblMod.tsv ess.fomabin
 	@cut -f 1 ess.pairs.Ch3.N_AblMod.tsv  | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch3.N_AblMod.tsv  && echo "Jacobson (2001) Chapter 3 noun vocabulary - ablative-modalis unpossessed singular - PASS" || echo "Jacobson (2001) Chapter 3 noun vocabulary - ablative-modalis unpossessed singular - FAIL"
 	@cut -f 1 ess.pairs.Ch3.V_IntrInd.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch3.V_IntrInd.tsv && echo "Jacobson (2001) Chapter 3 verb vocabulary - intransitive indicative               - PASS" || echo "Jacobson (2001) Chapter 3 verb vocabulary - intransitive indicative               - FAIL"
 
+test-ch4: ess.pairs.Ch4.tsv ess.fomabin
+	@cut -f 1 ess.pairs.Ch4.tsv  | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.Ch4.tsv                    && echo "Jacobson (2001) Chapter 4                 - incomplete tests                      - PASS" || echo "Jacobson (2001) Chapter 4                 - incomplete tests                      - FAIL"
 
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin
