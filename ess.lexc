@@ -10,11 +10,10 @@ LEXICON Root
 
 
 
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                Noun bases                  !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!                Noun Bases                  !!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -92,6 +91,7 @@ vegaagh          Noun; ! grass
 yavlu            Noun; ! sweetheart
 yaywaali         Noun; ! orphan
 
+
 ! Jacobson (2001) Chapter 4 Vocabulary
 aghnaghagh*      Noun; ! girl
 aaw              Noun; ! blood
@@ -113,34 +113,65 @@ takestaaghhagh*  Noun; ! short thing
 ugi              Noun; ! husband
 
 
+! Jacobson (2001) Chapter 5 Vocabulary
+aakagh*          Noun; ! older sister of a female
+anengagh         Noun; ! older brother
+elngaatall       Noun; ! very much (particle)
+estugagh*        Noun; ! store
+igaghvig         Noun; ! school 
+iyaghvig         Noun; ! school
+itegagh          Noun; ! foot 
+naasqugh         Noun; ! head 
+nayag            Noun; ! sister of a male 
+ngelqagh         Noun; ! cormorant 
+nunivag          Noun; ! rosewort plant (Sedum rosea), greens, tundra 
+papeg            Noun; ! tail
+puu              Noun; ! handle
+qanegh           Noun; ! mouth (anatomical) 
+qengagh          Noun; ! nose 
+quunpeng         Noun; ! always (particle) 
+suflugagh        Noun; ! gun 
+tepe             Noun; ! odor 
+tukugh*          Noun; ! host 
+tume             Noun; ! track, footprint; trail 
+unaami           Noun; ! tomorrow (particle) 
+uyughagh*        Noun; ! younger sibling (sister or borther)
+yughaghvig       Noun; ! church
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !                                                                              !
-!       Derivational morphemes applied to noun bases and derived bases         !
+!  Derivational Morphemes (Postbases) Applied To Noun Bases and Derived Bases  !
 !                                                                              !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON Noun
 
-! Noun → Noun postbases
+! Noun →  Noun Postbases
 [N→N]:–ghllag     Noun; ! big N; lots of N (when used in the plural)
 [N→N]:–ghrugllag  Noun; ! big N; huge N
 [N→N]:–leg        Noun; ! one having N
 
-! Noun → Verb postbases
+! Noun →  Verb Postbases
 [N→V]:~%:(ng)u    Verb; ! to be N
 
 0:0               NounInfl;
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                                                              !
-!       Inflectional morphemes applied to noun bases and derived bases         !
-!                                                                              !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!                                                                  !
+!  Inflectional Morphemes Applied To Noun Bases and Derived Bases  !
+!                                                                  !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON NounInfl
 
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                    Absolutive case endings                                                                     |
+!                                                    Absolutive Case Endings                                                                     |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|
 !        singular possessed                |           plural possessed                     |     dual possessed                                 |    
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
@@ -163,11 +194,20 @@ LEXICON NounInfl
 [N][Abs][4DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][4DuPoss][PlPosd]:–tek            #;      [N][Abs][4DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4st person dual possessor     |
 ! -----------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------|
 
+[N][Abl_Mod][Unpd][Sg]:~f-wmeng   #;
 
-[N][Abl_Mod][Unpd][Sg]:~f-wmeng #;
+! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
+[N][Loc][Unpd][Sg]:~f-wmi         #;  ! LOCALIS CASE  at N
+[N][Loc][Unpd][Pl]:~f-wni         #;
 
+[N][Ter][Unpd][Sg]:~f-wmun        #;  ! TERMINALIS CASE  to N
+[N][Ter][Unpd][Pl]:~f-wnun        #;
 
+[N][Via][Unpd][Sg]:~f-wkun        #;  ! VIALIS CASE  through N
+[N][Via][Unpd][Pl]:~sf-w:(e)tgun  #;
 
+[N][Equ][Unpd][Sg]:~f-wtun         #;  ! EQUALIS CASE  like N
+[N][Equ][Unpd][Pl]:~sf-w:(e)stun   #;
 
 
 
@@ -175,13 +215,14 @@ LEXICON NounInfl
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                Verb bases                  !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!                Verb Bases                  !!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbBase
 
+! Jacobson (2001) Chapter 3 Vocabulary
 aghula           Verb; ! to dance
 aghulaqe         Verb; ! to leave
 alinge           Verb; ! to be afraid
@@ -209,13 +250,31 @@ tagi             Verb; ! to come towards speaker
 taake            Verb; ! to be long
 tuqu             Verb; ! to die
 
+
 ! Jacobson (2001) Chapter 4 Vocabulary
-agatagh-         Verb; ! to be hungry
-ayatagh-         Verb; ! to be hungry
+igatagh         Verb; ! to be hungry
+iyatagh         Verb; ! to be hungry
+
+! Jacobson (2001) Chapter 5 Vocabulary
+aglagh          Verb; ! to go home; to go over to another place
+mayugh          Verb; ! to go up
+qepghagh        Verb; ! to work
+taaqe           Verb; ! to finish; to quit
+ukig            Verb; ! to go down
+umughqaa        Verb; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+yughagh         Verb; ! to pray, to worship
+
+
 
 LEXICON Verb
 
 [V][Intr_Ind]:~f(g/t)u   VerbInfl; 
+
+! Verb →  Verb Postbases
+[V→V]:~(g)aqe-  VerbInfl; ! to be V-ing (ongoing action); to regularly or repeatedly V 
+[V→V]:@lleqe-   VerbInfl; ! to V in the future; will V 
+[V→V]:@~fnaqe-  VerbInfl; ! to be going to V, to be about to V 
+[V→V]:@~fyug-   VerbInfl; ! to want to V
 
 
 LEXICON VerbInfl
@@ -229,5 +288,3 @@ LEXICON VerbInfl
 [2Sg]:ten  #;
 [2Pl]:si   #;
 [2Du]:tek  #;
-
-
