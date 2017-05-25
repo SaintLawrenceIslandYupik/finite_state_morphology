@@ -10,17 +10,17 @@ LEXICON Root
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                Noun Bases                  !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!                Noun Bases                  !!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NounBase
 
-! Jacobson (2001) Chapter 2 Vocabulary
+! Jacobson (2001) Chapter 2 Nouns 
 afsengagh*       Noun; ! vole, locally mouse
 aghnagh          Noun; ! woman
 aghnegh          Noun; ! day
@@ -31,29 +31,35 @@ ategh            Noun; ! name
 atkug            Noun; ! parka
 ayvegh           Noun; ! walrus
 ggute            Noun; ! tooth
-iye              Noun; ! eye
+iiye             Noun; ! eye
 kameg            Noun; ! skin boot, mukluk
 kaviigh          Noun; ! fox
 kemeg            Noun; ! flesh, skin
 kii              Noun; ! wound
 kiig             Noun; ! summer
 kiiw             Noun; ! river
+manig            Noun; ! (bird's) egg
 mangteghagh      Noun; ! house
 ne               Noun; ! home
 nanugh           Noun; ! polar bear
 naayghagh        Noun; ! mountain
 neghqwaagh       Noun; ! bone
+piitute          Noun; ! seed
+qayagh           Noun; ! kayak
 qikmigh          Noun; ! dog
 qiighw           Noun; ! grey hair , cough
 qulmesiite       Noun; ! cooking pot
 repa             Noun; ! hammer
 riigte           Noun; ! animal's den
+saaghw           Noun; ! side
 savig            Noun; ! knife
 sigute           Noun; ! ear
 siku             Noun; ! ice
-siqugh*          Noun; ! needle
+sikugh*          Noun; ! needle
 tafsi            Noun; ! belt
 taghnughhagh*    Noun; ! child
+taqegh           Noun; ! vein
+ughluveq         Noun; ! bow
 ulaagh           Noun; ! semi-lunar knife, woman's knife, ulu
 uupa             Noun; ! sea peach
 uyghag           Noun; ! stone, rock
@@ -62,8 +68,39 @@ yughaghte        Noun; ! minister, clergyman
 yug              Noun; ! person, man (male human)
 Yupig            Noun; ! Siberian / St. Lawrence Island Eskimo person
 
+! Anatomical Terms from p.22
+ighu             Noun;
+iigga            Noun;
+ikuyeg           Noun;
+itegagh          Noun;
+ketngig          Noun;
+meteghyagh       Noun;
+naasqugh         Noun;
+nuyagh           Noun;
+payaaqa          Noun;
+putukugh         Noun;
+qagugh           Noun;
+qalqasigh        Noun;
+qanegh           Noun;
+qemeghyagh       Noun;
+qengagh          Noun;
+qugtuqagh        Noun;
+qukagh           Noun;
+sakimag          Noun;
+segesqugh        Noun;
+sigun            Noun;
+talligh          Noun;
+tamlu            Noun;
+tangyegh         Noun;
+taqugh           Noun;
+tateg            Noun;
+tukughagh        Noun;
+tuya             Noun;
+ullungag         Noun;
+uyaqugh          Noun;
 
-! Jacobson (2001) Chapter 3 Vocabulary
+
+! Jacobson (2001) Chapter 3 Nouns 
 aghvegh          Noun; ! whale
 anigu            Noun; ! snow on ground
 aqavzig          Noun; ! salmonberry, cloudberry (Rubus chamaemorus)
@@ -92,10 +129,10 @@ yavlu            Noun; ! sweetheart
 yaywaali         Noun; ! orphan
 
 
-! Jacobson (2001) Chapter 4 Vocabulary
+! Jacobson (2001) Chapter 4 Nouns 
 aghnaghagh*      Noun; ! girl
 aaw              Noun; ! blood
-ape              Noun; ! grandfather
+apa              Noun; ! grandfather
 ata              Noun; ! father
 avaqutagh        Noun; ! child, offspring
 eltughagh*       Noun; ! grandchild
@@ -113,7 +150,9 @@ takestaaghhagh*  Noun; ! short thing
 ugi              Noun; ! husband
 
 
-! Jacobson (2001) Chapter 5 Vocabulary
+! Jacobson (2001) Chapter 5 Nouns 
+quunpeng         Adverb?; ! always (particle) 
+
 aakagh*          Noun; ! older sister of a female
 anengagh         Noun; ! older brother
 elngaatall       Noun; ! very much (particle)
@@ -129,7 +168,6 @@ papeg            Noun; ! tail
 puu              Noun; ! handle
 qanegh           Noun; ! mouth (anatomical) 
 qengagh          Noun; ! nose 
-quunpeng         Noun; ! always (particle) 
 suflugagh        Noun; ! gun 
 tepe             Noun; ! odor 
 tukugh*          Noun; ! host 
@@ -139,13 +177,40 @@ uyughagh*        Noun; ! younger sibling (sister or borther)
 yughaghvig       Noun; ! church
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                                                              !
-!  Derivational Morphemes (Postbases) Applied To Noun Bases and Derived Bases  !
-!                                                                              !
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Jacobson (2001) Chapter 6 Nouns 
+aghnalqwaagh     Noun; ! old lady
+akuutagh         Noun; ! mixture of berries, seal oil, sugar, etc., "Eskimo ice cream"
+alangqugh        Noun; ! ring finger
+apeghtughista    Noun; ! teacher
+asag             Noun; ! paternal aunt
+ighaleqetaagh    Noun; ! star
+ila              Noun; ! relative; associate; part; one or some (of)
+Karake           Noun; ! Koryak
+lalala           Noun; ! dew
+mesuuna          Noun; ! hairbrush; comb
+nulugh           Noun; ! tea bag
+paye             Noun; ! mouth (non-anatomical); hatch of kayak
+pengugh          Noun; ! mound
+qagugh           Noun; ! forehead
+qaye             Noun; ! surface; top
+qayugh           Noun; ! tea; broth
+siivanllegh      Noun; ! elder
+siqinegh         Noun; ! sun
+tanqigh          Noun; ! moon; month
+teghikusaq       Noun; ! animal
+tengegkayug      Noun; ! airplane (plural, 'tengegkayuget', often used for one airplane)
+ungipaghagh      Noun; ! traditional story; tale; legend
+uyaqugh          Noun; ! neck
+walguyaag        Noun; ! snowshoe
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                        !!!!!!
+!!!!!!      Derivational Morphemes Applied To Noun Bases      !!!!!!
+!!!!!!                                                        !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Noun
 
@@ -162,9 +227,9 @@ LEXICON Noun
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!                                                                  !
-!  Inflectional Morphemes Applied To Noun Bases and Derived Bases  !
-!                                                                  !
+!!!!!!                                                        !!!!!!
+!!!!!!      Inflectional Morphemes Applied To Noun Bases      !!!!!!
+!!!!!!                                                        !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -197,32 +262,31 @@ LEXICON NounInfl
 [N][Abl_Mod][Unpd][Sg]:~f-wmeng   #;
 
 ! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
-[N][Loc][Unpd][Sg]:~f-wmi         #;  ! LOCALIS CASE  at N
-[N][Loc][Unpd][Pl]:~f-wni         #;
+[N][Loc][Unpd][Sg]:~f-wmi          #;  ! LOCALIS CASE    : at N
+[N][Loc][Unpd][Pl]:~f-wni          #;
 
-[N][Ter][Unpd][Sg]:~f-wmun        #;  ! TERMINALIS CASE  to N
-[N][Ter][Unpd][Pl]:~f-wnun        #;
+[N][Ter][Unpd][Sg]:~f-wmun         #;  ! TERMINALIS CASE : to N
+[N][Ter][Unpd][Pl]:~f-wnun         #;
 
-[N][Via][Unpd][Sg]:~f-wkun        #;  ! VIALIS CASE  through N
-[N][Via][Unpd][Pl]:~sf-w:(e)tgun  #;
+[N][Via][Unpd][Sg]:~f-wkun         #;  ! VIALIS CASE     : through N
+[N][Via][Unpd][Pl]:~sf-w:(e)tgun   #;
 
-[N][Equ][Unpd][Sg]:~f-wtun         #;  ! EQUALIS CASE  like N
+[N][Equ][Unpd][Sg]:~f-wtun         #;  ! EQUALIS CASE    : like N
 [N][Equ][Unpd][Pl]:~sf-w:(e)stun   #;
 
 
 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                Verb Bases                  !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!                Verb Bases                  !!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbBase
 
-! Jacobson (2001) Chapter 3 Vocabulary
+! Jacobson (2001) Chapter 3 Verbs
 aghula           Verb; ! to dance
 aghulaqe         Verb; ! to leave
 alinge           Verb; ! to be afraid
@@ -251,11 +315,11 @@ taake            Verb; ! to be long
 tuqu             Verb; ! to die
 
 
-! Jacobson (2001) Chapter 4 Vocabulary
+! Jacobson (2001) Chapter 4 Verbs
 igatagh         Verb; ! to be hungry
 iyatagh         Verb; ! to be hungry
 
-! Jacobson (2001) Chapter 5 Vocabulary
+! Jacobson (2001) Chapter 5 Verbs
 aglagh          Verb; ! to go home; to go over to another place
 mayugh          Verb; ! to go up
 qepghagh        Verb; ! to work
@@ -264,6 +328,14 @@ ukig            Verb; ! to go down
 umughqaa        Verb; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
 yughagh         Verb; ! to pray, to worship
 
+! Jacobson (2001) Chapter 6 Verbs
+akuzi-
+atugh-
+igleghte-
+kaki-
+mesuuna-
+nulugh-
+ungipaghagh-
 
 
 LEXICON Verb
