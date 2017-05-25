@@ -99,7 +99,6 @@ tuya             Noun;
 ullungag         Noun;
 uyaqugh          Noun;
 
-
 ! Jacobson (2001) Chapter 3 Nouns 
 aghvegh          Noun; ! whale
 anigu            Noun; ! snow on ground
@@ -128,7 +127,6 @@ vegaagh          Noun; ! grass
 yavlu            Noun; ! sweetheart
 yaywaali         Noun; ! orphan
 
-
 ! Jacobson (2001) Chapter 4 Nouns 
 aghnaghagh*      Noun; ! girl
 aaw              Noun; ! blood
@@ -148,7 +146,6 @@ panig            Noun; ! daughter
 seghlegh         Noun; ! bad thing
 takestaaghhagh*  Noun; ! short thing
 ugi              Noun; ! husband
-
 
 ! Jacobson (2001) Chapter 5 Nouns 
 quunpeng         Adverb?; ! always (particle) 
@@ -176,7 +173,6 @@ unaami           Noun; ! tomorrow (particle)
 uyughagh*        Noun; ! younger sibling (sister or borther)
 yughaghvig       Noun; ! church
 
-
 ! Jacobson (2001) Chapter 6 Nouns 
 aghnalqwaagh     Noun; ! old lady
 akuutagh         Noun; ! mixture of berries, seal oil, sugar, etc., "Eskimo ice cream"
@@ -202,6 +198,45 @@ tengegkayug      Noun; ! airplane (plural, 'tengegkayuget', often used for one a
 ungipaghagh      Noun; ! traditional story; tale; legend
 uyaqugh          Noun; ! neck
 walguyaag        Noun; ! snowshoe
+
+! Jacobson (2001) Chapter 7 Nouns
+ighivgagh        ??; ! yesterday (particle)
+
+amig             Noun; ! door
+aveg             Noun; ! half
+efluge           Noun; ! floor
+eflugagh         Noun; ! floor
+egllu            Noun; ! stove (dual, 'eglluk', generally used for one stove)
+kemekrag         Noun; ! meat
+qergese          Noun; ! window (dual, 'qergesek', generally used for one window)
+tipele           Noun; ! table (dual, 'tipelek', generally used for one table)
+
+! Jacobson (2001) Chapter 8 Nouns
+aa               ???; ! yes (particle)
+nakaa            ???; ! no (particle)
+nakaan           ???; ! no (particle)
+qayughllak       ???; ! because (particle)
+
+kina             ???; ! who? (relative case is 'kitum')
+kinkut           ???; ! who? (plural)
+naken            ???; ! from where?
+nani             ???; ! (at) where?
+naten            ???; ! how?
+navek            ???; ! to where?
+qafsina          ???; ! how many?
+qakun            ???; ! when? (future)
+qavngaq          ???; ! when? (past)
+sa               ???; ! what?
+sangan           ???; ! why? (in general)
+
+alquutaq         Noun; ! spoon
+Ayuqliq          Noun; ! mainland Alaskan Eskimo
+pi               Noun; ! thing
+qawaak           Noun; ! bird
+Quyillek         Noun; ! Chukchi
+
+
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -276,13 +311,13 @@ LEXICON NounInfl
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!                Verb Bases                  !!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                  !!!!!!
+!!!!!!      Verb Bases (Intransitive & Transitive)      !!!!!!
+!!!!!!                                                  !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbBase
 
@@ -314,7 +349,6 @@ tagi             Verb; ! to come towards speaker
 taake            Verb; ! to be long
 tuqu             Verb; ! to die
 
-
 ! Jacobson (2001) Chapter 4 Verbs
 igatagh         Verb; ! to be hungry
 iyatagh         Verb; ! to be hungry
@@ -329,13 +363,73 @@ umughqaa        Verb; ! to have sleep paralysis (when one is temporarily incapab
 yughagh         Verb; ! to pray, to worship
 
 ! Jacobson (2001) Chapter 6 Verbs
-akuzi-
-atugh-
-igleghte-
-kaki-
-mesuuna-
-nulugh-
-ungipaghagh-
+akuzi           Verb; ! to speak
+atugh           Verb; ! to use
+igleghte        Verb; ! to travel
+kaki            Verb; ! to sew
+mesuuna         Verb; ! to brush or comb's one hair
+nulugh          Verb; ! to ice-fish; to dunk a tea bag
+ungipaghagh     Verb; ! to tell a story
+
+! Jacobson (2001) Chapter 7 Verbs
+aveg            Verb; ! to divide in two
+guute           Verb; ! to shoot
+litte           Verb; ! to learn; to become aware of one's surroundings
+qelpeghte       Verb; ! to open
+qilug           Verb; ! to bark (at)
+tuqute          Verb; ! to kill
+umeg            Verb; ! to close
+
+! Jacobson (2001) Chapter 8 Verbs
+alleg           Verb; ! to sweep
+kayusiite       Verb; ! to help out
+pi              Verb; ! to do; to go; etc.
+sa              Verb; ! to do what?
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                          !!!!!!
+!!!!!!      Verb Bases (Intransitive Only)      !!!!!!
+!!!!!!                                          !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON VerbBaseIntr
+
+! Jacobson (2001) Chapter 7 Intransitive Verbs
+igamsiqanagh    VerbIntr; ! to make one thankful
+igamsiqayug     VerbIntr; ! to feel thanksful
+laalighte       VerbIntr; ! to visit
+
+! Jacobson (2001) Chapter 8 Intransitive Verbs
+meghnugh        Verb; ! to be tired
+meqsug          Verb; ! to be thirsty
+qavaghni        Verb; ! to be sleepy
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!      Verb Bases (Transitive Only)      !!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON VerbBaseTrans
+
+! Jacobson (2001) Chapter 7 Transitive Verbs
+atuqe           Verb; ! to use; to wear
+esghagh         Verb; ! to see
+igamsiqayugvike Verb; ! to feel thankful toward
+laalighfike     Verb; ! to visit
+lli             Verb; ! to put
+nalluke         Verb; ! to not know
+piniqe          Verb; ! to like
+tugu            Verb; ! to take; to pick up
+
+! Jacobson (2001) Chapter 8 Transitive Verbs
+kayusigh        Verb; ! to help
+liisimake       Verb; ! to know
+tukfigh         Verb; ! to buy
 
 
 LEXICON Verb
@@ -347,6 +441,14 @@ LEXICON Verb
 [V→V]:@lleqe-   VerbInfl; ! to V in the future; will V 
 [V→V]:@~fnaqe-  VerbInfl; ! to be going to V, to be about to V 
 [V→V]:@~fyug-   VerbInfl; ! to want to V
+
+
+LEXICON VerbIntr
+
+[V][Intr_Ind]:~f(g/t)u   VerbInfl; 
+
+
+LEXICON VerbTrans
 
 
 LEXICON VerbInfl
