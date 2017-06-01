@@ -119,6 +119,32 @@ sigute           Noun; ! ear
 takestaaghhagh*  Noun; ! short thing
 ugi              Noun; ! husband
 
+! Jacobson (2001) Chapter 5 Nouns 
+!quunpeng          ? ; ! always (particle) 
+
+aakagh*          Noun; ! older sister of a female
+anengagh         Noun; ! older brother
+elngaatall       Noun; ! very much (particle)
+estugagh*        Noun; ! store
+igaghvig         Noun; ! school 
+iyaghvig         Noun; ! school
+itegagh          Noun; ! foot 
+naasqugh         Noun; ! head 
+nayag            Noun; ! sister of a male 
+ngelqagh         Noun; ! cormorant 
+nunivag          Noun; ! rosewort plant (Sedum rosea), greens, tundra 
+papeg            Noun; ! tail
+puu              Noun; ! handle
+qanegh           Noun; ! mouth (anatomical) 
+qengagh          Noun; ! nose 
+suflugagh        Noun; ! gun 
+tepe             Noun; ! odor 
+tukugh*          Noun; ! host 
+tume             Noun; ! track, footprint; trail 
+unaami           Noun; ! tomorrow (particle) 
+uyughagh*        Noun; ! younger sibling (sister or borther)
+yughaghvig       Noun; ! church
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -178,8 +204,18 @@ LEXICON NounInfl
 
 [N][Abl_Mod][Unpd][Sg]:~f-wmeng #;
 
-
-
+! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
+[N][Loc][Unpd][Sg]:~f-wmi          #;  ! LOCALIS CASE  at N
+[N][Loc][Unpd][Pl]:~f-wni          #;
+ 
+[N][Ter][Unpd][Sg]:~f-wmun         #;  ! TERMINALIS CASE  to N
+[N][Ter][Unpd][Pl]:~f-wnun         #;
+ 
+[N][Via][Unpd][Sg]:~f-wkun         #;  ! VIALIS CASE  through N
+[N][Via][Unpd][Pl]:~sf-w:(e)tgun   #;
+ 
+[N][Equ][Unpd][Sg]:~f-wtun         #;  ! EQUALIS CASE  like N
+[N][Equ][Unpd][Pl]:~sf-w:(e)stun   #;
 
 
 

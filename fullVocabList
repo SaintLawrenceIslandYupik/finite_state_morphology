@@ -1,25 +1,3 @@
-Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
-		  [Abs1SgPoss] [SgPosd]
-                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z)
-
-LEXICON Root
-
-        NounBase ;
-        VerbBase ;
-
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!                Noun Bases                  !!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON NounBase
-
 ! Jacobson (2001) Chapter 2 Nouns 
 afsengagh*       Noun; ! vole, locally mouse
 aghnagh          Noun; ! woman
@@ -469,87 +447,10 @@ uyghu            Noun; ! man's sister's child (nephew or niece)
 uyughaq          Noun; ! younger sibling
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                        !!!!!!
-!!!!!!      Derivational Morphemes Applied To Noun Bases      !!!!!!
-!!!!!!                                                        !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON Noun
-
-! Noun →  Noun Postbases
-[N→N]:–ghllag     Noun; ! big N; lots of N (when used in the plural)
-[N→N]:–ghrugllag  Noun; ! big N; huge N
-[N→N]:–leg        Noun; ! one having N
-
-! Noun →  Verb Postbases
-[N→V]:~%:(ng)u    Verb; ! to be N
-
-0:0               NounInfl;
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                        !!!!!!
-!!!!!!      Inflectional Morphemes Applied To Noun Bases      !!!!!!
-!!!!!!                                                        !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON NounInfl
-
-! -----------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                    Absolutive Case Endings                                                                     |
-! -----------------------------------------------------------------------------------------------------------------------------------------------|
-!        singular possessed                |           plural possessed                     |     dual possessed                                 |    
-! -----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-[N][Abs][Sg]:0                            #;      [N][Abs][Pl]:~sf-w%:(e)t                  #;      [N][Abs][Du]:~sf-w%:(e)k                  #; ! unpossessed                   |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][3SgPoss][SgPosd]:~sf%:(ng)a      #;      [N][Abs][3SgPoss][PlPosd]:~sf%:(ng)i      #;      [N][Abs][3SgPoss][DuPosd]:~f-wkek         #; ! 3rd person singular possessor |
-[N][Abs][3PlPoss][SgPosd]:~%:(ng)at       #;      [N][Abs][3PlPoss][PlPosd]:~%:(ng)it       #;      [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #; ! 3st person plural possessor   |
-[N][Abs][3DuPoss][SgPosd]:~:(ng)ak        #;      [N][Abs][3DuPoss][PlPosd]:~:(ng)ik        #;      [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  #; ! 3rd person dual possessor     |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][1SgPoss][SgPosd]:~–ka            #;      [N][Abs][1SgPoss][PlPosd]:~sf-w%:(e)nka   #;      [N][Abs][1SgPoss][DuPosd]:~sf-w%:(e)gka   #; ! 1st person singular possessor |
-[N][Abs][1PlPoss][SgPosd]:(p/v)ut         #;      [N][Abs][1PlPoss][PlPosd]:–put            #;      [N][Abs][1PlPoss][DuPosd]:~sf-w%:(e)gput  #; ! 1st person plural possessor   |
-[N][Abs][1DuPoss][SgPosd]:(p/v)ung        #;      [N][Abs][1DuPoss][PlPosd]:–pung           #;      [N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung #; ! 1st person dual possessor     |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n     #;      [N][Abs][2SgPoss][PlPosd]:ten             #;      [N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  #; ! 2nd person singular possessor |
-[N][Abs][2PlPoss][SgPosd]:(s/z)i          #;      [N][Abs][2PlPoss][PlPosd]:–si             #;      [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   #; ! 2st person plural possessor   |
-[N][Abs][2DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][2DuPoss][PlPosd]:–tek            #;      [N][Abs][2DuPoss][DuPosd]:~sf-w%:(g)tek   #; ! 2st person dual possessor     |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][4SgPoss][SgPosd]:–ni             #;      [N][Abs][4SgPoss][PlPosd]:–ni             #;      [N][Abs][4SgPoss][DuPosd]:~sf-w%:(e)gni   #; ! 4th person singular possessor |
-[N][Abs][4PlPoss][SgPosd]:(t/y)eng        #;      [N][Abs][4PlPoss][PlPosd]:–teng           #;      [N][Abs][4PlPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4st person plural possessor   |
-[N][Abs][4DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][4DuPoss][PlPosd]:–tek            #;      [N][Abs][4DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4st person dual possessor     |
-! -----------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------|
-
-[N][Abl_Mod][Unpd][Sg]:~f-wmeng   #;
-
-! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
-[N][Loc][Unpd][Sg]:~f-wmi          #;  ! LOCALIS CASE    : at N
-[N][Loc][Unpd][Pl]:~f-wni          #;
-
-[N][Ter][Unpd][Sg]:~f-wmun         #;  ! TERMINALIS CASE : to N
-[N][Ter][Unpd][Pl]:~f-wnun         #;
-
-[N][Via][Unpd][Sg]:~f-wkun         #;  ! VIALIS CASE     : through N
-[N][Via][Unpd][Pl]:~sf-w:(e)tgun   #;
-
-[N][Equ][Unpd][Sg]:~f-wtun         #;  ! EQUALIS CASE    : like N
-[N][Equ][Unpd][Pl]:~sf-w:(e)stun   #;
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                  !!!!!!
-!!!!!!      Verb Bases (Intransitive & Transitive)      !!!!!!
-!!!!!!                                                  !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON VerbBase
 
 ! Jacobson (2001) Chapter 3 Verbs
 aghula           Verb; ! to dance
@@ -664,95 +565,94 @@ qineghte        Verb; ! to look through an opening (at)
 !!!!!!                                          !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!LEXICON VerbBaseIntr
-!
-!! Jacobson (2001) Chapter 7 Intransitive Verbs
-!igamsiqanagh    VerbIntr; ! to make one thankful
-!igamsiqayug     VerbIntr; ! to feel thanksful
-!laalighte       VerbIntr; ! to visit
-!
-!! Jacobson (2001) Chapter 8 Intransitive Verbs
-!meghnugh        Verb; ! to be tired
-!meqsug          Verb; ! to be thirsty
-!qavaghni        Verb; ! to be sleepy
-!
-!! Jacobson (2001) Chapter 9 Intransitive Verbs
-!aleghquute      VerbIntr; ! to talk together; to converse (non-singular)
-!aqlaghate       VerbIntr; ! for it to be cold (weather)
-!iknaqe          VerbIntr; ! to be strong
-!isekinagh       VerbIntr; ! to be cold (solid, liquid)
-!uglagh          VerbIntr; ! to be many, to be numerous
-!
-!! Jacobson (2001) Chapter 10 Intransitive Verbs
-!aqume            VerbIntr; ! to sit
-!nanglii          VerbIntr; ! to stare into space
-!nekeve           VerbIntr; ! to stand up
-!qayugh           VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
-!
-!! Jacobson (2001) Chapter 11 Intransitive Verbs
-!geve             VerbIntr; ! to render (fat); to be compressed
-!gheve            VerbIntr; ! to fade
-!kavite           VerbIntr; ! to be red
-!naave            VerbIntr; ! to break, to get broken
-!neghenghite      VerbIntr; ! to not eat
-!qaame            VerbIntr; ! to go out (fire, light, etc.)
-!qinuyug          VerbIntr; ! to be sick
-!sughma           VerbIntr; ! to play chess or checkers
-!sukate           VerbIntr; ! to be fast
-!
-!! Jacobson (2001) Chapter 12 Intransitive Verbs
-!agniqe           VerbIntr; ! to be angry (women)
-!aqumga           VerbIntr; ! to be sitting (compare 'aqume' - 'to sit down')
-!ete              VerbIntr; ! to be (obsolete base)
-!ilagagh          VerbIntr; ! to sing
-!nekevgha         VerbIntr; ! to be standing (compare 'nekeve' - 'to stand up')
-!qefliqe          VerbIntr; ! to be angry (men)
-!
-!! Jacobson (2001) Chapter 13 Intransitive Verbs
-!kiyaghte         VerbIntr; ! to be; to live; to reside
-!pangeghte        VerbIntr; ! to go to Siberia
-!qungyagh         VerbIntr; ! to be jealous; to be envious
-!sumeghtaghagh    VerbIntr; ! to think
-!
-!! Jacobson (2001) Chapter 14 Intransitive Verbs
-!anuqligh         VerbIntr; ! for it to be windy
-!iilqe            VerbIntr; ! to be sad
-!iiw              VerbIntr; ! for tide go down
-!iqalgu           VerbIntr; ! to be dirty
-!kepsugh          VerbIntr; ! to be full from eating
-!meghtagh         VerbIntr; ! to fetch water
-!mughute          VerbIntr; ! to hunt on ice
-!mumigte          VerbIntr; ! to turn over
-!naghaagh         VerbIntr; ! to play
-!piyug            VerbIntr; ! to walk
-!qaprag           VerbIntr; ! to make a move; to be in motion; to fidget
-!quya             VerbIntr; ! to be happy; to be joyful
-!taghtugh         VerbIntr; ! to wake up; to awaken
-!teghtugh         VerbIntr; ! to wake up; to awaken
-!ugpegh           VerbIntr; ! to have faith
-!
-!! Jacobson (2001) Chapter 15 Intransitive Verbs
-!an'gigh          VerbIntr; ! to go outside for fresh air or exercise (of children usually)
-!iglagtu          VerbIntr; ! to speak loudly
-!sukangite        VerbIntr; ! to be slow
-!uqengestagh      VerbIntr; ! to be light in weight
-!uqigtu           VerbIntr; ! to be heavy in weight
-!yaave            VerbIntr; ! to row
-!
-!! Jacobson (2001) Chapter 17 Intransitive Verbs
-!kaleve           VerbIntr; ! to sink
-!piyaa            VerbIntr; ! to take a walk; to hunt on foot on ice
-!qimugsigh        VerbIntr; ! to go via dogteam
-!uteghmigh        VerbIntr; ! to return from a trip
-!yuqeghte         VerbIntr; ! to go outside to check the weather or get fresh air
-!
-!! Jacobson (2001) Chapter 18 Intransitive Verbs
-!atghagh          VerbIntr; ! to go down toward the water
-!nepiigh          VerbIntr; ! to fall silent
-!taglagh          VerbIntr; ! to go up away from the water
-!tenge            VerbIntr; ! to fly off; to take off in flight
-!
-!
+
+! Jacobson (2001) Chapter 7 Intransitive Verbs
+igamsiqanagh    VerbIntr; ! to make one thankful
+igamsiqayug     VerbIntr; ! to feel thanksful
+laalighte       VerbIntr; ! to visit
+
+! Jacobson (2001) Chapter 8 Intransitive Verbs
+meghnugh        Verb; ! to be tired
+meqsug          Verb; ! to be thirsty
+qavaghni        Verb; ! to be sleepy
+
+! Jacobson (2001) Chapter 9 Intransitive Verbs
+aleghquute      VerbIntr; ! to talk together; to converse (non-singular)
+aqlaghate       VerbIntr; ! for it to be cold (weather)
+iknaqe          VerbIntr; ! to be strong
+isekinagh       VerbIntr; ! to be cold (solid, liquid)
+uglagh          VerbIntr; ! to be many, to be numerous
+
+! Jacobson (2001) Chapter 10 Intransitive Verbs
+aqume            VerbIntr; ! to sit
+nanglii          VerbIntr; ! to stare into space
+nekeve           VerbIntr; ! to stand up
+qayugh           VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
+
+! Jacobson (2001) Chapter 11 Intransitive Verbs
+geve             VerbIntr; ! to render (fat); to be compressed
+gheve            VerbIntr; ! to fade
+kavite           VerbIntr; ! to be red
+naave            VerbIntr; ! to break, to get broken
+neghenghite      VerbIntr; ! to not eat
+qaame            VerbIntr; ! to go out (fire, light, etc.)
+qinuyug          VerbIntr; ! to be sick
+sughma           VerbIntr; ! to play chess or checkers
+sukate           VerbIntr; ! to be fast
+
+! Jacobson (2001) Chapter 12 Intransitive Verbs
+agniqe           VerbIntr; ! to be angry (women)
+aqumga           VerbIntr; ! to be sitting (compare 'aqume' - 'to sit down')
+ete              VerbIntr; ! to be (obsolete base)
+ilagagh          VerbIntr; ! to sing
+nekevgha         VerbIntr; ! to be standing (compare 'nekeve' - 'to stand up')
+qefliqe          VerbIntr; ! to be angry (men)
+
+! Jacobson (2001) Chapter 13 Intransitive Verbs
+kiyaghte         VerbIntr; ! to be; to live; to reside
+pangeghte        VerbIntr; ! to go to Siberia
+qungyagh         VerbIntr; ! to be jealous; to be envious
+sumeghtaghagh    VerbIntr; ! to think
+
+! Jacobson (2001) Chapter 14 Intransitive Verbs
+anuqligh         VerbIntr; ! for it to be windy
+iilqe            VerbIntr; ! to be sad
+iiw              VerbIntr; ! for tide go down
+iqalgu           VerbIntr; ! to be dirty
+kepsugh          VerbIntr; ! to be full from eating
+meghtagh         VerbIntr; ! to fetch water
+mughute          VerbIntr; ! to hunt on ice
+mumigte          VerbIntr; ! to turn over
+naghaagh         VerbIntr; ! to play
+piyug            VerbIntr; ! to walk
+qaprag           VerbIntr; ! to make a move; to be in motion; to fidget
+quya             VerbIntr; ! to be happy; to be joyful
+taghtugh         VerbIntr; ! to wake up; to awaken
+teghtugh         VerbIntr; ! to wake up; to awaken
+ugpegh           VerbIntr; ! to have faith
+
+! Jacobson (2001) Chapter 15 Intransitive Verbs
+an'gigh          VerbIntr; ! to go outside for fresh air or exercise (of children usually)
+iglagtu          VerbIntr; ! to speak loudly
+sukangite        VerbIntr; ! to be slow
+uqengestagh      VerbIntr; ! to be light in weight
+uqigtu           VerbIntr; ! to be heavy in weight
+yaave            VerbIntr; ! to row
+
+! Jacobson (2001) Chapter 17 Intransitive Verbs
+kaleve           VerbIntr; ! to sink
+piyaa            VerbIntr; ! to take a walk; to hunt on foot on ice
+qimugsigh        VerbIntr; ! to go via dogteam
+uteghmigh        VerbIntr; ! to return from a trip
+yuqeghte         VerbIntr; ! to go outside to check the weather or get fresh air
+
+! Jacobson (2001) Chapter 18 Intransitive Verbs
+atghagh          VerbIntr; ! to go down toward the water
+nepiigh          VerbIntr; ! to fall silent
+taglagh          VerbIntr; ! to go up away from the water
+tenge            VerbIntr; ! to fly off; to take off in flight
+
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!                                        !!!!!!
@@ -760,115 +660,83 @@ qineghte        Verb; ! to look through an opening (at)
 !!!!!!!                                        !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!LEXICON VerbBaseTrans
-!
-!! Jacobson (2001) Chapter 7 Transitive Verbs
-!atuqe           Verb; ! to use; to wear
-!esghagh         Verb; ! to see
-!igamsiqayugvike Verb; ! to feel thankful toward
-!laalighfike     Verb; ! to visit
-!lli             Verb; ! to put
-!nalluke         Verb; ! to not know
-!piniqe          Verb; ! to like
-!tugu            Verb; ! to take; to pick up
-!
-!! Jacobson (2001) Chapter 8 Transitive Verbs
-!kayusigh        Verb; ! to help
-!liisimake       Verb; ! to know
-!tukfigh         Verb; ! to buy
-!
-!! Jacobson (2001) Chapter 9 Transitive Verbs
-!aleghqugh       VerbTrans; ! to talk to; to tell
-!amqeghte        VerbTrans; ! to bite
-!ivagh           VerbTrans; ! to look for
-!naallghute      VerbTrans; ! to adjust
-!naalke          VerbTrans; ! to find
-!payegh          VerbTrans; ! to meet, to encounter; to go over to help
-!qaamte          VerbTrans; ! to extinguish; to turn off
-!ugpeqe          VerbTrans; ! to believe
-!ungipaghaate    VerbTrans; ! to tell a story to
-!
-!! Jacobson (2001) Chapter 10 Transitive Verbs
-!egte             VerbTrans; ! to throw away
-!kenigh           VerbTrans; ! to point (at)
-!pumsug           VerbTrans; ! to pinch
-!tagite           VerbTrans; ! to bring here
-!tuqute           VerbTrans; ! to kill
-!
-!! Jacobson (2001) Chapter 11 Transitive Verbs
-!akite            VerbTrans; ! to answer; to reciprocate
-!ifkaghte         VerbTrans; ! to drop accidentally or on purpose
-!ini              VerbTrans; ! to hang to dry
-!naafqe           VerbTrans; ! to break (it)
-!paagh            VerbTrans; ! to lick; to clean by licking with aid of fingers
-!tuune            VerbTrans; ! to give
-!tuquuqagh        VerbTrans; ! to nail
-!
-!! Jacobson (2001) Chapter 13 Transitive Verbs
-!qungyake         VerbTrans; ! to be jealous of; to envy
-!ungipaate        VerbTrans; ! to tell
-!
-!! Jacobson (2001) Chapter 14 Transitive Verbs
-!aghvig           VerbTrans; ! to wash (clothes)
-!aghyuugh         VerbTrans; ! to scold
-!alike            VerbTrans; ! to fear
-!kitugh           VerbTrans; ! to pass by
-!taghsagh         VerbTrans; ! to wake (him) up; to awaken (him)
-!teghsagh         VerbTrans; ! to wake (him) up; to awaken (him)
-!
-!! Jacobson (2001) Chapter 15 Transitive Verbs
-!aate             VerbTrans; ! to put on (clothes)
-!maligte          VerbTrans; ! to accompany
-!muutighvike      VerbTrans; ! to ask or hire (one) to do or make something
-!tuqlugh          VerbTrans; ! to call to; to telephone
-!taslugh          VerbTrans; ! to hold hands with
-!tasluqe          VerbTrans; ! to hold hands with
-!utaqa            VerbTrans; ! to wait for
-!
-!! Jacobson (2001) Chapter 17 Transitive Verbs
-!aapte            ???; ! to ask (agentive)
-!naapte           ???; ! to catch with net or trap (agentive)
-!
-!
-!! Jacobson (2001) Chapter 18 Transitive Verbs
-!unug             ???; ! for night to fall (optional impersonal agent transitive verb)
-!qevuute          ???; ! to act or be acted upon to the maximum extent possible (agentive)
-!lliigh           ???; ! to become a certain way (optional impersonal agent transitive verb)
-!ketfagh          ???; ! to bring out; to go far out to sea (patientive)
-!apeghiigh        ???; ! to finish or be finished (agentive)
-!aghtugh          ???; ! to not be able to bear; to not be able to do (to)(agentive)
-!aghuliigh        ???; ! to stop motion (patientive)
-!
-!taku             VerbTrans; ! to approach on purpose
-!uutghute         VerbTrans; ! to bring back; to change one's mind about
 
-LEXICON Verb
+! Jacobson (2001) Chapter 7 Transitive Verbs
+atuqe           Verb; ! to use; to wear
+esghagh         Verb; ! to see
+igamsiqayugvike Verb; ! to feel thankful toward
+laalighfike     Verb; ! to visit
+lli             Verb; ! to put
+nalluke         Verb; ! to not know
+piniqe          Verb; ! to like
+tugu            Verb; ! to take; to pick up
 
-[V][Intr_Ind]:~f(g/t)u   VerbInfl; 
+! Jacobson (2001) Chapter 8 Transitive Verbs
+kayusigh        Verb; ! to help
+liisimake       Verb; ! to know
+tukfigh         Verb; ! to buy
 
-! Verb →  Verb Postbases
-[V→V]:~(g)aqe-  VerbInfl; ! to be V-ing (ongoing action); to regularly or repeatedly V 
-[V→V]:@lleqe-   VerbInfl; ! to V in the future; will V 
-[V→V]:@~fnaqe-  VerbInfl; ! to be going to V, to be about to V 
-[V→V]:@~fyug-   VerbInfl; ! to want to V
+! Jacobson (2001) Chapter 9 Transitive Verbs
+aleghqugh       VerbTrans; ! to talk to; to tell
+amqeghte        VerbTrans; ! to bite
+ivagh           VerbTrans; ! to look for
+naallghute      VerbTrans; ! to adjust
+naalke          VerbTrans; ! to find
+payegh          VerbTrans; ! to meet, to encounter; to go over to help
+qaamte          VerbTrans; ! to extinguish; to turn off
+ugpeqe          VerbTrans; ! to believe
+ungipaghaate    VerbTrans; ! to tell a story to
+
+! Jacobson (2001) Chapter 10 Transitive Verbs
+egte             VerbTrans; ! to throw away
+kenigh           VerbTrans; ! to point (at)
+pumsug           VerbTrans; ! to pinch
+tagite           VerbTrans; ! to bring here
+tuqute           VerbTrans; ! to kill
+
+! Jacobson (2001) Chapter 11 Transitive Verbs
+akite            VerbTrans; ! to answer; to reciprocate
+ifkaghte         VerbTrans; ! to drop accidentally or on purpose
+ini              VerbTrans; ! to hang to dry
+naafqe           VerbTrans; ! to break (it)
+paagh            VerbTrans; ! to lick; to clean by licking with aid of fingers
+tuune            VerbTrans; ! to give
+tuquuqagh        VerbTrans; ! to nail
+
+! Jacobson (2001) Chapter 13 Transitive Verbs
+qungyake         VerbTrans; ! to be jealous of; to envy
+ungipaate        VerbTrans; ! to tell
+
+! Jacobson (2001) Chapter 14 Transitive Verbs
+aghvig           VerbTrans; ! to wash (clothes)
+aghyuugh         VerbTrans; ! to scold
+alike            VerbTrans; ! to fear
+kitugh           VerbTrans; ! to pass by
+taghsagh         VerbTrans; ! to wake (him) up; to awaken (him)
+teghsagh         VerbTrans; ! to wake (him) up; to awaken (him)
+
+! Jacobson (2001) Chapter 15 Transitive Verbs
+aate             VerbTrans; ! to put on (clothes)
+maligte          VerbTrans; ! to accompany
+muutighvike      VerbTrans; ! to ask or hire (one) to do or make something
+tuqlugh          VerbTrans; ! to call to; to telephone
+taslugh          VerbTrans; ! to hold hands with
+tasluqe          VerbTrans; ! to hold hands with
+utaqa            VerbTrans; ! to wait for
+
+! Jacobson (2001) Chapter 17 Transitive Verbs
+aapte            ???; ! to ask (agentive)
+naapte           ???; ! to catch with net or trap (agentive)
 
 
-!LEXICON VerbIntr
+! Jacobson (2001) Chapter 18 Transitive Verbs
+unug             ???; ! for night to fall (optional impersonal agent transitive verb)
+qevuute          ???; ! to act or be acted upon to the maximum extent possible (agentive)
+lliigh           ???; ! to become a certain way (optional impersonal agent transitive verb)
+ketfagh          ???; ! to bring out; to go far out to sea (patientive)
+apeghiigh        ???; ! to finish or be finished (agentive)
+aghtugh          ???; ! to not be able to bear; to not be able to do (to)(agentive)
+aghuliigh        ???; ! to stop motion (patientive)
 
-![V][Intr_Ind]:~f(g/t)u   VerbInfl; 
-
-
-!LEXICON VerbTrans
-
-
-LEXICON VerbInfl
-
-[3Sg]:q    #;
-[3Pl]:t    #; 
-[3Du]:k    #;
-[1Sg]:nga  #;
-[1Pl]:kut  #;
-[1Du]:kung #;
-[2Sg]:ten  #;
-[2Pl]:si   #;
-[2Du]:tek  #;
+taku             VerbTrans; ! to approach on purpose
+uutghute         VerbTrans; ! to bring back; to change one's mind about
