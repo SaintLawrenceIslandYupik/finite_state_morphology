@@ -40,21 +40,27 @@ kii              Noun; ! wound
 kiig             Noun; ! summer
 kiiw             Noun; ! river
 mangteghagh      Noun; ! house
+manig            Noun; ! egg
 ne               Noun; ! home
 nanugh           Noun; ! polar bear
 naayghagh        Noun; ! mountain
 neghqwaagh       Noun; ! bone
+piitute          Noun; ! seed
+qayagh           Noun; ! kayak
 qikmigh          Noun; ! dog
 qiighw           Noun; ! grey hair , cough
 qulmesiite       Noun; ! cooking pot
 repa             Noun; ! hammer
 riigte           Noun; ! animal's den
+saaghw           Noun; ! side
 savig            Noun; ! knife
 sigute           Noun; ! ear
 siku             Noun; ! ice
-siqugh*          Noun; ! needle
+sikugh*          Noun; ! needle
 tafsi            Noun; ! belt
 taghnughhagh*    Noun; ! child
+taqegh           Noun; ! vein
+ughluvegh        Noun; ! bow
 ulaagh           Noun; ! semi-lunar knife, woman's knife, ulu
 uupa             Noun; ! sea peach
 uyghag           Noun; ! stone, rock
@@ -103,7 +109,6 @@ eltughagh*       Noun; ! grandchild
 ggute            Noun; ! tooth
 iigge            Noun; ! hand
 ighnegh          Noun; ! son
-iye              Noun; ! eye
 kemeg            Noun; ! skin
 mekestaaghhagh*  Noun; ! small thing
 mekelghiigh      Noun; ! boy
@@ -144,6 +149,33 @@ tume             Noun; ! track, footprint; trail
 unaami           Noun; ! tomorrow (particle) 
 uyughagh*        Noun; ! younger sibling (sister or borther)
 yughaghvig       Noun; ! church
+
+! Jacobson (2001) Chapter 6 Nouns 
+aghnalqwaagh     Noun; ! old lady
+akuutagh         Noun; ! mixture of berries, seal oil, sugar, etc., "Eskimo ice cream"
+alangqugh        Noun; ! ring finger
+apeghtughista    Noun; ! teacher
+asag             Noun; ! paternal aunt
+ighaleqetaagh    Noun; ! star
+ila              Noun; ! relative; associate; part; one or some (of)
+Karake           Noun; ! Koryak
+lalala           Noun; ! dew
+mesuuna          Noun; ! hairbrush; comb
+nulugh           Noun; ! tea bag
+paye             Noun; ! mouth (non-anatomical); hatch of kayak
+pengugh          Noun; ! mound
+qagugh           Noun; ! forehead
+qaye             Noun; ! surface; top
+qayugh           Noun; ! tea; broth
+siivanllegh      Noun; ! elder
+siqinegh         Noun; ! sun
+tanqigh          Noun; ! moon; month
+teghikusaq       Noun; ! animal
+tengegkayug      Noun; ! airplane (plural, 'tengegkayuget', often used for one airplane)
+ungipaghagh      Noun; ! traditional story; tale; legend
+uyaqugh          Noun; ! neck
+walguyaag        Noun; ! snowshoe
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -205,19 +237,21 @@ LEXICON NounInfl
 [N][Abl_Mod][Unpd][Sg]:~f-wmeng #;
 
 ! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
-[N][Loc][Unpd][Sg]:~f-wmi          #;  ! LOCALIS CASE  at N
-[N][Loc][Unpd][Pl]:~f-wni          #;
+[N][Loc][Unpd][Sg]:~f-wmi           #;  ! LOCALIS CASE     at N
+[N][Loc][Unpd][Pl]:~f-wni           #;
  
-[N][Ter][Unpd][Sg]:~f-wmun         #;  ! TERMINALIS CASE  to N
-[N][Ter][Unpd][Pl]:~f-wnun         #;
+[N][Ter][Unpd][Sg]:~f-wmun          #;  ! TERMINALIS CASE  to N
+[N][Ter][Unpd][Pl]:~f-wnun          #;
  
-[N][Via][Unpd][Sg]:~f-wkun         #;  ! VIALIS CASE  through N
-[N][Via][Unpd][Pl]:~sf-w:(e)tgun   #;
+[N][Via][Unpd][Sg]:~f-wkun          #;  ! VIALIS CASE      through N
+[N][Via][Unpd][Pl]:~sf-w%:(e)tgun   #;
  
-[N][Equ][Unpd][Sg]:~f-wtun         #;  ! EQUALIS CASE  like N
-[N][Equ][Unpd][Pl]:~sf-w:(e)stun   #;
+[N][Equ][Unpd][Sg]:~f-wtun          #;  ! EQUALIS CASE     like N
+[N][Equ][Unpd][Pl]:~sf-w%:(e)stun   #;
 
-
+[N][Rel][Unpd][Sg]:~sf-w%:(e)m      #;  ! RELATIVE CASE    indicates posssesor of noun with 3rd person possessed ending
+[N][Rel][Unpd][Pl]:~sf-w%:(e)t      #;
+[N][Rel][Unpd][Du]:~sf-w%:(e)k      #;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

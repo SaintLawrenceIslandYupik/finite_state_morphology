@@ -140,10 +140,11 @@ define VowelDominance a i -> i i  ∘
                       a u -> a a  ∘
                       u a -> a a  ;
 
-define NasalInsertion "(ng)" -> "ng" || V "~" ":" _  ∘
+define NasalInsertion "(ng)" -> "ng" || V ("~") ":" _  ∘
                       "(ng)" -> 0 ;
 
-
+define KClusterModification y -> s || _ k  ∘
+                            k -> q || gh _ ;
 define Rules [
 	Lexicon ∘
 	FinalConsonantDropAssimilation ∘
@@ -158,8 +159,8 @@ define Rules [
 	IntrInd        ∘ 
 	FinalE      ∘ 
 	VowelDominance ∘
+        KClusterModification ∘
 	BaseFinalEndings 
-
 ];
 
 define Grammar [ Exceptions .P. Rules ] ;
