@@ -129,12 +129,11 @@ define AbsolutiveConsonantChange "(s/z)" -> s || C _   ∘
                                  "(t/y)" -> y || V _   ;
                                  
 
-define IntrInd "(g/t)" -> g || V V ("~f") _   ∘
-               "(g/t)" -> t ||   C ("~f") _   ∘
-               "(g/t)" -> 0 ;
+define Indicative ["(g/t)" | "(g)"] -> g || V V [("~f") | ("~")] _  ∘
+                            "(g/t)" -> t ||             C ("~f") _  ∘
+                  ["(g/t)" | "(g)"] -> 0                            ∘                  
+                                  V -> 0 || V ("~") _ V             ;  
 
-define TrnsInd "(g)" -> g || V V ("~") _ ∘
-               "(g)" -> 0;
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -148,6 +147,12 @@ define NasalInsertion "(ng)" -> "ng" || V ("~") ":" _  ∘
 
 define KClusterModification y -> s || _ k  ∘
                             k -> q || gh _ ;
+
+define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
+                                         h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
+                            ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
+                                                  
+
 define Rules [
 	Lexicon ∘
 	FinalConsonantDropAssimilation ∘
@@ -159,12 +164,12 @@ define Rules [
 	NasalInsertion ∘ 
 	InterConsonantalE ∘ 
 	UvularDropping ∘ 
-	IntrInd        ∘ 
+	Indicative        ∘ 
+        VelarUvularRounding ∘
 	FinalE      ∘ 
         KClusterModification ∘
 	VowelDominance ∘
 	BaseFinalEndings 
-        TrnsInd
 ];
 
 define Grammar [ Exceptions .P. Rules ] ;
