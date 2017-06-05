@@ -50,9 +50,9 @@
 #awk '{print $0 "[N][Abs][1DuPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
 #awk '{print $0 "[N][Abs][1DuPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
 #awk '{print $0 "[N][Abs][1DuPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
-#awk '{print $0 "[N][Abs][2DuPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
-#awk '{print $0 "[N][Abs][2DuPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
-#awk '{print $0 "[N][Abs][2DuPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
+awk '{print $0 "[N][Abs][2DuPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
+awk '{print $0 "[N][Abs][2DuPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
+awk '{print $0 "[N][Abs][2DuPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
 
 # Chapter 4 Postbases
 #awk '{print $0 "[N→N]"}' underlying.tsv &> underlying1.tsv
@@ -86,10 +86,21 @@
 #awk '{print $0 "[N][Abs][3DuPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
 #awk '{print $0 "[N][Abs][3DuPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
 
-awk '{print $0 "[N][Rel][Unpd][Sg]"}' underlying.tsv &> underlying1.tsv
-awk '{print $0 "[N][Rel][Unpd][Pl]"}' underlying.tsv &> underlying2.tsv
-awk '{print $0 "[N][Rel][Unpd][Du]"}' underlying.tsv &> underlying3.tsv
+#awk '{print $0 "[N][Rel][Unpd][Sg]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[N][Rel][Unpd][Pl]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[N][Rel][Unpd][Du]"}' underlying.tsv &> underlying3.tsv
 
+#######################
+#      CHAPTER 7      #
+#######################
+
+# Possessed Relative Case
+#awk '{print $0 "[N][Rel][Posd][1Sg]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[N][Rel][Posd][1Pl]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[N][Rel][Posd][2Sg]"}' underlying.tsv &> underlying3.tsv
+#awk '{print $0 "[N][Rel][Posd][2Pl]"}' underlying.tsv &> underlying4.tsv
+#awk '{print $0 "[N][Rel][Posd][3Sg]"}' underlying.tsv &> underlying5.tsv
+#awk '{print $0 "[N][Rel][Posd][3Pl]"}' underlying.tsv &> underlying6.tsv
 
 cat underlying[1-3].tsv | sort &> inputToSurface.tsv
 

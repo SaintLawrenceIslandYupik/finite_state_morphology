@@ -1,7 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
+		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
 		  [Abs1SgPoss] [SgPosd]
-                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z)
+                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g)
 
 LEXICON Root
 
@@ -176,6 +176,17 @@ ungipaghagh      Noun; ! traditional story; tale; legend
 uyaqugh          Noun; ! neck
 walguyaag        Noun; ! snowshoe
 
+! Jacobson (2001) Chater 7 Nouns
+!ighivgagh         ? ; ! yesterday (particle)
+
+amig             Noun; ! door
+aveg             Noun; ! half
+efluge           Noun; ! floor
+eflugagh         Noun; ! floor
+egllu            Noun; ! stove (dual, 'eglluk', generally used for one stove)
+kemekrag         Noun; ! meat
+qergese          Noun; ! window (dual, 'qergesek', generally used for one window)
+tipele           Noun; ! table (dual, 'tipelek', generally used for one table)
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -188,13 +199,28 @@ walguyaag        Noun; ! snowshoe
 
 LEXICON Noun
 
-! Noun → Noun postbases
+! Noun →  Noun postbases
 [N→N]:–ghllag     Noun; ! big N; lots of N (when used in the plural)
 [N→N]:–ghrugllag  Noun; ! big N; huge N
 [N→N]:–leg        Noun; ! one having N
+[N→N]:+mi         Noun; ! resident of N
+[N→N]:–squgh      Noun; ! little N, small N 
+[N→N]:–squghhagh* Noun; ! little N, small N 
 
-! Noun → Verb postbases
+
+! Noun →  Verb postbases
 [N→V]:~%:(ng)u    Verb; ! to be N
+[N→V]:–ngllagh    Verb; ! to make N 
+
+! Verb →  Verb postbases
+[V→V]:~(g)aqe     Verb; ! to be V-ing; to regularly or repeat V 
+[V→V]:@lleqe      Verb; ! to V in the future; will V 
+[V→V]:~fnaqe      Verb; ! to be going to V; to be about to V 
+[V→V]:~fyug       Verb; ! to want to V
+[V→V]:@–nghite    Verb; ! to not V
+
+!+e                 ?  ; to make English words in Yupik words
+!–ghhalek           ?  ; how V! (exclamation)
 
 0:0               NounInfl;
 
@@ -249,9 +275,17 @@ LEXICON NounInfl
 [N][Equ][Unpd][Sg]:~f-wtun          #;  ! EQUALIS CASE     like N
 [N][Equ][Unpd][Pl]:~sf-w%:(e)stun   #;
 
-[N][Rel][Unpd][Sg]:~sf-w%:(e)m      #;  ! RELATIVE CASE    indicates posssesor of noun with 3rd person possessed ending
-[N][Rel][Unpd][Pl]:~sf-w%:(e)t      #;
+[N][Rel][Unpd][Sg]:~sf-w%:(e)m      #;  ! (Unpossessed) RELATIVE CASE    
+[N][Rel][Unpd][Pl]:~sf-w%:(e)t      #;  ! indicates posssesor of noun with 3rd person possessed ending
 [N][Rel][Unpd][Du]:~sf-w%:(e)k      #;
+
+! (Possessed) RELATIVE CASE - work as possessors OR as subjects of transitive verbs
+[N][Rel][Posd][1Sg]:~f-wma          #;  ! my N or my N's 
+[N][Rel][Posd][1Pl]:–mta            #;  ! our N or our N's 
+[N][Rel][Posd][2Sg]:–gpek           #;  ! your(SG) N or your(SG) N's 
+[N][Rel][Posd][2Pl]:–gpesi          #;  ! your(PL) N or your(PL) N's 
+[N][Rel][Posd][3Sg]:~%:(ng)an       #;  ! his N or his N's 
+[N][Rel][Posd][3Pl]:~%:(ng)it       #;  ! their N or their N's 
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -264,43 +298,82 @@ LEXICON NounInfl
 
 LEXICON VerbBase
 
-aghula           Verb; ! to dance
-aghulaqe         Verb; ! to leave
-alinge           Verb; ! to be afraid
-aane             Verb; ! to go out
-aange            Verb; ! to be big
-aqii             Verb; ! to take a pleasure trip, to take a vacation
-esghaate         Verb; ! to see something
-esleqe           Verb; ! to be full
-gaagh            Verb; ! to cook
-ifla             Verb; ! to lose; to get lost
-ingaghte         Verb; ! to lie down
-inghu            Verb; ! to pick berries
-itegh            Verb; ! to go in, to enter
-kaate            Verb; ! to arrive
-kuuve            Verb; ! to spill
-megh             Verb; ! to drink
-nagate           Verb; ! to listen; to hear
-negh             Verb; ! to eat
-nenglagh         Verb; ! to laugh
-pinigh           Verb; ! to be good
-qavagh           Verb; ! to sleep
-qiighw           Verb; ! to cough
-qiya             Verb; ! to cry
-tagi             Verb; ! to come towards speaker
-taake            Verb; ! to be long
-tuqu             Verb; ! to die
+! Jacobson (2001) Chapter 3 Verb Vocabulary
+aghula           VerbIntr; ! to dance
+aghulaqe         VerbIntr; ! to leave
+alinge           VerbIntr; ! to be afraid
+aane             VerbIntr; ! to go out
+aange            VerbIntr; ! to be big
+aqii             VerbIntr; ! to take a pleasure trip, to take a vacation
+esleqe           VerbIntr; ! to be full
+gaagh            VerbIntr; ! to cook
+ifla             VerbIntr; ! to lose; to get lost
+ingaghte         VerbIntr; ! to lie down
+itegh            VerbIntr; ! to go in, to enter
+kaate            VerbIntr; ! to arrive
+megh             VerbIntr; ! to drink
+nagate           VerbIntr; ! to listen; to hear
+nenglagh         VerbIntr; ! to laugh
+pinigh           VerbIntr; ! to be good
+qavagh           VerbIntr; ! to sleep
+qiighw           VerbIntr; ! to cough
+qiya             VerbIntr; ! to cry
+tagi             VerbIntr; ! to come towards speaker
+taake            VerbIntr; ! to be long
+tuqu             VerbIntr; ! to die
 
-! Jacobson (2001) Chapter 4 Vocabulary
-agatagh         Verb; ! to be hungry
-ayatagh         Verb; ! to be hungry
+esghaate         VerbIntr; ! to see something
+esghaate         VerbTrns; ! to see something
+inghu            VerbIntr; ! to pick berries
+inghu            VerbTrns; ! to pick berries
+kuuve            VerbIntr; ! to spill
+kuuve            VerbTrns; ! to spill
+negh             VerbIntr; ! to eat
+negh             VerbTrns; ! to eat
 
-LEXICON Verb
+! Jacobson (2001) Chapter 4 Verb Vocabulary
+agatagh          VerbIntr; ! to be hungry
+ayatagh          VerbIntr; ! to be hungry
 
-[V][Intr_Ind]:~f(g/t)u   VerbInfl; 
+! Jacobson (2001) Chapter 7 Verb Vocabulary
+aveg             VerbIntr; ! to divide in two 
+aveg             VerbTrns; ! to divide in two 
+guute            VerbIntr; ! to shoot
+guute            VerbTrns; ! to shoot
+litte            VerbIntr; ! to learn; to become aware of one's surroundings
+litte            VerbTrns; ! to learn; to become aware of one's surroundings
+qelpeghte        VerbIntr; ! to open
+qelpeghte        VerbTrns; ! to open
+qilug            VerbIntr; ! to bark (at)
+qilug            VerbTrns; ! to bark (at)
+tuqute           VerbIntr; ! to kill
+tuqute           VerbTrns; ! to kill
+umeg             VerbIntr; ! to close
+umeg             VerbTrns; ! to close
+
+igamsiqanagh     VerbIntr; ! to make one thankful
+igamsiqayug      VerbIntr; ! to feel thanksful
+laalighte        VerbIntr; ! to visit
+
+tuqe             VerbTrns; ! to use; to wear
+esghagh          VerbTrns; ! to see
+igamsiqayugvike  VerbTrns; ! to feel thankful toward
+laalighfike      VerbTrns; ! to visit
+lli              VerbTrns; ! to put
+nalluke          VerbTrns; ! to not know
+piniqe           VerbTrns; ! to like
+tugu             VerbTrns; ! to take; to pick up
 
 
-LEXICON VerbInfl
+LEXICON VerbIntr
+[V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 
+
+
+LEXICON VerbTrns
+[V][Trns_Ind]:~(g)a  VerbTrnsInfl;
+
+
+LEXICON VerbIntrInfl
 
 [3Sg]:q    #;
 [3Pl]:t    #; 
@@ -311,3 +384,19 @@ LEXICON VerbInfl
 [2Sg]:ten  #;
 [2Pl]:si   #;
 [2Du]:tek  #;
+
+
+LEXICON VerbTrnsInfl
+
+[1Sg][2Sg]:mken     #; 
+[1Sg][3Sg]:ka       #;
+[1Sg][3Pl]:nka      #;
+[2Sg][1Sg]:ghpenga  #;
+[2Sg][3Sg]:an       #; 
+[2Sg][3Pl]:ten      #; 
+[3Sg][1Sg]:anga     #; 
+[3Sg][2Sg]:aten     #; 
+[3Sg][3Sg]:a        #; 
+[3Sg][3Pl]:i        #;
+[3Pl][3Sg]:at       #; 
+[3Pl][3Pl]:it       #; 
