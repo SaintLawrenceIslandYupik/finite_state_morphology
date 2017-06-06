@@ -260,20 +260,36 @@ LEXICON NounInfl
 ! -----------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------|
 
 
-[N][Abl_Mod][Unpd][Sg]:~f-wmeng #;
+[N][Abl_Mod][Unpd][Sg]:~f-wmeng        #;
+[N][Abl_Mod][1SgPoss][SgPosd]:–mneng   #;
+[N][Abl_Mod][2SgPoss][SgPosd]:–gpeneng  #;
+[N][Abl_Mod][3SgPoss][SgPosd]:~sf%:aneng #;
+
 
 ! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
 [N][Loc][Unpd][Sg]:~f-wmi           #;  ! LOCALIS CASE     at N
 [N][Loc][Unpd][Pl]:~f-wni           #;
+[N][Loc][1SgPoss][SgPosd]:–mni      #;
+[N][Loc][2SgPoss][SgPosd]:–gpeni    #;
+[N][Loc][3SgPoss][SgPosd]:~sf%:ani   #;
  
 [N][Ter][Unpd][Sg]:~f-wmun          #;  ! TERMINALIS CASE  to N
 [N][Ter][Unpd][Pl]:~f-wnun          #;
+[N][Ter][1SgPoss][SgPosd]:–mnun     #;
+[N][Ter][2SgPoss][SgPosd]:–gpenun   #;
+[N][Ter][3SgPoss][SgPosd]:~sf%:anun  #;
  
 [N][Via][Unpd][Sg]:~f-wkun          #;  ! VIALIS CASE      through N
 [N][Via][Unpd][Pl]:~sf-w%:(e)tgun   #;
+[N][Via][1SgPoss][SgPosd]:–mkun     #;
+[N][Via][2SgPoss][SgPosd]:–gpekun   #;
+[N][Via][3SgPoss][SgPosd]:~sf%:akun  #;
  
 [N][Equ][Unpd][Sg]:~f-wtun          #;  ! EQUALIS CASE     like N
 [N][Equ][Unpd][Pl]:~sf-w%:(e)stun   #;
+[N][Equ][1SgPoss][SgPosd]:–mtun     #;
+[N][Equ][2SgPoss][SgPosd]:–gpetun   #;
+[N][Equ][3SgPoss][SgPosd]:~sf%:atun  #;
 
 [N][Rel][Unpd][Sg]:~sf-w%:(e)m      #;  ! (Unpossessed) RELATIVE CASE    
 [N][Rel][Unpd][Pl]:~sf-w%:(e)t      #;  ! indicates posssesor of noun with 3rd person possessed ending
