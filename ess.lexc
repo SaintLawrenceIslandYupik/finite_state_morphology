@@ -1,7 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
+		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
 		  [Abs1SgPoss] [SgPosd]
-                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g)
+                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
 
 LEXICON Root
 
@@ -125,11 +125,11 @@ takestaaghhagh*  Noun; ! short thing
 ugi              Noun; ! husband
 
 ! Jacobson (2001) Chapter 5 Nouns 
-!quunpeng          ? ; ! always (particle) 
+elngaatall       Ptcl; ! very much
+quunpeng         Ptcl; ! always
 
 aakagh*          Noun; ! older sister of a female
 anengagh         Noun; ! older brother
-elngaatall       Noun; ! very much (particle)
 estugagh*        Noun; ! store
 igaghvig         Noun; ! school 
 iyaghvig         Noun; ! school
@@ -176,8 +176,8 @@ ungipaghagh      Noun; ! traditional story; tale; legend
 uyaqugh          Noun; ! neck
 walguyaag        Noun; ! snowshoe
 
-! Jacobson (2001) Chater 7 Nouns
-!ighivgagh         ? ; ! yesterday (particle)
+! Jacobson (2001) Chapter 7 Nouns
+ighivgagh        Ptcl; ! yesterday
 
 amig             Noun; ! door
 aveg             Noun; ! half
@@ -187,6 +187,57 @@ egllu            Noun; ! stove (dual, 'eglluk', generally used for one stove)
 kemekrag         Noun; ! meat
 qergese          Noun; ! window (dual, 'qergesek', generally used for one window)
 tipele           Noun; ! table (dual, 'tipelek', generally used for one table)
+
+! Jacobson (2001) Chapter 8 Nouns
+aa               Ptcl; ! yes
+nakaa            Ptcl; ! no
+nakaan           Ptcl; ! no
+qayughllak       Ptcl; ! because
+
+kina             Intrg; ! who? (relative case is 'kitum')
+kinkut           Intrg; ! who? (plural)
+naken            Intrg; ! from where?
+nani             Intrg; ! (at) where?
+naten            Intrg; ! how?
+navek            Intrg; ! to where?
+qafsina          Intrg; ! how many?
+qakun            Intrg; ! when? (future)
+qavngaq          Intrg; ! when? (past)
+sa               Intrg; ! what?
+sangan           Intrg; ! why? (in general)
+
+alquutagh        Noun; ! spoon
+anyena           Noun; ! onion
+avlawa           Noun; ! flour
+evlawa           Noun; ! flour
+Ayuqligh         Noun; ! mainland Alaskan Eskimo
+eskiiteg         Noun; ! skates
+estiima          Noun; ! steam(boat)
+estugagh         Noun; ! store
+kaawa            Noun; ! cow
+kaaw             Noun; ! cow
+kalanta          Noun; ! calendar
+kanti            Noun; ! candy
+kellaageg        Noun; ! clock
+kiti             Noun; ! kitty
+pusi             Noun; ! kitty
+Kuusma           Noun; ! Christmas
+laageg           Noun; ! lock
+lampa            Noun; ! lumber
+papa             Noun; ! pepper
+para             Noun; ! butter
+pi               Noun; ! thing
+piinsuuka        Noun; ! bean (soup)
+pipasaag         Noun; ! paper sack
+qawaag           Noun; ! bird
+Quyilleg         Noun; ! Chukchi
+Sapeni           Noun; ! Japanese
+suupa            Noun; ! soap
+telaaypa         Noun; ! trap
+tipeleg          Noun; ! table
+tuwaaya          Noun; ! twine
+waapa            Noun; ! rope
+waaseg           Noun; ! watch
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -211,6 +262,10 @@ LEXICON Noun
 ! Noun →  Verb postbases
 [N→V]:~%:(ng)u    Verb; ! to be N
 [N→V]:–ngllagh    Verb; ! to make N 
+[N→V]:liigh       VerbIntr; ! to cook; to prepare N
+[N→V]:+niigh      VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
+[N→V]:+te         VerbIntr; ! to catch N; to go to N to catch N; to go to N to catch N; to go to N to catch N; to go to N 
+[N→V]:+tugh       VerbIntr; ! to eat N; to use N 
 
 ! Verb →  Verb postbases
 [V→V]:~(g)aqe     Verb; ! to be V-ing; to regularly or repeat V 
@@ -218,6 +273,9 @@ LEXICON Noun
 [V→V]:~fnaqe      Verb; ! to be going to V; to be about to V 
 [V→V]:~fyug       Verb; ! to want to V
 [V→V]:@–nghite    Verb; ! to not V
+[V→V]:+(pete)fte  VerbIntr; ! to evidently V or have V-ed
+ 
+
 
 !+e                 ?  ; to make English words in Yupik words
 !–ghhalek           ?  ; how V! (exclamation)
@@ -260,9 +318,9 @@ LEXICON NounInfl
 ! -----------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------|
 
 
-[N][Abl_Mod][Unpd][Sg]:~f-wmeng        #;
-[N][Abl_Mod][1SgPoss][SgPosd]:–mneng   #;
-[N][Abl_Mod][2SgPoss][SgPosd]:–gpeneng  #;
+[N][Abl_Mod][Unpd][Sg]:~f-wmeng          #;
+[N][Abl_Mod][1SgPoss][SgPosd]:–mneng     #;
+[N][Abl_Mod][2SgPoss][SgPosd]:–gpeneng   #;
 [N][Abl_Mod][3SgPoss][SgPosd]:~sf%:aneng #;
 
 
@@ -271,25 +329,25 @@ LEXICON NounInfl
 [N][Loc][Unpd][Pl]:~f-wni           #;
 [N][Loc][1SgPoss][SgPosd]:–mni      #;
 [N][Loc][2SgPoss][SgPosd]:–gpeni    #;
-[N][Loc][3SgPoss][SgPosd]:~sf%:ani   #;
+[N][Loc][3SgPoss][SgPosd]:~sf%:ani  #;
  
 [N][Ter][Unpd][Sg]:~f-wmun          #;  ! TERMINALIS CASE  to N
 [N][Ter][Unpd][Pl]:~f-wnun          #;
 [N][Ter][1SgPoss][SgPosd]:–mnun     #;
 [N][Ter][2SgPoss][SgPosd]:–gpenun   #;
-[N][Ter][3SgPoss][SgPosd]:~sf%:anun  #;
+[N][Ter][3SgPoss][SgPosd]:~sf%:anun #;
  
 [N][Via][Unpd][Sg]:~f-wkun          #;  ! VIALIS CASE      through N
 [N][Via][Unpd][Pl]:~sf-w%:(e)tgun   #;
 [N][Via][1SgPoss][SgPosd]:–mkun     #;
 [N][Via][2SgPoss][SgPosd]:–gpekun   #;
-[N][Via][3SgPoss][SgPosd]:~sf%:akun  #;
+[N][Via][3SgPoss][SgPosd]:~sf%:akun #;
  
 [N][Equ][Unpd][Sg]:~f-wtun          #;  ! EQUALIS CASE     like N
 [N][Equ][Unpd][Pl]:~sf-w%:(e)stun   #;
 [N][Equ][1SgPoss][SgPosd]:–mtun     #;
 [N][Equ][2SgPoss][SgPosd]:–gpetun   #;
-[N][Equ][3SgPoss][SgPosd]:~sf%:atun  #;
+[N][Equ][3SgPoss][SgPosd]:~sf%:atun #;
 
 [N][Rel][Unpd][Sg]:~sf-w%:(e)m      #;  ! (Unpossessed) RELATIVE CASE    
 [N][Rel][Unpd][Pl]:~sf-w%:(e)t      #;  ! indicates posssesor of noun with 3rd person possessed ending
@@ -356,8 +414,8 @@ aveg             VerbIntr; ! to divide in two
 aveg             VerbTrns; ! to divide in two 
 guute            VerbIntr; ! to shoot
 guute            VerbTrns; ! to shoot
-litte            VerbIntr; ! to learn; to become aware of one's surroundings
-litte            VerbTrns; ! to learn; to become aware of one's surroundings
+liite            VerbIntr; ! to learn; to become aware of one's surroundings
+liite            VerbTrns; ! to learn; to become aware of one's surroundings
 qelpeghte        VerbIntr; ! to open
 qelpeghte        VerbTrns; ! to open
 qilug            VerbIntr; ! to bark (at)
@@ -380,13 +438,43 @@ nalluke          VerbTrns; ! to not know
 piniqe           VerbTrns; ! to like
 tugu             VerbTrns; ! to take; to pick up
 
+! Jacobson (2001) Chapter 8 Verb Vocabulary
+alleg            VerbIntr; ! to sweep
+alleg            VerbTrns; ! to sweep
+kayusiite        VerbIntr; ! to help out
+kayusiite        VerbTrns; ! to help out
+pi               VerbIntr; ! to do; to go; etc.
+pi               VerbTrns; ! to do; to go; etc.
+sa               VerbIntr; ! to do what?
+sa               VerbTrns; ! to do what?
+
+meghnugh         VerbIntr; ! to be tired
+meqsug           VerbIntr; ! to be thirsty
+qavaghni         VerbIntr; ! to be sleepy
+
+kayusigh         VerbTrns; ! to help
+liisimake        VerbTrns; ! to know
+tukfigh          VerbTrns; ! to buy
+
 
 LEXICON VerbIntr
 [V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 
 
+[V][Intrg][2Sg]:~f(t)zin    #;
+[V][Intrg][2Pl]:~sf(e)tsi   #;
+[V][Intrg][2Du]:~sf(e)stek  #;
+[V][Intrg][1Pl]:~sf(e)sta   #;
+[V][Intrg][1Du]:~sf(e)stung #;
+
 
 LEXICON VerbTrns
 [V][Trns_Ind]:~(g)a  VerbTrnsInfl;
+
+[V][Intrg][2Sg][3Sg]:~f(t)zigu  #;
+[V][Intrg][2Sg][3Pl]:~f(t)ziki  #;
+[V][Intrg][2Sg][3Du]:~f(t)zikek #;
+[V][Intrg][2Sg][1Sg]:~f(t)zinga #;
+[V][Intrg][2Sg][1Pl]:~f(t)zikut #;
 
 
 LEXICON VerbIntrInfl

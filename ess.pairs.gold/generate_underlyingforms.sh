@@ -129,11 +129,36 @@
 #awk '{print $0 "[N][Via][1SgPoss][SgPosd]"}' underlying.tsv &> underlying1.tsv
 #awk '{print $0 "[N][Via][2SgPoss][SgPosd]"}' underlying.tsv &> underlying2.tsv
 #awk '{print $0 "[N][Via][3SgPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
-awk '{print $0 "[N][Loc][1SgPoss][SgPosd]"}' underlying.tsv &> underlying1.tsv
-awk '{print $0 "[N][Loc][2SgPoss][SgPosd]"}' underlying.tsv &> underlying2.tsv
-awk '{print $0 "[N][Loc][3SgPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
+#awk '{print $0 "[N][Loc][1SgPoss][SgPosd]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[N][Loc][2SgPoss][SgPosd]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[N][Loc][3SgPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
 
+#######################
+#      CHAPTER 8      #
+#######################
 
+# 2nd Person Subject Interrogatives
+#awk '{print $0 "[V][Intrg][2Sg]"}' underlying.tsv &> underlying1.tsv 
+#awk '{print $0 "[V][Intrg][2Pl]"}' underlying.tsv &> underlying2.tsv 
+#awk '{print $0 "[V][Intrg][2Du]"}' underlying.tsv &> underlying3.tsv 
+#awk '{print $0 "[V][Intrg][1Pl]"}' underlying.tsv &> underlying4.tsv 
+#awk '{print $0 "[V][Intrg][1Du]"}' underlying.tsv &> underlying5.tsv 
+#awk '{print $0 "[V][Intrg][2Sg][3Sg]"}' underlying.tsv &> underlying1.tsv 
+#awk '{print $0 "[V][Intrg][2Sg][3Pl]"}' underlying.tsv &> underlying2.tsv 
+#awk '{print $0 "[V][Intrg][2Sg][3Du]"}' underlying.tsv &> underlying3.tsv 
+#awk '{print $0 "[V][Intrg][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv 
+#awk '{print $0 "[V][Intrg][2Sg][1Pl]"}' underlying.tsv &> underlying5.tsv 
+
+# 4th Person Possessor Possessed Absolutive
+#awk '{print $0 "[N][Abs][4SgPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[N][Abs][4SgPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[N][Abs][4SgPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
+#awk '{print $0 "[N][Abs][4PlPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[N][Abs][4PlPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[N][Abs][4PlPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
+awk '{print $0 "[N][Abs][4DuPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
+awk '{print $0 "[N][Abs][4DuPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
+awk '{print $0 "[N][Abs][4DuPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
 
 cat underlying[1-3].tsv | sort &> inputToSurface.tsv
 
