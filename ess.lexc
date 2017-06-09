@@ -239,6 +239,19 @@ tuwaaya          Noun; ! twine
 waapa            Noun; ! rope
 waaseg           Noun; ! watch
 
+! Jacobson (2001) Chapter 9 Noun Vocabulary
+wanlegi          Ptcl; ! more than ever (particle)
+naligh*          Intrg; ! which one(s)?
+sangameng        Intrg; ! why? (focused on 3rd person plural subject of verb)
+sangami          Intrg; ! why? (focused on 3rd person singular subject of verb)
+
+apayepayiigh     Noun; ! spider
+ayngananga       Noun; ! musical instrument; phonograph (often dual for one)
+kenegh           Noun; ! light, lamp
+nasaperagh       Noun; ! hat
+neqekrag         Noun; ! bread (especially, pilot bread)
+nuzigh           Noun; ! one's child's spouse's parent
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -267,6 +280,9 @@ LEXICON Noun
 [N→V]:+te         VerbIntr; ! to catch N; to go to N to catch N; to go to N to catch N; to go to N to catch N; to go to N 
 [N→V]:+tugh       VerbIntr; ! to eat N; to use N 
 
+! Verb →  Noun postbases
+[V→N]:@~sf–(g)kaq Noun; ! one that has V-ed or been V-ed
+
 ! Verb →  Verb postbases
 [V→V]:~(g)aqe     Verb; ! to be V-ing; to regularly or repeat V 
 [V→V]:@lleqe      Verb; ! to V in the future; will V 
@@ -274,6 +290,10 @@ LEXICON Noun
 [V→V]:~fyug       Verb; ! to want to V
 [V→V]:@–nghite    Verb; ! to not V
 [V→V]:+(pete)fte  VerbIntr; ! to evidently V or have V-ed
+[V→V]:@~sf–(g)kau VerbIntr; ! to have V-ed or been V-ed 
+[V→V]:@~sf–(g)kau VerbIntr; ! to have V-ed or been V-ed 
+[V→V]:@~fni       VerbIntr; ! to say that one is V-ing 
+[V→V]:+(te)ste    VerbTrns; ! to make, have, or let one V
  
 
 
@@ -456,26 +476,71 @@ kayusigh         VerbTrns; ! to help
 liisimake        VerbTrns; ! to know
 tukfigh          VerbTrns; ! to buy
 
+! Jacobson (2001) Chapter 9 Verb Vocabulary
+aghvigh          VerbIntr; ! to cross over; to go to the mainland
+aghvigh          VerbTrns; ! to cross over; to go to the mainland
+atightugh        VerbIntr; ! to read
+atightugh        VerbTrns; ! to read
+igagh            VerbIntr; ! to write (on)
+igagh            VerbTrns; ! to write (on)
+pinighsagh       VerbIntr; ! to fix, to repair; to fix up oneself
+pinighsagh       VerbTrns; ! to fix, to repair; to fix up oneself
+ulima            VerbIntr; ! to make (something)
+ulima            VerbTrns; ! to make (something)
+
+aleghquute       VerbIntr; ! to talk together; to converse (non-singular)
+aqlaghate        VerbIntr; ! for it to be cold (weather)
+iknaqe           VerbIntr; ! to be strong
+isekinagh        VerbIntr; ! to be cold (solid, liquid)
+uglagh           VerbIntr; ! to be many, to be numerous
+
+aleghqugh        VerbTrns; ! to talk to; to tell
+amqeghte         VerbTrns; ! to bite
+ivagh            VerbTrns; ! to look for
+naallghute       VerbTrns; ! to adjust
+naalke           VerbTrns; ! to find
+payegh           VerbTrns; ! to meet, to encounter; to go over to help
+qaamte           VerbTrns; ! to extinguish; to turn off
+ugpeqe           VerbTrns; ! to believe
+ungipaghaate     VerbTrns; ! to tell a story to
+!Optional impersonal agent verbs
+aqlaghaghte      VerbTrns; ! for it to get cold
+eslallugughte    VerbTrns; ! for it to rain
+ghhuute          VerbTrns; ! to be cold (person)
+piniighte        VerbTrns; ! to improve, to become better
+qanigughte       VerbTrns; ! for snow to fall
+siku             VerbTrns; ! to freeze
+ughug            VerbTrns; ! to melt
+
+
 
 LEXICON VerbIntr
 [V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 
 
+[V][Intrg][1Pl]:~sf(e)sta   #;
+[V][Intrg][1Du]:~sf(e)stung #;
 [V][Intrg][2Sg]:~f(t)zin    #;
 [V][Intrg][2Pl]:~sf(e)tsi   #;
 [V][Intrg][2Du]:~sf(e)stek  #;
-[V][Intrg][1Pl]:~sf(e)sta   #;
-[V][Intrg][1Du]:~sf(e)stung #;
+[V][Intrg][3Sg]:~f(g/t)a    #;
+[V][Intrg][3Pl]:~f(g/t)at   #;
+[V][Intrg][3Du]:~f(g/t)ak   #;
 
 
 LEXICON VerbTrns
-[V][Trns_Ind]:~(g)a  VerbTrnsInfl;
+[V][Trns_Ind]:~(g)a    VerbTrnsInfl;
+[V][Imprs_Agnt]:~(g)a  VerbTrnsInfl;
 
 [V][Intrg][2Sg][3Sg]:~f(t)zigu  #;
 [V][Intrg][2Sg][3Pl]:~f(t)ziki  #;
 [V][Intrg][2Sg][3Du]:~f(t)zikek #;
 [V][Intrg][2Sg][1Sg]:~f(t)zinga #;
 [V][Intrg][2Sg][1Pl]:~f(t)zikut #;
-
+[V][Intrg][3Sg][3Sg]:~f(g/t)agu #;
+[V][Intrg][3Sg][3Pl]:~f(g/t)aki #;
+[V][Intrg][3Sg][3Du]:~f(g/t)akek #;
+[V][Intrg][3Sg][1Sg]:~f(g/t)anga #;
+[V][Intrg][3Sg][1Pl]:~f(g/t)aten #;
 
 LEXICON VerbIntrInfl
 
