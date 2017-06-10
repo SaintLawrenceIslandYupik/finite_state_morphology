@@ -1,59 +1,32 @@
-Multichar_Symbols ngngw ngng ghhw ghw ngw gg gh kw ll mm ng nn qw
-                 [N] [Sg] [Pl] [Dl]
+Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
+		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
+		  [Abs1SgPoss] [SgPosd]
+                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z)
+
 LEXICON Root
 
-Noun;
-
-LEXICON Noun
-
-afsengagh*       Ninfl; ! vole, locally mouse
-aghnagh          Ninfl; ! woman
-aghnegh          Ninfl; ! day
-amaa             Ninfl; ! wolf
-angyagh          Ninfl; ! boat
-anipa            Ninfl; ! owl
-ategh            Ninfl; ! name
-atkug            Ninfl; ! parka
-ayvegh           Ninfl; ! walrus
-ggute            Ninfl; ! tooth
-iye              Ninfl; ! eye
-kameg            Ninfl; ! skin boot, mukluk
-kaviigh          Ninfl; ! fox
-kemeq            Ninfl; ! flesh, skin
-kii              Ninfl; ! wound
-kiigh            Ninfl; ! summer
-kiighw           Ninfl; ! river
-mangteghagh      Ninfl; ! house
-ne               Ninfl; ! home
-nanugh           Ninfl; ! polar bear
-naayghagh        Ninfl; ! mountain
-neghqwaagh       Ninfl; ! bone
-qikmigh          Ninfl; ! dog
-qiighw           Ninfl; ! grey hair , cough
-qulmesiite       Ninfl; ! cooking pot
-repa             Ninfl; ! hammer
-riigta           Ninfl; ! animal's den
-savik            Ninfl; ! knife
-sigute           Ninfl; ! ear
-siku             Ninfl; ! ice
-siqugh*          Ninfl; ! needle
-tafsi            Ninfl; ! belt
-taghnughhagh*    Ninfl; ! child
-ulaagh           Ninfl; ! semi-lunar knife, woman's knife, ulu
-uupa             Ninfl; ! sea peach
-uyghag           Ninfl; ! stone, rock
-yaquleg          Ninfl; ! angel
-yughaghte        Ninfl; ! minister, clergyman
-yug              Ninfl; ! person, man (male human)
-Yupik            Ninfl; ! Siberian / St. Lawrence Island Eskimo person
-tume             Ninfl; ! footprint
+        VerbBase ;
 
 
-LEXICON Ninfl
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!                Verb bases                  !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-[N][Sg]:0   #;
-[N][Pl]:+et #;
-[N][Dl]:+ek #;
+LEXICON VerbBase
 
+megh             Verb; ! to drink
+
+LEXICON Verb
+
+[V][Intr_Ind]:~f(g/t)u   VerbInfl; 
+
+
+LEXICON VerbInfl
+
+[3Sg]:q    #;
 
 

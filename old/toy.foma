@@ -1,16 +1,13 @@
 #!/usr/bin/env foma -f
 
-read lexc exceptions.lexc
-def Exceptions
-
-read lexc ess.lexc
+read lexc toy.lexc
 def Lexicon
 
 
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
 define VoicelessFricative  [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ] ;
-define VoicedNasal         [  m   |   n                 | "ng"   | "ngw"                       ] ;
+define VoicedNasal         [  m   |   n                 |        | "ngw"                       ] ;
 define VoicelessNasal      [ "mm" | "nn"                | "ngng" | "ngngw"                     ] ;
 
 define Fricative [ VoicelessFricative | VoicedFricative ] ;
@@ -70,36 +67,6 @@ define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
 define InterConsonantalE "(e)" -> e || C (":") _ ∘                  ! convert (e) to e when following a consonant
                          "(e)" -> 0 || V (":") _ ;                  ! otherwise delete it
 
-! Jacobson (2001, p.12) states: "(Noun) Bases  can end only in a vowel ... or in one of the consonants gh, g, ghw, or w."
-! Jacobson (2001, p.18) states: "Verb bases end in precisely the same ways that noun bases do, that is,
-!                                in a full vowel, in e, in te, or in one of the fricatives, gh, g, ghw, or w."
-! 
-! For the purposes of this rule, an interesting research question might be to elicit data
-!     where a made-up base ending in something else (for example ngw),
-!     to see how this affects this rule.
-! 
-! Jacobson (2001, p.24) states: "Likewise, it will substitute a rounded fricative, wh or (voiceless) ghw, 
-!                                if the base ends in a rounded velar or uvular fricative."
-! 
-! However, in the succeeding example on the same page, the base kiiw- goes to kiiwrugllagek.
-! That would seem to indicate that the voiced consonants w is to be substituted, and not wh.
-! Additionally, ghw is voiced, not voiceless.
-! Overall it seems that the above quotation contains mistakes.
-! 
-! Additionally, Jacobson (2001, p.24) is unclear regard how assimilation affects postbases ending in q and k.
-! Does assimilation occur only in place?   (k -> q  || Uvular  _       and q -> k  || Velar   _ )
-! Or does assimilation occur in rounding?  (k -> kw || Rounded _       and q -> qw || Rounded _ )
-! Or both?                                 (k -> qw || RoundedUvular _ and q -> kw || RoundedVelar _ )
-! 
-! This probably requires elicitation to determine.
-! 
-! Oh, my. Looks like this is partially a problem with the orthography.
-! In the example on p.24 the postbase is –ghllak. This means that the gh in the postbase is actually voiceless ghh.
-! That explains the (voiceless) bit in the quotation up above.
-! 
-! Also, there is a postbase ~sf–gga that begins with –gg. What happens to it? 
-! Does it become ghhw or ghh in the presence of a (rounded) uvular?
-! 
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh  ("~") "–" _  ∘
                                       [ gh | g ] -> g   || g   ("~") "–" _  ∘
                                       [ gh | g ] -> wh  || w   ("~") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘ ! This line is unfortunately required because of orthographic undoubling conventions
@@ -125,7 +92,7 @@ define AbsolutiveConsonantChange "(s/z)" -> s || C _   ∘
                                  "(s/z)" -> z || V _   ∘                                 
                                  "(p/v)" -> p || C _   ∘
                                  "(p/v)" -> v || V _   ∘
-                                 "(t/y)" -> t || C ("*") _   ∘
+                                 "(t/y)" -> t || C _   ∘
                                  "(t/y)" -> y || V _   ;
                                  
 
@@ -143,22 +110,20 @@ define VowelDominance a i -> i i  ∘
                       u a -> a a  ;
 
 define NasalInsertion "(ng)" -> "ng" || V ("~") ":" _  ∘
-                      "(ng)" -> 0                      ;
+                      "(ng)" -> 0 ;
 
-define ClusterModification  y -> s || _ [p|t|k|kw|q|qw]  ∘    ! y becomes voiceless s before a stop
-                            k -> q || gh _               ∘    ! k becomes q in the cluster ghk
-                            t z -> s                     ;    ! tz cluster becomes s
+define KClusterModification y -> s || _ k  ∘
+                            k -> q || gh _ ;
 
-define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
-                                         h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
-                            ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
+define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ngng -> ngngw || _ u i , _ u a  ∘
+                                                  q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
 
 define Optative "+gi" -> g i || V V _ ∘
                 "+gi" -> 0            ∘
                 "+n"  -> n   || t e _ ∘
                 "+n"  -> 0            ;
 ! ADD TO MULTICHAR
-                 
+
                                                   
 
 define Rules [
@@ -175,10 +140,10 @@ define Rules [
 	Indicative        ∘ 
         VelarUvularRounding ∘
 	FinalE      ∘ 
-        ClusterModification ∘
+        KClusterModification ∘
 	VowelDominance ∘
 	BaseFinalEndings 
 ];
 
-define Grammar [ Exceptions .P. Rules ] ;
+define Grammar [ Rules ] ;
 push Grammar

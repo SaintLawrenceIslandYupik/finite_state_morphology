@@ -252,6 +252,24 @@ nasaperagh       Noun; ! hat
 neqekrag         Noun; ! bread (especially, pilot bread)
 nuzigh           Noun; ! one's child's spouse's parent
 
+! Jacobson (2001) Chapter 10 Noun Vocabulary
+!legan           Ptcl; ! go ahead; and then
+!nalighmeng      Ptcl; ! or
+
+esne             Noun; ! shore; rim
+esnagh           Noun; ! beach
+igaghyaghqagh    Noun; ! paper to be written on
+igagh            Noun; ! paper with writing (means 'book' if pluralized)
+kaamwaagh        Noun; ! coltsfoot plant (Petasites frigidus)
+nekreg           Noun; ! hook
+puugzagh         Noun; ! beluga
+qayuusigh        Noun; ! cup
+quug             Noun; ! swan
+quug             Noun; ! firewood
+ququngagh        Noun; ! leaf; edible willow leaf
+unkuse           Noun; ! animal trap (usually dual for one trap)
+taaghta          Noun; ! doctor
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -294,11 +312,13 @@ LEXICON Noun
 [V→V]:@~sf–(g)kau VerbIntr; ! to have V-ed or been V-ed 
 [V→V]:@~fni       VerbIntr; ! to say that one is V-ing 
 [V→V]:+(te)ste    VerbTrns; ! to make, have, or let one V
- 
-
+! Compound-verbal postbases
+[V→V]:~sf:(e)sqe  VerbTrns; ! to ask or tell one to V 
+[V→V]:+(te)sug    VerbTrns; ! to want one to V 
 
 !+e                 ?  ; to make English words in Yupik words
 !–ghhalek           ?  ; how V! (exclamation)
+
 
 0:0               NounInfl;
 
@@ -393,6 +413,15 @@ LEXICON NounInfl
 LEXICON VerbBase
 
 ! Jacobson (2001) Chapter 3 Verb Vocabulary
+esghaate         VerbIntr; ! to see something
+esghaate         VerbTrns; ! to see something
+inghu            VerbIntr; ! to pick berries
+inghu            VerbTrns; ! to pick berries
+kuuve            VerbIntr; ! to spill
+kuuve            VerbTrns; ! to spill
+negh             VerbIntr; ! to eat
+negh             VerbTrns; ! to eat
+
 aghula           VerbIntr; ! to dance
 aghulaqe         VerbIntr; ! to leave
 alinge           VerbIntr; ! to be afraid
@@ -415,15 +444,6 @@ qiya             VerbIntr; ! to cry
 tagi             VerbIntr; ! to come towards speaker
 taake            VerbIntr; ! to be long
 tuqu             VerbIntr; ! to die
-
-esghaate         VerbIntr; ! to see something
-esghaate         VerbTrns; ! to see something
-inghu            VerbIntr; ! to pick berries
-inghu            VerbTrns; ! to pick berries
-kuuve            VerbIntr; ! to spill
-kuuve            VerbTrns; ! to spill
-negh             VerbIntr; ! to eat
-negh             VerbTrns; ! to eat
 
 ! Jacobson (2001) Chapter 4 Verb Vocabulary
 agatagh          VerbIntr; ! to be hungry
@@ -512,7 +532,37 @@ qanigughte       VerbTrns; ! for snow to fall
 siku             VerbTrns; ! to freeze
 ughug            VerbTrns; ! to melt
 
+! Jacobson (2001) Chapter 10 Verb Vocabulary
+kaaw             VerbIntr; ! to hit, to strike with an object
+kaaw             VerbTrns; ! to hit, to strike with an object
+lata             VerbIntr; ! to write a letter (to)
+lata             VerbTrns; ! to write a letter (to)
+pugimagh         VerbIntr; ! to swim
+pugimagh         VerbTrns; ! to swim
 
+aqume            VerbIntr; ! to sit
+nanglii          VerbIntr; ! to stare into space
+nekeve           VerbIntr; ! to stand up
+qayugh           VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
+
+egte             VerbTrans; ! to throw away
+kenigh           VerbTrans; ! to point (at)
+pumsug           VerbTrans; ! to pinch
+tagite           VerbTrans; ! to bring here
+tuqute           VerbTrans; ! to kill
+
+aqume            VerbOpt; ! to sit
+egte             VerbOpt; ! to throw away
+kaaw             VerbOpt; ! to hit, to strike with an object
+kenigh           VerbOpt; ! to point (at)
+lata             VerbOpt; ! to write a letter (to)
+nanglii          VerbOpt; ! to stare into space
+nekeve           VerbOpt; ! to stand up
+pugimagh         VerbOpt; ! to swim
+pumsug           VerbOpt; ! to pinch
+qayugh           VerbOpt; ! to drink hot liquid (coffee, tea, etc.)
+tagite           VerbOpt; ! to bring here
+tuqute           VerbOpt; ! to kill
 
 LEXICON VerbIntr
 [V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 
@@ -526,24 +576,7 @@ LEXICON VerbIntr
 [V][Intrg][3Pl]:~f(g/t)at   #;
 [V][Intrg][3Du]:~f(g/t)ak   #;
 
-
-LEXICON VerbTrns
-[V][Trns_Ind]:~(g)a    VerbTrnsInfl;
-[V][Imprs_Agnt]:~(g)a  VerbTrnsInfl;
-
-[V][Intrg][2Sg][3Sg]:~f(t)zigu  #;
-[V][Intrg][2Sg][3Pl]:~f(t)ziki  #;
-[V][Intrg][2Sg][3Du]:~f(t)zikek #;
-[V][Intrg][2Sg][1Sg]:~f(t)zinga #;
-[V][Intrg][2Sg][1Pl]:~f(t)zikut #;
-[V][Intrg][3Sg][3Sg]:~f(g/t)agu #;
-[V][Intrg][3Sg][3Pl]:~f(g/t)aki #;
-[V][Intrg][3Sg][3Du]:~f(g/t)akek #;
-[V][Intrg][3Sg][1Sg]:~f(g/t)anga #;
-[V][Intrg][3Sg][1Pl]:~f(g/t)aten #;
-
 LEXICON VerbIntrInfl
-
 [3Sg]:q    #;
 [3Pl]:t    #; 
 [3Du]:k    #;
@@ -555,8 +588,21 @@ LEXICON VerbIntrInfl
 [2Du]:tek  #;
 
 
-LEXICON VerbTrnsInfl
+LEXICON VerbTrns [V][Trns_Ind]:~(g)a    VerbTrnsInfl;
+[V][Imprs_Agnt]:~(g)a  VerbTrnsInfl;
 
+[V][Intrg][2Sg][3Sg]:~f(t)zigu   #;
+[V][Intrg][2Sg][3Pl]:~f(t)ziki   #;
+[V][Intrg][2Sg][3Du]:~f(t)zikek  #;
+[V][Intrg][2Sg][1Sg]:~f(t)zinga  #;
+[V][Intrg][2Sg][1Pl]:~f(t)zikut  #;
+[V][Intrg][3Sg][3Sg]:~f(g/t)agu  #;
+[V][Intrg][3Sg][3Pl]:~f(g/t)aki  #;
+[V][Intrg][3Sg][3Du]:~f(g/t)akek #;
+[V][Intrg][3Sg][1Sg]:~f(g/t)anga #;
+[V][Intrg][3Sg][1Pl]:~f(g/t)aten #;
+
+LEXICON VerbTrnsInfl
 [1Sg][2Sg]:mken     #; 
 [1Sg][3Sg]:qa       #;
 [1Sg][3Pl]:nka      #;
@@ -569,3 +615,28 @@ LEXICON VerbTrnsInfl
 [3Sg][3Pl]:i        #;
 [3Pl][3Sg]:at       #; 
 [3Pl][3Pl]:it       #; 
+
+
+LEXICON VerbOpt
+[V][Opt][PRES][2Sg]:+gi+n~fi~sfi%:a      #;
+[V][Opt][PRES][2Pl]:+gi+n~fi~sfi%:a      #;
+[V][Opt][PRES][2Du]:@(i)tek              #;
+[V][Opt][PRES][2Sg][3Sg]:~f(i)gu~sf–ggu  #;
+[V][Opt][PRES][2Sg][3Pl]:~f(i)ki         #;
+[V][Opt][PRES][2Sg][3Du]:~f(i)kek        #;
+[V][Opt][PRES][2Sg][1Sg]:~f(i)nga        #;
+[V][Opt][PRES][2Sg][1Pl]:~f(i)kut        #;
+[V][Opt][PRES][1Pl]:~sf%:(e)lta          #;
+[V][Opt][PRES][1Du]:~sf%:(e)ltung        #;
+
+[V][Opt][NEG][2Sg]:–fqaavek      #;
+[V][Opt][NEG][2Pl]:–fqaafsi      #;
+[V][Opt][NEG][2Sg][3Sg]:–fqaan   #;
+[V][Opt][NEG][2Pl][3Sg]:–fqaan   #;
+[V][Opt][NEG][2Du][3Sg]:–fqaan   #;
+[V][Opt][NEG][2Sg][3Pl]:–fqiita  #;
+[V][Opt][NEG][2Pl][3Pl]:–fqiita  #;
+[V][Opt][NEG][2Du][3Pl]:–fqiita  #;
+[V][Opt][NEG][2Sg][1Sg]:–fqaama  #;
+[V][Opt][NEG][2Pl][1Sg]:–fqaama  #;
+[V][Opt][NEG][2Du][1Sg]:–fqaama  #;
