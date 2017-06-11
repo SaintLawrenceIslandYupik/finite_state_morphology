@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10
 
 
 test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.fomabin
@@ -64,6 +64,9 @@ test-ch9: ess.pairs.gold/Ch9.V_ImprsAgnt.tsv ess.pairs.gold/Ch9.V_Intrg.3Intr.ts
 	@cut -f 1 ess.pairs.gold/Ch9.V_ImprsAgnt.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch9.V_ImprsAgnt.tsv     && echo "Jacobson (2001) Chapter 9 Verb Vocabulary - Optional Impersonal Agent Verbs                          - PASS" || echo "Jacobson (2001) Chapter 9 Verb Vocabulary - Optional Impersonal Agent Verbs                          - FAIL"
 	@cut -f 1 ess.pairs.gold/Ch9.V_Intrg.3Intr.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch9.V_Intrg.3Intr.tsv     && echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - PASS" || echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - FAIL"
 	@cut -f 1 ess.pairs.gold/Ch9.V_Intrg.3Trns.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch9.V_Intrg.3Trns.tsv     && echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - PASS" || echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - FAIL"
+
+test-ch10: ess.pairs.gold/Ch10.V_Opt.2Intr.tsv ess.fomabin
+	@cut -f 1 ess.pairs.gold/Ch10.V_Opt.2Intr.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch10.V_Opt.2Intr.tsv     && echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Intransitive Optative - PASS" || echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Intransitive Optative - FAIL"
 
 
 clean:

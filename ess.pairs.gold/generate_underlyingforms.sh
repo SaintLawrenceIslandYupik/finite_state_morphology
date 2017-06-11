@@ -185,11 +185,18 @@
 #######################
 
 # 2nd Person Subject / 1st Person Non-Singular Subject Optatives 
-awk '{print $0 "[V][Opt][PRES][2Sg]"}' underlying.tsv &> underlying1.tsv 
-awk '{print $0 "[V][Opt][PRES][2Pl]"}' underlying.tsv &> underlying2.tsv 
-awk '{print $0 "[V][Opt][PRES][2Du]"}' underlying.tsv &> underlying3.tsv 
-awk '{print $0 "[V][Opt][PRES][1Pl]"}' underlying.tsv &> underlying4.tsv 
-awk '{print $0 "[V][Opt][PRES][1Du]"}' underlying.tsv &> underlying5.tsv 
+#awk '{print $0 "[V][Opt][PRES][2Sg]"}' underlying.tsv &> underlying1.tsv 
+#awk '{print $0 "[V][Opt][PRES][2Pl]"}' underlying.tsv &> underlying2.tsv 
+#awk '{print $0 "[V][Opt][PRES][2Du]"}' underlying.tsv &> underlying3.tsv 
+#awk '{print $0 "[V][Opt][PRES][1Pl]"}' underlying.tsv &> underlying4.tsv 
+#awk '{print $0 "[V][Opt][PRES][1Du]"}' underlying.tsv &> underlying5.tsv 
+
+# 2nd Person Subject / 1st Person Non-Singular Subject Optatives 
+awk '{print $0 "[V][Opt][PRES][2Sg][3Sg]"}' underlying.tsv &> underlying1.tsv 
+awk '{print $0 "[V][Opt][PRES][2Sg][3Pl]"}' underlying.tsv &> underlying2.tsv 
+awk '{print $0 "[V][Opt][PRES][2Sg][3Du]"}' underlying.tsv &> underlying3.tsv 
+awk '{print $0 "[V][Opt][PRES][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv 
+awk '{print $0 "[V][Opt][PRES][2Sg][1Pl]"}' underlying.tsv &> underlying5.tsv 
 
 cat underlying[1-5].tsv | sort &> inputToSurface.tsv
 

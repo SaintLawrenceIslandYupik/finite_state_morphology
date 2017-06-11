@@ -153,6 +153,9 @@ define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ng
                                          h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
                             ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
 
+define teDropping t e ->  0 || _ "@"  ∘
+                  "@" ->  0           ;
+
 define Optative "+gi"  -> g i     || V V _                  ∘
                 "+gi"  -> 0                                 ∘
                 "~sfi" -> "~sf" i || [C - gh] _             ∘
@@ -162,15 +165,24 @@ define Optative "+gi"  -> g i     || V V _                  ∘
                 "+n"   -> 0                                 ∘
                 "~fi"  -> "~f" i  || [C - t] e _            ∘
                 "~fi"  -> 0                                 ∘
-                "x"   -> ":" a   || FullVowel gh _          ∘    ! Substituted 'x' to represent the sixth form of the 2nd person intransitive
-                "x"   -> 0                                  ;    ! optative ending, since ':a' conflicted with other tense formations where
-                                                                 ! there was uvular dropping followed by an 'a' - FIND BETTER NOTATION
+                "x"   -> ":" a   || FullVowel gh _          ∘
+                "x"   -> 0                                  ∘
+                ! Substituted 'x' to represent the sixth form of the 2nd person intransitive optative ending, since ':a' conflicted with
+                ! other tense formations where there was uvular dropping followed by an 'a' - FIND BETTER NOTATION
+                "~f(i)gu" -> "~f" "(i)" g u  || V _         ∘
+                "~f(i)gu" -> 0                              ∘
+                "~sf–ggu" -> "~sf" "–" ghh u || [q|gh|ghh|qw|ghw|ghhw] _  ∘
+                "~sf–ggu" -> "~sf" "–" gg u  || C _         ∘
+                "~sf–ggu" -> 0                              ∘
+                "(i)" -> i       || e _                     ∘
+                "(i)" -> 0                                  ;
                                                   
 
 define Rules [
 	Lexicon ∘
 	FinalConsonantDropAssimilation ∘
 	AbsolutiveConsonantChange ∘
+        teDropping ∘ 
         Optative ∘
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 
