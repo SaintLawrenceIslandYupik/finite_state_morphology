@@ -168,17 +168,28 @@
 #awk '{print $0 "[V][Intrg][3Sg]"}' underlying.tsv &> underlying1.tsv 
 #awk '{print $0 "[V][Intrg][3Pl]"}' underlying.tsv &> underlying2.tsv 
 #awk '{print $0 "[V][Intrg][3Du]"}' underlying.tsv &> underlying3.tsv 
-awk '{print $0 "[V][Intrg][3Sg][1Sg]"}' underlying.tsv &> underlying1.tsv 
-awk '{print $0 "[V][Intrg][3Sg][1Pl]"}' underlying.tsv &> underlying2.tsv 
-awk '{print $0 "[V][Intrg][3Sg][3Sg]"}' underlying.tsv &> underlying3.tsv 
-awk '{print $0 "[V][Intrg][3Sg][3Pl]"}' underlying.tsv &> underlying4.tsv 
-awk '{print $0 "[V][Intrg][3Sg][3Du]"}' underlying.tsv &> underlying5.tsv 
+#awk '{print $0 "[V][Intrg][3Sg][1Sg]"}' underlying.tsv &> underlying1.tsv 
+#awk '{print $0 "[V][Intrg][3Sg][1Pl]"}' underlying.tsv &> underlying2.tsv 
+#awk '{print $0 "[V][Intrg][3Sg][3Sg]"}' underlying.tsv &> underlying3.tsv 
+#awk '{print $0 "[V][Intrg][3Sg][3Pl]"}' underlying.tsv &> underlying4.tsv 
+#awk '{print $0 "[V][Intrg][3Sg][3Du]"}' underlying.tsv &> underlying5.tsv 
 
 # Optional Impersonal Agent Verb 
 #awk '{print $0 "[V][Imprs_Agnt][3Sg][1Sg]"}' underlying.tsv &> underlying1.tsv 
 #awk '{print $0 "[V][Imprs_Agnt][3Sg][2Sg]"}' underlying.tsv &> underlying2.tsv 
 #awk '{print $0 "[V][Imprs_Agnt][3Sg][3Sg]"}' underlying.tsv &> underlying3.tsv 
 #awk '{print $0 "[V][Imprs_Agnt][3Sg][3Pl]"}' underlying.tsv &> underlying4.tsv 
+
+#######################
+#      CHAPTER 10      #
+#######################
+
+# 2nd Person Subject / 1st Person Non-Singular Subject Optatives 
+awk '{print $0 "[V][Opt][PRES][2Sg]"}' underlying.tsv &> underlying1.tsv 
+awk '{print $0 "[V][Opt][PRES][2Pl]"}' underlying.tsv &> underlying2.tsv 
+awk '{print $0 "[V][Opt][PRES][2Du]"}' underlying.tsv &> underlying3.tsv 
+awk '{print $0 "[V][Opt][PRES][1Pl]"}' underlying.tsv &> underlying4.tsv 
+awk '{print $0 "[V][Opt][PRES][1Du]"}' underlying.tsv &> underlying5.tsv 
 
 cat underlying[1-5].tsv | sort &> inputToSurface.tsv
 

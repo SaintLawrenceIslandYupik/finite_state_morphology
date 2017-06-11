@@ -2,26 +2,27 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm nn rr qw wh
 		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
 		  [Abs1SgPoss] [SgPosd]
                   ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
+                  +gi +n ~fi ~sfi %:a
 
 LEXICON Root
         NounBase ;
         VerbBase ;
 
 
-aghula   VerbOpt;
-tagi     VerbOpt;
-inghu    VerbOpt;
-aqii     VerbOpt;
-nekeve   VerbOpt;
-neghe    VerbOpt;
-ingaghte VerbOpt;
-guute    VerbOpt;
-ukig     VerbOpt;
-gaagh    VerbOpt;
-itegh    VerbOpt;
-qavagh   VerbOpt;
-mayugh   VerbOpt;
-kenigh   VerbOpt;
+! aghula   VerbOpt;
+! tagi     VerbOpt;
+ inghu    VerbOpt;
+! aqii     VerbOpt;
+! anekeve   VerbOpt;
+! neghe    VerbOpt;
+ ingaghte VerbOpt;
+! guute    VerbOpt;
+! ukig     VerbOpt;
+! gaagh    VerbOpt;
+! itegh    VerbOpt;
+! qavagh   VerbOpt;
+! mayugh   VerbOpt;
+! kenigh   VerbOpt;
 
 
 LEXICON NounInfl
@@ -64,12 +65,3 @@ LEXICON VerbTrnsInfl
 
 LEXICON VerbOpt
 [V][Opt][PRES][2Sg]:+gi+n~fi~sfi%:a      #;
-[V][Opt][PRES][2Pl]:+gi+n~fi~sfi%:a      #;
-[V][Opt][PRES][2Du]:@(i)tek              #;
-[V][Opt][PRES][2Sg][3Sg]:~f(i)gu~sf–ggu  #;
-[V][Opt][PRES][2Sg][3Pl]:~f(i)ki         #;
-[V][Opt][PRES][2Sg][3Du]:~f(i)kek        #;
-[V][Opt][PRES][2Sg][1Sg]:~f(i)nga        #;
-[V][Opt][PRES][2Sg][1Pl]:~f(i)kut        #;
-[V][Opt][PRES][1Pl]:~sf%:(e)lta          #;
-[V][Opt][PRES][1Du]:~sf%:(e)ltung        #;

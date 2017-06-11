@@ -118,17 +118,24 @@ define KClusterModification y -> s || _ k  ∘
 define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ngng -> ngngw || _ u i , _ u a  ∘
                                                   q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
 
-define Optative "+gi" -> g i || V V _ ∘
-                "+gi" -> 0            ∘
-                "+n"  -> n   || t e _ ∘
-                "+n"  -> 0            ;
-! ADD TO MULTICHAR
+define Optative "+gi" -> g i || V V _  ∘
+                "+gi" -> 0             ∘
+                "+n"  -> n   || t e _  ∘
+                "+n"  -> 0             ∘
+                "~fi" -> "~f" i || e _ ∘
+                "~fi" -> 0             ∘
+                "~sfi" -> "~sf" i || [C - gh] _ ∘
+                "~sfi" -> "~sf" i || [e | DoubleVowel] gh _ ∘
+                "~sfi" -> 0                         ∘
+                ":a" -> ":" a || FullVowel gh _ ∘
+                ":a" -> 0                       ;
 
                                                   
 
 define Rules [
 	Lexicon ∘
 	FinalConsonantDropAssimilation ∘
+        Optative ∘
 	AbsolutiveConsonantChange ∘
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 

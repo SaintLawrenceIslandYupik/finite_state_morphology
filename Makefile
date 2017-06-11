@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9
 
 
 test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.fomabin
@@ -58,7 +58,13 @@ test-ch7: ess.pairs.gold/Ch7.N_REL.Posd.tsv ess.pairs.gold/Ch7.V_TrnsInd.tsv ess
 test-ch8: ess.pairs.gold/Ch8.V_Intrg.2Intr.tsv ess.pairs.gold/Ch8.V_Intrg.2SgTrns.tsv ess.pairs.gold/Ch8.N_ABS.4PossPosd.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch8.V_Intrg.2Intr.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch8.V_Intrg.2Intr.tsv     && echo "Jacobson (2001) Chapter 8 Verb Vocabulary - 2nd Person Subject Interrogatives for Intransitive Verbs - PASS" || echo "Jacobson (2001) Chapter 8 Verb Vocabulary - 2nd Person Subject Interrogatives for Intransitive Verbs - FAIL"
 	@cut -f 1 ess.pairs.gold/Ch8.V_Intrg.2SgTrns.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch8.V_Intrg.2SgTrns.tsv     && echo "Jacobson (2001) Chapter 8 Verb Vocabulary - 2nd Person Subject Interrogatives for Transitive Verbs   - PASS" || echo "Jacobson (2001) Chapter 8 Verb Vocabulary - 2nd Person Subject Interrogatives for Transitive Verbs   - FAIL"
-	@cut -f 1 ess.pairs.gold/Ch8.N_ABS.4PossPosd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch8.N_ABS.4PossPosd.tsv     && echo "Jacobson (2001) Chapter 8 Noun Vocabulary - 4th Person Possessor Possessed Absolutive - PASS" || echo "Jacobson (2001) Chapter 8 Noun Vocabulary - 4th Person Possessor Possessed Absolutive - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch8.N_ABS.4PossPosd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch8.N_ABS.4PossPosd.tsv     && echo "Jacobson (2001) Chapter 8 Noun Vocabulary - 4th Person Possessor Possessed Absolutive                - PASS" || echo "Jacobson (2001) Chapter 8 Noun Vocabulary - 4th Person Possessor Possessed Absolutive                - FAIL"
+
+test-ch9: ess.pairs.gold/Ch9.V_ImprsAgnt.tsv ess.pairs.gold/Ch9.V_Intrg.3Intr.tsv ess.pairs.gold/Ch9.V_Intrg.3Trns.tsv ess.fomabin
+	@cut -f 1 ess.pairs.gold/Ch9.V_ImprsAgnt.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch9.V_ImprsAgnt.tsv     && echo "Jacobson (2001) Chapter 9 Verb Vocabulary - Optional Impersonal Agent Verbs                          - PASS" || echo "Jacobson (2001) Chapter 9 Verb Vocabulary - Optional Impersonal Agent Verbs                          - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch9.V_Intrg.3Intr.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch9.V_Intrg.3Intr.tsv     && echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - PASS" || echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch9.V_Intrg.3Trns.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch9.V_Intrg.3Trns.tsv     && echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - PASS" || echo "Jacobson (2001) Chapter 9 Verb Vocabulary - 3rd Person Subject Interrogatives for Intransitive Verbs - FAIL"
+
 
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin

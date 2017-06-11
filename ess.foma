@@ -153,18 +153,25 @@ define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ng
                                          h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
                             ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
 
-define Optative "+gi" -> g i || V V _ ∘
-                "+gi" -> 0            ∘
-                "+n"  -> n   || t e _ ∘
-                "+n"  -> 0            ;
-! ADD TO MULTICHAR
-                 
+define Optative "+gi"  -> g i     || V V _                  ∘
+                "+gi"  -> 0                                 ∘
+                "~sfi" -> "~sf" i || [C - gh] _             ∘
+                "~sfi" -> "~sf" i || [e | DoubleVowel] gh _ ∘
+                "~sfi" -> 0                                 ∘
+                "+n"   -> n       || t e _                  ∘
+                "+n"   -> 0                                 ∘
+                "~fi"  -> "~f" i  || [C - t] e _            ∘
+                "~fi"  -> 0                                 ∘
+                "x"   -> ":" a   || FullVowel gh _          ∘    ! Substituted 'x' to represent the sixth form of the 2nd person intransitive
+                "x"   -> 0                                  ;    ! optative ending, since ':a' conflicted with other tense formations where
+                                                                 ! there was uvular dropping followed by an 'a' - FIND BETTER NOTATION
                                                   
 
 define Rules [
 	Lexicon ∘
 	FinalConsonantDropAssimilation ∘
 	AbsolutiveConsonantChange ∘
+        Optative ∘
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 
 	WeakFinalC  ∘ 

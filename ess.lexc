@@ -2,6 +2,7 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
 		  [Abs1SgPoss] [SgPosd]
                   ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
+                  +gi +n ~fi ~sfi
 
 LEXICON Root
 
@@ -295,7 +296,7 @@ LEXICON Noun
 [N→V]:–ngllagh    Verb; ! to make N 
 [N→V]:liigh       VerbIntr; ! to cook; to prepare N
 [N→V]:+niigh      VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
-[N→V]:+te         VerbIntr; ! to catch N; to go to N to catch N; to go to N to catch N; to go to N to catch N; to go to N 
+[N→V]:+te         VerbIntr; ! to catch N; to go to N 
 [N→V]:+tugh       VerbIntr; ! to eat N; to use N 
 
 ! Verb →  Noun postbases
@@ -422,11 +423,11 @@ kuuve            VerbTrns; ! to spill
 negh             VerbIntr; ! to eat
 negh             VerbTrns; ! to eat
 
+aane             VerbIntr; ! to go out
+aange            VerbIntr; ! to be big
 aghula           VerbIntr; ! to dance
 aghulaqe         VerbIntr; ! to leave
 alinge           VerbIntr; ! to be afraid
-aane             VerbIntr; ! to go out
-aange            VerbIntr; ! to be big
 aqii             VerbIntr; ! to take a pleasure trip, to take a vacation
 esleqe           VerbIntr; ! to be full
 gaagh            VerbIntr; ! to cook
@@ -444,6 +445,17 @@ qiya             VerbIntr; ! to cry
 tagi             VerbIntr; ! to come towards speaker
 taake            VerbIntr; ! to be long
 tuqu             VerbIntr; ! to die
+
+aane             VerbOpt; ! to go out
+aghula           VerbOpt; ! to dance
+aqii             VerbOpt; ! to take a pleasure trip, to take a vacation
+gaagh            VerbOpt; ! to cook
+ingaghte         VerbOpt; ! to lie down
+inghu            VerbOpt; ! to pick berries
+itegh            VerbOpt; ! to go in, to enter
+nagate           VerbOpt; ! to listen; to hear
+qavagh           VerbOpt; ! to sleep
+tagi             VerbOpt; ! to come towards speaker
 
 ! Jacobson (2001) Chapter 4 Verb Vocabulary
 agatagh          VerbIntr; ! to be hungry
@@ -478,6 +490,12 @@ nalluke          VerbTrns; ! to not know
 piniqe           VerbTrns; ! to like
 tugu             VerbTrns; ! to take; to pick up
 
+guute            VerbOpt; ! to shoot
+liite            VerbOpt; ! to learn; to become aware of one's surroundings
+qelpeghte        VerbOpt; ! to open
+tugu             VerbOpt; ! to take; to pick up
+umeg             VerbOpt; ! to close
+
 ! Jacobson (2001) Chapter 8 Verb Vocabulary
 alleg            VerbIntr; ! to sweep
 alleg            VerbTrns; ! to sweep
@@ -495,6 +513,9 @@ qavaghni         VerbIntr; ! to be sleepy
 kayusigh         VerbTrns; ! to help
 liisimake        VerbTrns; ! to know
 tukfigh          VerbTrns; ! to buy
+
+alleg            VerbOpt; ! to sweep
+kayusigh         VerbOpt; ! to help
 
 ! Jacobson (2001) Chapter 9 Verb Vocabulary
 aghvigh          VerbIntr; ! to cross over; to go to the mainland
@@ -532,6 +553,8 @@ qanigughte       VerbTrns; ! for snow to fall
 siku             VerbTrns; ! to freeze
 ughug            VerbTrns; ! to melt
 
+payegh           VerbOpt; ! to meet, to encounter; to go over to help
+
 ! Jacobson (2001) Chapter 10 Verb Vocabulary
 kaaw             VerbIntr; ! to hit, to strike with an object
 kaaw             VerbTrns; ! to hit, to strike with an object
@@ -541,21 +564,24 @@ pugimagh         VerbIntr; ! to swim
 pugimagh         VerbTrns; ! to swim
 
 aqume            VerbIntr; ! to sit
+mayugh           VerbIntr; ! to go up
 nanglii          VerbIntr; ! to stare into space
 nekeve           VerbIntr; ! to stand up
 qayugh           VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
+ukig             VerbIntr; ! to go down
 
-egte             VerbTrans; ! to throw away
-kenigh           VerbTrans; ! to point (at)
-pumsug           VerbTrans; ! to pinch
-tagite           VerbTrans; ! to bring here
-tuqute           VerbTrans; ! to kill
+aqfa             VerbTrns; ! to go get
+egte             VerbTrns; ! to throw away
+pumsug           VerbTrns; ! to pinch
+tagite           VerbTrns; ! to bring here
+tuqute           VerbTrns; ! to kill
 
 aqume            VerbOpt; ! to sit
 egte             VerbOpt; ! to throw away
 kaaw             VerbOpt; ! to hit, to strike with an object
 kenigh           VerbOpt; ! to point (at)
 lata             VerbOpt; ! to write a letter (to)
+mayugh           VerbOpt; ! to go up
 nanglii          VerbOpt; ! to stare into space
 nekeve           VerbOpt; ! to stand up
 pugimagh         VerbOpt; ! to swim
@@ -563,6 +589,7 @@ pumsug           VerbOpt; ! to pinch
 qayugh           VerbOpt; ! to drink hot liquid (coffee, tea, etc.)
 tagite           VerbOpt; ! to bring here
 tuqute           VerbOpt; ! to kill
+ukig             VerbOpt; ! to go down
 
 LEXICON VerbIntr
 [V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 
@@ -618,8 +645,8 @@ LEXICON VerbTrnsInfl
 
 
 LEXICON VerbOpt
-[V][Opt][PRES][2Sg]:+gi+n~fi~sfi%:a      #;
-[V][Opt][PRES][2Pl]:+gi+n~fi~sfi%:a      #;
+[V][Opt][PRES][2Sg]:+gi~sfi+n~fix        #;
+[V][Opt][PRES][2Pl]:@(i)tek              #;
 [V][Opt][PRES][2Du]:@(i)tek              #;
 [V][Opt][PRES][2Sg][3Sg]:~f(i)gu~sf–ggu  #;
 [V][Opt][PRES][2Sg][3Pl]:~f(i)ki         #;
