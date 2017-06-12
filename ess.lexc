@@ -709,14 +709,15 @@ LEXICON VerbIntrInfl
 [2Du]:tek  #;
 
 LEXICON VerbIntrOpt
-[V][Opt][PRES][2Sg]:+gi~sfi+n~fix  #;
-[V][Opt][PRES][2Pl]:@(i)tek        #;
-[V][Opt][PRES][2Du]:@(i)tek        #;
-[V][Opt][PRES][1Pl]:~sf%:(e)lta    #;
-[V][Opt][PRES][1Du]:~sf%:(e)ltung  #;
+[V][Opt][PRS][2Sg]:+gi~sfi+n~fix  #;
+[V][Opt][PRS][2Pl]:@(i)tek        #;
+[V][Opt][PRS][2Du]:@(i)tek        #;
+[V][Opt][PRS][1Pl]:~sf%:(e)lta    #;
+[V][Opt][PRS][1Du]:~sf%:(e)ltung  #;
 
-[V][Opt][NEG][2Sg]:–fqaavek  #;
-[V][Opt][NEG][2Pl]:–fqaafsi  #;
+[V][Opt][NEG][2Sg]:–fqaavek   #;
+[V][Opt][NEG][2Pl]:–fqaafsi   #;
+[V][Opt][NEG][2Du]:–fqaaftek  #;
 
 
 LEXICON VerbTrns
@@ -749,11 +750,11 @@ LEXICON VerbTrnsInfl
 [3Pl][3Pl]:it       #; 
 
 LEXICON VerbTrnsOpt
-[V][Opt][PRES][2Sg][3Sg]:~f(i)gu~sf–ggu  #;
-[V][Opt][PRES][2Sg][3Pl]:~f(i)ki         #;
-[V][Opt][PRES][2Sg][3Du]:~f(i)kek        #;
-[V][Opt][PRES][2Sg][1Sg]:~f(i)nga        #;
-[V][Opt][PRES][2Sg][1Pl]:~f(i)kut        #;
+[V][Opt][PRS][2Sg][3Sg]:~f(i)gu~sf–ggu  #;
+[V][Opt][PRS][2Sg][3Pl]:~f(i)ki         #;
+[V][Opt][PRS][2Sg][3Du]:~f(i)kek        #;
+[V][Opt][PRS][2Sg][1Sg]:~f(i)nga        #;
+[V][Opt][PRS][2Sg][1Pl]:~f(i)kut        #;
 
 [V][Opt][NEG][2Sg][3Sg]:–fqaan   #;
 [V][Opt][NEG][2Pl][3Sg]:–fqaan   #;
@@ -761,6 +762,15 @@ LEXICON VerbTrnsOpt
 [V][Opt][NEG][2Sg][3Pl]:–fqiita  #;
 [V][Opt][NEG][2Pl][3Pl]:–fqiita  #;
 [V][Opt][NEG][2Du][3Pl]:–fqiita  #;
+[V][Opt][NEG][2Sg][3Du]:–fqaagkenka   #;
+[V][Opt][NEG][2Pl][3Du]:–fqaagkenka   #;
+[V][Opt][NEG][2Du][3Du]:–fqaagkenka   #;
 [V][Opt][NEG][2Sg][1Sg]:–fqaama  #;
 [V][Opt][NEG][2Pl][1Sg]:–fqaama  #;
 [V][Opt][NEG][2Du][1Sg]:–fqaama  #;
+[V][Opt][NEG][2Sg][1Pl]:–fqaamta  #;
+[V][Opt][NEG][2Pl][1Pl]:–fqaamta  #;
+[V][Opt][NEG][2Du][1Pl]:–fqaamta  #;
+[V][Opt][NEG][2Sg][1Du]:–fqaamtung  #;
+[V][Opt][NEG][2Pl][1Du]:–fqaamtung  #;
+[V][Opt][NEG][2Du][1Du]:–fqaamtung  #;

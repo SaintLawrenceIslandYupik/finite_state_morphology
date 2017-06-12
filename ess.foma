@@ -110,7 +110,7 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh  ("~") "–" _  �
                                       [  q | k ] -> kw  || [ kw | w   ] ("~") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] ("~") "–" _  ∘
                                                k -> q   ||   gh ("*") ("~") ("–") _  ∘
-                                               C -> 0   ||            _ ("~") "–"    ∘
+                                               C -> 0   ||  _ [("~")|("~f")] "–"     ∘
                                              "–" -> 0                                ;
 
 def BaseFinalEndings    ghw      -> qw , 
@@ -165,25 +165,25 @@ define Optative "+gi"  -> g i     || V V _                  ∘
                 "+n"   -> 0                                 ∘
                 "~fi"  -> "~f" i  || [C - t] e _            ∘
                 "~fi"  -> 0                                 ∘
-                "x"   -> ":" a   || FullVowel gh _          ∘
+                "x"   -> ":" a    || FullVowel gh _         ∘
                 "x"   -> 0                                  ∘
                 ! Substituted 'x' to represent the sixth form of the 2nd person intransitive optative ending, since ':a' conflicted with
-                ! other tense formations where there was uvular dropping followed by an 'a' - FIND BETTER NOTATION
+                ! other tense formations where there was uvular dropping followed by an 'a' - DEVISE BETTER NOTATION
                 "~f(i)gu" -> "~f" "(i)" g u  || V _         ∘
                 "~f(i)gu" -> 0                              ∘
-                "~sf–ggu" -> "~sf" "–" ghh u || [q|gh|ghh|qw|ghw|ghhw] _  ∘
-                "~sf–ggu" -> "~sf" "–" gg u  || C _         ∘
+                "~sf–ggu" -> "~f" "–" ghh u || [q|gh|ghh|qw|ghw|ghhw] _  ∘    ! '~sf' becomes '~f' since the final consonant drops before
+                "~sf–ggu" -> "~f" "–" gg u || C _           ∘                 ! semifinal 'e' is analyzed in the transducer
                 "~sf–ggu" -> 0                              ∘
-                "(i)" -> i       || e _                     ∘
+                "(i)" -> i       || e ("~f") _              ∘
                 "(i)" -> 0                                  ;
                                                   
 
 define Rules [
 	Lexicon ∘
-	FinalConsonantDropAssimilation ∘
-	AbsolutiveConsonantChange ∘
         teDropping ∘ 
         Optative ∘
+	FinalConsonantDropAssimilation ∘
+	AbsolutiveConsonantChange ∘
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 
 	WeakFinalC  ∘ 
