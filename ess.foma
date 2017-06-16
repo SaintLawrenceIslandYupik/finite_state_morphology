@@ -46,18 +46,20 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf"  ∘  ! e-hoppin
                      e -> 0 ||                    V C _ C "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 ;                                       ! finally remove intermediate symbol ~sf
 
-define SemiAndFinalE    
-                  [..] -> a || WordBoundary (C) a _ C e   "~"   ∘  ! final e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e   "~"   ∘  ! final e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e   "~"   ∘  ! final e-hopping
-                     e -> 0 ||                    V C _   "~"   ∘  ! final e-dropping
-                     e -> 0 ||                        _   "~" V ∘  ! final e-dropping  
-                  [..] -> a || WordBoundary (C) a _ C e C "~"   ∘  ! semi-final e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e C "~"   ∘  ! semi-final e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e C "~"   ∘  ! semi-final e-hopping
-                     e -> 0 ||                    V C _ C "~"   ∘  ! semi-final e-dropping
-                   "~" -> 0 ;                                      ! finally remove intermediate symbol ~
+define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   "~"   ∘  ! final e-hopping
+                     [..] -> i || WordBoundary (C) i _ C e   "~"   ∘  ! final e-hopping
+                     [..] -> u || WordBoundary (C) u _ C e   "~"   ∘  ! final e-hopping
+                        e -> 0 ||                    V C _   "~"   ∘  ! final e-dropping
+                        e -> 0 ||                        _   "~" V ∘  ! final e-dropping  
+                     [..] -> a || WordBoundary (C) a _ C e C "~"   ∘  ! semi-final e-hopping
+                     [..] -> i || WordBoundary (C) i _ C e C "~"   ∘  ! semi-final e-hopping
+                     [..] -> u || WordBoundary (C) u _ C e C "~"   ∘  ! semi-final e-hopping
+                        e -> 0 ||                    V C _ C "~"   ∘  ! semi-final e-dropping
+                      "~" -> 0 ;                                      ! finally remove intermediate symbol ~
 
+define NoHopNoDrop "~h" -> 0   || WordBoundary (C) DoubleVowel C e _ ∘  ! does not drop e if e-hopping is not possible
+                   "~h" -> 0   || V C V C e _                        ∘  ! does not drop e if base contains multiple syllables
+				   "~h" -> "~" ;                                        ! otherwise drop e
 
 define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
                       gh ":" e -> i || [ WordBoundary | C ] i _    ∘
@@ -143,7 +145,7 @@ define VowelDominance a i -> i i  ∘
                       a u -> a a  ∘
                       u a -> a a  ;
 
-define NasalInsertion "(ng)" -> "ng" || V ("~") ":" _  ∘
+define NasalInsertion "(ng)" -> "ng" || V [("~")|("~h")] ":" _  ∘
                       "(ng)" -> 0                      ;
 
 define ClusterModification  y -> s || _ [p|t|k|kw|q|qw]  ∘    ! y becomes voiceless s before a stop
@@ -185,11 +187,12 @@ define Rules [
 	Optative ∘
 	FinalConsonantDropAssimilation ∘
 	AbsolutiveConsonantChange ∘
+	NasalInsertion ∘ 
+	NoHopNoDrop ∘
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 
 	WeakFinalC  ∘ 
 	UnmarkStrongGh ∘
-	NasalInsertion ∘ 
 	InterConsonantalE ∘ 
 	UvularDropping ∘ 
 	Indicative        ∘ 

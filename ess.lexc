@@ -1,7 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
 		  [Abs1SgPoss] [SgPosd]
-                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
+                  ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
                   +gi +n ~fi ~sfi (i) ~f(i)gu ~sf–ggu
 
 LEXICON Root
@@ -284,18 +284,18 @@ taaghta          Noun; ! doctor
 LEXICON Noun
 
 ! Noun →  Noun postbases
-[N→N]:–ghllag     Noun; ! big N; lots of N (when used in the plural)
-[N→N]:–ghrugllag  Noun; ! big N; huge N
-[N→N]:–leg        Noun; ! one having N
-[N→N]:+mi         Noun; ! resident of N
-[N→N]:–squgh      Noun; ! little N, small N 
-[N→N]:–squghhagh* Noun; ! little N, small N 
+-ghllag[N→N]:–ghllag         Noun; ! big N; lots of N (when used in the plural)
+-ghrugllag[N→N]:–ghrugllag   Noun; ! big N; huge N
+-leg[N→N]:–leg              Noun; ! one having N
+-mii[N→N]:+mii              Noun; ! resident of N
+-squgh[N→N]:–squgh          Noun; ! little N, small N 
+-squghhah[N→N]:–squghhagh*  Noun; ! little N, small N 
 
 
 ! Noun →  Verb postbases
 [N→V]:~%:(ng)u    Verb; ! to be N
 [N→V]:–ngllagh    Verb; ! to make N 
-[N→V]:liigh       VerbIntr; ! to cook; to prepare N
+[N→V]:–liigh      VerbIntr; ! to cook; to prepare N
 [N→V]:+niigh      VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
 [N→V]:+te         VerbIntr; ! to catch N; to go to N 
 [N→V]:+tugh       VerbIntr; ! to eat N; to use N 
@@ -306,15 +306,14 @@ LEXICON Noun
 ! Verb →  Verb postbases
 [V→V]:~(g)aqe     Verb; ! to be V-ing; to regularly or repeat V 
 [V→V]:@lleqe      Verb; ! to V in the future; will V 
-[V→V]:~fnaqe      Verb; ! to be going to V; to be about to V 
-[V→V]:~fyug       Verb; ! to want to V
+[V→V]:@~fnaqe     Verb; ! to be going to V; to be about to V 
+[V→V]:@~fyug      Verb; ! to want to V
 [V→V]:@–nghite    Verb; ! to not V
 [V→V]:+(pete)fte  VerbIntr; ! to evidently V or have V-ed
 [V→V]:@~sf–(g)kau VerbIntr; ! to have V-ed or been V-ed 
-[V→V]:@~sf–(g)kau VerbIntr; ! to have V-ed or been V-ed 
-[V→V]:@~fni       VerbIntr; ! to say that one is V-ing 
-[V→V]:+(te)ste    VerbTrns; ! to make, have, or let one V
 ! Compound-verbal postbases
+[V→V]:@~fni       VerbIntr; ! to say that one V-s
+[V→V]:+(te)ste    VerbTrns; ! to have, make, or let one V
 [V→V]:~sf:(e)sqe  VerbTrns; ! to ask or tell one to V 
 [V→V]:+(te)sug    VerbTrns; ! to want one to V 
 
@@ -342,9 +341,9 @@ LEXICON NounInfl
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
 [N][Abs][Sg]:0                            #;      [N][Abs][Pl]:~sf-w%:(e)t                  #;      [N][Abs][Du]:~sf-w%:(e)k                  #; ! unpossessed                   |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][3SgPoss][SgPosd]:~%:(ng)a      #;      [N][Abs][3SgPoss][PlPosd]:~%:(ng)i      #;      [N][Abs][3SgPoss][DuPosd]:~f-wkek         #; ! 3rd person singular possessor |
-[N][Abs][3PlPoss][SgPosd]:~%:(ng)at       #;      [N][Abs][3PlPoss][PlPosd]:~%:(ng)it       #;      [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #; ! 3st person plural possessor   |
-[N][Abs][3DuPoss][SgPosd]:~:(ng)ak        #;      [N][Abs][3DuPoss][PlPosd]:~:(ng)ik        #;      [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  #; ! 3rd person dual possessor     |
+[N][Abs][3SgPoss][SgPosd]:~h%:(ng)a      #;      [N][Abs][3SgPoss][PlPosd]:~h%:(ng)i      #;      [N][Abs][3SgPoss][DuPosd]:~f-wkek         #; ! 3rd person singular possessor |
+[N][Abs][3PlPoss][SgPosd]:~h%:(ng)at       #;      [N][Abs][3PlPoss][PlPosd]:~h%:(ng)it       #;      [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #; ! 3st person plural possessor   |
+[N][Abs][3DuPoss][SgPosd]:~h:(ng)ak        #;      [N][Abs][3DuPoss][PlPosd]:~h:(ng)ik        #;      [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  #; ! 3rd person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 [N][Abs][1SgPoss][SgPosd]:~–ka            #;      [N][Abs][1SgPoss][PlPosd]:~sf-w%:(e)nka   #;      [N][Abs][1SgPoss][DuPosd]:~sf-w%:(e)gka   #; ! 1st person singular possessor |
 [N][Abs][1PlPoss][SgPosd]:(p/v)ut         #;      [N][Abs][1PlPoss][PlPosd]:–put            #;      [N][Abs][1PlPoss][DuPosd]:~sf-w%:(e)gput  #; ! 1st person plural possessor   |
