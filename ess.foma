@@ -110,7 +110,8 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh  ("~") "–" _  �
                                       [  q | k ] -> kw  || [ kw | w   ] ("~") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] ("~") "–" _  ∘
                                                k -> q   ||   gh ("*") ("~") ("–") _  ∘
-                                               C -> 0   ||  _ [("~")|("~f")] "–"     ∘
+                                               C -> 0   ||  _ [("~") | ("~f")] "–"   ∘
+									      gh "*" -> 0   ||  _ [("~") | ("~f") ] "–"  ∘
                                              "–" -> 0                                ;
 
 def BaseFinalEndings    ghw      -> qw , 
@@ -121,12 +122,12 @@ def BaseFinalEndings    ghw      -> qw ,
                         t e      -> n    || V _ WordBoundary   ∘
                         e        -> a    ||   _ WordBoundary ;
 
-define AbsolutiveConsonantChange "(s/z)" -> s || C _   ∘
-                                 "(s/z)" -> z || V _   ∘                                 
-                                 "(p/v)" -> p || C _   ∘
-                                 "(p/v)" -> v || V _   ∘
+define AbsolutiveConsonantChange "(s/z)" -> s || C ("*") _   ∘
+                                 "(s/z)" -> z || V       _   ∘                                 
+                                 "(p/v)" -> p || C ("*") _   ∘
+                                 "(p/v)" -> v || V       _   ∘
                                  "(t/y)" -> t || C ("*") _   ∘
-                                 "(t/y)" -> y || V _   ;
+                                 "(t/y)" -> y || V       _   ;
                                  
 
 define Indicative ["(g/t)" | "(g)"] -> g || V V [("~f") | ("~")] _  ∘
@@ -180,8 +181,8 @@ define Optative "+gi"  -> g i     || V V _                  ∘
 
 define Rules [
 	Lexicon ∘
-        teDropping ∘ 
-        Optative ∘
+	teDropping ∘ 
+	Optative ∘
 	FinalConsonantDropAssimilation ∘
 	AbsolutiveConsonantChange ∘
 	SemiAndFinalE ∘ 
@@ -192,9 +193,9 @@ define Rules [
 	InterConsonantalE ∘ 
 	UvularDropping ∘ 
 	Indicative        ∘ 
-        VelarUvularRounding ∘
+	VelarUvularRounding ∘
 	FinalE      ∘ 
-        ClusterModification ∘
+	ClusterModification ∘
 	VowelDominance ∘
 	BaseFinalEndings 
 ];
