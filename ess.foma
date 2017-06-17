@@ -57,9 +57,9 @@ define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   "~"   ∘  ! final 
                         e -> 0 ||                    V C _ C "~"   ∘  ! semi-final e-dropping
                       "~" -> 0 ;                                      ! finally remove intermediate symbol ~
 
-define NoHopNoDrop "~h" -> 0   || WordBoundary (C) DoubleVowel C e _ ∘  ! does not drop e if e-hopping is not possible
-                   "~h" -> 0   || V C V C e _                        ∘  ! does not drop e if base contains multiple syllables
-				   "~h" -> "~" ;                                        ! otherwise drop e
+define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e _ ∘  ! does not drop e if e-hopping is not possible
+                    "~h" -> 0   || V C V C e _                        ∘  ! does not drop e if base contains multiple syllables
+				    "~h" -> "~" ;                                        ! otherwise drop e
 
 define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
                       gh ":" e -> i || [ WordBoundary | C ] i _    ∘
@@ -146,11 +146,26 @@ define VowelDominance a i -> i i  ∘
                       u a -> a a  ;
 
 define NasalInsertion "(ng)" -> "ng" || V [("~")|("~h")] ":" _  ∘
-                      "(ng)" -> 0                      ;
+                      "(ng)" -> 0                               ;
 
-define ClusterModification  y -> s || _ [p|t|k|kw|q|qw]  ∘    ! y becomes voiceless s before a stop
-                            k -> q || gh _               ∘    ! k becomes q in the cluster ghk
-                            t z -> s                     ;    ! tz cluster becomes s
+define ClusterDevoicing y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
+                        k -> q || gh _                                           ∘    ! k becomes q in the cluster ghk
+                        t z -> s                                                 ;    ! tz cluster becomes s
+
+define AutoDevoicing v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || _ [Stop | f | s | wh] ∘   
+                     v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || [Stop | f | s | wh | h] _ ∘   
+		             m -> mm, n -> nn, ngng -> ngng, ngw -> ngngw                                       || [Stop | f | s | wh | h] _ ∘   
+                     v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || _ ll ∘ 
+                     v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || [ll| rr | gg | ghh |ghhw] _ ∘ 
+                     m -> mm, n -> nn, ngng -> ngng, ngw -> ngngw                                       || [ll| rr | gg | ghh |ghhw] _ ;
+
+						  
+define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop | f | s | wh] ∘   
+                  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [Stop | f | s | wh | h] _ ∘   
+		          mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | wh | h] _ ∘   
+                  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ ll ∘ 
+                  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [ll| rr | gg | ghh |ghhw] _ ∘ 
+                  mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [ll| rr | gg | ghh |ghhw] _ ;
 
 define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
                                          h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
@@ -188,7 +203,7 @@ define Rules [
 	FinalConsonantDropAssimilation ∘
 	AbsolutiveConsonantChange ∘
 	NasalInsertion ∘ 
-	NoHopNoDrop ∘
+	NoHopNoDropE ∘
 	SemiAndFinalE ∘ 
 	SemiFinalE  ∘ 
 	WeakFinalC  ∘ 
@@ -198,9 +213,11 @@ define Rules [
 	Indicative        ∘ 
 	VelarUvularRounding ∘
 	FinalE      ∘ 
-	ClusterModification ∘
+	! AutoDevoicing ∘
+	ClusterDevoicing ∘
 	VowelDominance ∘
-	BaseFinalEndings 
+	BaseFinalEndings ∘
+	Undoubling
 ];
 
 define Grammar [ Exceptions .P. Rules ] ;
