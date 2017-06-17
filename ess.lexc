@@ -272,6 +272,19 @@ ququngagh        Noun; ! leaf; edible willow leaf
 unkuse           Noun; ! animal trap (usually dual for one trap)
 taaghta          Noun; ! doctor
 
+! Jacobson (2001) Chapter 11 Noun Vocabulary
+akite            Noun; ! pillow
+awataghpag       Noun; ! sealskin float
+nefkuuragh       Noun; ! dried meat
+para             Noun; ! butter
+Pureki           Noun; ! Negro; Black
+sagnegh          Noun; ! dish; bowl; food container
+salngag          Noun; ! box; coffin; motor well in boat (dual, 'salngagek', often used for one box)
+sughma           Noun; ! chess; checkers
+tefli            Noun; ! particles of food or the like clinging around mouth
+tuquuqagh        Noun; ! nail
+vegllug          Noun; ! towel
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -284,8 +297,8 @@ taaghta          Noun; ! doctor
 LEXICON Noun
 
 ! Noun →  Noun postbases
--ghllag[N→N]:–ghllag         Noun; ! big N; lots of N (when used in the plural)
--ghrugllag[N→N]:–ghrugllag   Noun; ! big N; huge N
+-ghllag[N→N]:–ghllag        Noun; ! big N; lots of N (when used in the plural)
+-ghrugllag[N→N]:–ghrugllag  Noun; ! big N; huge N
 -leg[N→N]:–leg              Noun; ! one having N
 -mii[N→N]:+mii              Noun; ! resident of N
 -squgh[N→N]:–squgh          Noun; ! little N, small N 
@@ -299,9 +312,15 @@ LEXICON Noun
 [N→V]:+niigh      VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
 [N→V]:+te         VerbIntr; ! to catch N; to go to N 
 [N→V]:+tugh       VerbIntr; ! to eat N; to use N 
+[N→V]:–ligh       VerbTrns; ! to provide with N; to pu N in 
+[N→V]:ti          VerbIntr; ! to speak the language of N (TODO: This is a prefix)
 
 ! Verb →  Noun postbases
 [V→N]:@~sf–(g)kaq Noun; ! one that has V-ed or been V-ed
+[V→N]:@–lghii     Noun; ! one that is V-ing (always used with an unpossessed ending)
+[V→N]:@ngugh*     Noun; ! same as above but for descriptive and negative bases ending in -te 
+[V→N]:@~sf–(g)ke  Noun; ! one that the possessor is V-ing (always used with possessed ending)
+[V→N]:(g)ka       Noun; ! one that the possessor is V-ing (always used with possessed ending)
 
 ! Verb →  Verb postbases
 [V→V]:~(g)aqe     Verb; ! to be V-ing; to regularly or repeat V 
@@ -311,6 +330,10 @@ LEXICON Noun
 [V→V]:@–nghite    Verb; ! to not V
 [V→V]:+(pete)fte  VerbIntr; ! to evidently V or have V-ed
 [V→V]:@~sf–(g)kau VerbIntr; ! to have V-ed or been V-ed 
+[V→V]:@~%:(i/u)ma VerbIntr; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
+[V→V]:@~%:(i/u)ma VerbTrns; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
+[V→V]:~%:(u)te    VerbIntr; ! to V with, for, or to object; to V object along with oneself; to V each other 
+[V→V]:~%:(u)te    VerbTrns; ! to V with, for, or to object; to V object along with oneself; to V each other 
 ! Compound-verbal postbases
 [V→V]:@~fni       VerbIntr; ! to say that one V-s
 [V→V]:+(te)ste    VerbTrns; ! to have, make, or let one V
@@ -335,34 +358,54 @@ LEXICON Noun
 LEXICON NounInfl
 
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                    Absolutive case endings                                                                     |
+!                                                    Absolutive Case Endings                                                                     |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|
-!        singular possessed                |           plural possessed                     |     dual possessed                                 |    
+!            singular possessed            |                plural possessed                 |                  dual possessed                   |    
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
 [N][Abs][Sg]:0                            #;      [N][Abs][Pl]:~sf-w%:(e)t                  #;      [N][Abs][Du]:~sf-w%:(e)k                  #; ! unpossessed                   |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][3SgPoss][SgPosd]:~h%:(ng)a      #;      [N][Abs][3SgPoss][PlPosd]:~h%:(ng)i      #;      [N][Abs][3SgPoss][DuPosd]:~f-wkek         #; ! 3rd person singular possessor |
-[N][Abs][3PlPoss][SgPosd]:~h%:(ng)at       #;      [N][Abs][3PlPoss][PlPosd]:~h%:(ng)it       #;      [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #; ! 3st person plural possessor   |
-[N][Abs][3DuPoss][SgPosd]:~h:(ng)ak        #;      [N][Abs][3DuPoss][PlPosd]:~h:(ng)ik        #;      [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  #; ! 3rd person dual possessor     |
+[N][Abs][3SgPoss][SgPosd]:~h%:(ng)a       #;      [N][Abs][3SgPoss][PlPosd]:~h%:(ng)i       #;      [N][Abs][3SgPoss][DuPosd]:~f-wkek         #; ! 3rd person singular possessor |
+[N][Abs][3PlPoss][SgPosd]:~h%:(ng)at      #;      [N][Abs][3PlPoss][PlPosd]:~h%:(ng)it      #;      [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #; ! 3rd person plural possessor   |
+[N][Abs][3DuPoss][SgPosd]:~h:(ng)ak       #;      [N][Abs][3DuPoss][PlPosd]:~h:(ng)ik       #;      [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  #; ! 3rd person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 [N][Abs][1SgPoss][SgPosd]:~–ka            #;      [N][Abs][1SgPoss][PlPosd]:~sf-w%:(e)nka   #;      [N][Abs][1SgPoss][DuPosd]:~sf-w%:(e)gka   #; ! 1st person singular possessor |
 [N][Abs][1PlPoss][SgPosd]:(p/v)ut         #;      [N][Abs][1PlPoss][PlPosd]:–put            #;      [N][Abs][1PlPoss][DuPosd]:~sf-w%:(e)gput  #; ! 1st person plural possessor   |
 [N][Abs][1DuPoss][SgPosd]:(p/v)ung        #;      [N][Abs][1DuPoss][PlPosd]:–pung           #;      [N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung #; ! 1st person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 [N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n     #;      [N][Abs][2SgPoss][PlPosd]:ten             #;      [N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  #; ! 2nd person singular possessor |
-[N][Abs][2PlPoss][SgPosd]:(s/z)i          #;      [N][Abs][2PlPoss][PlPosd]:–si             #;      [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   #; ! 2st person plural possessor   |
-[N][Abs][2DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][2DuPoss][PlPosd]:–tek            #;      [N][Abs][2DuPoss][DuPosd]:~sf-w%:(e)gtek   #; ! 2st person dual possessor     |
+[N][Abs][2PlPoss][SgPosd]:(s/z)i          #;      [N][Abs][2PlPoss][PlPosd]:–si             #;      [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   #; ! 2nd person plural possessor   |
+[N][Abs][2DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][2DuPoss][PlPosd]:–tek            #;      [N][Abs][2DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 2nd person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 [N][Abs][4SgPoss][SgPosd]:–ni             #;      [N][Abs][4SgPoss][PlPosd]:–ni             #;      [N][Abs][4SgPoss][DuPosd]:~sf-w%:(e)gni   #; ! 4th person singular possessor |
-[N][Abs][4PlPoss][SgPosd]:(t/y)eng        #;      [N][Abs][4PlPoss][PlPosd]:–teng           #;      [N][Abs][4PlPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4st person plural possessor   |
-[N][Abs][4DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][4DuPoss][PlPosd]:–tek            #;      [N][Abs][4DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4st person dual possessor     |
-! -----------------------------------------|-----------------------------------------------------------------------------------------------------|-------------------------------|
+[N][Abs][4PlPoss][SgPosd]:(t/y)eng        #;      [N][Abs][4PlPoss][PlPosd]:–teng           #;      [N][Abs][4PlPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4th person plural possessor   |
+[N][Abs][4DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][4DuPoss][PlPosd]:–tek            #;      [N][Abs][4DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4th person dual possessor     |
+! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 
 
-[N][Abl_Mod][Unpd][Sg]:~f-wmeng            #;
-[N][Abl_Mod][1SgPoss][SgPosd]:–mneng       #;
-[N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g)neng  #;
-[N][Abl_Mod][3SgPoss][SgPosd]:~:(ng)aneng  #;
+! ----------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                                                            Ablative-Modalis Case Endings                                                                  |
+! ----------------------------------------------------------------------------------------------------------------------------------------------------------|
+!        singular possessed                      |           plural possessed                     |     dual possessed                                      |    
+! ----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+[N][Abl_Mod][Unpd][Sg]:~f-wmeng                 #;      [N][Abl_Mod][Unpd][Pl]:-wneng            #; [N][Abl_Mod][Unpd][Du]:~sf-w%:(e)gneng               #; ! unpossessed    |
+                                                        [N][Abl_Mod][Unpd][Pl]:~f-wneng          #;                                                         !                |
+! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
+[N][Abl_Mod][3SgPoss][SgPosd]:~%:(ng)aneng      #; [N][Abl_Mod][3SgPoss][PlPosd]:~%:(ng)aneng    #; [N][Abl_Mod][3SgPoss][DuPosd]:~sf-w%:(e)gkeneng      #; ! 3Sg possessor  |
+[N][Abl_Mod][3PlPoss][SgPosd]:~%:(ng)itneng     #; [N][Abl_Mod][3PlPoss][PlPosd]:~%:(ng)itneng   #; [N][Abl_Mod][3PlPoss][DuPosd]:~%:(ng)itneng          #; ! 3Pl possessor  |
+[N][Abl_Mod][3DuPoss][SgPosd]:~sf-w%:(e)gkeneng #; [N][Abl_Mod][3DuPoss][PlPosd]:~%:(ng)itneng   #; [N][Abl_Mod][3DuPoss][DuPosd]:~%:(ng)itneng          #; ! 3Du possessor  |
+! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
+[N][Abl_Mod][1SgPoss][SgPosd]:–mneng            #; [N][Abl_Mod][1SgPoss][PlPosd]:–mneng          #; [N][Abl_Mod][1SgPoss][DuPosd]:~sf-w%:(e)gemneng      #; ! 1Sg possessor  |
+[N][Abl_Mod][1PlPoss][SgPosd]:–mnneng           #; [N][Abl_Mod][1PlPoss][PlPosd]:–mnneng         #; [N][Abl_Mod][1PlPoss][DuPosd]:~sf-w%:(e)gemnneng     #; ! 1Pl possessor  |
+[N][Abl_Mod][1DuPoss][SgPosd]:–mtegneng         #; [N][Abl_Mod][1DuPoss][PlPosd]:–mtegneng       #; [N][Abl_Mod][1DuPoss][DuPosd]:~sf-w%:(e)gemtegneng   #; ! 1Du possessor  |
+! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
+[N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g)neng       #; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g)neng     #; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)neng   #; ! 2Sg possessor  |
+[N][Abl_Mod][2PlPoss][SgPosd]:–gpesineng        #; [N][Abl_Mod][2PlPoss][PlPosd]:–gpesineng      #; [N][Abl_Mod][2PlPoss][DuPosd]:~sf-w%:(e)gpesineng    #; ! 2Pl possessor  |
+[N][Abl_Mod][2DuPoss][SgPosd]:–gpetegneng       #; [N][Abl_Mod][2DuPoss][PlPosd]:–gpetegneng     #; [N][Abl_Mod][2DuPoss][DuPosd]:~sf-w%:(e)gpetegneng   #; ! 2Du possessor  |
+! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
+[N][Abl_Mod][4SgPoss][SgPosd]:~f-wmineng        #; [N][Abl_Mod][4SgPoss][PlPosd]:~f-wmineng      #; [N][Abl_Mod][4SgPoss][DuPosd]:~sf-w%:(e)gmineng      #; ! 4Sg possessor  |
+[N][Abl_Mod][4PlPoss][SgPosd]:~f-wmeggneng      #; [N][Abl_Mod][4PlPoss][PlPosd]:~f-wmeggneng    #; [N][Abl_Mod][4PlPoss][DuPosd]:~sf-w%:(e)gmeggneng    #; ! 4Pl possessor  |
+[N][Abl_Mod][4DuPoss][SgPosd]:~f-wmeg(te)neng   #; [N][Abl_Mod][4DuPoss][PlPosd]:~f-wmeg(te)neng #; [N][Abl_Mod][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)neng #; ! 4Du possessor  |
+! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
 
 
 ! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
@@ -494,6 +537,8 @@ aveg             VerbIntr; ! to divide in two
 aveg             VerbTrns; ! to divide in two 
 guute            VerbIntr; ! to shoot
 guute            VerbTrns; ! to shoot
+laalighte        VerbIntr; ! to visit
+laalighte        VerbTrns; ! to visit
 liite            VerbIntr; ! to learn; to become aware of one's surroundings
 liite            VerbTrns; ! to learn; to become aware of one's surroundings
 qelpeghte        VerbIntr; ! to open
@@ -507,7 +552,6 @@ umeg             VerbTrns; ! to close
 
 igamsiqanagh     VerbIntr; ! to make one thankful
 igamsiqayug      VerbIntr; ! to feel thanksful
-laalighte        VerbIntr; ! to visit
 
 tuqe             VerbTrns; ! to use; to wear
 esghagh          VerbTrns; ! to see
@@ -522,6 +566,8 @@ aveg             VerbIntrOpt; ! to divide in two
 aveg             VerbTrnsOpt; ! to divide in two 
 guute            VerbIntrOpt; ! to shoot
 guute            VerbTrnsOpt; ! to shoot
+laalighte        VerbIntrOpt; ! to visit
+laalighte        VerbTrnsOpt; ! to visit
 liite            VerbIntrOpt; ! to learn; to become aware of one's surroundings
 liite            VerbTrnsOpt; ! to learn; to become aware of one's surroundings
 qelpeghte        VerbIntrOpt; ! to open
@@ -535,7 +581,6 @@ umeg             VerbTrnsOpt; ! to close
 
 igamsiqanagh     VerbIntrOpt; ! to make one thankful
 igamsiqayug      VerbIntrOpt; ! to feel thanksful
-laalighte        VerbIntrOpt; ! to visit
 
 tuqe             VerbTrnsOpt; ! to use; to wear
 esghagh          VerbTrnsOpt; ! to see
@@ -684,6 +729,69 @@ egte             VerbTrnsOpt; ! to throw away
 pumsug           VerbTrnsOpt; ! to pinch
 tagite           VerbTrnsOpt; ! to bring here
 tuqute           VerbTrnsOpt; ! to kill
+
+! Jacobson (2001) Chapter 11 Verb Vocabulary
+aghmig           VerbIntr; ! to wash one's face
+aghmig           VerbTrns; ! to wash one's face
+ghhuugh          VerbIntr; ! to inflate
+ghhuugh          VerbTrns; ! to inflate
+ifkagh           VerbIntr; ! to fall from a height; to accidentally drop
+ifkagh           VerbTrns; ! to fall from a height; to accidentally drop
+nalug            VerbIntr; ! to land from the air (onto)
+nalug            VerbTrns; ! to land from the air (onto)
+pilugug          VerbIntr; ! to put on clothing; to dress
+pilugug          VerbTrns; ! to put on clothing; to dress
+sangighqugh      VerbIntr; ! to wash dishes
+sangighqugh      VerbTrns; ! to wash dishes
+
+geve             VerbIntr; ! to render (fat); to be compressed
+gheve            VerbIntr; ! to fade
+kavite           VerbIntr; ! to be red
+naave            VerbIntr; ! to break, to get broken
+neghenghite      VerbIntr; ! to not eat
+qaame            VerbIntr; ! to go out (fire, light, etc.)
+qinuyug          VerbIntr; ! to be sick
+sughma           VerbIntr; ! to play chess or checkers
+sukate           VerbIntr; ! to be fast
+
+akite            VerbTrans; ! to answer; to reciprocate
+ifkaghte         VerbTrans; ! to drop accidentally or on purpose
+ini              VerbTrans; ! to hang to dry
+naafqe           VerbTrans; ! to break (it)
+paagh            VerbTrans; ! to lick; to clean by licking with aid of fingers
+tuune            VerbTrans; ! to give
+tuquuqagh        VerbTrans; ! to nail
+
+aghmig           VerbIntrOpt; ! to wash one's face
+aghmig           VerbTrnsOpt; ! to wash one's face
+ghhuugh          VerbIntrOpt; ! to inflate
+ghhuugh          VerbTrnsOpt; ! to inflate
+ifkagh           VerbIntrOpt; ! to fall from a height; to accidentally drop
+ifkagh           VerbTrnsOpt; ! to fall from a height; to accidentally drop
+nalug            VerbIntrOpt; ! to land from the air (onto)
+nalug            VerbTrnsOpt; ! to land from the air (onto)
+pilugug          VerbIntrOpt; ! to put on clothing; to dress
+pilugug          VerbTrnsOpt; ! to put on clothing; to dress
+sangighqugh      VerbIntrOpt; ! to wash dishes
+sangighqugh      VerbTrnsOpt; ! to wash dishes
+
+geve             VerbIntrOpt; ! to render (fat); to be compressed
+gheve            VerbIntrOpt; ! to fade
+kavite           VerbIntrOpt; ! to be red
+naave            VerbIntrOpt; ! to break, to get broken
+neghenghite      VerbIntrOpt; ! to not eat
+qaame            VerbIntrOpt; ! to go out (fire, light, etc.)
+qinuyug          VerbIntrOpt; ! to be sick
+sughma           VerbIntrOpt; ! to play chess or checkers
+sukate           VerbIntrOpt; ! to be fast
+
+akite            VerbTransOpt; ! to answer; to reciprocate
+ifkaghte         VerbTransOpt; ! to drop accidentally or on purpose
+ini              VerbTransOpt; ! to hang to dry
+naafqe           VerbTransOpt; ! to break (it)
+paagh            VerbTransOpt; ! to lick; to clean by licking with aid of fingers
+tuune            VerbTransOpt; ! to give
+tuquuqagh        VerbTransOpt; ! to nail
 
 LEXICON VerbIntr
 [V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 

@@ -61,6 +61,9 @@ define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e _ ∘  ! doe
                     "~h" -> 0   || V C V C e _                        ∘  ! does not drop e if base contains multiple syllables
 				    "~h" -> "~" ;                                        ! otherwise drop e
 
+define InterConsonantalE "(e)" -> e || C (":") _ ∘                  ! convert (e) to e when following a consonant
+                         "(e)" -> 0 || V (":") _ ;                  ! otherwise delete it
+
 define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
                       gh ":" e -> i || [ WordBoundary | C ] i _    ∘
                       gh ":" e -> u || [ WordBoundary | C ] u _    ∘
@@ -68,9 +71,6 @@ define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
                       gh ":" i -> i || [ WordBoundary | C ] FullVowel _    ∘
                       gh ":" u -> u || [ WordBoundary | C ] FullVowel _    ∘
                          ":"   -> 0 ;
-
-define InterConsonantalE "(e)" -> e || C (":") _ ∘                  ! convert (e) to e when following a consonant
-                         "(e)" -> 0 || V (":") _ ;                  ! otherwise delete it
 
 ! Jacobson (2001, p.12) states: "(Noun) Bases  can end only in a vowel ... or in one of the consonants gh, g, ghw, or w."
 ! Jacobson (2001, p.18) states: "Verb bases end in precisely the same ways that noun bases do, that is,
@@ -120,6 +120,7 @@ def BaseFinalEndings    ghw      -> qw ,
                         gh ("*") -> q  , 
                         g        -> k  ,
                         w        -> kw ,
+                        t e      -> t a  || C _ WordBoundary  , 
                         t e      -> t a  ||   _ WordBoundary  , 
                         t e      -> n    || V _ WordBoundary  ∘
                         e        -> a    ||   _ WordBoundary  ;
@@ -149,7 +150,8 @@ define VowelDominance a i -> i i  ∘
 
 define ClusterDevoicing y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
                         k -> q || gh _                                           ∘    ! k becomes q in the cluster ghk
-                        t z -> s                                                 ;    ! tz cluster becomes s
+                        t z -> s                                                 ∘   ! tz cluster becomes s
+						z -> s || Stop _                                         ;
 
 define AutoDevoicing v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || _ [Stop | f | s | wh] ∘   
                      v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || [Stop | f | s | wh | h] _ ∘   
