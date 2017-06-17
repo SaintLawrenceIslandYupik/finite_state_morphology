@@ -76,15 +76,15 @@
 #######################
 
 # 3rd Person Possessor Possessed Absolutive 
-awk '{print $0 "[N][Abs][3SgPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
-awk '{print $0 "[N][Abs][3SgPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
-awk '{print $0 "[N][Abs][3SgPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
-awk '{print $0 "[N][Abs][3PlPoss][DuPosd]"}' underlying.tsv &> underlying4.tsv
-awk '{print $0 "[N][Abs][3PlPoss][PlPosd]"}' underlying.tsv &> underlying5.tsv
-awk '{print $0 "[N][Abs][3PlPoss][SgPosd]"}' underlying.tsv &> underlying6.tsv
-awk '{print $0 "[N][Abs][3DuPoss][DuPosd]"}' underlying.tsv &> underlying7.tsv
-awk '{print $0 "[N][Abs][3DuPoss][PlPosd]"}' underlying.tsv &> underlying8.tsv
-awk '{print $0 "[N][Abs][3DuPoss][SgPosd]"}' underlying.tsv &> underlying9.tsv
+#awk '{print $0 "[N][Abs][3SgPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[N][Abs][3SgPoss][PlPosd]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[N][Abs][3SgPoss][SgPosd]"}' underlying.tsv &> underlying3.tsv
+#awk '{print $0 "[N][Abs][3PlPoss][DuPosd]"}' underlying.tsv &> underlying4.tsv
+#awk '{print $0 "[N][Abs][3PlPoss][PlPosd]"}' underlying.tsv &> underlying5.tsv
+#awk '{print $0 "[N][Abs][3PlPoss][SgPosd]"}' underlying.tsv &> underlying6.tsv
+#awk '{print $0 "[N][Abs][3DuPoss][DuPosd]"}' underlying.tsv &> underlying7.tsv
+#awk '{print $0 "[N][Abs][3DuPoss][PlPosd]"}' underlying.tsv &> underlying8.tsv
+#awk '{print $0 "[N][Abs][3DuPoss][SgPosd]"}' underlying.tsv &> underlying9.tsv
 
 #awk '{print $0 "[N][Rel][Unpd][Sg]"}' underlying.tsv &> underlying1.tsv
 #awk '{print $0 "[N][Rel][Unpd][Pl]"}' underlying.tsv &> underlying2.tsv
@@ -103,15 +103,15 @@ awk '{print $0 "[N][Abs][3DuPoss][SgPosd]"}' underlying.tsv &> underlying9.tsv
 #awk '{print $0 "[N][Rel][Posd][3Pl]"}' underlying.tsv &> underlying6.tsv
 
 # Transitive Indicative
-#awk '{print $0 "[V][Trns_Ind][1Sg][2Sg]"}' underlying.tsv &> underlying1.tsv
-#awk '{print $0 "[V][Trns_Ind][1Sg][3Sg]"}' underlying.tsv &> underlying2.tsv
-#awk '{print $0 "[V][Trns_Ind][1Sg][3Pl]"}' underlying.tsv &> underlying3.tsv
-#awk '{print $0 "[V][Trns_Ind][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv
-#awk '{print $0 "[V][Trns_Ind][2Sg][3Sg]"}' underlying.tsv &> underlying5.tsv
-#awk '{print $0 "[V][Trns_Ind][2Sg][3Pl]"}' underlying.tsv &> underlying6.tsv
-#awk '{print $0 "[V][Trns_Ind][3Sg][1Sg]"}' underlying.tsv &> underlying7.tsv
-#awk '{print $0 "[V][Trns_Ind][3Sg][2Sg]"}' underlying.tsv &> underlying8.tsv
-#awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
+awk '{print $0 "[V][Trns_Ind][1Sg][2Sg]"}' underlying.tsv &> underlying1.tsv
+awk '{print $0 "[V][Trns_Ind][1Sg][3Sg]"}' underlying.tsv &> underlying2.tsv
+awk '{print $0 "[V][Trns_Ind][1Sg][3Pl]"}' underlying.tsv &> underlying3.tsv
+awk '{print $0 "[V][Trns_Ind][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv
+awk '{print $0 "[V][Trns_Ind][2Sg][3Sg]"}' underlying.tsv &> underlying5.tsv
+awk '{print $0 "[V][Trns_Ind][2Sg][3Pl]"}' underlying.tsv &> underlying6.tsv
+awk '{print $0 "[V][Trns_Ind][3Sg][1Sg]"}' underlying.tsv &> underlying7.tsv
+awk '{print $0 "[V][Trns_Ind][3Sg][2Sg]"}' underlying.tsv &> underlying8.tsv
+awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
 #awk '{print $0 "[V][Trns_Ind][3Sg][3Pl]"}' underlying.tsv &> underlying1.tsv
 #awk '{print $0 "[V][Trns_Ind][3Pl][3Sg]"}' underlying.tsv &> underlying2.tsv
 #awk '{print $0 "[V][Trns_Ind][3Pl][3Pl]"}' underlying.tsv &> underlying3.tsv
