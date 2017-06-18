@@ -388,7 +388,7 @@ LEXICON NounInfl
 !               singular possessed               |                plural possessed                |                     dual possessed                      |    
 ! ----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
 [N][Abl_Mod][Unpd][Sg]:~f-wmeng                 #; [N][Abl_Mod][Unpd][Pl]:-wneng                 #; [N][Abl_Mod][Unpd][Du]:~sf-w%:(e)gneng               #; ! unpossessed    |
-                                                   ![N][Abl_Mod][Unpd][Pl]:~f-wneng               #;                                                         !                |
+                                                   ![N][Abl_Mod][Unpd][Pl]:~f-wneng              #;                                                         !                |
 ! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
 [N][Abl_Mod][3SgPoss][SgPosd]:~%:(ng)aneng      #; [N][Abl_Mod][3SgPoss][PlPosd]:~%:(ng)aneng    #; [N][Abl_Mod][3SgPoss][DuPosd]:~sf-w%:(e)gkeneng      #; ! 3Sg possessor  |
 [N][Abl_Mod][3PlPoss][SgPosd]:~%:(ng)itneng     #; [N][Abl_Mod][3PlPoss][PlPosd]:~%:(ng)itneng   #; [N][Abl_Mod][3PlPoss][DuPosd]:~%:(ng)itneng          #; ! 3Pl possessor  |
@@ -409,13 +409,15 @@ LEXICON NounInfl
 
 
 ! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
+!       How do we distinguish between a short base and long base?
+!       Both endings are listed, but at the moment, one is not available for inflection
 ! ----------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                                 Localis Case Endings                                                          |
+!                                                         Localis Case Endings (at N; in N)                                                     |
 ! ----------------------------------------------------------------------------------------------------------------------------------------------|
 !             singular possessed           |                plural possessed             |                      dual possessed                  |    
 ! ----------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Loc][Unpd][Sg]:~f-wmi                 #;    [N][Loc][Unpd][Pl]:~f-wni                 #;    [N][Loc][Unpd][Du]:~sf-w%:(e)gni               #; ! unpossessed    |
-                                                ![N][Loc][Unpd][Pl]:-wni               #;                                                      !                |
+[N][Loc][Unpd][Sg]:~f-wmi                 #;    [N][Loc][Unpd][Pl]:~f-wni               #;    [N][Loc][Unpd][Du]:~sf-w%:(e)gni               #; ! unpossessed    |
+                                                ![N][Loc][Unpd][Pl]:-wni                #;                                                      !                |
 ! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
 [N][Loc][3SgPoss][SgPosd]:~%:(ng)ani      #;    [N][Loc][3SgPoss][PlPosd]:~%:(ng)ani    #;    [N][Loc][3SgPoss][DuPosd]:~sf-w%:(e)gkeni      #; ! 3Sg possessor  |
 [N][Loc][3PlPoss][SgPosd]:~%:(ng)itni     #;    [N][Loc][3PlPoss][PlPosd]:~%:(ng)itni   #;    [N][Loc][3PlPoss][DuPosd]:~%:(ng)itni          #; ! 3Pl possessor  |
@@ -436,12 +438,12 @@ LEXICON NounInfl
 
  
 ! -------------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                              Terminalis Case Endings                                                             |
+!                                                          Terminalis Case Endings (to N)                                                          |
 ! -------------------------------------------------------------------------------------------------------------------------------------------------|
 !             singular possessed            |                plural possessed              |                      dual possessed                   |    
 ! -------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Ter][Unpd][Sg]:~f-wmun                 #;    [N][Ter][Unpd][Pl]:~f-wnun                 #;    [N][Ter][Unpd][Du]:~sf-w%:(e)gnun               #; ! unpossessed    |
-                                                 ![N][Ter][Unpd][Pl]:~f-wnun               #;                                                       !                |
+[N][Ter][Unpd][Sg]:~f-wmun                 #;    [N][Ter][Unpd][Pl]:~f-wnun               #;    [N][Ter][Unpd][Du]:~sf-w%:(e)gnun               #; ! unpossessed    |
+                                                 ![N][Ter][Unpd][Pl]:~f-wnun              #;                                                       !                |
 ! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
 [N][Ter][3SgPoss][SgPosd]:~%:(ng)anun      #;    [N][Ter][3SgPoss][PlPosd]:~%:(ng)anun    #;    [N][Ter][3SgPoss][DuPosd]:~sf-w%:(e)gkenun      #; ! 3Sg possessor  |
 [N][Ter][3PlPoss][SgPosd]:~%:(ng)itnun     #;    [N][Ter][3PlPoss][PlPosd]:~%:(ng)itnun   #;    [N][Ter][3PlPoss][DuPosd]:~%:(ng)itnun          #; ! 3Pl possessor  |
@@ -460,17 +462,55 @@ LEXICON NounInfl
 [N][Ter][4DuPoss][SgPosd]:~f-wmeg(te)nun   #;    [N][Ter][4DuPoss][PlPosd]:~f-wmeg(te)nun #;    [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)nun #; ! 4Du possessor  |
 ! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
 
-[N][Via][Unpd][Sg]:~f-wkun           #;  ! VIALIS CASE      through N
-[N][Via][Unpd][Pl]:~sf-w%:(e)tgun    #;
-[N][Via][1SgPoss][SgPosd]:–mkun      #;
-[N][Via][2SgPoss][SgPosd]:–gpekun    #;  ! TODO: Is it –gpegun or –gpekun
-[N][Via][3SgPoss][SgPosd]:~:(ng)akun #;
- 
-[N][Equ][Unpd][Sg]:~f-wtun           #;  ! EQUALIS CASE     like N
-[N][Equ][Unpd][Pl]:~sf-w%:(e)stun    #;
-[N][Equ][1SgPoss][SgPosd]:–mtun      #;
-[N][Equ][2SgPoss][SgPosd]:–gpetun    #;
-[N][Equ][3SgPoss][SgPosd]:~:(ng)atun #;
+! TODO: For [2SgPoss][SgPosd], is it –gpegun or –gpekun?
+! ----------------------------------------------------------------------------------------------------------------------------------------------------|
+!                                                        Vialis Case Endings (through N)                                                              |
+! ----------------------------------------------------------------------------------------------------------------------------------------------------|
+!             singular possessed             |                plural possessed               |                      dual possessed                    |    
+! ----------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+[N][Via][Unpd][Sg]:~f-wkun                  #;    [N][Via][Unpd][Pl]:~sf-w%:(e)tgun         #;    [N][Via][Unpd][Du]:~sf-w%:(e)gnegun              #; ! unpossessed    |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Via][3SgPoss][SgPosd]:~%:(ng)akun       #;    [N][Via][3SgPoss][PlPosd]:~%:(ng)akun     #;    [N][Via][3SgPoss][DuPosd]:~sf-w%:(e)gkenkun      #; ! 3Sg possessor  |
+[N][Via][3PlPoss][SgPosd]:~%:(ng)itgun      #;    [N][Via][3PlPoss][PlPosd]:~%:(ng)itgun    #;    [N][Via][3PlPoss][DuPosd]:~%:(ng)itgun           #; ! 3Pl possessor  |
+[N][Via][3DuPoss][SgPosd]:~sf-w%:(e)gkenkun #;    [N][Via][3DuPoss][PlPosd]:~%:(ng)akun     #;    [N][Via][3DuPoss][DuPosd]:~%:(ng)itgun           #; ! 3Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Via][1SgPoss][SgPosd]:–mkun             #;    [N][Via][1SgPoss][PlPosd]:–mkun           #;    [N][Via][1SgPoss][DuPosd]:~sf-w%:(e)gemkun       #; ! 1Sg possessor  |
+[N][Via][1PlPoss][SgPosd]:–mteggun          #;    [N][Via][1PlPoss][PlPosd]:–mteggun        #;    [N][Via][1PlPoss][DuPosd]:~sf-w%:(e)gemteggun    #; ! 1Pl possessor  |
+[N][Via][1DuPoss][SgPosd]:–mtegnegun        #;    [N][Via][1DuPoss][PlPosd]:–mtegnegun      #;    [N][Via][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnegun  #; ! 1Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Via][2SgPoss][SgPosd]:–gpekun           #;    [N][Via][2SgPoss][PlPosd]:–gpegun         #;    [N][Via][2SgPoss][DuPosd]:~sf-w%:(e)gpegun       #; ! 2Sg possessor  |
+[N][Via][2PlPoss][SgPosd]:–gpesigun         #;    [N][Via][2PlPoss][PlPosd]:–gpesigun       #;    [N][Via][2PlPoss][DuPosd]:~sf-w%:(e)gpesigun     #; ! 2Pl possessor  |
+[N][Via][2DuPoss][SgPosd]:–gpetegnegun      #;    [N][Via][2DuPoss][PlPosd]:–gpetegnegun    #;    [N][Via][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnegun  #; ! 2Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Via][4SgPoss][SgPosd]:~f-wmikun         #;    [N][Via][4SgPoss][PlPosd]:~f-wmikun       #;    [N][Via][4SgPoss][DuPosd]:~sf-w%:(e)gmikun       #; ! 4Sg possessor  |
+[N][Via][4PlPoss][SgPosd]:~f-wmegteggun     #;    [N][Via][4PlPoss][PlPosd]:~f-wmegteggun   #;    [N][Via][4PlPoss][DuPosd]:~sf-w%:(e)gmegteggun   #; ! 4Pl possessor  |
+[N][Via][4DuPoss][SgPosd]:~f-wmegtegnegun   #;    [N][Via][4DuPoss][PlPosd]:~f-wmegtegnegun #;    [N][Via][4DuPoss][DuPosd]:~sf-w%:(e)gmegtegnegun #; ! 4Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+
+
+! ----------------------------------------------------------------------------------------------------------------------------------------------------|
+!                                                           Equalis Case Endings (like N)                                                             |
+! ----------------------------------------------------------------------------------------------------------------------------------------------------|
+!             singular possessed             |                plural possessed               |                      dual possessed                    |    
+! ----------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+[N][Equ][Unpd][Sg]:~f-wtun                  #;    [N][Equ][Unpd][Pl]:~sf-w%:(e)stun         #;    [N][Equ][Unpd][Du]:~sf-w%:(e)gestun              #; ! unpossessed    |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Equ][3SgPoss][SgPosd]:~%:(ng)atun       #;    [N][Equ][3SgPoss][PlPosd]:~%:(ng)atun     #;    [N][Equ][3SgPoss][DuPosd]:~sf-w%:(e)gketun       #; ! 3Sg possessor  |
+[N][Equ][3PlPoss][SgPosd]:~%:(ng)itun       #;    [N][Equ][3PlPoss][PlPosd]:~%:(ng)itun     #;    [N][Equ][3PlPoss][DuPosd]:~%:(ng)itun            #; ! 3Pl possessor  |
+[N][Equ][3DuPoss][SgPosd]:~sf-w%:(e)gketun  #;    [N][Equ][3DuPoss][PlPosd]:~%:(ng)itun     #;    [N][Equ][3DuPoss][DuPosd]:~%:(ng)itun            #; ! 3Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Equ][1SgPoss][SgPosd]:–mtun             #;    [N][Equ][1SgPoss][PlPosd]:–mtun           #;    [N][Equ][1SgPoss][DuPosd]:~sf-w%:(e)gemtun       #; ! 1Sg possessor  |
+[N][Equ][1PlPoss][SgPosd]:–mtestun          #;    [N][Equ][1PlPoss][PlPosd]:–mtestun        #;    [N][Equ][1PlPoss][DuPosd]:~sf-w%:(e)gemtestun    #; ! 1Pl possessor  |
+[N][Equ][1DuPoss][SgPosd]:–mtegestun        #;    [N][Equ][1DuPoss][PlPosd]:–mtegestun      #;    [N][Equ][1DuPoss][DuPosd]:~sf-w%:(e)gemtegestun  #; ! 1Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Equ][2SgPoss][SgPosd]:–gpetun           #;    [N][Equ][2SgPoss][PlPosd]:–gpetun         #;    [N][Equ][2SgPoss][DuPosd]:~sf-w%:(e)gpetun       #; ! 2Sg possessor  |
+[N][Equ][2PlPoss][SgPosd]:–gpesistun        #;    [N][Equ][2PlPoss][PlPosd]:–gpesistun      #;    [N][Equ][2PlPoss][DuPosd]:~sf-w%:(e)gpesistun    #; ! 2Pl possessor  |
+[N][Equ][2DuPoss][SgPosd]:–gpetegetun       #;    [N][Equ][2DuPoss][PlPosd]:–gpetegetun     #;    [N][Equ][2DuPoss][DuPosd]:~sf-w%:(e)gpetegetun   #; ! 2Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+[N][Equ][4SgPoss][SgPosd]:~f-wmitun         #;    [N][Equ][4SgPoss][PlPosd]:~f-wmitun       #;    [N][Equ][4SgPoss][DuPosd]:~sf-w%:(e)gmitun       #; ! 4Sg possessor  |
+[N][Equ][4PlPoss][SgPosd]:~f-wmegestun      #;    [N][Equ][4PlPoss][PlPosd]:~f-wmegestun    #;    [N][Equ][4PlPoss][DuPosd]:~sf-w%:(e)gmegestun    #; ! 4Pl possessor  |
+[N][Equ][4DuPoss][SgPosd]:~f-wmegestun      #;    [N][Equ][4DuPoss][PlPosd]:~f-wmegestun    #;    [N][Equ][4DuPoss][DuPosd]:~sf-w%:(e)gmegestun    #; ! 4Du possessor  |
+! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
 
 
 ! Nouns in the unpossessed relative case indicates the possessor of a noun with a 3rd person possessed ending
