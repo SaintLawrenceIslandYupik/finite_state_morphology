@@ -103,15 +103,15 @@
 #awk '{print $0 "[N][Rel][Posd][3Pl]"}' underlying.tsv &> underlying6.tsv
 
 # Transitive Indicative
-awk '{print $0 "[V][Trns_Ind][1Sg][2Sg]"}' underlying.tsv &> underlying1.tsv
-awk '{print $0 "[V][Trns_Ind][1Sg][3Sg]"}' underlying.tsv &> underlying2.tsv
-awk '{print $0 "[V][Trns_Ind][1Sg][3Pl]"}' underlying.tsv &> underlying3.tsv
-awk '{print $0 "[V][Trns_Ind][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv
-awk '{print $0 "[V][Trns_Ind][2Sg][3Sg]"}' underlying.tsv &> underlying5.tsv
-awk '{print $0 "[V][Trns_Ind][2Sg][3Pl]"}' underlying.tsv &> underlying6.tsv
-awk '{print $0 "[V][Trns_Ind][3Sg][1Sg]"}' underlying.tsv &> underlying7.tsv
-awk '{print $0 "[V][Trns_Ind][3Sg][2Sg]"}' underlying.tsv &> underlying8.tsv
-awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
+#awk '{print $0 "[V][Trns_Ind][1Sg][2Sg]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[V][Trns_Ind][1Sg][3Sg]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[V][Trns_Ind][1Sg][3Pl]"}' underlying.tsv &> underlying3.tsv
+#awk '{print $0 "[V][Trns_Ind][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv
+#awk '{print $0 "[V][Trns_Ind][2Sg][3Sg]"}' underlying.tsv &> underlying5.tsv
+#awk '{print $0 "[V][Trns_Ind][2Sg][3Pl]"}' underlying.tsv &> underlying6.tsv
+#awk '{print $0 "[V][Trns_Ind][3Sg][1Sg]"}' underlying.tsv &> underlying7.tsv
+#awk '{print $0 "[V][Trns_Ind][3Sg][2Sg]"}' underlying.tsv &> underlying8.tsv
+#awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
 #awk '{print $0 "[V][Trns_Ind][3Sg][3Pl]"}' underlying.tsv &> underlying1.tsv
 #awk '{print $0 "[V][Trns_Ind][3Pl][3Sg]"}' underlying.tsv &> underlying2.tsv
 #awk '{print $0 "[V][Trns_Ind][3Pl][3Pl]"}' underlying.tsv &> underlying3.tsv
@@ -137,17 +137,23 @@ awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
 #      CHAPTER 8      #
 #######################
 
-# 2nd Person Subject Interrogatives
-#awk '{print $0 "[V][Intrg][2Sg]"}' underlying.tsv &> underlying1.tsv 
-#awk '{print $0 "[V][Intrg][2Pl]"}' underlying.tsv &> underlying2.tsv 
-#awk '{print $0 "[V][Intrg][2Du]"}' underlying.tsv &> underlying3.tsv 
-#awk '{print $0 "[V][Intrg][1Pl]"}' underlying.tsv &> underlying4.tsv 
-#awk '{print $0 "[V][Intrg][1Du]"}' underlying.tsv &> underlying5.tsv 
+# 2nd Person Subject Intransitive Interrogatives
+#awk '{print $0 "[V][Intrg][3Sg]"}' underlying.tsv &> underlying1.tsv 
+#awk '{print $0 "[V][Intrg][3Pl]"}' underlying.tsv &> underlying2.tsv 
+#awk '{print $0 "[V][Intrg][3Du]"}' underlying.tsv &> underlying3.tsv 
+#awk '{print $0 "[V][Intrg][1Sg]"}' underlying.tsv &> underlying4.tsv 
+#awk '{print $0 "[V][Intrg][1Pl]"}' underlying.tsv &> underlying5.tsv 
+#awk '{print $0 "[V][Intrg][1Du]"}' underlying.tsv &> underlying6.tsv 
+#awk '{print $0 "[V][Intrg][2Sg]"}' underlying.tsv &> underlying7.tsv 
+#awk '{print $0 "[V][Intrg][2Pl]"}' underlying.tsv &> underlying8.tsv 
+#awk '{print $0 "[V][Intrg][2Du]"}' underlying.tsv &> underlying9.tsv 
+# 2nd Person Subject Transitive Interrogatives
 #awk '{print $0 "[V][Intrg][2Sg][3Sg]"}' underlying.tsv &> underlying1.tsv 
 #awk '{print $0 "[V][Intrg][2Sg][3Pl]"}' underlying.tsv &> underlying2.tsv 
 #awk '{print $0 "[V][Intrg][2Sg][3Du]"}' underlying.tsv &> underlying3.tsv 
 #awk '{print $0 "[V][Intrg][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv 
 #awk '{print $0 "[V][Intrg][2Sg][1Pl]"}' underlying.tsv &> underlying5.tsv 
+#awk '{print $0 "[V][Intrg][2Sg][1Du]"}' underlying.tsv &> underlying6.tsv 
 
 # 4th Person Possessor Possessed Absolutive
 #awk '{print $0 "[N][Abs][4SgPoss][DuPosd]"}' underlying.tsv &> underlying1.tsv
@@ -164,15 +170,20 @@ awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
 #      CHAPTER 9      #
 #######################
 
-# 3rd Person Subject Interrogatives
+# 3rd Person Subject Intransitive Interrogatives
 #awk '{print $0 "[V][Intrg][3Sg]"}' underlying.tsv &> underlying1.tsv 
 #awk '{print $0 "[V][Intrg][3Pl]"}' underlying.tsv &> underlying2.tsv 
 #awk '{print $0 "[V][Intrg][3Du]"}' underlying.tsv &> underlying3.tsv 
-#awk '{print $0 "[V][Intrg][3Sg][1Sg]"}' underlying.tsv &> underlying1.tsv 
-#awk '{print $0 "[V][Intrg][3Sg][1Pl]"}' underlying.tsv &> underlying2.tsv 
-#awk '{print $0 "[V][Intrg][3Sg][3Sg]"}' underlying.tsv &> underlying3.tsv 
-#awk '{print $0 "[V][Intrg][3Sg][3Pl]"}' underlying.tsv &> underlying4.tsv 
-#awk '{print $0 "[V][Intrg][3Sg][3Du]"}' underlying.tsv &> underlying5.tsv 
+# 3rd Person Subject Transitive Interrogatives
+awk '{print $0 "[V][Intrg][3Sg][1Sg]"}' underlying.tsv &> underlying1.tsv 
+awk '{print $0 "[V][Intrg][3Sg][1Pl]"}' underlying.tsv &> underlying2.tsv 
+awk '{print $0 "[V][Intrg][3Sg][1Du]"}' underlying.tsv &> underlying3.tsv 
+awk '{print $0 "[V][Intrg][3Sg][2Sg]"}' underlying.tsv &> underlying4.tsv 
+awk '{print $0 "[V][Intrg][3Sg][2Pl]"}' underlying.tsv &> underlying5.tsv 
+awk '{print $0 "[V][Intrg][3Sg][2Du]"}' underlying.tsv &> underlying6.tsv 
+awk '{print $0 "[V][Intrg][3Sg][3Sg]"}' underlying.tsv &> underlying7.tsv 
+awk '{print $0 "[V][Intrg][3Sg][3Pl]"}' underlying.tsv &> underlying8.tsv 
+awk '{print $0 "[V][Intrg][3Sg][3Du]"}' underlying.tsv &> underlying9.tsv 
 
 # Optional Impersonal Agent Verb 
 #awk '{print $0 "[V][Imprs_Agnt][3Sg][1Sg]"}' underlying.tsv &> underlying1.tsv 

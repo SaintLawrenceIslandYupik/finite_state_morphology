@@ -889,17 +889,27 @@ paagh            VerbTransOpt; ! to lick; to clean by licking with aid of finger
 tuune            VerbTransOpt; ! to give
 tuquuqagh        VerbTransOpt; ! to nail
 
+
 LEXICON VerbIntr
 [V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 
 
-[V][Intrg][1Pl]:~sf(e)sta   #;
-[V][Intrg][1Du]:~sf(e)stung #;
-[V][Intrg][2Sg]:~f(t)zin    #;
-[V][Intrg][2Pl]:~sf(e)tsi   #;
-[V][Intrg][2Du]:~sf(e)stek  #;
-[V][Intrg][3Sg]:~f(g/t)a    #;
-[V][Intrg][3Pl]:~f(g/t)at   #;
-[V][Intrg][3Du]:~f(g/t)ak   #;
+! TODO: On p.51, [V][Intrg][2Du] is given as ~sf(e)stek
+!       In Appendix I, p.182, it is given as ~sf(e)stekstek
+! ----------------------------------------|
+! Intransitive Interrogative Mood Endings |
+! ----------------------------------------|----------------|
+[V][Intrg][3Sg]:~f(g/t)a               #; ! 3Sg possessor  |
+[V][Intrg][3Pl]:~f(g/t)at              #; ! 3Pl possessor  |
+[V][Intrg][3Du]:~f(g/t)ak              #; ! 3Du Possessor  |
+! ----------------------------------------|----------------|
+[V][Intrg][1Sg]:~f(t)zinga             #; ! 1Sg possessor  |
+[V][Intrg][1Pl]:~sf(e)sta              #; ! 1Pl possessor  |
+[V][Intrg][1Du]:~sf(e)stung            #; ! 1Du Possessor  |
+! ----------------------------------------|----------------|
+[V][Intrg][2Sg]:~f(t)zin               #; ! 2Sg possessor  |
+[V][Intrg][2Pl]:~sf(e)tsi              #; ! 2Pl possessor  |
+[V][Intrg][2Du]:~sf(e)stek             #; ! 2Du Possessor  |
+! ----------------------------------------|----------------|
 
 LEXICON VerbIntrInfl
 [3Sg]:q    #;
@@ -928,16 +938,51 @@ LEXICON VerbTrns
 [V][Trns_Ind]:~(g)a    VerbTrnsInfl;
 [V][Imprs_Agnt]:~(g)a  VerbTrnsInfl;
 
-[V][Intrg][2Sg][3Sg]:~f(t)zigu    #;
-[V][Intrg][2Sg][3Pl]:~f(t)ziki    #;
-[V][Intrg][2Sg][3Du]:~f(t)zikek   #;
-[V][Intrg][2Sg][1Sg]:~f(t)zinga   #;
-[V][Intrg][2Sg][1Pl]:~f(t)zikut   #;
-[V][Intrg][3Sg][3Sg]:~f(g/t)agu   #;
-[V][Intrg][3Sg][3Pl]:~f(g/t)aki   #;
-[V][Intrg][3Sg][3Du]:~f(g/t)akek  #;
-[V][Intrg][3Sg][1Sg]:~f(g/t)anga  #;
-[V][Intrg][3Sg][1Pl]:~f(g/t)aten  #;
+
+! --------------------------------------------------------------------------------------------------------------------------|
+!                                         Transitive Interrogative Mood Endings                                             |
+! --------------------------------------------------------------------------------------------------------------------------|
+!         3rd singular object        |             3rd plural object           |               3rd dual object              |    
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+[V][Intrg][3Sg][3Sg]:~f(g/t)agu     #;    [V][Intrg][3Sg][3Pl]:~f(g/t)aki     #;    [V][Intrg][3Sg][3Du]:~f(g/t)akek     #; ! 3Sg subject    |
+[V][Intrg][3Pl][3Sg]:~f(g/t)atgu    #;    [V][Intrg][3Pl][3Pl]:~f(g/t)atki    #;    [V][Intrg][3Pl][3Du]:~f(g/t)atkek    #; ! 3Pl subject    |
+[V][Intrg][3Du][3Sg]:~f(g/t)agnegu  #;    [V][Intrg][3Du][3Pl]:~f(g/t)agneki  #;    [V][Intrg][3Du][3Du]:~f(g/t)agnekek  #; ! 3Du subject    |
+! -----------------------------------|------------------------------------------------|-------------------------------------|----------------|
+[V][Intrg][1Sg][3Sg]:~f(t)zikun     #;    [V][Intrg][1Sg][3Pl]:~f(t)zingi     #;    [V][Intrg][1Sg][3Du]:~f(t)zigngek    #; ! 1Sg subject    |
+[V][Intrg][1Pl][3Sg]:~sf(e)steggu   #;    [V][Intrg][1Pl][3Pl]:~sf(e)steki    #;    [V][Intrg][1Pl][3Du]:~sf(e)stekek    #; ! 1Pl subject    |
+[V][Intrg][1Du][3Sg]:~sf(e)stegnegu #;    [V][Intrg][1Du][3Pl]:~sf(e)stegneki #;    [V][Intrg][1Du][3Du]:~sf(e)stegnekek #; ! 1Du subject    |
+! -----------------------------------|------------------------------------------------|-------------------------------------|----------------|
+[V][Intrg][2Sg][3Sg]:~f(t)zigu      #;    [V][Intrg][2Sg][3Pl]:~f(t)ziki      #;    [V][Intrg][2Sg][3Du]:~f(t)zikek      #; ! 2Sg subject    |
+[V][Intrg][2Pl][3Sg]:~sf(e)ggu      #;    [V][Intrg][2Pl][3Pl]:~sf(e)ki       #;    [V][Intrg][2Pl][3Du]:~sf(g)kek       #; ! 2Pl subject    |
+[V][Intrg][2Du][3Sg]:~sf(e)gnegu    #;    [V][Intrg][2Du][3Pl]:~sf(e)gneki    #;    [V][Intrg][2Du][3Du]:~sf(g)gnekek    #; ! 2Du subject    |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+!         1st singular object        |             1st plural object           |               1st dual object              |                |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+[V][Intrg][3Sg][1Sg]:~f(g/t)anga    #;    [V][Intrg][3Sg][1Pl]:~f(g/t)inkut   #;    [V][Intrg][3Sg][1Du]:~f(g/t)inkung   #; ! 3Sg subject    |
+[V][Intrg][3Pl][1Sg]:~f(g/t)atnga   #;    [V][Intrg][3Pl][1Pl]:~f(g/t)inkut   #;    [V][Intrg][3Pl][1Du]:~f(g/t)inkung   #; ! 3Pl subject    |
+[V][Intrg][3Du][1Sg]:~f(g/t)agnenga #;    [V][Intrg][3Du][1Pl]:~f(g/t)inkut   #;    [V][Intrg][3Du][1Du]:~f(g/t)inkung   #; ! 3Du subject    |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+! Presumably, a speaker would not use the interrogative mood with himself/herself                                           |                |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+[V][Intrg][2Sg][1Sg]:~f(t)zinga     #;    [V][Intrg][2Sg][1Pl]:~f(t)zikut     #;    [V][Intrg][2Sg][1Du]:~f(t)zikung     #; ! 2Sg subject    |
+[V][Intrg][2Pl][1Sg]:~sf(e)ngnga    #;    [V][Intrg][2Pl][1Pl]:~sf(e)kut      #;    [V][Intrg][2Pl][1Du]:~sf(e)kung      #; ! 2Pl subject    |
+[V][Intrg][2Du][1Sg]:~sf(e)gnenga   #;    [V][Intrg][2Du][1Pl]:~sf(e)gneku    #;    [V][Intrg][2Du][1Du]:~sf(e)gnekung   #; ! 2Du subject    |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+!         2nd singular object        |             2nd plural object           |               2nd dual object              |                |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+[V][Intrg][3Sg][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Sg][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Sg][2Du]:~f(g/t)istek    #; ! 3Sg subject    |
+[V][Intrg][3Pl][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Pl][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Pl][2Du]:~f(g/t)istek    #; ! 3Pl subject    |
+[V][Intrg][3Du][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Du][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Du][2Du]:~f(g/t)istek    #; ! 3Du subject    |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+[V][Intrg][1Sg][2Sg]:~f(t)ziken     #; ! TODO: Why don't these other forms exist?                                           ! 1Sg subject    |
+[V][Intrg][1Pl][2Sg]:~sf(e)steken   #;                                                                                      ! 1Pl subject    |
+[V][Intrg][1Du][2Sg]:~sf(e)steken   #;                                                                                      ! 1Du subject    |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+! Presumably, a speaker would not pose a question to another speaker where that question involves the other speaker                          |
+!     e.g. # Why did you visit you(rself)?                                                                                                   |
+! TODO: Is there a reflexive form for utterances like Why did you hit yourself?                                                              |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+
 
 LEXICON VerbTrnsInfl
 [1Sg][2Sg]:mken     #; 
