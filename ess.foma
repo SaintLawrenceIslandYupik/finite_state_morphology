@@ -120,7 +120,6 @@ def BaseFinalEndings    ghw      -> qw ,
                         gh ("*") -> q  , 
                         g        -> k  ,
                         w        -> kw ,
-                        t e      -> t a  || C _ WordBoundary  , 
                         t e      -> t a  ||   _ WordBoundary  , 
                         t e      -> n    || V _ WordBoundary  ∘
                         e        -> a    ||   _ WordBoundary  ;
