@@ -897,19 +897,19 @@ LEXICON VerbIntr
 !       In Appendix I, p.182, it is given as ~sf(e)stekstek
 ! ----------------------------------------|
 ! Intransitive Interrogative Mood Endings |
-! ----------------------------------------|----------------|
-[V][Intrg][3Sg]:~f(g/t)a               #; ! 3Sg possessor  |
-[V][Intrg][3Pl]:~f(g/t)at              #; ! 3Pl possessor  |
-[V][Intrg][3Du]:~f(g/t)ak              #; ! 3Du Possessor  |
-! ----------------------------------------|----------------|
-[V][Intrg][1Sg]:~f(t)zinga             #; ! 1Sg possessor  |
-[V][Intrg][1Pl]:~sf(e)sta              #; ! 1Pl possessor  |
-[V][Intrg][1Du]:~sf(e)stung            #; ! 1Du Possessor  |
-! ----------------------------------------|----------------|
-[V][Intrg][2Sg]:~f(t)zin               #; ! 2Sg possessor  |
-[V][Intrg][2Pl]:~sf(e)tsi              #; ! 2Pl possessor  |
-[V][Intrg][2Du]:~sf(e)stek             #; ! 2Du Possessor  |
-! ----------------------------------------|----------------|
+! ----------------------------------------|-------------|
+[V][Intrg][3Sg]:~f(g/t)a               #; ! 3Sg subject |
+[V][Intrg][3Pl]:~f(g/t)at              #; ! 3Pl subject |
+[V][Intrg][3Du]:~f(g/t)ak              #; ! 3Du subject |
+! ----------------------------------------|-------------|
+[V][Intrg][1Sg]:~f(t)zinga             #; ! 1Sg subject |
+[V][Intrg][1Pl]:~sf(e)sta              #; ! 1Pl subject |
+[V][Intrg][1Du]:~sf(e)stung            #; ! 1Du subject |
+! ----------------------------------------|-------------|
+[V][Intrg][2Sg]:~f(t)zin               #; ! 2Sg subject |
+[V][Intrg][2Pl]:~sf(e)tsi              #; ! 2Pl subject |
+[V][Intrg][2Du]:~sf(e)stek             #; ! 2Du subject |
+! ----------------------------------------|-------------|
 
 LEXICON VerbIntrInfl
 [3Sg]:q    #;
@@ -923,15 +923,41 @@ LEXICON VerbIntrInfl
 [2Du]:tek  #;
 
 LEXICON VerbIntrOpt
-[V][Opt][PRS][2Sg]:+gi~sfi+n~fix  #;
-[V][Opt][PRS][2Pl]:@(i)tek        #;
-[V][Opt][PRS][2Du]:@(i)tek        #;
-[V][Opt][PRS][1Pl]:~sf%:(e)lta    #;
-[V][Opt][PRS][1Du]:~sf%:(e)ltung  #;
 
-[V][Opt][NEG][2Sg]:–fqaavek   #;
-[V][Opt][NEG][2Pl]:–fqaafsi   #;
-[V][Opt][NEG][2Du]:–fqaaftek  #;
+!TODO: What does the '@' symbol here do?
+!      What do the 3rd person optatives mean?
+! -------------------------------------------------|
+! Intransitive Optative Mood Endings Present Tense |
+! -----------------------------------|-------------|
+[V][Opt][PRS][3Sg]:@~fli          #; ! 3Sg subject |
+[V][Opt][PRS][3Pl]:@~flit         #; ! 3Pl subject |
+[V][Opt][PRS][3Du]:@~flik         #; ! 3Du subject |
+! -----------------------------------|-------------|
+[V][Opt][PRS][1Sg]:@~flanga       #; ! 1Sg subject | ! TODO: Telling yourself to do something??
+[V][Opt][PRS][1Pl]:~sf%:(e)lta    #; ! 1Pl subject |
+[V][Opt][PRS][1Du]:~sf%:(e)ltung  #; ! 1Du subject |
+! -----------------------------------|-------------|
+[V][Opt][PRS][2Sg]:+gi~sfi+n~fix  #; ! 2Sg subject |
+[V][Opt][PRS][2Pl]:@(i)tek        #; ! 2Pl subject |
+[V][Opt][PRS][2Du]:@(i)tek        #; ! 2Du subject |
+! -----------------------------------|-------------|
+
+!TODO: Does the rest of the chart exist?
+! -------------------------------------------------|
+! Intransitive Optative Mood Endings NEG (Do Not)  |
+! -----------------------------------|-------------|
+![V][Opt][NEG][3Sg]:              #; ! 3Sg subject |
+![V][Opt][NEG][3Pl]:              #; ! 3Pl subject |
+![V][Opt][NEG][3Du]:              #; ! 3Du subject |
+! -----------------------------------|-------------|
+![V][Opt][NEG][1Sg]:              #; ! 1Sg subject |
+![V][Opt][NEG][1Pl]:              #; ! 1Pl subject |
+![V][Opt][NEG][1Du]:              #; ! 1Du subject |
+! -----------------------------------|-------------|
+[V][Opt][NEG][2Sg]:~fqaavek       #; ! 2Sg subject |
+[V][Opt][NEG][2Pl]:~fqaafsi       #; ! 2Pl subject |
+[V][Opt][NEG][2Du]:~fqaaftek      #; ! 2Du subject |
+! -----------------------------------|-------------|
 
 
 LEXICON VerbTrns
@@ -998,28 +1024,92 @@ LEXICON VerbTrnsInfl
 [3Pl][3Sg]:at       #; 
 [3Pl][3Pl]:it       #; 
 
-LEXICON VerbTrnsOpt
-[V][Opt][PRS][2Sg][3Sg]:~f(i)gu~sf–ggu  #;
-[V][Opt][PRS][2Sg][3Pl]:~f(i)ki         #;
-[V][Opt][PRS][2Sg][3Du]:~f(i)kek        #;
-[V][Opt][PRS][2Sg][1Sg]:~f(i)nga        #;
-[V][Opt][PRS][2Sg][1Pl]:~f(i)kut        #;
 
-[V][Opt][NEG][2Sg][3Sg]:–fqaan   #;
-[V][Opt][NEG][2Pl][3Sg]:–fqaan   #;
-[V][Opt][NEG][2Du][3Sg]:–fqaan   #;
-[V][Opt][NEG][2Sg][3Pl]:–fqiita  #;
-[V][Opt][NEG][2Pl][3Pl]:–fqiita  #;
-[V][Opt][NEG][2Du][3Pl]:–fqiita  #;
-[V][Opt][NEG][2Sg][3Du]:–fqaagkenka   #;
-[V][Opt][NEG][2Pl][3Du]:–fqaagkenka   #;
-[V][Opt][NEG][2Du][3Du]:–fqaagkenka   #;
-[V][Opt][NEG][2Sg][1Sg]:–fqaama  #;
-[V][Opt][NEG][2Pl][1Sg]:–fqaama  #;
-[V][Opt][NEG][2Du][1Sg]:–fqaama  #;
-[V][Opt][NEG][2Sg][1Pl]:–fqaamta  #;
-[V][Opt][NEG][2Pl][1Pl]:–fqaamta  #;
-[V][Opt][NEG][2Du][1Pl]:–fqaamta  #;
-[V][Opt][NEG][2Sg][1Du]:–fqaamtung  #;
-[V][Opt][NEG][2Pl][1Du]:–fqaamtung  #;
-[V][Opt][NEG][2Du][1Du]:–fqaamtung  #;
+LEXICON VerbTrnsOpt
+
+! TODO: Again, what do some of these optative forms mean?
+! -----------------------------------------------------------------------------------------------------------------------------------------|
+!                                               Transitive Optative Mood Endings                                                           |
+! -----------------------------------------------------------------------------------------------------------------------------------------|
+!            3rd singular object          |             3rd plural object                |                  3rd dual object                |    
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+[V][Opt][PRS][3Sg][3Sg]:@~fligu          #;    [V][Opt][PRS][3Sg][3Pl]:@~fliki          #;    [V][Opt][PRS][3Sg][3Du]:@~flikek          #; ! 3Sg subject |
+[V][Opt][PRS][3Pl][3Sg]:@~flitgu         #;    [V][Opt][PRS][3Pl][3Pl]:@~flitki         #;    [V][Opt][PRS][3Pl][3Du]:@~flitkek         #; ! 3Pl subject |
+[V][Opt][PRS][3Du][3Sg]:@~flignegu       #;    [V][Opt][PRS][3Du][3Pl]:@~fligneki       #;    [V][Opt][PRS][3Du][3Du]:@~flignekek       #; ! 3Du subject |
+! ----------------------------------------|----------------------------------------------|----------------------------------------------|----------------|
+[V][Opt][PRS][1Sg][3Sg]:@~flakun         #;    [V][Opt][PRS][1Sg][3Pl]:@~flangi         #;    [V][Opt][PRS][1Sg][3Du]:@~flangak         #; ! 1Sg subject |
+[V][Opt][PRS][1Pl][3Sg]:~sf%:(e)lteggu   #;    [V][Opt][PRS][1Pl][3Pl]:~sf%:(e)lteki    #;    [V][Opt][PRS][1Pl][3Du]:~sf%:(e)ltekek    #; ! 1Pl subject |
+[V][Opt][PRS][1Du][3Sg]:~sf%:(e)ltegnegu #;    [V][Opt][PRS][1Du][3Pl]:~sf%:(e)ltegneki #;    [V][Opt][PRS][1Du][3Du]:~sf%:(e)ltegnekek #; ! 1Du subject |
+! ----------------------------------------|----------------------------------------------|----------------------------------------------|----------------|
+[V][Opt][PRS][2Sg][3Sg]:~f(i)gu~sf–ggu   #;    [V][Opt][PRS][2Sg][3Pl]:~f(i)ki          #;    [V][Opt][PRS][2Sg][3Du]:~f(i)kek          #; ! 2Sg subject |
+[V][Opt][PRS][2Pl][3Sg]:@(i)teggu        #;    [V][Opt][PRS][2Pl][3Pl]:@(i)teki         #;    [V][Opt][PRS][2Pl][3Du]:@(i)tekek         #; ! 2Pl subject |
+[V][Opt][PRS][2Du][3Sg]:@(i)tegnegu      #;    [V][Opt][PRS][2Du][3Pl]:@(i)tegneki      #;    [V][Opt][PRS][2Du][3Du]:@(i)tegnekek      #; ! 2Du subject |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+!            1st singular object          |             1st plural object                |                  1st dual object                |             |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+[V][Opt][PRS][3Sg][1Sg]:@~flinga         #;    [V][Opt][PRS][3Sg][1Pl]:@~flikut         #;    [V][Opt][PRS][3Sg][1Du]:@~flikung         #; ! 3Sg subject |
+[V][Opt][PRS][3Pl][1Sg]:@~flitnga        #;    [V][Opt][PRS][3Pl][1Pl]:@~flinkut        #;    [V][Opt][PRS][3Pl][1Du]:@~flinkung        #; ! 3Pl subject |
+[V][Opt][PRS][3Du][1Sg]:@~flignenga      #;    [V][Opt][PRS][3Du][1Pl]:@~flinkut        #;    [V][Opt][PRS][3Du][1Du]:@~flinkung        #; ! 3Du subject |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+! Presumably, a speaker would not use the optative mood with himself/herself                                                               |             |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+[V][Opt][PRS][2Sg][1Sg]:~f(i)nga         #;    [V][Opt][PRS][2Sg][1Pl]:~f(i)kut         #;    [V][Opt][PRS][2Sg][1Du]:~f(i)kung         #; ! 2Sg subject |
+[V][Opt][PRS][2Pl][1Sg]:@(i)tengnga      #;    [V][Opt][PRS][2Pl][1Pl]:@(i)tekut        #;    [V][Opt][PRS][2Pl][1Du]:@(i)tekung        #; ! 2Pl subject |
+[V][Opt][PRS][2Du][1Sg]:@(i)tegnenga     #;    [V][Opt][PRS][2Du][1Pl]:@(i)tegnekut     #;    [V][Opt][PRS][2Du][1Du]:@(i)tegnekung     #; ! 2Du subject |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+!            2nd singular object          |             2nd plural object                |                  2nd dual object                |             |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+[V][Opt][PRS][3Sg][2Sg]:~flaten          #;    [V][Opt][PRS][3Sg][2Pl]:~flisi           #;    [V][Opt][PRS][3Sg][2Du]:~flistek          #; ! 3Sg subject |
+[V][Opt][PRS][3Pl][2Sg]:~flaten          #;    [V][Opt][PRS][3Pl][2Pl]:~flisi           #;    [V][Opt][PRS][3Pl][2Du]:~flistek          #; ! 3Pl subject |
+[V][Opt][PRS][3Du][2Sg]:~flaten          #;    [V][Opt][PRS][3Du][2Pl]:~flisi           #;    [V][Opt][PRS][3Du][2Du]:~flistek          #; ! 3Du subject |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+[V][Opt][PRS][3Sg][1Sg]:~flaken          #;    [V][Opt][PRS][3Sg][1Pl]:~flamsi          #;    [V][Opt][PRS][3Sg][1Du]:~flamtek          #; ! 3Sg subject |
+[V][Opt][PRS][3Pl][1Sg]:~flaken          #;    [V][Opt][PRS][3Pl][1Pl]:~flamsi          #;    [V][Opt][PRS][3Pl][1Du]:~flamtek          #; ! 3Pl subject |
+[V][Opt][PRS][3Du][1Sg]:~flaken          #;    [V][Opt][PRS][3Du][1Pl]:~flamsi          #;    [V][Opt][PRS][3Du][1Du]:~flamtek          #; ! 3Du subject |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+! Presumably, a speaker would not command a speaker to do something where that action involves the other speaker                                         |
+! TODO: Again, is there a reflexive form for utterances like 'Hit yourself'?                                                                             |
+! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+
+! TODO: Do any of the other forms exist?
+! ------------------------------------------------------------------------------------------------------------------|
+!                                         Transitive Optative Mood Endings (Negative)                               |
+! ------------------------------------------------------------------------------------------------------------------|
+!      3rd singular object       |           3rd plural object          |           3rd dual object                 |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+![V][Opt][NEG][3Sg][3Sg]:       #;    [V][Opt][NEG][3Sg][3Pl]:         #;    [V][Opt][NEG][3Sg][3Du]:            #; ! 3Sg subject |
+![V][Opt][NEG][3Pl][3Sg]:       #;    [V][Opt][NEG][3Pl][3Pl]:         #;    [V][Opt][NEG][3Pl][3Du]:            #; ! 3Pl subject |
+![V][Opt][NEG][3Du][3Sg]:       #;    [V][Opt][NEG][3Du][3Pl]:         #;    [V][Opt][NEG][3Du][3Du]:            #; ! 3Du subject |
+! ----------------------------------------|-----------------------------|-------------------------------------------|-------------|
+![V][Opt][NEG][1Sg][3Sg]:       #;    [V][Opt][NEG][1Sg][3Pl]:         #;    [V][Opt][NEG][1Sg][3Du]:            #; ! 1Sg subject |
+![V][Opt][NEG][1Pl][3Sg]:       #;    [V][Opt][NEG][1Pl][3Pl]:         #;    [V][Opt][NEG][1Pl][3Du]:            #; ! 1Pl subject |
+![V][Opt][NEG][1Du][3Sg]:       #;    [V][Opt][NEG][1Du][3Pl]:         #;    [V][Opt][NEG][1Du][3Du]:            #; ! 1Du subject |
+! ----------------------------------------|-----------------------------|-------------------------------------------|-------------|
+[V][Opt][NEG][2Sg][3Sg]:–fqaan  #;    [V][Opt][NEG][2Sg][3Pl]:–fqiita  #;    [V][Opt][NEG][2Sg][3Du]:–fqaagkenka #; ! 2Sg subject |
+[V][Opt][NEG][2Pl][3Sg]:–fqaan  #;    [V][Opt][NEG][2Pl][3Pl]:–fqiita  #;    [V][Opt][NEG][2Pl][3Du]:–fqaagkenka #; ! 2Pl subject |
+[V][Opt][NEG][2Du][3Sg]:–fqaan  #;    [V][Opt][NEG][2Du][3Pl]:–fqiita  #;    [V][Opt][NEG][2Du][3Du]:–fqaagkenka #; ! 2Du subject |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+!      1st singular object       |           1st plural object          |                  1st dual object          |             |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+![V][Opt][NEG][3Sg][1Sg]:       #;    [V][Opt][NEG][3Sg][1Pl]:         #;    [V][Opt][NEG][3Sg][1Du]:            #; ! 3Sg subject |
+![V][Opt][NEG][3Pl][1Sg]:       #;    [V][Opt][NEG][3Pl][1Pl]:         #;    [V][Opt][NEG][3Pl][1Du]:            #; ! 3Pl subject |
+![V][Opt][NEG][3Du][1Sg]:       #;    [V][Opt][NEG][3Du][1Pl]:         #;    [V][Opt][NEG][3Du][1Du]:            #; ! 3Du subject |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+! Presumably, a speaker would not use the optative mood with himself/herself                                        |             |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+[V][Opt][NEG][2Sg][1Sg]:–fqaama #;    [V][Opt][NEG][2Sg][1Pl]:–fqaamta #;    [V][Opt][NEG][2Sg][1Du]:–fqaamtung  #; ! 2Sg subject |
+[V][Opt][NEG][2Pl][1Sg]:–fqaama #;    [V][Opt][NEG][2Pl][1Pl]:–fqaamta #;    [V][Opt][NEG][2Pl][1Du]:–fqaamtung  #; ! 2Pl subject |
+[V][Opt][NEG][2Du][1Sg]:–fqaama #;    [V][Opt][NEG][2Du][1Pl]:–fqaamta #;    [V][Opt][NEG][2Du][1Du]:–fqaamtung  #; ! 2Du subject |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+!       2nd singular object      |           2nd plural object          |                  2nd dual object          |             |
+! -------------------------------|----------------------------------------------|-----------------------------------|-------------|
+![V][Opt][NEG][3Sg][2Sg]:       #;    [V][Opt][NEG][3Sg][2Pl]:         #;    [V][Opt][NEG][3Sg][2Du]:            #; ! 3Sg subject |
+![V][Opt][NEG][3Pl][2Sg]:       #;    [V][Opt][NEG][3Pl][2Pl]:         #;    [V][Opt][NEG][3Pl][2Du]:            #; ! 3Pl subject |
+![V][Opt][NEG][3Du][2Sg]:       #;    [V][Opt][NEG][3Du][2Pl]:         #;    [V][Opt][NEG][3Du][2Du]:            #; ! 3Du subject |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+![V][Opt][NEG][3Sg][1Sg]:       #;    [V][Opt][NEG][3Sg][1Pl]:         #;    [V][Opt][NEG][3Sg][1Du]:            #; ! 3Sg subject |
+![V][Opt][NEG][3Pl][1Sg]:       #;    [V][Opt][NEG][3Pl][1Pl]:         #;    [V][Opt][NEG][3Pl][1Du]:            #; ! 3Pl subject |
+![V][Opt][NEG][3Du][1Sg]:       #;    [V][Opt][NEG][3Du][1Pl]:         #;    [V][Opt][NEG][3Du][1Du]:            #; ! 3Du subject |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+!                                                                                                                                 |
+! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
