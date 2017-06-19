@@ -64,44 +64,6 @@ define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e _ ∘  ! doe
 define InterConsonantalE "(e)" -> e || C (":") _ ∘                  ! convert (e) to e when following a consonant
                          "(e)" -> 0 || V (":") _ ;                  ! otherwise delete it
 
-define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
-                      gh ":" e -> i || [ WordBoundary | C ] i _    ∘
-                      gh ":" e -> u || [ WordBoundary | C ] u _    ∘
-                      gh ":" a -> a || [ WordBoundary | C ] FullVowel _    ∘
-                      gh ":" i -> i || [ WordBoundary | C ] FullVowel _    ∘
-                      gh ":" u -> u || [ WordBoundary | C ] FullVowel _    ∘
-                         ":"   -> 0 ;
-
-! Jacobson (2001, p.12) states: "(Noun) Bases  can end only in a vowel ... or in one of the consonants gh, g, ghw, or w."
-! Jacobson (2001, p.18) states: "Verb bases end in precisely the same ways that noun bases do, that is,
-!                                in a full vowel, in e, in te, or in one of the fricatives, gh, g, ghw, or w."
-! 
-! For the purposes of this rule, an interesting research question might be to elicit data
-!     where a made-up base ending in something else (for example ngw),
-!     to see how this affects this rule.
-! 
-! Jacobson (2001, p.24) states: "Likewise, it will substitute a rounded fricative, wh or (voiceless) ghw, 
-!                                if the base ends in a rounded velar or uvular fricative."
-! 
-! However, in the succeeding example on the same page, the base kiiw- goes to kiiwrugllagek.
-! That would seem to indicate that the voiced consonants w is to be substituted, and not wh.
-! Additionally, ghw is voiced, not voiceless.
-! Overall it seems that the above quotation contains mistakes.
-! 
-! Additionally, Jacobson (2001, p.24) is unclear regard how assimilation affects postbases ending in q and k.
-! Does assimilation occur only in place?   (k -> q  || Uvular  _       and q -> k  || Velar   _ )
-! Or does assimilation occur in rounding?  (k -> kw || Rounded _       and q -> qw || Rounded _ )
-! Or both?                                 (k -> qw || RoundedUvular _ and q -> kw || RoundedVelar _ )
-! 
-! This probably requires elicitation to determine.
-! 
-! Oh, my. Looks like this is partially a problem with the orthography.
-! In the example on p.24 the postbase is –ghllak. This means that the gh in the postbase is actually voiceless ghh.
-! That explains the (voiceless) bit in the quotation up above.
-! 
-! Also, there is a postbase ~sf–gga that begins with –gg. What happens to it? 
-! Does it become ghhw or ghh in the presence of a (rounded) uvular?
-! 
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh  [("*")|("~")] "–" _   ∘
                                       [ gh | g ] -> g   || g   ("~") "–" _           ∘
                                       [ gh | g ] -> wh  || w   ("~") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘ ! This line is unfortunately required because of orthographic undoubling conventions
@@ -116,27 +78,30 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh  [("*")|("~")] "�
 									      gh "*" -> 0   ||  _ [("~") | ("~f") ] "–"  ∘
                                              "–" -> 0                                ;
 
-def BaseFinalEndings    ghw      -> qw , 
-                        gh ("*") -> q  , 
-                        g        -> k  ,
-                        w        -> kw ,
-                        t e      -> t a  ||   _ WordBoundary  , 
-                        t e      -> n    || V _ WordBoundary  ∘
-                        e        -> a    ||   _ WordBoundary  ;
-
 define AbsolutiveConsonantChange "(s/z)" -> s || C ("*") _   ∘
                                  "(s/z)" -> z || V       _   ∘                                 
                                  "(p/v)" -> p || C ("*") _   ∘
                                  "(p/v)" -> v || V       _   ∘
                                  "(t/y)" -> t || C ("*") _   ∘
                                  "(t/y)" -> y || V       _   ;
-                                 
 
 define JunctureConsonantInsertion ["(g/t)" | "(g)"] -> g || V V [("~f") | ("~")] _  ∘  ! (g) used with bases that end in a double vowel
                                   ["(g/t)" | "(t)"] -> t ||             C ("~f") _  ∘  ! (t) used with bases that end in a consonant
                                   ["(g/t)"|"(g)"|"(t)"] -> 0                        ∘  ! endings for intransitive/transitive indicative
                                   "(ng)" -> "ng"         || V [("~")|("~h")] ":" _  ∘  ! nasal inserted if base ends in a vowel, including e
     		                      "(ng)" -> 0                                       ;
+
+define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
+                      gh ":" e -> i || [ WordBoundary | C ] i _    ∘
+                      gh ":" e -> u || [ WordBoundary | C ] u _    ∘
+                      gh ":" a -> a || [ WordBoundary | C ] FullVowel _    ∘
+                      gh ":" i -> i || [ WordBoundary | C ] FullVowel _    ∘
+                      gh ":" u -> u || [ WordBoundary | C ] FullVowel _    ∘
+                         ":"   -> 0 ;
+
+define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
+                                         h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
+                            ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
 
 define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels
 
@@ -152,14 +117,6 @@ define ClusterDevoicing y -> s || _ [Stop | VoicelessFricative | VoicelessNasal]
                         t z -> s                                                 ∘   ! tz cluster becomes s
 						z -> s || Stop _                                         ;
 
-define AutoDevoicing v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || _ [Stop | f | s | wh] ∘   
-                     v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || [Stop | f | s | wh | h] _ ∘   
-		             m -> mm, n -> nn, ngng -> ngng, ngw -> ngngw                                       || [Stop | f | s | wh | h] _ ∘   
-                     v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || _ ll ∘ 
-                     v -> f, l -> ll, z -> s, y -> s, r -> rr, g -> gg, w -> wh, gh -> ghh, ghw -> ghhw || [ll| rr | gg | ghh |ghhw] _ ∘ 
-                     m -> mm, n -> nn, ngng -> ngng, ngw -> ngngw                                       || [ll| rr | gg | ghh |ghhw] _ ;
-
-						  
 define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop | f | s | wh] ∘   
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [Stop | f | s | wh | h] _ ∘   
 		          mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | wh | h] _ ∘   
@@ -167,12 +124,14 @@ define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop |
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [ll| rr | gg | ghh |ghhw] _ ∘ 
                   mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [ll| rr | gg | ghh |ghhw] _ ;
 
-define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
-                                         h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
-                            ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
-
-define teDropping t e ->  0 || _ "@"  ∘
-                  "@" ->  0           ;
+def BaseFinalEndings    ghw      -> qw , 
+                        gh ("*") -> q  , 
+                        g        -> k  ,
+                        w        -> kw ,
+                        t e      -> t a  ||   _ WordBoundary  , 
+                        t e      -> n    || V _ WordBoundary  ∘
+                        e        -> a    ||   _ WordBoundary  ∘  ! TODO: Is there anyway around this hard-coding?
+						gh q     -> q    ||   _ WordBoundary  ;  ! hard-coded for 3Sg intransitive participial mood of special te's
 
 define Optative "+gi"  -> g i     || V V _                  ∘
                 "+gi"  -> 0                                 ∘
@@ -194,10 +153,23 @@ define Optative "+gi"  -> g i     || V V _                  ∘
                 "~sf–ggu" -> 0                              ∘
                 "(i)" -> i       || e ("~f") _              ∘
                 "(i)" -> 0                                  ;
+
+define Participial "@*ngugh*" -> "@*" n g u gh "*" "[Ptcp]" || t e "*" _ ∘
+                   t e "*" -> l || _ "@*"                                ∘
+				   "@*" -> 0                                             ∘
+				   "@–lghii" -> 0 || "[Ptcp]" _                          ∘  ! Use "[Ptcp]" as an indicator that the first participial
+                   "@–lghii" -> "@" "–" l gh i i || "@*ngugh*" _         ∘  ! mood ending has been applied
+                   "@*ngugh*" -> 0                                       ∘
+				   "[Ptcp]" -> 0                                         ;
+
+define teDropping t e ->  0 || _ "@"  ∘
+                  "@" ->  0           ;
+
                                                   
 
 define Rules [
 	Lexicon ∘
+	Participial ∘
 	teDropping ∘ 
 	Optative ∘
 	FinalConsonantDropAssimilation ∘
@@ -213,7 +185,6 @@ define Rules [
 	UvularDropping ∘ 
 	VelarUvularRounding ∘
 	FinalE      ∘ 
-	! AutoDevoicing ∘
 	ClusterDevoicing ∘
 	VowelDominance ∘
 	BaseFinalEndings ∘

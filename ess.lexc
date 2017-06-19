@@ -1,8 +1,9 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
-		  [Abs1SgPoss] [SgPosd]
+		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
+		  [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
-                  +gi +n ~fi ~sfi (i) ~f(i)gu ~sf–ggu
+				  @*
+                  +gi +n ~fi ~sfi (i) ~f(i)gu ~sf–ggu @*ngugh* @–lghii @~sf–(g)ke(g)ka
 
 LEXICON Root
 
@@ -842,13 +843,13 @@ sangighqugh      VerbTrns; ! to wash dishes
 
 geve             VerbIntr; ! to render (fat); to be compressed
 gheve            VerbIntr; ! to fade
-kavite           VerbIntr; ! to be red
+kavite*          VerbIntr; ! to be red
 naave            VerbIntr; ! to break, to get broken
 neghenghite      VerbIntr; ! to not eat
 qaame            VerbIntr; ! to go out (fire, light, etc.)
 qinuyug          VerbIntr; ! to be sick
 sughma           VerbIntr; ! to play chess or checkers
-sukate           VerbIntr; ! to be fast
+sukate*          VerbIntr; ! to be fast
 
 akite            VerbTrans; ! to answer; to reciprocate
 ifkaghte         VerbTrans; ! to drop accidentally or on purpose
@@ -873,13 +874,13 @@ sangighqugh      VerbTrnsOpt; ! to wash dishes
 
 geve             VerbIntrOpt; ! to render (fat); to be compressed
 gheve            VerbIntrOpt; ! to fade
-kavite           VerbIntrOpt; ! to be red
+kavite*          VerbIntrOpt; ! to be red
 naave            VerbIntrOpt; ! to break, to get broken
 neghenghite      VerbIntrOpt; ! to not eat
 qaame            VerbIntrOpt; ! to go out (fire, light, etc.)
 qinuyug          VerbIntrOpt; ! to be sick
 sughma           VerbIntrOpt; ! to play chess or checkers
-sukate           VerbIntrOpt; ! to be fast
+sukate*          VerbIntrOpt; ! to be fast
 
 akite            VerbTransOpt; ! to answer; to reciprocate
 ifkaghte         VerbTransOpt; ! to drop accidentally or on purpose
@@ -891,7 +892,8 @@ tuquuqagh        VerbTransOpt; ! to nail
 
 
 LEXICON VerbIntr
-[V][Intr_Ind]:~f(g/t)u   VerbIntrInfl; 
+[V][Intr_Ind]:~f(g/t)u      VerbIntrInfl;  ! TODO: Are descriptive bases labeled as such in the dictionary?
+[V][Intr_Ptcp]:@*ngugh*@–lghii   VerbIntrInfl;  ! @nguq* is the participial ending reserved for bases ending in "special" te's
 
 ! TODO: On p.51, [V][Intrg][2Du] is given as ~sf(e)stek
 !       In Appendix I, p.182, it is given as ~sf(e)stekstek
@@ -961,8 +963,9 @@ LEXICON VerbIntrOpt
 
 
 LEXICON VerbTrns
-[V][Trns_Ind]:~(g)a    VerbTrnsInfl;
-[V][Imprs_Agnt]:~(g)a  VerbTrnsInfl;
+[V][Trns_Ind]:~(g)a             VerbTrnsInfl;
+[V][Imprs_Agnt]:~(g)a           VerbTrnsInfl;
+[V][Trns_Ptcp]:@~sf–(g)ke(g)ka  VerbTrnsInfl;
 
 
 ! --------------------------------------------------------------------------------------------------------------------------|
