@@ -286,6 +286,25 @@ tefli            Noun; ! particles of food or the like clinging around mouth
 tuquuqagh        Noun; ! nail
 vegllug          Noun; ! towel
 
+! Jacobson (2001) Chapter 12 Noun Vocabulary
+whani           Ptcl; ! right here (localis demonstrative adverb) particle
+
+aghnaghugh       Noun; ! "sea apple" (Boltnia ovifera) edible sea creature found on beach
+ilangqugh        Noun; ! clear fresh ice
+meteghllug       Noun; ! raven
+peraral          Noun; ! meat aspic, a dish of finely minced meat cooked in meat broth and jelled before eating
+qazigyagh        Noun; ! spotted seal
+qughsatku        Noun; ! "king" polar bear (fearsome, said to be almost unkillable)
+tanpegh          Noun; ! dried walrus hide
+ullghitagh       Noun; ! wheeled vehicle; snow machine; all terrain vehicle (used in the dual, 'ullghitak', for one vehicle)
+! From the diagram of a hand on p.79
+alangquq         Noun; !
+atghilek         Noun; !
+iqelquq          Noun; !
+kumlu            Noun; !
+tangyeq          Noun; !
+tekeq            Noun; !
+tunak            Noun; !
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -305,7 +324,6 @@ LEXICON Noun
 -squgh[N→N]:–squgh          Noun; ! little N, small N 
 -squghhah[N→N]:–squghhagh*  Noun; ! little N, small N 
 
-
 ! Noun →  Verb postbases
 [N→V]:~%:(ng)u    Verb; ! to be N
 [N→V]:–ngllagh    Verb; ! to make N 
@@ -315,6 +333,7 @@ LEXICON Noun
 [N→V]:+tugh       VerbIntr; ! to eat N; to use N 
 [N→V]:–ligh       VerbTrns; ! to provide with N; to pu N in 
 [N→V]:ti          VerbIntr; ! to speak the language of N (TODO: This is a prefix)
+[N→V]:tuumagh     Verb?; ! together with one's N(s)
 
 ! Verb →  Noun postbases
 [V→N]:@~sf–(g)kaq Noun; ! one that has V-ed or been V-ed
@@ -322,24 +341,27 @@ LEXICON Noun
 [V→N]:@ngugh*     Noun; ! same as above but for descriptive and negative bases ending in -te 
 [V→N]:@~sf–(g)ke  Noun; ! one that the possessor is V-ing (always used with possessed ending)
 [V→N]:(g)ka       Noun; ! one that the possessor is V-ing (always used with possessed ending)
+[V→N]:~–kayuk     Noun; ! one who is able to V 
 
 ! Verb →  Verb postbases
-[V→V]:~(g)aqe     Verb; ! to be V-ing; to regularly or repeat V 
-[V→V]:@lleqe      Verb; ! to V in the future; will V 
-[V→V]:@~fnaqe     Verb; ! to be going to V; to be about to V 
-[V→V]:@~fyug      Verb; ! to want to V
-[V→V]:@–nghite    Verb; ! to not V
-[V→V]:+(pete)fte  VerbIntr; ! to evidently V or have V-ed
-[V→V]:@~sf–(g)kau VerbIntr; ! to have V-ed or been V-ed 
-[V→V]:@~%:(i/u)ma VerbIntr; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
-[V→V]:@~%:(i/u)ma VerbTrns; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
-[V→V]:~%:(u)te    VerbIntr; ! to V with, for, or to object; to V object along with oneself; to V each other 
-[V→V]:~%:(u)te    VerbTrns; ! to V with, for, or to object; to V object along with oneself; to V each other 
+[V→V]:~(g)aqe       Verb; ! to be V-ing; to regularly or repeat V 
+[V→V]:@lleqe        Verb; ! to V in the future; will V 
+[V→V]:@~fnaqe       Verb; ! to be going to V; to be about to V 
+[V→V]:@~fyug        Verb; ! to want to V
+[V→V]:@–nghite      Verb; ! to not V
+[V→V]:+(pete)fte    VerbIntr; ! to evidently V or have V-ed
+[V→V]:@~sf–(g)kau   VerbIntr; ! to have V-ed or been V-ed 
+[V→V]:@~%:(i/u)ma   VerbIntr; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
+[V→V]:@~%:(i/u)ma   VerbTrns; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
+[V→V]:~%:(u)te      VerbIntr; ! to V with, for, or to object; to V object along with oneself; to V each other 
+[V→V]:~%:(u)te      VerbTrns; ! to V with, for, or to object; to V object along with oneself; to V each other 
+[V→V]:@~%:(i/u)magh VerbTrns; ! while V-ing 
 ! Compound-verbal postbases
 [V→V]:@~fni       VerbIntr; ! to say that one V-s
 [V→V]:+(te)ste    VerbTrns; ! to have, make, or let one V
 [V→V]:~sf:(e)sqe  VerbTrns; ! to ask or tell one to V 
 [V→V]:+(te)sug    VerbTrns; ! to want one to V 
+[V→V]:~–kayugu    VerbTrns; ! to be able to V (transfers valence of embedded verb) 
 
 !+e                 ?  ; to make English words in Yupik words
 !–ghhalek           ?  ; how V! (exclamation)
@@ -588,46 +610,9 @@ tagi             VerbIntr; ! to come towards speaker
 taake            VerbIntr; ! to be long
 tuqu             VerbIntr; ! to die
 
-esghaate         VerbIntrOpt; ! to see something
-esghaate         VerbTrnsOpt; ! to see something
-gaagh            VerbIntrOpt; ! to cook
-gaagh            VerbTrnsOpt; ! to cook
-inghu            VerbIntrOpt; ! to pick berries
-inghu            VerbTrnsOpt; ! to pick berries
-kuuve            VerbIntrOpt; ! to spill
-kuuve            VerbTrnsOpt; ! to spill
-nagate           VerbIntrOpt; ! to listen; to hear
-nagate           VerbTrnsOpt; ! to listen; to hear
-negh             VerbIntrOpt; ! to eat
-negh             VerbTrnsOpt; ! to eat
-
-aane             VerbIntrOpt; ! to go out
-aange            VerbIntrOpt; ! to be big
-aghula           VerbIntrOpt; ! to dance
-aghulaqe         VerbIntrOpt; ! to leave
-alinge           VerbIntrOpt; ! to be afraid
-aqii             VerbIntrOpt; ! to take a pleasure trip, to take a vacation
-esleqe           VerbIntrOpt; ! to be full
-ifla             VerbIntrOpt; ! to lose; to get lost
-ingaghte         VerbIntrOpt; ! to lie down
-itegh            VerbIntrOpt; ! to go in, to enter
-kaate            VerbIntrOpt; ! to arrive
-megh             VerbIntrOpt; ! to drink
-nenglagh         VerbIntrOpt; ! to laugh
-pinigh           VerbIntrOpt; ! to be good
-qavagh           VerbIntrOpt; ! to sleep
-qiighw           VerbIntrOpt; ! to cough
-qiya             VerbIntrOpt; ! to cry
-tagi             VerbIntrOpt; ! to come towards speaker
-taake            VerbIntrOpt; ! to be long
-tuqu             VerbIntrOpt; ! to die
-
 ! Jacobson (2001) Chapter 4 Verb Vocabulary
 agatagh          VerbIntr; ! to be hungry
 ayatagh          VerbIntr; ! to be hungry
-
-agatagh          VerbIntrOpt; ! to be hungry
-ayatagh          VerbIntrOpt; ! to be hungry
 
 ! Jacobson (2001) Chapter 7 Verb Vocabulary
 aveg             VerbIntr; ! to divide in two 
@@ -659,35 +644,6 @@ nalluke          VerbTrns; ! to not know
 piniqe           VerbTrns; ! to like
 tugu             VerbTrns; ! to take; to pick up
 
-aveg             VerbIntrOpt; ! to divide in two 
-aveg             VerbTrnsOpt; ! to divide in two 
-guute            VerbIntrOpt; ! to shoot
-guute            VerbTrnsOpt; ! to shoot
-laalighte        VerbIntrOpt; ! to visit
-laalighte        VerbTrnsOpt; ! to visit
-liite            VerbIntrOpt; ! to learn; to become aware of one's surroundings
-liite            VerbTrnsOpt; ! to learn; to become aware of one's surroundings
-qelpeghte        VerbIntrOpt; ! to open
-qelpeghte        VerbTrnsOpt; ! to open
-qilug            VerbIntrOpt; ! to bark (at)
-qilug            VerbTrnsOpt; ! to bark (at)
-tuqute           VerbIntrOpt; ! to kill
-tuqute           VerbTrnsOpt; ! to kill
-umeg             VerbIntrOpt; ! to close
-umeg             VerbTrnsOpt; ! to close
-
-igamsiqanagh     VerbIntrOpt; ! to make one thankful
-igamsiqayug      VerbIntrOpt; ! to feel thanksful
-
-tuqe             VerbTrnsOpt; ! to use; to wear
-esghagh          VerbTrnsOpt; ! to see
-igamsiqayugvike  VerbTrnsOpt; ! to feel thankful toward
-laalighfike      VerbTrnsOpt; ! to visit
-lli              VerbTrnsOpt; ! to put
-nalluke          VerbTrnsOpt; ! to not know
-piniqe           VerbTrnsOpt; ! to like
-tugu             VerbTrnsOpt; ! to take; to pick up
-
 ! Jacobson (2001) Chapter 8 Verb Vocabulary
 alleg            VerbIntr; ! to sweep
 alleg            VerbTrns; ! to sweep
@@ -705,23 +661,6 @@ qavaghni         VerbIntr; ! to be sleepy
 kayusigh         VerbTrns; ! to help
 liisimake        VerbTrns; ! to know
 tukfigh          VerbTrns; ! to buy
-
-alleg            VerbIntrOpt; ! to sweep
-alleg            VerbTrnsOpt; ! to sweep
-kayusiite        VerbIntrOpt; ! to help out
-kayusiite        VerbTrnsOpt; ! to help out
-pi               VerbIntrOpt; ! to do; to go; etc.
-pi               VerbTrnsOpt; ! to do; to go; etc.
-sa               VerbIntrOpt; ! to do what?
-sa               VerbTrnsOpt; ! to do what?
-
-meghnugh         VerbIntrOpt; ! to be tired
-meqsug           VerbIntrOpt; ! to be thirsty
-qavaghni         VerbIntrOpt; ! to be sleepy
-
-kayusigh         VerbTrnsOpt; ! to help
-liisimake        VerbTrnsOpt; ! to know
-tukfigh          VerbTrnsOpt; ! to buy
 
 ! Jacobson (2001) Chapter 9 Verb Vocabulary
 aghvigh          VerbIntr; ! to cross over; to go to the mainland
@@ -759,33 +698,6 @@ qanigughte       VerbTrns; ! for snow to fall
 siku             VerbTrns; ! to freeze
 ughug            VerbTrns; ! to melt
 
-aghvigh          VerbIntrOpt; ! to cross over; to go to the mainland
-aghvigh          VerbTrnsOpt; ! to cross over; to go to the mainland
-atightugh        VerbIntrOpt; ! to read
-atightugh        VerbTrnsOpt; ! to read
-igagh            VerbIntrOpt; ! to write (on)
-igagh            VerbTrnsOpt; ! to write (on)
-pinighsagh       VerbIntrOpt; ! to fix, to repair; to fix up oneself
-pinighsagh       VerbTrnsOpt; ! to fix, to repair; to fix up oneself
-ulima            VerbIntrOpt; ! to make (something)
-ulima            VerbTrnsOpt; ! to make (something)
-
-aleghquute       VerbIntrOpt; ! to talk together; to converse (non-singular)
-aqlaghate        VerbIntrOpt; ! for it to be cold (weather)
-iknaqe           VerbIntrOpt; ! to be strong
-isekinagh        VerbIntrOpt; ! to be cold (solid, liquid)
-uglagh           VerbIntrOpt; ! to be many, to be numerous
-
-aleghqugh        VerbTrnsOpt; ! to talk to; to tell
-amqeghte         VerbTrnsOpt; ! to bite
-ivagh            VerbTrnsOpt; ! to look for
-naallghute       VerbTrnsOpt; ! to adjust
-naalke           VerbTrnsOpt; ! to find
-payegh           VerbTrnsOpt; ! to meet, to encounter; to go over to help
-qaamte           VerbTrnsOpt; ! to extinguish; to turn off
-ugpeqe           VerbTrnsOpt; ! to believe
-ungipaghaate     VerbTrnsOpt; ! to tell a story to
-
 ! Jacobson (2001) Chapter 10 Verb Vocabulary
 kaaw             VerbIntr; ! to hit, to strike with an object
 kaaw             VerbTrns; ! to hit, to strike with an object
@@ -806,26 +718,6 @@ egte             VerbTrns; ! to throw away
 pumsug           VerbTrns; ! to pinch
 tagite           VerbTrns; ! to bring here
 tuqute           VerbTrns; ! to kill
-
-kaaw             VerbIntrOpt; ! to hit, to strike with an object
-kaaw             VerbTrnsOpt; ! to hit, to strike with an object
-lata             VerbIntrOpt; ! to write a letter (to)
-lata             VerbTrnsOpt; ! to write a letter (to)
-pugimagh         VerbIntrOpt; ! to swim
-pugimagh         VerbTrnsOpt; ! to swim
-
-aqume            VerbIntrOpt; ! to sit
-mayugh           VerbIntrOpt; ! to go up
-nanglii          VerbIntrOpt; ! to stare into space
-nekeve           VerbIntrOpt; ! to stand up
-qayugh           VerbIntrOpt; ! to drink hot liquid (coffee, tea, etc.)
-ukig             VerbIntrOpt; ! to go down
-
-aqfa             VerbTrnsOpt; ! to go get
-egte             VerbTrnsOpt; ! to throw away
-pumsug           VerbTrnsOpt; ! to pinch
-tagite           VerbTrnsOpt; ! to bring here
-tuqute           VerbTrnsOpt; ! to kill
 
 ! Jacobson (2001) Chapter 11 Verb Vocabulary
 aghmig           VerbIntr; ! to wash one's face
@@ -859,41 +751,32 @@ paagh            VerbTrans; ! to lick; to clean by licking with aid of fingers
 tuune            VerbTrans; ! to give
 tuquuqagh        VerbTrans; ! to nail
 
-aghmig           VerbIntrOpt; ! to wash one's face
-aghmig           VerbTrnsOpt; ! to wash one's face
-ghhuugh          VerbIntrOpt; ! to inflate
-ghhuugh          VerbTrnsOpt; ! to inflate
-ifkagh           VerbIntrOpt; ! to fall from a height; to accidentally drop
-ifkagh           VerbTrnsOpt; ! to fall from a height; to accidentally drop
-nalug            VerbIntrOpt; ! to land from the air (onto)
-nalug            VerbTrnsOpt; ! to land from the air (onto)
-pilugug          VerbIntrOpt; ! to put on clothing; to dress
-pilugug          VerbTrnsOpt; ! to put on clothing; to dress
-sangighqugh      VerbIntrOpt; ! to wash dishes
-sangighqugh      VerbTrnsOpt; ! to wash dishes
+! Jacobson (2001) Chapter 12 Verb Vocabulary
+iggag            PosRoot; ! tilting; leaning against something
+ingagh*          PosRoot; ! lying down
+matagh*          PosRoot; ! undressed; parka-less
+mumig            PosRoot; ! turned over
 
-geve             VerbIntrOpt; ! to render (fat); to be compressed
-gheve            VerbIntrOpt; ! to fade
-kavite*          VerbIntrOpt; ! to be red
-naave            VerbIntrOpt; ! to break, to get broken
-neghenghite      VerbIntrOpt; ! to not eat
-qaame            VerbIntrOpt; ! to go out (fire, light, etc.)
-qinuyug          VerbIntrOpt; ! to be sick
-sughma           VerbIntrOpt; ! to play chess or checkers
-sukate*          VerbIntrOpt; ! to be fast
+allakagh         PosRoot; ! separately (from the others)  TODO: These are only used in quantifier-qualifier constructions
+ellnginagh       PosRoot; ! alone; only                   TODO: Right now, they're getting overgenerated
+iingunagh        PosRoot; ! all; whole
+qerngagh         PosRoot; ! together
 
-akite            VerbTransOpt; ! to answer; to reciprocate
-ifkaghte         VerbTransOpt; ! to drop accidentally or on purpose
-ini              VerbTransOpt; ! to hang to dry
-naafqe           VerbTransOpt; ! to break (it)
-paagh            VerbTransOpt; ! to lick; to clean by licking with aid of fingers
-tuune            VerbTransOpt; ! to give
-tuquuqagh        VerbTransOpt; ! to nail
+agniqe           VerbIntr; ! to be angry (women)
+aqumga           VerbIntr; ! to be sitting (compare 'aqume' - 'to sit down')  TODO: What are their root forms?
+ete              VerbIntr; ! to be (obsolete base)
+ilagagh          VerbIntr; ! to sing
+nekevgha         VerbIntr; ! to be standing (compare 'nekeve' - 'to stand up')
+qefliqe          VerbIntr; ! to be angry (men)
 
 
 LEXICON VerbIntr
-[V][Intr_Ind]:~f(g/t)u      VerbIntrInfl;  ! TODO: Are descriptive bases labeled as such in the dictionary?
+
+[V][Intr_Ind]:~f(g/t)u           VerbIntrInfl;  ! TODO: Are descriptive bases labeled as such in the dictionary?
+
 [V][Intr_Ptcp]:@*ngugh*@–lghii   VerbIntrInfl;  ! @nguq* is the participial ending reserved for bases ending in "special" te's
+
+
 
 ! TODO: On p.51, [V][Intrg][2Du] is given as ~sf(e)stek
 !       In Appendix I, p.182, it is given as ~sf(e)stekstek
@@ -913,18 +796,6 @@ LEXICON VerbIntr
 [V][Intrg][2Du]:~sf(e)stek             #; ! 2Du subject |
 ! ----------------------------------------|-------------|
 
-LEXICON VerbIntrInfl
-[3Sg]:q    #;
-[3Pl]:t    #; 
-[3Du]:k    #;
-[1Sg]:nga  #;
-[1Pl]:kut  #;
-[1Du]:kung #;
-[2Sg]:ten  #;
-[2Pl]:si   #;
-[2Du]:tek  #;
-
-LEXICON VerbIntrOpt
 
 !TODO: What does the '@' symbol here do?
 !      What do the 3rd person optatives mean?
@@ -944,6 +815,7 @@ LEXICON VerbIntrOpt
 [V][Opt][PRS][2Du]:@(i)tek        #; ! 2Du subject |
 ! -----------------------------------|-------------|
 
+
 !TODO: Does the rest of the chart exist?
 ! -------------------------------------------------|
 ! Intransitive Optative Mood Endings NEG (Do Not)  |
@@ -961,12 +833,23 @@ LEXICON VerbIntrOpt
 [V][Opt][NEG][2Du]:~fqaaftek      #; ! 2Du subject |
 ! -----------------------------------|-------------|
 
+LEXICON VerbIntrInfl
+[3Sg]:q    #;
+[3Pl]:t    #; 
+[3Du]:k    #;
+[1Sg]:nga  #;
+[1Pl]:kut  #;
+[1Du]:kung #;
+[2Sg]:ten  #;
+[2Pl]:si   #;
+[2Du]:tek  #;
+
+
 
 LEXICON VerbTrns
 [V][Trns_Ind]:~(g)a             VerbTrnsInfl;
 [V][Imprs_Agnt]:~(g)a           VerbTrnsInfl;
 [V][Trns_Ptcp]:@~sf–(g)ke(g)ka  VerbTrnsInfl;
-
 
 ! --------------------------------------------------------------------------------------------------------------------------|
 !                                         Transitive Interrogative Mood Endings                                             |
@@ -1013,23 +896,6 @@ LEXICON VerbTrns
 ! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
 
 
-LEXICON VerbTrnsInfl
-[1Sg][2Sg]:mken     #; 
-[1Sg][3Sg]:qa       #;
-[1Sg][3Pl]:nka      #;
-[2Sg][1Sg]:ghpenga  #;
-[2Sg][3Sg]:n        #; 
-[2Sg][3Pl]:ten      #; 
-[3Sg][1Sg]:anga     #; 
-[3Sg][2Sg]:aten     #; 
-[3Sg][3Sg]:a        #; 
-[3Sg][3Pl]:i        #;
-[3Pl][3Sg]:at       #; 
-[3Pl][3Pl]:it       #; 
-
-
-LEXICON VerbTrnsOpt
-
 ! TODO: Again, what do some of these optative forms mean?
 ! -----------------------------------------------------------------------------------------------------------------------------------------|
 !                                               Transitive Optative Mood Endings                                                           |
@@ -1074,6 +940,7 @@ LEXICON VerbTrnsOpt
 ! TODO: Again, is there a reflexive form for utterances like 'Hit yourself'?                                                                             |
 ! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
 
+
 ! TODO: Do any of the other forms exist?
 ! ------------------------------------------------------------------------------------------------------------------|
 !                                         Transitive Optative Mood Endings (Negative)                               |
@@ -1116,3 +983,45 @@ LEXICON VerbTrnsOpt
 ! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
 !                                                                                                                                 |
 ! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+
+LEXICON VerbTrnsInfl
+
+[1Sg][2Sg]:mken     #; 
+[1Sg][3Sg]:qa       #;
+[1Sg][3Pl]:nka      #;
+[2Sg][1Sg]:ghpenga  #;
+[2Sg][3Sg]:n        #; 
+[2Sg][3Pl]:ten      #; 
+[3Sg][1Sg]:anga     #; 
+[3Sg][2Sg]:aten     #; 
+[3Sg][3Sg]:a        #; 
+[3Sg][3Pl]:i        #;
+[3Pl][3Sg]:at       #; 
+[3Pl][3Pl]:it       #; 
+
+
+LEXICON PosRoot
+
+[V][Intr_Actv]:te   VerbIntrInfl;
+[V][Intr_Actv]:te   VerbTrnsInfl;
+[V][Intr_Stat]:nga  VerbIntrInfl;
+
+! ------------------------------------|
+!     Quantifier-Qualifier Endings    |
+! ------------------------------------|
+[V][Quant_Qual][3Sg]:~%:(ng)an       #;
+[V][Quant_Qual][3Pl]:~%:(ng)ita      #;                
+[V][Quant_Qual][3Du]:~%:(ng)ita      #;
+! ------------------------------------|
+[V][Quant_Qual][1Sg]:~f-wma          #;
+[V][Quant_Qual][1Pl]:%:emta          #;
+[V][Quant_Qual][1Du]:%:emtung        #;
+! ------------------------------------|
+[V][Quant_Qual][2Sg]:–gpek           #;
+[V][Quant_Qual][2Pl]:–gpesi          #;
+[V][Quant_Qual][2Du]:–gpetek         #;
+! ------------------------------------|
+[V][Quant_Qual][4Sg]:~f-wmi          #;
+[V][Quant_Qual][4Pl]:~f-wmeng        #;
+[V][Quant_Qual][4Du]:~f-wmeng        #;
+! ------------------------------------|
