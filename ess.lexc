@@ -306,6 +306,9 @@ tangyeq          Noun; !
 tekeq            Noun; !
 tunak            Noun; !
 
+right            Noun;
+computer         Noun;
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                                                  !!!!!!
@@ -317,29 +320,25 @@ tunak            Noun; !
 LEXICON Noun
 
 ! Noun →  Noun postbases
--ghllag[N→N]:–ghllag        Noun; ! big N; lots of N (when used in the plural)
--ghrugllag[N→N]:–ghrugllag  Noun; ! big N; huge N
--leg[N→N]:–leg              Noun; ! one having N
--mii[N→N]:+mii              Noun; ! resident of N
--squgh[N→N]:–squgh          Noun; ! little N, small N 
--squghhah[N→N]:–squghhagh*  Noun; ! little N, small N 
+-ghllag[N→N]:–ghllag         Noun; ! big N; lots of N (when used in the plural)
+-ghrugllag[N→N]:–ghrugllag   Noun; ! big N; huge N
+-leg[N→N]:–leg               Noun; ! one having N
+-e[N→N]:-e                   Noun; !to make English words in Yupik words
+-mii[N→N]:mii                Noun; ! resident of N
+-–squgh[N→N]:–squgh          Noun; ! little N, small N 
+-–squghhah[N→N]:–squghhagh*  Noun; ! little N, small N 
 
 ! Noun →  Verb postbases
 -~%:(ng)u[N→V]:~%:(ng)u     VerbIntr; ! to be N
 -–lgu[N→V]:–lgu             VerbIntrInfl; ! to have N 
-[N→V]:–ngllagh    Verb; ! to make N 
-[N→V]:–liigh      VerbIntr; ! to cook; to prepare N
-[N→V]:+niigh      VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
-[N→V]:+te         VerbIntr; ! to catch N; to go to N 
-[N→V]:+tugh       VerbIntr; ! to eat N; to use N 
+-–ngllagh[N→V]:–ngllagh     VerbIntr; ! to make N 
+-–liigh[N→V]:–liigh         VerbIntr; ! to cook; to prepare N  ! Jacobson is unsure if this and the following postbase is intransitive only
+-niigh[N→V]:niigh           VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
+-te[N→V]:te                 VerbIntr; ! to catch N; to go to N 
+-tugh[N→V]:tugh             VerbIntr; ! to eat N; to use N 
 [N→V]:–ligh       VerbTrns; ! to provide with N; to pu N in 
 [N→V]:ti          VerbIntr; ! to speak the language of N (TODO: This is a prefix)
 [N→V]:tuumagh     Verb?; ! together with one's N(s)
-
-
-!+e                 ?  ; to make English words in Yupik words
-!–ghhalek           ?  ; how V! (exclamation)
-
 
 0:0               NounInfl;
 
@@ -772,8 +771,7 @@ qefliqe          VerbIntr; ! to be angry (men)
 [V→N]:~–kayuk     Noun; ! one who is able to V 
 
 ! Verb →  Verb postbases
-[V→V]:@–nghite      Verb; ! to not V
-[V→V]:+(pete)fte    VerbIntr; ! to evidently V or have V-ed
+-(pete)fte[V→V]:(pete)fte    VerbIntr; ! to evidently V or have V-ed
 [V→V]:@~sf–(g)kau   VerbIntr; ! to have V-ed or been V-ed 
 [V→V]:@~%:(i/u)ma   VerbIntr; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
 [V→V]:@~%:(i/u)ma   VerbTrns; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
@@ -793,7 +791,6 @@ LEXICON VerbIntr
 [V][Intr_Ind]:~f(g/t)u           VerbIntrInfl;
 
 [V][Intr_Ptcp]:@*ngugh*@–lghii   VerbIntrInfl;  ! @nguq* is the participial ending reserved for bases ending in "special" te's
-
 
 
 ! TODO: On p.51, [V][Intrg][2Du] is given as ~sf(e)stek
@@ -853,10 +850,12 @@ LEXICON VerbIntr
 ! Verb →  Noun postbases
 
 ! Verb →  Verb postbases
--~(g)aqe[V→V]:~(g)aqe    VerbIntr; ! to be V-ing; to regularly or repeat V 
--@lleqe[V→V]:@lleqe      VerbIntr; ! to V in the future; will V 
--@~fnaqe[V→V]:@~fnaqe    VerbIntr; ! to be going to V; to be about to V 
--@~fyug[V→V]:@~fyug      VerbIntr; ! to want to V
+-~(g)aqe[V→V]:~(g)aqe      VerbIntr; ! to be V-ing; to regularly or repeat V 
+-@lleqe[V→V]:@lleqe        VerbIntr; ! to V in the future; will V 
+-@~fnaqe[V→V]:@~fnaqe      VerbIntr; ! to be going to V; to be about to V 
+-@~fyug[V→V]:@~fyug        VerbIntr; ! to want to V
+-–ghhalek[V→Excl]:–ghhalek       #; ! how V! (exclamation)
+-@–n'ghite[V→V]:@–n'ghite  VerbIntr; ! to not V
 
 LEXICON VerbIntrInfl
 [3Sg]:q    #;
@@ -1011,10 +1010,12 @@ LEXICON VerbTrns
 ! Verb →  Noun postbases
 
 ! Verb →  Verb postbases
--~(g)aqe[V→V]:~(g)aqe    VerbTrns; ! to be V-ing; to regularly or repeat V 
--@lleqe[V→V]:@lleqe      VerbTrns; ! to V in the future; will V
--@~fnaqe[V→V]:@~fnaqe    VerbTrns; ! to be going to V; to be about to V 
--@~fyug[V→V]:@~fyug      VerbTrns; ! to want to V
+-~(g)aqe[V→V]:~(g)aqe       VerbTrns; ! to be V-ing; to regularly or repeat V 
+-@lleqe[V→V]:@lleqe         VerbTrns; ! to V in the future; will V
+-@~fnaqe[V→V]:@~fnaqe       VerbTrns; ! to be going to V; to be about to V 
+-@~fyug[V→V]:@~fyug         VerbTrns; ! to want to V
+-–ghhalek[V→Excl]:–ghhalek         #; ! how V! (exclamation)
+-@–n'ghite[V→V]:@–n'ghite   VerbTrns; ! to not V
 
 LEXICON VerbTrnsInfl
 

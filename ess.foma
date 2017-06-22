@@ -113,14 +113,15 @@ define VowelDominance a i -> i i  ∘
                       u a -> a a  ;
 
 define ClusterDevoicing y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
-                        k -> q || gh _                                           ∘    ! k becomes q in the cluster ghk
-                        t z -> s                                                 ∘   ! tz cluster becomes s
+                        y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
+                        k -> q || gh _                                           ∘   ! k becomes q in the cluster ghk
+                        t [z | y] -> s                                           ∘   ! tz/ty cluster becomes s
 						z -> s || Stop _                                         ;
 
 define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop | f | s | wh] ∘   
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [Stop | f | s | wh | h] _ ∘   
-		          mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | wh | h] _ ∘   
-                  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ ll ∘ 
+		          mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | wh | h] _ ∘
+				  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ ll ∘ 
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [ll| rr | gg | ghh |ghhw] _ ∘ 
                   mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [ll| rr | gg | ghh |ghhw] _ ;
 
@@ -162,15 +163,19 @@ define Participial "@*ngugh*" -> "@*" n g u gh "*" "[Ptcp]" || t e "*" _ ∘
                    "@*ngugh*" -> 0                                       ∘
 				   "[Ptcp]" -> 0                                         ;
 
-define teDropping t e ->  0 || _ "@"  ∘
-                  "@" ->  0           ;
+define teModify n -> nn   || V t e "@" [("~f") | ("–")] _ ∘  ! Postbases that start with 'n' drop 'te' --> If 'te' followed a vowel, 'n'
+!                         || C t e "@" [("~f") | ("–")] _ ∘  devoices; if it followed a consonant, the whole cluster devoices
+                ' -> e || "@" "–" nn _ gh                 ∘
+				' -> 0                                    ∘
+                t e ->  0 || _ "@"                        ∘ 
+                "@" ->  0                                 ;
 
                                                   
 
 define Rules [
 	Lexicon ∘
 	Participial ∘
-	teDropping ∘ 
+	teModify ∘ 
 	Optative ∘
 	FinalConsonantDropAssimilation ∘
 	AbsolutiveConsonantChange ∘
