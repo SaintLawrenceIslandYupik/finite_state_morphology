@@ -325,7 +325,8 @@ LEXICON Noun
 -squghhah[N→N]:–squghhagh*  Noun; ! little N, small N 
 
 ! Noun →  Verb postbases
-[N→V]:~%:(ng)u    Verb; ! to be N
+-~%:(ng)u[N→V]:~%:(ng)u     VerbIntr; ! to be N
+-–lgu[N→V]:–lgu             VerbIntrInfl; ! to have N 
 [N→V]:–ngllagh    Verb; ! to make N 
 [N→V]:–liigh      VerbIntr; ! to cook; to prepare N
 [N→V]:+niigh      VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
@@ -335,33 +336,6 @@ LEXICON Noun
 [N→V]:ti          VerbIntr; ! to speak the language of N (TODO: This is a prefix)
 [N→V]:tuumagh     Verb?; ! together with one's N(s)
 
-! Verb →  Noun postbases
-[V→N]:@~sf–(g)kaq Noun; ! one that has V-ed or been V-ed
-[V→N]:@–lghii     Noun; ! one that is V-ing (always used with an unpossessed ending)
-[V→N]:@ngugh*     Noun; ! same as above but for descriptive and negative bases ending in -te 
-[V→N]:@~sf–(g)ke  Noun; ! one that the possessor is V-ing (always used with possessed ending)
-[V→N]:(g)ka       Noun; ! one that the possessor is V-ing (always used with possessed ending)
-[V→N]:~–kayuk     Noun; ! one who is able to V 
-
-! Verb →  Verb postbases
-[V→V]:~(g)aqe       Verb; ! to be V-ing; to regularly or repeat V 
-[V→V]:@lleqe        Verb; ! to V in the future; will V 
-[V→V]:@~fnaqe       Verb; ! to be going to V; to be about to V 
-[V→V]:@~fyug        Verb; ! to want to V
-[V→V]:@–nghite      Verb; ! to not V
-[V→V]:+(pete)fte    VerbIntr; ! to evidently V or have V-ed
-[V→V]:@~sf–(g)kau   VerbIntr; ! to have V-ed or been V-ed 
-[V→V]:@~%:(i/u)ma   VerbIntr; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
-[V→V]:@~%:(i/u)ma   VerbTrns; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
-[V→V]:~%:(u)te      VerbIntr; ! to V with, for, or to object; to V object along with oneself; to V each other 
-[V→V]:~%:(u)te      VerbTrns; ! to V with, for, or to object; to V object along with oneself; to V each other 
-[V→V]:@~%:(i/u)magh VerbTrns; ! while V-ing 
-! Compound-verbal postbases
-[V→V]:@~fni       VerbIntr; ! to say that one V-s
-[V→V]:+(te)ste    VerbTrns; ! to have, make, or let one V
-[V→V]:~sf:(e)sqe  VerbTrns; ! to ask or tell one to V 
-[V→V]:+(te)sug    VerbTrns; ! to want one to V 
-[V→V]:~–kayugu    VerbTrns; ! to be able to V (transfers valence of embedded verb) 
 
 !+e                 ?  ; to make English words in Yupik words
 !–ghhalek           ?  ; how V! (exclamation)
@@ -613,6 +587,26 @@ tuqu             VerbIntr; ! to die
 ! Jacobson (2001) Chapter 4 Verb Vocabulary
 agatagh          VerbIntr; ! to be hungry
 ayatagh          VerbIntr; ! to be hungry
+mekestaaghhagh*  VerbIntr; ! small thing
+takestaaghhagh*  VerbIntr; ! short thing
+seghlegh         VerbIntr; ! bad thing
+
+! Jacobson (2001) Chapter 5 Verb Vocabulary
+aglagh           VerbIntr; ! to go home; to go over to another place
+mayugh           VerbIntr; ! to go up
+qepghagh         VerbIntr; ! to work
+taaqe            VerbIntr; ! to finish; to quit
+ukig             VerbIntr; ! to go down
+umughqaa         VerbIntr; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+yughagh          VerbIntr; ! to pray, to worship
+
+aglagh           VerbPostbase; ! to go home; to go over to another place
+mayugh           VerbPostbase; ! to go up
+qepghagh         VerbPostbase; ! to work
+taaqe            VerbPostbase; ! to finish; to quit
+ukig             VerbPostbase; ! to go down
+umughqaa         VerbPostbase; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+yughagh          VerbPostbase; ! to pray, to worship
 
 ! Jacobson (2001) Chapter 7 Verb Vocabulary
 aveg             VerbIntr; ! to divide in two 
@@ -769,10 +763,34 @@ ilagagh          VerbIntr; ! to sing
 nekevgha         VerbIntr; ! to be standing (compare 'nekeve' - 'to stand up')
 qefliqe          VerbIntr; ! to be angry (men)
 
+! Verb →  Noun postbases
+[V→N]:@~sf–(g)kaq Noun; ! one that has V-ed or been V-ed
+[V→N]:@–lghii     Noun; ! one that is V-ing (always used with an unpossessed ending)
+[V→N]:@ngugh*     Noun; ! same as above but for descriptive and negative bases ending in -te 
+[V→N]:@~sf–(g)ke  Noun; ! one that the possessor is V-ing (always used with possessed ending)
+[V→N]:(g)ka       Noun; ! one that the possessor is V-ing (always used with possessed ending)
+[V→N]:~–kayuk     Noun; ! one who is able to V 
+
+! Verb →  Verb postbases
+[V→V]:@–nghite      Verb; ! to not V
+[V→V]:+(pete)fte    VerbIntr; ! to evidently V or have V-ed
+[V→V]:@~sf–(g)kau   VerbIntr; ! to have V-ed or been V-ed 
+[V→V]:@~%:(i/u)ma   VerbIntr; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
+[V→V]:@~%:(i/u)ma   VerbTrns; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
+[V→V]:~%:(u)te      VerbIntr; ! to V with, for, or to object; to V object along with oneself; to V each other 
+[V→V]:~%:(u)te      VerbTrns; ! to V with, for, or to object; to V object along with oneself; to V each other 
+[V→V]:@~%:(i/u)magh VerbTrns; ! while V-ing 
+! Compound-verbal postbases
+[V→V]:@~fni       VerbIntr; ! to say that one V-s
+[V→V]:+(te)ste    VerbTrns; ! to have, make, or let one V
+[V→V]:~sf:(e)sqe  VerbTrns; ! to ask or tell one to V 
+[V→V]:+(te)sug    VerbTrns; ! to want one to V 
+[V→V]:~–kayugu    VerbTrns; ! to be able to V (transfers valence of embedded verb) 
+
 
 LEXICON VerbIntr
 
-[V][Intr_Ind]:~f(g/t)u           VerbIntrInfl;  ! TODO: Are descriptive bases labeled as such in the dictionary?
+[V][Intr_Ind]:~f(g/t)u           VerbIntrInfl;
 
 [V][Intr_Ptcp]:@*ngugh*@–lghii   VerbIntrInfl;  ! @nguq* is the participial ending reserved for bases ending in "special" te's
 
@@ -798,7 +816,6 @@ LEXICON VerbIntr
 
 
 !TODO: What does the '@' symbol here do?
-!      What do the 3rd person optatives mean?
 ! -------------------------------------------------|
 ! Intransitive Optative Mood Endings Present Tense |
 ! -----------------------------------|-------------|
@@ -806,7 +823,7 @@ LEXICON VerbIntr
 [V][Opt][PRS][3Pl]:@~flit         #; ! 3Pl subject |
 [V][Opt][PRS][3Du]:@~flik         #; ! 3Du subject |
 ! -----------------------------------|-------------|
-[V][Opt][PRS][1Sg]:@~flanga       #; ! 1Sg subject | ! TODO: Telling yourself to do something??
+[V][Opt][PRS][1Sg]:@~flanga       #; ! 1Sg subject |
 [V][Opt][PRS][1Pl]:~sf%:(e)lta    #; ! 1Pl subject |
 [V][Opt][PRS][1Du]:~sf%:(e)ltung  #; ! 1Du subject |
 ! -----------------------------------|-------------|
@@ -832,6 +849,14 @@ LEXICON VerbIntr
 [V][Opt][NEG][2Pl]:~fqaafsi       #; ! 2Pl subject |
 [V][Opt][NEG][2Du]:~fqaaftek      #; ! 2Du subject |
 ! -----------------------------------|-------------|
+
+! Verb →  Noun postbases
+
+! Verb →  Verb postbases
+-~(g)aqe[V→V]:~(g)aqe    VerbIntr; ! to be V-ing; to regularly or repeat V 
+-@lleqe[V→V]:@lleqe      VerbIntr; ! to V in the future; will V 
+-@~fnaqe[V→V]:@~fnaqe    VerbIntr; ! to be going to V; to be about to V 
+-@~fyug[V→V]:@~fyug      VerbIntr; ! to want to V
 
 LEXICON VerbIntrInfl
 [3Sg]:q    #;
@@ -896,7 +921,6 @@ LEXICON VerbTrns
 ! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
 
 
-! TODO: Again, what do some of these optative forms mean?
 ! -----------------------------------------------------------------------------------------------------------------------------------------|
 !                                               Transitive Optative Mood Endings                                                           |
 ! -----------------------------------------------------------------------------------------------------------------------------------------|
@@ -983,6 +1007,14 @@ LEXICON VerbTrns
 ! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
 !                                                                                                                                 |
 ! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
+
+! Verb →  Noun postbases
+
+! Verb →  Verb postbases
+-~(g)aqe[V→V]:~(g)aqe    VerbTrns; ! to be V-ing; to regularly or repeat V 
+-@lleqe[V→V]:@lleqe      VerbTrns; ! to V in the future; will V
+-@~fnaqe[V→V]:@~fnaqe    VerbTrns; ! to be going to V; to be about to V 
+-@~fyug[V→V]:@~fyug      VerbTrns; ! to want to V
 
 LEXICON VerbTrnsInfl
 
