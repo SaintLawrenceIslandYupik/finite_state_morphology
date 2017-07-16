@@ -3,11 +3,10 @@
 read lexc toy.lexc
 def Lexicon
 
-
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
 define VoicelessFricative  [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ] ;
-define VoicedNasal         [  m   |   n                 |        | "ngw"                       ] ;
+define VoicedNasal         [  m   |   n                 | "ng"   | "ngw"                       ] ;
 define VoicelessNasal      [ "mm" | "nn"                | "ngng" | "ngngw"                     ] ;
 
 define Fricative [ VoicelessFricative | VoicedFricative ] ;
@@ -21,39 +20,34 @@ define FullVowel   [ a   | i   | u   ] ;
 define DoubleVowel [ a a | i i | u u ] ;
 define V           [ e | FullVowel ];
 
-define WeakFinalC  gh     -> 0  || [ WordBoundary | C ] FullVowel _ ("~f") "-w"   ∘
-                   "-w"   -> 0  ;
+define Alphabet [ C | V ];
+define MorphPhonSymbols [ "~" | ":" | "(ng)" | "~f" | "(g/t)" ];
 
-define UnmarkStrongGh gh "*" -> gh ;
 
-define FinalE     [..] -> a || WordBoundary (C) a _ C e   "~f"   ∘  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e   "~f"   ∘  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e   "~f"   ∘  ! e-hopping
-                     e -> 0 ||                    V C _   "~f"   ∘  ! e-dropping
-                     e -> 0 ||                        _   "~f" V ∘  ! e-dropping  (Jacobson, 2001), p.19, footnote 1: 
-                                                                    !                 "It is true that all suffixes that begin with a vowel 
-                                                                    !                  in the form in which they are used on a base ending in e 
-                                                                    !                  will cause that e to drop, but nevertheless the sign ~f 
-                                                                    !                  will still be given with such suffixes."
-                  "~f" -> 0 ;                                       ! finally remove intermediate symbol ~f
 
-define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf"  ∘  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e C "~sf"  ∘  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e C "~sf"  ∘  ! e-hopping
-                     e -> 0 ||                    V C _ C "~sf"  ∘  ! e-dropping
-                 "~sf" -> 0 ;                                       ! finally remove intermediate symbol ~sf
+define FinalE [..] -> a || WordBoundary (C) a _ C e   "~f"   ∘  ! e-hopping
+              [..] -> i || WordBoundary (C) i _ C e   "~f"   ∘  ! e-hopping
+              [..] -> u || WordBoundary (C) u _ C e   "~f"   ∘  ! e-hopping
+                 e -> 0 ||                    V C _   "~f"   ∘  ! e-dropping
+                 e -> 0 ||                        _   "~f" V ∘  ! e-dropping
+			  "~f" -> 0 || WordBoundary Alphabet* _         ;
 
-define SemiAndFinalE    
-                  [..] -> a || WordBoundary (C) a _ C e   "~"   ∘  ! final e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e   "~"   ∘  ! final e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e   "~"   ∘  ! final e-hopping
-                     e -> 0 ||                    V C _   "~"   ∘  ! final e-dropping
-                     e -> 0 ||                        _   "~" V ∘  ! final e-dropping  
-                  [..] -> a || WordBoundary (C) a _ C e C "~"   ∘  ! semi-final e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e C "~"   ∘  ! semi-final e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e C "~"   ∘  ! semi-final e-hopping
-                     e -> 0 ||                    V C _ C "~"   ∘  ! semi-final e-dropping
-                   "~" -> 0 ;                                      ! finally remove intermediate symbol ~
+define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   "~"   ∘  ! final e-hopping
+                     [..] -> i || WordBoundary (C) i _ C e   "~"   ∘  ! final e-hopping
+                     [..] -> u || WordBoundary (C) u _ C e   "~"   ∘  ! final e-hopping
+                        e -> 0 ||                    V C _   "~"   ∘  ! final e-dropping
+                        e -> 0 ||                        _   "~" V ∘  ! final e-dropping  
+                     [..] -> a || WordBoundary (C) a _ C e C "~"   ∘  ! semi-final e-hopping
+                     [..] -> i || WordBoundary (C) i _ C e C "~"   ∘  ! semi-final e-hopping
+                     [..] -> u || WordBoundary (C) u _ C e C "~"   ∘  ! semi-final e-hopping
+                        e -> 0 ||                    V C _ C "~"   ∘  ! semi-final e-dropping
+					  "~" -> 0 || WordBoundary Alphabet* _        ;
+
+define JunctureConsonantInsertion "(ng)" -> "ng"         || V ("~") ":" _           ∘  ! (ng) used with bases that end in a vowel
+                                  ["(g/t)" | "(g)"] -> g || V V [("~f") | ("~")] _  ∘  ! (g) used with bases that end in a double vowel
+                                  ["(g/t)" | "(t)"] -> t ||             C ("~f") _  ∘  ! (t) used with bases that end in a consonant
+								            "(ng)"  -> 0 || WordBoundary Alphabet* MorphPhonSymbols* _    ∘  
+                                           "(g/t)"  -> 0 || WordBoundary Alphabet* MorphPhonSymbols* _    ;  
 
 
 define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
@@ -62,45 +56,7 @@ define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
                       gh ":" a -> a || [ WordBoundary | C ] FullVowel _    ∘
                       gh ":" i -> i || [ WordBoundary | C ] FullVowel _    ∘
                       gh ":" u -> u || [ WordBoundary | C ] FullVowel _    ∘
-                         ":"   -> 0 ;
-
-define InterConsonantalE "(e)" -> e || C (":") _ ∘                  ! convert (e) to e when following a consonant
-                         "(e)" -> 0 || V (":") _ ;                  ! otherwise delete it
-
-define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh  ("~") "–" _  ∘
-                                      [ gh | g ] -> g   || g   ("~") "–" _  ∘
-                                      [ gh | g ] -> wh  || w   ("~") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘ ! This line is unfortunately required because of orthographic undoubling conventions
-                                      [ gh | g ] -> w   || w   ("~") "–" _  ∘
-                                      [ gh | g ] -> ghw || ghw ("~") "–" _  ∘
-                                      [  q | k ] -> q   || [ q  | gh  ] ("~") "–" _  ∘
-                                      [  q | k ] -> qw  || [ qw | ghw ] ("~") "–" _  ∘
-                                      [  q | k ] -> kw  || [ kw | w   ] ("~") "–" _  ∘
-                                      [  q | k ] -> k   || [ k  | g   ] ("~") "–" _  ∘
-                                               k -> q   ||   gh ("*") ("~") ("–") _  ∘
-                                               C -> 0   ||            _ ("~") "–"    ∘
-                                             "–" -> 0                                ;
-
-def BaseFinalEndings    ghw      -> qw , 
-                        gh ("*") -> q  , 
-                        g        -> k  ,
-                        w        -> kw ,
-                        t e      -> t a  ||   _ WordBoundary  ,, 
-                        t e      -> n    || V _ WordBoundary   ∘
-                        e        -> a    ||   _ WordBoundary ;
-
-define AbsolutiveConsonantChange "(s/z)" -> s || C _   ∘
-                                 "(s/z)" -> z || V _   ∘                                 
-                                 "(p/v)" -> p || C _   ∘
-                                 "(p/v)" -> v || V _   ∘
-                                 "(t/y)" -> t || C _   ∘
-                                 "(t/y)" -> y || V _   ;
-                                 
-
-define Indicative ["(g/t)" | "(g)"] -> g || V V [("~f") | ("~")] _  ∘
-                  ["(g/t)" | "(t)"] -> t ||             C ("~f") _  ∘
-                  ["(g/t)"|"(g)"|"(t)"] -> 0                        ∘                  
-                                  V -> 0 || V ("~") _ V             ;  
-
+					       ":" -> 0 || WordBoundary Alphabet* _             ;
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -109,48 +65,21 @@ define VowelDominance a i -> i i  ∘
                       a u -> a a  ∘
                       u a -> a a  ;
 
-define NasalInsertion "(ng)" -> "ng" || V ("~") ":" _  ∘
-                      "(ng)" -> 0 ;
-
-define KClusterModification y -> s || _ k  ∘
-                            k -> q || gh _ ;
-
-define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ngng -> ngngw || _ u i , _ u a  ∘
-                                                  q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
-
-define Optative "+gi" -> g i || V V _  ∘
-                "+gi" -> 0             ∘
-                "+n"  -> n   || t e _  ∘
-                "+n"  -> 0             ∘
-                "~fi" -> "~f" i || e _ ∘
-                "~fi" -> 0             ∘
-                "~sfi" -> "~sf" i || [C - gh] _ ∘
-                "~sfi" -> "~sf" i || [e | DoubleVowel] gh _ ∘
-                "~sfi" -> 0                         ∘
-                ":a" -> ":" a || FullVowel gh _ ∘
-                ":a" -> 0                       ;
-
-                                                  
 
 define Rules [
 	Lexicon ∘
-	FinalConsonantDropAssimilation ∘
-        Optative ∘
-	AbsolutiveConsonantChange ∘
-	SemiAndFinalE ∘ 
-	SemiFinalE  ∘ 
-	WeakFinalC  ∘ 
-	UnmarkStrongGh ∘
-	NasalInsertion ∘ 
-	InterConsonantalE ∘ 
-	UvularDropping ∘ 
-	Indicative        ∘ 
-        VelarUvularRounding ∘
-	FinalE      ∘ 
-        KClusterModification ∘
-	VowelDominance ∘
-	BaseFinalEndings 
+    JunctureConsonantInsertion ∘
+	SemiAndFinalE ∘
+	UvularDropping ∘
+	FinalE      ∘
+    VowelDominance ∘
+	JunctureConsonantInsertion ∘
+	SemiAndFinalE ∘
+	UvularDropping ∘
+	FinalE      ∘
+    VowelDominance
 ];
 
-define Grammar [ Rules ] ;
+define Grammar [ Rules ];
 push Grammar
+pairs
