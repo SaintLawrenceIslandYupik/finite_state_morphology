@@ -2,8 +2,6 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		  [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
-				  @*
-                  +gi +n ~fi ~sfi (i) ~f(i)gu ~sf–ggu @*ngugh* @–lghii @~sf–(g)ke(g)ka
 
 LEXICON Root
 
@@ -23,7 +21,7 @@ LEXICON Root
 
 LEXICON NounBase
 
-! Jacobson (2001) Chapter 2 Vocabulary
+! Jacobson (2001) Chapter 2 Noun Vocabulary
 afsengagh*       Noun; ! vole, locally mouse
 aghnagh          Noun; ! woman
 aghnegh          Noun; ! day
@@ -71,7 +69,7 @@ yughaghte        Noun; ! minister, clergyman
 yug              Noun; ! person, man (male human)
 Yupig            Noun; ! Siberian / St. Lawrence Island Eskimo person
 
-! Jacobson (2001) Chapter 3 Vocabulary
+! Jacobson (2001) Chapter 3 Noun Vocabulary
 aghvegh          Noun; ! whale
 anigu            Noun; ! snow on ground
 aqavzig          Noun; ! salmonberry, cloudberry (Rubus chamaemorus)
@@ -99,7 +97,7 @@ vegaagh          Noun; ! grass
 yavlu            Noun; ! sweetheart
 yaywaali         Noun; ! orphan
 
-! Jacobson (2001) Chapter 4 Vocabulary
+! Jacobson (2001) Chapter 4 Noun Vocabulary
 aghnaghagh*      Noun; ! girl
 aaw              Noun; ! blood
 angyagh          Noun; ! boat
@@ -126,7 +124,7 @@ sigute           Noun; ! ear
 takestaaghhagh*  Noun; ! short thing
 ugi              Noun; ! husband
 
-! Jacobson (2001) Chapter 5 Nouns 
+! Jacobson (2001) Chapter 5 Noun Vocabulary 
 elngaatall       Ptcl; ! very much
 quunpeng         Ptcl; ! always
 
@@ -152,7 +150,7 @@ unaami           Noun; ! tomorrow (particle)
 uyughagh*        Noun; ! younger sibling (sister or borther)
 yughaghvig       Noun; ! church
 
-! Jacobson (2001) Chapter 6 Nouns 
+! Jacobson (2001) Chapter 6 Noun Vocabulary 
 aghnalqwaagh     Noun; ! old lady
 akuutagh         Noun; ! mixture of berries, seal oil, sugar, etc., "Eskimo ice cream"
 alangqugh        Noun; ! ring finger
@@ -179,7 +177,7 @@ uyaqugh          Noun; ! neck
 waape            Noun; ! rope
 walguyaag        Noun; ! snowshoe
 
-! Jacobson (2001) Chapter 7 Nouns
+! Jacobson (2001) Chapter 7 Noun Vocabulary
 ighivgagh        Ptcl; ! yesterday
 
 amig             Noun; ! door
@@ -191,7 +189,7 @@ kemekrag         Noun; ! meat
 qergese          Noun; ! window (dual, 'qergesek', generally used for one window)
 tipele           Noun; ! table (dual, 'tipelek', generally used for one table)
 
-! Jacobson (2001) Chapter 8 Nouns
+! Jacobson (2001) Chapter 8 Noun Vocabulary
 aa               Ptcl; ! yes
 nakaa            Ptcl; ! no
 nakaan           Ptcl; ! no
@@ -298,13 +296,13 @@ qughsatku        Noun; ! "king" polar bear (fearsome, said to be almost unkillab
 tanpegh          Noun; ! dried walrus hide
 ullghitagh       Noun; ! wheeled vehicle; snow machine; all terrain vehicle (used in the dual, 'ullghitak', for one vehicle)
 ! From the diagram of a hand on p.79
-alangquq         Noun; !
-atghilek         Noun; !
-iqelquq          Noun; !
-kumlu            Noun; !
-tangyeq          Noun; !
-tekeq            Noun; !
-tunak            Noun; !
+alangquq         Noun;
+atghilek         Noun;
+iqelquq          Noun;
+kumlu            Noun;
+tangyeq          Noun;
+tekeq            Noun;
+tunak            Noun;
 
 right            Noun;
 computer         Noun;
@@ -320,17 +318,20 @@ computer         Noun;
 LEXICON Noun
 
 ! Noun →  Noun postbases
--ghllag[N→N]:–ghllag         Noun; ! big N; lots of N (when used in the plural)
--ghrugllag[N→N]:–ghrugllag   Noun; ! big N; huge N
--leg[N→N]:–leg               Noun; ! one having N
--e[N→N]:-e                   Noun; !to make English words in Yupik words
+-–ghllag[BIG-N][N→N]:–ghllag         Noun; ! big N; lots of N (when used in the plural)
+-–ghrugllag[HUGE-N][N→N]:–ghrugllag  Noun; ! big N; huge N
+-–leg[ONE-HAVING-N][N→N]:–leg        Noun; ! one having N
+
+-e[N→N]:-e                   Noun; ! to make English words in Yupik words
 -mii[N→N]:mii                Noun; ! resident of N
 -–squgh[N→N]:–squgh          Noun; ! little N, small N 
 -–squghhah[N→N]:–squghhagh*  Noun; ! little N, small N 
 
 ! Noun →  Verb postbases
--~%:(ng)u[N→V]:~%:(ng)u     VerbIntr; ! to be N
--–lgu[N→V]:–lgu             VerbIntrInfl; ! to have N 
+-~%:(ng)u[TO-BE-N][N→V]:~%:(ng)u  VerbIntr; ! to be N
+-–lgu[TO-HAVE-N][N→V]:–lgu        VerbIntr; ! to have N 
+-takestaaghhaa[TO-BE-SMALL][N→N]:takestaaghhaa  VerbIntr; ! to be small
+
 -–ngllagh[N→V]:–ngllagh     VerbIntr; ! to make N 
 -–liigh[N→V]:–liigh         VerbIntr; ! to cook; to prepare N  ! Jacobson is unsure if this and the following postbase is intransitive only
 -niigh[N→V]:niigh           VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
@@ -339,6 +340,9 @@ LEXICON Noun
 [N→V]:–ligh       VerbTrns; ! to provide with N; to pu N in 
 [N→V]:ti          VerbIntr; ! to speak the language of N (TODO: This is a prefix)
 [N→V]:tuumagh     Verb?; ! together with one's N(s)
+
+! TODO: EXPAND ON THIS
+[N][Abs][1SgPoss][SgPosd]:~–ka  Noun;
 
 0:0               NounInfl;
 
@@ -584,8 +588,8 @@ taake            VerbIntr; ! to be long
 tuqu             VerbIntr; ! to die
 
 ! Jacobson (2001) Chapter 4 Verb Vocabulary
-agatagh          VerbIntr; ! to be hungry
-ayatagh          VerbIntr; ! to be hungry
+igatagh          VerbIntr; ! to be hungry
+iyatagh          VerbIntr; ! to be hungry
 mekestaaghhagh*  VerbIntr; ! small thing
 takestaaghhagh*  VerbIntr; ! short thing
 seghlegh         VerbIntr; ! bad thing

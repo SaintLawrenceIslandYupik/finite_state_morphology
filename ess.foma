@@ -6,17 +6,24 @@ def Exceptions
 read lexc ess.lexc
 def Lexicon
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                       !!!
+!!!      Phoneme/Grapheme Definition      !!!
+!!!                                       !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
-define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
-define VoicelessFricative  [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ] ;
-define VoicedNasal         [  m   |   n                 | "ng"   | "ngw"                       ] ;
-define VoicelessNasal      [ "mm" | "nn"                | "ngng" | "ngngw"                     ] ;
+define WordBoundary [ .#. ] ;
+
+define Stop               [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
+define VoicedFricative    [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
+define VoicelessFricative [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ] ;
+define VoicedNasal        [  m   |   n                 | "ng"   | "ngw"                       ] ;
+define VoicelessNasal     [ "mm" | "nn"                | "ngng" | "ngngw"                     ] ;
 
 define Fricative [ VoicelessFricative | VoicedFricative ] ;
 define Nasal     [ VoicelessNasal     | VoicedNasal     ] ;
-
-define WordBoundary [ .#. ] ;
 
 define C         [ Stop | Fricative | Nasal ] ;        
 
@@ -24,86 +31,131 @@ define FullVowel   [ a   | i   | u   ] ;
 define DoubleVowel [ a a | i i | u u ] ;
 define V           [ e | FullVowel ];
 
-define WeakFinalC  gh     -> 0  || [ WordBoundary | C ] FullVowel _ ("~f") "-w"   ∘
-                   "-w"   -> 0  ;
+define Alphabet [ C | V | "*" ] ;
+define MorphPhonSymbols [ "~" | "~f" | "~sf" | "-w" | ":" | "–" |
+                          "(e)" | "(g/t)" | "(ng)" ] ;
 
-define UnmarkStrongGh gh "*" -> gh ;
+define Lowercase "A" -> a ,
+	             "I" -> i ,
+				 "U" -> u ,
+				 "E" -> e ,
+				 "P" -> p ,
+				 "T" -> t ,
+				 "K" -> k ,
+				 "Kw" -> kw ,
+				 "Q" -> q ,
+				 "Qw" -> qw,
+				 "V" -> v ,
+				 "L" -> l ,
+				 "Z" -> z ,
+                 "Y" -> y , 
+                 "R" -> r ,
+				 "G" -> g ,
+				 "W" -> w ,
+				 "Gh" -> gh ,
+				 "Ghw" -> ghw ,
+				 "F" -> f ,
+				 "Ll" -> ll ,
+				 "S" -> s ,
+				 "Rr" -> rr ,
+				 "Gg" -> gg ,
+				 "Wh" -> wh ,
+				 "Ghh" -> ghh ,
+				 "Ghhw" -> ghhw ,
+                 "M" -> m ,
+				 "N" -> n ,
+				 "Ng" -> ng ,
+				 "Ngw" -> ngw ,
+				 "Mm" -> mm ,
+				 "Nn" -> nn ,
+				 "Ngng" -> ngng ,
+				 "Ngngw" -> ngngw ;
 
-define FinalE     [..] -> a || WordBoundary (C) a _ C e   "~f"   ∘  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e   "~f"   ∘  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e   "~f"   ∘  ! e-hopping
-                     e -> 0 ||                    V C _   "~f"   ∘  ! e-dropping
-                     e -> 0 ||                        _   "~f" V ∘  ! e-dropping  (Jacobson, 2001), p.19, footnote 1: 
-                                                                    !                 "It is true that all suffixes that begin with a vowel 
-                                                                    !                  in the form in which they are used on a base ending in e 
-                                                                    !                  will cause that e to drop, but nevertheless the sign ~f 
-                                                                    !                  will still be given with such suffixes."
-                  "~f" -> 0 ;                                       ! finally remove intermediate symbol ~f
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                    !!!
+!!!      Morphophonological Rules      !!!
+!!!                                    !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   "~"    ∘  ! final e-hopping
+                     [..] -> i || WordBoundary (C) i _ C e   "~"    ∘  ! final e-hopping
+                     [..] -> u || WordBoundary (C) u _ C e   "~"    ∘  ! final e-hopping
+                        e -> 0 ||                    V C _   "~"    ∘  ! final e-dropping
+                        e -> 0 ||                        _   "~" V  ∘  ! final e-dropping  
+                     [..] -> a || WordBoundary (C) a _ C e C "~"    ∘  ! semi-final e-hopping
+                     [..] -> i || WordBoundary (C) i _ C e C "~"    ∘  ! semi-final e-hopping
+                     [..] -> u || WordBoundary (C) u _ C e C "~"    ∘  ! semi-final e-hopping
+                        e -> 0 ||                    V C _ C "~"    ∘  ! semi-final e-dropping
+                      "~" -> 0 || WordBoundary Alphabet* _          ;  ! finally remove intermediate symbol ~
 
 define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C "~sf"  ∘  ! e-hopping
                   [..] -> i || WordBoundary (C) i _ C e C "~sf"  ∘  ! e-hopping
                   [..] -> u || WordBoundary (C) u _ C e C "~sf"  ∘  ! e-hopping
                      e -> 0 ||                    V C _ C "~sf"  ∘  ! e-dropping
-                 "~sf" -> 0 ;                                       ! finally remove intermediate symbol ~sf
+                 "~sf" -> 0 || WordBoundary Alphabet* _          ;  ! finally remove intermediate symbol ~sf 
 
-define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   "~"   ∘  ! final e-hopping
-                     [..] -> i || WordBoundary (C) i _ C e   "~"   ∘  ! final e-hopping
-                     [..] -> u || WordBoundary (C) u _ C e   "~"   ∘  ! final e-hopping
-                        e -> 0 ||                    V C _   "~"   ∘  ! final e-dropping
-                        e -> 0 ||                        _   "~" V ∘  ! final e-dropping  
-                     [..] -> a || WordBoundary (C) a _ C e C "~"   ∘  ! semi-final e-hopping
-                     [..] -> i || WordBoundary (C) i _ C e C "~"   ∘  ! semi-final e-hopping
-                     [..] -> u || WordBoundary (C) u _ C e C "~"   ∘  ! semi-final e-hopping
-                        e -> 0 ||                    V C _ C "~"   ∘  ! semi-final e-dropping
-                      "~" -> 0 ;                                      ! finally remove intermediate symbol ~
+define FinalE     [..] -> a || WordBoundary (C) a _ C e   "~f"    ∘  ! e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e   "~f"    ∘  ! e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e   "~f"    ∘  ! e-hopping
+                     e -> 0 ||                    V C _   "~f"    ∘  ! e-dropping
+                     e -> 0 ||                        _   "~f" V  ∘  ! e-dropping
+                  "~f" -> 0 || WordBoundary Alphabet* _           ;  ! finally remove intermediate symbol ~f
 
-define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e _ ∘  ! does not drop e if e-hopping is not possible
-                    "~h" -> 0   || V C V C e _                        ∘  ! does not drop e if base contains multiple syllables
-				    "~h" -> "~" ;                                        ! otherwise drop e
+define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e _  ∘  ! does not drop e if e-hopping is not possible
+                    "~h" -> 0   || V C V C e _                         ∘  ! does not drop e if base contains multiple syllables
+				    "~h" -> "~" || WordBoundary Alphabet* _            ;  ! otherwise drop e
 
-define InterConsonantalE "(e)" -> e || C (":") _ ∘                  ! convert (e) to e when following a consonant
-                         "(e)" -> 0 || V (":") _ ;                  ! otherwise delete it
+define WeakFinalC  gh   -> 0 || [ WordBoundary | C ] FullVowel _ [("~f") | ("~sf")] "-w"  ∘
+                   "-w" -> 0 || WordBoundary Alphabet* MorphPhonSymbols*  _   ;
+
+define UnmarkStrongGh gh "*" -> gh ;
+
+define InterConsonantalE "(e)" -> e || C (":") _  ∘  ! convert (e) to e when following a consonant
+                         "(e)" -> 0 || V (":") _  ;  ! otherwise delete it
 
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh  [("*")|("~")] "–" _   ∘
                                       [ gh | g ] -> g   || g   ("~") "–" _           ∘
-                                      [ gh | g ] -> wh  || w   ("~") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘ ! This line is unfortunately required because of orthographic undoubling conventions
+									  ! The line below is unfortunately required because of orthographic undoubling conventions
+                                      [ gh | g ] -> wh  || w   ("~") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘
                                       [ gh | g ] -> w   || w   ("~") "–" _           ∘
                                       [ gh | g ] -> ghw || ghw ("~") "–" _           ∘
                                       [  q | k ] -> q   || [ q  | gh  ] ("~") "–" _  ∘
                                       [  q | k ] -> qw  || [ qw | ghw ] ("~") "–" _  ∘
                                       [  q | k ] -> kw  || [ kw | w   ] ("~") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] ("~") "–" _  ∘
-                                               k -> q   ||   gh ("*") ("~") ("–") _  ∘
-                                               C -> 0   ||  _ [("~") | ("~f")] "–"   ∘
-									      gh "*" -> 0   ||  _ [("~") | ("~f") ] "–"  ∘
-                                             "–" -> 0                                ;
+                                               k -> q   ||   gh ("*") ("~") ("–") _  ∘  ! k becomes q in the cluster ghk
+                                               C -> 0   ||  _ ("~") "–"  ∘
+									      gh "*" -> 0   ||  _ ("~") "–"  ∘
+                                             "–" -> 0   ||  WordBoundary Alphabet* MorphPhonSymbols* _ ;
 
-define AbsolutiveConsonantChange "(s/z)" -> s || C ("*") _   ∘
-                                 "(s/z)" -> z || V       _   ∘                                 
-                                 "(p/v)" -> p || C ("*") _   ∘
-                                 "(p/v)" -> v || V       _   ∘
-                                 "(t/y)" -> t || C ("*") _   ∘
-                                 "(t/y)" -> y || V       _   ;
 
-define JunctureConsonantInsertion ["(g/t)" | "(g)"] -> g || V V [("~f") | ("~")] _  ∘  ! (g) used with bases that end in a double vowel
-                                  ["(g/t)" | "(t)"] -> t ||             C ("~f") _  ∘  ! (t) used with bases that end in a consonant
-                                  ["(g/t)"|"(g)"|"(t)"] -> 0                        ∘  ! endings for intransitive/transitive indicative
-                                  "(ng)" -> "ng"         || V [("~")|("~h")] ":" _  ∘  ! nasal inserted if base ends in a vowel, including e
-    		                      "(ng)" -> 0                                       ;
+define JunctureConsonantInsertion ["(g/t)" | "(g)"] -> g || V V [("~f") | ("~")] _ ∘  ! (g) used with bases that end in a double vowel
+                                  ["(g/t)" | "(t)"] -> t ||             C ("~f") _ ∘  ! (t) used with bases that end in a consonant
+                                  "(ng)" -> "ng"         || V [("~")|("~h")] ":" _ ∘  ! (ng) used with bases that end in a vowel 
+                                  "(s/z)" -> s || C ("*") _  ∘
+                                  "(s/z)" -> z || V       _  ∘                                 
+                                  "(p/v)" -> p || C ("*") _  ∘
+                                  "(p/v)" -> v || V       _  ∘
+                                  "(t/y)" -> t || C ("*") _  ∘
+                                  "(t/y)" -> y || V       _  ∘
+    		                      "(g/t)" -> 0,
+								  "(g)"   -> 0,
+								  "(t)"   -> 0,
+								  "(ng)"  -> 0,
+								  "(s/z)" -> 0,
+								  "(p/v)" -> 0,
+								  "(t/y)" -> 0 || WordBoundary Alphabet* MorphPhonSymbols* _ ;
 
-define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _    ∘
-                      gh ":" e -> i || [ WordBoundary | C ] i _    ∘
-                      gh ":" e -> u || [ WordBoundary | C ] u _    ∘
-                      gh ":" a -> a || [ WordBoundary | C ] FullVowel _    ∘
-                      gh ":" i -> i || [ WordBoundary | C ] FullVowel _    ∘
-                      gh ":" u -> u || [ WordBoundary | C ] FullVowel _    ∘
-                         ":"   -> 0 ;
-
-define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
-                                         h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
-                            ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
-
-define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels
+define UvularDropping gh ":" e -> a || [ WordBoundary | C ] a _ ∘
+                      gh ":" e -> i || [ WordBoundary | C ] i _ ∘
+                      gh ":" e -> u || [ WordBoundary | C ] u _ ∘
+                      gh ":" a -> a || [ WordBoundary | C ] FullVowel _ ∘
+                      gh ":" i -> i || [ WordBoundary | C ] FullVowel _ ∘
+                      gh ":" u -> u || [ WordBoundary | C ] FullVowel _ ∘
+                         ":"   -> 0 || WordBoundary Alphabet* _         ;
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -112,9 +164,15 @@ define VowelDominance a i -> i i  ∘
                       a u -> a a  ∘
                       u a -> a a  ;
 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                          !!!
+!!!      Clean-Up Rules      !!!
+!!!                          !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 define ClusterDevoicing y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
                         y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
-                        k -> q || gh _                                           ∘   ! k becomes q in the cluster ghk
                         t [z | y] -> s                                           ∘   ! tz/ty cluster becomes s
 						z -> s || Stop _                                         ;
 
@@ -125,76 +183,73 @@ define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop |
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [ll| rr | gg | ghh |ghhw] _ ∘ 
                   mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [ll| rr | gg | ghh |ghhw] _ ;
 
-def BaseFinalEndings    ghw      -> qw , 
-                        gh ("*") -> q  , 
-                        g        -> k  ,
-                        w        -> kw ,
-                        t e      -> t a  ||   _ WordBoundary  , 
-                        t e      -> n    || V _ WordBoundary  ∘
-                        e        -> a    ||   _ WordBoundary  ∘  ! TODO: Is there anyway around this hard-coding?
-						gh q     -> q    ||   _ WordBoundary  ;  ! hard-coded for 3Sg intransitive participial mood of special te's
+def BaseFinalEndings ghw      -> qw , 
+                     gh ("*") -> q  , 
+                     g        -> k  ,
+                     w        -> kw ,
+                     t e      -> t a  ||   _ WordBoundary , 
+                     t e      -> n    || V _ WordBoundary ∘
+					 e        -> a    ||   _ WordBoundary ∘
+				     gh q     -> q    ||   _ WordBoundary ;
 
-define Optative "+gi"  -> g i     || V V _                  ∘
-                "+gi"  -> 0                                 ∘
-                "~sfi" -> "~sf" i || [C - gh] _             ∘
-                "~sfi" -> "~sf" i || [e | DoubleVowel] gh _ ∘
-                "~sfi" -> 0                                 ∘
-                "+n"   -> n       || t e _                  ∘
-                "+n"   -> 0                                 ∘
-                "~fi"  -> "~f" i  || [C - t] e _            ∘
-                "~fi"  -> 0                                 ∘
-                "x"   -> ":" a    || FullVowel gh _         ∘
-                "x"   -> 0                                  ∘
-                ! Substituted 'x' to represent the sixth form of the 2nd person intransitive optative ending, since ':a' conflicted with
-                ! other tense formations where there was uvular dropping followed by an 'a' - DEVISE BETTER NOTATION
-                "~f(i)gu" -> "~f" "(i)" g u  || V _         ∘
-                "~f(i)gu" -> 0                              ∘
-                "~sf–ggu" -> "~f" "–" ghh u || [q|gh|ghh|qw|ghw|ghhw] _  ∘    ! '~sf' becomes '~f' since the final consonant drops before
-                "~sf–ggu" -> "~f" "–" gg u || C _           ∘                 ! semifinal 'e' is analyzed in the transducer
-                "~sf–ggu" -> 0                              ∘
-                "(i)" -> i       || e ("~f") _              ∘
-                "(i)" -> 0                                  ;
 
-define Participial "@*ngugh*" -> "@*" n g u gh "*" "[Ptcp]" || t e "*" _ ∘
-                   t e "*" -> l || _ "@*"                                ∘
-				   "@*" -> 0                                             ∘
-				   "@–lghii" -> 0 || "[Ptcp]" _                          ∘  ! Use "[Ptcp]" as an indicator that the first participial
-                   "@–lghii" -> "@" "–" l gh i i || "@*ngugh*" _         ∘  ! mood ending has been applied
-                   "@*ngugh*" -> 0                                       ∘
-				   "[Ptcp]" -> 0                                         ;
-
-define teModify n -> nn   || V t e "@" [("~f") | ("–")] _ ∘  ! Postbases that start with 'n' drop 'te' --> If 'te' followed a vowel, 'n'
-!                         || C t e "@" [("~f") | ("–")] _ ∘  devoices; if it followed a consonant, the whole cluster devoices
-                ' -> e || "@" "–" nn _ gh                 ∘
-				' -> 0                                    ∘
-                t e ->  0 || _ "@"                        ∘ 
-                "@" ->  0                                 ;
-
-                                                  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                        !!!
+!!!      Rule Cascade      !!!
+!!!                        !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 define Rules [
-	Lexicon ∘
-	Participial ∘
-	teModify ∘ 
-	Optative ∘
+    Lexicon ∘
+	Lowercase ∘
+	!! Iteration 1 !!
+    JunctureConsonantInsertion ∘
 	FinalConsonantDropAssimilation ∘
-	AbsolutiveConsonantChange ∘
-	JunctureConsonantInsertion ∘
 	NoHopNoDropE ∘
-	SemiAndFinalE ∘ 
-	SemiFinalE  ∘ 
-	WeakFinalC  ∘ 
-	TripleVowelCluster ∘
+    SemiAndFinalE ∘
+	SemiFinalE ∘
+	WeakFinalC ∘
 	UnmarkStrongGh ∘
-	InterConsonantalE ∘ 
-	UvularDropping ∘ 
-	VelarUvularRounding ∘
-	FinalE      ∘ 
+	InterConsonantalE ∘
+    UvularDropping ∘
+    FinalE      ∘
+    VowelDominance ∘
+	!! Iteration 2 !!
+    JunctureConsonantInsertion ∘
+	FinalConsonantDropAssimilation ∘
+	NoHopNoDropE ∘
+    SemiAndFinalE ∘
+	SemiFinalE ∘
+	WeakFinalC ∘
+	UnmarkStrongGh ∘
+	InterConsonantalE ∘
+    UvularDropping ∘
+    FinalE      ∘
+    VowelDominance ∘
+	!! Iteration 3 !!
+    JunctureConsonantInsertion ∘
+	FinalConsonantDropAssimilation ∘
+	NoHopNoDropE ∘
+    SemiAndFinalE ∘
+	SemiFinalE ∘
+	WeakFinalC ∘
+	UnmarkStrongGh ∘
+	InterConsonantalE ∘
+    UvularDropping ∘
+    FinalE      ∘
+    VowelDominance ∘
 	ClusterDevoicing ∘
-	VowelDominance ∘
 	BaseFinalEndings ∘
 	Undoubling
-];
+] ;
+
 
 define Grammar [ Exceptions .P. Rules ] ;
 push Grammar
+
+
+!define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
+!                                         h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
+!                            ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
+!
+!define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels
