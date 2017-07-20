@@ -3,6 +3,8 @@
 read lexc toy.lexc
 def Lexicon
 
+define InsertMorphBoundary [..] -> "^" || Alphabet _ MorphPhonSymbols ;
+
 define Stop                [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ] ;
 define VoicedFricative     [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ] ;
 define VoicelessFricative  [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ] ;
@@ -68,6 +70,7 @@ define VowelDominance a i -> i i  ∘
 
 define Rules [
 	Lexicon ∘
+	InsertMorphBoundary ∘
     JunctureConsonantInsertion ∘
 	SemiAndFinalE ∘
 	UvularDropping ∘

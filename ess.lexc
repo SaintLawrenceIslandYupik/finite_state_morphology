@@ -1,7 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		  [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
+          ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
 
 LEXICON Root
 
@@ -340,9 +340,6 @@ LEXICON Noun
 [N→V]:–ligh       VerbTrns; ! to provide with N; to pu N in 
 [N→V]:ti          VerbIntr; ! to speak the language of N (TODO: This is a prefix)
 [N→V]:tuumagh     Verb?; ! together with one's N(s)
-
-! TODO: EXPAND ON THIS
-[N][Abs][1SgPoss][SgPosd]:~–ka  Noun;
 
 0:0               NounInfl;
 
@@ -854,10 +851,11 @@ LEXICON VerbIntr
 ! Verb →  Noun postbases
 
 ! Verb →  Verb postbases
--~(g)aqe[V→V]:~(g)aqe      VerbIntr; ! to be V-ing; to regularly or repeat V 
--@lleqe[V→V]:@lleqe        VerbIntr; ! to V in the future; will V 
--@~fnaqe[V→V]:@~fnaqe      VerbIntr; ! to be going to V; to be about to V 
--@~fyug[V→V]:@~fyug        VerbIntr; ! to want to V
+-~(g)aqe[TO-BE-V-ING][V→V]:~(g)aqe       VerbIntr; ! to be V-ing; to regularly or repeat V 
+-@lleqe[WILL-V][V→V]:@lleqe              VerbIntr; ! to V in the future; will V 
+-@~fnaqe[TO-BE-GOING-TO-V][V→V]:@~fnaqe  VerbIntr; ! to be going to V; to be about to V 
+-@~fyug[TO-WANT-TO-V][V→V]:@~fyug        VerbIntr; ! to want to V
+
 -–ghhalek[V→Excl]:–ghhalek       #; ! how V! (exclamation)
 -@–n'ghite[V→V]:@–n'ghite  VerbIntr; ! to not V
 
