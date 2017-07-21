@@ -4,7 +4,11 @@ read lexc exceptions.lexc
 def Exceptions
 
 read lexc ess.lexc
-def Lexicon
+
+eliminate flag VALENCE
+define LexiconNoFlags ;
+define Lexicon LexiconNoFlags ;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -148,7 +152,7 @@ define teDropping [..] -> nn         || V t e MorphemeBoundary "@" MorphPhonSymb
  
 define JunctureConsonantInsertion ["(g/t)" | "(g)"] -> g || V V MorphemeBoundary [("~f") | ("~")] _ ∘  ! (g) used with bases that end in a double vowel
                                   ["(g/t)" | "(t)"] -> t ||   C MorphemeBoundary ("~f") _ ∘  ! (t) used with bases that end in a consonant
-                                  "(ng)" -> "ng"         ||   V MorphemeBoundary [("~")|("~h")|(":")] _ ∘  ! (ng) used with bases that end in a vowel 
+                                  "(ng)" -> "ng"         ||   V MorphemeBoundary [("~")|("~h")] (":") _ ∘  ! (ng) used with bases that end in a vowel 
                                   "(s/z)" -> s || C ("*") MorphemeBoundary _  ∘
                                   "(s/z)" -> z || V       MorphemeBoundary _  ∘                                 
                                   "(p/v)" -> p || C ("*") MorphemeBoundary _  ∘
@@ -170,6 +174,12 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
                       gh MorphemeBoundary ":" i -> i MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                       gh MorphemeBoundary ":" u -> u MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                                                            ":"   -> 0 || WordBoundary Alphabet* MorphemeBoundary _ ;
+
+define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u i (MorphemeBoundary)  ∘
+                           k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u a (MorphemeBoundary)  ∘
+                                      h -> hw, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u i (MorphemeBoundary)  ∘
+                                      h -> hw, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary) ;
+                           ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -229,6 +239,7 @@ define Rules [
 	UnmarkStrongGh ∘
 	InterConsonantalE ∘
     UvularDropping ∘
+	VelarUvularRounding ∘
     FinalE      ∘
     VowelDominance ∘
 	CleanupMorphBoundary ∘
@@ -243,6 +254,7 @@ define Rules [
 	UnmarkStrongGh ∘
 	InterConsonantalE ∘
     UvularDropping ∘
+	VelarUvularRounding ∘
     FinalE      ∘
     VowelDominance ∘
 	CleanupMorphBoundary ∘
@@ -257,6 +269,7 @@ define Rules [
 	UnmarkStrongGh ∘
 	InterConsonantalE ∘
     UvularDropping ∘
+	VelarUvularRounding ∘
     FinalE      ∘
     VowelDominance ∘
 	CleanupMorphBoundary ∘
@@ -269,8 +282,5 @@ define Rules [
 define Grammar [ Exceptions .P. Rules ] ;
 push Grammar
 
-!define VelarUvularRounding  k -> kw , g -> w , gg -> wh , ng -> ngw , ngng -> ngngw || _ u i , _ u a  ∘
-!                                         h -> hw, q -> qw , gh -> ghw , ghh -> ghhw || _ u i , _ u a  ;
-!                            ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
 !
 !define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels

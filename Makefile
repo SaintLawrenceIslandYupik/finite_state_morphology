@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 #test-ch6 test-ch7 test-ch8 test-ch9 test-ch10
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 # test-ch7 test-ch8 test-ch9 test-ch10
 
 
 test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.fomabin
@@ -40,10 +40,10 @@ test-ch4: ess.pairs.gold/Ch4.N_ABS.1PossPosd.tsv ess.pairs.gold/Ch4.N_ABS.2PossP
 test-ch5: ess.pairs.gold/Ch5.N_EQU-LOC-TER-VIA.Unpd.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch5.N_EQU-LOC-TER-VIA.Unpd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch5.N_EQU-LOC-TER-VIA.Unpd.tsv     && echo "Jacobson (2001) Chapter 5 Noun Vocabulary - Equalis, Localis, Terminalis, Vialis Unpossessed - PASS" || echo "Jacobson (2001) Chapter 5 Noun Vocabulary - Equalis, Localis, Terminalis, Vialis Unpossessed    - FAIL"
 
-#test-ch6: ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv ess.pairs.gold/Ch6.N_REL.Unpd.tsv ess.fomabin
-#	@cut -f 1 ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv     && echo "Jacobson (2001) Chapter 6 Noun Vocabulary - 3rd Person Possessor Possessed Absolutive - PASS" || echo "Jacobson (2001) Chapter 6 Noun Vocabulary - 3rd Person Possessor Possessed Absolutive - FAIL"
-#	@cut -f 1 ess.pairs.gold/Ch6.N_REL.Unpd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch6.N_REL.Unpd.tsv     && echo "Jacobson (2001) Chapter 6 Noun Vocabulary - Relative Unpossessed                      - PASS" || echo "Jacobson (2001) Chapter 6 Noun Vocabulary - Relative Unpossessed                      - FAIL"
-#
+test-ch6: ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv ess.pairs.gold/Ch6.N_REL.Unpd.tsv ess.fomabin
+	@cut -f 1 ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv     && echo "Jacobson (2001) Chapter 6 Noun Vocabulary - 3rd Person Possessor Possessed Absolutive - PASS" || echo "Jacobson (2001) Chapter 6 Noun Vocabulary - 3rd Person Possessor Possessed Absolutive - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch6.N_REL.Unpd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch6.N_REL.Unpd.tsv     && echo "Jacobson (2001) Chapter 6 Noun Vocabulary - Relative Unpossessed                      - PASS" || echo "Jacobson (2001) Chapter 6 Noun Vocabulary - Relative Unpossessed                      - FAIL"
+
 #test-ch7: ess.pairs.gold/Ch7.N_REL.Posd.tsv ess.pairs.gold/Ch7.V_TrnsInd.tsv ess.pairs.gold/Ch7.N_EQU-LOC-TER-VIA.SgPosd.tsv ess.pairs.gold/Ch7.N_AblMod.SgPoss.tsv ess.fomabin
 #	@cut -f 1 ess.pairs.gold/Ch7.N_REL.Posd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch7.N_REL.Posd.tsv     && echo "Jacobson (2001) Chapter 7 Noun Vocabulary - 1st/2nd Person Possessor Possessed Relative - PASS" || echo "Jacobson (2001) Chapter 7 Noun Vocabulary - 1st/2nd Person Possessor Possessed Relative - FAIL"
 #	@cut -f 1 ess.pairs.gold/Ch7.V_TrnsInd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch7.V_TrnsInd.tsv     && echo "Jacobson (2001) Chapter 7 Verb Vocabulary - Transitive Indicative                       - PASS" || echo "Jacobson (2001) Chapter 7 Verb Vocabulary - Transitive Indicative                     - FAIL"
