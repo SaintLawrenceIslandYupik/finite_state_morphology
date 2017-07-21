@@ -95,7 +95,7 @@ define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   MorphemeBoundary "~
                      [..] -> i || WordBoundary (C) i _ C e   MorphemeBoundary "~"    ∘  ! final e-hopping
                      [..] -> u || WordBoundary (C) u _ C e   MorphemeBoundary "~"    ∘  ! final e-hopping
                         e -> 0 ||                    V C _   MorphemeBoundary "~"    ∘  ! final e-dropping
-                        e -> 0 ||                        _   MorphemeBoundary  "~" V  ∘  ! final e-dropping  
+                        e -> 0 ||                        _   MorphemeBoundary  "~" V ∘  ! final e-dropping  
                      [..] -> a || WordBoundary (C) a _ C e C MorphemeBoundary "~"    ∘  ! semi-final e-hopping
                      [..] -> i || WordBoundary (C) i _ C e C MorphemeBoundary "~"    ∘  ! semi-final e-hopping
                      [..] -> u || WordBoundary (C) u _ C e C MorphemeBoundary "~"    ∘  ! semi-final e-hopping
@@ -108,12 +108,12 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C MorphemeBoundary "~sf"
                      e -> 0 ||                    V C _ C MorphemeBoundary "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 || WordBoundary Alphabet* MorphemeBoundary _          ;  ! finally remove intermediate symbol ~sf 
 
-define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"    ∘  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e MorphemeBoundary "~f"    ∘  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e MorphemeBoundary "~f"    ∘  ! e-hopping
-                     e -> 0 || WordBoundary Alphabet* V C _ MorphemeBoundary"~f" ∘  ! e-dropping
-                     e -> 0 || WordBoundary Alphabet* _ MorphemeBoundary "~f" V  ∘  ! e-dropping
-                  "~f" -> 0 || WordBoundary Alphabet* MorphemeBoundary _         ;  ! finally remove intermediate symbol ~f
+define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                     e -> 0 || WordBoundary Alphabet* V C _ MorphemeBoundary "~f" ∘  ! e-dropping
+                     e -> 0 || WordBoundary Alphabet* _ MorphemeBoundary "~f" V   ∘  ! e-dropping
+                  "~f" -> 0 || WordBoundary Alphabet* MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
 
 define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
                     "~h" -> 0   || V C V C e MorphemeBoundary _                         ∘  ! does not drop e if base contains multiple syllables
@@ -175,11 +175,10 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
                       gh MorphemeBoundary ":" u -> u MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                                                            ":"   -> 0 || WordBoundary Alphabet* MorphemeBoundary _ ;
 
-define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u i (MorphemeBoundary)  ∘
-                           k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u a (MorphemeBoundary)  ∘
-                                      h -> hw, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u i (MorphemeBoundary)  ∘
-                                      h -> hw, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary) ;
-                           ! h -> hw is included to account for cases like 'inghu' where the multichar ng is identified over gh
+define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
+                           k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
+                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
+                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ;
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -225,56 +224,56 @@ def BaseFinalEndings ghw      -> qw ,
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 define Rules [
-    Lexicon ∘
-	Lowercase ∘
-	InsertMorphBoundary ∘
+    Lexicon                        ∘
+	Lowercase                      ∘
+	InsertMorphBoundary            ∘
 	!! Iteration 1 !!
-    JunctureConsonantInsertion ∘
-	teDropping ∘
+    JunctureConsonantInsertion     ∘
+	teDropping                     ∘
 	FinalConsonantDropAssimilation ∘
-	NoHopNoDropE ∘
-    SemiAndFinalE ∘
-	SemiFinalE ∘
-	WeakFinalC ∘
-	UnmarkStrongGh ∘
-	InterConsonantalE ∘
-    UvularDropping ∘
-	VelarUvularRounding ∘
-    FinalE      ∘
-    VowelDominance ∘
-	CleanupMorphBoundary ∘
+	NoHopNoDropE                   ∘
+    SemiAndFinalE                  ∘
+	SemiFinalE                     ∘
+	WeakFinalC                     ∘
+	UnmarkStrongGh                 ∘
+	InterConsonantalE              ∘
+    UvularDropping                 ∘
+	VelarUvularRounding            ∘
+    FinalE                         ∘
+    VowelDominance                 ∘
+	CleanupMorphBoundary           ∘
 	!! Iteration 2 !!
-    JunctureConsonantInsertion ∘
-	teDropping ∘
+    JunctureConsonantInsertion     ∘
+	teDropping                     ∘
 	FinalConsonantDropAssimilation ∘
-	NoHopNoDropE ∘
-    SemiAndFinalE ∘
-	SemiFinalE ∘
-	WeakFinalC ∘
-	UnmarkStrongGh ∘
-	InterConsonantalE ∘
-    UvularDropping ∘
-	VelarUvularRounding ∘
-    FinalE      ∘
-    VowelDominance ∘
-	CleanupMorphBoundary ∘
+	NoHopNoDropE                   ∘
+    SemiAndFinalE                  ∘
+	SemiFinalE                     ∘
+	WeakFinalC                     ∘
+	UnmarkStrongGh                 ∘
+	InterConsonantalE              ∘
+    UvularDropping                 ∘
+	VelarUvularRounding            ∘
+    FinalE                         ∘
+    VowelDominance                 ∘
+	CleanupMorphBoundary           ∘
 	!! Iteration 3 !!
-    JunctureConsonantInsertion ∘
-	teDropping ∘
+    JunctureConsonantInsertion     ∘
+	teDropping                     ∘
 	FinalConsonantDropAssimilation ∘
-	NoHopNoDropE ∘
-    SemiAndFinalE ∘
-	SemiFinalE ∘
-	WeakFinalC ∘
-	UnmarkStrongGh ∘
-	InterConsonantalE ∘
-    UvularDropping ∘
-	VelarUvularRounding ∘
-    FinalE      ∘
-    VowelDominance ∘
-	CleanupMorphBoundary ∘
-	ClusterDevoicing ∘
-	BaseFinalEndings ∘
+	NoHopNoDropE                   ∘
+    SemiAndFinalE                  ∘
+	SemiFinalE                     ∘
+	WeakFinalC                     ∘
+	UnmarkStrongGh                 ∘
+	InterConsonantalE              ∘
+    UvularDropping                 ∘
+	VelarUvularRounding            ∘
+    FinalE                         ∘
+    VowelDominance                 ∘
+	CleanupMorphBoundary           ∘
+	ClusterDevoicing               ∘
+	BaseFinalEndings               ∘
 	Undoubling
 ] ;
 
