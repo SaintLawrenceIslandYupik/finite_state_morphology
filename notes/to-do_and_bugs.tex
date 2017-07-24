@@ -1,0 +1,66 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{ulem}
+
+\begin{document}
+
+\section{TODO \& Issues Encountered}
+
+\begin{enumerate}
+\item It appears that the possessive absolutive forms can qualify as derivational morphemes as well as inflectional morphemes as they are classified now in the \textit{lexc} file (See \textit{\textbf{nuyaqatakestaaghhaaguq}} in the EOC exercises for Chapter 4).
+%
+We need to implement these forms as derivational morphemes, but also optimize the network to prevent circular, repetitive paths.
+%
+These result since the inflectional morphemes class is a continuation class of the derivational morpheme class.
+%
+If a morpheme classifies as both, one could potentially affix it twice as we move through the network.
+
+\textcolor{magenta}{According to misc grammar notes in Chapter 18, it appears there are a limited number of postbases that can attach to an inflected noun.
+%
+Perhaps these unique postbases can be listed in a different continuation class from the other postbases, possibly with enclitics.}
+
+\item Is there a \textcolor{magenta}{lookahead feature} in \textit{foma}? This would particularly helpful with some postbases, such as @${\sim}_\text{f}$naqe, which when affixed to \textit{te}-verbs affect consonants that precede the \textit{te}, e.g. \textit{ingaghte} + @${\sim}_\text{f}$naqe $\rightarrow$ \textit{inga\uline{ghh}naqe}
+
+\item \textcolor{magenta}{Implement flag diacritics for number and valence}, although is it necessary to account for number? Jacobson writes that the grammatical singular is used with conventional duals when referring to ``the category'' represented by that dual (p.16).
+
+\item \textcolor{magenta}{The conjugated forms of \textit{negh$<$e$>$ and megh$<$e$>$} that utilize the bracketed \textit{e} are not implemented correctly at the moment}, e.g. \textit{negh$<$e$>$} + \textit{@lleqe} should give \textit{neghelleqe-}, and this much was coded into the \textit{exceptions.lexc} file with \textit{VerbIntr} listed as the continuation class. Either the manner of implementation is incorrect, or exceptions cannot be handled in this way.
+
+\item Velar and uvular rounding are posing some unique issues, particularly when the vowel dominance precedes the letter that is eventually rounded, e.g. \textit{\textbf{aghnagh$\sim$:(ng)u$\sim$(g)aqe-}}. Here the \textit{(g)} of the second postbase should be rounded, but the vowel dominance resolves itself prior to the application of \textit{(g)} in the transducer, and so, it does not round.  This is a minor issue that results from having each postbase apply in its entirety before the others, and perhaps it can be ameliorated with a hard-coded that predicts velars/uvulars that might appear directly after an instance of vowel dominance, e.g. \textit{``(g)'' --$>$ w $\|$ a u MorphemeBoundary MorphemeBoundary MorphPhonSymbols* \_ .o.}
+
+\item The absolutive case does not bear an \textit{unpossessed} marker like the other cases. \textcolor{magenta}{Should the [\textsc{unpd}] marker be added to the absolutive or simply removed entirely?}
+
+\item The \textit{VerbPostbase} class loops on itself, which is acceptable and necessary for the most part, except when it loops in such a way that postbases are repeated.
+
+\item The morpheme string \textit{\textbf{aghnagh$\sim$:(ng)u${\sim}_\text{f}$(g/t)uq}} was the original sequence that forced us to reformulate \textsc{the. whole. transducer}, since the affixation of the first postbase produces the environment of the second postbase. In this way, the entirety of the first postbase \textit{\textbf{\uline{must}}} apply before any successive postbases.
+
+An initial solution was proposed as follows:
+\begin{enumerate}[label=\roman*.]
+\item Implement the derivational morphemes as Multichar chunks that are decomposed and processed in \textit{foma}
+\item Leave the inflectional morphemes as is \ldots Can you even affix more than one inflectional ending?
+\item Compose the postbase rules as a cascade, which is composed with a cascade of rules to process the inflectional endings
+\item Include a Cleanup rule to remove symbols, e.g. $\sim$sf, (ng), etc.
+\end{enumerate}
+Note however that this would require us to compose the postbase rules in a fixed order, which appears structurally sound, but Yupik itself may not adhere to such a rigid sequence. Also, the extravagant use of Multichar Symbols was discouraged by the foma/xfst programmers and Aric Bills.
+
+Instead, taking inspiration from Aric who defined a class of graphemes to ``\textsc{ignore}'' (Literally the name of the class), we (had an epiphany! and) also defined a class to represent the Yupik alphabet (\textsc{Alphabet}) and a class to represent the morphophonological symbols (\textsc{MorphPhonSymbols}). The morphophonological processes are cascaded together as before, except we then \textit{\uline{explicitly defined the environment in which one of Jacobson's symbols could delete}}.
+
+For example, the deletion environment for the symbol \textit{(g/t)} is ``WordBoundary Alphabet* MorphPhonSymbols* \_''. This means \textit{(g/t)} will \textit{only} delete if it is preceded by a word boundary, one or more Yupik letters, and one or more symbols. Thus, in the above problematic morpheme string, \textit{(g/t)} won't delete because it is preceded by a word boundary, letters, symbols, another letter, and more symbols.
+
+In this way, \textit{(g/t)} will survive the first pass through the analyzer when we are affixing the first postbase, but this forces us to repeat the cascade in order to affix \textit{(g/t)} and the rest of the second postbase, potential third postbase, etc. This begs the question, \textcolor{magenta}{Does Yupik have infinite recursion with respect to postbases?}, because we have to repeat the cascade as many times as the maximum number of postbases available to a Yupik base.
+
+\item With the previous issue resolved, it dumped another issue on us, embodied in the attempted generation of the string \textit{\textbf{tagi@lleqe${\sim}_\text{f}$(g/t)uq}. Since the \textit{@} morphophonological process (\textit{te}-dropping} takes precedence over final-\textit{e} dropping, the \textit{@} in the string is resolved first, setting up the environment for the final-\textit{e} dropping to take place \textit{within the first pass-through of the morphophonological processes}. While this in and of itself was not an issue, when we entered the second iteration of the morphphon processes, our input was \textit{\textbf{tagilleq}} which is not correct. This prompted the \textit{g/t} process to apply, and our final output was \textit{\textbf{tagilleqtuq}}. Again, we had to manipulate the transducer to apply the entirety of the first postbase \textit{\uline{and only}} the first postbase in the first pass-through of the morphophon processes.
+
+We forced this by introducing a morpheme boundary marker \textbf{"\textasciicircum"} which was inserted at the appropriate boundaries of base, postbase, postbase, \ldots person/number marker. We further stipulated in each morphophonological rule that these rules could only apply/delete given that the preceding entities were WordBoundaries, Alphabetic Letters, and \textit{\uline{a single}} MorphemeBoundary marker.
+
+So, our problematic string became \textit{\textbf{tagi\textasciicircum@lleqe\textasciicircum${\sim}_\text{f}$(g/t)uq}}, and this time the final-\textit{e} dropping process would not apply prematurely, since it was preceded by two MorphemeBoundary markers, and was thus not in the correct environment to apply until the first postbase had been applied, and its MorphemeBoundary marker had been deleted.
+
+\end{enumerate}
+
+
+
+\end{document}
+
