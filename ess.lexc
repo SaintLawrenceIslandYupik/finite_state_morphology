@@ -2,13 +2,33 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
         		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
-	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @C.VALENCE@ 
+	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@ @C.VALENCE@ 
 LEXICON Root
+    NounBase ;
+    VerbBase ;
+    Particle ;
 
-        NounBase ;
-        VerbBase ;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                         !!!!!!
+!!!!!!                Particles                !!!!!!
+!!!!!!                                         !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+LEXICON Particle
 
+aa               #; ! yes
+elngaatall       #; ! very much
+ighivgagh        #; ! yesterday
+legan            #; ! go ahead; and then
+nakaa            #; ! no
+nakaan           #; ! no
+nalighmeng       #; ! or
+qayughllak       #; ! because
+quunpeng         #; ! always
+wanlegi          #; ! more than ever
+whani            #; ! right here (localis demonstrative adverb) particle
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -22,290 +42,172 @@ LEXICON Root
 LEXICON NounBase
 
 ! Jacobson (2001) Chapter 2 Noun Vocabulary
-afsengagh*       Noun; ! vole, locally mouse
-aghnagh          Noun; ! woman
-aghnegh          Noun; ! day
-amaa             Noun; ! wolf
-angyagh          Noun; ! boat
-anipa            Noun; ! owl
-ategh            Noun; ! name
-atkug            Noun; ! parka
-ayvegh           Noun; ! walrus
-ggute            Noun; ! tooth
-iye              Noun; ! eye
-kameg            Noun; ! skin boot, mukluk
-kaviigh          Noun; ! fox
-kemeg            Noun; ! flesh, skin
-kii              Noun; ! wound
-kiig             Noun; ! summer
-kiiw             Noun; ! river
-mangteghagh      Noun; ! house
-manig            Noun; ! egg
-ne               Noun; ! home
-nanugh           Noun; ! polar bear
-naayghagh        Noun; ! mountain
-neghqwaagh       Noun; ! bone
-piitute          Noun; ! seed
-qayagh           Noun; ! kayak
-qikmigh          Noun; ! dog
-qiighw           Noun; ! grey hair , cough
-qulmesiite       Noun; ! cooking pot
-repa             Noun; ! hammer
-riigte           Noun; ! animal's den
-saaghw           Noun; ! side
-savig            Noun; ! knife
-sigute           Noun; ! ear
-siku             Noun; ! ice
-sikugh*          Noun; ! needle
-tafsi            Noun; ! belt
-taghnughhagh*    Noun; ! child
-taqegh           Noun; ! vein
-ughluvegh        Noun; ! bow
-ulaagh           Noun; ! semi-lunar knife, woman's knife, ulu
-uupa             Noun; ! sea peach
-uyghag           Noun; ! stone, rock
-yaquleg          Noun; ! angel
-yughaghte        Noun; ! minister, clergyman
-yug              Noun; ! person, man (male human)
-Yupig            Noun; ! Siberian / St. Lawrence Island Eskimo person
+afsengagh*       NounPostbase; ! vole, locally mouse
+aghnagh          NounPostbase; ! woman
+aghnegh          NounPostbase; ! day
+amaa             NounPostbase; ! wolf
+angyagh          NounPostbase; ! boat
+anipa            NounPostbase; ! owl
+ategh            NounPostbase; ! name
+atkug            NounPostbase; ! parka
+ayvegh           NounPostbase; ! walrus
+ggute            NounPostbase; ! tooth
+iye              NounPostbase; ! eye
+kameg            NounPostbase; ! skin boot, mukluk
+kaviigh          NounPostbase; ! fox
+kemeg            NounPostbase; ! flesh, skin
+kii              NounPostbase; ! wound
+kiig             NounPostbase; ! summer
+kiiw             NounPostbase; ! river
+mangteghagh      NounPostbase; ! house
+manig            NounPostbase; ! egg
+ne               NounPostbase; ! home
+nanugh           NounPostbase; ! polar bear
+naayghagh        NounPostbase; ! mountain
+neghqwaagh       NounPostbase; ! bone
+piitute          NounPostbase; ! seed
+qayagh           NounPostbase; ! kayak
+qikmigh          NounPostbase; ! dog
+qiighw           NounPostbase; ! grey hair , cough
+qulmesiite       NounPostbase; ! cooking pot
+repa             NounPostbase; ! hammer
+riigte           NounPostbase; ! animal's den
+saaghw           NounPostbase; ! side
+savig            NounPostbase; ! knife
+sigute           NounPostbase; ! ear
+siku             NounPostbase; ! ice
+sikugh*          NounPostbase; ! needle
+tafsi            NounPostbase; ! belt
+taghnughhagh*    NounPostbase; ! child
+taqegh           NounPostbase; ! vein
+ughluvegh        NounPostbase; ! bow
+ulaagh           NounPostbase; ! semi-lunar knife, woman's knife, ulu
+uupa             NounPostbase; ! sea peach
+uyghag           NounPostbase; ! stone, rock
+yaquleg          NounPostbase; ! angel
+yughaghte        NounPostbase; ! minister, clergyman
+yug              NounPostbase; ! person, man (male human)
+Yupig            NounPostbase; ! Siberian / St. Lawrence Island Eskimo person
 
 ! Jacobson (2001) Chapter 3 Noun Vocabulary
-aghvegh          Noun; ! whale
-anigu            Noun; ! snow on ground
-aqavzig          Noun; ! salmonberry, cloudberry (Rubus chamaemorus)
-aqelqagh         Noun; ! visitor
-esla             Noun; ! outdoors; weather; awareness; world
-iqallug          Noun; ! fish
-kayu             Noun; ! sculpin; ocean fish (in general)
-kufi             Noun; ! coffee
-Laluramke        Noun; ! white person, Caucasian
-megh             Noun; ! water
-naayvagh         Noun; ! lake
-neghsagh         Noun; ! seal (in general)
-neqe             Noun; ! food
-nuna             Noun; ! land
-pagunghagh*      Noun; ! crowberry (Empetrum nigrum); berry (in general)
-sikig            Noun; ! squirrel
-Sivungagh*       Noun; ! Savoonga
-Sivuqagh         Noun; ! Gambell; St. Lawrence Island (in general)
-ukazigh          Noun; ! hare, locally rabbit
-ulghaagh         Noun; ! sea lion
-Ungazigh         Noun; ! Old Chaplino, Indian Point (in Chukotka)
-uqugh            Noun; ! fat; blubber
-veg              Noun; ! grass
-vegaagh          Noun; ! grass
-yavlu            Noun; ! sweetheart
-yaywaali         Noun; ! orphan
+aghvegh          NounPostbase; ! whale
+anigu            NounPostbase; ! snow on ground
+aqavzig          NounPostbase; ! salmonberry, cloudberry (Rubus chamaemorus)
+aqelqagh         NounPostbase; ! visitor
+esla             NounPostbase; ! outdoors; weather; awareness; world
+iqallug          NounPostbase; ! fish
+kayu             NounPostbase; ! sculpin; ocean fish (in general)
+kufi             NounPostbase; ! coffee
+Laluramke        NounPostbase; ! white person, Caucasian
+megh             NounPostbase; ! water
+naayvagh         NounPostbase; ! lake
+neghsagh         NounPostbase; ! seal (in general)
+neqe             NounPostbase; ! food
+nuna             NounPostbase; ! land
+pagunghagh*      NounPostbase; ! crowberry (Empetrum nigrum); berry (in general)
+sikig            NounPostbase; ! squirrel
+Sivungagh*       NounPostbase; ! Savoonga
+Sivuqagh         NounPostbase; ! Gambell; St. Lawrence Island (in general)
+ukazigh          NounPostbase; ! hare, locally rabbit
+ulghaagh         NounPostbase; ! sea lion
+Ungazigh         NounPostbase; ! Old Chaplino, Indian Point (in Chukotka)
+uqugh            NounPostbase; ! fat; blubber
+veg              NounPostbase; ! grass
+vegaagh          NounPostbase; ! grass
+yavlu            NounPostbase; ! sweetheart
+yaywaali         NounPostbase; ! orphan
 
 ! Jacobson (2001) Chapter 4 Noun Vocabulary
-aghnaghagh*      Noun; ! girl
-aaw              Noun; ! blood
-angyagh          Noun; ! boat
-apa              Noun; ! grandfather
-ata              Noun; ! father
-ategh            Noun; ! name
-avaqutagh        Noun; ! child, offspring
-eltughagh*       Noun; ! grandchild
-ggute            Noun; ! tooth
-iigge            Noun; ! hand
-ighnegh          Noun; ! son
-kemeg            Noun; ! skin
-mekestaaghhagh*  Noun; ! small thing
-mekelghiigh      Noun; ! boy
-naa              Noun; ! mother
-ne               Noun; ! home
-nengyugh*        Noun; ! grandmother
-nuliigh          Noun; ! wife
-nuyagh           Noun; ! hair
-panig            Noun; ! daughter
-qiighw           Noun; ! grey hair
-seghlegh         Noun; ! bad thing
-sigute           Noun; ! ear
-takestaaghhagh*  Noun; ! short thing
-ugi              Noun; ! husband
+aghnaghagh*      NounPostbase; ! girl
+aaw              NounPostbase; ! blood
+angyagh          NounPostbase; ! boat
+apa              NounPostbase; ! grandfather
+ata              NounPostbase; ! father
+ategh            NounPostbase; ! name
+avaqutagh        NounPostbase; ! child, offspring
+eltughagh*       NounPostbase; ! grandchild
+ggute            NounPostbase; ! tooth
+iigge            NounPostbase; ! hand
+ighnegh          NounPostbase; ! son
+kemeg            NounPostbase; ! skin
+mekestaaghhagh*  NounPostbase; ! small thing
+mekelghiigh      NounPostbase; ! boy
+naa              NounPostbase; ! mother
+ne               NounPostbase; ! home
+nengyugh*        NounPostbase; ! grandmother
+nuliigh          NounPostbase; ! wife
+nulighh          NounPostbase; ! wife
+nuyagh           NounPostbase; ! hair
+panig            NounPostbase; ! daughter
+qiighw           NounPostbase; ! grey hair
+seghlegh         NounPostbase; ! bad thing
+sigute           NounPostbase; ! ear
+takestaaghhagh*  NounPostbase; ! short thing
+ugi              NounPostbase; ! husband
 
 ! Jacobson (2001) Chapter 5 Noun Vocabulary 
-elngaatall       Ptcl; ! very much
-quunpeng         Ptcl; ! always
-
-aakagh*          Noun; ! older sister of a female
-anengagh         Noun; ! older brother
-estugagh*        Noun; ! store
-igaghvig         Noun; ! school 
-iyaghvig         Noun; ! school
-itegagh          Noun; ! foot 
-naasqugh         Noun; ! head 
-nayag            Noun; ! sister of a male 
-ngelqagh         Noun; ! cormorant 
-nunivag          Noun; ! rosewort plant (Sedum rosea), greens, tundra 
-papeg            Noun; ! tail
-puu              Noun; ! handle
-qanegh           Noun; ! mouth (anatomical) 
-qengagh          Noun; ! nose 
-suflugagh        Noun; ! gun 
-tepe             Noun; ! odor 
-tukugh*          Noun; ! host 
-tume             Noun; ! track, footprint; trail 
-unaami           Noun; ! tomorrow (particle) 
-uyughagh*        Noun; ! younger sibling (sister or borther)
-yughaghvig       Noun; ! church
+aakagh*          NounPostbase; ! older sister of a female
+anengagh         NounPostbase; ! older brother
+estugagh*        NounPostbase; ! store
+igaghvig         NounPostbase; ! school 
+iyaghvig         NounPostbase; ! school
+itegagh          NounPostbase; ! foot 
+naasqugh         NounPostbase; ! head 
+nayag            NounPostbase; ! sister of a male 
+ngelqagh         NounPostbase; ! cormorant 
+nunivag          NounPostbase; ! rosewort plant (Sedum rosea), greens, tundra 
+papeg            NounPostbase; ! tail
+puu              NounPostbase; ! handle
+qanegh           NounPostbase; ! mouth (anatomical) 
+qengagh          NounPostbase; ! nose 
+suflugagh        NounPostbase; ! gun 
+tepe             NounPostbase; ! odor 
+tukugh*          NounPostbase; ! host 
+tume             NounPostbase; ! track, footprint; trail 
+unaami           NounPostbase; ! tomorrow (particle) 
+uyughagh*        NounPostbase; ! younger sibling (sister or borther)
+yughaghvig       NounPostbase; ! church
 
 ! Jacobson (2001) Chapter 6 Noun Vocabulary 
-aghnalqwaagh     Noun; ! old lady
-akuutagh         Noun; ! mixture of berries, seal oil, sugar, etc., "Eskimo ice cream"
-alangqugh        Noun; ! ring finger
-apeghtughiste    Noun; ! teacher
-asag             Noun; ! paternal aunt
-ighaleqetaagh    Noun; ! star
-ila              Noun; ! relative; associate; part; one or some (of)
-Karake           Noun; ! Koryak
-lalala           Noun; ! dew
-mesuuna          Noun; ! hairbrush; comb
-nulugh           Noun; ! tea bag
-paye             Noun; ! mouth (non-anatomical); hatch of kayak
-pengugh          Noun; ! mound
-qagugh           Noun; ! forehead
-qaye             Noun; ! surface; top
-qayugh           Noun; ! tea; broth
-siivanllegh      Noun; ! elder
-siqinegh         Noun; ! sun
-tanqigh          Noun; ! moon; month
-teghikusagh      Noun; ! animal
-tengegkayug      Noun; ! airplane (plural, 'tengegkayuget', often used for one airplane)
-ungipaghagh      Noun; ! traditional story; tale; legend
-uyaqugh          Noun; ! neck
-waape            Noun; ! rope
-walguyaag        Noun; ! snowshoe
+aghnalqwaagh     NounPostbase; ! old lady
+akuutagh         NounPostbase; ! mixture of berries, seal oil, sugar, etc., "Eskimo ice cream"
+alangqugh        NounPostbase; ! ring finger
+apeghtughiste    NounPostbase; ! teacher
+asag             NounPostbase; ! paternal aunt
+ighaleqetaagh    NounPostbase; ! star
+ila              NounPostbase; ! relative; associate; part; one or some (of)
+Karake           NounPostbase; ! Koryak
+lalala           NounPostbase; ! dew
+mesuuna          NounPostbase; ! hairbrush; comb
+nulugh           NounPostbase; ! tea bag
+paye             NounPostbase; ! mouth (non-anatomical); hatch of kayak
+pengugh          NounPostbase; ! mound
+qagugh           NounPostbase; ! forehead
+qaye             NounPostbase; ! surface; top
+qayugh           NounPostbase; ! tea; broth
+siivanllegh      NounPostbase; ! elder
+siqinegh         NounPostbase; ! sun
+tanqigh          NounPostbase; ! moon; month
+teghikusagh      NounPostbase; ! animal
+tengegkayug      NounPostbase; ! airplane (plural, 'tengegkayuget', often used for one airplane)
+ungipaghagh      NounPostbase; ! traditional story; tale; legend
+uyaqugh          NounPostbase; ! neck
+waape            NounPostbase; ! rope
+walguyaag        NounPostbase; ! snowshoe
 
 ! Jacobson (2001) Chapter 7 Noun Vocabulary
-ighivgagh        Ptcl; ! yesterday
+amig             NounPostbase; ! door
+aveg             NounPostbase; ! half
+efluge           NounPostbase; ! floor
+eflugagh         NounPostbase; ! floor
+egllu            NounPostbase; ! stove (dual, 'eglluk', generally used for one stove)
+kemekrag         NounPostbase; ! meat
+qergese          NounPostbase; ! window (dual, 'qergesek', generally used for one window)
+tipele           NounPostbase; ! table (dual, 'tipelek', generally used for one table)
 
-amig             Noun; ! door
-aveg             Noun; ! half
-efluge           Noun; ! floor
-eflugagh         Noun; ! floor
-egllu            Noun; ! stove (dual, 'eglluk', generally used for one stove)
-kemekrag         Noun; ! meat
-qergese          Noun; ! window (dual, 'qergesek', generally used for one window)
-tipele           Noun; ! table (dual, 'tipelek', generally used for one table)
+right            NounPostbase;
+computer         NounPostbase;
 
-! Jacobson (2001) Chapter 8 Noun Vocabulary
-aa               Ptcl; ! yes
-nakaa            Ptcl; ! no
-nakaan           Ptcl; ! no
-qayughllak       Ptcl; ! because
-
-kina             Intrg; ! who? (relative case is 'kitum')
-kinkut           Intrg; ! who? (plural)
-naken            Intrg; ! from where?
-nani             Intrg; ! (at) where?
-naten            Intrg; ! how?
-navek            Intrg; ! to where?
-qafsina          Intrg; ! how many?
-qakun            Intrg; ! when? (future)
-qavngaq          Intrg; ! when? (past)
-sa               Intrg; ! what?
-sangan           Intrg; ! why? (in general)
-
-alquutagh        Noun; ! spoon
-anyena           Noun; ! onion
-avlawa           Noun; ! flour
-evlawa           Noun; ! flour
-Ayuqligh         Noun; ! mainland Alaskan Eskimo
-eskiiteg         Noun; ! skates
-estiima          Noun; ! steam(boat)
-estugagh         Noun; ! store
-kaawa            Noun; ! cow
-kaaw             Noun; ! cow
-kalanta          Noun; ! calendar
-kanti            Noun; ! candy
-kellaageg        Noun; ! clock
-kiti             Noun; ! kitty
-pusi             Noun; ! kitty
-Kuusma           Noun; ! Christmas
-laageg           Noun; ! lock
-lampa            Noun; ! lumber
-papa             Noun; ! pepper
-para             Noun; ! butter
-pi               Noun; ! thing
-piinsuuka        Noun; ! bean (soup)
-pipasaag         Noun; ! paper sack
-qawaag           Noun; ! bird
-Quyilleg         Noun; ! Chukchi
-Sapeni           Noun; ! Japanese
-suupa            Noun; ! soap
-telaaypa         Noun; ! trap
-tipeleg          Noun; ! table
-tuwaaya          Noun; ! twine
-waapa            Noun; ! rope
-waaseg           Noun; ! watch
-
-! Jacobson (2001) Chapter 9 Noun Vocabulary
-wanlegi          Ptcl; ! more than ever (particle)
-naligh*          Intrg; ! which one(s)?
-sangameng        Intrg; ! why? (focused on 3rd person plural subject of verb)
-sangami          Intrg; ! why? (focused on 3rd person singular subject of verb)
-
-apayepayiigh     Noun; ! spider
-ayngananga       Noun; ! musical instrument; phonograph (often dual for one)
-kenegh           Noun; ! light, lamp
-nasaperagh       Noun; ! hat
-neqekrag         Noun; ! bread (especially, pilot bread)
-nuzigh           Noun; ! one's child's spouse's parent
-
-! Jacobson (2001) Chapter 10 Noun Vocabulary
-!legan           Ptcl; ! go ahead; and then
-!nalighmeng      Ptcl; ! or
-
-esne             Noun; ! shore; rim
-esnagh           Noun; ! beach
-igaghyaghqagh    Noun; ! paper to be written on
-igagh            Noun; ! paper with writing (means 'book' if pluralized)
-kaamwaagh        Noun; ! coltsfoot plant (Petasites frigidus)
-nekreg           Noun; ! hook
-puugzagh         Noun; ! beluga
-qayuusigh        Noun; ! cup
-quug             Noun; ! swan
-quug             Noun; ! firewood
-ququngagh        Noun; ! leaf; edible willow leaf
-unkuse           Noun; ! animal trap (usually dual for one trap)
-taaghta          Noun; ! doctor
-
-! Jacobson (2001) Chapter 11 Noun Vocabulary
-akite            Noun; ! pillow
-awataghpag       Noun; ! sealskin float
-nefkuuragh       Noun; ! dried meat
-para             Noun; ! butter
-Pureki           Noun; ! Negro; Black
-sagnegh          Noun; ! dish; bowl; food container
-salngag          Noun; ! box; coffin; motor well in boat (dual, 'salngagek', often used for one box)
-sughma           Noun; ! chess; checkers
-tefli            Noun; ! particles of food or the like clinging around mouth
-tuquuqagh        Noun; ! nail
-vegllug          Noun; ! towel
-
-! Jacobson (2001) Chapter 12 Noun Vocabulary
-whani           Ptcl; ! right here (localis demonstrative adverb) particle
-
-aghnaghugh       Noun; ! "sea apple" (Boltnia ovifera) edible sea creature found on beach
-ilangqugh        Noun; ! clear fresh ice
-meteghllug       Noun; ! raven
-peraral          Noun; ! meat aspic, a dish of finely minced meat cooked in meat broth and jelled before eating
-qazigyagh        Noun; ! spotted seal
-qughsatku        Noun; ! "king" polar bear (fearsome, said to be almost unkillable)
-tanpegh          Noun; ! dried walrus hide
-ullghitagh       Noun; ! wheeled vehicle; snow machine; all terrain vehicle (used in the dual, 'ullghitak', for one vehicle)
-! From the diagram of a hand on p.79
-alangquq         Noun;
-atghilek         Noun;
-iqelquq          Noun;
-kumlu            Noun;
-tangyeq          Noun;
-tekeq            Noun;
-tunak            Noun;
-
-right            Noun;
-computer         Noun;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -315,33 +217,23 @@ computer         Noun;
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON Noun
+LEXICON NounPostbase
+0:0        NounInfl;
 
-! Noun →  Noun postbases
--–ghllag[BIG-N][N→N]:–ghllag         Noun; ! big N; lots of N (when used in the plural)
--–ghrugllag[HUGE-N][N→N]:–ghrugllag  Noun; ! big N; huge N
--–leg[ONE-HAVING-N][N→N]:–leg        Noun; ! one having N
+! Noun →  Noun (Noun-Elaborating) Postbases
+-–ghllag[BIG-N][N→N]:–ghllag         NounPostbase; ! big N; lots of N (when used in the plural)
+-–ghrugllag[HUGE-N][N→N]:–ghrugllag  NounPostbase; ! big N; huge N
+-–leg[ONE-HAVING-N][N→N]:–leg        NounPostbase; ! one having N
+-e[ENG-TO-ESS][N→N]:-e               NounPostbase; ! to make English words in Yupik words
+-mii[RESIDENT-OF-N][N→N]:mii         NounPostbase; ! resident of N
+-–squgh[N→N]:–squgh                  NounPostbase; ! little N, small N 
+-–squghhagh*[N→N]:–squghhagh*        NounPostbase; ! little N, small N 
 
--e[N→N]:-e                   Noun; ! to make English words in Yupik words
--mii[N→N]:mii                Noun; ! resident of N
--–squgh[N→N]:–squgh          Noun; ! little N, small N 
--–squghhah[N→N]:–squghhagh*  Noun; ! little N, small N 
+! Noun →  Verb (Verbalizing) Postbases
+-~%:(ng)u[TO-BE-N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@    VerbPostbase; ! to be N
+-–lgu[TO-HAVE-N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@          VerbPostbase; ! to have N 
+-–ngllagh[TO-MAKE-N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@  VerbPostbase; ! to make N
 
-! Noun →  Verb postbases
--~%:(ng)u[TO-BE-N][N→V]:~%:(ng)u  VerbIntr; ! to be N
--–lgu[TO-HAVE-N][N→V]:–lgu        VerbIntr; ! to have N 
--takestaaghhaa[TO-BE-SMALL][N→N]:takestaaghhaa  VerbIntr; ! to be small
-
--–ngllagh[N→V]:–ngllagh     VerbIntr; ! to make N 
--–liigh[N→V]:–liigh         VerbIntr; ! to cook; to prepare N  ! Jacobson is unsure if this and the following postbase is intransitive only
--niigh[N→V]:niigh           VerbIntr; ! to hunt for N; to search for N; to ask for N; to work with N 
--te[N→V]:te                 VerbIntr; ! to catch N; to go to N 
--tugh[N→V]:tugh             VerbIntr; ! to eat N; to use N 
-[N→V]:–ligh       VerbTrns; ! to provide with N; to pu N in 
-[N→V]:ti          VerbIntr; ! to speak the language of N (TODO: This is a prefix)
-[N→V]:tuumagh     Verb?; ! together with one's N(s)
-
-0:0               NounInfl;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -405,9 +297,6 @@ LEXICON NounInfl
 ! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
 
 
-! TODO: Final 'e' does not drop from short bases to form plural localis/terminalis cases
-!       How do we distinguish between a short base and long base?
-!       Both endings are listed, but at the moment, one is not available for inflection
 ! ----------------------------------------------------------------------------------------------------------------------------------------------|
 !                                                         Localis Case Endings (at N; in N)                                                     |
 ! ----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -459,7 +348,7 @@ LEXICON NounInfl
 [N][Ter][4DuPoss][SgPosd]:~f-wmeg(te)nun   #;    [N][Ter][4DuPoss][PlPosd]:~f-wmeg(te)nun #;    [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)nun #; ! 4Du possessor  |
 ! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
 
-! TODO: For [2SgPoss][SgPosd], is it –gpegun or –gpekun?
+
 ! ----------------------------------------------------------------------------------------------------------------------------------------------------|
 !                                                        Vialis Case Endings (through N)                                                              |
 ! ----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -510,8 +399,6 @@ LEXICON NounInfl
 ! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
 
 
-! Nouns in the unpossessed relative case indicates the possessor of a noun with a 3rd person possessed ending
-! Nouns in the possessed relative case work as possessors or as subjects of transitive verbs (number of the possessed is not specified in these endings)
 ! --------------------------------------------------------------------------------------------------------------------------------------|
 !                                                         Relative Case Endings                                                         |
 ! --------------------------------------------------------------------------------------------------------------------------------------|
@@ -550,261 +437,153 @@ LEXICON NounInfl
 LEXICON VerbBase
 
 ! Jacobson (2001) Chapter 3 Verb Vocabulary
-esghaate         VerbIntr; ! to see something
-esghaate         VerbTrns; ! to see something
-gaagh            VerbIntr; ! to cook
-gaagh            VerbTrns; ! to cook
-inghu            VerbIntr; ! to pick berries
-inghu            VerbTrns; ! to pick berries
-kuuve            VerbIntr; ! to spill
-kuuve            VerbTrns; ! to spill
-nagate           VerbIntr; ! to listen; to hear
-nagate           VerbTrns; ! to listen; to hear
-negh             VerbIntr; ! to eat
-negh             VerbTrns; ! to eat
-
-aane             VerbIntr; ! to go out
-aange            VerbIntr; ! to be big
-aghula           VerbIntr; ! to dance
-aghulaqe         VerbIntr; ! to leave
-alinge           VerbIntr; ! to be afraid
-aqii             VerbIntr; ! to take a pleasure trip, to take a vacation
-esleqe           VerbIntr; ! to be full
-ifla             VerbIntr; ! to lose; to get lost
-ingaghte         VerbIntr; ! to lie down
-itegh            VerbIntr; ! to go in, to enter
-kaate            VerbIntr; ! to arrive
-megh             VerbIntr; ! to drink
-nenglagh         VerbIntr; ! to laugh
-pinigh           VerbIntr; ! to be good
-qavagh           VerbIntr; ! to sleep
-qiighw           VerbIntr; ! to cough
-qiya             VerbIntr; ! to cry
-tagi             VerbIntr; ! to come towards speaker
-taake            VerbIntr; ! to be long
-tuqu             VerbIntr; ! to die
+aane@P.VALENCE.INTR@            VerbPostbase; ! to go out
+aange@P.VALENCE.INTR@           VerbPostbase; ! to be big
+aghula@P.VALENCE.INTR@          VerbPostbase; ! to dance
+aghulaqe@P.VALENCE.INTR@        VerbPostbase; ! to leave
+alinge@P.VALENCE.INTR@          VerbPostbase; ! to be afraid
+aqii@P.VALENCE.INTR@            VerbPostbase; ! to take a pleasure trip, to take a vacation
+esghaate@P.VALENCE.INTR@        VerbPostbase; ! to see something
+esghaate @P.VALENCE.TRNS@       VerbPostbase; ! to see something
+esleqe@P.VALENCE.INTR@          VerbPostbase; ! to be full
+gaagh@P.VALENCE.INTR@           VerbPostbase; ! to cook
+gaagh@P.VALENCE.TRNS@           VerbPostbase; ! to cook
+ifla@P.VALENCE.INTR@            VerbPostbase; ! to lose; to get lost
+ifla@P.VALENCE.TRNS@            VerbPostbase; ! to lose; to get lost
+ingaghte@P.VALENCE.INTR@        VerbPostbase; ! to lie down
+ingaghte@P.VALENCE.TRNS@        VerbPostbase; ! to lie down
+inghu@P.VALENCE.INTR@           VerbPostbase; ! to pick berries
+inghu@P.VALENCE.TRNS@           VerbPostbase; ! to pick berries
+itegh@P.VALENCE.INTR@           VerbPostbase; ! to go in, to enter
+itegh@P.VALENCE.TRNS@           VerbPostbase; ! to go in, to enter
+kaate@P.VALENCE.INTR@           VerbPostbase; ! to arrive (at)
+kaate@P.VALENCE.TRNS@           VerbPostbase; ! to arrive (at)
+kuuve@P.VALENCE.INTR@           VerbPostbase; ! to spill
+kuuve@P.VALENCE.TRNS@           VerbPostbase; ! to spill
+megh@P.VALENCE.INTR@            VerbPostbase; ! to drink
+megh@P.VALENCE.TRNS@            VerbPostbase; ! to drink
+nagate@P.VALENCE.INTR@          VerbPostbase; ! to listen; to hear
+nagate@P.VALENCE.TRNS@          VerbPostbase; ! to listen; to hear
+negh@P.VALENCE.INTR@            VerbPostbase; ! to eat
+negh@P.VALENCE.TRNS@            VerbPostbase; ! to eat
+nenglagh@P.VALENCE.INTR@        VerbPostbase; ! to laugh
+pinigh@P.VALENCE.INTR@          VerbPostbase; ! to be good
+qavagh@P.VALENCE.INTR@          VerbPostbase; ! to sleep
+qiighw@P.VALENCE.INTR@          VerbPostbase; ! to cough
+qiya@P.VALENCE.INTR@            VerbPostbase; ! to cry
+tagi@P.VALENCE.INTR@            VerbPostbase; ! to come towards speaker
+taake@P.VALENCE.INTR@           VerbPostbase; ! to be long
+tuqu@P.VALENCE.INTR@            VerbPostbase; ! to die
 
 ! Jacobson (2001) Chapter 4 Verb Vocabulary
-igatagh          VerbIntr; ! to be hungry
-iyatagh          VerbIntr; ! to be hungry
-mekestaaghhagh*  VerbIntr; ! small thing
-takestaaghhagh*  VerbIntr; ! short thing
-seghlegh         VerbIntr; ! bad thing
+igatagh@P.VALENCE.INTR@         VerbPostbase; ! to be hungry
+iyatagh@P.VALENCE.INTR@         VerbPostbase; ! to be hungry
+mekestaaghhaa@P.VALENCE.INTR@   VerbPostbase; ! to be small 
+takestaaghhaa@P.VALENCE.INTR@   VerbPostbase; ! to be short 
+seghleghu@P.VALENCE.INTR@       VerbPostbase; ! to be bad 
 
 ! Jacobson (2001) Chapter 5 Verb Vocabulary
-aglagh           VerbIntr; ! to go home; to go over to another place
-mayugh           VerbIntr; ! to go up
-qepghagh         VerbIntr; ! to work
-taaqe            VerbIntr; ! to finish; to quit
-ukig             VerbIntr; ! to go down
-umughqaa         VerbIntr; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
-yughagh          VerbIntr; ! to pray, to worship
-
-aglagh           VerbPostbase; ! to go home; to go over to another place
-mayugh           VerbPostbase; ! to go up
-qepghagh         VerbPostbase; ! to work
-taaqe            VerbPostbase; ! to finish; to quit
-ukig             VerbPostbase; ! to go down
-umughqaa         VerbPostbase; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
-yughagh          VerbPostbase; ! to pray, to worship
+aglagh@P.VALENCE.INTR@          VerbPostbase; ! to go home; to go over to another place
+mayugh@P.VALENCE.INTR@          VerbPostbase; ! to go up
+mayugh@P.VALENCE.TRNS@          VerbPostbase; ! to go up
+qepghagh@P.VALENCE.INTR@        VerbPostbase; ! to work (on)
+qepghagh@P.VALENCE.TRNS@        VerbPostbase; ! to work (on)
+taaqe@P.VALENCE.INTR@           VerbPostbase; ! to finish; to quit
+ukig@P.VALENCE.INTR@            VerbPostbase; ! to go down
+umughqaa@P.VALENCE.INTR@        VerbPostbase; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+yughagh@P.VALENCE.INTR@         VerbPostbase; ! to pray, to worship
+yughagh@P.VALENCE.TRNS@         VerbPostbase; ! to pray, to worship
 
 ! Jacobson (2001) Chapter 6 Verb Vocabulary
-akuzi            VerbIntr; ! to speak
-atugh            VerbIntr; ! to use
-igleghte         VerbIntr; ! to travel
-kaki             VerbIntr; ! to sew
-mesuuna          VerbIntr; ! to brush or comb's one hair
-nulugh           VerbIntr; ! to ice-fish; to dunk a tea bag
-ungipaghagh      VerbIntr; ! to tell a story
+akuzi@P.VALENCE.INTR@            VerbPostbase; ! to speak
+atugh@P.VALENCE.INTR@            VerbPostbase; ! to use
+atugh@P.VALENCE.TRNS@            VerbPostbase; ! to use
+igleghte@P.VALENCE.INTR@         VerbPostbase; ! to travel
+kaki@P.VALENCE.INTR@             VerbPostbase; ! to sew
+kaki@P.VALENCE.TRNS@             VerbPostbase; ! to sew
+mesuuna@P.VALENCE.INTR@          VerbPostbase; ! to brush or comb's one hair
+mesuuna@P.VALENCE.TRNS@          VerbPostbase; ! to brush or comb's one hair
+nulugh@P.VALENCE.INTR@           VerbPostbase; ! to ice-fish; to dunk a tea bag
+ungipaghagh@P.VALENCE.INTR@      VerbPostbase; ! to tell a story
 
 ! Jacobson (2001) Chapter 7 Verb Vocabulary
-aveg             VerbIntr; ! to divide in two 
-aveg             VerbTrns; ! to divide in two 
-guute            VerbIntr; ! to shoot
-guute            VerbTrns; ! to shoot
-laalighte        VerbIntr; ! to visit
-laalighte        VerbTrns; ! to visit
-liite            VerbIntr; ! to learn; to become aware of one's surroundings
-liite            VerbTrns; ! to learn; to become aware of one's surroundings
-qelpeghte        VerbIntr; ! to open
-qelpeghte        VerbTrns; ! to open
-qilug            VerbIntr; ! to bark (at)
-qilug            VerbTrns; ! to bark (at)
-tuqute           VerbIntr; ! to kill
-tuqute           VerbTrns; ! to kill
-umeg             VerbIntr; ! to close
-umeg             VerbTrns; ! to close
-
-igamsiqanagh     VerbIntr; ! to make one thankful
-igamsiqayug      VerbIntr; ! to feel thanksful
-
-tuqe             VerbTrns; ! to use; to wear
-esghagh          VerbTrns; ! to see
-igamsiqayugvike  VerbTrns; ! to feel thankful toward
-laalighfike      VerbTrns; ! to visit
-lli              VerbTrns; ! to put
-nalluke          VerbTrns; ! to not know
-piniqe           VerbTrns; ! to like
-tugu             VerbTrns; ! to take; to pick up
-
-! Jacobson (2001) Chapter 8 Verb Vocabulary
-alleg            VerbIntr; ! to sweep
-alleg            VerbTrns; ! to sweep
-kayusiite        VerbIntr; ! to help out
-kayusiite        VerbTrns; ! to help out
-pi               VerbIntr; ! to do; to go; etc.
-pi               VerbTrns; ! to do; to go; etc.
-sa               VerbIntr; ! to do what?
-sa               VerbTrns; ! to do what?
-
-meghnugh         VerbIntr; ! to be tired
-meqsug           VerbIntr; ! to be thirsty
-qavaghni         VerbIntr; ! to be sleepy
-
-kayusigh         VerbTrns; ! to help
-liisimake        VerbTrns; ! to know
-tukfigh          VerbTrns; ! to buy
-
-! Jacobson (2001) Chapter 9 Verb Vocabulary
-aghvigh          VerbIntr; ! to cross over; to go to the mainland
-aghvigh          VerbTrns; ! to cross over; to go to the mainland
-atightugh        VerbIntr; ! to read
-atightugh        VerbTrns; ! to read
-igagh            VerbIntr; ! to write (on)
-igagh            VerbTrns; ! to write (on)
-pinighsagh       VerbIntr; ! to fix, to repair; to fix up oneself
-pinighsagh       VerbTrns; ! to fix, to repair; to fix up oneself
-ulima            VerbIntr; ! to make (something)
-ulima            VerbTrns; ! to make (something)
-
-aleghquute       VerbIntr; ! to talk together; to converse (non-singular)
-aqlaghate        VerbIntr; ! for it to be cold (weather)
-iknaqe           VerbIntr; ! to be strong
-isekinagh        VerbIntr; ! to be cold (solid, liquid)
-uglagh           VerbIntr; ! to be many, to be numerous
-
-aleghqugh        VerbTrns; ! to talk to; to tell
-amqeghte         VerbTrns; ! to bite
-ivagh            VerbTrns; ! to look for
-naallghute       VerbTrns; ! to adjust
-naalke           VerbTrns; ! to find
-payegh           VerbTrns; ! to meet, to encounter; to go over to help
-qaamte           VerbTrns; ! to extinguish; to turn off
-ugpeqe           VerbTrns; ! to believe
-ungipaghaate     VerbTrns; ! to tell a story to
-!Optional impersonal agent verbs
-aqlaghaghte      VerbTrns; ! for it to get cold
-eslallugughte    VerbTrns; ! for it to rain
-ghhuute          VerbTrns; ! to be cold (person)
-piniighte        VerbTrns; ! to improve, to become better
-qanigughte       VerbTrns; ! for snow to fall
-siku             VerbTrns; ! to freeze
-ughug            VerbTrns; ! to melt
-
-! Jacobson (2001) Chapter 10 Verb Vocabulary
-kaaw             VerbIntr; ! to hit, to strike with an object
-kaaw             VerbTrns; ! to hit, to strike with an object
-lata             VerbIntr; ! to write a letter (to)
-lata             VerbTrns; ! to write a letter (to)
-pugimagh         VerbIntr; ! to swim
-pugimagh         VerbTrns; ! to swim
-
-aqume            VerbIntr; ! to sit
-mayugh           VerbIntr; ! to go up
-nanglii          VerbIntr; ! to stare into space
-nekeve           VerbIntr; ! to stand up
-qayugh           VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
-ukig             VerbIntr; ! to go down
-
-aqfa             VerbTrns; ! to go get
-egte             VerbTrns; ! to throw away
-pumsug           VerbTrns; ! to pinch
-tagite           VerbTrns; ! to bring here
-tuqute           VerbTrns; ! to kill
-
-! Jacobson (2001) Chapter 11 Verb Vocabulary
-aghmig           VerbIntr; ! to wash one's face
-aghmig           VerbTrns; ! to wash one's face
-ghhuugh          VerbIntr; ! to inflate
-ghhuugh          VerbTrns; ! to inflate
-ifkagh           VerbIntr; ! to fall from a height; to accidentally drop
-ifkagh           VerbTrns; ! to fall from a height; to accidentally drop
-nalug            VerbIntr; ! to land from the air (onto)
-nalug            VerbTrns; ! to land from the air (onto)
-pilugug          VerbIntr; ! to put on clothing; to dress
-pilugug          VerbTrns; ! to put on clothing; to dress
-sangighqugh      VerbIntr; ! to wash dishes
-sangighqugh      VerbTrns; ! to wash dishes
-
-geve             VerbIntr; ! to render (fat); to be compressed
-gheve            VerbIntr; ! to fade
-kavite*          VerbIntr; ! to be red
-naave            VerbIntr; ! to break, to get broken
-neghenghite      VerbIntr; ! to not eat
-qaame            VerbIntr; ! to go out (fire, light, etc.)
-qinuyug          VerbIntr; ! to be sick
-sughma           VerbIntr; ! to play chess or checkers
-sukate*          VerbIntr; ! to be fast
-
-akite            VerbTrans; ! to answer; to reciprocate
-ifkaghte         VerbTrans; ! to drop accidentally or on purpose
-ini              VerbTrans; ! to hang to dry
-naafqe           VerbTrans; ! to break (it)
-paagh            VerbTrans; ! to lick; to clean by licking with aid of fingers
-tuune            VerbTrans; ! to give
-tuquuqagh        VerbTrans; ! to nail
-
-! Jacobson (2001) Chapter 12 Verb Vocabulary
-iggag            PosRoot; ! tilting; leaning against something
-ingagh*          PosRoot; ! lying down
-matagh*          PosRoot; ! undressed; parka-less
-mumig            PosRoot; ! turned over
-
-allakagh         PosRoot; ! separately (from the others)  TODO: These are only used in quantifier-qualifier constructions
-ellnginagh       PosRoot; ! alone; only                   TODO: Right now, they're getting overgenerated
-iingunagh        PosRoot; ! all; whole
-qerngagh         PosRoot; ! together
-
-agniqe           VerbIntr; ! to be angry (women)
-aqumga           VerbIntr; ! to be sitting (compare 'aqume' - 'to sit down')  TODO: What are their root forms?
-ete              VerbIntr; ! to be (obsolete base)
-ilagagh          VerbIntr; ! to sing
-nekevgha         VerbIntr; ! to be standing (compare 'nekeve' - 'to stand up')
-qefliqe          VerbIntr; ! to be angry (men)
-
-! Verb →  Noun postbases
-[V→N]:@~sf–(g)kaq Noun; ! one that has V-ed or been V-ed
-[V→N]:@–lghii     Noun; ! one that is V-ing (always used with an unpossessed ending)
-[V→N]:@ngugh*     Noun; ! same as above but for descriptive and negative bases ending in -te 
-[V→N]:@~sf–(g)ke  Noun; ! one that the possessor is V-ing (always used with possessed ending)
-[V→N]:(g)ka       Noun; ! one that the possessor is V-ing (always used with possessed ending)
-[V→N]:~–kayuk     Noun; ! one who is able to V 
-
-! Verb →  Verb postbases
--(pete)fte[V→V]:(pete)fte    VerbIntr; ! to evidently V or have V-ed
-[V→V]:@~sf–(g)kau   VerbIntr; ! to have V-ed or been V-ed 
-[V→V]:@~%:(i/u)ma   VerbIntr; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
-[V→V]:@~%:(i/u)ma   VerbTrns; ! to have V-ed or to have been V-ed; to evidently have V-ed (when used with participial mood)
-[V→V]:~%:(u)te      VerbIntr; ! to V with, for, or to object; to V object along with oneself; to V each other 
-[V→V]:~%:(u)te      VerbTrns; ! to V with, for, or to object; to V object along with oneself; to V each other 
-[V→V]:@~%:(i/u)magh VerbTrns; ! while V-ing 
-! Compound-verbal postbases
-[V→V]:@~fni       VerbIntr; ! to say that one V-s
-[V→V]:+(te)ste    VerbTrns; ! to have, make, or let one V
-[V→V]:~sf:(e)sqe  VerbTrns; ! to ask or tell one to V 
-[V→V]:+(te)sug    VerbTrns; ! to want one to V 
-[V→V]:~–kayugu    VerbTrns; ! to be able to V (transfers valence of embedded verb) 
+atuqe@P.VALENCE.TRNS@             VerbPostbase; ! to use; to wear
+aveg@P.VALENCE.INTR@             VerbPostbase; ! to divide in two 
+aveg@P.VALENCE.TRNS@             VerbPostbase; ! to divide in two 
+esghagh@P.VALENCE.TRNS@          VerbPostbase; ! to see
+guute@P.VALENCE.INTR@            VerbPostbase; ! to shoot
+guute@P.VALENCE.TRNS@            VerbPostbase; ! to shoot
+igamsiqanagh@P.VALENCE.INTR@     VerbPostbase; ! to make one thankful
+igamsiqayug@P.VALENCE.INTR@      VerbPostbase; ! to feel thanksful
+igamsiqayugvike@P.VALENCE.TRNS@  VerbPostbase; ! to feel thankful toward
+laalighfike@P.VALENCE.TRNS@      VerbPostbase; ! to visit
+laalighte@P.VALENCE.INTR@        VerbPostbase; ! to visit
+liite@P.VALENCE.INTR@            VerbPostbase; ! to learn; to become aware of one's surroundings
+liite@P.VALENCE.TRNS@            VerbPostbase; ! to learn; to become aware of one's surroundings
+lli@P.VALENCE.TRNS@              VerbPostbase; ! to put
+nalluke@P.VALENCE.TRNS@          VerbPostbase; ! to not know
+piniqe@P.VALENCE.TRNS@           VerbPostbase; ! to like
+qelpeghte@P.VALENCE.INTR@        VerbPostbase; ! to open
+qelpeghte@P.VALENCE.TRNS@        VerbPostbase; ! to open
+qilug@P.VALENCE.INTR@            VerbPostbase; ! to bark (at)
+qilug@P.VALENCE.TRNS@            VerbPostbase; ! to bark (at)
+tugu@P.VALENCE.TRNS@             VerbPostbase; ! to take; to pick up
+tuqute@P.VALENCE.TRNS@           VerbPostbase; ! to kill
+umeg@P.VALENCE.INTR@             VerbPostbase; ! to close
+umeg@P.VALENCE.TRNS@             VerbPostbase; ! to close
 
 
-LEXICON VerbIntr
+LEXICON VerbPostbase 
 
-[V][Intr_Ind]:~f(g/t)u           VerbIntrInfl;
+0:0  VerbTenseInfl;
 
-[V][Intr_Ptcp]:@*ngugh*@–lghii   VerbIntrInfl;  ! @nguq* is the participial ending reserved for bases ending in "special" te's
+-–ghhalek[HOW-V][V→XCLM]:–ghhalek  #; ! how V! (exclamation) 
+
+! Verb →  Verb (Verb-Elaborating) Postbases
+-~(g)aqe[TO-BE-V-ING][TO-REGULARLY-OR-REPEAT-V][V→V]@R.VALENCE@:~(g)aqe@R.VALENCE@  VerbPostbase; ! to be V-ing; to regularly or repeat V 
+-@lleqe[WILL-V][V→V]@R.VALENCE@:@lleqe@R.VALENCE@              VerbPostbase; ! to V in the future; will V 
+-@~fnaqe[TO-BE-GOING-TO-V][V→V]@R.VALENCE@:@~fnaqe@R.VALENCE@  VerbPostbase; ! to be going to V; to be about to V 
+-@~fyug[TO-WANT-TO-V][V→V]@R.VALENCE@:@~fyug@R.VALENCE@        VerbPostbase; ! to want to V
+-@–nghite[TO-NOT-V][V→V]@R.VALENCE@:@–nghite@R.VALENCE@        VerbPostbase; ! to not V
 
 
-! TODO: On p.51, [V][Intrg][2Du] is given as ~sf(e)stek
-!       In Appendix I, p.182, it is given as ~sf(e)stekstek
+LEXICON VerbTenseInfl
+
+[V][Intr_Ind]@R.VALENCE.INTR@:~f(g/t)u@R.VALENCE.INTR@  VerbPrsNumInfl;
+[V][Trns_Ind]@R.VALENCE.TRNS@:~(g)a@R.VALENCE.TRNS@     VerbPrsNumInfl;
+
+
+LEXICON VerbPrsNumInfl
+
+[3Sg]@R.VALENCE.INTR@:q@R.VALENCE.INTR@     #;
+[3Pl]@R.VALENCE.INTR@:t@R.VALENCE.INTR@     #; 
+[3Du]@R.VALENCE.INTR@:k@R.VALENCE.INTR@     #;
+[1Sg]@R.VALENCE.INTR@:nga@R.VALENCE.INTR@   #;
+[1Pl]@R.VALENCE.INTR@:kut@R.VALENCE.INTR@   #;
+[1Du]@R.VALENCE.INTR@:kung@R.VALENCE.INTR@  #;
+[2Sg]@R.VALENCE.INTR@:ten@R.VALENCE.INTR@   #;
+[2Pl]@R.VALENCE.INTR@:si@R.VALENCE.INTR@    #;
+[2Du]@R.VALENCE.INTR@:tek@R.VALENCE.INTR@   #;
+
+[1Sg][2Sg]:mken     #; 
+[1Sg][3Sg]:qa       #;
+[1Sg][3Pl]:nka      #;
+[2Sg][1Sg]:ghpenga  #;
+[2Sg][3Sg]:n        #; 
+[2Sg][3Pl]:ten      #; 
+[3Sg][1Sg]:anga     #; 
+[3Sg][2Sg]:aten     #; 
+[3Sg][3Sg]:a        #; 
+[3Sg][3Pl]:i        #;
+[3Pl][3Sg]:at       #; 
+[3Pl][3Pl]:it       #; 
+
+
+
+
+
+LEXICON Ignore
+
 ! ----------------------------------------|
 ! Intransitive Interrogative Mood Endings |
 ! ----------------------------------------|-------------|
@@ -840,7 +619,6 @@ LEXICON VerbIntr
 ! -----------------------------------|-------------|
 
 
-!TODO: Does the rest of the chart exist?
 ! -------------------------------------------------|
 ! Intransitive Optative Mood Endings NEG (Do Not)  |
 ! -----------------------------------|-------------|
@@ -857,34 +635,6 @@ LEXICON VerbIntr
 [V][Opt][NEG][2Du]:~fqaaftek      #; ! 2Du subject |
 ! -----------------------------------|-------------|
 
-! Verb →  Noun postbases
-
-! Verb →  Verb postbases
--~(g)aqe[TO-BE-V-ING][V→V]:~(g)aqe       VerbIntr; ! to be V-ing; to regularly or repeat V 
--@lleqe[WILL-V][V→V]:@lleqe              VerbIntr; ! to V in the future; will V 
--@~fnaqe[TO-BE-GOING-TO-V][V→V]:@~fnaqe  VerbIntr; ! to be going to V; to be about to V 
--@~fyug[TO-WANT-TO-V][V→V]:@~fyug        VerbIntr; ! to want to V
-
--–ghhalek[V→Excl]:–ghhalek       #; ! how V! (exclamation)
--@–n'ghite[V→V]:@–n'ghite  VerbIntr; ! to not V
-
-LEXICON VerbIntrInfl
-[3Sg]:q    #;
-[3Pl]:t    #; 
-[3Du]:k    #;
-[1Sg]:nga  #;
-[1Pl]:kut  #;
-[1Du]:kung #;
-[2Sg]:ten  #;
-[2Pl]:si   #;
-[2Du]:tek  #;
-
-
-
-LEXICON VerbTrns
-[V][Trns_Ind]:~(g)a             VerbTrnsInfl;
-[V][Imprs_Agnt]:~(g)a           VerbTrnsInfl;
-[V][Trns_Ptcp]:@~sf–(g)ke(g)ka  VerbTrnsInfl;
 
 ! --------------------------------------------------------------------------------------------------------------------------|
 !                                         Transitive Interrogative Mood Endings                                             |
@@ -921,13 +671,9 @@ LEXICON VerbTrns
 [V][Intrg][3Pl][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Pl][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Pl][2Du]:~f(g/t)istek    #; ! 3Pl subject    |
 [V][Intrg][3Du][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Du][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Du][2Du]:~f(g/t)istek    #; ! 3Du subject    |
 ! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-[V][Intrg][1Sg][2Sg]:~f(t)ziken     #; ! TODO: Why don't these other forms exist?                                           ! 1Sg subject    |
+[V][Intrg][1Sg][2Sg]:~f(t)ziken     #;                                                                                      ! 1Sg subject    |
 [V][Intrg][1Pl][2Sg]:~sf(e)steken   #;                                                                                      ! 1Pl subject    |
 [V][Intrg][1Du][2Sg]:~sf(e)steken   #;                                                                                      ! 1Du subject    |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-! Presumably, a speaker would not pose a question to another speaker where that question involves the other speaker                          |
-!     e.g. # Why did you visit you(rself)?                                                                                                   |
-! TODO: Is there a reflexive form for utterances like Why did you hit yourself?                                                              |
 ! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
 
 
@@ -970,12 +716,8 @@ LEXICON VerbTrns
 [V][Opt][PRS][3Pl][1Sg]:~flaken          #;    [V][Opt][PRS][3Pl][1Pl]:~flamsi          #;    [V][Opt][PRS][3Pl][1Du]:~flamtek          #; ! 3Pl subject |
 [V][Opt][PRS][3Du][1Sg]:~flaken          #;    [V][Opt][PRS][3Du][1Pl]:~flamsi          #;    [V][Opt][PRS][3Du][1Du]:~flamtek          #; ! 3Du subject |
 ! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-! Presumably, a speaker would not command a speaker to do something where that action involves the other speaker                                         |
-! TODO: Again, is there a reflexive form for utterances like 'Hit yourself'?                                                                             |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
 
 
-! TODO: Do any of the other forms exist?
 ! ------------------------------------------------------------------------------------------------------------------|
 !                                         Transitive Optative Mood Endings (Negative)                               |
 ! ------------------------------------------------------------------------------------------------------------------|
@@ -1018,37 +760,6 @@ LEXICON VerbTrns
 !                                                                                                                                 |
 ! -------------------------------|--------------------------------------|-------------------------------------------|-------------|
 
-! Verb →  Noun postbases
-
-! Verb →  Verb postbases
--~(g)aqe[V→V]:~(g)aqe       VerbTrns; ! to be V-ing; to regularly or repeat V 
--@lleqe[V→V]:@lleqe         VerbTrns; ! to V in the future; will V
--@~fnaqe[V→V]:@~fnaqe       VerbTrns; ! to be going to V; to be about to V 
--@~fyug[V→V]:@~fyug         VerbTrns; ! to want to V
--–ghhalek[V→Excl]:–ghhalek         #; ! how V! (exclamation)
--@–n'ghite[V→V]:@–n'ghite   VerbTrns; ! to not V
-
-LEXICON VerbTrnsInfl
-
-[1Sg][2Sg]:mken     #; 
-[1Sg][3Sg]:qa       #;
-[1Sg][3Pl]:nka      #;
-[2Sg][1Sg]:ghpenga  #;
-[2Sg][3Sg]:n        #; 
-[2Sg][3Pl]:ten      #; 
-[3Sg][1Sg]:anga     #; 
-[3Sg][2Sg]:aten     #; 
-[3Sg][3Sg]:a        #; 
-[3Sg][3Pl]:i        #;
-[3Pl][3Sg]:at       #; 
-[3Pl][3Pl]:it       #; 
-
-
-LEXICON PosRoot
-
-[V][Intr_Actv]:te   VerbIntrInfl;
-[V][Intr_Actv]:te   VerbTrnsInfl;
-[V][Intr_Stat]:nga  VerbIntrInfl;
 
 ! ------------------------------------|
 !     Quantifier-Qualifier Endings    |

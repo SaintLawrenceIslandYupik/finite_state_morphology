@@ -139,7 +139,8 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 									      gh "*" -> 0   ||  _ MorphemeBoundary [("~") | ("~f")] "–"  ∘
                                              "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define teDropping [..] -> nn         || V t e MorphemeBoundary "@" MorphPhonSymbols* _ n  ∘ ! Lines 1-4 concern postbases that begin with n
+define teDropping [..] -> e          || t e MorphemeBoundary "@" MorphPhonSymbols* n _ g h ∘
+                  [..] -> nn         || V t e MorphemeBoundary "@" MorphPhonSymbols* _ n  ∘ ! Lines 1-4 concern postbases that begin with n
                   n -> 0             || V t e MorphemeBoundary "@" MorphPhonSymbols* nn _ ∘
                   [..] -> DoubleFric || C t e MorphemeBoundary "@" MorphPhonSymbols* _ n  ∘
 				  C -> 0             || _ t e MorphemeBoundary "@" MorphPhonSymbols* DoubleFric n ∘
@@ -172,8 +173,8 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
                       gh MorphemeBoundary ":" u -> u MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                                                            ":"   -> 0 || WordBoundary Alphabet* MorphemeBoundary _ ;
 
-define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
-                           k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
+define VelarUvularRounding k -> kw, g -> w, gg -> wh, n g -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
+                           k -> kw, g -> w, gg -> wh, n g -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
                                                q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
                                                q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ;
 
@@ -277,4 +278,4 @@ define Rules [
 
 define Grammar [ Rules ] ;
 push Grammar
-pairs
+!pairs

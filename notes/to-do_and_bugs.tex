@@ -52,14 +52,39 @@ For example, the deletion environment for the symbol \textit{(g/t)} is ``WordBou
 
 In this way, \textit{(g/t)} will survive the first pass through the analyzer when we are affixing the first postbase, but this forces us to repeat the cascade in order to affix \textit{(g/t)} and the rest of the second postbase, potential third postbase, etc. This begs the question, \textcolor{magenta}{Does Yupik have infinite recursion with respect to postbases?}, because we have to repeat the cascade as many times as the maximum number of postbases available to a Yupik base.
 
-\item With the previous issue resolved, it dumped another issue on us, embodied in the attempted generation of the string \textit{\textbf{tagi@lleqe${\sim}_\text{f}$(g/t)uq}. Since the \textit{@} morphophonological process (\textit{te}-dropping} takes precedence over final-\textit{e} dropping, the \textit{@} in the string is resolved first, setting up the environment for the final-\textit{e} dropping to take place \textit{within the first pass-through of the morphophonological processes}. While this in and of itself was not an issue, when we entered the second iteration of the morphphon processes, our input was \textit{\textbf{tagilleq}} which is not correct. This prompted the \textit{g/t} process to apply, and our final output was \textit{\textbf{tagilleqtuq}}. Again, we had to manipulate the transducer to apply the entirety of the first postbase \textit{\uline{and only}} the first postbase in the first pass-through of the morphophon processes.
+\item With the previous issue resolved, it dumped another issue on us, embodied in the attempted generation of the string \textit{\textbf{tagi@lleqe${\sim}_\text{f}$(g/t)uq}}. Since the \textit{@} morphophonological process (\textit{te}-dropping) takes precedence over final-\textit{e} dropping, the \textit{@} in the string is resolved first, setting up the environment for the final-\textit{e} dropping to take place \textit{within the first pass-through of the morphophonological processes}. While this in and of itself was not an issue, when we entered the second iteration of the morphphon processes, our input was \textit{\textbf{tagilleq}} which is not correct. This prompted the \textit{g/t} process to apply, and our final output was \textit{\textbf{tagilleqtuq}}. Again, we had to manipulate the transducer to apply the entirety of the first postbase \textit{\uline{and only}} the first postbase in the first pass-through of the morphophon processes.
 
 We forced this by introducing a morpheme boundary marker \textbf{"\textasciicircum"} which was inserted at the appropriate boundaries of base, postbase, postbase, \ldots person/number marker. We further stipulated in each morphophonological rule that these rules could only apply/delete given that the preceding entities were WordBoundaries, Alphabetic Letters, and \textit{\uline{a single}} MorphemeBoundary marker.
 
-So, our problematic string became \textit{\textbf{tagi\textasciicircum@lleqe\textasciicircum${\sim}_\text{f}$(g/t)uq}}, and this time the final-\textit{e} dropping process would not apply prematurely, since it was preceded by two MorphemeBoundary markers, and was thus not in the correct environment to apply until the first postbase had been applied, and its MorphemeBoundary marker had been deleted.
+So, our problematic string became \textit{\textbf{tagi\textasciicircum @lleqe \textasciicircum ${\sim}_\text{f}$(g/t)uq}}, and this time the final-\textit{e} dropping process would not apply prematurely, since it was preceded by two MorphemeBoundary markers, and was thus not in the correct environment to apply until the first postbase had been applied, and its MorphemeBoundary marker had been deleted.
 
 \end{enumerate}
 
+
+\section{Minor Issues}
+
+\begin{itemize}
+\renewcommand\labelitemi{$\cdot$}
+
+\item Is \textit{\textbf{yughagh}} | to pray; to worship, intransitive or transitive?
+
+\item To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
+%
+What are considered ``long'' bases?
+%
+Is it those bases that consist of more than a single syllable?
+
+\item Is the [2SgPoss][SgPosd] ending for \textsc{vialis} case, \textit{\textbf{--gpegun}} or \textit{\textbf{--gpekun}}?
+
+\item On p.51, \textsc{[v][intrg][2du]} is given as \textit{\textbf{$\sim_\text{sf}$(e)stek}}, but in Appendix I, p.182, it is given as \textit{\textbf{$\sim_\text{sf}$(e)stekstek}}.
+
+\item That issue with \textit{\textbf{tipele}} regarding which \textit{e} is dropped when confronted with both semi-final and final-\textit{e} dropping.
+
+\item What is the citation form for \textit{\textbf{Sivuqaq}}?
+%
+Does it have a strong \textit{gh} or weak \textit{gh}?
+
+\end{itemize}
 
 
 \end{document}

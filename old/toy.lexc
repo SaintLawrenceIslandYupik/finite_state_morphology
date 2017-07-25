@@ -1,7 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm nn rr qw wh
-          		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
+          		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] 
                   ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
-	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @C.VALENCE@
+	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@ @C.VALENCE@
 
 
 LEXICON Root
@@ -9,15 +9,18 @@ LEXICON Root
 
 
 LEXICON VerbBase
-! There's something wrong with verbs that end in 'u'
-inghu  VerbIntr; ! to pick berries
+kaate@P.VALENCE.INTR@  VerbPostbase;
 
 
-LEXICON VerbIntr
--~(g)aqe[TO-BE-V-ING][V→V]:~(g)aqe  VerbIntr; ! to be V-ing; to regularly or repeat V
+LEXICON VerbPostbase
+0:0  VerbTenseInfl;
 
-[V][Intr_Ind]:~f(g/t)u  VerbIntrInfl;
+-@–nghite[TO-NOT-V][V→V]@R.VALENCE@:@–nghite@R.VALENCE@         VerbPostbase;
 
 
-LEXICON VerbIntrInfl
-[3Sg]:q  #;
+LEXICON VerbTenseInfl
+[V][Intr_Ind]@R.VALENCE.INTR@:~f(g/t)u@R.VALENCE.INTR@  VerbPrsNumInfl;
+
+
+LEXICON VerbPrsNumInfl
+[3Sg]@R.VALENCE.INTR@:q@R.VALENCE.INTR@  #;
