@@ -1,21 +1,23 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
         		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
+                  ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t) (pete/fte) (pete)fte (g*) (te)
 	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@ @C.VALENCE@ 
 LEXICON Root
     NounBase ;
     VerbBase ;
     Particle ;
+	Intrg   ;
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                         !!!!!!
-!!!!!!                Particles                !!!!!!
-!!!!!!                                         !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!                  Particles                 !!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON Particle
 
 aa               #; ! yes
@@ -29,6 +31,42 @@ qayughllak       #; ! because
 quunpeng         #; ! always
 wanlegi          #; ! more than ever
 whani            #; ! right here (localis demonstrative adverb) particle
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!             Interrogative Words            !!!!!!
+!!!!!!                                            !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON Intrg 
+
+kina             #; ! who? (relative case is 'kitum')
+kina             NounPostbase; ! who? (relative case is 'kitum')
+kinangagh        NounPostbase; ! who? (expanded form for 3rd person interrogatives)
+kinku            NounPostbase; ! who? (plural)
+kinkut           #; ! who? (plural)
+kinkungagh       NounPostbase; ! who? (expanded form for 3rd person interrogatives)
+kitum            #; ! whose?
+naken            #; ! from where?
+naligh*          NounPostbase; ! which one(s)?
+nani             #; ! (at) where?
+naten            #; ! how?
+navek            #; ! to where?
+qafsina          #; ! how many?
+qafsina          NounPostbase; ! how many?
+qakun            #; ! when? (future)
+qavngaq          #; ! when? (past)
+sa               #; ! what?
+sameng           #; ! what?
+sangagh          NounPostbase; ! what (expanded form for 3rd person interrogatives)
+sangameng        #; ! why? (focused on 3rd person plural subject of verb)
+sangami          #; ! why? (focused on 3rd person singular subject of verb)
+sangan           #; ! why? (in general)
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -208,16 +246,60 @@ tipele           NounPostbase; ! table (dual, 'tipelek', generally used for one 
 right            NounPostbase;
 computer         NounPostbase;
 
+! Jacobson (2001) Chapter 8 Noun Vocabulary
+alquutagh        NounPostbase; ! spoon
+anyena           NounPostbase; ! onion
+avlawa           NounPostbase; ! flour
+evlawa           NounPostbase; ! flour
+Ayuqligh         NounPostbase; ! mainland Alaskan Eskimo
+eskiiteg         NounPostbase; ! skates
+estiima          NounPostbase; ! steam(boat)
+estugagh         NounPostbase; ! store
+kaawa            NounPostbase; ! cow
+kaaw             NounPostbase; ! cow
+kalanta          NounPostbase; ! calendar
+kanti            NounPostbase; ! candy
+kellaageg        NounPostbase; ! clock
+kiti             NounPostbase; ! kitty
+pusi             NounPostbase; ! kitty
+Kuusma           NounPostbase; ! Christmas
+laageg           NounPostbase; ! lock
+lampa            NounPostbase; ! lumber
+papa             NounPostbase; ! pepper
+para             NounPostbase; ! butter
+pi               NounPostbase; ! thing
+piinsuuka        NounPostbase; ! bean (soup)
+pipasaag         NounPostbase; ! paper sack
+qawaag           NounPostbase; ! bird
+Quyilleg         NounPostbase; ! Chukchi
+sa               NounPostbase; ! what
+Sapeni           NounPostbase; ! Japanese
+suupa            NounPostbase; ! soap
+telaaypa         NounPostbase; ! trap
+tipeleg          NounPostbase; ! table
+tuwaaya          NounPostbase; ! twine
+waapa            NounPostbase; ! rope
+waaseg           NounPostbase; ! watch
+
+! Jacobson (2001) Chapter 9 Noun Vocabulary
+apayepayiigh     NounPostbase; ! spider
+ayngananga       NounPostbase; ! musical instrument; phonograph (often dual for one)
+kenegh           NounPostbase; ! light, lamp
+nasaperagh       NounPostbase; ! hat
+neqekrag         NounPostbase; ! bread (especially, pilot bread)
+nuzigh           NounPostbase; ! one's child's spouse's parent
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                                                  !!!!!!
-!!!!!!      Derivational Morphemes Applied To Noun / Derived Bases      !!!!!!
+!!!!!!      Derivational Morphemes Applied To Nouns / Derived Bases     !!!!!!
 !!!!!!                                                                  !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NounPostbase
+
 0:0        NounInfl;
 
 ! Noun →  Noun (Noun-Elaborating) Postbases
@@ -230,16 +312,20 @@ LEXICON NounPostbase
 -–squghhagh*[N→N]:–squghhagh*        NounPostbase; ! little N, small N 
 
 ! Noun →  Verb (Verbalizing) Postbases
--~%:(ng)u[TO-BE-N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@    VerbPostbase; ! to be N
--–lgu[TO-HAVE-N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@          VerbPostbase; ! to have N 
--–ngllagh[TO-MAKE-N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@  VerbPostbase; ! to make N
+-~%:(ng)u[TO-BE-N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@                      VerbPostbase; ! to be N
+-–lgu[TO-HAVE-N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                            VerbPostbase; ! to have N 
+-–ngllagh[TO-MAKE-N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                    VerbPostbase; ! to make N
+-–liigh[TO-COOK-OR-PREPARE-N][N→V]@P.VALENCE.INTR@:–liigh@P.VALENCE.INTR@             VerbPostbase; ! to cook N; to prepare N
+niigh[TO-HUNT-SEARCH-ASK-FOR-WORK-WITH-N][N→V]@P.VALENCE.INTR@:niigh@P.VALENCE.INTR@  VerbPostbase; ! to hunt for N; to search for N; to ask for N; to work with N (where the meaning is dependent on N)
+-te[TO-CATCH-GO-TO-N][N→V]@P.VALENCE.INTR@:te@P.VALENCE.INTR@                         VerbPostbase; ! to catch N; to go to N
+-tugh[TO-EAT-USE-N][N→V]@P.VALENCE.INTR@:tugh@P.VALENCE.INTR@                         VerbPostbase; ! to eat N; to use N 
 
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                                                  !!!!!!
-!!!!!!      Inflectional Morphemes Applied To Noun / Derived Bases      !!!!!!
+!!!!!!      Inflectional Morphemes Applied To Nouns / Derived Bases     !!!!!!
 !!!!!!                                                                  !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -262,6 +348,7 @@ LEXICON NounInfl
 [N][Abs][1DuPoss][SgPosd]:(p/v)ung        #;      [N][Abs][1DuPoss][PlPosd]:–pung           #;      [N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung #; ! 1st person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 [N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n     #;      [N][Abs][2SgPoss][PlPosd]:ten             #;      [N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  #; ! 2nd person singular possessor |
+                                                  [N][Abs][2SgPoss][PlPosd]:~f-wten         #;
 [N][Abs][2PlPoss][SgPosd]:(s/z)i          #;      [N][Abs][2PlPoss][PlPosd]:–si             #;      [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   #; ! 2nd person plural possessor   |
 [N][Abs][2DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][2DuPoss][PlPosd]:–tek            #;      [N][Abs][2DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 2nd person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
@@ -507,7 +594,7 @@ nulugh@P.VALENCE.INTR@           VerbPostbase; ! to ice-fish; to dunk a tea bag
 ungipaghagh@P.VALENCE.INTR@      VerbPostbase; ! to tell a story
 
 ! Jacobson (2001) Chapter 7 Verb Vocabulary
-atuqe@P.VALENCE.TRNS@             VerbPostbase; ! to use; to wear
+atuqe@P.VALENCE.TRNS@            VerbPostbase; ! to use; to wear
 aveg@P.VALENCE.INTR@             VerbPostbase; ! to divide in two 
 aveg@P.VALENCE.TRNS@             VerbPostbase; ! to divide in two 
 esghagh@P.VALENCE.TRNS@          VerbPostbase; ! to see
@@ -518,6 +605,7 @@ igamsiqayug@P.VALENCE.INTR@      VerbPostbase; ! to feel thanksful
 igamsiqayugvike@P.VALENCE.TRNS@  VerbPostbase; ! to feel thankful toward
 laalighfike@P.VALENCE.TRNS@      VerbPostbase; ! to visit
 laalighte@P.VALENCE.INTR@        VerbPostbase; ! to visit
+laalighte@P.VALENCE.TRNS@        VerbPostbase; ! to visit
 liite@P.VALENCE.INTR@            VerbPostbase; ! to learn; to become aware of one's surroundings
 liite@P.VALENCE.TRNS@            VerbPostbase; ! to learn; to become aware of one's surroundings
 lli@P.VALENCE.TRNS@              VerbPostbase; ! to put
@@ -532,6 +620,67 @@ tuqute@P.VALENCE.TRNS@           VerbPostbase; ! to kill
 umeg@P.VALENCE.INTR@             VerbPostbase; ! to close
 umeg@P.VALENCE.TRNS@             VerbPostbase; ! to close
 
+! Jacobson (2001) Chapter 8 Verb Vocabulary
+alleg@P.VALENCE.INTR@            VerbPostbase; ! to sweep
+alleg@P.VALENCE.TRNS@            VerbPostbase; ! to sweep
+kayusigh@P.VALENCE.TRNS@         VerbPostbase; ! to help
+kayusiite@P.VALENCE.INTR@        VerbPostbase; ! to help out
+kayusiite@P.VALENCE.TRNS@        VerbPostbase; ! to help out
+liisimake@P.VALENCE.TRNS@        VerbPostbase; ! to know
+meghnugh@P.VALENCE.INTR@         VerbPostbase; ! to be tired
+meqsug@P.VALENCE.INTR@           VerbPostbase; ! to be thirsty
+pi@P.VALENCE.INTR@               VerbPostbase; ! to do; to go; etc.
+pi@P.VALENCE.TRNS@               VerbPostbase; ! to do; to go; etc.
+qavaghni@P.VALENCE.INTR@         VerbPostbase; ! to be sleepy
+qiyaaqe@P.VALENCE.INTR@          VerbPostbase; ! to be crying
+sa@P.VALENCE.INTR@               VerbPostbase; ! to do what?
+sa@P.VALENCE.TRNS@               VerbPostbase; ! to do what?
+tukfigh@P.VALENCE.TRNS@          VerbPostbase; ! to buy
+
+! Jacobson (2001) Chapter 9 Verb Vocabulary
+aghvigh@P.VALENCE.INTR@         VerbPostbase; ! to cross over; to go to the mainland
+aghvigh@P.VALENCE.TRNS@         VerbPostbase; ! to cross over; to go to the mainland
+aleghqugh@P.VALENCE.TRNS@       VerbPostbase; ! to talk to; to tell
+aleghquute@P.VALENCE.INTR@      VerbPostbase; ! to talk together; to converse (non-singular)
+amqeghte@P.VALENCE.TRNS@        VerbPostbase; ! to bite
+aqlaghate@P.VALENCE.INTR@       VerbPostbase; ! for it to get cold
+aqlaghaghte@P.VALENCE.INTR@     VerbPostbase; ! for it to get cold (optional impersonal agent verb)
+aqlaghaghte@P.VALENCE.TRNS@     VerbPostbase; ! for it to get cold (optional impersonal agent verb)
+atightugh@P.VALENCE.INTR@       VerbPostbase; ! to read
+atightugh@P.VALENCE.TRNS@       VerbPostbase; ! to read
+ghhuute@P.VALENCE.INTR@         VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
+ghhuute@P.VALENCE.TRNS@         VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
+igagh@P.VALENCE.INTR@           VerbPostbase; ! to write (on)
+igagh@P.VALENCE.TRNS@           VerbPostbase; ! to write (on)
+iknaqe@P.VALENCE.INTR@          VerbPostbase; ! to be strong
+isekinagh@P.VALENCE.INTR@       VerbPostbase; ! to be cold (solid, liquid)
+ivagh@P.VALENCE.TRNS@           VerbPostbase; ! to look for
+naalke@P.VALENCE.TRNS@          VerbPostbase; ! to find
+naallghute@P.VALENCE.TRNS@      VerbPostbase; ! to adjust
+payegh@P.VALENCE.TRNS@          VerbPostbase; ! to meet, to encounter; to go over to help
+pinighsagh@P.VALENCE.INTR@      VerbPostbase; ! to fix, to repair; to fix up oneself
+pinighsagh@P.VALENCE.TRNS@      VerbPostbase; ! to fix, to repair; to fix up oneself
+qaamte@P.VALENCE.TRNS@          VerbPostbase; ! to extinguish; to turn off
+siku@P.VALENCE.INTR@            VerbPostbase; ! to freeze (optional impersonal agent verb)
+siku@P.VALENCE.TRNS@            VerbPostbase; ! to freeze (optional impersonal agent verb)
+ughug@P.VALENCE.INTR@           VerbPostbase; ! to melt (optional impersonal agent verb)
+ughug@P.VALENCE.TRNS@           VerbPostbase; ! to melt (optional impersonal agent verb)
+uglagh@P.VALENCE.INTR@          VerbPostbase; ! to be many, to be numerous
+ugpeqe@P.VALENCE.TRNS@          VerbPostbase; ! to believe
+ulima@P.VALENCE.INTR@           VerbPostbase; ! to make (something)
+ulima@P.VALENCE.TRNS@           VerbPostbase; ! to make (something)
+ungipaghaate@P.VALENCE.TRNS@    VerbPostbase; ! to tell a story to
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                  !!!!!!
+!!!!!!      Derivational Morphemes Applied To Verbs / Derived Bases     !!!!!!
+!!!!!!                                                                  !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbPostbase 
 
@@ -545,12 +694,93 @@ LEXICON VerbPostbase
 -@~fnaqe[TO-BE-GOING-TO-V][V→V]@R.VALENCE@:@~fnaqe@R.VALENCE@  VerbPostbase; ! to be going to V; to be about to V 
 -@~fyug[TO-WANT-TO-V][V→V]@R.VALENCE@:@~fyug@R.VALENCE@        VerbPostbase; ! to want to V
 -@–nghite[TO-NOT-V][V→V]@R.VALENCE@:@–nghite@R.VALENCE@        VerbPostbase; ! to not V
+-(pete)fte[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@        VerbPostbase; ! to evidently V or have V-ed
+-(pete/fte)[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@      VerbPostbase; ! to evidently V or have V-ed
+-@~sf–(g*)kau[TO-HAVE-V-ED-OR-BEEN-V-ED][V→V]@R.VALENCE@:@~sf–(g*)kau@R.VALENCE@    VerbPostbase; ! to evidently V or have V-ed
 
+! Verb →  Noun (Nominalizing) Postbases
+-@~sf–(g*)kaq[ONE-THAT-HAS-V-ED][V→N]:@~sf–(g*)kaq  NounPostbase; ! one that has V-ed
+
+! Compound Verbal Postbases (affect the transitivity of the embedded verb)
+-@~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.INTR@:@~fni@P.VALENCE.INTR@  VerbPostbase; ! to say that one is V-ing
+-@~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.TRNS@:@~fni@P.VALENCE.TRNS@  VerbPostbase; ! to say that one is V-ing
+-(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)ste@P.VALENCE.INTR@  VerbPostbase; ! to have, make, or let one V
+-(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)ste@P.VALENCE.TRNS@  VerbPostbase; ! to have, make, or let one V
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                  !!!!!!
+!!!!!!      Inflectional Morphemes Applied To Verbs / Derived Bases     !!!!!!
+!!!!!!                                                                  !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbTenseInfl
 
+! ------------------------|
+! Indicative Mood Endings |
+! ------------------------|
 [V][Intr_Ind]@R.VALENCE.INTR@:~f(g/t)u@R.VALENCE.INTR@  VerbPrsNumInfl;
 [V][Trns_Ind]@R.VALENCE.TRNS@:~(g)a@R.VALENCE.TRNS@     VerbPrsNumInfl;
+
+
+! ----------------------------------------|
+! Intransitive Interrogative Mood Endings |
+! --------------------------------------------------------------|-------------|
+[V][Intrg][3Sg]@R.VALENCE.INTR@:~f(g/t)a@R.VALENCE.INTR@     #; ! 3Sg subject |
+[V][Intrg][3Pl]@R.VALENCE.INTR@:~f(g/t)at@R.VALENCE.INTR@    #; ! 3Pl subject |
+[V][Intrg][3Du]@R.VALENCE.INTR@:~f(g/t)ak@R.VALENCE.INTR@    #; ! 3Du subject |
+! --------------------------------------------------------------|-------------|
+[V][Intrg][1Sg]@R.VALENCE.INTR@:~f(t)zinga@R.VALENCE.INTR@   #; ! 1Sg subject |
+[V][Intrg][1Pl]@R.VALENCE.INTR@:~sf(e)sta@R.VALENCE.INTR@    #; ! 1Pl subject |
+[V][Intrg][1Du]@R.VALENCE.INTR@:~sf(e)stung@R.VALENCE.INTR@  #; ! 1Du subject |
+! --------------------------------------------------------------|-------------|
+[V][Intrg][2Sg]@R.VALENCE.INTR@:~f(t)zin@R.VALENCE.INTR@     #; ! 2Sg subject |
+[V][Intrg][2Pl]@R.VALENCE.INTR@:~sf(e)tsi@R.VALENCE.INTR@    #; ! 2Pl subject |
+[V][Intrg][2Du]@R.VALENCE.INTR@:~sf(e)stek@R.VALENCE.INTR@   #; ! 2Du subject |
+! --------------------------------------------------------------|-------------|
+
+! -------------------------------------------------------------------|
+!                 Transitive Interrogative Mood Endings              |
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|
+!                        3rd singular object                         |                            3rd plural object                         |                              3rd dual object                          |    
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+[V][Intrg][3Sg][3Sg]@R.VALENCE.TRNS@:~f(g/t)agu@R.VALENCE.TRNS@     #; [V][Intrg][3Sg][3Pl]@R.VALENCE.TRNS@:~f(g/t)aki@R.VALENCE.TRNS@     #; [V][Intrg][3Sg][3Du]@R.VALENCE.TRNS@:~f(g/t)akek@R.VALENCE.TRNS@     #; ! 3Sg SBJ |
+[V][Intrg][3Pl][3Sg]@R.VALENCE.TRNS@:~f(g/t)atgu@R.VALENCE.TRNS@    #; [V][Intrg][3Pl][3Pl]@R.VALENCE.TRNS@:~f(g/t)atki@R.VALENCE.TRNS@    #; [V][Intrg][3Pl][3Du]@R.VALENCE.TRNS@:~f(g/t)atkek@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
+[V][Intrg][3Du][3Sg]@R.VALENCE.TRNS@:~f(g/t)agnegu@R.VALENCE.TRNS@  #; [V][Intrg][3Du][3Pl]@R.VALENCE.TRNS@:~f(g/t)agneki@R.VALENCE.TRNS@  #; [V][Intrg][3Du][3Du]@R.VALENCE.TRNS@:~f(g/t)agnekek@R.VALENCE.TRNS@  #; ! 3Du SBJ |
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+[V][Intrg][1Sg][3Sg]@R.VALENCE.TRNS@:~f(t)zikun@R.VALENCE.TRNS@     #; [V][Intrg][1Sg][3Pl]@R.VALENCE.TRNS@:~f(t)zingi@R.VALENCE.TRNS@     #; [V][Intrg][1Sg][3Du]@R.VALENCE.TRNS@:~f(t)zigngek@R.VALENCE.TRNS@    #; ! 1Sg SBJ |
+[V][Intrg][1Pl][3Sg]@R.VALENCE.TRNS@:~sf(e)steggu@R.VALENCE.TRNS@   #; [V][Intrg][1Pl][3Pl]@R.VALENCE.TRNS@:~sf(e)steki@R.VALENCE.TRNS@    #; [V][Intrg][1Pl][3Du]@R.VALENCE.TRNS@:~sf(e)stekek@R.VALENCE.TRNS@    #; ! 1Pl SBJ |
+[V][Intrg][1Du][3Sg]@R.VALENCE.TRNS@:~sf(e)stegnegu@R.VALENCE.TRNS@ #; [V][Intrg][1Du][3Pl]@R.VALENCE.TRNS@:~sf(e)stegneki@R.VALENCE.TRNS@ #; [V][Intrg][1Du][3Du]@R.VALENCE.TRNS@:~sf(e)stegnekek@R.VALENCE.TRNS@ #; ! 1Du SBJ |
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+[V][Intrg][2Sg][3Sg]@R.VALENCE.TRNS@:~f(t)zigu@R.VALENCE.TRNS@      #; [V][Intrg][2Sg][3Pl]@R.VALENCE.TRNS@:~f(t)ziki@R.VALENCE.TRNS@      #; [V][Intrg][2Sg][3Du]@R.VALENCE.TRNS@:~f(t)zikek@R.VALENCE.TRNS@      #; ! 2Sg SBJ |
+[V][Intrg][2Pl][3Sg]@R.VALENCE.TRNS@:~sf(e)ggu@R.VALENCE.TRNS@      #; [V][Intrg][2Pl][3Pl]@R.VALENCE.TRNS@:~sf(e)ki@R.VALENCE.TRNS@       #; [V][Intrg][2Pl][3Du]@R.VALENCE.TRNS@:~sf(g)kek@R.VALENCE.TRNS@       #; ! 2Pl SBJ |
+[V][Intrg][2Du][3Sg]@R.VALENCE.TRNS@:~sf(e)gnegu@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Pl]@R.VALENCE.TRNS@:~sf(e)gneki@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Du]@R.VALENCE.TRNS@:~sf(g)gnekek@R.VALENCE.TRNS@    #; ! 2Du SBJ |
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+!                        1st singular object                         |                            1st plural object                         |                              1st dual object                          |           | 
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+[V][Intrg][3Sg][1Sg]@R.VALENCE.TRNS@:~f(g/t)anga@R.VALENCE.TRNS@    #; [V][Intrg][3Sg][1Pl]@R.VALENCE.TRNS@:~f(g/t)inkut@R.VALENCE.TRNS@   #; [V][Intrg][3Sg][1Du]@R.VALENCE.TRNS@:~f(g/t)inkung@R.VALENCE.TRNS@   #; ! 3Sg SBJ |
+[V][Intrg][3Pl][1Sg]@R.VALENCE.TRNS@:~f(g/t)atnga@R.VALENCE.TRNS@   #; [V][Intrg][3Pl][1Pl]@R.VALENCE.TRNS@:~f(g/t)inkut@R.VALENCE.TRNS@   #; [V][Intrg][3Pl][1Du]@R.VALENCE.TRNS@:~f(g/t)inkung@R.VALENCE.TRNS@   #; ! 3Pl SBJ |
+[V][Intrg][3Du][1Sg]@R.VALENCE.TRNS@:~f(g/t)agnenga@R.VALENCE.TRNS@ #; [V][Intrg][3Du][1Pl]@R.VALENCE.TRNS@:~f(g/t)inkut@R.VALENCE.TRNS@   #; [V][Intrg][3Du][1Du]@R.VALENCE.TRNS@:~f(g/t)inkung@R.VALENCE.TRNS@   #; ! 3Du SBJ |
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+!                                                                    |                                                                      |                                                                       |           | 
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+[V][Intrg][2Sg][1Sg]@R.VALENCE.TRNS@:~f(t)zinga@R.VALENCE.TRNS@     #; [V][Intrg][2Sg][1Pl]@R.VALENCE.TRNS@:~f(t)zikut@R.VALENCE.TRNS@     #; [V][Intrg][2Sg][1Du]@R.VALENCE.TRNS@:~f(t)zikung@R.VALENCE.TRNS@     #; ! 2Sg SBJ |
+[V][Intrg][2Pl][1Sg]@R.VALENCE.TRNS@:~sf(e)ngnga@R.VALENCE.TRNS@    #; [V][Intrg][2Pl][1Pl]@R.VALENCE.TRNS@:~sf(e)kut@R.VALENCE.TRNS@      #; [V][Intrg][2Pl][1Du]@R.VALENCE.TRNS@:~sf(e)kung@R.VALENCE.TRNS@      #; ! 2Pl SBJ |
+[V][Intrg][2Du][1Sg]@R.VALENCE.TRNS@:~sf(e)gnenga@R.VALENCE.TRNS@   #; [V][Intrg][2Du][1Pl]@R.VALENCE.TRNS@:~sf(e)gneku@R.VALENCE.TRNS@    #; [V][Intrg][2Du][1Du]@R.VALENCE.TRNS@:~sf(e)gnekung@R.VALENCE.TRNS@   #; ! 2Du SBJ |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+!         2nd singular object        |             2nd plural object           |               2nd dual object              |                |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+[V][Intrg][3Sg][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Sg][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Sg][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Sg SBJ |
+[V][Intrg][3Pl][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Pl][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Pl][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
+[V][Intrg][3Du][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Du][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Du][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Du SBJ |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+[V][Intrg][1Sg][2Sg]@R.VALENCE.TRNS@:~f(t)ziken@R.VALENCE.TRNS@     #;                                                                                      ! 1Sg subject    |
+[V][Intrg][1Pl][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                                      ! 1Pl subject    |
+[V][Intrg][1Du][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                                      ! 1Du subject    |
+! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
 
 
 LEXICON VerbPrsNumInfl
@@ -580,26 +810,7 @@ LEXICON VerbPrsNumInfl
 
 
 
-
-
 LEXICON Ignore
-
-! ----------------------------------------|
-! Intransitive Interrogative Mood Endings |
-! ----------------------------------------|-------------|
-[V][Intrg][3Sg]:~f(g/t)a               #; ! 3Sg subject |
-[V][Intrg][3Pl]:~f(g/t)at              #; ! 3Pl subject |
-[V][Intrg][3Du]:~f(g/t)ak              #; ! 3Du subject |
-! ----------------------------------------|-------------|
-[V][Intrg][1Sg]:~f(t)zinga             #; ! 1Sg subject |
-[V][Intrg][1Pl]:~sf(e)sta              #; ! 1Pl subject |
-[V][Intrg][1Du]:~sf(e)stung            #; ! 1Du subject |
-! ----------------------------------------|-------------|
-[V][Intrg][2Sg]:~f(t)zin               #; ! 2Sg subject |
-[V][Intrg][2Pl]:~sf(e)tsi              #; ! 2Pl subject |
-[V][Intrg][2Du]:~sf(e)stek             #; ! 2Du subject |
-! ----------------------------------------|-------------|
-
 
 !TODO: What does the '@' symbol here do?
 ! -------------------------------------------------|
@@ -636,45 +847,6 @@ LEXICON Ignore
 ! -----------------------------------|-------------|
 
 
-! --------------------------------------------------------------------------------------------------------------------------|
-!                                         Transitive Interrogative Mood Endings                                             |
-! --------------------------------------------------------------------------------------------------------------------------|
-!         3rd singular object        |             3rd plural object           |               3rd dual object              |    
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-[V][Intrg][3Sg][3Sg]:~f(g/t)agu     #;    [V][Intrg][3Sg][3Pl]:~f(g/t)aki     #;    [V][Intrg][3Sg][3Du]:~f(g/t)akek     #; ! 3Sg subject    |
-[V][Intrg][3Pl][3Sg]:~f(g/t)atgu    #;    [V][Intrg][3Pl][3Pl]:~f(g/t)atki    #;    [V][Intrg][3Pl][3Du]:~f(g/t)atkek    #; ! 3Pl subject    |
-[V][Intrg][3Du][3Sg]:~f(g/t)agnegu  #;    [V][Intrg][3Du][3Pl]:~f(g/t)agneki  #;    [V][Intrg][3Du][3Du]:~f(g/t)agnekek  #; ! 3Du subject    |
-! -----------------------------------|------------------------------------------------|-------------------------------------|----------------|
-[V][Intrg][1Sg][3Sg]:~f(t)zikun     #;    [V][Intrg][1Sg][3Pl]:~f(t)zingi     #;    [V][Intrg][1Sg][3Du]:~f(t)zigngek    #; ! 1Sg subject    |
-[V][Intrg][1Pl][3Sg]:~sf(e)steggu   #;    [V][Intrg][1Pl][3Pl]:~sf(e)steki    #;    [V][Intrg][1Pl][3Du]:~sf(e)stekek    #; ! 1Pl subject    |
-[V][Intrg][1Du][3Sg]:~sf(e)stegnegu #;    [V][Intrg][1Du][3Pl]:~sf(e)stegneki #;    [V][Intrg][1Du][3Du]:~sf(e)stegnekek #; ! 1Du subject    |
-! -----------------------------------|------------------------------------------------|-------------------------------------|----------------|
-[V][Intrg][2Sg][3Sg]:~f(t)zigu      #;    [V][Intrg][2Sg][3Pl]:~f(t)ziki      #;    [V][Intrg][2Sg][3Du]:~f(t)zikek      #; ! 2Sg subject    |
-[V][Intrg][2Pl][3Sg]:~sf(e)ggu      #;    [V][Intrg][2Pl][3Pl]:~sf(e)ki       #;    [V][Intrg][2Pl][3Du]:~sf(g)kek       #; ! 2Pl subject    |
-[V][Intrg][2Du][3Sg]:~sf(e)gnegu    #;    [V][Intrg][2Du][3Pl]:~sf(e)gneki    #;    [V][Intrg][2Du][3Du]:~sf(g)gnekek    #; ! 2Du subject    |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-!         1st singular object        |             1st plural object           |               1st dual object              |                |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-[V][Intrg][3Sg][1Sg]:~f(g/t)anga    #;    [V][Intrg][3Sg][1Pl]:~f(g/t)inkut   #;    [V][Intrg][3Sg][1Du]:~f(g/t)inkung   #; ! 3Sg subject    |
-[V][Intrg][3Pl][1Sg]:~f(g/t)atnga   #;    [V][Intrg][3Pl][1Pl]:~f(g/t)inkut   #;    [V][Intrg][3Pl][1Du]:~f(g/t)inkung   #; ! 3Pl subject    |
-[V][Intrg][3Du][1Sg]:~f(g/t)agnenga #;    [V][Intrg][3Du][1Pl]:~f(g/t)inkut   #;    [V][Intrg][3Du][1Du]:~f(g/t)inkung   #; ! 3Du subject    |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-! Presumably, a speaker would not use the interrogative mood with himself/herself                                           |                |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-[V][Intrg][2Sg][1Sg]:~f(t)zinga     #;    [V][Intrg][2Sg][1Pl]:~f(t)zikut     #;    [V][Intrg][2Sg][1Du]:~f(t)zikung     #; ! 2Sg subject    |
-[V][Intrg][2Pl][1Sg]:~sf(e)ngnga    #;    [V][Intrg][2Pl][1Pl]:~sf(e)kut      #;    [V][Intrg][2Pl][1Du]:~sf(e)kung      #; ! 2Pl subject    |
-[V][Intrg][2Du][1Sg]:~sf(e)gnenga   #;    [V][Intrg][2Du][1Pl]:~sf(e)gneku    #;    [V][Intrg][2Du][1Du]:~sf(e)gnekung   #; ! 2Du subject    |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-!         2nd singular object        |             2nd plural object           |               2nd dual object              |                |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-[V][Intrg][3Sg][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Sg][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Sg][2Du]:~f(g/t)istek    #; ! 3Sg subject    |
-[V][Intrg][3Pl][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Pl][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Pl][2Du]:~f(g/t)istek    #; ! 3Pl subject    |
-[V][Intrg][3Du][2Sg]:~f(g/t)aten    #;    [V][Intrg][3Du][2Pl]:~f(g/t)isi     #;    [V][Intrg][3Du][2Du]:~f(g/t)istek    #; ! 3Du subject    |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-[V][Intrg][1Sg][2Sg]:~f(t)ziken     #;                                                                                      ! 1Sg subject    |
-[V][Intrg][1Pl][2Sg]:~sf(e)steken   #;                                                                                      ! 1Pl subject    |
-[V][Intrg][1Du][2Sg]:~sf(e)steken   #;                                                                                      ! 1Du subject    |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
 
 
 ! -----------------------------------------------------------------------------------------------------------------------------------------|

@@ -4,10 +4,10 @@ afsengaq	afsengagh*[N][Abs][Sg]
 
 neghtuq	negh[V][Intr_Ind][3Sg]
 
-pagunghaghmeng	pagunghagh*[N][Rel][4DuPoss][SgPosd]
 pagunghaghmeng	pagunghagh*[N][Rel][4DuPoss][PlPosd]
-pagunghaghmeng	pagunghagh*[N][Rel][4PlPoss][SgPosd]
+pagunghaghmeng	pagunghagh*[N][Rel][4DuPoss][SgPosd]
 pagunghaghmeng	pagunghagh*[N][Rel][4PlPoss][PlPosd]
+pagunghaghmeng	pagunghagh*[N][Rel][4PlPoss][SgPosd]
 pagunghaghmeng	pagunghagh*[N][Abl_Mod][Unpd][Sg]
 
 ------------------------
@@ -17,6 +17,7 @@ kaamgek	kameg[N][Abs][Du]
 kaamgek	kameg[N][Rel][Unpd][Du]
 
 iflaak	ifla[V][Intr_Ind][3Du]
+iflaak	ifla[V][Intrg][3Du]
 
 ------------------------
 3) Aqiigukung.
@@ -26,10 +27,10 @@ aqiigukung	aqii[V][Intr_Ind][1Du]
 ------------------------
 4) Uupameng esghaatut.
 
-uupameng	uupa[N][Rel][4DuPoss][SgPosd]
 uupameng	uupa[N][Rel][4DuPoss][PlPosd]
-uupameng	uupa[N][Rel][4PlPoss][SgPosd]
+uupameng	uupa[N][Rel][4DuPoss][SgPosd]
 uupameng	uupa[N][Rel][4PlPoss][PlPosd]
+uupameng	uupa[N][Rel][4PlPoss][SgPosd]
 uupameng	uupa[N][Abl_Mod][Unpd][Sg]
 
 esghaatut	esghaate[V][Intr_Ind][3Pl]
@@ -41,10 +42,10 @@ ukaziq	ukazigh[N][Abs][Sg]
 
 alinguq	alinge[V][Intr_Ind][3Sg]
 
-kaviighmeng	kaviigh[N][Rel][4DuPoss][SgPosd]
 kaviighmeng	kaviigh[N][Rel][4DuPoss][PlPosd]
-kaviighmeng	kaviigh[N][Rel][4PlPoss][SgPosd]
+kaviighmeng	kaviigh[N][Rel][4DuPoss][SgPosd]
 kaviighmeng	kaviigh[N][Rel][4PlPoss][PlPosd]
+kaviighmeng	kaviigh[N][Rel][4PlPoss][SgPosd]
 kaviighmeng	kaviigh[N][Abl_Mod][Unpd][Sg]
 
 ------------------------
@@ -54,10 +55,10 @@ laluramka	Laluramke[N][Abs][Sg]
 
 kaatuq	kaate[V][Intr_Ind][3Sg]
 
-sivungaghmeng	Sivungagh*[N][Rel][4DuPoss][SgPosd]
 sivungaghmeng	Sivungagh*[N][Rel][4DuPoss][PlPosd]
-sivungaghmeng	Sivungagh*[N][Rel][4PlPoss][SgPosd]
+sivungaghmeng	Sivungagh*[N][Rel][4DuPoss][SgPosd]
 sivungaghmeng	Sivungagh*[N][Rel][4PlPoss][PlPosd]
+sivungaghmeng	Sivungagh*[N][Rel][4PlPoss][SgPosd]
 sivungaghmeng	Sivungagh*[N][Abl_Mod][Unpd][Sg]
 
 ------------------------
@@ -68,6 +69,7 @@ aqelqat	aqelqagh[N][Rel][Unpd][Pl]
 
 aghulaat	aghula[V][Intr_Ind][3Pl]
 aghulaat	aghula[V][Intr_Ind][3Pl][3Sg]
+aghulaat	aghula[V][Intrg][3Pl]
 
 ------------------------
 8) Tafsi taakuq.
@@ -81,19 +83,19 @@ taakuq	taake[V][Intr_Ind][3Sg]
 
 neghtusi	negh[V][Intr_Ind][2Pl]
 
-ulghaaghmeng	ulghaagh[N][Rel][4DuPoss][SgPosd]
 ulghaaghmeng	ulghaagh[N][Rel][4DuPoss][PlPosd]
-ulghaaghmeng	ulghaagh[N][Rel][4PlPoss][SgPosd]
+ulghaaghmeng	ulghaagh[N][Rel][4DuPoss][SgPosd]
 ulghaaghmeng	ulghaagh[N][Rel][4PlPoss][PlPosd]
+ulghaaghmeng	ulghaagh[N][Rel][4PlPoss][SgPosd]
 ulghaaghmeng	ulghaagh[N][Abl_Mod][Unpd][Sg]
 
 ------------------------
 10) Naayvameng tagiiq yaywaali.
 
-naayvameng	naayvagh[N][Rel][4DuPoss][SgPosd]
 naayvameng	naayvagh[N][Rel][4DuPoss][PlPosd]
-naayvameng	naayvagh[N][Rel][4PlPoss][SgPosd]
+naayvameng	naayvagh[N][Rel][4DuPoss][SgPosd]
 naayvameng	naayvagh[N][Rel][4PlPoss][PlPosd]
+naayvameng	naayvagh[N][Rel][4PlPoss][SgPosd]
 naayvameng	naayvagh[N][Abl_Mod][Unpd][Sg]
 
 tagiiq	tagi[V][Intr_Ind][3Sg]
@@ -107,16 +109,17 @@ aghnak	aghnagh[N][Abs][Du]
 aghnak	aghnagh[N][Rel][Unpd][Du]
 
 qiighwtuk	qiighw[V][Intr_Ind][3Du]
+qiighwtuk	qiighw-te[TO-CATCH-GO-TO-N][N→V][V][Intr_Ind][3Du]
 
 ------------------------
 12) Gaaghtut kayumeng.
 
 gaaghtut	gaagh[V][Intr_Ind][3Pl]
 
-kayumeng	kayu[N][Rel][4DuPoss][SgPosd]
 kayumeng	kayu[N][Rel][4DuPoss][PlPosd]
-kayumeng	kayu[N][Rel][4PlPoss][SgPosd]
+kayumeng	kayu[N][Rel][4DuPoss][SgPosd]
 kayumeng	kayu[N][Rel][4PlPoss][PlPosd]
+kayumeng	kayu[N][Rel][4PlPoss][SgPosd]
 kayumeng	kayu[N][Abl_Mod][Unpd][Sg]
 
 ------------------------
@@ -127,10 +130,10 @@ qikmit	qikmigh[N][Rel][Unpd][Pl]
 
 nagatut	nagate[V][Intr_Ind][3Pl]
 
-anipameng	anipa[N][Rel][4DuPoss][SgPosd]
 anipameng	anipa[N][Rel][4DuPoss][PlPosd]
-anipameng	anipa[N][Rel][4PlPoss][SgPosd]
+anipameng	anipa[N][Rel][4DuPoss][SgPosd]
 anipameng	anipa[N][Rel][4PlPoss][PlPosd]
+anipameng	anipa[N][Rel][4PlPoss][SgPosd]
 anipameng	anipa[N][Abl_Mod][Unpd][Sg]
 
 ------------------------
@@ -141,16 +144,16 @@ qavaghtunga	qavagh[V][Intr_Ind][1Sg]
 ------------------------
 15) Taghnughhaat aanut mangteghameng.
 
-taghnughhaat	taghnughhagh*[N][Abs][3PlPoss][SgPosd]
 taghnughhaat	taghnughhagh*[N][Abs][Pl]
+taghnughhaat	taghnughhagh*[N][Abs][3PlPoss][SgPosd]
 taghnughhaat	taghnughhagh*[N][Rel][Unpd][Pl]
 
 aanut	aane[V][Intr_Ind][3Pl]
 
-mangteghameng	mangteghagh[N][Rel][4DuPoss][SgPosd]
 mangteghameng	mangteghagh[N][Rel][4DuPoss][PlPosd]
-mangteghameng	mangteghagh[N][Rel][4PlPoss][SgPosd]
+mangteghameng	mangteghagh[N][Rel][4DuPoss][SgPosd]
 mangteghameng	mangteghagh[N][Rel][4PlPoss][PlPosd]
+mangteghameng	mangteghagh[N][Rel][4PlPoss][SgPosd]
 mangteghameng	mangteghagh[N][Abl_Mod][Unpd][Sg]
 
 ------------------------
