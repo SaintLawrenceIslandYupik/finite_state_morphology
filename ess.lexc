@@ -1,7 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
         		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t) (pete/fte) (pete)fte (g*) (te)
+                  @* ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t) (pete/fte) (pete)fte (g*) (te)
 	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@ @C.VALENCE@ 
 LEXICON Root
     NounBase ;
@@ -549,10 +549,14 @@ kuuve@P.VALENCE.INTR@           VerbPostbase; ! to spill
 kuuve@P.VALENCE.TRNS@           VerbPostbase; ! to spill
 megh@P.VALENCE.INTR@            VerbPostbase; ! to drink
 megh@P.VALENCE.TRNS@            VerbPostbase; ! to drink
+meghe@P.VALENCE.INTR@           VerbPostbase; ! to drink
+meghe@P.VALENCE.TRNS@           VerbPostbase; ! to drink
 nagate@P.VALENCE.INTR@          VerbPostbase; ! to listen; to hear
 nagate@P.VALENCE.TRNS@          VerbPostbase; ! to listen; to hear
 negh@P.VALENCE.INTR@            VerbPostbase; ! to eat
 negh@P.VALENCE.TRNS@            VerbPostbase; ! to eat
+neghe@P.VALENCE.INTR@           VerbPostbase; ! to eat
+neghe@P.VALENCE.TRNS@           VerbPostbase; ! to eat
 nenglagh@P.VALENCE.INTR@        VerbPostbase; ! to laugh
 pinigh@P.VALENCE.INTR@          VerbPostbase; ! to be good
 qavagh@P.VALENCE.INTR@          VerbPostbase; ! to sleep
@@ -696,10 +700,10 @@ LEXICON VerbPostbase
 -@–nghite[TO-NOT-V][V→V]@R.VALENCE@:@–nghite@R.VALENCE@        VerbPostbase; ! to not V
 -(pete)fte[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@        VerbPostbase; ! to evidently V or have V-ed
 -(pete/fte)[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@      VerbPostbase; ! to evidently V or have V-ed
--@~sf–(g*)kau[TO-HAVE-V-ED-OR-BEEN-V-ED][V→V]@R.VALENCE@:@~sf–(g*)kau@R.VALENCE@    VerbPostbase; ! to evidently V or have V-ed
+-@*~sf–(g*)kau[TO-HAVE-V-ED-OR-BEEN-V-ED][V→V]@R.VALENCE@:@*~sf–(g*)kau@R.VALENCE@  VerbPostbase; ! to have V-ed or been V-ed
 
 ! Verb →  Noun (Nominalizing) Postbases
--@~sf–(g*)kaq[ONE-THAT-HAS-V-ED][V→N]:@~sf–(g*)kaq  NounPostbase; ! one that has V-ed
+-@*~sf–(g*)kaq[ONE-THAT-HAS-V-ED][V→N]:@*~sf–(g*)kaq  NounPostbase; ! one that has V-ed
 
 ! Compound Verbal Postbases (affect the transitivity of the embedded verb)
 -@~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.INTR@:@~fni@P.VALENCE.INTR@  VerbPostbase; ! to say that one is V-ing

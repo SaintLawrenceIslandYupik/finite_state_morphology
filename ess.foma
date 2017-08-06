@@ -39,7 +39,7 @@ define DoubleVowel [ a a | i i | u u ] ;
 define V           [ e | FullVowel ];
 
 define Alphabet [ C | V | "*" ] ;
-define MorphPhonSymbols [ "~"     | "~f"   | "~sf"   | "~h"    | "-w"   | ":" | "–" | "@" |
+define MorphPhonSymbols [ "~"     | "~f"   | "~sf"   | "~h"    | "-w"   | ":" | "–" | "@" | "@*" |
                           "(e)"   | "(g)"  | "(t)"   | "(g*)"  |
 						  "(g/t)" | "(ng)" | "(p/v)" | "(s/z)" | "(t/y)" ] ;
 
@@ -149,9 +149,10 @@ define teDropping [..] -> n e gh     || t e MorphemeBoundary "@" MorphPhonSymbol
                   [..] -> DoubleFric || C t e MorphemeBoundary "@" MorphPhonSymbols* _ n  ∘
 				     C -> 0          || _ t e MorphemeBoundary "@" MorphPhonSymbols* DoubleFric n ∘
 				  y   -> s || t e MorphemeBoundary "@" MorphPhonSymbols* _ ∘ ! this line concerns postbases that begin with y
-                  e -> 0 || V t _ MorphemeBoundary "@" MorphPhonSymbols* "(g*)" ∘
-                  t e -> 0 || _ MorphemeBoundary "@" MorphPhonSymbols* [MorphPhonSymbols - "(g*)"] ∘
-                  "@" -> 0 || WordBoundary Alphabet* MorphemeBoundary _    ;
+				  e   -> 0 || V t _ MorphemeBoundary "@*" ∘
+                  t e -> 0 || _ MorphemeBoundary "@"      ∘
+                  "@"  -> 0,
+				  "@*" -> 0  || WordBoundary Alphabet* MorphemeBoundary _    ;
  
 define JunctureConsonantInsertion ["(g/t)" | "(g)"] -> g || V V MorphemeBoundary [("~f") | ("~")] _ ∘  ! (g) used with bases that end in a double vowel
                                   ["(g/t)" | "(t)"] -> t ||   C MorphemeBoundary ("~f") _ ∘  ! (t) used with bases that end in a consonant
@@ -243,10 +244,10 @@ define Rules [
 	!! Iteration 1 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
-	FinalConsonantDropAssimilation ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
 	InterConsonantalE              ∘
@@ -259,10 +260,10 @@ define Rules [
 	!! Iteration 2 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
-	FinalConsonantDropAssimilation ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
 	InterConsonantalE              ∘
@@ -275,10 +276,10 @@ define Rules [
 	!! Iteration 3 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
-	FinalConsonantDropAssimilation ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
 	InterConsonantalE              ∘
@@ -291,10 +292,10 @@ define Rules [
 	!! Iteration 4 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
-	FinalConsonantDropAssimilation ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
 	InterConsonantalE              ∘
@@ -307,10 +308,10 @@ define Rules [
 	!! Iteration 5 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
-	FinalConsonantDropAssimilation ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
 	InterConsonantalE              ∘
@@ -323,10 +324,10 @@ define Rules [
 	!! Iteration 6 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
-	FinalConsonantDropAssimilation ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
 	InterConsonantalE              ∘
@@ -339,10 +340,10 @@ define Rules [
 	!! Iteration 7 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
-	FinalConsonantDropAssimilation ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
 	InterConsonantalE              ∘

@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{ulem}
+
+\begin{document}
+
+\section{Issues Encountered}
+
+\begin{enumerate}
+
+\item Velar and uvular rounding were posing some unique issues, particularly when the vowel dominance precedes the letter that is eventually rounded, e.g. \textit{\textbf{aghnagh$\sim$:(ng)u$\sim$(g)aqe-}}.
+%
+Here the \textit{(g)} of the second postbase should be rounded, but the vowel dominance resolves itself prior to the application of \textit{(g)} in the transducer, and so, it does not round.
+%
+This is a minor issue that results from having each postbase apply in its entirety before the others, and was ameliorated with a hard-coded rule that predicts velars/uvulars that might appear directly after an instance of vowel dominance, e.g. \textit{``(g)'' --$>$ w $\|$ a u MorphemeBoundary MorphemeBoundary MorphPhonSymbols* \_ .o.}
+
+\item Since \textit{negh} and \textit{megh} have the alternative citation forms \textit{neghe} and \textit{meghe}, the latter two were listed as separate citation forms entirely.
+%
+This causes slight overgeneration however, although the other option would be to identify all those postbases where the alternative citation form is used, and list these in the Exceptions file.
+
+\item The \textit{VerbPostbase} class loops on itself, which is acceptable and necessary for the most part, except when it loops in such a way that postbases are repeated.
+
+\item The morpheme string \textit{\textbf{aghnagh$\sim$:(ng)u${\sim}_\text{f}$(g/t)uq}} was the original sequence that forced us to reformulate \textsc{the. whole. transducer}, since the affixation of the first postbase produces the environment of the second postbase. In this way, the entirety of the first postbase \textit{\textbf{\uline{must}}} apply before any successive postbases.
+
+An initial solution was proposed as follows:
+\begin{enumerate}[label=\roman*.]
+\item Implement the derivational morphemes as Multichar chunks that are decomposed and processed in \textit{foma}
+\item Leave the inflectional morphemes as is \ldots Can you even affix more than one inflectional ending?
+\item Compose the postbase rules as a cascade, which is composed with a cascade of rules to process the inflectional endings
+\item Include a Cleanup rule to remove symbols, e.g. $\sim$sf, (ng), etc.
+\end{enumerate}
+Note however that this would require us to compose the postbase rules in a fixed order, which appears structurally sound, but Yupik itself may not adhere to such a rigid sequence. Also, the extravagant use of Multichar Symbols was discouraged by the foma/xfst programmers and Aric Bills.
+
+Instead, taking inspiration from Aric who defined a class of graphemes to ``\textsc{ignore}'' (Literally the name of the class), we (had an epiphany! and) also defined a class to represent the Yupik alphabet (\textsc{Alphabet}) and a class to represent the morphophonological symbols (\textsc{MorphPhonSymbols}). The morphophonological processes are cascaded together as before, except we then \textit{\uline{explicitly defined the environment in which one of Jacobson's symbols could delete}}.
+
+For example, the deletion environment for the symbol \textit{(g/t)} is ``WordBoundary Alphabet* MorphPhonSymbols* \_''. This means \textit{(g/t)} will \textit{only} delete if it is preceded by a word boundary, one or more Yupik letters, and one or more symbols. Thus, in the above problematic morpheme string, \textit{(g/t)} won't delete because it is preceded by a word boundary, letters, symbols, another letter, and more symbols.
+
+In this way, \textit{(g/t)} will survive the first pass through the analyzer when we are affixing the first postbase, but this forces us to repeat the cascade in order to affix \textit{(g/t)} and the rest of the second postbase, potential third postbase, etc. This begs the question, Does Yupik have infinite recursion with respect to postbases?, because we have to repeat the cascade as many times as the maximum number of postbases available to a Yupik base.
+%
+A paper by Krauss suggested a maximum of 7 postbases can be applied.
+
+\item With the previous issue resolved, we encounted another in the attempted generation of the string \textit{\textbf{tagi@lleqe${\sim}_\text{f}$(g/t)uq}}. Since the \textit{@} morphophonological process (\textit{te}-dropping) takes precedence over final-\textit{e} dropping, the \textit{@} in the string is resolved first, setting up the environment for the final-\textit{e} dropping to take place \textit{within the first pass-through of the morphophonological processes}. While this in and of itself was not an issue, when we entered the second iteration of the morphphon processes, our input was \textit{\textbf{tagilleq}} which is not correct. This prompted the \textit{g/t} process to apply, and our final output was \textit{\textbf{tagilleqtuq}}. Again, we had to manipulate the transducer to apply the entirety of the first postbase \textit{\uline{and only}} the first postbase in the first pass-through of the morphophon processes.
+
+We forced this by introducing a morpheme boundary marker \textbf{"\textasciicircum"} which was inserted at the appropriate boundaries of base, postbase, postbase, \ldots person/number marker. We further stipulated in each morphophonological rule that these rules could only apply/delete given that the preceding entities were WordBoundaries, Alphabetic Letters, and \textit{\uline{a single}} MorphemeBoundary marker.
+
+So, our problematic string became \textit{\textbf{tagi\textasciicircum @lleqe \textasciicircum ${\sim}_\text{f}$(g/t)uq}}, and this time the final-\textit{e} dropping process would not apply prematurely, since it was preceded by two MorphemeBoundary markers, and was thus not in the correct environment to apply until the first postbase had been applied, and its MorphemeBoundary marker had been deleted.
+
+\end{enumerate}
+
+\end{document}
+
