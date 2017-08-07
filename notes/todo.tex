@@ -25,34 +25,7 @@ Perhaps these unique postbases can be listed in a different continuation class f
 
 \item Is there a \textcolor{magenta}{lookahead feature} in \textit{foma}? This would particularly helpful with some postbases, such as @${\sim}_\text{f}$naqe, which when affixed to \textit{te}-verbs affect consonants that precede the \textit{te}, e.g. \textit{ingaghte} + @${\sim}_\text{f}$naqe $\rightarrow$ \textit{inga\uline{ghh}naqe}
 
-\item \textcolor{magenta}{Implement flag diacritics for number and valence}, although is it necessary to account for number? Jacobson writes that the grammatical singular is used with conventional duals when referring to ``the category'' represented by that dual (p.16).
-
 \item The absolutive case does not bear an \textit{unpossessed} marker like the other cases. \textcolor{magenta}{Should the [\textsc{unpd}] marker be added to the absolutive or simply removed entirely?} \ldots Add it.
-
-\item The \textit{VerbPostbase} class loops on itself, which is acceptable and necessary for the most part, except when it loops in such a way that postbases are repeated.
-
-\item The morpheme string \textit{\textbf{aghnagh$\sim$:(ng)u${\sim}_\text{f}$(g/t)uq}} was the original sequence that forced us to reformulate \textsc{the. whole. transducer}, since the affixation of the first postbase produces the environment of the second postbase. In this way, the entirety of the first postbase \textit{\textbf{\uline{must}}} apply before any successive postbases.
-
-An initial solution was proposed as follows:
-\begin{enumerate}[label=\roman*.]
-\item Implement the derivational morphemes as Multichar chunks that are decomposed and processed in \textit{foma}
-\item Leave the inflectional morphemes as is \ldots Can you even affix more than one inflectional ending?
-\item Compose the postbase rules as a cascade, which is composed with a cascade of rules to process the inflectional endings
-\item Include a Cleanup rule to remove symbols, e.g. $\sim$sf, (ng), etc.
-\end{enumerate}
-Note however that this would require us to compose the postbase rules in a fixed order, which appears structurally sound, but Yupik itself may not adhere to such a rigid sequence. Also, the extravagant use of Multichar Symbols was discouraged by the foma/xfst programmers and Aric Bills.
-
-Instead, taking inspiration from Aric who defined a class of graphemes to ``\textsc{ignore}'' (Literally the name of the class), we (had an epiphany! and) also defined a class to represent the Yupik alphabet (\textsc{Alphabet}) and a class to represent the morphophonological symbols (\textsc{MorphPhonSymbols}). The morphophonological processes are cascaded together as before, except we then \textit{\uline{explicitly defined the environment in which one of Jacobson's symbols could delete}}.
-
-For example, the deletion environment for the symbol \textit{(g/t)} is ``WordBoundary Alphabet* MorphPhonSymbols* \_''. This means \textit{(g/t)} will \textit{only} delete if it is preceded by a word boundary, one or more Yupik letters, and one or more symbols. Thus, in the above problematic morpheme string, \textit{(g/t)} won't delete because it is preceded by a word boundary, letters, symbols, another letter, and more symbols.
-
-In this way, \textit{(g/t)} will survive the first pass through the analyzer when we are affixing the first postbase, but this forces us to repeat the cascade in order to affix \textit{(g/t)} and the rest of the second postbase, potential third postbase, etc. This begs the question, \textcolor{magenta}{Does Yupik have infinite recursion with respect to postbases?}, because we have to repeat the cascade as many times as the maximum number of postbases available to a Yupik base.
-
-\item With the previous issue resolved, it dumped another issue on us, embodied in the attempted generation of the string \textit{\textbf{tagi@lleqe${\sim}_\text{f}$(g/t)uq}}. Since the \textit{@} morphophonological process (\textit{te}-dropping) takes precedence over final-\textit{e} dropping, the \textit{@} in the string is resolved first, setting up the environment for the final-\textit{e} dropping to take place \textit{within the first pass-through of the morphophonological processes}. While this in and of itself was not an issue, when we entered the second iteration of the morphphon processes, our input was \textit{\textbf{tagilleq}} which is not correct. This prompted the \textit{g/t} process to apply, and our final output was \textit{\textbf{tagilleqtuq}}. Again, we had to manipulate the transducer to apply the entirety of the first postbase \textit{\uline{and only}} the first postbase in the first pass-through of the morphophon processes.
-
-We forced this by introducing a morpheme boundary marker \textbf{"\textasciicircum"} which was inserted at the appropriate boundaries of base, postbase, postbase, \ldots person/number marker. We further stipulated in each morphophonological rule that these rules could only apply/delete given that the preceding entities were WordBoundaries, Alphabetic Letters, and \textit{\uline{a single}} MorphemeBoundary marker.
-
-So, our problematic string became \textit{\textbf{tagi\textasciicircum @lleqe \textasciicircum ${\sim}_\text{f}$(g/t)uq}}, and this time the final-\textit{e} dropping process would not apply prematurely, since it was preceded by two MorphemeBoundary markers, and was thus not in the correct environment to apply until the first postbase had been applied, and its MorphemeBoundary marker had been deleted.
 
 \end{enumerate}
 
@@ -66,19 +39,15 @@ So, our problematic string became \textit{\textbf{tagi\textasciicircum @lleqe \t
 
 \item To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
 %
-What are considered ``long'' bases?
+The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
 %
-Is it those bases that consist of more than a single syllable?
+We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
 
 \item Is the [2SgPoss][SgPosd] ending for \textsc{vialis} case, \textit{\textbf{--gpegun}} or \textit{\textbf{--gpekun}}?
 
 \item On p.51, \textsc{[v][intrg][2du]} is given as \textit{\textbf{$\sim_\text{sf}$(e)stek}}, but in Appendix I, p.182, it is given as \textit{\textbf{$\sim_\text{sf}$(e)stekstek}}.
 
-\item That issue with \textit{\textbf{tipele}} regarding which \textit{e} is dropped when confronted with both semi-final and final-\textit{e} dropping.
-
-\item What is the citation form for \textit{\textbf{Sivuqaq}}?
-%
-Does it have a strong \textit{gh} or weak \textit{gh}?
+\item The issue with \textit{\textbf{tipele}} regarding which \textit{e} is dropped when confronted with both semi-final and final-\textit{e} dropping.
 
 \item According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
 %
@@ -86,7 +55,7 @@ While the transducer is analyzing both of these forms, it analyzes the former as
 %
 We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion}).
 
-\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been fully implemented yet, although this postbase may be re-implementing in general.
+\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet, since the postbase itself needs some tweaking (See order of operations concerning semi-final \textit{e} dropping, final \textit{e} dropping, final consonant drop assimilation).
 
 \end{itemize}
 

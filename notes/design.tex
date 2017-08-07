@@ -22,7 +22,9 @@ This is a minor issue that results from having each postbase apply in its entire
 %
 This causes slight overgeneration however, although the other option would be to identify all those postbases where the alternative citation form is used, and list these in the Exceptions file.
 
-\item The \textit{VerbPostbase} class loops on itself, which is acceptable and necessary for the most part, except when it loops in such a way that postbases are repeated.
+\item Despite having conventional duals, we chose not to implement flag diacritics for number, since Jacobson writes that the grammatical singular is used with conventional duals when referring to “the category” represented by that dual (p.16).
+
+\item The \textit{NounPostbase} and \textit{VerbPostbase} classes loop on themselves, which is acceptable and necessary for the most part, except when they loop in such a way that postbases are repeated.
 
 \item The morpheme string \textit{\textbf{aghnagh$\sim$:(ng)u${\sim}_\text{f}$(g/t)uq}} was the original sequence that forced us to reformulate \textsc{the. whole. transducer}, since the affixation of the first postbase produces the environment of the second postbase. In this way, the entirety of the first postbase \textit{\textbf{\uline{must}}} apply before any successive postbases.
 

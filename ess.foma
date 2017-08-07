@@ -166,9 +166,10 @@ define JunctureConsonantInsertion ["(g/t)" | "(g)"] -> g || V V MorphemeBoundary
 								  "(pete)fte"  -> p e t e f t e || C ("*") _  ∘
 								  "(pete/fte)" -> p e t e MorphemeBoundary || C ("*") _  ∘
 								  "(pete/fte)" -> f t e   MorphemeBoundary || V       _  ∘
-								  "(g*)"  -> g || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
-								  "(te)"       -> t e || C ("*") _ ∘
-								  "(te)"       -> 0   || V       _ ∘
+								  "(g*)"  -> g   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
+								  "(te)"  -> t e || C ("*") _ ∘
+								  "(te)"  -> 0   || V       _ ∘
+								  "(i)"   -> i   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
     		                      "(g/t)" -> 0,
 								  "(g)"   -> 0,
 								  "(t)"   -> 0,
@@ -200,6 +201,28 @@ define VowelDominance a i -> i i  ∘
                       i u -> i i  ∘
                       a u -> a a  ∘
                       u a -> a a  ;
+
+! If we choose this option, reformulate these rules to include relevant symbols in MorphPhonSymbols, and MorphemeBoundaries.
+define Optative "+gi"  -> g i     || V V _                  ∘
+                "+gi"  -> 0                                 ∘
+                "~sfi" -> "~sf" i || [C - gh] _             ∘
+                "~sfi" -> "~sf" i || [e | DoubleVowel] gh _ ∘
+                "~sfi" -> 0                                 ∘
+                "+n"   -> n       || t e _                  ∘
+                "+n"   -> 0                                 ∘
+                "~fi"  -> "~f" i  || [C - t] e _            ∘
+                "~fi"  -> 0                                 ∘
+                "x"    -> ":" a    || FullVowel gh _        ∘
+                "x"    -> 0                                 ∘
+                ! Substituted 'x' to represent the sixth form of the 2nd person intransitive optative ending, since ':a' conflicted with
+                ! other tense formations where there was uvular dropping followed by an 'a' - DEVISE BETTER NOTATION
+                "~f(i)gu" -> "~f" "(i)" g u  || V _         ∘
+                "~f(i)gu" -> 0                              ∘
+                "~sf–ggu" -> "~f" "–" ghh u || [q|gh|ghh|qw|ghw|ghhw] _  ∘    ! '~sf' becomes '~f' since the final consonant drops before
+                "~sf–ggu" -> "~f" "–" gg u  || C _          ∘                 ! semifinal 'e' is analyzed in the transducer
+                "~sf–ggu" -> 0                              ∘
+                "(i)" -> i || e ("~f") _                    ∘
+				"(i)" -> 0                                  ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -244,6 +267,7 @@ define Rules [
 	!! Iteration 1 !!
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
+	Optative                       ∘
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘

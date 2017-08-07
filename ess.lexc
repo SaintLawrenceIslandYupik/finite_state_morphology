@@ -1,7 +1,8 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
         		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  @* ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t) (pete/fte) (pete)fte (g*) (te)
+                  @* ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t) (pete/fte) (pete)fte (g*) (te) (i)
+                  +gi +n ~fi ~sfi (i) ~f(i)gu ~sf–ggu
 	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@ @C.VALENCE@ 
 LEXICON Root
     NounBase ;
@@ -288,6 +289,22 @@ kenegh           NounPostbase; ! light, lamp
 nasaperagh       NounPostbase; ! hat
 neqekrag         NounPostbase; ! bread (especially, pilot bread)
 nuzigh           NounPostbase; ! one's child's spouse's parent
+
+! Jacobson (2001) Chapter 10 Noun Vocabulary
+esne             NounPostbase; ! shore; rim
+esnagh           NounPostbase; ! beach
+igaghyaghqagh    NounPostbase; ! paper to be written on
+igagh            NounPostbase; ! paper with writing (means 'book' if pluralized)
+kaamwaagh        NounPostbase; ! coltsfoot plant (Petasites frigidus)
+nekreg           NounPostbase; ! hook
+puugzagh         NounPostbase; ! beluga
+qayuusigh        NounPostbase; ! cup
+quug             NounPostbase; ! swan
+quug             NounPostbase; ! firewood
+ququngagh        NounPostbase; ! leaf; edible willow leaf
+unkuse           NounPostbase; ! animal trap (usually dual for one trap)
+taaghta          NounPostbase; ! doctor
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -642,38 +659,57 @@ sa@P.VALENCE.TRNS@               VerbPostbase; ! to do what?
 tukfigh@P.VALENCE.TRNS@          VerbPostbase; ! to buy
 
 ! Jacobson (2001) Chapter 9 Verb Vocabulary
-aghvigh@P.VALENCE.INTR@         VerbPostbase; ! to cross over; to go to the mainland
-aghvigh@P.VALENCE.TRNS@         VerbPostbase; ! to cross over; to go to the mainland
-aleghqugh@P.VALENCE.TRNS@       VerbPostbase; ! to talk to; to tell
-aleghquute@P.VALENCE.INTR@      VerbPostbase; ! to talk together; to converse (non-singular)
-amqeghte@P.VALENCE.TRNS@        VerbPostbase; ! to bite
-aqlaghate@P.VALENCE.INTR@       VerbPostbase; ! for it to get cold
-aqlaghaghte@P.VALENCE.INTR@     VerbPostbase; ! for it to get cold (optional impersonal agent verb)
-aqlaghaghte@P.VALENCE.TRNS@     VerbPostbase; ! for it to get cold (optional impersonal agent verb)
-atightugh@P.VALENCE.INTR@       VerbPostbase; ! to read
-atightugh@P.VALENCE.TRNS@       VerbPostbase; ! to read
-ghhuute@P.VALENCE.INTR@         VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
-ghhuute@P.VALENCE.TRNS@         VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
-igagh@P.VALENCE.INTR@           VerbPostbase; ! to write (on)
-igagh@P.VALENCE.TRNS@           VerbPostbase; ! to write (on)
-iknaqe@P.VALENCE.INTR@          VerbPostbase; ! to be strong
-isekinagh@P.VALENCE.INTR@       VerbPostbase; ! to be cold (solid, liquid)
-ivagh@P.VALENCE.TRNS@           VerbPostbase; ! to look for
-naalke@P.VALENCE.TRNS@          VerbPostbase; ! to find
-naallghute@P.VALENCE.TRNS@      VerbPostbase; ! to adjust
-payegh@P.VALENCE.TRNS@          VerbPostbase; ! to meet, to encounter; to go over to help
-pinighsagh@P.VALENCE.INTR@      VerbPostbase; ! to fix, to repair; to fix up oneself
-pinighsagh@P.VALENCE.TRNS@      VerbPostbase; ! to fix, to repair; to fix up oneself
-qaamte@P.VALENCE.TRNS@          VerbPostbase; ! to extinguish; to turn off
-siku@P.VALENCE.INTR@            VerbPostbase; ! to freeze (optional impersonal agent verb)
-siku@P.VALENCE.TRNS@            VerbPostbase; ! to freeze (optional impersonal agent verb)
-ughug@P.VALENCE.INTR@           VerbPostbase; ! to melt (optional impersonal agent verb)
-ughug@P.VALENCE.TRNS@           VerbPostbase; ! to melt (optional impersonal agent verb)
-uglagh@P.VALENCE.INTR@          VerbPostbase; ! to be many, to be numerous
-ugpeqe@P.VALENCE.TRNS@          VerbPostbase; ! to believe
-ulima@P.VALENCE.INTR@           VerbPostbase; ! to make (something)
-ulima@P.VALENCE.TRNS@           VerbPostbase; ! to make (something)
-ungipaghaate@P.VALENCE.TRNS@    VerbPostbase; ! to tell a story to
+aghvigh@P.VALENCE.INTR@          VerbPostbase; ! to cross over; to go to the mainland
+aghvigh@P.VALENCE.TRNS@          VerbPostbase; ! to cross over; to go to the mainland
+aleghqugh@P.VALENCE.TRNS@        VerbPostbase; ! to talk to; to tell
+aleghquute@P.VALENCE.INTR@       VerbPostbase; ! to talk together; to converse (non-singular)
+amqeghte@P.VALENCE.TRNS@         VerbPostbase; ! to bite
+aqlaghate@P.VALENCE.INTR@        VerbPostbase; ! for it to get cold
+aqlaghaghte@P.VALENCE.INTR@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
+aqlaghaghte@P.VALENCE.TRNS@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
+atightugh@P.VALENCE.INTR@        VerbPostbase; ! to read
+atightugh@P.VALENCE.TRNS@        VerbPostbase; ! to read
+ghhuute@P.VALENCE.INTR@          VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
+ghhuute@P.VALENCE.TRNS@          VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
+igagh@P.VALENCE.INTR@            VerbPostbase; ! to write (on)
+igagh@P.VALENCE.TRNS@            VerbPostbase; ! to write (on)
+iknaqe@P.VALENCE.INTR@           VerbPostbase; ! to be strong
+isekinagh@P.VALENCE.INTR@        VerbPostbase; ! to be cold (solid, liquid)
+ivagh@P.VALENCE.TRNS@            VerbPostbase; ! to look for
+naalke@P.VALENCE.TRNS@           VerbPostbase; ! to find
+naallghute@P.VALENCE.TRNS@       VerbPostbase; ! to adjust
+payegh@P.VALENCE.TRNS@           VerbPostbase; ! to meet, to encounter; to go over to help
+pinighsagh@P.VALENCE.INTR@       VerbPostbase; ! to fix, to repair; to fix up oneself
+pinighsagh@P.VALENCE.TRNS@       VerbPostbase; ! to fix, to repair; to fix up oneself
+qaamte@P.VALENCE.TRNS@           VerbPostbase; ! to extinguish; to turn off
+siku@P.VALENCE.INTR@             VerbPostbase; ! to freeze (optional impersonal agent verb)
+siku@P.VALENCE.TRNS@             VerbPostbase; ! to freeze (optional impersonal agent verb)
+ughug@P.VALENCE.INTR@            VerbPostbase; ! to melt (optional impersonal agent verb)
+ughug@P.VALENCE.TRNS@            VerbPostbase; ! to melt (optional impersonal agent verb)
+uglagh@P.VALENCE.INTR@           VerbPostbase; ! to be many, to be numerous
+ugpeqe@P.VALENCE.TRNS@           VerbPostbase; ! to believe
+ulima@P.VALENCE.INTR@            VerbPostbase; ! to make (something)
+ulima@P.VALENCE.TRNS@            VerbPostbase; ! to make (something)
+ungipaghaate@P.VALENCE.TRNS@     VerbPostbase; ! to tell a story to
+
+! Jacobson (2001) Chapter 10 Verb Vocabulary
+aqume@P.VALENCE.INTR@            VerbPostbase; ! to sit
+egte@P.VALENCE.TRNS@             VerbPostbase; ! to throw away
+kaaw@P.VALENCE.INTR@             VerbPostbase; ! to hit, to strike with an object
+kaaw@P.VALENCE.TRNS@             VerbPostbase; ! to hit, to strike with an object
+kenigh@P.VALENCE.TRNS@           VerbPostbase; ! to point (at)
+lata@P.VALENCE.INTR@             VerbPostbase; ! to write a letter (to)
+lata@P.VALENCE.TRNS@             VerbPostbase; ! to write a letter (to)
+nanglii@P.VALENCE.INTR@          VerbPostbase; ! to stare into space
+nekeve@P.VALENCE.INTR@           VerbPostbase; ! to stand up
+pugimagh@P.VALENCE.INTR@         VerbPostbase; ! to swim
+pugimagh@P.VALENCE.TRNS@         VerbPostbase; ! to swim
+pumsug@P.VALENCE.TRNS@           VerbPostbase; ! to pinch
+qayugh@P.VALENCE.INTR@           VerbPostbase; ! to drink hot liquid (coffee, tea, etc.)
+tagite@P.VALENCE.TRNS@           VerbPostbase; ! to bring here
+tuqute@P.VALENCE.TRNS@           VerbPostbase; ! to kill
+
+
 
 
 
@@ -705,12 +741,20 @@ LEXICON VerbPostbase
 ! Verb →  Noun (Nominalizing) Postbases
 -@*~sf–(g*)kaq[ONE-THAT-HAS-V-ED][V→N]:@*~sf–(g*)kaq  NounPostbase; ! one that has V-ed
 
-! Compound Verbal Postbases (affect the transitivity of the embedded verb)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                                    !!!
+!!!             Compound Verbal Postbases              !!!
+!!!   (affect the transitivity of the embedded verb)   !!!
+!!!                                                    !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -@~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.INTR@:@~fni@P.VALENCE.INTR@  VerbPostbase; ! to say that one is V-ing
 -@~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.TRNS@:@~fni@P.VALENCE.TRNS@  VerbPostbase; ! to say that one is V-ing
 -(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)ste@P.VALENCE.INTR@  VerbPostbase; ! to have, make, or let one V
 -(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)ste@P.VALENCE.TRNS@  VerbPostbase; ! to have, make, or let one V
-
+-~sf%:(e)sqe[TO-ASK-OR-TELL-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.INTR@:~sf%:(e)sqe@P.VALENCE.INTR@  VerbPostbase; ! to ask or to tell one to V
+-~sf%:(e)sqe[TO-ASK-OR-TELL-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.TRNS@:~sf%:(e)sqe@P.VALENCE.TRNS@  VerbPostbase; ! to ask or to tell one to V
+-(te)sug[TO-WANT-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)sug@P.VALENCE.INTR@           VerbPostbase; ! to want one to V
+-(te)sug[TO-WANT-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)sug@P.VALENCE.TRNS@           VerbPostbase; ! to want one to V
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -730,8 +774,8 @@ LEXICON VerbTenseInfl
 [V][Trns_Ind]@R.VALENCE.TRNS@:~(g)a@R.VALENCE.TRNS@     VerbPrsNumInfl;
 
 
-! ----------------------------------------|
-! Intransitive Interrogative Mood Endings |
+! --------------------------------------------------------------|
+!             Intransitive Interrogative Mood Endings           |
 ! --------------------------------------------------------------|-------------|
 [V][Intrg][3Sg]@R.VALENCE.INTR@:~f(g/t)a@R.VALENCE.INTR@     #; ! 3Sg subject |
 [V][Intrg][3Pl]@R.VALENCE.INTR@:~f(g/t)at@R.VALENCE.INTR@    #; ! 3Pl subject |
@@ -745,6 +789,7 @@ LEXICON VerbTenseInfl
 [V][Intrg][2Pl]@R.VALENCE.INTR@:~sf(e)tsi@R.VALENCE.INTR@    #; ! 2Pl subject |
 [V][Intrg][2Du]@R.VALENCE.INTR@:~sf(e)stek@R.VALENCE.INTR@   #; ! 2Du subject |
 ! --------------------------------------------------------------|-------------|
+
 
 ! -------------------------------------------------------------------|
 !                 Transitive Interrogative Mood Endings              |
@@ -774,17 +819,53 @@ LEXICON VerbTenseInfl
 [V][Intrg][2Sg][1Sg]@R.VALENCE.TRNS@:~f(t)zinga@R.VALENCE.TRNS@     #; [V][Intrg][2Sg][1Pl]@R.VALENCE.TRNS@:~f(t)zikut@R.VALENCE.TRNS@     #; [V][Intrg][2Sg][1Du]@R.VALENCE.TRNS@:~f(t)zikung@R.VALENCE.TRNS@     #; ! 2Sg SBJ |
 [V][Intrg][2Pl][1Sg]@R.VALENCE.TRNS@:~sf(e)ngnga@R.VALENCE.TRNS@    #; [V][Intrg][2Pl][1Pl]@R.VALENCE.TRNS@:~sf(e)kut@R.VALENCE.TRNS@      #; [V][Intrg][2Pl][1Du]@R.VALENCE.TRNS@:~sf(e)kung@R.VALENCE.TRNS@      #; ! 2Pl SBJ |
 [V][Intrg][2Du][1Sg]@R.VALENCE.TRNS@:~sf(e)gnenga@R.VALENCE.TRNS@   #; [V][Intrg][2Du][1Pl]@R.VALENCE.TRNS@:~sf(e)gneku@R.VALENCE.TRNS@    #; [V][Intrg][2Du][1Du]@R.VALENCE.TRNS@:~sf(e)gnekung@R.VALENCE.TRNS@   #; ! 2Du SBJ |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-!         2nd singular object        |             2nd plural object           |               2nd dual object              |                |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+!                        2nd singular object                         |                            2nd plural object                         |                              2nd dual object                          |           |
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
 [V][Intrg][3Sg][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Sg][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Sg][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Sg SBJ |
 [V][Intrg][3Pl][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Pl][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Pl][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
 [V][Intrg][3Du][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Du][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Du][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Du SBJ |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
-[V][Intrg][1Sg][2Sg]@R.VALENCE.TRNS@:~f(t)ziken@R.VALENCE.TRNS@     #;                                                                                      ! 1Sg subject    |
-[V][Intrg][1Pl][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                                      ! 1Pl subject    |
-[V][Intrg][1Du][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                                      ! 1Du subject    |
-! -----------------------------------|-----------------------------------------|--------------------------------------------|----------------|
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+[V][Intrg][1Sg][2Sg]@R.VALENCE.TRNS@:~f(t)ziken@R.VALENCE.TRNS@     #;                                                                      |                                                                       | ! 1Sg SBJ |
+[V][Intrg][1Pl][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                      |                                                                       | ! 1Pl SBJ |
+[V][Intrg][1Du][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                      |                                                                       | ! 1Du SBJ |
+! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+
+
+! -----------------------------------------------------------------|
+!       Intransitive Optative Mood Endings Present Tense           |
+! -----------------------------------------------------------------|-----------|
+[V][Opt][PRS][3Sg]@R.VALENCE.INTR@:@~fli@R.VALENCE.INTR@          #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl]@R.VALENCE.INTR@:@~flit@R.VALENCE.INTR@         #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du]@R.VALENCE.INTR@:@~flik@R.VALENCE.INTR@         #; ! 3Du SBJ |
+! -----------------------------------------------------------------|-----------|
+[V][Opt][PRS][1Sg]@R.VALENCE.INTR@:@~flanga@R.VALENCE.INTR@       #; ! 1Sg SBJ |
+[V][Opt][PRS][1Pl]@R.VALENCE.INTR@:~sf%:(e)lta@R.VALENCE.INTR@    #; ! 1Pl SBJ |
+[V][Opt][PRS][1Du]@R.VALENCE.INTR@:~sf%:(e)ltung@R.VALENCE.INTR@  #; ! 1Du SBJ |
+! -----------------------------------------------------------------|-----------|
+[V][Opt][PRS][2Sg]@R.VALENCE.INTR@:+gi~sfi+n~fix@R.VALENCE.INTR@  #; ! 2Sg SBJ |
+[V][Opt][PRS][2Pl]@R.VALENCE.INTR@:@(i)tek@R.VALENCE.INTR@        #; ! 2Pl SBJ |
+[V][Opt][PRS][2Du]@R.VALENCE.INTR@:@(i)tek@R.VALENCE.INTR@        #; ! 2Du SBJ |
+! -----------------------------------------------------------------|-----------|
+
+
+! -------------------------------------------------------------|
+!             Intransitive Optative Mood Endings NEG           |
+! -------------------------------------------------------------|-----------|
+                                                               ! ! 3Sg SBJ |
+                                                               ! ! 3Pl SBJ |
+                                                               ! ! 3Du SBJ |
+! -------------------------------------------------------------|-----------|
+                                                               ! ! 1Sg SBJ |
+                                                               ! ! 1Pl SBJ |
+                                                               ! ! 1Du SBJ |
+! -------------------------------------------------------------|-----------|
+[V][Opt][NEG][2Sg]@R.VALENCE.INTR@:~fqaavek@R.VALENCE.INTR@   #; ! 2Sg SBJ |
+[V][Opt][NEG][2Pl]@R.VALENCE.INTR@:~fqaafsi@R.VALENCE.INTR@   #; ! 2Pl SBJ |
+[V][Opt][NEG][2Du]@R.VALENCE.INTR@:~fqaaftek@R.VALENCE.INTR@  #; ! 2Du SBJ |
+! -------------------------------------------------------------|-----------|
+
+
 
 
 LEXICON VerbPrsNumInfl
@@ -817,81 +898,45 @@ LEXICON VerbPrsNumInfl
 LEXICON Ignore
 
 !TODO: What does the '@' symbol here do?
-! -------------------------------------------------|
-! Intransitive Optative Mood Endings Present Tense |
-! -----------------------------------|-------------|
-[V][Opt][PRS][3Sg]:@~fli          #; ! 3Sg subject |
-[V][Opt][PRS][3Pl]:@~flit         #; ! 3Pl subject |
-[V][Opt][PRS][3Du]:@~flik         #; ! 3Du subject |
-! -----------------------------------|-------------|
-[V][Opt][PRS][1Sg]:@~flanga       #; ! 1Sg subject |
-[V][Opt][PRS][1Pl]:~sf%:(e)lta    #; ! 1Pl subject |
-[V][Opt][PRS][1Du]:~sf%:(e)ltung  #; ! 1Du subject |
-! -----------------------------------|-------------|
-[V][Opt][PRS][2Sg]:+gi~sfi+n~fix  #; ! 2Sg subject |
-[V][Opt][PRS][2Pl]:@(i)tek        #; ! 2Pl subject |
-[V][Opt][PRS][2Du]:@(i)tek        #; ! 2Du subject |
-! -----------------------------------|-------------|
-
-
-! -------------------------------------------------|
-! Intransitive Optative Mood Endings NEG (Do Not)  |
-! -----------------------------------|-------------|
-![V][Opt][NEG][3Sg]:              #; ! 3Sg subject |
-![V][Opt][NEG][3Pl]:              #; ! 3Pl subject |
-![V][Opt][NEG][3Du]:              #; ! 3Du subject |
-! -----------------------------------|-------------|
-![V][Opt][NEG][1Sg]:              #; ! 1Sg subject |
-![V][Opt][NEG][1Pl]:              #; ! 1Pl subject |
-![V][Opt][NEG][1Du]:              #; ! 1Du subject |
-! -----------------------------------|-------------|
-[V][Opt][NEG][2Sg]:~fqaavek       #; ! 2Sg subject |
-[V][Opt][NEG][2Pl]:~fqaafsi       #; ! 2Pl subject |
-[V][Opt][NEG][2Du]:~fqaaftek      #; ! 2Du subject |
-! -----------------------------------|-------------|
-
-
-
-
-! -----------------------------------------------------------------------------------------------------------------------------------------|
-!                                               Transitive Optative Mood Endings                                                           |
-! -----------------------------------------------------------------------------------------------------------------------------------------|
-!            3rd singular object          |             3rd plural object                |                  3rd dual object                |    
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-[V][Opt][PRS][3Sg][3Sg]:@~fligu          #;    [V][Opt][PRS][3Sg][3Pl]:@~fliki          #;    [V][Opt][PRS][3Sg][3Du]:@~flikek          #; ! 3Sg subject |
-[V][Opt][PRS][3Pl][3Sg]:@~flitgu         #;    [V][Opt][PRS][3Pl][3Pl]:@~flitki         #;    [V][Opt][PRS][3Pl][3Du]:@~flitkek         #; ! 3Pl subject |
-[V][Opt][PRS][3Du][3Sg]:@~flignegu       #;    [V][Opt][PRS][3Du][3Pl]:@~fligneki       #;    [V][Opt][PRS][3Du][3Du]:@~flignekek       #; ! 3Du subject |
-! ----------------------------------------|----------------------------------------------|----------------------------------------------|----------------|
-[V][Opt][PRS][1Sg][3Sg]:@~flakun         #;    [V][Opt][PRS][1Sg][3Pl]:@~flangi         #;    [V][Opt][PRS][1Sg][3Du]:@~flangak         #; ! 1Sg subject |
-[V][Opt][PRS][1Pl][3Sg]:~sf%:(e)lteggu   #;    [V][Opt][PRS][1Pl][3Pl]:~sf%:(e)lteki    #;    [V][Opt][PRS][1Pl][3Du]:~sf%:(e)ltekek    #; ! 1Pl subject |
-[V][Opt][PRS][1Du][3Sg]:~sf%:(e)ltegnegu #;    [V][Opt][PRS][1Du][3Pl]:~sf%:(e)ltegneki #;    [V][Opt][PRS][1Du][3Du]:~sf%:(e)ltegnekek #; ! 1Du subject |
-! ----------------------------------------|----------------------------------------------|----------------------------------------------|----------------|
-[V][Opt][PRS][2Sg][3Sg]:~f(i)gu~sf–ggu   #;    [V][Opt][PRS][2Sg][3Pl]:~f(i)ki          #;    [V][Opt][PRS][2Sg][3Du]:~f(i)kek          #; ! 2Sg subject |
-[V][Opt][PRS][2Pl][3Sg]:@(i)teggu        #;    [V][Opt][PRS][2Pl][3Pl]:@(i)teki         #;    [V][Opt][PRS][2Pl][3Du]:@(i)tekek         #; ! 2Pl subject |
-[V][Opt][PRS][2Du][3Sg]:@(i)tegnegu      #;    [V][Opt][PRS][2Du][3Pl]:@(i)tegneki      #;    [V][Opt][PRS][2Du][3Du]:@(i)tegnekek      #; ! 2Du subject |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-!            1st singular object          |             1st plural object                |                  1st dual object                |             |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-[V][Opt][PRS][3Sg][1Sg]:@~flinga         #;    [V][Opt][PRS][3Sg][1Pl]:@~flikut         #;    [V][Opt][PRS][3Sg][1Du]:@~flikung         #; ! 3Sg subject |
-[V][Opt][PRS][3Pl][1Sg]:@~flitnga        #;    [V][Opt][PRS][3Pl][1Pl]:@~flinkut        #;    [V][Opt][PRS][3Pl][1Du]:@~flinkung        #; ! 3Pl subject |
-[V][Opt][PRS][3Du][1Sg]:@~flignenga      #;    [V][Opt][PRS][3Du][1Pl]:@~flinkut        #;    [V][Opt][PRS][3Du][1Du]:@~flinkung        #; ! 3Du subject |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-! Presumably, a speaker would not use the optative mood with himself/herself                                                               |             |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-[V][Opt][PRS][2Sg][1Sg]:~f(i)nga         #;    [V][Opt][PRS][2Sg][1Pl]:~f(i)kut         #;    [V][Opt][PRS][2Sg][1Du]:~f(i)kung         #; ! 2Sg subject |
-[V][Opt][PRS][2Pl][1Sg]:@(i)tengnga      #;    [V][Opt][PRS][2Pl][1Pl]:@(i)tekut        #;    [V][Opt][PRS][2Pl][1Du]:@(i)tekung        #; ! 2Pl subject |
-[V][Opt][PRS][2Du][1Sg]:@(i)tegnenga     #;    [V][Opt][PRS][2Du][1Pl]:@(i)tegnekut     #;    [V][Opt][PRS][2Du][1Du]:@(i)tegnekung     #; ! 2Du subject |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-!            2nd singular object          |             2nd plural object                |                  2nd dual object                |             |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-[V][Opt][PRS][3Sg][2Sg]:~flaten          #;    [V][Opt][PRS][3Sg][2Pl]:~flisi           #;    [V][Opt][PRS][3Sg][2Du]:~flistek          #; ! 3Sg subject |
-[V][Opt][PRS][3Pl][2Sg]:~flaten          #;    [V][Opt][PRS][3Pl][2Pl]:~flisi           #;    [V][Opt][PRS][3Pl][2Du]:~flistek          #; ! 3Pl subject |
-[V][Opt][PRS][3Du][2Sg]:~flaten          #;    [V][Opt][PRS][3Du][2Pl]:~flisi           #;    [V][Opt][PRS][3Du][2Du]:~flistek          #; ! 3Du subject |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
-[V][Opt][PRS][3Sg][1Sg]:~flaken          #;    [V][Opt][PRS][3Sg][1Pl]:~flamsi          #;    [V][Opt][PRS][3Sg][1Du]:~flamtek          #; ! 3Sg subject |
-[V][Opt][PRS][3Pl][1Sg]:~flaken          #;    [V][Opt][PRS][3Pl][1Pl]:~flamsi          #;    [V][Opt][PRS][3Pl][1Du]:~flamtek          #; ! 3Pl subject |
-[V][Opt][PRS][3Du][1Sg]:~flaken          #;    [V][Opt][PRS][3Du][1Pl]:~flamsi          #;    [V][Opt][PRS][3Du][1Du]:~flamtek          #; ! 3Du subject |
-! ----------------------------------------|----------------------------------------------|-------------------------------------------------|-------------|
+! ------------------------------------------------------------------------|
+!                   Transitive Optative Mood Endings                      |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|
+!                             3rd singular object                         |                               3rd plural object                           |                               3rd dual object                                |          
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+[V][Opt][PRS][3Sg][3Sg]@R.VALENCE.TRNS@:@~fligu@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Sg][3Pl]@R.VALENCE.TRNS@:@~fliki@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Sg][3Du]@R.VALENCE.TRNS@:@~flikek@R.VALENCE.TRNS@          #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl][3Sg]@R.VALENCE.TRNS@:@~flitgu@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Pl][3Pl]@R.VALENCE.TRNS@:@~flitki@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Pl][3Du]@R.VALENCE.TRNS@:@~flitkek@R.VALENCE.TRNS@         #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du][3Sg]@R.VALENCE.TRNS@:@~flignegu@R.VALENCE.TRNS@       #; [V][Opt][PRS][3Du][3Pl]@R.VALENCE.TRNS@:@~fligneki@R.VALENCE.TRNS@       #; [V][Opt][PRS][3Du][3Du]@R.VALENCE.TRNS@:@~flignekek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+[V][Opt][PRS][1Sg][3Sg]@R.VALENCE.TRNS@:@~flakun@R.VALENCE.TRNS@         #; [V][Opt][PRS][1Sg][3Pl]@R.VALENCE.TRNS@:@~flangi@R.VALENCE.TRNS@         #; [V][Opt][PRS][1Sg][3Du]@R.VALENCE.TRNS@:@~flangak@R.VALENCE.TRNS@         #; ! 1Sg SBJ |
+[V][Opt][PRS][1Pl][3Sg]@R.VALENCE.TRNS@:~sf%:(e)lteggu@R.VALENCE.TRNS@   #; [V][Opt][PRS][1Pl][3Pl]@R.VALENCE.TRNS@:~sf%:(e)lteki@R.VALENCE.TRNS@    #; [V][Opt][PRS][1Pl][3Du]@R.VALENCE.TRNS@:~sf%:(e)ltekek@R.VALENCE.TRNS@    #; ! 1Pl SBJ |
+[V][Opt][PRS][1Du][3Sg]@R.VALENCE.TRNS@:~sf%:(e)ltegnegu@R.VALENCE.TRNS@ #; [V][Opt][PRS][1Du][3Pl]@R.VALENCE.TRNS@:~sf%:(e)ltegneki@R.VALENCE.TRNS@ #; [V][Opt][PRS][1Du][3Du]@R.VALENCE.TRNS@:~sf%:(e)ltegnekek@R.VALENCE.TRNS@ #; ! 1Du SBJ |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+[V][Opt][PRS][2Sg][3Sg]@R.VALENCE.TRNS@:~f(i)gu~sf–ggu@R.VALENCE.TRNS@   #; [V][Opt][PRS][2Sg][3Pl]@R.VALENCE.TRNS@:~f(i)ki@R.VALENCE.TRNS@          #; [V][Opt][PRS][2Sg][3Du]@R.VALENCE.TRNS@:~f(i)kek@R.VALENCE.TRNS@          #; ! 2Sg SBJ |
+[V][Opt][PRS][2Pl][3Sg]@R.VALENCE.TRNS@:@(i)teggu@R.VALENCE.TRNS@        #; [V][Opt][PRS][2Pl][3Pl]@R.VALENCE.TRNS@:@(i)teki@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Pl][3Du]@R.VALENCE.TRNS@:@(i)tekek@R.VALENCE.TRNS@         #; ! 2Pl SBJ |
+[V][Opt][PRS][2Du][3Sg]@R.VALENCE.TRNS@:@(i)tegnegu@R.VALENCE.TRNS@      #; [V][Opt][PRS][2Du][3Pl]@R.VALENCE.TRNS@:@(i)tegneki@R.VALENCE.TRNS@      #; [V][Opt][PRS][2Du][3Du]@R.VALENCE.TRNS@:@(i)tegnekek@R.VALENCE.TRNS@      #; ! 2Du SBJ |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+!                             1st singular object                         |                               1st plural object                           |                               1st dual object                                |         |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+[V][Opt][PRS][3Sg][1Sg]@R.VALENCE.TRNS@:@~flinga@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Sg][1Pl]@R.VALENCE.TRNS@:@~flikut@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Sg][1Du]@R.VALENCE.TRNS@:@~flikung@R.VALENCE.TRNS@         #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl][1Sg]@R.VALENCE.TRNS@:@~flitnga@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Pl][1Pl]@R.VALENCE.TRNS@:@~flinkut@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Pl][1Du]@R.VALENCE.TRNS@:@~flinkung@R.VALENCE.TRNS@        #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du][1Sg]@R.VALENCE.TRNS@:@~flignenga@R.VALENCE.TRNS@      #; [V][Opt][PRS][3Du][1Pl]@R.VALENCE.TRNS@:@~flinkut@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Du][1Du]@R.VALENCE.TRNS@:@~flinkung@R.VALENCE.TRNS@        #; ! 3Du SBJ |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+!                                                                         |                                                                           |                                                                              |         |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+[V][Opt][PRS][2Sg][1Sg]@R.VALENCE.TRNS@:~f(i)nga@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Sg][1Pl]@R.VALENCE.TRNS@:~f(i)kut@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Sg][1Du]@R.VALENCE.TRNS@:~f(i)kung@R.VALENCE.TRNS@         #; ! 2Sg SBJ |
+[V][Opt][PRS][2Pl][1Sg]@R.VALENCE.TRNS@:@(i)tengnga@R.VALENCE.TRNS@      #; [V][Opt][PRS][2Pl][1Pl]@R.VALENCE.TRNS@:@(i)tekut@R.VALENCE.TRNS@        #; [V][Opt][PRS][2Pl][1Du]@R.VALENCE.TRNS@:@(i)tekung@R.VALENCE.TRNS@        #; ! 2Pl SBJ |
+[V][Opt][PRS][2Du][1Sg]@R.VALENCE.TRNS@:@(i)tegnenga@R.VALENCE.TRNS@     #; [V][Opt][PRS][2Du][1Pl]@R.VALENCE.TRNS@:@(i)tegnekut@R.VALENCE.TRNS@     #; [V][Opt][PRS][2Du][1Du]@R.VALENCE.TRNS@:@(i)tegnekung@R.VALENCE.TRNS@     #; ! 2Du SBJ |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+!                             2nd singular object                         |                               2nd plural object                           |                               2nd dual object                                |         |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|---------|
+[V][Opt][PRS][3Sg][2Sg]@R.VALENCE.TRNS@:~flaten@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Sg][2Pl]@R.VALENCE.TRNS@:~flisi@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Sg][2Du]@R.VALENCE.TRNS@:~flistek@R.VALENCE.TRNS@          #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl][2Sg]@R.VALENCE.TRNS@:~flaten@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Pl][2Pl]@R.VALENCE.TRNS@:~flisi@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Pl][2Du]@R.VALENCE.TRNS@:~flistek@R.VALENCE.TRNS@          #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du][2Sg]@R.VALENCE.TRNS@:~flaten@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Du][2Pl]@R.VALENCE.TRNS@:~flisi@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Du][2Du]@R.VALENCE.TRNS@:~flistek@R.VALENCE.TRNS@          #; ! 3Du SBJ |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
+[V][Opt][PRS][3Sg][1Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Sg][1Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Sg][1Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl][1Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Pl][1Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Pl][1Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du][1Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Du][1Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Du][1Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 3Du SBJ |
+! ------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
 
 
 ! ------------------------------------------------------------------------------------------------------------------|
