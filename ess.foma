@@ -96,16 +96,17 @@ define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   MorphemeBoundary "~
                      [..] -> u || WordBoundary (C) u _ C e   MorphemeBoundary "~"    ∘  ! final e-hopping
                         e -> 0 ||                    V C _   MorphemeBoundary "~"    ∘  ! final e-dropping
                         e -> 0 ||                        _   MorphemeBoundary  "~" V ∘  ! final e-dropping  
-                     [..] -> a || WordBoundary (C) a _ C e C MorphemeBoundary "~"    ∘  ! semi-final e-hopping
-                     [..] -> i || WordBoundary (C) i _ C e C MorphemeBoundary "~"    ∘  ! semi-final e-hopping
-                     [..] -> u || WordBoundary (C) u _ C e C MorphemeBoundary "~"    ∘  ! semi-final e-hopping
-                        e -> 0 ||                    V C _ C MorphemeBoundary "~"    ∘  ! semi-final e-dropping
+                     [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeBoundary "~"    ∘  ! semi-final e-hopping
+                     [..] -> i || WordBoundary (C) i _ C e [g | gh ("*")] MorphemeBoundary "~"    ∘  ! semi-final e-hopping
+                     [..] -> u || WordBoundary (C) u _ C e [g | gh ("*")] MorphemeBoundary "~"    ∘  ! semi-final e-hopping
+                        e -> 0 ||                    V C _ [g | gh ("*")] MorphemeBoundary "~"    ∘  ! semi-final e-dropping
                       "~" -> 0 || WordBoundary Alphabet* MorphemeBoundary _          ;  ! finally remove intermediate symbol ~
 
-define SemiFinalE [..] -> a || WordBoundary (C) a _ C e C MorphemeBoundary "~sf"  ∘  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e C MorphemeBoundary "~sf"  ∘  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e C MorphemeBoundary "~sf"  ∘  ! e-hopping
-                     e -> 0 ||                    V C _ C MorphemeBoundary "~sf"  ∘  ! e-dropping
+
+define SemiFinalE [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-hopping
+                     e -> 0 ||                    V C _ [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 || WordBoundary Alphabet* MorphemeBoundary _          ;  ! finally remove intermediate symbol ~sf 
 
 define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
