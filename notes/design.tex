@@ -51,6 +51,18 @@ We forced this by introducing a morpheme boundary marker \textbf{"\textasciicirc
 
 So, our problematic string became \textit{\textbf{tagi\textasciicircum @lleqe \textasciicircum ${\sim}_\text{f}$(g/t)uq}}, and this time the final-\textit{e} dropping process would not apply prematurely, since it was preceded by two MorphemeBoundary markers, and was thus not in the correct environment to apply until the first postbase had been applied, and its MorphemeBoundary marker had been deleted.
 
+\item The implementation regarding how to handle the morphophonological grouping of $\sim$ and -- is not ideal.
+%
+At present, a rule to handle the co-occurrence of $\sim$ and -- is implemented, since the other options that were considered required extensive reworking of several other rules.
+
+In particular, deleting the final-\textit{e} dropping rules in the SemiFinalAndFinalE rule, and finally changing the $\sim$ to $\sim_\text{f}$ forced us to rewrite the UvularDropping rule first, which snowballed into other rules that also required tweaking.
+
+On the other hand, prematurely deleting the morpheme boundary when $\sim$ is deleted, and reworking the FinalConsonantDropAssimilation rule to only apply in the presence of a morpheme boundary caused other issues.
+%
+If we were to prematurely delete the morpheme boundary in the presence of $\sim$--, we would have to rewrite the rules for UvularDropping and the other morphphon processes that occur after FinalConsonantDropAssimilation in the cascade, and allow them to take place without the presence of the MorphemeBoundary marker.
+%
+But the purpose of the boundary marker is to ensure that each postbase applies one at a time, and even if two postbases share a morphphon process, the second postbase cannot apply before the first postbase has been completed (See \textit{tagi@lleqe}).
+
 \end{enumerate}
 
 \end{document}
