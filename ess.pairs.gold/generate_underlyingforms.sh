@@ -8,9 +8,9 @@
 #######################
 
 # Absolutive
-#awk '{print $0 "[N][Abs][Du]"}' underlying.tsv &> underlying1.tsv
-#awk '{print $0 "[N][Abs][Pl]"}' underlying.tsv &> underlying2.tsv
-#awk '{print $0 "[N][Abs][Sg]"}' underlying.tsv &> underlying3.tsv
+awk '{print $0 "[N][Abs][Unpd][Du]"}' underlying.tsv &> underlying1.tsv
+awk '{print $0 "[N][Abs][Unpd][Pl]"}' underlying.tsv &> underlying2.tsv
+awk '{print $0 "[N][Abs][Unpd][Sg]"}' underlying.tsv &> underlying3.tsv
 
 #######################
 #      CHAPTER 3      #
@@ -210,9 +210,9 @@
 #awk '{print $0 "[V][Opt][PRS][2Sg][1Pl]"}' underlying.tsv &> underlying5.tsv 
 
 # 2nd Person Subject Negative Intransitive Optative 
-awk '{print $0 "[V][Opt][NEG][2Sg]"}' underlying.tsv &> underlying1.tsv 
-awk '{print $0 "[V][Opt][NEG][2Pl]"}' underlying.tsv &> underlying2.tsv 
-awk '{print $0 "[V][Opt][NEG][2Du]"}' underlying.tsv &> underlying3.tsv 
+#awk '{print $0 "[V][Opt][NEG][2Sg]"}' underlying.tsv &> underlying1.tsv 
+#awk '{print $0 "[V][Opt][NEG][2Pl]"}' underlying.tsv &> underlying2.tsv 
+#awk '{print $0 "[V][Opt][NEG][2Du]"}' underlying.tsv &> underlying3.tsv 
 
 # 2nd Person Subject Negative Transitive Optative 
 #awk '{print $0 "[V][Opt][NEG][2Sg][3Sg]"}' underlying.tsv &> underlying1.tsv 
@@ -224,6 +224,6 @@ awk '{print $0 "[V][Opt][NEG][2Du]"}' underlying.tsv &> underlying3.tsv
 
 
 
-cat underlying[1-9].tsv | sort &> inputToSurface.tsv
+cat underlying[1-3].tsv | sort &> inputToSurface.tsv
 
-rm underlying[1-9].tsv
+rm underlying[1-3].tsv

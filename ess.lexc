@@ -3,7 +3,7 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 				  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg]
 				  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  @* ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t) (pete/fte) (pete)fte (g*) (te) (i₁) (i₂)
+                  @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂)
 	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@ @C.VALENCE@ 
 LEXICON Root
     NounBase ;
@@ -355,7 +355,7 @@ LEXICON NounInfl
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|
 !            singular possessed            |                plural possessed                 |                  dual possessed                   |    
 ! -----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-[N][Abs][Sg]:0                            #;      [N][Abs][Pl]:~sf-w%:(e)t                  #;      [N][Abs][Du]:~sf-w%:(e)k                  #; ! unpossessed                   |
+[N][Abs][Unpd][Sg]:0                      #;      [N][Abs][Unpd][Pl]:~sf-w%:(e)t            #;      [N][Abs][Unpd][Du]:~sf-w%:(e)k              #; ! unpossessed                 |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 [N][Abs][3SgPoss][SgPosd]:~h%:(ng)a       #;      [N][Abs][3SgPoss][PlPosd]:~h%:(ng)i       #;      [N][Abs][3SgPoss][DuPosd]:~f-wkek         #; ! 3rd person singular possessor |
 [N][Abs][3PlPoss][SgPosd]:~h%:(ng)at      #;      [N][Abs][3PlPoss][PlPosd]:~h%:(ng)it      #;      [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #; ! 3rd person plural possessor   |
@@ -366,7 +366,7 @@ LEXICON NounInfl
 [N][Abs][1DuPoss][SgPosd]:(p/v)ung        #;      [N][Abs][1DuPoss][PlPosd]:–pung           #;      [N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung #; ! 1st person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
 [N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n     #;      [N][Abs][2SgPoss][PlPosd]:ten             #;      [N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  #; ! 2nd person singular possessor |
-                                                  [N][Abs][2SgPoss][PlPosd]:~f-wten         #;
+                                                  [N][Abs][2SgPoss][PlPosd]:~f-wten         #;                                                   !                               |
 [N][Abs][2PlPoss][SgPosd]:(s/z)i          #;      [N][Abs][2PlPoss][PlPosd]:–si             #;      [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   #; ! 2nd person plural possessor   |
 [N][Abs][2DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][2DuPoss][PlPosd]:–tek            #;      [N][Abs][2DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 2nd person dual possessor     |
 ! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
@@ -392,7 +392,7 @@ LEXICON NounInfl
 [N][Abl_Mod][1PlPoss][SgPosd]:–mnneng           #; [N][Abl_Mod][1PlPoss][PlPosd]:–mnneng         #; [N][Abl_Mod][1PlPoss][DuPosd]:~sf-w%:(e)gemnneng     #; ! 1Pl possessor  |
 [N][Abl_Mod][1DuPoss][SgPosd]:–mtegneng         #; [N][Abl_Mod][1DuPoss][PlPosd]:–mtegneng       #; [N][Abl_Mod][1DuPoss][DuPosd]:~sf-w%:(e)gemtegneng   #; ! 1Du possessor  |
 ! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
-[N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g)neng       #; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g)neng     #; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)neng   #; ! 2Sg possessor  |
+[N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g₁)neng      #; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g₁)neng    #; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)neng  #; ! 2Sg possessor  |
 [N][Abl_Mod][2PlPoss][SgPosd]:–gpesineng        #; [N][Abl_Mod][2PlPoss][PlPosd]:–gpesineng      #; [N][Abl_Mod][2PlPoss][DuPosd]:~sf-w%:(e)gpesineng    #; ! 2Pl possessor  |
 [N][Abl_Mod][2DuPoss][SgPosd]:–gpetegneng       #; [N][Abl_Mod][2DuPoss][PlPosd]:–gpetegneng     #; [N][Abl_Mod][2DuPoss][DuPosd]:~sf-w%:(e)gpetegneng   #; ! 2Du possessor  |
 ! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
@@ -418,7 +418,7 @@ LEXICON NounInfl
 [N][Loc][1PlPoss][SgPosd]:–mnni           #;    [N][Loc][1PlPoss][PlPosd]:–mnni         #;    [N][Loc][1PlPoss][DuPosd]:~sf-w%:(e)gemnni     #; ! 1Pl possessor  |
 [N][Loc][1DuPoss][SgPosd]:–mtegni         #;    [N][Loc][1DuPoss][PlPosd]:–mtegni       #;    [N][Loc][1DuPoss][DuPosd]:~sf-w%:(e)gemtegni   #; ! 1Du possessor  |
 ! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
-[N][Loc][2SgPoss][SgPosd]:–gpe(g)ni       #;    [N][Loc][2SgPoss][PlPosd]:–gpe(g)ni     #;    [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)ni   #; ! 2Sg possessor  |
+[N][Loc][2SgPoss][SgPosd]:–gpe(g₁)ni      #;    [N][Loc][2SgPoss][PlPosd]:–gpe(g₁)ni    #;    [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)ni  #; ! 2Sg possessor  |
 [N][Loc][2PlPoss][SgPosd]:–gpesini        #;    [N][Loc][2PlPoss][PlPosd]:–gpesini      #;    [N][Loc][2PlPoss][DuPosd]:~sf-w%:(e)gpesini    #; ! 2Pl possessor  |
 [N][Loc][2DuPoss][SgPosd]:–gpetegni       #;    [N][Loc][2DuPoss][PlPosd]:–gpetegni     #;    [N][Loc][2DuPoss][DuPosd]:~sf-w%:(e)gpetegni   #; ! 2Du possessor  |
 ! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
@@ -444,7 +444,7 @@ LEXICON NounInfl
 [N][Ter][1PlPoss][SgPosd]:–mnnun           #;    [N][Ter][1PlPoss][PlPosd]:–mnnun         #;    [N][Ter][1PlPoss][DuPosd]:~sf-w%:(e)gemnnun     #; ! 1Pl possessor  |
 [N][Ter][1DuPoss][SgPosd]:–mtegnun         #;    [N][Ter][1DuPoss][PlPosd]:–mtegnun       #;    [N][Ter][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnun   #; ! 1Du possessor  |
 ! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
-[N][Ter][2SgPoss][SgPosd]:–gpe(g)nun       #;    [N][Ter][2SgPoss][PlPosd]:–gpe(g)nun     #;    [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)nun   #; ! 2Sg possessor  |
+[N][Ter][2SgPoss][SgPosd]:–gpe(g₁)nun      #;    [N][Ter][2SgPoss][PlPosd]:–gpe(g₁)nun    #;    [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)nun  #; ! 2Sg possessor  |
 [N][Ter][2PlPoss][SgPosd]:–gpesinun        #;    [N][Ter][2PlPoss][PlPosd]:–gpesinun      #;    [N][Ter][2PlPoss][DuPosd]:~sf-w%:(e)gpesinun    #; ! 2Pl possessor  |
 [N][Ter][2DuPoss][SgPosd]:–gpetegnun       #;    [N][Ter][2DuPoss][PlPosd]:–gpetegnun     #;    [N][Ter][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnun   #; ! 2Du possessor  |
 ! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
@@ -728,17 +728,17 @@ LEXICON VerbPostbase
 -–ghhalek[HOW-V][V→XCLM]:–ghhalek  #; ! how V! (exclamation) 
 
 ! Verb →  Verb (Verb-Elaborating) Postbases
--~(g)aqe[TO-BE-V-ING][TO-REGULARLY-OR-REPEAT-V][V→V]@R.VALENCE@:~(g)aqe@R.VALENCE@  VerbPostbase; ! to be V-ing; to regularly or repeat V 
--@lleqe[WILL-V][V→V]@R.VALENCE@:@lleqe@R.VALENCE@              VerbPostbase; ! to V in the future; will V 
--@~fnaqe[TO-BE-GOING-TO-V][V→V]@R.VALENCE@:@~fnaqe@R.VALENCE@  VerbPostbase; ! to be going to V; to be about to V 
--@~fyug[TO-WANT-TO-V][V→V]@R.VALENCE@:@~fyug@R.VALENCE@        VerbPostbase; ! to want to V
--@–nghite[TO-NOT-V][V→V]@R.VALENCE@:@–nghite@R.VALENCE@        VerbPostbase; ! to not V
+-~(g₁)aqe[TO-BE-V-ING][TO-REGULARLY-OR-REPEAT-V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@  VerbPostbase; ! to be V-ing; to regularly or repeat V 
+-@₁lleqe[WILL-V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@              VerbPostbase; ! to V in the future; will V 
+-@₁~fnaqe[TO-BE-GOING-TO-V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@  VerbPostbase; ! to be going to V; to be about to V 
+-@₁~fyug[TO-WANT-TO-V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@        VerbPostbase; ! to want to V
+-@₁–nghite[TO-NOT-V][V→V]@R.VALENCE@:@₁–nghite@R.VALENCE@        VerbPostbase; ! to not V
 -(pete)fte[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@        VerbPostbase; ! to evidently V or have V-ed
 -(pete/fte)[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@      VerbPostbase; ! to evidently V or have V-ed
--@*~sf–(g*)kau[TO-HAVE-V-ED-OR-BEEN-V-ED][V→V]@R.VALENCE@:@*~sf–(g*)kau@R.VALENCE@  VerbPostbase; ! to have V-ed or been V-ed
+-@₂~sf–(g₂)kau[TO-HAVE-V-ED-OR-BEEN-V-ED][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@  VerbPostbase; ! to have V-ed or been V-ed
 
 ! Verb →  Noun (Nominalizing) Postbases
--@*~sf–(g*)kaq[ONE-THAT-HAS-V-ED][V→N]:@*~sf–(g*)kaq  NounPostbase; ! one that has V-ed
+-@₂~sf–(g₂)kaq[ONE-THAT-HAS-V-ED][V→N]:@₂~sf–(g₂)kaq  NounPostbase; ! one that has V-ed
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
@@ -746,8 +746,8 @@ LEXICON VerbPostbase
 !!!   (affect the transitivity of the embedded verb)   !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.INTR@:@~fni@P.VALENCE.INTR@  VerbPostbase; ! to say that one is V-ing
--@~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.TRNS@:@~fni@P.VALENCE.TRNS@  VerbPostbase; ! to say that one is V-ing
+-@₁~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.INTR@:@₁~fni@P.VALENCE.INTR@  VerbPostbase; ! to say that one is V-ing
+-@₁~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.TRNS@:@₁~fni@P.VALENCE.TRNS@  VerbPostbase; ! to say that one is V-ing
 -(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)ste@P.VALENCE.INTR@  VerbPostbase; ! to have, make, or let one V
 -(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)ste@P.VALENCE.TRNS@  VerbPostbase; ! to have, make, or let one V
 -~sf%:isqe[TO-ASK-OR-TELL-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.INTR@:~sf%:isqe@P.VALENCE.INTR@  VerbPostbase; ! to ask or to tell one to V
@@ -770,7 +770,7 @@ LEXICON VerbTenseInfl
 ! Indicative Mood Endings |
 ! ------------------------|
 [V][Intr_Ind]@R.VALENCE.INTR@:~f(g/t)u@R.VALENCE.INTR@  VerbPrsNumInfl;
-[V][Trns_Ind]@R.VALENCE.TRNS@:~(g)a@R.VALENCE.TRNS@     VerbPrsNumInfl;
+[V][Trns_Ind]@R.VALENCE.TRNS@:~(g₁)a@R.VALENCE.TRNS@     VerbPrsNumInfl;
 
 
 ! --------------------------------------------------------------|
@@ -804,8 +804,8 @@ LEXICON VerbTenseInfl
 [V][Intrg][1Du][3Sg]@R.VALENCE.TRNS@:~sf(e)stegnegu@R.VALENCE.TRNS@ #; [V][Intrg][1Du][3Pl]@R.VALENCE.TRNS@:~sf(e)stegneki@R.VALENCE.TRNS@ #; [V][Intrg][1Du][3Du]@R.VALENCE.TRNS@:~sf(e)stegnekek@R.VALENCE.TRNS@ #; ! 1Du SBJ |
 ! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
 [V][Intrg][2Sg][3Sg]@R.VALENCE.TRNS@:~f(t)zigu@R.VALENCE.TRNS@      #; [V][Intrg][2Sg][3Pl]@R.VALENCE.TRNS@:~f(t)ziki@R.VALENCE.TRNS@      #; [V][Intrg][2Sg][3Du]@R.VALENCE.TRNS@:~f(t)zikek@R.VALENCE.TRNS@      #; ! 2Sg SBJ |
-[V][Intrg][2Pl][3Sg]@R.VALENCE.TRNS@:~sf(e)ggu@R.VALENCE.TRNS@      #; [V][Intrg][2Pl][3Pl]@R.VALENCE.TRNS@:~sf(e)ki@R.VALENCE.TRNS@       #; [V][Intrg][2Pl][3Du]@R.VALENCE.TRNS@:~sf(g)kek@R.VALENCE.TRNS@       #; ! 2Pl SBJ |
-[V][Intrg][2Du][3Sg]@R.VALENCE.TRNS@:~sf(e)gnegu@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Pl]@R.VALENCE.TRNS@:~sf(e)gneki@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Du]@R.VALENCE.TRNS@:~sf(g)gnekek@R.VALENCE.TRNS@    #; ! 2Du SBJ |
+[V][Intrg][2Pl][3Sg]@R.VALENCE.TRNS@:~sf(e)ggu@R.VALENCE.TRNS@      #; [V][Intrg][2Pl][3Pl]@R.VALENCE.TRNS@:~sf(e)ki@R.VALENCE.TRNS@       #; [V][Intrg][2Pl][3Du]@R.VALENCE.TRNS@:~sf(g₁)kek@R.VALENCE.TRNS@      #; ! 2Pl SBJ |
+[V][Intrg][2Du][3Sg]@R.VALENCE.TRNS@:~sf(e)gnegu@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Pl]@R.VALENCE.TRNS@:~sf(e)gneki@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Du]@R.VALENCE.TRNS@:~sf(g₁)gnekek@R.VALENCE.TRNS@   #; ! 2Du SBJ |
 ! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
 !                        1st singular object                         |                            1st plural object                         |                              1st dual object                          |           | 
 ! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
@@ -840,17 +840,17 @@ LEXICON VerbTenseInfl
 ! -----------------------------------------------------------------|
 !         Intransitive Optative Mood Endings (Present)             |
 ! -----------------------------------------------------------------|-----------|
-[V][Opt][PRS][3Sg]@R.VALENCE.INTR@:@~fli@R.VALENCE.INTR@          #; ! 3Sg SBJ |
-[V][Opt][PRS][3Pl]@R.VALENCE.INTR@:@~flit@R.VALENCE.INTR@         #; ! 3Pl SBJ |
-[V][Opt][PRS][3Du]@R.VALENCE.INTR@:@~flik@R.VALENCE.INTR@         #; ! 3Du SBJ |
+[V][Opt][PRS][3Sg]@R.VALENCE.INTR@:@₁~fli@R.VALENCE.INTR@         #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl]@R.VALENCE.INTR@:@₁~flit@R.VALENCE.INTR@        #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du]@R.VALENCE.INTR@:@₁~flik@R.VALENCE.INTR@        #; ! 3Du SBJ |
 ! -----------------------------------------------------------------|-----------|
-[V][Opt][PRS][1Sg]@R.VALENCE.INTR@:@~flanga@R.VALENCE.INTR@       #; ! 1Sg SBJ |
+[V][Opt][PRS][1Sg]@R.VALENCE.INTR@:@₁~flanga@R.VALENCE.INTR@      #; ! 1Sg SBJ |
 [V][Opt][PRS][1Pl]@R.VALENCE.INTR@:~sf%:(e)lta@R.VALENCE.INTR@    #; ! 1Pl SBJ |
 [V][Opt][PRS][1Du]@R.VALENCE.INTR@:~sf%:(e)ltung@R.VALENCE.INTR@  #; ! 1Du SBJ |
 ! -----------------------------------------------------------------|-----------|
 [V][Opt][PRS][2Sg]@R.VALENCE.INTR@:[Opt_PRS_2Sg]@R.VALENCE.INTR@  #; ! 2Sg SBJ |
-[V][Opt][PRS][2Pl]@R.VALENCE.INTR@:@(i₂)tek@R.VALENCE.INTR@       #; ! 2Pl SBJ |
-[V][Opt][PRS][2Du]@R.VALENCE.INTR@:@(i₂)tek@R.VALENCE.INTR@       #; ! 2Du SBJ |
+[V][Opt][PRS][2Pl]@R.VALENCE.INTR@:@₁(i₂)tek@R.VALENCE.INTR@      #; ! 2Pl SBJ |
+[V][Opt][PRS][2Du]@R.VALENCE.INTR@:@₁(i₂)tek@R.VALENCE.INTR@      #; ! 2Du SBJ |
 ! -----------------------------------------------------------------|-----------|
 
 
@@ -876,31 +876,31 @@ LEXICON VerbTenseInfl
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
 !                               3rd singular object                          |                               3rd plural object                           |                               3rd dual object                              |          
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-[V][Opt][PRS][3Sg][3Sg]@R.VALENCE.TRNS@:@~fligu@R.VALENCE.TRNS@             #; [V][Opt][PRS][3Sg][3Pl]@R.VALENCE.TRNS@:@~fliki@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Sg][3Du]@R.VALENCE.TRNS@:@~flikek@R.VALENCE.TRNS@          #; ! 3Sg SBJ |
-[V][Opt][PRS][3Pl][3Sg]@R.VALENCE.TRNS@:@~flitgu@R.VALENCE.TRNS@            #; [V][Opt][PRS][3Pl][3Pl]@R.VALENCE.TRNS@:@~flitki@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Pl][3Du]@R.VALENCE.TRNS@:@~flitkek@R.VALENCE.TRNS@         #; ! 3Pl SBJ |
-[V][Opt][PRS][3Du][3Sg]@R.VALENCE.TRNS@:@~flignegu@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Du][3Pl]@R.VALENCE.TRNS@:@~fligneki@R.VALENCE.TRNS@       #; [V][Opt][PRS][3Du][3Du]@R.VALENCE.TRNS@:@~flignekek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+[V][Opt][PRS][3Sg][3Sg]@R.VALENCE.TRNS@:@₁~fligu@R.VALENCE.TRNS@            #; [V][Opt][PRS][3Sg][3Pl]@R.VALENCE.TRNS@:@₁~fliki@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Sg][3Du]@R.VALENCE.TRNS@:@₁~flikek@R.VALENCE.TRNS@         #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl][3Sg]@R.VALENCE.TRNS@:@₁~flitgu@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Pl][3Pl]@R.VALENCE.TRNS@:@₁~flitki@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Pl][3Du]@R.VALENCE.TRNS@:@₁~flitkek@R.VALENCE.TRNS@        #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du][3Sg]@R.VALENCE.TRNS@:@₁~flignegu@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Du][3Pl]@R.VALENCE.TRNS@:@₁~fligneki@R.VALENCE.TRNS@      #; [V][Opt][PRS][3Du][3Du]@R.VALENCE.TRNS@:@₁~flignekek@R.VALENCE.TRNS@      #; ! 3Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-[V][Opt][PRS][1Sg][3Sg]@R.VALENCE.TRNS@:@~flakun@R.VALENCE.TRNS@            #; [V][Opt][PRS][1Sg][3Pl]@R.VALENCE.TRNS@:@~flangi@R.VALENCE.TRNS@         #; [V][Opt][PRS][1Sg][3Du]@R.VALENCE.TRNS@:@~flangak@R.VALENCE.TRNS@         #; ! 1Sg SBJ |
+[V][Opt][PRS][1Sg][3Sg]@R.VALENCE.TRNS@:@₁~flakun@R.VALENCE.TRNS@           #; [V][Opt][PRS][1Sg][3Pl]@R.VALENCE.TRNS@:@₁~flangi@R.VALENCE.TRNS@        #; [V][Opt][PRS][1Sg][3Du]@R.VALENCE.TRNS@:@₁~flangak@R.VALENCE.TRNS@        #; ! 1Sg SBJ |
 [V][Opt][PRS][1Pl][3Sg]@R.VALENCE.TRNS@:~sf%:(e)lteggu@R.VALENCE.TRNS@      #; [V][Opt][PRS][1Pl][3Pl]@R.VALENCE.TRNS@:~sf%:(e)lteki@R.VALENCE.TRNS@    #; [V][Opt][PRS][1Pl][3Du]@R.VALENCE.TRNS@:~sf%:(e)ltekek@R.VALENCE.TRNS@    #; ! 1Pl SBJ |
 [V][Opt][PRS][1Du][3Sg]@R.VALENCE.TRNS@:~sf%:(e)ltegnegu@R.VALENCE.TRNS@    #; [V][Opt][PRS][1Du][3Pl]@R.VALENCE.TRNS@:~sf%:(e)ltegneki@R.VALENCE.TRNS@ #; [V][Opt][PRS][1Du][3Du]@R.VALENCE.TRNS@:~sf%:(e)ltegnekek@R.VALENCE.TRNS@ #; ! 1Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
 [V][Opt][PRS][2Sg][3Sg]@R.VALENCE.TRNS@:[Opt_PRS_2Sg_3Sg]@R.VALENCE.TRNS@   #; [V][Opt][PRS][2Sg][3Pl]@R.VALENCE.TRNS@:~f(i₁)ki@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Sg][3Du]@R.VALENCE.TRNS@:~f(i₁)kek@R.VALENCE.TRNS@         #; ! 2Sg SBJ |
-[V][Opt][PRS][2Pl][3Sg]@R.VALENCE.TRNS@:@(i)teggu@R.VALENCE.TRNS@           #; [V][Opt][PRS][2Pl][3Pl]@R.VALENCE.TRNS@:@(i)teki@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Pl][3Du]@R.VALENCE.TRNS@:@(i)tekek@R.VALENCE.TRNS@         #; ! 2Pl SBJ |
-[V][Opt][PRS][2Du][3Sg]@R.VALENCE.TRNS@:@(i)tegnegu@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Du][3Pl]@R.VALENCE.TRNS@:@(i)tegneki@R.VALENCE.TRNS@      #; [V][Opt][PRS][2Du][3Du]@R.VALENCE.TRNS@:@(i)tegnekek@R.VALENCE.TRNS@      #; ! 2Du SBJ |
+[V][Opt][PRS][2Pl][3Sg]@R.VALENCE.TRNS@:@₁(i₁)teggu@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Pl][3Pl]@R.VALENCE.TRNS@:@₁(i₁)teki@R.VALENCE.TRNS@       #; [V][Opt][PRS][2Pl][3Du]@R.VALENCE.TRNS@:@₁(i₁)tekek@R.VALENCE.TRNS@       #; ! 2Pl SBJ |
+[V][Opt][PRS][2Du][3Sg]@R.VALENCE.TRNS@:@₁(i₁)tegnegu@R.VALENCE.TRNS@       #; [V][Opt][PRS][2Du][3Pl]@R.VALENCE.TRNS@:@₁(i₁)tegneki@R.VALENCE.TRNS@    #; [V][Opt][PRS][2Du][3Du]@R.VALENCE.TRNS@:@₁(i₁)tegnekek@R.VALENCE.TRNS@    #; ! 2Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
 !                               1st singular object                          |                               1st plural object                           |                               1st dual object                              |           |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-[V][Opt][PRS][3Sg][1Sg]@R.VALENCE.TRNS@:@~flinga@R.VALENCE.TRNS@            #; [V][Opt][PRS][3Sg][1Pl]@R.VALENCE.TRNS@:@~flikut@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Sg][1Du]@R.VALENCE.TRNS@:@~flikung@R.VALENCE.TRNS@         #; ! 3Sg SBJ |
-[V][Opt][PRS][3Pl][1Sg]@R.VALENCE.TRNS@:@~flitnga@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Pl][1Pl]@R.VALENCE.TRNS@:@~flinkut@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Pl][1Du]@R.VALENCE.TRNS@:@~flinkung@R.VALENCE.TRNS@        #; ! 3Pl SBJ |
-[V][Opt][PRS][3Du][1Sg]@R.VALENCE.TRNS@:@~flignenga@R.VALENCE.TRNS@         #; [V][Opt][PRS][3Du][1Pl]@R.VALENCE.TRNS@:@~flinkut@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Du][1Du]@R.VALENCE.TRNS@:@~flinkung@R.VALENCE.TRNS@        #; ! 3Du SBJ |
+[V][Opt][PRS][3Sg][1Sg]@R.VALENCE.TRNS@:@₁~flinga@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Sg][1Pl]@R.VALENCE.TRNS@:@₁~flikut@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Sg][1Du]@R.VALENCE.TRNS@:@₁~flikung@R.VALENCE.TRNS@        #; ! 3Sg SBJ |
+[V][Opt][PRS][3Pl][1Sg]@R.VALENCE.TRNS@:@₁~flitnga@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Pl][1Pl]@R.VALENCE.TRNS@:@₁~flinkut@R.VALENCE.TRNS@       #; [V][Opt][PRS][3Pl][1Du]@R.VALENCE.TRNS@:@₁~flinkung@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][Opt][PRS][3Du][1Sg]@R.VALENCE.TRNS@:@₁~flignenga@R.VALENCE.TRNS@        #; [V][Opt][PRS][3Du][1Pl]@R.VALENCE.TRNS@:@₁~flinkut@R.VALENCE.TRNS@       #; [V][Opt][PRS][3Du][1Du]@R.VALENCE.TRNS@:@₁~flinkung@R.VALENCE.TRNS@       #; ! 3Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
 !                                                                            |                                                                           |                                                                            | ! 1Sg SBJ |
 !                                                                            |                                                                           |                                                                            | ! 1Pl SBJ |
 !                                                                            |                                                                           |                                                                            | ! 1Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-[V][Opt][PRS][2Sg][1Sg]@R.VALENCE.TRNS@:~f(i₁)nga@R.VALENCE.TRNS@            #; [V][Opt][PRS][2Sg][1Pl]@R.VALENCE.TRNS@:~f(i₁)kut@R.VALENCE.TRNS@       #; [V][Opt][PRS][2Sg][1Du]@R.VALENCE.TRNS@:~f(i)kung@R.VALENCE.TRNS@         #; ! 2Sg SBJ |
-[V][Opt][PRS][2Pl][1Sg]@R.VALENCE.TRNS@:@(i)tengnga@R.VALENCE.TRNS@         #; [V][Opt][PRS][2Pl][1Pl]@R.VALENCE.TRNS@:@(i)tekut@R.VALENCE.TRNS@        #; [V][Opt][PRS][2Pl][1Du]@R.VALENCE.TRNS@:@(i)tekung@R.VALENCE.TRNS@        #; ! 2Pl SBJ |
-[V][Opt][PRS][2Du][1Sg]@R.VALENCE.TRNS@:@(i)tegnenga@R.VALENCE.TRNS@        #; [V][Opt][PRS][2Du][1Pl]@R.VALENCE.TRNS@:@(i)tegnekut@R.VALENCE.TRNS@     #; [V][Opt][PRS][2Du][1Du]@R.VALENCE.TRNS@:@(i)tegnekung@R.VALENCE.TRNS@     #; ! 2Du SBJ |
+[V][Opt][PRS][2Sg][1Sg]@R.VALENCE.TRNS@:~f(i₁)nga@R.VALENCE.TRNS@           #; [V][Opt][PRS][2Sg][1Pl]@R.VALENCE.TRNS@:~f(i₁)kut@R.VALENCE.TRNS@        #; [V][Opt][PRS][2Sg][1Du]@R.VALENCE.TRNS@:~f(i₁)kung@R.VALENCE.TRNS@        #; ! 2Sg SBJ |
+[V][Opt][PRS][2Pl][1Sg]@R.VALENCE.TRNS@:@₁(i₁)tengnga@R.VALENCE.TRNS@       #; [V][Opt][PRS][2Pl][1Pl]@R.VALENCE.TRNS@:@₁(i₁)tekut@R.VALENCE.TRNS@      #; [V][Opt][PRS][2Pl][1Du]@R.VALENCE.TRNS@:@₁(i₁)tekung@R.VALENCE.TRNS@      #; ! 2Pl SBJ |
+[V][Opt][PRS][2Du][1Sg]@R.VALENCE.TRNS@:@₁(i₁)tegnenga@R.VALENCE.TRNS@      #; [V][Opt][PRS][2Du][1Pl]@R.VALENCE.TRNS@:@₁(i₁)tegnekut@R.VALENCE.TRNS@   #; [V][Opt][PRS][2Du][1Du]@R.VALENCE.TRNS@:@₁(i₁)tegnekung@R.VALENCE.TRNS@   #; ! 2Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
 !                               2nd singular object                          |                               2nd plural object                           |                               2nd dual object                              |           |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
