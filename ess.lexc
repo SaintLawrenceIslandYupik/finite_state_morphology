@@ -3,8 +3,10 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 				  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg]
 				  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂)
-	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@ @C.VALENCE@ 
+                  @₁ @₂ @₃ @₄ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂) (u/i) (u)
+	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
+				  @P.SPECIALte.YES@ @R.SPECIALte.YES@
+				  
 LEXICON Root
     NounBase ;
     VerbBase ;
@@ -15,7 +17,7 @@ LEXICON Root
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                            !!!!!!
-!!!!!!                  Particles                 !!!!!!
+!!!!!!                 Particles                  !!!!!!
 !!!!!!                                            !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -306,6 +308,20 @@ ququngagh        NounPostbase; ! leaf; edible willow leaf
 unkuse           NounPostbase; ! animal trap (usually dual for one trap)
 taaghta          NounPostbase; ! doctor
 
+! Jacobson (2001) Chapter 11 Noun Vocabulary
+akite            NounPostbase; ! pillow
+akita            NounPostbase; ! pillow
+awataghpag       NounPostbase; ! sealskin float
+nefkuuragh       NounPostbase; ! dried meat
+para             NounPostbase; ! butter
+Pureki           NounPostbase; ! Negro; Black
+sagnegh          NounPostbase; ! dish; bowl; food container
+salngag          NounPostbase; ! box; coffin; motor well in boat (dual, 'salngagek', often used for one box)
+sughma           NounPostbase; ! chess; checkers
+tefli            NounPostbase; ! particles of food or the like clinging around mouth
+tuquuqagh        NounPostbase; ! nail
+vegllug          NounPostbase; ! towel
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -321,22 +337,24 @@ LEXICON NounPostbase
 0:0        NounInfl;
 
 ! Noun →  Noun (Noun-Elaborating) Postbases
--–ghllag[BIG-N][N→N]:–ghllag         NounPostbase; ! big N; lots of N (when used in the plural)
--–ghrugllag[HUGE-N][N→N]:–ghrugllag  NounPostbase; ! big N; huge N
--–leg[ONE-HAVING-N][N→N]:–leg        NounPostbase; ! one having N
--e[ENG-TO-ESS][N→N]:-e               NounPostbase; ! to make English words in Yupik words
--mii[RESIDENT-OF-N][N→N]:mii         NounPostbase; ! resident of N
--–squgh[N→N]:–squgh                  NounPostbase; ! little N, small N 
--–squghhagh*[N→N]:–squghhagh*        NounPostbase; ! little N, small N 
+-–ghllag[big-N][N→N]:–ghllag                     NounPostbase; ! big N; lots of N (when used in the plural)
+-–ghrugllag[huge-N][N→N]:–ghrugllag              NounPostbase; ! big N; huge N
+-–leg[one-having-N][N→N]:–leg                    NounPostbase; ! one having N
+-e[ENG-to-ESS][N→N]:-e                           NounPostbase; ! to make English words in Yupik words
+-mii[resident-of-N][N→N]:mii                     NounPostbase; ! resident of N
+-–squgh[little-N][small-N][N→N]:–squgh           NounPostbase; ! little N, small N 
+-–squghhagh*little-N][small-N][N→N]:–squghhagh*  NounPostbase; ! little N, small N 
 
 ! Noun →  Verb (Verbalizing) Postbases
--~%:(ng)u[TO-BE-N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@                      VerbPostbase; ! to be N
--–lgu[TO-HAVE-N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                            VerbPostbase; ! to have N 
--–ngllagh[TO-MAKE-N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                    VerbPostbase; ! to make N
--–liigh[TO-COOK-OR-PREPARE-N][N→V]@P.VALENCE.INTR@:–liigh@P.VALENCE.INTR@             VerbPostbase; ! to cook N; to prepare N
-niigh[TO-HUNT-SEARCH-ASK-FOR-WORK-WITH-N][N→V]@P.VALENCE.INTR@:niigh@P.VALENCE.INTR@  VerbPostbase; ! to hunt for N; to search for N; to ask for N; to work with N (where the meaning is dependent on N)
--te[TO-CATCH-GO-TO-N][N→V]@P.VALENCE.INTR@:te@P.VALENCE.INTR@                         VerbPostbase; ! to catch N; to go to N
--tugh[TO-EAT-USE-N][N→V]@P.VALENCE.INTR@:tugh@P.VALENCE.INTR@                         VerbPostbase; ! to eat N; to use N 
+-~%:(ng)u[to-be-N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@                                                VerbPostbase;
+-–lgu[to-have-N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                                                      VerbPostbase;
+-–ngllagh[to-make-N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                                              VerbPostbase;
+-–liigh[to-cook-or-prepare-N][N→V]@P.VALENCE.INTR@:–liigh@P.VALENCE.INTR@                                       VerbPostbase;
+niigh[to-hunt-for-N][to-search-for-N][to-ask-for-N][to-work-with-N][N→V]@P.VALENCE.INTR@:niigh@P.VALENCE.INTR@  VerbPostbase;
+-te[to-catch-N][to-go-to-N][N→V]@P.VALENCE.INTR@:te@P.VALENCE.INTR@                                             VerbPostbase;
+-tugh[to-eat-N][to-use-N][N→V]@P.VALENCE.INTR@:tugh@P.VALENCE.INTR@                                             VerbPostbase;
+-–ligh[to-provide-with-N][N→V]@P.VALENCE.TRNS@:–ligh@P.VALENCE.TRNS@                                            VerbPostbase;
+-ti[to-speak-the-language-of-N][N→V]@P.VALENCE.INTR@:ti@P.VALENCE.INTR@                                         VerbPostbase;
 
 
 
@@ -665,7 +683,7 @@ aghvigh@P.VALENCE.TRNS@          VerbPostbase; ! to cross over; to go to the mai
 aleghqugh@P.VALENCE.TRNS@        VerbPostbase; ! to talk to; to tell
 aleghquute@P.VALENCE.INTR@       VerbPostbase; ! to talk together; to converse (non-singular)
 amqeghte@P.VALENCE.TRNS@         VerbPostbase; ! to bite
-aqlaghate@P.VALENCE.INTR@        VerbPostbase; ! for it to get cold
+aqlaghate@P.VALENCE.INTR@@P.SPECIALte.YES@        VerbPostbase; ! for it to get cold
 aqlaghaghte@P.VALENCE.INTR@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
 aqlaghaghte@P.VALENCE.TRNS@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
 atightugh@P.VALENCE.INTR@        VerbPostbase; ! to read
@@ -711,6 +729,38 @@ qayugh@P.VALENCE.INTR@           VerbPostbase; ! to drink hot liquid (coffee, te
 tagite@P.VALENCE.TRNS@           VerbPostbase; ! to bring here
 tuqute@P.VALENCE.TRNS@           VerbPostbase; ! to kill
 
+! Jacobson (2001) Chapter 11 Verb Vocabulary
+aghmig@P.VALENCE.INTR@           VerbPostbase; ! to wash one's face
+aghmig@P.VALENCE.TRNS@           VerbPostbase; ! to wash one's face
+akite@P.VALENCE.TRNS@            VerbPostbase; ! to answer; to reciprocate
+geve@P.VALENCE.INTR@             VerbPostbase; ! to render (fat); to be compressed
+gheve@P.VALENCE.INTR@            VerbPostbase; ! to fade
+ghhuugh@P.VALENCE.INTR@          VerbPostbase; ! to inflate
+ghhuugh@P.VALENCE.TRNS@          VerbPostbase; ! to inflate
+ifkagh@P.VALENCE.INTR@           VerbPostbase; ! to fall from a height; to accidentally drop
+ifkagh@P.VALENCE.TRNS@           VerbPostbase; ! to fall from a height; to accidentally drop
+ifkaghte@P.VALENCE.TRNS@         VerbPostbase; ! to drop accidentally or on purpose
+ini@P.VALENCE.TRNS@              VerbPostbase; ! to hang to dry
+kavite@P.VALENCE.INTR@           VerbPostbase; ! to be red
+naafqe@P.VALENCE.TRNS@           VerbPostbase; ! to break (it)
+nalug@P.VALENCE.INTR@            VerbPostbase; ! to land from the air (onto)
+nalug@P.VALENCE.TRNS@            VerbPostbase; ! to land from the air (onto)
+naave@P.VALENCE.INTR@            VerbPostbase; ! to break, to get broken
+neghenghite@P.VALENCE.INTR@@P.SPECIALte.YES@      VerbPostbase; ! to not eat
+paagh@P.VALENCE.TRNS@            VerbPostbase; ! to lick; to clean by licking with aid of fingers
+pilugug@P.VALENCE.INTR@          VerbPostbase; ! to put on clothing; to dress
+pilugug@P.VALENCE.TRNS@          VerbPostbase; ! to put on clothing; to dress
+qaame@P.VALENCE.INTR@            VerbPostbase; ! to go out (fire, light, etc.)
+qinuyug@P.VALENCE.INTR@          VerbPostbase; ! to be sick
+sangighqugh@P.VALENCE.INTR@      VerbPostbase; ! to wash dishes
+sangighqugh@P.VALENCE.TRNS@      VerbPostbase; ! to wash dishes
+sughma@P.VALENCE.INTR@           VerbPostbase; ! to play chess or checkers
+sukate@P.VALENCE.INTR@@P.SPECIALte.YES@            VerbPostbase; ! to be fast
+tuune@P.VALENCE.TRNS@            VerbPostbase; ! to give
+tuquuqagh@P.VALENCE.TRNS@        VerbPostbase; ! to nail
+
+
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -725,20 +775,33 @@ LEXICON VerbPostbase
 
 0:0  VerbTenseInfl;
 
--–ghhalek[HOW-V][V→XCLM]:–ghhalek  #; ! how V! (exclamation) 
+-–ghhalek[how-V][V→XCLM]:–ghhalek  #;
 
-! Verb →  Verb (Verb-Elaborating) Postbases
--~(g₁)aqe[TO-BE-V-ING][TO-REGULARLY-OR-REPEAT-V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@  VerbPostbase; ! to be V-ing; to regularly or repeat V 
--@₁lleqe[WILL-V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@              VerbPostbase; ! to V in the future; will V 
--@₁~fnaqe[TO-BE-GOING-TO-V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@  VerbPostbase; ! to be going to V; to be about to V 
--@₁~fyug[TO-WANT-TO-V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@        VerbPostbase; ! to want to V
--@₁–nghite[TO-NOT-V][V→V]@R.VALENCE@:@₁–nghite@R.VALENCE@        VerbPostbase; ! to not V
--(pete)fte[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@        VerbPostbase; ! to evidently V or have V-ed
--(pete/fte)[TO-EVIDENTLY-V-OR-HAVE-V-ED][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@      VerbPostbase; ! to evidently V or have V-ed
--@₂~sf–(g₂)kau[TO-HAVE-V-ED-OR-BEEN-V-ED][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@  VerbPostbase; ! to have V-ed or been V-ed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                                    !!!
+!!!      Verb →  Verb (Verb-Elaborating) Postbases     !!!
+!!!                                                    !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-~(g₁)aqe[to-be-V-ing][to-regularly-or-repeatedly-V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@     VerbPostbase;
+-@₁lleqe[will-V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                          VerbPostbase;
+-@₁~fnaqe[to-be-going-to-V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                              VerbPostbase;
+-@₁~fyug[to-want-to-V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                    VerbPostbase;
+-@₁–nghite[to-not-V][V→V]@R.VALENCE@@P.SPECIALte.YES@:@₁–nghite@R.VALENCE@@P.SPECIALte.YES@  VerbPostbase;
+-(pete)fte[to-evidently-V][to-have-V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@               VerbPostbase;
+-(pete/fte)[to-evidently-V][to-have-V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@              VerbPostbase;
+-@₂~sf–(g₂)kau[to-have-V-ed][to-have-been-V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@     VerbPostbase;
+-@₃~%:(u/i)ma[to-have-V-ed-or-to-have-been-V-ed]@R.VALENCE@:@₃~%:(u/i)ma@R.VALENCE@          VerbPostbase;
+-~%:(u)te[to-V-for-or-with][to-cause-to-V-as-one-is-V-ing][to-V-toward-each-other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
 
-! Verb →  Noun (Nominalizing) Postbases
--@₂~sf–(g₂)kaq[ONE-THAT-HAS-V-ED][V→N]:@₂~sf–(g₂)kaq  NounPostbase; ! one that has V-ed
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                                    !!!
+!!!          Verb →  Noun (Nominalizing) Postbases     !!!
+!!!                                                    !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+-@₂~sf–(g₂)kaq[one-that-has-V-ed][V→N]:@₂~sf–(g₂)kaq           NounPostbase;
+-@₁–lghii[the-one-that-V-ed][the-one-that-is-V][V→N]:@₁–lghii  NounPostbase;
+-@₄ngugh*[the-one-that-V-ed][the-one-that-is-V][V→N]@R.SPECIALte.YES@:@₄ngugh*@R.SPECIALte.YES@  NounPostbase;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
@@ -754,6 +817,7 @@ LEXICON VerbPostbase
 -~sf%:isqe[TO-ASK-OR-TELL-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.TRNS@:~sf%:isqe@P.VALENCE.TRNS@  VerbPostbase; ! to ask or to tell one to V
 -(te)sug[TO-WANT-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)sug@P.VALENCE.INTR@           VerbPostbase; ! to want one to V
 -(te)sug[TO-WANT-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)sug@P.VALENCE.TRNS@           VerbPostbase; ! to want one to V
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
