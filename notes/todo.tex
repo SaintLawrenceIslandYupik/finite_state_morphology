@@ -29,7 +29,44 @@ Perhaps these unique postbases can be listed in a different continuation class f
 
 \item Ideally, we would like to label the Optional Impersonal Agent verbs as such in their gloss.
 
+\item According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
+%
+While the transducer is analyzing both of these forms, it analyzes the former as if the postbase were affixing twice.
+%
+We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion}).
+
+\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet.
+
 \end{enumerate}
+
+
+\section{Issues Pertaining to Overgeneration}
+
+\item Bases \textit{negh} and \textit{megh} and their alternatives were all listed, and overgenerate when one of the bases is paired with a postbase that requires the alternative.
+
+\item We are also overgenerating the postbase \textit{ngugh*} which is used only with ``special'' \textit{te} bases.
+%
+Originally, we had implemented flag diacritics to handle this postbase, with appropriate flag diacritics on the relevant words, but there are some postbases that apply to all types of bases, including ``special'' \textit{te} bases.
+%
+By including a flag diacritic with these universal postbases, we would be excluding all other types of bases.
+%
+Essentially, we needed some other way to distinguish the special \textit{te} bases from the other bases, other than a flag diacritic, and we opted for marking them like so: \textit{te*}.
+
+So the implementation of \textit{ngugh*} works, but it will apply to every base.
+%
+Including flag diacritics are also not ideal according to Aric, since they aren't intrinsically part of the transducer, are difficult to debug, and double the size of the transducer.
+%
+But maybe they should be included to prevent overgeneration in this instance.
+%
+Perhaps, we should include both the \textit{te*} marking and flag diacritics...
+
+\item The postbase $\sim$sf--(g)ka/(g)ke, which uses different forms depending on whether or not the following person marker begins with \textit{ng}, is also overgenerating, since we have simply listed them both.
+%
+It is unclear how to predict the coming number, person marker, although flag diacritics might help.
+
+This postbase can also only affix to ``transitive'' nouns, ones that include information about both the subject and object, and up until Chapter 11, is the only postbase of this sort.
+%
+This is not yet accounted for, and so this postbase is continuing to all number, person endings.
 
 
 \section{Minor Issues}
@@ -49,15 +86,7 @@ We'll need to figure out how best to handle this corner case, either with an add
 
 \item On p.51, \textsc{[v][intrg][2du]} is given as \textit{\textbf{$\sim_\text{sf}$(e)stek}}, but in Appendix I, p.182, it is given as \textit{\textbf{$\sim_\text{sf}$(e)stekstek}}.
 
-\item The issue with \textit{\textbf{tipele}} regarding which \textit{e} is dropped when confronted with both semi-final and final-\textit{e} dropping.
-
-\item According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
-%
-While the transducer is analyzing both of these forms, it analyzes the former as if the postbase were affixing twice.
-%
-We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion}).
-
-\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet, since the postbase itself needs some tweaking (See order of operations concerning semi-final \textit{e} dropping, final \textit{e} dropping, final consonant drop assimilation).
+\item Which @ and (i) is it supposed to be in the transitive optative table?
 
 \end{itemize}
 

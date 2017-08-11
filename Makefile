@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11
 
 
 test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.fomabin
@@ -63,7 +63,10 @@ test-ch10: ess.pairs.gold/Ch10.V_Opt.PRS.2Intr.tsv ess.pairs.gold/Ch10.V_Opt.PRS
 	@cut -f 1 ess.pairs.gold/Ch10.V_Opt.PRS.2SgTrns.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch10.V_Opt.PRS.2SgTrns.tsv     && echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Singular Subject Transitive Optative (PRS Tense) - PASS" || echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Singular Subject Transitive Optative (PRS Tense) - FAIL"
 	@cut -f 1 ess.pairs.gold/Ch10.V_Opt.NEG.2Intr.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch10.V_Opt.NEG.2Intr.tsv     && echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Intransitive Optative (NEG)              - PASS" || echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Intransitive Optative (NEG)              - FAIL"
 	@cut -f 1 ess.pairs.gold/Ch10.V_Opt.NEG.2Trns.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch10.V_Opt.NEG.2Trns.tsv     && echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Transitive Optative (NEG)                - PASS" || echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Transitive Optative (NEG)                - FAIL"
-
+	
+test-ch11: ess.pairs.gold/Ch11.In-Chapter-Examples.tsv ess.fomabin
+	@cut -f 1 ess.pairs.gold/Ch11.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch11.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 11 In-Chapter Examples        - PASS" || echo "Jacobson (2001) Chapter 11 In-Chapter Examples        - FAIL"
+	
 
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin

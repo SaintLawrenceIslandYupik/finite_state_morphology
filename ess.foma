@@ -97,7 +97,7 @@ define SemiAndFinalE [..] -> a || WordBoundary (C) a _ C e   MorphemeBoundary "~
                      [..] -> i || WordBoundary (C) i _ C e   MorphemeBoundary "~"    ∘  ! final e-hopping
                      [..] -> u || WordBoundary (C) u _ C e   MorphemeBoundary "~"    ∘  ! final e-hopping
                         e -> 0 ||                    V C _   MorphemeBoundary "~"    ∘  ! final e-dropping
-                        e -> 0 ||                        _   MorphemeBoundary  "~" V ∘  ! final e-dropping  
+                        e -> 0 ||    _   MorphemeBoundary  "~" (MorphPhonSymbols*) V ∘  ! final e-dropping  
                      [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeBoundary "~"    ∘  ! semi-final e-hopping
                      [..] -> i || WordBoundary (C) i _ C e [g | gh ("*")] MorphemeBoundary "~"    ∘  ! semi-final e-hopping
                      [..] -> u || WordBoundary (C) u _ C e [g | gh ("*")] MorphemeBoundary "~"    ∘  ! semi-final e-hopping
@@ -145,7 +145,7 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 									      gh "*" -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define teDropping "–"  -> 0 || (t) e MorphemeBoundary MorphPhonSymbols* _        ∘
+define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e MorphemeBoundary MorphPhonSymbols* _   ∘
                   [..] -> n e gh     || t e MorphemeBoundary "@₁" MorphPhonSymbols* ng h _         ∘ ! for postbase @–nghite
                   ng h -> 0          || t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n e gh       ∘ 
                   [..] -> nn         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n          ∘ ! for postbases that begin with n
@@ -159,7 +159,7 @@ define teDropping "–"  -> 0 || (t) e MorphemeBoundary MorphPhonSymbols* _     
                   [..] -> e || C t e MorphemeBoundary "@₁" ll _ ghh                                ∘
 				  t e "*" -> l || _ MorphemeBoundary "@*"                                          ∘ ! for special te's
                   t e  -> 0 || _ MorphemeBoundary MorphPhonSymbols* "@₁"                           ∘
-				  "@*"  -> 0,
+				  "@*" -> 0,
                   "@₁" -> 0,
 				  "@₂" -> 0,
 				  "@₃" -> 0 || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _      ∘
