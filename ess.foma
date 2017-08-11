@@ -6,7 +6,6 @@ def Exceptions
 read lexc ess.lexc
 
 eliminate flag VALENCE
-eliminate flag SPECIALte
 define LexiconNoFlags ;
 define Lexicon LexiconNoFlags ;
 
@@ -41,7 +40,7 @@ define V           [ e | FullVowel ];
 
 define Alphabet [ C | V | "*" ] ;
 define MorphPhonSymbols [ "~"     | "~f"   | "~sf"   | "~h"    | "-w"    | ":"     | "–" |
-                          "@₁"    | "@₂"   | "@₃"    | "@₄"    |
+                          "@*"    | "@₁"   | "@₂"    | "@₃"    |
                           "(e)"   | "(g₁)" | "(t)"   | "(g₂)"  | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" |
 						  "(g/t)" | "(ng)" | "(p/v)" | "(s/z)" | "(t/y)" | "(u/i)" ] ;
 
@@ -154,16 +153,17 @@ define teDropping "–"  -> 0 || (t) e MorphemeBoundary MorphPhonSymbols* _     
                   [..] -> DoubleFric || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n          ∘
 				     C -> 0          || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* DoubleFric n ∘
 				  y    -> s || t e MorphemeBoundary "@₁" MorphPhonSymbols* _                       ∘ ! for postbases that begin with y
-				  e    -> 0 || V t _ MorphemeBoundary "@₂"                                         ∘
-				  t    -> s || _ e MorphemeBoundary "@₃"                                           ∘ 
+				  e    -> 0 || V t _ MorphemeBoundary MorphPhonSymbols* "@₂"                       ∘
+				  t    -> s || _ (e) MorphemeBoundary MorphPhonSymbols* "@₃"                       ∘ 
 				  l gh -> ll ghh || t e MorphemeBoundary "@₁" _                                    ∘ ! for postbase @–lghii
                   [..] -> e || C t e MorphemeBoundary "@₁" ll _ ghh                                ∘
-                  t e  -> 0 || _ MorphemeBoundary "@₁"                                             ∘
-				  t e  -> l || _ MorphemeBoundary "@₄"                                             ∘ 
+				  t e "*" -> l || _ MorphemeBoundary "@*"                                          ∘ ! for special te's
+                  t e  -> 0 || _ MorphemeBoundary MorphPhonSymbols* "@₁"                           ∘
+				  "@*"  -> 0,
                   "@₁" -> 0,
 				  "@₂" -> 0,
-				  "@₃" -> 0,
-				  "@₄" -> 0 || WordBoundary Alphabet* MorphemeBoundary _                          ;
+				  "@₃" -> 0 || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _      ∘
+				  "*"  -> 0 || WordBoundary Alphabet* t e _ MorphemeBoundary                       ; 
  
 define JunctureConsonantInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f") | ("~")] _       ∘
                                   ["(g/t)" | "(t)"] -> t ||   C MorphemeBoundary ("~f") _                  ∘

@@ -1,11 +1,10 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-        		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp]
+        		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Intr_Ptcp] [Trns_Ptcp]
 				  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg]
 				  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  @₁ @₂ @₃ @₄ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂) (u/i) (u)
+                  @* @₁ @₂ @₃ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂) (u/i) (u)
 	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
-				  @P.SPECIALte.YES@ @R.SPECIALte.YES@
 				  
 LEXICON Root
     NounBase ;
@@ -683,7 +682,7 @@ aghvigh@P.VALENCE.TRNS@          VerbPostbase; ! to cross over; to go to the mai
 aleghqugh@P.VALENCE.TRNS@        VerbPostbase; ! to talk to; to tell
 aleghquute@P.VALENCE.INTR@       VerbPostbase; ! to talk together; to converse (non-singular)
 amqeghte@P.VALENCE.TRNS@         VerbPostbase; ! to bite
-aqlaghate@P.VALENCE.INTR@@P.SPECIALte.YES@        VerbPostbase; ! for it to get cold
+aqlaghate*@P.VALENCE.INTR@       VerbPostbase; ! for it to get cold
 aqlaghaghte@P.VALENCE.INTR@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
 aqlaghaghte@P.VALENCE.TRNS@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
 atightugh@P.VALENCE.INTR@        VerbPostbase; ! to read
@@ -746,7 +745,7 @@ naafqe@P.VALENCE.TRNS@           VerbPostbase; ! to break (it)
 nalug@P.VALENCE.INTR@            VerbPostbase; ! to land from the air (onto)
 nalug@P.VALENCE.TRNS@            VerbPostbase; ! to land from the air (onto)
 naave@P.VALENCE.INTR@            VerbPostbase; ! to break, to get broken
-neghenghite@P.VALENCE.INTR@@P.SPECIALte.YES@      VerbPostbase; ! to not eat
+neghenghite*@P.VALENCE.INTR@     VerbPostbase; ! to not eat
 paagh@P.VALENCE.TRNS@            VerbPostbase; ! to lick; to clean by licking with aid of fingers
 pilugug@P.VALENCE.INTR@          VerbPostbase; ! to put on clothing; to dress
 pilugug@P.VALENCE.TRNS@          VerbPostbase; ! to put on clothing; to dress
@@ -755,7 +754,7 @@ qinuyug@P.VALENCE.INTR@          VerbPostbase; ! to be sick
 sangighqugh@P.VALENCE.INTR@      VerbPostbase; ! to wash dishes
 sangighqugh@P.VALENCE.TRNS@      VerbPostbase; ! to wash dishes
 sughma@P.VALENCE.INTR@           VerbPostbase; ! to play chess or checkers
-sukate@P.VALENCE.INTR@@P.SPECIALte.YES@            VerbPostbase; ! to be fast
+sukate*@P.VALENCE.INTR@          VerbPostbase; ! to be fast
 tuune@P.VALENCE.TRNS@            VerbPostbase; ! to give
 tuquuqagh@P.VALENCE.TRNS@        VerbPostbase; ! to nail
 
@@ -786,7 +785,7 @@ LEXICON VerbPostbase
 -@₁lleqe[will-V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                          VerbPostbase;
 -@₁~fnaqe[to-be-going-to-V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                              VerbPostbase;
 -@₁~fyug[to-want-to-V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                    VerbPostbase;
--@₁–nghite[to-not-V][V→V]@R.VALENCE@@P.SPECIALte.YES@:@₁–nghite@R.VALENCE@@P.SPECIALte.YES@  VerbPostbase;
+-@₁–nghite*[to-not-V][V→V]@R.VALENCE@:@₁–nghite*@R.VALENCE@  VerbPostbase;
 -(pete)fte[to-evidently-V][to-have-V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@               VerbPostbase;
 -(pete/fte)[to-evidently-V][to-have-V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@              VerbPostbase;
 -@₂~sf–(g₂)kau[to-have-V-ed][to-have-been-V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@     VerbPostbase;
@@ -798,9 +797,13 @@ LEXICON VerbPostbase
 !!!          Verb →  Noun (Nominalizing) Postbases     !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₂~sf–(g₂)kaq[one-that-has-V-ed][V→N]:@₂~sf–(g₂)kaq           NounPostbase;
--@₁–lghii[the-one-that-V-ed][the-one-that-is-V][V→N]:@₁–lghii  NounPostbase;
--@₄ngugh*[the-one-that-V-ed][the-one-that-is-V][V→N]@R.SPECIALte.YES@:@₄ngugh*@R.SPECIALte.YES@  NounPostbase;
+-@₂~sf–(g₂)kaq[one-that-has-V-ed][V→N]:@₂~sf–(g₂)kaq                    NounPostbase;
+-@₁–lghii[the-one-that-V-ed][the-one-that-is-V][V→N]:@₁–lghii           NounPostbase;
+-@*ngugh*[the-one-that-V-ed][the-one-that-is-V][V→N]:@*ngugh*           NounPostbase;
+-@*@₂@₃~sf–(g₂)ka[the-one-that-possessor-V-ed][V→N]:@*@₂@₃~sf–(g₂)ka    NounPostbase;
+-@*@₂~sf–(g₂)ka[the-one-that-possessor-V-ed][V→N]:@*@₂~sf–(g₂)ka        NounPostbase;
+-@*@₂@₃~sf–(g₂)ke[the-one-that-possessor-V-ed][V→N]:@*@₂@₃~sf–(g₂)ke    NounPostbase;
+-@*@₂~sf–(g₂)ke[the-one-that-possessor-V-ed][V→N]:@*@₂~sf–(g₂)ke        NounPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -833,8 +836,19 @@ LEXICON VerbTenseInfl
 ! ------------------------|
 ! Indicative Mood Endings |
 ! ------------------------|
-[V][Intr_Ind]@R.VALENCE.INTR@:~f(g/t)u@R.VALENCE.INTR@  VerbPrsNumInfl;
+[V][Intr_Ind]@R.VALENCE.INTR@:~f(g/t)u@R.VALENCE.INTR@   VerbPrsNumInfl;
 [V][Trns_Ind]@R.VALENCE.TRNS@:~(g₁)a@R.VALENCE.TRNS@     VerbPrsNumInfl;
+
+
+! -------------------------|
+! Participial Mood Endings |
+! -------------------------|
+[V][Intr_Ptcp]@R.VALENCE.INTR@:@₁–lghii@R.VALENCE.INTR@          VerbPrsNumInfl;
+[V][Intr_Ptcp]@R.VALENCE.INTR@:@*ngugh@R.VALENCE.INTR@           VerbPrsNumInfl;
+[V][Trns_Ptcp]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka@R.VALENCE.TRNS@  VerbPrsNumInfl;
+[V][Trns_Ptcp]R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka@R.VALENCE.TRNS@     VerbPrsNumInfl;
+[V][Trns_Ptcp]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke@R.VALENCE.TRNS@  VerbPrsNumInfl;
+[V][Trns_Ptcp]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ke@R.VALENCE.TRNS@    VerbPrsNumInfl;
 
 
 ! --------------------------------------------------------------|
@@ -1042,18 +1056,24 @@ LEXICON VerbPrsNumInfl
 [2Pl]@R.VALENCE.INTR@:si@R.VALENCE.INTR@    #;
 [2Du]@R.VALENCE.INTR@:tek@R.VALENCE.INTR@   #;
 
-[1Sg][2Sg]:mken     #; 
-[1Sg][3Sg]:qa       #;
-[1Sg][3Pl]:nka      #;
-[2Sg][1Sg]:ghpenga  #;
-[2Sg][3Sg]:n        #; 
-[2Sg][3Pl]:ten      #; 
-[3Sg][1Sg]:anga     #; 
-[3Sg][2Sg]:aten     #; 
-[3Sg][3Sg]:a        #; 
-[3Sg][3Pl]:i        #;
-[3Pl][3Sg]:at       #; 
-[3Pl][3Pl]:it       #; 
+[1Sg][2Sg]@R.VALENCE.TRNS@:mken@R.VALENCE.TRNS@     #; 
+[1Sg][2Pl]@R.VALENCE.TRNS@:msi@R.VALENCE.TRNS@      #;
+[1Sg][2Du]@R.VALENCE.TRNS@:mtek@R.VALENCE.TRNS@     #;
+[1Sg][3Sg]@R.VALENCE.TRNS@:qa@R.VALENCE.TRNS@       #;
+[1Sg][3Pl]@R.VALENCE.TRNS@:nka@R.VALENCE.TRNS@      #;
+[1Sg][3Du]@R.VALENCE.TRNS@:gka@R.VALENCE.TRNS@      #;
+[2Sg][1Sg]@R.VALENCE.TRNS@:ghpenga@R.VALENCE.TRNS@  #;
+[2Sg][1Pl]@R.VALENCE.TRNS@:ghpekut@R.VALENCE.TRNS@  #;
+[2Sg][1Du]@R.VALENCE.TRNS@:ghpekung@R.VALENCE.TRNS@  #;
+[2Sg][3Sg]@R.VALENCE.TRNS@:n@R.VALENCE.TRNS@        #; 
+[2Sg][3Pl]@R.VALENCE.TRNS@:ten@R.VALENCE.TRNS@      #; 
+[2Sg][3Du]@
+[3Sg][1Sg]@R.VALENCE.TRNS@:anga@R.VALENCE.TRNS@     #; 
+[3Sg][2Sg]@R.VALENCE.TRNS@:aten@R.VALENCE.TRNS@     #; 
+[3Sg][3Sg]@R.VALENCE.TRNS@:a@R.VALENCE.TRNS@        #; 
+[3Sg][3Pl]@R.VALENCE.TRNS@:i@R.VALENCE.TRNS@        #;
+[3Pl][3Sg]@R.VALENCE.TRNS@:at@R.VALENCE.TRNS@       #; 
+[3Pl][3Pl]@R.VALENCE.TRNS@:it@R.VALENCE.TRNS@       #; 
 
 
 
