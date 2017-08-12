@@ -8,9 +8,9 @@
 #######################
 
 # Absolutive
-awk '{print $0 "[N][Abs][Unpd][Du]"}' underlying.tsv &> underlying1.tsv
-awk '{print $0 "[N][Abs][Unpd][Pl]"}' underlying.tsv &> underlying2.tsv
-awk '{print $0 "[N][Abs][Unpd][Sg]"}' underlying.tsv &> underlying3.tsv
+#awk '{print $0 "[N][Abs][Unpd][Du]"}' underlying.tsv &> underlying1.tsv
+#awk '{print $0 "[N][Abs][Unpd][Pl]"}' underlying.tsv &> underlying2.tsv
+#awk '{print $0 "[N][Abs][Unpd][Sg]"}' underlying.tsv &> underlying3.tsv
 
 #######################
 #      CHAPTER 3      #
@@ -20,15 +20,15 @@ awk '{print $0 "[N][Abs][Unpd][Sg]"}' underlying.tsv &> underlying3.tsv
 #awk '{print $0 "[N][Abl_Mod][Unpd][Sg]"}' underlying.tsv | sort &> inputToSurface.tsv
 
 # Intransitive Indicative 
-#awk '{print $0 "[V][Intr_Ind][1Du]"}' underlying.tsv &> underlying1.tsv 
-#awk '{print $0 "[V][Intr_Ind][1Pl]"}' underlying.tsv &> underlying2.tsv 
-#awk '{print $0 "[V][Intr_Ind][1Sg]"}' underlying.tsv &> underlying3.tsv 
-#awk '{print $0 "[V][Intr_Ind][2Du]"}' underlying.tsv &> underlying4.tsv 
-#awk '{print $0 "[V][Intr_Ind][2Pl]"}' underlying.tsv &> underlying5.tsv 
-#awk '{print $0 "[V][Intr_Ind][2Sg]"}' underlying.tsv &> underlying6.tsv 
-#awk '{print $0 "[V][Intr_Ind][3Du]"}' underlying.tsv &> underlying7.tsv 
-#awk '{print $0 "[V][Intr_Ind][3Pl]"}' underlying.tsv &> underlying8.tsv 
-#awk '{print $0 "[V][Intr_Ind][3Sg]"}' underlying.tsv &> underlying9.tsv 
+#awk '{print $0 "[V][Ind][1Du]"}' underlying.tsv &> underlying1.tsv 
+#awk '{print $0 "[V][Ind][1Pl]"}' underlying.tsv &> underlying2.tsv 
+#awk '{print $0 "[V][Ind][1Sg]"}' underlying.tsv &> underlying3.tsv 
+#awk '{print $0 "[V][Ind][2Du]"}' underlying.tsv &> underlying4.tsv 
+#awk '{print $0 "[V][Ind][2Pl]"}' underlying.tsv &> underlying5.tsv 
+#awk '{print $0 "[V][Ind][2Sg]"}' underlying.tsv &> underlying6.tsv 
+#awk '{print $0 "[V][Ind][3Du]"}' underlying.tsv &> underlying7.tsv 
+#awk '{print $0 "[V][Ind][3Pl]"}' underlying.tsv &> underlying8.tsv 
+#awk '{print $0 "[V][Ind][3Sg]"}' underlying.tsv &> underlying9.tsv 
  
 #######################
 #      CHAPTER 4      #
@@ -103,18 +103,18 @@ awk '{print $0 "[N][Abs][Unpd][Sg]"}' underlying.tsv &> underlying3.tsv
 #awk '{print $0 "[N][Rel][Posd][3Pl]"}' underlying.tsv &> underlying6.tsv
 
 # Transitive Indicative
-#awk '{print $0 "[V][Trns_Ind][1Sg][2Sg]"}' underlying.tsv &> underlying1.tsv
-#awk '{print $0 "[V][Trns_Ind][1Sg][3Sg]"}' underlying.tsv &> underlying2.tsv
-#awk '{print $0 "[V][Trns_Ind][1Sg][3Pl]"}' underlying.tsv &> underlying3.tsv
-#awk '{print $0 "[V][Trns_Ind][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv
-#awk '{print $0 "[V][Trns_Ind][2Sg][3Sg]"}' underlying.tsv &> underlying5.tsv
-#awk '{print $0 "[V][Trns_Ind][2Sg][3Pl]"}' underlying.tsv &> underlying6.tsv
-#awk '{print $0 "[V][Trns_Ind][3Sg][1Sg]"}' underlying.tsv &> underlying7.tsv
-#awk '{print $0 "[V][Trns_Ind][3Sg][2Sg]"}' underlying.tsv &> underlying8.tsv
-#awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
-#awk '{print $0 "[V][Trns_Ind][3Sg][3Pl]"}' underlying.tsv &> underlying1.tsv
-#awk '{print $0 "[V][Trns_Ind][3Pl][3Sg]"}' underlying.tsv &> underlying2.tsv
-#awk '{print $0 "[V][Trns_Ind][3Pl][3Pl]"}' underlying.tsv &> underlying3.tsv
+awk '{print $0 "[V][Trns_Ind][1Sg][2Sg]"}' underlying.tsv &> underlying1.tsv
+awk '{print $0 "[V][Trns_Ind][1Sg][3Sg]"}' underlying.tsv &> underlying2.tsv
+awk '{print $0 "[V][Trns_Ind][1Sg][3Pl]"}' underlying.tsv &> underlying3.tsv
+awk '{print $0 "[V][Trns_Ind][2Sg][1Sg]"}' underlying.tsv &> underlying4.tsv
+awk '{print $0 "[V][Trns_Ind][2Sg][3Sg]"}' underlying.tsv &> underlying5.tsv
+awk '{print $0 "[V][Trns_Ind][2Sg][3Pl]"}' underlying.tsv &> underlying6.tsv
+awk '{print $0 "[V][Trns_Ind][3Sg][1Sg]"}' underlying.tsv &> underlying7.tsv
+awk '{print $0 "[V][Trns_Ind][3Sg][2Sg]"}' underlying.tsv &> underlying8.tsv
+awk '{print $0 "[V][Trns_Ind][3Sg][3Sg]"}' underlying.tsv &> underlying9.tsv
+awk '{print $0 "[V][Trns_Ind][3Sg][3Pl]"}' underlying.tsv &> underlying10.tsv
+awk '{print $0 "[V][Trns_Ind][3Pl][3Sg]"}' underlying.tsv &> underlying11.tsv
+awk '{print $0 "[V][Trns_Ind][3Pl][3Pl]"}' underlying.tsv &> underlying12.tsv
 
 # Possessed Oblique Case
 #awk '{print $0 "[N][Abl_Mod][1SgPoss][SgPosd]"}' underlying.tsv &> underlying1.tsv
@@ -224,6 +224,6 @@ awk '{print $0 "[N][Abs][Unpd][Sg]"}' underlying.tsv &> underlying3.tsv
 
 
 
-cat underlying[1-3].tsv | sort &> inputToSurface.tsv
+cat underlying*.tsv | sort &> inputToSurface.tsv
 
-rm underlying[1-3].tsv
+rm underlying*.tsv

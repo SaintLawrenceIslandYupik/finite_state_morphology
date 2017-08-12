@@ -65,7 +65,7 @@ test-ch10: ess.pairs.gold/Ch10.V_Opt.PRS.2Intr.tsv ess.pairs.gold/Ch10.V_Opt.PRS
 	@cut -f 1 ess.pairs.gold/Ch10.V_Opt.NEG.2Trns.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch10.V_Opt.NEG.2Trns.tsv     && echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Transitive Optative (NEG)                - PASS" || echo "Jacobson (2001) Chapter 10 Verb Vocabulary - 2nd Person Subject Transitive Optative (NEG)                - FAIL"
 	
 test-ch11: ess.pairs.gold/Ch11.In-Chapter-Examples.tsv ess.fomabin
-	@cut -f 1 ess.pairs.gold/Ch11.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch11.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 11 In-Chapter Examples        - PASS" || echo "Jacobson (2001) Chapter 11 In-Chapter Examples        - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch11.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch11.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 11 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 11 In-Chapter Examples - FAIL"
 	
 
 clean:
