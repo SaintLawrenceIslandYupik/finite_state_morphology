@@ -42,7 +42,7 @@ define Alphabet [ C | V | "*" ] ;
 define MorphPhonSymbols [ "~"     | "~f"   | "~sf"   | "~h"    | "-w"    | ":"     | "–" |
                           "@*"    | "@₁"   | "@₂"    | "@₃"    |
                           "(e)"   | "(g₁)" | "(t)"   | "(g₂)"  | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" |
-						  "(g/t)" | "(ng)" | "(p/v)" | "(s/z)" | "(t/y)" | "(u/i)" ] ;
+						  "(g/t)" | "(ng)" | "(p/v)" | "(s/z)" | "(t/y)" | "(i/u)" ] ;
 
 define Lowercase "A" -> a ,
 	             "I" -> i ,
@@ -128,7 +128,7 @@ define InterConsonantalE "(e)" -> e || C MorphemeBoundary (":") _  ∘  ! conver
 define WeakFinalC  gh   -> 0 || [ WordBoundary | C ] FullVowel _ MorphemeBoundary [("~f") | ("~sf")] "-w"  ∘
                    "-w" -> 0 || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _               ;
 
-define UnmarkStrongGh gh "*" -> gh ;
+define UnmarkStrongGh gh "*" -> gh || WordBoundary Alphabet* MorphPhonSymbols* _ ;
 
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoundary ("~f") "–" _   ∘
                                       [ gh | g ] -> g   || g  MorphemeBoundary       ("~f") "–" _   ∘
@@ -182,9 +182,9 @@ define JunctureConsonantInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBound
 								  "(te)"  -> 0   || V       _ ∘
 								  "(i₁)"  -> i   || e MorphemeBoundary MorphPhonSymbols* _                 ∘
 								  "(i₂)"  -> i   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
-								  "(u/i)" -> u   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
-								  "(u/i)" -> u   || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _  ∘
-								  "(u/i)" -> i   || t e MorphemeBoundary MorphPhonSymbols* _               ∘
+								  "(i/u)" -> u   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
+								  "(i/u)" -> u   || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _  ∘
+								  "(i/u)" -> i   || t e MorphemeBoundary MorphPhonSymbols* _               ∘
 								  "(u)"   -> u   || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _  ∘
     		                      "(g/t)" -> 0,
 								  "(g₁)"  -> 0,
@@ -196,7 +196,7 @@ define JunctureConsonantInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBound
 								  "(g₂)"  -> 0,
 								  "(i₁)"  -> 0,
 								  "(i₂)"  -> 0,
-								  "(u/i)" -> 0,
+								  "(i/u)" -> 0,
 								  "(u)"   -> 0  || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
 define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordBoundary | C ] a _ ∘

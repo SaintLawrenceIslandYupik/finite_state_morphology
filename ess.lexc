@@ -1,16 +1,18 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-        		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp]
+        		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Stative] [Active] [Quant_Qual]
 				  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg]
 				  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  @* @₁ @₂ @₃ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂) (u/i) (u)
+                  @* @₁ @₂ @₃ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂) (i/u) (u)
 	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 				  
 LEXICON Root
-    NounBase ;
-    VerbBase ;
-    Particle ;
-	Intrg    ;
+    NounBase      ;
+	Interrogative ;
+    Particle      ;
+	PosturalRoot  ;
+	QuantQual     ;
+    VerbBase      ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -45,7 +47,7 @@ whani            #; ! right here (localis demonstrative adverb) particle
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-LEXICON Intrg 
+LEXICON Interrogative 
 
 kina             #; ! who? (relative case is 'kitum')
 kina             NounPostbase; ! who? (relative case is 'kitum')
@@ -322,18 +324,16 @@ tuquuqagh        NounPostbase; ! nail
 vegllug          NounPostbase; ! towel
 
 ! Jacobson (2001) Chapter 12 Noun Vocabulary
-!iggag            ???; ! tilting; leaning against something (postural root)
-!matagh           ???; ! undressed; parka less (postural root)
-!mumig            ???; ! turned over (postural root)
-!whani            ???; ! right here (localis demonstrative adverb) particle
-
 aghnaghugh       NounPostbase; ! "sea apple" (Boltnia ovifera) edible sea creature found on beach
 ilangqugh        NounPostbase; ! clear fresh ice
 meteghllug       NounPostbase; ! raven
-peraral          NounPostbase; ! meat aspic, a dish of finely minced meat cooked in meat broth and jelled before eating
+perara           NounPostbase; ! meat aspic, a dish of finely minced meat cooked in meat broth and jelled before eating
 qazigyagh        NounPostbase; ! spotted seal
 qughsatku        NounPostbase; ! "king" polar bear (fearsome, said to be almost unkillable)
 tanpegh          NounPostbase; ! dried walrus hide
+ullghitagh       NounPostbase; ! wheeled vehicle; snow-machine; all-terrain vehicle (used in the dual)
+ullghitak        NounPostbase; ! wheeled vehicle; snow-machine; all-terrain vehicle (for one vehicle)
+
 
 
 
@@ -350,24 +350,25 @@ LEXICON NounPostbase
 0:0        NounInfl;
 
 ! Noun →  Noun (Noun-Elaborating) Postbases
--–ghllag[big-N][N→N]:–ghllag                     NounPostbase; ! big N; lots of N (when used in the plural)
--–ghrugllag[huge-N][N→N]:–ghrugllag              NounPostbase; ! big N; huge N
--–leg[one-having-N][N→N]:–leg                    NounPostbase; ! one having N
--e[ENG-to-ESS][N→N]:-e                           NounPostbase; ! to make English words in Yupik words
--mii[resident-of-N][N→N]:mii                     NounPostbase; ! resident of N
--–squgh[little-N][small-N][N→N]:–squgh           NounPostbase; ! little N, small N 
--–squghhagh*little-N][small-N][N→N]:–squghhagh*  NounPostbase; ! little N, small N 
+-–ghllag[big.N][N→N]:–ghllag                     NounPostbase; ! big N; lots of N (when used in the plural)
+-–ghrugllag[huge.N][N→N]:–ghrugllag              NounPostbase; ! big N; huge N
+-–leg[one.having.N][N→N]:–leg                    NounPostbase; ! one having N
+-e[ENG.to.ESS][N→N]:-e                           NounPostbase; ! to make English words in Yupik words
+-mii[resident.of.N][N→N]:mii                     NounPostbase; ! resident of N
+-–squgh[little.N][small.N][N→N]:–squgh           NounPostbase; ! little N, small N 
+-–squghhagh*little.N][small.N][N→N]:–squghhagh*  NounPostbase; ! little N, small N 
 
 ! Noun →  Verb (Verbalizing) Postbases
--~%:(ng)u[to-be-N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@                                                VerbPostbase;
--–lgu[to-have-N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                                                      VerbPostbase;
--–ngllagh[to-make-N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                                              VerbPostbase;
--–liigh[to-cook-or-prepare-N][N→V]@P.VALENCE.INTR@:–liigh@P.VALENCE.INTR@                                       VerbPostbase;
-niigh[to-hunt-for-N][to-search-for-N][to-ask-for-N][to-work-with-N][N→V]@P.VALENCE.INTR@:niigh@P.VALENCE.INTR@  VerbPostbase;
--te[to-catch-N][to-go-to-N][N→V]@P.VALENCE.INTR@:te@P.VALENCE.INTR@                                             VerbPostbase;
--tugh[to-eat-N][to-use-N][N→V]@P.VALENCE.INTR@:tugh@P.VALENCE.INTR@                                             VerbPostbase;
--–ligh[to-provide-with-N][N→V]@P.VALENCE.TRNS@:–ligh@P.VALENCE.TRNS@                                            VerbPostbase;
--ti[to-speak-the-language-of-N][N→V]@P.VALENCE.INTR@:ti@P.VALENCE.INTR@                                         VerbPostbase;
+-~%:(ng)u[to.be.N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@                                                VerbPostbase;
+-–lgu[to.have.N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                                                      VerbPostbase;
+-–ngllagh[to.make.N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                                              VerbPostbase;
+-–liigh[to.cook.or.prepare.N][N→V]@P.VALENCE.INTR@:–liigh@P.VALENCE.INTR@                                       VerbPostbase;
+niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]@P.VALENCE.INTR@:niigh@P.VALENCE.INTR@  VerbPostbase;
+-te[to.catch.N][to.go.to.N][N→V]@P.VALENCE.INTR@:te@P.VALENCE.INTR@                                             VerbPostbase;
+-tugh[to.eat.N][to.use.N][N→V]@P.VALENCE.INTR@:tugh@P.VALENCE.INTR@                                             VerbPostbase;
+-–ligh[to.provide.with.N][N→V]@P.VALENCE.TRNS@:–ligh@P.VALENCE.TRNS@                                            VerbPostbase;
+-ti[to.speak.the.language.of.N][N→V]@P.VALENCE.INTR@:ti@P.VALENCE.INTR@                                         VerbPostbase;
+-tuumagh*[together.with.one's.Ns][N→V]:tuumagh*                                                                 QuantQualPostbase;
 
 
 
@@ -794,36 +795,42 @@ LEXICON VerbPostbase
 
 0:0  VerbTenseInfl;
 
--–ghhalek[how-V][V→XCLM]:–ghhalek  #;
+-–ghhalek[how.V][V→XCLM]:–ghhalek  #;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
 !!!      Verb →  Verb (Verb-Elaborating) Postbases     !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--~(g₁)aqe[to-be-V-ing][to-regularly-or-repeatedly-V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@     VerbPostbase;
--@₁lleqe[will-V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                          VerbPostbase;
--@₁~fnaqe[to-be-going-to-V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                              VerbPostbase;
--@₁~fyug[to-want-to-V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                    VerbPostbase;
--@₁–nghite*[to-not-V][V→V]@R.VALENCE@:@₁–nghite*@R.VALENCE@  VerbPostbase;
--(pete)fte[to-evidently-V][to-have-V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@               VerbPostbase;
--(pete/fte)[to-evidently-V][to-have-V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@              VerbPostbase;
--@₂~sf–(g₂)kau[to-have-V-ed][to-have-been-V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@     VerbPostbase;
--@₃~%:(u/i)ma[to-have-V-ed-or-to-have-been-V-ed]@R.VALENCE@:@₃~%:(u/i)ma@R.VALENCE@          VerbPostbase;
--~%:(u)te[to-V-for-or-with][to-cause-to-V-as-one-is-V-ing][to-V-toward-each-other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
+-~(g₁)aqe[to.be.V.ing][to.regularly.or.repeatedly.V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@     VerbPostbase;
+-@₁lleqe[will.V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                          VerbPostbase;
+-@₁~fnaqe[to.be.going.to.V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                              VerbPostbase;
+-@₁~fyug[to.want.to.V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                    VerbPostbase;
+-@₁–nghite*[to.not.V][V→V]@R.VALENCE@:@₁–nghite*@R.VALENCE@  VerbPostbase;
+-(pete)fte[to.evidently.V][to.have.V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@               VerbPostbase;
+-(pete/fte)[to.evidently.V][to.have.V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@              VerbPostbase;
+-@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@     VerbPostbase;
+-@₃~%:(i/u)ma[to.have.V-ed.or.to.have.been.V-ed]@R.VALENCE@:@₃~%:(i/u)ma@R.VALENCE@          VerbPostbase;
+-~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
+-~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                                                          VerbPostbase;
+-@₃~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₃~%:(i/u)magh*@R.VALENCE@                                           QuantQualPostbase;
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
 !!!          Verb →  Noun (Nominalizing) Postbases     !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₂~sf–(g₂)kaq[one-that-has-V-ed][V→N]:@₂~sf–(g₂)kaq                    NounPostbase;
--@₁–lghii[the-one-that-V-ed][the-one-that-is-V][V→N]:@₁–lghii           NounPostbase;
--@*ngugh*[the-one-that-V-ed][the-one-that-is-V][V→N]:@*ngugh*           NounPostbase;
--@*@₂@₃~sf–(g₂)ka[the-one-that-possessor-V-ed][V→N]:@*@₂@₃~sf–(g₂)ka    NounPostbase;
--@*@₂~sf–(g₂)ka[the-one-that-possessor-V-ed][V→N]:@*@₂~sf–(g₂)ka        NounPostbase;
--@*@₂@₃~sf–(g₂)ke[the-one-that-possessor-V-ed][V→N]:@*@₂@₃~sf–(g₂)ke    NounPostbase;
--@*@₂~sf–(g₂)ke[the-one-that-possessor-V-ed][V→N]:@*@₂~sf–(g₂)ke        NounPostbase;
+-@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq                    NounPostbase;
+-@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii           NounPostbase;
+-@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*           NounPostbase;
+-@*@₂@₃~sf–(g₂)ka[the.one.that.possessor.V-ed][V→N]:@*@₂@₃~sf–(g₂)ka    NounPostbase;
+-@*@₂~sf–(g₂)ka[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ka        NounPostbase;
+-@*@₂@₃~sf–(g₂)ke[the.one.that.possessor.V-ed][V→N]:@*@₂@₃~sf–(g₂)ke    NounPostbase;
+-@*@₂~sf–(g₂)ke[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ke        NounPostbase;
+-~–kayuk[one.who.is.able.to.V][V→N]:~–kayuk                             NounPostbase;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1203,23 +1210,61 @@ LEXICON VerbTenseInfl
 ! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
 
 
-LEXICON Ignore
-! ------------------------------------|
-!     Quantifier-Qualifier Endings    |
-! ------------------------------------|
-[V][Quant_Qual][3Sg]:~%:(ng)an       #;
-[V][Quant_Qual][3Pl]:~%:(ng)ita      #;                
-[V][Quant_Qual][3Du]:~%:(ng)ita      #;
-! ------------------------------------|
-[V][Quant_Qual][1Sg]:~f-wma          #;
-[V][Quant_Qual][1Pl]:%:emta          #;
-[V][Quant_Qual][1Du]:%:emtung        #;
-! ------------------------------------|
-[V][Quant_Qual][2Sg]:–gpek           #;
-[V][Quant_Qual][2Pl]:–gpesi          #;
-[V][Quant_Qual][2Du]:–gpetek         #;
-! ------------------------------------|
-[V][Quant_Qual][4Sg]:~f-wmi          #;
-[V][Quant_Qual][4Pl]:~f-wmeng        #;
-[V][Quant_Qual][4Du]:~f-wmeng        #;
+
+LEXICON PosturalRoot
+
+aqumgagh*      PosRootPostbase; ! sitting
+aqumgagh*    QuantQualPostbase; ! sitting
+iggag          PosRootPostbase; ! leaning
+iggag        QuantQualPostbase; ! leaning
+ingagh*        PosRootPostbase; ! lying down
+ingagh*      QuantQualPostbase; ! lying down
+matagh*        PosRootPostbase; ! undressed; parka less
+matagh*      QuantqualPostbase; ! undressed; parka less
+mumig          PosRootPostbase; ! turned over
+mumig        QuantQualPostbase; ! turned over
+nekevghagh*    PosRootPostbase; ! standing
+nekevghagh*  QuantQualPostbase; ! standing
+
+
+
+LEXICON PosRootPostbase
+
+-nga[Stative][to.be.in.R.posture]@P.VALENCE.INTR@:nga@P.VALENCE.INTR@  VerbTenseInfl;
+-te[Active][to.get.into.R.posture]@P.VALENCE.INTR@:te@P.VALENCE.INTR@  VerbTenseInfl;
+-te[Active][to.put.into.R.posture]@P.VALENCE.TRNS@:te@P.VALENCE.TRNS@  VerbTenseInfl;
+
+
+
+LEXICON QuantQual
+
+allakagh*    QuantQualPostbase; ! separately (from the others)
+ellnginagh*  QuantQualPostbase; ! alone; only
+kezeghhagh*  QuantQualPostbase; ! alone; only
+iingunagh*   QuantQualPostbase; ! all; whole
+qerngagh*    QuantQualPostbase; ! together
+tamaghhagh*  QuantQualPostbase; ! all, every, both (for dual)
+
+
+
+LEXICON QuantQualPostbase
+
+! ---------------------------------|
+!   Quantifier-Qualifier Endings   |
+! ---------------------------------|
+[Quant_Qual][3Sg]:~%:(ng)an       #;
+[Quant_Qual][3Pl]:~%:(ng)ita      #;                
+[Quant_Qual][3Du]:~%:(ng)ita      #;
+! ---------------------------------|
+[Quant_Qual][1Sg]:~f-wma          #;
+[Quant_Qual][1Pl]:%:emta          #;
+[Quant_Qual][1Du]:%:emtung        #;
+! ---------------------------------|
+[Quant_Qual][2Sg]:–gpek           #;
+[Quant_Qual][2Pl]:–gpesi          #;
+[Quant_Qual][2Du]:–gpetek         #;
+! ---------------------------------|
+[Quant_Qual][4Sg]:~f-wmi          #;
+[Quant_Qual][4Pl]:~f-wmeng        #;
+[Quant_Qual][4Du]:%:egmek        #;
 ! ------------------------------------|
