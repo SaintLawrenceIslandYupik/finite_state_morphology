@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13
 
 
 test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.fomabin
@@ -70,6 +70,9 @@ test-ch11: ess.pairs.gold/Ch11.In-Chapter-Examples.tsv ess.fomabin
 test-ch12: ess.pairs.gold/Ch12.In-Chapter-Examples.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch12.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch12.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 12 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 12 In-Chapter Examples - FAIL"
 
+test-ch13: ess.pairs.gold/Ch13.In-Chapter-Examples.tsv ess.fomabin
+	@cut -f 1 ess.pairs.gold/Ch13.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch13.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 13 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 13 In-Chapter Examples - FAIL"
+	
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin
 

@@ -1,13 +1,16 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-        		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Stative] [Active] [Quant_Qual]
-				  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg]
+        		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Prec]
+				  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [To_Feel_R_Toward]
 				  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
 		          [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   @* @₁ @₂ @₃ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂) (i/u) (u)
 	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
-				  
+ 
+
+
 LEXICON Root
     NounBase      ;
+	EmotionalRoot ;
 	Interrogative ;
     Particle      ;
 	PosturalRoot  ;
@@ -15,13 +18,14 @@ LEXICON Root
     VerbBase      ;
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!                 Particles                  !!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                       !!!!!!
+!!!!!!               Particles               !!!!!!
+!!!!!!                                       !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Particle
 
@@ -39,13 +43,13 @@ whani            #; ! right here (localis demonstrative adverb) particle
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!             Interrogative Words            !!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                 !!!!!!
+!!!!!!               Interrogative Words               !!!!!!
+!!!!!!                                                 !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Interrogative 
 
@@ -74,13 +78,13 @@ sangan           #; ! why? (in general)
 
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!                Noun Bases                  !!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!               Noun Bases               !!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NounBase
 
@@ -334,29 +338,41 @@ tanpegh          NounPostbase; ! dried walrus hide
 ullghitagh       NounPostbase; ! wheeled vehicle; snow-machine; all-terrain vehicle (used in the dual)
 ullghitak        NounPostbase; ! wheeled vehicle; snow-machine; all-terrain vehicle (for one vehicle)
 
+! Jacobson (2001) Chapter 13 Noun Vocabulary
+ivisa            NounPostbase; ! flounder
+kalile           NounPostbase; ! dalmatian dog
+kalngagagh       NounPostbase; ! bag for carrying
+qupag            NounPostbase; ! girl's hair beads
+retwhate         NounPostbase; ! cannon
+sari             NounPostbase; ! dog with floppy ears
+siilu            NounPostbase; ! brass
+uyviinegh        NounPostbase; ! shaman who can work evil
 
 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!      Derivational Morphemes Applied To Nouns / Derived Bases     !!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!     Derivational Morphemes Applied To Nouns / Derived Bases     !!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NounPostbase
 
 0:0        NounInfl;
 
+-–ghhalek[how.N][N→XCLM]:–ghhalek  #;
+
 ! Noun →  Noun (Noun-Elaborating) Postbases
--–ghllag[big.N][N→N]:–ghllag                     NounPostbase; ! big N; lots of N (when used in the plural)
--–ghrugllag[huge.N][N→N]:–ghrugllag              NounPostbase; ! big N; huge N
--–leg[one.having.N][N→N]:–leg                    NounPostbase; ! one having N
--e[ENG.to.ESS][N→N]:-e                           NounPostbase; ! to make English words in Yupik words
--mii[resident.of.N][N→N]:mii                     NounPostbase; ! resident of N
--–squgh[little.N][small.N][N→N]:–squgh           NounPostbase; ! little N, small N 
--–squghhagh*little.N][small.N][N→N]:–squghhagh*  NounPostbase; ! little N, small N 
+-–ghllag[big.N][N→N]:–ghllag                             NounPostbase;
+-–ghrugllag[huge.N][N→N]:–ghrugllag                      NounPostbase;
+-–leg[one.having.N][N→N]:–leg                            NounPostbase;
+-e[ENG.to.ESS][N→N]:-e                                   NounPostbase;
+-mii[resident.of.N][N→N]:mii                             NounPostbase;
+-–squgh[little.N][small.N][N→N]:–squgh                   NounPostbase;
+-–squghhagh*little.N][small.N][N→N]:–squghhagh*          NounPostbase;
+-~sf-w%:(e)nkut[N.and.company.or.family]:~sf-w%:(e)nkut  NounPostbase;
+-~sf-w%:(e)nkuk[N.and.partner.or.spouse]:~sf-w%:(e)nkuk  NounPostbase;
 
 ! Noun →  Verb (Verbalizing) Postbases
 -~%:(ng)u[to.be.N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@                                                VerbPostbase;
@@ -371,14 +387,13 @@ niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]@P.VAL
 -tuumagh*[together.with.one's.Ns][N→V]:tuumagh*                                                                 QuantQualPostbase;
 
 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!      Inflectional Morphemes Applied To Nouns / Derived Bases     !!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!     Inflectional Morphemes Applied To Nouns / Derived Bases     !!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON NounInfl
 
@@ -562,14 +577,13 @@ LEXICON NounInfl
 
 
 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!                Verb Bases                  !!!!!!
-!!!!!!                                            !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!               Verb Bases               !!!!!!
+!!!!!!                                        !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbBase
 
@@ -781,15 +795,28 @@ ilagagh@P.VALENCE.INTR@          VerbPostbase; ! to sing
 nekevgha@P.VALENCE.INTR@         VerbPostbase; ! to be standing (compare 'nekeve' - 'to stand up')
 qefliqe@P.VALENCE.INTR@          VerbPostbase; ! to be angry (men)
 
+! Jacobson (2001) Chapter 13 Verb Vocabulary
+akmag@P.VALENCE.INTR@            VerbPostbase; ! to carry (a pack) on one's back
+akmag@P.VALENCE.TRNS@            VerbPostbase; ! to carry (a pack) on one's back
+kiyaghte@P.VALENCE.INTR@         VerbPostbase; ! to be; to live; to reside
+pangeghte@P.VALENCE.INTR@        VerbPostbase; ! to go to Siberia
+puygu@P.VALENCE.INTR@            VerbPostbase; ! to forget
+puygu@P.VALENCE.TRNS@            VerbPostbase; ! to forget
+nuugte@P.VALENCE.INTR@           VerbPostbase; ! to move or move something (a short way)
+nuugte@P.VALENCE.TRNS@           VerbPostbase; ! to move or move something (a short way)
+qungyagh@P.VALENCE.INTR@         VerbPostbase; ! to be jealous; to be envious
+qungyake@P.VALENCE.TRNS@         VerbPostbase; ! to be jealous of; to envy
+sumeghtaghagh@P.VALENCE.INTR@    VerbPostbase; ! to think
+ungipaate@P.VALENCE.TRNS@        VerbPostbase; ! to tell
 
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!      Derivational Morphemes Applied To Verbs / Derived Bases     !!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!     Derivational Morphemes Applied To Verbs / Derived Bases     !!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbPostbase 
 
@@ -815,13 +842,11 @@ LEXICON VerbPostbase
 -~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                                                          VerbPostbase;
 -@₃~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₃~%:(i/u)magh*@R.VALENCE@                                           QuantQualPostbase;
 
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!                                                    !!!
-!!!          Verb →  Noun (Nominalizing) Postbases     !!!
-!!!                                                    !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                               !!!
+!!!     Verb →  Noun (Nominalizing) Postbases     !!!
+!!!                                               !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq                    NounPostbase;
 -@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii           NounPostbase;
 -@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*           NounPostbase;
@@ -831,51 +856,54 @@ LEXICON VerbPostbase
 -@*@₂~sf–(g₂)ke[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ke        NounPostbase;
 -~–kayuk[one.who.is.able.to.V][V→N]:~–kayuk                             NounPostbase;
 
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
 !!!             Compound Verbal Postbases              !!!
 !!!   (affect the transitivity of the embedded verb)   !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₁~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.INTR@:@₁~fni@P.VALENCE.INTR@       VerbPostbase; ! to say that one is V-ing
--@₁~fni[TO-SAY-THAT-ONE-IS-V-ING][Cmpd_Vbl]@P.VALENCE.TRNS@:@₁~fni@P.VALENCE.TRNS@       VerbPostbase; ! to say that one is V-ing
--(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)ste@P.VALENCE.INTR@    VerbPostbase; ! to have, make, or let one V
--(te)ste[TO-HAVE-MAKE-OR-LET-ONE-V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)ste@P.VALENCE.TRNS@    VerbPostbase; ! to have, make, or let one V
--~sf%:isqe[TO-ASK-OR-TELL-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.INTR@:~sf%:isqe@P.VALENCE.INTR@  VerbPostbase; ! to ask or to tell one to V
--~sf%:isqe[TO-ASK-OR-TELL-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.TRNS@:~sf%:isqe@P.VALENCE.TRNS@  VerbPostbase; ! to ask or to tell one to V
--(te)sug[TO-WANT-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)sug@P.VALENCE.INTR@             VerbPostbase; ! to want one to V
--(te)sug[TO-WANT-ONE-TO-V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)sug@P.VALENCE.TRNS@             VerbPostbase; ! to want one to V
+-@₁~fni[to.say.that.one.is.V-ing][Cmpd_Vbl]@P.VALENCE.INTR@:@₁~fni@P.VALENCE.INTR@                  VerbPostbase;
+-@₁~fni[to.say.that.one.is.V-ing][Cmpd_Vbl]@P.VALENCE.TRNS@:@₁~fni@P.VALENCE.TRNS@                  VerbPostbase;
+-(te)ste[to.have.make.or.let.one.V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)ste@P.VALENCE.INTR@               VerbPostbase;
+-(te)ste[to.have.make.or.let.one.V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)ste@P.VALENCE.TRNS@               VerbPostbase;
+-~sf%:isqe[to.ask.or.tell.one.to.V][Cmpd_Vbl]@P.VALENCE.INTR@:~sf%:isqe@P.VALENCE.INTR@             VerbPostbase;
+-~sf%:isqe[to.ask.or.tell.one.to.V][Cmpd_Vbl]@P.VALENCE.TRNS@:~sf%:isqe@P.VALENCE.TRNS@             VerbPostbase;
+-(te)sug[to.want.one.to.V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)sug@P.VALENCE.INTR@                        VerbPostbase;
+-(te)sug[to.want.one.to.V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)sug@P.VALENCE.TRNS@                        VerbPostbase;
+-@₁@₂~fmiqe[to.make.compel.or.force.one.to.V][Cmpd_Vbl]@P.VALENCE.TRNS@:@₁@₂~fmiqe@P.VALENCE.TRNS@  VerbPostbase;
 
 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!      Inflectional Morphemes Applied To Verbs / Derived Bases     !!!!!!
-!!!!!!                                                                  !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!     Inflectional Morphemes Applied To Verbs / Derived Bases     !!!!!!
+!!!!!!                                                                 !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON VerbTenseInfl
 
-! ----------------------------------------------------|
-!        Intransitive Indicative Mood Endings         |
-! ----------------------------------------------------|-----------|
-[V][Ind][3Sg]@R.VALENCE.INTR@:~f(g/t)uq@R.VALENCE.INTR@      #; ! 3Sg SBJ |
-[V][Ind][3Pl]@R.VALENCE.INTR@:~f(g/t)ut@R.VALENCE.INTR@      #; ! 3Pl SBJ |
-[V][Ind][3Du]@R.VALENCE.INTR@:~f(g/t)uk@R.VALENCE.INTR@      #; ! 3Du SBJ |
-! ----------------------------------------------------|-----------|
-[V][Ind][1Sg]@R.VALENCE.INTR@:~f(g/t)unga@R.VALENCE.INTR@    #; ! 1Sg SBJ |
-[V][Ind][1Pl]@R.VALENCE.INTR@:~f(g/t)ukut@R.VALENCE.INTR@    #; ! 1Pl SBJ |
-[V][Ind][1Du]@R.VALENCE.INTR@:~f(g/t)ukung@R.VALENCE.INTR@   #; ! 1Du SBJ |
-! ----------------------------------------------------|-----------|
-[V][Ind][2Sg]@R.VALENCE.INTR@:~f(g/t)uten@R.VALENCE.INTR@    #; ! 2Sg SBJ |
-[V][Ind][2Pl]@R.VALENCE.INTR@:~f(g/t)usi@R.VALENCE.INTR@     #; ! 2Pl SBJ |
-[V][Ind][2Du]@R.VALENCE.INTR@:~f(g/t)utek@R.VALENCE.INTR@    #; ! 2Du SBJ |
-! ----------------------------------------------------|-----------|
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                  !!!
+!!!     Independent Mood Markers     !!!
+!!!                                  !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+! ----------------------------------------------------------|
+!            Intransitive Indicative Mood Endings           |
+! ----------------------------------------------------------|-----------|
+[V][Ind][3Sg]@R.VALENCE.INTR@:~f(g/t)uq@R.VALENCE.INTR@    #; ! 3Sg SBJ |
+[V][Ind][3Pl]@R.VALENCE.INTR@:~f(g/t)ut@R.VALENCE.INTR@    #; ! 3Pl SBJ |
+[V][Ind][3Du]@R.VALENCE.INTR@:~f(g/t)uk@R.VALENCE.INTR@    #; ! 3Du SBJ |
+! ----------------------------------------------------------|-----------|
+[V][Ind][1Sg]@R.VALENCE.INTR@:~f(g/t)unga@R.VALENCE.INTR@  #; ! 1Sg SBJ |
+[V][Ind][1Pl]@R.VALENCE.INTR@:~f(g/t)ukut@R.VALENCE.INTR@  #; ! 1Pl SBJ |
+[V][Ind][1Du]@R.VALENCE.INTR@:~f(g/t)ukung@R.VALENCE.INTR@ #; ! 1Du SBJ |
+! ----------------------------------------------------------|-----------|
+[V][Ind][2Sg]@R.VALENCE.INTR@:~f(g/t)uten@R.VALENCE.INTR@  #; ! 2Sg SBJ |
+[V][Ind][2Pl]@R.VALENCE.INTR@:~f(g/t)usi@R.VALENCE.INTR@   #; ! 2Pl SBJ |
+[V][Ind][2Du]@R.VALENCE.INTR@:~f(g/t)utek@R.VALENCE.INTR@  #; ! 2Du SBJ |
+! ----------------------------------------------------------|-----------|
 
 ! -------------------------------------------------------------------|
 !                 Transitive Indicative Mood Endings                 |
@@ -948,7 +976,6 @@ LEXICON VerbTenseInfl
 [V][Ptcp][2Pl]@R.VALENCE.INTR@:@*nghugh*–si@R.VALENCE.INTR@    #; ! 2Pl SBJ |
 [V][Ptcp][2Du]@R.VALENCE.INTR@:@*nghugh*–tek@R.VALENCE.INTR@   #; ! 2Du SBJ |
 ! --------------------------------------------------------------|-----------|
-
 
 ! --------------------------------------------------------------------------------|
 !                        Transitive Participial Mood Endings                      |
@@ -1034,7 +1061,6 @@ LEXICON VerbTenseInfl
 [V][Intrg][2Du]@R.VALENCE.INTR@:~sf(e)stek@R.VALENCE.INTR@   #; ! 2Du subject |
 ! --------------------------------------------------------------|-------------|
 
-
 ! -------------------------------------------------------------------|
 !                 Transitive Interrogative Mood Endings              |
 ! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -1098,24 +1124,6 @@ LEXICON VerbTenseInfl
 [V][Opt][PRS][2Du]@R.VALENCE.INTR@:@₁(i₂)tek@R.VALENCE.INTR@      #; ! 2Du SBJ |
 ! -----------------------------------------------------------------|-----------|
 
-
-! -------------------------------------------------------------|
-!        Intransitive Optative Mood Endings (Negative)         |
-! -------------------------------------------------------------|-----------|
-!                                                              | ! 3Sg SBJ |
-!                                                              | ! 3Pl SBJ |
-!                                                              | ! 3Du SBJ |
-! -------------------------------------------------------------|-----------|
-!                                                              | ! 1Sg SBJ |
-!                                                              | ! 1Pl SBJ |
-!                                                              | ! 1Du SBJ |
-! -------------------------------------------------------------|-----------|
-[V][Opt][NEG][2Sg]@R.VALENCE.INTR@:–fqaavek@R.VALENCE.INTR@   #; ! 2Sg SBJ |
-[V][Opt][NEG][2Pl]@R.VALENCE.INTR@:–fqaafsi@R.VALENCE.INTR@   #; ! 2Pl SBJ |
-[V][Opt][NEG][2Du]@R.VALENCE.INTR@:–fqaaftek@R.VALENCE.INTR@  #; ! 2Du SBJ |
-! -------------------------------------------------------------|-----------|
-
-
 ! ---------------------------------------------------------------------------|
 !                Transitive Optative Mood Endings (Present)                  |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -1162,6 +1170,22 @@ LEXICON VerbTenseInfl
 !                                                                            |                                                                           |                                                                            | ! 2Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
 
+
+! -------------------------------------------------------------|
+!        Intransitive Optative Mood Endings (Negative)         |
+! -------------------------------------------------------------|-----------|
+!                                                              | ! 3Sg SBJ |
+!                                                              | ! 3Pl SBJ |
+!                                                              | ! 3Du SBJ |
+! -------------------------------------------------------------|-----------|
+!                                                              | ! 1Sg SBJ |
+!                                                              | ! 1Pl SBJ |
+!                                                              | ! 1Du SBJ |
+! -------------------------------------------------------------|-----------|
+[V][Opt][NEG][2Sg]@R.VALENCE.INTR@:–fqaavek@R.VALENCE.INTR@   #; ! 2Sg SBJ |
+[V][Opt][NEG][2Pl]@R.VALENCE.INTR@:–fqaafsi@R.VALENCE.INTR@   #; ! 2Pl SBJ |
+[V][Opt][NEG][2Du]@R.VALENCE.INTR@:–fqaaftek@R.VALENCE.INTR@  #; ! 2Du SBJ |
+! -------------------------------------------------------------|-----------|
 
 ! ---------------------------------------------------------------|
 !          Transitive Optative Mood Endings (Negative)           |
@@ -1210,9 +1234,145 @@ LEXICON VerbTenseInfl
 ! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                 !!!
+!!!     Connective Mood Markers     !!!
+!!!                                 !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! ------------------------------------------------------------------|
+!                Intransitive Precessive Mood Endings               |                          
+! ------------------------------------------------------------------|-----------|
+[V][Prec][3Sg]@R.VALENCE.INTR@:@₁@₂~fvagilgan@R.VALENCE.INTR@      #; ! 3Sg SBJ |
+[V][Prec][3Pl]@R.VALENCE.INTR@:@₁@₂~fvagilgata@R.VALENCE.INTR@     #; ! 3Pl SBJ |
+[V][Prec][3Du]@R.VALENCE.INTR@:@₁@₂~fvagilgayek@R.VALENCE.INTR@    #; ! 3Du SBJ |
+[V][Prec][3Du]@R.VALENCE.INTR@:@₁@₂~fvagilgagkenka@R.VALENCE.INTR@ #; ! 3Du SBJ |
+! ------------------------------------------------------------------|-----------|
+[V][Prec][1Sg]@R.VALENCE.INTR@:@₁@₂~fvagilgama@R.VALENCE.INTR@     #; ! 1Sg SBJ |
+[V][Prec][1Pl]@R.VALENCE.INTR@:@₁@₂~fvagilgamta@R.VALENCE.INTR@    #; ! 1Pl SBJ |
+[V][Prec][1Du]@R.VALENCE.INTR@:@₁@₂~fvagilgamtung@R.VALENCE.INTR@  #; ! 1Du SBJ |
+! ------------------------------------------------------------------|-----------|
+[V][Prec][2Sg]@R.VALENCE.INTR@:@₁@₂~fvagilgavek@R.VALENCE.INTR@    #; ! 2Sg SBJ |
+[V][Prec][2Pl]@R.VALENCE.INTR@:@₁@₂~fvagilgafsi@R.VALENCE.INTR@    #; ! 2Pl SBJ |
+[V][Prec][2Du]@R.VALENCE.INTR@:@₁@₂~fvagilgaftek@R.VALENCE.INTR@   #; ! 2Du SBJ |
+! ------------------------------------------------------------------|-----------|
+[V][Prec][4Sg]@R.VALENCE.INTR@:@₁@₂~fvagilgami@R.VALENCE.INTR@     #; ! 4Sg SBJ |
+[V][Prec][4Pl]@R.VALENCE.INTR@:@₁@₂~fvagilgameng@R.VALENCE.INTR@   #; ! 4Pl SBJ |
+[V][Prec][4Du]@R.VALENCE.INTR@:@₁@₂~fvagilgamek@R.VALENCE.INTR@    #; ! 4Du SBJ |
+! --------------------------------------------------------------------|-----------|
+
+ -------------------------------------------------------------------------|
+!                 Transitive Precessive Mood Endings                     |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+!                        3rd singular object                             |                             3rd plural object                           |                            3rd dual obj                                  |           |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][3Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagu@R.VALENCE.TRNS@         #; [V][Prec][3Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaki@R.VALENCE.TRNS@        #; [V][Prec][3Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgakek@R.VALENCE.TRNS@        #; ! 3Sg SBJ |
+[V][Prec][3Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatgu@R.VALENCE.TRNS@        #; [V][Prec][3Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgatki@R.VALENCE.TRNS@       #; [V][Prec][3Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgatkek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@      #; [V][Prec][3Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgagneki@R.VALENCE.TRNS@     #; [V][Prec][3Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnekek@R.VALENCE.TRNS@     #; ! 3Du SBJ |
+ ! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][1Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamkun@R.VALENCE.TRNS@       #; [V][Prec][1Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamki@R.VALENCE.TRNS@       #; [V][Prec][1Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamkek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][Prec][1Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteggu@R.VALENCE.TRNS@     #; [V][Prec][1Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteki@R.VALENCE.TRNS@     #; [V][Prec][1Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtekek@R.VALENCE.TRNS@     #; ! 1Pl SBJ |
+[V][Prec][1Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnegu@R.VALENCE.TRNS@   #; [V][Prec][1Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegneki@R.VALENCE.TRNS@  #; [V][Prec][1Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnekek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][2Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgavgu@R.VALENCE.TRNS@        #; [V][Prec][2Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafki@R.VALENCE.TRNS@       #; [V][Prec][2Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
+[V][Prec][2Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilga@fsiguR.VALENCE.TRNS@      #; [V][Prec][2Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsiki@R.VALENCE.TRNS@     #; [V][Prec][2Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
+[V][Prec][2Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnegu@R.VALENCE.TRNS@   #; [V][Prec][2Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegneki@R.VALENCE.TRNS@  #; [V][Prec][2Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][4Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamigu@R.VALENCE.TRNS@       #; [V][Prec][4Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiki@R.VALENCE.TRNS@      #; [V][Prec][4Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamikek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
+[V][Prec][4Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegteggu@R.VALENCE.TRNS@   #; [V][Prec][4Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegteki@R.VALENCE.TRNS@   #; [V][Prec][4Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtekek@R.VALENCE.TRNS@   #; ! 4Pl SBJ |
+[V][Prec][4Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnegu@R.VALENCE.TRNS@    #; [V][Prec][4Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegneki@R.VALENCE.TRNS@   #; [V][Prec][4Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnekek@R.VALENCE.TRNS@   #; ! 4Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+!                        1st singular object                             |                             1st plural object                           |                            1st dual object                               |           |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][3Sg][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilganga@R.VALENCE.TRNS@        #; [V][Prec][3Sg][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgankut@R.VALENCE.TRNS@      #; [V][Prec][3Sg][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgankung@R.VALENCE.TRNS@      #; ! 3Sg SBJ |
+[V][Prec][3Pl][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatnga@R.VALENCE.TRNS@       #; [V][Prec][3Pl][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgankut@R.VALENCE.TRNS@      #; [V][Prec][3Pl][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgankung@R.VALENCE.TRNS@      #; ! 3Pl SBJ |
+[V][Prec][3Du][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnenga@R.VALENCE.TRNS@     #; [V][Prec][3Du][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgankut@R.VALENCE.TRNS@      #; [V][Prec][3Du][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgankung@R.VALENCE.TRNS@      #; ! 3Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+!                                                                        |                                                                         |                                                                          | ! 1Sg SBJ |
+!                                                                        |                                                                         |                                                                          | ! 1Pl SBJ |
+!                                                                        |                                                                         |                                                                          | ! 1Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][2Sg][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgavnga@R.VALENCE.TRNS@       #; [V][Prec][2Sg][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkut@R.VALENCE.TRNS@      #; [V][Prec][2Sg][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkung@R.VALENCE.TRNS@      #; ! 2Sg SBJ |
+[V][Prec][2Pl][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsinga@R.VALENCE.TRNS@     #; [V][Prec][2Pl][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikut@R.VALENCE.TRNS@    #; [V][Prec][2Pl][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikung@R.VALENCE.TRNS@    #; ! 2Pl SBJ |
+[V][Prec][2Du][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnenga@R.VALENCE.TRNS@  #; [V][Prec][2Du][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekut@R.VALENCE.TRNS@ #; [V][Prec][2Du][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekung@R.VALENCE.TRNS@ #; ! 2Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][4Sg][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaminga@R.VALENCE.TRNS@      #; [V][Prec][4Sg][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamikut@R.VALENCE.TRNS@     #; [V][Prec][4Sg][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamikung@R.VALENCE.TRNS@     #; ! 4Sg SBJ |
+[V][Prec][4Pl][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtengnga@R.VALENCE.TRNS@ #; [V][Prec][4Pl][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtekut@R.VALENCE.TRNS@  #; [V][Prec][4Pl][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtekung@R.VALENCE.TRNS@  #; ! 4Pl SBJ |
+[V][Prec][4Du][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnenga@R.VALENCE.TRNS@   #; [V][Prec][4Du][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnekut@R.VALENCE.TRNS@  #; [V][Prec][4Du][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnekung@R.VALENCE.TRNS@  #; ! 4Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+!                        2nd singular object                             |                             2nd plural object                           |                            2nd dual object                               |           |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][3Sg][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaten@R.VALENCE.TRNS@        #; [V][Prec][3Sg][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasi@R.VALENCE.TRNS@        #; [V][Prec][3Sg][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
+[V][Prec][3Pl][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaten@R.VALENCE.TRNS@        #; [V][Prec][3Pl][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasi@R.VALENCE.TRNS@        #; [V][Prec][3Pl][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][Prec][3Du][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaten@R.VALENCE.TRNS@        #; [V][Prec][3Du][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasi@R.VALENCE.TRNS@        #; [V][Prec][3Du][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][1Sg][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamken@R.VALENCE.TRNS@       #; [V][Prec][1Sg][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamsi@R.VALENCE.TRNS@       #; [V][Prec][1Sg][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][Prec][1Pl][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamken@R.VALENCE.TRNS@       #; [V][Prec][1Pl][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamsi@R.VALENCE.TRNS@       #; [V][Prec][1Pl][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
+[V][Prec][1Du][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamken@R.VALENCE.TRNS@       #; [V][Prec][1Du][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamsi@R.VALENCE.TRNS@       #; [V][Prec][1Du][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+!                                                                        |                                                                         |                                                                          | ! 2Sg SBJ |
+!                                                                        |                                                                         |                                                                          | ! 2Pl SBJ |
+!                                                                        |                                                                         |                                                                          | ! 2Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][4Sg][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiten@R.VALENCE.TRNS@      #; [V][Prec][4Sg][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamisi@R.VALENCE.TRNS@      #; [V][Prec][4Sg][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamitek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
+[V][Prec][4Pl][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiten@R.VALENCE.TRNS@      #; [V][Prec][4Pl][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamisi@R.VALENCE.TRNS@      #; [V][Prec][4Pl][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamitek@R.VALENCE.TRNS@      #; ! 4Pl SBJ |
+[V][Prec][4Du][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiten@R.VALENCE.TRNS@      #; [V][Prec][4Du][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamisiR.VALENCE.TRNS@       #; [V][Prec][4Du][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamitek@R.VALENCE.TRNS@      #; ! 4Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+!                        4th singular object                             |                             4th plural object                           |                            4th dual object                               |           |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][3Sg][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Sg][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@          #; [V][Prec][3Sg][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
+[V][Prec][3Pl][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Pl][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@          #; [V][Prec][3Pl][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][Prec][3Du][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Du][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@          #; [V][Prec][3Du][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][1Sg][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamni@R.VALENCE.TRNS@        #; [V][Prec][1Sg][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteng@R.VALENCE.TRNS@     #; [V][Prec][1Sg][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][Prec][1Pl][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamnni@R.VALENCE.TRNS@       #; [V][Prec][1Pl][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteng@R.VALENCE.TRNS@     #; [V][Prec][1Pl][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
+[V][Prec][1Du][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnegu@R.VALENCE.TRNS@   #; [V][Prec][1Du][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegneki@R.VALENCE.TRNS@  #; [V][Prec][1Du][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnekek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+[V][Prec][2Sg][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgavgu@R.VALENCE.TRNS@        #; [V][Prec][2Sg][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafki@R.VALENCE.TRNS@       #; [V][Prec][2Sg][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
+[V][Prec][2Pl][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsigu@R.VALENCE.TRNS@      #; [V][Prec][2Pl][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsiki@R.VALENCE.TRNS@     #; [V][Prec][2Pl][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
+[V][Prec][2Du][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnegu@R.VALENCE.TRNS@   #; [V][Prec][2Du][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegneki@R.VALENCE.TRNS@  #; [V][Prec][2Du][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+!                                                                        |                                                                         |                                                                          | ! 4Sg SBJ |
+!                                                                        |                                                                         |                                                                          | ! 4Pl SBJ |
+!                                                                        |                                                                         |                                                                          | ! 4Du SBJ |
+! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+
+
+! ------------------------------------------------------------|
+!            Intransitive Concessive Mood Endings             |                          
+! ------------------------------------------------------------|-----------|
+[V][Conc][3Sg]@R.VALENCE.INTR@:–ghngaan@R.VALENCE.INTR@      #; ! 3Sg SBJ |
+[V][Conc][3Pl]@R.VALENCE.INTR@:–ghngaita@R.VALENCE.INTR@     #; ! 3Pl SBJ |
+[V][Conc][3Du]@R.VALENCE.INTR@:–ghngaayek@R.VALENCE.INTR@    #; ! 3Du SBJ |
+! ------------------------------------------------------------|-----------|
+[V][Conc][1Sg]@R.VALENCE.INTR@:–ghngaaghma@R.VALENCE.INTR@   #; ! 1Sg SBJ |
+[V][Conc][1Pl]@R.VALENCE.INTR@:–ghngaamta@R.VALENCE.INTR@    #; ! 1Pl SBJ |
+[V][Conc][1Du]@R.VALENCE.INTR@:–ghngaamtung@R.VALENCE.INTR@  #; ! 1Du SBJ |
+! ------------------------------------------------------------|-----------|
+[V][Conc][2Sg]@R.VALENCE.INTR@:–ghngaaghpek@R.VALENCE.INTR@  #; ! 2Sg SBJ |
+[V][Conc][2Pl]@R.VALENCE.INTR@:–ghngaaghfsi@R.VALENCE.INTR@  #; ! 2Pl SBJ |
+[V][Conc][2Du]@R.VALENCE.INTR@:–ghngaaghftek@R.VALENCE.INTR@ #; ! 2Du SBJ |
+! ------------------------------------------------------------|-----------|
+[V][Conc][4Sg]@R.VALENCE.INTR@:–ghngaaghmi@R.VALENCE.INTR@   #; ! 4Sg SBJ |
+[V][Conc][4Pl]@R.VALENCE.INTR@:–ghngaaghmeng@R.VALENCE.INTR@ #; ! 4Pl SBJ |
+[V][Conc][4Du]@R.VALENCE.INTR@:–ghngaaghmek@R.VALENCE.INTR@  #; ! 4Du SBJ |
+! ------------------------------------------------------------|-----------|
+
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                         !!!!!!
+!!!!!!               Postural Roots and Postbases              !!!!!!
+!!!!!!                                                         !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON PosturalRoot
 
+amsikagh*      PosRootPostbase; ! naked
+amsikagh*    QuantQualPostbase; ! naked
 aqumgagh*      PosRootPostbase; ! sitting
 aqumgagh*    QuantQualPostbase; ! sitting
 iggag          PosRootPostbase; ! leaning
@@ -1227,7 +1387,6 @@ nekevghagh*    PosRootPostbase; ! standing
 nekevghagh*  QuantQualPostbase; ! standing
 
 
-
 LEXICON PosRootPostbase
 
 -nga[Stative][to.be.in.R.posture]@P.VALENCE.INTR@:nga@P.VALENCE.INTR@  VerbTenseInfl;
@@ -1235,6 +1394,14 @@ LEXICON PosRootPostbase
 -te[Active][to.put.into.R.posture]@P.VALENCE.TRNS@:te@P.VALENCE.TRNS@  VerbTenseInfl;
 
 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                                !!!!!!
+!!!!!!               Quantifier-Qualifier Constructions               !!!!!!
+!!!!!!                                                                !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON QuantQual
 
@@ -1244,7 +1411,6 @@ kezeghhagh*  QuantQualPostbase; ! alone; only
 iingunagh*   QuantQualPostbase; ! all; whole
 qerngagh*    QuantQualPostbase; ! together
 tamaghhagh*  QuantQualPostbase; ! all, every, both (for dual)
-
 
 
 LEXICON QuantQualPostbase
@@ -1266,5 +1432,36 @@ LEXICON QuantQualPostbase
 ! ---------------------------------|
 [Quant_Qual][4Sg]:~f-wmi          #;
 [Quant_Qual][4Pl]:~f-wmeng        #;
-[Quant_Qual][4Du]:%:egmek        #;
-! ------------------------------------|
+[Quant_Qual][4Du]:%:egmek         #;
+! ---------------------------------|
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                           !!!!!!
+!!!!!!               Emotional Roots and Postbases               !!!!!!
+!!!!!!                                                           !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON EmotionalRoot
+
+eflegh           EmotePostbase; ! uncomfortable from something on the skin (emotional root)
+kayngu           EmotePostbase; ! embarrassed (emotional root)
+sikna            EmotePostbase; ! possessive; holding dear; selfish (emotional root)
+qaazugh          EmotePostbase; ! alienated; depressed; out of sorts (emotional root)
+quginag          EmotePostbase; ! terrified of supernatural (emotional root)
+yimi             EmotePostbase; ! shy; inhibited; intimidated (emotional root)
+
+
+LEXICON EmotePostbase
+
+-~–ke/@₁~yuke[to.feel.R.toward.object]@P.VALENCE.TRNS@:[To_Feel_R_Toward]@P.VALENCE.TRNS@  VerbTenseInfl;
+-~–ketagh[to.tend.to.often.feel.R]@P.VALENCE.INTR@:~–ketagh@P.VALENCE.INTR@                VerbTenseInfl;
+-tagh[to.tend.to.often.feel.R]@P.VALENCE.INTR@:tagh@P.VALENCE.INTR@                        VerbTenseInfl;
+-~–ketaq[one.who.tends.to.often.feel.R]:~–ketaq                                                 NounInfl;
+-taq[one.who.tends.to.often.feel.R]:taq                                                         NounInfl;
+-@₁~fnagh[to.tend.to.cause.one.to.feel.R]@P.VALENCE.INTR@:@₁~fnagh@P.VALENCE.INTR@          VerbPostbase;
+-@₁~fnaq[something.that.causes.one.to.feel.R]:@₁~fnaq                                       NounPostbase;
+-@₁~fyug[to.feel.R]@P.VALENCE.INTR@:@₁~fyug@P.VALENCE.INTR@                                VerbTenseInfl;

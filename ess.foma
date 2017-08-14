@@ -148,17 +148,19 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
                   [..] -> n e gh     || t e MorphemeBoundary "@₁" MorphPhonSymbols* ng h _         ∘ ! for postbase @–nghite
                   ng h -> 0          || t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n e gh       ∘ 
-                  [..] -> nn         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n          ∘ ! for postbases that begin with n
+                  [..] -> nn         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n          ∘ ! for postbases that begin with n, m
                      n -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* nn _         ∘
-                  [..] -> DoubleFric || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n          ∘
-				     C -> 0          || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* DoubleFric n ∘
+                  [..] -> DoubleFric || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _ [ n | m ]  ∘
+				     C -> 0          || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* DoubleFric [ n | m ] ∘
 				  y    -> s || t e MorphemeBoundary "@₁" MorphPhonSymbols* _                       ∘ ! for postbases that begin with y
 				  t e "*" -> l || _ MorphemeBoundary "@*"                                          ∘ ! for special te's
-				  e    -> 0 || V t _ MorphemeBoundary MorphPhonSymbols* "@₂"                       ∘
+				  e    -> 0 || V t _ MorphemeBoundary MorphPhonSymbols* "@₂" MorphPhonSymbols* [Alphabet - DoubleFric]  ∘ 
 				  t    -> s || _ (e) MorphemeBoundary MorphPhonSymbols* "@₃"                       ∘ 
 				  l gh -> ll ghh || t e MorphemeBoundary "@₁" _                                    ∘ ! for postbase @–lghii
                   [..] -> e || C t e MorphemeBoundary "@₁" ll _ ghh                                ∘
-                  t e  -> 0 || _ MorphemeBoundary MorphPhonSymbols* "@₁"                           ∘
+				  v    -> f || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _                     ∘ ! for postbases that begin with v
+				  t    -> f || V _ MorphemeBoundary MorphPhonSymbols* "@₂" v                       ∘
+                  t e  -> 0 || _ MorphemeBoundary MorphPhonSymbols* "@₁"                           ∘ ! for postbases that drop te
 				  "@*" -> 0,
                   "@₁" -> 0,
 				  "@₂" -> 0,
@@ -223,18 +225,18 @@ define VowelDominance a i -> i i  ∘
                       u a -> a a  ∘
 					  e i -> i    ;
 
-define Optative [..] -> MorphemeBoundary   || _ "[Opt_PRS_2Sg]"                        ∘
-                [..] -> MorphemeBoundary   || _ "[Opt_PRS_2Sg_3Sg]"                    ∘
-                "[Opt_PRS_2Sg]" -> g i     || V V MorphemeBoundary _                   ∘
-                "[Opt_PRS_2Sg]" -> "~sf" i || [C - gh] MorphemeBoundary _              ∘
-                "[Opt_PRS_2Sg]" -> "~sf" i || [e | DoubleVowel] gh MorphemeBoundary _  ∘
-                "[Opt_PRS_2Sg]" -> n       || t e MorphemeBoundary _                   ∘
-                "[Opt_PRS_2Sg]" -> "~f" i  || [C - t] e MorphemeBoundary _             ∘
-                "[Opt_PRS_2Sg]" -> ":" a   || FullVowel gh MorphemeBoundary _          ∘
-				"[Opt_PRS_2Sg]" -> 0                                                   ∘
-                "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u  || V MorphemeBoundary _        ∘
-                "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] MorphemeBoundary _  ∘
-                "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C MorphemeBoundary _         ;
+define MultipleForms "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
+                     "[Opt_PRS_2Sg]" -> "~sf" i || [C - gh] _              ∘
+                     "[Opt_PRS_2Sg]" -> "~sf" i || [e | DoubleVowel] gh _  ∘
+                     "[Opt_PRS_2Sg]" -> n       || t e _                   ∘
+                     "[Opt_PRS_2Sg]" -> "~f" i  || [C - t] e _             ∘
+                     "[Opt_PRS_2Sg]" -> ":" a   || FullVowel gh _          ∘
+					 "[Opt_PRS_2Sg]" -> 0                                  ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u  || V _        ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _         ∘
+					 "[To_Feel_R_Toward]" ->       "~" "–" k e || V _      ∘
+					 "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _      ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -246,7 +248,10 @@ define Optative [..] -> MorphemeBoundary   || _ "[Opt_PRS_2Sg]"                 
 define ClusterDevoicing k -> q || gh _ ∘
                         y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
                         y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
-                        t [z | y] -> s                                           ∘   ! tz/ty cluster becomes s
+                        t [z | y] -> s                                           ∘ ! tz/ty cluster becomes s
+						v -> f || V t _                                          ∘
+						t v -> f || C _                                          ∘
+						v -> f || k _                                            ∘
 						z -> s || Stop _                                         ;
 
 define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop | f | s | wh] ∘   
@@ -275,9 +280,9 @@ def BaseFinalEndings ghw      -> qw ,
 define Rules [
     Lexicon                        ∘
 	Lowercase                      ∘
+	MultipleForms                  ∘
 	InsertMorphBoundary            ∘
 	!! Iteration 1 !!
-	Optative                       ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
