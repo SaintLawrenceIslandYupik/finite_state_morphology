@@ -42,9 +42,10 @@ define Enclitic   [ ll u | ng u q ] ;
 
 define Alphabet [ C | V | "*" ] ;
 define MorphPhonSymbols [ "~"     | "~f"   | "~sf"   | "~h"    | "-w"    | ":"     | "–" |
-                          "@*"    | "@₁"   | "@₂"    | "@₃"    |
-                          "(e)"   | "(g₁)" | "(g₂)"  | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" |
-						  "(g/t)" | "(ng)" | "(ng₂)" | "(p/v)" | "(s/z)" | "(t/y)" | "(i/u)" ] ;
+                          "@*"    | "@₁"   | "@₂"    |
+                          "(e)"   | "(g₁)" | "(g₂)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" |
+						  "(g/t)" | "(p/v)" | "(s/z)" | "(t/y)" | "(i/u)" |
+                          "@₁~fy/~f(ng₁)" ] ;
 
 define Lowercase "A" -> a ,
 	             "I" -> i ,
@@ -147,32 +148,39 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 									      gh "*" -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
-                  [..] -> n e gh     || t e MorphemeBoundary "@₁" MorphPhonSymbols* ng h _         ∘ ! for postbase @–nghite
-                  ng h -> 0          || t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n e gh       ∘ 
-                  [..] -> nn         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n          ∘ ! for postbases that begin with n, m
-                     n -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* nn _         ∘
-                  [..] -> DoubleFric || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _ [ n | m ]  ∘
-				     C -> 0          || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* DoubleFric [ n | m ] ∘
-				  y    -> s || t e MorphemeBoundary "@₁" MorphPhonSymbols* _                       ∘ ! for postbases that begin with y
-				  t e "*" -> l || _ MorphemeBoundary "@*"                                          ∘ ! for special te's
-				  e    -> 0 || V t _ MorphemeBoundary MorphPhonSymbols* "@₂" MorphPhonSymbols* [Alphabet - DoubleFric]  ∘ 
-				  t    -> s || _ (e) MorphemeBoundary MorphPhonSymbols* "@₃"                       ∘ 
-				  l gh -> ll ghh || t e MorphemeBoundary "@₁" _                                    ∘ ! for postbase @–lghii
-                  [..] -> e || C t e MorphemeBoundary "@₁" ll _ ghh                                ∘
-				  v    -> f || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _                     ∘ ! for postbases that begin with v
-				  t    -> f || V _ MorphemeBoundary MorphPhonSymbols* "@₂" v                       ∘
-				  [..] -> r || t e MorphemeBoundary "@₁" MorphPhonSymbols*  _ r                     ∘ ! for postbases that begin with r
-                  t e  -> 0 || _ MorphemeBoundary MorphPhonSymbols* "@₁"                           ∘ ! for postbases that drop te
+define teDropping "–"     -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
+				  t e "*" -> l || _ MorphemeBoundary "@*"                                        ∘ ! for special te's
+				  "*"     -> 0 || t e _ MorphemeBoundary MorphPhonSymbols*                       ∘
+				  l gh -> ll ghh || t e MorphemeBoundary "@₁" _                                  ∘ ! for postbase @–lghii
+                  [..] -> e    || C t e MorphemeBoundary "@₁" ll _ ghh                           ∘
+                  [..] -> n e gh     || t e MorphemeBoundary "@₁" MorphPhonSymbols* ng h _       ∘ ! for postbase @–nghite
+                  ng h -> 0          || t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n e gh     ∘ 
+				  t e  -> s          || _ MorphemeBoundary "@₁" MorphPhonSymbols* i              ∘ ! for postbases that begin with i 
+                  [..] -> ll         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ l        ∘ ! for postbases that begin with apicals
+                  l    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* ll _       ∘
+                  [..] -> nn         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n        ∘
+                  n    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* nn _       ∘
+				  [..] -> rr         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ r        ∘
+                  r    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* rr _       ∘
+				  [..] -> s          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ [y | z]  ∘
+                  y    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* s _        ∘
+				  e    -> 0          || V t _ MorphemeBoundary "@₁" MorphPhonSymbols* [ m | v ]  ∘ ! for postbases that begin with labials
+				  v    -> f          || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _          ∘
+                  [..] -> DoubleFric || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _ [l | m | n | r | v | y | z]           ∘
+				  C    -> 0          || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* DoubleFric [l | m | n | r | v | y | z]  ∘
+				  t e  -> t          || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ,, ! for postbases that begin with velars 
+				  t e  -> s          || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ∘
+                  t e  -> 0          || _ MorphemeBoundary MorphPhonSymbols* "@₁"                ∘ ! drop base-final te
 				  "@*" -> 0,
                   "@₁" -> 0,
-				  "@₂" -> 0,
-				  "@₃" -> 0 || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _      ∘
-				  "*"  -> 0 || WordBoundary Alphabet* t e _ MorphemeBoundary                       ; 
- 
-define JunctureConsonantInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f") | ("~")] _       ∘
-                                  ["(g/t)" | "(t)"] -> t  ||   C MorphemeBoundary ("~f") _                 ∘
-                                  "(ng₁)" -> "ng"         ||   V MorphemeBoundary [("~")|("~h")] (":") _   ∘
+				  "@₂" -> 0  || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _   ;
+
+define AlternativeForms "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || V ("*") MorphemeBoundary _          ,, 
+                        "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ C | V ] ("*") MorphemeBoundary _  ;
+
+define JunctureConsonantInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f") | ("~")] _            ∘
+                                  ["(g/t)" | "(t)"] -> t  ||   C MorphemeBoundary ("~f") _                      ∘
+                                  "(ng₁)" -> "ng"         ||   V ("*") MorphemeBoundary MorphPhonSymbols* _     ∘
                                   "(s/z)" -> s || C ("*") MorphemeBoundary _  ∘
                                   "(s/z)" -> z || V       MorphemeBoundary _  ∘                                 
                                   "(p/v)" -> p || C ("*") MorphemeBoundary _  ∘
@@ -291,6 +299,7 @@ define Rules [
 	MultipleForms                  ∘
 	InsertMorphBoundary            ∘
 	!! Iteration 1 !!
+	AlternativeForms               ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
@@ -307,6 +316,7 @@ define Rules [
     VowelDominance                 ∘
 	CleanupMorphBoundary           ∘
 	!! Iteration 2 !!
+	AlternativeForms               ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
@@ -323,6 +333,7 @@ define Rules [
     VowelDominance                 ∘
 	CleanupMorphBoundary           ∘
 	!! Iteration 3 !!
+	AlternativeForms               ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
@@ -339,6 +350,7 @@ define Rules [
     VowelDominance                 ∘
 	CleanupMorphBoundary           ∘
 	!! Iteration 4 !!
+	AlternativeForms               ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
@@ -355,6 +367,7 @@ define Rules [
     VowelDominance                 ∘
 	CleanupMorphBoundary           ∘
 	!! Iteration 5 !!
+	AlternativeForms               ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
@@ -371,6 +384,7 @@ define Rules [
     VowelDominance                 ∘
 	CleanupMorphBoundary           ∘
 	!! Iteration 6 !!
+	AlternativeForms               ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
@@ -387,6 +401,7 @@ define Rules [
     VowelDominance                 ∘
 	CleanupMorphBoundary           ∘
 	!! Iteration 7 !!
+	AlternativeForms               ∘
     JunctureConsonantInsertion     ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘

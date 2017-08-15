@@ -1,13 +1,14 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [Trns_Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
-                  [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-				  ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g) (t)
+                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Prec] [Conc] [Encl]
+                  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [To_Feel_R_Toward]
+                  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
+                  [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
+                  @* @₁ @₂ @₃ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (pete/fte) (pete)fte (te) (i₁) (i₂) (i/u) (u)
+                  @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
 
 LEXICON Root
-
-riigte[N][Abs][Sg]:riigta       #;
-yug[N][Abs][Sg]:yuuk            #;
-yughaghte[N][Abs][Sg]:yughaghta #;
-
-negh-@lleqe[WILL-V][V→V]:neghelleqe VerbIntr; ! This isn't working right now..
+riigte[N][Abs][Sg]:riigta        #;
+yug[N][Abs][Sg]:yuuk             #; 
+yug[N][Abs][Sg]-llu[Encl]:yuuklu #;
+yughaghte[N][Abs][Sg]:yughaghta  #;
