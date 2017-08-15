@@ -1,5 +1,5 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Prec] [Conc] [Encl]
+                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [To_Feel_R_Toward]
                   [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
@@ -1562,6 +1562,103 @@ V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@       
 !                                                                             |                                                                               |                                                                                | ! 4Pl SBJ |
 !                                                                             |                                                                               |                                                                                | ! 4Du SBJ |
 ! ----------------------------------------------------------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------------------------------|-----------|
+
+
+! ----------------------------------------------------------------|
+!           Intransitive Consequential II Mood Endings            |
+! ----------------------------------------------------------------|-----------|
+[V][CnsqII][3Sg]@R.VALENCE.INTR@:~(g₁)aqngan@R.VALENCE.INTR@     #; ! 3Sg SBJ |
+[V][CnsqII][3Pl]@R.VALENCE.INTR@:~(g₁)aqngata@R.VALENCE.INTR@    #; ! 3Pl SBJ |
+[V][CnsqII][3Du]@R.VALENCE.INTR@:~(g₁)aqngayek@R.VALENCE.INTR@   #; ! 3Du SBJ |
+! ----------------------------------------------------------------|-----------|
+[V][CnsqII][1Sg]@R.VALENCE.INTR@:~(g₁)aqngama@R.VALENCE.INTR@    #; ! 1Sg SBJ |
+[V][CnsqII][1Pl]@R.VALENCE.INTR@:~(g₁)aqngamta@R.VALENCE.INTR@   #; ! 1Pl SBJ |
+[V][CnsqII][1Du]@R.VALENCE.INTR@:~(g₁)aqngamtung@R.VALENCE.INTR@ #; ! 1Du SBJ |
+! ----------------------------------------------------------------|-----------|
+[V][CnsqII][2Sg]@R.VALENCE.INTR@:~(g₁)aqngavek@R.VALENCE.INTR@   #; ! 2Sg SBJ |
+[V][CnsqII][2Pl]@R.VALENCE.INTR@:~(g₁)aqngafsi@R.VALENCE.INTR@   #; ! 2Pl SBJ |
+[V][CnsqII][2Du]@R.VALENCE.INTR@:~(g₁)aqngaftek@R.VALENCE.INTR@  #; ! 2Du SBJ |
+! ----------------------------------------------------------------|-----------|
+[V][CnsqII][4Sg]@R.VALENCE.INTR@:~(g₁)aqngami@R.VALENCE.INTR@    #; ! 4Sg SBJ |
+[V][CnsqII][4Pl]@R.VALENCE.INTR@:~(g₁)aqngameng@R.VALENCE.INTR@  #; ! 4Pl SBJ |
+[V][CnsqII][4Du]@R.VALENCE.INTR@:~(g₁)aqngamek@R.VALENCE.INTR@   #; ! 4Du SBJ |
+! ----------------------------------------------------------------|-----------|
+
+|--------------------------------------------------------------------------|
+!                Transitive Consequential I Mood Endings                   |
+!--------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+!                         3rd singular object                              |                              3rd plural object                             |                                    3rd dual obj                             |           |
+!--------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][3Sg][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngagu@R.VALENCE.TRNS@        #; [V][CnsqII][3Sg][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngaki@R.VALENCE.TRNS@        #; [V][CnsqII][3Sg][3Du]@R.VALENCE.TRNS@:~(g₁)aqngakek@R.VALENCE.TRNS@        #; ! 3Sg SBJ |
+[V][CnsqII][3Pl][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngatgu@R.VALENCE.TRNS@       #; [V][CnsqII][3Pl][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngatki@R.VALENCE.TRNS@       #; [V][CnsqII][3Pl][3Du]@R.VALENCE.TRNS@:~(g₁)aqngatkek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][CnsqII][3Du][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngagnegu@R.VALENCE.TRNS@     #; [V][CnsqII][3Du][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngagneki@R.VALENCE.TRNS@     #; [V][CnsqII][3Du][3Du]@R.VALENCE.TRNS@:~(g₁)aqngagnekek@R.VALENCE.TRNS@     #; ! 3Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][1Sg][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngamkun@R.VALENCE.TRNS@      #; [V][CnsqII][1Sg][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngamki@R.VALENCE.TRNS@       #; [V][CnsqII][1Sg][3Du]@R.VALENCE.TRNS@:~(g₁)aqngamkek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][CnsqII][1Pl][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngamteggu@R.VALENCE.TRNS@    #; [V][CnsqII][1Pl][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngamteki@R.VALENCE.TRNS@     #; [V][CnsqII][1Pl][3Du]@R.VALENCE.TRNS@:~(g₁)aqngamtekek@R.VALENCE.TRNS@     #; ! 1Pl SBJ |
+[V][CnsqII][1Du][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngamtegnegu@R.VALENCE.TRNS@  #; [V][CnsqII][1Du][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngamtegneki@R.VALENCE.TRNS@  #; [V][CnsqII][1Du][3Du]@R.VALENCE.TRNS@:~(g₁)aqngamtegnekek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][2Sg][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngavgu@R.VALENCE.TRNS@       #; [V][CnsqII][2Sg][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngafki@R.VALENCE.TRNS@       #; [V][CnsqII][2Sg][3Du]@R.VALENCE.TRNS@:~(g₁)aqngafkek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
+[V][CnsqII][2Pl][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngafsigu@R.VALENCE.TRNS@     #; [V][CnsqII][2Pl][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngafsiki@R.VALENCE.TRNS@     #; [V][CnsqII][2Pl][3Du]@R.VALENCE.TRNS@:~(g₁)aqngafsikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
+[V][CnsqII][2Du][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngaftegnegu@R.VALENCE.TRNS@  #; [V][CnsqII][2Du][3Pl]@R.VALENCE.TRNS@:~(g₁)aqngaftegneki@R.VALENCE.TRNS@  #; [V][CnsqII][2Du][3Du]@R.VALENCE.TRNS@:~(g₁)aqngaftegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][4Sg][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngamigu@R.VALENCE.TRNS@      #; [V][CnsqII][4Sg][3Pl]@R.VALENCE.TRNS@:~(g₁)aqnga@R.VALENCE.TRNS@          #; [V][CnsqII][4Sg][3Du]@R.VALENCE.TRNS@:~(g₁)aqngamikek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
+[V][CnsqII][4Pl][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngamegteggu@R.VALENCE.TRNS@  #; [V][CnsqII][4Pl][3Pl]@R.VALENCE.TRNS@:~(g₁)aqnga@R.VALENCE.TRNS@          #; [V][CnsqII][4Pl][3Du]@R.VALENCE.TRNS@:~(g₁)aqngamegtekek@R.VALENCE.TRNS@   #; ! 4Pl SBJ |
+[V][CnsqII][4Du][3Sg]@R.VALENCE.TRNS@:~(g₁)aqngamegnegu@R.VALENCE.TRNS@   #; [V][CnsqII][4Du][3Pl]@R.VALENCE.TRNS@:~(g₁)aqnga@R.VALENCE.TRNS@          #; [V][CnsqII][4Du][3Du]@R.VALENCE.TRNS@:~(g₁)aqngamegnekek@R.VALENCE.TRNS@   #; ! 4Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+!                         1st singular object                              |                              1st plural object                             |                                    1st dual object                          |           |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][3Sg][1Sg]@R.VALENCE.TRNS@:~(g₁)aqnganga@R.VALENCE.TRNS@       #; [V][CnsqII][3Sg][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngankut@R.VALENCE.TRNS@      #; [V][CnsqII][3Sg][1Du]@R.VALENCE.TRNS@:~(g₁)aqngankung@R.VALENCE.TRNS@      #; ! 3Sg SBJ |
+[V][CnsqII][3Pl][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngatnga@R.VALENCE.TRNS@      #; [V][CnsqII][3Pl][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngankut@R.VALENCE.TRNS@      #; [V][CnsqII][3Pl][1Du]@R.VALENCE.TRNS@:~(g₁)aqngankung@R.VALENCE.TRNS@      #; ! 3Pl SBJ |
+[V][CnsqII][3Du][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngagnenga@R.VALENCE.TRNS@    #; [V][CnsqII][3Du][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngankut@R.VALENCE.TRNS@      #; [V][CnsqII][3Du][1Du]@R.VALENCE.TRNS@:~(g₁)aqngankung@R.VALENCE.TRNS@      #; ! 3Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+!                                                                          |                                                                            |                                                                             | ! 1Sg SBJ |
+!                                                                          |                                                                            |                                                                             | ! 1Pl SBJ |
+!                                                                          |                                                                            |                                                                             | ! 1Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][2Sg][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngavnga@R.VALENCE.TRNS@      #; [V][CnsqII][2Sg][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngafkut@R.VALENCE.TRNS@      #; [V][CnsqII][2Sg][1Du]@R.VALENCE.TRNS@:~(g₁)aqngafkung@R.VALENCE.TRNS@      #; ! 2Sg SBJ |
+[V][CnsqII][2Pl][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngafsinga@R.VALENCE.TRNS@    #; [V][CnsqII][2Pl][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngafsikut@R.VALENCE.TRNS@    #; [V][CnsqII][2Pl][1Du]@R.VALENCE.TRNS@:~(g₁)aqngafsikung@R.VALENCE.TRNS@    #; ! 2Pl SBJ |
+[V][CnsqII][2Du][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngaftegnenga@R.VALENCE.TRNS@ #; [V][CnsqII][2Du][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngaftegnekut@R.VALENCE.TRNS@ #; [V][CnsqII][2Du][1Du]@R.VALENCE.TRNS@:~(g₁)aqngaftegnekung@R.VALENCE.TRNS@ #; ! 2Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][4Sg][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngaminga@R.VALENCE.TRNS@     #; [V][CnsqII][4Sg][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngamikut@R.VALENCE.TRNS@     #; [V][CnsqII][4Sg][1Du]@R.VALENCE.TRNS@:~(g₁)aqngamikung@R.VALENCE.TRNS@     #; ! 4Sg SBJ |
+[V][CnsqII][4Pl][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngamegtengna@R.VALENCE.TRNS@ #; [V][CnsqII][4Pl][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngamegtekut@R.VALENCE.TRNS@  #; [V][CnsqII][4Pl][1Du]@R.VALENCE.TRNS@:~(g₁)aqngamegtekung@R.VALENCE.TRNS@  #; ! 4Pl SBJ |
+[V][CnsqII][4Du][1Sg]@R.VALENCE.TRNS@:~(g₁)aqngamegnenga@R.VALENCE.TRNS@  #; [V][CnsqII][4Du][1Pl]@R.VALENCE.TRNS@:~(g₁)aqngamegnekut@R.VALENCE.TRNS@  #; [V][CnsqII][4Du][1Du]@R.VALENCE.TRNS@:~(g₁)aqngamegnekung@R.VALENCE.TRNS@  #; ! 4Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+!                         2nd singular object                              |                              2nd plural object                             |                                    2nd dual object                          |           |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][3Sg][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngaten@R.VALENCE.TRNS@       #; [V][CnsqII][3Sg][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngasi@R.VALENCE.TRNS@        #; [V][CnsqII][3Sg][2Du]@R.VALENCE.TRNS@:~(g₁)aqngastek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
+[V][CnsqII][3Pl][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngaten@R.VALENCE.TRNS@       #; [V][CnsqII][3Pl][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngasi@R.VALENCE.TRNS@        #; [V][CnsqII][3Pl][2Du]@R.VALENCE.TRNS@:~(g₁)aqngastek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][CnsqII][3Du][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngaten@R.VALENCE.TRNS@       #; [V][CnsqII][3Du][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngasi@R.VALENCE.TRNS@        #; [V][CnsqII][3Du][2Du]@R.VALENCE.TRNS@:~(g₁)aqngastek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][1Sg][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngamken@R.VALENCE.TRNS@      #; [V][CnsqII][1Sg][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngamsi@R.VALENCE.TRNS@       #; [V][CnsqII][1Sg][2Du]@R.VALENCE.TRNS@:~(g₁)aqngamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][CnsqII][1Pl][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngamken@R.VALENCE.TRNS@      #; [V][CnsqII][1Pl][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngamsi@R.VALENCE.TRNS@       #; [V][CnsqII][1Pl][2Du]@R.VALENCE.TRNS@:~(g₁)aqngamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
+[V][CnsqII][1Du][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngamken@R.VALENCE.TRNS@      #; [V][CnsqII][1Du][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngamsi@R.VALENCE.TRNS@       #; [V][CnsqII][1Du][2Du]@R.VALENCE.TRNS@:~(g₁)aqngamtek@R.VALENCE.TRNS@       #; ! 1Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+!                                                                          |                                                                            |                                                                             | ! 2Sg SBJ |
+!                                                                          |                                                                            |                                                                             | ! 2Pl SBJ |
+!                                                                          |                                                                            |                                                                             | ! 2Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][4Sg][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngamiten@R.VALENCE.TRNS@     #; [V][CnsqII][4Sg][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngamisi@R.VALENCE.TRNS@      #; [V][CnsqII][4Sg][2Du]@R.VALENCE.TRNS@:~(g₁)aqngamitek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
+[V][CnsqII][4Pl][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngamiten@R.VALENCE.TRNS@     #; [V][CnsqII][4Pl][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngamisi@R.VALENCE.TRNS@      #; [V][CnsqII][4Pl][2Du]@R.VALENCE.TRNS@:~(g₁)aqnga@mitekR.VALENCE.TRNS@      #; ! 4Pl SBJ |
+[V][CnsqII][4Du][2Sg]@R.VALENCE.TRNS@:~(g₁)aqngamiten@R.VALENCE.TRNS@     #; [V][CnsqII][4Du][2Pl]@R.VALENCE.TRNS@:~(g₁)aqngamisi@R.VALENCE.TRNS@      #; [V][CnsqII][4Du][2Du]@R.VALENCE.TRNS@:~(g₁)aqngamitek@R.VALENCE.TRNS@      #; ! 4Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+!                          4th singular object                             |                              4th plural object                             |                                    4th dual object                          |           |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][3Sg][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngatni@R.VALENCE.TRNS@       #; [V][CnsqII][3Sg][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngasteng@R.VALENCE.TRNS@     #; [V][CnsqII][3Sg][4Du]@R.VALENCE.TRNS@:~(g₁)aqngastek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
+[V][CnsqII][3Pl][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngatni@R.VALENCE.TRNS@       #; [V][CnsqII][3Pl][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngasteng@R.VALENCE.TRNS@     #; [V][CnsqII][3Pl][4Du]@R.VALENCE.TRNS@:~(g₁)aqngastek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][CnsqII][3Du][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngatni@R.VALENCE.TRNS@       #; [V][CnsqII][3Du][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngasteng@R.VALENCE.TRNS@     #; [V][CnsqII][3Du][4Du]@R.VALENCE.TRNS@:~(g₁)aqngastek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][1Sg][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngamni@R.VALENCE.TRNS@       #; [V][CnsqII][1Sg][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngamteng@R.VALENCE.TRNS@     #; [V][CnsqII][1Sg][4Du]@R.VALENCE.TRNS@:~(g₁)aqngamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][CnsqII][1Pl][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngamnni@R.VALENCE.TRNS@      #; [V][CnsqII][1Pl][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngamteng@R.VALENCE.TRNS@     #; [V][CnsqII][1Pl][4Du]@R.VALENCE.TRNS@:~(g₁)aqngamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
+[V][CnsqII][1Du][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngamtegnegu@R.VALENCE.TRNS@  #; [V][CnsqII][1Du][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngamteng@R.VALENCE.TRNS@     #; [V][CnsqII][1Du][4Du]@R.VALENCE.TRNS@:~(g₁)aqngamtek@R.VALENCE.TRNS@       #; ! 1Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+[V][CnsqII][2Sg][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngavgu@R.VALENCE.TRNS@       #; [V][CnsqII][2Sg][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngafki@R.VALENCE.TRNS@       #; [V][CnsqII][2Sg][4Du]@R.VALENCE.TRNS@:~(g₁)aqngafkek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
+[V][CnsqII][2Pl][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngafsigu@R.VALENCE.TRNS@     #; [V][CnsqII][2Pl][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngafsiki@R.VALENCE.TRNS@     #; [V][CnsqII][2Pl][4Du]@R.VALENCE.TRNS@:~(g₁)aqngafsikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
+[V][CnsqII][2Du][4Sg]@R.VALENCE.TRNS@:~(g₁)aqngaftegnegu@R.VALENCE.TRNS@  #; [V][CnsqII][2Du][4Pl]@R.VALENCE.TRNS@:~(g₁)aqngaftegneki@R.VALENCE.TRNS@  #; [V][CnsqII][2Du][4Du]@R.VALENCE.TRNS@:~(g₁)aqngaftegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
+!                                                                          |                                                                            |                                                                             | ! 4Sg SBJ |
+!                                                                          |                                                                            |                                                                             | ! 4Pl SBJ |
+!                                                                          |                                                                            |                                                                             | ! 4Du SBJ |
+! -------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------|-----------|
 
 
 ! --------------------------------------------------------------------|
