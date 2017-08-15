@@ -1,20 +1,20 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-        		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Prec]
-				  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [To_Feel_R_Toward]
-				  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
-		          [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  @* @₁ @₂ @₃ ~sf ~f ~h -w (e) (g/t) (ng) (p/v) (t/y) (s/z) (g₁) (t) (pete/fte) (pete)fte (g₂) (te) (i₁) (i₂) (i/u) (u)
-	              @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
- 
+                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Prec] [Conc] [Encl]
+                  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [To_Feel_R_Toward]
+                  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
+                  [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
+                  @* @₁ @₂ @₃ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (pete/fte) (pete)fte (te) (i₁) (i₂) (i/u) (u)
+                  @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
+
 
 
 LEXICON Root
     NounBase      ;
-	EmotionalRoot ;
-	Interrogative ;
+    EmotionalRoot ;
+    Interrogative ;
     Particle      ;
-	PosturalRoot  ;
-	QuantQual     ;
+    PosturalRoot  ;
+    QuantQual     ;
     VerbBase      ;
 
 
@@ -31,6 +31,7 @@ LEXICON Particle
 
 aa               #; ! yes
 elngaatall       #; ! very much
+elngaatall       EncliticOrEnd; ! very much
 ighivgagh        #; ! yesterday
 legan            #; ! go ahead; and then
 nakaa            #; ! no
@@ -348,6 +349,19 @@ sari             NounPostbase; ! dog with floppy ears
 siilu            NounPostbase; ! brass
 uyviinegh        NounPostbase; ! shaman who can work evil
 
+! Jacobson (2001) Chapter 14 Noun Vocabulary
+ayaviigh         NounPostbase; ! walking stick; cane
+elqwaagh         NounPostbase; ! kelp
+eslallug         NounPostbase; ! rain
+ighaluqagh       NounPostbase; ! aged auklet (for eating)
+iqa              NounPostbase; ! dirt
+mesungesag       NounPostbase; ! killer whale
+qanig            NounPostbase; ! falling snow
+qiipaghagh*      NounPostbase; ! cloth cover parka
+quyngigh         NounPostbase; ! reindeer
+tungtu           NounPostbase; ! caribou
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -375,7 +389,7 @@ LEXICON NounPostbase
 -~sf-w%:(e)nkuk[N.and.partner.or.spouse]:~sf-w%:(e)nkuk  NounPostbase;
 
 ! Noun →  Verb (Verbalizing) Postbases
--~%:(ng)u[to.be.N][N→V]@P.VALENCE.INTR@:~%:(ng)u@P.VALENCE.INTR@                                                VerbPostbase;
+-~%:(ng₁)u[to.be.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)u@P.VALENCE.INTR@                                              VerbPostbase;
 -–lgu[to.have.N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                                                      VerbPostbase;
 -–ngllagh[to.make.N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                                              VerbPostbase;
 -–liigh[to.cook.or.prepare.N][N→V]@P.VALENCE.INTR@:–liigh@P.VALENCE.INTR@                                       VerbPostbase;
@@ -397,183 +411,191 @@ niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]@P.VAL
 
 LEXICON NounInfl
 
-! -----------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                    Absolutive Case Endings                                                                     |
-! -----------------------------------------------------------------------------------------------------------------------------------------------|
-!            singular possessed            |                plural possessed                 |                  dual possessed                   |    
-! -----------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-[N][Abs][Unpd][Sg]:0                      #;      [N][Abs][Unpd][Pl]:~sf-w%:(e)t            #;      [N][Abs][Unpd][Du]:~sf-w%:(e)k              #; ! unpossessed                 |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][3SgPoss][SgPosd]:~h%:(ng)a       #;      [N][Abs][3SgPoss][PlPosd]:~h%:(ng)i       #;      [N][Abs][3SgPoss][DuPosd]:~f-wkek         #; ! 3rd person singular possessor |
-[N][Abs][3PlPoss][SgPosd]:~h%:(ng)at      #;      [N][Abs][3PlPoss][PlPosd]:~h%:(ng)it      #;      [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  #; ! 3rd person plural possessor   |
-[N][Abs][3DuPoss][SgPosd]:~h:(ng)ak       #;      [N][Abs][3DuPoss][PlPosd]:~h:(ng)ik       #;      [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  #; ! 3rd person dual possessor     |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][1SgPoss][SgPosd]:~–ka            #;      [N][Abs][1SgPoss][PlPosd]:~sf-w%:(e)nka   #;      [N][Abs][1SgPoss][DuPosd]:~sf-w%:(e)gka   #; ! 1st person singular possessor |
-[N][Abs][1PlPoss][SgPosd]:(p/v)ut         #;      [N][Abs][1PlPoss][PlPosd]:–put            #;      [N][Abs][1PlPoss][DuPosd]:~sf-w%:(e)gput  #; ! 1st person plural possessor   |
-[N][Abs][1DuPoss][SgPosd]:(p/v)ung        #;      [N][Abs][1DuPoss][PlPosd]:–pung           #;      [N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung #; ! 1st person dual possessor     |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n     #;      [N][Abs][2SgPoss][PlPosd]:ten             #;      [N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  #; ! 2nd person singular possessor |
-                                                  [N][Abs][2SgPoss][PlPosd]:~f-wten         #;                                                   !                               |
-[N][Abs][2PlPoss][SgPosd]:(s/z)i          #;      [N][Abs][2PlPoss][PlPosd]:–si             #;      [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   #; ! 2nd person plural possessor   |
-[N][Abs][2DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][2DuPoss][PlPosd]:–tek            #;      [N][Abs][2DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 2nd person dual possessor     |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
-[N][Abs][4SgPoss][SgPosd]:–ni             #;      [N][Abs][4SgPoss][PlPosd]:–ni             #;      [N][Abs][4SgPoss][DuPosd]:~sf-w%:(e)gni   #; ! 4th person singular possessor |
-[N][Abs][4PlPoss][SgPosd]:(t/y)eng        #;      [N][Abs][4PlPoss][PlPosd]:–teng           #;      [N][Abs][4PlPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4th person plural possessor   |
-[N][Abs][4DuPoss][SgPosd]:(t/y)ek         #;      [N][Abs][4DuPoss][PlPosd]:–tek            #;      [N][Abs][4DuPoss][DuPosd]:~sf-w%:(e)gtek  #; ! 4th person dual possessor     |
-! -----------------------------------------|-------------------------------------------------|---------------------------------------------------|-------------------------------|
+! -------------------------------------------------|
+!              Absolutive Case Endings             |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                singular possessed                |                     plural possessed                 |                       dual possessed                   |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Abs][Unpd][Sg]:0                  EncliticOrEnd; [N][Abs][Unpd][Pl]:~sf-w%:(e)t          EncliticOrEnd; [N][Abs][Unpd][Du]:~sf-w%:(e)k            EncliticOrEnd; ! unpossessed   |
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][3SgPoss][SgPosd]:~h%:(ng₁)a  EncliticOrEnd; [N][Abs][3SgPoss][PlPosd]:~h%:(ng₁)i    EncliticOrEnd; [N][Abs][3SgPoss][DuPosd]:~f-wkek         EncliticOrEnd; ! 3SG possessor |
+[N][Abs][3PlPoss][SgPosd]:~h%:(ng₁)at EncliticOrEnd; [N][Abs][3PlPoss][PlPosd]:~h%:(ng₁)it   EncliticOrEnd; [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  EncliticOrEnd; ! 3PL possessor |
+[N][Abs][3DuPoss][SgPosd]:~h:(ng₁)ak  EncliticOrEnd; [N][Abs][3DuPoss][PlPosd]:~h:(ng₁)ik    EncliticOrEnd; [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  EncliticOrEnd; ! 3Du possessor |
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][1SgPoss][SgPosd]:~–ka        EncliticOrEnd; [N][Abs][1SgPoss][PlPosd]:~sf-w%:(e)nka EncliticOrEnd; [N][Abs][1SgPoss][DuPosd]:~sf-w%:(e)gka   EncliticOrEnd; ! 1SG possessor |
+[N][Abs][1PlPoss][SgPosd]:(p/v)ut     EncliticOrEnd; [N][Abs][1PlPoss][PlPosd]:–put          EncliticOrEnd; [N][Abs][1PlPoss][DuPosd]:~sf-w%:(e)gput  EncliticOrEnd; ! 1PL possessor |
+[N][Abs][1DuPoss][SgPosd]:(p/v)ung    EncliticOrEnd; [N][Abs][1DuPoss][PlPosd]:–pung         EncliticOrEnd; [N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung EncliticOrEnd; ! 1Du possessor |
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n EncliticOrEnd; [N][Abs][2SgPoss][PlPosd]:ten           EncliticOrEnd; [N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  EncliticOrEnd; ! 2SG possessor |
+[N][Abs][2SgPoss][PlPosd]:~f-wten     EncliticOrEnd; !                                                    |                                                        |                 |                                                    
+[N][Abs][2PlPoss][SgPosd]:(s/z)i      EncliticOrEnd; [N][Abs][2PlPoss][PlPosd]:–si           EncliticOrEnd; [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   EncliticOrEnd; ! 2Pl possessor |
+[N][Abs][2DuPoss][SgPosd]:(t/y)ek     EncliticOrEnd; [N][Abs][2DuPoss][PlPosd]:–tek          EncliticOrEnd; [N][Abs][2DuPoss][DuPosd]:~sf-w%:(e)gtek  EncliticOrEnd; ! 2Du possessor |
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
+[N][Abs][4SgPoss][SgPosd]:–ni         EncliticOrEnd; [N][Abs][4SgPoss][PlPosd]:–ni           EncliticOrEnd; [N][Abs][4SgPoss][DuPosd]:~sf-w%:(e)gni   EncliticOrEnd; ! 4SG possessor |
+[N][Abs][4PlPoss][SgPosd]:(t/y)eng    EncliticOrEnd; [N][Abs][4PlPoss][PlPosd]:–teng         EncliticOrEnd; [N][Abs][4PlPoss][DuPosd]:~sf-w%:(e)gtek  EncliticOrEnd; ! 4Pl possessor |
+[N][Abs][4DuPoss][SgPosd]:(t/y)ek     EncliticOrEnd; [N][Abs][4DuPoss][PlPosd]:–tek          EncliticOrEnd; [N][Abs][4DuPoss][DuPosd]:~sf-w%:(e)gtek  EncliticOrEnd; ! 4Du possessor |
+! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
 
 
-! ----------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                             Ablative-Modalis Case Endings                                                                 |
-! ----------------------------------------------------------------------------------------------------------------------------------------------------------|
-!               singular possessed               |                plural possessed                |                     dual possessed                      |    
-! ----------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Abl_Mod][Unpd][Sg]:~f-wmeng                 #; [N][Abl_Mod][Unpd][Pl]:-wneng                 #; [N][Abl_Mod][Unpd][Du]:~sf-w%:(e)gneng               #; ! unpossessed    |
-                                                   ![N][Abl_Mod][Unpd][Pl]:~f-wneng              #;                                                         !                |
-! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
-[N][Abl_Mod][3SgPoss][SgPosd]:~%:(ng)aneng      #; [N][Abl_Mod][3SgPoss][PlPosd]:~%:(ng)aneng    #; [N][Abl_Mod][3SgPoss][DuPosd]:~sf-w%:(e)gkeneng      #; ! 3Sg possessor  |
-[N][Abl_Mod][3PlPoss][SgPosd]:~%:(ng)itneng     #; [N][Abl_Mod][3PlPoss][PlPosd]:~%:(ng)itneng   #; [N][Abl_Mod][3PlPoss][DuPosd]:~%:(ng)itneng          #; ! 3Pl possessor  |
-[N][Abl_Mod][3DuPoss][SgPosd]:~sf-w%:(e)gkeneng #; [N][Abl_Mod][3DuPoss][PlPosd]:~%:(ng)itneng   #; [N][Abl_Mod][3DuPoss][DuPosd]:~%:(ng)itneng          #; ! 3Du possessor  |
-! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
-[N][Abl_Mod][1SgPoss][SgPosd]:–mneng            #; [N][Abl_Mod][1SgPoss][PlPosd]:–mneng          #; [N][Abl_Mod][1SgPoss][DuPosd]:~sf-w%:(e)gemneng      #; ! 1Sg possessor  |
-[N][Abl_Mod][1PlPoss][SgPosd]:–mnneng           #; [N][Abl_Mod][1PlPoss][PlPosd]:–mnneng         #; [N][Abl_Mod][1PlPoss][DuPosd]:~sf-w%:(e)gemnneng     #; ! 1Pl possessor  |
-[N][Abl_Mod][1DuPoss][SgPosd]:–mtegneng         #; [N][Abl_Mod][1DuPoss][PlPosd]:–mtegneng       #; [N][Abl_Mod][1DuPoss][DuPosd]:~sf-w%:(e)gemtegneng   #; ! 1Du possessor  |
-! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
-[N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g₁)neng      #; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g₁)neng    #; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)neng  #; ! 2Sg possessor  |
-[N][Abl_Mod][2PlPoss][SgPosd]:–gpesineng        #; [N][Abl_Mod][2PlPoss][PlPosd]:–gpesineng      #; [N][Abl_Mod][2PlPoss][DuPosd]:~sf-w%:(e)gpesineng    #; ! 2Pl possessor  |
-[N][Abl_Mod][2DuPoss][SgPosd]:–gpetegneng       #; [N][Abl_Mod][2DuPoss][PlPosd]:–gpetegneng     #; [N][Abl_Mod][2DuPoss][DuPosd]:~sf-w%:(e)gpetegneng   #; ! 2Du possessor  |
-! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
-[N][Abl_Mod][4SgPoss][SgPosd]:~f-wmineng        #; [N][Abl_Mod][4SgPoss][PlPosd]:~f-wmineng      #; [N][Abl_Mod][4SgPoss][DuPosd]:~sf-w%:(e)gmineng      #; ! 4Sg possessor  |
-[N][Abl_Mod][4PlPoss][SgPosd]:~f-wmeggneng      #; [N][Abl_Mod][4PlPoss][PlPosd]:~f-wmeggneng    #; [N][Abl_Mod][4PlPoss][DuPosd]:~sf-w%:(e)gmeggneng    #; ! 4Pl possessor  |
-[N][Abl_Mod][4DuPoss][SgPosd]:~f-wmeg(te)neng   #; [N][Abl_Mod][4DuPoss][PlPosd]:~f-wmeg(te)neng #; [N][Abl_Mod][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)neng #; ! 4Du possessor  |
-! -----------------------------------------------|------------------------------------------------|---------------------------------------------------------|----------------|
+! -----------------------------------------------------------|
+!                Ablative-Modalis Case Endings               |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                      singular possessed                    |                        plural possessed                    |                            dual possessed                         |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][Unpd][Sg]:~f-wmeng                 EncliticOrEnd; [N][Abl_Mod][Unpd][Pl]:-wneng                 EncliticOrEnd; [N][Abl_Mod][Unpd][Du]:~sf-w%:(e)gneng               EncliticOrEnd; ! unpossessed   |
+![N][Abl_Mod][Unpd][Pl]:~f-wneng                EncliticOrEnd; !                                                          |                                                                   |                 |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][3SgPoss][SgPosd]:~%:(ng₁)aneng     EncliticOrEnd; [N][Abl_Mod][3SgPoss][PlPosd]:~%:(ng₁)aneng   EncliticOrEnd; [N][Abl_Mod][3SgPoss][DuPosd]:~sf-w%:(e)gkeneng      EncliticOrEnd; ! 3Sg possessor |
+[N][Abl_Mod][3PlPoss][SgPosd]:~%:(ng₁)itneng    EncliticOrEnd; [N][Abl_Mod][3PlPoss][PlPosd]:~%:(ng₁)itneng  EncliticOrEnd; [N][Abl_Mod][3PlPoss][DuPosd]:~%:(ng₁)itneng         EncliticOrEnd; ! 3Pl possessor |
+[N][Abl_Mod][3DuPoss][SgPosd]:~sf-w%:(e)gkeneng EncliticOrEnd; [N][Abl_Mod][3DuPoss][PlPosd]:~%:(ng₁)itneng  EncliticOrEnd; [N][Abl_Mod][3DuPoss][DuPosd]:~%:(ng₁)itneng         EncliticOrEnd; ! 3Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][1SgPoss][SgPosd]:–mneng            EncliticOrEnd; [N][Abl_Mod][1SgPoss][PlPosd]:–mneng          EncliticOrEnd; [N][Abl_Mod][1SgPoss][DuPosd]:~sf-w%:(e)gemneng      EncliticOrEnd; ! 1Sg possessor |
+[N][Abl_Mod][1PlPoss][SgPosd]:–mnneng           EncliticOrEnd; [N][Abl_Mod][1PlPoss][PlPosd]:–mnneng         EncliticOrEnd; [N][Abl_Mod][1PlPoss][DuPosd]:~sf-w%:(e)gemnneng     EncliticOrEnd; ! 1Pl possessor |
+[N][Abl_Mod][1DuPoss][SgPosd]:–mtegneng         EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:–mtegneng       EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:~sf-w%:(e)gemtegneng   EncliticOrEnd; ! 1Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g₁)neng      EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g₁)neng    EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)neng  EncliticOrEnd; ! 2Sg possessor |
+[N][Abl_Mod][2PlPoss][SgPosd]:–gpesineng        EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:–gpesineng      EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:~sf-w%:(e)gpesineng    EncliticOrEnd; ! 2Pl possessor |
+[N][Abl_Mod][2DuPoss][SgPosd]:–gpetegneng       EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:–gpetegneng     EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:~sf-w%:(e)gpetegneng   EncliticOrEnd; ! 2Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+[N][Abl_Mod][4SgPoss][SgPosd]:~f-wmineng        EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:~f-wmineng      EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:~sf-w%:(e)gmineng      EncliticOrEnd; ! 4Sg possessor |
+[N][Abl_Mod][4PlPoss][SgPosd]:~f-wmeggneng      EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:~f-wmeggneng    EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:~sf-w%:(e)gmeggneng    EncliticOrEnd; ! 4Pl possessor |
+[N][Abl_Mod][4DuPoss][SgPosd]:~f-wmeg(te)neng   EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:~f-wmeg(te)neng EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)neng EncliticOrEnd; ! 4Du possessor |
+! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
 
 
-! ----------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                         Localis Case Endings (at N; in N)                                                     |
-! ----------------------------------------------------------------------------------------------------------------------------------------------|
-!             singular possessed           |                plural possessed             |                      dual possessed                  |    
-! ----------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Loc][Unpd][Sg]:~f-wmi                 #;    [N][Loc][Unpd][Pl]:~f-wni               #;    [N][Loc][Unpd][Du]:~sf-w%:(e)gni               #; ! unpossessed    |
-                                                ![N][Loc][Unpd][Pl]:-wni                #;                                                      !                |
-! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
-[N][Loc][3SgPoss][SgPosd]:~%:(ng)ani      #;    [N][Loc][3SgPoss][PlPosd]:~%:(ng)ani    #;    [N][Loc][3SgPoss][DuPosd]:~sf-w%:(e)gkeni      #; ! 3Sg possessor  |
-[N][Loc][3PlPoss][SgPosd]:~%:(ng)itni     #;    [N][Loc][3PlPoss][PlPosd]:~%:(ng)itni   #;    [N][Loc][3PlPoss][DuPosd]:~%:(ng)itni          #; ! 3Pl possessor  |
-[N][Loc][3DuPoss][SgPosd]:~sf-w%:(e)gkeni #;    [N][Loc][3DuPoss][PlPosd]:~%:(ng)itni   #;    [N][Loc][3DuPoss][DuPosd]:~%:(ng)itni          #; ! 3Du possessor  |
-! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
-[N][Loc][1SgPoss][SgPosd]:–mni            #;    [N][Loc][1SgPoss][PlPosd]:–mni          #;    [N][Loc][1SgPoss][DuPosd]:~sf-w%:(e)gemni      #; ! 1Sg possessor  |
-[N][Loc][1PlPoss][SgPosd]:–mnni           #;    [N][Loc][1PlPoss][PlPosd]:–mnni         #;    [N][Loc][1PlPoss][DuPosd]:~sf-w%:(e)gemnni     #; ! 1Pl possessor  |
-[N][Loc][1DuPoss][SgPosd]:–mtegni         #;    [N][Loc][1DuPoss][PlPosd]:–mtegni       #;    [N][Loc][1DuPoss][DuPosd]:~sf-w%:(e)gemtegni   #; ! 1Du possessor  |
-! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
-[N][Loc][2SgPoss][SgPosd]:–gpe(g₁)ni      #;    [N][Loc][2SgPoss][PlPosd]:–gpe(g₁)ni    #;    [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)ni  #; ! 2Sg possessor  |
-[N][Loc][2PlPoss][SgPosd]:–gpesini        #;    [N][Loc][2PlPoss][PlPosd]:–gpesini      #;    [N][Loc][2PlPoss][DuPosd]:~sf-w%:(e)gpesini    #; ! 2Pl possessor  |
-[N][Loc][2DuPoss][SgPosd]:–gpetegni       #;    [N][Loc][2DuPoss][PlPosd]:–gpetegni     #;    [N][Loc][2DuPoss][DuPosd]:~sf-w%:(e)gpetegni   #; ! 2Du possessor  |
-! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
-[N][Loc][4SgPoss][SgPosd]:~f-wmini        #;    [N][Loc][4SgPoss][PlPosd]:~f-wmini      #;    [N][Loc][4SgPoss][DuPosd]:~sf-w%:(e)gmini      #; ! 4Sg possessor  |
-[N][Loc][4PlPoss][SgPosd]:~f-wmeggni      #;    [N][Loc][4PlPoss][PlPosd]:~f-wmeggni    #;    [N][Loc][4PlPoss][DuPosd]:~sf-w%:(e)gmeggni    #; ! 4Pl possessor  |
-[N][Loc][4DuPoss][SgPosd]:~f-wmeg(te)ni   #;    [N][Loc][4DuPoss][PlPosd]:~f-wmeg(te)ni #;    [N][Loc][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)ni #; ! 4Du possessor  |
-! -----------------------------------------|---------------------------------------------|------------------------------------------------------|----------------|
-
- 
-! -------------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                          Terminalis Case Endings (to N)                                                          |
-! -------------------------------------------------------------------------------------------------------------------------------------------------|
-!             singular possessed            |                plural possessed              |                      dual possessed                   |    
-! -------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Ter][Unpd][Sg]:~f-wmun                 #;    [N][Ter][Unpd][Pl]:~f-wnun               #;    [N][Ter][Unpd][Du]:~sf-w%:(e)gnun               #; ! unpossessed    |
-                                                 ![N][Ter][Unpd][Pl]:~f-wnun              #;                                                       !                |
-! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
-[N][Ter][3SgPoss][SgPosd]:~%:(ng)anun      #;    [N][Ter][3SgPoss][PlPosd]:~%:(ng)anun    #;    [N][Ter][3SgPoss][DuPosd]:~sf-w%:(e)gkenun      #; ! 3Sg possessor  |
-[N][Ter][3PlPoss][SgPosd]:~%:(ng)itnun     #;    [N][Ter][3PlPoss][PlPosd]:~%:(ng)itnun   #;    [N][Ter][3PlPoss][DuPosd]:~%:(ng)itnun          #; ! 3Pl possessor  |
-[N][Ter][3DuPoss][SgPosd]:~sf-w%:(e)gkenun #;    [N][Ter][3DuPoss][PlPosd]:~%:(ng)itnun   #;    [N][Ter][3DuPoss][DuPosd]:~%:(ng)itnun          #; ! 3Du possessor  |
-! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
-[N][Ter][1SgPoss][SgPosd]:–mnun            #;    [N][Ter][1SgPoss][PlPosd]:–mnun          #;    [N][Ter][1SgPoss][DuPosd]:~sf-w%:(e)gemnun      #; ! 1Sg possessor  |
-[N][Ter][1PlPoss][SgPosd]:–mnnun           #;    [N][Ter][1PlPoss][PlPosd]:–mnnun         #;    [N][Ter][1PlPoss][DuPosd]:~sf-w%:(e)gemnnun     #; ! 1Pl possessor  |
-[N][Ter][1DuPoss][SgPosd]:–mtegnun         #;    [N][Ter][1DuPoss][PlPosd]:–mtegnun       #;    [N][Ter][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnun   #; ! 1Du possessor  |
-! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
-[N][Ter][2SgPoss][SgPosd]:–gpe(g₁)nun      #;    [N][Ter][2SgPoss][PlPosd]:–gpe(g₁)nun    #;    [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)nun  #; ! 2Sg possessor  |
-[N][Ter][2PlPoss][SgPosd]:–gpesinun        #;    [N][Ter][2PlPoss][PlPosd]:–gpesinun      #;    [N][Ter][2PlPoss][DuPosd]:~sf-w%:(e)gpesinun    #; ! 2Pl possessor  |
-[N][Ter][2DuPoss][SgPosd]:–gpetegnun       #;    [N][Ter][2DuPoss][PlPosd]:–gpetegnun     #;    [N][Ter][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnun   #; ! 2Du possessor  |
-! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
-[N][Ter][4SgPoss][SgPosd]:~f-wminun        #;    [N][Ter][4SgPoss][PlPosd]:~f-wminun      #;    [N][Ter][4SgPoss][DuPosd]:~sf-w%:(e)gminun      #; ! 4Sg possessor  |
-[N][Ter][4PlPoss][SgPosd]:~f-wmeggnun      #;    [N][Ter][4PlPoss][PlPosd]:~f-wmeggnun    #;    [N][Ter][4PlPoss][DuPosd]:~sf-w%:(e)gmeggnun    #; ! 4Pl possessor  |
-[N][Ter][4DuPoss][SgPosd]:~f-wmeg(te)nun   #;    [N][Ter][4DuPoss][PlPosd]:~f-wmeg(te)nun #;    [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)nun #; ! 4Du possessor  |
-! ------------------------------------------|----------------------------------------------|-------------------------------------------------------|----------------|
+! -----------------------------------------------------|
+!           Localis Case Endings (at N; in N)          |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                  singular possessed                  |                     plural possessed                 |                          dual possessed                     |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Loc][Unpd][Sg]:~f-wmi                 EncliticOrEnd; [N][Loc][Unpd][Pl]:~f-wni               EncliticOrEnd; [N][Loc][Unpd][Du]:~sf-w%:(e)gni               EncliticOrEnd; ! unpossessed   |
+![N][Loc][Unpd][Pl]:-wni                  EncliticOrEnd; !                                                    !                                                             |                 |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][3SgPoss][SgPosd]:~%:(ng₁)ani     EncliticOrEnd; [N][Loc][3SgPoss][PlPosd]:~%:(ng₁)ani   EncliticOrEnd; [N][Loc][3SgPoss][DuPosd]:~sf-w%:(e)gkeni      EncliticOrEnd; ! 3Sg possessor |
+[N][Loc][3PlPoss][SgPosd]:~%:(ng₁)itni    EncliticOrEnd; [N][Loc][3PlPoss][PlPosd]:~%:(ng₁)itni  EncliticOrEnd; [N][Loc][3PlPoss][DuPosd]:~%:(ng₁)itni         EncliticOrEnd; ! 3Pl possessor |
+[N][Loc][3DuPoss][SgPosd]:~sf-w%:(e)gkeni EncliticOrEnd; [N][Loc][3DuPoss][PlPosd]:~%:(ng₁)itni  EncliticOrEnd; [N][Loc][3DuPoss][DuPosd]:~%:(ng₁)itni         EncliticOrEnd; ! 3Du possessor |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][1SgPoss][SgPosd]:–mni            EncliticOrEnd; [N][Loc][1SgPoss][PlPosd]:–mni          EncliticOrEnd; [N][Loc][1SgPoss][DuPosd]:~sf-w%:(e)gemni      EncliticOrEnd; ! 1Sg possessor |
+[N][Loc][1PlPoss][SgPosd]:–mnni           EncliticOrEnd; [N][Loc][1PlPoss][PlPosd]:–mnni         EncliticOrEnd; [N][Loc][1PlPoss][DuPosd]:~sf-w%:(e)gemnni     EncliticOrEnd; ! 1Pl possessor |
+[N][Loc][1DuPoss][SgPosd]:–mtegni         EncliticOrEnd; [N][Loc][1DuPoss][PlPosd]:–mtegni       EncliticOrEnd; [N][Loc][1DuPoss][DuPosd]:~sf-w%:(e)gemtegni   EncliticOrEnd; ! 1Du possessor |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][2SgPoss][SgPosd]:–gpe(g₁)ni      EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:–gpe(g₁)ni    EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)ni  EncliticOrEnd; ! 2Sg possessor |
+[N][Loc][2PlPoss][SgPosd]:–gpesini        EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:–gpesini      EncliticOrEnd; [N][Loc][2PlPoss][DuPosd]:~sf-w%:(e)gpesini    EncliticOrEnd; ! 2Pl possessor |
+[N][Loc][2DuPoss][SgPosd]:–gpetegni       EncliticOrEnd; [N][Loc][2DuPoss][PlPosd]:–gpetegni     EncliticOrEnd; [N][Loc][2DuPoss][DuPosd]:~sf-w%:(e)gpetegni   EncliticOrEnd; ! 2Du possessor |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+[N][Loc][4SgPoss][SgPosd]:~f-wmini        EncliticOrEnd; [N][Loc][4SgPoss][PlPosd]:~f-wmini      EncliticOrEnd; [N][Loc][4SgPoss][DuPosd]:~sf-w%:(e)gmini      EncliticOrEnd; ! 4Sg possessor |
+[N][Loc][4PlPoss][SgPosd]:~f-wmeggni      EncliticOrEnd; [N][Loc][4PlPoss][PlPosd]:~f-wmeggni    EncliticOrEnd; [N][Loc][4PlPoss][DuPosd]:~sf-w%:(e)gmeggni    EncliticOrEnd; ! 4Pl possessor |
+[N][Loc][4DuPoss][SgPosd]:~f-wmeg(te)ni   EncliticOrEnd; [N][Loc][4DuPoss][PlPosd]:~f-wmeg(te)ni EncliticOrEnd; [N][Loc][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)ni EncliticOrEnd; ! 4Du possessor |
+! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
 
 
+! ------------------------------------------------------|
+!            Terminalis Case Endings (to N)             | 
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                   singular possessed                  |                      plural possessed                 |                          dual possessed                      |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Ter][Unpd][Sg]:~f-wmun                 EncliticOrEnd; [N][Ter][Unpd][Pl]:~f-wnun               EncliticOrEnd; [N][Ter][Unpd][Du]:~sf-w%:(e)gnun               EncliticOrEnd; ! unpossessed   |
+![N][Ter][Unpd][Pl]:~f-wnun                EncliticOrEnd; !                                                     |                                                              |                 | 
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][3SgPoss][SgPosd]:~%:(ng₁)anun     EncliticOrEnd; [N][Ter][3SgPoss][PlPosd]:~%:(ng₁)anun   EncliticOrEnd; [N][Ter][3SgPoss][DuPosd]:~sf-w%:(e)gkenun      EncliticOrEnd; ! 3Sg possessor |
+[N][Ter][3PlPoss][SgPosd]:~%:(ng₁)itnun    EncliticOrEnd; [N][Ter][3PlPoss][PlPosd]:~%:(ng₁)itnun  EncliticOrEnd; [N][Ter][3PlPoss][DuPosd]:~%:(ng₁)itnun         EncliticOrEnd; ! 3Pl possessor |
+[N][Ter][3DuPoss][SgPosd]:~sf-w%:(e)gkenun EncliticOrEnd; [N][Ter][3DuPoss][PlPosd]:~%:(ng₁)itnun  EncliticOrEnd; [N][Ter][3DuPoss][DuPosd]:~%:(ng₁)itnun         EncliticOrEnd; ! 3Du possessor |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][1SgPoss][SgPosd]:–mnun            EncliticOrEnd; [N][Ter][1SgPoss][PlPosd]:–mnun          EncliticOrEnd; [N][Ter][1SgPoss][DuPosd]:~sf-w%:(e)gemnun      EncliticOrEnd; ! 1Sg possessor |
+[N][Ter][1PlPoss][SgPosd]:–mnnun           EncliticOrEnd; [N][Ter][1PlPoss][PlPosd]:–mnnun         EncliticOrEnd; [N][Ter][1PlPoss][DuPosd]:~sf-w%:(e)gemnnun     EncliticOrEnd; ! 1Pl possessor |
+[N][Ter][1DuPoss][SgPosd]:–mtegnun         EncliticOrEnd; [N][Ter][1DuPoss][PlPosd]:–mtegnun       EncliticOrEnd; [N][Ter][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnun   EncliticOrEnd; ! 1Du possessor |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][2SgPoss][SgPosd]:–gpe(g₁)nun      EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:–gpe(g₁)nun    EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g₁)nun  EncliticOrEnd; ! 2Sg possessor |
+[N][Ter][2PlPoss][SgPosd]:–gpesinun        EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:–gpesinun      EncliticOrEnd; [N][Ter][2PlPoss][DuPosd]:~sf-w%:(e)gpesinun    EncliticOrEnd; ! 2Pl possessor |
+[N][Ter][2DuPoss][SgPosd]:–gpetegnun       EncliticOrEnd; [N][Ter][2DuPoss][PlPosd]:–gpetegnun     EncliticOrEnd; [N][Ter][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnun   EncliticOrEnd; ! 2Du possessor |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Ter][4SgPoss][SgPosd]:~f-wminun        EncliticOrEnd; [N][Ter][4SgPoss][PlPosd]:~f-wminun      EncliticOrEnd; [N][Ter][4SgPoss][DuPosd]:~sf-w%:(e)gminun      EncliticOrEnd; ! 4Sg possessor |
+[N][Ter][4PlPoss][SgPosd]:~f-wmeggnun      EncliticOrEnd; [N][Ter][4PlPoss][PlPosd]:~f-wmeggnun    EncliticOrEnd; [N][Ter][4PlPoss][DuPosd]:~sf-w%:(e)gmeggnun    EncliticOrEnd; ! 4Pl possessor |
+[N][Ter][4DuPoss][SgPosd]:~f-wmeg(te)nun   EncliticOrEnd; [N][Ter][4DuPoss][PlPosd]:~f-wmeg(te)nun EncliticOrEnd; [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmeg(te)nun EncliticOrEnd; ! 4Du possessor |
+! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+
+
+! -------------------------------------------------------|
+!              Vialis Case Endings (through N)           |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                  singular possessed                    |                      plural possessed                  |                           dual possessed                      |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------- -|
+[N][Via][Unpd][Sg]:~f-wkun                  EncliticOrEnd; [N][Via][Unpd][Pl]:~sf-w%:(e)tgun         EncliticOrEnd; [N][Via][Unpd][Du]:~sf-w%:(e)gnegun               EncliticOrEnd; ! unpossessed   |
+! -------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+[N][Via][3SgPoss][SgPosd]:~%:(ng₁)akun      EncliticOrEnd; [N][Via][3SgPoss][PlPosd]:~%:(ng₁)akun    EncliticOrEnd; [N][Via][3SgPoss][DuPosd]:~sf-w%:(e)gkenkun       EncliticOrEnd; ! 3Sg possessor |
+[N][Via][3PlPoss][SgPosd]:~%:(ng₁)itgun     EncliticOrEnd; [N][Via][3PlPoss][PlPosd]:~%:(ng₁)itgun   EncliticOrEnd; [N][Via][3PlPoss][DuPosd]:~%:(ng₁)itgun           EncliticOrEnd; ! 3Pl possessor |
+[N][Via][3DuPoss][SgPosd]:~sf-w%:(e)gkenkun EncliticOrEnd; [N][Via][3DuPoss][PlPosd]:~%:(ng₁)akun    EncliticOrEnd; [N][Via][3DuPoss][DuPosd]:~%:(ng₁)itgun           EncliticOrEnd; ! 3Du possessor |
+! -------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+[N][Via][1SgPoss][SgPosd]:–mkun             EncliticOrEnd; [N][Via][1SgPoss][PlPosd]:–mkun           EncliticOrEnd; [N][Via][1SgPoss][DuPosd]:~sf-w%:(e)gemkun        EncliticOrEnd; ! 1Sg possessor |
+[N][Via][1PlPoss][SgPosd]:–mteggun          EncliticOrEnd; [N][Via][1PlPoss][PlPosd]:–mteggun        EncliticOrEnd; [N][Via][1PlPoss][DuPosd]:~sf-w%:(e)gemteggun     EncliticOrEnd; ! 1Pl possessor |
+[N][Via][1DuPoss][SgPosd]:–mtegnegun        EncliticOrEnd; [N][Via][1DuPoss][PlPosd]:–mtegnegun      EncliticOrEnd; [N][Via][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnegun   EncliticOrEnd; ! 1Du possessor |
+! -------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+[N][Via][2SgPoss][SgPosd]:–gpekun           EncliticOrEnd; [N][Via][2SgPoss][PlPosd]:–gpegun         EncliticOrEnd; [N][Via][2SgPoss][DuPosd]:~sf-w%:(e)gpegun        EncliticOrEnd; ! 2Sg possessor |
+[N][Via][2PlPoss][SgPosd]:–gpesigun         EncliticOrEnd; [N][Via][2PlPoss][PlPosd]:–gpesigun       EncliticOrEnd; [N][Via][2PlPoss][DuPosd]:~sf-w%:(e)gpesigun      EncliticOrEnd; ! 2Pl possessor |
+[N][Via][2DuPoss][SgPosd]:–gpetegnegun      EncliticOrEnd; [N][Via][2DuPoss][PlPosd]:–gpetegnegun    EncliticOrEnd; [N][Via][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnegun   EncliticOrEnd; ! 2Du possessor |
+! -------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+[N][Via][4SgPoss][SgPosd]:~f-wmikun         EncliticOrEnd; [N][Via][4SgPoss][PlPosd]:~f-wmikun       EncliticOrEnd; [N][Via][4SgPoss][DuPosd]:~sf-w%:(e)gmikun        EncliticOrEnd; ! 4Sg possessor |
+[N][Via][4PlPoss][SgPosd]:~f-wmegteggun     EncliticOrEnd; [N][Via][4PlPoss][PlPosd]:~f-wmegteggun   EncliticOrEnd; [N][Via][4PlPoss][DuPosd]:~sf-w%:(e)gmegteggun    EncliticOrEnd; ! 4Pl possessor |
+[N][Via][4DuPoss][SgPosd]:~f-wmegtegnegun   EncliticOrEnd; [N][Via][4DuPoss][PlPosd]:~f-wmegtegnegun EncliticOrEnd;  [N][Via][4DuPoss][DuPosd]:~sf-w%:(e)gmegtegnegun EncliticOrEnd; ! 4Du possessor |
+! -------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+
+
+! ------------------------------------------------------|
+!             Equalis Case Endings (like N)             |
+! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                  singular possessed                   |                     plural possessed                |                          dual possessed                      |
+! ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Equ][Unpd][Sg]:~f-wtun                 EncliticOrEnd; [N][Equ][Unpd][Pl]:~sf-w%:(e)stun      EncliticOrEnd; [N][Equ][Unpd][Du]:~sf-w%:(e)gestun             EncliticOrEnd; ! unpossessed   |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][3SgPoss][SgPosd]:~%:(ng₁)atun     EncliticOrEnd; [N][Equ][3SgPoss][PlPosd]:~%:(ng₁)atun EncliticOrEnd; [N][Equ][3SgPoss][DuPosd]:~sf-w%:(e)gketun      EncliticOrEnd; ! 3Sg possessor |
+[N][Equ][3PlPoss][SgPosd]:~%:(ng₁)itun     EncliticOrEnd; [N][Equ][3PlPoss][PlPosd]:~%:(ng₁)itun EncliticOrEnd; [N][Equ][3PlPoss][DuPosd]:~%:(ng₁)itun          EncliticOrEnd; ! 3Pl possessor |
+[N][Equ][3DuPoss][SgPosd]:~sf-w%:(e)gketun EncliticOrEnd; [N][Equ][3DuPoss][PlPosd]:~%:(ng₁)itun EncliticOrEnd; [N][Equ][3DuPoss][DuPosd]:~%:(ng₁)itun          EncliticOrEnd; ! 3Du possessor |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][1SgPoss][SgPosd]:–mtun            EncliticOrEnd; [N][Equ][1SgPoss][PlPosd]:–mtun        EncliticOrEnd; [N][Equ][1SgPoss][DuPosd]:~sf-w%:(e)gemtun      EncliticOrEnd; ! 1Sg possessor |
+[N][Equ][1PlPoss][SgPosd]:–mtestun         EncliticOrEnd; [N][Equ][1PlPoss][PlPosd]:–mtestun     EncliticOrEnd; [N][Equ][1PlPoss][DuPosd]:~sf-w%:(e)gemtestun   EncliticOrEnd; ! 1Pl possessor |
+[N][Equ][1DuPoss][SgPosd]:–mtegestun       EncliticOrEnd; [N][Equ][1DuPoss][PlPosd]:–mtegestun   EncliticOrEnd; [N][Equ][1DuPoss][DuPosd]:~sf-w%:(e)gemtegestun EncliticOrEnd; ! 1Du possessor |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][2SgPoss][SgPosd]:–gpetun          EncliticOrEnd; [N][Equ][2SgPoss][PlPosd]:–gpetun      EncliticOrEnd; [N][Equ][2SgPoss][DuPosd]:~sf-w%:(e)gpetun      EncliticOrEnd; ! 2Sg possessor |
+[N][Equ][2PlPoss][SgPosd]:–gpesistun       EncliticOrEnd; [N][Equ][2PlPoss][PlPosd]:–gpesistun   EncliticOrEnd; [N][Equ][2PlPoss][DuPosd]:~sf-w%:(e)gpesistun   EncliticOrEnd; ! 2Pl possessor |
+[N][Equ][2DuPoss][SgPosd]:–gpetegetun      EncliticOrEnd; [N][Equ][2DuPoss][PlPosd]:–gpetegetun  EncliticOrEnd; [N][Equ][2DuPoss][DuPosd]:~sf-w%:(e)gpetegetun  EncliticOrEnd; ! 2Du possessor |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Equ][4SgPoss][SgPosd]:~f-wmitun        EncliticOrEnd; [N][Equ][4SgPoss][PlPosd]:~f-wmitun    EncliticOrEnd; [N][Equ][4SgPoss][DuPosd]:~sf-w%:(e)gmitun      EncliticOrEnd; ! 4Sg possessor |
+[N][Equ][4PlPoss][SgPosd]:~f-wmegestun     EncliticOrEnd; [N][Equ][4PlPoss][PlPosd]:~f-wmegestun EncliticOrEnd; [N][Equ][4PlPoss][DuPosd]:~sf-w%:(e)gmegestun   EncliticOrEnd; ! 4Pl possessor |
+[N][Equ][4DuPoss][SgPosd]:~f-wmegestun     EncliticOrEnd; [N][Equ][4DuPoss][PlPosd]:~f-wmegestun EncliticOrEnd; [N][Equ][4DuPoss][DuPosd]:~sf-w%:(e)gmegestun   EncliticOrEnd; ! 4Du possessor |
+! ------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+
+
+! -------------------------------------------------|
+!              Relative Case Endings               | 
 ! ----------------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                        Vialis Case Endings (through N)                                                              |
-! ----------------------------------------------------------------------------------------------------------------------------------------------------|
-!             singular possessed             |                plural possessed               |                      dual possessed                    |    
-! ----------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Via][Unpd][Sg]:~f-wkun                  #;    [N][Via][Unpd][Pl]:~sf-w%:(e)tgun         #;    [N][Via][Unpd][Du]:~sf-w%:(e)gnegun              #; ! unpossessed    |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Via][3SgPoss][SgPosd]:~%:(ng)akun       #;    [N][Via][3SgPoss][PlPosd]:~%:(ng)akun     #;    [N][Via][3SgPoss][DuPosd]:~sf-w%:(e)gkenkun      #; ! 3Sg possessor  |
-[N][Via][3PlPoss][SgPosd]:~%:(ng)itgun      #;    [N][Via][3PlPoss][PlPosd]:~%:(ng)itgun    #;    [N][Via][3PlPoss][DuPosd]:~%:(ng)itgun           #; ! 3Pl possessor  |
-[N][Via][3DuPoss][SgPosd]:~sf-w%:(e)gkenkun #;    [N][Via][3DuPoss][PlPosd]:~%:(ng)akun     #;    [N][Via][3DuPoss][DuPosd]:~%:(ng)itgun           #; ! 3Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Via][1SgPoss][SgPosd]:–mkun             #;    [N][Via][1SgPoss][PlPosd]:–mkun           #;    [N][Via][1SgPoss][DuPosd]:~sf-w%:(e)gemkun       #; ! 1Sg possessor  |
-[N][Via][1PlPoss][SgPosd]:–mteggun          #;    [N][Via][1PlPoss][PlPosd]:–mteggun        #;    [N][Via][1PlPoss][DuPosd]:~sf-w%:(e)gemteggun    #; ! 1Pl possessor  |
-[N][Via][1DuPoss][SgPosd]:–mtegnegun        #;    [N][Via][1DuPoss][PlPosd]:–mtegnegun      #;    [N][Via][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnegun  #; ! 1Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Via][2SgPoss][SgPosd]:–gpekun           #;    [N][Via][2SgPoss][PlPosd]:–gpegun         #;    [N][Via][2SgPoss][DuPosd]:~sf-w%:(e)gpegun       #; ! 2Sg possessor  |
-[N][Via][2PlPoss][SgPosd]:–gpesigun         #;    [N][Via][2PlPoss][PlPosd]:–gpesigun       #;    [N][Via][2PlPoss][DuPosd]:~sf-w%:(e)gpesigun     #; ! 2Pl possessor  |
-[N][Via][2DuPoss][SgPosd]:–gpetegnegun      #;    [N][Via][2DuPoss][PlPosd]:–gpetegnegun    #;    [N][Via][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnegun  #; ! 2Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Via][4SgPoss][SgPosd]:~f-wmikun         #;    [N][Via][4SgPoss][PlPosd]:~f-wmikun       #;    [N][Via][4SgPoss][DuPosd]:~sf-w%:(e)gmikun       #; ! 4Sg possessor  |
-[N][Via][4PlPoss][SgPosd]:~f-wmegteggun     #;    [N][Via][4PlPoss][PlPosd]:~f-wmegteggun   #;    [N][Via][4PlPoss][DuPosd]:~sf-w%:(e)gmegteggun   #; ! 4Pl possessor  |
-[N][Via][4DuPoss][SgPosd]:~f-wmegtegnegun   #;    [N][Via][4DuPoss][PlPosd]:~f-wmegtegnegun #;    [N][Via][4DuPoss][DuPosd]:~sf-w%:(e)gmegtegnegun #; ! 4Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
+!               singular possessed                 |                    plural possessed                |               dual possessed                |    
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Rel][Unpd][Sg]:~sf-w%:(e)m        EncliticOrEnd;[N][Rel][Unpd][Pl]:~sf-w%:(e)t         EncliticOrEnd; [N][Rel][Unpd][Du]:~sf-w%:(e)k              EncliticOrEnd; ! unpossessed   |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][3SgPoss][SgPosd]:~%:(ng₁)an  EncliticOrEnd; [N][Rel][3SgPoss][PlPosd]:~%:(ng₁)an  EncliticOrEnd; [N][Rel][3SgPoss][DuPosd]:~sf-w%:(e)gkenka  EncliticOrEnd; ! 3Sg possessor |
+[N][Rel][3PlPoss][SgPosd]:~%:(ng₁)ita EncliticOrEnd; [N][Rel][3PlPoss][PlPosd]:~%:(ng₁)ita EncliticOrEnd; [N][Rel][3PlPoss][DuPosd]:~%:(ng₁)gkenka    EncliticOrEnd; ! 3Pl possessor |
+[N][Rel][3DuPoss][SgPosd]:~%:(ng₁)ita EncliticOrEnd; [N][Rel][3DuPoss][PlPosd]:~%:(ng₁)ita EncliticOrEnd; [N][Rel][3DuPoss][DuPosd]:~%:(ng₁)gkenka    EncliticOrEnd; ! 3Du possessor |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][1SgPoss][SgPosd]:~f-wma      EncliticOrEnd; [N][Rel][1SgPoss][PlPosd]:~f-wma      EncliticOrEnd; [N][Rel][1SgPoss][DuPosd]:~sf-w%:(e)gma     EncliticOrEnd; ! 1Sg possessor |
+[N][Rel][1PlPoss][SgPosd]:–mta        EncliticOrEnd; [N][Rel][1PlPoss][PlPosd]:–mta        EncliticOrEnd; [N][Rel][1PlPoss][DuPosd]:~sf-w%:(e)gemta   EncliticOrEnd; ! 1Pl possessor |
+[N][Rel][1DuPoss][SgPosd]:–mtung      EncliticOrEnd; [N][Rel][1DuPoss][PlPosd]:–mtung      EncliticOrEnd; [N][Rel][1DuPoss][DuPosd]:~sf-w%:(e)gemtung EncliticOrEnd; ! 1Du possessor |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][2SgPoss][SgPosd]:–gpek       EncliticOrEnd; [N][Rel][2SgPoss][PlPosd]:–gpek       EncliticOrEnd; [N][Rel][2SgPoss][DuPosd]:~sf-w%:(e)gpek    EncliticOrEnd; ! 2Sg possessor |
+[N][Rel][2PlPoss][SgPosd]:–gpesi      EncliticOrEnd; [N][Rel][2PlPoss][PlPosd]:–gpesi      EncliticOrEnd; [N][Rel][2PlPoss][DuPosd]:~sf-w%:(e)gpesi   EncliticOrEnd; ! 2Pl possessor |
+[N][Rel][2DuPoss][SgPosd]:–gpetek     EncliticOrEnd; [N][Rel][2DuPoss][PlPosd]:–gpetek     EncliticOrEnd; [N][Rel][2DuPoss][DuPosd]:~sf-w%:(e)gpetek  EncliticOrEnd; ! 2Du possessor |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+[N][Rel][4SgPoss][SgPosd]:~f-wmi      EncliticOrEnd; [N][Rel][4SgPoss][PlPosd]:~f-wmi      EncliticOrEnd; [N][Rel][4SgPoss][DuPosd]:~sf-w%:(e)gmi     EncliticOrEnd; ! 4Sg possessor |
+[N][Rel][4PlPoss][SgPosd]:~f-wmeng    EncliticOrEnd; [N][Rel][4PlPoss][PlPosd]:~f-wmeng    EncliticOrEnd; [N][Rel][4PlPoss][DuPosd]:~sf-w%:(e)gmeng   EncliticOrEnd; ! 4Pl possessor |
+[N][Rel][4DuPoss][SgPosd]:~f-wmeng    EncliticOrEnd; [N][Rel][4DuPoss][PlPosd]:~f-wmeng    EncliticOrEnd; [N][Rel][4DuPoss][DuPosd]:~sf-w%:(e)gmeng   EncliticOrEnd; ! 4Du possessor |
+! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
 
 
-! ----------------------------------------------------------------------------------------------------------------------------------------------------|
-!                                                           Equalis Case Endings (like N)                                                             |
-! ----------------------------------------------------------------------------------------------------------------------------------------------------|
-!             singular possessed             |                plural possessed               |                      dual possessed                    |    
-! ----------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Equ][Unpd][Sg]:~f-wtun                  #;    [N][Equ][Unpd][Pl]:~sf-w%:(e)stun         #;    [N][Equ][Unpd][Du]:~sf-w%:(e)gestun              #; ! unpossessed    |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Equ][3SgPoss][SgPosd]:~%:(ng)atun       #;    [N][Equ][3SgPoss][PlPosd]:~%:(ng)atun     #;    [N][Equ][3SgPoss][DuPosd]:~sf-w%:(e)gketun       #; ! 3Sg possessor  |
-[N][Equ][3PlPoss][SgPosd]:~%:(ng)itun       #;    [N][Equ][3PlPoss][PlPosd]:~%:(ng)itun     #;    [N][Equ][3PlPoss][DuPosd]:~%:(ng)itun            #; ! 3Pl possessor  |
-[N][Equ][3DuPoss][SgPosd]:~sf-w%:(e)gketun  #;    [N][Equ][3DuPoss][PlPosd]:~%:(ng)itun     #;    [N][Equ][3DuPoss][DuPosd]:~%:(ng)itun            #; ! 3Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Equ][1SgPoss][SgPosd]:–mtun             #;    [N][Equ][1SgPoss][PlPosd]:–mtun           #;    [N][Equ][1SgPoss][DuPosd]:~sf-w%:(e)gemtun       #; ! 1Sg possessor  |
-[N][Equ][1PlPoss][SgPosd]:–mtestun          #;    [N][Equ][1PlPoss][PlPosd]:–mtestun        #;    [N][Equ][1PlPoss][DuPosd]:~sf-w%:(e)gemtestun    #; ! 1Pl possessor  |
-[N][Equ][1DuPoss][SgPosd]:–mtegestun        #;    [N][Equ][1DuPoss][PlPosd]:–mtegestun      #;    [N][Equ][1DuPoss][DuPosd]:~sf-w%:(e)gemtegestun  #; ! 1Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Equ][2SgPoss][SgPosd]:–gpetun           #;    [N][Equ][2SgPoss][PlPosd]:–gpetun         #;    [N][Equ][2SgPoss][DuPosd]:~sf-w%:(e)gpetun       #; ! 2Sg possessor  |
-[N][Equ][2PlPoss][SgPosd]:–gpesistun        #;    [N][Equ][2PlPoss][PlPosd]:–gpesistun      #;    [N][Equ][2PlPoss][DuPosd]:~sf-w%:(e)gpesistun    #; ! 2Pl possessor  |
-[N][Equ][2DuPoss][SgPosd]:–gpetegetun       #;    [N][Equ][2DuPoss][PlPosd]:–gpetegetun     #;    [N][Equ][2DuPoss][DuPosd]:~sf-w%:(e)gpetegetun   #; ! 2Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
-[N][Equ][4SgPoss][SgPosd]:~f-wmitun         #;    [N][Equ][4SgPoss][PlPosd]:~f-wmitun       #;    [N][Equ][4SgPoss][DuPosd]:~sf-w%:(e)gmitun       #; ! 4Sg possessor  |
-[N][Equ][4PlPoss][SgPosd]:~f-wmegestun      #;    [N][Equ][4PlPoss][PlPosd]:~f-wmegestun    #;    [N][Equ][4PlPoss][DuPosd]:~sf-w%:(e)gmegestun    #; ! 4Pl possessor  |
-[N][Equ][4DuPoss][SgPosd]:~f-wmegestun      #;    [N][Equ][4DuPoss][PlPosd]:~f-wmegestun    #;    [N][Equ][4DuPoss][DuPosd]:~sf-w%:(e)gmegestun    #; ! 4Du possessor  |
-! -------------------------------------------|-----------------------------------------------|--------------------------------------------------------|----------------|
 
+LEXICON EncliticOrEnd
 
-! --------------------------------------------------------------------------------------------------------------------------------------|
-!                                                         Relative Case Endings                                                         |
-! --------------------------------------------------------------------------------------------------------------------------------------|
-!          singular possessed          |             plural possessed              |                  dual possessed                    |    
-! --------------------------------------------------------------------------------------------------------------------------------------|----------------|
-[N][Rel][Unpd][Sg]:~sf-w%:(e)m        #;    [N][Rel][Unpd][Pl]:~sf-w%:(e)t        #;    [N][Rel][Unpd][Du]:~sf-w%:(e)k               #; ! unpossessed    |
-! -------------------------------------|------------------------------------------------|-----------------------------------------------|----------------|
-[N][Rel][3SgPoss][SgPosd]:~%:(ng)an   #;    [N][Rel][3SgPoss][PlPosd]:~%:(ng)an   #;    [N][Rel][3SgPoss][DuPosd]:~sf-w%:(e)gkenka   #; ! 3Sg possessor  |
-[N][Rel][3PlPoss][SgPosd]:~%:(ng)ita  #;    [N][Rel][3PlPoss][PlPosd]:~%:(ng)ita  #;    [N][Rel][3PlPoss][DuPosd]:~%:(ng)gkenka      #; ! 3Pl possessor  |
-[N][Rel][3DuPoss][SgPosd]:~%:(ng)ita  #;    [N][Rel][3DuPoss][PlPosd]:~%:(ng)ita  #;    [N][Rel][3DuPoss][DuPosd]:~%:(ng)gkenka      #; ! 3Du possessor  |
-! -------------------------------------|------------------------------------------------|-----------------------------------------------|----------------|
-[N][Rel][1SgPoss][SgPosd]:~f-wma      #;    [N][Rel][1SgPoss][PlPosd]:~f-wma      #;    [N][Rel][1SgPoss][DuPosd]:~sf-w%:(e)gma      #; ! 1Sg possessor  |
-[N][Rel][1PlPoss][SgPosd]:–mta        #;    [N][Rel][1PlPoss][PlPosd]:–mta        #;    [N][Rel][1PlPoss][DuPosd]:~sf-w%:(e)gemta    #; ! 1Pl possessor  |
-[N][Rel][1DuPoss][SgPosd]:–mtung      #;    [N][Rel][1DuPoss][PlPosd]:–mtung      #;    [N][Rel][1DuPoss][DuPosd]:~sf-w%:(e)gemtung  #; ! 1Du possessor  |
-! -------------------------------------|------------------------------------------------|-----------------------------------------------|----------------|
-[N][Rel][2SgPoss][SgPosd]:–gpek       #;    [N][Rel][2SgPoss][PlPosd]:–gpek       #;    [N][Rel][2SgPoss][DuPosd]:~sf-w%:(e)gpek     #; ! 2Sg possessor  |
-[N][Rel][2PlPoss][SgPosd]:–gpesi      #;    [N][Rel][2PlPoss][PlPosd]:–gpesi      #;    [N][Rel][2PlPoss][DuPosd]:~sf-w%:(e)gpesi    #; ! 2Pl possessor  |
-[N][Rel][2DuPoss][SgPosd]:–gpetek     #;    [N][Rel][2DuPoss][PlPosd]:–gpetek     #;    [N][Rel][2DuPoss][DuPosd]:~sf-w%:(e)gpetek   #; ! 2Du possessor  |
-! -------------------------------------|------------------------------------------------|-----------------------------------------------|----------------|
-[N][Rel][4SgPoss][SgPosd]:~f-wmi      #;    [N][Rel][4SgPoss][PlPosd]:~f-wmi      #;    [N][Rel][4SgPoss][DuPosd]:~sf-w%:(e)gmi      #; ! 4Sg possessor  |
-[N][Rel][4PlPoss][SgPosd]:~f-wmeng    #;    [N][Rel][4PlPoss][PlPosd]:~f-wmeng    #;    [N][Rel][4PlPoss][DuPosd]:~sf-w%:(e)gmeng    #; ! 4Pl possessor  |
-[N][Rel][4DuPoss][SgPosd]:~f-wmeng    #;    [N][Rel][4DuPoss][PlPosd]:~f-wmeng    #;    [N][Rel][4DuPoss][DuPosd]:~sf-w%:(e)gmeng    #; ! 4Du possessor  |
-! -------------------------------------|-------------------------------------------|----------------------------------------------------|----------------|
+0:0               #;
+-llu[Encl]:llu    #;
+-nguq[Encl]:nguq  #;
 
 
 
@@ -809,6 +831,36 @@ qungyake@P.VALENCE.TRNS@         VerbPostbase; ! to be jealous of; to envy
 sumeghtaghagh@P.VALENCE.INTR@    VerbPostbase; ! to think
 ungipaate@P.VALENCE.TRNS@        VerbPostbase; ! to tell
 
+! Jacobson (2001) Chapter 13 Verb Vocabulary
+alike@P.VALENCE.TRNS@            VerbPostbase; ! to fear
+anuqligh@P.VALENCE.INTR@         VerbPostbase; ! for it to be windy
+aghvig@P.VALENCE.TRNS@           VerbPostbase; ! to wash (clothes)
+aghyuugh@P.VALENCE.TRNS@         VerbPostbase; ! to scold
+eslallugughte@P.VALENCE.INTR@    VerbPostbase; ! for it to rain (optional impersonal agent verb)
+eslallugughte@P.VALENCE.TRNS@    VerbPostbase; ! for it to rain (optional impersonal agent verb)
+iilqe@P.VALENCE.INTR@            VerbPostbase; ! to be sad
+iiw@P.VALENCE.INTR@              VerbPostbase; ! for tide go down
+iqalgu@P.VALENCE.INTR@           VerbPostbase; ! to be dirty
+kepsugh@P.VALENCE.INTR@          VerbPostbase; ! to be full from eating
+kitugh@P.VALENCE.TRNS@           VerbPostbase; ! to pass by
+meghtagh@P.VALENCE.INTR@         VerbPostbase; ! to fetch water
+mughute@P.VALENCE.INTR@          VerbPostbase; ! to hunt on ice
+mumigte@P.VALENCE.INTR@          VerbPostbase; ! to turn over
+naghaagh@P.VALENCE.INTR@         VerbPostbase; ! to play
+piyug@P.VALENCE.INTR@            VerbPostbase; ! to walk
+qanigughte@P.VALENCE.INTR@       VerbPostbase; ! for snow to fall (optional impersonal agent verb)
+qanigughte@P.VALENCE.TRNS@       VerbPostbase; ! for snow to fall (optional impersonal agent verb)
+qaprag@P.VALENCE.INTR@           VerbPostbase; ! to make a move; to be in motion; to fidget
+quya@P.VALENCE.INTR@             VerbPostbase; ! to be happy; to be joyful
+taghsagh@P.VALENCE.TRNS@         VerbPostbase; ! to wake (him) up; to awaken (him)
+teghsagh@P.VALENCE.TRNS@         VerbPostbase; ! to wake (him) up; to awaken (him)
+taghtugh@P.VALENCE.INTR@         VerbPostbase; ! to wake up; to awaken
+teghtugh@P.VALENCE.INTR@         VerbPostbase; ! to wake up; to awaken
+ughvughqe@P.VALENCE.INTR@        VerbPostbase; ! to bathe
+ughvughqe@P.VALENCE.TRNS@        VerbPostbase; ! to bathe
+ugpegh@P.VALENCE.INTR@           VerbPostbase; ! to have faith
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -841,6 +893,8 @@ LEXICON VerbPostbase
 -~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
 -~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                                                          VerbPostbase;
 -@₃~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₃~%:(i/u)magh*@R.VALENCE@                                           QuantQualPostbase;
+-@₁~f–ragkiigh[to.V.quickly]@R.VALENCE@:@₁~f–ragkiigh@R.VALENCE@                             VerbPostbase;
+-@₃~%:(ng₂)igate[to.never.V][to.not.be.V-ing]@R.VALENCE@:@₃~%:(ng₂)igate@R.VALENCE@         VerbPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                               !!!
@@ -982,12 +1036,12 @@ LEXICON VerbTenseInfl
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 !                             3rd singular object                                 |                                 3rd plural object                               |                                     3rd dual object                               |
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
-[V][Ptcp][3Sg][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)a@R.VALENCE.TRNS@       #; [V][Ptcp][3Sg][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)i@R.VALENCE.TRNS@     #; [V][Ptcp][3Sg][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka–k@R.VALENCE.TRNS@           #; ! 3Sg SBJ |
-[V][Ptcp][3Pl][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)at@R.VALENCE.TRNS@      #; [V][Ptcp][3Pl][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)it@R.VALENCE.TRNS@    #; [V][Ptcp][3Pl][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka–gket@R.VALENCE.TRNS@        #; ! 3Pl SBJ |
-[V][Ptcp][3Du][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)it@R.VALENCE.TRNS@      #; [V][Ptcp][3Du][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)ik@R.VALENCE.TRNS@    #; [V][Ptcp][3Du][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka–gket@R.VALENCE.TRNS@        #; ! 3Du SBJ |
-[V][Ptcp][3Sg][3Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)a@R.VALENCE.TRNS@         #; [V][Ptcp][3Sg][3Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)i@R.VALENCE.TRNS@       #; [V][Ptcp][3Sg][3Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka–k@R.VALENCE.TRNS@             #; ! 3Sg SBJ |
-[V][Ptcp][3Pl][3Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)at@R.VALENCE.TRNS@        #; [V][Ptcp][3Pl][3Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)it@R.VALENCE.TRNS@      #; [V][Ptcp][3Pl][3Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka–gket@R.VALENCE.TRNS@          #; ! 3Pl SBJ |
-[V][Ptcp][3Du][3Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)it@R.VALENCE.TRNS@        #; [V][Ptcp][3Du][3Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)ik@R.VALENCE.TRNS@      #; [V][Ptcp][3Du][3Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka–gket@R.VALENCE.TRNS@          #; ! 3Du SBJ |
+[V][Ptcp][3Sg][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)a@R.VALENCE.TRNS@       #; [V][Ptcp][3Sg][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)i@R.VALENCE.TRNS@     #; [V][Ptcp][3Sg][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka–k@R.VALENCE.TRNS@           #; ! 3Sg SBJ |
+[V][Ptcp][3Pl][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)at@R.VALENCE.TRNS@      #; [V][Ptcp][3Pl][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)it@R.VALENCE.TRNS@    #; [V][Ptcp][3Pl][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka–gket@R.VALENCE.TRNS@        #; ! 3Pl SBJ |
+[V][Ptcp][3Du][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)it@R.VALENCE.TRNS@      #; [V][Ptcp][3Du][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)ik@R.VALENCE.TRNS@    #; [V][Ptcp][3Du][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka–gket@R.VALENCE.TRNS@        #; ! 3Du SBJ |
+[V][Ptcp][3Sg][3Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)a@R.VALENCE.TRNS@         #; [V][Ptcp][3Sg][3Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)i@R.VALENCE.TRNS@       #; [V][Ptcp][3Sg][3Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka–k@R.VALENCE.TRNS@             #; ! 3Sg SBJ |
+[V][Ptcp][3Pl][3Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)at@R.VALENCE.TRNS@        #; [V][Ptcp][3Pl][3Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)it@R.VALENCE.TRNS@      #; [V][Ptcp][3Pl][3Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka–gket@R.VALENCE.TRNS@          #; ! 3Pl SBJ |
+[V][Ptcp][3Du][3Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)it@R.VALENCE.TRNS@        #; [V][Ptcp][3Du][3Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)ik@R.VALENCE.TRNS@      #; [V][Ptcp][3Du][3Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka–gket@R.VALENCE.TRNS@          #; ! 3Du SBJ |
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
 [V][Ptcp][1Sg][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–(g₂)ka@R.VALENCE.TRNS@      #; [V][Ptcp][1Sg][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–nka@R.VALENCE.TRNS@       #; [V][Ptcp][1Sg][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–gka@R.VALENCE.TRNS@         #; ! 1Sg SBJ |
 [V][Ptcp][1Pl][3Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)kevut@R.VALENCE.TRNS@          #; [V][Ptcp][1Pl][3Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)kevut@R.VALENCE.TRNS@        #; [V][Ptcp][1Pl][3Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–gput@R.VALENCE.TRNS@        #; ! 1Pl SBJ |
@@ -1005,12 +1059,12 @@ LEXICON VerbTenseInfl
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
 !                             1st singular object                                 |                                 1st plural object                               |                                     1st dual object                               |           |
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
-[V][Ptcp][3Sg][1Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)anga@R.VALENCE.TRNS@    #; [V][Ptcp][3Sg][1Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)inkut@R.VALENCE.TRNS@ #; [V][Ptcp][3Sg][1Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)inkung@R.VALENCE.TRNS@  #; ! 3Sg SBJ |
-[V][Ptcp][3Pl][1Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)atnga@R.VALENCE.TRNS@   #; [V][Ptcp][3Pl][1Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)inkut@R.VALENCE.TRNS@ #; [V][Ptcp][3Pl][1Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)inkung@R.VALENCE.TRNS@  #; ! 3Pl SBJ |
-[V][Ptcp][3Du][1Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)agnenga@R.VALENCE.TRNS@ #; [V][Ptcp][3Du][1Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)inkut@R.VALENCE.TRNS@ #; [V][Ptcp][3Du][1Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)inkung@R.VALENCE.TRNS@  #; ! 3Du SBJ |
-[V][Ptcp][3Sg][1Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)anga@R.VALENCE.TRNS@      #; [V][Ptcp][3Sg][1Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)inkut@R.VALENCE.TRNS@   #; [V][Ptcp][3Sg][1Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)inkung@R.VALENCE.TRNS@    #; ! 3Sg SBJ |
-[V][Ptcp][3Pl][1Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)atnga@R.VALENCE.TRNS@     #; [V][Ptcp][3Pl][1Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)inkut@R.VALENCE.TRNS@   #; [V][Ptcp][3Pl][1Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)inkung@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
-[V][Ptcp][3Du][1Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)agnenga@R.VALENCE.TRNS@   #; [V][Ptcp][3Du][1Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)inkut@R.VALENCE.TRNS@   #; [V][Ptcp][3Du][1Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)inkung@R.VALENCE.TRNS@    #; ! 3Du SBJ |
+[V][Ptcp][3Sg][1Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)anga@R.VALENCE.TRNS@    #; [V][Ptcp][3Sg][1Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)inkut@R.VALENCE.TRNS@ #; [V][Ptcp][3Sg][1Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)inkung@R.VALENCE.TRNS@  #; ! 3Sg SBJ |
+[V][Ptcp][3Pl][1Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)atnga@R.VALENCE.TRNS@   #; [V][Ptcp][3Pl][1Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)inkut@R.VALENCE.TRNS@ #; [V][Ptcp][3Pl][1Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)inkung@R.VALENCE.TRNS@  #; ! 3Pl SBJ |
+[V][Ptcp][3Du][1Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)agnenga@R.VALENCE.TRNS@ #; [V][Ptcp][3Du][1Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)inkut@R.VALENCE.TRNS@ #; [V][Ptcp][3Du][1Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)inkung@R.VALENCE.TRNS@  #; ! 3Du SBJ |
+[V][Ptcp][3Sg][1Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)anga@R.VALENCE.TRNS@      #; [V][Ptcp][3Sg][1Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)inkut@R.VALENCE.TRNS@   #; [V][Ptcp][3Sg][1Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)inkung@R.VALENCE.TRNS@    #; ! 3Sg SBJ |
+[V][Ptcp][3Pl][1Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)atnga@R.VALENCE.TRNS@     #; [V][Ptcp][3Pl][1Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)inkut@R.VALENCE.TRNS@   #; [V][Ptcp][3Pl][1Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)inkung@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
+[V][Ptcp][3Du][1Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)agnenga@R.VALENCE.TRNS@   #; [V][Ptcp][3Du][1Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)inkut@R.VALENCE.TRNS@   #; [V][Ptcp][3Du][1Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)inkung@R.VALENCE.TRNS@    #; ! 3Du SBJ |
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
 !                                                                                 |                                                                                 |                                                                                   | ! 1Sg SBJ |
 !                                                                                 |                                                                                 |                                                                                   | ! 1Pl SBJ |
@@ -1025,12 +1079,12 @@ LEXICON VerbTenseInfl
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
 !                              2nd singular object                                |                                 2nd plural object                               |                                     2nd dual object                               |           |
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
-[V][Ptcp][3Sg][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)aten@R.VALENCE.TRNS@    #; [V][Ptcp][3Sg][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)isi@R.VALENCE.TRNS@   #; [V][Ptcp][3Sg][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)itek@R.VALENCE.TRNS@    #; ! 3Sg SBJ |
-[V][Ptcp][3Pl][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)aten@R.VALENCE.TRNS@    #; [V][Ptcp][3Pl][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)isi@R.VALENCE.TRNS@   #; [V][Ptcp][3Pl][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)itek@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
-[V][Ptcp][3Du][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)aten@R.VALENCE.TRNS@    #; [V][Ptcp][3Du][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)isi@R.VALENCE.TRNS@   #; [V][Ptcp][3Du][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng)itek@R.VALENCE.TRNS@    #; ! 3Du SBJ |
-[V][Ptcp][3Sg][2Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)aten@R.VALENCE.TRNS@      #; [V][Ptcp][3Sg][2Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)isi@R.VALENCE.TRNS@     #; [V][Ptcp][3Sg][2Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)itek@R.VALENCE.TRNS@      #; ! 3Sg SBJ |
-[V][Ptcp][3Pl][2Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)aten@R.VALENCE.TRNS@      #; [V][Ptcp][3Pl][2Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)isi@R.VALENCE.TRNS@     #; [V][Ptcp][3Pl][2Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)itek@R.VALENCE.TRNS@      #; ! 3Pl SBJ |
-[V][Ptcp][3Du][2Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)aten@R.VALENCE.TRNS@      #; [V][Ptcp][3Du][2Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)isi@R.VALENCE.TRNS@     #; [V][Ptcp][3Du][2Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng)itek@R.VALENCE.TRNS@      #; ! 3Du SBJ |
+[V][Ptcp][3Sg][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)aten@R.VALENCE.TRNS@    #; [V][Ptcp][3Sg][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)isi@R.VALENCE.TRNS@   #; [V][Ptcp][3Sg][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)itek@R.VALENCE.TRNS@    #; ! 3Sg SBJ |
+[V][Ptcp][3Pl][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)aten@R.VALENCE.TRNS@    #; [V][Ptcp][3Pl][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)isi@R.VALENCE.TRNS@   #; [V][Ptcp][3Pl][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)itek@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
+[V][Ptcp][3Du][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)aten@R.VALENCE.TRNS@    #; [V][Ptcp][3Du][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)isi@R.VALENCE.TRNS@   #; [V][Ptcp][3Du][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ka:(ng₁)itek@R.VALENCE.TRNS@    #; ! 3Du SBJ |
+[V][Ptcp][3Sg][2Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)aten@R.VALENCE.TRNS@      #; [V][Ptcp][3Sg][2Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)isi@R.VALENCE.TRNS@     #; [V][Ptcp][3Sg][2Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)itek@R.VALENCE.TRNS@      #; ! 3Sg SBJ |
+[V][Ptcp][3Pl][2Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)aten@R.VALENCE.TRNS@      #; [V][Ptcp][3Pl][2Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)isi@R.VALENCE.TRNS@     #; [V][Ptcp][3Pl][2Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)itek@R.VALENCE.TRNS@      #; ! 3Pl SBJ |
+[V][Ptcp][3Du][2Sg]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)aten@R.VALENCE.TRNS@      #; [V][Ptcp][3Du][2Pl]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)isi@R.VALENCE.TRNS@     #; [V][Ptcp][3Du][2Du]@R.VALENCE.TRNS@:@*@₂~sf–(g₂)ka:(ng₁)itek@R.VALENCE.TRNS@      #; ! 3Du SBJ |
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|-----------|
 [V][Ptcp][1Sg][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–mken@R.VALENCE.TRNS@        #; [V][Ptcp][1Sg][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–msi@R.VALENCE.TRNS@       #; [V][Ptcp][1Sg][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–mtek@R.VALENCE.TRNS@        #; ! 1Sg SBJ |
 [V][Ptcp][1Pl][2Sg]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–mken@R.VALENCE.TRNS@        #; [V][Ptcp][1Pl][2Pl]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–msi@R.VALENCE.TRNS@       #; [V][Ptcp][1Pl][2Du]@R.VALENCE.TRNS@:@*@₂@₃~sf–(g₂)ke–mtek@R.VALENCE.TRNS@        #; ! 1Pl SBJ |
@@ -1261,81 +1315,81 @@ LEXICON VerbTenseInfl
 [V][Prec][4Du]@R.VALENCE.INTR@:@₁@₂~fvagilgamek@R.VALENCE.INTR@    #; ! 4Du SBJ |
 ! --------------------------------------------------------------------|-----------|
 
- -------------------------------------------------------------------------|
-!                 Transitive Precessive Mood Endings                     |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-!                        3rd singular object                             |                             3rd plural object                           |                            3rd dual obj                                  |           |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+|----------------------------------------------------------------------------|
+!                     Transitive Precessive Mood Endings                     |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        3rd singular object                                 |                             3rd plural object                               |                                  3rd dual obj                                |           |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][3Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagu@R.VALENCE.TRNS@         #; [V][Prec][3Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaki@R.VALENCE.TRNS@        #; [V][Prec][3Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgakek@R.VALENCE.TRNS@        #; ! 3Sg SBJ |
 [V][Prec][3Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatgu@R.VALENCE.TRNS@        #; [V][Prec][3Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgatki@R.VALENCE.TRNS@       #; [V][Prec][3Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgatkek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
-V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@      #; [V][Prec][3Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgagneki@R.VALENCE.TRNS@     #; [V][Prec][3Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnekek@R.VALENCE.TRNS@     #; ! 3Du SBJ |
- ! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@       #; [V][Prec][3Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgagneki@R.VALENCE.TRNS@     #; [V][Prec][3Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnekek@R.VALENCE.TRNS@     #; ! 3Du SBJ |
+! --------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][1Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamkun@R.VALENCE.TRNS@       #; [V][Prec][1Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamki@R.VALENCE.TRNS@       #; [V][Prec][1Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamkek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
 [V][Prec][1Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteggu@R.VALENCE.TRNS@     #; [V][Prec][1Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteki@R.VALENCE.TRNS@     #; [V][Prec][1Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtekek@R.VALENCE.TRNS@     #; ! 1Pl SBJ |
 [V][Prec][1Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnegu@R.VALENCE.TRNS@   #; [V][Prec][1Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegneki@R.VALENCE.TRNS@  #; [V][Prec][1Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnekek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][2Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgavgu@R.VALENCE.TRNS@        #; [V][Prec][2Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafki@R.VALENCE.TRNS@       #; [V][Prec][2Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
 [V][Prec][2Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilga@fsiguR.VALENCE.TRNS@      #; [V][Prec][2Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsiki@R.VALENCE.TRNS@     #; [V][Prec][2Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
 [V][Prec][2Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnegu@R.VALENCE.TRNS@   #; [V][Prec][2Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegneki@R.VALENCE.TRNS@  #; [V][Prec][2Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! -----------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][4Sg][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamigu@R.VALENCE.TRNS@       #; [V][Prec][4Sg][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiki@R.VALENCE.TRNS@      #; [V][Prec][4Sg][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamikek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
 [V][Prec][4Pl][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegteggu@R.VALENCE.TRNS@   #; [V][Prec][4Pl][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegteki@R.VALENCE.TRNS@   #; [V][Prec][4Pl][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtekek@R.VALENCE.TRNS@   #; ! 4Pl SBJ |
 [V][Prec][4Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnegu@R.VALENCE.TRNS@    #; [V][Prec][4Du][3Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegneki@R.VALENCE.TRNS@   #; [V][Prec][4Du][3Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnekek@R.VALENCE.TRNS@   #; ! 4Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-!                        1st singular object                             |                             1st plural object                           |                            1st dual object                               |           |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        1st singular object                                 |                             1st plural object                               |                                  1st dual object                             |           |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][3Sg][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilganga@R.VALENCE.TRNS@        #; [V][Prec][3Sg][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgankut@R.VALENCE.TRNS@      #; [V][Prec][3Sg][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgankung@R.VALENCE.TRNS@      #; ! 3Sg SBJ |
 [V][Prec][3Pl][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatnga@R.VALENCE.TRNS@       #; [V][Prec][3Pl][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgankut@R.VALENCE.TRNS@      #; [V][Prec][3Pl][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgankung@R.VALENCE.TRNS@      #; ! 3Pl SBJ |
 [V][Prec][3Du][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnenga@R.VALENCE.TRNS@     #; [V][Prec][3Du][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgankut@R.VALENCE.TRNS@      #; [V][Prec][3Du][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgankung@R.VALENCE.TRNS@      #; ! 3Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-!                                                                        |                                                                         |                                                                          | ! 1Sg SBJ |
-!                                                                        |                                                                         |                                                                          | ! 1Pl SBJ |
-!                                                                        |                                                                         |                                                                          | ! 1Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                                                                            |                                                                             |                                                                              | ! 1Sg SBJ |
+!                                                                            |                                                                             |                                                                              | ! 1Pl SBJ |
+!                                                                            |                                                                             |                                                                              | ! 1Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][2Sg][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgavnga@R.VALENCE.TRNS@       #; [V][Prec][2Sg][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkut@R.VALENCE.TRNS@      #; [V][Prec][2Sg][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkung@R.VALENCE.TRNS@      #; ! 2Sg SBJ |
 [V][Prec][2Pl][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsinga@R.VALENCE.TRNS@     #; [V][Prec][2Pl][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikut@R.VALENCE.TRNS@    #; [V][Prec][2Pl][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikung@R.VALENCE.TRNS@    #; ! 2Pl SBJ |
 [V][Prec][2Du][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnenga@R.VALENCE.TRNS@  #; [V][Prec][2Du][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekut@R.VALENCE.TRNS@ #; [V][Prec][2Du][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekung@R.VALENCE.TRNS@ #; ! 2Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][4Sg][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaminga@R.VALENCE.TRNS@      #; [V][Prec][4Sg][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamikut@R.VALENCE.TRNS@     #; [V][Prec][4Sg][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamikung@R.VALENCE.TRNS@     #; ! 4Sg SBJ |
 [V][Prec][4Pl][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtengnga@R.VALENCE.TRNS@ #; [V][Prec][4Pl][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtekut@R.VALENCE.TRNS@  #; [V][Prec][4Pl][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegtekung@R.VALENCE.TRNS@  #; ! 4Pl SBJ |
 [V][Prec][4Du][1Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnenga@R.VALENCE.TRNS@   #; [V][Prec][4Du][1Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnekut@R.VALENCE.TRNS@  #; [V][Prec][4Du][1Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamegnekung@R.VALENCE.TRNS@  #; ! 4Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-!                        2nd singular object                             |                             2nd plural object                           |                            2nd dual object                               |           |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        2nd singular object                                 |                             2nd plural object                               |                                  2nd dual object                             |           |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][3Sg][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaten@R.VALENCE.TRNS@        #; [V][Prec][3Sg][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasi@R.VALENCE.TRNS@        #; [V][Prec][3Sg][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
 [V][Prec][3Pl][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaten@R.VALENCE.TRNS@        #; [V][Prec][3Pl][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasi@R.VALENCE.TRNS@        #; [V][Prec][3Pl][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
 [V][Prec][3Du][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaten@R.VALENCE.TRNS@        #; [V][Prec][3Du][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasi@R.VALENCE.TRNS@        #; [V][Prec][3Du][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][1Sg][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamken@R.VALENCE.TRNS@       #; [V][Prec][1Sg][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamsi@R.VALENCE.TRNS@       #; [V][Prec][1Sg][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
 [V][Prec][1Pl][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamken@R.VALENCE.TRNS@       #; [V][Prec][1Pl][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamsi@R.VALENCE.TRNS@       #; [V][Prec][1Pl][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
 [V][Prec][1Du][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamken@R.VALENCE.TRNS@       #; [V][Prec][1Du][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamsi@R.VALENCE.TRNS@       #; [V][Prec][1Du][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-!                                                                        |                                                                         |                                                                          | ! 2Sg SBJ |
-!                                                                        |                                                                         |                                                                          | ! 2Pl SBJ |
-!                                                                        |                                                                         |                                                                          | ! 2Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                                                                            |                                                                             |                                                                              | ! 2Sg SBJ |
+!                                                                            |                                                                             |                                                                              | ! 2Pl SBJ |
+!                                                                            |                                                                             |                                                                              | ! 2Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][4Sg][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiten@R.VALENCE.TRNS@      #; [V][Prec][4Sg][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamisi@R.VALENCE.TRNS@      #; [V][Prec][4Sg][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamitek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
 [V][Prec][4Pl][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiten@R.VALENCE.TRNS@      #; [V][Prec][4Pl][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamisi@R.VALENCE.TRNS@      #; [V][Prec][4Pl][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamitek@R.VALENCE.TRNS@      #; ! 4Pl SBJ |
 [V][Prec][4Du][2Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamiten@R.VALENCE.TRNS@      #; [V][Prec][4Du][2Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamisiR.VALENCE.TRNS@       #; [V][Prec][4Du][2Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamitek@R.VALENCE.TRNS@      #; ! 4Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-!                        4th singular object                             |                             4th plural object                           |                            4th dual object                               |           |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-[V][Prec][3Sg][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Sg][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@          #; [V][Prec][3Sg][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
-[V][Prec][3Pl][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Pl][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@          #; [V][Prec][3Pl][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
-[V][Prec][3Du][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Du][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@          #; [V][Prec][3Du][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        4th singular object                                 |                             4th plural object                               |                                  4th dual object                             |           |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Prec][3Sg][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Sg][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@     #; [V][Prec][3Sg][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
+[V][Prec][3Pl][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Pl][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@     #; [V][Prec][3Pl][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][Prec][3Du][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgatni@R.VALENCE.TRNS@        #; [V][Prec][3Du][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgasteng@R.VALENCE.TRNS@     #; [V][Prec][3Du][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgastek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][1Sg][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamni@R.VALENCE.TRNS@        #; [V][Prec][1Sg][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteng@R.VALENCE.TRNS@     #; [V][Prec][1Sg][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
 [V][Prec][1Pl][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamnni@R.VALENCE.TRNS@       #; [V][Prec][1Pl][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamteng@R.VALENCE.TRNS@     #; [V][Prec][1Pl][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
 [V][Prec][1Du][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnegu@R.VALENCE.TRNS@   #; [V][Prec][1Du][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegneki@R.VALENCE.TRNS@  #; [V][Prec][1Du][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgamtegnekek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 [V][Prec][2Sg][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgavgu@R.VALENCE.TRNS@        #; [V][Prec][2Sg][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafki@R.VALENCE.TRNS@       #; [V][Prec][2Sg][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafkek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
 [V][Prec][2Pl][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsigu@R.VALENCE.TRNS@      #; [V][Prec][2Pl][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsiki@R.VALENCE.TRNS@     #; [V][Prec][2Pl][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgafsikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
 [V][Prec][2Du][4Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnegu@R.VALENCE.TRNS@   #; [V][Prec][2Du][4Pl]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegneki@R.VALENCE.TRNS@  #; [V][Prec][2Du][4Du]@R.VALENCE.TRNS@:@₁@₂~fvagilgaftegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
-!                                                                        |                                                                         |                                                                          | ! 4Sg SBJ |
-!                                                                        |                                                                         |                                                                          | ! 4Pl SBJ |
-!                                                                        |                                                                         |                                                                          | ! 4Du SBJ |
-! -----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------------|-----------|
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                                                                            |                                                                             |                                                                              | ! 4Sg SBJ |
+!                                                                            |                                                                             |                                                                              | ! 4Pl SBJ |
+!                                                                            |                                                                             |                                                                              | ! 4Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 
 
 ! ------------------------------------------------------------|
@@ -1358,6 +1412,82 @@ V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@      #
 [V][Conc][4Du]@R.VALENCE.INTR@:–ghngaaghmek@R.VALENCE.INTR@  #; ! 4Du SBJ |
 ! ------------------------------------------------------------|-----------|
 
+|---------------------------------------------------------------------------|
+!                    Transitive Concessive Mood Endings                     |
+!---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        3rd singular object                                |                             3rd plural object                               |                                  3rd dual obj                                |           |
+!---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][3Sg][3Sg]@R.VALENCE.TRNS@:–ghngaagu@R.VALENCE.TRNS@         #; [V][Conc][3Sg][3Pl]@R.VALENCE.TRNS@:–ghngaaki@R.VALENCE.TRNS@        #; [V][Conc][3Sg][3Du]@R.VALENCE.TRNS@:–ghngaakek@R.VALENCE.TRNS@        #; ! 3Sg SBJ |
+[V][Conc][3Pl][3Sg]@R.VALENCE.TRNS@:–ghngaitug@R.VALENCE.TRNS@        #; [V][Conc][3Pl][3Pl]@R.VALENCE.TRNS@:–ghngaitki@R.VALENCE.TRNS@       #; [V][Conc][3Pl][3Du]@R.VALENCE.TRNS@:–ghngaitkek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][Conc][3Du][3Sg]@R.VALENCE.TRNS@:–ghngaagnegu@R.VALENCE.TRNS@      #; [V][Conc][3Du][3Pl]@R.VALENCE.TRNS@:–ghngaagneki@R.VALENCE.TRNS@     #; [V][Conc][3Du][3Du]@R.VALENCE.TRNS@:–ghngaagnekek@R.VALENCE.TRNS@     #; ! 3Du SBJ |
+! --------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][1Sg][3Sg]@R.VALENCE.TRNS@:–ghngaamkun@R.VALENCE.TRNS@       #; [V][Conc][1Sg][3Pl]@R.VALENCE.TRNS@:–ghngaamki@R.VALENCE.TRNS@       #; [V][Conc][1Sg][3Du]@R.VALENCE.TRNS@:–ghngaamkek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][Conc][1Pl][3Sg]@R.VALENCE.TRNS@:–ghngaamteggu@R.VALENCE.TRNS@     #; [V][Conc][1Pl][3Pl]@R.VALENCE.TRNS@:–ghngaamteki@R.VALENCE.TRNS@     #; [V][Conc][1Pl][3Du]@R.VALENCE.TRNS@:–ghngaamtekek@R.VALENCE.TRNS@     #; ! 1Pl SBJ |
+[V][Conc][1Du][3Sg]@R.VALENCE.TRNS@:–ghngaamtegnegu@R.VALENCE.TRNS@   #; [V][Conc][1Du][3Pl]@R.VALENCE.TRNS@:–ghngaamtegneki@R.VALENCE.TRNS@  #; [V][Conc][1Du][3Du]@R.VALENCE.TRNS@:–ghngaamtegnekek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][2Sg][3Sg]@R.VALENCE.TRNS@:–ghngaaghpegu@R.VALENCE.TRNS@        #; [V][Conc][2Sg][3Pl]@R.VALENCE.TRNS@:–ghngaaghpeki@R.VALENCE.TRNS@       #; [V][Conc][2Sg][3Du]@R.VALENCE.TRNS@:–ghngaaghpekek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
+[V][Conc][2Pl][3Sg]@R.VALENCE.TRNS@:–ghngaaghpesigu@R.VALENCE.TRNS@      #; [V][Conc][2Pl][3Pl]@R.VALENCE.TRNS@:–ghngaaghpesiki@R.VALENCE.TRNS@     #; [V][Conc][2Pl][3Du]@R.VALENCE.TRNS@:–ghngaaghpesikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
+[V][Conc][2Du][3Sg]@R.VALENCE.TRNS@:–ghngaaghpetegnegu@R.VALENCE.TRNS@   #; [V][Conc][2Du][3Pl]@R.VALENCE.TRNS@:–ghngaaghpetegneki@R.VALENCE.TRNS@  #; [V][Conc][2Du][3Du]@R.VALENCE.TRNS@:–ghngaaghpetegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
+! -----------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][4Sg][3Sg]@R.VALENCE.TRNS@:–ghngaaghmigu@R.VALENCE.TRNS@       #; [V][Conc][4Sg][3Pl]@R.VALENCE.TRNS@:–ghngaaghmiki@R.VALENCE.TRNS@      #; [V][Conc][4Sg][3Du]@R.VALENCE.TRNS@:–ghngaaghmikek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
+[V][Conc][4Pl][3Sg]@R.VALENCE.TRNS@:–ghngaaghmegteggu@R.VALENCE.TRNS@   #; [V][Conc][4Pl][3Pl]@R.VALENCE.TRNS@:–ghngaaghmegteki@R.VALENCE.TRNS@   #; [V][Conc][4Pl][3Du]@R.VALENCE.TRNS@:–ghngaaghmegtekek@R.VALENCE.TRNS@   #; ! 4Pl SBJ |
+[V][Conc][4Du][3Sg]@R.VALENCE.TRNS@:–ghngaaghmegnegu@R.VALENCE.TRNS@    #; [V][Conc][4Du][3Pl]@R.VALENCE.TRNS@:–ghngaaghmegneki@R.VALENCE.TRNS@   #; [V][Conc][4Du][3Du]@R.VALENCE.TRNS@:–ghngaaghmegnekek@R.VALENCE.TRNS@   #; ! 4Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        1st singular object                                 |                             1st plural object                               |                                  1st dual object                             |           |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][3Sg][1Sg]@R.VALENCE.TRNS@:–ghngaanga@R.VALENCE.TRNS@        #; [V][Conc][3Sg][1Pl]@R.VALENCE.TRNS@:–ghngainkut@R.VALENCE.TRNS@      #; [V][Conc][3Sg][1Du]@R.VALENCE.TRNS@:–ghngainkung@R.VALENCE.TRNS@      #; ! 3Sg SBJ |
+[V][Conc][3Pl][1Sg]@R.VALENCE.TRNS@:–ghngaatnga@R.VALENCE.TRNS@       #; [V][Conc][3Pl][1Pl]@R.VALENCE.TRNS@:–ghngainkut@R.VALENCE.TRNS@      #; [V][Conc][3Pl][1Du]@R.VALENCE.TRNS@:–ghngainkung@R.VALENCE.TRNS@      #; ! 3Pl SBJ |
+[V][Conc][3Du][1Sg]@R.VALENCE.TRNS@:–ghngaagnenga@R.VALENCE.TRNS@     #; [V][Conc][3Du][1Pl]@R.VALENCE.TRNS@:–ghngainkut@R.VALENCE.TRNS@      #; [V][Conc][3Du][1Du]@R.VALENCE.TRNS@:–ghngainkung@R.VALENCE.TRNS@      #; ! 3Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                                                                            |                                                                             |                                                                              | ! 1Sg SBJ |
+!                                                                            |                                                                             |                                                                              | ! 1Pl SBJ |
+!                                                                            |                                                                             |                                                                              | ! 1Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][2Sg][1Sg]@R.VALENCE.TRNS@:–ghngaaghvnga@R.VALENCE.TRNS@       #; [V][Conc][2Sg][1Pl]@R.VALENCE.TRNS@:–ghngaaghfkut@R.VALENCE.TRNS@      #; [V][Conc][2Sg][1Du]@R.VALENCE.TRNS@:–ghngaaghfkung@R.VALENCE.TRNS@      #; ! 2Sg SBJ |
+[V][Conc][2Pl][1Sg]@R.VALENCE.TRNS@:–ghngaaghfsinga@R.VALENCE.TRNS@     #; [V][Conc][2Pl][1Pl]@R.VALENCE.TRNS@:–ghngaaghfsikut@R.VALENCE.TRNS@    #; [V][Conc][2Pl][1Du]@R.VALENCE.TRNS@:–ghngaaghfsikung@R.VALENCE.TRNS@    #; ! 2Pl SBJ |
+[V][Conc][2Du][1Sg]@R.VALENCE.TRNS@:–ghngaaghftegnenga@R.VALENCE.TRNS@  #; [V][Conc][2Du][1Pl]@R.VALENCE.TRNS@:–ghngaaghftegnekut@R.VALENCE.TRNS@ #; [V][Conc][2Du][1Du]@R.VALENCE.TRNS@:–ghngaaghftegnekung@R.VALENCE.TRNS@ #; ! 2Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][4Sg][1Sg]@R.VALENCE.TRNS@:–ghngaaghminga@R.VALENCE.TRNS@      #; [V][Conc][4Sg][1Pl]@R.VALENCE.TRNS@:–ghngaaghmikut@R.VALENCE.TRNS@     #; [V][Conc][4Sg][1Du]@R.VALENCE.TRNS@:–ghngaaghmikung@R.VALENCE.TRNS@     #; ! 4Sg SBJ |
+[V][Conc][4Pl][1Sg]@R.VALENCE.TRNS@:–ghngaaghmegtengnga@R.VALENCE.TRNS@ #; [V][Conc][4Pl][1Pl]@R.VALENCE.TRNS@:–ghngaaghmegtekut@R.VALENCE.TRNS@  #; [V][Conc][4Pl][1Du]@R.VALENCE.TRNS@:–ghngaaghmegtekung@R.VALENCE.TRNS@  #; ! 4Pl SBJ |
+[V][Conc][4Du][1Sg]@R.VALENCE.TRNS@:–ghngaaghmegnenga@R.VALENCE.TRNS@   #; [V][Conc][4Du][1Pl]@R.VALENCE.TRNS@:–ghngaaghmegnekut@R.VALENCE.TRNS@  #; [V][Conc][4Du][1Du]@R.VALENCE.TRNS@:–ghngaaghmegnekung@R.VALENCE.TRNS@  #; ! 4Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        2nd singular object                                 |                             2nd plural object                               |                                  2nd dual object                             |           |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][3Sg][2Sg]@R.VALENCE.TRNS@:–ghngaaten@R.VALENCE.TRNS@        #; [V][Conc][3Sg][2Pl]@R.VALENCE.TRNS@:–ghngaisi@R.VALENCE.TRNS@        #; [V][Conc][3Sg][2Du]@R.VALENCE.TRNS@:–ghngaistek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
+[V][Conc][3Pl][2Sg]@R.VALENCE.TRNS@:–ghngaaten@R.VALENCE.TRNS@        #; [V][Conc][3Pl][2Pl]@R.VALENCE.TRNS@:–ghngaisi@R.VALENCE.TRNS@        #; [V][Conc][3Pl][2Du]@R.VALENCE.TRNS@:–ghngaistek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][Conc][3Du][2Sg]@R.VALENCE.TRNS@:–ghngaaten@R.VALENCE.TRNS@        #; [V][Conc][3Du][2Pl]@R.VALENCE.TRNS@:–ghngaisi@R.VALENCE.TRNS@        #; [V][Conc][3Du][2Du]@R.VALENCE.TRNS@:–ghngaistek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][1Sg][2Sg]@R.VALENCE.TRNS@:–ghngaamken@R.VALENCE.TRNS@       #; [V][Conc][1Sg][2Pl]@R.VALENCE.TRNS@:–ghngaamsi@R.VALENCE.TRNS@       #; [V][Conc][1Sg][2Du]@R.VALENCE.TRNS@:–ghngaamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][Conc][1Pl][2Sg]@R.VALENCE.TRNS@:–ghngaamken@R.VALENCE.TRNS@       #; [V][Conc][1Pl][2Pl]@R.VALENCE.TRNS@:–ghngaamsi@R.VALENCE.TRNS@       #; [V][Conc][1Pl][2Du]@R.VALENCE.TRNS@:–ghngaamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
+[V][Conc][1Du][2Sg]@R.VALENCE.TRNS@:–ghngaamken@R.VALENCE.TRNS@       #; [V][Conc][1Du][2Pl]@R.VALENCE.TRNS@:–ghngaamsi@R.VALENCE.TRNS@       #; [V][Conc][1Du][2Du]@R.VALENCE.TRNS@:–ghngaamtek@R.VALENCE.TRNS@       #; ! 1Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                                                                            |                                                                             |                                                                              | ! 2Sg SBJ |
+!                                                                            |                                                                             |                                                                              | ! 2Pl SBJ |
+!                                                                            |                                                                             |                                                                              | ! 2Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][4Sg][2Sg]@R.VALENCE.TRNS@:–ghngaaghmiten@R.VALENCE.TRNS@      #; [V][Conc][4Sg][2Pl]@R.VALENCE.TRNS@:–ghngaaghmisi@R.VALENCE.TRNS@      #; [V][Conc][4Sg][2Du]@R.VALENCE.TRNS@:–ghngaaghmitek@R.VALENCE.TRNS@      #; ! 4Sg SBJ |
+[V][Conc][4Pl][2Sg]@R.VALENCE.TRNS@:–ghngaaghmiten@R.VALENCE.TRNS@      #; [V][Conc][4Pl][2Pl]@R.VALENCE.TRNS@:–ghngaaghmisi@R.VALENCE.TRNS@      #; [V][Conc][4Pl][2Du]@R.VALENCE.TRNS@:–ghngaaghmitek@R.VALENCE.TRNS@      #; ! 4Pl SBJ |
+[V][Conc][4Du][2Sg]@R.VALENCE.TRNS@:–ghngaaghmiten@R.VALENCE.TRNS@      #; [V][Conc][4Du][2Pl]@R.VALENCE.TRNS@:–ghngaaghmisi@R.VALENCE.TRNS@       #; [V][Conc][4Du][2Du]@R.VALENCE.TRNS@:–ghngaaghmitek@R.VALENCE.TRNS@      #; ! 4Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                        4th singular object                                 |                             4th plural object                               |                                  4th dual object                             |           |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][3Sg][4Sg]@R.VALENCE.TRNS@:–ghngaatni@R.VALENCE.TRNS@        #; [V][Conc][3Sg][4Pl]@R.VALENCE.TRNS@:–ghngaisteng@R.VALENCE.TRNS@     #; [V][Conc][3Sg][4Du]@R.VALENCE.TRNS@:–ghngaistek@R.VALENCE.TRNS@       #; ! 3Sg SBJ |
+[V][Conc][3Pl][4Sg]@R.VALENCE.TRNS@:–ghngaatni@R.VALENCE.TRNS@        #; [V][Conc][3Pl][4Pl]@R.VALENCE.TRNS@:–ghngaisteng@R.VALENCE.TRNS@     #; [V][Conc][3Pl][4Du]@R.VALENCE.TRNS@:–ghngaistek@R.VALENCE.TRNS@       #; ! 3Pl SBJ |
+[V][Conc][3Du][4Sg]@R.VALENCE.TRNS@:–ghngaatni@R.VALENCE.TRNS@        #; [V][Conc][3Du][4Pl]@R.VALENCE.TRNS@:–ghngaisteng@R.VALENCE.TRNS@     #; [V][Conc][3Du][4Du]@R.VALENCE.TRNS@:–ghngaistek@R.VALENCE.TRNS@       #; ! 3Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][1Sg][4Sg]@R.VALENCE.TRNS@:–ghngaamni@R.VALENCE.TRNS@        #; [V][Conc][1Sg][4Pl]@R.VALENCE.TRNS@:–ghngaamteng@R.VALENCE.TRNS@     #; [V][Conc][1Sg][4Du]@R.VALENCE.TRNS@:–ghngaamtek@R.VALENCE.TRNS@       #; ! 1Sg SBJ |
+[V][Conc][1Pl][4Sg]@R.VALENCE.TRNS@:–ghngaamnni@R.VALENCE.TRNS@       #; [V][Conc][1Pl][4Pl]@R.VALENCE.TRNS@:–ghngaamteng@R.VALENCE.TRNS@     #; [V][Conc][1Pl][4Du]@R.VALENCE.TRNS@:–ghngaamtek@R.VALENCE.TRNS@       #; ! 1Pl SBJ |
+[V][Conc][1Du][4Sg]@R.VALENCE.TRNS@:–ghngaamtegnegu@R.VALENCE.TRNS@   #; [V][Conc][1Du][4Pl]@R.VALENCE.TRNS@:–ghngaamteng@R.VALENCE.TRNS@  #; [V][Conc][1Du][4Du]@R.VALENCE.TRNS@:–ghngaamtek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+[V][Conc][2Sg][4Sg]@R.VALENCE.TRNS@:–ghngaaghpegu@R.VALENCE.TRNS@        #; [V][Conc][2Sg][4Pl]@R.VALENCE.TRNS@:–ghngaaghpeki@R.VALENCE.TRNS@       #; [V][Conc][2Sg][4Du]@R.VALENCE.TRNS@:–ghngaaghpekek@R.VALENCE.TRNS@       #; ! 2Sg SBJ |
+[V][Conc][2Pl][4Sg]@R.VALENCE.TRNS@:–ghngaaghpesigu@R.VALENCE.TRNS@      #; [V][Conc][2Pl][4Pl]@R.VALENCE.TRNS@:–ghngaaghpesiki@R.VALENCE.TRNS@     #; [V][Conc][2Pl][4Du]@R.VALENCE.TRNS@:–ghngaaghpesikek@R.VALENCE.TRNS@     #; ! 2Pl SBJ |
+[V][Conc][2Du][4Sg]@R.VALENCE.TRNS@:–ghngaaghpetegnegu@R.VALENCE.TRNS@   #; [V][Conc][2Du][4Pl]@R.VALENCE.TRNS@:–ghngaaghpetegneki@R.VALENCE.TRNS@  #; [V][Conc][2Du][4Du]@R.VALENCE.TRNS@:–ghngaaghpetegnekek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+!                                                                            |                                                                             |                                                                              | ! 4Sg SBJ |
+!                                                                            |                                                                             |                                                                              | ! 4Pl SBJ |
+!                                                                            |                                                                             |                                                                              | ! 4Du SBJ |
+! ---------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
+
 
 
 
@@ -1371,19 +1501,19 @@ V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@      #
 
 LEXICON PosturalRoot
 
-amsikagh*      PosRootPostbase; ! naked
+amsikagh*    PosRootPostbase  ; ! naked
 amsikagh*    QuantQualPostbase; ! naked
-aqumgagh*      PosRootPostbase; ! sitting
+aqumgagh*    PosRootPostbase  ; ! sitting
 aqumgagh*    QuantQualPostbase; ! sitting
-iggag          PosRootPostbase; ! leaning
+iggag        PosRootPostbase  ; ! leaning
 iggag        QuantQualPostbase; ! leaning
-ingagh*        PosRootPostbase; ! lying down
+ingagh*      PosRootPostbase  ; ! lying down
 ingagh*      QuantQualPostbase; ! lying down
-matagh*        PosRootPostbase; ! undressed; parka less
+matagh*      PosRootPostbase  ; ! undressed; parka less
 matagh*      QuantqualPostbase; ! undressed; parka less
-mumig          PosRootPostbase; ! turned over
+mumig        PosRootPostbase  ; ! turned over
 mumig        QuantQualPostbase; ! turned over
-nekevghagh*    PosRootPostbase; ! standing
+nekevghagh*  PosRootPostbase  ; ! standing
 nekevghagh*  QuantQualPostbase; ! standing
 
 
@@ -1418,9 +1548,9 @@ LEXICON QuantQualPostbase
 ! ---------------------------------|
 !   Quantifier-Qualifier Endings   |
 ! ---------------------------------|
-[Quant_Qual][3Sg]:~%:(ng)an       #;
-[Quant_Qual][3Pl]:~%:(ng)ita      #;                
-[Quant_Qual][3Du]:~%:(ng)ita      #;
+[Quant_Qual][3Sg]:~%:(ng₁)an       #;
+[Quant_Qual][3Pl]:~%:(ng₁)ita      #;                
+[Quant_Qual][3Du]:~%:(ng₁)ita      #;
 ! ---------------------------------|
 [Quant_Qual][1Sg]:~f-wma          #;
 [Quant_Qual][1Pl]:%:emta          #;
@@ -1447,12 +1577,13 @@ LEXICON QuantQualPostbase
 
 LEXICON EmotionalRoot
 
-eflegh           EmotePostbase; ! uncomfortable from something on the skin (emotional root)
-kayngu           EmotePostbase; ! embarrassed (emotional root)
-sikna            EmotePostbase; ! possessive; holding dear; selfish (emotional root)
-qaazugh          EmotePostbase; ! alienated; depressed; out of sorts (emotional root)
-quginag          EmotePostbase; ! terrified of supernatural (emotional root)
-yimi             EmotePostbase; ! shy; inhibited; intimidated (emotional root)
+eflegh           EmotePostbase; ! uncomfortable from something on the skin
+kayngu           EmotePostbase; ! embarrassed
+kusge            EmotePostbase; ! squeamish; finicky
+sikna            EmotePostbase; ! possessive; holding dear; selfish
+qaazugh          EmotePostbase; ! alienated; depressed; out of sorts
+quginag          EmotePostbase; ! terrified of supernatural
+yimi             EmotePostbase; ! shy; inhibited; intimidated
 
 
 LEXICON EmotePostbase
