@@ -1,32 +1,14 @@
-Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-		  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Unpd] [Intr_Ind] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V]
-		  [Abs1SgPoss] [SgPosd]
-                  ~sf ~f -w (e) (g/t) (ng) (p/v) (t/y) (s/z)
+Multichar_Symbols [V] [Prs] (i/e)
 
 LEXICON Root
-
-        VerbBase ;
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                Verb bases                  !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!                                            !!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON VerbBase
-
-megh             Verb; ! to drink
-
-LEXICON Verb
-
-[V][Intr_Ind]:~f(g/t)u   VerbInfl; 
+    Nonsense;
 
 
-LEXICON VerbInfl
+LEXICON Nonsense 
 
-[3Sg]:q    #;
+bloop  MoreNonsense;
 
 
+LEXICON MoreNonsense
+
+[V][Prs]:(i/e)  #;
