@@ -362,6 +362,20 @@ qiipaghagh*      NounPostbase; ! cloth cover parka
 quyngigh         NounPostbase; ! reindeer
 tungtu           NounPostbase; ! caribou
 
+! Jacobson (2001) Chapter 15 Noun Vocabulary
+aatkagh          NounPostbase; ! garment; clothing
+aqumutagh        NounPostbase; ! chair (dual, 'aqumutak', used for one chair)
+laluwaaye        NounPostbase; ! onion
+guygu            NounPostbase; ! summer house
+nenglu           NounPostbase; ! semi subterranean sod house
+qavaghvig        NounPostbase; ! bed; bedroom
+satelgagh        NounPostbase; ! crane (the bird)
+tepagh           NounPostbase; ! edible primitive sea creature found on beach (general term)
+ulig             NounPostbase; ! blanket
+uukagh*          NounPostbase; ! codfish
+wapaaqa          NounPostbase; ! amanita; opium; hallucinogen
+
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -400,6 +414,7 @@ niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]@P.VAL
 -–ligh[to.provide.with.N][N→V]@P.VALENCE.TRNS@:–ligh@P.VALENCE.TRNS@                                            VerbPostbase;
 -ti[to.speak.the.language.of.N][N→V]@P.VALENCE.INTR@:ti@P.VALENCE.INTR@                                         VerbPostbase;
 -tuumagh*[together.with.one's.Ns][N→V]:tuumagh*                                                                 QuantQualPostbase;
+-~%:(ng₁)ite*[to.lack.N][to.not.have.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)ite*@P.VALENCE.INTR@                         VerbPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -832,7 +847,7 @@ qungyake@P.VALENCE.TRNS@         VerbPostbase; ! to be jealous of; to envy
 sumeghtaghagh@P.VALENCE.INTR@    VerbPostbase; ! to think
 ungipaate@P.VALENCE.TRNS@        VerbPostbase; ! to tell
 
-! Jacobson (2001) Chapter 13 Verb Vocabulary
+! Jacobson (2001) Chapter 14 Verb Vocabulary
 alike@P.VALENCE.TRNS@            VerbPostbase; ! to fear
 anuqligh@P.VALENCE.INTR@         VerbPostbase; ! for it to be windy
 aghvig@P.VALENCE.TRNS@           VerbPostbase; ! to wash (clothes)
@@ -861,6 +876,27 @@ ughvughqe@P.VALENCE.INTR@        VerbPostbase; ! to bathe
 ughvughqe@P.VALENCE.TRNS@        VerbPostbase; ! to bathe
 ugpegh@P.VALENCE.INTR@           VerbPostbase; ! to have faith
 
+! Jacobson (2001) Chapter 15 Verb Vocabulary
+aate@P.VALENCE.TRNS@             VerbPostbase; ! to put on (clothes)
+an'gigh@P.VALENCE.INTR@          VerbPostbase; ! to go outside for fresh air or exercise (of children usually)
+iglagtu@P.VALENCE.INTR@          VerbPostbase; ! to speak loudly
+laag@P.VALENCE.INTR@             VerbPostbase; ! to dig
+laag@P.VALENCE.TRNS@             VerbPostbase; ! to dig
+maligte@P.VALENCE.TRNS@          VerbPostbase; ! to accompany
+muutighvike@P.VALENCE.TRNS@      VerbPostbase; ! to ask or hire (one) to do or make something
+qamagte@P.VALENCE.INTR@          VerbPostbase; ! to go through all; to all be done
+qamagte@P.VALENCE.TRNS@          VerbPostbase; ! to go through all; to all be done
+qineghte@P.VALENCE.INTR@         VerbPostbase; ! to look through an opening (at)
+qineghte@P.VALENCE.TRNS@         VerbPostbase; ! to look through an opening (at)
+sukangite@P.VALENCE.INTR@        VerbPostbase; ! to be slow
+taslugh@P.VALENCE.TRNS@          VerbPostbase; ! to hold hands with
+tasluqe@P.VALENCE.TRNS@          VerbPostbase; ! to hold hands with
+tuqlugh@P.VALENCE.TRNS@          VerbPostbase; ! to call to; to telephone
+uqengestagh@P.VALENCE.INTR@      VerbPostbase; ! to be light in weight
+uqigtu@P.VALENCE.INTR@           VerbPostbase; ! to be heavy in weight
+utaqa@P.VALENCE.TRNS@            VerbPostbase; ! to wait for
+yaave@P.VALENCE.INTR@            VerbPostbase; ! to row
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -886,16 +922,20 @@ LEXICON VerbPostbase
 -@₁lleqe[will.V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                          VerbPostbase;
 -@₁~fnaqe[to.be.going.to.V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                              VerbPostbase;
 -@₁~fyug[to.want.to.V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                    VerbPostbase;
--@₁–nghite*[to.not.V][V→V]@R.VALENCE@:@₁–nghite*@R.VALENCE@  VerbPostbase;
+-@₁–nghite*[to.not.V][V→V]@R.VALENCE@:@₁–nghite*@R.VALENCE@                                  VerbPostbase;
 -(pete)fte[to.evidently.V][to.have.V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@               VerbPostbase;
 -(pete/fte)[to.evidently.V][to.have.V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@              VerbPostbase;
 -@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@     VerbPostbase;
--@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed]@R.VALENCE@:@₁~%:(i/u)ma@R.VALENCE@          VerbPostbase;
+-@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed]@R.VALENCE@:@₁~%:(i/u)ma@R.VALENCE@            VerbPostbase;
 -~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
--~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                                                          VerbPostbase;
--@₁~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₁~%:(i/u)magh*@R.VALENCE@                                           QuantQualPostbase;
--@₁~f–ragkiigh[to.V.quickly]@R.VALENCE@:@₁~f–ragkiigh@R.VALENCE@                             VerbPostbase;
--@₁~%:(ng₂)igate[to.never.V][to.not.be.V-ing]@R.VALENCE@:@₁~%:(ng₂)igate@R.VALENCE@         VerbPostbase;
+-~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                               VerbPostbase;
+-@₁~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₁~%:(i/u)magh*@R.VALENCE@                     QuantQualPostbase;
+-@₁~f–ragkiigh[to.V.quickly][V→V]@R.VALENCE@:@₁~f–ragkiigh@R.VALENCE@                        VerbPostbase;
+-@₁~%:(ng₂)igate[to.never.V][to.not.be.V-ing][V→V]@R.VALENCE@:@₁~%:(ng₂)igate@R.VALENCE@     VerbPostbase;
+-~i[SBJ.V-ed.something][V→V]@R.VALENCE@@P.VALENCE.INTR@:~i@R.VALENCE@@P.VALENCE.INTR@        VerbPostbase;
+-~%:(u)te[SBJ.V-ed.something][V→V]@R.VALENCE@@P.VALENCE.INTR@:~%:(u)te@R.VALENCE@@P.VALENCE.INTR@  VerbPostbase;
+-@₁~fnaanghite[will.not.V][V→V]@R.VALENCE@:@₁~fnaanghite@R.VALENCE@                          VerbPostbase;
+-@₁~fna[in.order.to.V][intending.to.V][V→V]@R.VALENCE@:@₁~fna@R.VALENCE@                     VerbPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                               !!!
@@ -1865,6 +1905,69 @@ V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@       
 !                                                                      |                                                                        |                                                                         | ! 4Pl SBJ |
 !                                                                      |                                                                        |                                                                         | ! 4Du SBJ |
 ! ---------------------------------------------------------------------|------------------------------------------------------------------------|-------------------------------------------------------------------------|-----------|
+
+
+! ---------------------------------------------------------|
+!          Intransitive Subordinative Mood Endings         |
+! ---------------------------------------------------------|-----------|
+[V][Sbrd][3Sg]@R.VALENCE.INTR@:@₁~fluni@R.VALENCE.INTR@   #; ! 3Sg SBJ |
+[V][Sbrd][3Pl]@R.VALENCE.INTR@:@₁~fluteng@R.VALENCE.INTR@ #; ! 3Pl SBJ |
+[V][Sbrd][3Du]@R.VALENCE.INTR@:@₁~flutek@R.VALENCE.INTR@  #; ! 3Du SBJ |
+! ---------------------------------------------------------|-----------|
+[V][Sbrd][1Sg]@R.VALENCE.INTR@:@₁~flunga@R.VALENCE.INTR@  #; ! 1Sg SBJ |
+[V][Sbrd][1Pl]@R.VALENCE.INTR@:@₁~fluta@R.VALENCE.INTR@   #; ! 1Pl SBJ |
+[V][Sbrd][1Du]@R.VALENCE.INTR@:@₁~flutung@R.VALENCE.INTR@ #; ! 1Du SBJ |
+! ---------------------------------------------------------|-----------|
+[V][Sbrd][2Sg]@R.VALENCE.INTR@:@₁~fluten@R.VALENCE.INTR@  #; ! 2Sg SBJ |
+[V][Sbrd][2Pl]@R.VALENCE.INTR@:@₁~flusi@R.VALENCE.INTR@   #; ! 2Pl SBJ |
+[V][Sbrd][2Du]@R.VALENCE.INTR@:@₁~flutek@R.VALENCE.INTR@  #; ! 2Du SBJ |
+! ---------------------------------------------------------|-----------|
+
+! -------------------------------------------------------------|
+!           Transitive Subordinative Mood Endings              |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+!                      3rd singular object                     |                          3rd plural object                    |                            3rd dual obj                         |           |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+[V][Sbrd][3Sg][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][3Sg][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][3Sg][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 3Sg SBJ |
+[V][Sbrd][3Pl][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][3Pl][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][3Pl][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 3Pl SBJ |
+[V][Sbrd][3Du][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][3Du][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][3Du][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 3Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+[V][Sbrd][1Sg][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][1Sg][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][1Sg][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 1Sg SBJ |
+[V][Sbrd][1Pl][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][1Pl][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][1Pl][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 1Pl SBJ |
+[V][Sbrd][1Du][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][1Du][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][1Du][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+[V][Sbrd][2Sg][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][2Sg][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][2Sg][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 2Sg SBJ |
+[V][Sbrd][2Pl][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][2Pl][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][2Pl][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 2Pl SBJ |
+[V][Sbrd][2Du][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][2Du][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][2Du][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 2Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+!                     1st singular object                      |                          1st plural object                    |                            1st dual object                      |           |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+[V][Sbrd][3Sg][1Sg]@R.VALENCE.TRNS@:@₁~flunga@R.VALENCE.TRNS@ #; [V][Sbrd][3Sg][1Pl]@R.VALENCE.TRNS@:@₁~fluta@R.VALENCE.TRNS@ #; [V][Sbrd][3Sg][1Du]@R.VALENCE.TRNS@:@₁~flutung@R.VALENCE.TRNS@ #; ! 3Sg SBJ |
+[V][Sbrd][3Pl][1Sg]@R.VALENCE.TRNS@:@₁~flunga@R.VALENCE.TRNS@ #; [V][Sbrd][3Pl][1Pl]@R.VALENCE.TRNS@:@₁~fluta@R.VALENCE.TRNS@ #; [V][Sbrd][3Pl][1Du]@R.VALENCE.TRNS@:@₁~flutung@R.VALENCE.TRNS@ #; ! 3Pl SBJ |
+[V][Sbrd][3Du][1Sg]@R.VALENCE.TRNS@:@₁~flunga@R.VALENCE.TRNS@ #; [V][Sbrd][3Du][1Pl]@R.VALENCE.TRNS@:@₁~fluta@R.VALENCE.TRNS@ #; [V][Sbrd][3Du][1Du]@R.VALENCE.TRNS@:@₁~flutung@R.VALENCE.TRNS@ #; ! 3Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+!                                                              |                                                               |                                                                 | ! 1Sg SBJ |
+!                                                              |                                                               |                                                                 | ! 1Pl SBJ |
+!                                                              |                                                               |                                                                 | ! 1Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+[V][Sbrd][2Sg][1Sg]@R.VALENCE.TRNS@:@₁~flunga@R.VALENCE.TRNS@ #; [V][Sbrd][2Sg][1Pl]@R.VALENCE.TRNS@:@₁~fluta@R.VALENCE.TRNS@ #; [V][Sbrd][2Sg][1Du]@R.VALENCE.TRNS@:@₁~flutung@R.VALENCE.TRNS@ #; ! 2Sg SBJ |
+[V][Sbrd][2Pl][1Sg]@R.VALENCE.TRNS@:@₁~flunga@R.VALENCE.TRNS@ #; [V][Sbrd][2Pl][1Pl]@R.VALENCE.TRNS@:@₁~fluta@R.VALENCE.TRNS@ #; [V][Sbrd][2Pl][1Du]@R.VALENCE.TRNS@:@₁~flutung@R.VALENCE.TRNS@ #; ! 2Pl SBJ |
+[V][Sbrd][2Du][1Sg]@R.VALENCE.TRNS@:@₁~flunga@R.VALENCE.TRNS@ #; [V][Sbrd][2Du][1Pl]@R.VALENCE.TRNS@:@₁~fluta@R.VALENCE.TRNS@ #; [V][Sbrd][2Du][1Du]@R.VALENCE.TRNS@:@₁~flutung@R.VALENCE.TRNS@ #; ! 2Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+!                      2nd singular object                     |                          2nd plural object                    |                            2nd dual object                      |           |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+[V][Sbrd][3Sg][2Sg]@R.VALENCE.TRNS@:@₁~fluten@R.VALENCE.TRNS@ #; [V][Sbrd][3Sg][2Pl]@R.VALENCE.TRNS@:@₁~flusi@R.VALENCE.TRNS@ #; [V][Sbrd][3Sg][2Du]@R.VALENCE.TRNS@:@₁~flutek@R.VALENCE.TRNS@  #; ! 3Sg SBJ |
+[V][Sbrd][3Pl][2Sg]@R.VALENCE.TRNS@:@₁~fluten@R.VALENCE.TRNS@ #; [V][Sbrd][3Pl][2Pl]@R.VALENCE.TRNS@:@₁~flusi@R.VALENCE.TRNS@ #; [V][Sbrd][3Pl][2Du]@R.VALENCE.TRNS@:@₁~flutek@R.VALENCE.TRNS@  #; ! 3Pl SBJ |
+[V][Sbrd][3Du][2Sg]@R.VALENCE.TRNS@:@₁~fluten@R.VALENCE.TRNS@ #; [V][Sbrd][3Du][2Pl]@R.VALENCE.TRNS@:@₁~flusi@R.VALENCE.TRNS@ #; [V][Sbrd][3Du][2Du]@R.VALENCE.TRNS@:@₁~flutek@R.VALENCE.TRNS@  #; ! 3Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+[V][Sbrd][1Sg][2Sg]@R.VALENCE.TRNS@:@₁~fluten@R.VALENCE.TRNS@ #; [V][Sbrd][1Sg][2Pl]@R.VALENCE.TRNS@:@₁~flusi@R.VALENCE.TRNS@ #; [V][Sbrd][1Sg][2Du]@R.VALENCE.TRNS@:@₁~flutek@R.VALENCE.TRNS@  #; ! 1Sg SBJ |
+[V][Sbrd][1Pl][2Sg]@R.VALENCE.TRNS@:@₁~fluten@R.VALENCE.TRNS@ #; [V][Sbrd][1Pl][2Pl]@R.VALENCE.TRNS@:@₁~flusi@R.VALENCE.TRNS@ #; [V][Sbrd][1Pl][2Du]@R.VALENCE.TRNS@:@₁~flutek@R.VALENCE.TRNS@  #; ! 1Pl SBJ |
+[V][Sbrd][1Du][2Sg]@R.VALENCE.TRNS@:@₁~fluten@R.VALENCE.TRNS@ #; [V][Sbrd][1Du][2Pl]@R.VALENCE.TRNS@:@₁~flusi@R.VALENCE.TRNS@ #; [V][Sbrd][1Du][2Du]@R.VALENCE.TRNS@:@₁~flutek@R.VALENCE.TRNS@  #; ! 1Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
+!                                                              |                                                               |                                                                 | ! 2Sg SBJ |
+!                                                              |                                                               |                                                                 | ! 2Pl SBJ |
+!                                                              |                                                               |                                                                 | ! 2Du SBJ |
+! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
 
 
 

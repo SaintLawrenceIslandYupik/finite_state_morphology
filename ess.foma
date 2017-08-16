@@ -1,7 +1,7 @@
 #!/usr/bin/env foma -f
 
 read lexc exceptions.lexc
-def Exceptions
+define Exceptions
 
 read lexc ess.lexc
 
@@ -40,7 +40,7 @@ define V           [ e | FullVowel ];
 
 define Enclitic   [ ll u | ng u q ] ;
 
-define Alphabet [ C | V | "*" ] ;
+define Alphabet [ C | V | "*" | "'" ] ;
 define MorphPhonSymbols [ "~"     | "~f"   | "~sf"   | "~h"    | "-w"    | ":"     | "–" |
                           "@*"    | "@₁"   | "@₂"    |
                           "(e)"   | "(g₁)" | "(g₂)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" |

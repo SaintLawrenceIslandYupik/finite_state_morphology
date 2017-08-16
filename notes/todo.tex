@@ -8,24 +8,11 @@
 
 \begin{document}
 
-\section{TODO}
+\section{Implementation Issues}
 
 \begin{enumerate}
-\item It appears that the possessive absolutive forms can qualify as derivational morphemes as well as inflectional morphemes as they are classified now in the \textit{lexc} file (See \textit{\textbf{nuyaqatakestaaghhaaguq}} in the EOC exercises for Chapter 4).
-%
-We need to implement these forms as derivational morphemes, but also optimize the network to prevent circular, repetitive paths.
-%
-These result since the inflectional morphemes class is a continuation class of the derivational morpheme class.
-%
-If a morpheme classifies as both, one could potentially affix it twice as we move through the network.
-
-\textcolor{magenta}{According to misc grammar notes in Chapter 18, it appears there are a limited number of postbases that can attach to an inflected noun.
-%
-Perhaps these unique postbases can be listed in a different continuation class from the other postbases, possibly with enclitics.}
 
 \item Is there a \textcolor{magenta}{lookahead feature} in \textit{foma}? This would particularly helpful with some postbases, such as @${\sim}_\text{f}$naqe, which when affixed to \textit{te}-verbs affect consonants that precede the \textit{te}, e.g. \textit{ingaghte} + @${\sim}_\text{f}$naqe $\rightarrow$ \textit{inga\uline{ghh}naqe}
-
-\item The absolutive case does not bear an \textit{unpossessed} marker like the other cases. \textcolor{magenta}{Should the [\textsc{unpd}] marker be added to the absolutive or simply removed entirely?} \ldots Add it.
 
 \item Ideally, we would like to label the Optional Impersonal Agent verbs as such in their gloss.
 
@@ -37,6 +24,21 @@ We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion})
 
 \item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet.
 
+\item On p.71, it looks like those verbs associated with movement can take transitive endings in addition to intransitive.
+%
+Is this true?
+
+\item What exactly are the postural root endings that appear in quantifier-qualifier constructions?
+
+\item What is happening with the obsolete verb base \textit{ete}?
+
+\item To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
+%
+The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
+%
+We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
+
+
 \end{enumerate}
 
 
@@ -44,7 +46,7 @@ We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion})
 
 \item Bases \textit{negh} and \textit{megh} and their alternatives were all listed, and overgenerate when one of the bases is paired with a postbase that requires the alternative.
 
-\item We are also overgenerating the postbase \textit{ngugh*} which is used only with ``special'' \textit{te} bases.
+\item We are overgenerating the postbase \textit{ngugh*} which is used only with ``special'' \textit{te} bases.
 %
 Originally, we had implemented flag diacritics to handle this postbase, with appropriate flag diacritics on the relevant words, but there are some postbases that apply to all types of bases, including ``special'' \textit{te} bases.
 %
@@ -70,29 +72,26 @@ This is not yet accounted for, and so this postbase is continuing to all number,
 %
 This issue also pertains to the postbase \textit{--lghii}, which should only affix to unpossessed nouns.
 
-\item On p.71, it looks like those verbs associated with movement can take transitive endings in addition to intransitive.
+\item Once the above is resolved, a second pass should be made through the Participial endings which include all of the above postbases as its endings.
 %
-Is this true?
+A possible solution may be to include \textit{--lghii}/\textit{ngugh*} in the MultipleForms slot of \textit{foma}.
 
-\item What exactly are the postural root endings that appear in quantifier-qualifier constructions?
+\item Should a flag diacritic for \textsc{number} be included to account for conventional duals (maybe), and the postbase for ``N and company'', ``N and partner'', etc.?
 
-\item What is happening with the obsolete verb base \textit{ete}?
+\item \textbf{!!!Priority} We have a parsing issue with \textit{uyviinghet}.
+
+\item For the conditional mood, verbs with a special \textit{te} ending have multiple permissible forms.
+%
+We need to check if this is true for other postbases that begin with \textit{k}, and perhaps restructure some rules to run in parallel.
 
 
 
-
-\section{Minor Issues}
+\section{Vocabulary/Mood Ending Entry Issues}
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
 \item Is \textit{\textbf{yughagh}} | to pray; to worship, intransitive or transitive?
-
-\item To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
-%
-The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
-%
-We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
 
 \item Is the [2SgPoss][SgPosd] ending for \textsc{vialis} case, \textit{\textbf{--gpegun}} or \textit{\textbf{--gpekun}}?
 
@@ -110,10 +109,26 @@ Does this include both intransitive and transitive endings?
 %
 When is it used with those bases then?
 
-\item We need to standardize the glossing style and abbreviations.
+\item The introduction of the concessive, conditional, contemporative endings in Chapter 14 don't match their corresponding table in Appendix I.
+%
+And when Jacobson writes \textit{like 3rd person object}, does he only mean the singular subject form?
+
+\item What are the all the partial consonant assimilations that occur with enclitics?
 
 \end{itemize}
 
+
+
+\section{Big Picture Issues}
+
+\begin{itemize}
+\renewcommand\labelitemi{$\cdot$}
+
+\item Standardize the glossing style and abbreviations.
+
+\item Alphabetize and condense the nouns and verbs lists.
+
+\end{itemize}
 
 \end{document}
 
