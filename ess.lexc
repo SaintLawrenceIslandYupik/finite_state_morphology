@@ -1,5 +1,5 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
+                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [To_Feel_R_Toward]
                   [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
@@ -31,14 +31,19 @@ LEXICON Root
 LEXICON Particle
 
 aa               #; ! yes
+alla             #; ! again; other thing; different thing
 elngaatall       #; ! very much
 elngaatall       EncliticOrEnd; ! very much
+enkaam           #; ! then; furthermore
+entaqun          #; ! maybe; perhaps; probably; I think; I guess
 ighivgagh        #; ! yesterday
+iwernga           #; ! however; but then
 legan            #; ! go ahead; and then
 nakaa            #; ! no
 nakaan           #; ! no
 nalighmeng       #; ! or
 qayughllak       #; ! because
+qenwat           #; ! finally; consequently
 quunpeng         #; ! always
 wanlegi          #; ! more than ever
 whani            #; ! right here (localis demonstrative adverb) particle
@@ -375,6 +380,20 @@ ulig             NounPostbase; ! blanket
 uukagh*          NounPostbase; ! codfish
 wapaaqa          NounPostbase; ! amanita; opium; hallucinogen
 
+! Jacobson (2001) Chapter 17 Noun Vocabulary
+aki              NounPostbase; ! other side; equivalent; price; value
+akmaneghpallugh  NounPostbase; ! camel (literally 'one with a big load on its back')
+esghavyu         NounPostbase; ! gray dog
+kamagragh        NounPostbase; ! elephant
+kiighwyagh       NounPostbase; ! aurora (usually used in plural)
+kukupag          NounPostbase; ! ribbon seal
+Ruuseghmii       NounPostbase; ! Russian
+qallevag         NounPostbase; ! overalls (usually dual, 'qallevagek', for one pair)
+qalqalima        NounPostbase; ! axe
+qimugsigh        NounPostbase; ! dogteam
+quta             NounPostbase; ! land seen from water
+siqlugagh        NounPostbase; ! meat cellar
+yugayu           NounPostbase; ! loon
 
 
 
@@ -393,15 +412,16 @@ LEXICON NounPostbase
 -–ghhalek[how.N][N→XCLM]:–ghhalek  #;
 
 ! Noun →  Noun (Noun-Elaborating) Postbases
--–ghllag[big.N][N→N]:–ghllag                             NounPostbase;
--–ghrugllag[huge.N][N→N]:–ghrugllag                      NounPostbase;
--–leg[one.having.N][N→N]:–leg                            NounPostbase;
--e[ENG.to.ESS][N→N]:-e                                   NounPostbase;
--mii[resident.of.N][N→N]:mii                             NounPostbase;
--–squgh[little.N][small.N][N→N]:–squgh                   NounPostbase;
--–squghhagh*little.N][small.N][N→N]:–squghhagh*          NounPostbase;
--~sf-w%:(e)nkut[N.and.company.or.family]:~sf-w%:(e)nkut  NounPostbase;
--~sf-w%:(e)nkuk[N.and.partner.or.spouse]:~sf-w%:(e)nkuk  NounPostbase;
+-–ghllag[big.N][N→N]:–ghllag                                  NounPostbase;
+-–ghrugllag[huge.N][N→N]:–ghrugllag                           NounPostbase;
+-–leg[one.having.N][N→N]:–leg                                 NounPostbase;
+-e[ENG.to.ESS][N→N]:-e                                        NounPostbase;
+-mii[resident.of.N][N→N]:mii                                  NounPostbase;
+-–squgh[little.N][small.N][N→N]:–squgh                        NounPostbase;
+-–squghhagh*little.N][small.N][N→N]:–squghhagh*               NounPostbase;
+-~sf-w%:(e)nkut[N.and.company.or.family][N→N]:~sf-w%:(e)nkut  NounPostbase;
+-~sf-w%:(e)nkuk[N.and.partner.or.spouse][N→N]:~sf-w%:(e)nkuk  NounPostbase;
+-–ghhagh*[dear.N][N→N]:–ghhagh*                               NounPostbase;
 
 ! Noun →  Verb (Verbalizing) Postbases
 -~%:(ng₁)u[to.be.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)u@P.VALENCE.INTR@                                              VerbPostbase;
@@ -414,7 +434,8 @@ niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]@P.VAL
 -–ligh[to.provide.with.N][N→V]@P.VALENCE.TRNS@:–ligh@P.VALENCE.TRNS@                                            VerbPostbase;
 -ti[to.speak.the.language.of.N][N→V]@P.VALENCE.INTR@:ti@P.VALENCE.INTR@                                         VerbPostbase;
 -tuumagh*[together.with.one's.Ns][N→V]:tuumagh*                                                                 QuantQualPostbase;
--~%:(ng₁)ite*[to.lack.N][to.not.have.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)ite*@P.VALENCE.INTR@                         VerbPostbase;
+-~%:(ng₁)ite*[to.lack.N][to.not.have.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)ite*@P.VALENCE.INTR@                       VerbPostbase;
+-~–ke[to.have.as.one's.N(s)][N→V]@P.VALENCE.INTR@:~–ke@P.VALENCE.INTR@									        VerbPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -897,6 +918,16 @@ uqigtu@P.VALENCE.INTR@           VerbPostbase; ! to be heavy in weight
 utaqa@P.VALENCE.TRNS@            VerbPostbase; ! to wait for
 yaave@P.VALENCE.INTR@            VerbPostbase; ! to row
 
+! Jacobson (2001) Chapter 17 Verb Vocabulary
+aapte@P.VALENCE.INTR@            VerbPostbase; ! to ask
+aapte@P.VALENCE.TRNS@            VerbPostbase; ! to ask
+kaleve@P.VALENCE.INTR@           VerbPostbase; ! to sink
+naapte@P.VALENCE.INTR@           VerbPostbase; ! to catch with net or trap
+naapte@P.VALENCE.TRNS@           VerbPostbase; ! to catch with net or trap
+piyaa@P.VALENCE.INTR@            VerbPostbase; ! to take a walk; to hunt on foot on ice
+qimugsigh@P.VALENCE.INTR@        VerbPostbase; ! to go via dogteam
+uteghmigh@P.VALENCE.INTR@        VerbPostbase; ! to return from a trip
+yuqeghte@P.VALENCE.INTR@         VerbPostbase; ! to go outside to check the weather or get fresh air
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -918,36 +949,42 @@ LEXICON VerbPostbase
 !!!      Verb →  Verb (Verb-Elaborating) Postbases     !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--~(g₁)aqe[to.be.V.ing][to.regularly.or.repeatedly.V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@     VerbPostbase;
--@₁lleqe[will.V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                          VerbPostbase;
--@₁~fnaqe[to.be.going.to.V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                              VerbPostbase;
--@₁~fyug[to.want.to.V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                    VerbPostbase;
--@₁–nghite*[to.not.V][V→V]@R.VALENCE@:@₁–nghite*@R.VALENCE@                                  VerbPostbase;
--(pete)fte[to.evidently.V][to.have.V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@               VerbPostbase;
--(pete/fte)[to.evidently.V][to.have.V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@              VerbPostbase;
--@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@     VerbPostbase;
--@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed]@R.VALENCE@:@₁~%:(i/u)ma@R.VALENCE@            VerbPostbase;
+-~(g₁)aqe[to.be.V.ing][to.regularly.or.repeatedly.V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@           VerbPostbase;
+-@₁lleqe[will.V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                                VerbPostbase;
+-@₁~fnaqe[to.be.going.to.V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                                    VerbPostbase;
+-@₁~fyug[to.want.to.V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                          VerbPostbase;
+-@₁–nghite*[to.not.V][V→V]@R.VALENCE@:@₁–nghite*@R.VALENCE@                                        VerbPostbase;
+-(pete)fte[to.evidently.V][to.have.V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@                     VerbPostbase;
+-(pete/fte)[to.evidently.V][to.have.V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@                    VerbPostbase;
+-@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@           VerbPostbase;
+-@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₁~%:(i/u)ma@R.VALENCE@             VerbPostbase;
 -~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
--~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                               VerbPostbase;
--@₁~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₁~%:(i/u)magh*@R.VALENCE@                     QuantQualPostbase;
--@₁~f–ragkiigh[to.V.quickly][V→V]@R.VALENCE@:@₁~f–ragkiigh@R.VALENCE@                        VerbPostbase;
--@₁~%:(ng₂)igate[to.never.V][to.not.be.V-ing][V→V]@R.VALENCE@:@₁~%:(ng₂)igate@R.VALENCE@     VerbPostbase;
--~i[SBJ.V-ed.something][V→V]@R.VALENCE@@P.VALENCE.INTR@:~i@R.VALENCE@@P.VALENCE.INTR@        VerbPostbase;
+-~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                                     VerbPostbase;
+-@₁~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₁~%:(i/u)magh*@R.VALENCE@                           QuantQualPostbase;
+-@₁~f–ragkiigh[to.V.quickly][V→V]@R.VALENCE@:@₁~f–ragkiigh@R.VALENCE@                              VerbPostbase;
+-@₁~%:(ng₂)igate[to.never.V][to.not.be.V-ing][V→V]@R.VALENCE@:@₁~%:(ng₂)igate@R.VALENCE@           VerbPostbase;
+-~i[SBJ.V-ed.something][V→V]@R.VALENCE@@P.VALENCE.INTR@:~i@R.VALENCE@@P.VALENCE.INTR@              VerbPostbase;
 -~%:(u)te[SBJ.V-ed.something][V→V]@R.VALENCE@@P.VALENCE.INTR@:~%:(u)te@R.VALENCE@@P.VALENCE.INTR@  VerbPostbase;
--@₁~fnaanghite[will.not.V][V→V]@R.VALENCE@:@₁~fnaanghite@R.VALENCE@                          VerbPostbase;
--@₁~fna[in.order.to.V][intending.to.V][V→V]@R.VALENCE@:@₁~fna@R.VALENCE@                     VerbPostbase;
+-@₁~fnaanghite[will.not.V][V→V]@R.VALENCE@:@₁~fnaanghite@R.VALENCE@                                VerbPostbase;
+-@₁~fna[in.order.to.V][intending.to.V][V→V]@R.VALENCE@:@₁~fna@R.VALENCE@                           VerbPostbase;
+-te[to.act.on.so.as.to.cause.to.V][V→V]@R.VALENCE@:te@R.VALENCE@                                   VerbPostbase;
+-@₁~fyagh[to.go.V-ing][to.V.in.vain][V→V]@R.VALENCE@:@₁~fyagh@R.VALENCE@                           VerbPostbase;
+-–pigte[to.be.very.V][to.V.very.much][V→V]@R.VALENCE@:–pigte@R.VALENCE@                            VerbPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                               !!!
 !!!     Verb →  Noun (Nominalizing) Postbases     !!!
 !!!                                               !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq                    NounPostbase;
--@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii           NounPostbase;
--@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*           NounPostbase;
--@*@₂~sf–(g₂)ka[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ka        NounPostbase;
--@*@₂~sf–(g₂)ke[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ke        NounPostbase;
--~–kayuk[one.who.is.able.to.V][V→N]:~–kayuk                             NounPostbase;
+-@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq              NounPostbase;
+-@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii     NounPostbase;
+-@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*     NounPostbase;
+-@*@₂~sf–(g₂)ka[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ka  NounPostbase;
+-@*@₂~sf–(g₂)ke[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ke  NounPostbase;
+-~–kayuk[one.who.is.able.to.V][V→N]:~–kayuk                       NounPostbase;
+-~%:(u)te[condition.with.respect.to.V-ing][V→N]:~%:(u)te          NounPostbase;
+-~%:(u)ta[condition.with.respect.to.V-ing][V→N]:~%:(u)ta          NounPostbase;
+-@₁~fvik[place.to.V][V→N]:@₁~fvik                                 NounPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
@@ -1233,9 +1270,9 @@ LEXICON VerbTenseInfl
 [V][Opt][PRS][3Pl][2Sg]@R.VALENCE.TRNS@:~flaten@R.VALENCE.TRNS@             #; [V][Opt][PRS][3Pl][2Pl]@R.VALENCE.TRNS@:~flisi@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Pl][2Du]@R.VALENCE.TRNS@:~flistek@R.VALENCE.TRNS@          #; ! 3Pl SBJ |
 [V][Opt][PRS][3Du][2Sg]@R.VALENCE.TRNS@:~flaten@R.VALENCE.TRNS@             #; [V][Opt][PRS][3Du][2Pl]@R.VALENCE.TRNS@:~flisi@R.VALENCE.TRNS@           #; [V][Opt][PRS][3Du][2Du]@R.VALENCE.TRNS@:~flistek@R.VALENCE.TRNS@          #; ! 3Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-[V][Opt][PRS][3Sg][1Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@             #; [V][Opt][PRS][3Sg][1Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Sg][1Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 1Sg SBJ |
-[V][Opt][PRS][3Pl][1Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@             #; [V][Opt][PRS][3Pl][1Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Pl][1Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 1Pl SBJ |
-[V][Opt][PRS][3Du][1Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@             #; [V][Opt][PRS][3Du][1Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][3Du][1Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 1Du SBJ |
+[V][Opt][PRS][1Sg][2Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@             #; [V][Opt][PRS][1Sg][2Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][1Sg][2Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 1Sg SBJ |
+[V][Opt][PRS][1Pl][2Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@             #; [V][Opt][PRS][1Pl][2Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][1Pl][2Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 1Pl SBJ |
+[V][Opt][PRS][1Du][2Sg]@R.VALENCE.TRNS@:~flaken@R.VALENCE.TRNS@             #; [V][Opt][PRS][1Du][2Pl]@R.VALENCE.TRNS@:~flamsi@R.VALENCE.TRNS@          #; [V][Opt][PRS][1Du][2Du]@R.VALENCE.TRNS@:~flamtek@R.VALENCE.TRNS@          #; ! 1Du SBJ |
 ! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
 !                                                                            |                                                                           |                                                                            | ! 2Sg SBJ |
 !                                                                            |                                                                           |                                                                            | ! 2Pl SBJ |
@@ -1304,6 +1341,24 @@ LEXICON VerbTenseInfl
 !                                                                |                                                                   |                                                                      | ! 2Pl SBJ |
 !                                                                |                                                                   |                                                                      | ! 2Du SBJ |
 ! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
+
+
+! -----------------------------------------------------------------|
+!         Intransitive Optative Mood Endings (Future)             |
+! -----------------------------------------------------------------|-----------|
+[V][Opt][FUT][3Sg]@R.VALENCE.INTR@:@₁~fli@R.VALENCE.INTR@         #; ! 3Sg SBJ |
+[V][Opt][FUT][3Pl]@R.VALENCE.INTR@:@₁~flit@R.VALENCE.INTR@        #; ! 3Pl SBJ |
+[V][Opt][FUT][3Du]@R.VALENCE.INTR@:@₁~flik@R.VALENCE.INTR@        #; ! 3Du SBJ |
+! -----------------------------------------------------------------|-----------|
+[V][Opt][FUT][1Sg]@R.VALENCE.INTR@:@₁~flanga@R.VALENCE.INTR@      #; ! 1Sg SBJ |
+[V][Opt][FUT][1Pl]@R.VALENCE.INTR@:~sf%:(e)lta@R.VALENCE.INTR@    #; ! 1Pl SBJ |
+[V][Opt][FUT][1Du]@R.VALENCE.INTR@:~sf%:(e)ltung@R.VALENCE.INTR@  #; ! 1Du SBJ |
+! -----------------------------------------------------------------|-----------|
+[V][Opt][FUT][2Sg]@R.VALENCE.INTR@:[Opt_PRS_2Sg]@R.VALENCE.INTR@  #; ! 2Sg SBJ |
+[V][Opt][FUT][2Pl]@R.VALENCE.INTR@:@₁(i₂)tek@R.VALENCE.INTR@      #; ! 2Pl SBJ |
+[V][Opt][FUT][2Du]@R.VALENCE.INTR@:@₁(i₂)tek@R.VALENCE.INTR@      #; ! 2Du SBJ |
+! -----------------------------------------------------------------|-----------|
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1923,12 +1978,12 @@ V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@       
 [V][Sbrd][2Du]@R.VALENCE.INTR@:@₁~flutek@R.VALENCE.INTR@  #; ! 2Du SBJ |
 ! ---------------------------------------------------------|-----------|
 
-! -------------------------------------------------------------|
+! ------------------------------------------------------------|
 !           Transitive Subordinative Mood Endings              |
 ! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
 !                      3rd singular object                     |                          3rd plural object                    |                            3rd dual obj                         |           |
 ! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
-[V][Sbrd][3Sg][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][3Sg][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][3Sg][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 3Sg SBJ |
+[V][Sbrd][3Sg][3Sg]@R.VALENCE.TRNS@:@₁~flu/naku@R.VALENCE.TRNS@  #; [V][Sbrd][3Sg][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][3Sg][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 3Sg SBJ |
 [V][Sbrd][3Pl][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][3Pl][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][3Pl][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 3Pl SBJ |
 [V][Sbrd][3Du][3Sg]@R.VALENCE.TRNS@:@₁~fluku@R.VALENCE.TRNS@  #; [V][Sbrd][3Du][3Pl]@R.VALENCE.TRNS@:@₁~fluki@R.VALENCE.TRNS@ #; [V][Sbrd][3Du][3Du]@R.VALENCE.TRNS@:@₁~flukek@R.VALENCE.TRNS@  #; ! 3Du SBJ |
 ! -------------------------------------------------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------|
@@ -2076,3 +2131,161 @@ LEXICON EmotePostbase
 -@₁~fnagh[to.tend.to.cause.one.to.feel.R]@P.VALENCE.INTR@:@₁~fnagh@P.VALENCE.INTR@          VerbPostbase;
 -@₁~fnaq[something.that.causes.one.to.feel.R]:@₁~fnaq                                       NounPostbase;
 -@₁~fyug[to.feel.R]@P.VALENCE.INTR@:@₁~fyug@P.VALENCE.INTR@                                VerbTenseInfl;
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                                          !!!!!!
+!!!!!!               Inflection of Demonstratives               !!!!!!
+!!!!!!                                                          !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+! -----------------------------------------------------------------|
+! extended |   restricted    |   obscured    |                     |
+! -------------------------------------------|---------------------|
+! OVER (NEARER)                              |                     |
+! -------------------------------------------|---------------------|
+              iigna         #;  aamna       #;  ! Abs Sg Pron      |
+              ingumi        #;  amumi       #;  ! Loc Sg Pron      |
+              iingyuq       #;  aamyuq      #;  ! Voc Sg           |
+              iingkut       #;  aamkut      #;  ! Abs/Rel Pl Pron  |
+              tazigna       #;  taamna      #;  ! Anaph Abs Pron   |
+awa       #;  inga          #;  ama         #;  ! Adv Ptcl         |
+awani     #;  ingani        #;  amani       #;  ! Loc Adv          |
+awavek    #;  ingavek       #;  amavek      #;  ! Ter Adv          |
+awagun    #;  iing'ggun     #;  amagun      #;  ! Via Adv          |
+aawhkun   #;                #;  aamggun     #;  ! Via Adv          |
+awaken    #;  iingken       #;  amaken      #;  ! Abl_Mod Adv      |
+aawhken   #;  aamken        #;                  ! Abl_Mod Adv      |
+taawa     #;  tazinga       #;  taama       #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
+! OVER (FARTHER)                             |                     |
+! -------------------------------------------|---------------------|
+aagna     #;    iikna       #;  akemna      #;  ! Abs Sg Pron      |                  
+agumi     #;    ikumi       #;  akmumi      #;  ! Loc Sg Pron      |
+aagyuq    #;    iiksuq      #;  akemyuq     #;  ! Voc Sg           |
+aagkut    #;    ikegkut     #;  akemkut     #;  ! Abs/Rel Pl Pron  |
+taagna    #;    tazikna     #;  taakemna    #;  ! Anaph Abs Pron   |
+aga       #;    ika         #;  akma        #;  ! Adv Ptcl         |
+agani     #;    ikani       #;  akmani      #;  ! Loc Adv          |
+agavek    #;    ikavek      #;  akmavek     #;  ! Ter Adv          |
+aaggun    #;    ikagun      #;  akmagun     #;  ! Via Adv          |
+aagken    #;    ikegken     #;  akmaken     #;  ! Abl_Mod Adv      |
+taaga     #;    tazika      #;  taakma      #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
+! UP                                         |                     |
+! -------------------------------------------|---------------------|
+paagna    #;    piikna      #;  aamna       #;  ! Abs Sg Pron      |
+pagumi    #;    pikumi      #;  amumi       #;  ! Loc Sg Pron      |
+paagyuq   #;    piiksuq     #;  aamyuq      #;  ! Voc Sg           |
+paagkut   #;    pikegkut    #;  aamkut      #;  ! Abs/Rel Pl Pron  |
+espagna   #;    espigna     #;  espamna     #;  ! Anaph Abs Pron   |
+tespagna  #;    tespigna    #;  tespamna    #;  ! Anaph Abs Pron   |
+paga      #;    pika        #;  pama        #;  ! Adv Ptcl         |
+pagani    #;    pikani      #;  pamani      #;  ! Loc Adv          |
+pagavek   #;    pikavek     #;  pamavek     #;  ! Ter Adv          |
+paaggun   #;    pikagun     #;  pamagun     #;  ! Via Adv          |
+paagken   #;    pikegken    #;  pamaken     #;  ! Abl_Mod Adv      |
+espaga    #;    espika      #;  espama      #;  ! Anaph Adv Ptcl   |
+tespaga   #;    tespika     #;  tespama     #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
+! DOWN (BELOW)                               |                     |
+! -------------------------------------------|---------------------|
+unegna    #;    kaana       #;  saamna      #;  ! Abs Sg Pron      |
+un'gumi   #;    kanumi      #;  samumi      #;  ! Loc Sg Pron      |
+unegyuq   #;    kaanyuq     #;  saamyuq     #;  ! Voc Sg           |
+unegkut   #;    kaankut     #;  saamkut     #;  ! Abs/Rel Pl Pron  |
+taanegna  #;    eskana      #;  esamna      #;  ! Anaph Abs Pron   |
+                teskana     #;  tesamna     #;  ! Anaph Abs Pron   |
+un'ga     #;    kana        #;  sama        #;  ! Adv Ptcl         |
+un'gani   #;    kanaani     #;  samani      #;  ! Loc Adv          |
+un'gavek  #;    kanavek     #;  samavek     #;  ! Ter Adv          |
+uun'ggun  #;    kaan'ggun   #;  samagun     #;  ! Via Adv          |
+unegken   #;    kanaken     #;  samaken     #;  ! Abl_Mod Adv      |
+                kaanken     #;  saamken     #;  ! Abl_Mod Adv      |
+taan'ga   #;    eskana      #;  esama       #;  ! Anaph Adv Ptcl   |
+                teskana     #;  tesama      #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------| 
+! DOWN (TOWARD EXIT)                         |                     |
+! -------------------------------------------|---------------------|
+unegna    #;     uugna      #;  sakemna     #;  ! Abs Sg Pron      |
+un'gumi   #;     ugumi      #;  sakmumi     #;  ! Loc Sg Pron      |
+unegyuq   #;     uugyuq     #;  sakemyuq    #;  ! Voc Sg           |
+unegkut   #;     uugkut     #;  sakemkut    #;  ! Abs/Rel Pl Pron  |
+taanegna  #;     taagna     #;  esakemna    #;  ! Anaph Abs Pron   |
+                            #;  tesakemna   #;  ! Anaph Abs Pron   |
+un'ga     #;     kana       #;  sakma       #;  ! Adv Ptcl         |
+un'gani   #;     kanaani    #;  sakmani     #;  ! Loc Adv          |
+un'gavek  #;     kanavek    #;  sakmavek    #;  ! Ter Adv          |
+uun'ggun  #;     kaan'ggun  #;  sakmagun    #;  ! Via Adv          |
+unegken   #;     kanaken    #;  sakmaken    #;  ! Abl_Mod Adv      |
+                 kaanken    #;                  ! Abl_Mod Adv      |
+taan'ga   #;     eskana     #;  esakma      #;  ! Anaph Adv Ptcl   |
+                 teskana    #;  tesakma     #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
+! INSIDE                                     |                     | 
+! -------------------------------------------|---------------------|
+qaawna    #;     kiiwna     #;  qaamna      #;  ! Abs Sg Pron      |
+qawani    #;     kigumi     #;  qamumi      #;  ! Loc Sg Pron      |
+                 kiwumi     #;                                     |
+kiiwyuq   #;     kiiwyuq    #;  qaamyuq     #;  ! Voc Sg           |
+qaawhkut  #;     kiiwhkut   #;  qaamkut     #;  ! Abs/Rel Pl Pron  |
+esqawna   #;     eskiwna    #;  esqamna     #;  ! Anaph Abs Pron   |
+tesqawna  #;     teskiwna   #;  tesqamna    #;  ! Anaph Abs Pron   |
+qawa      #;     kiwa       #;  qama        #;  ! Adv Ptcl         |
+qawani    #;     kiwani     #;  qamani      #;  ! Loc Adv          |
+qawavek   #;     kiwavek    #;  qamavek     #;  ! Ter Adv          |
+qaawhun   #;     kiiwhun    #;  qamagun     #;  ! Via Adv          |
+                                qaamggun    #;  ! Via Adv          |
+qaawhken  #;     kiiwhken   #;  qamaken     #;  ! Abl_Mod Adv      |
+                                qaamken     #;  ! Abl_Mod Adv      |
+esqawa    #;     eskiwa     #;  esqama      #;  ! Anaph Adv Ptcl   |
+tesqawa   #;     teskiwa    #;  tesqama     #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
+! OUTSIDE                                    |                     |
+! -------------------------------------------|---------------------|
+qaagna    #;                    qakmena     #;  ! Abs Sg Pron      |
+qaqani    #;                    qakmumi     #;  ! Loc Sg Pron      |
+qaagyuq   #;                    qakemyuq    #;  ! Voc Sg           |
+qaagkut   #;                    qakemkut    #;  ! Abs/Rel Pl Pron  |
+esqagna   #;                    esqakemna   #;  ! Anaph Abs Pron   |
+tesqagna  #;                    tesqakemna  #;  ! Anaph Abs Pron   |
+qaga      #;                    qakma       #;  ! Adv Ptcl         |
+qagani    #;                    qakmani     #;  ! Loc Adv          |
+qagavek   #;                    qakmavek    #;  ! Ter Adv          |
+qaagun    #;                    qakmagun    #;  ! Via Adv          |
+qaagken   #;                    qakmaken    #;  ! Abl_Mod Adv      |
+esqawa    #;                    esqakma     #;  ! Anaph Adv Ptcl   |
+tesqawa   #;                    tesqakma    #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
+! HERE                                       |                     |
+! -------------------------------------------|---------------------|
+maana     #;     una        #;  iimna       #;  ! Abs Sg Pron      |
+matumi    #;     uumi       #;  imumi       #;  ! Loc Sg Pron      |
+                 uuyuq      #;  iimyuq      #;  ! Voc Sg           |
+maakut    #;     ukut       #;  imkut       #;  ! Abs/Rel Pl Pron  |
+tamana    #;     taana      #;  tazimna     #;  ! Anaph Abs Pron   |
+maa       #;     wha        #;  ima         #;  ! Adv Ptcl         |
+maani     #;     whani      #;  imani       #;  ! Loc Adv          |
+maavek    #;     whavek     #;  imavek      #;  ! Ter Adv          |
+maagun    #;     whagun     #;  imagun      #;  ! Via Adv          |
+                                iimgun      #;  ! Via Adv          |
+maaken    #;     whaken     #;  imaken      #;  ! Abl_Mod Adv      |
+                                iimken      #;  ! Abl_Mod Adv      |
+tamaa     #;     tawa       #;  tazima      #;  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
+! NEAR, COMING                               |                     |
+! -------------------------------------------|---------------------|
+                 uukna      #;               |  ! Abs Sg Pron      |
+                 ukumi      #;               |  ! Loc Sg Pron      |
+                 uuksuq     #;               |  ! Voc Sg           |
+                 ukegkut    #;               |  ! Abs/Rel Pl Pron  |
+                 taakwna    #;               |  ! Anaph Abs Pron   |
+                 uka        #;               |  ! Adv Ptcl         |
+                 ukani      #;               |  ! Loc Adv          |
+                 ukavek     #;               |  ! Ter Adv          |
+                 ukagun     #;               |  ! Via Adv          |
+                 ukegken    #;               |  ! Abl_Mod Adv      |
+                 taakwa     #;               |  ! Anaph Adv Ptcl   |
+! -------------------------------------------|---------------------|
