@@ -8,13 +8,24 @@
 
 \begin{document}
 
+% % % % % %
+
 \section{Implementation Issues}
 
-\begin{enumerate}
+\begin{itemize}
+\renewcommand\labelitemi{$\cdot$}
 
-\item Is there a \textcolor{magenta}{lookahead feature} in \textit{foma}? This would particularly helpful with some postbases, such as @${\sim}_\text{f}$naqe, which when affixed to \textit{te}-verbs affect consonants that precede the \textit{te}, e.g. \textit{ingaghte} + @${\sim}_\text{f}$naqe $\rightarrow$ \textit{inga\uline{ghh}naqe}
+\item \textbf{!!!Priority} We have a parsing issue with \textit{uyviinghet}.
 
-\item Ideally, we would like to label the Optional Impersonal Agent verbs as such in their gloss.
+\item \textsc{chapter 4}: Is there a \textcolor{magenta}{lookahead feature} in \textit{foma}? This would particularly helpful with some postbases, such as @${\sim}_\text{f}$naqe, which when affixed to \textit{te}-verbs affect consonants that precede the \textit{te}, e.g. \textit{ingaghte} + @${\sim}_\text{f}$naqe $\rightarrow$ \textit{inga\uline{ghh}naqe}
+
+\item \textsc{chapter 5}: To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
+%
+The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
+%
+We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
+
+\item \textsc{chapter 9}: Ideally, we would like to label the Optional Impersonal Agent verbs as such in their gloss.
 
 \item According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
 %
@@ -24,29 +35,36 @@ We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion})
 
 \item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet.
 
-\item On p.71, it looks like those verbs associated with movement can take transitive endings in addition to intransitive.
+\item \textsc{chapter 12}: What is happening with the obsolete verb base \textit{ete}?
+
+\item Should a flag diacritic for \textsc{number} be included to account for conventional duals (maybe), and the postbase for ``N and company'', ``N and partner'', etc.?
+
+\item \textsc{chapter 14}: For the conditional mood, verbs with a special \textit{te} ending have multiple permissible forms.
+
+\item \textsc{chapter 15}: Do all weakly special \textit{te}'s have \textit{t} become \textit{l} or \textit{s}?
+
+\item \textsc{chapter 15}: Section 15.3.4 is already implemented in the optative section, but the glossing is incorrect as a result.
+
+\item \textsc{chapter 15}: There is something wrong with the implementation of strongly special \textit{te}'s, in that once either the \textit{@--nghite} or \textit{~--(ng)ite} postbase is followed by the conditional tense, the \textit{t} does not turn into \textit{l}.
 %
-Is this true?
+Affixing the participial tense however does not cause this problem.
 
-\item What exactly are the postural root endings that appear in quantifier-qualifier constructions?
+\item \textsc{chapter 17}: It's unclear what endings the postbase \textit{$\sim$-ke} continues on to.
 
-\item What is happening with the obsolete verb base \textit{ete}?
+\item \textsc{chapter 17}: The numeral system hasn't been entered yet.
 
-\item To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
-%
-The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
-%
-We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
+\end{itemize}
 
-
-\end{enumerate}
-
+% % % % % % % % % % % %
 
 \section{Issues Pertaining to Overgeneration}
 
+\begin{itemize}
+\renewcommand\labelitemi{$\cdot$}
+
 \item Bases \textit{negh} and \textit{megh} and their alternatives were all listed, and overgenerate when one of the bases is paired with a postbase that requires the alternative.
 
-\item We are overgenerating the postbase \textit{ngugh*} which is used only with ``special'' \textit{te} bases.
+\item \textsc{chapter 11}: We are overgenerating the postbase \textit{ngugh*} which is used only with ``special'' \textit{te} bases.
 %
 Originally, we had implemented flag diacritics to handle this postbase, with appropriate flag diacritics on the relevant words, but there are some postbases that apply to all types of bases, including ``special'' \textit{te} bases.
 %
@@ -59,10 +77,8 @@ So the implementation of \textit{ngugh*} works, but it will apply to every base.
 Including flag diacritics are also not ideal according to Aric, since they aren't intrinsically part of the transducer, are difficult to debug, and double the size of the transducer.
 %
 But maybe they should be included to prevent overgeneration in this instance.
-%
-Perhaps, we should include both the \textit{te*} marking and flag diacritics...
 
-\item The postbase $\sim$sf--(g)ka/(g)ke, which uses different forms depending on whether or not the following person marker begins with \textit{ng}, is also overgenerating, since we have simply listed them both.
+\item \textsc{chapter 11}: The postbase $\sim$sf--(g)ka/(g)ke, which uses different forms depending on whether or not the following person marker begins with \textit{ng}, is also overgenerating, since we have simply listed them both.
 %
 It is unclear how to predict the coming number, person marker, although flag diacritics might help.
 
@@ -72,18 +88,23 @@ This is not yet accounted for, and so this postbase is continuing to all number,
 %
 This issue also pertains to the postbase \textit{--lghii}, which should only affix to unpossessed nouns.
 
-\item Once the above is resolved, a second pass should be made through the Participial endings which include all of the above postbases as its endings.
+\item \textsc{chapter 11}: Once the above is resolved, a second pass should be made through the Participial endings which include all of the above postbases as its endings.
 %
 A possible solution may be to include \textit{--lghii}/\textit{ngugh*} in the MultipleForms slot of \textit{foma}.
 
-\item Should a flag diacritic for \textsc{number} be included to account for conventional duals (maybe), and the postbase for ``N and company'', ``N and partner'', etc.?
-
-\item \textbf{!!!Priority} We have a parsing issue with \textit{uyviinghet}.
-
-\item For the conditional mood, verbs with a special \textit{te} ending have multiple permissible forms.
+\item \textsc{chapter 15}: The half-transitive postbase takes on two forms, \textit{$\sim$i} and \textit{$\sim$:(u)te}.
 %
-We need to check if this is true for other postbases that begin with \textit{k}, and perhaps restructure some rules to run in parallel.
+Which one is used is dependent on the verb base itself, although there is no pattern to this, and ``a learner of the language must just learn which these verbs are; there is no way from the outside to predict''.
 
+\item \textsc{chapter 17}: The postbase \textit{$\sim$:(u)te/ta} has two forms, where the latter is used only with 3rd person possessor possessed endings.
+%
+This distinction is not accounted for and the postbases are simply listed side by side.
+
+\item \textsc{chapter 17}: Section 17.3.2 states that ``certain verb bases'' can take on unpossessed oblique case endings.
+%
+Jacobson does not specify which verb bases may do so, so one option may be to simply list the unpossessed oblique case endings in the VerbTenseInfl class, and simply permit every verb to potentially affix an oblique case.
+
+\end{itemize}
 
 
 \section{Vocabulary/Mood Ending Entry Issues}
@@ -115,9 +136,15 @@ And when Jacobson writes \textit{like 3rd person object}, does he only mean the 
 
 \item What are the all the partial consonant assimilations that occur with enclitics?
 
+\item On p.71, it looks like those verbs associated with movement can take transitive endings in addition to intransitive.
+%
+Is this true?
+
+\item What exactly are the postural root endings that appear in quantifier-qualifier constructions?
+
 \end{itemize}
 
-
+% % % % % %
 
 \section{Big Picture Issues}
 
@@ -132,3 +159,4 @@ And when Jacobson writes \textit{like 3rd person object}, does he only mean the 
 
 \end{document}
 
+\grid
