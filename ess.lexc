@@ -1,8 +1,8 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-                  [N] [V] [Sg] [Pl] [Du] [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
-                  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-                  [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V]
+                  [N] [V] [Sg] [Pl] [Du] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
+                  [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
+                  [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
                   @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (pete/fte) (pete)fte (te) (i₁) (i₂) (i/u) (u)
                   @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
@@ -31,22 +31,32 @@ LEXICON Root
 LEXICON Particle
 
 aa               #; ! yes
+aga              #; ! gone; not here (from demonstrative 'aagna'/'aga')
 alla             #; ! again; other thing; different thing
 elngaatall       #; ! very much
 elngaatall       EncliticOrEnd; ! very much
 enkaam           #; ! then; furthermore
+ental            #; ! go ahead then; come on then
 entaqun          #; ! maybe; perhaps; probably; I think; I guess
+esghaghhu        #; ! look; consider
 ighivgagh        #; ! yesterday
-iwernga           #; ! however; but then
+iwernga          #; ! however; but then
+kii              #; ! gee!, oh!
 legan            #; ! go ahead; and then
+llaaghanwa       #; ! and so
+maaten ilangani  #; ! once; on one occasion (particle phrase from 'maaten' - 'now' and 'ilangani' - 'meanwhile')
 nakaa            #; ! no
 nakaan           #; ! no
 nalighmeng       #; ! or
+naqam            #; ! consequent to the fact that...
 qayughllak       #; ! because
+qemall           #; ! finally; it might happen
 qenwat           #; ! finally; consequently
 quunpeng         #; ! always
+taagken          #; ! henceforth (from ablative modalis of anaphoric demonstrative adverb 'taagna'/'taaga')
 wanlegi          #; ! more than ever
 whani            #; ! right here (localis demonstrative adverb) particle
+yeqay            #; ! let's do that
 
 
 
@@ -100,7 +110,6 @@ afsengagh*       NounPostbase; ! vole, locally mouse
 aghnagh          NounPostbase; ! woman
 aghnegh          NounPostbase; ! day
 amaa             NounPostbase; ! wolf
-angyagh          NounPostbase; ! boat
 anipa            NounPostbase; ! owl
 ategh            NounPostbase; ! name
 atkug            NounPostbase; ! parka
@@ -395,6 +404,33 @@ quta             NounPostbase; ! land seen from water
 siqlugagh        NounPostbase; ! meat cellar
 yugayu           NounPostbase; ! loon
 
+! Jacobson (2001) Chapter 18 Noun Vocabulary
+alegh            NounPostbase; ! companion; other of pair (3rd person possessor possessed form is 'aallgha')
+angayuqagh*      NounPostbase; ! parent; boss
+anglegute        NounPostbase; ! sibling
+iiyagh           NounPostbase; ! ventilator in house
+qilag            NounPostbase; ! sky; heavens
+repall           NounPostbase; ! as a result of strong action
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                !!!
+!!!        Positional Bases        !!!
+!!!      (inflect like nouns)      !!!
+!!!                                !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+asi              NounPostbase; ! area below; lower part
+kelu             NounPostbase; ! area back from sea
+ilu              NounPostbase; ! area inside; interior
+kelute           NounPostbase; ! area back from sea
+kete             NounPostbase; ! area toward sea
+kingu            Noun;Postbase ! back part; stern of boat; time after
+qule             NounPostbase; ! area above; upper part
+saaghw           NounPostbase; ! area beside
+sivu             NounPostbase; ! front part; bow of boat; time before
+
+
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -411,7 +447,11 @@ LEXICON NounPostbase
 
 -–ghhalek[how.N][N→XCLM]:–ghhalek  #;
 
-! Noun →  Noun (Noun-Elaborating) Postbases
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                                   !!!
+!!!     Noun →  Noun (Noun-Elaborating) Postbases     !!!
+!!!                                                   !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -–ghllag[big.N][N→N]:–ghllag                                  NounPostbase;
 -–ghrugllag[huge.N][N→N]:–ghrugllag                           NounPostbase;
 -–leg[one.having.N][N→N]:–leg                                 NounPostbase;
@@ -423,7 +463,11 @@ LEXICON NounPostbase
 -~sf-w%:(e)nkuk[N.and.partner.or.spouse][N→N]:~sf-w%:(e)nkuk  NounPostbase;
 -–ghhagh*[dear.N][N→N]:–ghhagh*                               NounPostbase;
 
-! Noun →  Verb (Verbalizing) Postbases
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                              !!!
+!!!     Noun →  Verb (Verbalizing) Postbases     !!!
+!!!                                              !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -~%:(ng₁)u[to.be.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)u@P.VALENCE.INTR@                                              VerbPostbase;
 -–lgu[to.have.N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                                                      VerbPostbase;
 -–ngllagh[to.make.N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                                              VerbPostbase;
@@ -532,7 +576,6 @@ LEXICON NounInfl
 !                   singular possessed                  |                      plural possessed                 |                          dual possessed                      |
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 [N][Ter][Unpd][Sg]:~f-wmun                 EncliticOrEnd; [N][Ter][Unpd][Pl]:~f-wnun               EncliticOrEnd; [N][Ter][Unpd][Du]:~sf-w%:(e)gnun               EncliticOrEnd; ! unpossessed   |
-![N][Ter][Unpd][Pl]:~f-wnun                EncliticOrEnd; !                                                     |                                                              |                 | 
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
 [N][Ter][3SgPoss][SgPosd]:~%:(ng₁)anun     EncliticOrEnd; [N][Ter][3SgPoss][PlPosd]:~%:(ng₁)anun   EncliticOrEnd; [N][Ter][3SgPoss][DuPosd]:~sf-w%:(e)gkenun      EncliticOrEnd; ! 3Sg possessor |
 [N][Ter][3PlPoss][SgPosd]:~%:(ng₁)itnun    EncliticOrEnd; [N][Ter][3PlPoss][PlPosd]:~%:(ng₁)itnun  EncliticOrEnd; [N][Ter][3PlPoss][DuPosd]:~%:(ng₁)itnun         EncliticOrEnd; ! 3Pl possessor |
@@ -771,12 +814,8 @@ aleghqugh@P.VALENCE.TRNS@        VerbPostbase; ! to talk to; to tell
 aleghquute@P.VALENCE.INTR@       VerbPostbase; ! to talk together; to converse (non-singular)
 amqeghte@P.VALENCE.TRNS@         VerbPostbase; ! to bite
 aqlaghate*@P.VALENCE.INTR@       VerbPostbase; ! for it to get cold
-aqlaghaghte@P.VALENCE.INTR@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
-aqlaghaghte@P.VALENCE.TRNS@      VerbPostbase; ! for it to get cold (optional impersonal agent verb)
 atightugh@P.VALENCE.INTR@        VerbPostbase; ! to read
 atightugh@P.VALENCE.TRNS@        VerbPostbase; ! to read
-ghhuute@P.VALENCE.INTR@          VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
-ghhuute@P.VALENCE.TRNS@          VerbPostbase; ! to be cold (person) (optional impersonal agent verb)
 igagh@P.VALENCE.INTR@            VerbPostbase; ! to write (on)
 igagh@P.VALENCE.TRNS@            VerbPostbase; ! to write (on)
 iknaqe@P.VALENCE.INTR@           VerbPostbase; ! to be strong
@@ -788,10 +827,6 @@ payegh@P.VALENCE.TRNS@           VerbPostbase; ! to meet, to encounter; to go ov
 pinighsagh@P.VALENCE.INTR@       VerbPostbase; ! to fix, to repair; to fix up oneself
 pinighsagh@P.VALENCE.TRNS@       VerbPostbase; ! to fix, to repair; to fix up oneself
 qaamte@P.VALENCE.TRNS@           VerbPostbase; ! to extinguish; to turn off
-siku@P.VALENCE.INTR@             VerbPostbase; ! to freeze (optional impersonal agent verb)
-siku@P.VALENCE.TRNS@             VerbPostbase; ! to freeze (optional impersonal agent verb)
-ughug@P.VALENCE.INTR@            VerbPostbase; ! to melt (optional impersonal agent verb)
-ughug@P.VALENCE.TRNS@            VerbPostbase; ! to melt (optional impersonal agent verb)
 uglagh@P.VALENCE.INTR@           VerbPostbase; ! to be many, to be numerous
 ugpeqe@P.VALENCE.TRNS@           VerbPostbase; ! to believe
 ulima@P.VALENCE.INTR@            VerbPostbase; ! to make (something)
@@ -873,8 +908,6 @@ alike@P.VALENCE.TRNS@            VerbPostbase; ! to fear
 anuqligh@P.VALENCE.INTR@         VerbPostbase; ! for it to be windy
 aghvig@P.VALENCE.TRNS@           VerbPostbase; ! to wash (clothes)
 aghyuugh@P.VALENCE.TRNS@         VerbPostbase; ! to scold
-eslallugughte@P.VALENCE.INTR@    VerbPostbase; ! for it to rain (optional impersonal agent verb)
-eslallugughte@P.VALENCE.TRNS@    VerbPostbase; ! for it to rain (optional impersonal agent verb)
 iilqe@P.VALENCE.INTR@            VerbPostbase; ! to be sad
 iiw@P.VALENCE.INTR@              VerbPostbase; ! for tide go down
 iqalgu@P.VALENCE.INTR@           VerbPostbase; ! to be dirty
@@ -885,8 +918,6 @@ mughute@P.VALENCE.INTR@          VerbPostbase; ! to hunt on ice
 mumigte@P.VALENCE.INTR@          VerbPostbase; ! to turn over
 naghaagh@P.VALENCE.INTR@         VerbPostbase; ! to play
 piyug@P.VALENCE.INTR@            VerbPostbase; ! to walk
-qanigughte@P.VALENCE.INTR@       VerbPostbase; ! for snow to fall (optional impersonal agent verb)
-qanigughte@P.VALENCE.TRNS@       VerbPostbase; ! for snow to fall (optional impersonal agent verb)
 qaprag@P.VALENCE.INTR@           VerbPostbase; ! to make a move; to be in motion; to fidget
 quya@P.VALENCE.INTR@             VerbPostbase; ! to be happy; to be joyful
 taghsagh@P.VALENCE.TRNS@         VerbPostbase; ! to wake (him) up; to awaken (him)
@@ -929,6 +960,47 @@ qimugsigh@P.VALENCE.INTR@        VerbPostbase; ! to go via dogteam
 uteghmigh@P.VALENCE.INTR@        VerbPostbase; ! to return from a trip
 yuqeghte@P.VALENCE.INTR@         VerbPostbase; ! to go outside to check the weather or get fresh air
 
+! Jacobson (2001) Chapter 18 Verb Vocabulary
+aghtugh@P.VALENCE.INTR@          VerbPostbase; ! to not be able to bear; to not be able to do (to)(agentive)
+aghtugh@P.VALENCE.TRNS@          VerbPostbase; ! to not be able to bear; to not be able to do (to)(agentive)
+aghuliigh@P.VALENCE.INTR@        VerbPostbase; ! to stop motion (patientive)
+aghuliigh@P.VALENCE.TRNS@        VerbPostbase; ! to stop motion (patientive)
+angyagh@P.VALENCE.INTR@          VerbPostbase; ! to go boating
+apeghiigh@P.VALENCE.INTR@        VerbPostbase; ! to finish or be finished
+apeghiigh@P.VALENCE.TRNS@        VerbPostbase; ! to finish or be finished
+atghagh@P.VALENCE.INTR@          VerbPostbase; ! to go down toward the water
+ketfagh@P.VALENCE.INTR@          VerbPostbase; ! to bring out; to go far out to sea
+ketfagh@P.VALENCE.TRNS@          VerbPostbase; ! to bring out; to go far out to sea
+nepiigh@P.VALENCE.INTR@          VerbPostbase; ! to fall silent
+qevuute@P.VALENCE.INTR@          VerbPostbase; ! to act or be acted upon to the maximum extent possible
+qevuute@P.VALENCE.TRNS@          VerbPostbase; ! to act or be acted upon to the maximum extent possible
+taglagh@P.VALENCE.INTR@          VerbPostbase; ! to go up away from the water
+taku@P.VALENCE.TRNS@             VerbPostbase; ! to approach on purpose
+tenge@P.VALENCE.INTR@            VerbPostbase; ! to fly off; to take off in flight
+uutghute@P.VALENCE.TRNS@         VerbPostbase; ! to bring back; to change one's mind about
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                          !!!
+!!!     Optional Impersonal Agent Verbs      !!!
+!!!                                          !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+aqlaghaghte[Imprs_Agnt]@P.VALENCE.INTR@:aqlaghaghte@P.VALENCE.INTR@      VerbPostbase; ! for it to get cold
+aqlaghaghte[Imprs_Agnt]@P.VALENCE.TRNS@:aqlaghaghte@P.VALENCE.TRNS@      VerbPostbase; ! for it to get cold
+eslallugughte[Imprs_Agnt]@P.VALENCE.INTR@:eslallugughte@P.VALENCE.INTR@  VerbPostbase; ! for it to rain
+eslallugughte[Imprs_Agnt]@P.VALENCE.TRNS@:eslallugughte@P.VALENCE.INTR@  VerbPostbase; ! for it to rain
+ghhuute[Imprs_Agnt]@P.VALENCE.INTR@:ghhuute@P.VALENCE.INTR@              VerbPostbase; ! to be cold (person)
+ghhuute[Imprs_Agnt]@P.VALENCE.TRNS@:ghhuute@P.VALENCE.TRNS@              VerbPostbase; ! to be cold (person)
+lliigh[Imprs_Agnt]@P.VALENCE.INTR@:lliigh@P.VALENCE.TRNS@                VerbPostbase; ! to become a certain way
+qanigughte[Imprs_Agnt]@P.VALENCE.INTR@:qanigughte@P.VALENCE.INTR@        VerbPostbase; ! for snow to fall
+qanigughte[Imprs_Agnt]@P.VALENCE.TRNS@:qanigughte@P.VALENCE.TRNS@        VerbPostbase; ! for snow to fall
+siku[Imprs_Agnt]@P.VALENCE.INTR@:siku@P.VALENCE.INTR@                    VerbPostbase; ! to freeze
+siku[Imprs_Agnt]@P.VALENCE.TRNS@:siku@P.VALENCE.TRNS@                    VerbPostbase; ! to freeze
+ughug[Imprs_Agnt]@P.VALENCE.INTR@:ughug@P.VALENCE.INTR@                  VerbPostbase; ! to melt
+ughug[Imprs_Agnt]@P.VALENCE.TRNS@:ughug@P.VALENCE.TRNS@                  VerbPostbase; ! to melt
+unug[Imprs_Agnt]@P.VALENCE.INTR@:unug@P.VALENCE.INTR@                    VerbPostbase; ! for night to fall
+unug[Imprs_Agnt]@P.VALENCE.TRNS@:unug@P.VALENCE.TRNS@                    VerbPostbase; ! for night to fall
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -970,6 +1042,10 @@ LEXICON VerbPostbase
 -te[to.act.on.so.as.to.cause.to.V][V→V]@R.VALENCE@:te@R.VALENCE@                                   VerbPostbase;
 -@₁~fyagh[to.go.V-ing][to.V.in.vain][V→V]@R.VALENCE@:@₁~fyagh@R.VALENCE@                           VerbPostbase;
 -–pigte[to.be.very.V][to.V.very.much][V→V]@R.VALENCE@:–pigte@R.VALENCE@                            VerbPostbase;
+-@₁~laatagh[to.V.anyway][despite.everything.to.still.V][V→V]@R.VALENCE@:@₁~laatagh@R.VALENCE@      VerbPostbase;
+-@₁~fnanigh[to.cease.V-ing][to.stop.V-ing]@R.VALENCE@:@₁~fnanigh@R.VALENCE@                        VerbPostbase;
+-@₁qugh[to.V.completely]@R.VALENCE@:@₁qugh@R.VALENCE@                                              VerbPostbase;
+-@₁~fyaghtugh[to.be.about.to.V][to.go.somewhere.to.V]@R.VALENCE@:@₁~fyaghtugh@R.VALENCE@           VerbPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                               !!!
@@ -985,6 +1061,7 @@ LEXICON VerbPostbase
 -~%:(u)te[condition.with.respect.to.V-ing][V→N]:~%:(u)te          NounPostbase;
 -~%:(u)ta[condition.with.respect.to.V-ing][V→N]:~%:(u)ta          NounPostbase;
 -@₁~fvik[place.to.V][V→N]:@₁~fvik                                 NounPostbase;
+-@₁–negh[the.act.or.activity.of.V-ing]:@₁–negh                    NounPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
@@ -2197,6 +2274,9 @@ V][Prec][3Du][3Sg]@R.VALENCE.TRNS@:@₁@₂~fvagilgagnegu@R.VALENCE.TRNS@       
 ! ----------------------------------------------------------------|------------------------------------------------------------------|--------------------------------------------------------------------|-----------|
 
 
+!-nayuka[Vol_of_Fear]@R.VALENCE@:nayuka@R.VALENCE@  #;
+
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -2436,9 +2516,12 @@ tesqawa   #;                    tesqakma    #;  ! Anaph Adv Ptcl   |
 ! -------------------------------------------|---------------------|
 maana     #;     una        #;  iimna       #;  ! Abs Sg Pron      |
 matumi    #;     uumi       #;  imumi       #;  ! Loc Sg Pron      |
-                 uuyuq      #;  iimyuq      #;  ! Voc Sg           |
+                 uyuq       #;  iimyuq      #;  ! Voc Sg           |
+                 ukughsi    #;                  ! Voc Pl           |
 maakut    #;     ukut       #;  imkut       #;  ! Abs/Rel Pl Pron  |
 tamana    #;     taana      #;  tazimna     #;  ! Anaph Abs Pron   |
+                 tawani     #;                  ! Anaph Abs Pron   |
+                 tawaten    #;                  ! Equ Pron   |
 maa       #;     wha        #;  ima         #;  ! Adv Ptcl         |
 maani     #;     whani      #;  imani       #;  ! Loc Adv          |
 maavek    #;     whavek     #;  imavek      #;  ! Ter Adv          |
