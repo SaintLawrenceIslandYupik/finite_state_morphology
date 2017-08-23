@@ -10,102 +10,57 @@
 
 % % % % % %
 
-\section{Implementation Issues}
+\section{Implementation Issues / Questions for Mans}
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
-\item \textbf{!!!Priority} We have a parsing issue with \textit{uyviinghet}.
-
-\item \textsc{chapter 4}: Is there a \textcolor{magenta}{lookahead feature} in \textit{foma}? This would particularly helpful with some postbases, such as @${\sim}_\text{f}$naqe, which when affixed to \textit{te}-verbs affect consonants that precede the \textit{te}, e.g. \textit{ingaghte} + @${\sim}_\text{f}$naqe $\rightarrow$ \textit{inga\uline{ghh}naqe}
-
-\item \textsc{chapter 5}: To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
+\item Bases \textit{negh} and \textit{megh} and their alternatives, \textit{neghe}, \textit{meghe} are all listed, and overgenerate when one of the bases is paired with a postbase that requires the alternative.
 %
-The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
+That being said, is it possible to have ``partial'' exceptions in the \textit{Exceptions} file?
+
+\item We have a tokenization issue with \textit{uyviinghet}.
+
+\item \textbf{p.72: 11.2.6}: Is there a ``lookahead'' feature in \textit{foma}?
 %
-We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
-
-\item \textsc{chapter 9}: Ideally, we would like to label the Optional Impersonal Agent verbs as such in their gloss.
-
-\item According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
-%
-While the transducer is analyzing both of these forms, it analyzes the former as if the postbase were affixing twice.
-%
-We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion}).
-
-\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet.
-
-\item \textsc{chapter 12}: What is happening with the obsolete verb base \textit{ete}?
-
-\item Should a flag diacritic for \textsc{number} be included to account for conventional duals (maybe), and the postbase for ``N and company'', ``N and partner'', etc.?
-
-\item \textsc{chapter 14}: For the conditional mood, verbs with a special \textit{te} ending have multiple permissible forms.
-
-\item \textsc{chapter 15}: Do all weakly special \textit{te}'s have \textit{t} become \textit{l} or \textit{s}?
-
-\item \textsc{chapter 15}: Section 15.3.4 is already implemented in the optative section, but the glossing is incorrect as a result.
-
-\item \textsc{chapter 15}: There is something wrong with the implementation of strongly special \textit{te}'s, in that once either the \textit{@--nghite} or \textit{~--(ng)ite} postbase is followed by the conditional tense, the \textit{t} does not turn into \textit{l}.
-%
-Affixing the participial tense however does not cause this problem.
-
-\item \textsc{chapter 17}: It's unclear what endings the postbase \textit{$\sim$-ke} continues on to.
-
-\item \textsc{chapter 17}: The numeral system hasn't been entered yet.
+This would prevent overgeneration of the postbase \textbf{@$\sim_\text{sf}$--(g)ke/(g)ka}, where the latter is used only if the possessive ending starts with \textit{ng}.
 
 \end{itemize}
 
-% % % % % % % % % % % %
-
-\section{Issues Pertaining to Overgeneration}
+\subsection{Issues Pertaining To Overgeneration}
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
-\item Bases \textit{negh} and \textit{megh} and their alternatives were all listed, and overgenerate when one of the bases is paired with a postbase that requires the alternative.
+\item \textsc{chapter 11}: We are overgenerating the postbase \textbf{ngugh*} which is used only with ``special'' \textit{te} verb bases.
+%
+Originally, flag diacritics were implemented to account for special \textit{te} bases, but nearly all other postbases apply to all types of bases, including special \textit{te}.
+%
+Would flag diacritics be advisable in this case, since they have a tendency to double the size of the transducer?
 
-\item \textsc{chapter 11}: We are overgenerating the postbase \textit{ngugh*} which is used only with ``special'' \textit{te} bases.
+\item \textsc{chapter 11}: The above postbase \textbf{@$\sim_\text{sf}$--(g)ke/(g)ka} should only continue on to the possessed nominal endings.
 %
-Originally, we had implemented flag diacritics to handle this postbase, with appropriate flag diacritics on the relevant words, but there are some postbases that apply to all types of bases, including ``special'' \textit{te} bases.
-%
-By including a flag diacritic with these universal postbases, we would be excluding all other types of bases.
-%
-Essentially, we needed some other way to distinguish the special \textit{te} bases from the other bases, other than a flag diacritic, and we opted for marking them like so: \textit{te*}.
-
-So the implementation of \textit{ngugh*} works, but it will apply to every base.
-%
-Including flag diacritics are also not ideal according to Aric, since they aren't intrinsically part of the transducer, are difficult to debug, and double the size of the transducer.
-%
-But maybe they should be included to prevent overgeneration in this instance.
-
-\item \textsc{chapter 11}: The postbase $\sim$sf--(g)ka/(g)ke, which uses different forms depending on whether or not the following person marker begins with \textit{ng}, is also overgenerating, since we have simply listed them both.
-%
-It is unclear how to predict the coming number, person marker, although flag diacritics might help.
-
-This postbase can also only affix to possessed nouns, ones that include information about both the subject and object, and up until Chapter 11, is the only postbase of this sort.
-%
-This is not yet accounted for, and so this postbase is continuing to all number, person endings.
-%
-This issue also pertains to the postbase \textit{--lghii}, which should only affix to unpossessed nouns.
-
-\item \textsc{chapter 11}: Once the above is resolved, a second pass should be made through the Participial endings which include all of the above postbases as its endings.
-%
-A possible solution may be to include \textit{--lghii}/\textit{ngugh*} in the MultipleForms slot of \textit{foma}.
+Likewise, the postbase \textbf{--lghii} should only continue on to the unpossessed nominal endings.
 
 \item \textsc{chapter 15}: The half-transitive postbase takes on two forms, \textit{$\sim$i} and \textit{$\sim$:(u)te}.
 %
 Which one is used is dependent on the verb base itself, although there is no pattern to this, and ``a learner of the language must just learn which these verbs are; there is no way from the outside to predict''.
 
 \item \textsc{chapter 17}: The postbase \textit{$\sim$:(u)te/ta} has two forms, where the latter is used only with 3rd person possessor possessed endings.
-%
-This distinction is not accounted for and the postbases are simply listed side by side.
 
 \item \textsc{chapter 17}: Section 17.3.2 states that ``certain verb bases'' can take on unpossessed oblique case endings.
 %
-Jacobson does not specify which verb bases may do so, so one option may be to simply list the unpossessed oblique case endings in the VerbTenseInfl class, and simply permit every verb to potentially affix an oblique case.
+Jacobson does not specify which verb bases may do so, so one not so nice option may be to simply list the unpossessed oblique case endings in the VerbTenseInfl class, and simply permit every verb to potentially affix an oblique case.
+
+\item \textsc{chapter 18}: 18.3.2 introduces how certain augmentive postbases can be used directly with verbs, and continue on to \textit{only} unpossessed absolutive endings.
+
+\item \textsc{chapter 18}: 18.3.6 introduces how the plural localis can be used with the postbase \textit{--lghii} to mean \textit{when one is V-ing}.
+%
+This is a very specific path through the transducer...
 
 \end{itemize}
 
+% % % % % % % % % % % %
 
 \section{Vocabulary/Mood Ending Entry Issues}
 
@@ -120,15 +75,9 @@ Jacobson does not specify which verb bases may do so, so one option may be to si
 
 \item Which @ and (i) is it supposed to be in the transitive optative table?
 
-\item We need to finish identifying and marking the special \textit{te} bases, as well as all the \textit{postural roots}, and the words that are used only in quantifier-qualifier constructions.
-
 \item In Appendix I, Jacobson states that all \textit{p}-initial endings are for the participial.
 %
 Does this include both intransitive and transitive endings?
-
-\item In Section 11.2.6, Jacobson says that \textit{(g)} is ``not usually'' used with bases that end in \textit{e}.
-%
-When is it used with those bases then?
 
 \item The introduction of the concessive, conditional, contemporative endings in Chapter 14 don't match their corresponding table in Appendix I.
 %
@@ -142,6 +91,55 @@ Is this true?
 
 \item What exactly are the postural root endings that appear in quantifier-qualifier constructions?
 
+\item What are all the words that belong to the postinflectional class, e.g. \textit{mekestaaghhaq}, discussed in 18.3.4?
+
+\item What are the endings to the volitive of fear?
+
+\end{itemize}
+
+% % % % % %
+
+\section{Corner Cases That Need Implementing/Debugging}
+
+\begin{itemize}
+\renewcommand\labelitemi{$\cdot$}
+
+\item \textsc{chapter 5}: To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
+%
+The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
+%
+We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
+
+\item \textsc{chapter 8}: According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
+%
+While the transducer is analyzing both of these forms, it analyzes the former as if the postbase were affixing twice.
+%
+We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion}).
+
+\item \textsc{chapter 11}: Review the Participial endings, since we might be able to condense and simplify them.
+%
+A possible solution may be to include \textit{--lghii}/\textit{ngugh*} in the MultipleForms slot of \textit{foma}.
+
+\item \textsc{chapter 12}: What is happening with the obsolete verb base \textit{ete}?
+
+\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet.
+
+\item Should a flag diacritic for \textsc{number} be included to account for conventional duals (maybe), and the postbase for ``N and company'', ``N and partner'', etc.?
+
+\item \textsc{chapter 14}: For the conditional mood, verbs with a special \textit{te} ending have multiple permissible forms.
+
+\item \textsc{chapter 15}: Do all weakly special \textit{te}'s have \textit{t} become \textit{l} or \textit{s}?
+
+\item \textsc{chapter 15}: Section 15.3.4 is already implemented in the optative section, but the glossing is incorrect as a result.
+
+\item \textsc{chapter 15}: There is something wrong with the implementation of strongly special \textit{te}'s, in that once either the \textit{@--nghite} or \textit{~--(ng)ite} postbase is followed by the conditional tense, the \textit{t} does not turn into \textit{l}.
+%
+Affixing the participial tense however does not cause this problem.
+
+\item \textsc{chapter 16}: 16.2.8 which introduces the second terminalis ending is not yet implemented.
+
+\item \textsc{chapter 17}: It's unclear what endings the postbase \textit{$\sim$-ke} continues on to.
+
 \end{itemize}
 
 % % % % % %
@@ -151,12 +149,20 @@ Is this true?
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
+\item The demonstrative system is currently hard-coded into the \textit{lexc} file, while the numeral system has not yet been implemented at all.
+%
+More work/elicitation needs to be done regarding these to systems, to better understand how they inflect and what their proper continuation classes should be.
+
+\item We need to finish identifying and marking the special \textit{te} bases, as well as all the postural roots, emotional roots, and the words that are used only in quantifier-qualifier constructions.
+
 \item Standardize the glossing style and abbreviations.
 
+\item Add our glosses to the \textit{design.tex} file under \textbf{Glossary of Morphophonogical Symbols}, and the \textit{yupik\_plans} repository.
+
 \item Alphabetize and condense the nouns and verbs lists.
+
+\item Check ``aesthetics'' of the \textit{foma} and \textit{lexc} files, e.g. tables are properly formatted, environments are aligned, etc.
 
 \end{itemize}
 
 \end{document}
-
-\grid
