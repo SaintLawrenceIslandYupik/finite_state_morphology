@@ -25,6 +25,10 @@ That being said, is it possible to have ``partial'' exceptions in the \textit{Ex
 %
 This would prevent overgeneration of the postbase \textbf{@$\sim_\text{sf}$--(g)ke/(g)ka}, where the latter is used only if the possessive ending starts with \textit{ng}.
 
+\item The NounPostbase and VerbPostbase classes loop on themselves, which is acceptable and necessary for the most part, except when they loop in such a way that postbases are repeated.
+%
+Is there some way to prevent this, as it gets excessive... (Apply up to \textit{tuququghii}).
+
 \end{itemize}
 
 \subsection{Issues Pertaining To Overgeneration}
@@ -113,8 +117,6 @@ We'll need to figure out how best to handle this corner case, either with an add
 \item \textsc{chapter 8}: According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
 %
 While the transducer is analyzing both of these forms, it analyzes the former as if the postbase were affixing twice.
-%
-We will need to re-tweak these rules (See \textit{Juncture Consonant Insertion}).
 
 \item \textsc{chapter 11}: Review the Participial endings, since we might be able to condense and simplify them.
 %
@@ -122,7 +124,7 @@ A possible solution may be to include \textit{--lghii}/\textit{ngugh*} in the Mu
 
 \item \textsc{chapter 12}: What is happening with the obsolete verb base \textit{ete}?
 
-\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/u)} haven't been implemented yet.
+\item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/kau)} haven't been implemented yet.
 
 \item Should a flag diacritic for \textsc{number} be included to account for conventional duals (maybe), and the postbase for ``N and company'', ``N and partner'', etc.?
 

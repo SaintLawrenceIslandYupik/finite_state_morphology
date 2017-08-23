@@ -3,7 +3,7 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (pete/fte) (pete)fte (te) (i₁) (i₂) (i/u) (u)
+                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte
                   @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
@@ -1027,7 +1027,6 @@ LEXICON VerbPostbase
 -@₁~fyug[to.want.to.V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                          VerbPostbase;
 -@₁–nghite**[to.not.V][V→V]@R.VALENCE@:@₁–nghite**@R.VALENCE@                                      VerbPostbase;
 -(pete)fte[to.evidently.V][to.have.V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@                     VerbPostbase;
--(pete/fte)[to.evidently.V][to.have.V-ed][V→V]@R.VALENCE@:(pete/fte)@R.VALENCE@                    VerbPostbase;
 -@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@           VerbPostbase;
 -@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₁~%:(i/u)ma@R.VALENCE@             VerbPostbase;
 -~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
@@ -1053,6 +1052,7 @@ LEXICON VerbPostbase
 !!!                                               !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq              NounPostbase;
+-@₂–(g₂)kaq[one.that.has.V-ed][V→N]:@₂–(g₂)kaq                    NounPostbase;
 -@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii     NounPostbase;
 -@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*     NounPostbase;
 -@*@₂~sf–(g₂)ka[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ka  NounPostbase;

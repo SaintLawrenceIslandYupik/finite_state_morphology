@@ -30,7 +30,6 @@ define VoicelessNasal     [ "mm" | "nn"                | "ngng" | "ngngw"       
 
 define Fricative  [ VoicelessFricative | VoicedFricative ] ;
 define Nasal      [ VoicelessNasal     | VoicedNasal     ] ;
-define DoubleFric [ "ll" | "rr" | "gg" | "ghh" | "ghhw" ] ;
 
 define C          [ Stop | Fricative | Nasal ] ;        
 
@@ -44,7 +43,7 @@ define Alphabet [ C | V | "*" | "'" ] ;
 define MorphPhonSymbols [ "~"     | "~f"    | "~sf"   | "~h"    | "-w"    | ":"     | "–" |
                           "@*"    | "@₁"    | "@₂"    |
                           "(e)"   | "(g₁)"  | "(g₂)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" |
-						  "(g/t)" | "(p/v)" | "(s/z)" | "(t/y)" | "(i/u)" |
+						  "(g/t)" | "(p/v)" | "(s/z)" | "(t/y)" | "(i/u)" |    "(pete)fte"    |
                           "@₁~fy/~f(ng₁)"   | "@₁~flu/na" ] ;
 
 define Lowercase "A" -> a ,
@@ -148,34 +147,37 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 									      gh "*" -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define teDropping "–"     -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
-                  t e "*" "*" -> l || _ MorphemeBoundary "@*"                                    ∘  ! for strongly special te's
-				  t e "*"     -> l || _ MorphemeBoundary "@*"                                    ,, ! for weakly special te's
-				  t e "*"     -> s || _ MorphemeBoundary "@*"                                    ∘
-				  "*" ("*")   -> 0 || t e _ MorphemeBoundary MorphPhonSymbols*                   ∘
-				  l gh -> ll ghh || t e MorphemeBoundary "@₁" _                                  ∘ ! for postbase @–lghii
-                  [..] -> e    || C t e MorphemeBoundary "@₁" ll _ ghh                           ∘
-                  [..] -> n e gh     || t e MorphemeBoundary "@₁" MorphPhonSymbols* ng h _       ∘ ! for postbase @–nghite
-                  ng h -> 0          || t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n e gh     ∘ 
-				  t e  -> s          || _ MorphemeBoundary "@₁" MorphPhonSymbols* i              ∘ ! for postbases that begin with i 
-                  [..] -> ll         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ l        ∘ ! for postbases that begin with apicals
-                  l    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* ll _       ∘
-                  [..] -> nn         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n        ∘
-                  n    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* nn _       ∘
-				  [..] -> rr         || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ r        ∘
-                  r    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* rr _       ∘
-				  [..] -> s          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ [y | z]  ∘
-                  y    -> 0          || V t e MorphemeBoundary "@₁" MorphPhonSymbols* s _        ∘
-				  e    -> 0          || V t _ MorphemeBoundary "@₁" MorphPhonSymbols* [ m | v ]  ∘ ! for postbases that begin with labials
-				  v    -> f          || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _          ∘
-                  [..] -> DoubleFric || Fricative t e MorphemeBoundary "@₁" MorphPhonSymbols* _ [l | m | n | r | v | y | z]   ∘
-				  C    -> 0          || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* DoubleFric [l | m | n | r | v | y | z]  ∘
-				  t e  -> t          || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ,, ! for postbases that begin with velars 
-				  t e  -> s          || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ∘
-                  t e  -> 0          || _ MorphemeBoundary MorphPhonSymbols* "@₁"                ∘ ! drop base-final te
+define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
+                  t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
+				  t e "*"     -> l || _ MorphemeBoundary "@*"                              ,, ! for weakly special te's
+				  t e "*"     -> s || _ MorphemeBoundary "@*"                              ∘
+				  "*" ("*")   -> 0 || t e _ MorphemeBoundary MorphPhonSymbols*             ∘
+				  l gh -> ll ghh || t e MorphemeBoundary "@₁" _                            ∘ ! for postbase @–lghii
+                  [..] -> e      || C t e MorphemeBoundary "@₁" ll _ ghh                   ∘
+                  [..] -> n e gh || t e MorphemeBoundary "@₁" MorphPhonSymbols* ng h _     ∘ ! for postbase @–nghite
+                  ng h -> 0      || t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n e gh   ∘ 
+				  t e  -> s    || _ MorphemeBoundary "@₁" MorphPhonSymbols* i              ∘ ! for postbases that begin with i 
+                  [..] -> ll   || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ l        ∘ ! for postbases that begin with apicals
+                  l    -> 0    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* ll _       ∘
+                  [..] -> nn   || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n        ∘
+                  n    -> 0    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* nn _       ∘
+				  [..] -> rr   || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ r        ∘
+                  r    -> 0    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* rr _       ∘
+				  [..] -> s    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ [y | z]  ∘
+                  y    -> 0    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* s _        ∘
+				  e    -> 0    || V t _ MorphemeBoundary "@₁" MorphPhonSymbols* [ m | v ]  ∘ ! for postbases that begin with labials
+				  v    -> f    || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _          ∘
+                  g    -> gg   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
+                  gh   -> ghh  || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
+                  ghw  -> ghhw || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
+                  l    -> ll   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
+                  r    -> rr   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
+				  t e  -> t    || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ,, ! for postbases that begin with velars 
+				  t e  -> s    || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ∘
+                  t e  -> 0    || _ MorphemeBoundary MorphPhonSymbols* "@₁"                ∘ ! drop base-final te
 				  "@*" -> 0, 
                   "@₁" -> 0,
-				  "@₂" -> 0  || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _   ;
+				  "@₂" -> 0    || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _   ;
 
 define AlternativeForms "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || V ("*") MorphemeBoundary _          ,,  
                         "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ C | V ] ("*") MorphemeBoundary _  ∘
@@ -204,9 +206,9 @@ define JunctureConsonantInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBound
                                   "(p/v)" -> v || V       MorphemeBoundary _  ∘
                                   "(t/y)" -> t || C ("*") MorphemeBoundary _  ∘
                                   "(t/y)" -> y || V       MorphemeBoundary _  ∘
-								  "(pete)fte"  -> p e t e f t e || C ("*") _  ∘
-								  "(pete/fte)" -> p e t e MorphemeBoundary || C ("*") _  ∘
-								  "(pete/fte)" -> f t e   MorphemeBoundary || V       _  ∘
+								  "(pete)fte" -> p e t e f t e || C ("*") _  ,,
+								  "(pete)fte" -> p e t e MorphemeBoundary || C ("*") _ ,, 
+								  "(pete)fte" -> f t e   MorphemeBoundary || V       _  ∘
 								  "(g₂)"  -> g   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
 								  "(te)"  -> t e || C ("*") _ ∘
 								  "(te)"  -> 0   || V       _ ∘
