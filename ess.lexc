@@ -431,8 +431,6 @@ sivu             NounPostbase; ! front part; bow of boat; time before
 
 
 
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                                                 !!!!!!
@@ -468,18 +466,18 @@ LEXICON NounPostbase
 !!!     Noun →  Verb (Verbalizing) Postbases     !!!
 !!!                                              !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--~%:(ng₁)u[to.be.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)u@P.VALENCE.INTR@                                              VerbPostbase;
--–lgu[to.have.N][N→V]@P.VALENCE.INTR@:–lgu@P.VALENCE.INTR@                                                      VerbPostbase;
--–ngllagh[to.make.N][N→V]@P.VALENCE.INTR@:–ngllagh@P.VALENCE.INTR@                                              VerbPostbase;
--–liigh[to.cook.or.prepare.N][N→V]@P.VALENCE.INTR@:–liigh@P.VALENCE.INTR@                                       VerbPostbase;
-niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]@P.VALENCE.INTR@:niigh@P.VALENCE.INTR@  VerbPostbase;
--te[to.catch.N][to.go.to.N][N→V]@P.VALENCE.INTR@:te@P.VALENCE.INTR@                                             VerbPostbase;
--tugh[to.eat.N][to.use.N][N→V]@P.VALENCE.INTR@:tugh@P.VALENCE.INTR@                                             VerbPostbase;
--–ligh[to.provide.with.N][N→V]@P.VALENCE.TRNS@:–ligh@P.VALENCE.TRNS@                                            VerbPostbase;
--ti[to.speak.the.language.of.N][N→V]@P.VALENCE.INTR@:ti@P.VALENCE.INTR@                                         VerbPostbase;
--tuumagh*[together.with.one's.Ns][N→V]:tuumagh*                                                                 QuantQualPostbase;
--~%:(ng₁)ite**[to.lack.N][to.not.have.N][N→V]@P.VALENCE.INTR@:~%:(ng₁)ite**@P.VALENCE.INTR@                     VerbPostbase;
--~–ke[to.have.as.one's.N(s)][N→V]@P.VALENCE.INTR@:~–ke@P.VALENCE.INTR@									        VerbPostbase;
+-~%:(ng₁)u[to.be.N][N→V]:~%:(ng₁)u                                              VerbIntr;
+-–lgu[to.have.N][N→V]:–lgu                                                      VerbIntr;
+-–ngllagh[to.make.N][N→V]:–ngllagh                                              VerbIntr;
+-–liigh[to.cook.or.prepare.N][N→V]:–liigh                                       VerbIntr;
+niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]:niigh  VerbIntr;
+-te[to.catch.N][to.go.to.N][N→V]:te                                             VerbIntr;
+-tugh[to.eat.N][to.use.N][N→V]:tugh                                             VerbIntr;
+-–ligh[to.provide.with.N][N→V]:–ligh                                            VerbTrns;
+-ti[to.speak.the.language.of.N][N→V]:ti                                         VerbIntr;
+-tuumagh*[together.with.one's.Ns][N→V]:tuumagh*                                 QuantQualPostbase;
+-~%:(ng₁)ite**[to.lack.N][to.not.have.N][N→V]:~%:(ng₁)ite**                     VerbIntr;
+-~–ke[to.have.as.one's.N(s)][N→V]:~–ke                                          VerbIntr;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -690,315 +688,339 @@ LEXICON EncliticOrEnd
 LEXICON VerbBase
 
 ! Jacobson (2001) Chapter 3 Verb Vocabulary
-aane@P.VALENCE.INTR@            VerbPostbase; ! to go out
-aange@P.VALENCE.INTR@           VerbPostbase; ! to be big
-aghula@P.VALENCE.INTR@          VerbPostbase; ! to dance
-aghulaqe@P.VALENCE.INTR@        VerbPostbase; ! to leave
-alinge@P.VALENCE.INTR@          VerbPostbase; ! to be afraid
-aqii@P.VALENCE.INTR@            VerbPostbase; ! to take a pleasure trip, to take a vacation
-esghaate@P.VALENCE.INTR@        VerbPostbase; ! to see something
-esghaate @P.VALENCE.TRNS@       VerbPostbase; ! to see something
-esleqe@P.VALENCE.INTR@          VerbPostbase; ! to be full
-gaagh@P.VALENCE.INTR@           VerbPostbase; ! to cook
-gaagh@P.VALENCE.TRNS@           VerbPostbase; ! to cook
-ifla@P.VALENCE.INTR@            VerbPostbase; ! to lose; to get lost
-ifla@P.VALENCE.TRNS@            VerbPostbase; ! to lose; to get lost
-ingaghte@P.VALENCE.INTR@        VerbPostbase; ! to lie down
-ingaghte@P.VALENCE.TRNS@        VerbPostbase; ! to lie down
-inghu@P.VALENCE.INTR@           VerbPostbase; ! to pick berries
-inghu@P.VALENCE.TRNS@           VerbPostbase; ! to pick berries
-itegh@P.VALENCE.INTR@           VerbPostbase; ! to go in, to enter
-itegh@P.VALENCE.TRNS@           VerbPostbase; ! to go in, to enter
-kaate@P.VALENCE.INTR@           VerbPostbase; ! to arrive (at)
-kaate@P.VALENCE.TRNS@           VerbPostbase; ! to arrive (at)
-kuuve@P.VALENCE.INTR@           VerbPostbase; ! to spill
-kuuve@P.VALENCE.TRNS@           VerbPostbase; ! to spill
-megh@P.VALENCE.INTR@            VerbPostbase; ! to drink
-megh@P.VALENCE.TRNS@            VerbPostbase; ! to drink
-meghe@P.VALENCE.INTR@           VerbPostbase; ! to drink
-meghe@P.VALENCE.TRNS@           VerbPostbase; ! to drink
-nagate@P.VALENCE.INTR@          VerbPostbase; ! to listen; to hear
-nagate@P.VALENCE.TRNS@          VerbPostbase; ! to listen; to hear
-negh@P.VALENCE.INTR@            VerbPostbase; ! to eat
-negh@P.VALENCE.TRNS@            VerbPostbase; ! to eat
-neghe@P.VALENCE.INTR@           VerbPostbase; ! to eat
-neghe@P.VALENCE.TRNS@           VerbPostbase; ! to eat
-nenglagh@P.VALENCE.INTR@        VerbPostbase; ! to laugh
-pinigh@P.VALENCE.INTR@          VerbPostbase; ! to be good
-qavagh@P.VALENCE.INTR@          VerbPostbase; ! to sleep
-qiighw@P.VALENCE.INTR@          VerbPostbase; ! to cough
-qiya@P.VALENCE.INTR@            VerbPostbase; ! to cry
-tagi@P.VALENCE.INTR@            VerbPostbase; ! to come towards speaker
-taake@P.VALENCE.INTR@           VerbPostbase; ! to be long
-tuqu@P.VALENCE.INTR@            VerbPostbase; ! to die
+aane            VerbIntr; ! to go out
+aange           VerbIntr; ! to be big
+aghula          VerbIntr; ! to dance
+aghulaqe        VerbIntr; ! to leave
+alinge          VerbIntr; ! to be afraid
+aqii            VerbIntr; ! to take a pleasure trip, to take a vacation
+esghaate        VerbIntr; ! to see something
+esghaate        VerbTrns; ! to see something
+esleqe          VerbIntr; ! to be full
+gaagh           VerbIntr; ! to cook
+gaagh           VerbTrns; ! to cook
+ifla            VerbIntr; ! to lose; to get lost
+ifla            VerbTrns; ! to lose; to get lost
+ingaghte        VerbIntr; ! to lie down
+ingaghte        VerbTrns; ! to lie down
+inghu           VerbIntr; ! to pick berries
+inghu           VerbTrns; ! to pick berries
+itegh           VerbIntr; ! to go in, to enter
+itegh           VerbTrns; ! to go in, to enter
+kaate           VerbIntr; ! to arrive (at)
+kaate           VerbTrns; ! to arrive (at)
+kuuve           VerbIntr; ! to spill
+kuuve           VerbTrns; ! to spill
+megh            VerbIntr; ! to drink
+megh            VerbTrns; ! to drink
+meghe           VerbIntr; ! to drink
+meghe           VerbTrns; ! to drink
+nagate          VerbIntr; ! to listen; to hear
+nagate          VerbTrns; ! to listen; to hear
+negh            VerbIntr; ! to eat
+negh            VerbTrns; ! to eat
+neghe           VerbIntr; ! to eat
+neghe           VerbTrns; ! to eat
+nenglagh        VerbIntr; ! to laugh
+pinigh          VerbIntr; ! to be good
+qavagh          VerbIntr; ! to sleep
+qiighw          VerbIntr; ! to cough
+qiya            VerbIntr; ! to cry
+tagi            VerbIntr; ! to come towards speaker
+taake           VerbIntr; ! to be long
+tuqu            VerbIntr; ! to die
 
 ! Jacobson (2001) Chapter 4 Verb Vocabulary
-igatagh@P.VALENCE.INTR@         VerbPostbase; ! to be hungry
-iyatagh@P.VALENCE.INTR@         VerbPostbase; ! to be hungry
-mekestaaghhaa@P.VALENCE.INTR@   VerbPostbase; ! to be small 
-takestaaghhaa@P.VALENCE.INTR@   VerbPostbase; ! to be short 
-seghleghu@P.VALENCE.INTR@       VerbPostbase; ! to be bad 
+igatagh         VerbIntr; ! to be hungry
+iyatagh         VerbIntr; ! to be hungry
+mekestaaghhaa   VerbIntr; ! to be small 
+takestaaghhaa   VerbIntr; ! to be short 
+seghleghu       VerbIntr; ! to be bad 
 
 ! Jacobson (2001) Chapter 5 Verb Vocabulary
-aglagh@P.VALENCE.INTR@          VerbPostbase; ! to go home; to go over to another place
-mayugh@P.VALENCE.INTR@          VerbPostbase; ! to go up
-mayugh@P.VALENCE.TRNS@          VerbPostbase; ! to go up
-qepghagh@P.VALENCE.INTR@        VerbPostbase; ! to work (on)
-qepghagh@P.VALENCE.TRNS@        VerbPostbase; ! to work (on)
-taaqe@P.VALENCE.INTR@           VerbPostbase; ! to finish; to quit
-ukig@P.VALENCE.INTR@            VerbPostbase; ! to go down
-umughqaa@P.VALENCE.INTR@        VerbPostbase; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
-yughagh@P.VALENCE.INTR@         VerbPostbase; ! to pray, to worship
-yughagh@P.VALENCE.TRNS@         VerbPostbase; ! to pray, to worship
+aglagh          VerbIntr; ! to go home; to go over to another place
+mayugh          VerbIntr; ! to go up
+mayugh          VerbTrns; ! to go up
+qepghagh        VerbIntr; ! to work (on)
+qepghagh        VerbTrns; ! to work (on)
+taaqe           VerbIntr; ! to finish; to quit
+ukig            VerbIntr; ! to go down
+umughqaa        VerbIntr; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+yughagh         VerbIntr; ! to pray, to worship
+yughagh         VerbTrns; ! to pray, to worship
 
 ! Jacobson (2001) Chapter 6 Verb Vocabulary
-akuzi@P.VALENCE.INTR@            VerbPostbase; ! to speak
-atugh@P.VALENCE.INTR@            VerbPostbase; ! to use
-atugh@P.VALENCE.TRNS@            VerbPostbase; ! to use
-igleghte@P.VALENCE.INTR@         VerbPostbase; ! to travel
-kaki@P.VALENCE.INTR@             VerbPostbase; ! to sew
-kaki@P.VALENCE.TRNS@             VerbPostbase; ! to sew
-mesuuna@P.VALENCE.INTR@          VerbPostbase; ! to brush or comb's one hair
-mesuuna@P.VALENCE.TRNS@          VerbPostbase; ! to brush or comb's one hair
-nulugh@P.VALENCE.INTR@           VerbPostbase; ! to ice-fish; to dunk a tea bag
-ungipaghagh@P.VALENCE.INTR@      VerbPostbase; ! to tell a story
+akuzi           VerbIntr; ! to speak
+atugh           VerbIntr; ! to use
+atugh           VerbTrns; ! to use
+igleghte        VerbIntr; ! to travel
+kaki            VerbIntr; ! to sew
+kaki            VerbTrns; ! to sew
+mesuuna         VerbIntr; ! to brush or comb's one hair
+mesuuna         VerbTrns; ! to brush or comb's one hair
+nulugh          VerbIntr; ! to ice-fish; to dunk a tea bag
+ungipaghagh     VerbIntr; ! to tell a story
 
 ! Jacobson (2001) Chapter 7 Verb Vocabulary
-atuqe@P.VALENCE.TRNS@            VerbPostbase; ! to use; to wear
-aveg@P.VALENCE.INTR@             VerbPostbase; ! to divide in two 
-aveg@P.VALENCE.TRNS@             VerbPostbase; ! to divide in two 
-esghagh@P.VALENCE.TRNS@          VerbPostbase; ! to see
-guute@P.VALENCE.INTR@            VerbPostbase; ! to shoot
-guute@P.VALENCE.TRNS@            VerbPostbase; ! to shoot
-igamsiqanagh@P.VALENCE.INTR@     VerbPostbase; ! to make one thankful
-igamsiqayug@P.VALENCE.INTR@      VerbPostbase; ! to feel thanksful
-igamsiqayugvike@P.VALENCE.TRNS@  VerbPostbase; ! to feel thankful toward
-laalighfike@P.VALENCE.TRNS@      VerbPostbase; ! to visit
-laalighte@P.VALENCE.INTR@        VerbPostbase; ! to visit
-laalighte@P.VALENCE.TRNS@        VerbPostbase; ! to visit
-liite@P.VALENCE.INTR@            VerbPostbase; ! to learn; to become aware of one's surroundings
-liite@P.VALENCE.TRNS@            VerbPostbase; ! to learn; to become aware of one's surroundings
-lli@P.VALENCE.TRNS@              VerbPostbase; ! to put
-nalluke@P.VALENCE.TRNS@          VerbPostbase; ! to not know
-piniqe@P.VALENCE.TRNS@           VerbPostbase; ! to like
-qelpeghte@P.VALENCE.INTR@        VerbPostbase; ! to open
-qelpeghte@P.VALENCE.TRNS@        VerbPostbase; ! to open
-qilug@P.VALENCE.INTR@            VerbPostbase; ! to bark (at)
-qilug@P.VALENCE.TRNS@            VerbPostbase; ! to bark (at)
-tugu@P.VALENCE.TRNS@             VerbPostbase; ! to take; to pick up
-tuqute@P.VALENCE.TRNS@           VerbPostbase; ! to kill
-umeg@P.VALENCE.INTR@             VerbPostbase; ! to close
-umeg@P.VALENCE.TRNS@             VerbPostbase; ! to close
+atuqe           VerbTrns; ! to use; to wear
+aveg            VerbIntr; ! to divide in two 
+aveg            VerbTrns; ! to divide in two 
+esghagh         VerbTrns; ! to see
+guute           VerbIntr; ! to shoot
+guute           VerbTrns; ! to shoot
+igamsiqanagh    VerbIntr; ! to make one thankful
+igamsiqayug     VerbIntr; ! to feel thanksful
+igamsiqayugvike VerbTrns; ! to feel thankful toward
+laalighfike     VerbTrns; ! to visit
+laalighte       VerbIntr; ! to visit
+laalighte       VerbTrns; ! to visit
+liite           VerbIntr; ! to learn; to become aware of one's surroundings
+liite           VerbTrns; ! to learn; to become aware of one's surroundings
+lli             VerbTrns; ! to put
+nalluke         VerbTrns; ! to not know
+piniqe          VerbTrns; ! to like
+qelpeghte       VerbIntr; ! to open
+qelpeghte       VerbTrns; ! to open
+qilug           VerbIntr; ! to bark (at)
+qilug           VerbTrns; ! to bark (at)
+tugu            VerbTrns; ! to take; to pick up
+tuqute          VerbTrns; ! to kill
+umeg            VerbIntr; ! to close
+umeg            VerbTrns; ! to close
 
 ! Jacobson (2001) Chapter 8 Verb Vocabulary
-alleg@P.VALENCE.INTR@            VerbPostbase; ! to sweep
-alleg@P.VALENCE.TRNS@            VerbPostbase; ! to sweep
-kayusigh@P.VALENCE.TRNS@         VerbPostbase; ! to help
-kayusiite@P.VALENCE.INTR@        VerbPostbase; ! to help out
-kayusiite@P.VALENCE.TRNS@        VerbPostbase; ! to help out
-liisimake@P.VALENCE.TRNS@        VerbPostbase; ! to know
-meghnugh@P.VALENCE.INTR@         VerbPostbase; ! to be tired
-meqsug@P.VALENCE.INTR@           VerbPostbase; ! to be thirsty
-pi@P.VALENCE.INTR@               VerbPostbase; ! to do; to go; etc.
-pi@P.VALENCE.TRNS@               VerbPostbase; ! to do; to go; etc.
-qavaghni@P.VALENCE.INTR@         VerbPostbase; ! to be sleepy
-qiyaaqe@P.VALENCE.INTR@          VerbPostbase; ! to be crying
-sa@P.VALENCE.INTR@               VerbPostbase; ! to do what?
-sa@P.VALENCE.TRNS@               VerbPostbase; ! to do what?
-tukfigh@P.VALENCE.TRNS@          VerbPostbase; ! to buy
+alleg           VerbIntr; ! to sweep
+alleg           VerbTrns; ! to sweep
+kayusigh        VerbTrns; ! to help
+kayusiite       VerbIntr; ! to help out
+kayusiite       VerbTrns; ! to help out
+liisimake       VerbTrns; ! to know
+meghnugh        VerbIntr; ! to be tired
+meqsug          VerbIntr; ! to be thirsty
+pi              VerbIntr; ! to do; to go; etc.
+pi              VerbTrns; ! to do; to go; etc.
+qavaghni        VerbIntr; ! to be sleepy
+qiyaaqe         VerbIntr; ! to be crying
+sa              VerbIntr; ! to do what?
+sa              VerbTrns; ! to do what?
+tukfigh         VerbTrns; ! to buy
 
 ! Jacobson (2001) Chapter 9 Verb Vocabulary
-aghvigh@P.VALENCE.INTR@          VerbPostbase; ! to cross over; to go to the mainland
-aghvigh@P.VALENCE.TRNS@          VerbPostbase; ! to cross over; to go to the mainland
-aleghqugh@P.VALENCE.TRNS@        VerbPostbase; ! to talk to; to tell
-aleghquute@P.VALENCE.INTR@       VerbPostbase; ! to talk together; to converse (non-singular)
-amqeghte@P.VALENCE.TRNS@         VerbPostbase; ! to bite
-aqlaghate*@P.VALENCE.INTR@       VerbPostbase; ! for it to get cold
-atightugh@P.VALENCE.INTR@        VerbPostbase; ! to read
-atightugh@P.VALENCE.TRNS@        VerbPostbase; ! to read
-igagh@P.VALENCE.INTR@            VerbPostbase; ! to write (on)
-igagh@P.VALENCE.TRNS@            VerbPostbase; ! to write (on)
-iknaqe@P.VALENCE.INTR@           VerbPostbase; ! to be strong
-isekinagh@P.VALENCE.INTR@        VerbPostbase; ! to be cold (solid, liquid)
-ivagh@P.VALENCE.TRNS@            VerbPostbase; ! to look for
-naalke@P.VALENCE.TRNS@           VerbPostbase; ! to find
-naallghute@P.VALENCE.TRNS@       VerbPostbase; ! to adjust
-payegh@P.VALENCE.TRNS@           VerbPostbase; ! to meet, to encounter; to go over to help
-pinighsagh@P.VALENCE.INTR@       VerbPostbase; ! to fix, to repair; to fix up oneself
-pinighsagh@P.VALENCE.TRNS@       VerbPostbase; ! to fix, to repair; to fix up oneself
-qaamte@P.VALENCE.TRNS@           VerbPostbase; ! to extinguish; to turn off
-uglagh@P.VALENCE.INTR@           VerbPostbase; ! to be many, to be numerous
-ugpeqe@P.VALENCE.TRNS@           VerbPostbase; ! to believe
-ulima@P.VALENCE.INTR@            VerbPostbase; ! to make (something)
-ulima@P.VALENCE.TRNS@            VerbPostbase; ! to make (something)
-ungipaghaate@P.VALENCE.TRNS@     VerbPostbase; ! to tell a story to
+aghvigh         VerbIntr; ! to cross over; to go to the mainland
+aghvigh         VerbTrns; ! to cross over; to go to the mainland
+aleghqugh       VerbTrns; ! to talk to; to tell
+aleghquute      VerbIntr; ! to talk together; to converse (non-singular)
+amqeghte        VerbTrns; ! to bite
+aqlaghate*      VerbIntr; ! for it to get cold
+atightugh       VerbIntr; ! to read
+atightugh       VerbTrns; ! to read
+igagh           VerbIntr; ! to write (on)
+igagh           VerbTrns; ! to write (on)
+iknaqe          VerbIntr; ! to be strong
+isekinagh       VerbIntr; ! to be cold (solid, liquid)
+ivagh           VerbTrns; ! to look for
+naalke          VerbTrns; ! to find
+naallghute      VerbTrns; ! to adjust
+payegh          VerbTrns; ! to meet, to encounter; to go over to help
+pinighsagh      VerbIntr; ! to fix, to repair; to fix up oneself
+pinighsagh      VerbTrns; ! to fix, to repair; to fix up oneself
+qaamte          VerbTrns; ! to extinguish; to turn off
+uglagh          VerbIntr; ! to be many, to be numerous
+ugpeqe          VerbTrns; ! to believe
+ulima           VerbIntr; ! to make (something)
+ulima           VerbTrns; ! to make (something)
+ungipaghaate    VerbTrns; ! to tell a story to
 
 ! Jacobson (2001) Chapter 10 Verb Vocabulary
-aqfa@P.VALENCE.TRNS@             VerbPostbase; ! to get get
-aqume@P.VALENCE.INTR@            VerbPostbase; ! to sit
-egte@P.VALENCE.TRNS@             VerbPostbase; ! to throw away
-kaaw@P.VALENCE.INTR@             VerbPostbase; ! to hit, to strike with an object
-kaaw@P.VALENCE.TRNS@             VerbPostbase; ! to hit, to strike with an object
-kenigh@P.VALENCE.TRNS@           VerbPostbase; ! to point (at)
-lata@P.VALENCE.INTR@             VerbPostbase; ! to write a letter (to)
-lata@P.VALENCE.TRNS@             VerbPostbase; ! to write a letter (to)
-nanglii@P.VALENCE.INTR@          VerbPostbase; ! to stare into space
-nekeve@P.VALENCE.INTR@           VerbPostbase; ! to stand up
-pugimagh@P.VALENCE.INTR@         VerbPostbase; ! to swim
-pugimagh@P.VALENCE.TRNS@         VerbPostbase; ! to swim
-pumsug@P.VALENCE.TRNS@           VerbPostbase; ! to pinch
-qayugh@P.VALENCE.INTR@           VerbPostbase; ! to drink hot liquid (coffee, tea, etc.)
-tagite@P.VALENCE.TRNS@           VerbPostbase; ! to bring here
-tuqute@P.VALENCE.TRNS@           VerbPostbase; ! to kill
+aqfa            VerbTrns; ! to get get
+aqume           VerbIntr; ! to sit
+egte            VerbTrns; ! to throw away
+kaaw            VerbIntr; ! to hit, to strike with an object
+kaaw            VerbTrns; ! to hit, to strike with an object
+kenigh          VerbTrns; ! to point (at)
+lata            VerbIntr; ! to write a letter (to)
+lata            VerbTrns; ! to write a letter (to)
+nanglii         VerbIntr; ! to stare into space
+nekeve          VerbIntr; ! to stand up
+pugimagh        VerbIntr; ! to swim
+pugimagh        VerbTrns; ! to swim
+pumsug          VerbTrns; ! to pinch
+qayugh          VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
+tagite          VerbTrns; ! to bring here
+tuqute          VerbTrns; ! to kill
 
 ! Jacobson (2001) Chapter 11 Verb Vocabulary
-aghmig@P.VALENCE.INTR@           VerbPostbase; ! to wash one's face
-aghmig@P.VALENCE.TRNS@           VerbPostbase; ! to wash one's face
-akite@P.VALENCE.TRNS@            VerbPostbase; ! to answer; to reciprocate
-geve@P.VALENCE.INTR@             VerbPostbase; ! to render (fat); to be compressed
-gheve@P.VALENCE.INTR@            VerbPostbase; ! to fade
-ghhuugh@P.VALENCE.INTR@          VerbPostbase; ! to inflate
-ghhuugh@P.VALENCE.TRNS@          VerbPostbase; ! to inflate
-ifkagh@P.VALENCE.INTR@           VerbPostbase; ! to fall from a height; to accidentally drop
-ifkagh@P.VALENCE.TRNS@           VerbPostbase; ! to fall from a height; to accidentally drop
-ifkaghte@P.VALENCE.TRNS@         VerbPostbase; ! to drop accidentally or on purpose
-ini@P.VALENCE.TRNS@              VerbPostbase; ! to hang to dry
-kavite*@P.VALENCE.INTR@          VerbPostbase; ! to be red
-naafqe@P.VALENCE.TRNS@           VerbPostbase; ! to break (it)
-nalug@P.VALENCE.INTR@            VerbPostbase; ! to land from the air (onto)
-nalug@P.VALENCE.TRNS@            VerbPostbase; ! to land from the air (onto)
-naave@P.VALENCE.INTR@            VerbPostbase; ! to break, to get broken
-neghenghite*@P.VALENCE.INTR@     VerbPostbase; ! to not eat
-paagh@P.VALENCE.TRNS@            VerbPostbase; ! to lick; to clean by licking with aid of fingers
-pilugug@P.VALENCE.INTR@          VerbPostbase; ! to put on clothing; to dress
-pilugug@P.VALENCE.TRNS@          VerbPostbase; ! to put on clothing; to dress
-qaame@P.VALENCE.INTR@            VerbPostbase; ! to go out (fire, light, etc.)
-qinuyug@P.VALENCE.INTR@          VerbPostbase; ! to be sick
-sangighqugh@P.VALENCE.INTR@      VerbPostbase; ! to wash dishes
-sangighqugh@P.VALENCE.TRNS@      VerbPostbase; ! to wash dishes
-sughma@P.VALENCE.INTR@           VerbPostbase; ! to play chess or checkers
-sukate*@P.VALENCE.INTR@          VerbPostbase; ! to be fast
-tuune@P.VALENCE.TRNS@            VerbPostbase; ! to give
-tuquuqagh@P.VALENCE.TRNS@        VerbPostbase; ! to nail
+aghmig          VerbIntr; ! to wash one's face
+aghmig          VerbTrns; ! to wash one's face
+akite           VerbTrns; ! to answer; to reciprocate
+geve            VerbIntr; ! to render (fat); to be compressed
+gheve           VerbIntr; ! to fade
+ghhuugh         VerbIntr; ! to inflate
+ghhuugh         VerbTrns; ! to inflate
+ifkagh          VerbIntr; ! to fall from a height; to accidentally drop
+ifkagh          VerbTrns; ! to fall from a height; to accidentally drop
+ifkaghte        VerbTrns; ! to drop accidentally or on purpose
+ini             VerbTrns; ! to hang to dry
+kavite*         VerbIntr; ! to be red
+naafqe          VerbTrns; ! to break (it)
+nalug           VerbIntr; ! to land from the air (onto)
+nalug           VerbTrns; ! to land from the air (onto)
+naave           VerbIntr; ! to break, to get broken
+neghenghite*    VerbIntr; ! to not eat
+paagh           VerbTrns; ! to lick; to clean by licking with aid of fingers
+pilugug         VerbIntr; ! to put on clothing; to dress
+pilugug         VerbTrns; ! to put on clothing; to dress
+qaame           VerbIntr; ! to go out (fire, light, etc.)
+qinuyug         VerbIntr; ! to be sick
+sangighqugh     VerbIntr; ! to wash dishes
+sangighqugh     VerbTrns; ! to wash dishes
+sughma          VerbIntr; ! to play chess or checkers
+sukate*         VerbIntr; ! to be fast
+tuune           VerbTrns; ! to give
+tuquuqagh       VerbTrns; ! to nail
 
 ! Jacobson (2001) Chapter 12 Verb Vocabulary
-agniqe@P.VALENCE.INTR@           VerbPostbase; ! to be angry (women)
-aqumga@P.VALENCE.INTR@           VerbPostbase; ! to be sitting (compare 'aqume' - 'to sit down')
-ete@P.VALENCE.INTR@              VerbPostbase; ! to be (obsolete base)
-ilagagh@P.VALENCE.INTR@          VerbPostbase; ! to sing
-nekevgha@P.VALENCE.INTR@         VerbPostbase; ! to be standing (compare 'nekeve' - 'to stand up')
-qefliqe@P.VALENCE.INTR@          VerbPostbase; ! to be angry (men)
+agniqe          VerbIntr; ! to be angry (women)
+aqumga          VerbIntr; ! to be sitting (compare 'aqume' - 'to sit down')
+ete             VerbIntr; ! to be (obsolete base)
+ilagagh         VerbIntr; ! to sing
+nekevgha        VerbIntr; ! to be standing (compare 'nekeve' - 'to stand up')
+qefliqe         VerbIntr; ! to be angry (men)
 
 ! Jacobson (2001) Chapter 13 Verb Vocabulary
-akmag@P.VALENCE.INTR@            VerbPostbase; ! to carry (a pack) on one's back
-akmag@P.VALENCE.TRNS@            VerbPostbase; ! to carry (a pack) on one's back
-kiyaghte@P.VALENCE.INTR@         VerbPostbase; ! to be; to live; to reside
-pangeghte@P.VALENCE.INTR@        VerbPostbase; ! to go to Siberia
-puygu@P.VALENCE.INTR@            VerbPostbase; ! to forget
-puygu@P.VALENCE.TRNS@            VerbPostbase; ! to forget
-nuugte@P.VALENCE.INTR@           VerbPostbase; ! to move or move something (a short way)
-nuugte@P.VALENCE.TRNS@           VerbPostbase; ! to move or move something (a short way)
-qungyagh@P.VALENCE.INTR@         VerbPostbase; ! to be jealous; to be envious
-qungyake@P.VALENCE.TRNS@         VerbPostbase; ! to be jealous of; to envy
-sumeghtaghagh@P.VALENCE.INTR@    VerbPostbase; ! to think
-ungipaate@P.VALENCE.TRNS@        VerbPostbase; ! to tell
+akmag           VerbIntr; ! to carry (a pack) on one's back
+akmag           VerbTrns; ! to carry (a pack) on one's back
+kiyaghte        VerbIntr; ! to be; to live; to reside
+pangeghte       VerbIntr; ! to go to Siberia
+puygu           VerbIntr; ! to forget
+puygu           VerbTrns; ! to forget
+nuugte          VerbIntr; ! to move or move something (a short way)
+nuugte          VerbTrns; ! to move or move something (a short way)
+qungyagh        VerbIntr; ! to be jealous; to be envious
+qungyake        VerbTrns; ! to be jealous of; to envy
+sumeghtaghagh   VerbIntr; ! to think
+ungipaate       VerbTrns; ! to tell
 
 ! Jacobson (2001) Chapter 14 Verb Vocabulary
-alike@P.VALENCE.TRNS@            VerbPostbase; ! to fear
-anuqligh@P.VALENCE.INTR@         VerbPostbase; ! for it to be windy
-aghvig@P.VALENCE.TRNS@           VerbPostbase; ! to wash (clothes)
-aghyuugh@P.VALENCE.TRNS@         VerbPostbase; ! to scold
-iilqe@P.VALENCE.INTR@            VerbPostbase; ! to be sad
-iiw@P.VALENCE.INTR@              VerbPostbase; ! for tide go down
-iqalgu@P.VALENCE.INTR@           VerbPostbase; ! to be dirty
-kepsugh@P.VALENCE.INTR@          VerbPostbase; ! to be full from eating
-kitugh@P.VALENCE.TRNS@           VerbPostbase; ! to pass by
-meghtagh@P.VALENCE.INTR@         VerbPostbase; ! to fetch water
-mughute@P.VALENCE.INTR@          VerbPostbase; ! to hunt on ice
-mumigte@P.VALENCE.INTR@          VerbPostbase; ! to turn over
-naghaagh@P.VALENCE.INTR@         VerbPostbase; ! to play
-piyug@P.VALENCE.INTR@            VerbPostbase; ! to walk
-qaprag@P.VALENCE.INTR@           VerbPostbase; ! to make a move; to be in motion; to fidget
-quya@P.VALENCE.INTR@             VerbPostbase; ! to be happy; to be joyful
-taghsagh@P.VALENCE.TRNS@         VerbPostbase; ! to wake (him) up; to awaken (him)
-teghsagh@P.VALENCE.TRNS@         VerbPostbase; ! to wake (him) up; to awaken (him)
-taghtugh@P.VALENCE.INTR@         VerbPostbase; ! to wake up; to awaken
-teghtugh@P.VALENCE.INTR@         VerbPostbase; ! to wake up; to awaken
-ughvughqe@P.VALENCE.INTR@        VerbPostbase; ! to bathe
-ughvughqe@P.VALENCE.TRNS@        VerbPostbase; ! to bathe
-ugpegh@P.VALENCE.INTR@           VerbPostbase; ! to have faith
+aghvig          VerbTrns; ! to wash (clothes)
+aghyuugh        VerbTrns; ! to scold
+alike           VerbTrns; ! to fear
+anuqligh        VerbIntr; ! for it to be windy
+iilqe           VerbIntr; ! to be sad
+iiw             VerbIntr; ! for tide go down
+iqalgu          VerbIntr; ! to be dirty
+kepsugh         VerbIntr; ! to be full from eating
+kitugh          VerbTrns; ! to pass by
+meghtagh        VerbIntr; ! to fetch water
+mughute         VerbIntr; ! to hunt on ice
+mumigte         VerbIntr; ! to turn over
+naghaagh        VerbIntr; ! to play
+piyug           VerbIntr; ! to walk
+qaprag          VerbIntr; ! to make a move; to be in motion; to fidget
+quya            VerbIntr; ! to be happy; to be joyful
+taghsagh        VerbTrns; ! to wake (him) up; to awaken (him)
+teghsagh        VerbTrns; ! to wake (him) up; to awaken (him)
+taghtugh        VerbIntr; ! to wake up; to awaken
+teghtugh        VerbIntr; ! to wake up; to awaken
+ughvughqe       VerbIntr; ! to bathe
+ughvughqe       VerbTrns; ! to bathe
+ugpegh          VerbIntr; ! to have faith
 
 ! Jacobson (2001) Chapter 15 Verb Vocabulary
-aate@P.VALENCE.TRNS@             VerbPostbase; ! to put on (clothes)
-an'gigh@P.VALENCE.INTR@          VerbPostbase; ! to go outside for fresh air or exercise (of children usually)
-iglagtu@P.VALENCE.INTR@          VerbPostbase; ! to speak loudly
-laag@P.VALENCE.INTR@             VerbPostbase; ! to dig
-laag@P.VALENCE.TRNS@             VerbPostbase; ! to dig
-maligte@P.VALENCE.TRNS@          VerbPostbase; ! to accompany
-muutighvike@P.VALENCE.TRNS@      VerbPostbase; ! to ask or hire (one) to do or make something
-qamagte@P.VALENCE.INTR@          VerbPostbase; ! to go through all; to all be done
-qamagte@P.VALENCE.TRNS@          VerbPostbase; ! to go through all; to all be done
-qineghte@P.VALENCE.INTR@         VerbPostbase; ! to look through an opening (at)
-qineghte@P.VALENCE.TRNS@         VerbPostbase; ! to look through an opening (at)
-sukangite@P.VALENCE.INTR@        VerbPostbase; ! to be slow
-taslugh@P.VALENCE.TRNS@          VerbPostbase; ! to hold hands with
-tasluqe@P.VALENCE.TRNS@          VerbPostbase; ! to hold hands with
-tuqlugh@P.VALENCE.TRNS@          VerbPostbase; ! to call to; to telephone
-uqengestagh@P.VALENCE.INTR@      VerbPostbase; ! to be light in weight
-uqigtu@P.VALENCE.INTR@           VerbPostbase; ! to be heavy in weight
-utaqa@P.VALENCE.TRNS@            VerbPostbase; ! to wait for
-yaave@P.VALENCE.INTR@            VerbPostbase; ! to row
+aate            VerbTrns; ! to put on (clothes)
+an'gigh         VerbIntr; ! to go outside for fresh air or exercise (of children usually)
+iglagtu         VerbIntr; ! to speak loudly
+laag            VerbIntr; ! to dig
+laag            VerbTrns; ! to dig
+maligte         VerbTrns; ! to accompany
+muutighvike     VerbTrns; ! to ask or hire (one) to do or make something
+qamagte         VerbIntr; ! to go through all; to all be done
+qamagte         VerbTrns; ! to go through all; to all be done
+qineghte        VerbIntr; ! to look through an opening (at)
+qineghte        VerbTrns; ! to look through an opening (at)
+sukangite       VerbIntr; ! to be slow
+taslugh         VerbTrns; ! to hold hands with
+tasluqe         VerbTrns; ! to hold hands with
+tuqlugh         VerbTrns; ! to call to; to telephone
+uqengestagh     VerbIntr; ! to be light in weight
+uqigtu          VerbIntr; ! to be heavy in weight
+utaqa           VerbTrns; ! to wait for
+yaave           VerbIntr; ! to row
 
 ! Jacobson (2001) Chapter 17 Verb Vocabulary
-aapte@P.VALENCE.INTR@            VerbPostbase; ! to ask
-aapte@P.VALENCE.TRNS@            VerbPostbase; ! to ask
-kaleve@P.VALENCE.INTR@           VerbPostbase; ! to sink
-naapte@P.VALENCE.INTR@           VerbPostbase; ! to catch with net or trap
-naapte@P.VALENCE.TRNS@           VerbPostbase; ! to catch with net or trap
-piyaa@P.VALENCE.INTR@            VerbPostbase; ! to take a walk; to hunt on foot on ice
-qimugsigh@P.VALENCE.INTR@        VerbPostbase; ! to go via dogteam
-uteghmigh@P.VALENCE.INTR@        VerbPostbase; ! to return from a trip
-yuqeghte@P.VALENCE.INTR@         VerbPostbase; ! to go outside to check the weather or get fresh air
+aapte           VerbIntr; ! to ask
+aapte           VerbTrns; ! to ask
+kaleve          VerbIntr; ! to sink
+naapte          VerbIntr; ! to catch with net or trap
+naapte          VerbTrns; ! to catch with net or trap
+piyaa           VerbIntr; ! to take a walk; to hunt on foot on ice
+qimugsigh       VerbIntr; ! to go via dogteam
+uteghmigh       VerbIntr; ! to return from a trip
+yuqeghte        VerbIntr; ! to go outside to check the weather or get fresh air
 
 ! Jacobson (2001) Chapter 18 Verb Vocabulary
-aghtugh@P.VALENCE.INTR@          VerbPostbase; ! to not be able to bear; to not be able to do (to)(agentive)
-aghtugh@P.VALENCE.TRNS@          VerbPostbase; ! to not be able to bear; to not be able to do (to)(agentive)
-aghuliigh@P.VALENCE.INTR@        VerbPostbase; ! to stop motion (patientive)
-aghuliigh@P.VALENCE.TRNS@        VerbPostbase; ! to stop motion (patientive)
-angyagh@P.VALENCE.INTR@          VerbPostbase; ! to go boating
-apeghiigh@P.VALENCE.INTR@        VerbPostbase; ! to finish or be finished
-apeghiigh@P.VALENCE.TRNS@        VerbPostbase; ! to finish or be finished
-atghagh@P.VALENCE.INTR@          VerbPostbase; ! to go down toward the water
-ketfagh@P.VALENCE.INTR@          VerbPostbase; ! to bring out; to go far out to sea
-ketfagh@P.VALENCE.TRNS@          VerbPostbase; ! to bring out; to go far out to sea
-nepiigh@P.VALENCE.INTR@          VerbPostbase; ! to fall silent
-qevuute@P.VALENCE.INTR@          VerbPostbase; ! to act or be acted upon to the maximum extent possible
-qevuute@P.VALENCE.TRNS@          VerbPostbase; ! to act or be acted upon to the maximum extent possible
-taglagh@P.VALENCE.INTR@          VerbPostbase; ! to go up away from the water
-taku@P.VALENCE.TRNS@             VerbPostbase; ! to approach on purpose
-tenge@P.VALENCE.INTR@            VerbPostbase; ! to fly off; to take off in flight
-uutghute@P.VALENCE.TRNS@         VerbPostbase; ! to bring back; to change one's mind about
+aghtugh         VerbIntr; ! to not be able to bear; to not be able to do (to)(agentive)
+aghtugh         VerbTrns; ! to not be able to bear; to not be able to do (to)(agentive)
+aghuliigh       VerbIntr; ! to stop motion (patientive)
+aghuliigh       VerbTrns; ! to stop motion (patientive)
+angyagh         VerbIntr; ! to go boating
+apeghiigh       VerbIntr; ! to finish or be finished
+apeghiigh       VerbTrns; ! to finish or be finished
+atghagh         VerbIntr; ! to go down toward the water
+ketfagh         VerbIntr; ! to bring out; to go far out to sea
+ketfagh         VerbTrns; ! to bring out; to go far out to sea
+nepiigh         VerbIntr; ! to fall silent
+qevuute         VerbIntr; ! to act or be acted upon to the maximum extent possible
+qevuute         VerbTrns; ! to act or be acted upon to the maximum extent possible
+taglagh         VerbIntr; ! to go up away from the water
+taku            VerbTrns; ! to approach on purpose
+tenge           VerbIntr; ! to fly off; to take off in flight
+uutghute        VerbTrns; ! to bring back; to change one's mind about
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                          !!!
 !!!     Optional Impersonal Agent Verbs      !!!
 !!!                                          !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-aqlaghaghte[Imprs_Agnt]@P.VALENCE.INTR@:aqlaghaghte@P.VALENCE.INTR@      VerbPostbase; ! for it to get cold
-aqlaghaghte[Imprs_Agnt]@P.VALENCE.TRNS@:aqlaghaghte@P.VALENCE.TRNS@      VerbPostbase; ! for it to get cold
-eslallugughte[Imprs_Agnt]@P.VALENCE.INTR@:eslallugughte@P.VALENCE.INTR@  VerbPostbase; ! for it to rain
-eslallugughte[Imprs_Agnt]@P.VALENCE.TRNS@:eslallugughte@P.VALENCE.INTR@  VerbPostbase; ! for it to rain
-ghhuute[Imprs_Agnt]@P.VALENCE.INTR@:ghhuute@P.VALENCE.INTR@              VerbPostbase; ! to be cold (person)
-ghhuute[Imprs_Agnt]@P.VALENCE.TRNS@:ghhuute@P.VALENCE.TRNS@              VerbPostbase; ! to be cold (person)
-lliigh[Imprs_Agnt]@P.VALENCE.INTR@:lliigh@P.VALENCE.TRNS@                VerbPostbase; ! to become a certain way
-qanigughte[Imprs_Agnt]@P.VALENCE.INTR@:qanigughte@P.VALENCE.INTR@        VerbPostbase; ! for snow to fall
-qanigughte[Imprs_Agnt]@P.VALENCE.TRNS@:qanigughte@P.VALENCE.TRNS@        VerbPostbase; ! for snow to fall
-siku[Imprs_Agnt]@P.VALENCE.INTR@:siku@P.VALENCE.INTR@                    VerbPostbase; ! to freeze
-siku[Imprs_Agnt]@P.VALENCE.TRNS@:siku@P.VALENCE.TRNS@                    VerbPostbase; ! to freeze
-ughug[Imprs_Agnt]@P.VALENCE.INTR@:ughug@P.VALENCE.INTR@                  VerbPostbase; ! to melt
-ughug[Imprs_Agnt]@P.VALENCE.TRNS@:ughug@P.VALENCE.TRNS@                  VerbPostbase; ! to melt
-unug[Imprs_Agnt]@P.VALENCE.INTR@:unug@P.VALENCE.INTR@                    VerbPostbase; ! for night to fall
-unug[Imprs_Agnt]@P.VALENCE.TRNS@:unug@P.VALENCE.TRNS@                    VerbPostbase; ! for night to fall
+aqlaghaghte[Imprs_Agnt]:aqlaghaghte      VerbIntr; ! for it to get cold
+aqlaghaghte[Imprs_Agnt]:aqlaghaghte      VerbTrns; ! for it to get cold
+eslallugughte[Imprs_Agnt]:eslallugughte  VerbIntr; ! for it to rain
+eslallugughte[Imprs_Agnt]:eslallugughte  VerbTrns; ! for it to rain
+ghhuute[Imprs_Agnt]:ghhuute              VerbIntr; ! to be cold (person)
+ghhuute[Imprs_Agnt]:ghhuute              VerbTrns; ! to be cold (person)
+lliigh[Imprs_Agnt]:lliigh                VerbTrns; ! to become a certain way
+qanigughte[Imprs_Agnt]:qanigughte        VerbIntr; ! for snow to fall
+qanigughte[Imprs_Agnt]:qanigughte        VerbTrns; ! for snow to fall
+siku[Imprs_Agnt]:siku                    VerbIntr; ! to freeze
+siku[Imprs_Agnt]:siku                    VerbTrns; ! to freeze
+ughug[Imprs_Agnt]:ughug                  VerbIntr; ! to melt
+ughug[Imprs_Agnt]:ughug                  VerbTrns; ! to melt
+unug[Imprs_Agnt]:unug                    VerbIntr; ! for night to fall
+unug[Imprs_Agnt]:unug                    VerbTrns; ! for night to fall
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                                 !!!
+!!!     Insert Intransitive Verb Flag Diacritic     !!!
+!!!                                                 !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON VerbIntr
+
+@P.VALENCE.INTR@  VerbPostbase;
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                               !!!
+!!!     Insert Transitive Verb Flag Diacritic     !!!
+!!!                                               !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON VerbTrns
+
+@P.VALENCE.TRNS@  VerbPostbase;
 
 
 
@@ -1021,30 +1043,30 @@ LEXICON VerbPostbase
 !!!      Verb →  Verb (Verb-Elaborating) Postbases     !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--~(g₁)aqe[to.be.V.ing][to.regularly.or.repeatedly.V][V→V]@R.VALENCE@:~(g₁)aqe@R.VALENCE@           VerbPostbase;
--@₁lleqe[will.V][V→V]@R.VALENCE@:@₁lleqe@R.VALENCE@                                                VerbPostbase;
--@₁~fnaqe[to.be.going.to.V][V→V]@R.VALENCE@:@₁~fnaqe@R.VALENCE@                                    VerbPostbase;
--@₁~fyug[to.want.to.V][V→V]@R.VALENCE@:@₁~fyug@R.VALENCE@                                          VerbPostbase;
--@₁–nghite**[to.not.V][V→V]@R.VALENCE@:@₁–nghite**@R.VALENCE@                                      VerbPostbase;
--(pete)fte[to.evidently.V][to.have.V-ed]][V→V]@R.VALENCE@:(pete)fte@R.VALENCE@                     VerbPostbase;
--@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₂~sf–(g₂)kau@R.VALENCE@           VerbPostbase;
--@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed][V→V]@R.VALENCE@:@₁~%:(i/u)ma@R.VALENCE@             VerbPostbase;
--~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]@R.VALENCE@:~%:(u)te@R.VALENCE@  VerbPostbase;
--~–kayugu[to.be.able.to.V][V→V]@R.VALENCE@:~–kayugu@R.VALENCE@                                     VerbPostbase;
--@₁~%:(i/u)magh*[while.V-ing][V→V]@R.VALENCE@:@₁~%:(i/u)magh*@R.VALENCE@                           QuantQualPostbase;
--@₁~f–ragkiigh[to.V.quickly][V→V]@R.VALENCE@:@₁~f–ragkiigh@R.VALENCE@                              VerbPostbase;
--@₁~%:(ng₂)igate[to.never.V][to.not.be.V-ing][V→V]@R.VALENCE@:@₁~%:(ng₂)igate@R.VALENCE@           VerbPostbase;
--~i[SBJ.V-ed.something][V→V]@R.VALENCE@@P.VALENCE.INTR@:~i@R.VALENCE@@P.VALENCE.INTR@              VerbPostbase;
--~%:(u)te[SBJ.V-ed.something][V→V]@R.VALENCE@@P.VALENCE.INTR@:~%:(u)te@R.VALENCE@@P.VALENCE.INTR@  VerbPostbase;
--@₁~fnaanghite[will.not.V][V→V]@R.VALENCE@:@₁~fnaanghite@R.VALENCE@                                VerbPostbase;
--@₁~fna[in.order.to.V][intending.to.V][V→V]@R.VALENCE@:@₁~fna@R.VALENCE@                           VerbPostbase;
--te[to.act.on.so.as.to.cause.to.V][V→V]@R.VALENCE@:te@R.VALENCE@                                   VerbPostbase;
--@₁~fyagh[to.go.V-ing][to.V.in.vain][V→V]@R.VALENCE@:@₁~fyagh@R.VALENCE@                           VerbPostbase;
--–pigte[to.be.very.V][to.V.very.much][V→V]@R.VALENCE@:–pigte@R.VALENCE@                            VerbPostbase;
--@₁~laatagh[to.V.anyway][despite.everything.to.still.V][V→V]@R.VALENCE@:@₁~laatagh@R.VALENCE@      VerbPostbase;
--@₁~fnanigh[to.cease.V-ing][to.stop.V-ing]@R.VALENCE@:@₁~fnanigh@R.VALENCE@                        VerbPostbase;
--@₁qugh[to.V.completely]@R.VALENCE@:@₁qugh@R.VALENCE@                                              VerbPostbase;
--@₁~fyaghtugh[to.be.about.to.V][to.go.somewhere.to.V]@R.VALENCE@:@₁~fyaghtugh@R.VALENCE@           VerbPostbase;
+-~(g₁)aqe[to.be.V.ing][to.regularly.or.repeatedly.V][V→V]:~(g₁)aqe                                VerbPostbase;
+-@₁lleqe[will.V][V→V]:@₁lleqe                                                                     VerbPostbase;
+-@₁~fnaqe[to.be.going.to.V][V→V]:@₁~fnaqe                                                         VerbPostbase;
+-@₁~fyug[to.want.to.V][V→V]:@₁~fyug                                                               VerbPostbase;
+-@₁–nghite**[to.not.V][V→V]:@₁–nghite**                                                           VerbPostbase;
+-(pete)fte[to.evidently.V][to.have.V-ed]][V→V]:(pete)fte                                          VerbPostbase;
+-@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]:@₂~sf–(g₂)kau                                VerbPostbase;
+-@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed][V→V]:@₁~%:(i/u)ma                                  VerbPostbase;
+-~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]:~%:(u)te  VerbPostbase;
+-~–kayugu[to.be.able.to.V][V→V]:~–kayugu                                                          VerbPostbase;
+-@₁~%:(i/u)magh*[while.V-ing][V→V]:@₁~%:(i/u)magh*                                                QuantQualPostbase;
+-@₁~f–ragkiigh[to.V.quickly][V→V]:@₁~f–ragkiigh                                                   VerbPostbase;
+-@₁~%:(ng₂)igate[to.never.V][to.not.be.V-ing][V→V]:@₁~%:(ng₂)igate                                VerbPostbase;
+-~i[SBJ.V-ed.something][V→V]@P.VALENCE.INTR@:~i@R.VALENCE@@P.VALENCE.INTR@                        VerbPostbase;
+-~%:(u)te[SBJ.V-ed.something][V→V]@P.VALENCE.INTR@:~%:(u)te@R.VALENCE@@P.VALENCE.INTR@            VerbPostbase;
+-@₁~fnaanghite[will.not.V][V→V]:@₁~fnaanghite                                                     VerbPostbase;
+-@₁~fna[in.order.to.V][intending.to.V][V→V]:@₁~fna                                                VerbPostbase;
+-te[to.act.on.so.as.to.cause.to.V][V→V]:te                                                        VerbPostbase;
+-@₁~fyagh[to.go.V-ing][to.V.in.vain][V→V]:@₁~fyagh                                                VerbPostbase;
+-–pigte[to.be.very.V][to.V.very.much][V→V]:–pigte                                                 VerbPostbase;
+-@₁~laatagh[to.V.anyway][despite.everything.to.still.V][V→V]:@₁~laatagh                           VerbPostbase;
+-@₁~fnanigh[to.cease.V-ing][to.stop.V-ing]:@₁~fnanigh                                             VerbPostbase;
+-@₁qugh[to.V.completely]:@₁qugh                                                                   VerbPostbase;
+-@₁~fyaghtugh[to.be.about.to.V][to.go.somewhere.to.V]:@₁~fyaghtugh                                VerbPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                               !!!
@@ -1069,15 +1091,15 @@ LEXICON VerbPostbase
 !!!   (affect the transitivity of the embedded verb)   !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₁~fni[to.say.that.one.is.V-ing][Cmpd_Vbl]@P.VALENCE.INTR@:@₁~fni@P.VALENCE.INTR@                  VerbPostbase;
--@₁~fni[to.say.that.one.is.V-ing][Cmpd_Vbl]@P.VALENCE.TRNS@:@₁~fni@P.VALENCE.TRNS@                  VerbPostbase;
--(te)ste[to.have.make.or.let.one.V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)ste@P.VALENCE.INTR@               VerbPostbase;
--(te)ste[to.have.make.or.let.one.V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)ste@P.VALENCE.TRNS@               VerbPostbase;
--~sf%:isqe[to.ask.or.tell.one.to.V][Cmpd_Vbl]@P.VALENCE.INTR@:~sf%:isqe@P.VALENCE.INTR@             VerbPostbase;
--~sf%:isqe[to.ask.or.tell.one.to.V][Cmpd_Vbl]@P.VALENCE.TRNS@:~sf%:isqe@P.VALENCE.TRNS@             VerbPostbase;
--(te)sug[to.want.one.to.V][Cmpd_Vbl]@P.VALENCE.INTR@:(te)sug@P.VALENCE.INTR@                        VerbPostbase;
--(te)sug[to.want.one.to.V][Cmpd_Vbl]@P.VALENCE.TRNS@:(te)sug@P.VALENCE.TRNS@                        VerbPostbase;
--@₁@₂~fmiqe[to.make.compel.or.force.one.to.V][Cmpd_Vbl]@P.VALENCE.TRNS@:@₁@₂~fmiqe@P.VALENCE.TRNS@  VerbPostbase;
+-@₁~fni[to.say.that.one.is.V-ing][Cmpd_Vbl]:@₁~fni                  VerbIntr;
+-@₁~fni[to.say.that.one.is.V-ing][Cmpd_Vbl]:@₁~fni                  VerbTrns;
+-(te)ste[to.have.make.or.let.one.V][Cmpd_Vbl]:(te)ste               VerbIntr;
+-(te)ste[to.have.make.or.let.one.V][Cmpd_Vbl]:(te)ste               VerbTrns;
+-~sf%:isqe[to.ask.or.tell.one.to.V][Cmpd_Vbl]:~sf%:isqe             VerbIntr;
+-~sf%:isqe[to.ask.or.tell.one.to.V][Cmpd_Vbl]:~sf%:isqe             VerbTrns;
+-(te)sug[to.want.one.to.V][Cmpd_Vbl]:(te)sug                        VerbIntr;
+-(te)sug[to.want.one.to.V][Cmpd_Vbl]:(te)sug                        VerbTrns;
+-@₁@₂~fmiqe[to.make.compel.or.force.one.to.V][Cmpd_Vbl]:@₁@₂~fmiqe  VerbTrns;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
