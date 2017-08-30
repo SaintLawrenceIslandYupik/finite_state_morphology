@@ -1,9 +1,6 @@
 #!/usr/bin/env foma -f
 
-read lexc exceptions.lexc
-define Exceptions
-
-read lexc ess.lexc
+read lexc plurals.lexc
 
 eliminate flag VALENCE
 define LexiconNoFlags ;
@@ -97,7 +94,7 @@ define BadPlural {sheep} | {snow} ;
 
 define PluralFilter ~[ BadPlural "[Pl]" ] ;
 
-define NeghFilter ~[ {ne} "gh" "-" "@₁" "ll"{eqe} ?* ] ;
+define NeghFilter ~[ {ne} "gh"  ?* "ll" {eqe} ?* ] ;
 
 define Filters [ PluralFilter .o. NeghFilter ] ;
 
@@ -298,7 +295,6 @@ define ClusterDevoicing k -> q || gh _ ∘
                         y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
                         t [z | y] -> s                                           ∘ ! tz/ty cluster becomes s
 						v -> f || V t _                                          ∘
-						v -> f || q _                                            ∘
 						t v -> f || C _                                          ∘
 						v -> f || k _                                            ∘
 						z -> s || Stop _                                         ;
@@ -456,3 +452,4 @@ define Rules [
 
 define Grammar [ Exceptions .P. Rules ] ;
 push Grammar
+pairs
