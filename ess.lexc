@@ -1,9 +1,9 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [N] [V] [Sg] [Pl] [Du] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
+                  [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Ptcp_Obl] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte
+                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a)
                   @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
@@ -1087,8 +1087,7 @@ LEXICON VerbPostbase
 -@₂–(g₂)kaq[one.that.has.V-ed][V→N]:@₂–(g₂)kaq                    NounPostbase;
 -@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii     NounPostbase;
 -@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*     NounPostbase;
--@*@₂~sf–(g₂)ka[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ka  NounPostbase;
--@*@₂~sf–(g₂)ke[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)ke  NounPostbase;
+-@*@₂~sf–(g₂)k(a)e[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)k(a)e  NounPostbase;
 -~–kayuk[one.who.is.able.to.V][V→N]:~–kayuk                       NounPostbase;
 -~%:(u)te[condition.with.respect.to.V-ing][V→N]:~%:(u)te          NounPostbase;
 -~%:(u)ta[condition.with.respect.to.V-ing][V→N]:~%:(u)ta          NounPostbase;
@@ -1597,7 +1596,7 @@ LEXICON VerbTenseInfl
 ! --------------------------------------------------------------------------|
 !                Transitive Participial Oblique Mood Endings                |
 ! --------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
-!                           3rd singular object                             |                               3rd plural object                             |                                   3rd dual object                            |
+!                           3rd singular object                             |                               3rd plural object                             |                                   3rd dual object                            |           |
 ! --------------------------------------------------------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|-----------|
 @R.VALENCE.TRNS@[V][Ptcp_Obl][1Sg][3Sg]:@R.VALENCE.TRNS@@₁~fyaqe           #; @R.VALENCE.TRNS@[V][Ptcp_Obl][1Sg][3Pl]:@R.VALENCE.TRNS@@₁~fyaqenka        #; @R.VALENCE.TRNS@[V][Ptcp_Obl][1Sg][3Du]:@R.VALENCE.TRNS@@₁~fyaqegka         #; ! 1Sg SBJ |
 @R.VALENCE.TRNS@[V][Ptcp_Obl][1Pl][3Sg]:@R.VALENCE.TRNS@@₁~fyaqevut        #; @R.VALENCE.TRNS@[V][Ptcp_Obl][1Pl][3Pl]:@R.VALENCE.TRNS@@₁~fyaqevut        #; @R.VALENCE.TRNS@[V][Ptcp_Obl][1Pl][3Du]@R.VALENCE.TRNS@@₁~fyaqegput         #; ! 1Pl SBJ |

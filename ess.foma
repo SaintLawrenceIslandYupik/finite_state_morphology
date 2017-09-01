@@ -42,7 +42,7 @@ define Enclitic   [ ll u | ng u q ] ;
 define Alphabet [ C | V | "*" | "'" ] ;
 define MorphPhonSymbols [ "~"     | "~f"    | "~sf"   | "~h"    | "-w"    | ":"     | "–" |
                           "@*"    | "@₁"    | "@₂"    |
-                          "(e)"   | "(g₁)"  | "(g₂)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" |
+                          "(e)"   | "(g₁)"  | "(g₂)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" |
 						  "(g/t)" | "(p/v)" | "(s/z)" | "(t/y)" | "(i/u)" |    "(pete)fte"    |
                           "@₁~fy/~f(ng₁)"   | "@₁~flu/na" ] ;
 
@@ -93,13 +93,24 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet* _ ;
 !!!                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-define BadPlural {sheep} | {snow} ;
+define NeghMeghFilter ~[ [n | m] {e} "gh" ["-" "@₁" "ll" {eqe} |
+                                           "-" "(te)" {ste}    | 
+                                           "-" "(te)" {sug}    |
+                                           "-" "@₁" "–" {l} "gh" {ii} |
+                                           "-" "@₁" "–" "ng" {hite}   |
+										   "-" "@*" "@₂" "~sf" "–" "(g₂)" {k} "(a)" {e} |
+                                           "[V]" "[Conc]"             |
+                                           "[V]" "[Opt]" ] ?*
+                       ] ;
 
-define PluralFilter ~[ BadPlural "[Pl]" ] ;
+define NegheMegheFilter ~[ [n | m] {e} "gh" {e} [
+                                                ] ?*
+                       ] ;
 
-define NeghFilter ~[ {ne} "gh" "-" "@₁" "ll"{eqe} ?* ] ;
-
-define Filters [ PluralFilter .o. NeghFilter ] ;
+define Filters [
+    NeghMeghFilter    ∘
+    NegheMegheFilter
+];
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -219,19 +230,20 @@ define JunctureGraphemeInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBounda
                                  "(p/v)" -> v || V       MorphemeBoundary _  ∘
                                  "(t/y)" -> t || C ("*") MorphemeBoundary _  ∘
                                  "(t/y)" -> y || V       MorphemeBoundary _  ∘
-								 "(pete)fte" -> p e t e f t e || C ("*") _  ,,
-								 "(pete)fte" -> p e t e MorphemeBoundary || C ("*") _ ,, 
+								 "(pete)fte" -> p e t e f t e || C ("*") _   ,,
+								 "(pete)fte" -> p e t e MorphemeBoundary || C ("*") _  ,, 
 								 "(pete)fte" -> f t e   MorphemeBoundary || V       _  ∘
-								 "(g₂)"  -> g   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
-								 "(te)"  -> t e || C ("*") _ ∘
-								 "(te)"  -> 0   || V       _ ∘
-								 "(i₁)"  -> i   || e MorphemeBoundary MorphPhonSymbols* _                 ∘
-								 "(i₂)"  -> i   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
-								 "(i/u)" -> i   || t e MorphemeBoundary MorphPhonSymbols* _                     ∘
-								 "(i/u)" -> u   || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _  ∘
-								 "(i/u)" -> u   || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _  ∘
-								 "(u)"   -> u   || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _  ∘
+								 "(g₂)"  -> g    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
+								 "(te)"  -> t e  || C ("*") _                                                   ∘
+								 "(te)"  -> 0    || V       _                                                   ∘
+								 "(i₁)"  -> i    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
+								 "(i₂)"  -> i    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
+								 "(i/u)" -> i    || t e MorphemeBoundary MorphPhonSymbols* _                    ∘
+								 "(i/u)" -> u    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
+								 "(i/u)" -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
+								 "(u)"   -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
 								 "(ng₂)" -> "ng" || FullVowel MorphemeBoundary MorphPhonSymbols* _              ∘
+								 "(a)" e -> a    || _ MorphemeBoundary MorphPhonSymbols* ng                     ∘
     		                     "(g/t)" -> 0,
 								 "(g₁)"  -> 0,
 								 "(t)"   -> 0,
@@ -244,7 +256,8 @@ define JunctureGraphemeInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBounda
 								 "(i₂)"  -> 0,
 								 "(i/u)" -> 0,
 								 "(u)"   -> 0,
-								 "(ng₂)" -> 0  || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
+								 "(ng₂)" -> 0,
+							     "(a)"   -> 0	 || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
 define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordBoundary | C ] a _ ∘
                       gh MorphemeBoundary ":" e -> i MorphemeBoundary || [ WordBoundary | C ] i _ ∘
