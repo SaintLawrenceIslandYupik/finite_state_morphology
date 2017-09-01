@@ -93,23 +93,25 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet* _ ;
 !!!                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-define NeghMeghFilter ~[ [n | m] {e} "gh" ["-" "@₁" "ll" {eqe} |
-                                           "-" "(te)" {ste}    | 
-                                           "-" "(te)" {sug}    |
-                                           "-" "@₁" "–" {l} "gh" {ii} |
-                                           "-" "@₁" "–" "ng" {hite}   |
+define NeghMeghFilter ~[ [n | m] {e} "gh" ["-" "@₁" "ll" {eqe}                          |
+                                           "-" "(te)" {ste}                             | 
+                                           "-" "(te)" {sug}                             |
+                                           "-" "@₁" "–" {l} "gh" {ii}                   |
+                                           "-" "@₁" "–" "ng" {hite}                     |
 										   "-" "@*" "@₂" "~sf" "–" "(g₂)" {k} "(a)" {e} |
-                                           "[V]" "[Conc]"             |
-                                           "[V]" "[Opt]" ] ?*
+                                           "[V]" "[Conc]" ] ?*
                        ] ;
 
-define NegheMegheFilter ~[ [n | m] {e} "gh" {e} [
-                                                ] ?*
-                       ] ;
+define NegheMegheFilter ~[ [n | m] {e} "gh" {e} ["-" "@₁" "~f" "–" {ragkii} "gh"  |
+                                                 "-" "@₁" "–" {ne} "gh"           |
+                                                 "[V]" "[Ctmp]"                   |
+												 "[V]" "[Ind]"                    |
+                                                 "[V]" "[Intrg]" ] ?*
+                         ] ;
 
 define Filters [
-    NeghMeghFilter    ∘
-    NegheMegheFilter
+    NeghMeghFilter  ∘
+	NegheMegheFilter
 ];
 
 

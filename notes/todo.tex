@@ -21,10 +21,6 @@ That being said, is it possible to have ``partial'' exceptions in the \textit{Ex
 
 \item We have a tokenization issue with \textit{uyviinghet}.
 
-\item \textbf{p.72: 11.2.6}: Is there a ``lookahead'' feature in \textit{foma}?
-%
-This would prevent overgeneration of the postbase \textbf{@$\sim_\text{sf}$--(g)ke/(g)ka}, where the latter is used only if the possessive ending starts with \textit{ng}.
-
 \item The NounPostbase and VerbPostbase classes loop on themselves, which is acceptable and necessary for the most part, except when they loop in such a way that postbases are repeated.
 %
 Is there some way to prevent this, as it gets excessive... (Apply up to \textit{tuququghii}).
@@ -142,6 +138,8 @@ Affixing the participial tense however does not cause this problem.
 
 \item \textsc{chapter 17}: It's unclear what endings the postbase \textit{$\sim$-ke} continues on to.
 
+\item Review the implementation of question words and their continuation classes.
+
 \end{itemize}
 
 % % % % % %
@@ -162,6 +160,8 @@ More work/elicitation needs to be done regarding these to systems, to better und
 \item Add our glosses to the \textit{design.tex} file under \textbf{Glossary of Morphophonogical Symbols}, and the \textit{yupik\_plans} repository.
 
 \item Alphabetize and condense the nouns and verbs lists.
+
+\item Enter the combining Unicode characters to replace \textit{$\sim$}, \textit{$\sim$f}, and \textit{$\sim$sf}.
 
 \item Check ``aesthetics'' of the \textit{foma} and \textit{lexc} files, e.g. tables are properly formatted, environments are aligned, etc.
 

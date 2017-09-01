@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-filters
 
 
 test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.fomabin
@@ -85,6 +85,8 @@ test-ch17: ess.pairs.gold/Ch17.In-Chapter-Examples.tsv ess.fomabin
 test-ch18: ess.pairs.gold/Ch18.In-Chapter-Examples.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch18.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch18.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 18 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 18 In-Chapter Examples - FAIL"
 
+test-filters: ess.pairs.gold/Filtered-Strings.tsv ess.fomabin
+	@cut -f 1 ess.pairs.gold/Filtered-Strings.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Filtered-Strings.tsv     && echo "Filtered Strings - PASS" || echo "Filtered-Strings - FAIL"
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin
 
