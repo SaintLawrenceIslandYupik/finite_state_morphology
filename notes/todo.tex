@@ -15,48 +15,11 @@
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
-\item Bases \textit{negh} and \textit{megh} and their alternatives, \textit{neghe}, \textit{meghe} are all listed, and overgenerate when one of the bases is paired with a postbase that requires the alternative.
-%
-That being said, is it possible to have ``partial'' exceptions in the \textit{Exceptions} file?
-
 \item We have a tokenization issue with \textit{uyviinghet}.
 
 \item The NounPostbase and VerbPostbase classes loop on themselves, which is acceptable and necessary for the most part, except when they loop in such a way that postbases are repeated.
 %
 Is there some way to prevent this, as it gets excessive... (Apply up to \textit{tuququghii}).
-
-\end{itemize}
-
-\subsection{Issues Pertaining To Overgeneration}
-
-\begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
-
-\item \textsc{chapter 11}: We are overgenerating the postbase \textbf{ngugh*} which is used only with ``special'' \textit{te} verb bases.
-%
-Originally, flag diacritics were implemented to account for special \textit{te} bases, but nearly all other postbases apply to all types of bases, including special \textit{te}.
-%
-Would flag diacritics be advisable in this case, since they have a tendency to double the size of the transducer?
-
-\item \textsc{chapter 11}: The above postbase \textbf{@$\sim_\text{sf}$--(g)ke/(g)ka} should only continue on to the possessed nominal endings.
-%
-Likewise, the postbase \textbf{--lghii} should only continue on to the unpossessed nominal endings.
-
-\item \textsc{chapter 15}: The half-transitive postbase takes on two forms, \textit{$\sim$i} and \textit{$\sim$:(u)te}.
-%
-Which one is used is dependent on the verb base itself, although there is no pattern to this, and ``a learner of the language must just learn which these verbs are; there is no way from the outside to predict''.
-
-\item \textsc{chapter 17}: The postbase \textit{$\sim$:(u)te/ta} has two forms, where the latter is used only with 3rd person possessor possessed endings.
-
-\item \textsc{chapter 17}: Section 17.3.2 states that ``certain verb bases'' can take on unpossessed oblique case endings.
-%
-Jacobson does not specify which verb bases may do so, so one not so nice option may be to simply list the unpossessed oblique case endings in the VerbTenseInfl class, and simply permit every verb to potentially affix an oblique case.
-
-\item \textsc{chapter 18}: 18.3.2 introduces how certain augmentive postbases can be used directly with verbs, and continue on to \textit{only} unpossessed absolutive endings.
-
-\item \textsc{chapter 18}: 18.3.6 introduces how the plural localis can be used with the postbase \textit{--lghii} to mean \textit{when one is V-ing}.
-%
-This is a very specific path through the transducer...
 
 \end{itemize}
 
@@ -66,8 +29,6 @@ This is a very specific path through the transducer...
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
-
-\item Is \textit{\textbf{yughagh}} | to pray; to worship, intransitive or transitive?
 
 \item Is the [2SgPoss][SgPosd] ending for \textsc{vialis} case, \textit{\textbf{--gpegun}} or \textit{\textbf{--gpekun}}?
 
@@ -134,9 +95,27 @@ A possible solution may be to include \textit{--lghii}/\textit{ngugh*} in the Mu
 %
 Affixing the participial tense however does not cause this problem.
 
+\item \textsc{chapter 15}: The half-transitive postbase takes on two forms, \textit{$\sim$i} and \textit{$\sim$:(u)te}.
+%
+Which one is used is dependent on the verb base itself, although there is no pattern to this, and ``a learner of the language must just learn which these verbs are; there is no way from the outside to predict''.
+
+There is another postbase of the form \textit{$\sim$:(u)te} however that is applicable to all bases.
+%
+It is distinguished from the half-transitive postbase only in the glossing of its underlying form.
+%
+If we leave this distinction as is, then we should not apply a filter for the half-transitive postbase \textit{$\sim$:(u)te}, but we will end up overgenerating it.
+
 \item \textsc{chapter 16}: 16.2.8 which introduces the second terminalis ending is not yet implemented.
 
 \item \textsc{chapter 17}: It's unclear what endings the postbase \textit{$\sim$-ke} continues on to.
+
+\item \textsc{chapter 17}: Section 17.3.2 states that ``certain verb bases'' can take on unpossessed oblique case endings.
+%
+Jacobson does not specify which verb bases may do so, so one not so nice option may be to simply list the unpossessed oblique case endings in the VerbTenseInfl class, and simply permit every verb to potentially affix an oblique case.
+
+\item \textsc{Chapter 18}: Section 18.3.2 introduces ``augmentative'' postbases.
+%
+Are these ordinary postbases that belong in the appropriate Noun or Verb postbase section or should we list them and identify them separately as augmentative postbases?
 
 \item Review the implementation of question words and their continuation classes.
 
@@ -164,6 +143,12 @@ More work/elicitation needs to be done regarding these to systems, to better und
 \item Enter the combining Unicode characters to replace \textit{$\sim$}, \textit{$\sim$f}, and \textit{$\sim$sf}.
 
 \item Check ``aesthetics'' of the \textit{foma} and \textit{lexc} files, e.g. tables are properly formatted, environments are aligned, etc.
+
+\item In many explanations of postbases, Jacobson asserts that certain postbases can only continue on to certain endings (see Filters in \textit{ess.foma}).
+%
+Are these limitations long-distance in the sense that if an additional postbase appears between the ending and the limiting postbase, it does not affect the relationship that holds between the ending and the limiting postbase?
+
+Note that implementing the transducer in this way greatly increases the size of the transducer.
 
 \end{itemize}
 

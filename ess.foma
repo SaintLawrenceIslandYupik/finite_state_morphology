@@ -93,25 +93,41 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet* _ ;
 !!!                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-define NeghMeghFilter ~[ [n | m] {e} "gh" ["-" "@₁" "ll" {eqe}                          |
-                                           "-" "(te)" {ste}                             | 
-                                           "-" "(te)" {sug}                             |
-                                           "-" "@₁" "–" {l} "gh" {ii}                   |
-                                           "-" "@₁" "–" "ng" {hite}                     |
-										   "-" "@*" "@₂" "~sf" "–" "(g₂)" {k} "(a)" {e} |
-                                           "[V]" "[Conc]" ] ?*
-                       ] ;
+define SfGKaKeFilter ~[ ?* "-" "@*" "@₂" "~sf" "–" "(g₂)" {k} "(a)" {e} ?* "[Unpd]" ?* ];
+
+define LghiiFilter ~[ ?* "-" "@₁" "–" {l} "gh" {ii} ?* [ "[SgPosd]" | "[PlPosd]" | "[DuPosd]" ] ?* ]; 
+
+define NeghMeghFilter ~[ [n | m] e "gh" ["-" "@₁" "ll" {eqe}                           |
+                                         "-" "(te)" {ste}                              | 
+                                         "-" "(te)" {sug}                              |
+                                         "-" "@₁" "–" l "gh" {ii}                      |
+                                         "-" "@₁" "–" "ng" {hite}                      |
+                                         "-" "@*" "@₂" "~sf" "–" "(g₂)" {k} "(a)" {e}  |
+                                         "[V]" "[Conc]" ] ?* ];
 
 define NegheMegheFilter ~[ [n | m] {e} "gh" {e} ["-" "@₁" "~f" "–" {ragkii} "gh"  |
-                                                 "-" "@₁" "–" {ne} "gh"           |
-                                                 "[V]" "[Ctmp]"                   |
-												 "[V]" "[Ind]"                    |
-                                                 "[V]" "[Intrg]" ] ?*
-                         ] ;
+                                             "-" "@₁" "–" {ne} "gh"               |
+                                             "[V]" "[Ctmp]"                       |
+                                             "[V]" "[Ind]"                        |
+                                             "[V]" "[Intrg]" ] ?* ];
+						 
+define NgughFilter ~[ ?* [Alphabet - "*"] "-" "@*" "ng" {u} "gh" ?* ];
+
+define UTaFilter ~[ ?* "~" ":" "(u)" {ta} ?* [ "[Sg]"      | "[Pl]"      | "[Du]"      |
+                                               "[1SgPoss]" | "[1PlPoss]" | "[1DuPoss]" |
+                                               "[2SgPoss]" | "[2PlPoss]" | "[2DuPoss]" ] ?* ];
+
+define UTeFilter ~[ ?* "~" ":" "(u)" {te} ?* [ "[3Sg]"     | "[3Pl]"     | "[3Du]"     |
+                                               "[3SgPoss]" | "[3PlPoss]" | "[3DuPoss]" ] ?* ];
 
 define Filters [
-    NeghMeghFilter  ∘
-	NegheMegheFilter
+	KaKeFilter        ∘
+	LghiiFilter       ∘
+    NeghMeghFilter    ∘
+	NegheMegheFilter  ∘
+	NgughFilter       ∘
+	UTeFilter         ∘
+	UTeFilter
 ];
 
 

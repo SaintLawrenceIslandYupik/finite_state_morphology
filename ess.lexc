@@ -17,17 +17,7 @@ LEXICON Root
     PosturalRoot  ;
     QuantQual     ;
     VerbBase      ;
-	Noun ;
 
-
-LEXICON Noun
-boat     NounInflect;
-piece    NounInflect;
-sheep    NounInflect;
-snow     NounInflect;
-
-LEXICON NounInflect
-[Pl]:s   #;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -488,6 +478,21 @@ niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]:niigh
 -tuumagh*[together.with.one's.Ns][N→V]:tuumagh*                                 QuantQualPostbase;
 -~%:(ng₁)ite**[to.lack.N][to.not.have.N][N→V]:~%:(ng₁)ite**                     VerbIntr;
 -~–ke[to.have.as.one's.N(s)][N→V]:~–ke                                          VerbIntr;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                   !!!
+!!!      "Augmentative" Postbases     !!!
+!!!       (Jacobson 2001 18.3.2)      !!!
+!!!                                   !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+-tuqagh[one.with.lots.of.N][AUG]:tuqagh      #;
+-tuqaat[one.with.lots.of.N][AUG]:tuqaat      #;
+-tuqaak[one.with.lots.of.N][AUG]:tuqaak      #;
+-–lgu[to.have.N][AUG]:–lgu                   #;
+-–lget[to.have.N][AUG]:–lget                 #;
+-–lgek[to.have.N][AUG]:–lgek                 #;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1077,22 +1082,23 @@ LEXICON VerbPostbase
 -@₁~fnanigh[to.cease.V-ing][to.stop.V-ing]:@₁~fnanigh                                             VerbPostbase;
 -@₁qugh[to.V.completely]:@₁qugh                                                                   VerbPostbase;
 -@₁~fyaghtugh[to.be.about.to.V][to.go.somewhere.to.V]:@₁~fyaghtugh                                VerbPostbase;
+-–lghiini[when.one.is.V-ing][among.those.V-ing]:–lghiini                                          #;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                               !!!
 !!!     Verb →  Noun (Nominalizing) Postbases     !!!
 !!!                                               !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq              NounPostbase;
--@₂–(g₂)kaq[one.that.has.V-ed][V→N]:@₂–(g₂)kaq                    NounPostbase;
--@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii     NounPostbase;
--@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*     NounPostbase;
+-@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq                    NounPostbase;
+-@₂–(g₂)kaq[one.that.has.V-ed][V→N]:@₂–(g₂)kaq                          NounPostbase;
+-@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii           NounPostbase;
+-@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*           NounPostbase;
 -@*@₂~sf–(g₂)k(a)e[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)k(a)e  NounPostbase;
--~–kayuk[one.who.is.able.to.V][V→N]:~–kayuk                       NounPostbase;
--~%:(u)te[condition.with.respect.to.V-ing][V→N]:~%:(u)te          NounPostbase;
--~%:(u)ta[condition.with.respect.to.V-ing][V→N]:~%:(u)ta          NounPostbase;
--@₁~fvik[place.to.V][V→N]:@₁~fvik                                 NounPostbase;
--@₁–negh[the.act.or.activity.of.V-ing][V→N]:@₁–negh               NounPostbase;
+-~–kayuk[one.who.is.able.to.V][V→N]:~–kayuk                             NounPostbase;
+-~%:(u)te[condition.with.respect.to.V-ing][V→N]:~%:(u)te                NounPostbase;
+-~%:(u)ta[condition.with.respect.to.V-ing][V→N]:~%:(u)ta                NounPostbase;
+-@₁~fvik[place.to.V][V→N]:@₁~fvik                                       NounPostbase;
+-@₁–negh[the.act.or.activity.of.V-ing][V→N]:@₁–negh                     NounPostbase;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
@@ -1109,6 +1115,21 @@ LEXICON VerbPostbase
 -(te)sug[to.want.one.to.V][Cmpd_Vbl]:(te)sug                        VerbIntr;
 -(te)sug[to.want.one.to.V][Cmpd_Vbl]:(te)sug                        VerbTrns;
 -@₁@₂~fmiqe[to.make.compel.or.force.one.to.V][Cmpd_Vbl]:@₁@₂~fmiqe  VerbTrns;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                   !!!
+!!!      "Augmentative" Postbases     !!!
+!!!       (Jacobson 2001 18.3.2)      !!!
+!!!                                   !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+-–ghllak[big.N][AUG]:–ghllag                     #;
+-–ghllaget[big.N][AUG]:–ghllaget                 #;
+-–ghllagek[big.N][AUG]:–ghllagek                 #;
+-~faagh[one.who.keeps.on.V-ing][AUG]:~faagh      #;
+-~faaghet[one.who.keeps.on.V-ing][AUG]:~faaghet  #;
+-~faaghek[one.who.keeps.on.V-ing][AUG]:~faaghek  #;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
