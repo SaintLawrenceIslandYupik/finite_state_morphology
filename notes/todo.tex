@@ -8,27 +8,72 @@
 
 \begin{document}
 
-% % % % % %
-
-\section{Implementation Issues / Questions for Mans}
+\section{Implementation Issues}
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
-\item We have a tokenization issue with \textit{uyviinghet}.
-
-\item The NounPostbase and VerbPostbase classes loop on themselves, which is acceptable and necessary for the most part, except when they loop in such a way that postbases are repeated.
+\item In many explanations of postbases, Jacobson asserts that certain postbases can only continue on to certain endings (see Filters in \textit{ess.foma}).
 %
-Is there some way to prevent this, as it gets excessive... (Apply up to \textit{tuququghii}).
+Are these limitations long-distance in the sense that if an additional postbase appears between the ending and the limiting postbase, it does not affect the relationship that holds between the ending and the limiting postbase?
+
+Note that implementing the transducer in this way \textit{\textbf{greatly}} increases the size of the transducer.
+%
+As a result, the relevant filters are all implemented in \textit{ess.foma}, but we have commented the problematic ones out so the transducer compiles faster for debugging purposes.
+
+\item \textsc{chapter 16}: 16.2.8 which introduces the second terminalis ending is not yet implemented.
+
+\end{itemize}
+
+% % %
+
+\subsection{Minor Implementation Issues}
+
+\begin{itemize}
+\renewcommand\labelitemi{$\cdot$}
+
+\item Should a flag diacritic for \textsc{number} be included to account for conventional duals (although they can also be inflected for the singular), and the postbase for ``N and company'', ``N and partner'', etc.?
+
+\item \textsc{chapter 8}: The postbase \textit{(pete)fte} can attach as \textit{petefte} or as \textit{pete} to consonant-ending bases.
+%
+The transducer successfully analyzes both forms, but also produces an underlying form where the postbase is affixed twice.
+%
+It assumes that \textit{pete} is affixed first as a result of the base ending in a consonant, followed by \textit{fte} since \textit{pete} ends in a vowel.
+
+\item \textsc{chapter 15}: The half-transitive postbase takes on two forms, \textit{$\sim$i} and \textit{$\sim$:(u)te}.
+%
+Which one is used is dependent on the verb base itself, although there is no pattern to this, and ``a learner of the language must just learn which these verbs are; there is no way from the outside to predict''.
+
+There are two other postbases of the form \textit{$\sim$:(u)te} that are applicable to all bases however.
+%
+They are distinguished from the half-transitive postbase only in the glossing of their underlying forms.
+%
+If we leave this distinction as is, then we should not apply a filter for the half-transitive postbase \textit{$\sim$:(u)te}, but we will end up overgenerating it.
 
 \end{itemize}
 
 % % % % % % % % % % % %
 
-\section{Vocabulary/Mood Ending Entry Issues}
+\section{Language-Related Issues}
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
+
+\item \textsc{chapter 15}: Section 15.3.4  mentions an alternative use for the negative optative in place of the subordinative...?
+%
+Although these forms are already implemented in the negative optative section, they will presumably need to be re-glossed.
+
+\item \textsc{chapter 17}: It's unclear what endings the postbase \textit{$\sim$-ke} continues on to.
+
+\item \textsc{chapter 17}: Section 17.3.2 states that ``certain verb bases'' can take on unpossessed oblique case endings.
+%
+Aside from a few examples, Jacobson does not list all the verb bases that can do this, and gives very brief descriptions as to their resulting meaning.
+%
+This implementation and subsequent glossing needs to be revisited.
+
+\item \textsc{Chapter 18}: Section 18.3.2 introduces ``augmentative'' postbases.
+%
+Are these ordinary postbases that belong in the appropriate Noun or Verb postbase section or should we list them and identify them separately as augmentative postbases, as they are now?
 
 \item Is the [2SgPoss][SgPosd] ending for \textsc{vialis} case, \textit{\textbf{--gpegun}} or \textit{\textbf{--gpekun}}?
 
@@ -58,70 +103,34 @@ Is this true?
 
 \end{itemize}
 
-% % % % % %
+% % % % % % % % % % % %
 
-\section{Corner Cases That Need Implementing/Debugging}
+\section{TODO}
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
-\item \textsc{chapter 5}: To form the plural \textsc{localis} and \textsc{terminalis} cases, final-\textit{e} does not drop from ``long'' bases.
-%
-The current final-\textit{e} dropping rule doesn't distinguish between long and short bases, because there is no need to except in this instance.
-%
-We'll need to figure out how best to handle this corner case, either with an additional final-\textit{e} dropping rule, an alternative path for the plural terminalis and localis, or in the \textit{Exceptions} file, etc.
-
-\item \textsc{chapter 8}: According to Jacobson, the postbase \textit{(pete)fte} can attach as \textit{petefte} to consonant-ending bases or as \textit{pete} only.
-%
-While the transducer is analyzing both of these forms, it analyzes the former as if the postbase were affixing twice.
-
-\item \textsc{chapter 11}: Review the Participial endings, since we might be able to condense and simplify them.
-%
-A possible solution may be to include \textit{--lghii}/\textit{ngugh*} in the MultipleForms slot of \textit{foma}.
-
-\item \textsc{chapter 12}: What is happening with the obsolete verb base \textit{ete}?
-
 \item The alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/kau)} haven't been implemented yet.
-
-\item Should a flag diacritic for \textsc{number} be included to account for conventional duals (maybe), and the postbase for ``N and company'', ``N and partner'', etc.?
 
 \item \textsc{chapter 14}: For the conditional mood, verbs with a special \textit{te} ending have multiple permissible forms.
 
 \item \textsc{chapter 15}: Do all weakly special \textit{te}'s have \textit{t} become \textit{l} or \textit{s}?
 
-\item \textsc{chapter 15}: Section 15.3.4 is already implemented in the optative section, but the glossing is incorrect as a result.
-
 \item \textsc{chapter 15}: There is something wrong with the implementation of strongly special \textit{te}'s, in that once either the \textit{@--nghite} or \textit{~--(ng)ite} postbase is followed by the conditional tense, the \textit{t} does not turn into \textit{l}.
 %
 Affixing the participial tense however does not cause this problem.
 
-\item \textsc{chapter 15}: The half-transitive postbase takes on two forms, \textit{$\sim$i} and \textit{$\sim$:(u)te}.
-%
-Which one is used is dependent on the verb base itself, although there is no pattern to this, and ``a learner of the language must just learn which these verbs are; there is no way from the outside to predict''.
-
-There is another postbase of the form \textit{$\sim$:(u)te} however that is applicable to all bases.
-%
-It is distinguished from the half-transitive postbase only in the glossing of its underlying form.
-%
-If we leave this distinction as is, then we should not apply a filter for the half-transitive postbase \textit{$\sim$:(u)te}, but we will end up overgenerating it.
-
-\item \textsc{chapter 16}: 16.2.8 which introduces the second terminalis ending is not yet implemented.
-
-\item \textsc{chapter 17}: It's unclear what endings the postbase \textit{$\sim$-ke} continues on to.
-
-\item \textsc{chapter 17}: Section 17.3.2 states that ``certain verb bases'' can take on unpossessed oblique case endings.
-%
-Jacobson does not specify which verb bases may do so, so one not so nice option may be to simply list the unpossessed oblique case endings in the VerbTenseInfl class, and simply permit every verb to potentially affix an oblique case.
-
-\item \textsc{Chapter 18}: Section 18.3.2 introduces ``augmentative'' postbases.
-%
-Are these ordinary postbases that belong in the appropriate Noun or Verb postbase section or should we list them and identify them separately as augmentative postbases?
+\item \textsc{chapter 12}: What is happening with the obsolete verb base \textit{ete}?
 
 \item Review the implementation of question words and their continuation classes.
 
+\item We have a tokenization issue with \textit{uyviinghet}.
+
+\item What is happening with \textit{tuququghii}?
+
 \end{itemize}
 
-% % % % % %
+% % % % % % % % % % % %
 
 \section{Big Picture Issues}
 
@@ -143,12 +152,6 @@ More work/elicitation needs to be done regarding these to systems, to better und
 \item Enter the combining Unicode characters to replace \textit{$\sim$}, \textit{$\sim$f}, and \textit{$\sim$sf}.
 
 \item Check ``aesthetics'' of the \textit{foma} and \textit{lexc} files, e.g. tables are properly formatted, environments are aligned, etc.
-
-\item In many explanations of postbases, Jacobson asserts that certain postbases can only continue on to certain endings (see Filters in \textit{ess.foma}).
-%
-Are these limitations long-distance in the sense that if an additional postbase appears between the ending and the limiting postbase, it does not affect the relationship that holds between the ending and the limiting postbase?
-
-Note that implementing the transducer in this way greatly increases the size of the transducer.
 
 \end{itemize}
 
