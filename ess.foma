@@ -42,9 +42,9 @@ define Enclitic   [ ll u | ng u q ] ;
 define Alphabet [ C | V | "*" | "'" ] ;
 define MorphPhonSymbols [ "~"     | "~f"      | "~sf"   | "~h"    | "-w"    | ":"     | "–" |
                           "@*"    | "@₁"      | "@₂"    |
-                          "(e)"   | "(g₁)"    | "(g₂)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" |
+                          "(e)"   | "(g₁)"    | "(g₂)"  | "(g₃)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" |
 						  "(g/t)" | "(p/v)"   | "(s/z)" | "(t/y)" | "(i/u)" |    "(pete)fte"    |
-                          "~f-w/-w" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)"   | "@₁~flu/na" ] ;
+                          "~f-w/-w" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" ] ;
 
 define Lowercase "A" -> a ,
 	             "I" -> i ,
@@ -191,6 +191,8 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 
 define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
                   t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
+				  t e  -> s      || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k   ,, ! for postbases that begin with velars
+				  t e ("*") -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k   ,, 
 				  t e "*"     -> l || _ MorphemeBoundary "@*"                              ,, ! for weakly special te's
 				  t e "*"     -> s || _ MorphemeBoundary "@*"                              ∘
 				  "*" ("*")   -> 0 || t e _ MorphemeBoundary MorphPhonSymbols*             ∘
@@ -214,12 +216,10 @@ define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoun
                   ghw  -> ghhw || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
                   l    -> ll   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
                   r    -> rr   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
-				  t e  -> t    || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ,, ! for postbases that begin with velars 
-				  t e  -> s    || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k     ∘
                   t e  -> 0    || _ MorphemeBoundary MorphPhonSymbols* "@₁"                ∘ ! drop base-final te
 				  "@*" -> 0, 
                   "@₁" -> 0,
-				  "@₂" -> 0    || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _   ;
+				  "@₂" -> 0    || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _  ;
 
 define AlternativeForms "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C)  MorphemeBoundary _  ∘
                         "~f-w/-w" -> "~f" "-w"                                                 ∘
@@ -256,6 +256,7 @@ define JunctureGraphemeInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBounda
 								 "(pete)fte" -> p e t e       MorphemeBoundary || C ("*") _  ∘ 
 								 "(pete)fte" -> f t e         MorphemeBoundary || V       _  ∘
 								 "(g₂)"  -> g    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
+                                 "(g₃)"  -> g    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
 								 "(te)"  -> t e  || C ("*") _                                                   ∘
 								 "(te)"  -> 0    || V       _                                                   ∘
 								 "(i₁)"  -> i    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
@@ -268,12 +269,13 @@ define JunctureGraphemeInsertion ["(g/t)" | "(g₁)"] -> g || V V MorphemeBounda
 								 "(a)" e -> a    || _ MorphemeBoundary MorphPhonSymbols* ng                     ∘
     		                     "(g/t)" -> 0,
 								 "(g₁)"  -> 0,
+								 "(g₂)"  -> 0,
+								 "(g₃)"  -> 0,
 								 "(t)"   -> 0,
 								 "(ng₁)" -> 0,
 								 "(s/z)" -> 0,
 								 "(p/v)" -> 0,
 								 "(t/y)" -> 0,
-								 "(g₂)"  -> 0,
 								 "(i₁)"  -> 0,
 								 "(i₂)"  -> 0,
 								 "(i/u)" -> 0,
@@ -332,8 +334,8 @@ define ClusterDevoicing k -> q || gh _ ∘
                         y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
                         y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
                         t [z | y] -> s                                           ∘ ! tz/ty cluster becomes s
-						v -> f || V t _                                          ∘
-						v -> f || q _                                            ∘
+						v -> f || Stop _                                         ∘
+						v -> f || _ Stop                                         ∘
 						t v -> f || C _                                          ∘
 						v -> f || k _                                            ∘
 						z -> s || Stop _                                         ;

@@ -3,7 +3,7 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Ptcp_Obl] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a)
+                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a)
                   ~f-w/-w @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
@@ -1080,7 +1080,8 @@ LEXICON VerbPostbase
 -@₁~fyug[to.want.to.V][V→V]:@₁~fyug                                                               VerbPostbase;
 -@₁–nghite**[to.not.V][V→V]:@₁–nghite**                                                           VerbPostbase;
 -(pete)fte[to.evidently.V][to.have.V-ed][V→V]:(pete)fte                                           VerbPostbase;
--@₂~sf–(g₂)kau[to.have.V-ed][to.have.been.V-ed][V→V]:@₂~sf–(g₂)kau                                VerbPostbase;
+-~sf–(g₃)kau[to.have.V-ed][to.have.been.V-ed][V→V]:~sf–(g₃)kau                                    VerbPostbase;
+-@₂~fkau[to.have.V-ed][to.have.been.V-ed][V→V]:@₂~fkau                                            VerbPostbase;
 -@₁~%:(i/u)ma[to.have.V-ed][to.have.been.V-ed][V→V]:@₁~%:(i/u)ma                                  VerbPostbase;
 -~%:(u)te[to.V.for.or.with][to.cause.to.V.as.one.is.V-ing][to.V.toward.each.other][V→V]:~%:(u)te  VerbPostbase;
 -~–kayugu[to.be.able.to.V][V→V]:~–kayugu                                                          VerbPostbase;
@@ -1105,8 +1106,8 @@ LEXICON VerbPostbase
 !!!     Verb →  Noun (Nominalizing) Postbases     !!!
 !!!                                               !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₂~sf–(g₂)kaq[one.that.has.V-ed][V→N]:@₂~sf–(g₂)kaq                    NounPostbase;
--@₂–(g₂)kaq[one.that.has.V-ed][V→N]:@₂–(g₂)kaq                          NounPostbase;
+-~sf–(g₃)kaq[one.that.has.V-ed][V→N]:~sf–(g₃)kaq                        NounPostbase;
+-@₂~fkaq[one.that.has.V-ed][V→N]:@₂~fkaq                                NounPostbase;
 -@₁–lghii[the.one.that.V-ed][the.one.that.is.V][V→N]:@₁–lghii           NounPostbase;
 -@*ngugh*[the.one.that.V-ed][the.one.that.is.V][V→N]:@*ngugh*           NounPostbase;
 -@*@₂~sf–(g₂)k(a)e[the.one.that.possessor.V-ed][V→N]:@*@₂~sf–(g₂)k(a)e  NounPostbase;
