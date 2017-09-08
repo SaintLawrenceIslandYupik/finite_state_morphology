@@ -26,6 +26,7 @@
 \textbf{(e)} & used with bases that end in a consonant \\
 \textbf{(g$_\text{1}$)} & used with bases that end in a double vowel \\
 \textbf{(g$_\text{2}$)} & used with bases that end in \textit{e} but not \textit{te} \\
+\textbf{(g$_\text{3}$)} & used with bases that end in \textit{e} \\
 \textbf{(t)} & used with consonant final bases \\
 \textbf{(te)} & used with bases that end in a consonant \\
 \textbf{(i$_\text{1}$)} & used with bases that end in \textit{e} \\
@@ -112,6 +113,13 @@ So, our problematic string became \textit{\textbf{tagi\textasciicircum @lleqe \t
 \item Prior to speaking to Mans, the transducer consisted of at least 250,000 states.
 %
 After implementing his suggestions pertaining to flag diacritics in particular, the number of states dropped to 160,000.
+
+\item The implementation to account for all the alternatives to the postbase \textit{@$\sim_{sf}$--(g)kaq/kau)} is a little funky.
+%
+The \textit{(g)} that is introduced here, despite Jacobson's claim, can be affixed to all bases that end in a final \textit{e}, so we have adapted one form of this postbase to account for this surface form with \textit{g} attached: \textbf{$\sim$sf--(g$_\text{3}$)kaq}.
+%
+The other form of this postbase is \textbf{@$_\text{₂}\sim$fkaq}, and accounts for the surface forms where the \textit{e} is dropped, and \textit{g} is not affixed.
+
 
 \end{enumerate}
 

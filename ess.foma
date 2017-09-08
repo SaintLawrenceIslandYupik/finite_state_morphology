@@ -189,10 +189,10 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 									      gh "*" -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
+define teDropping "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* _          ∘
                   t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
-				  t e  -> s      || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k   ,, ! for postbases that begin with velars
-				  t e ("*") -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k   ,, 
+				  t e         -> s || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, ! for postbases that begin with velars
+				  t e ("*")   -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, 
 				  t e "*"     -> l || _ MorphemeBoundary "@*"                              ,, ! for weakly special te's
 				  t e "*"     -> s || _ MorphemeBoundary "@*"                              ∘
 				  "*" ("*")   -> 0 || t e _ MorphemeBoundary MorphPhonSymbols*             ∘
@@ -223,10 +223,10 @@ define teDropping "–"  -> 0 || WordBoundary Alphabet* (t) e ("*") MorphemeBoun
 
 define AlternativeForms "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C)  MorphemeBoundary _  ∘
                         "~f-w/-w" -> "~f" "-w"                                                 ∘
-                        "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i || [Alphabet - "*"] MorphemeBoundary _  ,,
-                        "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*"  || "*" MorphemeBoundary _               ∘             
-                        "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || V ("*") MorphemeBoundary _          ,,  
-                        "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ C | V ] ("*") MorphemeBoundary _  ∘
+                        "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i MorphemeBoundary || [Alphabet - "*"] MorphemeBoundary _  ,,
+                        "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*" MorphemeBoundary  || "*" MorphemeBoundary _               ∘             
+                        "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" MorphemeBoundary || V ("*") MorphemeBoundary _                    ,,  
+                        "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  MorphemeBoundary || [ C | V ] ("*") MorphemeBoundary _            ∘
                         "@₁" "–" ng h i t e "*" "*" MorphemeBoundary "@₁~flu/na" k u    -> MorphemeBoundary "–" g p e n a a n        ∘
                         "@₁" "–" ng h i t e "*" "*" MorphemeBoundary "@₁~flu/na" t e n  -> MorphemeBoundary "–" g p e n a ng         ∘
                         "@₁" "–" ng h i t e "*" "*" MorphemeBoundary "@₁~flu/na" t a    -> MorphemeBoundary "–" g p e n a a m t a    ∘
