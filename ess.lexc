@@ -3,20 +3,22 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Ptcp_Obl] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a)
+                  @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a) (i/e)
                   ~f-w/-w @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
 
 
 LEXICON Root
-    NounBase      ;
-    EmotionalRoot ;
-    Interrogative ;
-    Particle      ;
-    PosturalRoot  ;
-    QuantQual     ;
-    VerbBase      ;
+	Demonstrative   ;
+    EmotionalRoot   ;
+    Interrogative   ;
+    NounBase        ;
+    Particle        ;
+	PersonalPronoun ;
+    PosturalRoot    ;
+    QuantQual       ;
+    VerbBase        ;
 
 
 
@@ -688,6 +690,9 @@ LEXICON EncliticOrEnd
 -llu[Encl]:llu    #;
 -nguq[Encl]:nguq  #;
 
+-ete[to.be]:(i/e)te*  VerbIntr;
+-ete[to.be]:(i/e)te*  VerbTrns;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -782,7 +787,7 @@ esghagh         VerbTrns; ! to see
 guute           VerbIntr; ! to shoot
 guute           VerbTrns; ! to shoot
 igamsiqanagh    VerbIntr; ! to make one thankful
-igamsiqayug     VerbIntr; ! to feel thanksful
+igamsiqayug     VerbIntr; ! to feel thankful
 igamsiqayugvike VerbTrns; ! to feel thankful toward
 laalighfike     VerbTrns; ! to visit
 laalighte       VerbIntr; ! to visit
@@ -2395,9 +2400,9 @@ LEXICON QuantQualPostbase
 ! ---------------------------------|
 !   Quantifier-Qualifier Endings   |
 ! ---------------------------------|
-[Quant_Qual][3Sg]:~%:(ng₁)an       #;
-[Quant_Qual][3Pl]:~%:(ng₁)ita      #;                
-[Quant_Qual][3Du]:~%:(ng₁)ita      #;
+[Quant_Qual][3Sg]:~%:(ng₁)an      #;
+[Quant_Qual][3Pl]:~%:(ng₁)ita     #;                
+[Quant_Qual][3Du]:~%:(ng₁)ita     #;
 ! ---------------------------------|
 [Quant_Qual][1Sg]:~f-wma          #;
 [Quant_Qual][1Pl]:%:emta          #;
@@ -2420,7 +2425,7 @@ LEXICON QuantQualPostbase
 !!!!!!               Emotional Roots and Postbases               !!!!!!
 !!!!!!                                                           !!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON EmotionalRoot
 
@@ -2454,6 +2459,7 @@ LEXICON EmotePostbase
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON Demonstrative
 ! -------------------------------------------|---------------------|
 ! extended |   restricted    |   obscured    |                     |
 ! -------------------------------------------|---------------------|
@@ -2616,6 +2622,7 @@ tamaa     #;     tawa       #;  tazima      #;  ! Anaph Adv Ptcl   |
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+LEXICON PersonalPronoun
 ! -----------|-------------------|--------------------|----------------|
 !  singular  |       plural      |         dual       |                |
 ! ---------------------------------------------------------------------|
