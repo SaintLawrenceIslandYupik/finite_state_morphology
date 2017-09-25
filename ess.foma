@@ -44,7 +44,7 @@ define MorphPhonSymbols [ "~"     | "~f"      | "~sf"   | "~h"    | "-w"    | ":
                           "@*"    | "@₁"      | "@₂"    |
                           "(e)"   | "(g₁)"    | "(g₂)"  | "(g₃)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" |
 						  "(g/t)" | "(p/v)"   | "(s/z)" | "(t/y)" | "(i/u)" | "(i/e)" |    "(pete)fte"    |
-                          "~f-w/-w" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" ] ;
+                          "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" ] ;
 
 define Lowercase "A" -> a ,
 	             "I" -> i ,
@@ -222,7 +222,9 @@ define teDropping "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols
 				  "@₂" -> 0    || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*)  _  ;
 
 define AlternativeForms "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C)  MorphemeBoundary _  ∘
-                        "~f-w/-w" -> "~f" "-w"                                                 ∘
+                        "~f-w/-w" -> "~f" "-w"                                                        ∘
+						"~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] MorphemeBoundary _  ,, 
+						"~sf-w:(e)tgun/teggun" -> "~sf" "-w" ":" "(e)" t g u n                     ∘
                         "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i MorphemeBoundary || [Alphabet - "*"] MorphemeBoundary _  ,,
                         "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*" MorphemeBoundary  || "*" MorphemeBoundary _               ∘             
                         "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" MorphemeBoundary || V ("*") MorphemeBoundary _                    ,,  
