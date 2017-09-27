@@ -23,20 +23,24 @@ interactive: ess.foma *.lexc
 test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-filters
 
 
-test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.fomabin
+test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.pairs.gold/Ch2.In-Chapter-Examples.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch2.N_ABS.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch2.N_ABS.tsv     && echo "Jacobson (2001) Chapter 2 Noun Vocabulary - Absolutive Unpossessed                - PASS" || echo "Jacobson (2001) Chapter 2 Noun Vocabulary - Absolutive Unpossessed                - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch2.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch2.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 2 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 2 In-Chapter-Examples - FAIL"
 
 
-test-ch3: ess.pairs.gold/Ch3.N_AblMod.tsv ess.fomabin
+test-ch3: ess.pairs.gold/Ch3.N_AblMod.tsv ess.pairs.gold/Ch3.In-Chapter-Examples.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch3.N_AblMod.tsv  | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch3.N_AblMod.tsv  && echo "Jacobson (2001) Chapter 3 Noun Vocabulary - Ablative-Modalis Unpossessed Singular - PASS" || echo "Jacobson (2001) Chapter 3 Noun Vocabulary - Ablative-Modalis Unpossessed Singular - FAIL"
 	@cut -f 1 ess.pairs.gold/Ch3.V_IntrInd.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch3.V_IntrInd.tsv && echo "Jacobson (2001) Chapter 3 Verb Vocabulary - Intransitive Indicative               - PASS" || echo "Jacobson (2001) Chapter 3 Verb Vocabulary - Intransitive Indicative               - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch3.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch3.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 3 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 3 In-Chapter-Examples - FAIL"
 
-test-ch4: ess.pairs.gold/Ch4.N_ABS.1PossPosd.tsv ess.pairs.gold/Ch4.N_ABS.2PossPosd.tsv ess.fomabin
+test-ch4: ess.pairs.gold/Ch4.N_ABS.1PossPosd.tsv ess.pairs.gold/Ch4.N_ABS.2PossPosd.tsv ess.pairs.gold/Ch4.In-Chapter-Examples.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch4.N_ABS.1PossPosd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch4.N_ABS.1PossPosd.tsv     && echo "Jacobson (2001) Chapter 4 Noun Vocabulary - 1st Person Possessor Possessed Absolutive - PASS" || echo "Jacobson (2001) Chapter 4 Noun Vocabulary - 1st Person Possessor Possessed Absolutive - FAIL"
 	@cut -f 1 ess.pairs.gold/Ch4.N_ABS.2PossPosd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch4.N_ABS.2PossPosd.tsv     && echo "Jacobson (2001) Chapter 4 Noun Vocabulary - 2nd Person Possessor Possessed Absolutive - PASS" || echo "Jacobson (2001) Chapter 4 Noun Vocabulary - 2nd Person Possessor Possessed Absolutive - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch4.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch4.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 4 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 4 In-Chapter-Examples - FAIL"
 
-test-ch5: ess.pairs.gold/Ch5.N_EQU-LOC-TER-VIA.Unpd.tsv ess.fomabin
+test-ch5: ess.pairs.gold/Ch5.N_EQU-LOC-TER-VIA.Unpd.tsv ess.pairs.gold/Ch5.In-Chapter-Examples.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch5.N_EQU-LOC-TER-VIA.Unpd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch5.N_EQU-LOC-TER-VIA.Unpd.tsv     && echo "Jacobson (2001) Chapter 5 Noun Vocabulary - Equalis, Localis, Terminalis, Vialis Unpossessed - PASS" || echo "Jacobson (2001) Chapter 5 Noun Vocabulary - Equalis, Localis, Terminalis, Vialis Unpossessed    - FAIL"
+	@cut -f 1 ess.pairs.gold/Ch5.In-Chapter-Examples.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch5.In-Chapter-Examples.tsv     && echo "Jacobson (2001) Chapter 5 In-Chapter Examples - PASS" || echo "Jacobson (2001) Chapter 5 In-Chapter-Examples - FAIL"
 
 test-ch6: ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv ess.pairs.gold/Ch6.N_REL.Unpd.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Ch6.N_ABS.3PossPosd.tsv     && echo "Jacobson (2001) Chapter 6 Noun Vocabulary - 3rd Person Possessor Possessed Absolutive - PASS" || echo "Jacobson (2001) Chapter 6 Noun Vocabulary - 3rd Person Possessor Possessed Absolutive - FAIL"

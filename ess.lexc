@@ -1132,21 +1132,7 @@ LEXICON VerbTenseInfl
 !!!                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-! ----------------------------------------------------------|
-!            Intransitive Indicative Mood Endings           |
-! ----------------------------------------------------------|-----------|
-@R.VALENCE.INTR@[V][Ind][3Sg]:@R.VALENCE.INTR@~f(g/t)uq    #; ! 3Sg SBJ |
-@R.VALENCE.INTR@[V][Ind][3Pl]:@R.VALENCE.INTR@~f(g/t)ut    #; ! 3Pl SBJ |
-@R.VALENCE.INTR@[V][Ind][3Du]:@R.VALENCE.INTR@~f(g/t)uk    #; ! 3Du SBJ |
-! ----------------------------------------------------------|-----------|
-@R.VALENCE.INTR@[V][Ind][1Sg]:@R.VALENCE.INTR@~f(g/t)unga  #; ! 1Sg SBJ |
-@R.VALENCE.INTR@[V][Ind][1Pl]:@R.VALENCE.INTR@~f(g/t)ukut  #; ! 1Pl SBJ |
-@R.VALENCE.INTR@[V][Ind][1Du]:@R.VALENCE.INTR@~f(g/t)ukung #; ! 1Du SBJ |
-! ----------------------------------------------------------|-----------|
-@R.VALENCE.INTR@[V][Ind][2Sg]:@R.VALENCE.INTR@~f(g/t)uten  #; ! 2Sg SBJ |
-@R.VALENCE.INTR@[V][Ind][2Pl]:@R.VALENCE.INTR@~f(g/t)usi   #; ! 2Pl SBJ |
-@R.VALENCE.INTR@[V][Ind][2Du]:@R.VALENCE.INTR@~f(g/t)utek  #; ! 2Du SBJ |
-! ----------------------------------------------------------|-----------|
+@R.VALENCE.INTR@[V][Ind]:@R.VALENCE.INTR@~f(g/t)ugh  IntrIndPtcp;
 
 ! -------------------------------------------------------------------|
 !                 Transitive Indicative Mood Endings                 |
@@ -2302,6 +2288,19 @@ LEXICON VerbTenseInfl
 
 
 !-nayuka[Vol_of_Fear]@R.VALENCE@:nayuka@R.VALENCE@  #;
+
+
+LEXICON IntrIndPtcp
+
+[3Sg]:0     #;
+[3Pl]:–t    #;
+[3Du]:–k    #;
+[1Sg]:–nga  #;
+[1Pl]:–kut  #;
+[1Du]:–kung #;
+[2Sg]:–ten  #;
+[2Pl]:–si   #;
+[2Du]:–tek  #;
 
 
 

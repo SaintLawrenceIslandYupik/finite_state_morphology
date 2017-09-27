@@ -180,11 +180,10 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
                                       [ gh | g ] -> wh  || w   MorphemeBoundary ("~f") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘
                                       [ gh | g ] -> w   || w   MorphemeBoundary ("~f") "–" _        ∘
                                       [ gh | g ] -> ghw || ghw MorphemeBoundary ("~f") "–" _        ∘
-                                      [  q | k ] -> q   || [ q  | gh  ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> qw  || [ qw | ghw ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> kw  || [ kw | w   ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] MorphemeBoundary ("~f") "–" _  ∘
-                                               k -> q   ||  gh ("*") MorphemeBoundary ("–") _  ∘  ! k becomes q in the cluster ghk
+                                      [  q | k ] -> q   || [ q  | gh ("*") ] MorphemeBoundary ("~f") "–" _ \WordBoundary ∘
                                                C -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
 									      gh "*" -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
