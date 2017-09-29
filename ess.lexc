@@ -1,7 +1,7 @@
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [N] [V] [Sg] [Pl] [Du] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-                  [Abs] [Abl_Mod] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Ptcp_Obl] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
+                  [Abs] [Abl_Mod] [Intr] [Trns] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Ptcp_Obl] [Cmpd_Vbl] [Stative] [Active] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
                   @* @₁ @₂ ~sf ~f ~h -w (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a) (i/e)
                   ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
@@ -72,7 +72,7 @@ yeqay            #; ! let's do that
 
 LEXICON Interrogative 
 
-kina             #; ! who? (relative case is 'kitum')
+kina             #; ! who?
 kinkut           #; ! who? (plural)
 kitum            #; ! whose?
 naken            #; ! from where?
@@ -87,12 +87,14 @@ sameng           #; ! what?
 sangameng        #; ! why? (focused on 3rd person plural subject of verb)
 sangami          #; ! why? (focused on 3rd person singular subject of verb)
 sangan           #; ! why? (in general)
+
 kina             NounPostbase; ! who? (relative case is 'kitum')
 kinangagh        NounPostbase; ! who? (expanded form for 3rd person interrogatives)
 kinku            NounPostbase; ! who? (plural)
 kinkungagh       NounPostbase; ! who? (expanded form for 3rd person interrogatives)
 naligh*          NounPostbase; ! which one(s)?
 qafsina          NounPostbase; ! how many?
+qafsineg         NounPostbase; ! how many?
 sangagh          NounPostbase; ! what (expanded form for 3rd person interrogatives)
 
 
@@ -3084,7 +3086,6 @@ saalqaagh              	NounPostbase; ! thin new ice forming on surface of water
 saami                  	NounPostbase; ! I don't know; it doesn't register in my mind
 saam                   	NounPostbase; ! what?; something
 saani                  	NounPostbase; ! aged food
-saa                    	NounPostbase; ! I don't know; it doesn't register in my mind; never mind
 saanpipa               	NounPostbase; ! sandpaper
 saaphanghilngugh*      	NounPostbase; ! one who can withstand extreme cold
 saaputagh              	NounPostbase; ! cover; lid; curtain; shade
@@ -4151,7 +4152,7 @@ yulluggagh             	NounPostbase; ! dear little meek man
 yullug                 	NounPostbase; ! bad man
 yumi                   	NounPostbase; ! shy; intimidated; cowering
 yumranalu              	NounPostbase; ! tinder; quickigniting powder
-yungeltaghhagh*          NounPostbase; ! dwarf (legendary)
+yungeltaghhagh*         NounPostbase; ! dwarf (legendary)
 yungestagh*	            NounPostbase; ! dwarf (legendary)
 yupenaagh              	NounPostbase; ! lowly man
 Yupigestute            	NounPostbase; ! in the Yupik language
@@ -4910,9 +4911,12 @@ LEXICON VerbTenseInfl
 !!!                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-@R.VALENCE.INTR@[V][Ind]:@R.VALENCE.INTR@~f(g/t)u  IntrIndPtcp;
+@R.VALENCE.INTR@[V][Intr][Ind]:@R.VALENCE.INTR@~f(g/t)u  IntransitiveIndicativeParticipial;
+@R.VALENCE.TRNS@[V][Trns][Ind]:@R.VALENCE.TRNS@~(g₁)a    TransitiveIndicativeParticipial; 
 
-@R.VALENCE.TRNS@[V][Ind]:@R.VALENCE.TRNS@~(g₁)a    TrnsIndPtcp;
+@R.VALENCE.INTR@[V][Intr][Intrg]:@R.VALENCE.INTR@        IntransitiveInterrogative; 
+@R.VALENCE.TRNS@[V][Trns][Intrg]:@R.VALENCE.TRNS@        TransitiveInterrogative; 
+
 
 
 ! ---------------------------------------------------------------------|
@@ -4978,67 +4982,6 @@ LEXICON VerbTenseInfl
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-----------|
 
 
-! --------------------------------------------------------------|
-!             Intransitive Interrogative Mood Endings           |
-! --------------------------------------------------------------|-------------|
-[V][Intrg][3Sg]@R.VALENCE.INTR@:~f(g/t)a@R.VALENCE.INTR@     #; ! 3Sg subject |
-[V][Intrg][3Pl]@R.VALENCE.INTR@:~f(g/t)at@R.VALENCE.INTR@    #; ! 3Pl subject |
-[V][Intrg][3Du]@R.VALENCE.INTR@:~f(g/t)ak@R.VALENCE.INTR@    #; ! 3Du subject |
-! --------------------------------------------------------------|-------------|
-[V][Intrg][1Sg]@R.VALENCE.INTR@:~f(t)zinga@R.VALENCE.INTR@   #; ! 1Sg subject |
-[V][Intrg][1Pl]@R.VALENCE.INTR@:~sf(e)sta@R.VALENCE.INTR@    #; ! 1Pl subject |
-[V][Intrg][1Du]@R.VALENCE.INTR@:~sf(e)stung@R.VALENCE.INTR@  #; ! 1Du subject |
-! --------------------------------------------------------------|-------------|
-[V][Intrg][2Sg]@R.VALENCE.INTR@:~f(t)zin@R.VALENCE.INTR@     #; ! 2Sg subject |
-[V][Intrg][2Pl]@R.VALENCE.INTR@:~sf(e)tsi@R.VALENCE.INTR@    #; ! 2Pl subject |
-[V][Intrg][2Du]@R.VALENCE.INTR@:~sf(e)stek@R.VALENCE.INTR@   #; ! 2Du subject |
-! --------------------------------------------------------------|-------------|
-
-! -------------------------------------------------------------------|
-!                 Transitive Interrogative Mood Endings              |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|
-!                        3rd singular object                         |                            3rd plural object                         |                              3rd dual object                          |    
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-[V][Intrg][3Sg][3Sg]@R.VALENCE.TRNS@:~f(g/t)agu@R.VALENCE.TRNS@     #; [V][Intrg][3Sg][3Pl]@R.VALENCE.TRNS@:~f(g/t)aki@R.VALENCE.TRNS@     #; [V][Intrg][3Sg][3Du]@R.VALENCE.TRNS@:~f(g/t)akek@R.VALENCE.TRNS@     #; ! 3Sg SBJ |
-[V][Intrg][3Pl][3Sg]@R.VALENCE.TRNS@:~f(g/t)atgu@R.VALENCE.TRNS@    #; [V][Intrg][3Pl][3Pl]@R.VALENCE.TRNS@:~f(g/t)atki@R.VALENCE.TRNS@    #; [V][Intrg][3Pl][3Du]@R.VALENCE.TRNS@:~f(g/t)atkek@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
-[V][Intrg][3Du][3Sg]@R.VALENCE.TRNS@:~f(g/t)agnegu@R.VALENCE.TRNS@  #; [V][Intrg][3Du][3Pl]@R.VALENCE.TRNS@:~f(g/t)agneki@R.VALENCE.TRNS@  #; [V][Intrg][3Du][3Du]@R.VALENCE.TRNS@:~f(g/t)agnekek@R.VALENCE.TRNS@  #; ! 3Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-[V][Intrg][1Sg][3Sg]@R.VALENCE.TRNS@:~f(t)zikun@R.VALENCE.TRNS@     #; [V][Intrg][1Sg][3Pl]@R.VALENCE.TRNS@:~f(t)zingi@R.VALENCE.TRNS@     #; [V][Intrg][1Sg][3Du]@R.VALENCE.TRNS@:~f(t)zigngek@R.VALENCE.TRNS@    #; ! 1Sg SBJ |
-[V][Intrg][1Pl][3Sg]@R.VALENCE.TRNS@:~sf(e)steggu@R.VALENCE.TRNS@   #; [V][Intrg][1Pl][3Pl]@R.VALENCE.TRNS@:~sf(e)steki@R.VALENCE.TRNS@    #; [V][Intrg][1Pl][3Du]@R.VALENCE.TRNS@:~sf(e)stekek@R.VALENCE.TRNS@    #; ! 1Pl SBJ |
-[V][Intrg][1Du][3Sg]@R.VALENCE.TRNS@:~sf(e)stegnegu@R.VALENCE.TRNS@ #; [V][Intrg][1Du][3Pl]@R.VALENCE.TRNS@:~sf(e)stegneki@R.VALENCE.TRNS@ #; [V][Intrg][1Du][3Du]@R.VALENCE.TRNS@:~sf(e)stegnekek@R.VALENCE.TRNS@ #; ! 1Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-[V][Intrg][2Sg][3Sg]@R.VALENCE.TRNS@:~f(t)zigu@R.VALENCE.TRNS@      #; [V][Intrg][2Sg][3Pl]@R.VALENCE.TRNS@:~f(t)ziki@R.VALENCE.TRNS@      #; [V][Intrg][2Sg][3Du]@R.VALENCE.TRNS@:~f(t)zikek@R.VALENCE.TRNS@      #; ! 2Sg SBJ |
-[V][Intrg][2Pl][3Sg]@R.VALENCE.TRNS@:~sf(e)ggu@R.VALENCE.TRNS@      #; [V][Intrg][2Pl][3Pl]@R.VALENCE.TRNS@:~sf(e)ki@R.VALENCE.TRNS@       #; [V][Intrg][2Pl][3Du]@R.VALENCE.TRNS@:~sf(g₁)kek@R.VALENCE.TRNS@      #; ! 2Pl SBJ |
-[V][Intrg][2Du][3Sg]@R.VALENCE.TRNS@:~sf(e)gnegu@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Pl]@R.VALENCE.TRNS@:~sf(e)gneki@R.VALENCE.TRNS@    #; [V][Intrg][2Du][3Du]@R.VALENCE.TRNS@:~sf(g₁)gnekek@R.VALENCE.TRNS@   #; ! 2Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                        1st singular object                         |                            1st plural object                         |                              1st dual object                          |           | 
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-[V][Intrg][3Sg][1Sg]@R.VALENCE.TRNS@:~f(g/t)anga@R.VALENCE.TRNS@    #; [V][Intrg][3Sg][1Pl]@R.VALENCE.TRNS@:~f(g/t)inkut@R.VALENCE.TRNS@   #; [V][Intrg][3Sg][1Du]@R.VALENCE.TRNS@:~f(g/t)inkung@R.VALENCE.TRNS@   #; ! 3Sg SBJ |
-[V][Intrg][3Pl][1Sg]@R.VALENCE.TRNS@:~f(g/t)atnga@R.VALENCE.TRNS@   #; [V][Intrg][3Pl][1Pl]@R.VALENCE.TRNS@:~f(g/t)inkut@R.VALENCE.TRNS@   #; [V][Intrg][3Pl][1Du]@R.VALENCE.TRNS@:~f(g/t)inkung@R.VALENCE.TRNS@   #; ! 3Pl SBJ |
-[V][Intrg][3Du][1Sg]@R.VALENCE.TRNS@:~f(g/t)agnenga@R.VALENCE.TRNS@ #; [V][Intrg][3Du][1Pl]@R.VALENCE.TRNS@:~f(g/t)inkut@R.VALENCE.TRNS@   #; [V][Intrg][3Du][1Du]@R.VALENCE.TRNS@:~f(g/t)inkung@R.VALENCE.TRNS@   #; ! 3Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                                                                    |                                                                      |                                                                       | ! 1Sg SBJ |
-!                                                                    |                                                                      |                                                                       | ! 1Pl SBJ |
-!                                                                    |                                                                      |                                                                       | ! 1Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-[V][Intrg][2Sg][1Sg]@R.VALENCE.TRNS@:~f(t)zinga@R.VALENCE.TRNS@     #; [V][Intrg][2Sg][1Pl]@R.VALENCE.TRNS@:~f(t)zikut@R.VALENCE.TRNS@     #; [V][Intrg][2Sg][1Du]@R.VALENCE.TRNS@:~f(t)zikung@R.VALENCE.TRNS@     #; ! 2Sg SBJ |
-[V][Intrg][2Pl][1Sg]@R.VALENCE.TRNS@:~sf(e)ngnga@R.VALENCE.TRNS@    #; [V][Intrg][2Pl][1Pl]@R.VALENCE.TRNS@:~sf(e)kut@R.VALENCE.TRNS@      #; [V][Intrg][2Pl][1Du]@R.VALENCE.TRNS@:~sf(e)kung@R.VALENCE.TRNS@      #; ! 2Pl SBJ |
-[V][Intrg][2Du][1Sg]@R.VALENCE.TRNS@:~sf(e)gnenga@R.VALENCE.TRNS@   #; [V][Intrg][2Du][1Pl]@R.VALENCE.TRNS@:~sf(e)gneku@R.VALENCE.TRNS@    #; [V][Intrg][2Du][1Du]@R.VALENCE.TRNS@:~sf(e)gnekung@R.VALENCE.TRNS@   #; ! 2Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                        2nd singular object                         |                            2nd plural object                         |                              2nd dual object                          |           |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-[V][Intrg][3Sg][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Sg][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Sg][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Sg SBJ |
-[V][Intrg][3Pl][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Pl][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Pl][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Pl SBJ |
-[V][Intrg][3Du][2Sg]@R.VALENCE.TRNS@:~f(g/t)aten@R.VALENCE.TRNS@    #; [V][Intrg][3Du][2Pl]@R.VALENCE.TRNS@:~f(g/t)isi@R.VALENCE.TRNS@     #; [V][Intrg][3Du][2Du]@R.VALENCE.TRNS@:~f(g/t)istek@R.VALENCE.TRNS@    #; ! 3Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-[V][Intrg][1Sg][2Sg]@R.VALENCE.TRNS@:~f(t)ziken@R.VALENCE.TRNS@     #;                                                                      |                                                                       | ! 1Sg SBJ |
-[V][Intrg][1Pl][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                      |                                                                       | ! 1Pl SBJ |
-[V][Intrg][1Du][2Sg]@R.VALENCE.TRNS@:~sf(e)steken@R.VALENCE.TRNS@   #;                                                                      |                                                                       | ! 1Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                                                                    |                                                                      |                                                                       | ! 2Sg SBJ |
-!                                                                    |                                                                      |                                                                       | ! 2Pl SBJ |
-!                                                                    |                                                                      |                                                                       | ! 2Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
 
 
 ! -----------------------------------------------------------------|
@@ -6025,14 +5968,14 @@ LEXICON VerbTenseInfl
 
 
 
-LEXICON IntrIndPtcp
+LEXICON IntransitiveIndicativeParticipial
 !---------|--------------|-------------|
 [3Sg]:q  #; [1Sg]:nga   #; [2Sg]:ten  #;
 [3Pl]:t  #; [1Pl]:kut   #; [2Pl]:si   #;
 [3Du]:k  #; [1Du]:kung  #; [2Du]:tek  #;
 !---------|--------------|-------------|
 
-LEXICON TrnsIndPtcp
+LEXICON TransitiveIndicativeParticipial
 !----------------------|------------------------|-------------------------|
 [3Sg][3Sg]:a          #;  [3Sg][3Pl]:i         #; [3Sg][3Du]:q           #;
 [3Pl][3Sg]:at         #;  [3Pl][3Pl]:it        #; [3Pl][3Du]:gket        #;
@@ -6062,6 +6005,57 @@ LEXICON TrnsIndPtcp
 [1Pl][2Sg]:mken       #; [1Pl][2Pl]:msi        #; [1Pl][2Du]:mtek        #;
 [1Du][2Sg]:mken       #; [1Du][2Pl]:msi        #; [1Du][2Du]:mtek        #;
 !----------------------|------------------------|-------------------------|
+
+
+LEXICON IntransitiveInterrogative
+!----------------|--------------------|--------------------|
+[3Sg]:~f(g/t)a  #; [1Sg]:~f(t)zinga  #; [2Sg]:~f(t)zin    #;
+                                        [2Sg]:~f(t)ziin   #;
+[3Pl]:~f(g/t)at #; [1Pl]:~sf(e)sta   #; [2Pl]:~sf(e)tsi   #;
+                                        [2Pl]:~sf(e)tsii  #;
+[3Du]:~f(g/t)ak #; [1Du]:~sf(e)stung #; [2Du]:~sf(e)stek  #;
+                                        [2Du]:~sf(e)staak #;
+!----------------|--------------------|--------------------|
+
+
+LEXICON TransitiveInterrogative
+! -------------------------|----------------------------|-----------------------------|
+[3Sg][3Sg]:~f(g/t)agu     #; [3Sg][3Pl]:~f(g/t)aki     #; [3Sg][3Du]:~f(g/t)akek     #;
+[3Pl][3Sg]:~f(g/t)atgu    #; [3Pl][3Pl]:~f(g/t)atki    #; [3Pl][3Du]:~f(g/t)atkek    #;
+[3Du][3Sg]:~f(g/t)agnegu  #; [3Du][3Pl]:~f(g/t)agneki  #; [3Du][3Du]:~f(g/t)agnekek  #;
+! -------------------------|----------------------------|-----------------------------|
+[1Sg][3Sg]:~f(t)zikun     #; [1Sg][3Pl]:~f(t)zingi     #; [1Sg][3Du]:~f(t)zigngek    #;
+[1Pl][3Sg]:~sf(e)steggu   #; [1Pl][3Pl]:~sf(e)steki    #; [1Pl][3Du]:~sf(e)stekek    #;
+[1Du][3Sg]:~sf(e)stegnegu #; [1Du][3Pl]:~sf(e)stegneki #; [1Du][3Du]:~sf(e)stegnekek #;
+! -------------------------|----------------------------|-----------------------------|
+[2Sg][3Sg]:~f(t)zigu      #; [2Sg][3Pl]:~f(t)ziki      #; [2Sg][3Du]:~f(t)zikek      #;
+[2Pl][3Sg]:~sf(e)ggu      #; [2Pl][3Pl]:~sf(e)ki       #; [2Pl][3Du]:~sf(g₁)kek      #;
+[2Du][3Sg]:~sf(e)gnegu    #; [2Du][3Pl]:~sf(e)gneki    #; [2Du][3Du]:~sf(g₁)gnekek   #;
+! -------------------------|----------------------------|-----------------------------|
+[3Sg][1Sg]:~f(g/t)anga    #; [3Sg][1Pl]:~f(g/t)inkut   #; [3Sg][1Du]:~f(g/t)inkung   #;
+[3Pl][1Sg]:~f(g/t)atnga   #; [3Pl][1Pl]:~f(g/t)inkut   #; [3Pl][1Du]:~f(g/t)inkung   #;
+[3Du][1Sg]:~f(g/t)agnenga #; [3Du][1Pl]:~f(g/t)inkut   #; [3Du][1Du]:~f(g/t)inkung   #;
+! -------------------------|----------------------------|-----------------------------|
+!                          |                            |                             | 
+!                          |                            |                             | 
+!                          |                            |                             | 
+! -------------------------|----------------------------|-----------------------------|
+[2Sg][1Sg]:~f(t)zinga     #; [2Sg][1Pl]:~f(t)zikut     #; [2Sg][1Du]:~f(t)zikung     #;
+[2Pl][1Sg]:~sf(e)ngnga    #; [2Pl][1Pl]:~sf(e)kut      #; [2Pl][1Du]:~sf(e)kung      #;
+[2Du][1Sg]:~sf(e)gnenga   #; [2Du][1Pl]:~sf(e)gneku    #; [2Du][1Du]:~sf(e)gnekung   #;
+! -------------------------|----------------------------|-----------------------------|
+[3Sg][2Sg]:~f(g/t)aten    #; [3Sg][2Pl]:~f(g/t)isi     #; [3Sg][2Du]:~f(g/t)istek    #;
+[3Pl][2Sg]:~f(g/t)aten    #; [3Pl][2Pl]:~f(g/t)isi     #; [3Pl][2Du]:~f(g/t)istek    #;
+[3Du][2Sg]:~f(g/t)aten    #; [3Du][2Pl]:~f(g/t)isi     #; [3Du][2Du]:~f(g/t)istek    #;
+! -------------------------|----------------------------|-----------------------------|
+[1Sg][2Sg]:~f(t)ziken     #;                            |                             |
+[1Pl][2Sg]:~sf(e)steken   #;                            |                             |
+[1Du][2Sg]:~sf(e)steken   #;                            |                             |
+! -------------------------|----------------------------|-----------------------------|
+!                          |                            |                             | 
+!                          |                            |                             | 
+!                          |                            |                             | 
+! -------------------------|----------------------------|-----------------------------|
 
 
 
