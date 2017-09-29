@@ -4994,6 +4994,30 @@ LEXICON VerbTenseInfl
 [V][Intrg][2Du]@R.VALENCE.INTR@:~sf(e)stek@R.VALENCE.INTR@   #; ! 2Du subject |
 ! --------------------------------------------------------------|-------------|
 
+! @R.VALENCE.INTR@[V][Ind]:@R.VALENCE.INTR@~f(g/t)u  IntrIndPtcp;
+! @R.VALENCE.TRNS@[V][Ind]:@R.VALENCE.TRNS@~(g₁)a    TrnsIndPtcp;
+
+@R.VALENCE.INTR@[V][Intrg]:@R.VALENCE.INTR@     IntrIntrg; ! 3Sg subject |
+
+
+LEXICON IntrIntrg
+
+[3p]:~f(g/t)   IntrIntrg3p
+
+LEXICON IntrIntrg3p
+[Sg]:a
+[Pl]:at
+[Du]:ak
+
+[3Sg]:~f(g/t)a    #; ! 3Sg subject |
+[3Pl]:~f(g/t)at   #; ! 3Pl subject |
+[3Du]:~f(g/t)ak   #; ! 3Du subject |
+
+
+
+
+
+
 ! -------------------------------------------------------------------|
 !                 Transitive Interrogative Mood Endings              |
 ! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -5973,6 +5997,37 @@ LEXICON VerbTenseInfl
 @R.VALENCE.INTR@[V][Sbrd][2Pl]:@R.VALENCE.INTR@@₁~flu/nasi   #; ! 2Pl SBJ |
 @R.VALENCE.INTR@[V][Sbrd][2Du]:@R.VALENCE.INTR@@₁~flu/natek  #; ! 2Du SBJ |
 ! ------------------------------------------------------------|-----------|
+
+
+@R.VALENCE.INTR@[V][Intrans][Sbrd]:@R.VALENCE.INTR@@₁~flu/na      VerbIntransSbrd ;
+@R.VALENCE.TRNS@[V][Trans][Sbrd]:@R.VALENCE.TRNS@@₁~flu/na        VerbTransSbrd ;
+
+
+LEXICON VerbIntransSbrd
+
+! ---------------------------------------------------------|
+!  Intransitive Subordinative Mood Endings |
+! ------------------------------------------------------------|-----------|
+[3Sg]:ni   #; ! 3Sg SBJ |
+[3Pl]:teng #; ! 3Pl SBJ |
+[3Du]:tek  #; ! 3Du SBJ |
+! ------------------------------------------------------------|-----------|
+@R.VALENCE.INTR@[V][Sbrd][1Sg]:@R.VALENCE.INTR@@₁~flu/nanga  #; ! 1Sg SBJ |
+@R.VALENCE.INTR@[V][Sbrd][1Pl]:@R.VALENCE.INTR@@₁~flu/nata   #; ! 1Pl SBJ |
+@R.VALENCE.INTR@[V][Sbrd][1Du]:@R.VALENCE.INTR@@₁~flu/natung #; ! 1Du SBJ |
+! ------------------------------------------------------------|-----------|
+@R.VALENCE.INTR@[V][Sbrd][2Sg]:@R.VALENCE.INTR@@₁~flu/naten  #; ! 2Sg SBJ |
+@R.VALENCE.INTR@[V][Sbrd][2Pl]:@R.VALENCE.INTR@@₁~flu/nasi   #; ! 2Pl SBJ |
+@R.VALENCE.INTR@[V][Sbrd][2Du]:@R.VALENCE.INTR@@₁~flu/natek  #; ! 2Du SBJ |
+! ------------------------------------------------------------|-----------|
+
+
+LEXICON VerbTransSbrd
+
+[_][3Sg]:ku   #; ! 3Sg OBJ |
+[_][3Pl]:ki   #; ! 3Pl OBJ |
+[_][3Du]:kek  #; ! 3Du OBJ |
+
 
 ! ----------------------------------------------------------------|
 !             Transitive Subordinative Mood Endings               |
