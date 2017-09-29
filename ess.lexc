@@ -73,27 +73,27 @@ yeqay            #; ! let's do that
 LEXICON Interrogative 
 
 kina             #; ! who? (relative case is 'kitum')
-kina             NounPostbase; ! who? (relative case is 'kitum')
-kinangagh        NounPostbase; ! who? (expanded form for 3rd person interrogatives)
-kinku            NounPostbase; ! who? (plural)
 kinkut           #; ! who? (plural)
-kinkungagh       NounPostbase; ! who? (expanded form for 3rd person interrogatives)
 kitum            #; ! whose?
 naken            #; ! from where?
-naligh*          NounPostbase; ! which one(s)?
 nani             #; ! (at) where?
 naten            #; ! how?
 navek            #; ! to where?
 qafsina          #; ! how many?
-qafsina          NounPostbase; ! how many?
 qakun            #; ! when? (future)
 qavngaq          #; ! when? (past)
 sa               #; ! what?
 sameng           #; ! what?
-sangagh          NounPostbase; ! what (expanded form for 3rd person interrogatives)
 sangameng        #; ! why? (focused on 3rd person plural subject of verb)
 sangami          #; ! why? (focused on 3rd person singular subject of verb)
 sangan           #; ! why? (in general)
+kina             NounPostbase; ! who? (relative case is 'kitum')
+kinangagh        NounPostbase; ! who? (expanded form for 3rd person interrogatives)
+kinku            NounPostbase; ! who? (plural)
+kinkungagh       NounPostbase; ! who? (expanded form for 3rd person interrogatives)
+naligh*          NounPostbase; ! which one(s)?
+qafsina          NounPostbase; ! how many?
+sangagh          NounPostbase; ! what (expanded form for 3rd person interrogatives)
 
 
 
@@ -1139,8 +1139,7 @@ ilangghama             	NounPostbase; ! be good-natured
 ilangqugh              	NounPostbase; ! clear chunk of freshwater ice
 ilangqugh              	NounPostbase; ! clear fresh ice
 ilangqughrag           	NounPostbase; ! coating of ice
-ila                    	NounPostbase; ! part; relative; friend; one of; some of
-ila                    	NounPostbase; ! relative; associate; part; one or some (of)
+ila                    	NounPostbase; ! part; relative; friend; associate; one of; some of
 ilemquusigh            	NounPostbase; ! screwdriver; bent awl
 ilepenghaagh           	NounPostbase; ! inner membrane of walrus or bearded seal intestine
 ilepesuwagh            	NounPostbase; ! layer
@@ -1474,7 +1473,6 @@ kemeg                  	NounPostbase; ! flesh, skin
 kemeg                  	NounPostbase; ! flesh; skin; relative(s) (one’s own “flesh and blood”)
 kemeg                  	NounPostbase; ! skin
 kemegtungigh           	NounPostbase; ! shrimp or shrimplike creature
-kemekrag               	NounPostbase; ! meat
 kemekrag               	NounPostbase; ! meat; piece of meat; relative; kin
 kemengqug              	NounPostbase; ! male underwear
 kemgenu                	NounPostbase; ! string of beads
@@ -1959,7 +1957,6 @@ naarqagh               	NounPostbase; ! scalp of animal including skin from face
 naasaghagh             	NounPostbase; ! marker indicating something
 naasqughiitagh         	NounPostbase; ! headband
 naasqughllug           	NounPostbase; ! aged (for eating) fish head
-naasqugh               	NounPostbase; ! head 
 naasqugh               	NounPostbase; ! head; leader
 naasquvrag             	NounPostbase; ! bowl; rounded container
 naavellegh             	NounPostbase; ! ruin(s); broken piece(s)
@@ -2249,10 +2246,10 @@ nulighh                	NounPostbase; ! wife
 nulighhwaagh           	NounPostbase; ! exchange wife
 nulighqalgute          	NounPostbase; ! man's wife's sister's husband; brotherin-law (in this one limited sense)
 nulighqullghiig        	NounPostbase; ! man and wife; married couple.
+nuliigh                 NounPostbase; ! wife
 nuliingqalgute         	NounPostbase; ! man's wife's sister's husband; brotherin-law (in this one limited sense)
 nuliiq                 	NounPostbase; ! wife
 nulugh                 	NounPostbase; ! icefishing gear; teabag
-nulugh                 	NounPostbase; ! tea bag
 nuluusigh              	NounPostbase; ! fishing rod and reel; jigging equipment
 Nunaaghmii(t)          	NounPostbase; ! a particular clan
 nunaghllag             	NounPostbase; ! world (the earth); continent; city
@@ -2286,7 +2283,7 @@ nutaghlite             	NounPostbase; ! newly formed ice that has become thick
 nutaqiigh              	NounPostbase; ! frost snow on sea ice; new ice with frost crystals on surface
 nuteghagh              	NounPostbase; ! young adult
 nutemtagh              	NounPostbase; ! older ice floe or field with accumulated snow covering
-nuufig                   NounPostbase; ! eye of needle; eyelet; hole for threading
+nuufig                  NounPostbase; ! eye of needle; eyelet; hole for threading
 nuug                   	NounPostbase; ! surfaced seal
 nuulgute               	NounPostbase; ! crosspiece in roof of the traditional domeshaped house, the mangteghapik (q.v.)
 nuunquta               	NounPostbase; ! bubble(s) surfacing on the ocean from a bearded seal’s call before it surfaces after diving deep
@@ -4258,7 +4255,7 @@ LEXICON NounInfl
 ! -----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
 [N][Abs][Unpd][Sg]:0                  EncliticOrEnd; [N][Abs][Unpd][Pl]:~sf-w%:(e)t          EncliticOrEnd; [N][Abs][Unpd][Du]:~sf-w%:(e)k            EncliticOrEnd; ! unpossessed   |
 ! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
-[N][Abs][3SgPoss][SgPosd]:~h%:(ng₁)a  EncliticOrEnd; [N][Abs][3SgPoss][PlPosd]:~h%:(ng₁)i    EncliticOrEnd; [N][Abs][3SgPoss][DuPosd]:~f-wkek         EncliticOrEnd; ! 3SG possessor |
+[N][Abs][3SgPoss][SgPosd]:~h%:(ng₁)a  EncliticOrEnd; [N][Abs][3SgPoss][PlPosd]:~h%:(ng₁)i    EncliticOrEnd; [N][Abs][3SgPoss][DuPosd]:~h-wkek         EncliticOrEnd; ! 3SG possessor |
 [N][Abs][3PlPoss][SgPosd]:~h%:(ng₁)at EncliticOrEnd; [N][Abs][3PlPoss][PlPosd]:~h%:(ng₁)it   EncliticOrEnd; [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  EncliticOrEnd; ! 3PL possessor |
 [N][Abs][3DuPoss][SgPosd]:~h:(ng₁)ak  EncliticOrEnd; [N][Abs][3DuPoss][PlPosd]:~h:(ng₁)ik    EncliticOrEnd; [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  EncliticOrEnd; ! 3Du possessor |
 ! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
@@ -4913,53 +4910,9 @@ LEXICON VerbTenseInfl
 !!!                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-@R.VALENCE.INTR@[V][Ind]:@R.VALENCE.INTR@~f(g/t)ugh  IntrIndPtcp;
+@R.VALENCE.INTR@[V][Ind]:@R.VALENCE.INTR@~f(g/t)u  IntrIndPtcp;
 
-! -------------------------------------------------------------------|
-!                 Transitive Indicative Mood Endings                 |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                       3rd singular object                          |                            3rd plural object                         |                            3rd dual obj                               |           |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Ind][3Sg][3Sg]:@R.VALENCE.TRNS@~(g₁)aa          #; @R.VALENCE.TRNS@[V][Ind][3Sg][3Pl]:@R.VALENCE.TRNS@~(g₁)ai          #; @R.VALENCE.TRNS@[V][Ind][3Sg][3Du]:@R.VALENCE.TRNS@~(g₁)ak           #; ! 3Sg SBJ |
-@R.VALENCE.TRNS@[V][Ind][3Pl][3Sg]:@R.VALENCE.TRNS@~(g₁)aat         #; @R.VALENCE.TRNS@[V][Ind][3Pl][3Pl]:@R.VALENCE.TRNS@~(g₁)ait         #; @R.VALENCE.TRNS@[V][Ind][3Pl][3Du]:@R.VALENCE.TRNS@~(g₁)agket        #; ! 3Pl SBJ |
-@R.VALENCE.TRNS@[V][Ind][3Du][3Sg]:@R.VALENCE.TRNS@~(g₁)ait         #; @R.VALENCE.TRNS@[V][Ind][3Du][3Pl]:@R.VALENCE.TRNS@~(g₁)aik         #; @R.VALENCE.TRNS@[V][Ind][3Du][3Du]:@R.VALENCE.TRNS@~(g₁)agket        #; ! 3Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Ind][1Sg][3Sg]:@R.VALENCE.TRNS@~(g₁)aka         #; @R.VALENCE.TRNS@[V][Ind][1Sg][3Pl]:@R.VALENCE.TRNS@~(g₁)anka        #; @R.VALENCE.TRNS@[V][Ind][1Sg][3Du]:@R.VALENCE.TRNS@~(g₁)agka         #; ! 1Sg SBJ |
-@R.VALENCE.TRNS@[V][Ind][1Pl][3Sg]:@R.VALENCE.TRNS@~(g₁)aput        #; @R.VALENCE.TRNS@[V][Ind][1Pl][3Pl]:@R.VALENCE.TRNS@~(g₁)aput        #; @R.VALENCE.TRNS@[V][Ind][1Pl][3Du]:@R.VALENCE.TRNS@~(g₁)agput        #; ! 1Pl SBJ |
-@R.VALENCE.TRNS@[V][Ind][1Du][3Sg]:@R.VALENCE.TRNS@~(g₁)apung       #; @R.VALENCE.TRNS@[V][Ind][1Du][3Pl]:@R.VALENCE.TRNS@~(g₁)apung       #; @R.VALENCE.TRNS@[V][Ind][1Du][3Du]:@R.VALENCE.TRNS@~(g₁)agpung       #; ! 1Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Ind][2Sg][3Sg]:@R.VALENCE.TRNS@~(g₁)an          #; @R.VALENCE.TRNS@[V][Ind][2Sg][3Pl]:@R.VALENCE.TRNS@~(g₁)aten        #; @R.VALENCE.TRNS@[V][Ind][2Sg][3Du]:@R.VALENCE.TRNS@~(g₁)agken        #; ! 2Sg SBJ |
-@R.VALENCE.TRNS@[V][Ind][2Pl][3Sg]:@R.VALENCE.TRNS@~(g₁)asi         #; @R.VALENCE.TRNS@[V][Ind][2Pl][3Pl]:@R.VALENCE.TRNS@~(g₁)asi         #; @R.VALENCE.TRNS@[V][Ind][2Pl][3Du]:@R.VALENCE.TRNS@~(g₁)agsi         #; ! 2Pl SBJ |
-@R.VALENCE.TRNS@[V][Ind][2Du][3Sg]:@R.VALENCE.TRNS@~(g₁)atek        #; @R.VALENCE.TRNS@[V][Ind][2Du][3Pl]:@R.VALENCE.TRNS@~(g₁)atek        #; @R.VALENCE.TRNS@[V][Ind][2Du][3Du]:@R.VALENCE.TRNS@~(g₁)agtek        #; ! 2Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                       1st singular object                          |                            1st plural object                         |                            1st dual object                            |           |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Ind][3Sg][1Sg]:@R.VALENCE.TRNS@~(g₁)aanga       #; @R.VALENCE.TRNS@[V][Ind][3Sg][1Pl]:@R.VALENCE.TRNS@~(g₁)ainkut      #; @R.VALENCE.TRNS@[V][Ind][3Sg][1Du]:@R.VALENCE.TRNS@~(g₁)ainkung      #; ! 3Sg SBJ |
-@R.VALENCE.TRNS@[V][Ind][3Pl][1Sg]:@R.VALENCE.TRNS@~(g₁)aatnga      #; @R.VALENCE.TRNS@[V][Ind][3Pl][1Pl]:@R.VALENCE.TRNS@~(g₁)ainkut      #; @R.VALENCE.TRNS@[V][Ind][3Pl][1Du]:@R.VALENCE.TRNS@~(g₁)ainkung      #; ! 3Pl SBJ |
-@R.VALENCE.TRNS@[V][Ind][3Du][1Sg]:@R.VALENCE.TRNS@~(g₁)aagnenga    #; @R.VALENCE.TRNS@[V][Ind][3Du][1Pl]:@R.VALENCE.TRNS@~(g₁)ainkut      #; @R.VALENCE.TRNS@[V][Ind][3Du][1Du]:@R.VALENCE.TRNS@~(g₁)ainkung      #; ! 3Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                                                                    |                                                                      |                                                                       | ! 1Sg SBJ |
-!                                                                    |                                                                      |                                                                       | ! 1Pl SBJ |
-!                                                                    |                                                                      |                                                                       | ! 1Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Ind][2Sg][1Sg]:@R.VALENCE.TRNS@~(g₁)apenga      #; @R.VALENCE.TRNS@[V][Ind][2Sg][1Pl]:@R.VALENCE.TRNS@~(g₁)apekut      #; @R.VALENCE.TRNS@[V][Ind][2Sg][1Du]:@R.VALENCE.TRNS@~(g₁)apekung      #; ! 2Sg SBJ |
-@R.VALENCE.TRNS@[V][Ind][2Pl][1Sg]:@R.VALENCE.TRNS@~(g₁)apesinga    #; @R.VALENCE.TRNS@[V][Ind][2Pl][1Pl]:@R.VALENCE.TRNS@~(g₁)apesikut    #; @R.VALENCE.TRNS@[V][Ind][2Pl][1Du]:@R.VALENCE.TRNS@~(g₁)apesikung    #; ! 2Pl SBJ |
-@R.VALENCE.TRNS@[V][Ind][2Du][1Sg]:@R.VALENCE.TRNS@~(g₁)apetegnenga #; @R.VALENCE.TRNS@[V][Ind][2Du][1Pl]:@R.VALENCE.TRNS@~(g₁)apetegnekut #; @R.VALENCE.TRNS@[V][Ind][2Du][1Du]:@R.VALENCE.TRNS@~(g₁)apetegnekung #; ! 2Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                       2nd singular object                          |                            2nd plural object                         |                            2nd dual object                            |           |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Ind][3Sg][2Sg]:@R.VALENCE.TRNS@~(g₁)aaten       #; @R.VALENCE.TRNS@[V][Ind][3Sg][2Pl]:@R.VALENCE.TRNS@~(g₁)aisi        #; @R.VALENCE.TRNS@[V][Ind][3Sg][2Du]:@R.VALENCE.TRNS@~(g₁)aitek        #; ! 3Sg SBJ |
-@R.VALENCE.TRNS@[V][Ind][3Pl][2Sg]:@R.VALENCE.TRNS@~(g₁)aaten       #; @R.VALENCE.TRNS@[V][Ind][3Pl][2Pl]:@R.VALENCE.TRNS@~(g₁)aisi        #; @R.VALENCE.TRNS@[V][Ind][3Pl][2Du]:@R.VALENCE.TRNS@~(g₁)aitek        #; ! 3Pl SBJ |
-@R.VALENCE.TRNS@[V][Ind][3Du][2Sg]:@R.VALENCE.TRNS@~(g₁)aaten       #; @R.VALENCE.TRNS@[V][Ind][3Du][2Pl]:@R.VALENCE.TRNS@~(g₁)aisi        #; @R.VALENCE.TRNS@[V][Ind][3Du][2Du]:@R.VALENCE.TRNS@~(g₁)aitek        #; ! 3Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Ind][1Sg][2Sg]:@R.VALENCE.TRNS@~(g₁)amken       #; @R.VALENCE.TRNS@[V][Ind][1Sg][2Pl]:@R.VALENCE.TRNS@~(g₁)amsi        #; @R.VALENCE.TRNS@[V][Ind][1Sg][2Du]:@R.VALENCE.TRNS@~(g₁)amtek        #; ! 1Sg SBJ |
-@R.VALENCE.TRNS@[V][Ind][1Pl][2Sg]:@R.VALENCE.TRNS@~(g₁)amken       #; @R.VALENCE.TRNS@[V][Ind][1Pl][2Pl]:@R.VALENCE.TRNS@~(g₁)amsi        #; @R.VALENCE.TRNS@[V][Ind][1Pl][2Du]:@R.VALENCE.TRNS@~(g₁)amtek        #; ! 1Pl SBJ |
-@R.VALENCE.TRNS@[V][Ind][1Du][2Sg]:@R.VALENCE.TRNS@~(g₁)amken       #; @R.VALENCE.TRNS@[V][Ind][1Du][2Pl]:@R.VALENCE.TRNS@~(g₁)amsi        #; @R.VALENCE.TRNS@[V][Ind][1Du][2Du]:@R.VALENCE.TRNS@~(g₁)amtek        #; ! 1Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
-!                                                                    |                                                                      |                                                                       | ! 2Sg SBJ |
-!                                                                    |                                                                      |                                                                       | ! 2Pl SBJ |
-!                                                                    |                                                                      |                                                                       | ! 2Du SBJ |
-! -------------------------------------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-----------|
+@R.VALENCE.TRNS@[V][Ind]:@R.VALENCE.TRNS@~(g₁)a    TrnsIndPtcp;
 
 
 ! ---------------------------------------------------------------------|
@@ -6071,17 +6024,45 @@ LEXICON VerbTenseInfl
 !-nayuka[Vol_of_Fear]@R.VALENCE@:nayuka@R.VALENCE@  #;
 
 
-LEXICON IntrIndPtcp
 
-[3Sg]:0     #;
-[3Pl]:–t    #;
-[3Du]:–k    #;
-[1Sg]:–nga  #;
-[1Pl]:–kut  #;
-[1Du]:–kung #;
-[2Sg]:–ten  #;
-[2Pl]:–si   #;
-[2Du]:–tek  #;
+LEXICON IntrIndPtcp
+!---------|--------------|-------------|
+[3Sg]:q  #; [1Sg]:nga   #; [2Sg]:ten  #;
+[3Pl]:t  #; [1Pl]:kut   #; [2Pl]:si   #;
+[3Du]:k  #; [1Du]:kung  #; [2Du]:tek  #;
+!---------|--------------|-------------|
+
+LEXICON TrnsIndPtcp
+!----------------------|------------------------|-------------------------|
+[3Sg][3Sg]:a          #;  [3Sg][3Pl]:i         #; [3Sg][3Du]:q           #;
+[3Pl][3Sg]:at         #;  [3Pl][3Pl]:it        #; [3Pl][3Du]:gket        #;
+[3Du][3Sg]:it         #;  [3Du][3Pl]:ik        #; [3Du][3Du]:gket        #;
+!----------------------|------------------------|-------------------------|
+[1Sg][3Sg]:qa         #; [1Sg][3Pl]:nka        #; [1Sg][3Du]:gka         #;
+[1Pl][3Sg]:put        #; [1Pl][3Pl]:put        #; [1Pl][3Du]:gput        #;
+[1Du][3Sg]:pung       #; [1Du][3Pl]:pung       #; [1Du][3Du]:gpung       #;
+!----------------------|------------------------|-------------------------|
+[2Sg][3Sg]:n          #; [2Sg][3Pl]:ten        #; [2Sg][3Du]:gken        #;
+[2Pl][3Sg]:si         #; [2Pl][3Pl]:si         #; [2Pl][3Du]:gsi         #;
+[2Du][3Sg]:tek        #; [2Du][3Pl]:tek        #; [2Du][3Du]:gtek        #;
+!----------------------|------------------------|-------------------------|
+[3Sg][1Sg]:anga       #; [3Sg][1Pl]:inkut      #; [3Sg][1Du]:inkung      #;
+[3Pl][1Sg]:atnga      #; [3Pl][1Pl]:inkut      #; [3Pl][1Du]:inkung      #;
+[3Du][1Sg]:agnenga    #; [3Du][1Pl]:inkut      #; [3Du][1Du]:inkung      #;
+!----------------------|------------------------|-------------------------|
+[2Sg][1Sg]:penga      #; [2Sg][1Pl]:pekut      #; [2Sg][1Du]:pekung      #;
+[2Pl][1Sg]:pesinga    #; [2Pl][1Pl]:pesikut    #; [2Pl][1Du]:pesikung    #;
+[2Du][1Sg]:petegnenga #; [2Du][1Pl]:petegnekut #; [2Du][1Du]:petegnekung #;
+!----------------------|------------------------|-------------------------|
+[3Sg][2Sg]:aten       #; [3Sg][2Pl]:isi        #; [3Sg][2Du]:itek        #;
+[3Pl][2Sg]:aten       #; [3Pl][2Pl]:isi        #; [3Pl][2Du]:itek        #;
+[3Du][2Sg]:aten       #; [3Du][2Pl]:isi        #; [3Du][2Du]:itek        #;
+!----------------------|------------------------|-------------------------|
+[1Sg][2Sg]:mken       #; [1Sg][2Pl]:msi        #; [1Sg][2Du]:mtek        #;
+[1Pl][2Sg]:mken       #; [1Pl][2Pl]:msi        #; [1Pl][2Du]:mtek        #;
+[1Du][2Sg]:mken       #; [1Du][2Pl]:msi        #; [1Du][2Du]:mtek        #;
+!----------------------|------------------------|-------------------------|
+
 
 
 

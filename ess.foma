@@ -163,7 +163,7 @@ define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"   
                   "~f" -> 0 || WordBoundary Alphabet* MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
 
 define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
-                    "~h" -> 0   || V C V C e MorphemeBoundary _                         ∘  ! does not drop e if base contains multiple syllables
+                    "~h" -> 0   || [ C | V ] C V C e MorphemeBoundary _                 ∘  ! does not drop e if base contains multiple syllables
 				    "~h" -> "~" || WordBoundary Alphabet* MorphemeBoundary _            ;  ! otherwise drop e
 
 define InterConsonantalE "(e)" -> e || C MorphemeBoundary (":") _  ∘  ! convert (e) to e when following a consonant
@@ -297,8 +297,8 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
 define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
                            k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
                                      h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
-                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ;
-							                         !["(g/t)" | "(g)"] -> w || a u MorphemeBoundary MorphemeBoundary MorphPhonSymbols* _ ;
+                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
+	                               ["(g/t)" | "(g₁)"] -> w || a u MorphemeBoundary MorphemeBoundary MorphPhonSymbols* _ [ Alphabet - u ] ;
 
 define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels
 

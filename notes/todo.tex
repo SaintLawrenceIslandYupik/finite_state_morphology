@@ -8,52 +8,18 @@
 
 \begin{document}
 
-\section{Lingering Implementation Questions}
-
-\begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
-
-\item \textsc{ch.2}: Should a flag diacritic for \textsc{number} be included to account for conventional duals and the postbase for ``N and company'', ``N and partner'', etc.?
-%
-Note that conventional duals \ul{can} be inflected for the singular in specific contexts.
-
-\end{itemize}
-
-% % % % % % % % % % % %
-
 \section{Implementation Issues}
 
 \begin{itemize}
 \renewcommand\labelitemi{$\cdot$}
 
-\item In many explanations of postbases, Jacobson asserts that certain postbases can only continue on to certain endings (see Filters in \textit{ess.foma}).
-%
-Are these limitations long-distance in the sense that if an additional postbase appears between the ending and the limiting postbase, it does not affect the relationship that holds between the ending and the limiting postbase?
-
-Note that implementing the transducer in this way \textit{\textbf{greatly}} increases the size of the transducer.
-%
-As a result, the relevant filters are all implemented in \textit{ess.foma}, but we have commented the problematic ones out so the transducer compiles faster for debugging purposes.
-
 \item \textsc{chapter 16}: 16.2.8 which introduces the second terminalis ending is not yet implemented, since it is used with so few bases, namely, the positional bases and \textit{some} demonstratives.
-
-\item The issue with \textit{tuququghii} stems from the TripleVowelCluster rule which deletes the second vowel in a series of three vowels.
-%
-Since the transducer permits the rule cascade to run seven times, the postbase \textit{~i} affixes at most seven times, but on occasion, an \textit{i} will delete, resulting identical surface forms.
-
-\item We need to implement a tokenizer to handle the analysis of \textit{uyviinghet}.
 
 \end{itemize}
 
 % % %
 
 \subsection{Minor Implementation Issues}
-
-
-\item \textsc{chapter 8}: The postbase \textit{(pete)fte} can attach as \textit{petefte} or as \textit{pete} to consonant-ending bases.
-%
-The transducer successfully analyzes both forms, but also produces an underlying form where the postbase is affixed twice.
-%
-It assumes that \textit{pete} is affixed first as a result of the base ending in a consonant, followed by \textit{fte} since \textit{pete} ends in a vowel.
 
 \item \textsc{chapter 15}: The half-transitive postbase takes on two forms, \textit{$\sim$i} and \textit{$\sim$:(u)te}.
 %
