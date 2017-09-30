@@ -88,13 +88,14 @@ sangameng        #; ! why? (focused on 3rd person plural subject of verb)
 sangami          #; ! why? (focused on 3rd person singular subject of verb)
 sangan           #; ! why? (in general)
 
-kina             NounPostbase; ! who? (relative case is 'kitum')
+kina             NounPostbase; ! who?
 kinangagh        NounPostbase; ! who? (expanded form for 3rd person interrogatives)
 kinku            NounPostbase; ! who? (plural)
 kinkungagh       NounPostbase; ! who? (expanded form for 3rd person interrogatives)
 naligh*          NounPostbase; ! which one(s)?
 qafsina          NounPostbase; ! how many?
 qafsineg         NounPostbase; ! how many?
+sa               NounPostbase; ! what?
 sangagh          NounPostbase; ! what (expanded form for 3rd person interrogatives)
 
 
@@ -3144,7 +3145,6 @@ sani                   	NounPostbase; ! side area
 saniqagh               	NounPostbase; ! one’s side
 saniqite               	NounPostbase; ! one of two beams that lies on the side pillars of a winter house frame
 saniquute              	NounPostbase; ! centerboard for boat
-sa                     	NounPostbase; ! what?; something; relative (kin)
 santillegh             	NounPostbase; ! week
 Santi                  	NounPostbase; ! Sunday
 sapaaslug              	NounPostbase; ! lowly person; menial; underling
@@ -6010,7 +6010,7 @@ LEXICON TransitiveIndicativeParticipial
 LEXICON IntransitiveInterrogative
 !----------------|--------------------|--------------------|
 [3Sg]:~f(g/t)a  #; [1Sg]:~f(t)zinga  #; [2Sg]:~f(t)zin    #;
-                                        [2Sg]:~f(t)ziin   #;
+[3Sg]:~f(g/t)aa #;                      [2Sg]:~f(t)ziin   #;
 [3Pl]:~f(g/t)at #; [1Pl]:~sf(e)sta   #; [2Pl]:~sf(e)tsi   #;
                                         [2Pl]:~sf(e)tsii  #;
 [3Du]:~f(g/t)ak #; [1Du]:~sf(e)stung #; [2Du]:~sf(e)stek  #;
@@ -6021,6 +6021,7 @@ LEXICON IntransitiveInterrogative
 LEXICON TransitiveInterrogative
 ! -------------------------|----------------------------|-----------------------------|
 [3Sg][3Sg]:~f(g/t)agu     #; [3Sg][3Pl]:~f(g/t)aki     #; [3Sg][3Du]:~f(g/t)akek     #;
+[3Sg][3Sg]:~f(g/t)aguu    #;
 [3Pl][3Sg]:~f(g/t)atgu    #; [3Pl][3Pl]:~f(g/t)atki    #; [3Pl][3Du]:~f(g/t)atkek    #;
 [3Du][3Sg]:~f(g/t)agnegu  #; [3Du][3Pl]:~f(g/t)agneki  #; [3Du][3Du]:~f(g/t)agnekek  #;
 ! -------------------------|----------------------------|-----------------------------|

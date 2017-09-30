@@ -298,7 +298,7 @@ define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw |
                            k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
                                      h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
                                      h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
-	                               ["(g/t)" | "(g₁)"] -> w || a u MorphemeBoundary MorphemeBoundary MorphPhonSymbols* _ [ Alphabet - u ] ;
+                                   ["(g/t)" | "(g₁)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u]  ;
 
 define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels
 
