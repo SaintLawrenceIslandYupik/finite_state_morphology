@@ -4223,12 +4223,12 @@ niigh[to.hunt.for.N][to.search.for.N][to.ask.for.N][to.work.with.N][N→V]:niigh
 -~%:(ng₁)ite**[to.lack.N][to.not.have.N][N→V]:~%:(ng₁)ite**                     VerbIntr;
 -~–ke[to.have.as.one's.N(s)][N→V]:~–ke                                          VerbIntr;
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!                                   !!!
-!!!      "Augmentative" Postbases     !!!
-!!!       (Jacobson 2001 18.3.2)      !!!
-!!!                                   !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                 !!!
+!!!      "Augmentive" Postbases     !!!
+!!!      (Jacobson 2001 18.3.2)     !!!
+!!!                                 !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 -tuqagh[one.with.lots.of.N][AUG]:tuqagh      #;
 -tuqaat[one.with.lots.of.N][AUG]:tuqaat      #;
@@ -4911,12 +4911,17 @@ LEXICON VerbTenseInfl
 !!!                                  !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-@R.VALENCE.INTR@[V][Intr][Ind]:@R.VALENCE.INTR@~f(g/t)u  IntransitiveIndicativeParticipial;
-@R.VALENCE.TRNS@[V][Trns][Ind]:@R.VALENCE.TRNS@~(g₁)a    TransitiveIndicativeParticipial; 
+@R.VALENCE.INTR@[V][Intr][Ind]:@R.VALENCE.INTR@~f(g/t)u    IntransitiveIndicativeParticipial;
+@R.VALENCE.TRNS@[V][Trns][Ind]:@R.VALENCE.TRNS@~(g₁)a      TransitiveIndicativeParticipial; 
 
-@R.VALENCE.INTR@[V][Intr][Intrg]:@R.VALENCE.INTR@        IntransitiveInterrogative; 
-@R.VALENCE.TRNS@[V][Trns][Intrg]:@R.VALENCE.TRNS@        TransitiveInterrogative; 
+@R.VALENCE.INTR@[V][Intr][Intrg]:@R.VALENCE.INTR@          IntransitiveInterrogative; 
+@R.VALENCE.TRNS@[V][Trns][Intrg]:@R.VALENCE.TRNS@          TransitiveInterrogative; 
 
+@R.VALENCE.INTR@[V][Intr][Opt][PRS]:@R.VALENCE.INTR@       IntransitiveOptativePresent;
+@R.VALENCE.TRNS@[V][Trns][Opt][PRS]:@R.VALENCE.TRNS@       TransitiveOptativePresent;
+
+@R.VALENCE.INTR@[V][Intr][Opt][NEG]:@R.VALENCE.INTR@–fqaa  IntransitiveOptativeNegative;
+@R.VALENCE.TRNS@[V][Trns][Opt][NEG]:@R.VALENCE.TRNS@       TransitiveOptativeNegative;
 
 
 ! ---------------------------------------------------------------------|
@@ -4980,134 +4985,6 @@ LEXICON VerbTenseInfl
 !                                                                                 |                                                                                 |                                                                                  | ! 2Pl SBJ |
 !                                                                                 |                                                                                 |                                                                                  | ! 2Du SBJ |
 ! --------------------------------------------------------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|-----------|
-
-
-
-
-! -----------------------------------------------------------------|
-!         Intransitive Optative Mood Endings (Present)             |
-! -----------------------------------------------------------------|-----------|
-@R.VALENCE.INTR@[V][Opt][PRS][3Sg]:@R.VALENCE.INTR@@₁~fli         #; ! 3Sg SBJ |
-@R.VALENCE.INTR@[V][Opt][PRS][3Pl]:@R.VALENCE.INTR@@₁~flit        #; ! 3Pl SBJ |
-@R.VALENCE.INTR@[V][Opt][PRS][3Du]:@R.VALENCE.INTR@@₁~flik        #; ! 3Du SBJ |
-! -----------------------------------------------------------------|-----------|
-@R.VALENCE.INTR@[V][Opt][PRS][1Sg]:@R.VALENCE.INTR@@₁~flanga      #; ! 1Sg SBJ |
-@R.VALENCE.INTR@[V][Opt][PRS][1Pl]:@R.VALENCE.INTR@~sf%:(e)lta    #; ! 1Pl SBJ |
-@R.VALENCE.INTR@[V][Opt][PRS][1Du]:@R.VALENCE.INTR@~sf%:(e)ltung  #; ! 1Du SBJ |
-! -----------------------------------------------------------------|-----------|
-@R.VALENCE.INTR@[V][Opt][PRS][2Sg]:@R.VALENCE.INTR@[Opt_PRS_2Sg]  #; ! 2Sg SBJ |
-@R.VALENCE.INTR@[V][Opt][PRS][2Pl]:@R.VALENCE.INTR@@₁(i₂)tek      #; ! 2Pl SBJ |
-@R.VALENCE.INTR@[V][Opt][PRS][2Du]:@R.VALENCE.INTR@@₁(i₂)tek      #; ! 2Du SBJ |
-! -----------------------------------------------------------------|-----------|
-
-! ---------------------------------------------------------------------------|
-!                Transitive Optative Mood Endings (Present)                  |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
-!                               3rd singular object                          |                               3rd plural object                           |                               3rd dual object                              |          
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][PRS][3Sg][3Sg]:@R.VALENCE.TRNS@@₁~fligu            #; @R.VALENCE.TRNS@[V][Opt][PRS][3Sg][3Pl]:@R.VALENCE.TRNS@@₁~fliki         #; @R.VALENCE.TRNS@[V][Opt][PRS][3Sg][3Du]:@R.VALENCE.TRNS@@₁~flikek         #; ! 3Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][3Pl][3Sg]:@R.VALENCE.TRNS@@₁~flitgu           #; @R.VALENCE.TRNS@[V][Opt][PRS][3Pl][3Pl]:@R.VALENCE.TRNS@@₁~flitki        #; @R.VALENCE.TRNS@[V][Opt][PRS][3Pl][3Du]:@R.VALENCE.TRNS@@₁~flitkek        #; ! 3Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][3Du][3Sg]:@R.VALENCE.TRNS@@₁~flignegu         #; @R.VALENCE.TRNS@[V][Opt][PRS][3Du][3Pl]:@R.VALENCE.TRNS@@₁~fligneki      #; @R.VALENCE.TRNS@[V][Opt][PRS][3Du][3Du]:@R.VALENCE.TRNS@@₁~flignekek      #; ! 3Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][PRS][1Sg][3Sg]:@R.VALENCE.TRNS@@₁~flakun           #; @R.VALENCE.TRNS@[V][Opt][PRS][1Sg][3Pl]:@R.VALENCE.TRNS@@₁~flangi        #; @R.VALENCE.TRNS@[V][Opt][PRS][1Sg][3Du]:@R.VALENCE.TRNS@@₁~flangak        #; ! 1Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][1Pl][3Sg]:@R.VALENCE.TRNS@~sf%:(e)lteggu      #; @R.VALENCE.TRNS@[V][Opt][PRS][1Pl][3Pl]:@R.VALENCE.TRNS@~sf%:(e)lteki    #; @R.VALENCE.TRNS@[V][Opt][PRS][1Pl][3Du]:@R.VALENCE.TRNS@~sf%:(e)ltekek    #; ! 1Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][1Du][3Sg]:@R.VALENCE.TRNS@~sf%:(e)ltegnegu    #; @R.VALENCE.TRNS@[V][Opt][PRS][1Du][3Pl]:@R.VALENCE.TRNS@~sf%:(e)ltegneki #; @R.VALENCE.TRNS@[V][Opt][PRS][1Du][3Du]:@R.VALENCE.TRNS@~sf%:(e)ltegnekek #; ! 1Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][PRS][2Sg][3Sg]:@R.VALENCE.TRNS@[Opt_PRS_2Sg_3Sg]   #; @R.VALENCE.TRNS@[V][Opt][PRS][2Sg][3Pl]:@R.VALENCE.TRNS@~f(i₁)ki         #; @R.VALENCE.TRNS@[V][Opt][PRS][2Sg][3Du]:@R.VALENCE.TRNS@~f(i₁)kek         #; ! 2Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][2Pl][3Sg]:@R.VALENCE.TRNS@@₁(i₁)teggu         #; @R.VALENCE.TRNS@[V][Opt][PRS][2Pl][3Pl]:@R.VALENCE.TRNS@@₁(i₁)teki       #; @R.VALENCE.TRNS@[V][Opt][PRS][2Pl][3Du]:@R.VALENCE.TRNS@@₁(i₁)tekek       #; ! 2Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][2Du][3Sg]:@R.VALENCE.TRNS@@₁(i₁)tegnegu       #; @R.VALENCE.TRNS@[V][Opt][PRS][2Du][3Pl]:@R.VALENCE.TRNS@@₁(i₁)tegneki    #; @R.VALENCE.TRNS@[V][Opt][PRS][2Du][3Du]:@R.VALENCE.TRNS@@₁(i₁)tegnekek    #; ! 2Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-!                               1st singular object                          |                               1st plural object                           |                               1st dual object                              |           |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][PRS][3Sg][1Sg]:@R.VALENCE.TRNS@@₁~flinga           #; @R.VALENCE.TRNS@[V][Opt][PRS][3Sg][1Pl]:@R.VALENCE.TRNS@@₁~flikut        #; @R.VALENCE.TRNS@[V][Opt][PRS][3Sg][1Du]:@R.VALENCE.TRNS@@₁~flikung        #; ! 3Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][3Pl][1Sg]:@R.VALENCE.TRNS@@₁~flitnga          #; @R.VALENCE.TRNS@[V][Opt][PRS][3Pl][1Pl]:@R.VALENCE.TRNS@@₁~flinkut       #; @R.VALENCE.TRNS@[V][Opt][PRS][3Pl][1Du]:@R.VALENCE.TRNS@@₁~flinkung       #; ! 3Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][3Du][1Sg]:@R.VALENCE.TRNS@@₁~flignenga        #; @R.VALENCE.TRNS@[V][Opt][PRS][3Du][1Pl]:@R.VALENCE.TRNS@@₁~flinkut       #; @R.VALENCE.TRNS@[V][Opt][PRS][3Du][1Du]:@R.VALENCE.TRNS@@₁~flinkung       #; ! 3Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-!                                                                            |                                                                           |                                                                            | ! 1Sg SBJ |
-!                                                                            |                                                                           |                                                                            | ! 1Pl SBJ |
-!                                                                            |                                                                           |                                                                            | ! 1Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][PRS][2Sg][1Sg]:@R.VALENCE.TRNS@~f(i₁)nga           #; @R.VALENCE.TRNS@[V][Opt][PRS][2Sg][1Pl]:@R.VALENCE.TRNS@~f(i₁)kut        #; @R.VALENCE.TRNS@[V][Opt][PRS][2Sg][1Du]:@R.VALENCE.TRNS@~f(i₁)kung        #; ! 2Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][2Pl][1Sg]:@R.VALENCE.TRNS@@₁(i₁)tengnga       #; @R.VALENCE.TRNS@[V][Opt][PRS][2Pl][1Pl]:@R.VALENCE.TRNS@@₁(i₁)tekut      #; @R.VALENCE.TRNS@[V][Opt][PRS][2Pl][1Du]:@R.VALENCE.TRNS@@₁(i₁)tekung      #; ! 2Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][2Du][1Sg]:@R.VALENCE.TRNS@@₁(i₁)tegnenga      #; @R.VALENCE.TRNS@[V][Opt][PRS][2Du][1Pl]:@R.VALENCE.TRNS@@₁(i₁)tegnekut   #; @R.VALENCE.TRNS@[V][Opt][PRS][2Du][1Du]:@R.VALENCE.TRNS@@₁(i₁)tegnekung   #; ! 2Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-!                               2nd singular object                          |                               2nd plural object                           |                               2nd dual object                              |           |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][PRS][3Sg][2Sg]:@R.VALENCE.TRNS@~flaten             #; @R.VALENCE.TRNS@[V][Opt][PRS][3Sg][2Pl]:@R.VALENCE.TRNS@~flisi           #; @R.VALENCE.TRNS@[V][Opt][PRS][3Sg][2Du]:@R.VALENCE.TRNS@~flistek          #; ! 3Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][3Pl][2Sg]:@R.VALENCE.TRNS@~flaten             #; @R.VALENCE.TRNS@[V][Opt][PRS][3Pl][2Pl]:@R.VALENCE.TRNS@~flisi           #; @R.VALENCE.TRNS@[V][Opt][PRS][3Pl][2Du]:@R.VALENCE.TRNS@~flistek          #; ! 3Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][3Du][2Sg]:@R.VALENCE.TRNS@~flaten             #; @R.VALENCE.TRNS@[V][Opt][PRS][3Du][2Pl]:@R.VALENCE.TRNS@~flisi           #; @R.VALENCE.TRNS@[V][Opt][PRS][3Du][2Du]:@R.VALENCE.TRNS@~flistek          #; ! 3Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][PRS][1Sg][2Sg]:@R.VALENCE.TRNS@~flaken             #; @R.VALENCE.TRNS@[V][Opt][PRS][1Sg][2Pl]:@R.VALENCE.TRNS@~flamsi          #; @R.VALENCE.TRNS@[V][Opt][PRS][1Sg][2Du]:@R.VALENCE.TRNS@~flamtek          #; ! 1Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][1Pl][2Sg]:@R.VALENCE.TRNS@~flaken             #; @R.VALENCE.TRNS@[V][Opt][PRS][1Pl][2Pl]:@R.VALENCE.TRNS@~flamsi          #; @R.VALENCE.TRNS@[V][Opt][PRS][1Pl][2Du]:@R.VALENCE.TRNS@~flamtek          #; ! 1Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][PRS][1Du][2Sg]:@R.VALENCE.TRNS@~flaken             #; @R.VALENCE.TRNS@[V][Opt][PRS][1Du][2Pl]:@R.VALENCE.TRNS@~flamsi          #; @R.VALENCE.TRNS@[V][Opt][PRS][1Du][2Du]:@R.VALENCE.TRNS@~flamtek          #; ! 1Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-!                                                                            |                                                                           |                                                                            | ! 2Sg SBJ |
-!                                                                            |                                                                           |                                                                            | ! 2Pl SBJ |
-!                                                                            |                                                                           |                                                                            | ! 2Du SBJ |
-! ---------------------------------------------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|-----------|
-
-
-! -------------------------------------------------------------|
-!        Intransitive Optative Mood Endings (Negative)         |
-! -------------------------------------------------------------|-----------|
-!                                                              | ! 3Sg SBJ |
-!                                                              | ! 3Pl SBJ |
-!                                                              | ! 3Du SBJ |
-! -------------------------------------------------------------|-----------|
-!                                                              | ! 1Sg SBJ |
-!                                                              | ! 1Pl SBJ |
-!                                                              | ! 1Du SBJ |
-! -------------------------------------------------------------|-----------|
-@R.VALENCE.INTR@[V][Opt][NEG][2Sg]:@R.VALENCE.INTR@–fqaavek   #; ! 2Sg SBJ |
-@R.VALENCE.INTR@[V][Opt][NEG][2Pl]:@R.VALENCE.INTR@–fqaafsi   #; ! 2Pl SBJ |
-@R.VALENCE.INTR@[V][Opt][NEG][2Du]:@R.VALENCE.INTR@–fqaaftek  #; ! 2Du SBJ |
-! -------------------------------------------------------------|-----------|
-
-! ---------------------------------------------------------------|
-!          Transitive Optative Mood Endings (Negative)           |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|
-!                        3rd singular object                     |                            3rd plural object                      |                                3rd dual object                       |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                                                                |                                                                   |                                                                      | ! 3Sg SBJ |
-!                                                                |                                                                   |                                                                      | ! 3Pl SBJ |
-!                                                                |                                                                   |                                                                      | ! 3Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                                                                |                                                                   |                                                                      | ! 1Sg SBJ |
-!                                                                |                                                                   |                                                                      | ! 1Pl SBJ |
-!                                                                |                                                                   |                                                                      | ! 1Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][NEG][2Sg][3Sg]:@R.VALENCE.TRNS@–fqaan  #; @R.VALENCE.TRNS@[V][Opt][NEG][2Sg][3Pl]:@R.VALENCE.TRNS@–fqiita  #; @R.VALENCE.TRNS@[V][Opt][NEG][2Sg][3Du]:@R.VALENCE.TRNS@–fqaagkenka #; ! 2Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][NEG][2Pl][3Sg]:@R.VALENCE.TRNS@–fqaan  #; @R.VALENCE.TRNS@[V][Opt][NEG][2Pl][3Pl]:@R.VALENCE.TRNS@–fqiita  #; @R.VALENCE.TRNS@[V][Opt][NEG][2Pl][3Du]:@R.VALENCE.TRNS@–fqaagkenka #; ! 2Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][NEG][2Du][3Sg]:@R.VALENCE.TRNS@–fqaan  #; @R.VALENCE.TRNS@[V][Opt][NEG][2Du][3Pl]:@R.VALENCE.TRNS@–fqiita  #; @R.VALENCE.TRNS@[V][Opt][NEG][2Du][3Du]:@R.VALENCE.TRNS@–fqaagkenka #; ! 2Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                        1st singular object                     |                            1st plural object                      |                                1st dual object                       |           |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                                                                |                                                                   |                                                                      | ! 3Sg SBJ |
-!                                                                |                                                                   |                                                                      | ! 3Pl SBJ |
-!                                                                |                                                                   |                                                                      | ! 3Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                                                                |                                                                   |                                                                      | ! 1Sg SBJ |
-!                                                                |                                                                   |                                                                      | ! 1Pl SBJ |
-!                                                                |                                                                   |                                                                      | ! 1Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-@R.VALENCE.TRNS@[V][Opt][NEG][2Sg][1Sg]:@R.VALENCE.TRNS@–fqaama #; @R.VALENCE.TRNS@[V][Opt][NEG][2Sg][1Pl]:@R.VALENCE.TRNS@–fqaamta #; @R.VALENCE.TRNS@[V][Opt][NEG][2Sg][1Du]:@R.VALENCE.TRNS@–fqaamtung  #; ! 2Sg SBJ |
-@R.VALENCE.TRNS@[V][Opt][NEG][2Pl][1Sg]:@R.VALENCE.TRNS@–fqaama #; @R.VALENCE.TRNS@[V][Opt][NEG][2Pl][1Pl]:@R.VALENCE.TRNS@–fqaamta #; @R.VALENCE.TRNS@[V][Opt][NEG][2Pl][1Du]:@R.VALENCE.TRNS@–fqaamtung  #; ! 2Pl SBJ |
-@R.VALENCE.TRNS@[V][Opt][NEG][2Du][1Sg]:@R.VALENCE.TRNS@–fqaama #; @R.VALENCE.TRNS@[V][Opt][NEG][2Du][1Pl]:@R.VALENCE.TRNS@–fqaamta #; @R.VALENCE.TRNS@[V][Opt][NEG][2Du][1Du]:@R.VALENCE.TRNS@–fqaamtung  #; ! 2Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                        2nd singular object                     |                            2nd plural object                      |                                2nd dual object                       |           |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                                                                |                                                                   |                                                                      | ! 3Sg SBJ |
-!                                                                |                                                                   |                                                                      | ! 3Pl SBJ |
-!                                                                |                                                                   |                                                                      | ! 3Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                                                                |                                                                   |                                                                      | ! 1Sg SBJ |
-!                                                                |                                                                   |                                                                      | ! 1Pl SBJ |
-!                                                                |                                                                   |                                                                      | ! 1Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
-!                                                                |                                                                   |                                                                      | ! 2Sg SBJ |
-!                                                                |                                                                   |                                                                      | ! 2Pl SBJ |
-!                                                                |                                                                   |                                                                      | ! 2Du SBJ |
-! ---------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------|-----------|
 
 
 ! -----------------------------------------------------------------------------|
@@ -5968,6 +5845,14 @@ LEXICON VerbTenseInfl
 
 
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                    !!!
+!!!      Person-Number Inflection      !!!
+!!!                                    !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 LEXICON IntransitiveIndicativeParticipial
 !---------|--------------|-------------|
 [3Sg]:q  #; [1Sg]:nga   #; [2Sg]:ten  #;
@@ -6017,7 +5902,6 @@ LEXICON IntransitiveInterrogative
                                         [2Du]:~sf(e)staak #;
 !----------------|--------------------|--------------------|
 
-
 LEXICON TransitiveInterrogative
 ! -------------------------|----------------------------|-----------------------------|
 [3Sg][3Sg]:~f(g/t)agu     #; [3Sg][3Pl]:~f(g/t)aki     #; [3Sg][3Du]:~f(g/t)akek     #;
@@ -6057,6 +5941,99 @@ LEXICON TransitiveInterrogative
 !                          |                            |                             | 
 !                          |                            |                             | 
 ! -------------------------|----------------------------|-----------------------------|
+
+
+LEXICON IntransitiveOptativePresent
+!--------------|-----------------------|----------------------|
+[3Sg]:@₁~fli  #; [1Sg]:@₁~flanga      #; [2Sg]:[Opt_PRS_2Sg] #;
+[3Pl]:@₁~flit #; [1Pl]:~sf%:(e)lta    #; [2Pl]:@₁(i₂)tek     #;
+[3Du]:@₁~flik #; [1Du]:~sf%:(e)ltung  #; [2Du]:@₁(i₂)tek     #;
+!--------------|-----------------------|----------------------|
+
+LEXICON TransitiveOptativePresent
+! ------------------------------|------------------------------|-------------------------------|
+[3Sg][3Sg]:@₁~fligu            #; [3Sg][3Pl]:@₁~fliki         #; [3Sg][3Du]:@₁~flikek         #;
+[3Pl][3Sg]:@₁~flitgu           #; [3Pl][3Pl]:@₁~flitki        #; [3Pl][3Du]:@₁~flitkek        #;
+[3Du][3Sg]:@₁~flignegu         #; [3Du][3Pl]:@₁~fligneki      #; [3Du][3Du]:@₁~flignekek      #;
+! ------------------------------|------------------------------|-------------------------------|
+[1Sg][3Sg]:@₁~flakun           #; [1Sg][3Pl]:@₁~flangi        #; [1Sg][3Du]:@₁~flangak        #;
+[1Pl][3Sg]:~sf%:(e)lteggu      #; [1Pl][3Pl]:~sf%:(e)lteki    #; [1Pl][3Du]:~sf%:(e)ltekek    #;
+[1Du][3Sg]:~sf%:(e)ltegnegu    #; [1Du][3Pl]:~sf%:(e)ltegneki #; [1Du][3Du]:~sf%:(e)ltegnekek #;
+! ------------------------------|------------------------------|-------------------------------|
+[2Sg][3Sg]:[Opt_PRS_2Sg_3Sg]   #; [2Sg][3Pl]:~f(i₁)ki         #; [2Sg][3Du]:~f(i₁)kek         #;
+[2Pl][3Sg]:@₁(i₁)teggu         #; [2Pl][3Pl]:@₁(i₁)teki       #; [2Pl][3Du]:@₁(i₁)tekek       #;
+[2Du][3Sg]:@₁(i₁)tegnegu       #; [2Du][3Pl]:@₁(i₁)tegneki    #; [2Du][3Du]:@₁(i₁)tegnekek    #;
+! ------------------------------|------------------------------|-------------------------------|
+[3Sg][1Sg]:@₁~flinga           #; [3Sg][1Pl]:@₁~flikut        #; [3Sg][1Du]:@₁~flikung        #;
+[3Pl][1Sg]:@₁~flitnga          #; [3Pl][1Pl]:@₁~flinkut       #; [3Pl][1Du]:@₁~flinkung       #;
+[3Du][1Sg]:@₁~flignenga        #; [3Du][1Pl]:@₁~flinkut       #; [3Du][1Du]:@₁~flinkung       #;
+! ------------------------------|------------------------------|-------------------------------|
+!                               |                              |                               |
+!                               |                              |                               |
+!                               |                              |                               |
+! ------------------------------|------------------------------|-------------------------------|
+[2Sg][1Sg]:~f(i₁)nga           #; [2Sg][1Pl]:~f(i₁)kut        #; [2Sg][1Du]:~f(i₁)kung        #;
+[2Pl][1Sg]:@₁(i₁)tengnga       #; [2Pl][1Pl]:@₁(i₁)tekut      #; [2Pl][1Du]:@₁(i₁)tekung      #;
+[2Du][1Sg]:@₁(i₁)tegnenga      #; [2Du][1Pl]:@₁(i₁)tegnekut   #; [2Du][1Du]:@₁(i₁)tegnekung   #;
+! ------------------------------|------------------------------|-------------------------------|
+[3Sg][2Sg]:~flaten             #; [3Sg][2Pl]:~flisi           #; [3Sg][2Du]:~flistek          #;
+[3Pl][2Sg]:~flaten             #; [3Pl][2Pl]:~flisi           #; [3Pl][2Du]:~flistek          #;
+[3Du][2Sg]:~flaten             #; [3Du][2Pl]:~flisi           #; [3Du][2Du]:~flistek          #;
+! ------------------------------|------------------------------|-------------------------------|
+[1Sg][2Sg]:~flaken             #; [1Sg][2Pl]:~flamsi          #; [1Sg][2Du]:~flamtek          #;
+[1Pl][2Sg]:~flaken             #; [1Pl][2Pl]:~flamsi          #; [1Pl][2Du]:~flamtek          #;
+[1Du][2Sg]:~flaken             #; [1Du][2Pl]:~flamsi          #; [1Du][2Du]:~flamtek          #;
+! ------------------------------|------------------------------|-------------------------------|
+!                               |                              |                               |
+!                               |                              |                               |
+!                               |                              |                               |
+! ------------------------------|------------------------------|-------------------------------|
+
+LEXICON IntransitiveOptativeNegative
+!--------------|--------------|--------------|
+                                [2Sg]:vek   #;
+                                [2Pl]:fsi   #;
+                                [2Du]:ftek  #;
+!--------------|--------------|--------------|
+
+LEXICON TransitiveOptativeNegative
+!-------------------|----------------------|-------------------------|
+!                   |                      |                         |
+!                   |                      |                         |
+!                   |                      |                         |
+!-------------------|----------------------|-------------------------|
+!                   |                      |                         |
+!                   |                      |                         |
+!                   |                      |                         |
+!-------------------|----------------------|-------------------------|
+[2Sg][3Sg]:–fqaan  #; [2Sg][3Pl]:–fqiita  #; [2Sg][3Du]:–fqaagkenka #;
+[2Pl][3Sg]:–fqaan  #; [2Pl][3Pl]:–fqiita  #; [2Pl][3Du]:–fqaagkenka #;
+[2Du][3Sg]:–fqaan  #; [2Du][3Pl]:–fqiita  #; [2Du][3Du]:–fqaagkenka #;
+!-------------------|----------------------|-------------------------|
+!                   |                      |                         |
+!                   |                      |                         |
+!                   |                      |                         |
+!-------------------|----------------------|-------------------------|
+!                   |                      |                         |
+!                   |                      |                         |
+!                   |                      |                         |
+!-------------------|----------------------|-------------------------|
+[2Sg][1Sg]:–fqaama #; [2Sg][1Pl]:–fqaamta #; [2Sg][1Du]:–fqaamtung  #;
+[2Pl][1Sg]:–fqaama #; [2Pl][1Pl]:–fqaamta #; [2Pl][1Du]:–fqaamtung  #;
+[2Du][1Sg]:–fqaama #; [2Du][1Pl]:–fqaamta #; [2Du][1Du]:–fqaamtung  #;
+!-------------------|----------------------|-------------------------|
+!                   |                      |                         |
+!                   |                      |                         |
+!                   |                      |                         |
+!-------------------|----------------------|-------------------------|
+!                   |                      |                         |
+!                   |                      |                         |
+!                   |                      |                         |
+!-------------------|----------------------|-------------------------|
+!                   |                      |                         |
+!                   |                      |                         |
+!                   |                      |                         |
+!-------------------|----------------------|-------------------------|
 
 
 
