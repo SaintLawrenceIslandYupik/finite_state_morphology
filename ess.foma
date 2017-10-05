@@ -184,9 +184,11 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
                                       [  q | k ] -> kw  || [ kw | w   ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> q   || [ q  | gh ("*") ] MorphemeBoundary ("~f") "–" _ \WordBoundary ∘
-                                               C -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
-									      gh "*" -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
-                                             "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
+            C MorphemeBoundary "~f" -> MorphemeBoundary || _ "–"  ∘
+       gh "*" MorphemeBoundary "~f" -> MorphemeBoundary || _ "–"  ∘
+                                               C -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
+									      gh "*" -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
+                                             "–" -> 0   || WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
 
 define teDropping "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* _          ∘
                   t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
@@ -233,11 +235,11 @@ define AlternativeForms "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C)
                         "@₁" "–" ng h i t e "*" "*" MorphemeBoundary "@₁~flu/na" t a    -> MorphemeBoundary "–" g p e n a a m t a    ∘
                         "@₁" "–" ng h i t e "*" "*" MorphemeBoundary "@₁~flu/na" t u ng -> MorphemeBoundary "–" g p e n a a m t u ng ∘
                         "@₁" "–" ng h i t e "*" "*" MorphemeBoundary "@₁~flu/na"        -> MorphemeBoundary "–" g p e n a            ∘
-                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na" k u   -> MorphemeBoundary "~f" "–" ng u n a a n         ∘
-                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na" t e n -> MorphemeBoundary "~f" "–" ng u n a ng          ∘
-                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na" t a   -> MorphemeBoundary "~f" "–" ng u n a a m t a     ∘
+                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na" k u    -> MorphemeBoundary "~f" "–" ng u n a a n        ∘
+                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na" t e n  -> MorphemeBoundary "~f" "–" ng u n a ng         ∘
+                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na" t a    -> MorphemeBoundary "~f" "–" ng u n a a m t a    ∘
                       "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na" t u ng -> MorphemeBoundary "~f" "–" ng u n a a m t u ng ∘
-                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na"  -> MorphemeBoundary "~f" "–" ng u n a                  ∘
+                      "~" ":" "(ng₁)" i t e "*" "*" MorphemeBoundary "@₁~flu/na"        -> MorphemeBoundary "~f" "–" ng u n a            ∘
                         "@₁~flu/na" k u -> n a a n            || t e "*" MorphemeBoundary _  ∘
                         "@₁~flu/na" t e n -> n a ng           || t e "*" MorphemeBoundary _  ∘
                         "@₁~flu/na" t a -> n a a m t a        || t e "*" MorphemeBoundary _  ∘
