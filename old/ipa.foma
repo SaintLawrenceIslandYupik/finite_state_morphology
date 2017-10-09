@@ -1,0 +1,115 @@
+def USIPA [ {i}:{i}       |
+             {u}:{u}       |
+             {ə}:{e}       |
+             {ɑ}:{a}       |
+             {p}:{p}       |
+             {t}:{t}       |
+             {k}:{k}       |
+             {kʷ}:{kw}     |
+             {q}:{q}       |
+             {qʷ}:{qw}     |
+             {v}:{v}       |
+             {l}:{l}       |
+             {z}:{z}       |
+             {j}:{y}       |
+             {ɻ}:{r}       |
+             {ɣ}:{g}       |
+             {ɣʷ}:{w}      |
+             {ʁ}:{gh}      |
+             {ʁʷ}:{ghw}    |
+             {f}:{f}       |
+             {ɬ}:{ll}      |
+             {s}:{s}       |
+             {ʂ}:{rr}      |
+             {x}:{gg}      |
+             {xʷ}:{wh}     |
+             {χ}:{ghh}     |
+             {χʷ}:{ghhw}   |
+             {h}:{h}       |
+             {m}:{m}       |
+             {n}:{n}       |
+             {ŋ}:{ng}      |
+             {ŋʷ}:{ngw}    |
+             {m̥}:{mm}     |
+             {n̥}:{nn}     |
+             {ŋ̊}:{ngng}   |
+             {ŋ̊ʷ}:{ngngw} 
+           ];
+
+def UStoIPA [USIPA.r <-@].r ;
+!push UStoIPA
+!view
+!pop
+
+
+
+def RUIPA [ {i}:{и}       |
+            {u}:{y}       |
+            {ə}:{ы}       |
+            {ɑ}:{а}       |
+            {p}:{п}       |
+            {t}:{т}       |
+            {k}:{к}       |
+            {kʷ}:{кӱ}     |
+            {q}:{қ}       |
+            {qʷ}:{қӱ}     |
+            {v}:{в}       |
+            {l}:{л}       |
+            {z}:{з}       |
+            {j}:{ӥ}       |
+            {ɻ}:{р}       |
+            {ɣ}:{г}       |
+            {ɣʷ}:{ӱ}      |
+            {ʁ}:{ӷ}       |
+            {ʁʷ}:{ӷӱ}     |
+            {f}:{ф}       |
+            {ɬ}:{ль}      |
+            {s}:{с}       |
+            {ʂ}:{ш}       |
+            {x}:{х}       |
+            {xʷ}:{хӱ}     |
+            {χ}:{ҳ}       |
+            {χʷ}:{ҳӱ}     |
+            {h}:{г}       |
+            {m}:{м}       |
+            {n}:{н}       |
+            {ŋ}:{ң}       |
+            {ŋʷ}:{ңӱ}     |
+            {m̥}:{мь}     |
+            {n̥}:{нь}     |
+            {ŋ̊}:{ңь}     |
+            {ŋ̊ʷ}:{ңьӱ} 
+          ];
+
+!push RUIPA
+!regex RUIPA ;
+
+
+
+regex UStoIPA ;
+!push UStoIPA
+save stack us2ipa.fomabin
+!view
+pop
+!
+regex [RUIPA]+ ;
+!view
+save stack ru2ipa.fomabin
+pop
+
+regex [RUIPA.i]+ ;
+!view
+save stack ipa2ru.fomabin
+pop
+
+regex [RUIPA.i .o. UStoIPA]+ ;
+save stack en2ru.fomabin
+pop
+!apply down ata
+
+!regex UStoIPA  ;
+!push UStoRU
+!apply up ata
+
+
+
