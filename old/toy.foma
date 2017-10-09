@@ -160,7 +160,7 @@ define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"   
                   "~f" -> 0 || WordBoundary Alphabet* MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
 
 define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
-                    "~h" -> 0   || V C V C e MorphemeBoundary _                         ∘  ! does not drop e if base contains multiple syllables
+                    "~h" -> 0   || [ C | V ] C V C e MorphemeBoundary _                 ∘  ! does not drop e if base contains multiple syllables
 				    "~h" -> "~" || WordBoundary Alphabet* MorphemeBoundary _            ;  ! otherwise drop e
 
 define InterConsonantalE "(e)" -> e || C MorphemeBoundary (":") _  ∘  ! convert (e) to e when following a consonant
@@ -177,10 +177,10 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
                                       [ gh | g ] -> wh  || w   MorphemeBoundary ("~f") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘
                                       [ gh | g ] -> w   || w   MorphemeBoundary ("~f") "–" _        ∘
                                       [ gh | g ] -> ghw || ghw MorphemeBoundary ("~f") "–" _        ∘
-                                      [  q | k ] -> q   || [ q  | gh  ] MorphemeBoundary ("~f") "–" _ \WordBoundary ∘
                                       [  q | k ] -> qw  || [ qw | ghw ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> kw  || [ kw | w   ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] MorphemeBoundary ("~f") "–" _  ∘
+                                      [  q | k ] -> q   || [ q  | gh ("*") ] MorphemeBoundary ("~f") "–" _ \WordBoundary ∘
                                                C -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
 									      gh "*" -> 0   ||  _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   ||  WordBoundary Alphabet* MorphemeBoundary (MorphPhonSymbols*) _  ;
@@ -294,8 +294,8 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
 define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
                            k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
                                      h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
-                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ;
-							                         !["(g/t)" | "(g)"] -> w || a u MorphemeBoundary MorphemeBoundary MorphPhonSymbols* _ ;
+                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
+                                   ["(g/t)" | "(g₁)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u]  ;
 
 define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels
 
@@ -330,7 +330,7 @@ define MultipleForms "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
 !!!                          !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-define ClusterDevoicing k -> q || gh _ Alphabet* ∘
+define ClusterDevoicing k -> q || gh _ ∘
                         y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
                         y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
                         t [z | y] -> s                                           ∘ ! tz/ty cluster becomes s
@@ -373,103 +373,7 @@ define Rules [
 	MultipleForms                  ∘
 	InsertMorphBoundary            ∘
 	AlternativeForms               ∘
-	!! ITERATION 1 !!
-    JunctureGraphemeInsertion      ∘
-	teDropping                     ∘
-	NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
-    UvularDropping                 ∘
-	VelarUvularRounding            ∘
-    FinalE                         ∘
-	TripleVowelCluster             ∘
-    VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 2 !!
-    JunctureGraphemeInsertion      ∘
-	teDropping                     ∘
-	NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
-    UvularDropping                 ∘
-	VelarUvularRounding            ∘
-    FinalE                         ∘
-	TripleVowelCluster             ∘
-    VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
 	!! ITERATION 3 !!
-    JunctureGraphemeInsertion      ∘
-	teDropping                     ∘
-	NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
-    UvularDropping                 ∘
-	VelarUvularRounding            ∘
-    FinalE                         ∘
-	TripleVowelCluster             ∘
-    VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 4 !!
-    JunctureGraphemeInsertion      ∘
-	teDropping                     ∘
-	NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
-    UvularDropping                 ∘
-	VelarUvularRounding            ∘
-    FinalE                         ∘
-	TripleVowelCluster             ∘
-    VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 5 !!
-    JunctureGraphemeInsertion      ∘
-	teDropping                     ∘
-	NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
-    UvularDropping                 ∘
-	VelarUvularRounding            ∘
-    FinalE                         ∘
-	TripleVowelCluster             ∘
-    VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 6 !!
-    JunctureGraphemeInsertion      ∘
-	teDropping                     ∘
-	NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
-    UvularDropping                 ∘
-	VelarUvularRounding            ∘
-    FinalE                         ∘
-	TripleVowelCluster             ∘
-    VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 7 !!
     JunctureGraphemeInsertion      ∘
 	teDropping                     ∘
 	NoHopNoDropE                   ∘
@@ -491,6 +395,6 @@ define Rules [
 ] ;
 
 
-define Grammar [ Rules ] ;
+define Grammar [ Exceptions .P. Rules ] ;
 push Grammar
 pairs
