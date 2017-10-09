@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES="end-of-chapt-exercises"
+FILES="volume1.gold.ess"
 
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
@@ -23,20 +23,20 @@ for file in "$FILES"/*.in; do
 		done
 		printf '%s\n' '------------------------'
 
-	done <"$file" > "$output".out
+	done <"$file" > "$output"
 done
 
 
 # Prints all words that were not successfully parsed
 for file in "$FILES"/*.out; do
 
-	filename=$(echo "$file") # | cut -d"/" -f8 | cut -d\. -f1)
+	filename=${file%.in}
 
 	while IFS= read -r line; do
 		if [[ $line == *"?" ]]; then
 			echo "$filename: $line"
 		fi
-	done <"$file"
+	done <"$file" > "$filename".errors 
 done
 
 
