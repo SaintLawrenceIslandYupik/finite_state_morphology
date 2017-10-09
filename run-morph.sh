@@ -1,12 +1,16 @@
 #!/bin/bash
 
-FILES="/home/emily/Documents/qual2018/analyzer-output/volume1_gold_txt"
+FILES="end-of-chapt-exercises"
+
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
 for file in "$FILES"/*.in; do
 
-	output=$(echo "$file") # | cut -d"/" -f8 | cut -d\. -f1)
-			 
+	output=${file%.in}.out
+
+
+	echo "Processing ${file} to create ${output}..."
+
 	while IFS= read -r line; do
 		sent=$(echo "$line" | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]')
 
@@ -14,7 +18,7 @@ for file in "$FILES"/*.in; do
 
 		printf '%s\n\n' "$line" | sed 's/\t/ /g'
 		for word in "${a[@]}"; do
-			echo "$word" | flookup -w "" ../ess.fomabin
+			echo "$word" | flookup -w "" ./ess.fomabin
 			printf "\n"
 		done
 		printf '%s\n' '------------------------'
@@ -34,3 +38,8 @@ for file in "$FILES"/*.out; do
 		fi
 	done <"$file"
 done
+
+
+
+
+#######
