@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES="analyzer_output/jac/ungipaghaghlanga"
+FILES="analyzer_output/jac.nn.rp/lore_volume1"
 
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
@@ -30,7 +30,7 @@ done
 # Prints all words that were not successfully parsed
 for file in "$FILES"/*.out; do
 
-	filename=${file%.in}
+	filename=${file%.out}
 
 	while IFS= read -r line; do
 		if [[ $line == *"?" ]]; then
