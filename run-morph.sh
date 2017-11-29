@@ -1,6 +1,7 @@
 #!/bin/bash
 
-FILES="analyzer_output/jac.nn.rp/lore_volume1"
+#FILES="analyzer_output/jac.nn.rp/lore_volume1"
+FILES="./test"
 
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
