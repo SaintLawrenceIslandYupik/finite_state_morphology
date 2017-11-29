@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES="volume1.gold.ess"
+FILES="analyzer_output/ungipaghaghlanga"
 
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
