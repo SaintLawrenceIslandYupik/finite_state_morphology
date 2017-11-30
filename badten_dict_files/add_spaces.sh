@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file="./just_particles.tsv"
+file="./verb_bases.txt"
 
 while IFS= read -r line; do
 
