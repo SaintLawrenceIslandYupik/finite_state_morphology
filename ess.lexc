@@ -141,6 +141,7 @@ egmiinaq              	#; ! hurry up; quickly
 ellmaaghaghhaq*       	#; ! a little bit more
 ellmaakwaaqun         	#; ! at some later time
 elngaatall            	#; ! very; very much
+elngaatall            	EncliticOrEnd; ! very; very much
 elngaatatlu           	#; ! very much also
 emta                  	#; ! this time act differently; for a change; instead; again
 en-nanaayuq           	#; ! maybe; perhaps
@@ -1130,7 +1131,7 @@ anuqligh                NounPostbase; ! for it to be windy
 anurga                 	NounPostbase; ! permanent or eternal ice or snow
 anusimingllaghagh      	NounPostbase; ! inmate of jail
 anusimingllaghvig      	NounPostbase; ! jail; prison
-anyene                	NounPostbase; ! onion
+anyena                	NounPostbase; ! onion
 apaavag                	NounPostbase; ! fishhook
 apaghyughlugh          	NounPostbase; ! greatgrandfather
 apalla                 	NounPostbase; ! vagina
@@ -1179,7 +1180,6 @@ aqimle                	NounPostbase; ! liquor; bottle (especially of liquor)
 aqimleghutagh          	NounPostbase; ! bottle
 aqlaghaghte           	NounPostbase; ! for weather to get cold
 aqlagha                	NounPostbase; ! cold air; coldness in the air
-aqlaghate*              NounPostbase; ! for it to get cold
 aqnighnegh             	NounPostbase; ! illness
 aqnistalghii           	NounPostbase; ! one who is easily hurt
 aqsaghmikute           	NounPostbase; ! back to back
@@ -1277,7 +1277,7 @@ atungagh               	NounPostbase; ! sole of boot
 atungag                	NounPostbase; ! hide of sea mammal (especially bearded seal); bearded seal or other sea mammal skin before it is dried
 atunraagh              	NounPostbase; ! skin of a young bearded seal 
 atuqumtaagh            	NounPostbase; ! thing that is frequently used
-atuun; atuuta          	NounPostbase; ! Eskimo song
+atuute           	    NounPostbase; ! Eskimo song
 Atuuylaap              	NounPostbase; ! Venus; the Evening Star
 atwhay                	NounPostbase; ! oh yes, now I remember what it was I wanted to say
 avaaneghllug           	NounPostbase; ! persistent unrelieved pain
@@ -5954,6 +5954,7 @@ aleghqumseghagh       	VerbIntr; ! to whisper; to joke; to tease; to speak light
 aleghqumseghagh       	VerbTrns; ! to whisper; to joke; to tease; to speak lightly (in any sense)
 aleghqumsug           	VerbIntr; ! to chat; to gossip
 aleghqumsug           	VerbTrns; ! to chat; to gossip
+aleghquute              VerbIntr; ! to talk together; to converse
 aleveghte             	VerbIntr; ! to want more
 aleveghte             	VerbTrns; ! to want more
 alevegh               	VerbIntr; ! to want more food
@@ -6433,6 +6434,8 @@ aqlaaghmig            	VerbIntr; ! to stir up a draft; to set air in motion; to 
 aqlaaghmig            	VerbTrns; ! to stir up a draft; to set air in motion; to emanate vapors
 aqlaghaghraag         	VerbIntr; ! to be somewhat cold
 aqlaghaghraag         	VerbTrns; ! to be somewhat cold
+aqlaghate*              VerbIntr; ! for it to get cold
+aqlaghate*              VerbTrns; ! for it to get cold
 aqlagh                	VerbIntr; ! to dry up after a rain (of ground)
 aqlagh                	VerbTrns; ! to dry up after a rain (of ground)
 aqnighmillaghqe       	VerbIntr; ! to suddenly start to hurting
@@ -6825,6 +6828,8 @@ epe                   	VerbIntr; ! to become stale; to become flat-tasting
 epe                   	VerbTrns; ! to become stale; to become flat-tasting
 esavghagh             	VerbIntr; ! to move boat on sea ice using small sled
 esavghagh             	VerbTrns; ! to move boat on sea ice using small sled
+esghaate                VerbIntr; ! to see something
+esghaate                VerbTrns; ! to see something
 esghaghlaataqu        	VerbIntr; ! to ignore the wishes of another because one can do so
 esghaghlaataqu        	VerbIntr; ! to look down on and act accordingly
 esghaghlaataqu        	VerbTrns; ! to ignore the wishes of another because one can do so
@@ -10883,6 +10888,7 @@ qiyaaghqe             	VerbIntr; ! to intentionally make one cry
 qiyaaghqe             	VerbTrns; ! to intentionally make one cry
 qiyaaghwagh           	VerbIntr; ! to cry very hard and long
 qiyaaghwagh           	VerbTrns; ! to cry very hard and long
+qiyaaqe                 VerbIntr; ! to be crying
 qiyamllagte           	VerbIntr; ! to whine; to whimper
 qiyamllagte           	VerbTrns; ! to whine; to whimper
 qiyanaruug            	VerbIntr; ! to be annoyed or hurt; to feel like crying
