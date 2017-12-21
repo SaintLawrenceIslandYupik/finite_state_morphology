@@ -1,12 +1,12 @@
 #!/bin/bash
 
-file="./verb_bases.txt"
+file="./nominalizing_formatted.txt"
 
 while IFS= read -r line; do
 
 	len=${#line}
-	padding=$((22 - $len))
+	padding=$((77 - $len))
 
-	printf '%-*s\n' 22 "$line"
+	printf '%-*s\n' 77 "$line"
 
 done<"$file"
