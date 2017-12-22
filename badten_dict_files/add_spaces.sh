@@ -1,12 +1,12 @@
 #!/bin/bash
 
-file="./nominalizing_formatted.txt"
+file="./3.txt"
 
 while IFS= read -r line; do
 
 	len=${#line}
-	padding=$((77 - $len))
+	padding=$((116 - $len))
 
-	printf '%-*s\n' 77 "$line"
+	printf '%-*s\n' 116 "$line"
 
 done<"$file"
