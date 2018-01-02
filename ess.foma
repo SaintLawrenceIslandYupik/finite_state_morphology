@@ -263,8 +263,8 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(pete)fte" -> f t e         MorphemeBoundary || V       _  ∘
                          "(g₂)"  -> g    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
                          "(g₃)"  -> g    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
-                         "(te)"  -> t e  || C ("*") _                                                   ∘
-                         "(te)"  -> 0    || V       _                                                   ∘
+                         "(te)"  -> t e  || C ("*") MorphemeBoundary _                                  ∘
+                         "(te)"  -> 0    || V       MorphemeBoundary _                                 ∘
                          "(i₁)"  -> i    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          "(i₂)"  -> i    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
                          "(i/u)" -> i    || t e MorphemeBoundary MorphPhonSymbols* _                    ∘
@@ -307,7 +307,7 @@ define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw |
                                      h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
                                    ["(g/t)" | "(g₁)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u]  ;
 
-define TripleVowelCluster V -> 0 || V _ V ;  ! delete the middle vowel in a cluster of three vowels
+define TripleVowelCluster V -> 0 || WordBoundary Alphabet* V _ V WordBoundary ;  ! delete the middle vowel in a cluster of three vowels
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -389,6 +389,7 @@ define Rules [
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
 	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
@@ -405,6 +406,7 @@ define Rules [
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
 	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
@@ -421,6 +423,7 @@ define Rules [
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
 	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
@@ -437,6 +440,7 @@ define Rules [
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
 	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
@@ -453,6 +457,7 @@ define Rules [
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
 	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
@@ -469,6 +474,7 @@ define Rules [
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
 	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
@@ -485,6 +491,24 @@ define Rules [
 	NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
 	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
+	FinalConsonantDropAssimilation ∘
+	WeakFinalC                     ∘
+	UnmarkStrongGh                 ∘
+	InterConsonantalE              ∘
+    UvularDropping                 ∘
+	VelarUvularRounding            ∘
+    FinalE                         ∘
+	TripleVowelCluster             ∘
+    VowelDominance                 ∘
+	CleanupMorphBoundary           ∘
+	!! ITERATION 8 !!
+	ResolveAllomorphy              ∘
+	ModifyTE                       ∘
+	NoHopNoDropE                   ∘
+    SemiAndFinalE                  ∘
+	SemiFinalE                     ∘
+	FinalVCDrop                    ∘
 	FinalConsonantDropAssimilation ∘
 	WeakFinalC                     ∘
 	UnmarkStrongGh                 ∘
