@@ -94,24 +94,7 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet* _ ;
 !!!                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-define RepetitionFilter ~[ ?* "-" i "[V→V]" "-" i "[V→V]"             ?* |
-						   ?* "-" i "[V→V]" "-" u "[V→V]"             ?* |
-						   ?* "––" i "[N→V]" "-" i "[V→V]"            ?* |
-						   ?* "––" i "[N→V]" "-" u "[V→V]"            ?* |
-						   ?* "––" i "[N→V]" "-" "~" i "[V→V]"        ?* | 
-                           ?* "––" i "[N→V]" "-" n "[V→N]" "-" "––" i ?* |
-						   ?* "––" {ii} "[N→V]" "-" i "[V→V]"         ?* |
-						   ?* "––" {ii} "[N→V]" "-" u "[V→V]"         ?* |
-						 ! ?* "––" {ii} "[N→V]" "-" "~" i "[V→V]"     ?* |
-						   ?* "-" "~" i "[V→V]" "-" i "[V→V]"         ?* |
-						   ?* "-" "~" i "[V→V]" "-" u "[V→V]"         ?* |
-						   ?* "-" "~" i "[V→V]" "-" "~" i "[V→V]"     ?* |
-                         ! ?* "-" {te} "[N→V]" "-" {te} "[V→V]"       ?* |
-                           ?* "-" {te} "[V→V]" "-" {te} "[V→V]"       ?* |
-						   ?* "-" u "[N→V]" "-" i "[V→V]"             ?* |
-						   ?* "-" u "[N→V]" "-" u "[V→V]"             ?* |
-						   ?* "-" u "[V→V]" "-" i "[V→V]"             ?* |
-						   ?* "-" u "[V→V]" "-" u "[V→V]"             ?* ];
+define PostbaseFilter ~[ ?* {te} "[V→V]" "-" {te} "[V→V]"   ?* ];
 
 define LghiiFilter ~[ ?* "-" "@₁" "–" {l} "gh" {ii} ?* [ "[SgPosd]" | "[PlPosd]" | "[DuPosd]" ] ?* ]; 
 
@@ -141,13 +124,13 @@ define UTeFilter ~[ ?* "~" ":" "(u)" {te} ?* [ "[3Sg]"     | "[3Pl]"     | "[3Du
                                                "[3SgPoss]" | "[3PlPoss]" | "[3DuPoss]" ] ?* ];
 
 define Filters [
-	!RepetitionFilter  ∘
+	PostbaseFilter    ∘
 	!LghiiFilter      ∘
     NeghMeghFilter    ∘
 	NegheMegheFilter  ∘
 	NgughFilter       
-	!SfGKaKeFilter     ∘ 
-	!UTaFilter         ∘
+	!SfGKaKeFilter    ∘ 
+	!UTaFilter        ∘
 	!UTeFilter
 ];
 
@@ -194,7 +177,7 @@ define WeakFinalC  gh   -> 0 || [ WordBoundary | C ] FullVowel _ MorphemeBoundar
 
 define UnmarkStrongGh gh "*" -> gh || WordBoundary Alphabet* MorphPhonSymbols* _ ;
 
-define FinalVCDrop V C -> 0 || WordBoundary Alphabet* _ MorphemeBoundary "––" ∘
+define FinalVCDrop V C -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "––" ∘
                   "––" -> 0                                                   ;
 
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoundary ("~f") "–" _   ∘
@@ -327,7 +310,7 @@ define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw |
                                      h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
                                    ["(g/t)" | "(g₁)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u]  ;
 
-define TripleVowelCluster V -> 0 || WordBoundary Alphabet* [ V - e ] MorphemeBoundary MorphPhonSymbols* _ V ; ! for [Ind][Trns]
+define TripleVowelCluster V -> 0 || WordBoundary Alphabet+ [ V - e ] MorphemeBoundary "~" "(g₁)" _ V ; ! for [Ind][Trns]
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
