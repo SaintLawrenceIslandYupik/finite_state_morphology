@@ -3,8 +3,8 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   [Abs] [Abl_Mod] [Equ] [Loc] [Rel] [Ter] [Via] [Intr] [Trns] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Sbrd] [Ptcp_Obl] [Cmpd_Vbl] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-                  @* @₁ @₂ ~sf ~f ~h -w –– (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a) (i/e)                  (s)
-                  ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
+                  @* @₁ @₂ ~sf ~f ~h -w –– (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a) (i/e) (s) (at)
+                  ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na ~f(a)ghesnagh/–qiinagh
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
 
@@ -257,7 +257,6 @@ kavighruggalek        	#; ! oh, what a pity!
 kavitun               	#; ! being red
 keka                  	#; ! ouch!
 kemkelleghaq          	#; ! food particle between teeth
-kemkiili-             	#; ! to pick one's teeth; remove food particle from between teeth
 kenlanga              	#; ! continuing from then, or until then
 kenlughmun            	#; ! instead; in the least expected way or place; by the least expected person; in a contrary or opposite way
 kerek                 	#; ! come! (to call puppy)
@@ -524,6 +523,7 @@ whaa maaten           	#; ! just now; right now
 whaawha               	#; ! at least; better than nothing; again and again
 whani                 	#; ! right here
 whanikun              	#; ! later on; in the evening
+whanistaaghhaq       	#; ! immediately
 whanistaaghhaq*       	#; ! immediately
 whaten                	#; ! like this; this way
 wiin                  	#; ! not yet; not now; still (not changing yet)
@@ -1268,7 +1268,7 @@ atneghagh              	NounPostbase; ! point of land; cape
 Atneghagh              	NounPostbase; ! site at Northwest Cape near Gambell
 atngaghute             	NounPostbase; ! woman's tattoo on the sides of her nose; front seam with piping on skinboot
 atngaghutagh           	NounPostbase; ! woman's tattoo on the sides of her nose; front seam with piping on skinboot
-atngaghutelek, atngaghutaleg	NounPostbase; ! dog with a "masked" face
+atngaghutaleg	        NounPostbase; ! dog with a "masked" face
 Atqalghhaaghmii(t)     	NounPostbase; ! a particular clan
 Atqallghagh            	NounPostbase; ! former village between Cape Stoletia and Cape Lesovskogo in Chukotka
 atugh                  	NounPostbase; ! useful thing; thing being used; singing
@@ -1317,6 +1317,7 @@ awalmig                	NounPostbase; ! husk (?)
 awani                  	NounPostbase; ! over there at a distance
 awataghpag             	NounPostbase; ! sealskin float or poke
 awataghpawaagh         	NounPostbase; ! cumulous cloud; acorn
+awatagh             	NounPostbase; ! sealskin float or poke
 awatangani             	NounPostbase; ! last year
 awata                  	NounPostbase; ! area on the other side; last year
 awatiiteg             	NounPostbase; ! twin looped anchor thong attached to flippers of a sealskin harpoonline float
@@ -1390,8 +1391,7 @@ ayuqlightagh           	NounPostbase; ! large boat used by mainland Alaskan Eski
 ayvegh                 	NounPostbase; ! walrus (Obodenus divergens)
 Ayveghyaget            	NounPostbase; ! old village site on the east side of presentday Gambell
 Ayvigtegh	            NounPostbase; ! Aivichtik River and Camp Iveetok at its mouth on St. Lawrence Is.
-Ayvigtegh              	NounPostbase; ! site on the coast east of Gambell
-Ayvigteq1             	NounPostbase; ! Aivichtik River and Camp Iveetok at its mouth on St. Lawrence Is.
+Ayvigtegh              	NounPostbase; ! site on the coast east of Gambell; Aivichtik River and Camp Iveetok at its mouth on St. Lawrence Is.
 Ayvikaate              	NounPostbase; ! Ivekan Mtn. on St. Lawrence Is.
 ayviquma               	NounPostbase; ! female walrus with calf or calves
 aywaa                  	NounPostbase; ! north; north side; the north
@@ -1420,11 +1420,11 @@ eghqaagh               	NounPostbase; ! redthroated loon (Gavia stellata)
 Egkughagh              	NounPostbase; ! site near Camp Collier (Kangii) before Southside River on St. Lawrence Is.
 egkugh                 	NounPostbase; ! back of room or land area; headwaters of river; inland part
 egllipa                	NounPostbase; ! Russian sourdough bread
-egllu, egllug         	NounPostbase; ! stove
+egllug         	        NounPostbase; ! stove
 egllu                  	NounPostbase; ! stove (dual, 'eglluk', generally used for one stove)
 egmightaatagh          	NounPostbase; ! competition (in singing, wrestling, etc.); contest
 egsug                  	NounPostbase; ! upper part of animal hide near scalp
-egtughyagh              	NounPostbase; ! legendary creature; lemminglike creature; sea-squirt-like creature
+egtughyagh              NounPostbase; ! legendary creature; lemminglike creature; sea-squirt-like creature
 egtugnegh              	NounPostbase; ! heartbeat; pulse
 egtug                  	NounPostbase; ! anxious
 egzi                   	NounPostbase; ! scratched part of walrus hide; dandruff
@@ -1515,7 +1515,6 @@ estiima                	NounPostbase; ! steam(boat)
 estiimaragh            	NounPostbase; ! steamboat; cutter
 estugagh               	NounPostbase; ! store
 estugagh*              	NounPostbase; ! store
-estugaq*              	NounPostbase; ! store
 estugem sigutanga      	NounPostbase; ! hangnail
 estuget                	NounPostbase; ! ice creeper
 estugh                 	NounPostbase; ! with legs stretched out
@@ -1613,7 +1612,8 @@ ighaluqagh             	NounPostbase; ! auklet aged in seal oil for eating
 igha                   	NounPostbase; ! disgusted; feeling aversion
 igherngu              	NounPostbase; ! uncomfortable, awkward, or embarrassed upon observing something that is too private, indecent or otherwise disquieting
 ighighaghiitagh        	NounPostbase; ! support to keep something from tilting
-ighighneq, ighighllegh 	NounPostbase; ! edge of ice that has been carried north by current, then pushed south; sea ice moved by current or wind to so that it collects in a bay or cove of land or of an ice field
+ighighnegh              NounPostbase; ! edge of ice that has been carried north by current, then pushed south; sea ice moved by current or wind to so that it collects in a bay or cove of land or of an ice field
+ighighllegh 	        NounPostbase; ! edge of ice that has been carried north by current, then pushed south; sea ice moved by current or wind to so that it collects in a bay or cove of land or of an ice field
 ighigh                 	NounPostbase; ! tilting (especially one's head)
 ighivgaayagh           	NounPostbase; ! evening flight of birds
 ighivgaghniimna        	NounPostbase; ! thing the same as that of yesterday; thing from yesterday
@@ -1894,6 +1894,7 @@ isavghagh              	NounPostbase; ! person moving a boat on sea ice using a 
 itagnaghhaleg         	NounPostbase; ! so fine!; so satisfactory!
 itagnatute             	NounPostbase; ! in a satisfactory way; satisfactorily; appropriately; acceptably
 itagtagh               	NounPostbase; ! something saved (as for later use or for a special occasion)
+iteg                  	NounPostbase; ! toecap of skinboot
 itegagh                	NounPostbase; ! foot 
 itegayaagh             	NounPostbase; ! slipper
 itegherqi              	NounPostbase; ! lunch; dinner
@@ -1998,15 +1999,13 @@ kaleftagh              	NounPostbase; ! small plain (running?) stitch
 kalere                	NounPostbase; ! color
 kalevnaq, kalefkagnagh 	NounPostbase; ! snow into which sled runners can sink while traveling
 kalile                	NounPostbase; ! dalmation dog
-kalile                 	NounPostbase; ! dalmatian dog
 kallagnegh             	NounPostbase; ! drumbeat; rhythm
 kalleghta              	NounPostbase; ! a certain ball game
 kallngugh              	NounPostbase; ! assembled; gathered
 kallug                 	NounPostbase; ! thunder
 kallugughte           	NounPostbase; ! for there to start to be thunder
 kalngagagh             	NounPostbase; ! storage bag; burlap sack; gunny sack
-kalngag                	NounPostbase; ! sealskin bag
-kalngag               	NounPostbase; ! shark
+kalngag                	NounPostbase; ! sealskin bag; shark
 kalngagtagh            	NounPostbase; ! backpack
 kalngapegagh           	NounPostbase; ! cloth bag
 kaluka                 	NounPostbase; ! large knife used for butchering whales
@@ -2129,7 +2128,7 @@ kellighinagh*          	NounPostbase; ! open water between ice in the ocean; pol
 kellii                 	NounPostbase; ! sea; ocean; the ocean
 kelli                  	NounPostbase; ! lustful; desiring
 kelugilngugh*          	NounPostbase; ! thin stitch
-Kelugnaate Naayvaa      	NounPostbase; ! Kiloknak Lagoon at east end of St. Lawrence Is.
+Kelugnaate Naayvaa      NounPostbase; ! Kiloknak Lagoon at east end of St. Lawrence Is.
 kelug                  	NounPostbase; ! stitch
 kelulghute             	NounPostbase; ! rope attached to the foundation of a winter house
 kelulighagh            	NounPostbase; ! beam in the frame of the aagra, the insulated inner room of traditional domeshaped house
@@ -2225,7 +2224,6 @@ kiigumigh             	NounPostbase; ! for there to be a heat wave during winter
 kiilqusigh             	NounPostbase; ! all summer
 kiingngwaag            	NounPostbase; ! game of tag
 kii                    	NounPostbase; ! wound
-kii                   	NounPostbase; ! wound
 kiipeklag              	NounPostbase; ! freckle
 Kiiteg                 	NounPostbase; ! Koozata River on St. Lawrence Is.
 kiitmig                	NounPostbase; ! lowbush cranberry (Vaccinium vitus-idaea)
@@ -2273,6 +2271,7 @@ kitum                  	NounPostbase; ! who? (relative case)
 Kiwatangaghmii(t)      	NounPostbase; ! a particular clan
 kiwavagh               	NounPostbase; ! eastnortheast
 kiyaghfig              	NounPostbase; ! house; dwelling; camp
+Kiyaghnegh             	NounPostbase; ! way of life; God
 kiyaghnegh             	NounPostbase; ! way of life; God
 kiyaghtaalleghqagh     	NounPostbase; ! everything necessary for living
 kiyaghute              	NounPostbase; ! pupil of eye
@@ -2419,7 +2418,7 @@ maaqfig                	NounPostbase; ! faucet; pipe (for liquid)
 maaqnegh               	NounPostbase; ! ocean current flowing from southwest to northeast
 maaqutellegh           	NounPostbase; ! mud in water
 maataghniimna          	NounPostbase; ! that one, the same one
-maatete ilangani        	NounPostbase; ! on one occasion; one time
+maatete ilangani        NounPostbase; ! on one occasion; one time
 maatenllaam            	NounPostbase; ! this time for sure
 maatenta              	NounPostbase; ! now you see!; there you have it!; I told you so!; I just told you
 maateqwaaqute          	NounPostbase; ! a little while from now; shortly
@@ -2593,7 +2592,7 @@ meraaghinagh           	NounPostbase; ! open water; nothing but water
 Meregta                	NounPostbase; ! Maruwtu Point site on St. Lawrence Is.
 Meregtemmii(t)         	NounPostbase; ! a particular clan
 mesag                  	NounPostbase; ! bog
-mesaqaaghaq*           	NounPostbase; ! snow bunting (Plectrophenax nivalis); white wagtail (Motacilla alba)
+mesaqaaghagh*           NounPostbase; ! snow bunting (Plectrophenax nivalis); white wagtail (Motacilla alba)
 mesiigh                	NounPostbase; ! oil; oil dip for food
 mesiighqusigh          	NounPostbase; ! kerosene
 mesiilghutagh          	NounPostbase; ! vessel for holding or storing oil; gas can; oil can
@@ -2689,11 +2688,10 @@ naayghaleketaagh       	NounPostbase; ! small hill with large rocks
 naayghiinagh           	NounPostbase; ! northwest
 Naayvaghllag           	NounPostbase; ! Koozata Lagoon on St. Lawrence Is.
 naayvagh               	NounPostbase; ! lake
-Naayvagh               	NounPostbase; ! Nayvak Lake just west of Old Chaplino (Ungaziq) in Chukotka
+Naayvagh               	NounPostbase; ! Nayvak Lake just west of Old Chaplino (Ungaziq) in Chukotka; Troutman Lake next to Gambell
 Naayvaghpag            	NounPostbase; ! Niyrakpak Lagoon on St. Lawrence Is.
 Naayvaghvig           	NounPostbase; ! October
 Naayvam kangii         	NounPostbase; ! site at western end of  Koozata Lagoon on St. Lawrence Is.
-Naayvagh              	NounPostbase; ! Troutman Lake next to Gambell
 naayviinagh            	NounPostbase; ! southsoutheast
 ne                    	NounPostbase; ! home; place; household; room of house; couple
 naflugh                	NounPostbase; ! joint; hinge; crack in ice
@@ -2710,7 +2708,7 @@ naghsagh               	NounPostbase; ! seal
 naghullgute            	NounPostbase; ! harpoon; harpoon rope
 naghuseghagh           	NounPostbase; ! hunting equipment
 naghuyaaghagh*         	NounPostbase; ! baby gull
-naghuya                	NounPostbase; ! gull; seagull (Larus sp.)
+naghuyagh               NounPostbase; ! gull; seagull (Larus sp.)
 naghuyapig             	NounPostbase; ! glaucous gull (Larus hyperboreus)
 nagnaaqute             	NounPostbase; ! fur trim around hem of parka
 nagsalghagh            	NounPostbase; ! obstacle
@@ -3106,7 +3104,7 @@ pakfalla               	NounPostbase; ! west
 pakignegh              	NounPostbase; ! greedy person; grabby person
 pakregnegh             	NounPostbase; ! narrow curved neck of a dried walrus stomach; duodenum; nonanatomical elbow
 pakreg                 	NounPostbase; ! curved carving knife
-palaghhagh              	NounPostbase; ! small amount
+palaghhagh              NounPostbase; ! small amount
 palaghyuketagh         	NounPostbase; ! one that is rude, inconsiderate, impolite
 palaqanite             	NounPostbase; ! lesser; little bit; not too much
 palatute               	NounPostbase; ! a little at a time
@@ -3116,6 +3114,7 @@ palluggnagh            	NounPostbase; ! rough water
 palughtagh             	NounPostbase; ! sea otter (Enhydra lutris); beaver (Castor canadensis)
 palutagh               	NounPostbase; ! brace (as used in making a skin boat)
 pamyughagh             	NounPostbase; ! tailbone; coccyx
+panaaghaq             	NounPostbase; ! toy, little or makeshift spear; peg used to anchor to the ice a walrus carcuss in water
 panalghuta             	NounPostbase; ! side pole in summer tent
 pana                   	NounPostbase; ! spear
 panellegh              	NounPostbase; ! ash; burned spot; scar from burning
@@ -3157,7 +3156,6 @@ pawiile               	NounPostbase; ! butt of gun
 payaaqe               	NounPostbase; ! calf of leg; woman's fancy kneehigh bleached sealskin boot
 paye                 	NounPostbase; ! outer part edge of opening; mouth of river, den or passageway; area near entrance; hatch of kayak; opening; dipnet made of baleen
 Payaghutfag            	NounPostbase; ! site on coast north from Powooiliak on St. Lawrence Is.
-payangite             	NounPostbase; ! for St. Lawrence Islanders to be visiting (Chukotka) or for Chukotkans to be visiting (St. Lawrence Island); people come over from the other side
 payeghmute             	NounPostbase; ! against the grain; facing eachother
 paye                   	NounPostbase; ! mouth (non-anatomical); hatch of kayak
 Pegetkagh              	NounPostbase; ! Kookoolik Hill on St. Lawrence Is.
@@ -3318,7 +3316,8 @@ pugsaqa                	NounPostbase; ! sea water thick with slush ice in late f
 Pugughileghmii(t)      	NounPostbase; ! a particular clan
 Pugughilegh            	NounPostbase; ! Powooiliak on St. Lawrence Is.; Southwest Cape site on St. Lawrence Is.
 Pugughillghagh         	NounPostbase; ! site on Kiveepuk Bay on St. Lawrence Is.
-pugughuq, pugughyi    	NounPostbase; ! fat on outside of stomach
+pugughugh               NounPostbase; ! fat on outside of stomach
+pugughyi    	        NounPostbase; ! fat on outside of stomach
 pugughyaagh            	NounPostbase; ! bird net used in winter
 pukanegh               	NounPostbase; ! foam; froth; suds
 pulataagh              	NounPostbase; ! a whale eating which then goes under the shore ice
@@ -3393,7 +3392,7 @@ qaamkat                	NounPostbase; ! large quantity, herd, or flock
 qaamlighnegh           	NounPostbase; ! embryo developing in a bird egg; egg yolk; inner part
 qaamna                 	NounPostbase; ! that one inside
 qaamtaasigh            	NounPostbase; ! fire extinguisher
-qaamte2               	NounPostbase; ! for weather to close in
+qaamte               	NounPostbase; ! for weather to close in
 qaa                   	NounPostbase; ! sore on head; impetigo
 qaanqaghte            	NounPostbase; ! blow right toward and through the door
 qaanragh               	NounPostbase; ! small sled used in pairs for hauling boats
@@ -3486,7 +3485,7 @@ qamiskagh              	NounPostbase; ! wood for building a sled
 qamislug              	NounPostbase; ! large makeshift sled pulled by a tractor or bulldozer
 qamiye                	NounPostbase; ! sled
 qamsuug                	NounPostbase; ! closed in weather with poor visibility
-qamsuugte1            	NounPostbase; ! for the weather to become poor with respect to visibility
+qamsuugte            	NounPostbase; ! for the weather to become poor with respect to visibility
 qamughagh              	NounPostbase; ! storebought toboggan
 qamugh                 	NounPostbase; ! pulled or dragged thing (especially a load of meat)
 qamughta               	NounPostbase; ! animal (dog, reindeer, etc.) used for pulling a sled or the like; draught animal
@@ -3669,7 +3668,6 @@ qepsukagh              	NounPostbase; ! point of land which defines a strait or 
 qeputagh               	NounPostbase; ! string; cord; rope
 qera                   	NounPostbase; ! aged whale skin (mangtak)
 qerenga                	NounPostbase; ! large old reindeer (in folktales)
-qergese               	NounPostbase; ! window
 qergese                	NounPostbase; ! window (dual, 'qergesek', generally used for one window)
 qergu                  	NounPostbase; ! dwarf Siberian pine (Pinus cembra)
 qerngayaag            	NounPostbase; ! field of broken sea ice pieces bunched together
@@ -3677,6 +3675,7 @@ qernguqu              	NounPostbase; ! birds flying together
 qertaaghnegh           	NounPostbase; ! large group of things, people or animals
 qerta                  	NounPostbase; ! matted tangled hair or fur
 qesemna               	NounPostbase; ! whetstone; rock used as whetstone; sharpening stone
+qesigh                  NounPostbase; ! spittle
 qesighnegh             	NounPostbase; ! condensation; perspiration
 qesiighagh             	NounPostbase; ! drizzle
 qesiighavleghagh       	NounPostbase; ! mist
@@ -3684,8 +3683,7 @@ qesillegh              	NounPostbase; ! spittle
 qesni                 	NounPostbase; ! female walrus breast with meat to be eaten
 qesug                 	NounPostbase; ! happy; excited; enjoying
 qetegh                 	NounPostbase; ! spinal area of a person; back of person
-qeteghrug              	NounPostbase; ! upper part of spinal area
-qeteghruk2            	NounPostbase; ! swim bladder of fish, dried and used to store fish eggs
+qeteghrug              	NounPostbase; ! upper part of spinal area; swim bladder of fish, dried and used to store fish eggs
 qetgaasigh             	NounPostbase; ! jumprope
 qetgaghta              	NounPostbase; ! playful bearded seal (Erignathus barbatus) pup that jumps out of the water
 qetgeghyagh            	NounPostbase; ! water strider insect
@@ -3746,8 +3744,7 @@ qilevri               	NounPostbase; ! thin, knotted, bent stem of the Lapland C
 qiliighnagh            	NounPostbase; ! desirable thing
 qilleghnegh            	NounPostbase; ! knot
 qilleghtagh            	NounPostbase; ! sheaf of grass
-qilleghtuqagh          	NounPostbase; ! sheath for harpoon point
-qilleghtuqaq2         	NounPostbase; ! knot at tend of rope to keep it from unraveling or slipping off  something
+qilleghtuqagh          	NounPostbase; ! sheath for harpoon point; knot at tend of rope to keep it from unraveling or slipping off  something
 qilleghvikuusagh       	NounPostbase; ! string with beads tied formerly onto new or special objects
 qillghutagh            	NounPostbase; ! tie rope, cord or string
 qilughru               	NounPostbase; ! the number eight (in a counting or finger naming jingle for children)
@@ -3779,7 +3776,8 @@ qivallekeltagh         	NounPostbase; ! low pressure ridge but still difficult t
 qivallug              	NounPostbase; ! large pressure ridge, hard to walk across (requires climbing up and down); sea ice that has not leveled off and has lots of pressure ridges
 qivenghag              	NounPostbase; ! sea ice field with piles of ice here and there
 Qiwaaghmii(t)          	NounPostbase; ! a particular clan
-Qiwaa, Qiwaagh         	NounPostbase; ! Kivak, former village in Chukotka
+Qiwaa                   NounPostbase; ! Kivak, former village in Chukotka
+Qiwaagh              	NounPostbase; ! Kivak, former village in Chukotka
 qugaag                 	NounPostbase; ! sour flavor
 qugaagpagni            	NounPostbase; ! sour smell
 qugaagrugni            	NounPostbase; ! sour smell
@@ -3840,7 +3838,7 @@ qungeghrug             	NounPostbase; ! upper part of back near neck; lower part
 qungeliqagh            	NounPostbase; ! pirog (Russian style stuffed pastry)
 qungevagh              	NounPostbase; ! inward or inland area
 qungllaagh             	NounPostbase; ! part in center of hair
-qungughagh              	NounPostbase; ! cemetery
+qungughagh              NounPostbase; ! cemetery
 qungughvig             	NounPostbase; ! grave; cemetery
 qungugh                	NounPostbase; ! scruff of neck; top of back
 Qunguvag               	NounPostbase; ! site in Chukotka, on Ittygran Island
@@ -4198,7 +4196,7 @@ sikuvag                	NounPostbase; ! large thick ice floe
 sikwaavreghagh         	NounPostbase; ! very thin ice; small piece of ice floating at sea
 silimuqa               	NounPostbase; ! fresh flyagaric; Amanita muscaria
 silug                  	NounPostbase; ! feather
-simiisigh               	NounPostbase; ! replacement item; extra clothing
+simiisigh               NounPostbase; ! replacement item; extra clothing
 simiite                	NounPostbase; ! replacement item; extra clothing
 Singhagh               	NounPostbase; ! village site east of Sireniki (Sighinek) in Chukotka
 singigh                	NounPostbase; ! bootlace; shoelace
@@ -4284,7 +4282,7 @@ sugtuvag               	NounPostbase; ! whimbrel (Numenius phaeopus)
 sugukelengiigh        	NounPostbase; ! mosquito
 sugukelengiigh        	NounPostbase; ! temporary tent made from oars covered with skins, used by boat travelers when caught in a storm
 sugupag               	NounPostbase; ! nostril area of animal (especially sea mammal); upper lip area extending to the nostrils
-sukaghhaleg            	NounPostbase; ! so fast!
+suka                    NounPostbase; ! speed
 sukaghllag             	NounPostbase; ! very fast thing
 sukalqagh              	NounPostbase; ! fast runner
 sukilpagh*             	NounPostbase; ! crested auklet (Aethia cristatella)
@@ -4299,10 +4297,12 @@ sullevnegh             	NounPostbase; ! mischievous person; one who hurts others
 sulug                  	NounPostbase; ! sound or noise of wind (blowing through cracks)
 sulugtagh             	NounPostbase; ! for wind to howl (especially blowing through cracks)
 sulungagh              	NounPostbase; ! crest on auklet
-sumae, sumegh          	NounPostbase; ! idea; thought
+sume                    NounPostbase; ! idea; thought
+sumegh          	    NounPostbase; ! idea; thought
 Sumeghaat              	NounPostbase; ! Soomeghat Mtn. on St. Lawrence Is.
 sumeghnegh             	NounPostbase; ! thought; idea
 suna                  	NounPostbase; ! soil; dirt; earth
+sungagha                NounPostbase; ! redness in the cheeks
 sungaghni              	NounPostbase; ! bitter taste
 sungagh*               	NounPostbase; ! bile; bead; beaded necklace
 sungaghwaagh           	NounPostbase; ! breastbone
@@ -4351,7 +4351,7 @@ taaghta               	NounPostbase; ! medical doctor
 taagkaghtagh           	NounPostbase; ! ancient
 taagra                 	NounPostbase; ! celebration of some sort
 taaleg                 	NounPostbase; ! first float on whaling gear
-taan’gani            	NounPostbase; ! out in the ocean; down there
+taan'gani            	NounPostbase; ! out in the ocean; down there
 taapagagh      	        NounPostbase; ! piece of gravel; pebble
 taapag                  NounPostbase; ! piece of gravel; pebble
 taaqegkagh             	NounPostbase; ! finished product
@@ -4447,7 +4447,7 @@ tangegh                	NounPostbase; ! solid part of something; reason behind s
 tangeghqagh            	NounPostbase; ! bread
 tangeghtupaarugh       	NounPostbase; ! hickory wood as used in sleds
 tangela                	NounPostbase; ! funnel
-tangeq2               	NounPostbase; ! ancestor
+tangegh               	NounPostbase; ! ancestor
 tangeqeghrengetagh     	NounPostbase; ! long oar or mast tied at the bow of a boat to help keep the boat from tilting to one side when it is being walked over rough ice
 tangeqrag              	NounPostbase; ! pilot bread; cracker
 tangki                 	NounPostbase; ! power winch
@@ -4652,8 +4652,7 @@ tugutagh               	NounPostbase; ! pot holder; handle
 tugutellegh            	NounPostbase; ! winnings; prize
 tugute                 	NounPostbase; ! tusk; ivory
 tugutlug               	NounPostbase; ! fossilized tusk; old ivory item; artifact of ivory
-tuguvig                	NounPostbase; ! handle; bail (arched handle of bucket, pot, etc.)
-tuguvik2              	NounPostbase; ! longitudinal stringer or riser of skin boat to which walrus skin is laced; rail on inside of skin boat below gunwale
+tuguvig                	NounPostbase; ! handle; bail (arched handle of bucket, pot, etc.), longitudinal stringer or riser of skin boat to which walrus skin is laced; rail on inside of skin boat below gunwale
 tukaghsiigh            	NounPostbase; ! short loop of rope holding harpoon head to shaft
 Tukaghtangighvig       	NounPostbase; ! site in Chukotka
 tukaghta              	NounPostbase; ! tenfathom rope on a whaling harpoon attaching harpoon to first float
@@ -4678,7 +4677,6 @@ tulughyag             	NounPostbase; ! canine tooth
 tume                  	NounPostbase; ! footprint; track; trail; way; path; road
 tumangani              	NounPostbase; ! on the way
 tumelqusigh            	NounPostbase; ! the entire time spent on a journey
-tume                   	NounPostbase; ! track, footprint; trail 
 tum                    	NounPostbase; ! bang
 tunagmig               	NounPostbase; ! bribe
 tunag                  	NounPostbase; ! palm of hand; smooth trail
@@ -4860,8 +4858,7 @@ ulpeg                  	NounPostbase; ! folded back on itself (like a turned up 
 ululaay     	        NounPostbase; ! a certain legendary monster
 ululaaye            	NounPostbase; ! a certain legendary monster
 ulullugmelngugh*       	NounPostbase; ! one who starts quarrels by his unpleasant use of language; loudmouth
-ulungaagh              	NounPostbase; ! uvula
-ulungaaq2             	NounPostbase; ! stone knife
+ulungaagh              	NounPostbase; ! uvula; stone knife
 ulungestagh            	NounPostbase; ! uvula
 ulu                    	NounPostbase; ! tongue
 umegnegh               	NounPostbase; ! blizzard
@@ -4903,7 +4900,7 @@ unegtuusagh            	NounPostbase; ! something left for others
 unegyuugh              	NounPostbase; ! clamtype shellfish
 ungagagh               	NounPostbase; ! lichen; reindeer moss
 ungag                  	NounPostbase; ! whisker; beard hair; mustache hair
-un’gapisigh          	NounPostbase; ! seahunting boot
+un'gapisigh          	NounPostbase; ! seahunting boot
 ungavig                	NounPostbase; ! small square tentlike sleeping enclosure inside the mangteghapik (q.v.)
 ungavisqwaagh          	NounPostbase; ! snowflake
 Ungazighmii(t)         	NounPostbase; ! a particular clan; people from Ungaziq
@@ -5165,6 +5162,7 @@ yilghaaghtagh          	NounPostbase; ! walrus sleeping while swimming
 yimi                   	NounPostbase; ! shy; intimidated; cowering
 yugaagh                	NounPostbase; ! powerful person; important person; tall upright rock
 yugayu                 	NounPostbase; ! common loon (Gavia immer)
+yuggagh*                NounPostbase; ! little man
 yughaghta              	NounPostbase; ! minister; preacher; clergyman
 yughaghte              	NounPostbase; ! minister, clergyman
 yughaghvig             	NounPostbase; ! church
@@ -5229,7 +5227,7 @@ LEXICON NounPostbase
 
 0:0        NounInfl;
 
--–ghhalek[how.N][N→XCLM]:–ghhalek  #;
+-~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                   !!!
@@ -5238,6 +5236,7 @@ LEXICON NounPostbase
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -%:aghagh*[N→N]:%:aghagh*                NounPostbase;
 -e[N→N]:-e                               NounPostbase;
+
 -~fmii[N→N]:~fmii                        NounPostbase;
 -~fmiiq[N→N]:~fmiiq                      NounPostbase;
 -~fmik[N→N]:~fmik                        NounPostbase;
@@ -5246,7 +5245,6 @@ LEXICON NounPostbase
 -–ghagh*[N→N]:–ghagh*                    NounPostbase;
 -–ghhagh*[N→N]:–ghhagh*                  NounPostbase;
 -–ghllag[N→N]:–ghllag                    NounPostbase;
--–ghllak[N→N]:–ghllak                    NounPostbase;
 -–ghnaggagh*[N→N]:–ghnaggagh*            NounPostbase;
 -–ghpak[N→N]:–ghpak                      NounPostbase;
 -–ghrugllag[N→N]:–ghrugllag              NounPostbase;
@@ -5326,7 +5324,7 @@ LEXICON NounPostbase
 -qutaq[N→N]:qutaq                        NounPostbase;
 -raaghaq[N→N]:raaghaq                    NounPostbase;
 -–raaghinagh*[N→N]:–raaghinagh*          NounPostbase;
--raak[N→N]:raak                          NounPostbase;
+-raagh[N→N]:raagh                        NounPostbase;
 -–raaq[N→N]:–raaq                        NounPostbase;
 -raghaq[N→N]:raghaq                      NounPostbase;
 -–rqwaaq[N→N]:–rqwaaq                    NounPostbase;
@@ -5372,6 +5370,9 @@ LEXICON NounPostbase
 -agh[N→V]:agh                            VerbTrns;
 -ate[N→V]:ate                            VerbIntr;
 -ate[N→V]:ate                            VerbTrns;
+-–ghqe[N→V]:–ghqe                        VerbIntr;
+-–ghqe[N→V]:–ghqe                        VerbTrns;
+
 -~fmete[N→V]:~fmete                      VerbIntr;
 -~fmete[N→V]:~fmete                      VerbTrns;
 -~fmig[N→V]:~fmig                        VerbIntr;
@@ -5382,8 +5383,6 @@ LEXICON NounPostbase
 -@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbTrns;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
--–ghqe[N→V]:–ghqe                        VerbIntr;
--–ghqe[N→V]:–ghqe                        VerbTrns;
 -–ghqu[N→V]:–ghqu                        VerbIntr;
 -–ghqu[N→V]:–ghqu                        VerbTrns;
 -–ghquute[N→V]:–ghquute                  VerbIntr;
@@ -7864,8 +7863,6 @@ itegmigute            	VerbIntr; ! to trip and fall; to kick against something
 itegmigute            	VerbTrns; ! to trip and fall; to kick against something
 itegmig               	VerbIntr; ! to kick
 itegmig               	VerbTrns; ! to kick
-itek                  	VerbIntr; ! toecap of skinboot
-itek                  	VerbTrns; ! toecap of skinboot
 iteme                 	VerbIntr; ! to come undone; to come untied
 iteme                 	VerbTrns; ! to come undone; to come untied
 itemqugh              	VerbIntr; ! to take apart; to disassemble
@@ -9629,12 +9626,12 @@ nguleghte             	VerbIntr; ! to stretch (particularly a boot sole) with a 
 nguleghte             	VerbTrns; ! to stretch (particularly a boot sole) with a stretching stick
 nguug                 	VerbIntr; ! to eat meat clinging to a bone (said of an animal)
 nguug                 	VerbTrns; ! to eat meat clinging to a bone (said of an animal)
-nighugpagte           	VerbIntr; ! to twinkle
-nighugpagte           	VerbTrns; ! to twinkle
-nighugte              	VerbIntr; ! to become bright
-nighugte              	VerbTrns; ! to become bright
-nighug                	VerbIntr; ! to be bright (light); to be daylight
-nighug                	VerbTrns; ! to be bright (light); to be daylight
+nighughpagte           	VerbIntr; ! to twinkle
+nighughpagte           	VerbTrns; ! to twinkle
+nighughte              	VerbIntr; ! to become bright
+nighughte              	VerbTrns; ! to become bright
+nighugh                	VerbIntr; ! to be bright (light); to be daylight
+nighugh                	VerbTrns; ! to be bright (light); to be daylight
 nighugyug             	VerbIntr; ! to get bright light in one's eyes
 nighugyug             	VerbTrns; ! to get bright light in one's eyes
 nighupagite           	VerbIntr; ! to be dim or dull
@@ -9815,6 +9812,8 @@ paawagh               	VerbIntr; ! to peg out a sealskin on tthe ground to dry
 paawagh               	VerbTrns; ! to peg out a sealskin on tthe ground to dry
 paayghaate            	VerbIntr; ! to break something when it is still new
 paayghaate            	VerbTrns; ! to break something when it is still new
+paayghi                 VerbIntr; ! to go meet and help someone coming
+paayghi                 VerbTrns; ! to go meet and help someone coming
 paayngute             	VerbIntr; ! to begin (a trend, activity, ceremony, etc.); to start (a trend, activity, ceremony, etc.); to open a ceremony
 paayngute             	VerbTrns; ! to begin (a trend, activity, ceremony, etc.); to start (a trend, activity, ceremony, etc.); to open a ceremony
 paggaagte            	VerbIntr; ! to audibly breathe hard
@@ -9895,8 +9894,6 @@ palutigh              	VerbIntr; ! to brace
 palutigh              	VerbTrns; ! to brace
 pama                  	VerbIntr; ! to flicker (of flame); to be disheveled (of hair)
 pama                  	VerbTrns; ! to flicker (of flame); to be disheveled (of hair)
-panaaghaq             	VerbIntr; ! toy, little or makeshift spear; peg used to anchor to the ice a walrus carcuss in water
-panaaghaq             	VerbTrns; ! toy, little or makeshift spear; peg used to anchor to the ice a walrus carcuss in water
 panasiigh             	VerbIntr; ! to prepare spear for striking
 panasiigh             	VerbTrns; ! to prepare spear for striking
 pana                  	VerbIntr; ! to spear; to sting (of bee)
@@ -9915,6 +9912,8 @@ pangeghte             	VerbIntr; ! to take a trip to Chukotka from St. Lawrence 
 pangeghte             	VerbTrns; ! to take a trip to Chukotka from St. Lawrence Is.
 pangquqe              	VerbIntr; ! to go check on; to pay a visit to; to check the ones left behind
 pangquqe              	VerbTrns; ! to go check on; to pay a visit to; to check the ones left behind
+panike                  VerbIntr; ! to have as one's daughter
+panike                  VerbTrns; ! to have as one's daughter
 panqallag             	VerbIntr; ! to char; to smolder; to scorch; to singe
 panqallag             	VerbTrns; ! to char; to smolder; to scorch; to singe
 panqugni              	VerbIntr; ! to complain of having little in order to evoke pity
@@ -9981,6 +9980,8 @@ pati                  	VerbIntr; ! to crack bones and eat the marrow within
 pati                  	VerbTrns; ! to crack bones and eat the marrow within
 patug                 	VerbIntr; ! to become covered with a sheet of ice
 patug                 	VerbTrns; ! to become covered with a sheet of ice
+payangite             	VerbIntr; ! for St. Lawrence Islanders to be visiting (Chukotka) or for Chukotkans to be visiting (St. Lawrence Island); people come over from the other side
+payangite             	VerbTrns; ! for St. Lawrence Islanders to be visiting (Chukotka) or for Chukotkans to be visiting (St. Lawrence Island); people come over from the other side
 payaaqe               	VerbIntr; ! to put on or wear woman's fancy knee-high bleached sealskin boot
 payaaqe               	VerbTrns; ! to put on or wear woman's fancy knee-high bleached sealskin boot
 payegh                	VerbIntr; ! to meet partway; to go to meet or to help (someone approaching the house or the village)
@@ -13353,7 +13354,7 @@ LEXICON VerbPostbase
 
 0:0  VerbMoodInfl;
 
--–ghhalek[how.V][V→XCLM]:–ghhalek  #;
+-~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
@@ -13367,8 +13368,15 @@ LEXICON VerbPostbase
 -~aghte[V→V]:~aghte                           VerbPostbase;
 -~aghtugh[V→V]:~aghtugh                       VerbPostbase;
 -~(at)aghagh[V→V]:~(at)aghagh                 VerbPostbase;
--~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbPostbase;
+-~f(a)ghesnagh[V→V]:~f(a)ghesnagh/–qiinagh    VerbPostbase;
 -fkagh[V→V]:fkagh                             VerbPostbase;
+-~(g₁)aqe[V→V]:~(g₁)aqe                       VerbPostbase;
+-–ghllag[V→V]:–ghllag                         VerbPostbase;
+-–ghllagu[V→V]:–ghllagu                       VerbPostbase;
+-@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase;
+-–ghqe[V→V]:–ghqe                             VerbPostbase;
+
+
 -@₂~fkau[V→V]:@₂~fkau                         VerbPostbase;
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase;
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase;
@@ -13396,14 +13404,11 @@ LEXICON VerbPostbase
 -~fnga[V→V]:~fnga                             VerbPostbase;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase;
 -@₁~fni[V→V]:@₁~fni                           VerbPostbase;
--–fqaa[V→V]:–fqaa                             VerbPostbase;
--–fqagh[V→V]:–fqagh                           VerbPostbase;
 -@₁~fragh[V→V]:@₁~fragh                       VerbPostbase;
 -@₁~f–ragkiighute[V→V]:@₁~f–ragkiighute       VerbPostbase;
 -@₁~f–ragkiigh[V→V]:@₁~f–ragkiigh             VerbPostbase;
 -@₁~f–rakegte[V→V]:@₁~f–rakegte               VerbPostbase;
 -@₁~f–rakguugh[V→V]:@₁~f–rakguugh             VerbPostbase;
--fte-[V→V]:fte-                               VerbPostbase;
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase;
 -~f–vag[V→V]:~f–vag                           VerbPostbase;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase;
@@ -13430,11 +13435,6 @@ LEXICON VerbPostbase
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
--~(g₁)aqe[V→V]:~(g₁)aqe                       VerbPostbase;
--–ghllagu[V→V]:–ghllagu                       VerbPostbase;
--–ghllag[V→V]:–ghllag                         VerbPostbase;
--@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase;
--–ghqe[V→V]:–ghqe                             VerbPostbase;
 -–ghraag[V→V]:–ghraag                         VerbPostbase;
 -–ghrug[V→V]:–ghrug                           VerbPostbase;
 -–ghte[V→V]:–ghte                             VerbPostbase;
@@ -13534,7 +13534,7 @@ LEXICON VerbPostbase
 -~–qaghte[V→V]:~–qaghte                       VerbPostbase;
 -~–qagh[V→V]:~–qagh                           VerbPostbase;
 -–qaqu[V→V]:–qaqu                             VerbPostbase;
--~–qiinagh[V→V]:~–qiinagh                     VerbPostbase;
+-–qiinagh[V→V]:~f(a)ghesnagh/–qiinagh         VerbPostbase;
 -~–qite[V→V]:~–qite                           VerbPostbase;
 -–qragh[V→V]:–qragh                           VerbPostbase;
 -–qrug[V→V]:–qrug                             VerbPostbase;
@@ -13589,6 +13589,7 @@ LEXICON VerbPostbase
 !!!                                               !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -aq[V→N]:aq                                NounPostbase;
+
 -@₂~fkaq[V→N]:@₂~fkaq                      NounPostbase;
 -~fmiiq[V→N]:~fmiiq                        NounPostbase;
 -@₁~fnaqe[V→N]:@₁~fnaqe                    NounPostbase;
@@ -13651,15 +13652,17 @@ LEXICON VerbPostbase
 !!!   (affect the transitivity of the embedded verb)   !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--@₁~fni[Cmpd_Vbl]:@₁~fni          VerbIntr;
--@₁~fni[Cmpd_Vbl]:@₁~fni          VerbTrns;
--(te)ste[Cmpd_Vbl]:(te)ste        VerbIntr;
--(te)ste[Cmpd_Vbl]:(te)ste        VerbTrns;
--~sf%:isqe[Cmpd_Vbl]:~sf%:isqe    VerbIntr;
--~sf%:isqe[Cmpd_Vbl]:~sf%:isqe    VerbTrns;
--(te)sug[Cmpd_Vbl]:(te)sug        VerbIntr;
--(te)sug[Cmpd_Vbl]:(te)sug        VerbTrns;
--@₁@₂~fmiqe[Cmpd_Vbl]:@₁@₂~fmiqe  VerbTrns;
+-@₁~fni[Cmpd_Vbl]:@₁~fni            VerbIntr;
+-@₁~fni[Cmpd_Vbl]:@₁~fni            VerbTrns;
+-(te)ste[Cmpd_Vbl]:(te)ste          VerbIntr;
+-(te)ste[Cmpd_Vbl]:(te)ste          VerbTrns;
+-~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe  VerbIntr;
+-~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe  VerbTrns;
+-~sf%:isqe[Cmpd_Vbl]:~sf%:isqe      VerbIntr;
+-~sf%:isqe[Cmpd_Vbl]:~sf%:isqe      VerbTrns;
+-(te)sug[Cmpd_Vbl]:(te)sug          VerbIntr;
+-(te)sug[Cmpd_Vbl]:(te)sug          VerbTrns;
+-@₁@₂~fmiqe[Cmpd_Vbl]:@₁@₂~fmiqe    VerbTrns;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                 !!!

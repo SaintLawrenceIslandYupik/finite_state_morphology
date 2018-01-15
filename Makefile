@@ -20,7 +20,7 @@ interactive: ess.foma *.lexc
 
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-filters
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-filters test-postbases
 
 
 test-ch2: ess.pairs.gold/Ch2.N_ABS.tsv ess.pairs.gold/Ch2.In-Chapter-Examples.tsv ess.fomabin
@@ -97,6 +97,14 @@ test-ch18: ess.pairs.gold/Ch18.In-Chapter-Examples.tsv ess.fomabin
 
 test-filters: ess.pairs.gold/Filtered-Strings.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Filtered-Strings.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Filtered-Strings.tsv     && echo "Filtered Strings - PASS" || echo "Filtered-Strings - FAIL"
+
+test-postbases: ess.pairs.gold/A-Badten_Postbases.tsv ess.pairs.gold/E-Badten_Postbases.tsv ess.pairs.gold/F-Badten_Postbases.tsv ess.pairs.gold/G-Badten_Postbases.tsv ess.fomabin
+	@cut -f 1 ess.pairs.gold/A-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/A-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With A - PASS" || echo "Badten Dictionary Postbases Starting With A - FAIL"
+	@cut -f 1 ess.pairs.gold/E-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/E-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With E - PASS" || echo "Badten Dictionary Postbases Starting With E - FAIL"
+	@cut -f 1 ess.pairs.gold/F-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/F-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With F - PASS" || echo "Badten Dictionary Postbases Starting With F - FAIL"
+	@cut -f 1 ess.pairs.gold/G-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/G-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With G - PASS" || echo "Badten Dictionary Postbases Starting With G - FAIL"
+
+
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin
 
