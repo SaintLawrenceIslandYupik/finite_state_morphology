@@ -3723,7 +3723,7 @@ qiiptaasigh            	NounPostbase; ! pole used for gathering kelp
 qiiptagh               	NounPostbase; ! kelp that is gathered by being wound on a special pole
 qiipuumaraghugh        	NounPostbase; ! curlyhaired person
 qiiqrugh               	NounPostbase; ! thing that is frozen fast to the ground
-qiiqw2                	NounPostbase; ! cough; cold (respiratory illness)
+qiiqw                	NounPostbase; ! cough; cold (respiratory illness)
 qiivyaghagh            	NounPostbase; ! bend in the trail
 qiiyngu                	NounPostbase; ! long reindeer hair from under the chin
 Qikeghtapaget          	NounPostbase; ! islands in western part of Koozata Lagoon (Naayvaghllak) on St. Lawrence Is.
@@ -5236,17 +5236,17 @@ LEXICON NounPostbase
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 -%:aghagh*[N→N]:%:aghagh*                NounPostbase;
 -e[N→N]:-e                               NounPostbase;
+-–ghagh*[N→N]:–ghagh*                    NounPostbase;
+-–ghhagh*[N→N]:–ghhagh*                  NounPostbase;
+-–ghllag[N→N]:–ghllag                    NounPostbase;
+-–ghnaggagh*[N→N]:–ghnaggagh*            NounPostbase;
+-–ghpak[N→N]:–ghpak                      NounPostbase;
 
 -~fmii[N→N]:~fmii                        NounPostbase;
 -~fmiiq[N→N]:~fmiiq                      NounPostbase;
 -~fmik[N→N]:~fmik                        NounPostbase;
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase;
 -~fvalluq[N→N]:~fvalluq                  NounPostbase;
--–ghagh*[N→N]:–ghagh*                    NounPostbase;
--–ghhagh*[N→N]:–ghhagh*                  NounPostbase;
--–ghllag[N→N]:–ghllag                    NounPostbase;
--–ghnaggagh*[N→N]:–ghnaggagh*            NounPostbase;
--–ghpak[N→N]:–ghpak                      NounPostbase;
 -–ghrugllag[N→N]:–ghrugllag              NounPostbase;
 -–ghrugllak[N→N]:–ghrugllak              NounPostbase;
 -–ghruk[N→N]:–ghruk                      NounPostbase;
@@ -5335,7 +5335,7 @@ LEXICON NounPostbase
 -siq[N→N]:siq                            NounPostbase;
 -–sluvegaq[N→N]:–sluvegaq                NounPostbase;
 -–sngwaaghaq[N→N]:–sngwaaghaq            NounPostbase;
--–squghhagh*little.N][N→N]:–squghhagh*   NounPostbase;
+-–squghhagh*[N→N]:–squghhagh*            NounPostbase;
 -–squghhagh*[N→N]:–squghhagh*            NounPostbase;
 -–squgh[N→N]:–squgh                      NounPostbase;
 -–squllgaq[N→N]:–squllgaq                NounPostbase;
@@ -5407,6 +5407,7 @@ LEXICON NounPostbase
 -~–kegte[N→V]:~–kegte                    VerbIntr;
 -~–kegte[N→V]:~–kegte                    VerbTrns;
 -~–ke[N→V]:~–ke                          VerbIntr;
+-~–ke[N→V]:~–ke                          VerbTrns;
 -(ke)staaghhaa[N→V]:(ke)staaghhaa        VerbIntr;
 -(ke)staaghhaa[N→V]:(ke)staaghhaa        VerbTrns;
 -–ksagute[N→V]:–ksagute                  VerbIntr;
@@ -10794,7 +10795,7 @@ qayiigrugtagh           VerbIntr; ! to make a echoing hollow sound
 qayiigrugtagh           VerbTrns; ! to make a echoing hollow sound
 qayiigtagh              VerbIntr; ! to make a echoing hollow sound
 qayiigtagh              VerbTrns; ! to make a echoing hollow sound
-qayugh          VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
+qayugh                  VerbIntr; ! to drink hot liquid (coffee, tea, etc.)
 qayugh                	VerbIntr; ! to drink tea, broth or other hot beverage
 qayugh                	VerbTrns; ! to drink tea, broth or other hot beverage
 qayugtugh             	VerbIntr; ! to repeatedly strike with an adze
@@ -13539,7 +13540,7 @@ LEXICON VerbPostbase
 -–qragh[V→V]:–qragh                           VerbPostbase;
 -–qrug[V→V]:–qrug                             VerbPostbase;
 -~(q/t)uute[V→V]:~(q/t)uute                   VerbPostbase;
--@₁qugh[to.V.completely]:@₁qugh               VerbPostbase;
+-@₁qugh:@₁qugh                                VerbPostbase;
 -@₁qugh[V→V]:@₁qugh                           VerbPostbase;
 -–qu[V→V]:–qu                                 VerbPostbase;
 -–saag[V→V]:–saag                             VerbPostbase;
@@ -13671,7 +13672,7 @@ LEXICON VerbPostbase
 !!!                                 !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
--–ghllak[AUG]:–ghllag      #;
+-–ghllag[AUG]:–ghllag      #;
 -–ghllaget[AUG]:–ghllaget  #;
 -–ghllagek[AUG]:–ghllagek  #;
 -~faagh[AUG]:~faagh        #;
