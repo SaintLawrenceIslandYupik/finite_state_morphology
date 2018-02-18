@@ -1913,8 +1913,13 @@ ivaghutagh             	NounPostbase; ! prayer song sung by or for boat captain 
 ivalungqughrug         	NounPostbase; ! tendon
 ivalu                  	NounPostbase; ! sinew
 ivenrughta            	NounPostbase; ! person who operates outboard motor
+<<<<<<< HEAD
 ivenruute               NounPostbase; ! outboard motor
 ivgaghnegh             	NounPostbase; ! wind blowing around a cliff or from the side; ocean ice that goes around Northwest Cape on St. Lawrence Is.; east and aorth wind
+=======
+ivenruute   			NounPostbase; ! outboard motor
+ivgaghnegh             	NounPostbase; ! wind blowing around a cliff or from the side; ocean ice that goes around Northwest Cape on St. Lawrence Is.; east and north wind
+>>>>>>> 3ebdf93863822e1fb421cce46fdc226ea67f8e3d
 Ivgagh                 	NounPostbase; ! Eevwak Pt. on St. Lawrence Is.
 ivgaghutkagh           	NounPostbase; ! ice that flows from the south in spring when sea is mostly icefree
 ivgeghreghugh         	NounPostbase; ! for a strong wind to come around a point or projection of land
@@ -2686,7 +2691,8 @@ naatghigh             	NounPostbase; ! for one's boot sole to wear out
 naavellegh             	NounPostbase; ! ruin(s); broken piece(s)
 naavghusagh            	NounPostbase; ! item given in exchange for something
 Naayghagh              	NounPostbase; ! Gambell or “Sevoukuk” Mountain
-naayghagh              	NounPostbase; ! mountain
+naayghagh*				NounPostbase; ! mountain
+naayghagh				NounPostbase; ! mountain
 naayghaleketaagh       	NounPostbase; ! small hill with large rocks
 naayghiinagh           	NounPostbase; ! northwest
 Naayvaghllag           	NounPostbase; ! Koozata Lagoon on St. Lawrence Is.
@@ -2995,7 +3001,7 @@ nulighqalgute          	NounPostbase; ! man's wife's sister's husband; brotherin
 nulighqullghiig        	NounPostbase; ! man and wife; married couple.
 nuliighqagh            	NounPostbase; ! wifeto-be
 nuliingqalgute         	NounPostbase; ! man's wife's sister's husband; brotherin-law (in this one limited sense)
-nuliigh                 	NounPostbase; ! wife
+nuliigh                 NounPostbase; ! wife
 nullu                 	NounPostbase; ! rump; buttock; upper part of hill or mountain
 nulugh                 	NounPostbase; ! icefishing gear; teabag
 nuluusigh              	NounPostbase; ! fishing rod and reel; jigging equipment
@@ -4244,7 +4250,7 @@ Sivugnagh              	NounPostbase; ! site on the coast east of Gambell
 sivug                  	NounPostbase; ! head tilted up
 sivuligh*              	NounPostbase; ! first one; front; one before; predecessor
 Sivulite               	NounPostbase; ! projection of land into lagoon from barrier isthmus toward east end of Koozata Lagoon on St. Lawrence Is.
-Sivuligh aghnegh        	NounPostbase; ! Sunday
+Sivuligh aghnegh        NounPostbase; ! Sunday
 sivullughquute         	NounPostbase; ! food that is eaten first; first course at a meal
 Sivulqut               	NounPostbase; ! Cape Sivolkut in Chukotka
 sivunegh               	NounPostbase; ! ancestor; predecessor; previous times
@@ -4253,6 +4259,7 @@ sivu                   	NounPostbase; ! front; bow of boat; time before; face of
 Sivuqaa                	NounPostbase; ! Northeast Cape on St. Lawrence Is.
 Sivuqaate              	NounPostbase; ! Camp Kulowiye and Seevookhan Mt. at the eastern end of St. Lawrence Is.
 Sivuqagh               	NounPostbase; ! Gambell; St. Lawrence Island (in general)
+Sivuqagh*               NounPostbase; ! Gambell; St. Lawrence Island (in general)
 sivuqligh*             	NounPostbase; ! first one; front one; neighbor
 sivutmute              	NounPostbase; ! frontwards; foreward
 sivuyag                	NounPostbase; ! bow, specifically of boat
