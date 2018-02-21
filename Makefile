@@ -98,11 +98,12 @@ test-ch18: ess.pairs.gold/Ch18.In-Chapter-Examples.tsv ess.fomabin
 test-filters: ess.pairs.gold/Filtered-Strings.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/Filtered-Strings.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/Filtered-Strings.tsv     && echo "Filtered Strings - PASS" || echo "Filtered-Strings - FAIL"
 
-test-postbases: ess.pairs.gold/A-Badten_Postbases.tsv ess.pairs.gold/E-Badten_Postbases.tsv ess.pairs.gold/F-Badten_Postbases.tsv ess.pairs.gold/G-Badten_Postbases.tsv ess.fomabin
+test-postbases: ess.pairs.gold/A-Badten_Postbases.tsv ess.pairs.gold/E-Badten_Postbases.tsv ess.pairs.gold/F-Badten_Postbases.tsv ess.pairs.gold/G-Badten_Postbases.tsv ess.pairs.gold/I-Badten_Postbases.tsv ess.fomabin
 	@cut -f 1 ess.pairs.gold/A-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/A-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With A - PASS" || echo "Badten Dictionary Postbases Starting With A - FAIL"
 	@cut -f 1 ess.pairs.gold/E-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/E-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With E - PASS" || echo "Badten Dictionary Postbases Starting With E - FAIL"
 	@cut -f 1 ess.pairs.gold/F-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/F-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With F - PASS" || echo "Badten Dictionary Postbases Starting With F - FAIL"
 	@cut -f 1 ess.pairs.gold/G-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/G-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With G - PASS" || echo "Badten Dictionary Postbases Starting With G - FAIL"
+	@cut -f 1 ess.pairs.gold/I-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/I-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With I - PASS" || echo "Badten Dictionary Postbases Starting With I - FAIL"
 
 
 clean:

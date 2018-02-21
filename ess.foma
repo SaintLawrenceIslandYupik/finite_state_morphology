@@ -94,11 +94,7 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet+ _ ;
 !!!                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-define PostbaseFilter ~[ ?* {te} "[V→V]" ?* {te} "[V→V]"   ?* |
-                         ?* {te} "[N→V]" ?* {te} "[V→V]"   ?* |
-                         ?* {ke} "[N→N]" ?* {te} "[N→V]"   ?* |
-                         ?* "~" "–" {ke} "[N→N]" "-" "~" "–" {ke} "[N→N]" ?* |
-                         ?* "~" "–" {ke} "[N→N]" "-" "~" "–" {ke} "[N→V]" ?* ];
+!define PostbaseFilter ~[ ?* {te} "[V→V]" "-" {te} "[V→V]"   ?* ];
 
 define LghiiFilter ~[ ?* "-" "@₁" "–" {l} "gh" {ii} ?* [ "[SgPosd]" | "[PlPosd]" | "[DuPosd]" ] ?* ]; 
 
@@ -128,7 +124,7 @@ define UTeFilter ~[ ?* "~" ":" "(u)" {te} ?* [ "[3Sg]"     | "[3Pl]"     | "[3Du
                                                "[3SgPoss]" | "[3PlPoss]" | "[3DuPoss]" ] ?* ];
 
 define Filters [
-	PostbaseFilter    ∘
+	!PostbaseFilter    ∘
 	!LghiiFilter      ∘
     NeghMeghFilter    ∘
 	NegheMegheFilter  ∘
@@ -200,7 +196,7 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 									      gh "*" -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define ModifyTE "–"  -> 0 || t e ("*") ("*") MorphemeBoundary MorphPhonSymbols* _        ∘
+define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* _          ∘
                 t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
                 t e         -> s || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, ! for postbases that begin with velars
 	     	    t e ("*")   -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, 
