@@ -308,7 +308,7 @@ maateghhaq            	#; ! a short while ago; just now; right around here
 maateghniineng        	#; ! since a while ago
 maateghniistun        	#; ! the same as a while ago
 maaten                	#; ! now; a little while ago
-maaten ilangani         #; ! ! once; on one occasion (particle phrase from 'maaten' - 'now' and 'ilangani' - 'meanwhile')
+maaten ilangani         #; ! once; on one occasion (particle phrase from 'maaten' - 'now' and 'ilangani' - 'meanwhile')
 maligmun              	#; ! with the grain; following the common pattern
 mallaq                	#; ! particle of dust or debris
 Masingka              	#; ! St. Lawrence Island / Siberian Yupik Eskimo or Naukan Yupik Eskimo; as a particle: originally; genuinely; very; fully; sure thing; it’s alright; just fine
@@ -5302,8 +5302,8 @@ LEXICON NounPostbase
 -–ngeltaq[N→N]:–ngeltaq                  NounPostbase;
 -–ngertaq[N→N]:–ngertaq                  NounPostbase;
 -–ngestaq[N→N]:–ngestaq                  NounPostbase;
--~%:(ng)iitaq[N→N]:~%:(ng)iitaq          NounPostbase;
--~%:(ng)inagh*[N→N]:~%:(ng)inagh*        NounPostbase;
+-~%:(ng₁)iitaq[N→N]:~%:(ng₁)iitaq        NounPostbase;
+-~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase;
 -~–(ng₁)uaq[N→N]:~–(ng₁)uaq              NounPostbase;
 -ni[N→N]:ni                              NounPostbase;
 -nite[N→N]:nite                          NounPostbase;
@@ -5377,6 +5377,10 @@ LEXICON NounPostbase
 -––igh[N→V]:––igh                        VerbTrns;
 -––iigh[N→V]:––iigh                      VerbIntr;
 -––iigh[N→V]:––iigh                      VerbTrns;
+-––iqe[N→V]:––iqe                        VerbIntr;
+-––iqe[N→V]:––iqe                        VerbTrns;
+-iiraagh[N→V]:iiraagh                    VerbIntr;
+-iiraagh[N→V]:iiraagh                    VerbTrns;
 
 -~fmete[N→V]:~fmete                      VerbIntr;
 -~fmete[N→V]:~fmete                      VerbTrns;
@@ -5389,10 +5393,6 @@ LEXICON NounPostbase
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
 -igh[N→V]:igh                            VerbTrns;
--iiraagh[N→V]:iiraagh                    VerbIntr;
--iiraagh[N→V]:iiraagh                    VerbTrns;
--––iqe[N→V]:––iqe                        VerbIntr;
--––iqe[N→V]:––iqe                        VerbTrns;
 -~–kaghte[N→V]:~–kaghte                  VerbIntr;
 -~–kaghte[N→V]:~–kaghte                  VerbTrns;
 -~–kegte[N→V]:~–kegte                    VerbIntr;
@@ -13380,6 +13380,11 @@ LEXICON VerbPostbase
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase;
 -–ghraag[V→V]:–ghraag                         VerbPostbase;
 @R.VALENCE.TRNS@-~i[V→V]:@R.VALENCE.TRNS@~i   VerbIntr;     ! Used with patientive and transitive-only verb bases
+-––iqe[V→V]:––iqe                             VerbPostbase;
+-iiraagh[V→V]:iiraagh                         VerbPostbase;
+-@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase;
+-@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*    QuantQualPostbase;
 
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr; ! TODO: Review these attachment patterns
 -@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns; !       in Badten v. Jacobson. Simplify?
@@ -13445,14 +13450,7 @@ LEXICON VerbPostbase
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
--iiraagh[V→V]:iiraagh                         VerbPostbase;
--––iqe[V→V]:––iqe                             VerbPostbase;
--@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase;
--@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*    QuantQualPostbase;
--@₁~%:(i/u)magh[V→V]:@₁~%:(i/u)magh           VerbPostbase;
--@₁~%:(i/u)manginagh[V→V]:@₁~%:(i/u)manginagh VerbPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase;
--@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase;
 -~–kayugu[V→V]:~–kayugu                       VerbPostbase;
@@ -13575,9 +13573,12 @@ LEXICON VerbPostbase
 !!!                                               !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
--@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e  NounPostbase; ! TODO: Review these attachment patterns
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh            NounPostbase; !       in Badten v. Jacobson. Simplify?
--~–(g₁)kayug[V→N]:~–(g₁)kayug              NounPostbase;
+-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase; ! TODO: Review these attachment patterns
+-~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase; !       in Badten v. Jacobson. Simplify?
+-~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase;
+-@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase; ! TODO: Is believed to be a nominalizer
+-@₁~%:(i/u)man[V→N]:@₁~%:(i/u)man             NounPostbase;
+-@₁~%:(i/u)manginagh[V→N]:@₁~%:(i/u)manginagh NounPostbase;
 
 -@₂~fkaq[V→N]:@₂~fkaq                      NounPostbase;
 -~fmiiq[V→N]:~fmiiq                        NounPostbase;
@@ -13593,7 +13594,6 @@ LEXICON VerbPostbase
 -@₁~f–yuqaq[V→N]:@₁~f–yuqaq                NounPostbase;
 -@₁~f–yu[V→N]:@₁~f–yu                      NounPostbase;
 -@₁~fyuwhaaq[V→N]:@₁~fyuwhaaq              NounPostbase;
--@₁~%:(i/u)man[V→N]:@₁~%:(i/u)man          NounPostbase;
 -~–kayuk[V→N]:~–kayuk                      NounPostbase;
 -kutaq[V→N]:kutaq                          NounPostbase;
 -@₁–lghii[V→N]:@₁–lghii                    NounPostbase;
@@ -13973,43 +13973,43 @@ LEXICON IntransitiveNegativeFutureOptative
 !-----------|-----------|-----------|
 
 LEXICON TransitiveNegativeFutureOptative
-!-------------------|----------------------|-------------------------|
-!                   |                      |                         |
-!                   |                      |                         |
-!                   |                      |                         |
-!-------------------|----------------------|-------------------------|
-!                   |                      |                         |
-!                   |                      |                         |
-!                   |                      |                         |
-!---------------|-----------------|-----------------|
-[2Sg][3Sg]:an  #; [2Sg][3Pl]:ki  #; [2Sg][3Du]:kek #;
-[2Pl][3Sg]:an  #; [2Pl][3Pl]:ki  #; [2Pl][3Du]:kek #;
-[2Du][3Sg]:an  #; [2Du][3Pl]:ki  #; [2Du][3Du]:kek #;
-!-------------------|----------------------|-------------------------|
-!                   |                      |                         |
-!                   |                      |                         |
-!                   |                      |                         |
-!-------------------|----------------------|-------------------------|
-!                   |                      |                         |
-!                   |                      |                         |
-!                   |                      |                         |
-!-------------------|----------------------|-------------------------|
+!---------------|-----------------|--------------------|
+!               |                 |                    |
+!               |                 |                    |
+!               |                 |                    |
+!---------------|-----------------|--------------------|
+!               |                 |                    |
+!               |                 |                    |
+!               |                 |                    |
+!---------------|-----------------|--------------------|
+[2Sg][3Sg]:an  #; [2Sg][3Pl]:ki  #; [2Sg][3Du]:kek    #;
+[2Pl][3Sg]:an  #; [2Pl][3Pl]:ki  #; [2Pl][3Du]:kek    #;
+[2Du][3Sg]:an  #; [2Du][3Pl]:ki  #; [2Du][3Du]:kek    #;
+!---------------|-----------------|--------------------|
+!               |                 |                    |
+!               |                 |                    |
+!               |                 |                    |
+!---------------|-----------------|--------------------|
+!               |                 |                    |
+!               |                 |                    |
+!               |                 |                    |
+!---------------|-----------------|--------------------|
 [2Sg][1Sg]:nga #; [2Sg][1Pl]:mta #; [2Sg][1Du]:mtung  #;
 [2Pl][1Sg]:nga #; [2Pl][1Pl]:mta #; [2Pl][1Du]:mtung  #;
 [2Du][1Sg]:nga #; [2Du][1Pl]:mta #; [2Du][1Du]:mtung  #;
-!-------------------|----------------------|-------------------------|
-!                   |                      |                         |
-!                   |                      |                         |
-!                   |                      |                         |
-!-------------------|----------------------|-------------------------|
-!                   |                      |                         |
-!                   |                      |                         |
-!                   |                      |                         |
-!-------------------|----------------------|-------------------------|
-!                   |                      |                         |
-!                   |                      |                         |
-!                   |                      |                         |
-!-------------------|----------------------|-------------------------|
+!---------------|-----------------|--------------------|
+!               |                 |                    |
+!               |                 |                    |
+!               |                 |                    |
+!---------------|-----------------|--------------------|
+!               |                 |                    |
+!               |                 |                    |
+!               |                 |                    |
+!---------------|-----------------|--------------------|
+!               |                 |                    |
+!               |                 |                    |
+!               |                 |                    |
+!---------------|-----------------|--------------------|
 
 
 LEXICON IntransitiveParticipialOblique
