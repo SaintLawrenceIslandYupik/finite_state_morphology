@@ -2276,6 +2276,7 @@ Kitayeghmii            	NounPostbase; ! Chinese person
 kiti                   	NounPostbase; ! cat, kitty
 kitum                  	NounPostbase; ! who? (relative case)
 Kiwatangaghmii(t)      	NounPostbase; ! a particular clan
+kiwalighpigagh          NounPostbase; ! very southernmost area
 kiwavagh               	NounPostbase; ! eastnortheast
 kiyaghfig              	NounPostbase; ! house; dwelling; camp
 Kiyaghnegh             	NounPostbase; ! way of life; God
@@ -5247,6 +5248,9 @@ LEXICON NounPostbase
 !-kaghtagh[N→N]:kaghtagh                 NounPostbase; TODO: Used with demonstrative adverb bases
 !-keghtagh[N→N]:keghtagh                 NounPostbase; TODO: Used with demonstrative adverb bases
 !-–kun[N→N]:–kun                         NounPostbase; TODO: Used with time bases; yields adverbial particle
+!-lighpigaq[N→N]:lighpigaq               NounPostbase; TODO: Used with demonstrative adverb bases
+!-ligh[N→N]:ligh                         NounPostbase; TODO: Used with demonstrative adverb bases
+!-–lqusigh[N→N]:–lqusigh                 NounPostbase; TODO: Used with time words, functions as noun or adverbial particle
 
 -e[N→N]:-e                               NounPostbase;
 -–ghagh*[N→N]:–ghagh*                    NounPostbase;
@@ -5268,6 +5272,18 @@ LEXICON NounPostbase
 -kwaagh[N→N]:kwaagh                      NounPostbase;
 -–leg[N→N]:–leg                          NounPostbase;
 -–lghun[N→N]:–lghun                      NounPostbase;
+-–lgun[N→N]:–lgun                        NounPostbase;
+-–linghagh*[N→N]:–linghagh*              NounPostbase;
+-–llaag[N→N]:–llaag                      NounPostbase;
+-–llegagh*[N→N]:–llegagh*                NounPostbase;
+-–llgagh[N→N]:–llgagh                    NounPostbase;
+-–lluggagh[N→N]:–lluggagh                NounPostbase;
+-lluggagh[N→N]:lluggagh                  NounPostbase;
+-–llug[N→N]:–llug                        NounPostbase;
+-llug[N→N]:llug                          NounPostbase;
+-–lugpigagh[N→N]:–lugpigagh              NounPostbase;
+-–lug[N→N]:–lug                          NounPostbase;
+-–lghutagh[N→N]:–lghutagh                NounPostbase;
 
 -~fmii[N→N]:~fmii                        NounPostbase;
 -~fmiiq[N→N]:~fmiiq                      NounPostbase;
@@ -5275,22 +5291,6 @@ LEXICON NounPostbase
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase;
 -~fvalluq[N→N]:~fvalluq                  NounPostbase;
 -iitaq[N→N]:iitaq                        NounPostbase;
--–lghutaq[N→N]:–lghutaq                  NounPostbase;
--–lgun[N→N]:–lgun                        NounPostbase;
--lighneq[N→N]:lighneq                    NounPostbase;
--lighpigaq[N→N]:lighpigaq                NounPostbase;
--–linghagh*[N→N]:–linghagh*              NounPostbase;
--liq[N→N]:liq                            NounPostbase;
--–llaak[N→N]:–llaak                      NounPostbase;
--–llegagh*[N→N]:–llegagh*                NounPostbase;
--–llgaq[N→N]:–llgaq                      NounPostbase;
--–lluggaq[N→N]:–lluggaq                  NounPostbase;
--lluggaq[N→N]:lluggaq                    NounPostbase;
--–lluk[N→N]:–lluk                        NounPostbase;
--lluk[N→N]:lluk                          NounPostbase;
--–lqusiq[N→N]:–lqusiq                    NounPostbase;
--–lugpigaq[N→N]:–lugpigaq                NounPostbase;
--–luk[N→N]:–luk                          NounPostbase;
 -mii[N→N]:mii                            NounPostbase;
 -–mlaaq[N→N]:–mlaaq                      NounPostbase;
 -–mleghaq[N→N]:–mleghaq                  NounPostbase;
@@ -5395,6 +5395,20 @@ LEXICON NounPostbase
 -–lgigh[N→V]:–lgigh                      VerbTrns;
 -–lgu[N→V]:–lgu                          VerbIntr;
 -–lgu[N→V]:–lgu                          VerbTrns;
+-–ligh[N→V]:–ligh                        VerbIntr;
+-–ligh[N→V]:–ligh                        VerbTrns;
+-–liigh[N→V]:–liigh                      VerbIntr;
+-–liigh[N→V]:–liigh                      VerbTrns;
+-–lipag[N→V]:–lipag                      VerbIntr;
+-–lipag[N→V]:–lipag                      VerbTrns;
+-–liqe[N→V]:–liqe                        VerbIntr;
+-–liqe[N→V]:–liqe                        VerbTrns;
+-–liite[N→V]:–liite                      VerbIntr;
+-–liite[N→V]:–liite                      VerbTrns;
+-–lliqe[N→V]:–lliqe                      VerbIntr;
+-–lliqe[N→V]:–lliqe                      VerbTrns;
+-lliqe[N→V]:lliqe                        VerbIntr;
+-lliqe[N→V]:lliqe                        VerbTrns;
 
 -~fmete[N→V]:~fmete                      VerbIntr;
 -~fmete[N→V]:~fmete                      VerbTrns;
@@ -5407,20 +5421,6 @@ LEXICON NounPostbase
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
 -igh[N→V]:igh                            VerbTrns;
--–ligh[N→V]:–ligh                        VerbIntr;
--–ligh[N→V]:–ligh                        VerbTrns;
--–liigh[N→V]:–liigh                      VerbIntr;
--–liigh[N→V]:–liigh                      VerbTrns;
--–liite[N→V]:–liite                      VerbIntr;
--–liite[N→V]:–liite                      VerbTrns;
--–lipag[N→V]:–lipag                      VerbIntr;
--–lipag[N→V]:–lipag                      VerbTrns;
--–liqe[N→V]:–liqe                        VerbIntr;
--–liqe[N→V]:–liqe                        VerbTrns;
--–lliqe[N→V]:lliqe                       VerbIntr;
--lliqe[N→V]:lliqe                        VerbIntr;
--–lliqe[N→V]:lliqe                       VerbTrns;
--lliqe[N→V]:lliqe                        VerbTrns;
 -–msuggiite[N→V]:–msuggiite              VerbIntr;
 -–msuggiite[N→V]:–msuggiite              VerbTrns;
 -–nge[N→V]:–nge                          VerbIntr;
@@ -5937,10 +5937,10 @@ aghnaqemsighte        	VerbIntr; ! to sit (in woman’s traditional style)
 aghnaqemsighte        	VerbTrns; ! to sit (in woman’s traditional style)
 aghnaqe               	VerbIntr; ! to be proud in a way appropriate for a woman
 aghnaqe               	VerbTrns; ! to be proud in a way appropriate for a woman
-aghneghmi             	VerbIntr; ! today; during the daytime
-aghneghmi             	VerbTrns; ! today; during the daytime
 aghneghte             	VerbIntr; ! to spend the day
 aghneghte             	VerbTrns; ! to spend the day
+aghneghsaghtugh         VerbIntr; ! to go to spend the day
+aghneghsaghtugh         VerbTrns; ! to go to spend the day
 aghni                 	VerbIntr; ! to spend one or more days; to stay an extra day while travelling (usually, in order to rest)
 aghni                 	VerbTrns; ! to spend one or more days; to stay an extra day while travelling (usually, in order to rest)
 aghpugte              	VerbIntr; ! to rise (of dough  or the like); to swell
@@ -13405,6 +13405,25 @@ LEXICON VerbPostbase
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase;
 -@₁laataqu[V→V]:@₁laataqu                     VerbPostbase;
+-–lgusigh[V→V]:–lgusigh                       VerbPostbase;
+-–lgute[V→V]:–lgute                           VerbPostbase;
+-–lgutke[V→V]:–lgutke                         VerbPostbase;
+-–llaag[V→V]:–llaag                           VerbPostbase;
+-–llegagh[V→V]:–llegagh                       VerbPostbase;
+-@₁lleqe[V→V]:@₁lleqe                         VerbPostbase;
+-–llghite[V→V]:–llghite                       VerbPostbase;
+-–llgilliqe[V→V]:–llgilliqe                   VerbPostbase;
+-–llgite[V→V]:–llgite                         VerbPostbase;
+-–llgiite[V→V]:–llgiite                       VerbPostbase;
+-–llgu[V→V]:–llgu                             VerbPostbase;
+-–lliqe[V→V]:–lliqe                           VerbPostbase;
+-lliqe[V→V]:lliqe                             VerbPostbase;
+-–llug[V→V]:–llug                             VerbPostbase;
+-llug[V→V]:llug                               VerbPostbase;
+-–lqiinagh[V→V]:–lqiinagh                     VerbPostbase;
+-–lqinagh[V→V]:–lqinagh                       VerbPostbase;
+-–lqusiigh[V→V]:–lqusiigh                     VerbPostbase;
+-@₁lugh[V→V]:@₁lugh                           VerbPostbase;
 
 -@₂~fkau[V→V]:@₂~fkau                         VerbPostbase;
 -@₁~fmiqe[V→V]:@₁~fmiqe                       VerbPostbase;
@@ -13462,26 +13481,6 @@ LEXICON VerbPostbase
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
 -–lghiini[V→V]:–lghiini                       VerbPostbase;
--–lgusigh[V→V]:–lgusigh                       VerbPostbase;
--–lgute[V→V]:–lgute                           VerbPostbase;
--–lgutke[V→V]:–lgutke                         VerbPostbase;
--–llaag[V→V]:–llaag                           VerbPostbase;
--–llegagh[V→V]:–llegagh                       VerbPostbase;
--lleghqiite[V→V]:lleghqiite                   VerbPostbase;
--@₁lleqe[V→V]:@₁lleqe                         VerbPostbase;
--–llghite[V→V]:–llghite                       VerbPostbase;
--–llgiite[V→V]:–llgiite                       VerbPostbase;
--–llgilliqe[V→V]:–llgilliqe                   VerbPostbase;
--–llgite[V→V]:–llgite                         VerbPostbase;
--–llgu[V→V]:–llgu                             VerbPostbase;
--–lliqe[V→V]:–lliqe                           VerbPostbase;
--lliqe[V→V]:lliqe                             VerbPostbase;
--–llug[V→V]:–llug                             VerbPostbase;
--llug[V→V]:llug                               VerbPostbase;
--–lqiinagh[V→V]:–lqiinagh                     VerbPostbase;
--–lqinagh[V→V]:–lqinagh                       VerbPostbase;
--–lqusiigh[V→V]:–lqusiigh                     VerbPostbase;
--@₁lugh[V→V]:@₁lugh                           VerbPostbase;
 -mete[V→V]:mete                               VerbPostbase;
 -–mlaagh[V→V]:–mlaagh                         VerbPostbase;
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase;
@@ -13583,6 +13582,10 @@ LEXICON VerbPostbase
 -@₁~%:(i/u)manginagh[V→N]:@₁~%:(i/u)manginagh NounPostbase;
 -kagh[V→N]:kagh                               NounPostbase;
 -@₁–lghii[V→N]:@₁–lghii                       NounPostbase;
+-–lleghpigagh[V→N]:–lleghpigagh               NounPostbase;
+-–lleghqagh[V→N]:–lleghqagh                   NounPostbase;
+-–lleg[V→N]:–lleg                             NounPostbase;
+-–llegh[V→N]:–llegh                           NounPostbase;
 
 -@₂~fkaq[V→N]:@₂~fkaq                      NounPostbase;
 -~fmiiq[V→N]:~fmiiq                        NounPostbase;
@@ -13600,10 +13603,6 @@ LEXICON VerbPostbase
 -@₁~fyuwhaaq[V→N]:@₁~fyuwhaaq              NounPostbase;
 -~–kayuk[V→N]:~–kayuk                      NounPostbase;
 -kutaq[V→N]:kutaq                          NounPostbase;
--–lleghpigaq[V→N]:–lleghpigaq              NounPostbase;
--–lleghqaq[V→N]:–lleghqaq                  NounPostbase;
--–llek[V→N]:–llek                          NounPostbase;
--–lleq[V→N]:–lleq                          NounPostbase;
 -@₁–negh[V→N]:@₁–negh                      NounPostbase;
 -neq[V→N]:neq                              NounPostbase;
 -@₁–nghhaq[V→N]:@₁–nghhaq                  NounPostbase;
