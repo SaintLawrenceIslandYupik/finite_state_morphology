@@ -3573,6 +3573,7 @@ qatepag                	NounPostbase; ! common eider (Somateria mollissima)
 qatmig                 	NounPostbase; ! long wooden pole carried in a boat and used for pushing ice away
 qatmigtagh             	NounPostbase; ! boom (of a sail); pole at bottom of sail; pole used in physical training
 qavaasigh              	NounPostbase; ! pajamas
+qavaqutagh              NounPostbase; ! sleeping potion
 qavagh                 	NounPostbase; ! a day and a night (in duration); sleep
 qavaghsigh             	NounPostbase; ! yearling bearded seal (Erignathus barbatus)
 qavaghvig              	NounPostbase; ! bed; bedroom
@@ -5264,6 +5265,8 @@ LEXICON NounPostbase
 -–ngertagh[N→N]:–ngertagh                NounPostbase;        documented as identical?
 -–ngestagh[N→N]:–ngestagh                NounPostbase;
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
+-–qligh*[N→N]:–qligh*                    NounPostbase; ! TODO: Used with positional bases
+!qwaaqun/te                              Particle;       TODO: Used with time words and yields particles
 
 -e[N→N]:-e                               NounPostbase;
 -–ghagh*[N→N]:–ghagh*                    NounPostbase;
@@ -5314,12 +5317,10 @@ LEXICON NounPostbase
 -–pestaagh[N→N]:–pestaagh                NounPostbase;
 -–pig[N→N]:–pig                          NounPostbase;
 -qagh[N→N]:qagh                          NounPostbase;
-
--–qinghagh[N→N]:–qinghagh                  NounPostbase;
--–qligh*[N→N]:–qligh*                    NounPostbase;
+-–qinghagh[N→N]:–qinghagh                NounPostbase;
 -–qragh[N→N]:–qragh                        NounPostbase;
 -–qrug[N→N]:–qrug                        NounPostbase;
--qutagh[N→N]:qutagh                        NounPostbase;
+
 -raaghagh[N→N]:raaghagh                    NounPostbase;
 -–raaghinagh*[N→N]:–raaghinagh*          NounPostbase;
 -raagh[N→N]:raagh                        NounPostbase;
@@ -5441,15 +5442,15 @@ LEXICON NounPostbase
 -pagnite[N→V]:pagnite                    VerbTrns;
 -–pigu[N→V]:–pigu                        VerbIntr;
 -–pigu[N→V]:–pigu                        VerbTrns;
+-qe[N→V]:qe                              VerbIntr;
+-qe[N→V]:qe                              VerbTrns;
+-~–qite[N→V]:~–qite                      VerbIntr;
+-~–qite[N→V]:~–qite                      VerbTrns;
 
 -@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbIntr;
 -@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbTrns;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
--qe[N→V]:qe                              VerbIntr;
--qe[N→V]:qe                              VerbTrns;
--~–qite[N→V]:~–qite                      VerbIntr;
--~–qite[N→V]:~–qite                      VerbTrns;
 -qsagute[N→V]:qsagute                    VerbIntr;
 -qsagute[N→V]:qsagute                    VerbTrns;
 -qu[N→V]:qu                              VerbIntr;
@@ -6907,6 +6908,8 @@ aya                   	VerbIntr; ! to go far
 aya                   	VerbTrns; ! to go far
 ayeme                 	VerbIntr; ! to break relatively long thin object
 ayeme                 	VerbTrns; ! to break relatively long thin object
+ayemte                  VerbIntr; ! to break
+ayemte                  VerbTrns; ! to break
 ayemkagh              	VerbIntr; ! to break; to break something off of (it)
 ayemkagh              	VerbTrns; ! to break; to break something off of (it)
 ayemqe                	VerbIntr; ! to break long thin object to pieces
@@ -7901,6 +7904,8 @@ iyeveli               	VerbIntr; ! to make the eyes figure in a game of cat’s 
 iyeveli               	VerbTrns; ! to make the eyes figure in a game of cat’s cradle
 kaaghte               	VerbIntr; ! to let the current drift a boat or an animal carcass
 kaaghte               	VerbTrns; ! to let the current drift a boat or an animal carcass
+kaagute                 VerbIntr; ! to strike
+kaagute                 VerbTrns; ! to strike
 kaalgugh              	VerbIntr; ! to haul dead whale or the like to shore
 kaalgugh              	VerbTrns; ! to haul dead whale or the like to shore
 kaallataqu            	VerbIntr; ! to arrive safely or opportunely
@@ -7947,6 +7952,8 @@ kagaygute             	VerbIntr; ! to excitedly run about
 kagaygute             	VerbTrns; ! to excitedly run about
 kagime                	VerbIntr; ! to crumble
 kagime                	VerbTrns; ! to crumble
+kagimte                 VerbIntr; ! to crush
+kagimte                 VerbTrns; ! to crush
 kagpag                	VerbIntr; ! to pack; to store away somnething
 kagpag                	VerbTrns; ! to pack; to store away somnething
 kagpesug              	VerbIntr; ! to feel claustrophobic; to feel closed in upon; to feel breathless
@@ -13368,7 +13375,7 @@ LEXICON VerbPostbase
 !!!      Verb →  Verb (Verb-Elaborating) Postbases     !!!
 !!!                                                    !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr; ! TODO: Review these attachment patterns
+-~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr;     ! TODO: Review these attachment patterns
 -@₂~fkau[V→V]:@₂~fkau                         VerbPostbase; !   in Badten v. Jacobson. Simplify?
 -@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns;
 -~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh             VerbIntr;
@@ -13400,6 +13407,9 @@ LEXICON VerbPostbase
 -–pag[V→V]:–pag                               VerbPostbase;
 -pag[V→V]:pag                                 VerbPostbase;
 -~–qaghte[V→V]:~–qaghte                       VerbPostbase; ! TODO: Not used with bases that end in g or full vowel
+-–qiinagh[V→V]:~f(a)ghesnagh/–qiinagh         VerbPostbase; ! TODO: Not used with vowel-ending bases
+!-~(q/t)uute[V→V]:~(q/t)uute                  VerbPostbase;   TODO: Needs to be implemented
+-@₁qugh[V→V]:@₁qugh                           VerbPostbase;   TODO: Used only with te-bases
 
 -~aatagh[V→V]:~aatagh                         VerbPostbase;
 -aghaghte[V→V]:aghaghte                       VerbPostbase;
@@ -13486,6 +13496,10 @@ LEXICON VerbPostbase
 -~–qagh[V→V]:~–qagh                           VerbPostbase;
 -~–qaghaqe[V→V]:~–qaghaqe                     VerbPostbase;
 -–qaqu[V→V]:–qaqu                             VerbPostbase;
+-~–qite[V→V]:~–qite                           VerbPostbase;
+-–qragh[V→V]:–qragh                           VerbPostbase;
+-–qrug[V→V]:–qrug                             VerbPostbase;
+-–qu[V→V]:–qu                                 VerbPostbase;
 
 -@₁~fragh[V→V]:@₁~fragh                       VerbPostbase;
 -@₁~f–ragkiighute[V→V]:@₁~f–ragkiighute       VerbPostbase;
@@ -13518,13 +13532,6 @@ LEXICON VerbPostbase
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
--–qiinagh[V→V]:~f(a)ghesnagh/–qiinagh         VerbPostbase;
--–qragh[V→V]:–qragh                           VerbPostbase;
--–qrug[V→V]:–qrug                             VerbPostbase;
--~(q/t)uute[V→V]:~(q/t)uute                   VerbPostbase;
--@₁qugh:@₁qugh                                VerbPostbase;
--@₁qugh[V→V]:@₁qugh                           VerbPostbase;
--–qu[V→V]:–qu                                 VerbPostbase;
 -–saag[V→V]:–saag                             VerbPostbase;
 -saag[V→V]:saag                               VerbPostbase;
 -saghagh[V→V]:saghagh                         VerbPostbase;
@@ -13590,6 +13597,7 @@ LEXICON VerbPostbase
 -@*ngugh*[V→N]:@*ngugh*                       NounPostbase;
 -~fnigh[V→N]:~fnigh                           NounPostbase;
 -@₁–nqegtagh[V→N]:@₁–nqegtagh                 NounPostbase;
+-~–qumtaagh[V→N]:~–qumtaagh                   NounPostbase;
 
 -@₁~f–rakegtaq[V→N]:@₁~f–rakegtaq          NounPostbase;
 -@₁~fvik[V→N]:@₁~fvik                      NounPostbase;
@@ -13598,7 +13606,6 @@ LEXICON VerbPostbase
 -@₁~f–yuqaq[V→N]:@₁~f–yuqaq                NounPostbase;
 -@₁~f–yu[V→N]:@₁~f–yu                      NounPostbase;
 -@₁~fyuwhaaq[V→N]:@₁~fyuwhaaq              NounPostbase;
--~–qumtaaq[V→N]:~–qumtaaq                  NounPostbase;
 -–rkaggaq[V→N]:–rkaggaq                    NounPostbase;
 -–rkapik[V→N]:–rkapik                      NounPostbase;
 -–sak[V→N]:–sak                            NounPostbase;
