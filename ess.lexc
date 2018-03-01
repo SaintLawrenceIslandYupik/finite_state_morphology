@@ -1854,6 +1854,7 @@ insene               	NounPostbase; ! engine; motor
 inseniya               	NounPostbase; ! engineer
 Invet                  	NounPostbase; ! Invut Mtn. on St. Lawrence Is.
 inwaamllu              	NounPostbase; ! not even; without even
+ipa                   	NounPostbase; ! the truth
 ipegsaate              	NounPostbase; ! whetstone; sharpening stone
 ipigkestaaghhagh       	NounPostbase; ! one that does not come far up the leg; low boot
 ipigkingwaagh          	NounPostbase; ! short boot of shaved sealskin
@@ -5305,29 +5306,26 @@ LEXICON NounPostbase
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase;
 -ni[N→N]:ni                              NounPostbase;
 -nite[N→N]:nite                          NounPostbase;
+-~f(p/v)allugh[N→N]:~f(p/v)allugh        NounPostbase;
+-–penaagh[N→N]:–penaagh                  NounPostbase;
+-–peragh[N→N]:–peragh                    NounPostbase;
+-–perewaagh[N→N]:–perewaagh              NounPostbase;
+-–perug[N→N]:–perug                      NounPostbase;
+-–pestaagh[N→N]:–pestaagh                NounPostbase;
+-–pig[N→N]:–pig                          NounPostbase;
+-qagh[N→N]:qagh                          NounPostbase;
 
--~fvallugh[N→N]:~fvallugh                  NounPostbase;
--palluq[N→N]:palluq                      NounPostbase;
--–penaaq[N→N]:–penaaq                    NounPostbase;
--–peraq[N→N]:–peraq                      NounPostbase;
--–perewaaq[N→N]:–perewaaq                NounPostbase;
--–peruk[N→N]:–peruk                      NounPostbase;
--–pestaaq[N→N]:–pestaaq                  NounPostbase;
--pigagh*[N→N]:pigagh*                    NounPostbase;
--–pik[N→N]:–pik                          NounPostbase;
--qaq[N→N]:qaq                            NounPostbase;
--qe[N→N]:qe                              NounPostbase;
--–qinghaq[N→N]:–qinghaq                  NounPostbase;
+-–qinghagh[N→N]:–qinghagh                  NounPostbase;
 -–qligh*[N→N]:–qligh*                    NounPostbase;
--–qraq[N→N]:–qraq                        NounPostbase;
--–qruk[N→N]:–qruk                        NounPostbase;
--qutaq[N→N]:qutaq                        NounPostbase;
--raaghaq[N→N]:raaghaq                    NounPostbase;
+-–qragh[N→N]:–qragh                        NounPostbase;
+-–qrug[N→N]:–qrug                        NounPostbase;
+-qutagh[N→N]:qutagh                        NounPostbase;
+-raaghagh[N→N]:raaghagh                    NounPostbase;
 -–raaghinagh*[N→N]:–raaghinagh*          NounPostbase;
 -raagh[N→N]:raagh                        NounPostbase;
--–raaq[N→N]:–raaq                        NounPostbase;
--raghaq[N→N]:raghaq                      NounPostbase;
--–rraak[N→N]:–rraak                      NounPostbase;
+-–raagh[N→N]:–raagh                        NounPostbase;
+-raghagh[N→N]:raghagh                      NounPostbase;
+-–rraag[N→N]:–rraag                      NounPostbase;
 -~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase;
 -~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase;
 -–siiq[N→N]:–siiq                        NounPostbase;
@@ -5437,17 +5435,17 @@ LEXICON NounPostbase
 -niigh[N→V]:niigh                        VerbTrns;
 -nite[N→V]:nite                          VerbIntr;
 -nite[N→V]:nite                          VerbTrns;
-
--@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbIntr;
--@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbTrns;
--@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
--@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
 -–pagite[N→V]:–pagite                    VerbIntr;
 -–pagite[N→V]:–pagite                    VerbTrns;
 -pagnite[N→V]:pagnite                    VerbIntr;
 -pagnite[N→V]:pagnite                    VerbTrns;
 -–pigu[N→V]:–pigu                        VerbIntr;
 -–pigu[N→V]:–pigu                        VerbTrns;
+
+-@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbIntr;
+-@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbTrns;
+-@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
+-@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
 -qe[N→V]:qe                              VerbIntr;
 -qe[N→V]:qe                              VerbTrns;
 -~–qite[N→V]:~–qite                      VerbIntr;
@@ -13395,6 +13393,13 @@ LEXICON VerbPostbase
 -–ngertagh[V→V]:–ngertagh                     VerbPostbase;         documented as identical?
 -–ngestagh[V→V]:–ngestagh                     VerbPostbase;
 -~–(ng₁)uagh[V→V]:~–(ng₁)uagh                 VerbPostbase; ! TODO: How do the allomorphs listed arise?
+-–pagunghite**[V→V]:–pagunghite**             VerbPostbase; ! TODO: Do these postbases actually have two forms from +-?
+-pagunghite**[V→V]:pagunghite**               VerbPostbase;
+-–panghite[V→V]:–panghite                     VerbPostbase;
+-panghite[V→V]:panghite                       VerbPostbase;
+-–pag[V→V]:–pag                               VerbPostbase;
+-pag[V→V]:pag                                 VerbPostbase;
+-~–qaghte[V→V]:~–qaghte                       VerbPostbase; ! TODO: Not used with bases that end in g or full vowel
 
 -~aatagh[V→V]:~aatagh                         VerbPostbase;
 -aghaghte[V→V]:aghaghte                       VerbPostbase;
@@ -13470,6 +13475,17 @@ LEXICON VerbPostbase
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase;
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase;
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase;
+-–pagigate[V→V]:–pagigate                     VerbPostbase;
+-–pagite[V→V]:–pagite                         VerbPostbase;
+-–pestaagh[V→V]:–pestaagh                     VerbPostbase;
+-(pete)fte[V→V]:(pete)fte                     VerbPostbase;
+-–pigesnagh[V→V]:–pigesnagh                   VerbPostbase;
+-–pigte[V→V]:–pigte                           VerbPostbase;
+-~–qaghtagh[V→V]:~–qaghtagh                   VerbPostbase;
+-~–qagh[V→V]:~–qagh                           VerbPostbase;
+-~–qaghaqe[V→V]:~–qaghaqe                     VerbPostbase;
+-–qaqu[V→V]:–qaqu                             VerbPostbase;
 
 -@₁~fragh[V→V]:@₁~fragh                       VerbPostbase;
 -@₁~f–ragkiighute[V→V]:@₁~f–ragkiighute       VerbPostbase;
@@ -13502,24 +13518,6 @@ LEXICON VerbPostbase
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
--pagaatagh[V→V]:pagaatagh                     VerbPostbase;
--–pagigate[V→V]:–pagigate                     VerbPostbase;
--–pagite[V→V]:–pagite                         VerbPostbase;
--–pagunghite[V→V]:–pagunghite                 VerbPostbase;
--pagunghite[V→V]:pagunghite                   VerbPostbase;
--–pag[V→V]:–pag                               VerbPostbase;
--pag[V→V]:pag                                 VerbPostbase;
--–panghite[V→V]:–panghite                     VerbPostbase;
--panghite[V→V]:panghite                       VerbPostbase;
--–pestaagh[V→V]:–pestaagh                     VerbPostbase;
--(pete)fte[V→V]:(pete)fte                     VerbPostbase;
--–pigesnagh[V→V]:–pigesnagh                   VerbPostbase;
--–pigte[V→V]:–pigte                           VerbPostbase;
--~–qaghaqe[V→V]:~–qaghaqe                     VerbPostbase;
--~–qaghtagh[V→V]:~–qaghtagh                   VerbPostbase;
--~–qaghte[V→V]:~–qaghte                       VerbPostbase;
--~–qagh[V→V]:~–qagh                           VerbPostbase;
--–qaqu[V→V]:–qaqu                             VerbPostbase;
 -–qiinagh[V→V]:~f(a)ghesnagh/–qiinagh         VerbPostbase;
 -–qragh[V→V]:–qragh                           VerbPostbase;
 -–qrug[V→V]:–qrug                             VerbPostbase;
@@ -13531,7 +13529,6 @@ LEXICON VerbPostbase
 -saag[V→V]:saag                               VerbPostbase;
 -saghagh[V→V]:saghagh                         VerbPostbase;
 -saghtugh[V→V]:saghtugh                       VerbPostbase;
--~sfvagaatagh[V→V]:~sfvagaatagh               VerbPostbase;
 -sigh[V→V]:sigh                               VerbPostbase;
 -–sighwaagh[V→V]:–sighwaagh                   VerbPostbase;
 -staaghhaa[V→V]:staaghhaa                     VerbPostbase;
@@ -13577,6 +13574,7 @@ LEXICON VerbPostbase
 -@₁~f–negh[V→N]:@₁~f–negh                     NounPostbase; ! TODO: Which version of the postbase is it?
 -@₁–negh[V→N]:@₁–negh                         NounPostbase; !       It can be used with ABL_MOD for some verbs
 !-negh[V→N]:negh                              NounPostbase; TODO: Used with quantifying verbs and takes possessed endings
+-qagh[V→N]:qagh                               NounPostbase; ! TODO: Used with descriptive bases
 
 -kagh[V→N]:kagh                               NounPostbase;
 -@₁–lghii[V→N]:@₁–lghii                       NounPostbase;
@@ -13600,7 +13598,6 @@ LEXICON VerbPostbase
 -@₁~f–yuqaq[V→N]:@₁~f–yuqaq                NounPostbase;
 -@₁~f–yu[V→N]:@₁~f–yu                      NounPostbase;
 -@₁~fyuwhaaq[V→N]:@₁~fyuwhaaq              NounPostbase;
--qaq[V→N]:qaq                              NounPostbase;
 -~–qumtaaq[V→N]:~–qumtaaq                  NounPostbase;
 -–rkaggaq[V→N]:–rkaggaq                    NounPostbase;
 -–rkapik[V→N]:–rkapik                      NounPostbase;
