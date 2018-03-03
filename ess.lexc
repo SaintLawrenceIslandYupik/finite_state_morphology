@@ -5326,19 +5326,16 @@ LEXICON NounPostbase
 -raag[N→N]:raag                          NounPostbase;
 -–raagh[N→N]:–raagh                      NounPostbase;
 -–rraag[N→N]:–rraag                      NounPostbase;
+-–siigh[N→N]:–siigh                      NounPostbase;
+-–sluvegagh[N→N]:–sluvegagh              NounPostbase;
+-–sngwaaghaq[N→N]:–sngwaaghaq            NounPostbase;
+-–squghhagh*[N→N]:–squghhagh*            NounPostbase;
+-–squllgagh[N→N]:–squllgagh              NounPostbase;
+-–squgh[N→N]:–squgh                      NounPostbase;
+-–staghhiinagh*[N→N]:–staghhiinagh*      NounPostbase;
 
 -~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase;
 -~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase;
--–siiq[N→N]:–siiq                        NounPostbase;
--siq[N→N]:siq                            NounPostbase;
--–sluvegaq[N→N]:–sluvegaq                NounPostbase;
--–sngwaaghaq[N→N]:–sngwaaghaq            NounPostbase;
--–squghhagh*[N→N]:–squghhagh*            NounPostbase;
--–squghhagh*[N→N]:–squghhagh*            NounPostbase;
--–squgh[N→N]:–squgh                      NounPostbase;
--–squllgaq[N→N]:–squllgaq                NounPostbase;
--–squq[N→N]:–squq                        NounPostbase;
--–staghhiinagh*[N→N]:–staghhiinagh*      NounPostbase;
 -ta[N→N]:ta                              NounPostbase;
 -taq[N→N]:taq                            NounPostbase;
 -–tuqaq[N→N]:–tuqaq                      NounPostbase;
@@ -5446,23 +5443,23 @@ LEXICON NounPostbase
 -qe[N→V]:qe                              VerbTrns;
 -~–qite[N→V]:~–qite                      VerbIntr;
 -~–qite[N→V]:~–qite                      VerbTrns;
+-qu[N→V]:qu                              VerbIntr;
+-qu[N→V]:qu                              VerbTrns;
 -@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbIntr;
 -@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbTrns;
+-saghtugh[N→V]:saghtugh                  VerbIntr;
+-saghtugh[N→V]:saghtugh                  VerbTrns;
+-si[N→V]:si                              VerbIntr;
+-si[N→V]:si                              VerbTrns;
+-siigh[N→V]:siigh                        VerbIntr;
+-siigh[N→V]:siigh                        VerbTrns;
+-sugnite[N→V]:sugnite                    VerbIntr;
+-sugnite[N→V]:sugnite                    VerbTrns;
 
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
 -qsagute[N→V]:qsagute                    VerbIntr;
 -qsagute[N→V]:qsagute                    VerbTrns;
--qu[N→V]:qu                              VerbIntr;
--qu[N→V]:qu                              VerbTrns;
--saghtugh[N→V]:saghtugh                  VerbIntr;
--saghtugh[N→V]:saghtugh                  VerbTrns;
--siigh[N→V]:siigh                        VerbIntr;
--siigh[N→V]:siigh                        VerbTrns;
--si[N→V]:si                              VerbIntr;
--si[N→V]:si                              VerbTrns;
--sugnite[N→V]:sugnite                    VerbIntr;
--sugnite[N→V]:sugnite                    VerbTrns;
 -tagh[N→V]:tagh                          VerbIntr;
 -tagh[N→V]:tagh                          VerbTrns;
 -te[N→V]:te                              VerbIntr;
@@ -12103,6 +12100,8 @@ takestaaghhaa         	VerbIntr; ! to be short
 takestaaghhaa         	VerbTrns; ! to be short
 taketuyiig            	VerbIntr; ! to be lengthy
 taketuyiig            	VerbTrns; ! to be lengthy
+taketu                  VerbIntr; ! to be how long; to be so long
+taketu                  VerbTrns; ! to be how long; to be so long
 takii                 	VerbIntr; ! to approach game (while hunting)
 takii                 	VerbTrns; ! to approach game (while hunting)
 taklaghrukegte        	VerbIntr; ! to be straight
@@ -13505,6 +13504,14 @@ LEXICON VerbPostbase
 -@₁~f–ragkiighute[V→V]:@₁~f–ragkiighute       VerbPostbase;
 -@₁~f–rakegte[V→V]:@₁~f–rakegte               VerbPostbase;
 -@₁~f–rakguugh[V→V]:@₁~f–rakguugh             VerbPostbase;
+-–saag[V→V]:–saag                             VerbPostbase;
+-saag[V→V]:saag                               VerbPostbase;
+-sagh[V→V]:sagh                               VerbPostbase;
+-saghtugh[V→V]:saghtugh                       VerbPostbase;
+-sigh[V→V]:sigh                               VerbPostbase;
+-–sighwaagh[V→V]:–sighwaagh                   VerbPostbase;
+-sugh[V→V]:sugh                               VerbPostbase;
+-sugnite[V→V]:sugnite                         VerbPostbase;
 
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase;
 -~f–vag[V→V]:~f–vag                           VerbPostbase;
@@ -13532,15 +13539,6 @@ LEXICON VerbPostbase
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
--–saag[V→V]:–saag                             VerbPostbase;
--saag[V→V]:saag                               VerbPostbase;
--saghagh[V→V]:saghagh                         VerbPostbase;
--saghtugh[V→V]:saghtugh                       VerbPostbase;
--sigh[V→V]:sigh                               VerbPostbase;
--–sighwaagh[V→V]:–sighwaagh                   VerbPostbase;
--staaghhaa[V→V]:staaghhaa                     VerbPostbase;
--sugh[V→V]:sugh                               VerbPostbase;
--sugnite[V→V]:sugnite                         VerbPostbase;
 -tagh[V→V]:tagh                               VerbPostbase;
 -(te)sigate[V→V]:(te)sigate                   VerbPostbase;
 -(te)snaanghite[V→V]:(te)snaanghite           VerbPostbase;
@@ -13600,7 +13598,9 @@ LEXICON VerbPostbase
 -~–qumtaagh[V→N]:~–qumtaagh                   NounPostbase;
 -@₁~f–rakegtagh[V→N]:@₁~f–rakegtagh           NounPostbase;
 -–rkaggagh[V→N]:–rkaggagh                     NounPostbase;
--–rkapig[V→N]:–rkapig                      NounPostbase;
+-–rkapig[V→N]:–rkapig                         NounPostbase;
+-–sag[V→N]:–sag                               NounPostbase;
+-(s)ta[V→N]:(s)ta                             NounPostbase;
 
 -@₁~fvik[V→N]:@₁~fvik                      NounPostbase;
 -@₁~fyaghqaq[V→N]:@₁~fyaghqaq              NounPostbase;
@@ -13608,8 +13608,6 @@ LEXICON VerbPostbase
 -@₁~f–yuqaq[V→N]:@₁~f–yuqaq                NounPostbase;
 -@₁~f–yu[V→N]:@₁~f–yu                      NounPostbase;
 -@₁~fyuwhaaq[V→N]:@₁~fyuwhaaq              NounPostbase;
--–sak[V→N]:–sak                            NounPostbase;
--(s)ta[V→N]:(s)ta                          NounPostbase;
 -tala[V→N]:tala                            NounPostbase;
 -–tuqaq[V→N]:–tuqaq                        NounPostbase;
 -tuqaq[V→N]:tuqaq                          NounPostbase;
@@ -13637,6 +13635,8 @@ LEXICON VerbPostbase
 -@₁@₂~fmiqe[Cmpd_Vbl]:@₁@₂~fmiqe    VerbTrns;
 -@₁~fnayuke[Cmpd_Vbl]:@₁~fnayuke    VerbIntr; ! TODO: What transitivity does this assign the embedded verb?
 -@₁~fnayuke[Cmpd_Vbl]:@₁~fnayuke    VerbTrns;
+-saghagh[Cmpd_Vbl]:saghagh          VerbIntr;
+-saghagh[Cmpd_Vbl]:saghagh          VerbTrns;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                 !!!
