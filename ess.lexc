@@ -5269,6 +5269,8 @@ LEXICON NounPostbase
 -–qligh*[N→N]:–qligh*                    NounPostbase; ! TODO: Used with positional bases
 !qwaaqun/te                              Particle;       TODO: Used with time words and yields particles
 !-ta[N→N]:ta                             NounPostbase;   TODO: Used with demonstrative adverb bases. Takes possessed endings
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase; ! TODO: Issue as spelled out in Lane's email
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase;
 
 -e[N→N]:-e                               NounPostbase;
 -–ghagh*[N→N]:–ghagh*                    NounPostbase;
@@ -5339,8 +5341,6 @@ LEXICON NounPostbase
 -–tuqagh[N→N]:–tuqagh                    NounPostbase;
 -tuqagh[N→N]:tuqagh                      NounPostbase;
 
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase;
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase;
 -–vraagh[N→N]:–vraagh                    NounPostbase;
 -–vreghagh[N→N]:–vreghagh                NounPostbase;
 -–vyiigh[N→N]:–vyiigh                    NounPostbase;
@@ -5370,6 +5370,8 @@ LEXICON NounPostbase
 !-~%:(ng₁)i%:ghute[N→V]:~%:(ng₁)i%:ghute VerbTrns;
 -tagh[N→V]:tagh                          VerbIntr; ! TODO: Used with words denoting sounds
 -tagh[N→V]:tagh                          VerbTrns;
+-uute[N→V]:uute                          VerbIntr; ! TODO: Used with words denoting sounds
+-uute[N→V]:uute                          VerbTrns;
 
 -–ghqu[N→V]:–ghqu                        VerbIntr;
 -–ghqu[N→V]:–ghqu                        VerbTrns;
@@ -5473,15 +5475,13 @@ LEXICON NounPostbase
 -tupag[N→V]:tupag                        VerbTrns;
 -tutka[N→V]:tutka                        VerbIntr;
 -tutka[N→V]:tutka                        VerbTrns;
+-ughqe[N→V]:ughqe                        VerbIntr;
+-ughqe[N→V]:ughqe                        VerbTrns;
 
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
 -qsagute[N→V]:qsagute                    VerbIntr;
 -qsagute[N→V]:qsagute                    VerbTrns;
--ughqe[N→V]:ughqe                        VerbIntr;
--ughqe[N→V]:ughqe                        VerbTrns;
--uute[N→V]:uute                          VerbIntr;
--uute[N→V]:uute                          VerbTrns;
 -vagh[N→V]:vagh                          VerbIntr;
 -vagh[N→V]:vagh                          VerbTrns;
 
@@ -6386,6 +6386,8 @@ amu                   	VerbIntr; ! to pull through an opening (of thread, rope, 
 amu                   	VerbTrns; ! to pull through an opening (of thread, rope, etc.)
 amyughaagh            	VerbIntr; ! to tease (between cousins)
 amyughaagh            	VerbTrns; ! to tease (between cousins)
+amyugh                  VerbIntr; ! to be cruel
+amyugh                  VerbTrns; ! to be cruel
 amyulqe               	VerbIntr; ! to make fun of someone
 amyulqe               	VerbTrns; ! to make fun of someone
 amyume                	VerbIntr; ! to waste or squander
@@ -13519,8 +13521,11 @@ LEXICON VerbPostbase
 -tugh[V→V]:tugh                               VerbPostbase;
 -tulli[V→V]:tulli                             VerbPostbase;
 -tutkaligh[V→V]:tutkaligh                     VerbPostbase;
-
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase;
+-~%:(u)te[V→V]:~%:(u)te                       VerbPostbase;
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase;
+-@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase;
+
 -~f–vag[V→V]:~f–vag                           VerbPostbase;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase;
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase;
@@ -13546,9 +13551,6 @@ LEXICON VerbPostbase
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase;
--@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase;
 -–vyigh[V→V]:–vyigh                           VerbPostbase;
 -–vyiigh[V→V]:–vyiigh                         VerbPostbase;
 -–vzigh[V→V]:–vzigh                           VerbPostbase;
@@ -13597,16 +13599,16 @@ LEXICON VerbPostbase
 -(s)ta[V→N]:(s)ta                             NounPostbase;
 -–tuqagh[V→N]:–tuqagh                         NounPostbase;
 -tuqagh[V→N]:tuqagh                           NounPostbase;
+-@₁~%:(u)sagh[V→N]:@₁~%:(u)sagh               NounPostbase;
+-@₁~%:(u)sigh[V→N]:@₁~%:(u)sigh               NounPostbase;
+-@₁~%:(u)te[V→N]:~%:(u)te                     NounPostbase;
 
--@₁~fvik[V→N]:@₁~fvik                      NounPostbase;
--@₁~fyaghqaq[V→N]:@₁~fyaghqaq              NounPostbase;
--@₁~fyuggaaq[V→N]:@₁~fyuggaaq              NounPostbase;
--@₁~f–yuqaq[V→N]:@₁~f–yuqaq                NounPostbase;
--@₁~f–yu[V→N]:@₁~f–yu                      NounPostbase;
--@₁~fyuwhaaq[V→N]:@₁~fyuwhaaq              NounPostbase;
--@₁~%:(u)saq[V→N]:@₁~%:(u)saq              NounPostbase;
--@₁~%:(u)siq[V→N]:@₁~%:(u)siq              NounPostbase;
--@₁~%:(u)te[V→N]:~%:(u)te                  NounPostbase;
+-@₁~fvig[V→N]:@₁~fvig                         NounPostbase;
+-@₁~fyaghqagh[V→N]:@₁~fyaghqagh               NounPostbase;
+-@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase;
+-@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase;
+-@₁~f–yu[V→N]:@₁~f–yu                         NounPostbase;
+-@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
