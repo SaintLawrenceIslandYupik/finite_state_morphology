@@ -5346,9 +5346,8 @@ LEXICON NounPostbase
 -tagh[N→N]:tagh                          NounPostbase;
 -–tuqagh[N→N]:–tuqagh                    NounPostbase;
 -tuqagh[N→N]:tuqagh                      NounPostbase;
-
--–yaagh[N→N]:–yaagh                      NounPostbase;
 -yage[N→N]:yage                          NounPostbase;
+-–yaagh[N→N]:–yaagh                      NounPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5477,9 +5476,11 @@ LEXICON NounPostbase
 -tutka[N→V]:tutka                        VerbTrns;
 -ughqe[N→V]:ughqe                        VerbIntr;
 -ughqe[N→V]:ughqe                        VerbTrns;
-
+-yag[N→V]:yag                            VerbIntr;
+-yag[N→V]:yag                            VerbTrns;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
+
 -qsagute[N→V]:qsagute                    VerbIntr;
 -qsagute[N→V]:qsagute                    VerbTrns;
 -vagh[N→V]:vagh                          VerbIntr;
@@ -9568,6 +9569,8 @@ neqamike              	VerbIntr; ! to remember (without having forgotten); to no
 neqamike              	VerbTrns; ! to remember (without having forgotten); to not forget
 neqangisag            	VerbIntr; ! to run short of food; to suffer famine
 neqangisag            	VerbTrns; ! to run short of food; to suffer famine
+neqenge                 VerbIntr; ! to get food
+neqenge                 VerbTrns; ! to get food
 neqangugh             	VerbIntr; ! to think of; to remember
 neqangugh             	VerbTrns; ! to think of; to remember
 neqekrangllagh        	VerbIntr; ! to bake bread; to make fried bread
@@ -11356,6 +11359,8 @@ quyillgaaghti         	VerbIntr; ! to speak Chukchi
 quyillgaaghti         	VerbTrns; ! to speak Chukchi
 quyngighniigh         	VerbIntr; ! to herd reindeer
 quyngighniigh         	VerbTrns; ! to herd reindeer
+quyngighniighteke       VerbIntr; ! to have (as one's) reindeer herder
+quyngighniighteke       VerbTrns; ! to have (as one's) reindeer herder
 quyngighqwaagh        	VerbIntr; ! to herd reindeer
 quyngighqwaagh        	VerbTrns; ! to herd reindeer
 quyngilegti           	VerbIntr; ! to travel by reindeer-pulled sled
@@ -13420,6 +13425,8 @@ LEXICON VerbPostbase
 -–vzigh[V→V]:–vzigh                           VerbPostbase;         documented as identical?
 -–vyiigh[V→V]:–vyiigh                         VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
 -–vziigh[V→V]:–vziigh                         VerbPostbase;         documented as identical?
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase; ! TODO: Takes intransitive endings only
+!-@₁~fyukagh[V→V]:@₁~fyukagh                  VerbPostbase;   TODO: Review this
 
 -~aatagh[V→V]:~aatagh                         VerbPostbase;
 -aghaghte[V→V]:aghaghte                       VerbPostbase;
@@ -13535,29 +13542,24 @@ LEXICON VerbPostbase
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase;
 -~f–vag[V→V]:~f–vag                           VerbPostbase;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase;
-
--@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase;
--@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase;
+-@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase;
+-@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase;
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase;
+-@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase;
--@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase;
 -@₁~fyagute[V→V]:@₁~fyagute                   VerbPostbase;
--@₁~fyaquna[V→V]:@₁~fyaquna                   VerbPostbase;
 -@₁~f–yiilliqe[V→V]:@₁~f–yiilliqe             VerbPostbase;
 -@₁~f–yiite[V→V]:@₁~f–yiite                   VerbPostbase;
+-@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
+-@₁~fyug[V→V]:@₁~fyug                         VerbPostbase;
 -@₁~fyuggaagh[V→V]:@₁~fyuggaagh               VerbPostbase;
 -@₁~fyugnagh[V→V]:@₁~fyugnagh                 VerbPostbase;
 -@₁~fyuguma[V→V]:@₁~fyuguma                   VerbPostbase;
--@₁~fyug[V→V]:@₁~fyug                         VerbPostbase;
--@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase;
--@₁~fyuke[V→V]:@₁~fyuke                       VerbPostbase;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
--@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
 
 
@@ -13607,11 +13609,10 @@ LEXICON VerbPostbase
 -@₁~%:(u)sigh[V→N]:@₁~%:(u)sigh               NounPostbase;
 -@₁~%:(u)te[V→N]:~%:(u)te                     NounPostbase;
 -@₁~fvig[V→N]:@₁~fvig                         NounPostbase;
-
 -@₁~fyaghqagh[V→N]:@₁~fyaghqagh               NounPostbase;
+-@₁~f–yu[V→N]:@₁~f–yu                         NounPostbase;
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase;
--@₁~f–yu[V→N]:@₁~f–yu                         NounPostbase;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase;
 
 
@@ -13644,6 +13645,8 @@ LEXICON VerbPostbase
 -(te)snanigh[Cmpd_Vbl]:(te)snanigh        VerbTrns;
 -(te)stepag[Cmpd_vbl]:(te)stepag          VerbIntr;
 -(te)stepag[Cmpd_vbl]:(te)stepag          VerbTrns;
+-@₁~fyuke[Cmpd_Vbl]:@₁~fyuke              VerbIntr;
+-@₁~fyuke[Cmpd_Vbl]:@₁~fyuke              VerbTrns;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                 !!!
