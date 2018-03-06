@@ -5262,6 +5262,10 @@ LEXICON NounPostbase
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase;
 -–vleghagh[N→N]:–vleghagh                NounPostbase;
+-–vraagh[N→N]:–vraagh                    NounPostbase;
+-–vreghagh[N→N]:–vreghagh                NounPostbase;
+-–vzaagh[N→N]:–vzaagh                    NounPostbase;
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase;
 -–ngeltagh[N→N]:–ngeltagh                NounPostbase; ! TODO: Are there no conditions on the following postbases which are
 -–ngertagh[N→N]:–ngertagh                NounPostbase;        documented as identical?
 -–ngestagh[N→N]:–ngestagh                NounPostbase;
@@ -5271,6 +5275,8 @@ LEXICON NounPostbase
 !-ta[N→N]:ta                             NounPostbase;   TODO: Used with demonstrative adverb bases. Takes possessed endings
 -~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase; ! TODO: Issue as spelled out in Lane's email
 -~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase;
+-–vyiigh[N→N]:–vyiigh                    NounPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–vziigh[N→N]:–vziigh                    NounPostbase;         documented as identical?
 
 -e[N→N]:-e                               NounPostbase;
 -–ghagh*[N→N]:–ghagh*                    NounPostbase;
@@ -5341,12 +5347,6 @@ LEXICON NounPostbase
 -–tuqagh[N→N]:–tuqagh                    NounPostbase;
 -tuqagh[N→N]:tuqagh                      NounPostbase;
 
--–vraagh[N→N]:–vraagh                    NounPostbase;
--–vreghagh[N→N]:–vreghagh                NounPostbase;
--–vyiigh[N→N]:–vyiigh                    NounPostbase;
--–vzaagh[N→N]:–vzaagh                    NounPostbase;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase;
--–vziigh[N→N]:–vziigh                    NounPostbase;
 -–yaagh[N→N]:–yaagh                      NounPostbase;
 -yage[N→N]:yage                          NounPostbase;
 
@@ -6735,6 +6735,8 @@ asenge                	VerbIntr; ! to owe (him); to be in debt to (him)
 asenge                	VerbTrns; ! to owe (him); to be in debt to (him)
 asighqe               	VerbIntr; ! to tie up
 asighqe               	VerbTrns; ! to tie up
+asighute                VerbIntr; ! to tie (it) onto something
+asighute                VerbTrns; ! to tie (it) onto something
 asivagh               	VerbIntr; ! to lower; to go down
 asivagh               	VerbTrns; ! to lower; to go down
 asute                 	VerbIntr; ! to temporarily exchange wives 
@@ -7416,6 +7418,8 @@ iglegha               	VerbIntr; ! to be traveling; to be running (of machinery)
 iglegha               	VerbTrns; ! to be traveling; to be running (of machinery)
 igleghte              	VerbIntr; ! to travel; to move; to go; to start
 igleghte              	VerbTrns; ! to travel; to move; to go; to start
+igughi                  VerbIntr; ! to stick up for someone; to defend someone verbally
+igughi                  VerbTrns; ! to stick up for someone; to defend someone verbally
 igughpagte            	VerbIntr; ! to jell rapidly
 igughpagte            	VerbTrns; ! to jell rapidly
 igughte               	VerbIntr; ! to jell; to congeal; to stiffen
@@ -13412,6 +13416,10 @@ LEXICON VerbPostbase
 !-~(q/t)uute[V→V]:~(q/t)uute                  VerbPostbase;   TODO: Needs to be implemented
 -@₁qugh[V→V]:@₁qugh                           VerbPostbase;   TODO: Used only with te-bases
 -tutka[V→V]:tutka                             VerbPostbase; ! TODO: Used with descriptive verbs
+-–vyigh[V→V]:–vyigh                           VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–vzigh[V→V]:–vzigh                           VerbPostbase;         documented as identical?
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–vziigh[V→V]:–vziigh                         VerbPostbase;         documented as identical?
 
 -~aatagh[V→V]:~aatagh                         VerbPostbase;
 -aghaghte[V→V]:aghaghte                       VerbPostbase;
@@ -13525,9 +13533,9 @@ LEXICON VerbPostbase
 -~%:(u)te[V→V]:~%:(u)te                       VerbPostbase;
 -@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase;
-
 -~f–vag[V→V]:~f–vag                           VerbPostbase;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase;
+
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase;
@@ -13551,10 +13559,6 @@ LEXICON VerbPostbase
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
 -@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
--–vyigh[V→V]:–vyigh                           VerbPostbase;
--–vyiigh[V→V]:–vyiigh                         VerbPostbase;
--–vzigh[V→V]:–vzigh                           VerbPostbase;
--–vziigh[V→V]:–vziigh                         VerbPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13602,8 +13606,8 @@ LEXICON VerbPostbase
 -@₁~%:(u)sagh[V→N]:@₁~%:(u)sagh               NounPostbase;
 -@₁~%:(u)sigh[V→N]:@₁~%:(u)sigh               NounPostbase;
 -@₁~%:(u)te[V→N]:~%:(u)te                     NounPostbase;
-
 -@₁~fvig[V→N]:@₁~fvig                         NounPostbase;
+
 -@₁~fyaghqagh[V→N]:@₁~fyaghqagh               NounPostbase;
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase;

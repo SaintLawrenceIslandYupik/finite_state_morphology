@@ -114,6 +114,7 @@ test-postbases: ess.pairs.gold/A-Badten_Postbases.tsv ess.pairs.gold/E-Badten_Po
 	@cut -f 1 ess.pairs.gold/S-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/S-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With S - PASS" || echo "Badten Dictionary Postbases Starting With S - FAIL"
 	@cut -f 1 ess.pairs.gold/T-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/T-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With T - PASS" || echo "Badten Dictionary Postbases Starting With T - FAIL"
 	@cut -f 1 ess.pairs.gold/U-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/U-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With U - PASS" || echo "Badten Dictionary Postbases Starting With U - FAIL"
+	@cut -f 1 ess.pairs.gold/V-Badten_Postbases.tsv     | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | diff - ess.pairs.gold/V-Badten_Postbases.tsv     && echo "Badten Dictionary Postbases Starting With V - PASS" || echo "Badten Dictionary Postbases Starting With V - FAIL"
 
 
 clean:
