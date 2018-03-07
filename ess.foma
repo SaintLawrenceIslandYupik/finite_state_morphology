@@ -158,16 +158,23 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeB
                      e -> 0 ||                    V C _ [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~sf 
 
-define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-                  [..] -> i || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-                  [..] -> u || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-                     e -> 0 || WordBoundary Alphabet+ V C _ MorphemeBoundary "~f" ∘  ! e-dropping
-                     e -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "~f" V   ∘  ! e-dropping
+define FinalE     [..] -> a "~h" || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                  [..] -> i "~h" || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                  [..] -> u "~h" || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                     e -> 0 || WordBoundary (C) a a "~h" C _ MorphemeBoundary "~f"
+                     e -> 0 || WordBoundary (C) i i "~h" C _ MorphemeBoundary "~f"
+                     e -> 0 || WordBoundary (C) u u "~h" C _ MorphemeBoundary "~f"
+                     e -> 0 || WordBoundary (C) a (a)    t _ MorphemeBoundary "~f"
+                     e -> 0 || WordBoundary (C) i (i)    t _ MorphemeBoundary "~f"
+                     e -> 0 || WordBoundary (C) u (u)    t _ MorphemeBoundary "~f"                  
+#                     e -> 0 || WordBoundary Alphabet+ V C _ MorphemeBoundary "~f" ∘  ! e-dropping
+#                     e -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "~f" V   ∘  ! e-dropping
+                  "~h" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
                   "~f" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
 
-define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
-                    "~h" -> 0   || [ C | V ] C V C e MorphemeBoundary _                 ∘  ! does not drop e if base contains multiple syllables
-				    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _            ;  ! otherwise drop e
+#define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
+#                    "~h" -> 0   || [ C | V ] C V C e MorphemeBoundary _                 ∘  ! does not drop e if base contains multiple syllables
+#				    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _            ;  ! otherwise drop e
 
 define InterConsonantalE "(e)" -> e || C MorphemeBoundary (":") _  ∘  ! convert (e) to e when following a consonant
                          "(e)" -> 0 || V MorphemeBoundary (":") _  ;  ! otherwise delete it
