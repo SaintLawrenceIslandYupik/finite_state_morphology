@@ -45,7 +45,7 @@ define MorphPhonSymbols [ "~"     | "~f"      | "~sf"   | "~h"    | "-w"    | ":
                           "(e)"   | "(g₁)"    | "(g₂)"  | "(g₃)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" |
                           "(s)"   | "(at)"    |
 						  "(g/t)" | "(p/v)"   | "(s/z)" | "(t/y)" | "(i/u)" | "(i/e)" |    "(pete)fte"    |
-                          "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" | "~f(a)ghesnagh/–qiinagh" ] ;
+                          "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" ];
 
 define Lowercase "A" -> a ,
 	             "I" -> i ,
@@ -158,23 +158,30 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeB
                      e -> 0 ||                    V C _ [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~sf 
 
-define FinalE     [..] -> a "~h" || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-                  [..] -> i "~h" || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-                  [..] -> u "~h" || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-                     e -> 0 || WordBoundary (C) a a "~h" C _ MorphemeBoundary "~f"
-                     e -> 0 || WordBoundary (C) i i "~h" C _ MorphemeBoundary "~f"
-                     e -> 0 || WordBoundary (C) u u "~h" C _ MorphemeBoundary "~f"
-                     e -> 0 || WordBoundary (C) a (a)    t _ MorphemeBoundary "~f"
-                     e -> 0 || WordBoundary (C) i (i)    t _ MorphemeBoundary "~f"
-                     e -> 0 || WordBoundary (C) u (u)    t _ MorphemeBoundary "~f"                  
-#                     e -> 0 || WordBoundary Alphabet+ V C _ MorphemeBoundary "~f" ∘  ! e-dropping
-#                     e -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "~f" V   ∘  ! e-dropping
-                  "~h" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
+define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                  [..] -> i || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                  [..] -> u || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+                     e -> 0 || WordBoundary Alphabet+ V C _ MorphemeBoundary "~f" ∘  ! e-dropping
+                     e -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "~f" V   ∘  ! e-dropping
                   "~f" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
 
-#define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
-#                    "~h" -> 0   || [ C | V ] C V C e MorphemeBoundary _                 ∘  ! does not drop e if base contains multiple syllables
-#				    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _            ;  ! otherwise drop e
+#define FinalE     [..] -> a "~h" || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+#                  [..] -> i "~h" || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+#                  [..] -> u "~h" || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
+#                     e -> 0 || WordBoundary (C) a a "~h" C _ MorphemeBoundary "~f"
+#                     e -> 0 || WordBoundary (C) i i "~h" C _ MorphemeBoundary "~f"
+#                     e -> 0 || WordBoundary (C) u u "~h" C _ MorphemeBoundary "~f"
+#                     e -> 0 || WordBoundary (C) a (a)    t _ MorphemeBoundary "~f"
+#                     e -> 0 || WordBoundary (C) i (i)    t _ MorphemeBoundary "~f"
+#                     e -> 0 || WordBoundary (C) u (u)    t _ MorphemeBoundary "~f"                  
+#                     e -> 0 || WordBoundary Alphabet+ V C _ MorphemeBoundary "~f" ∘  ! e-dropping
+#                     e -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "~f" V   ∘  ! e-dropping
+#                  "~h" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
+#                  "~f" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
+
+define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
+                    "~h" -> 0   || [ C | V ] C V C e MorphemeBoundary _                 ∘  ! does not drop e if base contains multiple syllables
+				    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _            ;  ! otherwise drop e
 
 define InterConsonantalE "(e)" -> e || C MorphemeBoundary (":") _  ∘  ! convert (e) to e when following a consonant
                          "(e)" -> 0 || V MorphemeBoundary (":") _  ;  ! otherwise delete it
@@ -259,6 +266,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(u)"   -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(ng₂)" -> "ng" || FullVowel MorphemeBoundary MorphPhonSymbols* _              ∘
                          "(a)" e -> a    || _ MorphemeBoundary MorphPhonSymbols* ng                     ∘
+                         "(a)"   -> a    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          i "(i/e)" -> e  || m _ t                                                       ∘
                          i "(i/e)" -> i  || n _ t                                                       ∘
 						 "(s)"   -> s    || V MorphemeBoundary _                                        ∘
@@ -345,10 +353,7 @@ define MultipleForms "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
                      "@₁~flu/na" t e n -> n a ng           || t e "*" _  ∘
                      "@₁~flu/na" t a -> n a a m t a        || t e "*" _  ∘
                      "@₁~flu/na" t u ng  -> n a a m t u ng || t e "*" _  ∘
-                     "@₁~flu/na" -> "@₁" "~f" l u                                   ∘
-					 "~f(a)ghesnagh/–qiinagh" -> "~f" a gh e s n a gh || e _        ∘
-					 "~f(a)ghesnagh/–qiinagh" -> "~f"   gh e s n a gh || [V - e] _  ∘
-					 "~f(a)ghesnagh/–qiinagh" -> "–"    q i i n a gh  || C _        ;
+                     "@₁~flu/na" -> "@₁" "~f" l u                                   ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
