@@ -310,7 +310,6 @@ maateghniistun        	#; ! the same as a while ago
 maaten                	#; ! now; a little while ago
 maaten ilangani         #; ! once; on one occasion (particle phrase from 'maaten' - 'now' and 'ilangani' - 'meanwhile')
 maligmun              	#; ! with the grain; following the common pattern
-mallaq                	#; ! particle of dust or debris
 Masingka              	#; ! St. Lawrence Island / Siberian Yupik Eskimo or Naukan Yupik Eskimo; as a particle: originally; genuinely; very; fully; sure thing; it’s alright; just fine
 masisu                	#; ! even; however; already; moreover
 miita                 	#; ! this time act differently; for a change
@@ -2142,6 +2141,7 @@ Kelugnaate Naayvaa      NounPostbase; ! Kiloknak Lagoon at east end of St. Lawre
 kelug                  	NounPostbase; ! stitch
 kelulghute             	NounPostbase; ! rope attached to the foundation of a winter house
 kelulighagh            	NounPostbase; ! beam in the frame of the aagra, the insulated inner room of traditional domeshaped house
+kelulighnegh            NounPostbase; ! area seen from the sea
 kelu                    NounPostbase; ! area behind building; area back from shore; back area of room or house opposite the entrance
 kelusiqagh             	NounPostbase; ! dry walrus skin which is used to cover the summer house
 kelute           	    NounPostbase; ! area behind building; area back from shore; back area of room or house opposite the entrance
@@ -2470,6 +2470,7 @@ maligmute              	NounPostbase; ! with the grain; following the common pat
 maligsaaghta           	NounPostbase; ! follower; disciple
 maligsaaghyaghqagh     	NounPostbase; ! guide (book or the like)
 mallalghutagh          	NounPostbase; ! trash container; garbage container
+mallagh                	NounPostbase; ! particle of dust or debris
 mallate                	NounPostbase; ! broom
 malliighusigh          	NounPostbase; ! broom; bird wing used as broom; vacuum cleaner
 mallu                  	NounPostbase; ! carcass that has drifted ashore; beached carcass; unexpectedly encountered person
@@ -3371,7 +3372,7 @@ puugpag               	NounPostbase; ! for a blister to form; to protrude from w
 puugpag                	NounPostbase; ! large wooden match (for lighting fire)
 puugpagtagh            	NounPostbase; ! flash; spark; the sound of a match bursting into flame
 puugzagh               	NounPostbase; ! beluga (Delphinapterus leucas)
-puugzagh tuguteleg      	NounPostbase; ! narwhal (Monodon monceros)
+puugzagh tuguteleg      NounPostbase; ! narwhal (Monodon monceros)
 puulqughrug            	NounPostbase; ! stem of plant
 puume                 	NounPostbase; ! boom holding sail out from mast; spar
 puungqughrug           	NounPostbase; ! stem of plant
@@ -5272,11 +5273,22 @@ LEXICON NounPostbase
 -–krag[N→N]:–krag                        NounPostbase;
 -–kuvinghagh[N→N]:–kuvinghagh            NounPostbase;
 -kwaagh[N→N]:kwaagh                      NounPostbase;
+-–leg[N→N]:–leg                          NounPostbase;
+-–lghun[N→N]:–lghun                      NounPostbase;
+-–lghutagh[N→N]:–lghutagh                NounPostbase;
+-–lgun[N→N]:–lgun                        NounPostbase;
+-–linghagh*[N→N]:–linghagh*              NounPostbase;
+-–llaag[N→N]:–llaag                      NounPostbase;
+-–llegagh*[N→N]:–llegagh*                NounPostbase;
+-–llgagh[N→N]:–llgagh                    NounPostbase;
+-lluggagh[N→N]:lluggagh                  NounPostbase;
+-–lluggagh[N→N]:–lluggagh                NounPostbase;
+-llug[N→N]:llug                          NounPostbase;
+-–llug[N→N]:–llug                        NounPostbase;
+-–lugpigagh[N→N]:–lugpigagh              NounPostbase;
+-–lug[N→N]:–lug                          NounPostbase;
 
 ! NOT FINALIZED
-!-lighpigaq[N→N]:lighpigaq               NounPostbase; TODO: Used with demonstrative adverb bases
-!-ligh[N→N]:ligh                         NounPostbase; TODO: Used with demonstrative adverb bases
-!-–lqusigh[N→N]:–lqusigh                 NounPostbase; TODO: Used with time words, functions as noun or adverbial particle
 -–mlaagh[N→N]:–mlaagh                    NounPostbase; ! TODO: Are there no conditions on the following postbases which are
 -–mleghagh[N→N]:–mleghagh                NounPostbase;       documented as identical?
 -–mraagh[N→N]:–mraagh                    NounPostbase;
@@ -5298,20 +5310,6 @@ LEXICON NounPostbase
 -–vyiigh[N→N]:–vyiigh                    NounPostbase; ! TODO: Are there no conditions on the following postbases which are
 -–vziigh[N→N]:–vziigh                    NounPostbase;         documented as identical?
 
--–leg[N→N]:–leg                          NounPostbase;
--–lghun[N→N]:–lghun                      NounPostbase;
--–lgun[N→N]:–lgun                        NounPostbase;
--–linghagh*[N→N]:–linghagh*              NounPostbase;
--–llaag[N→N]:–llaag                      NounPostbase;
--–llegagh*[N→N]:–llegagh*                NounPostbase;
--–llgagh[N→N]:–llgagh                    NounPostbase;
--–lluggagh[N→N]:–lluggagh                NounPostbase;
--lluggagh[N→N]:lluggagh                  NounPostbase;
--–llug[N→N]:–llug                        NounPostbase;
--llug[N→N]:llug                          NounPostbase;
--–lugpigagh[N→N]:–lugpigagh              NounPostbase;
--–lug[N→N]:–lug                          NounPostbase;
--–lghutagh[N→N]:–lghutagh                NounPostbase;
 -~fmii[N→N]:~fmii                        NounPostbase;
 -~fmig[N→N]:~fmig                        NounPostbase;
 -~fmiigh[N→N]:~fmiigh                    NounPostbase;
@@ -5382,20 +5380,6 @@ LEXICON NounPostbase
 -~–ke[N→V]:~–ke                          VerbTrns;
 -–ksagute[N→V]:–ksagute                  VerbIntr;
 -–ksagute[N→V]:–ksagute                  VerbTrns;
-
-
-! NOT FINALIZED
--~fmete[N→V]:~fmete                      VerbIntr;   TODO: Review these contractions of localis and ete
--~fmete[N→V]:~fmete                      VerbTrns;
--nte[N→V]:nte                            VerbIntr;
--nte[N→V]:nte                            VerbTrns;
-!-~%:(ng₁)i%:ghute[N→V]:~%:(ng₁)i%:ghute VerbIntr;   TODO: Review this
-!-~%:(ng₁)i%:ghute[N→V]:~%:(ng₁)i%:ghute VerbTrns;
--tagh[N→V]:tagh                          VerbIntr; ! TODO: Used with words denoting sounds
--tagh[N→V]:tagh                          VerbTrns;
--uute[N→V]:uute                          VerbIntr; ! TODO: Used with words denoting sounds
--uute[N→V]:uute                          VerbTrns;
-
 -–lgigh[N→V]:–lgigh                      VerbIntr;
 -–lgigh[N→V]:–lgigh                      VerbTrns;
 -–lgu[N→V]:–lgu                          VerbIntr;
@@ -5410,10 +5394,24 @@ LEXICON NounPostbase
 -–liqe[N→V]:–liqe                        VerbTrns;
 -–liite[N→V]:–liite                      VerbIntr;
 -–liite[N→V]:–liite                      VerbTrns;
--–lliqe[N→V]:–lliqe                      VerbIntr;
--–lliqe[N→V]:–lliqe                      VerbTrns;
 -lliqe[N→V]:lliqe                        VerbIntr;
 -lliqe[N→V]:lliqe                        VerbTrns;
+-–lliqe[N→V]:–lliqe                      VerbIntr;
+-–lliqe[N→V]:–lliqe                      VerbTrns;
+
+
+! NOT FINALIZED
+-~fmete[N→V]:~fmete                      VerbIntr;   TODO: Review these contractions of localis and ete
+-~fmete[N→V]:~fmete                      VerbTrns;
+-nte[N→V]:nte                            VerbIntr;
+-nte[N→V]:nte                            VerbTrns;
+!-~%:(ng₁)i%:ghute[N→V]:~%:(ng₁)i%:ghute VerbIntr;   TODO: Review this
+!-~%:(ng₁)i%:ghute[N→V]:~%:(ng₁)i%:ghute VerbTrns;
+-tagh[N→V]:tagh                          VerbIntr; ! TODO: Used with words denoting sounds
+-tagh[N→V]:tagh                          VerbTrns;
+-uute[N→V]:uute                          VerbIntr; ! TODO: Used with words denoting sounds
+-uute[N→V]:uute                          VerbTrns;
+
 -~fmig[N→V]:~fmig                        VerbIntr;
 -~fmig[N→V]:~fmig                        VerbTrns;
 -~fmiigh[N→V]:~fmiigh                    VerbIntr;
@@ -13413,6 +13411,31 @@ LEXICON VerbPostbase
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase;
+-–kusiigh[V→V]:–kusiigh                       VerbPostbase;
+-@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase;	! TODO: Which form is it? ~ or ~f?
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase; !       The former is from Jacobson, the latter from Badten
+-~f–laghate[V→V]:~f–laghate                   VerbPostbase;
+-@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase;
+-@₁laataqu[V→V]:@₁laataqu                     VerbPostbase;
+-–lgusigh[V→V]:–lgusigh                       VerbPostbase;
+-–lgute[V→V]:–lgute                           VerbPostbase;
+-–lgutke[V→V]:–lgutke                         VerbPostbase;
+-–llaag[V→V]:–llaag                           VerbPostbase;
+-–llegagh[V→V]:–llegagh                       VerbPostbase;
+-@₁lleqe[V→V]:@₁lleqe                         VerbPostbase;
+-–llghite[V→V]:–llghite                       VerbPostbase;
+-–llgilliqe[V→V]:–llgilliqe                   VerbPostbase;
+-–llgite[V→V]:–llgite                         VerbPostbase;
+-–llgiite[V→V]:–llgiite                       VerbPostbase;
+-–llgu[V→V]:–llgu                             VerbPostbase;
+-llug[V→V]:llug                               VerbPostbase;
+-–llug[V→V]:–llug                             VerbPostbase;
+-lliqe[V→V]:lliqe                             VerbPostbase;
+-–lliqe[V→V]:–lliqe                           VerbPostbase;
+-–lqinagh[V→V]:–lqinagh                       VerbPostbase;
+-–lqiinagh[V→V]:–lqiinagh                     VerbPostbase;
+-–lqusiigh[V→V]:–lqusiigh                     VerbPostbase;
+-@₁lugh[V→V]:@₁lugh                           VerbPostbase;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr;     ! TODO: These postbases differ in their documentation in
@@ -13422,10 +13445,7 @@ LEXICON VerbPostbase
 -~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns;     !       together with the previous three postbases,
 -~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase; !       listed above
 -~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase;
--–kusiigh[V→V]:–kusiigh                       VerbPostbase;
 
--@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase;	! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase;
 -–mlaagh[V→V]:–mlaagh                         VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase;         documented as identical?
 -–mraagh[V→V]:–mraagh                         VerbPostbase;
@@ -13459,28 +13479,6 @@ LEXICON VerbPostbase
 -@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase; ! TODO: Takes intransitive endings only
 !-@₁~fyukagh[V→V]:@₁~fyukagh                  VerbPostbase;   TODO: Review this
 
--~f–laghate[V→V]:~f–laghate                   VerbPostbase;
--@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase;
--@₁laataqu[V→V]:@₁laataqu                     VerbPostbase;
--–lgusigh[V→V]:–lgusigh                       VerbPostbase;
--–lgute[V→V]:–lgute                           VerbPostbase;
--–lgutke[V→V]:–lgutke                         VerbPostbase;
--–llaag[V→V]:–llaag                           VerbPostbase;
--–llegagh[V→V]:–llegagh                       VerbPostbase;
--@₁lleqe[V→V]:@₁lleqe                         VerbPostbase;
--–llghite[V→V]:–llghite                       VerbPostbase;
--–llgilliqe[V→V]:–llgilliqe                   VerbPostbase;
--–llgite[V→V]:–llgite                         VerbPostbase;
--–llgiite[V→V]:–llgiite                       VerbPostbase;
--–llgu[V→V]:–llgu                             VerbPostbase;
--–lliqe[V→V]:–lliqe                           VerbPostbase;
--lliqe[V→V]:lliqe                             VerbPostbase;
--–llug[V→V]:–llug                             VerbPostbase;
--llug[V→V]:llug                               VerbPostbase;
--–lqiinagh[V→V]:–lqiinagh                     VerbPostbase;
--–lqinagh[V→V]:–lqinagh                       VerbPostbase;
--–lqusiigh[V→V]:–lqusiigh                     VerbPostbase;
--@₁lugh[V→V]:@₁lugh                           VerbPostbase;
 -–msiigh[V→V]:–msiigh                         VerbPostbase;
 -–msug[V→V]:–msug                             VerbPostbase;
 -@₁~fnaagh[V→V]:@₁~fnaagh                     VerbPostbase;
@@ -13580,6 +13578,11 @@ LEXICON VerbPostbase
 -@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase;
 -@₁~%:(i/u)mate[V→N]:@₁~%:(i/u)mate           NounPostbase;
 -@₁~%:(i/u)manginagh[V→N]:@₁~%:(i/u)manginagh NounPostbase;
+-kagh[V→N]:kagh                               NounPostbase;
+-@₁–lghii[V→N]:@₁–lghii                       NounPostbase;
+-–lleghpigagh[V→N]:–lleghpigagh               NounPostbase;
+-–lleghqagh[V→N]:–lleghqagh                   NounPostbase;
+-–lleg[V→N]:–lleg                             NounPostbase;
 
 ! NOT FINALIZED
 
@@ -13595,11 +13598,6 @@ LEXICON VerbPostbase
 -qagh[V→N]:qagh                               NounPostbase; ! TODO: Used with descriptive bases
 -tala[V→N]:tala                               NounPostbase; ! TODO: Used with descriptive bases
 
--kagh[V→N]:kagh                               NounPostbase;
--@₁–lghii[V→N]:@₁–lghii                       NounPostbase;
--–lleghpigagh[V→N]:–lleghpigagh               NounPostbase;
--–lleghqagh[V→N]:–lleghqagh                   NounPostbase;
--–lleg[V→N]:–lleg                             NounPostbase;
 -–llegh[V→N]:–llegh                           NounPostbase;
 -~fmiigh[V→N]:~fmiigh                         NounPostbase;
 -@₁~fnaqe[V→N]:@₁~fnaqe                       NounPostbase;
