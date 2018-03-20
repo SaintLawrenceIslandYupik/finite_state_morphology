@@ -930,7 +930,7 @@ allegeg               	NounPostbase; ! shaman's broom used to "brush off"  illne
 allgeghvig             	NounPostbase; ! birthday
 allgellegh             	NounPostbase; ! birthday
 allighagh              	NounPostbase; ! mattress
-allighta               	NounPostbase; ! skin sock (deerskin for women; sealskin for men)
+allighte               	NounPostbase; ! skin sock (deerskin for women; sealskin for men)
 allighteraagh          	NounPostbase; ! sock knitted of yarn; foot wrapping used in place of a sock
 allngig               	NounPostbase; ! patch on boot sole
 allngig               	NounPostbase; ! school of fish
@@ -2335,7 +2335,6 @@ kuule                 	NounPostbase; ! coal
 kuumgute               	NounPostbase; ! a certain plant used for scouring cooking utensils, probably horsetail (scouring rush) (Equisetum fluviatile); comb= for grass
 kuuni                  	NounPostbase; ! horse
 Kuusme                	NounPostbase; ! Christmas
-Kuusma                 	NounPostbase; ! Christmas
 kuusnegh               	NounPostbase; ! pelvis bones of person or animal
 kuuvragh               	NounPostbase; ! seal net
 kuvaghaate             	NounPostbase; ! small flatbottomed ivory bird figurine used in a certain game
@@ -5058,6 +5057,7 @@ uyatagh                	NounPostbase; ! leash; strap; rope for hauling
 uyatutala             	NounPostbase; ! distance to (it)
 uyavagh                	NounPostbase; ! distance or distant place
 uyavaghtagh            	NounPostbase; ! something from far away
+uya                     NounPostbase; ! distance
 uygaagh                	NounPostbase; ! sealskin which has been dehaired, bleached by the winter weather, for use for trim on skin-boots
 uyghagagh              	NounPostbase; ! pebble; rocky part of mountain; a game using walrus teeth or small stones for counters
 uyghag                 	NounPostbase; ! stone, rock
@@ -5295,7 +5295,11 @@ LEXICON NounPostbase
 -–mreghagh[N→N]:–mreghagh                NounPostbase;         containing these postbases. 
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase;
--–vleghagh[N→N]:–vleghagh                NounPostbase;         End.
+-–vleghagh[N→N]:–vleghagh                NounPostbase;
+-–vraagh[N→N]:–vraagh                    NounPostbase;
+-–vreghagh[N→N]:–vreghagh                NounPostbase;
+-–vzaagh[N→N]:–vzaagh                    NounPostbase;
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase;         End.
 -–msiigh[N→N]:–msiigh                    NounPostbase;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase;
 -~f(p/v)allugh[N→N]:~f(p/v)allugh        NounPostbase;
@@ -5311,15 +5315,6 @@ LEXICON NounPostbase
 -–qragh[N→N]:–qragh                      NounPostbase;
 -–qrug[N→N]:–qrug                        NounPostbase;
 -qutagh[N→N]:qutagh                      NounPostbase;
-
-! NOT FINALIZED
--–ngeltagh[N→N]:–ngeltagh                NounPostbase; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase;        documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase;
--~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase;
--~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase;
--ni[N→N]:ni                              NounPostbase;
--nite[N→N]:nite                          NounPostbase;
 -raghagh[N→N]:raghagh                    NounPostbase;
 -raaghagh[N→N]:raaghagh                  NounPostbase;
 -–raaghinagh*[N→N]:–raaghinagh*          NounPostbase;
@@ -5333,18 +5328,22 @@ LEXICON NounPostbase
 -–squllgagh[N→N]:–squllgagh              NounPostbase;
 -–squgh[N→N]:–squgh                      NounPostbase;
 -–staghhiinagh*[N→N]:–staghhiinagh*      NounPostbase;
-!-ta[N→N]:ta                             NounPostbase;   TODO: Used with demonstrative adverb bases. Takes possessed endings
 -tagh[N→N]:tagh                          NounPostbase;
--–tuqagh[N→N]:–tuqagh                    NounPostbase;
 -tuqagh[N→N]:tuqagh                      NounPostbase;
--–vraagh[N→N]:–vraagh                    NounPostbase;
--–vreghagh[N→N]:–vreghagh                NounPostbase;
--–vzaagh[N→N]:–vzaagh                    NounPostbase;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase;
+-–tuqagh[N→N]:–tuqagh                    NounPostbase;
 -–vyiigh[N→N]:–vyiigh                    NounPostbase; ! TODO: Are there no conditions on the following postbases which are
 -–vziigh[N→N]:–vziigh                    NounPostbase;         documented as identical?
 -yage[N→N]:yage                          NounPostbase;
 -–yaagh[N→N]:–yaagh                      NounPostbase;
+
+! NOT FINALIZED
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–ngertagh[N→N]:–ngertagh                NounPostbase;        documented as identical?
+-–ngestagh[N→N]:–ngestagh                NounPostbase;
+-~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase;
+-~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase;
+-ni[N→N]:ni                              NounPostbase;
+-nite[N→N]:nite                          NounPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5413,6 +5412,41 @@ LEXICON NounPostbase
 -~–qite[N→V]:~–qite                      VerbTrns;
 -qu[N→V]:qu                              VerbIntr;
 -qu[N→V]:qu                              VerbTrns;
+-@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbIntr;
+-@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbTrns;
+-saghtugh[N→V]:saghtugh                  VerbIntr;
+-saghtugh[N→V]:saghtugh                  VerbTrns;
+-si[N→V]:si                              VerbIntr;
+-si[N→V]:si                              VerbTrns;
+-siigh[N→V]:siigh                        VerbIntr;
+-siigh[N→V]:siigh                        VerbTrns;
+-sugnite[N→V]:sugnite                    VerbIntr;
+-sugnite[N→V]:sugnite                    VerbTrns;
+-tagh[N→V]:tagh                          VerbIntr; ! TODO: Used with words denoting sounds
+-tagh[N→V]:tagh                          VerbTrns;
+-te[N→V]:te                              VerbIntr;
+-te[N→V]:te                              VerbTrns;
+-ti[N→V]:ti                              VerbIntr;
+-ti[N→V]:ti                              VerbTrns;
+-tu[N→V]:tu                              VerbIntr;
+-–tu[N→V]:–tu                            VerbIntr;
+-tugh[N→V]:tugh                          VerbIntr;
+-tugh[N→V]:tugh                          VerbTrns;
+-tulli[N→V]:tulli                        VerbIntr;
+-tulli[N→V]:tulli                        VerbTrns;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
+-tupag[N→V]:tupag                        VerbIntr;
+-tupag[N→V]:tupag                        VerbTrns;
+-tutka[N→V]:tutka                        VerbIntr;
+-tutka[N→V]:tutka                        VerbTrns;
+-uute[N→V]:uute                          VerbIntr; ! TODO: Used with words denoting sounds
+-uute[N→V]:uute                          VerbTrns;
+-yag[N→V]:yag                            VerbIntr;
+-yag[N→V]:yag                            VerbTrns;
+-@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
+-@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
+-@₁~fyug[N→V]:@₁~fyug                    VerbIntr;
+-@₁~fyug[N→V]:@₁~fyug                    VerbTrns;
 
 
 ! NOT FINALIZED
@@ -5439,46 +5473,6 @@ LEXICON NounPostbase
 -niigh[N→V]:niigh                        VerbTrns;
 -nite[N→V]:nite                          VerbIntr;
 -nite[N→V]:nite                          VerbTrns;
--@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbIntr;
--@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbTrns;
--saghtugh[N→V]:saghtugh                  VerbIntr;
--saghtugh[N→V]:saghtugh                  VerbTrns;
--si[N→V]:si                              VerbIntr;
--si[N→V]:si                              VerbTrns;
--siigh[N→V]:siigh                        VerbIntr;
--siigh[N→V]:siigh                        VerbTrns;
--sugnite[N→V]:sugnite                    VerbIntr;
--sugnite[N→V]:sugnite                    VerbTrns;
--tagh[N→V]:tagh                          VerbIntr; ! TODO: Used with words denoting sounds
--tagh[N→V]:tagh                          VerbTrns;
--te[N→V]:te                              VerbIntr;
--te[N→V]:te                              VerbTrns;
--ti[N→V]:ti                              VerbIntr;
--ti[N→V]:ti                              VerbTrns;
--–tu[N→V]:–tu                            VerbIntr;
--tu[N→V]:tu                              VerbIntr;
--tugh[N→V]:tugh                          VerbIntr;
--tugh[N→V]:tugh                          VerbTrns;
--tulli[N→V]:tulli                        VerbIntr;
--tulli[N→V]:tulli                        VerbTrns;
--tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
--tupag[N→V]:tupag                        VerbIntr;
--tupag[N→V]:tupag                        VerbTrns;
--tutka[N→V]:tutka                        VerbIntr;
--tutka[N→V]:tutka                        VerbTrns;
--uute[N→V]:uute                          VerbIntr; ! TODO: Used with words denoting sounds
--uute[N→V]:uute                          VerbTrns;
--ughqe[N→V]:ughqe                        VerbIntr;
--ughqe[N→V]:ughqe                        VerbTrns;
--yag[N→V]:yag                            VerbIntr;
--yag[N→V]:yag                            VerbTrns;
--@₁~fyagh[N→V]:@₁~fyagh                  VerbIntr;
--@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
-
--qsagute[N→V]:qsagute                    VerbIntr;
--qsagute[N→V]:qsagute                    VerbTrns;
--vagh[N→V]:vagh                          VerbIntr;
--vagh[N→V]:vagh                          VerbTrns;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -6311,6 +6305,8 @@ alpag                 	VerbIntr; ! to pass through (an obstacle, physical or oth
 alpag                 	VerbTrns; ! to pass through (an obstacle, physical or otherwise); to go through
 alqimagh              	VerbIntr; ! to lick; to taste
 alqimagh              	VerbTrns; ! to lick; to taste
+alqime                  VerbIntr; ! to lick
+alqime                  VerbTrns; ! to lick
 alqimsug              	VerbIntr; ! to snack
 alqimsug              	VerbTrns; ! to snack
 alquutagh             	VerbIntr; ! to use a spoon
@@ -6840,6 +6836,8 @@ avleghmete            	VerbIntr; ! to be bow-legged; to be spread apart widely (
 avleghmete            	VerbTrns; ! to be bow-legged; to be spread apart widely (though attached at one end)
 avleqaghte            	VerbIntr; ! to use a bola to try to catch
 avleqaghte            	VerbTrns; ! to use a bola to try to catch
+avuughagh               VerbIntr; ! to sort quickly; to divide quickly
+avuughagh               VerbTrns; ! to sort quickly; to divide quickly
 avugh                 	VerbIntr; ! to sort; to sort out and set aside
 avugh                 	VerbTrns; ! to sort; to sort out and set aside
 avuteghqe             	VerbIntr; ! to regret
@@ -7106,6 +7104,8 @@ eslallugughte         	VerbIntr; ! to rain
 eslallugughte         	VerbTrns; ! to rain
 eslaneghsite          	VerbIntr; ! to improve the weather through shamanism
 eslaneghsite          	VerbTrns; ! to improve the weather through shamanism
+eslaniigh               VerbIntr; ! to deal with the weather
+eslaniigh               VerbTrns; ! to deal with the weather
 eslasugnite           	VerbIntr; ! to be sky-blue
 eslasugnite           	VerbTrns; ! to be sky-blue
 eslege                	VerbIntr; ! to be stout; thick in diameter
@@ -7284,6 +7284,7 @@ igaghyagh             	VerbIntr; ! to go to school
 igaghyagh             	VerbTrns; ! to go to school
 igamsiqanagh            VerbIntr; ! to make one thankful
 igamsiqayug             VerbIntr; ! to feel thankful
+igamsiqayug             VerbTrns; ! to feel thankful
 igamsiqayugvike         VerbTrns; ! to feel thankful toward
 igaqe                 	VerbIntr; ! to write (it) down; to photograph
 igaqe                 	VerbTrns; ! to write (it) down; to photograph
@@ -9775,6 +9776,8 @@ nuuve                 	VerbIntr; ! to run thread through the eye of a needle (or
 nuuve                 	VerbTrns; ! to run thread through the eye of a needle (or like thing); to thread (a needle); to do something correctly (figurative usage)
 nuvagragh             	VerbIntr; ! to moisten with saliva
 nuvagragh             	VerbTrns; ! to moisten with saliva
+nuvagte                 VerbIntr; ! to apply saliva to
+nuvagte                 VerbTrns; ! to apply saliva to
 nuvag                 	VerbIntr; ! to drool
 nuvag                 	VerbTrns; ! to drool
 nuverragh             	VerbIntr; ! to knit; to thread through
@@ -10135,6 +10138,8 @@ pennaghniigh          	VerbIntr; ! to gather eggs from a cliff or engage in othe
 pennaghniigh          	VerbTrns; ! to gather eggs from a cliff or engage in other cliffside activities
 pennaghqute           	VerbIntr; ! to fall down from a cliff
 pennaghqute           	VerbTrns; ! to fall down from a cliff
+penniighniigh           VerbIntr; ! to deal with (herd, hunt, etc.) sheep
+penniighniigh           VerbTrns; ! to deal with (herd, hunt, etc.) sheep
 peqigte               	VerbIntr; ! to figure out
 peqigte               	VerbTrns; ! to figure out
 peqligh              	VerbIntr; ! to harden with age (especially of skins)
@@ -10479,6 +10484,8 @@ puyumsug              	VerbIntr; ! to hold between thumb and forefinger; to pinc
 puyumsug              	VerbTrns; ! to hold between thumb and forefinger; to pinch
 puyuqe                	VerbIntr; ! to become sooty
 puyuqe                	VerbTrns; ! to become sooty
+puyuughqe               VerbIntr; ! to get sooty
+puyuughqe               VerbTrns; ! to get sooty
 qaake                 	VerbIntr; ! to put something up on an elevated place (as on a shelf); to put something on land (or ice) from a boat in the water
 qaake                 	VerbTrns; ! to put something up on an elevated place (as on a shelf); to put something on land (or ice) from a boat in the water
 qaalkaqe              	VerbIntr; ! to make sarcastic, insinuating, or pointed remarks
@@ -12286,6 +12293,8 @@ teghtugh              	VerbIntr; ! to wake up
 teghtugh              	VerbTrns; ! to wake up
 tegleg                	VerbIntr; ! to steal
 tegleg                	VerbTrns; ! to steal
+teglenga                VerbIntr; ! to be a thief
+teglenga                VerbTrns; ! to be a thief
 tegyuughiite          	VerbIntr; ! to not be hesitant to express one’s thoughts; to be outspoken; to be daring
 tegyuughiite          	VerbTrns; ! to not be hesitant to express one’s thoughts; to be outspoken; to be daring
 tekaghreketiigh       	VerbIntr; ! to continuously flow from small opening in the lower part of container
@@ -13463,6 +13472,57 @@ LEXICON VerbPostbase
 -~(q/t)uute[V→V]:~(q/t)uute                   VerbPostbase; ! TODO: Needs to be implemented
 -–qu[V→V]:–qu                                 VerbPostbase;
 -@₁qugh[V→V]:@₁qugh                           VerbPostbase; ! TODO: Used only with te-bases
+-@₁~fragh[V→V]:@₁~fragh                       VerbPostbase;
+-@₁~f–ragkiigh[V→V]:@₁~f–ragkiigh             VerbPostbase;
+-@₁~f–ragkiighute[V→V]:@₁~f–ragkiighute       VerbPostbase;
+-@₁~f–rakegte[V→V]:@₁~f–rakegte               VerbPostbase;
+-@₁~f–rakguugh[V→V]:@₁~f–rakguugh             VerbPostbase;
+-saag[V→V]:saag                               VerbPostbase;
+-–saag[V→V]:–saag                             VerbPostbase;
+-sagh[V→V]:sagh                               VerbPostbase;
+-saghtugh[V→V]:saghtugh                       VerbPostbase;
+-sigh[V→V]:sigh                               VerbPostbase;
+-–sighwaagh[V→V]:–sighwaagh                   VerbPostbase;
+-sugh[V→V]:sugh                               VerbPostbase;
+-sugnite[V→V]:sugnite                         VerbPostbase;
+-tagh[V→V]:tagh                               VerbPostbase;
+-tu[V→V]:tu                                   VerbPostbase;
+-–tu[V→V]:–tu                                 VerbPostbase;
+-tugh[V→V]:tugh                               VerbPostbase;
+-tulli[V→V]:tulli                             VerbPostbase;
+-tutka[V→V]:tutka                             VerbPostbase; ! TODO: Used with descriptive verbs
+-tutkaligh[V→V]:tutkaligh                     VerbPostbase;
+-~fughtagh[V→V]:~fughtagh                     VerbPostbase;
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase; ! TODO: These postbases differ in their documentation
+-~%:(u)te[V→V]:~%:(u)te                       VerbPostbase; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase;
+-~f–vag[V→V]:~f–vag                           VerbPostbase;
+-@₁~fvike[V→V]:@₁~fvike                       VerbPostbase;
+-–vyigh[V→V]:–vyigh                           VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–vzigh[V→V]:–vzigh                           VerbPostbase;         documented as identical?
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–vziigh[V→V]:–vziigh                         VerbPostbase;         documented as identical?
+-@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase;
+-@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase;
+-@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase;
+-@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase;
+-@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase;
+-@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase;
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase; ! TODO: Takes intransitive endings only
+-@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase;
+-@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase;
+-@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase;
+-@₁~fyagute[V→V]:@₁~fyagute                   VerbPostbase;
+-@₁~f–yiilliqe[V→V]:@₁~f–yiilliqe             VerbPostbase;
+-@₁~f–yiite[V→V]:@₁~f–yiite                   VerbPostbase;
+-@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
+-@₁~fyug[V→V]:@₁~fyug                         VerbPostbase;
+-@₁~fyuggaagh[V→V]:@₁~fyuggaagh               VerbPostbase;
+-@₁~fyugnagh[V→V]:@₁~fyugnagh                 VerbPostbase;
+-@₁~fyuguma[V→V]:@₁~fyuguma                   VerbPostbase;
+-@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase;
+-@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
+-@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr;     ! TODO: These postbases differ in their documentation in
@@ -13472,7 +13532,6 @@ LEXICON VerbPostbase
 -~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns;     !       together with the previous three postbases,
 -~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase; !       listed above
 -~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase;
-
 
 -@₁~fnagh[V→V]:@₁~fnagh                       VerbPostbase; ! TODO: Used with emotional roots and certain other bases
 -@₁~f–nasiigh[V→V]:@₁~f–nasiigh               VerbPostbase; ! TODO: Does it drop or not drop final consonants?
@@ -13508,57 +13567,6 @@ LEXICON VerbPostbase
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase;
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase;
--@₁~fragh[V→V]:@₁~fragh                       VerbPostbase;
--@₁~f–ragkiigh[V→V]:@₁~f–ragkiigh             VerbPostbase;
--@₁~f–ragkiighute[V→V]:@₁~f–ragkiighute       VerbPostbase;
--@₁~f–rakegte[V→V]:@₁~f–rakegte               VerbPostbase;
--@₁~f–rakguugh[V→V]:@₁~f–rakguugh             VerbPostbase;
--–saag[V→V]:–saag                             VerbPostbase;
--saag[V→V]:saag                               VerbPostbase;
--sagh[V→V]:sagh                               VerbPostbase;
--saghtugh[V→V]:saghtugh                       VerbPostbase;
--sigh[V→V]:sigh                               VerbPostbase;
--–sighwaagh[V→V]:–sighwaagh                   VerbPostbase;
--sugh[V→V]:sugh                               VerbPostbase;
--sugnite[V→V]:sugnite                         VerbPostbase;
--tutka[V→V]:tutka                             VerbPostbase; ! TODO: Used with descriptive verbs
--tagh[V→V]:tagh                               VerbPostbase;
--–tu[V→V]:–tu                                 VerbPostbase;
--tu[V→V]:tu                                   VerbPostbase;
--tugh[V→V]:tugh                               VerbPostbase;
--tulli[V→V]:tulli                             VerbPostbase;
--tutkaligh[V→V]:tutkaligh                     VerbPostbase;
--~fughtagh[V→V]:~fughtagh                     VerbPostbase;
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase;
--@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase;
--~f–vag[V→V]:~f–vag                           VerbPostbase;
--–vyigh[V→V]:–vyigh                           VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbPostbase;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbPostbase;         documented as identical?
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase; ! TODO: Takes intransitive endings only
-!-@₁~fyukagh[V→V]:@₁~fyukagh                  VerbPostbase;   TODO: Review this
--@₁~fvike[V→V]:@₁~fvike                       VerbPostbase;
--@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase;
--@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase;
--@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase;
--@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase;
--@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase;
--@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase;
--@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase;
--@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase;
--@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase;
--@₁~fyagute[V→V]:@₁~fyagute                   VerbPostbase;
--@₁~f–yiilliqe[V→V]:@₁~f–yiilliqe             VerbPostbase;
--@₁~f–yiite[V→V]:@₁~f–yiite                   VerbPostbase;
--@₁~f–yu[V→V]:@₁~f–yu                         VerbPostbase;
--@₁~fyug[V→V]:@₁~fyug                         VerbPostbase;
--@₁~fyuggaagh[V→V]:@₁~fyuggaagh               VerbPostbase;
--@₁~fyugnagh[V→V]:@₁~fyugnagh                 VerbPostbase;
--@₁~fyuguma[V→V]:@₁~fyuguma                   VerbPostbase;
--@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase;
--@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13580,6 +13588,24 @@ LEXICON VerbPostbase
 -qagh[V→N]:qagh                               NounPostbase; ! TODO: Used with descriptive bases
 -~–qumtaagh[V→N]:~–qumtaagh                   NounPostbase;
 -qutagh[N→N]:qutagh                           NounPostbase; ! TODO: This seems to be missing morphophonological symbols
+-@₁~f–rakegtagh[V→N]:@₁~f–rakegtagh           NounPostbase;
+-–rkaggagh[V→N]:–rkaggagh                     NounPostbase;
+-–rkapig[V→N]:–rkapig                         NounPostbase;
+-–sag[V→N]:–sag                               NounPostbase;
+-(s)ta[V→N]:(s)ta                             NounPostbase;
+-tala[V→N]:tala                               NounPostbase; ! TODO: Used with descriptive bases
+-tuqagh[V→N]:tuqagh                           NounPostbase;
+-–tuqagh[V→N]:–tuqagh                         NounPostbase;
+-@₁~%:(u)sagh[V→N]:@₁~%:(u)sagh               NounPostbase;
+-@₁~%:(u)sigh[V→N]:@₁~%:(u)sigh               NounPostbase;
+-@₁~%:(u)ta[V→N]:@₁~%:(u)ta                   NounPostbase;
+-@₁~%:(u)te[V→N]:@₁~%:(u)te                   NounPostbase;
+-@₁~fvig[V→N]:@₁~fvig                         NounPostbase;
+-@₁~fyaghqagh[V→N]:@₁~fyaghqagh               NounPostbase;
+-@₁~f–yu[V→N]:@₁~f–yu                         NounPostbase;
+-@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase;
+-@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase;
+-@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase;
 
 ! Requires Review
 -@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase; ! TODO: These postbases differ in their documentation
@@ -13599,23 +13625,6 @@ LEXICON VerbPostbase
 -@*ngugh*[V→N]:@*ngugh*                       NounPostbase;
 -~fnigh[V→N]:~fnigh                           NounPostbase;
 -@₁–nqegtagh[V→N]:@₁–nqegtagh                 NounPostbase;
--@₁~f–rakegtagh[V→N]:@₁~f–rakegtagh           NounPostbase;
--–rkaggagh[V→N]:–rkaggagh                     NounPostbase;
--–rkapig[V→N]:–rkapig                         NounPostbase;
--–sag[V→N]:–sag                               NounPostbase;
--(s)ta[V→N]:(s)ta                             NounPostbase;
--tala[V→N]:tala                               NounPostbase; ! TODO: Used with descriptive bases
--–tuqagh[V→N]:–tuqagh                         NounPostbase;
--tuqagh[V→N]:tuqagh                           NounPostbase;
--@₁~%:(u)sagh[V→N]:@₁~%:(u)sagh               NounPostbase;
--@₁~%:(u)sigh[V→N]:@₁~%:(u)sigh               NounPostbase;
--@₁~%:(u)te[V→N]:~%:(u)te                     NounPostbase;
--@₁~fvig[V→N]:@₁~fvig                         NounPostbase;
--@₁~fyaghqagh[V→N]:@₁~fyaghqagh               NounPostbase;
--@₁~f–yu[V→N]:@₁~f–yu                         NounPostbase;
--@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase;
--@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase;
--@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
