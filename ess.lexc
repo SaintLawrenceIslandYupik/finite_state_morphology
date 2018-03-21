@@ -5302,6 +5302,13 @@ LEXICON NounPostbase
 -–vzeghagh[N→N]:–vzeghagh                NounPostbase;         End.
 -–msiigh[N→N]:–msiigh                    NounPostbase;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase;
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–ngertagh[N→N]:–ngertagh                NounPostbase; !       documented as identical?
+-–ngestagh[N→N]:–ngestagh                NounPostbase; !       End.
+-~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase;
+-~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase;
+-ni[N→N]:ni                              NounPostbase;
+-nite[N→N]:nite                          NounPostbase;
 -~f(p/v)allugh[N→N]:~f(p/v)allugh        NounPostbase;
 -–penaagh[N→N]:–penaagh                  NounPostbase;
 -–peragh[N→N]:–peragh                    NounPostbase;
@@ -5335,15 +5342,6 @@ LEXICON NounPostbase
 -–vziigh[N→N]:–vziigh                    NounPostbase;         documented as identical?
 -yage[N→N]:yage                          NounPostbase;
 -–yaagh[N→N]:–yaagh                      NounPostbase;
-
-! NOT FINALIZED
--–ngeltagh[N→N]:–ngeltagh                NounPostbase; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase;        documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase;
--~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase;
--~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase;
--ni[N→N]:ni                              NounPostbase;
--nite[N→N]:nite                          NounPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5402,6 +5400,24 @@ LEXICON NounPostbase
 -~fmiigh[N→V]:~fmiigh                    VerbTrns;
 -–msuggiite[N→V]:–msuggiite              VerbIntr;
 -–msuggiite[N→V]:–msuggiite              VerbTrns;
+-–nge[N→V]:–nge                          VerbIntr;
+-–nge[N→V]:–nge                          VerbTrns;
+-~%:(ng₁)igh[N→V]:~:(ng₁)igh             VerbIntr;
+-~%:(ng₁)igh[N→V]:~:(ng₁)igh             VerbTrns;
+-~%:(ng₁)isag[N→V]:~:(ng₁)isag           VerbIntr;
+-~%:(ng₁)isag[N→V]:~:(ng₁)isag           VerbTrns;
+-~%:(ng₁)isug[N→V]:~%:(ng₁)isug          VerbIntr;
+-~%:(ng₁)isug[N→V]:~%:(ng₁)isug          VerbTrns;
+-~%:(ng₁)ite**[N→V]:~%:(ng₁)ite**        VerbIntr;
+-~%:(ng₁)ite**[N→V]:~%:(ng₁)ite**        VerbTrns;
+-–ngllagh[N→V]:–ngllagh                  VerbIntr;
+-–ngllagh[N→V]:–ngllagh                  VerbTrns;
+-~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbIntr;
+-~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns;
+-~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr;
+-~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns;
+-niigh[N→V]:niigh                        VerbIntr;
+-niigh[N→V]:niigh                        VerbTrns;
 -–pagite[N→V]:–pagite                    VerbIntr;
 -–pagite[N→V]:–pagite                    VerbTrns;
 -pagnite[N→V]:pagnite                    VerbIntr;
@@ -5447,32 +5463,6 @@ LEXICON NounPostbase
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbTrns;
 -@₁~fyug[N→V]:@₁~fyug                    VerbIntr;
 -@₁~fyug[N→V]:@₁~fyug                    VerbTrns;
-
-
-! NOT FINALIZED
--nte[N→V]:nte                            VerbIntr;
--nte[N→V]:nte                            VerbTrns;
-!-~%:(ng₁)i%:ghute[N→V]:~%:(ng₁)i%:ghute VerbIntr;   TODO: Review this
-!-~%:(ng₁)i%:ghute[N→V]:~%:(ng₁)i%:ghute VerbTrns;
--–nge[N→V]:–nge                          VerbIntr;
--–nge[N→V]:–nge                          VerbTrns;
--~%:(ng₁)igh[N→V]:~:(ng₁)igh             VerbIntr;
--~%:(ng₁)igh[N→V]:~:(ng₁)igh             VerbTrns;
--~%:(ng₁)isag[N→V]:~:(ng₁)isag           VerbIntr;
--~%:(ng₁)isag[N→V]:~:(ng₁)isag           VerbTrns;
--~%:(ng₁)isug[N→V]:~%:(ng₁)isug          VerbIntr;
--~%:(ng₁)isug[N→V]:~%:(ng₁)isug          VerbTrns;
--~%:(ng₁)ite**[N→V]:~%:(ng₁)ite**        VerbIntr;
--–ngllagh[N→V]:–ngllagh                  VerbIntr;
--–ngllagh[N→V]:–ngllagh                  VerbTrns;
--~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbIntr;
--~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns;
--~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr;
--~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns;
--niigh[N→V]:niigh                        VerbIntr;
--niigh[N→V]:niigh                        VerbTrns;
--nite[N→V]:nite                          VerbIntr;
--nite[N→V]:nite                          VerbTrns;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -9295,6 +9285,8 @@ naraqe                	VerbIntr; ! to figure out measurements; to prepare (by me
 naraqe                	VerbTrns; ! to figure out measurements; to prepare (by measuring)
 nasagh                	VerbIntr; ! to put on one's hood
 nasagh                	VerbTrns; ! to put on one's hood
+nasaperagh             	VerbIntr; ! to put on a hat or cap 
+nasaperagh             	VerbTrns; ! to put on a hat or cap
 nasig                 	VerbIntr; ! to cry after or for someone who is leaving (of a child who doesn't want to be left)
 nasig                 	VerbTrns; ! to cry after or for someone who is leaving (of a child who doesn't want to be left)
 nasiigh               	VerbIntr; ! to pull the hood back from one's head
@@ -11368,6 +11360,8 @@ quyngighqwaagh        	VerbIntr; ! to herd reindeer
 quyngighqwaagh        	VerbTrns; ! to herd reindeer
 quyngilegti           	VerbIntr; ! to travel by reindeer-pulled sled
 quyngilegti           	VerbTrns; ! to travel by reindeer-pulled sled
+quynginge               VerbIntr; ! to obtain reindeer
+quynginge               VerbTrns; ! to obtain reindeer
 quyugh                	VerbIntr; ! to feel intimidated; to cower; to feel overwhelmed by a more powerful person
 quyugh                	VerbTrns; ! to feel intimidated; to cower; to feel overwhelmed by a more powerful person
 ragigu                	VerbIntr; ! to set up camp while traveling
@@ -12529,6 +12523,7 @@ tuqunagh              	VerbIntr; ! to be poisonous
 tuqunagh              	VerbTrns; ! to be poisonous
 tuquraag              	VerbIntr; ! to knock out
 tuquraag              	VerbTrns; ! to knock out
+tuqusiigh               VerbIntr; ! to wait around to die
 tuqute                	VerbIntr; ! to kill
 tuqute                	VerbTrns; ! to kill
 tuqutngwaagh          	VerbIntr; ! to laugh heartily
@@ -13449,6 +13444,41 @@ LEXICON VerbPostbase
 -–mrugnite[V→V]:–mrugnite                     VerbPostbase; ! TODO: Used only with descriptive bases
 -–msiigh[V→V]:–msiigh                         VerbPostbase;
 -–msug[V→V]:–msug                             VerbPostbase;
+-@₁~fna[V→V]:@₁~fna                           VerbPostbase; ! TODO: Used with subordinative mood endings 
+-@₁~fnagh[V→V]:@₁~fnagh                       VerbPostbase; ! TODO: Used with emotional roots and certain other bases
+-@₁~fnaagh[V→V]:@₁~fnaagh                     VerbPostbase;
+-@₁~fnaanghite[V→V]:@₁~fnaanghite             VerbPostbase;
+-@₁~fnanigh[V→V]:@₁~fnanigh                   VerbPostbase;
+-@₁~fnanighqe[V→V]:@₁~fnanighqe               VerbPostbase;
+-@₁~fnaqe[V→V]:@₁~fnaqe                       VerbPostbase;
+-@₁~fnaqelqusiigh[V→V]:@₁~fnaqelqusiigh       VerbPostbase;
+-@₁~fnaqlaatagh[V→V]:@₁~fnaqlaatagh           VerbPostbase;
+-@₁~fnaqngu[V→V]:@₁~fnaqngu                   VerbPostbase;
+-@₁~fnaqute[V→V]:@₁~fnaqute                   VerbPostbase;
+-@₁~fnaqutke[V→V]:@₁~fnaqutke                 VerbPostbase;
+-@₁~f–nasiigh[V→V]:@₁~f–nasiigh               VerbPostbase; ! TODO: Does it drop or not drop final consonants?
+-@₁~fnatke[V→V]:@₁~fnatke                     VerbPostbase;
+-@₁~fnayagh[V→V]:@₁~fnayagh                   VerbPostbase;
+-@₁~f–neghllug[V→V]:@₁~f–neghllug             VerbPostbase;
+-@₁~f–neghllugte[V→V]:@₁~f–neghllugte         VerbPostbase;
+-@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase;
+-@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase;
+-~fnga[V→V]:~fnga                             VerbPostbase;
+-–ngeltagh[V→V]:–ngeltagh                     VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
+-–ngertagh[V→V]:–ngertagh                     VerbPostbase; !       documented as identical?
+-–ngestagh[V→V]:–ngestagh                     VerbPostbase; !       End.
+-@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase;
+-@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase;
+-@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase;
+-%:(ng₁)inagh[V→V]:%:(ng₁)inagh               VerbPostbase;
+-~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase;
+-–ngllagh[V→V]:–ngllagh                       VerbPostbase;
+-@₁~fniite[V→V]:@₁~fniite                     VerbPostbase;
+-niigh[V→V]:niigh                             VerbPostbase;
+-@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase;
+-@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase;
+-@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase;
+-@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase;
 -pag[V→V]:pag                                 VerbPostbase;
 -–pag[V→V]:–pag                               VerbPostbase;
 -~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase; ! TODO: Verify if this postbase fits the (p/v) paradigm
@@ -13533,40 +13563,6 @@ LEXICON VerbPostbase
 -~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase; !       listed above
 -~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase;
 
--@₁~fnagh[V→V]:@₁~fnagh                       VerbPostbase; ! TODO: Used with emotional roots and certain other bases
--@₁~f–nasiigh[V→V]:@₁~f–nasiigh               VerbPostbase; ! TODO: Does it drop or not drop final consonants?
--–ngeltagh[V→V]:–ngeltagh                     VerbPostbase; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbPostbase;         documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbPostbase;
--~–(ng₁)uagh[V→V]:~–(ng₁)uagh                 VerbPostbase; ! TODO: How do the allomorphs listed arise?
--@₁~fnaagh[V→V]:@₁~fnaagh                     VerbPostbase;
--@₁~fnaanghite[V→V]:@₁~fnaanghite             VerbPostbase;
--@₁~fnanigh[V→V]:@₁~fnanigh                   VerbPostbase;
--@₁~fnanighqe[V→V]:@₁~fnanighqe               VerbPostbase;
--@₁~fnaqe[V→V]:@₁~fnaqe                       VerbPostbase;
--@₁~fnaqelqusiigh[V→V]:@₁~fnaqelqusiigh       VerbPostbase;
--@₁~fnaqlaatagh[V→V]:@₁~fnaqlaatagh           VerbPostbase;
--@₁~fnaqngu[V→V]:@₁~fnaqngu                   VerbPostbase;
--@₁~fnaqute[V→V]:@₁~fnaqute                   VerbPostbase;
--@₁~fnaqutke[V→V]:@₁~fnaqutke                 VerbPostbase;
--@₁~fnatke[V→V]:@₁~fnatke                     VerbPostbase;
--@₁~fnayagh[V→V]:@₁~fnayagh                   VerbPostbase;
--@₁~f–neghllug[V→V]:@₁~f–neghllug             VerbPostbase;
--@₁~f–neghllugte[V→V]:@₁~f–neghllugte         VerbPostbase;
--@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase;
--@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase;
--@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase;
--@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase;
--@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase;
--%:(ng₁)inagh[V→V]:%:(ng₁)inagh               VerbPostbase;
--–ngllagh[V→V]:–ngllagh                       VerbPostbase;
--niigh[V→V]:niigh                             VerbPostbase;
--~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase;
--@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase;
--@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase;
--@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase;
--@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase;
--@₁~fniite[V→V]:@₁~fniite                     VerbPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -13585,6 +13581,15 @@ LEXICON VerbPostbase
 -–llegh[V→N]:–llegh                           NounPostbase;
 -–lleg[V→N]:–lleg                             NounPostbase;
 -~fmiigh[V→N]:~fmiigh                         NounPostbase;
+-@₁~fnaqe[V→N]:@₁~fnaqe                       NounPostbase;
+-@₁~f–neghllug[V→N]:@₁~f–neghllug             NounPostbase;
+-@₁~f–negh[V→N]:@₁~f–negh                     NounPostbase; ! TODO: Which version of the postbase is it?
+-@₁–negh[V→N]:@₁–negh                         NounPostbase; !       The former is from Badten and the latter from Jacobson
+-@₁–nghhagh[V→N]:@₁–nghhagh                   NounPostbase;
+-~%:(ng₁)iitagh[V→N]:~%:(ng₁)iitagh           NounPostbase;
+-@*ngugh*[V→N]:@*ngugh*                       NounPostbase; ! TODO: Used with descriptive or negative verb bases ending in -te
+-~fnigh[V→N]:~fnigh                           NounPostbase;
+-@₁–nqegtagh[V→N]:@₁–nqegtagh                 NounPostbase;
 -qagh[V→N]:qagh                               NounPostbase; ! TODO: Used with descriptive bases
 -~–qumtaagh[V→N]:~–qumtaagh                   NounPostbase;
 -qutagh[N→N]:qutagh                           NounPostbase; ! TODO: This seems to be missing morphophonological symbols
@@ -13612,19 +13617,6 @@ LEXICON VerbPostbase
 -@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase;
-
-! NOT FINALIZED
--@₁~fnagh[V→N]:@₁~fnagh                       NounPostbase; ! TODO: Used with emotional roots and certain other bases
--@₁~f–negh[V→N]:@₁~f–negh                     NounPostbase; ! TODO: Which version of the postbase is it?
--@₁–negh[V→N]:@₁–negh                         NounPostbase; !       It can be used with ABL_MOD for some verbs
-!-negh[V→N]:negh                              NounPostbase; TODO: Used with quantifying verbs and takes possessed endings
--@₁~fnaqe[V→N]:@₁~fnaqe                       NounPostbase;
--@₁~f–neghllug[V→N]:@₁~f–neghllug             NounPostbase;
--@₁–nghhagh[V→N]:@₁–nghhagh                   NounPostbase;
--~%:(ng₁)iitagh[V→N]:~%:(ng₁)iitagh           NounPostbase;
--@*ngugh*[V→N]:@*ngugh*                       NounPostbase;
--~fnigh[V→N]:~fnigh                           NounPostbase;
--@₁–nqegtagh[V→N]:@₁–nqegtagh                 NounPostbase;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
