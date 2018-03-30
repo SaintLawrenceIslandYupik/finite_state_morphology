@@ -197,7 +197,7 @@ define FinalVCDrop V C -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "––
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoundary ("~f") "–" _   ∘
                                       [ gh | g ] -> g   || g  MorphemeBoundary       ("~f") "–" _   ∘
 									  ! The line below is unfortunately required because of orthographic undoubling conventions
-                                      [ gh | g ] -> wh  || w   MorphemeBoundary ("~f") "–" _  [ p | t | k | kw | q | qw | f | ll | s | wh ] ∘
+                                      [ gh | g ] -> wh  || w   MorphemeBoundary ("~f") "–" _        ∘
                                       [ gh | g ] -> w   || w   MorphemeBoundary ("~f") "–" _        ∘
                                       [ gh | g ] -> ghw || ghw MorphemeBoundary ("~f") "–" _        ∘
                                       [  q | k ] -> qw  || [ qw | ghw ] MorphemeBoundary ("~f") "–" _  ∘
@@ -232,11 +232,12 @@ define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* 
                 y    -> 0    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* s _        ∘
                 e    -> 0    || V t _ MorphemeBoundary "@₁" MorphPhonSymbols* [ m | v ]  ∘ ! for postbases that begin with labials
                 v    -> f    || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _          ∘
-                g    -> gg   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
-                gh   -> ghh  || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
-                ghw  -> ghhw || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
-                l    -> ll   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
-                r    -> rr   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [l | m | n | r | v | y | z]  ∘
+				l    -> ll   || [g | gh | ghw | r] t e MorphemeBoundary "@₁" MorphPhonSymbols* _       ∘ ! Undoubling Rule 3
+                g    -> gg   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
+                gh   -> ghh  || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
+                ghw  -> ghhw || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
+                l    -> ll   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
+                r    -> rr   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
                 t e  -> 0    || _ MorphemeBoundary MorphPhonSymbols* "@₁"                ∘ ! drop base-final te
                 "@*" -> 0, 
                 "@₁" -> 0,
@@ -247,8 +248,8 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(ng₁)" -> "ng"         ||   V ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
                          "(s/z)" -> s || C ("*") MorphemeBoundary _  ∘
                          "(s/z)" -> z || V       MorphemeBoundary _  ∘                                 
-                         "(p/v)" -> p || C ("*") MorphemeBoundary _  ∘
-                         "(p/v)" -> v || V       MorphemeBoundary _  ∘
+                         "(p/v)" -> p || C ("*") MorphemeBoundary ("~f") _  ∘
+                         "(p/v)" -> v || V       MorphemeBoundary ("~f") _  ∘
                          "(t/y)" -> t || C ("*") MorphemeBoundary _  ∘
                          "(t/y)" -> y || V       MorphemeBoundary _  ∘
                          "(pete)fte" -> p e t e f t e MorphemeBoundary || C ("*") _  ,,
@@ -304,7 +305,8 @@ define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw |
                                      h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
                                    ["(g/t)" | "(g₁)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u]  ;
 
-define TripleVowelCluster V -> 0 || WordBoundary Alphabet+ [ V - e ] MorphemeBoundary "~" "(g₁)" _ V ; ! for [Ind][Trns]
+define TripleVowelCluster V -> 0 || WordBoundary Alphabet+ [ V - e ] MorphemeBoundary "~" "(g₁)" _ V  ∘ ! for [Ind][Trns]
+                          a -> 0 || a _ a WordBoundary ;
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -362,7 +364,8 @@ define MultipleForms "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
 !!!                          !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-define ClusterDevoicing k -> q || gh _ ∘
+define ClusterDevoicing k  -> q  || gh _ ∘
+                        kw -> qw || gh _ ∘
                         y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
                         y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
                         t [z | y] -> s                                           ∘ ! tz/ty cluster becomes s
@@ -372,9 +375,9 @@ define ClusterDevoicing k -> q || gh _ ∘
 						v -> f || k _                                            ∘
 						z -> s || Stop _                                         ;
 
-define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop | f | s | wh] ∘   
-                  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [Stop | f | s | wh | h] _ ∘   
-		          mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | wh | h] _ ∘
+define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop | f | s] ∘   
+                  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [Stop | f | s | h] _ ∘   
+		          mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | h] _ ∘
 				  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ ll ∘ 
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [ll| rr | gg | ghh |ghhw] _ ∘ 
                   mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [ll| rr | gg | ghh |ghhw] _ ;
@@ -385,7 +388,7 @@ def BaseFinalEndings ghw      -> qw ,
                      w        -> kw ,
                      t e      -> t a  ||   _ (Enclitic) WordBoundary  , 
                      t e      -> n    || V _ (Enclitic) WordBoundary  ∘
-					 e        -> a    ||   _ (Enclitic) WordBoundary  ∘
+					 e        -> a    ||   _            WordBoundary  ∘
 				     gh q     -> q    ||   _ (Enclitic) WordBoundary  ∘
 					 t        -> n,
 					 ll       -> l,
@@ -533,6 +536,7 @@ define Rules [
     FinalE                         ∘
     VowelDominance                 ∘
 	CleanupMorphBoundary           ∘
+	TripleVowelCluster             ∘
 	ClusterDevoicing               ∘
 	BaseFinalEndings               ∘
 	Undoubling
