@@ -210,7 +210,8 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
 									      gh "*" -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* _          ∘
+define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols*  _      ∘
+                "~f" -> 0 || t e ("*") ("*") MorphemeBoundary ["@*" | "@₁" | "@₂"]  _    ∘
                 t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
                 t e         -> s || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, ! for postbases that begin with velars
 	     	    t e ("*")   -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, 
@@ -306,7 +307,7 @@ define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw |
                                    ["(g/t)" | "(g₁)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u]  ;
 
 define TripleVowelCluster V -> 0 || WordBoundary Alphabet+ [ V - e ] MorphemeBoundary "~" "(g₁)" _ V  ∘ ! for [Ind][Trns]
-                          a -> 0 || a _ a WordBoundary ;
+                          FullVowel -> 0 || FullVowel _ FullVowel ;
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -392,7 +393,7 @@ def BaseFinalEndings ghw      -> qw ,
 				     gh q     -> q    ||   _ (Enclitic) WordBoundary  ∘
 					 t        -> n,
 					 ll       -> l,
-					 k        -> g    ||   WordBoundary Alphabet+ _ "ng" u q  ;
+					 k        -> g    ||   WordBoundary Alphabet+ _ "ng" u q WordBoundary ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

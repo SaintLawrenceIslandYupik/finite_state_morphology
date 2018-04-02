@@ -1,176 +1,444 @@
 \documentclass{article}
 
 \usepackage[a4paper]{geometry}
-
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{hyperref}
 
 \begin{document}
 
-%%%%%%%%%%%%%%%%%%%%%%
-%                    %
-%   Logical Errors   %
-%                    %
-%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Logical Errors}
-
-\begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
-
-\item There seem to be recurring issues when postbases are affixed to the underlying form of \textbf{kiikw} (See \textit{kiiw+te}).
-
-\item \textbf{aate@$\sim$:(u)sigh-} generates \textit{aaasigh-}
-
-\item \textbf{qeneghte-@₁~:(u)tke-} generates \textit{qenghutke-}, which is correct, but will not parse in the other direction (from surface to underlying).
+This document contains all notes and observations that were made when putting together the gold standard files for postbases in the dictionary.
 %
-The dictionary also permits \textit{qeneghtutke-} where semi-final \textit{e} is not dropped.
+It is organized by \textit{type}, defined as follows:
+%
+\begin{enumerate}
+\item \textbf{Logical Errors} . These encompass errors that occur when the analyzer generates output, but the output is clearly incorrect. This suggests that the programming logic of the analyzer may be at fault.
 
+\item \textbf{Lexical Errors} . These are errors that occur when a lexical item is suspected of being input incorrectly into the analyzer. They include discrepancies between Badten and Jacobson in regards to postbases, as well as lexical items that are thought to be missing their morphophonological symbols.
 
+\item \textbf{Not Yet Implemented} . These are lexical items, primarily postbases, that have not yet been implemented in the analyzer.
+
+\item \textbf{Overgeneration Issues} . This section documents all instances of overgeneration that result from properties inherent to a lexical item, e.g. a certain base may only take possessed endings.
+
+\item \textbf{Questions for Native Speakers / Fieldwork} . These are questions concerning lexical items that cannot be answered via the reference grammar, but rather, require knowledge of a native speaker.
+
+\item \textbf{Notes on Design Choices} . This section documents some of the choices that were made when designing the analyzer, to serve as a reminder for why or how some parts were implemented.
+
+\item \textbf{Unparsed Items} . This is a list of all the example words in the postbase section of the Badten dictionary that were not successfully parsed by the analyzer.
+\end{enumerate}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Logical Errors}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item The \textit{-aa-} of the \textsc{future optative 1sg} ending becomes \textit{-ii-}, e.g. \textit{kiyaghte\textsc{[v][intr][opt][fut][1sg]}} yields \textbf{kiyaghlleghhiinga} and not \textit{kiyaghlleghhaanga}.\label{fut-opt-1sg}
+
+\item \textit{iyatagh--ghllagu\textsc{[v][intr][intrg][3sg]}} generates the correct surface form \textbf{iyataghllawaa} and an additional one with three consecutive vowels, \textbf{iyataghllawaaa}. This also occurs with the \textsc{2sg intrg}: \textit{panig--lgu\textsc{[v][intr][intrg][2sg]}} yields \textbf{panilguzin} and \textbf{panilguziin}.
+
+These additional forms are generated because we included alternative forms for \underline{some} of the interrogative endings, to account for emphasis in yes-no questions that is achieved via vowel lengthening (Jacobson 2001, p.60). Furthermore, vowel lengthening for emphasis appears to only occur for vowels that end words. Alternative forms were only implemented for the endings that had explicit examples in Jacobson, and should be expanded to all forms, if they are permitted. (See \textit{Questions for Fieldwork})
+
+\item When the verb base \textit{aane} is paired with postbase \textit{@$\sim_\text{f}$na} and inflected for the \textsc{3sg subordinative}, the resulting surface forms are given as \textbf{aanaluni}. Where should we handle this degemination of \textit{nn} and degemination in general? It does not seem ideal to handle it in \textit{FinalE} dropping\ldots
+
+Similarly, \textit{tuune@$\sim_\text{f}$naqutke\textsc{[v][trns][ind][3sg][3sg]}} should yield \textbf{tuunaqutkaa}, and \textit{aksaqe$\sim$--qumtaagh\textsc{[n][abs][unpd][sg]}} should derive {aksaqumtaaq}.
+
+\item \textbf{qeneghte-@₁~:(u)tke-} generates \textit{qenghutke-}, which is correct, but will not parse in the other direction (from surface to underlying). The dictionary also permits \textit{qeneghtutke-} where semi-final \textit{e} is not dropped.
+
+This is the same issue as \textbf{uyviinghet}.
 \end{itemize}
 
+\pagebreak
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                         %
-%   Not Yet Implemented   %
-%                         %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Lexical Errors}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item What classifies as a \textit{particle}? Walk through the particles and make sure nouns have not been mixed in.
 
+\item Some words are encoded in \textit{lexc} as consisting of two ``words'', e.g. \textbf{ka em} \textit{ouch} 
+
+\item What is \textbf{(n)}? e.g. \textbf{qakuqwaaqu(n)} \textit{sometime later}
+
+\item There is a discrepancy between the Jacobson and Badten documentation for the postbase \textit{N and partner; N and company, etc.} where the former documents it as \textbf{$\sim_\text{sf}$-w:(e)nkuk} / \textbf{$\sim_\text{sf}$-w:(e)nkut} and the latter documents it as \textbf{(e)nkuk} / \textbf{(e)nkut}. \textit{See also Lane's email}.
+
+\item Review and reconstruct the postbases of type \textbf{$\sim$--(g)ka}\ldots, which differ in their documentation in Badten and Jacobson. They include the following:
+
+\begin{tabular}{l l l}
+\textbf{Badten} & \textbf{Jacobson} & \textbf{Definition} \\
+\hline \hline
+@$\sim$--(g)ke & @$\sim_\text{sf}$--(g)ke/(g)ka & \textit{the one(s) that possessor V-ed/is V-ing} \\
+@$\sim$--(g)kaa & @$\sim_\text{sf}$--(g)kau & \textit{to have V-ed or been V-ed} \\
+@$\sim$--(g)kagh & @$\sim_\text{sf}$--(g)kagh & \textit{one that has V-ed; one that has been V-ed}
+\end{tabular}
+
+\item[] Also reconsider the following postbases in Badten, \textbf{@$\sim$--(g)kaqe}, \textbf{$\sim$--(g)kaqsagh}, \textbf{$\sim$--(g)kaayagh}, \textbf{$\sim$--(g)kayug)}, \textbf{$\sim$--(g)kayugu}, and \textbf{$\sim$--(g)kayugughte}. These are all postbases of the form \textit{$\sim$--(g)ka\ldots}. In particular, we should verify the type of \textbf{(g)}, that is \textbf{$\text{g}_1$}, \textbf{$\text{g}_2$}, or \textbf{$\text{g}_3$}. Can we condense these?
+
+\item \textbf{(ke)staaghhaa} is marked non-productive, but one of the given example words \textit{aaskestaaghhaanghani} is not lexicalized. What then is the status of this postbase?
+
+\item There is a discrepancy in Badten v. Jacobson for the postbase meaning \textit{to V again; to V more; to V anyway}: \textbf{@$\sim$laatagh} v. \textbf{@$\sim_\text{f}$laatagh} respectively.
+
+\item For the postbase \textbf{@$\sim_\text{f}$--nasiigh}, two of the examples do not drop their base-final consonants despite \textbf{--}: \textit{teghtughnasiightuq} and \textit{neghnasiightuq}, while one does: \textit{qepghanasiightuq}. Which is it?
+
+\item The dictionary documents the postbase as \textbf{@$\sim_\text{f}$--neq} while Jacobson documents it as \textbf{@--neq} \textit{the activity of V-ing}. Which is it?
+
+\item Can the postbase \textbf{@--nghite**} be simplified to not include the \textbf{**}?
+
+\item The postbase \textbf{+niigh} appears to be missing some morphophonological symbols, given certains example derivations such as \textbf{unangniightuq} from base \textit{unange}, and \textbf{guunniightuq} from base \textit{guute}.
+
+\item The dictionary states that \textbf{uviqliq} is derived from the base \textit{uvi} and \textit{--qligh*\textsc{[n][abs][unpd][sg]}}. \textit{Uvi} itself is not defined, but is supposedly related to \textit{uvin} and \textit{uvinek}, but neither of these would derive \textit{uviqliq}.
+
+\item The postbase \textbf{?qutagh} \textit{device associated with N or with V-ing} appears to be missing its morphophonological processes, perhaps indicated by the \textbf{?}. Given the example words however, it seems to drop final consonants in some instances and not in others. The examples from the \textsc{sivuqam} text are also not parsing correctly.
+
+\item The postbase {+tutkaligh} is defined as \textit{to measure the approximate the V of (it)}, suggesting that it is a verb-elaborating postbase. The given example word \textbf{uyatutkalighaqaput} is derived from a noun base \textit{uya} however.
+
+\item Badten documents the postbase as \textbf{@$\sim$:(u)te} while Jacobson documents it as \textbf{$\sim$:(u)te}. Which is it?
+\end{itemize}
+
+% Subsection: Possible Typos %
+\subsection{Possible Typos}
+
+\begin{itemize}
+\item \textbf{$\sim$(at)aghagh} \textit{to be V-er; to V more; to be more V} . The \textbf{at} is used with all bases except those that ends in \textit{-te}. The dictionary derives \textit{nighughaghaghtuq} from \textit{nighughte-$\sim$(at)aghagh\textsc{[v][intr][ind][3sg]}}\ldots What happened to \textit{-te}?
+
+\item The dictionary derives \textbf{atkugkuuq} from \textit{atkug--ghqu\textsc{[v][intr][ind][3sg]}}. What is the assimilation pattern that is being followed here or is there a typo? We should expect \textbf{atkugquuq}, but the \textit{q} of the postbase became a \textit{k}. Why?
+
+\item The dictionary derives \textbf{ghevraagtuq} from \textit{gheve-–ghraag\textsc{[v][intr][ind][3sg]}}. What happened to base-final \textit{-e} and the postbase-initial \textit{gh}?
+
+\item \textbf{maligqutaama} is given as an example to illustrate that the postbase \textbf{@$\sim$:(i/u)ma} can be used as a nominalizer. In the original lexicon, \textbf{malighqutaama} is indicated to be a verb base, meaning \textit{always follow the rules}, and there is no verb base \textbf{maligqutagh-} as it is suggested in the derivation of \textbf{maligqutaama} in the example.
+
+\item \textbf{cingik} and \textbf{cingikegtuq} are used to illustrate the attachment pattern of postbase \textit{$\sim$--kegte}, but \textbf{c} is not a valid grapheme of the Yupik alphabet?
+
+\item The dictionary derives \textbf{agluqusiightuq} from \textit{aglagh--kusiigh\textsc{[v][intr][ind][3sg]}}. Should the first \textbf{u} be an \textbf{a}?
+
+\item The dictionary derives \textbf{neqlighaa} from \textit{neqe--ligh\textsc{[v][trns][ind][3sg][3sg]}}. What happened to base-final \textit{-e}?
+
+\item The dictionary states in the postbase \textbf{$\pm$lliqe} that the base for \textit{appendix} is \textbf{paarghug}, but in the  original lexicon it is given as \textbf{paargu}.
+
+\item The dictionary derives \textbf{angyametuq} from underlying \textit{angyagh~fmete\textsc{[v][intr][ind][3sg]}}. What happened to the base-final \textit{gh]}?
+
+\item The dictionary states \textit{eggmiighaa} is derived from the verb base \textbf{egge} and the nominalizing postbase \textbf{$\sim_\text{f}$miigh}, which is incompatible.
+
+\item The dictionary derives \textbf{akuzimleghaghtuq} from underlying \textit{akuzi--mlegagh\textsc{[v][intr][ind][3sg]}}. Is the \textit{g} in the postbase supposed to be a \textit{gh} to match with the derived surface form?
+
+\item The dictionary states \textbf{qallemsuggaq} is derived from verb base \textbf{akuzi} and the noun-elaborating postbase \textbf{--msuggagh}, which is incompatible.
+
+\item The dictionary states in the postbase \textbf{$\pm$pag} that the base for \textit{to V in a big way; to V intensively; to V excessively} is \textbf{ggiistute}, but in the  original lexicon it is given as \textbf{ggiiste}. Also \textbf{aghveghapagtuq} is the given derived form for \textit{ayveghagh$\pm$pag\textsc{[v][intr][ind][3sg]}}, where the \textit{y} has been replaced with \textit{gh}. This postbase is also affixed to the noun base \textit{napagh} despite being verb-elaborating.
+
+\item The dictionary derives \textbf{qaasqaq} from underlying \textit{qaye+qaq\textsc{[n][abs][unpd][sg]}}, but there is no symbol to drop final \textit{-e}.
+
+\item The dictionary derives \textbf{qasqituq} from underlying \textit{qaye$\sim$--qite\textsc{[v][intr][ind][3sg]}}. The final \textit{-e} should drop and hop however to form \textbf{qaasqituq}.
+
+\item The dictionary derives \textbf{sasiqumtaaq} from the noun base \textit{sasigh} and nominalizing postbase \textit{$\sim$--qumtaagh}, which is incompatible.
+
+\item The dictionary derives \textbf{sukarragkiighutuq} from underlying \textit{sukate*@$\sim_\text{f}$--ragkiigh\textsc{[v][intr][ind][3sg]}}. Where does the second \textit{u} come from?
+
+\item The dictionary derives \textbf{tepraak} from \textit{tepe+raag\textsc{[n][abs][unpd][sg]}} rather than \textbf{teperaak}. What happened to base-final \textit{-e}?
+
+\item The dictionary derives \textbf{esnegrakegtuq} from \textit{esneg@$\sim_\text{f}$--rakegte\textsc{[v][intr][ind][3sg]}} rather than \textbf{esnerakegtuq}, where base-final \textit{g} drops.
+
+\item The dictionary derives \textbf{matneghsughaa} and \textbf{aqlaghasughaa} from noun basesm \textit{matnegh-} and \textit{aqlagha}, and verb-elaborating postbase, \textit{+sugh}, which is incompatible.
+
+\item The dictionary derives \textbf{alingtaghtuq} from underlying \textit{alinge+tagh\textsc{[v][intr][ind][3sg]}}. What happened to base-final \textit{-e}?
+
+\item The dictionary derives \textbf{Laluramkataq} from underlying \textit{Laluramke+tagh\textsc{[n][abs][unpd][sg]}}. If the noun base has underlying base-final \textit{-e}, it should not have become an \textit{-a}.
+
+\item The dictionary derives \textbf{iigtughaa} from underlying \textit{iigge+tugh\textsc{[v][trns][ind][3sg][3sg]}}. What happened to base-final \textit{-e}?
+
+\item The dictionary derives \textbf{kelengakista} from the verb base \textit{kelngaki} as reported among the given example words for the postbase \textbf{+(s)ta}. \textit{kelngaki} appears to be missing an \textit{-e-} between \textit{l} and \textit{n}. Also, in the original lexicon, there is no \textit{kelengaki} but an \textit{kelengake}.
+  
+\item The dictionary derives \textbf{ungangughtaghtuq} from underlying \textit{unange$\sim_\text{f}$ughtagh\textsc{[v][intr][ind][3sg]}}. The first \textit{g} should not have been inserted.
+
+\item The dictionary derives \textbf{tunusaq} from underlying \textit{tuune@$\sim$:(u)sagh\textsc{[n][abs][unpd][sg]}}. The surface form is missing a \textit{u}.
+
+\item The dictionary derives \textbf{levekleguutuq} from underlying \textit{leveklug+uute\textsc{[v][intr][ind][3sg]}}. The surface form replaced the first \textit{u} with an \textit{e}. With the same postbase, the dictionary derives \textbf{qenaaghquutuq} from noun base \textit{qenaagh}. Why is there an additional \textit{q} after the \textit{gh}?
+
+\item The dictionary derives \textbf{Kusmeyaghtuq} from \textit{Kusme} and the postbase \textit{@$\sim_\text{f}$yagh}. In the original lexicon however, \textit{Kusme} is documented as \textit{Kuusme} with a long \textit{u}.
+
+\item The analyzer derives \textbf{aafkaghtuq} from \textit{aveg-~–qagh\textsc{[v][intr][ind][3sg]}}, while the dictionary gives \textbf{aavkaghtuq}. Doesn't \textit{v} devoice to \textit{f} next to a voiceless stop? \textit{aavkaghtuq} would be a typo.
+
+\item From \textit{retwha--qu\textsc{[v][intr][ind][3pl]}}, the analyzer derives \textbf{retwhaquut}, but the dictionary gives \textbf{retwhaqwaat}. Why do we derive a \textit{-qw-}?
+\end{itemize}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Not Yet Implemented}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Subsection: Postbases %
 
 \subsection{Postbases}
-
 \begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
-\item \textbf{+tmiighte} \textit{to go in N direction} . Used with demonstrative adverb bases and positionals, but the latter appear to be fully lexicalized  
-\item \textbf{+tmun} \textit{N-ward, toward N} .  Used with demonstrative adverb bases and positionals, but the latter appear to be fully lexicalized  
-\item \textbf{@$\sim$:(u)ta} \textit{condition with respect to V-ing} . Non-productive unless it carries the meaning listed here
+\item \textbf{--ghqe} \textit{to divide into N groups} . Used with numerical bases only
+
+\item \textbf{--ghquute} \textit{to encounter N; to come where there is N} . Used with weather nouns and some others. \textbf{ghq} also stays intact, even with bases ending in \textbf{g} as in \textbf{eslallughquutuq} from \textit{eslallug-}
+
+\item \textbf{+ghsi} . Plural \textsc{vocative} for demonstratives
+
+\item \textbf{$\sim$--(ghw/ngw/w)aagh} \textit{to diligently V; to thoroughly V; to V at the proper time; to V attentively} \textsc{or} \textit{to V in a non-serious way; to pretend to V; to V for something other than the usual purpose; to play at V-ing} . Requires implementation of the allomorphs
+
+\item \textbf{$\sim$--(ghw/ngw/w)aagh} \textit{imitation N; artificial N; model N; toy N; pretend N; little bit of N or little thing like N} . Requires implementation of the allomorphs
+
+\item \textbf{--gnegh} \textit{N number of things; N number of groups} . Used with numerical bases and takes plural endings
+
+\item \textbf{kaghtagh} \textit{one from N} . Used with demonstrative adverb bases
+
+\item \textbf{$\sim$--kaghte} \textit{to get N; to catch N} . Used with nouns expressing quantity of game, money, etc.
+
+\item \textbf{+keghtagh} \textit{one from N} . Used with  demonstrative adverb bases
+
+\item \textbf{--kun} \textit{in the next N time; in the future N time; in the coming N time} . Used with time words and  yields adverbial particles
+
+\item \textbf{+lighpigagh} \textit{very N-most one} . Used with positionals, some demonstrative adverb bases, and is marked as possibly non-productive
+
+\item \textbf{+ligh} \textit{one that is N} . Used with positionals, some demonstrative adverb bases, and is marked as possibly non-productive. Among the given example words, some of the postbase-final \textit{gh}'s are marked as                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           strong in the original lexicon and some are not.
+
+\item \textbf{--lqusigh} \textit{all N; throughout the N; since last N; big N} . Used with time words and yields forms that may function as nouns or adverbial particles
+
+\item \textbf{neq} \textit{the one or ones which are V to the greatest extent; more (the one or ones which are V to the greatest extent} . Used with verbs describing quantifiable qualities and takes possessed endings
+
+\item The postbase \textbf{$\sim_\text{f}$nga} drops \textit{-te} from the base where
+that \textit{-te} is preceded by a fricative which then becomes voiced, e.g. \textbf{piivngaaq} from base \textit{piifte}.
+
+\item With postbase \textbf{--nge(l/r/s)tagh}, full, non-initial vowels on the base are optionally changed to \textit{-e}, e.g. \textbf{nenglengestaghtuq} from \textit{nenglagh--ngestagh\textsc{[v][intr][ind][3sg]}}. This is true of the noun-elaborating equivalent of this postbase as well.
+
+\item The postbase \textbf{$\sim$:(ng)i:ghute} has a variety of conditions, stipulated with the two colons (See p.161 of the Badten postbases PDF)
+
+\item How do we derive the allomorphs from the postbase that Badten says is underlyingly \textbf{$\sim$:(ng)uagh}?
+
+\item The contractions \textbf{nite} and \textbf{nte} of the \textsc{localis} and archaic verb \textit{ete} have not been implemented.
+
+\item \textbf{qe} \textit{have as one's N; object is subject's N; have N} . Is this an allomorphic form of \textit{$\sim$--ke}?
+
+\item \textbf{$\sim$(q/t)uute} \textit{to V as a group; to V together} . \textit{(q/t)} allomorphy hasn't been encountered before.
+
+\item \textbf{--qwaaqun} \textit{a little later in the N} . 
+Used with time words and yields particles
+
+\item \textbf{+ta} \textit{N area of possessor} . Used with demonstrative adverb bases and takes possessed endings.
+
+\item \textbf{?tghute} \textit{to miss the mark by shooting too much toward N; to miss out on V-ing} . Used with demonstrative adverbs and positional bases
+
+\item \textbf{+tmiighte} \textit{to go in N direction} . Used with demonstrative adverb bases and positionals, but the latter appear to be fully lexicalized
+
+\item \textbf{+tmun} \textit{N-ward, toward N} .  Used with demonstrative adverb bases and positionals, but the latter appear to be fully lexicalized
+
+\item \textbf{?vagh} \textit{to go N-wards; to put N-wards; to go or put toward N} . Used with positional bases and certain demonstrative adverb bases
+
 \item \textbf{+y} \textit{vocative} . Used with vowel-ending nouns, doubling the final vowel
-\item \textbf{+yuq} \textit{vocative} . Vocative for demonstrative pronouns 
-\item \textbf{@$\sim_\text{f}$yukagh} \textit{to be rady to V; to be about to V; to be all set to V; to make a move toward V-ing} . Used with the irregular \textit{-gpe} form of the postbase \textit{@nghite}?
 
+\item \textbf{+yuq} \textit{vocative} . Vocative for demonstrative pronouns
 \end{itemize}
 
+\pagebreak
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                           %
-%   Overgeneration Issues   %
-%                           %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Overgeneration Issues}
-
-%%%%%%%%%%%%%%%%%%%
-%                 %
-%   T-Postbases   %
-%                 %
-%%%%%%%%%%%%%%%%%%%
-\subsection{\textbf{T}-Postbases}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
-\item \textbf{+ta} \textit{N area of possessor} . Used with demonstrative adverb bases and takes possessed endings
+\item \textbf{+aghaghte} \textit{to immediately V; to briefly V; to quickly V; to suddenly V} . Evidently used only with vowel-ending bases (?)
+
+\item \textbf{$\sim_\text{f}$(a)ghesnagh} and \textbf{–qiinagh} are semantically equivalent (\textit{to just V; to V just now; to only V (and perhaps in vain)}, but the former is used with vowel-ending bases, and the latter is used with consonant-ending bases.
+
+\item \textbf{$\sim$aatagh} \textit{to V finally or repeatedly and persistently, several times} . Not used with bases that end in a full vowel
+
+\item \textbf{--ghhagh*} and \textbf{$\sim_\text{f}$ngiighhagh*} are semantically equivalent (\textit{little N; small N; bit of N}), where the former is used with consonant-ending bases, and the latter is used with vowel-ending bases.
+
+\item \textbf{@$\sim$:(i/u)man} \textit{the time while V-ing; the course of V-ing} . Takes \textsc{unpossessed vialis} case endings
+
+\item \textbf{@kaghagh} \textit{small N} . Used with bases that end in \textit{-te}
+
+\item \textbf{--lgun} \textit{one with the same N} . Takes possessed or non-singular unpossessed endings
+
+\item \textbf{--mrugnite} \textit{to seem to be somewhat V} . Used with descriptive verb bases.
+
+\item \textbf{@$\sim_\text{f}$na} \textit{in order to V; to V} . Used with subordinative mood endings
+
+\item \textbf{@$\sim_\text{f}$nagh} \textit{to cause V-ing} . Used with emotional roots and \textit{certain} other bases
+
+\item \textbf{@*ngugh*} \textit{one that is V} . Used only with descriptive or negative verbs ending in \textit{-te}
+
+\item \textbf{$\pm$pagunghite} \textit{to not be sufficiently V} . Used with descriptive verb bases
+
+\item \textbf{$\sim$--qaghaqe} \textit{to intermittently V; to V now and then} . Used with subordinative endings
+
+\item \textbf{$\sim$--qaghte} \textit{to suddenly V} . Not used with bases ending in \textit{g} or a full vowel
+
+\item \textbf{+qaq} \textit{one that is V; one to the N} . Used with descriptive verb bases
+
+\item \textbf{$\sim$(q/t)uute} \textit{to V as a group; to V together} . Used with plural endings
+
+\item \textbf{@qugh} . \textit{to V all things available; to V completely} . Used with bases that end in \textit{-te}
+
 \item \textbf{+tagh} \textit{for N to continuously occur} . Used with words denoting sounds
+
 \item \textbf{+tala} \textit{the extent of V-ness} . Used with descriptive bases
+
+\item \textbf{+te} \textit{to go to N; to catch N; to obtain N; to spend N (time)} . Used only on nouns for certain categories of things, namely places, game animals, supplies, periods of time
+
 \item \textbf{+tutka} \textit{to be V or have N to an indicated degree} . Used with descriptive bases
-\end{itemize}
 
-%%%%%%%%%%%%%%%%%%%
-%                 %
-%   U-Postbases   %
-%                 %
-%%%%%%%%%%%%%%%%%%%
-\subsection{\textbf{U}-Postbases}
+\item \textbf{$\sim_\text{f}$ughtagh} \textit{to V all things available; to completely V} . Used with bases that end in \textit{-e}
 
-\begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
-\item \textbf{$\sim_\text{f}$ughtagh} \textit{to V all things available; to completely V} . Used with bases that end in \textit{-e} 
-\end{itemize}
+\item \textbf{+uute} \textit{to make the N sound}. Used with words denoting sounds or things that make sounds
 
-%%%%%%%%%%%%%%%%%%%
-%                 %
-%   V-Postbases   %
-%                 %
-%%%%%%%%%%%%%%%%%%%
-\subsection{\textbf{V}-Postbases}
-
-\begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
 \item \textbf{?vagh} \textit{to go N-wards; to put N-wards; to go or put toward N} . Used with positional bases and some demonstrative adverb bases\footnote{When used with \textbf{qule} \textit{area above}, it drops and hopes final-\textit{e}}
-\end{itemize}
 
-%%%%%%%%%%%%%%%%%%%
-%                 %
-%   Y-Postbases   %
-%                 %
-%%%%%%%%%%%%%%%%%%%
-\subsection{\textbf{V}-Postbases}
-
-\begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
 \item \textbf{@$\sim_\text{f}$yaghqaa} \textit{to need to V; to be supposed to V; to V in the future} . Takes intransitive endings only 
+
 \item \textbf{@$\sim_\text{f}$yaghqaqe} \textit{to need to V; to be supposed to V; to V in the future} . Takes transitive endings only
 \end{itemize}
 
+\pagebreak
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                                %
-%   Questions for Native  Speakers / Fieldwork   % 
-%                                                %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Questions for Native Speakers / Fieldwork}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%%%%%%%%%%%%
-%           %
-%   Nouns   %
-%           %
-%%%%%%%%%%%%%
+\begin{itemize}
+\item \textcolor{red}{!!!} At present, \textit{Final E-Dropping} as coded in \textit{foma} does not simply allow final \textit{-e} to drop, although it should, as in \textit{egge$\sim_\text{f}$miigh\textsc{[n][abs][unpd][sg]}}. The context in which this morphophonological rule applies requires review. We also need to understand how this rule interacts with the phenomena that states in certain cases, if final \textit{-e} cannot hop, it will not drop, as in \textit{waapenga} (See Jacobson (2001)).
 
+Similarly, in \textbf{piksagutaqa}, derived from \textit{pike@$\sim_\text{f}$yagute}, does base-final \textit{e} not hop? Or is this a typo?
+\end{itemize}
+
+% Subsection: Nouns %
 \subsection{Questions Concerning Nouns}
 
 \begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
-
 \item Which nouns/nominal postbases that end in \textit{-a} in the citation form end in \textit{-e} in the underlying form? 
 
 \item Which nouns/nominal postbases ends in strong \textit{-gh} / weak \textit{-gh}? 
 
+\item \textbf{@$\sim$:(i/u)ma} \textit{to have V-ed or been V-ed; to be in a state of having V-ed or been V-ed; to evidently have V-ed or been V-ed} when used with the \textsc{participial}. Badten remarks that this postbase may be used as a \textit{nominalizer}, in which case, can it take additional derivation postbases?
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%
-%               %
-%   Postbases   %
-%               %
-%%%%%%%%%%%%%%%%%
+% Subsection: Verbs %
+\subsection{Questions Concerning Verbs}
+
+\begin{itemize}
+\item To generate emphasis in yes-no questions, the final vowel of the interrogative ending is lengthened, as in \textbf{kuuva(a)} \textit{`did it spill'}? Are all endings that end in a vowel treated this way? If so, what are some examples, and what are the triple vowel clusters that might arise as a result (So that these clusters can be handled)? For instance, \textit{iyatagh--ghllagu\textsc[v][intr][intrg][3sg]} can generate \textbf{iyataghllawaaa}.
+\end{itemize}
+
+% Subsection: Postbases %
 \subsection{Questions Concerning Postbases}
 
 \begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
+\item \textit{kiiw--ghllag*\textsc{[n][abs][unpd][sg]}} should yield \textbf{kiiwhllagek} according to the dictionary. This pairing of \textit{-whll-} however, conflicts with the first Undoubling Rule documented by Jacobson that says a fricative is undoubled next to \textit{f}, \textit{s}, or \textit{wh}. Is this an error on Jacobson's part?
 
-\item The dictionary documents several postbases as being allomorphs of one another, e.g. \textit{mlaagh}, \textit{mraagh}, \textit{vlaagh}, etc.
-%
-Are there no conditions on when each form surfaces?
+\item \textcolor{red}{!!!} The postbase \textbf{@--ghpagte} drops base-final \textit{-te}, and if this \textit{-te} is preceded by another consonant, this consonant presumably drops as well. \textit{amqeghte@--ghpagte\textsc{[v][intr][ind][3sg]}} should yield \textbf{amqeghpagtuq} and \textit{nuugte@--ghpagte\textsc{[v][intr][ind][3sg]}} should yield \textbf{nuugpagtuq}. What happened to the postbase-initial \textit{gh}? Is it often that we generate consonant clusters that require one of the consonants to drop out? If so, is it predictable which one drops?
 
+\item \textcolor{red}{!!!} \textbf{\textendash \textendash iqe} drops the final consonant and the preceding vowel. If there is no final consonant, does the base-final vowel get dropped? According to the dictionary, \textit{qiya\textendash \textendash iqe\textsc{[v][intr][ind][3sg]}} derives \textbf{qiyiquq}.
+
+Any cluster of \textbf{ti} from this postbase will become \textbf{si}, e.g. \textit{ggute\textendash \textendash iqe\textsc{[v][intr][ind][3sg]}} derives \textbf{ggusiquq}. Doesn't this suggest some form of modification to base-final \textit{-te} is taking place? Do we need to add an additional @ symbol?
+
+\item \textbf{$\sim_\text{sf}$:(e)sqe} \textsc{compound verbal} \textit{to ask one to V; to tell one to V} . If intervocalic \textit{gh} is deleted due to this postbase, the resulting vowel dominance is always \textit{ii} and never \textit{aa} or \textit{uu} (As such, \textit{qaviisqaa} and \textit{mayiisqaa} are parsed incorrectly). Can we posit that \textit{(e)} is in fact \textit{i} underlyingly?
+
+\item The dictionary claims that the postbase \textbf{--liigh} \textit{to fix N; to make N; to prepare N; to cook N} may be shortened to \textbf{--iigh}, as in \textit{mangteghaliigh-} becomes \textit{mangteghii-}
+
+\item The dictionary documents several postbases as being allomorphs of one another, e.g. \textit{mlaagh}, \textit{mraagh}, \textit{vlaagh}, etc. Are there no conditions on when each form surfaces?
+
+\item The definition of postbase \textbf{+mete} is given as \textit{to be V}, but all the examples given include a postural root base rather than a verb base. Is this postbase limited to affixation with postural roots?
+
+\item The set of noun-elaborating postbases \{\textbf{--mlaagh}, \textbf{--mzaagh}, \textbf{--mleghagh}, \textbf{--mreghagh}, \textbf{--mzeghagh}, \textbf{--vlaagh}, \textbf{--vleghagh}\} (\textit{little bit of N or little thing like N}) are said to be equivalent to one another, but no indication is given as to whether or not these allomorphic forms surface under differing conditions. The same is true of the set of verb-elaborating postbases \{\textbf{\--mlaagh}, \textbf{--mzaagh}, \textbf{--mleghagh}, \textbf{--mreghagh}, \textbf{--mzeghagh}, \textbf{--vlaagh}, \textbf{--vleghagh}\} (\textit{to V a little}).
+
+\item The underlying string \textit{naasqugh$\sim$:(ng)iitagh\textsc{[n][abs][unpd][sg]}} results in \textbf{naasqughiitaq} according to the dictionary, while the analyzer generates \textbf{naasqwiiitaq}.
+
+Likewise, \textit{nasagh$\sim$:(ng)iitagh\textsc{[n][abs][unpd][sg]}} results in \textbf{nasiiitaq} rather than \textbf{nasaghiitaq}, as recorded in the dictionary. These examples suggest either uvular dropping is not in fact a morphophonological process of this postbase \textsc{or} these bases end in strong \textit{-gh}.
+
+\item Confirm that the postbase \textbf{+pagaatagh}/\textbf{$\sim_\text{sf}$vagaatagh} conforms to the \textbf{(p/v)} paradigm described by Jacobson. For the most part, the example words from the dictionary do conform, except for \textbf{kaksagpagaataghaa}. Is this surface form correct (in which case, the postbase should not be implemented with the (p/v)-paradigm) or incorrect?
 \end{itemize}
 
-
-%%%%%%%%%%%%%%%%%%%%%
-%                   %
-%   Design Choices  % 
-%                   %
-%%%%%%%%%%%%%%%%%%%%%
-
-\section{Notes on Design Choices}
+% Alternative Surface Forms $
+\subsubsection{Alternative Surface Forms}
+In some postbases, the dictionary includes alternative surface forms for some example words, in addition to the expected form that is generated from following the labeled morphophonological processes. I am listing them here mostly to confirm correctness. Are they also postbase-specific?
 
 \begin{itemize}
-\renewcommand\labelitemi{$\cdot$}
+\item \textbf{aanenaluni} .\textit{@$\sim_\text{f}$na\textsc{[v][intr][sbrd][3sg]}}
 
-\item Postbases marked \textit{marginally-productive} were implemented, while those that were marked \textit{probably non-productive} were implemented if the examples given did not seem to be lexicalized.
-%
-Those that were marked \textit{non-producitve} were removed.
+\item \textbf{kuvumaaq} . \textit{kuuve@$\sim$:(i/u)ma\textsc{[v][intr][ind][3sg]}}?
 
-\item Some postbase-attachment examples introduced bases that were not included in the original lexicon of bases (See \textit{+tala}).
+\item \textbf{tumangightuq} . \textit{tume$\sim$:(ng)igh\textsc{[v][intr][ind][3sg]}}?
 
+\item \textbf{neghnginaghtuq} . \textit{negh:(ng)inagh\textsc{[v][intr][ind][3sg]}}?
+
+\item \textbf{qulqituq} . \textit{qule$\sim$--qite\textsc{[v][intr][ind][3sg]}}?
+\end{itemize}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Notes on Design Choices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item The ``Yupikalizing'' postbase \textbf{+e} is included as a noun-elaborating postbase, even though the analyzer cannot parse English loan words, inflected with Yupik endings.
+
+\item If a postbase-attachment example introduced bases that were not included in the original lexicon, these new bases were added.
+
+\item Postbases marked \textit{marginally-productive}, \textit{probably non-productive}, or anything along those lines, were implemented if the examples given did not seem to be lexicalized. Those that were clearly marked \textit{non-productive} were removed.
+\end{itemize}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Unparsed / Wrongly Parsed Items}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{itemize}
+\item \textbf{paayghisqelluki} from postbase \textit{$\sim_\text{sf}$:(e)sqe}
+
+\item \textbf{neqekranglaghvilguftut} from postbase \textit{(pete)fte}
+
+\item \textbf{aglaghhiinga} from postbase \textit{$\sim_\text{sf}$--gga/$\sim_\text{sf}$--ghha}, which is equivalent to the future optative form. \textit{See Issue~\ref{fut-opt-1sg}}
+
+\item \textbf{liigikeghraagaghput} from postbase \textit{--ghraag}
+
+\item \textbf{iighumanginaghlukek} and \textbf{iighumanginaghluku} from postbase \textit{@$\sim$:(i/u)manginagh}
+
+\item \textbf{mekelngiiqiinkung} from postbase \textit{$\sim$--ke}
+
+\item \textbf{qavaghlaaghigallghem} from postbase \textit{@laaghigate}
+
+\item \textbf{nunalgutnga} from postbase \textit{--lgun}
+
+\item \textbf{iknaqellghuftunga} and \textbf{pinighqaallghuftunga} and \textbf{nangniitellghuftunga} from postbase \textit{--llegh}
+
+\item \textbf{qawaagniillgunaghaquq} from postbase \textit{--llgu}
+
+\item \textbf{Sivuqaghhmiit} from postbase \textit{$\sim_\text{f}$mii}. There are inconsistencies regarding whether or not this noun base ends in strong \textit{-gh}.
+
+\item \textbf{akimsuggangunaan} from postbase \textit{msuggagh*}
+
+\item \textbf{igleghtengnginaamaluteng} from postbase \textit{:(ng)inagh}
+
+\item \textbf{tengegkayiisuggaalleghmi} from postbase \textit{$\sim$:(ng)isug}
+
+\item \textbf{atuqepagigalkangat} from postbase \textit{--pagigate}
+
+\item \textbf{sukatepestaaghluku} from postbase \textit{--pestaagh}, since \textit{sukate*]} is marked as an \textsc{intr} verb, and the mood inflection generated appears to be \textsc{trns}.
+
+\item \textbf{uglaapigteftuuq} from postbase \textit{--pigte}
+
+\item \textbf{qineghsuukiqrugyalghiinga} from postbase \textit{--qrug}
+
+\item \textbf{tuutaquuq} from postbase \textit{--qu}
+
+\item \textbf{iiggaragkiighutaqaat} from postbase \textit{@$\sim_\text{f}$--ragkiighute}
+
+\item \textbf{neqnirkapiggaq} from postbase \textit{--rkapig}
+
+\item \textbf{vegllugsugnit} from postbase \textit{+sugnite}
+
+\item \textbf{agitaghaaghaataghtuq} from postbase \textit{+tagh}
+
+\item \textbf{quyngightuumaghmenguq} from postbase \textit{+tuumagh*}
+
+\item \textbf{taghyughtupagllagem} from postbase \textit{+tupag}
+
+\item \textbf{uyatutkalighaqaput} from postbase \textit{+tutkaligh}
+
+\item \textbf{qiyavleghaamaghma} from postbase \textit{--vleghagh}
+
+\item \textbf{piinlighiyuwhaaghtevut} from postbase \textit{@$\sim_\text{f}$yuwhaagh}
 \end{itemize}
 
 \end{document}
