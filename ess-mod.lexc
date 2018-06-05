@@ -16602,7 +16602,7 @@ LEXICON VerbMoodInfl
 @R.VALENCE.INTR@[V][Intr][Opt][NEG]:@R.VALENCE.INTR@–fqaa                   IntransitiveNegativeOptative;
 @R.VALENCE.TRNS@[V][Trns][Opt][NEG]:@R.VALENCE.TRNS@                        TransitiveNegativeOptative;
 
-@R.VALENCE.INTR@[V][Intr][Opt][FUT]:@R.VALENCE.INTR@[Opt_FUT_Intr]~f(g/t)u  IntransitiveIndicativeFutureOptative;
+@R.VALENCE.INTR@[V][Intr][Opt][FUT]:@R.VALENCE.INTR@[Opt_FUT_Intr]           IntransitiveIndicativeFutureOptative;
 !@R.VALENCE.TRNS@[V][Trns][Opt][FUT]:@R.VALENCE.TRNS@@₁~fna@*@₂~sf–(g₂)      TransitiveParticipialFutureOptative;
 
 @R.VALENCE.INTR@[V][Intr][Opt][FUT][NEG]:@R.VALENCE.INTR@@₁~fyaquna         IntransitiveNegativeFutureOptative;
@@ -16616,6 +16616,27 @@ LEXICON VerbMoodInfl
 !!!     Connective Mood Markers     !!!
 !!!                                 !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+@R.VALENCE.INTR@[V][Intr][Prec]:@R.VALENCE.INTR@@₁~fvagilga      IntransitivePrecessiveConsequential;
+@R.VALENCE.TRNS@[V][Trns][Prec]:@R.VALENCE.TRNS@@₁~fvagilga      TransitivePrecessiveConsequential;
+
+@R.VALENCE.INTR@[V][Intr][CnsqI]:@R.VALENCE.INTR@@₁~fy/~f(ng₁)a  IntransitivePrecessiveConsequential;
+@R.VALENCE.TRNS@[V][Trns][CnsqI]:@R.VALENCE.TRNS@@₁~fy/~f(ng₁)a  TransitivePrecessiveConsequential;
+
+@R.VALENCE.INTR@[V][Intr][CnsqII]:@R.VALENCE.INTR@~(g₁)aqnga     IntransitivePrecessiveConsequential; 
+@R.VALENCE.TRNS@[V][Trns][CnsqII]:@R.VALENCE.TRNS@~(g₁)aqnga     IntransitivePrecessiveConsequential; 
+
+@R.VALENCE.INTR@[V][Intr][Conc]:@R.VALENCE.INTR@–ghnga           IntransitiveConcessive;
+@R.VALENCE.TRNS@[V][Trns][Conc]:@R.VALENCE.TRNS@–ghnga           TransitiveConcessive;
+
+@R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁–negh          IntransitiveContemporative;
+@R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁–negh          TransitiveContemporative;
+
+@R.VALENCE.INTR@[V][Intr][Cond]:@R.VALENCE.INTR@                 IntransitiveConditional;
+@R.VALENCE.TRNS@[V][Trns][Cond]:@R.VALENCE.TRNS@                 TransitiveConditional;
+
+@R.VALENCE.INTR@[V][Intr][Sbrd]:@R.VALENCE.INTR@@₁~flu/na        IntransitiveSubordinative;
+@R.VALENCE.TRNS@[V][Trns][Sbrd]:@R.VALENCE.TRNS@@₁~flu/na        TransitiveSubordinative;
 
 
 

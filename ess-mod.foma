@@ -292,22 +292,22 @@ define MultipleForms "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
                      "[Opt_PRS_2Sg]" -> "~f" i  || [C - t] e _             ∘
                      "[Opt_PRS_2Sg]" -> ":" a   || FullVowel gh _          ∘
 					 "[Opt_PRS_2Sg]" -> 0                                  ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u  || V _        ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
-					 "[Opt_FUT_Intr]" -> "@₁" "–" l gh a || V  _           ∘
-					 "[Opt_FUT_Intr]" -> "~sf" "–" ghh a || gh _           ∘
-					 "[Opt_FUT_Intr]" -> "~sf" "–" gg a  || g  _           ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _         ∘
+					 "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ V ("*") ("*") | "(pete)fte" ]  _     ∘
+					 "[Opt_FUT_Intr]" -> "~sf" "–" ghh a a || gh _         ∘
+					 "[Opt_FUT_Intr]" -> "~sf" "–" gg a a  || g  _         ∘
 					 "[To_Feel_R_Toward]" ->       "~" "–" k e || V _      ∘
 					 "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _      ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u || [ V ("*") ("*") | "(pete)fte" ] _     ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _                                   ∘
 	                 "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C) _  ∘
                      "~f-w/-w" -> "~f" "-w"                                      ∘
 					 "~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] _    ,, 
 					 "~sf-w:(e)tgun/teggun" -> "~sf" "-w" ":" "(e)" t g u n      ∘
                      "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i || [ [Alphabet - "*"] | "(pete)fte" ] _  ,,
                      "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*" || "*" _                ∘             
-                     "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || V ("*") ("*") _              ,,  
-                     "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ C | V ] ("*") ("*") _      ∘
+                     "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || [ V ("*") ("*") | "(pete)fte" ] _              ,,  
+                     "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ [ C | V ] ("*") ("*") | "(pete)fte" ] _      ∘
                      "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" k u    -> "–" g p e n a a n         ∘
                      "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t e n  -> "–" g p e n a ng          ∘
                      "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t a    -> "–" g p e n a a m t a     ∘
