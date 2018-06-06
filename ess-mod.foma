@@ -123,7 +123,7 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeB
                   [..] -> u || WordBoundary (C) u _ C e [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-hopping
                      e -> 0 ||                    V C _ [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~sf 
-
+				 
 define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
                   [..] -> i || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
                   [..] -> u || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
@@ -150,7 +150,7 @@ define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoun
 				    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _            ;  ! otherwise drop e
 
 define InterConsonantalE "(e)" -> e || C (MorphemeBoundary) MorphPhonSymbols* _  ∘  ! convert (e) to e when following a consonant
-                         "(e)" -> 0 || V (MorphemeBoundary) MorphPhonSymbols* _  ;  ! otherwise delete it
+                         "(e)" -> 0 || V ("*") ("*") (MorphemeBoundary) MorphPhonSymbols* _  ;  ! otherwise delete it
 						 
 define WeakFinalC  gh   -> 0 || [ WordBoundary | C ] FullVowel _ MorphemeBoundary [("~f") | ("~sf")] "-w"  ∘
                    "-w" -> 0 || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*)  _               ;
@@ -225,7 +225,6 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(g₂)"  -> g    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
                          "(g₃)"  -> g    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          "(te)"  -> t e  || C ("*") MorphemeBoundary _                                  ∘
-                         "(te)"  -> 0    || V       MorphemeBoundary _                                  ∘
                          "(i₁)"  -> i    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          "(i₂)"  -> i    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
                          "(i/u)" -> i    || t e MorphemeBoundary MorphPhonSymbols* _                    ∘
@@ -244,6 +243,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(g₁)"  -> 0,
                          "(g₂)"  -> 0,
                          "(g₃)"  -> 0,
+						 "(te)"  -> 0,
                          "(t)"   -> 0,
                          "(ng₁)" -> 0,
                          "(s/z)" -> 0,
@@ -264,7 +264,7 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
                       gh MorphemeBoundary ":" a -> a MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                       gh MorphemeBoundary ":" i -> i MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                       gh MorphemeBoundary ":" u -> u MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
-                                                           ":"   -> 0 || WordBoundary Alphabet+ MorphemeBoundary _ ;
+                                                  ":"   -> 0 || WordBoundary Alphabet+ MorphemeBoundary _ ;
 
 define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
                            k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
