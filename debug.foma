@@ -1,5 +1,8 @@
 #!/usr/bin/env foma -f
 
+read lexc exceptions.lexc
+define Exceptions
+
 read lexc debug.lexc
 
 eliminate flag VALENCE
@@ -36,7 +39,7 @@ define V           [ e | FullVowel ];
 
 define Enclitic   [ ll u | ng u q ] ;
 
-define Alphabet [ C | V | "*" | "'" ] ;
+define Alphabet [ C | V | "*" | "'" | "-" ] ;
 define MorphPhonSymbols [ "~"     | "~f"      | "~sf"   | "~h"    | "-w"    | ":"     | "–"     | "––" |
                           "@*"    | "@₁"      | "@₂"    |
                           "(e)"   | "(g₁)"    | "(g₂)"  | "(g₃)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" |
@@ -44,41 +47,42 @@ define MorphPhonSymbols [ "~"     | "~f"      | "~sf"   | "~h"    | "-w"    | ":
 						  "(g/t)" | "(p/v)"   | "(s/z)" | "(t/y)" | "(i/u)" | "(i/e)" |    "(pete)fte"    |
                           "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" ];
 
-define Lowercase "A" -> a ,
-	             "I" -> i ,
-				 "U" -> u ,
-				 "E" -> e ,
-				 "P" -> p ,
-				 "T" -> t ,
-				 "K" -> k ,
-				 "Kw" -> kw ,
-				 "Q" -> q ,
-				 "Qw" -> qw,
-				 "V" -> v ,
-				 "L" -> l ,
-				 "Z" -> z ,
-                 "Y" -> y , 
-                 "R" -> r ,
-				 "G" -> g ,
-				 "W" -> w ,
-				 "Gh" -> gh ,
-				 "Ghw" -> ghw ,
-				 "F" -> f ,
-				 "Ll" -> ll ,
-				 "S" -> s ,
-				 "Rr" -> rr ,
-				 "Gg" -> gg ,
-				 "Wh" -> wh ,
-				 "Ghh" -> ghh ,
+define Lowercase "A"    -> a ,
+	             "I"    -> i ,
+				 "U"    -> u ,
+				 "E"    -> e ,
+				 "H"    -> h ,
+				 "P"    -> p ,
+				 "T"    -> t ,
+				 "K"    -> k ,
+				 "Kw"   -> kw ,
+				 "Q"    -> q ,
+				 "Qw"   -> qw,
+				 "V"    -> v ,
+				 "L"    -> l ,
+				 "Z"    -> z ,
+                 "Y"    -> y , 
+                 "R"    -> r ,
+				 "G"    -> g ,
+				 "W"    -> w ,
+				 "Gh"   -> gh ,
+				 "Ghw"  -> ghw ,
+				 "F"    -> f ,
+				 "Ll"   -> ll ,
+				 "S"    -> s ,
+				 "Rr"   -> rr ,
+				 "Gg"   -> gg ,
+				 "Wh"   -> wh ,
+				 "Ghh"  -> ghh ,
 				 "Ghhw" -> ghhw ,
-                 "M" -> m ,
-				 "N" -> n ,
-				 "Ng" -> ng ,
-				 "Ngw" -> ngw ,
-				 "Mm" -> mm ,
-				 "Nn" -> nn ,
+                 "M"    -> m ,
+				 "N"    -> n ,
+				 "Ng"   -> ng ,
+				 "Ngw"  -> ngw ,
+				 "Mm"   -> mm ,
+				 "Nn"   -> nn ,
 				 "Ngng" -> ngng ,
-				 "Ngngw" -> ngngw ;
+				 "Ngngw"-> ngngw ;
 
 define InsertMorphBoundary [..] -> MorphemeBoundary || Alphabet _ MorphPhonSymbols ;
 
@@ -93,43 +97,9 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet+ _ ;
 
 !define PostbaseFilter ~[ ?* {te} "[V→V]" "-" {te} "[V→V]"   ?* ];
 
-define LghiiFilter ~[ ?* "-" "@₁" "–" {l} "gh" {ii} ?* [ "[SgPosd]" | "[PlPosd]" | "[DuPosd]" ] ?* ]; 
-
-define NeghMeghFilter ~[ [n | m] e "gh" ["-" "@₁" "ll" {eqe}                           |
-                                         "-" "(te)" {ste}                              | 
-                                         "-" "(te)" {sug}                              |
-                                         "-" "@₁" "–" l "gh" {ii}                      |
-                                         "-" "@₁" "–" "ng" {hite}                      |
-                                         "-" "@*" "@₂" "~sf" "–" "(g₂)" {k} "(a)" {e}  |
-                                         "[V]" "[Conc]" ] ?* ];
-
-define NegheMegheFilter ~[ [n | m] {e} "gh" {e} ["-" "@₁" "~f" "–" {ragkii} "gh"  |
-                                             "-" "@₁" "–" {ne} "gh"               |
-                                             "[V]" "[Ctmp]"                       |
-                                             "[V]" "[Ind]"                        |
-                                             "[V]" "[Intrg]" ] ?* ];
-						 
-define NgughFilter ~[ ?* [Alphabet - "*"] "-" "@*" "ng" {u} "gh" ?* ];
-
-define SfGKaKeFilter ~[ ?* "-" "@*" "@₂" "~sf" "–" "(g₂)" {k} "(a)" {e} ?* "[Unpd]" ?* ];
-
-define UTaFilter ~[ ?* "~" ":" "(u)" {ta} ?* [ "[Sg]"      | "[Pl]"      | "[Du]"      |
-                                               "[1SgPoss]" | "[1PlPoss]" | "[1DuPoss]" |
-                                               "[2SgPoss]" | "[2PlPoss]" | "[2DuPoss]" ] ?* ];
-
-define UTeFilter ~[ ?* "~" ":" "(u)" {te} ?* [ "[3Sg]"     | "[3Pl]"     | "[3Du]"     |
-                                               "[3SgPoss]" | "[3PlPoss]" | "[3DuPoss]" ] ?* ];
-
-define Filters [
-	!PostbaseFilter    ∘
-	!LghiiFilter      ∘
-    NeghMeghFilter    ∘
-	NegheMegheFilter  ∘
-	NgughFilter       
-	!SfGKaKeFilter    ∘ 
-	!UTaFilter        ∘
-	!UTeFilter
-];
+!define Filters [
+	!PostbaseFilter
+!];
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -154,7 +124,7 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeB
                   [..] -> u || WordBoundary (C) u _ C e [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-hopping
                      e -> 0 ||                    V C _ [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-dropping
                  "~sf" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~sf 
-
+				 
 define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
                   [..] -> i || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
                   [..] -> u || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
@@ -181,7 +151,7 @@ define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoun
 				    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _            ;  ! otherwise drop e
 
 define InterConsonantalE "(e)" -> e || C (MorphemeBoundary) MorphPhonSymbols* _  ∘  ! convert (e) to e when following a consonant
-                         "(e)" -> 0 || V (MorphemeBoundary) MorphPhonSymbols* _  ;  ! otherwise delete it
+                         "(e)" -> 0 || V ("*") ("*") (MorphemeBoundary) MorphPhonSymbols* _  ;  ! otherwise delete it
 						 
 define WeakFinalC  gh   -> 0 || [ WordBoundary | C ] FullVowel _ MorphemeBoundary [("~f") | ("~sf")] "-w"  ∘
                    "-w" -> 0 || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*)  _               ;
@@ -256,7 +226,6 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(g₂)"  -> g    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
                          "(g₃)"  -> g    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          "(te)"  -> t e  || C ("*") MorphemeBoundary _                                  ∘
-                         "(te)"  -> 0    || V       MorphemeBoundary _                                  ∘
                          "(i₁)"  -> i    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          "(i₂)"  -> i    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
                          "(i/u)" -> i    || t e MorphemeBoundary MorphPhonSymbols* _                    ∘
@@ -275,6 +244,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(g₁)"  -> 0,
                          "(g₂)"  -> 0,
                          "(g₃)"  -> 0,
+						 "(te)"  -> 0,
                          "(t)"   -> 0,
                          "(ng₁)" -> 0,
                          "(s/z)" -> 0,
@@ -295,7 +265,7 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
                       gh MorphemeBoundary ":" a -> a MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                       gh MorphemeBoundary ":" i -> i MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                       gh MorphemeBoundary ":" u -> u MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
-                                                           ":"   -> 0 || WordBoundary Alphabet+ MorphemeBoundary _ ;
+                                                  ":"   -> 0 || WordBoundary Alphabet+ MorphemeBoundary _ ;
 
 define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
                            k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
@@ -323,22 +293,22 @@ define MultipleForms "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
                      "[Opt_PRS_2Sg]" -> "~f" i  || [C - t] e _             ∘
                      "[Opt_PRS_2Sg]" -> ":" a   || FullVowel gh _          ∘
 					 "[Opt_PRS_2Sg]" -> 0                                  ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u  || V _        ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
-					 "[Opt_FUT_Intr]" -> "@₁" "–" l gh a || V  _           ∘
-					 "[Opt_FUT_Intr]" -> "~sf" "–" ghh a || gh _           ∘
-					 "[Opt_FUT_Intr]" -> "~sf" "–" gg a  || g  _           ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _         ∘
+					 "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ V ("*") ("*") | "(pete)fte" ]  _     ∘
+					 "[Opt_FUT_Intr]" -> "~sf" "–" ghh a a || gh _         ∘
+					 "[Opt_FUT_Intr]" -> "~sf" "–" gg a a  || g  _         ∘
 					 "[To_Feel_R_Toward]" ->       "~" "–" k e || V _      ∘
 					 "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _      ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u || [ V ("*") ("*") | "(pete)fte" ] _     ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _                                   ∘
 	                 "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C) _  ∘
                      "~f-w/-w" -> "~f" "-w"                                      ∘
 					 "~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] _    ,, 
 					 "~sf-w:(e)tgun/teggun" -> "~sf" "-w" ":" "(e)" t g u n      ∘
                      "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i || [ [Alphabet - "*"] | "(pete)fte" ] _  ,,
                      "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*" || "*" _                ∘             
-                     "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || V ("*") ("*") _              ,,  
-                     "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ C | V ] ("*") ("*") _      ∘
+                     "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || [ V ("*") ("*") | "(pete)fte" ] _              ,,  
+                     "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ [ C | V ] ("*") ("*") | "(pete)fte" ] _      ∘
                      "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" k u    -> "–" g p e n a a n         ∘
                      "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t e n  -> "–" g p e n a ng          ∘
                      "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t a    -> "–" g p e n a a m t a     ∘
@@ -400,7 +370,6 @@ def BaseFinalEndings ghw      -> qw ,
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 define Rules [
-	Filters                        ∘
     Lexicon                        ∘
 	Lowercase                      ∘
 	MultipleForms                  ∘
@@ -541,5 +510,5 @@ define Rules [
 ] ;
 
 
-define Grammar [ Rules ] ;
+define Grammar [ Exceptions .P. Rules ] ;
 push Grammar
