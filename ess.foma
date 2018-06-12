@@ -233,7 +233,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(i/u)" -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(u)"   -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(ng₂)" -> "ng" || FullVowel MorphemeBoundary MorphPhonSymbols* _              ∘
-                         "(a)" e -> a    || _ MorphemeBoundary MorphPhonSymbols* ng                     ∘
+                         "(a)" e -> a    || k _ MorphemeBoundary MorphPhonSymbols* ng                   ∘
                          "(a)"   -> a    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          i "(i/e)" -> e  || m _ t                                                       ∘
                          i "(i/e)" -> i  || n _ t                                                       ∘

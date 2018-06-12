@@ -4961,7 +4961,6 @@ unkuvag                	NounPostbase1; ! yearling walrus
 Unllug                	NounPostbase1; ! site located to the west of Lake Nayvak (the lagoon with old Chaplino at its eastern corner) in Chukotka
 unuggiinagh            	NounPostbase1; ! a single night
 unugnaate               NounPostbase1; ! gnat; midge
-unug                  	NounPostbase1; ! for it to become night
 unugsaate	            NounPostbase1; ! gnat; midge
 unungllaate             NounPostbase1; ! gnat; midge
 unusengetagh           	NounPostbase1; ! twilight; short spring or summer night
@@ -5464,6 +5463,7 @@ LEXICON NounPostbase1
 -tugh[N→V]:tugh                          VerbTrns2;
 -tulli[N→V]:tulli                        VerbIntr2;
 -tulli[N→V]:tulli                        VerbTrns2;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
 -tupag[N→V]:tupag                        VerbIntr2;
 -tupag[N→V]:tupag                        VerbTrns2;
 -tutka[N→V]:tutka                        VerbIntr2;
@@ -5693,6 +5693,7 @@ LEXICON NounPostbase2
 -tugh[N→V]:tugh                          VerbTrns3;
 -tulli[N→V]:tulli                        VerbIntr3;
 -tulli[N→V]:tulli                        VerbTrns3;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
 -tupag[N→V]:tupag                        VerbIntr3;
 -tupag[N→V]:tupag                        VerbTrns3;
 -tutka[N→V]:tutka                        VerbIntr3;
@@ -5915,6 +5916,7 @@ LEXICON NounPostbase3
 -tugh[N→V]:tugh                          VerbTrns4;
 -tulli[N→V]:tulli                        VerbIntr4;
 -tulli[N→V]:tulli                        VerbTrns4;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
 -tupag[N→V]:tupag                        VerbIntr4;
 -tupag[N→V]:tupag                        VerbTrns4;
 -tutka[N→V]:tutka                        VerbIntr4;
@@ -6137,6 +6139,7 @@ LEXICON NounPostbase4
 -tugh[N→V]:tugh                          VerbTrns5;
 -tulli[N→V]:tulli                        VerbIntr5;
 -tulli[N→V]:tulli                        VerbTrns5;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
 -tupag[N→V]:tupag                        VerbIntr5;
 -tupag[N→V]:tupag                        VerbTrns5;
 -tutka[N→V]:tutka                        VerbIntr5;
@@ -6359,6 +6362,7 @@ LEXICON NounPostbase5
 -tugh[N→V]:tugh                          VerbTrns6;
 -tulli[N→V]:tulli                        VerbIntr6;
 -tulli[N→V]:tulli                        VerbTrns6;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
 -tupag[N→V]:tupag                        VerbIntr6;
 -tupag[N→V]:tupag                        VerbTrns6;
 -tutka[N→V]:tutka                        VerbIntr6;
@@ -6581,6 +6585,7 @@ LEXICON NounPostbase6
 -tugh[N→V]:tugh                          VerbTrns7;
 -tulli[N→V]:tulli                        VerbIntr7;
 -tulli[N→V]:tulli                        VerbTrns7;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
 -tupag[N→V]:tupag                        VerbIntr7;
 -tupag[N→V]:tupag                        VerbTrns7;
 -tutka[N→V]:tutka                        VerbIntr7;
@@ -6606,7 +6611,7 @@ LEXICON NounPostbase6
 !!!     NounPostbase 7     !!!
 !!!                        !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+ 
 LEXICON NounPostbase7
 0:0        NounInfl;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
@@ -6704,117 +6709,63 @@ LEXICON NounPostbase7
 -–yaagh[N→N]:–yaagh                      NounInfl;
 
 -–ghqu[N→V]:–ghqu                        VerbMoodInfl;
--–ghqu[N→V]:–ghqu                        VerbMoodInfl;
--–ghraag[N→V]:–ghraag                    VerbMoodInfl;
 -–ghraag[N→V]:–ghraag                    VerbMoodInfl;
 -–ghrug[N→V]:–ghrug                      VerbMoodInfl;
--–ghrug[N→V]:–ghrug                      VerbMoodInfl;
--––ii[N→V]:––ii                          VerbMoodInfl;
 -––ii[N→V]:––ii                          VerbMoodInfl;
 -––igh[N→V]:––igh                        VerbMoodInfl;
--––igh[N→V]:––igh                        VerbMoodInfl;
--––iigh[N→V]:––iigh                      VerbMoodInfl;
 -––iigh[N→V]:––iigh                      VerbMoodInfl;
 -––iqe[N→V]:––iqe                        VerbMoodInfl;
--––iqe[N→V]:––iqe                        VerbMoodInfl;
 -iiraagh[N→V]:iiraagh                    VerbMoodInfl;
--iiraagh[N→V]:iiraagh                    VerbMoodInfl;
--~–kaghte[N→V]:~–kaghte                  VerbMoodInfl; ! TODO: Used with nouns concerning games, money, etc.
 !-~–kaghte[N→V]:~–kaghte                 VerbMoodInfl; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbMoodInfl;
--~–kegte[N→V]:~–kegte                    VerbMoodInfl;
--~–ke[N→V]:~–ke                          VerbMoodInfl;
 -~–ke[N→V]:~–ke                          VerbMoodInfl;
 -–ksagute[N→V]:–ksagute                  VerbMoodInfl;
--–ksagute[N→V]:–ksagute                  VerbMoodInfl;
--–lgigh[N→V]:–lgigh                      VerbMoodInfl;
 -–lgigh[N→V]:–lgigh                      VerbMoodInfl;
 -–lgu[N→V]:–lgu                          VerbMoodInfl;
--–lgu[N→V]:–lgu                          VerbMoodInfl;
--–ligh[N→V]:–ligh                        VerbMoodInfl;
 -–ligh[N→V]:–ligh                        VerbMoodInfl;
 -–liigh[N→V]:–liigh                      VerbMoodInfl;
--–liigh[N→V]:–liigh                      VerbMoodInfl;
--–lipag[N→V]:–lipag                      VerbMoodInfl;
 -–lipag[N→V]:–lipag                      VerbMoodInfl;
 -–liqe[N→V]:–liqe                        VerbMoodInfl;
--–liqe[N→V]:–liqe                        VerbMoodInfl;
--–liite[N→V]:–liite                      VerbMoodInfl;
 -–liite[N→V]:–liite                      VerbMoodInfl;
 -lliqe[N→V]:lliqe                        VerbMoodInfl;
--lliqe[N→V]:lliqe                        VerbMoodInfl;
--–lliqe[N→V]:–lliqe                      VerbMoodInfl;
 -–lliqe[N→V]:–lliqe                      VerbMoodInfl;
 -~fmete[N→V]:~fmete                      VerbMoodInfl;
--~fmete[N→V]:~fmete                      VerbMoodInfl;
--~fmig[N→V]:~fmig                        VerbMoodInfl;
 -~fmig[N→V]:~fmig                        VerbMoodInfl;
 -~fmiigh[N→V]:~fmiigh                    VerbMoodInfl;
--~fmiigh[N→V]:~fmiigh                    VerbMoodInfl;
--–msuggiite[N→V]:–msuggiite              VerbMoodInfl;
 -–msuggiite[N→V]:–msuggiite              VerbMoodInfl;
 -–nge[N→V]:–nge                          VerbMoodInfl;
--–nge[N→V]:–nge                          VerbMoodInfl;
--~%:(ng₁)igh[N→V]:~:(ng₁)igh             VerbMoodInfl;
 -~%:(ng₁)igh[N→V]:~:(ng₁)igh             VerbMoodInfl;
 -~%:(ng₁)isag[N→V]:~:(ng₁)isag           VerbMoodInfl;
--~%:(ng₁)isag[N→V]:~:(ng₁)isag           VerbMoodInfl;
--~%:(ng₁)isug[N→V]:~%:(ng₁)isug          VerbMoodInfl;
 -~%:(ng₁)isug[N→V]:~%:(ng₁)isug          VerbMoodInfl;
 -~%:(ng₁)ite**[N→V]:~%:(ng₁)ite**        VerbMoodInfl;
--~%:(ng₁)ite**[N→V]:~%:(ng₁)ite**        VerbMoodInfl;
--–ngllagh[N→V]:–ngllagh                  VerbMoodInfl;
 -–ngllagh[N→V]:–ngllagh                  VerbMoodInfl;
 -~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbMoodInfl;
--~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbMoodInfl;
--~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbMoodInfl;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbMoodInfl;
 -niigh[N→V]:niigh                        VerbMoodInfl;
--niigh[N→V]:niigh                        VerbMoodInfl;
--–pagite[N→V]:–pagite                    VerbMoodInfl;
 -–pagite[N→V]:–pagite                    VerbMoodInfl;
 -pagnite[N→V]:pagnite                    VerbMoodInfl;
--pagnite[N→V]:pagnite                    VerbMoodInfl;
--–pigu[N→V]:–pigu                        VerbMoodInfl;
 -–pigu[N→V]:–pigu                        VerbMoodInfl;
 -~–qite[N→V]:~–qite                      VerbMoodInfl;
--~–qite[N→V]:~–qite                      VerbMoodInfl;
--qu[N→V]:qu                              VerbMoodInfl;
 -qu[N→V]:qu                              VerbMoodInfl;
 -@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbMoodInfl;
--@₁~f–rakegte[N→V]:@₁~f–rakegte          VerbMoodInfl;
--saghtugh[N→V]:saghtugh                  VerbMoodInfl;
 -saghtugh[N→V]:saghtugh                  VerbMoodInfl;
 -si[N→V]:si                              VerbMoodInfl;
--si[N→V]:si                              VerbMoodInfl;
--siigh[N→V]:siigh                        VerbMoodInfl;
 -siigh[N→V]:siigh                        VerbMoodInfl;
 -sugnite[N→V]:sugnite                    VerbMoodInfl;
--sugnite[N→V]:sugnite                    VerbMoodInfl;
--tagh[N→V]:tagh                          VerbMoodInfl; ! TODO: Used with words denoting sounds
 -tagh[N→V]:tagh                          VerbMoodInfl;
 -te[N→V]:te                              VerbMoodInfl;
--te[N→V]:te                              VerbMoodInfl;
 -ti[N→V]:ti                              VerbMoodInfl;
--ti[N→V]:ti                              VerbMoodInfl;
--tu[N→V]:tu                              VerbMoodInfl;
 -–tu[N→V]:–tu                            VerbMoodInfl;
 -tugh[N→V]:tugh                          VerbMoodInfl;
--tugh[N→V]:tugh                          VerbMoodInfl;
 -tulli[N→V]:tulli                        VerbMoodInfl;
--tulli[N→V]:tulli                        VerbMoodInfl;
--tupag[N→V]:tupag                        VerbMoodInfl;
+-tuumagh*[N→V]:tuumagh*                  QuantQualPostbase;
 -tupag[N→V]:tupag                        VerbMoodInfl;
 -tutka[N→V]:tutka                        VerbMoodInfl;
--tutka[N→V]:tutka                        VerbMoodInfl;
--uute[N→V]:uute                          VerbMoodInfl; ! TODO: Used with words denoting sounds
 -uute[N→V]:uute                          VerbMoodInfl;
 -yag[N→V]:yag                            VerbMoodInfl;
--yag[N→V]:yag                            VerbMoodInfl;
--@₁~fyagh[N→V]:@₁~fyagh                  VerbMoodInfl;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbMoodInfl;
 -@₁~fyug[N→V]:@₁~fyug                    VerbMoodInfl;
--@₁~fyug[N→V]:@₁~fyug                    VerbMoodInfl;
+
 
 -tuqagh[AUG]:tuqagh  #;
 -tuqaat[AUG]:tuqaat  #;
@@ -6876,14 +6827,15 @@ LEXICON NounInfl
 [N][Abl_Mod][1PlPoss][SgPosd]:–mnneng           EncliticOrEnd; [N][Abl_Mod][1PlPoss][PlPosd]:–mnneng         EncliticOrEnd; [N][Abl_Mod][1PlPoss][DuPosd]:~sf-w%:(e)gemnneng     EncliticOrEnd; ! 1Pl possessor |
 [N][Abl_Mod][1DuPoss][SgPosd]:–mtegneng         EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:–mtegneng       EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:~sf-w%:(e)gemtegneng   EncliticOrEnd; ! 1Du possessor |
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-![N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g)neng      EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g)neng    EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)neng  EncliticOrEnd; ! 2Sg possessor |
+![N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g)neng      EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g)neng     EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)neng   EncliticOrEnd; ! 2Sg possessor |
+[N][Abl_Mod][2SgPoss][SgPosd]:–gpeneng          EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:–gpeneng        EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpeneng      EncliticOrEnd; ! 2Sg possessor |
 [N][Abl_Mod][2PlPoss][SgPosd]:–gpesineng        EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:–gpesineng      EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:~sf-w%:(e)gpesineng    EncliticOrEnd; ! 2Pl possessor |
 [N][Abl_Mod][2DuPoss][SgPosd]:–gpetegneng       EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:–gpetegneng     EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:~sf-w%:(e)gpetegneng   EncliticOrEnd; ! 2Du possessor |
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
 [N][Abl_Mod][4SgPoss][SgPosd]:~f-wmineng        EncliticOrEnd; [N][Abl_Mod][4SgPoss][PlPosd]:~f-wmineng      EncliticOrEnd; [N][Abl_Mod][4SgPoss][DuPosd]:~sf-w%:(e)gmineng      EncliticOrEnd; ! 4Sg possessor |
 [N][Abl_Mod][4PlPoss][SgPosd]:~f-wmeggneng      EncliticOrEnd; [N][Abl_Mod][4PlPoss][PlPosd]:~f-wmeggneng    EncliticOrEnd; [N][Abl_Mod][4PlPoss][DuPosd]:~sf-w%:(e)gmeggneng    EncliticOrEnd; ! 4Pl possessor |
-[N][Abl_Mod][4DuPoss][SgPosd]:~f-wmegneng   EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:~f-wmegneng EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:~sf-w%:(e)gmegneng EncliticOrEnd; ! 4Du possessor |
-[N][Abl_Mod][4DuPoss][SgPosd]:~f-wmegteneng   EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:~f-wmegteneng EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:~sf-w%:(e)gmegteneng EncliticOrEnd; ! 4Du possessor |
+[N][Abl_Mod][4DuPoss][SgPosd]:~f-wmegneng       EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:~f-wmegneng     EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:~sf-w%:(e)gmegneng     EncliticOrEnd; ! 4Du possessor |
+[N][Abl_Mod][4DuPoss][SgPosd]:~f-wmegteneng     EncliticOrEnd; [N][Abl_Mod][4DuPoss][PlPosd]:~f-wmegteneng   EncliticOrEnd; [N][Abl_Mod][4DuPoss][DuPosd]:~sf-w%:(e)gmegteneng   EncliticOrEnd; ! 4Du possessor |
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
 
 
@@ -6902,14 +6854,15 @@ LEXICON NounInfl
 [N][Loc][1PlPoss][SgPosd]:–mnni           EncliticOrEnd; [N][Loc][1PlPoss][PlPosd]:–mnni         EncliticOrEnd; [N][Loc][1PlPoss][DuPosd]:~sf-w%:(e)gemnni     EncliticOrEnd; ! 1Pl possessor |
 [N][Loc][1DuPoss][SgPosd]:–mtegni         EncliticOrEnd; [N][Loc][1DuPoss][PlPosd]:–mtegni       EncliticOrEnd; [N][Loc][1DuPoss][DuPosd]:~sf-w%:(e)gemtegni   EncliticOrEnd; ! 1Du possessor |
 ! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
-![N][Loc][2SgPoss][SgPosd]:–gpe(g)ni      EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:–gpe(g)ni    EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)ni  EncliticOrEnd; ! 2Sg possessor |
+![N][Loc][2SgPoss][SgPosd]:–gpe(g)ni      EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:–gpe(g)ni     EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)ni   EncliticOrEnd; ! 2Sg possessor |
+[N][Loc][2SgPoss][SgPosd]:–gpeni          EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:–gpeni        EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpeni      EncliticOrEnd; ! 2Sg possessor |
 [N][Loc][2PlPoss][SgPosd]:–gpesini        EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:–gpesini      EncliticOrEnd; [N][Loc][2PlPoss][DuPosd]:~sf-w%:(e)gpesini    EncliticOrEnd; ! 2Pl possessor |
 [N][Loc][2DuPoss][SgPosd]:–gpetegni       EncliticOrEnd; [N][Loc][2DuPoss][PlPosd]:–gpetegni     EncliticOrEnd; [N][Loc][2DuPoss][DuPosd]:~sf-w%:(e)gpetegni   EncliticOrEnd; ! 2Du possessor |
 ! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
 [N][Loc][4SgPoss][SgPosd]:~f-wmini        EncliticOrEnd; [N][Loc][4SgPoss][PlPosd]:~f-wmini      EncliticOrEnd; [N][Loc][4SgPoss][DuPosd]:~sf-w%:(e)gmini      EncliticOrEnd; ! 4Sg possessor |
 [N][Loc][4PlPoss][SgPosd]:~f-wmeggni      EncliticOrEnd; [N][Loc][4PlPoss][PlPosd]:~f-wmeggni    EncliticOrEnd; [N][Loc][4PlPoss][DuPosd]:~sf-w%:(e)gmeggni    EncliticOrEnd; ! 4Pl possessor |
-[N][Loc][4DuPoss][SgPosd]:~f-wmegni   EncliticOrEnd; [N][Loc][4DuPoss][PlPosd]:~f-wmegni EncliticOrEnd; [N][Loc][4DuPoss][DuPosd]:~sf-w%:(e)gmegni EncliticOrEnd; ! 4Du possessor |
-[N][Loc][4DuPoss][SgPosd]:~f-wmegteni   EncliticOrEnd; [N][Loc][4DuPoss][PlPosd]:~f-wmegteni EncliticOrEnd; [N][Loc][4DuPoss][DuPosd]:~sf-w%:(e)gmegteni EncliticOrEnd; ! 4Du possessor |
+[N][Loc][4DuPoss][SgPosd]:~f-wmegni       EncliticOrEnd; [N][Loc][4DuPoss][PlPosd]:~f-wmegni     EncliticOrEnd; [N][Loc][4DuPoss][DuPosd]:~sf-w%:(e)gmegni     EncliticOrEnd; ! 4Du possessor |
+[N][Loc][4DuPoss][SgPosd]:~f-wmegteni     EncliticOrEnd; [N][Loc][4DuPoss][PlPosd]:~f-wmegteni   EncliticOrEnd; [N][Loc][4DuPoss][DuPosd]:~sf-w%:(e)gmegteni   EncliticOrEnd; ! 4Du possessor |
 ! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
 
 
@@ -6928,14 +6881,15 @@ LEXICON NounInfl
 [N][Ter][1PlPoss][SgPosd]:–mnnun           EncliticOrEnd; [N][Ter][1PlPoss][PlPosd]:–mnnun         EncliticOrEnd; [N][Ter][1PlPoss][DuPosd]:~sf-w%:(e)gemnnun     EncliticOrEnd; ! 1Pl possessor |
 [N][Ter][1DuPoss][SgPosd]:–mtegnun         EncliticOrEnd; [N][Ter][1DuPoss][PlPosd]:–mtegnun       EncliticOrEnd; [N][Ter][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnun   EncliticOrEnd; ! 1Du possessor |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-![N][Ter][2SgPoss][SgPosd]:–gpe(g)nun      EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:–gpe(g)nun    EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)nun  EncliticOrEnd; ! 2Sg possessor |
+![N][Ter][2SgPoss][SgPosd]:–gpe(g)nun      EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:–gpe(g)nun     EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)nun   EncliticOrEnd; ! 2Sg possessor |
+[N][Ter][2SgPoss][SgPosd]:–gpenun          EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:–gpenun        EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpenun      EncliticOrEnd; ! 2Sg possessor |
 [N][Ter][2PlPoss][SgPosd]:–gpesinun        EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:–gpesinun      EncliticOrEnd; [N][Ter][2PlPoss][DuPosd]:~sf-w%:(e)gpesinun    EncliticOrEnd; ! 2Pl possessor |
 [N][Ter][2DuPoss][SgPosd]:–gpetegnun       EncliticOrEnd; [N][Ter][2DuPoss][PlPosd]:–gpetegnun     EncliticOrEnd; [N][Ter][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnun   EncliticOrEnd; ! 2Du possessor |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
 [N][Ter][4SgPoss][SgPosd]:~f-wminun        EncliticOrEnd; [N][Ter][4SgPoss][PlPosd]:~f-wminun      EncliticOrEnd; [N][Ter][4SgPoss][DuPosd]:~sf-w%:(e)gminun      EncliticOrEnd; ! 4Sg possessor |
 [N][Ter][4PlPoss][SgPosd]:~f-wmeggnun      EncliticOrEnd; [N][Ter][4PlPoss][PlPosd]:~f-wmeggnun    EncliticOrEnd; [N][Ter][4PlPoss][DuPosd]:~sf-w%:(e)gmeggnun    EncliticOrEnd; ! 4Pl possessor |
-[N][Ter][4DuPoss][SgPosd]:~f-wmegnun   EncliticOrEnd; [N][Ter][4DuPoss][PlPosd]:~f-wmegnun EncliticOrEnd; [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmegnun EncliticOrEnd; ! 4Du possessor |
-[N][Ter][4DuPoss][SgPosd]:~f-wmegtenun   EncliticOrEnd; [N][Ter][4DuPoss][PlPosd]:~f-wmegtenun EncliticOrEnd; [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmegtenun EncliticOrEnd; ! 4Du possessor |
+[N][Ter][4DuPoss][SgPosd]:~f-wmegnun       EncliticOrEnd; [N][Ter][4DuPoss][PlPosd]:~f-wmegnun     EncliticOrEnd; [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmegnun     EncliticOrEnd; ! 4Du possessor |
+[N][Ter][4DuPoss][SgPosd]:~f-wmegtenun     EncliticOrEnd; [N][Ter][4DuPoss][PlPosd]:~f-wmegtenun   EncliticOrEnd; [N][Ter][4DuPoss][DuPosd]:~sf-w%:(e)gmegtenun   EncliticOrEnd; ! 4Du possessor |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
 
 
@@ -6944,7 +6898,7 @@ LEXICON NounInfl
 ! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 !                  singular possessed                    |                      plural possessed                  |                           dual possessed                      |
 ! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------- -|
-[N][Via][Unpd][Sg]:~f-wkun                  EncliticOrEnd; [N][Via][Unpd][Pl]:~sf-w%:(e)tgun/teggun         EncliticOrEnd; [N][Via][Unpd][Du]:~sf-w%:(e)gnegun               EncliticOrEnd; ! unpossessed   |
+[N][Via][Unpd][Sg]:~f-wkun                  EncliticOrEnd; [N][Via][Unpd][Pl]:~sf-w%:(e)tgun/teggun  EncliticOrEnd; [N][Via][Unpd][Du]:~sf-w%:(e)gnegun               EncliticOrEnd; ! unpossessed   |
 ! -------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
 [N][Via][3SgPoss][SgPosd]:~%:(ng₁)akun      EncliticOrEnd; [N][Via][3SgPoss][PlPosd]:~%:(ng₁)akun    EncliticOrEnd; [N][Via][3SgPoss][DuPosd]:~sf-w%:(e)gkenkun       EncliticOrEnd; ! 3Sg possessor |
 [N][Via][3PlPoss][SgPosd]:~%:(ng₁)itgun     EncliticOrEnd; [N][Via][3PlPoss][PlPosd]:~%:(ng₁)itgun   EncliticOrEnd; [N][Via][3PlPoss][DuPosd]:~%:(ng₁)itgun           EncliticOrEnd; ! 3Pl possessor |
@@ -7029,8 +6983,8 @@ LEXICON EncliticOrEnd
 -tuq[Encl]:tuq    #;
 -wha[Encl]:wha    #;
 
-!-ete[to.be]:(i/e)te*  VerbIntr7; ! FIX ME
-!-ete[to.be]:(i/e)te*  VerbTrns7; ! FIX ME
+!-ete:(i/e)te*  VerbIntr7; ! FIX ME
+!-ete:(i/e)te*  VerbTrns7; ! FIX ME
 
 
 
@@ -14654,6 +14608,7 @@ LEXICON VerbPostbase1
 -––iqe[V→V]:––iqe                             VerbPostbase2;
 -@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase2;
 -@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase2;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*         QuantQualPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase2;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase2;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase2;
@@ -14802,6 +14757,7 @@ LEXICON VerbPostbase1
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase2;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase2;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase2;
+@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase2;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr2;     ! TODO: These postbases differ in their documentation in
@@ -14937,6 +14893,7 @@ LEXICON VerbPostbase2
 -––iqe[V→V]:––iqe                             VerbPostbase3;
 -@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase3;
 -@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase3;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*         QuantQualPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase3;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase3;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase3;
@@ -15085,6 +15042,7 @@ LEXICON VerbPostbase2
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase3;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase3;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase3;
+@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase3;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr3;     ! TODO: These postbases differ in their documentation in
@@ -15207,6 +15165,7 @@ LEXICON VerbPostbase3
 -––iqe[V→V]:––iqe                             VerbPostbase4;
 -@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase4;
 -@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase4;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*         QuantQualPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase4;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase4;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase4;
@@ -15355,6 +15314,7 @@ LEXICON VerbPostbase3
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase4;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase4;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase4;
+@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase4;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr4;     ! TODO: These postbases differ in their documentation in
@@ -15477,6 +15437,7 @@ LEXICON VerbPostbase4
 -––iqe[V→V]:––iqe                             VerbPostbase5;
 -@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase5;
 -@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase5;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*         QuantQualPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase5;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase5;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase5;
@@ -15625,6 +15586,7 @@ LEXICON VerbPostbase4
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase5;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase5;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase5;
+@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase5;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr5;     ! TODO: These postbases differ in their documentation in
@@ -15747,6 +15709,7 @@ LEXICON VerbPostbase5
 -––iqe[V→V]:––iqe                             VerbPostbase6;
 -@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase6;
 -@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase6;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*         QuantQualPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase6;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase6;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase6;
@@ -15895,6 +15858,7 @@ LEXICON VerbPostbase5
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase6;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase6;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase6;
+@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase6;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr6;     ! TODO: These postbases differ in their documentation in
@@ -16017,6 +15981,7 @@ LEXICON VerbPostbase6
 -––iqe[V→V]:––iqe                             VerbPostbase7;
 -@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbPostbase7;
 -@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbPostbase7;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*         QuantQualPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase7;
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase7;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase7;
@@ -16165,6 +16130,7 @@ LEXICON VerbPostbase6
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase7;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase7;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase7;
+@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase7;
 
 ! NOT FINALIZED
 -~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr7;     ! TODO: These postbases differ in their documentation in
@@ -16286,6 +16252,7 @@ LEXICON VerbPostbase7
 -––iqe[V→V]:––iqe                             VerbMoodInfl;
 -@₁~%:(i/u)ma[V→V]:@₁~%:(i/u)ma               VerbMoodInfl;
 -@₁~%:(i/u)mafte[V→V]:@₁~%:(i/u)mafte         VerbMoodInfl;
+-@₁~%:(i/u)magh*[V→V]:@₁~%:(i/u)magh*         QuantQualPostbase;
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbMoodInfl;
 -~–kanigh[V→V]:~–kanigh                       VerbMoodInfl;
 -~–kataghagh[V→V]:~–kataghagh                 VerbMoodInfl;
@@ -16434,6 +16401,8 @@ LEXICON VerbPostbase7
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbMoodInfl;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbMoodInfl;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbMoodInfl;
+@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbMoodInfl;
+
 
 ! NOT FINALIZED
 !@P.VALENCE.INTR@-~sf–(g₃)kau[V→V]:@P.VALENCE.INTR@~sf–(g₃)kau     VerbMoodInfl; ! TODO: These postbases differ in their documentation in
@@ -16552,8 +16521,8 @@ LEXICON VerbMoodInfl
 @R.VALENCE.INTR@[V][Intr][Opt][NEG]:@R.VALENCE.INTR@–fqaa                   IntransitiveNegativeOptative;
 @R.VALENCE.TRNS@[V][Trns][Opt][NEG]:@R.VALENCE.TRNS@                        TransitiveNegativeOptative;
 
-@R.VALENCE.INTR@[V][Intr][Opt][FUT]:@R.VALENCE.INTR@[Opt_FUT_Intr]           IntransitiveIndicativeFutureOptative;
-!@R.VALENCE.TRNS@[V][Trns][Opt][FUT]:@R.VALENCE.TRNS@@₁~fna@*@₂~sf–(g₂)      TransitiveParticipialFutureOptative;
+@R.VALENCE.INTR@[V][Intr][Opt][FUT]:@R.VALENCE.INTR@[Opt_FUT_Intr]          IntransitiveIndicativeFutureOptative;
+@R.VALENCE.TRNS@[V][Trns][Opt][FUT]:@R.VALENCE.TRNS@@₁~fna                  TransitiveParticipialFutureOptative;
 
 @R.VALENCE.INTR@[V][Intr][Opt][FUT][NEG]:@R.VALENCE.INTR@@₁~fyaquna         IntransitiveNegativeFutureOptative;
 @R.VALENCE.TRNS@[V][Trns][Opt][FUT][NEG]:@R.VALENCE.TRNS@@₁~fyaquna         TransitiveNegativeFutureOptative;
@@ -16653,9 +16622,9 @@ LEXICON TransitiveParticipialFutureOptative
 [1Pl][3Sg]:kevut        #; [1Pl][3Pl]:kevut        #; [1Pl][3Du]:kegput         #;
 [1Du][3Sg]:kevung       #; [1Du][3Pl]:kevung       #; [1Du][3Du]:kegpung        #;
 ! -----------------------|--------------------------|----------------------------|
-[2Sg][3Sg]:ken          #; [2Sg][3Pl]:keyen        #; [2Sg][3Du]:kegkenn        #;
-[2Pl][3Sg]:kezi         #; [2Pl][3Pl]:kezi         #; [2Pl][3Du]:kegsi          #;
-[2Du][3Sg]:keyek        #; [2Du][3Pl]:keyek        #; [2Du][3Du]:kegtek         #;
+[2Sg][3Sg]:ken          #; [2Sg][3Pl]:keten        #; [2Sg][3Du]:kegken         #;
+[2Pl][3Sg]:kezi         #; [2Pl][3Pl]:kesi         #; [2Pl][3Du]:kegsi          #;
+[2Du][3Sg]:keyek        #; [2Du][3Pl]:ketek        #; [2Du][3Du]:kegtek         #;
 ! -----------------------|--------------------------|----------------------------|
 [3Sg][1Sg]:kanganga     #; [3Sg][1Pl]:kanginkut    #; [3Sg][1Du]:kanginkung     #;
 [3Pl][1Sg]:kangatnga    #; [3Pl][1Pl]:kanginkut    #; [3Pl][1Du]:kanginkung     #;
@@ -17358,14 +17327,14 @@ yimi             EmotionalRootPostbase; ! shy; inhibited; intimidated
 
 LEXICON EmotionalRootPostbase
 
-@P.VALENCE.TRNS@-~–ke/@₁~yuke[to.feel.R.toward.object]:@P.VALENCE.TRNS@[To_Feel_R_Toward]  VerbMoodInfl;
-@P.VALENCE.INTR@-~–ketagh[to.tend.to.often.feel.R]:@P.VALENCE.INTR@~–ketagh                VerbMoodInfl;
-@P.VALENCE.INTR@-tagh[to.tend.to.often.feel.R]:@P.VALENCE.INTR@tagh                        VerbMoodInfl;
--~–ketaq[one.who.tends.to.often.feel.R]:~–ketaq                                                NounInfl;
--taq[one.who.tends.to.often.feel.R]:taq                                                        NounInfl;
-@P.VALENCE.INTR@-@₁~fnagh[to.tend.to.cause.one.to.feel.R]:@P.VALENCE.INTR@@₁~fnagh         VerbMoodInfl; ! FIX ME
--@₁~fnaq[something.that.causes.one.to.feel.R]:@₁~fnaq                                      NounInfl; ! FIX ME
-@P.VALENCE.INTR@-@₁~fyug[to.feel.R]:@P.VALENCE.INTR@@₁~fyug                                VerbMoodInfl;
+@P.VALENCE.INTR@-@₁~fnagh:@P.VALENCE.INTR@@₁~fnagh                VerbPostbase2;
+-@₁~fnaq:@₁~fnaq                                                  NounPostbase2;
+@P.VALENCE.TRNS@-~–ke/@₁~yuke:@P.VALENCE.TRNS@[To_Feel_R_Toward]  VerbMoodInfl;
+@P.VALENCE.INTR@-~–ketagh:@P.VALENCE.INTR@~–ketagh                VerbMoodInfl;
+@P.VALENCE.INTR@-tagh:@P.VALENCE.INTR@tagh                        VerbMoodInfl;
+-~–ketaq:~–ketaq                                                  NounInfl;
+-taq:taq                                                          NounInfl;
+@P.VALENCE.INTR@-@₁~fyug:@P.VALENCE.INTR@@₁~fyug                  VerbMoodInfl;
 
 
 
