@@ -45,7 +45,7 @@ define MorphPhonSymbols [ "~"     | "~f"      | "~sf"   | "~h"    | "-w"    | ":
                           "(e)"   | "(g₁)"    | "(g₂)"  | "(g₃)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" |
                           "(s)"   | "(at)"    |
 						  "(g/t)" | "(p/v)"   | "(s/z)" | "(t/y)" | "(i/u)" | "(i/e)" |    "(pete)fte"    |
-                          "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" ];
+                          "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@~sf–(g)ke/(g)ka" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" ];
 
 define Lowercase "A"    -> a ,
 	             "I"    -> i ,
@@ -233,10 +233,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(i/u)" -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(u)"   -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(ng₂)" -> "ng" || FullVowel MorphemeBoundary MorphPhonSymbols* _              ∘
-                         "(a)" e -> a    || k _ MorphemeBoundary MorphPhonSymbols* ng                   ∘
                          "(a)"   -> a    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
-                         i "(i/e)" -> e  || m _ t                                                       ∘
-                         i "(i/e)" -> i  || n _ t                                                       ∘
 						 "(s)"   -> s    || V MorphemeBoundary _                                        ∘
 						 "(at)"  -> a t  || t MorphemeBoundary MorphPhonSymbols* _                      ∘
 						 "(at)"  -> a t  || [C - t] (V) MorphemeBoundary MorphPhonSymbols* _            ∘
@@ -302,6 +299,18 @@ define MultipleForms "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
                      "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u || [ V ("*") ("*") | "(pete)fte" ] _     ∘
                      "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
                      "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _                                   ∘
+					 "@~sf–(g)ke/(g)ka" ->  "~sf" "–" k a || C _ (MorphPhonSymbols*) [ "(ng₁)" | ng ]         ∘
+					 "@~sf–(g)ke/(g)ka" ->  "~sf" "–" k e || C _                                              ∘
+					 "@~sf–(g)ke/(g)ka" -> "@*" "~sf" k a || t e "*" "*" _ (MorphPhonSymbols*) ["(ng₁)" | ng] ∘
+					 "@~sf–(g)ke/(g)ka" -> "@*" "~sf" k e || t e "*" "*" _                                    ∘
+					 "@~sf–(g)ke/(g)ka" -> "@₂" "~sf" k a || V t e _ (MorphPhonSymbols*) ["(ng₁)" | ng]       ∘
+					 "@~sf–(g)ke/(g)ka" -> "@₂" "~sf" k e || V t e _                                          ∘
+					 "@~sf–(g)ke/(g)ka" ->      "~sf" k a || C t e _ (MorphPhonSymbols*) ["(ng₁)" | ng]       ∘
+					 "@~sf–(g)ke/(g)ka" ->      "~sf" k e || C t e _                                          ∘
+					 "@~sf–(g)ke/(g)ka" ->    "~sf" g k a ||     V _  (MorphPhonSymbols*) ["(ng₁)" | ng]      ∘
+					 "@~sf–(g)ke/(g)ka" ->    "~sf" g k e ||     V _                                          ∘
+					 "@~sf–(g)ke/(g)ka" ->    "~sf" g k e || "(pete)fte" MorphemeBoundary _ ∘
+					 "@~sf–(g)ke/(g)ka" ->              0 || "@~sf–(g)ke/(g)ka"             ∘
 	                 "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C) _  ∘
                      "~f-w/-w" -> "~f" "-w"                                      ∘
 					 "~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] _    ,, 

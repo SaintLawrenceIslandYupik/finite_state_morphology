@@ -4,7 +4,7 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [Abs] [Abl_Mod] [Equ] [Loc] [Rel] [Ter] [Via] [Intr] [Trns] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Sbrd] [Ptcp_Obl] [Cmpd_Vbl] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
                   @* @₁ @₂ ~sf ~f ~h -w –– (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a) (i/e) (s) (at)
-                  ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
+                  ~f-w/-w ~sf-w%:(e)tgun/teggun @~sf–(g)ke/(g)ka @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
 
@@ -5269,6 +5269,7 @@ ziruliite              	NounPostbase1; ! lube oil
 
 LEXICON NounPostbase1
 0:0        NounInfl;
+0:0        AssignValenceVerbEte;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase2;
@@ -5499,6 +5500,7 @@ LEXICON NounPostbase1
 
 LEXICON NounPostbase2
 0:0        NounInfl;
+0:0        AssignValenceVerbEte;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase3;
@@ -5722,6 +5724,7 @@ LEXICON NounPostbase2
 
 LEXICON NounPostbase3
 0:0        NounInfl;
+0:0        AssignValenceVerbEte;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase4;
@@ -5945,6 +5948,7 @@ LEXICON NounPostbase3
 
 LEXICON NounPostbase4
 0:0        NounInfl;
+0:0        AssignValenceVerbEte;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase5;
@@ -6168,6 +6172,7 @@ LEXICON NounPostbase4
 
 LEXICON NounPostbase5
 0:0        NounInfl;
+0:0        AssignValenceVerbEte;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase6;
@@ -6391,6 +6396,7 @@ LEXICON NounPostbase5
 
 LEXICON NounPostbase6
 0:0        NounInfl;
+0:0        AssignValenceVerbEte;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase7;
@@ -6614,6 +6620,7 @@ LEXICON NounPostbase6
  
 LEXICON NounPostbase7
 0:0        NounInfl;
+0:0        AssignValenceVerbEte;
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounInfl;
@@ -6773,6 +6780,7 @@ LEXICON NounPostbase7
 -–lgu[AUG]:–lgu      #;
 -–lget[AUG]:–lget    #;
 -–lgek[AUG]:–lgek    #;
+
 
 
 
@@ -6983,8 +6991,6 @@ LEXICON EncliticOrEnd
 -tuq[Encl]:tuq    #;
 -wha[Encl]:wha    #;
 
-!-ete:(i/e)te*  VerbIntr7; ! FIX ME
-!-ete:(i/e)te*  VerbTrns7; ! FIX ME
 
 
 
@@ -14589,6 +14595,7 @@ LEXICON VerbTrns1
 
 LEXICON VerbPostbase1
 0:0  VerbMoodInfl;
+0:0  AssignValenceVerbEte;
 -~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase2; ! TODO: Used only with vowel-ending bases
@@ -14810,8 +14817,9 @@ LEXICON VerbPostbase1
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase2;
 
 ! Requires Review
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase2;
 !-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase2; ! TODO: These postbases differ in their documentation
--@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase2; !       in Badten v. Jacobson. Can they be simplified?
+!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase2; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase2;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase2;
 
@@ -14872,8 +14880,8 @@ LEXICON VerbTrns2
 @P.VALENCE.TRNS@  VerbPostbase2;
 
 LEXICON VerbPostbase2
-
 0:0  VerbMoodInfl;
+0:0  AssignValenceVerbEte;
 -~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase3; ! TODO: Used only with vowel-ending bases
@@ -15095,8 +15103,9 @@ LEXICON VerbPostbase2
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase3;
 
 ! Requires Review
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase3;
 !-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase3; ! TODO: These postbases differ in their documentation
--@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase3; !       in Badten v. Jacobson. Can they be simplified?
+!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase3; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase3;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase3;
 
@@ -15144,8 +15153,8 @@ LEXICON VerbTrns3
 @P.VALENCE.TRNS@  VerbPostbase3;
 
 LEXICON VerbPostbase3
-
 0:0  VerbMoodInfl;
+0:0  AssignValenceVerbEte;
 -~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase4; ! TODO: Used only with vowel-ending bases
@@ -15367,8 +15376,9 @@ LEXICON VerbPostbase3
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase4;
 
 ! Requires Review
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase4;
 !-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase4; ! TODO: These postbases differ in their documentation
--@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase4; !       in Badten v. Jacobson. Can they be simplified?
+!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase4; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase4;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase4;
 
@@ -15416,8 +15426,8 @@ LEXICON VerbTrns4
 @P.VALENCE.TRNS@  VerbPostbase4;
 
 LEXICON VerbPostbase4
-
 0:0  VerbMoodInfl;
+0:0  AssignValenceVerbEte;
 -~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase5; ! TODO: Used only with vowel-ending bases
@@ -15639,8 +15649,9 @@ LEXICON VerbPostbase4
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase5;
 
 ! Requires Review
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase5;
 !-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase5; ! TODO: These postbases differ in their documentation
--@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase5; !       in Badten v. Jacobson. Can they be simplified?
+!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase5; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase5;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase5;
 
@@ -15688,8 +15699,8 @@ LEXICON VerbTrns5
 @P.VALENCE.TRNS@  VerbPostbase5;
 
 LEXICON VerbPostbase5
-
 0:0  VerbMoodInfl;
+0:0  AssignValenceVerbEte;
 -~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase6; ! TODO: Used only with vowel-ending bases
@@ -15911,8 +15922,9 @@ LEXICON VerbPostbase5
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase6;
 
 ! Requires Review
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase6;
 !-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase6; ! TODO: These postbases differ in their documentation
--@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase6; !       in Badten v. Jacobson. Can they be simplified?
+!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase6; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase6;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase6;
 
@@ -15960,8 +15972,8 @@ LEXICON VerbTrns6
 @P.VALENCE.TRNS@  VerbPostbase6;
 
 LEXICON VerbPostbase6
-
 0:0  VerbMoodInfl;
+0:0  AssignValenceVerbEte;
 -~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase7; ! TODO: Used only with vowel-ending bases
@@ -16183,8 +16195,9 @@ LEXICON VerbPostbase6
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase7;
 
 ! Requires Review
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase7;
 !-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase7; ! TODO: These postbases differ in their documentation
--@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase7; !       in Badten v. Jacobson. Can they be simplified?
+!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase7; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase7;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase7;
 
@@ -16233,6 +16246,7 @@ LEXICON VerbTrns7
 
 LEXICON VerbPostbase7
 0:0  VerbMoodInfl;
+0:0  AssignValenceVerbEte;
 -~sf–ghhalek[how.V][V→XCLM]:~sf–ghhalek  #;
 
 -aghaghte[V→V]:aghaghte                       VerbMoodInfl; ! TODO: Used only with vowel-ending bases
@@ -16475,8 +16489,9 @@ LEXICON VerbPostbase7
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounInfl;
 
 ! Requires Review
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounInfl; ! TODO: These postbases differ in their documentation
--@₂~fkaq[V→N]:@₂~fkaq                         NounInfl; !       in Badten v. Jacobson. Can they be simplified?
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka        NounInfl;
+!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase2; ! TODO: These postbases differ in their documentation
+!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase2; !       in Badten v. Jacobson. Can they be simplified?
 -~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounInfl;
 -~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounInfl;
 
@@ -16486,6 +16501,53 @@ LEXICON VerbPostbase7
 -~faagh[AUG]:~faagh        #;
 -~faaghet[AUG]:~faaghet    #;
 -~faaghek[AUG]:~faaghek    #;
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                           !!!
+!!!            Obsolete Verb -ete-            !!!
+!!!   Encountered only in contractions with   !!!
+!!!      the localis case ending              !!!
+!!!      the 4SG quantifier-qualifier         !!!
+!!!                                           !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON AssignValenceVerbEte
+@P.VALENCE.INTR@  VerbEte;
+
+
+LEXICON VerbEte
+
+[Quant_Qual][4Sg]-ete:~f-wmete #;
+
+! --------------------------------------------------------|
+!             Localis Case + -ete- Contractions           |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                  singular possessed                     |                       plural possessed                 |                          dual possessed                      |
+! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[N][Loc][Unpd][Sg]-ete:~f-wmete               VerbMoodInfl; [N][Loc][Unpd][Pl]-ete:~f-w/-wni           VerbMoodInfl; [N][Loc][Unpd][Du]-ete:~sf-w%:(e)gni             VerbMoodInfl; ! unpossessed   |
+! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Loc][3SgPoss][SgPosd]-ete:~%:(ng₁)anite   VerbMoodInfl; [N][Loc][3SgPoss][PlPosd]-ete:~%:(ng₁)ani  VerbMoodInfl; [N][Loc][3SgPoss][DuPosd]-ete:~sf-w%:(e)gkeni    VerbMoodInfl; ! 3Sg possessor |
+[N][Loc][3PlPoss][SgPosd]-ete:~%:(ng₁)itni    VerbMoodInfl; [N][Loc][3PlPoss][PlPosd]-ete:~%:(ng₁)itni VerbMoodInfl; [N][Loc][3PlPoss][DuPosd]-ete:~%:(ng₁)itni       VerbMoodInfl; ! 3Pl possessor |
+[N][Loc][3DuPoss][SgPosd]-ete:~sf-w%:(e)gkeni VerbMoodInfl; [N][Loc][3DuPoss][PlPosd]-ete:~%:(ng₁)itni VerbMoodInfl; [N][Loc][3DuPoss][DuPosd]-ete:~%:(ng₁)itni       VerbMoodInfl; ! 3Du possessor |
+! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
+[N][Loc][1SgPoss][SgPosd]-ete:–mni            VerbMoodInfl; [N][Loc][1SgPoss][PlPosd]-ete:–mni         VerbMoodInfl; [N][Loc][1SgPoss][DuPosd]-ete:~sf-w%:(e)gemni    VerbMoodInfl; ! 1Sg possessor |
+[N][Loc][1PlPoss][SgPosd]-ete:–mnni           VerbMoodInfl; [N][Loc][1PlPoss][PlPosd]-ete:–mnni        VerbMoodInfl; [N][Loc][1PlPoss][DuPosd]-ete:~sf-w%:(e)gemnni   VerbMoodInfl; ! 1Pl possessor |
+[N][Loc][1DuPoss][SgPosd]-ete:–mtegni         VerbMoodInfl; [N][Loc][1DuPoss][PlPosd]-ete:–mtegni      VerbMoodInfl; [N][Loc][1DuPoss][DuPosd]-ete:~sf-w%:(e)gemtegni VerbMoodInfl; ! 1Du possessor |;
+! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
+![N][Loc][2SgPoss][SgPosd]-ete:–gpe(g)ni      VerbMoodInfl; [N][Loc][2SgPoss][PlPosd]-ete:–gpe(g)ni    VerbMoodInfl; [N][Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpe(g)ni VerbMoodInfl; ! 2Sg possessor |
+[N][Loc][2SgPoss][SgPosd]-ete:–gpeni          VerbMoodInfl; [N][Loc][2SgPoss][PlPosd]-ete:–gpeni       VerbMoodInfl; [N][Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpeni    VerbMoodInfl; ! 2Sg possessor |
+[N][Loc][2PlPoss][SgPosd]-ete:–gpesini        VerbMoodInfl; [N][Loc][2PlPoss][PlPosd]-ete:–gpesini     VerbMoodInfl; [N][Loc][2PlPoss][DuPosd]-ete:~sf-w%:(e)gpesini  VerbMoodInfl; ! 2Pl possessor |
+[N][Loc][2DuPoss][SgPosd]-ete:–gpetegni       VerbMoodInfl; [N][Loc][2DuPoss][PlPosd]-ete:–gpetegni    VerbMoodInfl; [N][Loc][2DuPoss][DuPosd]-ete:~sf-w%:(e)gpetegni VerbMoodInfl; ! 2Du possessor |
+! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
+![N][Loc][4SgPoss][SgPosd]-ete:~f-wmini       VerbMoodInfl; [N][Loc][4SgPoss][PlPosd]-ete:~f-wmini     VerbMoodInfl; [N][Loc][4SgPoss][DuPosd]-ete:~sf-w%:(e)gmini    VerbMoodInfl; ! 4Sg possessor |
+[N][Loc][4PlPoss][SgPosd]-ete:~f-wmeggni      VerbMoodInfl; [N][Loc][4PlPoss][PlPosd]-ete:~f-wmeggni   VerbMoodInfl; [N][Loc][4PlPoss][DuPosd]-ete:~sf-w%:(e)gmeggni  VerbMoodInfl; ! 4Sg possessor |
+[N][Loc][4DuPoss][SgPosd]-ete:~f-wmegni       VerbMoodInfl; [N][Loc][4DuPoss][PlPosd]-ete:~f-wmegni    VerbMoodInfl; [N][Loc][4DuPoss][DuPosd]-ete:~sf-w%:(e)gmegni   VerbMoodInfl; ! 4Pl possessor |
+[N][Loc][4DuPoss][SgPosd]-ete:~f-wmegteni     VerbMoodInfl; [N][Loc][4DuPoss][PlPosd]-ete:~f-wmegteni  VerbMoodInfl; [N][Loc][4DuPoss][DuPosd]-ete:~sf-w%:(e)gmegteni VerbMoodInfl; ! 4Du possessor |
+! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
+
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -17256,11 +17318,11 @@ nekevghagh*  QuantQualPostbase; ! standing
 
 LEXICON PosRootPostbase
 
-@P.VALENCE.INTR@-mete[V→V]:@P.VALENCE.INTR@mete                   VerbMoodInfl;
-@P.VALENCE.INTR@-nga[to.be.in.R.posture]:@P.VALENCE.INTR@nga      VerbMoodInfl; ! TODO: Which version of the postbase is it?
-@P.VALENCE.INTR@-~fnga[to.be.in.R.posture]:@P.VALENCE.INTR@~fnga  VerbMoodInfl;
-@P.VALENCE.INTR@-te[to.get.into.R.posture]:@P.VALENCE.INTR@te     VerbMoodInfl;
-@P.VALENCE.TRNS@-te[to.put.into.R.posture]:@P.VALENCE.TRNS@te     VerbMoodInfl;
+@P.VALENCE.INTR@-mete:@P.VALENCE.INTR@mete    VerbMoodInfl;
+@P.VALENCE.INTR@-nga:@P.VALENCE.INTR@nga      VerbMoodInfl; ! TODO: Which version of the postbase is it?
+@P.VALENCE.INTR@-~fnga:@P.VALENCE.INTR@~fnga  VerbMoodInfl;
+@P.VALENCE.INTR@-te:@P.VALENCE.INTR@te        VerbMoodInfl;
+@P.VALENCE.TRNS@-te:@P.VALENCE.TRNS@te        VerbMoodInfl;
 
 
 
