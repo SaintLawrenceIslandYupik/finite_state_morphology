@@ -3,8 +3,9 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
                   [Abs] [Abl_Mod] [Equ] [Loc] [Rel] [Ter] [Via] [Intr] [Trns] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Sbrd] [Ptcp_Obl] [Cmpd_Vbl] [Quant_Qual] [Encl]
                   [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
-                  @* @₁ @₂ ~sf ~f ~h -w –– (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (g₂) (g₃) (t) (te) (i₁) (i₂) (i/u) (u) (pete)fte (a) (i/e) (s) (at)
-                  ~f-w/-w ~sf-w%:(e)tgun/teggun @~sf–(g)ke/(g)ka @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
+                  @* @₁ @₂ ~sf ~f ~h -w –– (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g₁) (t) (te) (i₁) (i₂) (i/u) (u) (a) (s) (at)
+                  (pete)fte @~–(g)ka @~–(g)ke
+                  ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
 
 
@@ -5492,6 +5493,7 @@ LEXICON NounPostbase1
 -–lget[AUG]:–lget    #;
 -–lgek[AUG]:–lgek    #;
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                        !!!
 !!!     NounPostbase 2     !!!
@@ -5715,6 +5717,7 @@ LEXICON NounPostbase2
 -–lgu[AUG]:–lgu      #;
 -–lget[AUG]:–lget    #;
 -–lgek[AUG]:–lgek    #;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                        !!!
@@ -5940,6 +5943,7 @@ LEXICON NounPostbase3
 -–lget[AUG]:–lget    #;
 -–lgek[AUG]:–lgek    #;
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                        !!!
 !!!     NounPostbase 4     !!!
@@ -6163,6 +6167,7 @@ LEXICON NounPostbase4
 -–lgu[AUG]:–lgu      #;
 -–lget[AUG]:–lget    #;
 -–lgek[AUG]:–lgek    #;
+
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                        !!!
@@ -6388,6 +6393,7 @@ LEXICON NounPostbase5
 -–lget[AUG]:–lget    #;
 -–lgek[AUG]:–lgek    #;
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                        !!!
 !!!     NounPostbase 6     !!!
@@ -6612,6 +6618,7 @@ LEXICON NounPostbase6
 -–lget[AUG]:–lget    #;
 -–lgek[AUG]:–lgek    #;
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                        !!!
 !!!     NounPostbase 7     !!!
@@ -6772,7 +6779,6 @@ LEXICON NounPostbase7
 -yag[N→V]:yag                            VerbMoodInfl;
 -@₁~fyagh[N→V]:@₁~fyagh                  VerbMoodInfl;
 -@₁~fyug[N→V]:@₁~fyug                    VerbMoodInfl;
-
 
 -tuqagh[AUG]:tuqagh  #;
 -tuqaat[AUG]:tuqaat  #;
@@ -6976,6 +6982,12 @@ LEXICON NounInfl
 ! -------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
 
 
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!               !!!
+!!!   Enclitics   !!!
+!!!               !!!
+!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON EncliticOrEnd
 0:0               #;
@@ -10635,6 +10647,7 @@ neghaali              	VerbTrns1; ! to slow or die down (of person, event, occur
 neghagte              	VerbIntr1; ! to drain (overly full lake going down)
 neghagte              	VerbTrns1; ! to drain (overly full lake going down)
 neghenghite*            VerbIntr1; ! to not eat
+neghenghite*            VerbTrns1; ! to not eat
 neghe                   VerbIntr1; ! to eat
 neghe                   VerbTrns1; ! to eat
 neghigh               	VerbIntr1; ! to have happened long ago
@@ -14749,7 +14762,7 @@ LEXICON VerbPostbase1
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase2;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase2;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase2;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase2; ! TODO: Takes intransitive endings only
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbIntr2;
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase2;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase2;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase2;
@@ -14764,16 +14777,14 @@ LEXICON VerbPostbase1
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase2;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase2;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase2;
-@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase2;
-
-! NOT FINALIZED
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr2;     ! TODO: These postbases differ in their documentation in
--@₂~fkau[V→V]:@₂~fkau                         VerbPostbase2; !   in Badten v. Jacobson. Can they be simplified?
--@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns2;
--~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh             VerbIntr2;     ! TODO: These postbases could use a second walkthrough,
--~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns2;     !       together with the previous three postbases,
--~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase2; !       listed above
--~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase2;
+@R.VALENCE.TRNS@-~i[V→V]:@R.VALENCE.TRNS@~i   VerbIntr2;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbIntr2;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbTrns2;
+-@~–(g)kau[V→V]:@~–(g)kau                     VerbIntr2;
+-@~–(g)kaqe[V→V]:@~–(g)kaqe                   VerbTrns2;
+-@~–(g)kaqsagh[V→V]:@~–(g)kaqsagh             VerbTrns2;
+-@~–(g)kayugu[V→V]:@~–(g)kayugu               VerbPostbase2;
+-@~–(g)kayugughte[V→V]:@~–(g)kayugughte       VerbPostbase2;
 
 -@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase2;
 -@₁~%:(i/u)mate[V→N]:@₁~%:(i/u)mate           NounPostbase2;
@@ -14815,13 +14826,9 @@ LEXICON VerbPostbase1
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase2;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase2;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase2;
-
-! Requires Review
-@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase2;
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase2; ! TODO: These postbases differ in their documentation
-!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase2; !       in Badten v. Jacobson. Can they be simplified?
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase2;
--~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase2;
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~–(g)ke[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~–(g)ke NounPostbase2;
+-@~–(g)kagh[V→N]:@~–(g)kagh                   NounPostbase2;
+-@~–(g)kayug[V→N]:@~–(g)kayug                 NounPostbase2;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!                                                    !!!
@@ -14853,12 +14860,12 @@ LEXICON VerbPostbase1
 -@₁~fyuke[Cmpd_Vbl]:@₁~fyuke              VerbIntr2;
 -@₁~fyuke[Cmpd_Vbl]:@₁~fyuke              VerbTrns2;
 
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!                                 !!!
-!!!      "Augmentive" Postbases     !!!
-!!!      (Jacobson 2001 18.3.2)     !!!
-!!!                                 !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                            !!!
+!!!   "Augmentive" Postbases   !!!
+!!!   (Jacobson 2001 18.3.2)   !!!
+!!!                            !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 -–ghllag[AUG]:–ghllag      #;
 -–ghllaget[AUG]:–ghllaget  #;
@@ -15035,7 +15042,7 @@ LEXICON VerbPostbase2
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase3;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase3;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase3;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase3; ! TODO: Takes intransitive endings only
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbIntr3;
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase3;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase3;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase3;
@@ -15050,16 +15057,14 @@ LEXICON VerbPostbase2
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase3;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase3;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase3;
-@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase3;
-
-! NOT FINALIZED
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr3;     ! TODO: These postbases differ in their documentation in
--@₂~fkau[V→V]:@₂~fkau                         VerbPostbase3; !   in Badten v. Jacobson. Can they be simplified?
--@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns3;
--~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh             VerbIntr3;     ! TODO: These postbases could use a second walkthrough,
--~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns3;     !       together with the previous three postbases,
--~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase3; !       listed above
--~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase3;
+@R.VALENCE.TRNS@-~i[V→V]:@R.VALENCE.TRNS@~i   VerbIntr3;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbIntr3;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbTrns3;
+-@~–(g)kau[V→V]:@~–(g)kau                     VerbIntr3;
+-@~–(g)kaqe[V→V]:@~–(g)kaqe                   VerbTrns3;
+-@~–(g)kaqsagh[V→V]:@~–(g)kaqsagh             VerbTrns3;
+-@~–(g)kayugu[V→V]:@~–(g)kayugu               VerbPostbase3;
+-@~–(g)kayugughte[V→V]:@~–(g)kayugughte       VerbPostbase3;
 
 -@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase3;
 -@₁~%:(i/u)mate[V→N]:@₁~%:(i/u)mate           NounPostbase3;
@@ -15101,13 +15106,9 @@ LEXICON VerbPostbase2
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase3;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase3;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase3;
-
-! Requires Review
-@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase3;
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase3; ! TODO: These postbases differ in their documentation
-!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase3; !       in Badten v. Jacobson. Can they be simplified?
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase3;
--~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase3;
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~–(g)ke[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~–(g)ke NounPostbase3;
+-@~–(g)kagh[V→N]:@~–(g)kagh                   NounPostbase3;
+-@~–(g)kayug[V→N]:@~–(g)kayug                 NounPostbase3;
 
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbIntr3;
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbTrns3;
@@ -15308,7 +15309,7 @@ LEXICON VerbPostbase3
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase4;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase4;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase4;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase4; ! TODO: Takes intransitive endings only
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbIntr4;
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase4;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase4;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase4;
@@ -15323,16 +15324,14 @@ LEXICON VerbPostbase3
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase4;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase4;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase4;
-@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase4;
-
-! NOT FINALIZED
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr4;     ! TODO: These postbases differ in their documentation in
--@₂~fkau[V→V]:@₂~fkau                         VerbPostbase4; !   in Badten v. Jacobson. Can they be simplified?
--@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns4;
--~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh             VerbIntr4;     ! TODO: These postbases could use a second walkthrough,
--~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns4;     !       together with the previous three postbases,
--~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase4; !       listed above
--~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase4;
+@R.VALENCE.TRNS@-~i[V→V]:@R.VALENCE.TRNS@~i   VerbIntr4;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbIntr4;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbTrns4;
+-@~–(g)kau[V→V]:@~–(g)kau                     VerbIntr4;
+-@~–(g)kaqe[V→V]:@~–(g)kaqe                   VerbTrns4;
+-@~–(g)kaqsagh[V→V]:@~–(g)kaqsagh             VerbTrns4;
+-@~–(g)kayugu[V→V]:@~–(g)kayugu               VerbPostbase4;
+-@~–(g)kayugughte[V→V]:@~–(g)kayugughte       VerbPostbase4;
 
 -@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase4;
 -@₁~%:(i/u)mate[V→N]:@₁~%:(i/u)mate           NounPostbase4;
@@ -15374,13 +15373,9 @@ LEXICON VerbPostbase3
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase4;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase4;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase4;
-
-! Requires Review
-@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase4;
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase4; ! TODO: These postbases differ in their documentation
-!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase4; !       in Badten v. Jacobson. Can they be simplified?
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase4;
--~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase4;
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~–(g)ke[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~–(g)ke NounPostbase4;
+-@~–(g)kagh[V→N]:@~–(g)kagh                   NounPostbase4;
+-@~–(g)kayug[V→N]:@~–(g)kayug                 NounPostbase4;
 
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbIntr4;
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbTrns4;
@@ -15581,7 +15576,7 @@ LEXICON VerbPostbase4
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase5;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase5;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase5;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase5; ! TODO: Takes intransitive endings only
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbIntr5;
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase5;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase5;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase5;
@@ -15596,16 +15591,14 @@ LEXICON VerbPostbase4
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase5;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase5;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase5;
-@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase5;
-
-! NOT FINALIZED
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr5;     ! TODO: These postbases differ in their documentation in
--@₂~fkau[V→V]:@₂~fkau                         VerbPostbase5; !   in Badten v. Jacobson. Can they be simplified?
--@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns5;
--~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh             VerbIntr5;     ! TODO: These postbases could use a second walkthrough,
--~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns5;     !       together with the previous three postbases,
--~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase5; !       listed above
--~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase5;
+@R.VALENCE.TRNS@-~i[V→V]:@R.VALENCE.TRNS@~i   VerbIntr5;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbIntr5;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbTrns5;
+-@~–(g)kau[V→V]:@~–(g)kau                     VerbIntr5;
+-@~–(g)kaqe[V→V]:@~–(g)kaqe                   VerbTrns5;
+-@~–(g)kaqsagh[V→V]:@~–(g)kaqsagh             VerbTrns5;
+-@~–(g)kayugu[V→V]:@~–(g)kayugu               VerbPostbase5;
+-@~–(g)kayugughte[V→V]:@~–(g)kayugughte       VerbPostbase5;
 
 -@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase5;
 -@₁~%:(i/u)mate[V→N]:@₁~%:(i/u)mate           NounPostbase5;
@@ -15647,13 +15640,9 @@ LEXICON VerbPostbase4
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase5;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase5;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase5;
-
-! Requires Review
-@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase5;
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase5; ! TODO: These postbases differ in their documentation
-!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase5; !       in Badten v. Jacobson. Can they be simplified?
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase5;
--~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase5;
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~–(g)ke[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~–(g)ke NounPostbase5;
+-@~–(g)kagh[V→N]:@~–(g)kagh                   NounPostbase5;
+-@~–(g)kayug[V→N]:@~–(g)kayug                 NounPostbase5;
 
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbIntr5;
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbTrns5;
@@ -15854,7 +15843,7 @@ LEXICON VerbPostbase5
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase6;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase6;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase6;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase6; ! TODO: Takes intransitive endings only
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbIntr6;
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase6;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase6;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase6;
@@ -15869,16 +15858,14 @@ LEXICON VerbPostbase5
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase6;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase6;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase6;
-@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase6;
-
-! NOT FINALIZED
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr6;     ! TODO: These postbases differ in their documentation in
--@₂~fkau[V→V]:@₂~fkau                         VerbPostbase6; !   in Badten v. Jacobson. Can they be simplified?
--@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns6;
--~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh             VerbIntr6;     ! TODO: These postbases could use a second walkthrough,
--~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns6;     !       together with the previous three postbases,
--~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase6; !       listed above
--~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase6;
+@R.VALENCE.TRNS@-~i[V→V]:@R.VALENCE.TRNS@~i   VerbIntr6;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbIntr6;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbTrns6;
+-@~–(g)kau[V→V]:@~–(g)kau                     VerbIntr6;
+-@~–(g)kaqe[V→V]:@~–(g)kaqe                   VerbTrns6;
+-@~–(g)kaqsagh[V→V]:@~–(g)kaqsagh             VerbTrns6;
+-@~–(g)kayugu[V→V]:@~–(g)kayugu               VerbPostbase6;
+-@~–(g)kayugughte[V→V]:@~–(g)kayugughte       VerbPostbase6;
 
 -@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase6;
 -@₁~%:(i/u)mate[V→N]:@₁~%:(i/u)mate           NounPostbase6;
@@ -15920,13 +15907,9 @@ LEXICON VerbPostbase5
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase6;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase6;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase6;
-
-! Requires Review
-@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase6;
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase6; ! TODO: These postbases differ in their documentation
-!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase6; !       in Badten v. Jacobson. Can they be simplified?
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase6;
--~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase6;
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~–(g)ke[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~–(g)ke NounPostbase6;
+-@~–(g)kagh[V→N]:@~–(g)kagh                   NounPostbase6;
+-@~–(g)kayug[V→N]:@~–(g)kayug                 NounPostbase6;
 
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbIntr6;
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbTrns6;
@@ -16127,7 +16110,7 @@ LEXICON VerbPostbase6
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbPostbase7;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbPostbase7;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbPostbase7;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbPostbase7; ! TODO: Takes intransitive endings only
+-@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbIntr7;
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbPostbase7;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbPostbase7;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbPostbase7;
@@ -16142,16 +16125,14 @@ LEXICON VerbPostbase6
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbPostbase7;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbPostbase7;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbPostbase7;
-@R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbPostbase7;
-
-! NOT FINALIZED
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau                 VerbIntr7;     ! TODO: These postbases differ in their documentation in
--@₂~fkau[V→V]:@₂~fkau                         VerbPostbase7; !   in Badten v. Jacobson. Can they be simplified?
--@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe               VerbTrns7;
--~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh             VerbIntr7;     ! TODO: These postbases could use a second walkthrough,
--~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh             VerbTrns7;     !       together with the previous three postbases,
--~–(g₁)kayugu[V→V]:~–(g₁)kayugu               VerbPostbase7; !       listed above
--~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte       VerbPostbase7;
+@R.VALENCE.TRNS@-~i[V→V]:@R.VALENCE.TRNS@~i   VerbIntr7;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbIntr7;
+-@~–(g)kaayagh[V→V]:@~–(g)kaayagh             VerbTrns7;
+-@~–(g)kau[V→V]:@~–(g)kau                     VerbIntr7;
+-@~–(g)kaqe[V→V]:@~–(g)kaqe                   VerbTrns7;
+-@~–(g)kaqsagh[V→V]:@~–(g)kaqsagh             VerbTrns7;
+-@~–(g)kayugu[V→V]:@~–(g)kayugu               VerbPostbase7;
+-@~–(g)kayugughte[V→V]:@~–(g)kayugughte       VerbPostbase7;
 
 -@₁~%:(i/u)ma[V→N]:@₁~%:(i/u)ma               NounPostbase7;
 -@₁~%:(i/u)mate[V→N]:@₁~%:(i/u)mate           NounPostbase7;
@@ -16193,13 +16174,9 @@ LEXICON VerbPostbase6
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounPostbase7;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounPostbase7;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounPostbase7;
-
-! Requires Review
-@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka NounPostbase7;
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase7; ! TODO: These postbases differ in their documentation
-!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase7; !       in Badten v. Jacobson. Can they be simplified?
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounPostbase7;
--~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounPostbase7;
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~–(g)ke[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~–(g)ke NounPostbase7;
+-@~–(g)kagh[V→N]:@~–(g)kagh                   NounPostbase7;
+-@~–(g)kayug[V→N]:@~–(g)kayug                 NounPostbase7;
 
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbIntr7;
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbTrns7;
@@ -16400,7 +16377,6 @@ LEXICON VerbPostbase7
 -@₁~fyaaghagh[V→V]:@₁~fyaaghagh               VerbMoodInfl;
 -@₁~fyaghpete[V→V]:@₁~fyaghpete               VerbMoodInfl;
 -@₁~fyaghqaaghte[V→V]:@₁~fyaghqaaghte         VerbMoodInfl;
--@₁~fyaghqaa[V→V]:@₁~fyaghqaa                 VerbMoodInfl; ! TODO: Takes intransitive endings only
 -@₁~fyaghqaqe[V→V]:@₁~fyaghqaqe               VerbMoodInfl;
 -@₁~fyaaghte[V→V]:@₁~fyaaghte                 VerbMoodInfl;
 -@₁~fyaghtugh[V→V]:@₁~fyaghtugh               VerbMoodInfl;
@@ -16415,24 +16391,17 @@ LEXICON VerbPostbase7
 -@₁~fyukagh[V→V]:@₁~fyukagh                   VerbMoodInfl;
 -@₁~fyuneghtu[V→V]:@₁~fyuneghtu               VerbMoodInfl;
 -@₁~fyuwhaagh[V→V]:@₁~fyuwhaagh               VerbMoodInfl;
+@P.VALENCE.INTR@-@₁~fyaghqaa[V→V]:@P.VALENCE.INTR@@₁~fyaghqaa               VerbMoodInfl;
 @R.VALENCE.TRNS@@P.VALENCE.INTR@-~i[V→V]:@R.VALENCE.TRNS@@P.VALENCE.INTR@~i VerbMoodInfl;
-
-
-! NOT FINALIZED
-!@P.VALENCE.INTR@-~sf–(g₃)kau[V→V]:@P.VALENCE.INTR@~sf–(g₃)kau     VerbMoodInfl; ! TODO: These postbases differ in their documentation in
-!-@₂~fkau[V→V]:@₂~fkau                                             VerbMoodInfl; !   in Badten v. Jacobson. Can they be simplified?
-!@P.VALENCE.TRNS@-@₂~–(g₁)kaqe[V→V]:@P.VALENCE.TRNS@@₂~–(g₁)kaqe   VerbMoodInfl;
-!@P.VALENCE.INTR@-~–(g₃)kaayagh[V→V]:@P.VALENCE.INTR@~–(g₃)kaayagh VerbMoodInfl; ! TODO: These postbases could use a second walkthrough,
-!@P.VALENCE.TRNS@-~–(g₃)kaqsagh[V→V]:@P.VALENCE.TRNS@~–(g₃)kaqsagh VerbMoodInfl; !       together with the previous three postbases,
-!-~–(g₁)kayugu[V→V]:~–(g₁)kayugu                                   VerbMoodInfl; !       listed above
-!-~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte                           VerbMoodInfl;
--~sf–(g₃)kau[V→V]:~sf–(g₃)kau            VerbMoodInfl;
--@₂~fkau[V→V]:@₂~fkau                    VerbMoodInfl;
--@₂~–(g₁)kaqe[V→V]:@₂~–(g₁)kaqe          VerbMoodInfl;
--~–(g₃)kaayagh[V→V]:~–(g₃)kaayagh        VerbMoodInfl;
--~–(g₃)kaqsagh[V→V]:~–(g₃)kaqsagh        VerbMoodInfl;
--~–(g₁)kayugu[V→V]:~–(g₁)kayugu          VerbMoodInfl;
--~–(g₁)kayugughte[V→V]:~–(g₁)kayugughte  VerbMoodInfl;
+@P.VALENCE.INTR@-@~–(g)kaayagh[V→V]:@P.VALENCE.INTR@@~–(g)kaayagh           VerbMoodInfl;
+@P.VALENCE.TRNS@-@~–(g)kaayagh[V→V]:@P.VALENCE.TRNS@@~–(g)kaayagh           VerbMoodInfl;
+@P.VALENCE.INTR@-@~–(g)kau[V→V]:@P.VALENCE.INTR@@~–(g)kau                   VerbMoodInfl;
+@P.VALENCE.TRNS@-@~–(g)kaqe[V→V]:@P.VALENCE.TRNS@@~–(g)kaqe                 VerbMoodInfl;
+@P.VALENCE.TRNS@-@~–(g)kaqsagh[V→V]:@P.VALENCE.TRNS@@~–(g)kaqsagh           VerbMoodInfl;
+@P.VALENCE.INTR@-@~–(g)kayugu[V→V]:@P.VALENCE.INTR@@~–(g)kayugu             VerbMoodInfl;
+@P.VALENCE.TRNS@-@~–(g)kayugu[V→V]:@P.VALENCE.TRNS@@~–(g)kayugu             VerbMoodInfl;
+@P.VALENCE.INTR@-@~–(g)kayugughte[V→V]:@P.VALENCE.INTR@@~–(g)kayugughte     VerbMoodInfl;
+@P.VALENCE.TRNS@-@~–(g)kayugughte[V→V]:@P.VALENCE.TRNS@@~–(g)kayugughte     VerbMoodInfl;
 
 -~sf%:(e)sqe[Cmpd_Vbl]:~sf%:(e)sqe        VerbMoodInfl;
 -@₁~fni[Cmpd_Vbl]:@₁~fni                  VerbMoodInfl;
@@ -16487,13 +16456,9 @@ LEXICON VerbPostbase7
 -@₁~fyuggaagh[V→N]:@₁~fyuggaagh               NounInfl;
 -@₁~f–yuqagh[V→N]:@₁~f–yuqagh                 NounInfl;
 -@₁~fyuwhaagh[V→N]:@₁~fyuwhaagh               NounInfl;
-
-! Requires Review
-@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~sf–(g)ke/(g)ka[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~sf–(g)ke/(g)ka        NounInfl;
-!-@*@₂~sf–(g₂)k(a)e[V→N]:@*@₂~sf–(g₂)k(a)e     NounPostbase2; ! TODO: These postbases differ in their documentation
-!-@₂~fkaq[V→N]:@₂~fkaq                         NounPostbase2; !       in Badten v. Jacobson. Can they be simplified?
--~sf–(g₃)kagh[V→N]:~sf–(g₃)kagh               NounInfl;
--~–(g₁)kayug[V→N]:~–(g₁)kayug                 NounInfl;
+@R.VALENCE.TRNS@@P.VALENCE.TRNS@-@~–(g)ke[V→N]:@R.VALENCE.TRNS@@P.VALENCE.TRNS@@~–(g)ke NounInfl;
+-@~–(g)kagh[V→N]:@~–(g)kagh                   NounInfl;
+-@~–(g)kayug[V→N]:@~–(g)kayug                 NounInfl;
 
 -–ghllag[AUG]:–ghllag      #;
 -–ghllaget[AUG]:–ghllaget  #;
@@ -16534,7 +16499,7 @@ LEXICON VerbEte
 ! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
 [N][Loc][1SgPoss][SgPosd]-ete:–mni            VerbMoodInfl; [N][Loc][1SgPoss][PlPosd]-ete:–mni         VerbMoodInfl; [N][Loc][1SgPoss][DuPosd]-ete:~sf-w%:(e)gemni    VerbMoodInfl; ! 1Sg possessor |
 [N][Loc][1PlPoss][SgPosd]-ete:–mnni           VerbMoodInfl; [N][Loc][1PlPoss][PlPosd]-ete:–mnni        VerbMoodInfl; [N][Loc][1PlPoss][DuPosd]-ete:~sf-w%:(e)gemnni   VerbMoodInfl; ! 1Pl possessor |
-[N][Loc][1DuPoss][SgPosd]-ete:–mtegni         VerbMoodInfl; [N][Loc][1DuPoss][PlPosd]-ete:–mtegni      VerbMoodInfl; [N][Loc][1DuPoss][DuPosd]-ete:~sf-w%:(e)gemtegni VerbMoodInfl; ! 1Du possessor |;
+[N][Loc][1DuPoss][SgPosd]-ete:–mtegni         VerbMoodInfl; [N][Loc][1DuPoss][PlPosd]-ete:–mtegni      VerbMoodInfl; [N][Loc][1DuPoss][DuPosd]-ete:~sf-w%:(e)gemtegni VerbMoodInfl; ! 1Du possessor |
 ! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
 ![N][Loc][2SgPoss][SgPosd]-ete:–gpe(g)ni      VerbMoodInfl; [N][Loc][2SgPoss][PlPosd]-ete:–gpe(g)ni    VerbMoodInfl; [N][Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpe(g)ni VerbMoodInfl; ! 2Sg possessor |
 [N][Loc][2SgPoss][SgPosd]-ete:–gpeni          VerbMoodInfl; [N][Loc][2SgPoss][PlPosd]-ete:–gpeni       VerbMoodInfl; [N][Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpeni    VerbMoodInfl; ! 2Sg possessor |
@@ -16572,7 +16537,7 @@ LEXICON VerbMoodInfl
 @R.VALENCE.TRNS@[V][Trns][Ind]:@R.VALENCE.TRNS@~(g₁)a                       TransitiveIndicative; 
 
 @R.VALENCE.INTR@[V][Intr][Ptcp]:@R.VALENCE.INTR@@₁–lghii/@*ngugh*           IntransitiveParticipial;
-@R.VALENCE.TRNS@[V][Trns][Ptcp]:@R.VALENCE.TRNS@@*@₂~sf–(g₂)                TransitiveParticipialFutureOptative; 
+@R.VALENCE.TRNS@[V][Trns][Ptcp]:@R.VALENCE.TRNS@@~–(g)ke                    TransitiveParticipialFutureOptative; 
 
 @R.VALENCE.INTR@[V][Intr][Intrg]:@R.VALENCE.INTR@                           IntransitiveInterrogative; 
 @R.VALENCE.TRNS@[V][Trns][Intrg]:@R.VALENCE.TRNS@                           TransitiveInterrogative; 
@@ -16584,7 +16549,7 @@ LEXICON VerbMoodInfl
 @R.VALENCE.TRNS@[V][Trns][Opt][NEG]:@R.VALENCE.TRNS@                        TransitiveNegativeOptative;
 
 @R.VALENCE.INTR@[V][Intr][Opt][FUT]:@R.VALENCE.INTR@[Opt_FUT_Intr]          IntransitiveIndicativeFutureOptative;
-@R.VALENCE.TRNS@[V][Trns][Opt][FUT]:@R.VALENCE.TRNS@@₁~fna                  TransitiveParticipialFutureOptative;
+@R.VALENCE.TRNS@[V][Trns][Opt][FUT]:@R.VALENCE.TRNS@@₁~fna@~–(g)ke          TransitiveParticipialFutureOptative;
 
 @R.VALENCE.INTR@[V][Intr][Opt][FUT][NEG]:@R.VALENCE.INTR@@₁~fyaquna         IntransitiveNegativeFutureOptative;
 @R.VALENCE.TRNS@[V][Trns][Opt][FUT][NEG]:@R.VALENCE.TRNS@@₁~fyaquna         TransitiveNegativeFutureOptative;
@@ -16613,8 +16578,8 @@ LEXICON VerbMoodInfl
 @R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁–negh          IntransitiveContemporative;
 @R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁–negh          TransitiveContemporative;
 
-@R.VALENCE.INTR@[V][Intr][Cond]:@R.VALENCE.INTR@                 IntransitiveConditional;
-@R.VALENCE.TRNS@[V][Trns][Cond]:@R.VALENCE.TRNS@                 TransitiveConditional;
+@R.VALENCE.INTR@[V][Intr][Cond]:@R.VALENCE.INTR@@~–(g)ka[Cond]   IntransitiveConditional;
+@R.VALENCE.TRNS@[V][Trns][Cond]:@R.VALENCE.TRNS@@~–(g)ka[Cond]   TransitiveConditional;
 
 @R.VALENCE.INTR@[V][Intr][Sbrd]:@R.VALENCE.INTR@@₁~flu/na        IntransitiveSubordinative;
 @R.VALENCE.TRNS@[V][Trns][Sbrd]:@R.VALENCE.TRNS@@₁~flu/na        TransitiveSubordinative;
@@ -16675,43 +16640,43 @@ LEXICON TransitiveIndicative
 !----------------------|------------------------|-------------------------|
 
 LEXICON TransitiveParticipialFutureOptative
-! -----------------------|--------------------------|----------------------------|
-[3Sg][3Sg]:kanga        #; [3Sg][3Pl]:kangi        #; [3Sg][3Du]:kak            #;
-[3Pl][3Sg]:kangat       #; [3Pl][3Pl]:kangit       #; [3Pl][3Du]:kagket         #;
-[3Du][3Sg]:kangit       #; [3Du][3Pl]:kangik       #; [3Du][3Du]:kagket         #;
-! -----------------------|--------------------------|----------------------------|
-[1Sg][3Sg]:kegka        #; [1Sg][3Pl]:kenka        #; [1Sg][3Du]:kegka          #;
-[1Pl][3Sg]:kevut        #; [1Pl][3Pl]:kevut        #; [1Pl][3Du]:kegput         #;
-[1Du][3Sg]:kevung       #; [1Du][3Pl]:kevung       #; [1Du][3Du]:kegpung        #;
-! -----------------------|--------------------------|----------------------------|
-[2Sg][3Sg]:ken          #; [2Sg][3Pl]:keten        #; [2Sg][3Du]:kegken         #;
-[2Pl][3Sg]:kezi         #; [2Pl][3Pl]:kesi         #; [2Pl][3Du]:kegsi          #;
-[2Du][3Sg]:keyek        #; [2Du][3Pl]:ketek        #; [2Du][3Du]:kegtek         #;
-! -----------------------|--------------------------|----------------------------|
-[3Sg][1Sg]:kanganga     #; [3Sg][1Pl]:kanginkut    #; [3Sg][1Du]:kanginkung     #;
-[3Pl][1Sg]:kangatnga    #; [3Pl][1Pl]:kanginkut    #; [3Pl][1Du]:kanginkung     #;
-[3Du][1Sg]:kangagnenga  #; [3Du][1Pl]:kanginkut    #; [3Du][1Du]:kanginkung     #;
-! -----------------------|--------------------------|----------------------------|
-!                        |                          |                            |
-!                        |                          |                            |
-!                        |                          |                            |
-! -----------------------|--------------------------|----------------------------|
-[2Sg][1Sg]:kevnga       #; [2Sg][1Pl]:kefkut       #; [2Sg][1Du]:kepekung       #;
-[2Pl][1Sg]:kefsinga     #; [2Pl][1Pl]:kepesikut    #; [2Pl][1Du]:kepesikung     #;
-[2Du][1Sg]:kepetegnenga #; [2Du][1Pl]:kepetegnekut #; [2Du][1Du]:kepetegnekung  #;
-! -----------------------|--------------------------|----------------------------|
-[3Sg][2Sg]:kangaten     #; [3Sg][2Pl]:kangisi      #; [3Sg][2Du]:kangitek       #;
-[3Pl][2Sg]:kangaten     #; [3Pl][2Pl]:kangisi      #; [3Pl][2Du]:kangitek       #;
-[3Du][2Sg]:kangaten     #; [3Du][2Pl]:kangisi      #; [3Du][2Du]:kangitek       #;
-! -----------------------|--------------------------|----------------------------|
-[1Sg][2Sg]:kemken       #; [1Sg][2Pl]:kemsi        #; [1Sg][2Du]:kemtek         #;
-[1Pl][2Sg]:kemken       #; [1Pl][2Pl]:kemsi        #; [1Pl][2Du]:kemtek         #;
-[1Du][2Sg]:kemken       #; [1Du][2Pl]:kemsi        #; [1Du][2Du]:kemtek         #;
-! -----------------------|--------------------------|----------------------------|
-!                        |                          |                            |
-!                        |                          |                            |
-!                        |                          |                            |
-! -----------------------|--------------------------|----------------------------|
+! ---------------------|------------------------|-------------------------|
+[3Sg][3Sg]:nga        #; [3Sg][3Pl]:ngi        #; [3Sg][3Du]:k           #;
+[3Pl][3Sg]:ngat       #; [3Pl][3Pl]:ngit       #; [3Pl][3Du]:gket        #;
+[3Du][3Sg]:ngit       #; [3Du][3Pl]:ngik       #; [3Du][3Du]:gket        #;
+! ---------------------|------------------------|-------------------------|
+[1Sg][3Sg]:gka        #; [1Sg][3Pl]:nka        #; [1Sg][3Du]:gka         #;
+[1Pl][3Sg]:vut        #; [1Pl][3Pl]:vut        #; [1Pl][3Du]:gput        #;
+[1Du][3Sg]:vung       #; [1Du][3Pl]:vung       #; [1Du][3Du]:gpung       #;
+! ---------------------|------------------------|-------------------------|
+[2Sg][3Sg]:n          #; [2Sg][3Pl]:ten        #; [2Sg][3Du]:gken        #;
+[2Pl][3Sg]:zi         #; [2Pl][3Pl]:si         #; [2Pl][3Du]:gsi         #;
+[2Du][3Sg]:yek        #; [2Du][3Pl]:tek        #; [2Du][3Du]:gtek        #;
+! ---------------------|------------------------|-------------------------|
+[3Sg][1Sg]:nganga     #; [3Sg][1Pl]:nginkut    #; [3Sg][1Du]:nginkung    #;
+[3Pl][1Sg]:ngatnga    #; [3Pl][1Pl]:nginkut    #; [3Pl][1Du]:nginkung    #;
+[3Du][1Sg]:ngagnenga  #; [3Du][1Pl]:nginkut    #; [3Du][1Du]:nginkung    #;
+! ---------------------|------------------------|-------------------------|
+!                      |                        |                         |
+!                      |                        |                         |
+!                      |                        |                         |
+! ---------------------|------------------------|-------------------------|
+[2Sg][1Sg]:vnga       #; [2Sg][1Pl]:fkut       #; [2Sg][1Du]:pekung      #;
+[2Pl][1Sg]:fsinga     #; [2Pl][1Pl]:pesikut    #; [2Pl][1Du]:pesikung    #;
+[2Du][1Sg]:petegnenga #; [2Du][1Pl]:petegnekut #; [2Du][1Du]:petegnekung #;
+! ---------------------|------------------------|-------------------------|
+[3Sg][2Sg]:ngaten     #; [3Sg][2Pl]:ngisi      #; [3Sg][2Du]:ngitek      #;
+[3Pl][2Sg]:ngaten     #; [3Pl][2Pl]:ngisi      #; [3Pl][2Du]:ngitek      #;
+[3Du][2Sg]:ngaten     #; [3Du][2Pl]:ngisi      #; [3Du][2Du]:ngitek      #;
+! ---------------------|------------------------|-------------------------|
+[1Sg][2Sg]:mken       #; [1Sg][2Pl]:msi        #; [1Sg][2Du]:mtek        #;
+[1Pl][2Sg]:mken       #; [1Pl][2Pl]:msi        #; [1Pl][2Du]:mtek        #;
+[1Du][2Sg]:mken       #; [1Du][2Pl]:msi        #; [1Du][2Du]:mtek        #;
+! ---------------------|------------------------|-------------------------|
+!                      |                        |                         |
+!                      |                        |                         |
+!                      |                        |                         |
+! ---------------------|------------------------|-------------------------|
 
 
 LEXICON IntransitiveInterrogative
@@ -17176,100 +17141,100 @@ LEXICON TransitiveContemporative
 
 
 LEXICON IntransitiveConditional
-|------------------------|----------------------------|---------------------------|----------------------------|
-[3Sg]:@*@₂~sf–(g₂)kan   #; [1Sg]:@*@₂~sf–(g₂)kuma    #; [2Sg]:@*@₂~sf–(g₂)kuvek  #; [4Sg]:@*@₂~sf–(g₂)kumi    #;
-                                                                                    [4Sg]:@*@₂~sf–(g₂)kuni    #;
-|------------------------|----------------------------|---------------------------|----------------------------|
-[3Pl]:@*@₂~sf–(g₂)kata  #; [1Pl]:@*@₂~sf–(g₂)kumta   #; [2Pl]:@*@₂~sf–(g₂)kufsi  #; [4Pl]:@*@₂~sf–(g₂)kumeng  #;
-                                                                                    [4Pl]:@*@₂~sf–(g₂)kuyeng  #;
-|------------------------|----------------------------|---------------------------|----------------------------|
-[3Du]:@*@₂~sf–(g₂)kayek #; [1Du]:@*@₂~sf–(g₂)kumtung #; [2Du]:@*@₂~sf–(g₂)kuftek #; [4Du]:@*@₂~sf–(g₂)kumek   #;
-                                                                                    [4Du]:@*@₂~sf–(g₂)kuyek   #;
-|------------------------|----------------------------|---------------------------|----------------------------|
+|-----------|---------------|--------------|---------------|
+[3Sg]:an   #; [1Sg]:uma    #; [2Sg]:uvek  #; [4Sg]:umi    #;
+                                             [4Sg]:uni    #;
+|-----------|---------------|--------------|---------------|
+[3Pl]:ata  #; [1Pl]:umta   #; [2Pl]:ufsi  #; [4Pl]:umeng  #;
+                                             [4Pl]:uyeng  #;
+|-----------|---------------|--------------|---------------|
+[3Du]:ayek #; [1Du]:umtung #; [2Du]:uftek #; [4Du]:umek   #;
+                                             [4Du]:uyek   #;
+|-----------|---------------|--------------|---------------|
 
 LEXICON TransitiveConditional
-|------------------------------------|-------------------------------------|--------------------------------------|
-[3Sg][3Sg]:@*@₂~sf–(g₂)kagu         #; [3Sg][3Pl]:@*@₂~sf–(g₂)kaki        #; [3Sg][3Du]:@*@₂~sf–(g₂)kakek        #; 
-[3Pl][3Sg]:@*@₂~sf–(g₂)katgu        #; [3Pl][3Pl]:@*@₂~sf–(g₂)katki       #; [3Pl][3Du]:@*@₂~sf–(g₂)katkek       #; 
-[3Du][3Sg]:@*@₂~sf–(g₂)kagnegu      #; [3Du][3Pl]:@*@₂~sf–(g₂)kagneki     #; [3Du][3Du]:@*@₂~sf–(g₂)kagnekek     #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[1Sg][3Sg]:@*@₂~sf–(g₂)kumkun       #; [1Sg][3Pl]:@*@₂~sf–(g₂)kumki       #; [1Sg][3Du]:@*@₂~sf–(g₂)kumkek       #; 
-[1Pl][3Sg]:@*@₂~sf–(g₂)kumteggu     #; [1Pl][3Pl]:@*@₂~sf–(g₂)kumteki     #; [1Pl][3Du]:@*@₂~sf–(g₂)kumtekek     #; 
-[1Du][3Sg]:@*@₂~sf–(g₂)kumtegnegu   #; [1Du][3Pl]:@*@₂~sf–(g₂)kumtegneki  #; [1Du][3Du]:@*@₂~sf–(g₂)kumtegnekek  #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[2Sg][3Sg]:@*@₂~sf–(g₂)kuvgu        #; [2Sg][3Pl]:@*@₂~sf–(g₂)kufki       #; [2Sg][3Du]:@*@₂~sf–(g₂)kufkek       #; 
-[2Pl][3Sg]:@*@₂~sf–(g₂)kufsigu      #; [2Pl][3Pl]:@*@₂~sf–(g₂)kufsiki     #; [2Pl][3Du]:@*@₂~sf–(g₂)kufsikek     #; 
-[2Du][3Sg]:@*@₂~sf–(g₂)kuftegnegu   #; [2Du][3Pl]:@*@₂~sf–(g₂)kuftegneki  #; [2Du][3Du]:@*@₂~sf–(g₂)kuftegnekek  #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[4Sg][3Sg]:@*@₂~sf–(g₂)kumigu       #; [4Sg][3Pl]:@*@₂~sf–(g₂)kumiki      #; [4Sg][3Du]:@*@₂~sf–(g₂)kumikek      #; 
-[4Sg][3Sg]:@*@₂~sf–(g₂)kunigu       #; [4Sg][3Pl]:@*@₂~sf–(g₂)kuniki      #; [4Sg][3Du]:@*@₂~sf–(g₂)kunikek      #; 
-[4Pl][3Sg]:@*@₂~sf–(g₂)kumegteggu   #; [4Pl][3Pl]:@*@₂~sf–(g₂)kumegteki   #; [4Pl][3Du]:@*@₂~sf–(g₂)kumegtekek   #; 
-[4Pl][3Sg]:@*@₂~sf–(g₂)kuyigteggu   #; [4Pl][3Pl]:@*@₂~sf–(g₂)kuyigteki   #; [4Pl][3Du]:@*@₂~sf–(g₂)kuyigtekek   #; 
-[4Du][3Sg]:@*@₂~sf–(g₂)kumegnegu    #; [4Du][3Pl]:@*@₂~sf–(g₂)kumegneki   #; [4Du][3Du]:@*@₂~sf–(g₂)kumegnekek   #; 
-[4Du][3Sg]:@*@₂~sf–(g₂)kuyignegu    #; [4Du][3Pl]:@*@₂~sf–(g₂)kuyigneki   #; [4Du][3Du]:@*@₂~sf–(g₂)kuyignekek   #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|------------------------------------|-------------------------------------|--------------------------------------|
-[3Sg][1Sg]:@*@₂~sf–(g₂)kanga        #; [3Sg][1Pl]:@*@₂~sf–(g₂)kankut      #; [3Sg][1Du]:@*@₂~sf–(g₂)kankung      #; 
-[3Pl][1Sg]:@*@₂~sf–(g₂)katnga       #; [3Pl][1Pl]:@*@₂~sf–(g₂)kankut      #; [3Pl][1Du]:@*@₂~sf–(g₂)kankung      #; 
-[3Du][1Sg]:@*@₂~sf–(g₂)kagnenga     #; [3Du][1Pl]:@*@₂~sf–(g₂)kankut      #; [3Du][1Du]:@*@₂~sf–(g₂)kankung      #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|------------------------------------|-------------------------------------|--------------------------------------|
-[2Sg][1Sg]:@*@₂~sf–(g₂)kuvnga       #; [2Sg][1Pl]:@*@₂~sf–(g₂)kufkut      #; [2Sg][1Du]:@*@₂~sf–(g₂)kufkung      #; 
-[2Pl][1Sg]:@*@₂~sf–(g₂)kufsinga     #; [2Pl][1Pl]:@*@₂~sf–(g₂)kufsikut    #; [2Pl][1Du]:@*@₂~sf–(g₂)kufsikung    #; 
-[2Du][1Sg]:@*@₂~sf–(g₂)kuftegnenga  #; [2Du][1Pl]:@*@₂~sf–(g₂)kuftegnekut #; [2Du][1Du]:@*@₂~sf–(g₂)kuftegnekung #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[4Sg][1Sg]:@*@₂~sf–(g₂)kuminga      #; [4Sg][1Pl]:@*@₂~sf–(g₂)kumikut     #; [4Sg][1Du]:@*@₂~sf–(g₂)kumikung     #; 
-[4Sg][1Sg]:@*@₂~sf–(g₂)kuninga      #; [4Sg][1Pl]:@*@₂~sf–(g₂)kunikut     #; [4Sg][1Du]:@*@₂~sf–(g₂)kunikung     #; 
-[4Pl][1Sg]:@*@₂~sf–(g₂)kumegtengnga #; [4Pl][1Pl]:@*@₂~sf–(g₂)kumegtekut  #; [4Pl][1Du]:@*@₂~sf–(g₂)kumegtekung  #; 
-[4Pl][1Sg]:@*@₂~sf–(g₂)kuyigtengnga #; [4Pl][1Pl]:@*@₂~sf–(g₂)kuyigtekut  #; [4Pl][1Du]:@*@₂~sf–(g₂)kuyigtekung  #; 
-[4Du][1Sg]:@*@₂~sf–(g₂)kumegnenga   #; [4Du][1Pl]:@*@₂~sf–(g₂)kumegnekut  #; [4Du][1Du]:@*@₂~sf–(g₂)kumegnekung  #; 
-[4Du][1Sg]:@*@₂~sf–(g₂)kuyignenga   #; [4Du][1Pl]:@*@₂~sf–(g₂)kuyignekut  #; [4Du][1Du]:@*@₂~sf–(g₂)kuyignekung  #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|------------------------------------|-------------------------------------|--------------------------------------|
-[3Sg][2Sg]:@*@₂~sf–(g₂)katen        #; [3Sg][2Pl]:@*@₂~sf–(g₂)kasi        #; [3Sg][2Du]:@*@₂~sf–(g₂)kastek       #; 
-[3Pl][2Sg]:@*@₂~sf–(g₂)katen        #; [3Pl][2Pl]:@*@₂~sf–(g₂)kasi        #; [3Pl][2Du]:@*@₂~sf–(g₂)kastek       #; 
-[3Du][2Sg]:@*@₂~sf–(g₂)katen        #; [3Du][2Pl]:@*@₂~sf–(g₂)kasi        #; [3Du][2Du]:@*@₂~sf–(g₂)kastek       #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[1Sg][2Sg]:@*@₂~sf–(g₂)kumken       #; [1Sg][2Pl]:@*@₂~sf–(g₂)kumsi       #; [1Sg][2Du]:@*@₂~sf–(g₂)kumtek       #; 
-[1Pl][2Sg]:@*@₂~sf–(g₂)kumken       #; [1Pl][2Pl]:@*@₂~sf–(g₂)kumsi       #; [1Pl][2Du]:@*@₂~sf–(g₂)kumtek       #; 
-[1Du][2Sg]:@*@₂~sf–(g₂)kumken       #; [1Du][2Pl]:@*@₂~sf–(g₂)kumsi       #; [1Du][2Du]:@*@₂~sf–(g₂)kumtek       #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|------------------------------------|-------------------------------------|--------------------------------------|
-[4Sg][2Sg]:@*@₂~sf–(g₂)kumiten      #; [4Sg][2Pl]:@*@₂~sf–(g₂)kumisi      #; [4Sg][2Du]:@*@₂~sf–(g₂)kumitek      #; 
-[4Sg][2Sg]:@*@₂~sf–(g₂)kuniten      #; [4Sg][2Pl]:@*@₂~sf–(g₂)kunisi      #; [4Sg][2Du]:@*@₂~sf–(g₂)kunitek      #; 
-[4Pl][2Sg]:@*@₂~sf–(g₂)kumiten      #; [4Pl][2Pl]:@*@₂~sf–(g₂)kumisi      #; [4Pl][2Du]:@*@₂~sf–(g₂)kumitek      #; 
-[4Pl][2Sg]:@*@₂~sf–(g₂)kuniten      #; [4Pl][2Pl]:@*@₂~sf–(g₂)kunisi      #; [4Pl][2Du]:@*@₂~sf–(g₂)kunitek      #; 
-[4Du][2Sg]:@*@₂~sf–(g₂)kumiten      #; [4Du][2Pl]:@*@₂~sf–(g₂)kumisi      #; [4Du][2Du]:@*@₂~sf–(g₂)kumitek      #; 
-[4Du][2Sg]:@*@₂~sf–(g₂)kuniten      #; [4Du][2Pl]:@*@₂~sf–(g₂)kunisi      #; [4Du][2Du]:@*@₂~sf–(g₂)kunitek      #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[3Sg][4Sg]:@*@₂~sf–(g₂)katni        #; [3Sg][4Pl]:@*@₂~sf–(g₂)kasteng     #; [3Sg][4Du]:@*@₂~sf–(g₂)kastek       #; 
-[3Pl][4Sg]:@*@₂~sf–(g₂)katni        #; [3Pl][4Pl]:@*@₂~sf–(g₂)kasteng     #; [3Pl][4Du]:@*@₂~sf–(g₂)kastek       #;
-[3Du][4Sg]:@*@₂~sf–(g₂)katni        #; [3Du][4Pl]:@*@₂~sf–(g₂)kasteng     #; [3Du][4Du]:@*@₂~sf–(g₂)kastek       #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[1Sg][4Sg]:@*@₂~sf–(g₂)kumni        #; [1Sg][4Pl]:@*@₂~sf–(g₂)kumteng     #; [1Sg][4Du]:@*@₂~sf–(g₂)kumtek       #; 
-[1Pl][4Sg]:@*@₂~sf–(g₂)kumnni       #; [1Pl][4Pl]:@*@₂~sf–(g₂)kumteng     #; [1Pl][4Du]:@*@₂~sf–(g₂)kumtek       #; 
-[1Du][4Sg]:@*@₂~sf–(g₂)kumtegnegu   #; [1Du][4Pl]:@*@₂~sf–(g₂)kumteng     #; [1Du][4Du]:@*@₂~sf–(g₂)kumtek       #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-[2Sg][4Sg]:@*@₂~sf–(g₂)kuvgu        #; [2Sg][4Pl]:@*@₂~sf–(g₂)kufki       #; [2Sg][4Du]:@*@₂~sf–(g₂)kufkek       #; 
-[2Pl][4Sg]:@*@₂~sf–(g₂)kufsigu      #; [2Pl][4Pl]:@*@₂~sf–(g₂)kufsiki     #; [2Pl][4Du]:@*@₂~sf–(g₂)kufsikek     #; 
-[2Du][4Sg]:@*@₂~sf–(g₂)kuftegnegu   #; [2Du][4Pl]:@*@₂~sf–(g₂)kuftegneki  #; [2Du][4Du]:@*@₂~sf–(g₂)kuftegnekek  #; 
-|------------------------------------|-------------------------------------|--------------------------------------|
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|                                    |                                     |                                      |
-|------------------------------------|-------------------------------------|--------------------------------------|
+|-----------------------|------------------------|-------------------------|
+[3Sg][3Sg]:agu         #; [3Sg][3Pl]:aki        #; [3Sg][3Du]:akek        #; 
+[3Pl][3Sg]:atgu        #; [3Pl][3Pl]:atki       #; [3Pl][3Du]:atkek       #; 
+[3Du][3Sg]:agnegu      #; [3Du][3Pl]:agneki     #; [3Du][3Du]:agnekek     #; 
+|-----------------------|------------------------|-------------------------|
+[1Sg][3Sg]:umkun       #; [1Sg][3Pl]:umki       #; [1Sg][3Du]:umkek       #; 
+[1Pl][3Sg]:umteggu     #; [1Pl][3Pl]:umteki     #; [1Pl][3Du]:umtekek     #; 
+[1Du][3Sg]:umtegnegu   #; [1Du][3Pl]:umtegneki  #; [1Du][3Du]:umtegnekek  #; 
+|-----------------------|------------------------|-------------------------|
+[2Sg][3Sg]:uvgu        #; [2Sg][3Pl]:ufki       #; [2Sg][3Du]:ufkek       #; 
+[2Pl][3Sg]:ufsigu      #; [2Pl][3Pl]:ufsiki     #; [2Pl][3Du]:ufsikek     #; 
+[2Du][3Sg]:uftegnegu   #; [2Du][3Pl]:uftegneki  #; [2Du][3Du]:uftegnekek  #; 
+|-----------------------|------------------------|-------------------------|
+[4Sg][3Sg]:umigu       #; [4Sg][3Pl]:umiki      #; [4Sg][3Du]:umikek      #; 
+[4Sg][3Sg]:unigu       #; [4Sg][3Pl]:uniki      #; [4Sg][3Du]:unikek      #; 
+[4Pl][3Sg]:umegteggu   #; [4Pl][3Pl]:umegteki   #; [4Pl][3Du]:umegtekek   #; 
+[4Pl][3Sg]:uyigteggu   #; [4Pl][3Pl]:uyigteki   #; [4Pl][3Du]:uyigtekek   #; 
+[4Du][3Sg]:umegnegu    #; [4Du][3Pl]:umegneki   #; [4Du][3Du]:umegnekek   #; 
+[4Du][3Sg]:uyignegu    #; [4Du][3Pl]:uyigneki   #; [4Du][3Du]:uyignekek   #; 
+|-----------------------|------------------------|-------------------------|
+|                       |                        |                         |
+|                       |                        |                         |
+|                       |                        |                         |
+|-----------------------|------------------------|-------------------------|
+[3Sg][1Sg]:anga        #; [3Sg][1Pl]:ankut      #; [3Sg][1Du]:ankung      #; 
+[3Pl][1Sg]:atnga       #; [3Pl][1Pl]:ankut      #; [3Pl][1Du]:ankung      #; 
+[3Du][1Sg]:agnenga     #; [3Du][1Pl]:ankut      #; [3Du][1Du]:ankung      #; 
+|-----------------------|------------------------|-------------------------|
+|                       |                        |                         |
+|                       |                        |                         |
+|                       |                        |                         |
+|-----------------------|------------------------|-------------------------|
+[2Sg][1Sg]:uvnga       #; [2Sg][1Pl]:ufkut      #; [2Sg][1Du]:ufkung      #; 
+[2Pl][1Sg]:ufsinga     #; [2Pl][1Pl]:ufsikut    #; [2Pl][1Du]:ufsikung    #; 
+[2Du][1Sg]:uftegnenga  #; [2Du][1Pl]:uftegnekut #; [2Du][1Du]:uftegnekung #; 
+|-----------------------|------------------------|-------------------------|
+[4Sg][1Sg]:uminga      #; [4Sg][1Pl]:umikut     #; [4Sg][1Du]:umikung     #; 
+[4Sg][1Sg]:uninga      #; [4Sg][1Pl]:unikut     #; [4Sg][1Du]:unikung     #; 
+[4Pl][1Sg]:umegtengnga #; [4Pl][1Pl]:umegtekut  #; [4Pl][1Du]:umegtekung  #; 
+[4Pl][1Sg]:uyigtengnga #; [4Pl][1Pl]:uyigtekut  #; [4Pl][1Du]:uyigtekung  #; 
+[4Du][1Sg]:umegnenga   #; [4Du][1Pl]:umegnekut  #; [4Du][1Du]:umegnekung  #; 
+[4Du][1Sg]:uyignenga   #; [4Du][1Pl]:uyignekut  #; [4Du][1Du]:uyignekung  #; 
+|-----------------------|------------------------|-------------------------|
+|                       |                        |                         |
+|                       |                        |                         |
+|                       |                        |                         |
+|-----------------------|------------------------|-------------------------|
+[3Sg][2Sg]:aten        #; [3Sg][2Pl]:asi        #; [3Sg][2Du]:astek       #; 
+[3Pl][2Sg]:aten        #; [3Pl][2Pl]:asi        #; [3Pl][2Du]:astek       #; 
+[3Du][2Sg]:aten        #; [3Du][2Pl]:asi        #; [3Du][2Du]:astek       #; 
+|-----------------------|------------------------|-------------------------|
+[1Sg][2Sg]:umken       #; [1Sg][2Pl]:umsi       #; [1Sg][2Du]:umtek       #; 
+[1Pl][2Sg]:umken       #; [1Pl][2Pl]:umsi       #; [1Pl][2Du]:umtek       #; 
+[1Du][2Sg]:umken       #; [1Du][2Pl]:umsi       #; [1Du][2Du]:umtek       #; 
+[4Sg][2Sg]:umiten      #; [4Sg][2Pl]:umisi      #; [4Sg][2Du]:umitek      #; 
+[4Sg][2Sg]:uniten      #; [4Sg][2Pl]:unisi      #; [4Sg][2Du]:unitek      #; 
+|-----------------------|------------------------|-------------------------|
+|                       |                        |                         |
+|                       |                        |                         |
+|                       |                        |                         |
+|-----------------------|------------------------|-------------------------|
+[4Pl][2Sg]:umiten      #; [4Pl][2Pl]:umisi      #; [4Pl][2Du]:umitek      #; 
+[4Pl][2Sg]:uniten      #; [4Pl][2Pl]:unisi      #; [4Pl][2Du]:unitek      #; 
+[4Du][2Sg]:umiten      #; [4Du][2Pl]:umisi      #; [4Du][2Du]:umitek      #; 
+[4Du][2Sg]:uniten      #; [4Du][2Pl]:unisi      #; [4Du][2Du]:unitek      #; 
+|-----------------------|------------------------|-------------------------|
+[3Sg][4Sg]:atni        #; [3Sg][4Pl]:asteng     #; [3Sg][4Du]:astek       #; 
+[3Pl][4Sg]:atni        #; [3Pl][4Pl]:asteng     #; [3Pl][4Du]:astek       #;
+[3Du][4Sg]:atni        #; [3Du][4Pl]:asteng     #; [3Du][4Du]:astek       #; 
+|-----------------------|------------------------|-------------------------|
+[1Sg][4Sg]:umni        #; [1Sg][4Pl]:umteng     #; [1Sg][4Du]:umtek       #; 
+[1Pl][4Sg]:umnni       #; [1Pl][4Pl]:umteng     #; [1Pl][4Du]:umtek       #; 
+[1Du][4Sg]:umtegnegu   #; [1Du][4Pl]:umteng     #; [1Du][4Du]:umtek       #; 
+|-----------------------|------------------------|-------------------------|
+[2Sg][4Sg]:uvgu        #; [2Sg][4Pl]:ufki       #; [2Sg][4Du]:ufkek       #; 
+[2Pl][4Sg]:ufsigu      #; [2Pl][4Pl]:ufsiki     #; [2Pl][4Du]:ufsikek     #; 
+[2Du][4Sg]:uftegnegu   #; [2Du][4Pl]:uftegneki  #; [2Du][4Du]:uftegnekek  #; 
+|-----------------------|------------------------|-------------------------|
+|                       |                        |                         |
+|                       |                        |                         |
+|                       |                        |                         |
+|-----------------------|------------------------|-------------------------|
 
 
 LEXICON IntransitiveSubordinative
