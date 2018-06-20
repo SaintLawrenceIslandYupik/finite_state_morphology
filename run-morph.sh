@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #FILES="analyzer_output/jac.nn.rp/lore_volume1"
-FILES="./test"
+FILES="analyzer_output/txts/ungipaghaghlanga"
 
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
@@ -13,6 +13,11 @@ for file in "$FILES"/*.in; do
 	echo "Processing ${file} to create ${output}..."
 
 	while IFS= read -r line; do
+		# TODO: Remove BOM from *.in files
+		#		Sentence needs to processed better
+		# 			Keep punctuation such as dashes (-) and apostrophes (')
+		#			Ignore numerals
+		#			English borrowings --> Keep track of them and ignore??
 		sent=$(echo "$line" | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]')
 
 		declare -a 'a=('"$sent"')'
