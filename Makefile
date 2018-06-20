@@ -1,6 +1,6 @@
 all: clean test #ess.pdf
 
-
+export LC_ALL = 'C'
 
 ess.fomabin: ess.foma *.lexc
 	foma -l ess.foma -e "save stack ess.fomabin" -s
