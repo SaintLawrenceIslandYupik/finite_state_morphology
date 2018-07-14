@@ -47,41 +47,41 @@ define MorphPhonSymbols [ "~"     | "~f"    | "~sf"   | "~h"    | "-w"    | ":" 
                           "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" | "[Cond]" ];
 
 define Lowercase "A"    -> a ,
-	             "I"    -> i ,
-				 "U"    -> u ,
-				 "E"    -> e ,
-				 "H"    -> h ,
-				 "P"    -> p ,
-				 "T"    -> t ,
-				 "K"    -> k ,
-				 "Kw"   -> kw ,
-				 "Q"    -> q ,
-				 "Qw"   -> qw,
-				 "V"    -> v ,
-				 "L"    -> l ,
-				 "Z"    -> z ,
+                 "I"    -> i ,
+                 "U"    -> u ,
+                 "E"    -> e ,
+                 "H"    -> h ,
+                 "P"    -> p ,
+                 "T"    -> t ,
+                 "K"    -> k ,
+                 "Kw"   -> kw ,
+                 "Q"    -> q ,
+                 "Qw"   -> qw,
+                 "V"    -> v ,
+                 "L"    -> l ,
+                 "Z"    -> z ,
                  "Y"    -> y , 
                  "R"    -> r ,
-				 "G"    -> g ,
-				 "W"    -> w ,
-				 "Gh"   -> gh ,
-				 "Ghw"  -> ghw ,
-				 "F"    -> f ,
-				 "Ll"   -> ll ,
-				 "S"    -> s ,
-				 "Rr"   -> rr ,
-				 "Gg"   -> gg ,
-				 "Wh"   -> wh ,
-				 "Ghh"  -> ghh ,
-				 "Ghhw" -> ghhw ,
+                 "G"    -> g ,
+                 "W"    -> w ,
+                 "Gh"   -> gh ,
+                 "Ghw"  -> ghw ,
+                 "F"    -> f ,
+                 "Ll"   -> ll ,
+                 "S"    -> s ,
+                 "Rr"   -> rr ,
+                 "Gg"   -> gg ,
+                 "Wh"   -> wh ,
+                 "Ghh"  -> ghh ,
+                 "Ghhw" -> ghhw ,
                  "M"    -> m ,
-				 "N"    -> n ,
-				 "Ng"   -> ng ,
-				 "Ngw"  -> ngw ,
-				 "Mm"   -> mm ,
-				 "Nn"   -> nn ,
-				 "Ngng" -> ngng ,
-				 "Ngngw"-> ngngw ;
+                 "N"    -> n ,
+                 "Ng"   -> ng ,
+                 "Ngw"  -> ngw ,
+                 "Mm"   -> mm ,
+                 "Nn"   -> nn ,
+                 "Ngng" -> ngng ,
+                 "Ngngw"-> ngngw ;
 
 define InsertMorphBoundary [..] -> MorphemeBoundary || Alphabet _ MorphPhonSymbols ;
 
@@ -94,11 +94,11 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet+ _ ;
 !!!                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-!define PostbaseFilter ~[ ?* {te} "[V→V]" "-" {te} "[V→V]"   ?* ];
+define PostbaseFilter ~[ ?* "@₁" "~" ":" "(u)" {te} "[V→V]" "-" "@₁" "~" ":" "(u)" {te} ?* ];
 
-!define Filters [
-	!PostbaseFilter
-!];
+define Filters [
+	PostbaseFilter
+];
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -131,23 +131,9 @@ define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"   
                      e -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "~f" V   ∘  ! e-dropping
                   "~f" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
 
-#define FinalE     [..] -> a "~h" || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-#                  [..] -> i "~h" || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-#                  [..] -> u "~h" || WordBoundary (C) u _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
-#                     e -> 0 || WordBoundary (C) a a "~h" C _ MorphemeBoundary "~f"
-#                     e -> 0 || WordBoundary (C) i i "~h" C _ MorphemeBoundary "~f"
-#                     e -> 0 || WordBoundary (C) u u "~h" C _ MorphemeBoundary "~f"
-#                     e -> 0 || WordBoundary (C) a (a)    t _ MorphemeBoundary "~f"
-#                     e -> 0 || WordBoundary (C) i (i)    t _ MorphemeBoundary "~f"
-#                     e -> 0 || WordBoundary (C) u (u)    t _ MorphemeBoundary "~f"                  
-#                     e -> 0 || WordBoundary Alphabet+ V C _ MorphemeBoundary "~f" ∘  ! e-dropping
-#                     e -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "~f" V   ∘  ! e-dropping
-#                  "~h" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
-#                  "~f" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~f
-
-define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel C e MorphemeBoundary _  ∘  ! does not drop e if e-hopping is not possible
-                    "~h" -> 0   || [ C | V ] C V C e MorphemeBoundary _                 ∘  ! does not drop e if base contains multiple syllables
-				    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _            ;  ! otherwise drop e
+define NoHopNoDropE "~h" -> 0   || WordBoundary (C) DoubleVowel [Alphabet - t] e MorphemeBoundary _  ∘ ! do not drop e if e-hopping is not
+                    "~h" -> 0   || [ C | V ] C V [Alphabet - t] e MorphemeBoundary _                 ∘ ! possible unless e is preceded by t
+                    "~h" -> "~" || WordBoundary Alphabet+ MorphemeBoundary _                         ;
 
 define InterConsonantalE "(e)" -> e || C (MorphemeBoundary) MorphPhonSymbols* _  ∘  ! convert (e) to e when following a consonant
                          "(e)" -> 0 || V ("*") ("*") (MorphemeBoundary) MorphPhonSymbols* _  ;  ! otherwise delete it
@@ -162,7 +148,7 @@ define FinalVCDrop V C -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "––
 
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoundary ("~f") "–" _   ∘
                                       [ gh | g ] -> g   || g  MorphemeBoundary       ("~f") "–" _   ∘
-									  ! The line below is unfortunately required because of orthographic undoubling conventions
+                                      ! The line below is unfortunately required because of orthographic undoubling conventions
                                       [ gh | g ] -> wh  || w   MorphemeBoundary ("~f") "–" _        ∘
                                       [ gh | g ] -> w   || w   MorphemeBoundary ("~f") "–" _        ∘
                                       [ gh | g ] -> ghw || ghw MorphemeBoundary ("~f") "–" _        ∘
@@ -173,14 +159,14 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
             C MorphemeBoundary "~f" -> MorphemeBoundary || _ "–"  ∘
        gh "*" MorphemeBoundary "~f" -> MorphemeBoundary || _ "–"  ∘
                                                C -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
-									      gh "*" -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
+                                          gh "*" -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
                                              "–" -> 0   || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*) _  ;
 
 define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols*  _      ∘
                 "~f" -> 0 || t e ("*") ("*") MorphemeBoundary ["@*" | "@₁" | "@₂"]  _    ∘
                 t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
                 t e         -> s || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, ! for postbases that begin with velars
-	     	    t e ("*")   -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, 
+                t e ("*")   -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, 
                 t e "*"     -> l || _ MorphemeBoundary "@*"                              ,, ! for weakly special te's
                 t e "*"     -> s || _ MorphemeBoundary "@*"                              ∘
                 "*" ("*")   -> 0 || t e _                                                ∘
@@ -199,7 +185,7 @@ define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* 
                 y    -> 0    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* s _        ∘
                 e    -> 0    || V t _ MorphemeBoundary "@₁" MorphPhonSymbols* [ m | v ]  ∘ ! for postbases that begin with labials
                 v    -> f    || C t e MorphemeBoundary "@₁" MorphPhonSymbols* _          ∘
-				l    -> ll   || [g | gh | ghw | r] t e MorphemeBoundary "@₁" MorphPhonSymbols* _       ∘ ! Undoubling Rule 3
+                l    -> ll   || [g | gh | ghw | r] t e MorphemeBoundary "@₁" MorphPhonSymbols* _       ∘ ! Undoubling Rule 3
                 g    -> gg   || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
                 gh   -> ghh  || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
                 ghw  -> ghhw || _ t e MorphemeBoundary "@₁" MorphPhonSymbols* [m | n | r | v | y | z]  ∘
@@ -231,12 +217,12 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(u)"   -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(ng₂)" -> "ng" || FullVowel MorphemeBoundary MorphPhonSymbols* _              ∘
                          "(a)"   -> a    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
-						 "(s)"   -> s    || V MorphemeBoundary _                                        ∘
-						 "(at)"  -> a t  || t MorphemeBoundary MorphPhonSymbols* _                      ∘
-						 "(at)"  -> a t  || [C - t] (V) MorphemeBoundary MorphPhonSymbols* _            ∘
+                         "(s)"   -> s    || V MorphemeBoundary _                                        ∘
+                         "(at)"  -> a t  || t MorphemeBoundary MorphPhonSymbols* _                      ∘
+                         "(at)"  -> a t  || [C - t] (V) MorphemeBoundary MorphPhonSymbols* _            ∘
                          "(g/t)" -> 0,
                          "(g₁)"  -> 0,
-						 "(te)"  -> 0,
+                         "(te)"  -> 0,
                          "(t)"   -> 0,
                          "(ng₁)" -> 0,
                          "(s/z)" -> 0,
@@ -249,7 +235,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(ng₂)" -> 0,
                          "(a)"   -> 0,
                          "(s)"   -> 0,
-					     "(at)"  -> 0   || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*) _  ;
+                         "(at)"  -> 0   || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*) _  ;
 
 define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordBoundary | C ] a _ ∘
                       gh MorphemeBoundary ":" e -> i MorphemeBoundary || [ WordBoundary | C ] i _ ∘
@@ -274,9 +260,9 @@ define VowelDominance a i -> i i  ∘
                       i u -> i i  ∘
                       a u -> a a  ∘
                       u a -> a a  ∘
-					  e i -> i    ∘
-					  e a -> a    ∘
-					  e u -> u    ;
+                      e i -> i    ∘
+                      e a -> a    ∘
+                      e u -> u    ;
 
 define GKa "@~–(g)ka" "[Cond]" ->  "~" "–" k || C _              ∘
            "@~–(g)ka" "[Cond]" ->      "~" k || FullVowel _      ∘
@@ -329,20 +315,20 @@ define MultipleForms GKa ∘
                      "[Opt_PRS_2Sg]" -> n       || t e _                   ∘
                      "[Opt_PRS_2Sg]" -> "~f" i  || [C - t] e _             ∘
                      "[Opt_PRS_2Sg]" -> ":" a   || FullVowel gh _          ∘
-					 "[Opt_PRS_2Sg]" -> 0                                  ∘
-					 "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ V ("*") ("*") | "(pete)fte" ] _      ∘
-					 "[Opt_FUT_Intr]" -> "~sf" "–" ghh a a || gh _         ∘
-					 "[Opt_FUT_Intr]" -> "~sf" "–" gg a a  || g  _         ∘
-					 "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ ghw | w | q ] _ ∘
-					 "[To_Feel_R_Toward]" ->       "~" "–" k e || V _      ∘
-					 "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _      ∘
+                     "[Opt_PRS_2Sg]" -> 0                                  ∘
+                     "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ V ("*") ("*") | "(pete)fte" ] _      ∘
+                     "[Opt_FUT_Intr]" -> "~sf" "–" ghh a a || gh _         ∘
+                     "[Opt_FUT_Intr]" -> "~sf" "–" gg a a  || g  _         ∘
+                     "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ ghw | w | q ] _ ∘
+                     "[To_Feel_R_Toward]" ->       "~" "–" k e || V _      ∘
+                     "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _      ∘
                      "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u || [ V ("*") ("*") | "(pete)fte" ] _     ∘
                      "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
                      "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _                                   ∘
 	                 "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C) _  ∘
                      "~f-w/-w" -> "~f" "-w"                                      ∘
-					 "~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] _    ,, 
-					 "~sf-w:(e)tgun/teggun" -> "~sf" "-w" ":" "(e)" t g u n      ∘
+                     "~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] _    ,, 
+                     "~sf-w:(e)tgun/teggun" -> "~sf" "-w" ":" "(e)" t g u n      ∘
                      "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i || [ [Alphabet - "*"] | "(pete)fte" ] _  ,,
                      "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*" || "*" _                ∘             
                      "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || [ V ("*") ("*") | "(pete)fte" ] _              ,,  
@@ -376,16 +362,16 @@ define ClusterDevoicing k  -> q  || gh _ ∘
                         y -> s || _ [Stop | VoicelessFricative | VoicelessNasal] ∘
                         y -> s || [Stop | VoicelessFricative | VoicelessNasal] _ ∘
                         t [z | y] -> s                                           ∘ ! tz/ty cluster becomes s
-						v -> f || Stop _                                         ∘
-						v -> f || _ Stop                                         ∘
-						t v -> f || C _                                          ∘
-						v -> f || k _                                            ∘
-						z -> s || Stop _                                         ;
+                        v -> f || Stop _                                         ∘
+                        v -> f || _ Stop                                         ∘
+                        t v -> f || C _                                          ∘
+                        v -> f || k _                                            ∘
+                        z -> s || Stop _                                         ;
 
 define Undoubling ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ [Stop | f | s] ∘   
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [Stop | f | s | h] _ ∘   
-		          mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | h] _ ∘
-				  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ ll ∘ 
+                  mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [Stop | f | s | h] _ ∘
+                  ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || _ ll ∘ 
                   ll -> l, rr -> r, gg -> g, ghh -> gh, ghhw -> ghw || [ll| rr | gg | ghh |ghhw] _ ∘ 
                   mm -> m, nn -> n, ngng -> ng, ngngw -> ngw        || [ll| rr | gg | ghh |ghhw] _ ;
 
@@ -395,11 +381,11 @@ def BaseFinalEndings ghw      -> qw ,
                      w        -> kw ,
                      t e      -> t a  ||   _ (Enclitic) WordBoundary  , 
                      t e      -> n    || V _ (Enclitic) WordBoundary  ∘
-					 e        -> a    ||   _            WordBoundary  ∘
-				     gh q     -> q    ||   _ (Enclitic) WordBoundary  ∘
-					 t        -> n,
-					 ll       -> l,
-					 k        -> g    ||   WordBoundary Alphabet+ _ "ng" u q WordBoundary ;
+                     e        -> a    ||   _            WordBoundary  ∘
+                     gh q     -> q    ||   _ (Enclitic) WordBoundary  ∘
+                     t        -> n,
+                     ll       -> l,
+                     k        -> g    ||   WordBoundary Alphabet+ _ "ng" u q WordBoundary ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -409,144 +395,145 @@ def BaseFinalEndings ghw      -> qw ,
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 define Rules [
+	Filters                        ∘
     Lexicon                        ∘
-	Lowercase                      ∘
-	MultipleForms                  ∘
-	InsertMorphBoundary            ∘
-	TripleVowelCluster             ∘
-	!! ITERATION 1 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    Lowercase                      ∘
+    MultipleForms                  ∘
+    InsertMorphBoundary            ∘
+    TripleVowelCluster             ∘
+    !! ITERATION 1 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 2 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    CleanupMorphBoundary           ∘
+    !! ITERATION 2 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 3 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    CleanupMorphBoundary           ∘
+    !! ITERATION 3 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 4 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    CleanupMorphBoundary           ∘
+    !! ITERATION 4 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 5 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    CleanupMorphBoundary           ∘
+    !! ITERATION 5 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 6 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    CleanupMorphBoundary           ∘
+    !! ITERATION 6 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 7 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    CleanupMorphBoundary           ∘
+    !! ITERATION 7 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	!! ITERATION 8 !!
-	ResolveAllomorphy              ∘
-	ModifyTE                       ∘
-	NoHopNoDropE                   ∘
+    CleanupMorphBoundary           ∘
+    !! ITERATION 8 !!
+    ResolveAllomorphy              ∘
+    ModifyTE                       ∘
+    NoHopNoDropE                   ∘
     SemiAndFinalE                  ∘
-	SemiFinalE                     ∘
-	FinalVCDrop                    ∘
-	FinalConsonantDropAssimilation ∘
-	WeakFinalC                     ∘
-	UnmarkStrongGh                 ∘
-	InterConsonantalE              ∘
+    SemiFinalE                     ∘
+    FinalVCDrop                    ∘
+    FinalConsonantDropAssimilation ∘
+    WeakFinalC                     ∘
+    UnmarkStrongGh                 ∘
+    InterConsonantalE              ∘
     UvularDropping                 ∘
-	VelarUvularRounding            ∘
+    VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-	CleanupMorphBoundary           ∘
-	TripleVowelCluster             ∘
-	ClusterDevoicing               ∘
-	BaseFinalEndings               ∘
-	Undoubling
-] ;
+    CleanupMorphBoundary           ∘
+    TripleVowelCluster             ∘
+    ClusterDevoicing               ∘
+    BaseFinalEndings               ∘
+    Undoubling
+];
 
 
 define Grammar [ Exceptions .P. Rules ] ;

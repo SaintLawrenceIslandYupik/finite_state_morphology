@@ -293,7 +293,7 @@ leganqun              	#; ! as though; good job!
 lengerit              	#; ! every time; always; it will happen (for the good)
 lengetaq              	#; ! maybe; might; likely; I think
 llaaghan              	#; ! it's true; certainly; surely; really
-llaaghanwa              #; ! ! and so
+llaaghanwa              #; ! and so
 llaaghanwha           	#; ! and then
 llaaghinaan           	#; ! good thing!
 llangaqa              	#; ! looks as if; looks like; sounds like; apparently
@@ -371,7 +371,6 @@ qakiima               	#; ! oh no, not again!
 qakiimallu            	#; ! oh no, not again!
 qakima                	#; ! oh no, not again
 qakimallu             	#; ! oh no, not again
-qakun                 	#; ! when (in the future)
 qakuqwaaqu          	#; ! sometime later
 qakuqwaaqun         	#; ! sometime later
 qamagunginaq          	#; ! in one's mind; inwardly; without expressing it; to oneself
@@ -554,23 +553,23 @@ Yupigestun            	#; ! in the Yupik language
 
 LEXICON Interrogative 
 
-kina             #; ! who?
-kinkut           #; ! who? (plural)
-kitum            #; ! whose?
-na               #; ! to be where?
-naken            #; ! from where?
-nani             #; ! (at) where?
-naten            #; ! how?
-navek            #; ! to where?
-qafsina          #; ! how many?
-qakun            #; ! when? (future)
-qavngaq          #; ! when? (past)
-sa               #; ! what?
-saam             #; ! what?
-sameng           #; ! what?
-sangameng        #; ! why? (focused on 3rd person plural subject of verb)
-sangami          #; ! why? (focused on 3rd person singular subject of verb)
-sangan           #; ! why? (in general)
+kina             InterrogativeEnclitic; ! who?
+kinkut           InterrogativeEnclitic; ! who? (plural)
+kitum            InterrogativeEnclitic; ! whose?
+na               InterrogativeEnclitic; ! to be where?
+naken            InterrogativeEnclitic; ! from where?
+nani             InterrogativeEnclitic; ! (at) where?
+naten            InterrogativeEnclitic; ! how?
+navek            InterrogativeEnclitic; ! to where?
+qafsina          InterrogativeEnclitic; ! how many?
+qakun            InterrogativeEnclitic; ! when? (future)
+qavngaq          InterrogativeEnclitic; ! when? (past)
+sa               InterrogativeEnclitic; ! what?
+saam             InterrogativeEnclitic; ! what?
+sameng           InterrogativeEnclitic; ! what?
+sangameng        InterrogativeEnclitic; ! why? (focused on 3rd person plural subject of verb)
+sangami          InterrogativeEnclitic; ! why? (focused on 3rd person singular subject of verb)
+sangan           InterrogativeEnclitic; ! why? (in general)
 
 kina             NounPostbase1; ! who?
 kinangagh        NounPostbase1; ! who? (expanded form for 3rd person interrogatives)
@@ -691,7 +690,7 @@ agepsugh               	NounPostbase1; ! smoke; steam
 agghi                  	NounPostbase1; ! conference
 agghista               	NounPostbase1; ! commander
 aghallegtagh           	NounPostbase1; ! doctor
-aghanghuuragh          	NounPostbase1; ! amulet attached on to belt or clothing;  medicinal plant sewn on to animal skin and attached to one's belt
+aghanghuuragh          	NounPostbase1; ! amulet attached on to belt or clothing; medicinal plant sewn on to animal skin and attached to one's belt
 agha                   	NounPostbase1; ! amulet; medicine; aspirin
 aghavaghllag           	NounPostbase1; ! clear weather
 aghavragh              	NounPostbase1; ! Alaska poppy (Papaver alaskanum)
@@ -810,7 +809,7 @@ aghyughsighagh         	NounPostbase1; ! aged food
 Agigsaghvig            	NounPostbase1; ! site in Chukotka
 agigseghwaaghvig       	NounPostbase1; ! lookout; vantage point; viewpoint
 agigselghagh           	NounPostbase1; ! high place for observation
-agi                    	NounPostbase1; ! sisterin-law (either brother's wife or wife's brother) of a man; brother-in-law (either sister's husband or husband's sister) of a woman
+agi                    	NounPostbase1; ! sister-in-law (either brother's wife or wife's brother) of a man; brother-in-law (either sister's husband or husband's sister) of a woman
 agipanegh              	NounPostbase1; ! hole
 agitagh                	NounPostbase1; ! open-mouthed
 aglaqugh               	NounPostbase1; ! socket for a mast of ship
@@ -1333,7 +1332,6 @@ awazigh                	NounPostbase1; ! relative (kin); fellow clan member
 awenkullagh            	NounPostbase1; ! thing that has been used or kept for quite a while
 awenrale              	NounPostbase1; ! relative (kin); fellow clan member
 awergha                	NounPostbase1; ! valuable pelt; furbearer
-awete                  	NounPostbase1; ! usually; often; intermittently; frequently
 awiim                  	NounPostbase1; ! probably
 awiinawi               	NounPostbase1; ! so it's true
 awii             	    NounPostbase1; ! is that so; now I see; now I realize
@@ -1582,7 +1580,7 @@ guygungwaagh           	NounPostbase1; ! small house; cabin
 guygu                  	NounPostbase1; ! summer house; modern frame building
 haanta                 	NounPostbase1; ! allterrain vehicle (ATV)
 haatware              	NounPostbase1; ! hot water
-!Hotel                  	NounPostbase1; ! site at cliffs on the southeast side of Myghapowit Mtn. on St. Lawrence Is. 
+!Hotel                  NounPostbase1; ! site at cliffs on the southeast side of Myghapowit Mtn. on St. Lawrence Is. 
 huuse                 	NounPostbase1; ! hose
 ifkaasigh              	NounPostbase1; ! parachute
 igaasigh               	NounPostbase1; ! pencil; pen; writing device
@@ -2577,7 +2575,8 @@ mellug                 	NounPostbase1; ! rude person
 mellugraagh            	NounPostbase1; ! bad water
 mellugtuqute           	NounPostbase1; ! button part of hair beads
 mellutagh              	NounPostbase1; ! plug; cover for an opening
-melngu, melngugh       	NounPostbase1; ! beetle; water beetle
+melngu                  NounPostbase1; ! beetle; water beetle
+melngugh                NounPostbase1; ! beetle; water beetle
 melqiighagh            	NounPostbase1; ! dehaired skin (especially, of bearded seal)
 melqiite               	NounPostbase1; ! rock used to pound sea mammal skin to remove the hair
 melqiiqagh             	NounPostbase1; ! dehaired skin (especially, of bearded seal)
@@ -2660,7 +2659,7 @@ mughnegh               	NounPostbase1; ! sealskin strip folded and sewn between 
 mughniqagh*            	NounPostbase1; ! high sealskin boot with hair side in, used in summer
 Mughugyig              	NounPostbase1; ! Booshu Camp on  Moghoweyik R.  on St. Lawrence Is.
 mughunniigh            	NounPostbase1; ! season or activity of hunting by traveling over the sea on
-mughunniighta          	NounPostbase1; ! hunter on the sea ice
+mughunniighte          	NounPostbase1; ! hunter on the sea ice
 mughuyanegh            	NounPostbase1; ! deep snow
 mugu                   	NounPostbase1; ! group of travelers in the distance; caravan seen in the distance
 mugurite               	NounPostbase1; ! track(s) of wandering reindeer herders
@@ -3758,7 +3757,6 @@ qiiptaasigh            	NounPostbase1; ! pole used for gathering kelp
 qiiptagh               	NounPostbase1; ! kelp that is gathered by being wound on a special pole
 qiipuumaraghugh        	NounPostbase1; ! curlyhaired person
 qiiqrugh               	NounPostbase1; ! thing that is frozen fast to the ground
-qiiqw                	NounPostbase1; ! cough; cold (respiratory illness)
 qiivyaghagh            	NounPostbase1; ! bend in the trail
 qiiyngu                	NounPostbase1; ! long reindeer hair from under the chin
 Qikeghtapaget          	NounPostbase1; ! islands in western part of Koozata Lagoon (Naayvaghllak) on St. Lawrence Is.
@@ -5274,8 +5272,8 @@ LEXICON NounPostbase1
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase2;
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase2; ! TODO: There is a discrepancy in Jacobson v. Badten regarding
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase2; !       the morphophonological processes of this postbase
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase2;
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase2;
 -–ghhagh*[N→N]:–ghhagh*                  NounPostbase2; ! TODO: Used with C-ending bases only, ~fngiighhagh* with V-ending bases
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase2; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
 -–ghllag[N→N]:–ghllag                    NounPostbase2;
@@ -5310,23 +5308,23 @@ LEXICON NounPostbase1
 -~fmii[N→N]:~fmii                        NounPostbase2;
 -~fmig[N→N]:~fmig                        NounPostbase2;
 -~fmiigh[N→N]:~fmiigh                    NounPostbase2;
--–mlaagh[N→N]:–mlaagh                    NounPostbase2; ! TODO: Are there no conditions on the following postbases
--–mraagh[N→N]:–mraagh                    NounPostbase2;         which are documented as identical?
+-–mlaagh[N→N]:–mlaagh                    NounPostbase2;
+-–mraagh[N→N]:–mraagh                    NounPostbase2;
 -–mzaagh[N→N]:–mzaagh                    NounPostbase2;
--–mleghagh[N→N]:–mleghagh                NounPostbase2;         Badten also does not provide example words
--–mreghagh[N→N]:–mreghagh                NounPostbase2;         containing these postbases. 
+-–mleghagh[N→N]:–mleghagh                NounPostbase2;
+-–mreghagh[N→N]:–mreghagh                NounPostbase2;
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase2;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase2;
 -–vleghagh[N→N]:–vleghagh                NounPostbase2;
 -–vraagh[N→N]:–vraagh                    NounPostbase2;
 -–vreghagh[N→N]:–vreghagh                NounPostbase2;
 -–vzaagh[N→N]:–vzaagh                    NounPostbase2;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase2;         End.
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase2;
 -–msiigh[N→N]:–msiigh                    NounPostbase2;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase2;
--–ngeltagh[N→N]:–ngeltagh                NounPostbase2; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase2; !       documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase2; !       End.
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase2;
+-–ngertagh[N→N]:–ngertagh                NounPostbase2;
+-–ngestagh[N→N]:–ngestagh                NounPostbase2;
 -~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase2;
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase2;
 -ni[N→N]:ni                              NounPostbase2;
@@ -5360,8 +5358,8 @@ LEXICON NounPostbase1
 -tagh[N→N]:tagh                          NounPostbase2;
 -tuqagh[N→N]:tuqagh                      NounPostbase2;
 -–tuqagh[N→N]:–tuqagh                    NounPostbase2;
--–vyiigh[N→N]:–vyiigh                    NounPostbase2; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[N→N]:–vziigh                    NounPostbase2;         documented as identical?
+-–vyiigh[N→N]:–vyiigh                    NounPostbase2;
+-–vziigh[N→N]:–vziigh                    NounPostbase2;
 -yage[N→N]:yage                          NounPostbase2;
 -–yaagh[N→N]:–yaagh                      NounPostbase2;
 
@@ -5506,8 +5504,8 @@ LEXICON NounPostbase2
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase3;
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase3; ! TODO: There is a discrepancy in Jacobson v. Badten regarding
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase3; !       the morphophonological processes of this postbase
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase3;
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase3;
 -–ghhagh*[N→N]:–ghhagh*                  NounPostbase3; ! TODO: Used with C-ending bases only, ~fngiighhagh* with V-ending bases
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase3; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
 -–ghllag[N→N]:–ghllag                    NounPostbase3;
@@ -5542,23 +5540,23 @@ LEXICON NounPostbase2
 -~fmii[N→N]:~fmii                        NounPostbase3;
 -~fmig[N→N]:~fmig                        NounPostbase3;
 -~fmiigh[N→N]:~fmiigh                    NounPostbase3;
--–mlaagh[N→N]:–mlaagh                    NounPostbase3; ! TODO: Are there no conditions on the following postbases
--–mraagh[N→N]:–mraagh                    NounPostbase3;         which are documented as identical?
+-–mlaagh[N→N]:–mlaagh                    NounPostbase3;
+-–mraagh[N→N]:–mraagh                    NounPostbase3;
 -–mzaagh[N→N]:–mzaagh                    NounPostbase3;
--–mleghagh[N→N]:–mleghagh                NounPostbase3;         Badten also does not provide example words
--–mreghagh[N→N]:–mreghagh                NounPostbase3;         containing these postbases. 
+-–mleghagh[N→N]:–mleghagh                NounPostbase3;
+-–mreghagh[N→N]:–mreghagh                NounPostbase3;
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase3;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase3;
 -–vleghagh[N→N]:–vleghagh                NounPostbase3;
 -–vraagh[N→N]:–vraagh                    NounPostbase3;
 -–vreghagh[N→N]:–vreghagh                NounPostbase3;
 -–vzaagh[N→N]:–vzaagh                    NounPostbase3;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase3;         End.
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase3;
 -–msiigh[N→N]:–msiigh                    NounPostbase3;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase3;
--–ngeltagh[N→N]:–ngeltagh                NounPostbase3; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase3; !       documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase3; !       End.
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase3;
+-–ngertagh[N→N]:–ngertagh                NounPostbase3;
+-–ngestagh[N→N]:–ngestagh                NounPostbase3;
 -~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase3;
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase3;
 -ni[N→N]:ni                              NounPostbase3;
@@ -5592,8 +5590,8 @@ LEXICON NounPostbase2
 -tagh[N→N]:tagh                          NounPostbase3;
 -tuqagh[N→N]:tuqagh                      NounPostbase3;
 -–tuqagh[N→N]:–tuqagh                    NounPostbase3;
--–vyiigh[N→N]:–vyiigh                    NounPostbase3; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[N→N]:–vziigh                    NounPostbase3;         documented as identical?
+-–vyiigh[N→N]:–vyiigh                    NounPostbase3;
+-–vziigh[N→N]:–vziigh                    NounPostbase3;
 -yage[N→N]:yage                          NounPostbase3;
 -–yaagh[N→N]:–yaagh                      NounPostbase3;
 
@@ -5731,8 +5729,8 @@ LEXICON NounPostbase3
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase4;
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase4; ! TODO: There is a discrepancy in Jacobson v. Badten regarding
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase4; !       the morphophonological processes of this postbase
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase4;
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase4;
 -–ghhagh*[N→N]:–ghhagh*                  NounPostbase4; ! TODO: Used with C-ending bases only, ~fngiighhagh* with V-ending bases
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase4; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
 -–ghllag[N→N]:–ghllag                    NounPostbase4;
@@ -5767,23 +5765,23 @@ LEXICON NounPostbase3
 -~fmii[N→N]:~fmii                        NounPostbase4;
 -~fmig[N→N]:~fmig                        NounPostbase4;
 -~fmiigh[N→N]:~fmiigh                    NounPostbase4;
--–mlaagh[N→N]:–mlaagh                    NounPostbase4; ! TODO: Are there no conditions on the following postbases
--–mraagh[N→N]:–mraagh                    NounPostbase4;         which are documented as identical?
+-–mlaagh[N→N]:–mlaagh                    NounPostbase4;
+-–mraagh[N→N]:–mraagh                    NounPostbase4;
 -–mzaagh[N→N]:–mzaagh                    NounPostbase4;
--–mleghagh[N→N]:–mleghagh                NounPostbase4;         Badten also does not provide example words
--–mreghagh[N→N]:–mreghagh                NounPostbase4;         containing these postbases. 
+-–mleghagh[N→N]:–mleghagh                NounPostbase4;
+-–mreghagh[N→N]:–mreghagh                NounPostbase4;
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase4;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase4;
 -–vleghagh[N→N]:–vleghagh                NounPostbase4;
 -–vraagh[N→N]:–vraagh                    NounPostbase4;
 -–vreghagh[N→N]:–vreghagh                NounPostbase4;
 -–vzaagh[N→N]:–vzaagh                    NounPostbase4;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase4;         End.
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase4;
 -–msiigh[N→N]:–msiigh                    NounPostbase4;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase4;
--–ngeltagh[N→N]:–ngeltagh                NounPostbase4; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase4; !       documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase4; !       End.
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase4;
+-–ngertagh[N→N]:–ngertagh                NounPostbase4;
+-–ngestagh[N→N]:–ngestagh                NounPostbase4;
 -~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase4;
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase4;
 -ni[N→N]:ni                              NounPostbase4;
@@ -5817,8 +5815,8 @@ LEXICON NounPostbase3
 -tagh[N→N]:tagh                          NounPostbase4;
 -tuqagh[N→N]:tuqagh                      NounPostbase4;
 -–tuqagh[N→N]:–tuqagh                    NounPostbase4;
--–vyiigh[N→N]:–vyiigh                    NounPostbase4; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[N→N]:–vziigh                    NounPostbase4;         documented as identical?
+-–vyiigh[N→N]:–vyiigh                    NounPostbase4;
+-–vziigh[N→N]:–vziigh                    NounPostbase4;
 -yage[N→N]:yage                          NounPostbase4;
 -–yaagh[N→N]:–yaagh                      NounPostbase4;
 
@@ -5956,8 +5954,8 @@ LEXICON NounPostbase4
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase5;
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase5; ! TODO: There is a discrepancy in Jacobson v. Badten regarding
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase5; !       the morphophonological processes of this postbase
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase5;
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase5;
 -–ghhagh*[N→N]:–ghhagh*                  NounPostbase5; ! TODO: Used with C-ending bases only, ~fngiighhagh* with V-ending bases
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase5; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
 -–ghllag[N→N]:–ghllag                    NounPostbase5;
@@ -5992,23 +5990,23 @@ LEXICON NounPostbase4
 -~fmii[N→N]:~fmii                        NounPostbase5;
 -~fmig[N→N]:~fmig                        NounPostbase5;
 -~fmiigh[N→N]:~fmiigh                    NounPostbase5;
--–mlaagh[N→N]:–mlaagh                    NounPostbase5; ! TODO: Are there no conditions on the following postbases
--–mraagh[N→N]:–mraagh                    NounPostbase5;         which are documented as identical?
+-–mlaagh[N→N]:–mlaagh                    NounPostbase5;
+-–mraagh[N→N]:–mraagh                    NounPostbase5;
 -–mzaagh[N→N]:–mzaagh                    NounPostbase5;
--–mleghagh[N→N]:–mleghagh                NounPostbase5;         Badten also does not provide example words
--–mreghagh[N→N]:–mreghagh                NounPostbase5;         containing these postbases. 
+-–mleghagh[N→N]:–mleghagh                NounPostbase5;
+-–mreghagh[N→N]:–mreghagh                NounPostbase5;
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase5;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase5;
 -–vleghagh[N→N]:–vleghagh                NounPostbase5;
 -–vraagh[N→N]:–vraagh                    NounPostbase5;
 -–vreghagh[N→N]:–vreghagh                NounPostbase5;
 -–vzaagh[N→N]:–vzaagh                    NounPostbase5;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase5;         End.
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase5;
 -–msiigh[N→N]:–msiigh                    NounPostbase5;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase5;
--–ngeltagh[N→N]:–ngeltagh                NounPostbase5; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase5; !       documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase5; !       End.
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase5;
+-–ngertagh[N→N]:–ngertagh                NounPostbase5;
+-–ngestagh[N→N]:–ngestagh                NounPostbase5;
 -~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase5;
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase5;
 -ni[N→N]:ni                              NounPostbase5;
@@ -6042,8 +6040,8 @@ LEXICON NounPostbase4
 -tagh[N→N]:tagh                          NounPostbase5;
 -tuqagh[N→N]:tuqagh                      NounPostbase5;
 -–tuqagh[N→N]:–tuqagh                    NounPostbase5;
--–vyiigh[N→N]:–vyiigh                    NounPostbase5; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[N→N]:–vziigh                    NounPostbase5;         documented as identical?
+-–vyiigh[N→N]:–vyiigh                    NounPostbase5;
+-–vziigh[N→N]:–vziigh                    NounPostbase5;
 -yage[N→N]:yage                          NounPostbase5;
 -–yaagh[N→N]:–yaagh                      NounPostbase5;
 
@@ -6181,8 +6179,8 @@ LEXICON NounPostbase5
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase6;
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase6; ! TODO: There is a discrepancy in Jacobson v. Badten regarding
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase6; !       the morphophonological processes of this postbase
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase6;
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase6;
 -–ghhagh*[N→N]:–ghhagh*                  NounPostbase6; ! TODO: Used with C-ending bases only, ~fngiighhagh* with V-ending bases
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase6; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
 -–ghllag[N→N]:–ghllag                    NounPostbase6;
@@ -6217,23 +6215,23 @@ LEXICON NounPostbase5
 -~fmii[N→N]:~fmii                        NounPostbase6;
 -~fmig[N→N]:~fmig                        NounPostbase6;
 -~fmiigh[N→N]:~fmiigh                    NounPostbase6;
--–mlaagh[N→N]:–mlaagh                    NounPostbase6; ! TODO: Are there no conditions on the following postbases
--–mraagh[N→N]:–mraagh                    NounPostbase6;         which are documented as identical?
+-–mlaagh[N→N]:–mlaagh                    NounPostbase6;
+-–mraagh[N→N]:–mraagh                    NounPostbase6;
 -–mzaagh[N→N]:–mzaagh                    NounPostbase6;
--–mleghagh[N→N]:–mleghagh                NounPostbase6;         Badten also does not provide example words
--–mreghagh[N→N]:–mreghagh                NounPostbase6;         containing these postbases. 
+-–mleghagh[N→N]:–mleghagh                NounPostbase6;
+-–mreghagh[N→N]:–mreghagh                NounPostbase6;
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase6;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase6;
 -–vleghagh[N→N]:–vleghagh                NounPostbase6;
 -–vraagh[N→N]:–vraagh                    NounPostbase6;
 -–vreghagh[N→N]:–vreghagh                NounPostbase6;
 -–vzaagh[N→N]:–vzaagh                    NounPostbase6;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase6;         End.
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase6;
 -–msiigh[N→N]:–msiigh                    NounPostbase6;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase6;
--–ngeltagh[N→N]:–ngeltagh                NounPostbase6; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase6; !       documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase6; !       End.
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase6;
+-–ngertagh[N→N]:–ngertagh                NounPostbase6;
+-–ngestagh[N→N]:–ngestagh                NounPostbase6;
 -~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase6;
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase6;
 -ni[N→N]:ni                              NounPostbase6;
@@ -6267,8 +6265,8 @@ LEXICON NounPostbase5
 -tagh[N→N]:tagh                          NounPostbase6;
 -tuqagh[N→N]:tuqagh                      NounPostbase6;
 -–tuqagh[N→N]:–tuqagh                    NounPostbase6;
--–vyiigh[N→N]:–vyiigh                    NounPostbase6; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[N→N]:–vziigh                    NounPostbase6;         documented as identical?
+-–vyiigh[N→N]:–vyiigh                    NounPostbase6;
+-–vziigh[N→N]:–vziigh                    NounPostbase6;
 -yage[N→N]:yage                          NounPostbase6;
 -–yaagh[N→N]:–yaagh                      NounPostbase6;
 
@@ -6406,8 +6404,8 @@ LEXICON NounPostbase6
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounPostbase7;
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase7; ! TODO: There is a discrepancy in Jacobson v. Badten regarding
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase7; !       the morphophonological processes of this postbase
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase7;
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase7;
 -–ghhagh*[N→N]:–ghhagh*                  NounPostbase7; ! TODO: Used with C-ending bases only, ~fngiighhagh* with V-ending bases
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounPostbase7; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
 -–ghllag[N→N]:–ghllag                    NounPostbase7;
@@ -6442,23 +6440,23 @@ LEXICON NounPostbase6
 -~fmii[N→N]:~fmii                        NounPostbase7;
 -~fmig[N→N]:~fmig                        NounPostbase7;
 -~fmiigh[N→N]:~fmiigh                    NounPostbase7;
--–mlaagh[N→N]:–mlaagh                    NounPostbase7; ! TODO: Are there no conditions on the following postbases
--–mraagh[N→N]:–mraagh                    NounPostbase7;         which are documented as identical?
+-–mlaagh[N→N]:–mlaagh                    NounPostbase7;
+-–mraagh[N→N]:–mraagh                    NounPostbase7;
 -–mzaagh[N→N]:–mzaagh                    NounPostbase7;
--–mleghagh[N→N]:–mleghagh                NounPostbase7;         Badten also does not provide example words
--–mreghagh[N→N]:–mreghagh                NounPostbase7;         containing these postbases. 
+-–mleghagh[N→N]:–mleghagh                NounPostbase7;
+-–mreghagh[N→N]:–mreghagh                NounPostbase7;
 -–mzeghagh[N→N]:–mzeghagh                NounPostbase7;
 -–vlaagh[N→N]:–vlaagh                    NounPostbase7;
 -–vleghagh[N→N]:–vleghagh                NounPostbase7;
 -–vraagh[N→N]:–vraagh                    NounPostbase7;
 -–vreghagh[N→N]:–vreghagh                NounPostbase7;
 -–vzaagh[N→N]:–vzaagh                    NounPostbase7;
--–vzeghagh[N→N]:–vzeghagh                NounPostbase7;         End.
+-–vzeghagh[N→N]:–vzeghagh                NounPostbase7;
 -–msiigh[N→N]:–msiigh                    NounPostbase7;
 -–msuggagh*[N→N]:–msuggagh*              NounPostbase7;
--–ngeltagh[N→N]:–ngeltagh                NounPostbase7; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounPostbase7; !       documented as identical?
--–ngestagh[N→N]:–ngestagh                NounPostbase7; !       End.
+-–ngeltagh[N→N]:–ngeltagh                NounPostbase7;
+-–ngertagh[N→N]:–ngertagh                NounPostbase7;
+-–ngestagh[N→N]:–ngestagh                NounPostbase7;
 -~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounPostbase7;
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounPostbase7;
 -ni[N→N]:ni                              NounPostbase7;
@@ -6492,8 +6490,8 @@ LEXICON NounPostbase6
 -tagh[N→N]:tagh                          NounPostbase7;
 -tuqagh[N→N]:tuqagh                      NounPostbase7;
 -–tuqagh[N→N]:–tuqagh                    NounPostbase7;
--–vyiigh[N→N]:–vyiigh                    NounPostbase7; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[N→N]:–vziigh                    NounPostbase7;         documented as identical?
+-–vyiigh[N→N]:–vyiigh                    NounPostbase7;
+-–vziigh[N→N]:–vziigh                    NounPostbase7;
 -yage[N→N]:yage                          NounPostbase7;
 -–yaagh[N→N]:–yaagh                      NounPostbase7;
 
@@ -6631,8 +6629,8 @@ LEXICON NounPostbase7
 -~sf–ghhalek[how.N][N→XCLM]:~sf–ghhalek  #;
 
 -e[N→N]:e                                NounInfl;
--~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounInfl; ! TODO: There is a discrepancy in Jacobson v. Badten regarding
--~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounInfl; !       the morphophonological processes of this postbase
+-~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounInfl;
+-~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounInfl;
 -–ghhagh*[N→N]:–ghhagh*                  NounInfl; ! TODO: Used with C-ending bases only, ~fngiighhagh* with V-ending bases
 -~fngiighhagh*[N→N]:~fngiighhagh*        NounInfl; ! TODO: Used with V-ending bases only, ghhagh* with C-ending bases
 -–ghllag[N→N]:–ghllag                    NounInfl;
@@ -6667,23 +6665,23 @@ LEXICON NounPostbase7
 -~fmii[N→N]:~fmii                        NounInfl;
 -~fmig[N→N]:~fmig                        NounInfl;
 -~fmiigh[N→N]:~fmiigh                    NounInfl;
--–mlaagh[N→N]:–mlaagh                    NounInfl; ! TODO: Are there no conditions on the following postbases
--–mraagh[N→N]:–mraagh                    NounInfl;         which are documented as identical?
+-–mlaagh[N→N]:–mlaagh                    NounInfl;
+-–mraagh[N→N]:–mraagh                    NounInfl;
 -–mzaagh[N→N]:–mzaagh                    NounInfl;
--–mleghagh[N→N]:–mleghagh                NounInfl;         Badten also does not provide example words
--–mreghagh[N→N]:–mreghagh                NounInfl;         containing these postbases. 
+-–mleghagh[N→N]:–mleghagh                NounInfl;
+-–mreghagh[N→N]:–mreghagh                NounInfl;
 -–mzeghagh[N→N]:–mzeghagh                NounInfl;
 -–vlaagh[N→N]:–vlaagh                    NounInfl;
 -–vleghagh[N→N]:–vleghagh                NounInfl;
 -–vraagh[N→N]:–vraagh                    NounInfl;
 -–vreghagh[N→N]:–vreghagh                NounInfl;
 -–vzaagh[N→N]:–vzaagh                    NounInfl;
--–vzeghagh[N→N]:–vzeghagh                NounInfl;         End.
+-–vzeghagh[N→N]:–vzeghagh                NounInfl;
 -–msiigh[N→N]:–msiigh                    NounInfl;
 -–msuggagh*[N→N]:–msuggagh*              NounInfl;
--–ngeltagh[N→N]:–ngeltagh                NounInfl; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[N→N]:–ngertagh                NounInfl; !       documented as identical?
--–ngestagh[N→N]:–ngestagh                NounInfl; !       End.
+-–ngeltagh[N→N]:–ngeltagh                NounInfl;
+-–ngertagh[N→N]:–ngertagh                NounInfl;
+-–ngestagh[N→N]:–ngestagh                NounInfl;
 -~%:(ng₁)inagh*[N→N]:~%:(ng₁)inagh*      NounInfl;
 -~%:(ng₁)iitagh[N→N]:~%:(ng₁)iitagh      NounInfl;
 -ni[N→N]:ni                              NounInfl;
@@ -6717,8 +6715,8 @@ LEXICON NounPostbase7
 -tagh[N→N]:tagh                          NounInfl;
 -tuqagh[N→N]:tuqagh                      NounInfl;
 -–tuqagh[N→N]:–tuqagh                    NounInfl;
--–vyiigh[N→N]:–vyiigh                    NounInfl; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[N→N]:–vziigh                    NounInfl;         documented as identical?
+-–vyiigh[N→N]:–vyiigh                    NounInfl;
+-–vziigh[N→N]:–vziigh                    NounInfl;
 -yage[N→N]:yage                          NounInfl;
 -–yaagh[N→N]:–yaagh                      NounInfl;
 
@@ -6809,14 +6807,14 @@ LEXICON NounInfl
 ! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
 [N][Abs][3SgPoss][SgPosd]:~h%:(ng₁)a  EncliticOrEnd; [N][Abs][3SgPoss][PlPosd]:~h%:(ng₁)i    EncliticOrEnd; [N][Abs][3SgPoss][DuPosd]:~h-wkek         EncliticOrEnd; ! 3SG possessor |
 [N][Abs][3PlPoss][SgPosd]:~h%:(ng₁)at EncliticOrEnd; [N][Abs][3PlPoss][PlPosd]:~h%:(ng₁)it   EncliticOrEnd; [N][Abs][3PlPoss][DuPosd]:~sf-w%:(e)gket  EncliticOrEnd; ! 3PL possessor |
-[N][Abs][3DuPoss][SgPosd]:~h%:(ng₁)ak  EncliticOrEnd; [N][Abs][3DuPoss][PlPosd]:~h%:(ng₁)ik    EncliticOrEnd; [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  EncliticOrEnd; ! 3Du possessor |
+[N][Abs][3DuPoss][SgPosd]:~h%:(ng₁)ak EncliticOrEnd; [N][Abs][3DuPoss][PlPosd]:~h%:(ng₁)ik   EncliticOrEnd; [N][Abs][3DuPoss][DuPosd]:~sf-w%:(e)gkek  EncliticOrEnd; ! 3Du possessor |
 ! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
 [N][Abs][1SgPoss][SgPosd]:~–ka        EncliticOrEnd; [N][Abs][1SgPoss][PlPosd]:~sf-w%:(e)nka EncliticOrEnd; [N][Abs][1SgPoss][DuPosd]:~sf-w%:(e)gka   EncliticOrEnd; ! 1SG possessor |
 [N][Abs][1PlPoss][SgPosd]:(p/v)ut     EncliticOrEnd; [N][Abs][1PlPoss][PlPosd]:–put          EncliticOrEnd; [N][Abs][1PlPoss][DuPosd]:~sf-w%:(e)gput  EncliticOrEnd; ! 1PL possessor |
 [N][Abs][1DuPoss][SgPosd]:(p/v)ung    EncliticOrEnd; [N][Abs][1DuPoss][PlPosd]:–pung         EncliticOrEnd; [N][Abs][1DuPoss][DuPosd]:~sf-w%:(e)gpung EncliticOrEnd; ! 1Du possessor |
 ! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
 [N][Abs][2SgPoss][SgPosd]:~sf-w%:(e)n EncliticOrEnd; [N][Abs][2SgPoss][PlPosd]:ten           EncliticOrEnd; [N][Abs][2SgPoss][DuPosd]:~sf-w%:(e)gken  EncliticOrEnd; ! 2SG possessor |
-[N][Abs][2SgPoss][PlPosd]:~f-wten     EncliticOrEnd; !                                                    |                                                        |                 |                                                    
+[N][Abs][2SgPoss][PlPosd]:~f-wten     EncliticOrEnd; !                                                    |                                                        |                 |  
 [N][Abs][2PlPoss][SgPosd]:(s/z)i      EncliticOrEnd; [N][Abs][2PlPoss][PlPosd]:–si           EncliticOrEnd; [N][Abs][2PlPoss][DuPosd]:~sf-w%:(e)gsi   EncliticOrEnd; ! 2Pl possessor |
 [N][Abs][2DuPoss][SgPosd]:(t/y)ek     EncliticOrEnd; [N][Abs][2DuPoss][PlPosd]:–tek          EncliticOrEnd; [N][Abs][2DuPoss][DuPosd]:~sf-w%:(e)gtek  EncliticOrEnd; ! 2Du possessor |
 ! -------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|-----------------|
@@ -6983,29 +6981,6 @@ LEXICON NounInfl
 
 
 
-!!!!!!!!!!!!!!!!!!!!!
-!!!               !!!
-!!!   Enclitics   !!!
-!!!               !!!
-!!!!!!!!!!!!!!!!!!!!!
-
-LEXICON EncliticOrEnd
-0:0               #;
--lli[Encl]:lli    #;
--llu[Encl]:llu    #;
--mi[Encl]:mi      #;
--ngam[Encl]:ngma  #;
--nguq[Encl]:nguq  #;
--qa[Encl]:qa      #;
--qun[Encl]:qun    #;
--sa[Encl]:sa      #;
--ta[Encl]:ta      #;
--tuq[Encl]:tuq    #;
--wha[Encl]:wha    #;
-
-
-
-
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                        !!!!!!
@@ -7062,12 +7037,8 @@ aagneghtu             	VerbIntr1; ! to have long steps; to have a long stride
 aagneghtu             	VerbTrns1; ! to have long steps; to have a long stride
 aagtagh               	VerbIntr1; ! to shoot at even though from a distance
 aagtagh               	VerbTrns1; ! to shoot at even though from a distance
-aagte                	VerbIntr1; ! to prolong one's action
-aagte                	VerbTrns1; ! to prolong one's action
-aagte                	VerbIntr1; ! to stumble; to trip
-aagte                	VerbTrns1; ! to stumble; to trip
-aagte                	VerbIntr1; ! to keep something secret; to let something pass without mentioning it
-aagte                	VerbTrns1; ! to keep something secret; to let something pass without mentioning it
+aagte                	VerbIntr1; ! to prolong one's action; to stumble; to trip; to keep something secret; to let something pass without mentioning it
+aagte                	VerbTrns1; ! to prolong one's action; to stumble; to trip; to keep something secret; to let something pass without mentioning it
 aagute                	VerbIntr1; ! to bump into something; to make a side trip for (it)
 aagute                	VerbTrns1; ! to bump into something; to make a side trip for (it)
 aag                   	VerbIntr1; ! to take a side trip
@@ -8291,18 +8262,16 @@ eggngighteqe          	VerbIntr1; ! to try to complete a task; to make an effort
 eggngighteqe          	VerbTrns1; ! to try to complete a task; to make an effort
 eghhe                 	VerbIntr1; ! to have dermatitis; to have dry, flaky, whitish skin patches especially on the face
 eghhe                 	VerbTrns1; ! to have dermatitis; to have dry, flaky, whitish skin patches especially on the face
-eghhwaaqaghte         	VerbIntr1; ! to thrust into a hole; to thrust something into, or get something thrust into, one's throat
-eghhwaaqaghte         	VerbTrns1; ! to thrust into a hole; to thrust something into, or get something thrust into, one's throat
+eghhwaaqaghte         	VerbIntr1; ! to thrust into a hole; to thrust something into or get something thrust into one's throat
+eghhwaaqaghte         	VerbTrns1; ! to thrust into a hole; to thrust something into or get something thrust into one's throat
 eghqaalingite         	VerbIntr1; ! to be thrifty; to not discard things; to not be wasteful
 eghqaalingite         	VerbTrns1; ! to be thrifty; to not discard things; to not be wasteful
 eghqaataqe            	VerbIntr1; ! to be spread out; to be scattered; to scatter; to discard many things at once
 eghqaataqe            	VerbTrns1; ! to be spread out; to be scattered; to scatter; to discard many things at once
 eghqwaagh             	VerbIntr1; ! to make an offering of food
 eghqwaagh             	VerbTrns1; ! to make an offering of food
-eghte                	VerbIntr1; ! to dawn; for day to break
-eghte                	VerbTrns1; ! to dawn; for day to break
-eghte                	VerbIntr1; ! to recur; to happen again; to repeat
-eghte                	VerbTrns1; ! to recur; to happen again; to repeat
+eghte                	VerbIntr1; ! to dawn; for day to break; to recur; to happen again; to repeat
+eghte                	VerbTrns1; ! to dawn; for day to break; to recur; to happen again; to repeat
 egmigh                	VerbIntr1; ! to rush by without stopping; to go all the way to one's destination without stopping
 egmigh                	VerbTrns1; ! to rush by without stopping; to go all the way to one's destination without stopping
 egnaangite            	VerbIntr1; ! to be slow or slothful
@@ -8641,8 +8610,8 @@ ighlluughagh          	VerbIntr1; ! to keep on probing or cleaning (as with a ri
 ighlluughagh          	VerbTrns1; ! to keep on probing or cleaning (as with a rifle-cleaning rod)
 ighllu                	VerbIntr1; ! to insert something into a hole; to clean a gun barrel; to give an enema
 ighllu                	VerbTrns1; ! to insert something into a hole; to clean a gun barrel; to give an enema
-ighlutku              	VerbIntr1; ! to chant in a quavering voice.
-ighlutku              	VerbTrns1; ! to chant in a quavering voice.
+ighlutku              	VerbIntr1; ! to chant in a quavering voice
+ighlutku              	VerbTrns1; ! to chant in a quavering voice
 ighneghlli            	VerbIntr1; ! to process and dry the intestines of walrus or bearded seal
 ighneghlli            	VerbTrns1; ! to process and dry the intestines of walrus or bearded seal
 ighni                 	VerbIntr1; ! to give birth; for a rock to crack
@@ -11272,10 +11241,8 @@ payghiiqute           	VerbIntr1; ! to challenge in a spear throwing contest
 payghiiqute           	VerbTrns1; ! to challenge in a spear throwing contest
 payghumiigh           	VerbIntr1; ! to go towards each other
 payghumiigh           	VerbTrns1; ! to go towards each other
-payugte              	VerbIntr1; ! to go check on (him/her) concerning (his/her) well-being
-payugte              	VerbTrns1; ! to go check on (him/her) concerning (his/her) well-being
-payugte              	VerbIntr1; ! to raise the head from a lying position
-payugte              	VerbTrns1; ! to raise the head from a lying position
+payugte              	VerbIntr1; ! to go check on (him/her) concerning (his/her) well-being; to raise the head from a lying position
+payugte              	VerbTrns1; ! to go check on (him/her) concerning (his/her) well-being; to raise the head from a lying position
 payukagh              	VerbIntr1; ! to check briefly; to look in on
 payukagh              	VerbIntr1; ! to raise one's head and then lower it
 payukagh              	VerbTrns1; ! to check briefly; to look in on
@@ -13721,8 +13688,8 @@ tumighqaate           	VerbIntr1; ! to return to St. Lawrence Is. from Chukotka 
 tumighqaate           	VerbTrns1; ! to return to St. Lawrence Is. from Chukotka or vice-versa
 tumigte               	VerbIntr1; ! to return to St. Lawrence Island from Chukotka or vice-versa
 tumigte               	VerbTrns1; ! to return to St. Lawrence Island from Chukotka or vice-versa
-tunallagute           	VerbIntr1; ! to fall on one's buttocks; 
-tunallagute           	VerbTrns1; ! to fall on one's buttocks; 
+tunallagute           	VerbIntr1; ! to fall on one's buttocks
+tunallagute           	VerbTrns1; ! to fall on one's buttocks
 tungangigh            	VerbIntr1; ! to come near to
 tungangigh            	VerbTrns1; ! to come near to
 tungangiite           	VerbIntr1; ! to be in line with something; to line up with something
@@ -14623,6 +14590,7 @@ LEXICON VerbPostbase1
 -–ghllag[V→V]:–ghllag                         VerbPostbase2;
 -–ghllagu[V→V]:–ghllagu                       VerbPostbase2;
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase2;
+-–ghqu[V→V]:–ghqu                             VerbPostbase2;
 -–ghraag[V→V]:–ghraag                         VerbPostbase2;
 -iiraagh[V→V]:iiraagh                         VerbPostbase2;
 -––iqe[V→V]:––iqe                             VerbPostbase2;
@@ -14633,8 +14601,7 @@ LEXICON VerbPostbase1
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase2;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase2;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase2;
--@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase2; ! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase2; !       The former is from Jacobson, the latter from Badten
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase2;
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase2;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase2;
 -@₁laataqu[V→V]:@₁laataqu                     VerbPostbase2;
@@ -14644,7 +14611,7 @@ LEXICON VerbPostbase1
 -–llaag[V→V]:–llaag                           VerbPostbase2;
 -–llegagh[V→V]:–llegagh                       VerbPostbase2;
 -@₁lleqe[V→V]:@₁lleqe                         VerbPostbase2;
--–llghite[V→V]:–llghite                       VerbPostbase2;
+-–llghite**[V→V]:–llghite**                   VerbPostbase2;
 -–llgilliqe[V→V]:–llgilliqe                   VerbPostbase2;
 -–llgite[V→V]:–llgite                         VerbPostbase2;
 -–llgiite[V→V]:–llgiite                       VerbPostbase2;
@@ -14657,14 +14624,14 @@ LEXICON VerbPostbase1
 -–lqiinagh[V→V]:–lqiinagh                     VerbPostbase2;
 -–lqusiigh[V→V]:–lqusiigh                     VerbPostbase2;
 -@₁lugh[V→V]:@₁lugh                           VerbPostbase2;
--–mlaagh[V→V]:–mlaagh                         VerbPostbase2; ! TODO: Are there no conditions on the following postbases
--–mraagh[V→V]:–mraagh                         VerbPostbase2;         which are documented as identical?
+-–mlaagh[V→V]:–mlaagh                         VerbPostbase2;
+-–mraagh[V→V]:–mraagh                         VerbPostbase2;
 -–mzaagh[V→V]:–mzaagh                         VerbPostbase2;
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase2;
 -–mreghagh[V→V]:–mreghagh                     VerbPostbase2;
 -–mzegagh[V→V]:–mzegagh                       VerbPostbase2;
 -–vlaagh[V→V]:–vlaagh                         VerbPostbase2;
--–vleghagh[V→V]:–vleghagh                     VerbPostbase2;         End.
+-–vleghagh[V→V]:–vleghagh                     VerbPostbase2;
 -–mrugnite[V→V]:–mrugnite                     VerbPostbase2; ! TODO: Used only with descriptive bases
 -–msiigh[V→V]:–msiigh                         VerbPostbase2;
 -–msug[V→V]:–msug                             VerbPostbase2;
@@ -14688,9 +14655,9 @@ LEXICON VerbPostbase1
 -@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase2;
 -@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase2;
 -~fnga[V→V]:~fnga                             VerbPostbase2;
--–ngeltagh[V→V]:–ngeltagh                     VerbPostbase2; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbPostbase2; !       documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbPostbase2; !       End.
+-–ngeltagh[V→V]:–ngeltagh                     VerbPostbase2;
+-–ngertagh[V→V]:–ngertagh                     VerbPostbase2;
+-–ngestagh[V→V]:–ngestagh                     VerbPostbase2;
 -@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase2;
 -@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase2;
 -@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase2;
@@ -14705,7 +14672,7 @@ LEXICON VerbPostbase1
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase2;
 -pag[V→V]:pag                                 VerbPostbase2;
 -–pag[V→V]:–pag                               VerbPostbase2;
--~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase2; ! TODO: Verify if this postbase fits the (p/v) paradigm
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase2;
 -–pagigate[V→V]:–pagigate                     VerbPostbase2;
 -–pagite[V→V]:–pagite                         VerbPostbase2;
 -pagunghite**[V→V]:pagunghite**               VerbPostbase2;
@@ -14747,15 +14714,14 @@ LEXICON VerbPostbase1
 -tutka[V→V]:tutka                             VerbPostbase2; ! TODO: Used with descriptive verbs
 -tutkaligh[V→V]:tutkaligh                     VerbPostbase2;
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase2;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase2; ! TODO: These postbases differ in their documentation
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase2; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase2;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase2;
 -~f–vag[V→V]:~f–vag                           VerbPostbase2;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase2;
--–vyigh[V→V]:–vyigh                           VerbPostbase2; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbPostbase2;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbPostbase2; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbPostbase2;         documented as identical?
+-–vyigh[V→V]:–vyigh                           VerbPostbase2;
+-–vzigh[V→V]:–vzigh                           VerbPostbase2;
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase2;
+-–vziigh[V→V]:–vziigh                         VerbPostbase2;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase2;
 -@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase2;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase2;
@@ -14903,6 +14869,7 @@ LEXICON VerbPostbase2
 -–ghllag[V→V]:–ghllag                         VerbPostbase3;
 -–ghllagu[V→V]:–ghllagu                       VerbPostbase3;
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase3;
+-–ghqu[V→V]:–ghqu                             VerbPostbase3;
 -–ghraag[V→V]:–ghraag                         VerbPostbase3;
 -iiraagh[V→V]:iiraagh                         VerbPostbase3;
 -––iqe[V→V]:––iqe                             VerbPostbase3;
@@ -14913,8 +14880,7 @@ LEXICON VerbPostbase2
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase3;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase3;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase3;
--@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase3;	! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase3; !       The former is from Jacobson, the latter from Badten
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase3;
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase3;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase3;
 -@₁laataqu[V→V]:@₁laataqu                     VerbPostbase3;
@@ -14937,14 +14903,14 @@ LEXICON VerbPostbase2
 -–lqiinagh[V→V]:–lqiinagh                     VerbPostbase3;
 -–lqusiigh[V→V]:–lqusiigh                     VerbPostbase3;
 -@₁lugh[V→V]:@₁lugh                           VerbPostbase3;
--–mlaagh[V→V]:–mlaagh                         VerbPostbase3; ! TODO: Are there no conditions on the following postbases
--–mraagh[V→V]:–mraagh                         VerbPostbase3;         which are documented as identical?
+-–mlaagh[V→V]:–mlaagh                         VerbPostbase3;
+-–mraagh[V→V]:–mraagh                         VerbPostbase3;
 -–mzaagh[V→V]:–mzaagh                         VerbPostbase3;
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase3;
 -–mreghagh[V→V]:–mreghagh                     VerbPostbase3;
 -–mzegagh[V→V]:–mzegagh                       VerbPostbase3;
 -–vlaagh[V→V]:–vlaagh                         VerbPostbase3;
--–vleghagh[V→V]:–vleghagh                     VerbPostbase3;         End.
+-–vleghagh[V→V]:–vleghagh                     VerbPostbase3;
 -–mrugnite[V→V]:–mrugnite                     VerbPostbase3; ! TODO: Used only with descriptive bases
 -–msiigh[V→V]:–msiigh                         VerbPostbase3;
 -–msug[V→V]:–msug                             VerbPostbase3;
@@ -14968,9 +14934,9 @@ LEXICON VerbPostbase2
 -@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase3;
 -@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase3;
 -~fnga[V→V]:~fnga                             VerbPostbase3;
--–ngeltagh[V→V]:–ngeltagh                     VerbPostbase3; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbPostbase3; !       documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbPostbase3; !       End.
+-–ngeltagh[V→V]:–ngeltagh                     VerbPostbase3;
+-–ngertagh[V→V]:–ngertagh                     VerbPostbase3;
+-–ngestagh[V→V]:–ngestagh                     VerbPostbase3;
 -@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase3;
 -@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase3;
 -@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase3;
@@ -14985,7 +14951,7 @@ LEXICON VerbPostbase2
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase3;
 -pag[V→V]:pag                                 VerbPostbase3;
 -–pag[V→V]:–pag                               VerbPostbase3;
--~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase3; ! TODO: Verify if this postbase fits the (p/v) paradigm
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase3;
 -–pagigate[V→V]:–pagigate                     VerbPostbase3;
 -–pagite[V→V]:–pagite                         VerbPostbase3;
 -pagunghite**[V→V]:pagunghite**               VerbPostbase3;
@@ -15027,15 +14993,14 @@ LEXICON VerbPostbase2
 -tutka[V→V]:tutka                             VerbPostbase3; ! TODO: Used with descriptive verbs
 -tutkaligh[V→V]:tutkaligh                     VerbPostbase3;
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase3;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase3; ! TODO: These postbases differ in their documentation
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase3; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase3;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase3;
 -~f–vag[V→V]:~f–vag                           VerbPostbase3;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase3;
--–vyigh[V→V]:–vyigh                           VerbPostbase3; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbPostbase3;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbPostbase3; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbPostbase3;         documented as identical?
+-–vyigh[V→V]:–vyigh                           VerbPostbase3;
+-–vzigh[V→V]:–vzigh                           VerbPostbase3;
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase3;
+-–vziigh[V→V]:–vziigh                         VerbPostbase3;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase3;
 -@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase3;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase3;
@@ -15170,6 +15135,7 @@ LEXICON VerbPostbase3
 -–ghllag[V→V]:–ghllag                         VerbPostbase4;
 -–ghllagu[V→V]:–ghllagu                       VerbPostbase4;
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase4;
+-–ghqu[V→V]:–ghqu                             VerbPostbase4;
 -–ghraag[V→V]:–ghraag                         VerbPostbase4;
 -iiraagh[V→V]:iiraagh                         VerbPostbase4;
 -––iqe[V→V]:––iqe                             VerbPostbase4;
@@ -15180,8 +15146,7 @@ LEXICON VerbPostbase3
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase4;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase4;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase4;
--@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase4;	! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase4; !       The former is from Jacobson, the latter from Badten
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase4;
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase4;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase4;
 -@₁laataqu[V→V]:@₁laataqu                     VerbPostbase4;
@@ -15204,15 +15169,15 @@ LEXICON VerbPostbase3
 -–lqiinagh[V→V]:–lqiinagh                     VerbPostbase4;
 -–lqusiigh[V→V]:–lqusiigh                     VerbPostbase4;
 -@₁lugh[V→V]:@₁lugh                           VerbPostbase4;
--–mlaagh[V→V]:–mlaagh                         VerbPostbase4; ! TODO: Are there no conditions on the following postbases
--–mraagh[V→V]:–mraagh                         VerbPostbase4;         which are documented as identical?
+-–mlaagh[V→V]:–mlaagh                         VerbPostbase4;
+-–mraagh[V→V]:–mraagh                         VerbPostbase4;
 -–mzaagh[V→V]:–mzaagh                         VerbPostbase4;
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase4;
 -–mreghagh[V→V]:–mreghagh                     VerbPostbase4;
 -–mzegagh[V→V]:–mzegagh                       VerbPostbase4;
 -–vlaagh[V→V]:–vlaagh                         VerbPostbase4;
--–vleghagh[V→V]:–vleghagh                     VerbPostbase4;         End.
--–mrugnite[V→V]:–mrugnite                     VerbPostbase4; ! TODO: Used only with descriptive bases
+-–vleghagh[V→V]:–vleghagh                     VerbPostbase4;
+-–mrugnite[V→V]:–mrugnite                     VerbPostbase4;
 -–msiigh[V→V]:–msiigh                         VerbPostbase4;
 -–msug[V→V]:–msug                             VerbPostbase4;
 -@₁~fna[V→V]:@₁~fna                           VerbPostbase4; ! TODO: Used with subordinative mood endings 
@@ -15235,9 +15200,9 @@ LEXICON VerbPostbase3
 -@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase4;
 -@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase4;
 -~fnga[V→V]:~fnga                             VerbPostbase4;
--–ngeltagh[V→V]:–ngeltagh                     VerbPostbase4; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbPostbase4; !       documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbPostbase4; !       End.
+-–ngeltagh[V→V]:–ngeltagh                     VerbPostbase4;
+-–ngertagh[V→V]:–ngertagh                     VerbPostbase4;
+-–ngestagh[V→V]:–ngestagh                     VerbPostbase4;
 -@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase4;
 -@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase4;
 -@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase4;
@@ -15252,7 +15217,7 @@ LEXICON VerbPostbase3
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase4;
 -pag[V→V]:pag                                 VerbPostbase4;
 -–pag[V→V]:–pag                               VerbPostbase4;
--~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase4; ! TODO: Verify if this postbase fits the (p/v) paradigm
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase4;
 -–pagigate[V→V]:–pagigate                     VerbPostbase4;
 -–pagite[V→V]:–pagite                         VerbPostbase4;
 -pagunghite**[V→V]:pagunghite**               VerbPostbase4;
@@ -15294,15 +15259,14 @@ LEXICON VerbPostbase3
 -tutka[V→V]:tutka                             VerbPostbase4; ! TODO: Used with descriptive verbs
 -tutkaligh[V→V]:tutkaligh                     VerbPostbase4;
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase4;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase4; ! TODO: These postbases differ in their documentation
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase4; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase4;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase4;
 -~f–vag[V→V]:~f–vag                           VerbPostbase4;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase4;
--–vyigh[V→V]:–vyigh                           VerbPostbase4; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbPostbase4;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbPostbase4; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbPostbase4;         documented as identical?
+-–vyigh[V→V]:–vyigh                           VerbPostbase4;
+-–vzigh[V→V]:–vzigh                           VerbPostbase4;
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase4;
+-–vziigh[V→V]:–vziigh                         VerbPostbase4;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase4;
 -@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase4;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase4;
@@ -15437,6 +15401,7 @@ LEXICON VerbPostbase4
 -–ghllag[V→V]:–ghllag                         VerbPostbase5;
 -–ghllagu[V→V]:–ghllagu                       VerbPostbase5;
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase5;
+-–ghqu[V→V]:–ghqu                             VerbPostbase5;
 -–ghraag[V→V]:–ghraag                         VerbPostbase5;
 -iiraagh[V→V]:iiraagh                         VerbPostbase5;
 -––iqe[V→V]:––iqe                             VerbPostbase5;
@@ -15447,8 +15412,7 @@ LEXICON VerbPostbase4
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase5;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase5;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase5;
--@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase5;	! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase5; !       The former is from Jacobson, the latter from Badten
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase5;
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase5;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase5;
 -@₁laataqu[V→V]:@₁laataqu                     VerbPostbase5;
@@ -15471,14 +15435,14 @@ LEXICON VerbPostbase4
 -–lqiinagh[V→V]:–lqiinagh                     VerbPostbase5;
 -–lqusiigh[V→V]:–lqusiigh                     VerbPostbase5;
 -@₁lugh[V→V]:@₁lugh                           VerbPostbase5;
--–mlaagh[V→V]:–mlaagh                         VerbPostbase5; ! TODO: Are there no conditions on the following postbases
--–mraagh[V→V]:–mraagh                         VerbPostbase5;         which are documented as identical?
+-–mlaagh[V→V]:–mlaagh                         VerbPostbase5;
+-–mraagh[V→V]:–mraagh                         VerbPostbase5;
 -–mzaagh[V→V]:–mzaagh                         VerbPostbase5;
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase5;
 -–mreghagh[V→V]:–mreghagh                     VerbPostbase5;
 -–mzegagh[V→V]:–mzegagh                       VerbPostbase5;
 -–vlaagh[V→V]:–vlaagh                         VerbPostbase5;
--–vleghagh[V→V]:–vleghagh                     VerbPostbase5;         End.
+-–vleghagh[V→V]:–vleghagh                     VerbPostbase5;
 -–mrugnite[V→V]:–mrugnite                     VerbPostbase5; ! TODO: Used only with descriptive bases
 -–msiigh[V→V]:–msiigh                         VerbPostbase5;
 -–msug[V→V]:–msug                             VerbPostbase5;
@@ -15502,9 +15466,9 @@ LEXICON VerbPostbase4
 -@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase5;
 -@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase5;
 -~fnga[V→V]:~fnga                             VerbPostbase5;
--–ngeltagh[V→V]:–ngeltagh                     VerbPostbase5; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbPostbase5; !       documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbPostbase5; !       End.
+-–ngeltagh[V→V]:–ngeltagh                     VerbPostbase5;
+-–ngertagh[V→V]:–ngertagh                     VerbPostbase5;
+-–ngestagh[V→V]:–ngestagh                     VerbPostbase5;
 -@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase5;
 -@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase5;
 -@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase5;
@@ -15519,7 +15483,7 @@ LEXICON VerbPostbase4
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase5;
 -pag[V→V]:pag                                 VerbPostbase5;
 -–pag[V→V]:–pag                               VerbPostbase5;
--~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase5; ! TODO: Verify if this postbase fits the (p/v) paradigm
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase5;
 -–pagigate[V→V]:–pagigate                     VerbPostbase5;
 -–pagite[V→V]:–pagite                         VerbPostbase5;
 -pagunghite**[V→V]:pagunghite**               VerbPostbase5;
@@ -15561,15 +15525,14 @@ LEXICON VerbPostbase4
 -tutka[V→V]:tutka                             VerbPostbase5; ! TODO: Used with descriptive verbs
 -tutkaligh[V→V]:tutkaligh                     VerbPostbase5;
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase5;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase5; ! TODO: These postbases differ in their documentation
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase5; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase5;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase5;
 -~f–vag[V→V]:~f–vag                           VerbPostbase5;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase5;
--–vyigh[V→V]:–vyigh                           VerbPostbase5; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbPostbase5;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbPostbase5; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbPostbase5;         documented as identical?
+-–vyigh[V→V]:–vyigh                           VerbPostbase5;
+-–vzigh[V→V]:–vzigh                           VerbPostbase5;
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase5;
+-–vziigh[V→V]:–vziigh                         VerbPostbase5;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase5;
 -@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase5;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase5;
@@ -15704,6 +15667,7 @@ LEXICON VerbPostbase5
 -–ghllag[V→V]:–ghllag                         VerbPostbase6;
 -–ghllagu[V→V]:–ghllagu                       VerbPostbase6;
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase6;
+-–ghqu[V→V]:–ghqu                             VerbPostbase6;
 -–ghraag[V→V]:–ghraag                         VerbPostbase6;
 -iiraagh[V→V]:iiraagh                         VerbPostbase6;
 -––iqe[V→V]:––iqe                             VerbPostbase6;
@@ -15714,8 +15678,7 @@ LEXICON VerbPostbase5
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase6;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase6;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase6;
--@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase6;	! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase6; !       The former is from Jacobson, the latter from Badten
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase6;
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase6;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase6;
 -@₁laataqu[V→V]:@₁laataqu                     VerbPostbase6;
@@ -15738,14 +15701,14 @@ LEXICON VerbPostbase5
 -–lqiinagh[V→V]:–lqiinagh                     VerbPostbase6;
 -–lqusiigh[V→V]:–lqusiigh                     VerbPostbase6;
 -@₁lugh[V→V]:@₁lugh                           VerbPostbase6;
--–mlaagh[V→V]:–mlaagh                         VerbPostbase6; ! TODO: Are there no conditions on the following postbases
--–mraagh[V→V]:–mraagh                         VerbPostbase6;         which are documented as identical?
+-–mlaagh[V→V]:–mlaagh                         VerbPostbase6;
+-–mraagh[V→V]:–mraagh                         VerbPostbase6;
 -–mzaagh[V→V]:–mzaagh                         VerbPostbase6;
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase6;
 -–mreghagh[V→V]:–mreghagh                     VerbPostbase6;
 -–mzegagh[V→V]:–mzegagh                       VerbPostbase6;
 -–vlaagh[V→V]:–vlaagh                         VerbPostbase6;
--–vleghagh[V→V]:–vleghagh                     VerbPostbase6;         End.
+-–vleghagh[V→V]:–vleghagh                     VerbPostbase6;
 -–mrugnite[V→V]:–mrugnite                     VerbPostbase6; ! TODO: Used only with descriptive bases
 -–msiigh[V→V]:–msiigh                         VerbPostbase6;
 -–msug[V→V]:–msug                             VerbPostbase6;
@@ -15769,9 +15732,9 @@ LEXICON VerbPostbase5
 -@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase6;
 -@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase6;
 -~fnga[V→V]:~fnga                             VerbPostbase6;
--–ngeltagh[V→V]:–ngeltagh                     VerbPostbase6; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbPostbase6; !       documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbPostbase6; !       End.
+-–ngeltagh[V→V]:–ngeltagh                     VerbPostbase6;
+-–ngertagh[V→V]:–ngertagh                     VerbPostbase6;
+-–ngestagh[V→V]:–ngestagh                     VerbPostbase6;
 -@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase6;
 -@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase6;
 -@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase6;
@@ -15786,7 +15749,7 @@ LEXICON VerbPostbase5
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase6;
 -pag[V→V]:pag                                 VerbPostbase6;
 -–pag[V→V]:–pag                               VerbPostbase6;
--~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase6; ! TODO: Verify if this postbase fits the (p/v) paradigm
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase6;
 -–pagigate[V→V]:–pagigate                     VerbPostbase6;
 -–pagite[V→V]:–pagite                         VerbPostbase6;
 -pagunghite**[V→V]:pagunghite**               VerbPostbase6;
@@ -15828,15 +15791,14 @@ LEXICON VerbPostbase5
 -tutka[V→V]:tutka                             VerbPostbase6; ! TODO: Used with descriptive verbs
 -tutkaligh[V→V]:tutkaligh                     VerbPostbase6;
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase6;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase6; ! TODO: These postbases differ in their documentation
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase6; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase6;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase6;
 -~f–vag[V→V]:~f–vag                           VerbPostbase6;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase6;
--–vyigh[V→V]:–vyigh                           VerbPostbase6; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbPostbase6;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbPostbase6; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbPostbase6;         documented as identical?
+-–vyigh[V→V]:–vyigh                           VerbPostbase6;
+-–vzigh[V→V]:–vzigh                           VerbPostbase6;
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase6;
+-–vziigh[V→V]:–vziigh                         VerbPostbase6;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase6;
 -@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase6;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase6;
@@ -15971,6 +15933,7 @@ LEXICON VerbPostbase6
 -–ghllag[V→V]:–ghllag                         VerbPostbase7;
 -–ghllagu[V→V]:–ghllagu                       VerbPostbase7;
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbPostbase7;
+-–ghqu[V→V]:–ghqu                             VerbPostbase7;
 -–ghraag[V→V]:–ghraag                         VerbPostbase7;
 -iiraagh[V→V]:iiraagh                         VerbPostbase7;
 -––iqe[V→V]:––iqe                             VerbPostbase7;
@@ -15981,8 +15944,7 @@ LEXICON VerbPostbase6
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase7;
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase7;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase7;
--@₁~laatagh[V→V]:@₁~laatagh                   VerbPostbase7;	! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase7; !       The former is from Jacobson, the latter from Badten
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase7;
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase7;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbPostbase7;
 -@₁laataqu[V→V]:@₁laataqu                     VerbPostbase7;
@@ -16005,14 +15967,14 @@ LEXICON VerbPostbase6
 -–lqiinagh[V→V]:–lqiinagh                     VerbPostbase7;
 -–lqusiigh[V→V]:–lqusiigh                     VerbPostbase7;
 -@₁lugh[V→V]:@₁lugh                           VerbPostbase7;
--–mlaagh[V→V]:–mlaagh                         VerbPostbase7; ! TODO: Are there no conditions on the following postbases
--–mraagh[V→V]:–mraagh                         VerbPostbase7;         which are documented as identical?
+-–mlaagh[V→V]:–mlaagh                         VerbPostbase7;
+-–mraagh[V→V]:–mraagh                         VerbPostbase7;
 -–mzaagh[V→V]:–mzaagh                         VerbPostbase7;
 -–mlegagh[V→V]:–mlegagh                       VerbPostbase7;
 -–mreghagh[V→V]:–mreghagh                     VerbPostbase7;
 -–mzegagh[V→V]:–mzegagh                       VerbPostbase7;
 -–vlaagh[V→V]:–vlaagh                         VerbPostbase7;
--–vleghagh[V→V]:–vleghagh                     VerbPostbase7;         End.
+-–vleghagh[V→V]:–vleghagh                     VerbPostbase7;
 -–mrugnite[V→V]:–mrugnite                     VerbPostbase7; ! TODO: Used only with descriptive bases
 -–msiigh[V→V]:–msiigh                         VerbPostbase7;
 -–msug[V→V]:–msug                             VerbPostbase7;
@@ -16036,9 +15998,9 @@ LEXICON VerbPostbase6
 -@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbPostbase7;
 -@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbPostbase7;
 -~fnga[V→V]:~fnga                             VerbPostbase7;
--–ngeltagh[V→V]:–ngeltagh                     VerbPostbase7; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbPostbase7; !       documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbPostbase7; !       End.
+-–ngeltagh[V→V]:–ngeltagh                     VerbPostbase7;
+-–ngertagh[V→V]:–ngertagh                     VerbPostbase7;
+-–ngestagh[V→V]:–ngestagh                     VerbPostbase7;
 -@₁–nghiighte[V→V]:@₁–nghiighte               VerbPostbase7;
 -@₁–nghite**[V→V]:@₁–nghite**                 VerbPostbase7;
 -@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbPostbase7;
@@ -16053,7 +16015,7 @@ LEXICON VerbPostbase6
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbPostbase7;
 -pag[V→V]:pag                                 VerbPostbase7;
 -–pag[V→V]:–pag                               VerbPostbase7;
--~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase7; ! TODO: Verify if this postbase fits the (p/v) paradigm
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbPostbase7;
 -–pagigate[V→V]:–pagigate                     VerbPostbase7;
 -–pagite[V→V]:–pagite                         VerbPostbase7;
 -pagunghite**[V→V]:pagunghite**               VerbPostbase7;
@@ -16095,15 +16057,14 @@ LEXICON VerbPostbase6
 -tutka[V→V]:tutka                             VerbPostbase7; ! TODO: Used with descriptive verbs
 -tutkaligh[V→V]:tutkaligh                     VerbPostbase7;
 -~fughtagh[V→V]:~fughtagh                     VerbPostbase7;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase7; ! TODO: These postbases differ in their documentation
--~%:(u)te[V→V]:~%:(u)te                       VerbPostbase7; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbPostbase7;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbPostbase7;
 -~f–vag[V→V]:~f–vag                           VerbPostbase7;
 -@₁~fvike[V→V]:@₁~fvike                       VerbPostbase7;
--–vyigh[V→V]:–vyigh                           VerbPostbase7; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbPostbase7;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbPostbase7; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbPostbase7;         documented as identical?
+-–vyigh[V→V]:–vyigh                           VerbPostbase7;
+-–vzigh[V→V]:–vzigh                           VerbPostbase7;
+-–vyiigh[V→V]:–vyiigh                         VerbPostbase7;
+-–vziigh[V→V]:–vziigh                         VerbPostbase7;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbPostbase7;
 -@₁~fyagh[V→V]:@₁~fyagh                       VerbPostbase7;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbPostbase7;
@@ -16238,6 +16199,7 @@ LEXICON VerbPostbase7
 -–ghllag[V→V]:–ghllag                         VerbMoodInfl;
 -–ghllagu[V→V]:–ghllagu                       VerbMoodInfl;
 -@₁–ghpagte[V→V]:@₁–ghpagte                   VerbMoodInfl;
+-–ghqu[V→V]:–ghqu                             VerbMoodInfl;
 -–ghraag[V→V]:–ghraag                         VerbMoodInfl;
 -iiraagh[V→V]:iiraagh                         VerbMoodInfl;
 -––iqe[V→V]:––iqe                             VerbMoodInfl;
@@ -16248,8 +16210,7 @@ LEXICON VerbPostbase7
 -~–kanigh[V→V]:~–kanigh                       VerbMoodInfl;
 -~–kataghagh[V→V]:~–kataghagh                 VerbMoodInfl;
 -–kusiigh[V→V]:–kusiigh                       VerbMoodInfl;
--@₁~laatagh[V→V]:@₁~laatagh                   VerbMoodInfl;	! TODO: Which form is it? ~ or ~f?
--@₁~flaatagh[V→V]:@₁~flaatagh                 VerbMoodInfl; !       The former is from Jacobson, the latter from Badten
+-@₁~flaatagh[V→V]:@₁~flaatagh                 VerbMoodInfl;
 -~f–laghate[V→V]:~f–laghate                   VerbMoodInfl;
 -@₁laaghigate[V→V]:@₁laaghigate               VerbMoodInfl;
 -@₁laataqu[V→V]:@₁laataqu                     VerbMoodInfl;
@@ -16272,14 +16233,14 @@ LEXICON VerbPostbase7
 -–lqiinagh[V→V]:–lqiinagh                     VerbMoodInfl;
 -–lqusiigh[V→V]:–lqusiigh                     VerbMoodInfl;
 -@₁lugh[V→V]:@₁lugh                           VerbMoodInfl;
--–mlaagh[V→V]:–mlaagh                         VerbMoodInfl; ! TODO: Are there no conditions on the following postbases
--–mraagh[V→V]:–mraagh                         VerbMoodInfl;         which are documented as identical?
+-–mlaagh[V→V]:–mlaagh                         VerbMoodInfl;
+-–mraagh[V→V]:–mraagh                         VerbMoodInfl;
 -–mzaagh[V→V]:–mzaagh                         VerbMoodInfl;
 -–mlegagh[V→V]:–mlegagh                       VerbMoodInfl;
 -–mreghagh[V→V]:–mreghagh                     VerbMoodInfl;
 -–mzegagh[V→V]:–mzegagh                       VerbMoodInfl;
 -–vlaagh[V→V]:–vlaagh                         VerbMoodInfl;
--–vleghagh[V→V]:–vleghagh                     VerbMoodInfl;         End.
+-–vleghagh[V→V]:–vleghagh                     VerbMoodInfl;
 -–mrugnite[V→V]:–mrugnite                     VerbMoodInfl; ! TODO: Used only with descriptive bases
 -–msiigh[V→V]:–msiigh                         VerbMoodInfl;
 -–msug[V→V]:–msug                             VerbMoodInfl;
@@ -16303,9 +16264,9 @@ LEXICON VerbPostbase7
 -@₁~f–neghsigh[V→V]:@₁~f–neghsigh             VerbMoodInfl;
 -@₁~f–neghtu[V→V]:@₁~f–neghtu                 VerbMoodInfl;
 -~fnga[V→V]:~fnga                             VerbMoodInfl;
--–ngeltagh[V→V]:–ngeltagh                     VerbMoodInfl; ! TODO: Are there no conditions on the following postbases which are
--–ngertagh[V→V]:–ngertagh                     VerbMoodInfl; !       documented as identical?
--–ngestagh[V→V]:–ngestagh                     VerbMoodInfl; !       End.
+-–ngeltagh[V→V]:–ngeltagh                     VerbMoodInfl;
+-–ngertagh[V→V]:–ngertagh                     VerbMoodInfl;
+-–ngestagh[V→V]:–ngestagh                     VerbMoodInfl;
 -@₁–nghiighte[V→V]:@₁–nghiighte               VerbMoodInfl;
 -@₁–nghite**[V→V]:@₁–nghite**                 VerbMoodInfl;
 -@₁~%:(ng₂)igate[V→V]:@₁~%:(ng₂)igate         VerbMoodInfl;
@@ -16320,7 +16281,7 @@ LEXICON VerbPostbase7
 -@₁–nqigte[V→V]:@₁–nqigte                     VerbMoodInfl;
 -pag[V→V]:pag                                 VerbMoodInfl;
 -–pag[V→V]:–pag                               VerbMoodInfl;
--~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbMoodInfl; ! TODO: Verify if this postbase fits the (p/v) paradigm
+-~f(p/v)agaatagh[V→V]:~f(p/v)agaatagh         VerbMoodInfl;
 -–pagigate[V→V]:–pagigate                     VerbMoodInfl;
 -–pagite[V→V]:–pagite                         VerbMoodInfl;
 -pagunghite**[V→V]:pagunghite**               VerbMoodInfl;
@@ -16362,15 +16323,14 @@ LEXICON VerbPostbase7
 -tutka[V→V]:tutka                             VerbMoodInfl; ! TODO: Used with descriptive verbs
 -tutkaligh[V→V]:tutkaligh                     VerbMoodInfl;
 -~fughtagh[V→V]:~fughtagh                     VerbMoodInfl;
--@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbMoodInfl; ! TODO: These postbases differ in their documentation
--~%:(u)te[V→V]:~%:(u)te                       VerbMoodInfl; !       in Badten v. Jacobson. Which is it?
+-@₁~%:(u)te[V→V]:@₁~%:(u)te                   VerbMoodInfl;
 -@₁~%:(u)tke[V→V]:@₁~%:(u)tke                 VerbMoodInfl;
 -~f–vag[V→V]:~f–vag                           VerbMoodInfl;
 -@₁~fvike[V→V]:@₁~fvike                       VerbMoodInfl;
--–vyigh[V→V]:–vyigh                           VerbMoodInfl; ! TODO: Are there no conditions on the following postbases which are
--–vzigh[V→V]:–vzigh                           VerbMoodInfl;         documented as identical?
--–vyiigh[V→V]:–vyiigh                         VerbMoodInfl; ! TODO: Are there no conditions on the following postbases which are
--–vziigh[V→V]:–vziigh                         VerbMoodInfl;         documented as identical?
+-–vyigh[V→V]:–vyigh                           VerbMoodInfl;
+-–vzigh[V→V]:–vzigh                           VerbMoodInfl;
+-–vyiigh[V→V]:–vyiigh                         VerbMoodInfl;
+-–vziigh[V→V]:–vziigh                         VerbMoodInfl;
 -@₁~f–yaag[V→V]:@₁~f–yaag                     VerbMoodInfl;
 -@₁~fyagh[V→V]:@₁~fyagh                       VerbMoodInfl;
 -@₁~fyaghagh[V→V]:@₁~fyaghagh                 VerbMoodInfl;
@@ -16680,54 +16640,54 @@ LEXICON TransitiveParticipialFutureOptative
 
 
 LEXICON IntransitiveInterrogative
-!----------------|--------------------|--------------------|
-[3Sg]:~f(g/t)a  #; [1Sg]:~f(t)zinga  #; [2Sg]:~f(t)zin    #;
-[3Sg]:~f(g/t)aa #;                      [2Sg]:~f(t)ziin   #;
-[3Pl]:~f(g/t)at #; [1Pl]:~sf(e)sta   #; [2Pl]:~sf(e)tsi   #;
-                                        [2Pl]:~sf(e)tsii  #;
-[3Du]:~f(g/t)ak #; [1Du]:~sf(e)stung #; [2Du]:~sf(e)stek  #;
-                                        [2Du]:~sf(e)staak #;
-!----------------|--------------------|--------------------|
+!------------------------------------|----------------------------------------|----------------------------------------|
+[3Sg]:~f(g/t)a  InterrogativeEnclitic; [1Sg]:~f(t)zinga  InterrogativeEnclitic; [2Sg]:~f(t)zin    InterrogativeEnclitic;
+[3Sg]:~f(g/t)aa InterrogativeEnclitic;                                          [2Sg]:~f(t)ziin   InterrogativeEnclitic;
+[3Pl]:~f(g/t)at InterrogativeEnclitic; [1Pl]:~sf(e)sta   InterrogativeEnclitic; [2Pl]:~sf(e)tsi   InterrogativeEnclitic;
+                                                                                [2Pl]:~sf(e)tsii  InterrogativeEnclitic;
+[3Du]:~f(g/t)ak InterrogativeEnclitic; [1Du]:~sf(e)stung InterrogativeEnclitic; [2Du]:~sf(e)stek  InterrogativeEnclitic;
+                                                                                [2Du]:~sf(e)staak InterrogativeEnclitic;
+!------------------------------------|----------------------------------------|----------------------------------------|
 
 LEXICON TransitiveInterrogative
-! -------------------------|----------------------------|-----------------------------|
-[3Sg][3Sg]:~f(g/t)agu     #; [3Sg][3Pl]:~f(g/t)aki     #; [3Sg][3Du]:~f(g/t)akek     #;
-[3Sg][3Sg]:~f(g/t)aguu    #;
-[3Pl][3Sg]:~f(g/t)atgu    #; [3Pl][3Pl]:~f(g/t)atki    #; [3Pl][3Du]:~f(g/t)atkek    #;
-[3Du][3Sg]:~f(g/t)agnegu  #; [3Du][3Pl]:~f(g/t)agneki  #; [3Du][3Du]:~f(g/t)agnekek  #;
-! -------------------------|----------------------------|-----------------------------|
-[1Sg][3Sg]:~f(t)zikun     #; [1Sg][3Pl]:~f(t)zingi     #; [1Sg][3Du]:~f(t)zigngek    #;
-[1Pl][3Sg]:~sf(e)steggu   #; [1Pl][3Pl]:~sf(e)steki    #; [1Pl][3Du]:~sf(e)stekek    #;
-[1Du][3Sg]:~sf(e)stegnegu #; [1Du][3Pl]:~sf(e)stegneki #; [1Du][3Du]:~sf(e)stegnekek #;
-! -------------------------|----------------------------|-----------------------------|
-[2Sg][3Sg]:~f(t)zigu      #; [2Sg][3Pl]:~f(t)ziki      #; [2Sg][3Du]:~f(t)zikek      #;
-[2Pl][3Sg]:~sf(e)ggu      #; [2Pl][3Pl]:~sf(e)ki       #; [2Pl][3Du]:~sf(g₁)kek      #;
-[2Du][3Sg]:~sf(e)gnegu    #; [2Du][3Pl]:~sf(e)gneki    #; [2Du][3Du]:~sf(g₁)gnekek   #;
-! -------------------------|----------------------------|-----------------------------|
-[3Sg][1Sg]:~f(g/t)anga    #; [3Sg][1Pl]:~f(g/t)inkut   #; [3Sg][1Du]:~f(g/t)inkung   #;
-[3Pl][1Sg]:~f(g/t)atnga   #; [3Pl][1Pl]:~f(g/t)inkut   #; [3Pl][1Du]:~f(g/t)inkung   #;
-[3Du][1Sg]:~f(g/t)agnenga #; [3Du][1Pl]:~f(g/t)inkut   #; [3Du][1Du]:~f(g/t)inkung   #;
-! -------------------------|----------------------------|-----------------------------|
-!                          |                            |                             | 
-!                          |                            |                             | 
-!                          |                            |                             | 
-! -------------------------|----------------------------|-----------------------------|
-[2Sg][1Sg]:~f(t)zinga     #; [2Sg][1Pl]:~f(t)zikut     #; [2Sg][1Du]:~f(t)zikung     #;
-[2Pl][1Sg]:~sf(e)ngnga    #; [2Pl][1Pl]:~sf(e)kut      #; [2Pl][1Du]:~sf(e)kung      #;
-[2Du][1Sg]:~sf(e)gnenga   #; [2Du][1Pl]:~sf(e)gneku    #; [2Du][1Du]:~sf(e)gnekung   #;
-! -------------------------|----------------------------|-----------------------------|
-[3Sg][2Sg]:~f(g/t)aten    #; [3Sg][2Pl]:~f(g/t)isi     #; [3Sg][2Du]:~f(g/t)istek    #;
-[3Pl][2Sg]:~f(g/t)aten    #; [3Pl][2Pl]:~f(g/t)isi     #; [3Pl][2Du]:~f(g/t)istek    #;
-[3Du][2Sg]:~f(g/t)aten    #; [3Du][2Pl]:~f(g/t)isi     #; [3Du][2Du]:~f(g/t)istek    #;
-! -------------------------|----------------------------|-----------------------------|
-[1Sg][2Sg]:~f(t)ziken     #;                            |                             |
-[1Pl][2Sg]:~sf(e)steken   #;                            |                             |
-[1Du][2Sg]:~sf(e)steken   #;                            |                             |
-! -------------------------|----------------------------|-----------------------------|
-!                          |                            |                             | 
-!                          |                            |                             | 
-!                          |                            |                             | 
-! -------------------------|----------------------------|-----------------------------|
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[3Sg][3Sg]:~f(g/t)agu     InterrogativeEnclitic; [3Sg][3Pl]:~f(g/t)aki     InterrogativeEnclitic; [3Sg][3Du]:~f(g/t)akek     InterrogativeEnclitic;
+[3Sg][3Sg]:~f(g/t)aguu    InterrogativeEnclitic;
+[3Pl][3Sg]:~f(g/t)atgu    InterrogativeEnclitic; [3Pl][3Pl]:~f(g/t)atki    InterrogativeEnclitic; [3Pl][3Du]:~f(g/t)atkek    InterrogativeEnclitic;
+[3Du][3Sg]:~f(g/t)agnegu  InterrogativeEnclitic; [3Du][3Pl]:~f(g/t)agneki  InterrogativeEnclitic; [3Du][3Du]:~f(g/t)agnekek  InterrogativeEnclitic;
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[1Sg][3Sg]:~f(t)zikun     InterrogativeEnclitic; [1Sg][3Pl]:~f(t)zingi     InterrogativeEnclitic; [1Sg][3Du]:~f(t)zigngek    InterrogativeEnclitic;
+[1Pl][3Sg]:~sf(e)steggu   InterrogativeEnclitic; [1Pl][3Pl]:~sf(e)steki    InterrogativeEnclitic; [1Pl][3Du]:~sf(e)stekek    InterrogativeEnclitic;
+[1Du][3Sg]:~sf(e)stegnegu InterrogativeEnclitic; [1Du][3Pl]:~sf(e)stegneki InterrogativeEnclitic; [1Du][3Du]:~sf(e)stegnekek InterrogativeEnclitic;
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[2Sg][3Sg]:~f(t)zigu      InterrogativeEnclitic; [2Sg][3Pl]:~f(t)ziki      InterrogativeEnclitic; [2Sg][3Du]:~f(t)zikek      InterrogativeEnclitic;
+[2Pl][3Sg]:~sf(e)ggu      InterrogativeEnclitic; [2Pl][3Pl]:~sf(e)ki       InterrogativeEnclitic; [2Pl][3Du]:~sf(g₁)kek      InterrogativeEnclitic;
+[2Du][3Sg]:~sf(e)gnegu    InterrogativeEnclitic; [2Du][3Pl]:~sf(e)gneki    InterrogativeEnclitic; [2Du][3Du]:~sf(g₁)gnekek   InterrogativeEnclitic;
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[3Sg][1Sg]:~f(g/t)anga    InterrogativeEnclitic; [3Sg][1Pl]:~f(g/t)inkut   InterrogativeEnclitic; [3Sg][1Du]:~f(g/t)inkung   InterrogativeEnclitic;
+[3Pl][1Sg]:~f(g/t)atnga   InterrogativeEnclitic; [3Pl][1Pl]:~f(g/t)inkut   InterrogativeEnclitic; [3Pl][1Du]:~f(g/t)inkung   InterrogativeEnclitic;
+[3Du][1Sg]:~f(g/t)agnenga InterrogativeEnclitic; [3Du][1Pl]:~f(g/t)inkut   InterrogativeEnclitic; [3Du][1Du]:~f(g/t)inkung   InterrogativeEnclitic;
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+!                                              |                                                |                                                 | 
+!                                              |                                                |                                                 | 
+!                                              |                                                |                                                 | 
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[2Sg][1Sg]:~f(t)zinga     InterrogativeEnclitic; [2Sg][1Pl]:~f(t)zikut     InterrogativeEnclitic; [2Sg][1Du]:~f(t)zikung     InterrogativeEnclitic;
+[2Pl][1Sg]:~sf(e)ngnga    InterrogativeEnclitic; [2Pl][1Pl]:~sf(e)kut      InterrogativeEnclitic; [2Pl][1Du]:~sf(e)kung      InterrogativeEnclitic;
+[2Du][1Sg]:~sf(e)gnenga   InterrogativeEnclitic; [2Du][1Pl]:~sf(e)gneku    InterrogativeEnclitic; [2Du][1Du]:~sf(e)gnekung   InterrogativeEnclitic;
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[3Sg][2Sg]:~f(g/t)aten    InterrogativeEnclitic; [3Sg][2Pl]:~f(g/t)isi     InterrogativeEnclitic; [3Sg][2Du]:~f(g/t)istek    InterrogativeEnclitic;
+[3Pl][2Sg]:~f(g/t)aten    InterrogativeEnclitic; [3Pl][2Pl]:~f(g/t)isi     InterrogativeEnclitic; [3Pl][2Du]:~f(g/t)istek    InterrogativeEnclitic;
+[3Du][2Sg]:~f(g/t)aten    InterrogativeEnclitic; [3Du][2Pl]:~f(g/t)isi     InterrogativeEnclitic; [3Du][2Du]:~f(g/t)istek    InterrogativeEnclitic;
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[1Sg][2Sg]:~f(t)ziken     InterrogativeEnclitic;                                                |                                                 |
+[1Pl][2Sg]:~sf(e)steken   InterrogativeEnclitic;                                                |                                                 |
+[1Du][2Sg]:~sf(e)steken   InterrogativeEnclitic;                                                |                                                 |
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+!                                              |                                                |                                                 | 
+!                                              |                                                |                                                 | 
+!                                              |                                                |                                                 | 
+!----------------------------------------------|------------------------------------------------|-------------------------------------------------|
 
 
 LEXICON IntransitivePresentOptative
@@ -17374,11 +17334,11 @@ LEXICON EmotionalRootPostbase
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON Demonstrative
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! extended |   restricted    |   obscured    |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! OVER (NEARER)                              |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
               iigna         #;  aamna       #;  ! Abs Sg Pron      |
               ingumi        #;  amumi       #;  ! Loc Sg Pron      |
               iingyuq       #;  aamyuq      #;  ! Voc Sg           |
@@ -17392,9 +17352,9 @@ aawhkun   #;                #;  aamggun     #;  ! Via Adv          |
 awaken    #;  iingken       #;  amaken      #;  ! Abl_Mod Adv      |
 aawhken   #;  aamken        #;                  ! Abl_Mod Adv      |
 taawa     #;  tazinga       #;  taama       #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! OVER (FARTHER)                             |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 aagna     #;    iikna       #;  akemna      #;  ! Abs Sg Pron      |                  
 agumi     #;    ikumi       #;  akmumi      #;  ! Loc Sg Pron      |
 aagyuq    #;    iiksuq      #;  akemyuq     #;  ! Voc Sg           |
@@ -17406,9 +17366,9 @@ agavek    #;    ikavek      #;  akmavek     #;  ! Ter Adv          |
 aaggun    #;    ikagun      #;  akmagun     #;  ! Via Adv          |
 aagken    #;    ikegken     #;  akmaken     #;  ! Abl_Mod Adv      |
 taaga     #;    tazika      #;  taakma      #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! UP                                         |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 paagna    #;    piikna      #;  aamna       #;  ! Abs Sg Pron      |
 pagumi    #;    pikumi      #;  amumi       #;  ! Loc Sg Pron      |
 paagyuq   #;    piiksuq     #;  aamyuq      #;  ! Voc Sg           |
@@ -17422,9 +17382,9 @@ paaggun   #;    pikagun     #;  pamagun     #;  ! Via Adv          |
 paagken   #;    pikegken    #;  pamaken     #;  ! Abl_Mod Adv      |
 espaga    #;    espika      #;  espama      #;  ! Anaph Adv Ptcl   |
 tespaga   #;    tespika     #;  tespama     #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! DOWN (BELOW)                               |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 unegna    #;    kaana       #;  saamna      #;  ! Abs Sg Pron      |
 un'gumi   #;    kanumi      #;  samumi      #;  ! Loc Sg Pron      |
 unegyuq   #;    kaanyuq     #;  saamyuq     #;  ! Voc Sg           |
@@ -17439,9 +17399,9 @@ unegken   #;    kanaken     #;  samaken     #;  ! Abl_Mod Adv      |
                 kaanken     #;  saamken     #;  ! Abl_Mod Adv      |
 taan'ga   #;    eskana      #;  esama       #;  ! Anaph Adv Ptcl   |
                 teskana     #;  tesama      #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------| 
+!--------------------------------------------|---------------------| 
 ! DOWN (TOWARD EXIT)                         |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 unegna    #;     uugna      #;  sakemna     #;  ! Abs Sg Pron      |
 un'gumi   #;     ugumi      #;  sakmumi     #;  ! Loc Sg Pron      |
 unegyuq   #;     uugyuq     #;  sakemyuq    #;  ! Voc Sg           |
@@ -17456,9 +17416,9 @@ unegken   #;     kanaken    #;  sakmaken    #;  ! Abl_Mod Adv      |
                  kaanken    #;                  ! Abl_Mod Adv      |
 taan'ga   #;     eskana     #;  esakma      #;  ! Anaph Adv Ptcl   |
                  teskana    #;  tesakma     #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! INSIDE                                     |                     | 
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 qaawna    #;     kiiwna     #;  qaamna      #;  ! Abs Sg Pron      |
 qawani    #;     kigumi     #;  qamumi      #;  ! Loc Sg Pron      |
                  kiwumi     #;                                     |
@@ -17475,9 +17435,9 @@ qaawhken  #;     kiiwhken   #;  qamaken     #;  ! Abl_Mod Adv      |
                                 qaamken     #;  ! Abl_Mod Adv      |
 esqawa    #;     eskiwa     #;  esqama      #;  ! Anaph Adv Ptcl   |
 tesqawa   #;     teskiwa    #;  tesqama     #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! OUTSIDE                                    |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 qaagna    #;                    qakmena     #;  ! Abs Sg Pron      |
 qaqani    #;                    qakmumi     #;  ! Loc Sg Pron      |
 qaagyuq   #;                    qakemyuq    #;  ! Voc Sg           |
@@ -17491,9 +17451,9 @@ qaagun    #;                    qakmagun    #;  ! Via Adv          |
 qaagken   #;                    qakmaken    #;  ! Abl_Mod Adv      |
 esqawa    #;                    esqakma     #;  ! Anaph Adv Ptcl   |
 tesqawa   #;                    tesqakma    #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! HERE                                       |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 maana     #;     una        #;  iimna       #;  ! Abs Sg Pron      |
 matumi    #;     uumi       #;  imumi       #;  ! Loc Sg Pron      |
                  uyuq       #;  iimyuq      #;  ! Voc Sg           |
@@ -17501,7 +17461,7 @@ matumi    #;     uumi       #;  imumi       #;  ! Loc Sg Pron      |
 maakut    #;     ukut       #;  imkut       #;  ! Abs/Rel Pl Pron  |
 tamana    #;     taana      #;  tazimna     #;  ! Anaph Abs Pron   |
                  tawani     #;                  ! Anaph Abs Pron   |
-                 tawaten    #;                  ! Equ Pron   |
+                 tawaten    #;                  ! Equ Pron         |
 maa       #;     wha        #;  ima         #;  ! Adv Ptcl         |
 maani     #;     whani      #;  imani       #;  ! Loc Adv          |
 maavek    #;     whavek     #;  imavek      #;  ! Ter Adv          |
@@ -17510,9 +17470,9 @@ maagun    #;     whagun     #;  imagun      #;  ! Via Adv          |
 maaken    #;     whaken     #;  imaken      #;  ! Abl_Mod Adv      |
                                 iimken      #;  ! Abl_Mod Adv      |
 tamaa     #;     tawa       #;  tazima      #;  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 ! NEAR, COMING                               |                     |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
                  uukna      #;               |  ! Abs Sg Pron      |
                  ukumi      #;               |  ! Loc Sg Pron      |
                  uuksuq     #;               |  ! Voc Sg           |
@@ -17524,7 +17484,7 @@ tamaa     #;     tawa       #;  tazima      #;  ! Anaph Adv Ptcl   |
                  ukagun     #;               |  ! Via Adv          |
                  ukegken    #;               |  ! Abl_Mod Adv      |
                  taakwa     #;               |  ! Anaph Adv Ptcl   |
-! -------------------------------------------|---------------------|
+!--------------------------------------------|---------------------|
 
 
 
@@ -17537,31 +17497,62 @@ tamaa     #;     tawa       #;  tazima      #;  ! Anaph Adv Ptcl   |
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 LEXICON PersonalPronoun
-! -----------|-------------------|--------------------|----------------|
+!------------|-------------------|--------------------|----------------|
 !  singular  |       plural      |         dual       |                |
-! ---------------------------------------------------------------------|
+!----------------------------------------------------------------------|
 !            |                   |                    |  ! 1st Person  |
 whanga      #;  whangkuta       #;  whangkutung      #;  ! Abs/Rel     |
 whangamnun  #;  whangamnun      #;  whangkutegnun    #;  ! Ter         |
 whangamkun  #;  whangkutgun     #;  whangkutegnegun  #;  ! Via         |
 whangamtun  #;  whangkutestun   #;  whangkutegestun  #;  ! Equ         |
-! -----------|-------------------|--------------------|----------------|
+!------------|-------------------|--------------------|----------------|
                                                          ! 2nd Person  |
 elpek       #;  elpesi          #;  elpetek          #;  ! Abs/Rel     |
 elpenun     #;  elpesinun       #;  elpetegnun       #;  ! Ter         |
 elpegun     #;  elpesigun       #;  elpetegnegun     #;  ! Via         |
 elpetun     #;  elpesistun      #;  elpetegestun     #;  ! Equ         |
-! -----------|-------------------|--------------------|----------------|
+!------------|-------------------|--------------------|----------------|
 !            |                   |                    |  ! 3rd Person  |  
-ellnga      #;  ellngit         #;  elkek            #;  ! Abs         |
+ellnga      #;  ellngit         #;  elkek            #;  ! Abs/Rel     |
 ellngan     #;  ellgita         #;  elkek            #;  ! Rel         |
 ellnganun   #;  ellngitnun      #;  elkegkenun       #;  ! Ter         |
 ellngakun   #;  ellngitgun      #;  elekegkenkun     #;  ! Via         |
 ellngatun   #;  ellngi(te)stun  #;  elkegestun       #;  ! Equ         |
-! -----------|-------------------|--------------------|----------------|
+!------------|-------------------|--------------------|----------------|
 !            |                   |                    |  ! 4th Person  |
 ellmi       #;  ellmeng         #;  ellmeng          #;  ! Abs/Rel     |
 ellminun    #;  ellmeggnun      #;  ellmeg(te)nun    #;  ! Ter         |
 ellmikun    #;  ellmegteggun    #;  ellmegtegnegun   #;  ! Via         |
 ellmitun    #;  ellmegestun     #;  elmegestun       #;  ! Equ         |
-! -----------|-------------------|--------------------|----------------|
+!------------|-------------------|--------------------|----------------|
+
+
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!               !!!
+!!!   Enclitics   !!!
+!!!               !!!
+!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON InterrogativeEnclitic
+0:0               #;
+-lli[Encl]:lli    #;
+-llu[Encl]:llu    #;
+-mi[Encl]:mi      #;
+-ngam[Encl]:ngma  #;
+-tuq[Encl]:tuq    #;
+-wha[Encl]:wha    #;
+
+LEXICON EncliticOrEnd
+0:0               #;
+-lli[Encl]:lli    #;
+-llu[Encl]:llu    #;
+-mi[Encl]:mi      #;
+-ngam[Encl]:ngma  #;
+-nguq[Encl]:nguq  #;
+-qa[Encl]:qa      #;
+-qun[Encl]:qun    #;
+-sa[Encl]:sa      #;
+-ta[Encl]:ta      #;
+-tuq[Encl]:tuq    #;
+-wha[Encl]:wha    #;

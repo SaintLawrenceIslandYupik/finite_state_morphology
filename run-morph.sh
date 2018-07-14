@@ -1,8 +1,7 @@
 #!/bin/bash
 
-#FILES="analyzer_output/jac.nn.rp/lore_volume1"
-FILES="analyzer_output/txts/ungipaghaghlanga"
 
+FILES="analyzer_output/txts/lore_volume1/toy"
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
 for file in "$FILES"/*.in; do
@@ -13,20 +12,38 @@ for file in "$FILES"/*.in; do
 	echo "Processing ${file} to create ${output}..."
 
 	while IFS= read -r line; do
-		# TODO: Remove BOM from *.in files
-		#		Sentence needs to processed better
-		# 			Keep punctuation such as dashes (-) and apostrophes (')
-		#			Ignore numerals
-		#			English borrowings --> Keep track of them and ignore??
-		sent=$(echo "$line" | tr -d '[:punct:]' | tr '[:upper:]' '[:lower:]')
+
+		# TODO: Does not account for English borrowings
+		sent=$(echo "$line" | tr -d ',;:()"!?.' | tr '[:upper:]' '[:lower:]')
 
 		declare -a 'a=('"$sent"')'
 
 		printf '%s\n\n' "$line" | sed 's/\t/ /g'
+
 		for word in "${a[@]}"; do
-			echo "$word" | flookup -w "" ./ess.fomabin
-			printf "\n"
+			echo "${word}" | grep -q '[0-9]'
+
+			if [[ $? = 1 ]]; then
+				# Accounts for words that end in -s, -g, -gh
+				wordOriginalEnding=$(echo "$word" | sed 's/s$/t/' | sed 's/g$/k/' | sed 's/gh$/q/')
+
+				result=$(echo "$wordOriginalEnding" | flookup -w "" ./ess.fomabin)
+
+				# Attempts to analyze word again without apostrophes
+				if [[ "$result" == "$wordOriginalEnding	+?" ]]; then
+					wordNoApostrophe=$(echo "$wordOriginalEnding" | sed "s/'//g")
+
+					resultNoApostrophe=$(echo "$wordNoApostrophe" | flookup -w "" ./ess.fomabin | sed "s/$wordNoApostrophe/$word/")
+
+					echo "$resultNoApostrophe"
+				else
+					echo "$result"
+				fi
+
+				printf "\n"
+			fi
 		done
+
 		printf '%s\n' '------------------------'
 
 	done <"$file" > "$output"
