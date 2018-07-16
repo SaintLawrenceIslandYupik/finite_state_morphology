@@ -115,7 +115,7 @@ asunaq        	        #; ! soon
 asunat                	#; ! only; as before; as usual
 asunga                	#; ! come on; you'd better; and also
 asunut                	#; ! only if; if only
-ataw                  	#; ! do it anyway; give it a try; let's
+ataw                  	#; ! do it anyway; give it a try
 atawha                	#; ! you know; you see
 atgenra               	#; ! it happened although we no longer wanted it to; it happened too late; unfortunately however
 atunem                	#; ! together; simultaneously
@@ -553,34 +553,40 @@ Yupigestun            	#; ! in the Yupik language
 
 LEXICON Interrogative 
 
-kina             InterrogativeEnclitic; ! who?
-kinkut           InterrogativeEnclitic; ! who? (plural)
-kitum            InterrogativeEnclitic; ! whose?
-na               InterrogativeEnclitic; ! to be where?
-naken            InterrogativeEnclitic; ! from where?
-nani             InterrogativeEnclitic; ! (at) where?
+! Question words that are adverbial in nature do not inflect
 naten            InterrogativeEnclitic; ! how?
-navek            InterrogativeEnclitic; ! to where?
-qafsina          InterrogativeEnclitic; ! how many?
 qakun            InterrogativeEnclitic; ! when? (future)
 qavngaq          InterrogativeEnclitic; ! when? (past)
-sa               InterrogativeEnclitic; ! what?
-saam             InterrogativeEnclitic; ! what?
-sameng           InterrogativeEnclitic; ! what?
-sangameng        InterrogativeEnclitic; ! why? (focused on 3rd person plural subject of verb)
-sangami          InterrogativeEnclitic; ! why? (focused on 3rd person singular subject of verb)
-sangan           InterrogativeEnclitic; ! why? (in general)
+
+naken            InterrogativeEnclitic; ! from where? (special ABL_MOD case ending)
+nani             InterrogativeEnclitic; ! (at) where? (special LOC case ending)
+navek            InterrogativeEnclitic; ! to where? (special TER case ending)
+
+sa               NounPostbase1; ! what?; relative (kin)
+sa               VerbIntr1; ! to do what?; to do something
+sa               VerbTrns1; ! to do what?; to do something
+sangaawa         NounInfl; ! what is it?
 
 kina             NounPostbase1; ! who?
-kinangagh        NounPostbase1; ! who? (expanded form for 3rd person interrogatives)
 kinku            NounPostbase1; ! who? (plural)
-kinkungagh       NounPostbase1; ! who? (expanded form for 3rd person interrogatives)
-naligh*          NounPostbase1; ! which one(s)?
-qafsine          NounPostbase1; ! how many?
+kitum            NounPostbase1; ! whose?
+kinangaawa       NounInfl; ! who is he/she?
+kinkungaawa      NounInfl; ! who are they?
+
+qafsina          NounInfl; ! how many?
 qafsineg         NounPostbase1; ! how many?
-sa               NounPostbase1; ! what?; relative (kin)
-saam             NounPostbase1; ! what?; something
-sangagh          NounPostbase1; ! what (expanded form for 3rd person interrogatives)
+
+sangan           InterrogativeEnclitic; ! why? (in general or focused on [3Sg] OBJ)
+sangita          InterrogativeEnclitic; ! why? (focused on [3Pl] OBJ)
+sangankek        InterrogativeEnclitic; ! why? (focused on [3Du] OBJ)
+sangama          InterrogativeEnclitic; ! why? (focused on [1Sg])
+sangamta         InterrogativeEnclitic; ! why? (focused on [1Pl])
+sangavek         InterrogativeEnclitic; ! why? (focused on [2Sg])
+sangafsi         InterrogativeEnclitic; ! why? (focused on [2Pl])
+sangameng        InterrogativeEnclitic; ! why? (focused on [3Pl] SBJ)
+sangami          InterrogativeEnclitic; ! why? (focused on [3Sg] SBJ)
+
+naligh*          NounPostbase1; ! which one(s)?
 
 
 
@@ -699,7 +705,7 @@ aghevestaaghagh*       	NounPostbase1; ! soft thing; person who is weakwilled an
 aghevestaagh           	NounPostbase1; ! soft thing; person who is weakwilled and easily influenced
 aghhmeghnegh           	NounPostbase1; ! firmness; sturdiness
 aghhutanga tamaghhaate 	NounPostbase1; ! every day
-aghiknagh              	NounPostbase1; ! “prickly” sculpin
+aghiknagh              	NounPostbase1; ! "prickly" sculpin
 aghillug               	NounPostbase1; ! skin mitten; glove
 aghinagh               	NounPostbase1; ! moisture outdoors; wet weather
 aghinghwaagh           	NounPostbase1; ! small bag of sealskin holding certain articles used to try to ensure good whale hunting
@@ -721,7 +727,7 @@ aghnalqwaagh           	NounPostbase1; ! old lady, woman
 aghnalqwaavregagh      	NounPostbase1; ! old senile woman
 aghnapari              	NounPostbase1; ! older girl; young woman
 aghnasaleg             	NounPostbase1; ! female walrus; cow walrus
-aghnasigh              	NounPostbase1; ! “sea cabbage”
+aghnasigh              	NounPostbase1; ! "sea cabbage"
 aghneghet              	NounPostbase1; ! dawn; dusk; twilight
 aghneghniimna         	NounPostbase1; ! the one from earlier today
 aghnegh                	NounPostbase1; ! day
@@ -999,7 +1005,7 @@ amitelqagh             	NounPostbase1; ! thin bone in forearm; radius; longitudi
 amitelqag              	NounPostbase1; ! sewnup hole in skin hull of boat
 amiwaagh               	NounPostbase1; ! threshold
 amle                  	NounPostbase1; ! crotch and upper leg area
-Amliqag                	NounPostbase1; ! narrows at VABM “Knife” near center of Koozata Lagoon on St. Lawrence Is.
+Amliqag                	NounPostbase1; ! narrows at VABM "Knife" near center of Koozata Lagoon on St. Lawrence Is.
 amllaghwaagh           	NounPostbase1; ! a certain thin seaweed; a certain troutlike fish
 amlluqiiragh           	NounPostbase1; ! vegetables of any kind; greens; in particular heartleafed saxifrage (Saxifraga punctata or Saxifraga nelsoniana)
 amqeghpagte           	NounPostbase1; ! for ground to freeze
@@ -1789,7 +1795,7 @@ iluugh                 	NounPostbase1; ! cousin (vocative); buddy (vocative)
 imaghllug              	NounPostbase1; ! gale; waves in ocean
 imaghniite             	NounPostbase1; ! waterproof gutskin parka used at sea
 imagh                  	NounPostbase1; ! open sea; ocean; contents; pus
-imaghtagh              	NounPostbase1; ! “shorthorn” sculpin
+imaghtagh              	NounPostbase1; ! "shorthorn" sculpin
 imaghyag               	NounPostbase1; ! abcess; boil
 imaleg                 	NounPostbase1; ! filled thing; pregnant woman
 imamta                	NounPostbase1; ! even though I told him/her …
@@ -1804,7 +1810,7 @@ imeseghetagh           	NounPostbase1; ! scraper as for dishes
 Imighi                 	NounPostbase1; ! site north along coast from Emeghee Pt. on St. Lawrence Is.
 imiisagh               	NounPostbase1; ! gift given in gratitude to someone who has brought food to a feast
 imlaa                  	NounPostbase1; ! unborn seal pup
-Impagagh               	NounPostbase1; ! site at VABM “Grace” on St. Lawrence Is.
+Impagagh               	NounPostbase1; ! site at VABM "Grace" on St. Lawrence Is.
 imtiwala               	NounPostbase1; ! big heavy knife carried on back by herders for selfdefense
 Imtugmii            	NounPostbase1; ! a particular clan
 Imtug                  	NounPostbase1; ! former village in Chukotka
@@ -2150,7 +2156,7 @@ kemaglug               	NounPostbase1; ! sea vegetable
 kemagnagh              	NounPostbase1; ! lung
 kemeghqegkagh          	NounPostbase1; ! dish of cooked, boned, and flaked salmn meat mixed with whipped sea mammal oil (and optionally berries)
 kemegmig               	NounPostbase1; ! underwear
-kemeg                  	NounPostbase1; ! flesh; skin; relative(s) (one's own “flesh and blood”)
+kemeg                  	NounPostbase1; ! flesh; skin; relative(s) (one's own "flesh and blood")
 kemeg                  	NounPostbase1; ! skin
 kemegtungigh           	NounPostbase1; ! shrimp or shrimplike creature
 kemekrag               	NounPostbase1; ! meat; piece of meat; relative; kin
@@ -2190,7 +2196,7 @@ kepellegh              	NounPostbase1; ! tub
 Kepkaghyalqag          	NounPostbase1; ! site on Akeftapak Bay on St. Lawrence Is.
 kepliigh               	NounPostbase1; ! bangs of hair
 kepsiigalngugh*        	NounPostbase1; ! shrimp type (small)
-kepusigh               	NounPostbase1; ! rotary electric saw; “skilsaw”
+kepusigh               	NounPostbase1; ! rotary electric saw; "skilsaw"
 kereg                 	NounPostbase1; ! come! (to call puppy)
 kergam                	NounPostbase1; ! no sooner than; ready to act
 kestisigh              	NounPostbase1; ! the act or art of counting; number; numeral
@@ -2252,11 +2258,11 @@ kilgaa                 	NounPostbase1; ! tundra; wilderness; uninhabited area; t
 kilgaantagh            	NounPostbase1; ! small islands that are far from mainland, a little ways offshore
 kiligh                 	NounPostbase1; ! wound; cut
 kimaawinagh            	NounPostbase1; ! something that delays one)
-Kimaawitem Naayvaa     	NounPostbase1; ! Niyrakpak (Naayvaghpak) Lake (smaller lake just east along coast from ~ on St. Lawrence Is.)
+Kimaawitem Naayvaa     	NounPostbase1; ! Niyrakpak (Naayvaghpak) Lake (smaller lake just east along coast from St. Lawrence Is.)
 kina                   	NounPostbase1; ! who? (singular); someone (when used in a noninterrogative context);
 kineghtagh             	NounPostbase1; ! dried meat; dried fish
 kingite                	NounPostbase1; ! youngest child
-kingug                 	NounPostbase1; ! worm; maggot; “sand mason”; krill
+kingug                 	NounPostbase1; ! worm; maggot; "sand mason"; krill
 kinguligh*             	NounPostbase1; ! descendant
 kingulighpigagh        	NounPostbase1; ! the very last one
 kinguliighagh          	NounPostbase1; ! younger generation
@@ -2265,16 +2271,15 @@ kingumegta             	NounPostbase1; ! last whale migrating in a particular se
 kingumute              	NounPostbase1; ! in the future; from now on
 kingunegh              	NounPostbase1; ! descendant
 kingu                  	NounPostbase1; ! rear; back; time after
-kingupag               	NounPostbase1; ! tube of “sand mason” (a type of worm)
+kingupag               	NounPostbase1; ! tube of "sand mason" (a type of worm)
 kinguyag               	NounPostbase1; ! stern of boat
 kingwaagh              	NounPostbase1; ! third of three floats of whaling gear
-kinkut                 	NounPostbase1; ! who? (plural)
 kipughmute             	NounPostbase1; ! the opposite direction
 kipullegmute           	NounPostbase1; ! in the opposite direction
 kir'pisa               	NounPostbase1; ! Russian brick tea
 kirwaayulga            	NounPostbase1; ! bag with shoulder strap
 kisaate                	NounPostbase1; ! rock weight tied hanging from and holding down the walrus hide roofing of the traditional domeshaped house, the mangteghapik (q.v.)
-Kisiim Naayghaa        	NounPostbase1; ! hill with VABM “White” on St. Lawrence Is.
+Kisiim Naayghaa        	NounPostbase1; ! hill with VABM "White" on St. Lawrence Is.
 Kisii                 	NounPostbase1; ! projection of land into lagoon from barrier isthmus toward east end of Koozata Lagoon on St. Lawrence Is.
 Kitayeghmii            	NounPostbase1; ! Chinese person
 kiti                   	NounPostbase1; ! cat, kitty
@@ -2366,9 +2371,7 @@ Laavlaaghmii           	NounPostbase1; ! Saami; Laplander
 laawaagh               	NounPostbase1; ! dug out hole in ground for storing meat
 lalala                 	NounPostbase1; ! dew on grass
 Laluramke             	NounPostbase1; ! white person; Caucasian
-Laluramke              	NounPostbase1; ! white person, Caucasian
 laluwaaye             	NounPostbase1; ! dried onion; onion; wild chive (Alium schoenoprasum)
-laluwaaye              	NounPostbase1; ! onion
 laluwaay               	NounPostbase1; ! dried onion; onion; wild chive (Alium schoenoprasum)
 lampa                  	NounPostbase1; ! lumber; board
 lata                   	NounPostbase1; ! letter (correspondence or letter of the alphabet); epistle (in the Bible)
@@ -2699,7 +2702,7 @@ naasquvrag             	NounPostbase1; ! bowl; rounded container
 naatghigh             	NounPostbase1; ! for one's boot sole to wear out
 naavellegh             	NounPostbase1; ! ruin(s); broken piece(s)
 naavghusagh            	NounPostbase1; ! item given in exchange for something
-Naayghagh              	NounPostbase1; ! Gambell or “Sevoukuk” Mountain
+Naayghagh              	NounPostbase1; ! Gambell or "Sevoukuk" Mountain
 naayghagh*				NounPostbase1; ! mountain
 naayghagh				NounPostbase1; ! mountain
 naayghaleketaagh       	NounPostbase1; ! small hill with large rocks
@@ -2719,7 +2722,7 @@ naghaaghute            	NounPostbase1; ! toy; plaything
 naghaaghutraagh        	NounPostbase1; ! cartoon
 naghaalgute            	NounPostbase1; ! playmate
 naghllug               	NounPostbase1; ! head downwards
-naghpiiteleg           	NounPostbase1; ! bearded seal (Erignathus barbatus)with bright band over the “shoulder” area
+naghpiiteleg           	NounPostbase1; ! bearded seal (Erignathus barbatus)with bright band over the "shoulder" area
 naghpiite              	NounPostbase1; ! lasso
 naghqugh               	NounPostbase1; ! rheumatism
 naghqutkagh            	NounPostbase1; ! feed (for dogs or other animals)
@@ -2900,7 +2903,7 @@ nengaa                 	NounPostbase1; ! daughter's husband (sonin-law); brother
 nengaawagh             	NounPostbase1; ! a man who is working (according to custom) for the parents of the woman he will marry; sonin-law to be
 Nengesighviget         	NounPostbase1; ! creek and valley that comes out near Vngyat Pt. (Angyat) on St. Lawrence Is.
 nengigh                	NounPostbase1; ! share of a catch
-nengighqellegh         	NounPostbase1; ! division (the process of ~)
+nengighqellegh         	NounPostbase1; ! division (the process of)
 Nengiighhaghmii     	NounPostbase1; ! a particular clan
 nengiighhagh*          	NounPostbase1; ! little place; little thing; little old couple (when used in dual)
 Nengiighhagh           	NounPostbase1; ! Ningeehak Beach on St. Lawrence Is.
@@ -2916,7 +2919,7 @@ nengtaatagagh          	NounPostbase1; ! rubber
 nengtaatagh            	NounPostbase1; ! accordion
 nengulgha             	NounPostbase1; ! for waves to break on the beach; for surf to come up and sweep across beach after waves break
 nenguugte             	NounPostbase1; ! for wind to get stronger
-nengyaapellegagh       	NounPostbase1; ! “ringtail snail” fish
+nengyaapellegagh       	NounPostbase1; ! "ringtail snail" fish
 nengyughllag           	NounPostbase1; ! greatgrandmother
 nengyugh               	NounPostbase1; ! grandmother
 nengziig               	NounPostbase1; ! grasshopper or grasshopperlike insect
@@ -2997,7 +3000,7 @@ nughagh                	NounPostbase1; ! caribou or reindeer calf
 nughaghqagh            	NounPostbase1; ! reindeer calf; skin of reindeer calf
 nughhagh               	NounPostbase1; ! woman's sister's child; niece or nephew of a woman through her sister
 nughllu                	NounPostbase1; ! seal breathing hole in ice
-nughtughagh            	NounPostbase1; ! small shiny fish type; “delta” smelt
+nughtughagh            	NounPostbase1; ! small shiny fish type; "delta" smelt
 nugiigh                	NounPostbase1; ! kayak harpoon
 nugru                  	NounPostbase1; ! loop; noose
 nugyaghagh             	NounPostbase1; ! entryway to tunnel (saaygu) of semisubterranean house (nenglu)
@@ -3071,7 +3074,7 @@ Nuvug                  	NounPostbase1; ! site near mouth of Tkachen Bay in Chuko
 nuvukraasigh           	NounPostbase1; ! sewing needle
 nuvukraate             	NounPostbase1; ! lace
 nuvukrug               	NounPostbase1; ! point or tip of knife, needle, etc.
-nuvulqugnag            	NounPostbase1; ! longnecked or soft-shelled clam (called “red-tip”)
+nuvulqugnag            	NounPostbase1; ! longnecked or soft-shelled clam (called "red-tip")
 nuyagh                 	NounPostbase1; ! hair
 nuyekligh              	NounPostbase1; ! older or oldest one
 nuyeklighpigagh        	NounPostbase1; ! the very oldest one
@@ -3113,7 +3116,7 @@ Pagkwaagh              	NounPostbase1; ! site near the foothills on the back sid
 pagrugagh              	NounPostbase1; ! tufted puffin (Lunda cirrhata)
 pagugh                	NounPostbase1; ! for there to be a ripple in the distance on the surface of the sea
 pagula                 	NounPostbase1; ! dust; cloudiness in liquid
-paguneghqegkagh        	NounPostbase1; ! dish of reindeer tallow, seal oil, snow and berries; Eskimo “ice cream”
+paguneghqegkagh        	NounPostbase1; ! dish of reindeer tallow, seal oil, snow and berries; Eskimo "ice cream"
 paguneghqutagh         	NounPostbase1; ! crowberry shrub
 pagunghagh*            	NounPostbase1; ! crowberry (Empetrum nigrum or Empretum subholarcticum); berry (in general)
 pagunghaghpag           NounPostbase1; ! prune
@@ -3211,7 +3214,7 @@ pellumeghtagh          	NounPostbase1; ! dish of frozen greens shredded finely b
 pelungi                	NounPostbase1; ! cleanliness
 peluuse               	NounPostbase1; ! saucer
 pelwetemnakute         	NounPostbase1; ! file (hand tool); rasp
-Pengetaaghhagh         	NounPostbase1; ! small hill just north of Myghapowit Mt. with VABM “Black”
+Pengetaaghhagh         	NounPostbase1; ! small hill just north of Myghapowit Mt. with VABM "Black"
 pengetaagte           	NounPostbase1; ! for surface or ice or ground to be bumpy
 pengigh                	NounPostbase1; ! wood (not hardwood but strong); pine wood; larch tree; fir wood
 pengugaghte           	NounPostbase1; ! for a bump to form from an injury; for a small hill to form
@@ -3665,7 +3668,7 @@ qelutagh               	NounPostbase1; ! fastener line
 qemeghyagh             	NounPostbase1; ! eyelash
 qemigh                 	NounPostbase1; ! hill with a long profile; elongated mound; leadline or floatline of net; part of back around spinal column
 qemighllug            	NounPostbase1; ! torso
-Qemighpag              	NounPostbase1; ! hill with VABM “Rock” on St. Lawrence Is.
+Qemighpag              	NounPostbase1; ! hill with VABM "Rock" on St. Lawrence Is.
 qemi                   	NounPostbase1; ! tune; melody
 qemtaaghrag            	NounPostbase1; ! rudder deckhouse; rudder place
 qemtagh                	NounPostbase1; ! attic; upper level, floor, or story of building
@@ -3690,7 +3693,7 @@ qenughhaghagh          	NounPostbase1; ! early loose slush ice
 qenuleg                	NounPostbase1; ! type of codfish
 qenungiitagh           	NounPostbase1; ! scoop for removing brash ice
 qenu                  	NounPostbase1; ! thin layer of fine brash  ice that forms at the beginning of winter; newly forming slush ice; girth; thickness of a more or less cylindrical thing
-qenwaagh               	NounPostbase1; ! “master of the mountain winds”
+qenwaagh               	NounPostbase1; ! "master of the mountain winds"
 qepesegagh             	NounPostbase1; ! small package tied securely
 qepghaqagh             	NounPostbase1; ! work; job; employment
 qepghaqiisag           	NounPostbase1; ! unemployment
@@ -3856,7 +3859,7 @@ qullikagh              	NounPostbase1; ! edible root of glacier avens (Geum glac
 qullingestagh          	NounPostbase1; ! woman's tights
 qullipigeg            	NounPostbase1; ! skin pants in contrast to cloth pants
 qulliraagheg          	NounPostbase1; ! cloth pants in contrast to skin pants
-qullug                	NounPostbase1; ! commode; “honey bucket”; motor well in boat
+qullug                	NounPostbase1; ! commode; "honey bucket"; motor well in boat
 qulmesighagh           	NounPostbase1; ! a pot's worth or quantity of tomcot
 qulmesiite             	NounPostbase1; ! small cooking pot with a handle; saucepan; sea urchin (Strongylocentrotus sp.)
 qulmesiitngwaagh       	NounPostbase1; ! sea urchin (Strongylocentrotus sp.)
@@ -3993,7 +3996,6 @@ saaphanghilngugh*      	NounPostbase1; ! one who can withstand extreme cold
 saaputagh              	NounPostbase1; ! cover; lid; curtain; shade
 saaqwite               	NounPostbase1; ! walrusskin cover of  summer tent from top to bottom
 saaqwligh              	NounPostbase1; ! something next to another; neighbor
-saaqw                 	NounPostbase1; ! area or space next to or right by (it)
 saasqagh              	NounPostbase1; ! for wind to be coming straight in from the ocean; to be turned facing something
 saasqagh               	NounPostbase1; ! wind toward land from ocean
 saatnguraagh           	NounPostbase1; ! skin mitten with fur in
@@ -4148,15 +4150,15 @@ seghlegh               	NounPostbase1; ! bad thing or situation; useless thing; 
 seghleghqwaagh         	NounPostbase1; ! rubbish; trash
 segnegh                	NounPostbase1; ! pot; pan; food container; dish; bowl
 Sekennaag              	NounPostbase1; ! Sekinak Lagoon and site at its southeast end on St. Lawrence Is.
-Sekennaam kenlanga     	NounPostbase1; ! site with VABM  “Geena” at northwest end of Sekinak Lagoon on St. Lawrence Is.
+Sekennaam kenlanga     	NounPostbase1; ! site with VABM  "Geena" at northwest end of Sekinak Lagoon on St. Lawrence Is.
 semnga                 	NounPostbase1; ! castrated reindeer
 semqatwhale           	NounPostbase1; ! pocket knife
 semqatwhali            	NounPostbase1; ! pocket knife
 senapute               	NounPostbase1; ! centerboard in wooden whaleboat
 sengngugh             	NounPostbase1; ! for overflow water to collect on lake or river ice 
 sengngugh               NounPostbase1; ! open route amid sea ice; overflow water on lake or river ice
-sevnaawragh            	NounPostbase1; ! “tea leaves”
-sevri                 	NounPostbase1; ! “threetoothed” bone in a fish head that can be fatal if swallowed
+sevnaawragh            	NounPostbase1; ! "tea leaves"
+sevri                 	NounPostbase1; ! "threetoothed" bone in a fish head that can be fatal if swallowed
 sifteghnag             	NounPostbase1; ! large flat rock
 Sigasit                	NounPostbase1; ! site on the coast east of Gambell at Tiflighak Bay
 Sighineg                NounPostbase1; ! Sireniki, village in Chukotka
@@ -4361,7 +4363,7 @@ suugernge             	NounPostbase1; ! curtain partitioning off the aagra (q.v.
 suughagh*              	NounPostbase1; ! blueberry (Vaccinium uliginosum)
 suughmelngugh*         	NounPostbase1; ! muddy or murky water; cloudy liquid
 suugh                  	NounPostbase1; ! murky liquid; strong tea
-suughqagh*             	NounPostbase1; ! edible cartiledgelike layer at the base of the baleen of the lower jaw near the gums; “oyster” (so-called) of baleen
+suughqagh*             	NounPostbase1; ! edible cartiledgelike layer at the base of the baleen of the lower jaw near the gums; "oyster" (so-called) of baleen
 suugllug               	NounPostbase1; ! one who gets frustrated, angered or offended easily and readily shows his anger; irascible person
 suug                   	NounPostbase1; ! person
 suug                  	NounPostbase1; ! small strap of baleen fastened to harpoon
@@ -4462,8 +4464,8 @@ tamaghhagh             	NounPostbase1; ! all; both (when used in dual); every
 tameghagh              	NounPostbase1; ! piece of meat that is eaten with something oily
 tamekestagh            	NounPostbase1; ! something that is not supposed to be swallowed, but just chewed
 tamlagvig              	NounPostbase1; ! dock; wharf
-tamlinegh              	NounPostbase1; ! lower part of curtain of the aagra, theinsulated inner room of traditional domeshaped house
-tamlughute             	NounPostbase1; ! chin tatoo
+tamlinegh              	NounPostbase1; ! lower part of curtain of the aagra, the insulated inner room of traditional domeshaped house
+tamlughute             	NounPostbase1; ! chin tattoo
 tamlu                  	NounPostbase1; ! chin
 Tamnigh                	NounPostbase1; ! Tomname Pt. on St. Lawrence Is.
 tampa                  	NounPostbase1; ! damper
@@ -4641,7 +4643,7 @@ teteghagh              	NounPostbase1; ! marker (sharpened piece of ivory used t
 Tevelqug               	NounPostbase1; ! saddle between Yaghmelngak Mtn. and Olnooseenuk Mtn. on St. Lawrence Is.
 Tevelqum Naayghaa     	NounPostbase1; ! mountain slightly to the east of Myghapowit Mtn. on St. Lawrence Is.
 Tevetlegh              	NounPostbase1; ! site on Akeftapak Bay on St. Lawrence Is.
-teviitagh              	NounPostbase1; ! youth who starts to “go over” the stretched gymnastic rope in competitions and is celebrated for this
+teviitagh              	NounPostbase1; ! youth who starts to "go over" the stretched gymnastic rope in competitions and is celebrated for this
 Tevleghag              	NounPostbase1; ! Tiflighak Bay on St. Lawrence Is.
 Tevlighagh             	NounPostbase1; ! site on the Itegran Is. side of Chechekuyem Strait in Chukotka
 tevlugh                	NounPostbase1; ! rapids; steep gradient in a river
@@ -4736,10 +4738,10 @@ tunuqaraag            	NounPostbase1; ! small room at the back of the house ente
 tunuqite               	NounPostbase1; ! makeshift structure at rear of house; strip of reddyed polar bear skin sewn onto back of skin pants
 tunuqligh*             	NounPostbase1; ! thing at the rear
 tunuquvinghagh         	NounPostbase1; ! tallow
-tunurriitagh           	NounPostbase1; ! meaty part of upper whale gum; “oyster” (socalled) of baleen
+tunurriitagh           	NounPostbase1; ! meaty part of upper whale gum; "oyster" (socalled) of baleen
 tunusagh                NounPostbase1; ! gift
 tunusiitagh   	        NounPostbase1; ! gift
-tunusitagh             	NounPostbase1; ! meaty part of upper whale gum; “oyster” (socalled) of baleen
+tunusitagh             	NounPostbase1; ! meaty part of upper whale gum; "oyster" (socalled) of baleen
 tunusug                	NounPostbase1; ! back of neck and head
 tupegh                 	NounPostbase1; ! makeshift shelter
 tupeqaag                NounPostbase1; ! bulky or awkward thing
@@ -4986,7 +4988,7 @@ uqlumreg               	NounPostbase1; ! oyster
 uqugh                  	NounPostbase1; ! blubber; oil; seal oil; fat
 uqughqagh              	NounPostbase1; ! lamp oil; fuel oil
 uqughqu                	NounPostbase1; ! oily or inner side of a dried walrus skin
-uqughtekagh            	NounPostbase1; ! dish of salmonberries, seal oil, shortening or lard, and sugar; Eskimo “ice cream”
+uqughtekagh            	NounPostbase1; ! dish of salmonberries, seal oil, shortening or lard, and sugar; Eskimo "ice cream"
 uqug                   	NounPostbase1; ! mold
 uqulghutagh            	NounPostbase1; ! tank for gasoline or oil
 uqumigta               	NounPostbase1; ! flock of birds heading south in evening
@@ -5044,7 +5046,7 @@ uunghagh*              	NounPostbase1; ! harpoon; ice probe or tester
 uunghiitagh            	NounPostbase1; ! food prepared and consumed in conjunction with the dedication of a harpoon; festive delicacy
 uunghute               	NounPostbase1; ! amulet for protection
 uun'gutagh             	NounPostbase1; ! something left for others
-uupa                   	NounPostbase1; ! “sea peach” (Halocynthia aurantia); penis (human)
+uupa                   	NounPostbase1; ! "sea peach" (Halocynthia aurantia); penis (human)
 uuse                  	NounPostbase1; ! hose
 uuslegh                	NounPostbase1; ! pressure ridge; piledup ice; ice jam
 uusnegh                	NounPostbase1; ! river or ocean bank; small hill
@@ -5187,7 +5189,7 @@ Yarga                  	NounPostbase1; ! site on south shore of Arakamchechen Is
 yavlu                  	NounPostbase1; ! sweetheart
 yayiiqa                	NounPostbase1; ! roughlegged hawk (Buteo lagopus)
 yaywaale              	NounPostbase1; ! orphan
-Yaywaalingiighhagh     	NounPostbase1; ! hill with VABM “Negro” on St. Lawrence Is.
+Yaywaalingiighhagh     	NounPostbase1; ! hill with VABM "Negro" on St. Lawrence Is.
 yaywaali               	NounPostbase1; ! orphan
 yaywaase              	NounPostbase1; ! one who has safely escaped danger
 yeghlegi              	NounPostbase1; ! instead; but; yet; contrary to expectation
@@ -5380,7 +5382,7 @@ LEXICON NounPostbase1
 -iiraagh[N→V]:iiraagh                    VerbIntr2;
 -iiraagh[N→V]:iiraagh                    VerbTrns2;
 -~–kaghte[N→V]:~–kaghte                  VerbIntr2; ! TODO: Used with nouns concerning games, money, etc.
-!-~–kaghte[N→V]:~–kaghte                 VerbTrns2; ! TODO: Used with nouns concerning games, money, etc.
+-~–kaghte[N→V]:~–kaghte                  VerbTrns2; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbIntr2;
 -~–kegte[N→V]:~–kegte                    VerbTrns2;
 -~–ke[N→V]:~–ke                          VerbIntr2;
@@ -5429,8 +5431,8 @@ LEXICON NounPostbase1
 -~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns2;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr2;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns2;
--niigh[N→V]:niigh                        VerbIntr2;
--niigh[N→V]:niigh                        VerbTrns2;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbIntr2;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbTrns2;
 -–pagite[N→V]:–pagite                    VerbIntr2;
 -–pagite[N→V]:–pagite                    VerbTrns2;
 -pagnite[N→V]:pagnite                    VerbIntr2;
@@ -5612,7 +5614,7 @@ LEXICON NounPostbase2
 -iiraagh[N→V]:iiraagh                    VerbIntr3;
 -iiraagh[N→V]:iiraagh                    VerbTrns3;
 -~–kaghte[N→V]:~–kaghte                  VerbIntr3; ! TODO: Used with nouns concerning games, money, etc.
-!-~–kaghte[N→V]:~–kaghte                 VerbTrns3; ! TODO: Used with nouns concerning games, money, etc.
+-~–kaghte[N→V]:~–kaghte                 VerbTrns3; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbIntr3;
 -~–kegte[N→V]:~–kegte                    VerbTrns3;
 -~–ke[N→V]:~–ke                          VerbIntr3;
@@ -5661,8 +5663,8 @@ LEXICON NounPostbase2
 -~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns3;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr3;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns3;
--niigh[N→V]:niigh                        VerbIntr3;
--niigh[N→V]:niigh                        VerbTrns3;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbIntr3;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbTrns3;
 -–pagite[N→V]:–pagite                    VerbIntr3;
 -–pagite[N→V]:–pagite                    VerbTrns3;
 -pagnite[N→V]:pagnite                    VerbIntr3;
@@ -5837,7 +5839,7 @@ LEXICON NounPostbase3
 -iiraagh[N→V]:iiraagh                    VerbIntr4;
 -iiraagh[N→V]:iiraagh                    VerbTrns4;
 -~–kaghte[N→V]:~–kaghte                  VerbIntr4; ! TODO: Used with nouns concerning games, money, etc.
-!-~–kaghte[N→V]:~–kaghte                 VerbTrns4; ! TODO: Used with nouns concerning games, money, etc.
+-~–kaghte[N→V]:~–kaghte                 VerbTrns4; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbIntr4;
 -~–kegte[N→V]:~–kegte                    VerbTrns4;
 -~–ke[N→V]:~–ke                          VerbIntr4;
@@ -5886,8 +5888,8 @@ LEXICON NounPostbase3
 -~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns4;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr4;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns4;
--niigh[N→V]:niigh                        VerbIntr4;
--niigh[N→V]:niigh                        VerbTrns4;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbIntr4;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbTrns4;
 -–pagite[N→V]:–pagite                    VerbIntr4;
 -–pagite[N→V]:–pagite                    VerbTrns4;
 -pagnite[N→V]:pagnite                    VerbIntr4;
@@ -6062,7 +6064,7 @@ LEXICON NounPostbase4
 -iiraagh[N→V]:iiraagh                    VerbIntr5;
 -iiraagh[N→V]:iiraagh                    VerbTrns5;
 -~–kaghte[N→V]:~–kaghte                  VerbIntr5; ! TODO: Used with nouns concerning games, money, etc.
-!-~–kaghte[N→V]:~–kaghte                 VerbTrns5; ! TODO: Used with nouns concerning games, money, etc.
+-~–kaghte[N→V]:~–kaghte                 VerbTrns5; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbIntr5;
 -~–kegte[N→V]:~–kegte                    VerbTrns5;
 -~–ke[N→V]:~–ke                          VerbIntr5;
@@ -6111,8 +6113,8 @@ LEXICON NounPostbase4
 -~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns5;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr5;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns5;
--niigh[N→V]:niigh                        VerbIntr5;
--niigh[N→V]:niigh                        VerbTrns5;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbIntr5;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbTrns5;
 -–pagite[N→V]:–pagite                    VerbIntr5;
 -–pagite[N→V]:–pagite                    VerbTrns5;
 -pagnite[N→V]:pagnite                    VerbIntr5;
@@ -6287,7 +6289,7 @@ LEXICON NounPostbase5
 -iiraagh[N→V]:iiraagh                    VerbIntr6;
 -iiraagh[N→V]:iiraagh                    VerbTrns6;
 -~–kaghte[N→V]:~–kaghte                  VerbIntr6; ! TODO: Used with nouns concerning games, money, etc.
-!-~–kaghte[N→V]:~–kaghte                 VerbTrns6; ! TODO: Used with nouns concerning games, money, etc.
+-~–kaghte[N→V]:~–kaghte                 VerbTrns6; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbIntr6;
 -~–kegte[N→V]:~–kegte                    VerbTrns6;
 -~–ke[N→V]:~–ke                          VerbIntr6;
@@ -6336,8 +6338,8 @@ LEXICON NounPostbase5
 -~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns6;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr6;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns6;
--niigh[N→V]:niigh                        VerbIntr6;
--niigh[N→V]:niigh                        VerbTrns6;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbIntr6;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbTrns6;
 -–pagite[N→V]:–pagite                    VerbIntr6;
 -–pagite[N→V]:–pagite                    VerbTrns6;
 -pagnite[N→V]:pagnite                    VerbIntr6;
@@ -6512,7 +6514,7 @@ LEXICON NounPostbase6
 -iiraagh[N→V]:iiraagh                    VerbIntr7;
 -iiraagh[N→V]:iiraagh                    VerbTrns7;
 -~–kaghte[N→V]:~–kaghte                  VerbIntr7; ! TODO: Used with nouns concerning games, money, etc.
-!-~–kaghte[N→V]:~–kaghte                 VerbTrns7; ! TODO: Used with nouns concerning games, money, etc.
+-~–kaghte[N→V]:~–kaghte                 VerbTrns7; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbIntr7;
 -~–kegte[N→V]:~–kegte                    VerbTrns7;
 -~–ke[N→V]:~–ke                          VerbIntr7;
@@ -6561,8 +6563,8 @@ LEXICON NounPostbase6
 -~%:(ng₁)u[N→V]:~%:(ng₁)u                VerbTrns7;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbIntr7;
 -~%:(ng₁)ughte[N→V]:~%:(ng₁)ughte        VerbTrns7;
--niigh[N→V]:niigh                        VerbIntr7;
--niigh[N→V]:niigh                        VerbTrns7;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbIntr7;
+-@₁~fniigh[N→V]:@₁~fniigh                VerbTrns7;
 -–pagite[N→V]:–pagite                    VerbIntr7;
 -–pagite[N→V]:–pagite                    VerbTrns7;
 -pagnite[N→V]:pagnite                    VerbIntr7;
@@ -6728,7 +6730,7 @@ LEXICON NounPostbase7
 -––iigh[N→V]:––iigh                      VerbMoodInfl;
 -––iqe[N→V]:––iqe                        VerbMoodInfl;
 -iiraagh[N→V]:iiraagh                    VerbMoodInfl;
-!-~–kaghte[N→V]:~–kaghte                 VerbMoodInfl; ! TODO: Used with nouns concerning games, money, etc.
+-~–kaghte[N→V]:~–kaghte                  VerbMoodInfl; ! TODO: Used with nouns concerning games, money, etc.
 -~–kegte[N→V]:~–kegte                    VerbMoodInfl;
 -~–ke[N→V]:~–ke                          VerbMoodInfl;
 -–ksagute[N→V]:–ksagute                  VerbMoodInfl;
@@ -6839,7 +6841,6 @@ LEXICON NounInfl
 [N][Abl_Mod][1PlPoss][SgPosd]:–mnneng           EncliticOrEnd; [N][Abl_Mod][1PlPoss][PlPosd]:–mnneng         EncliticOrEnd; [N][Abl_Mod][1PlPoss][DuPosd]:~sf-w%:(e)gemnneng     EncliticOrEnd; ! 1Pl possessor |
 [N][Abl_Mod][1DuPoss][SgPosd]:–mtegneng         EncliticOrEnd; [N][Abl_Mod][1DuPoss][PlPosd]:–mtegneng       EncliticOrEnd; [N][Abl_Mod][1DuPoss][DuPosd]:~sf-w%:(e)gemtegneng   EncliticOrEnd; ! 1Du possessor |
 ! -----------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
-![N][Abl_Mod][2SgPoss][SgPosd]:–gpe(g)neng      EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:–gpe(g)neng     EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)neng   EncliticOrEnd; ! 2Sg possessor |
 [N][Abl_Mod][2SgPoss][SgPosd]:–gpeneng          EncliticOrEnd; [N][Abl_Mod][2SgPoss][PlPosd]:–gpeneng        EncliticOrEnd; [N][Abl_Mod][2SgPoss][DuPosd]:~sf-w%:(e)gpeneng      EncliticOrEnd; ! 2Sg possessor |
 [N][Abl_Mod][2PlPoss][SgPosd]:–gpesineng        EncliticOrEnd; [N][Abl_Mod][2PlPoss][PlPosd]:–gpesineng      EncliticOrEnd; [N][Abl_Mod][2PlPoss][DuPosd]:~sf-w%:(e)gpesineng    EncliticOrEnd; ! 2Pl possessor |
 [N][Abl_Mod][2DuPoss][SgPosd]:–gpetegneng       EncliticOrEnd; [N][Abl_Mod][2DuPoss][PlPosd]:–gpetegneng     EncliticOrEnd; [N][Abl_Mod][2DuPoss][DuPosd]:~sf-w%:(e)gpetegneng   EncliticOrEnd; ! 2Du possessor |
@@ -6866,7 +6867,6 @@ LEXICON NounInfl
 [N][Loc][1PlPoss][SgPosd]:–mnni           EncliticOrEnd; [N][Loc][1PlPoss][PlPosd]:–mnni         EncliticOrEnd; [N][Loc][1PlPoss][DuPosd]:~sf-w%:(e)gemnni     EncliticOrEnd; ! 1Pl possessor |
 [N][Loc][1DuPoss][SgPosd]:–mtegni         EncliticOrEnd; [N][Loc][1DuPoss][PlPosd]:–mtegni       EncliticOrEnd; [N][Loc][1DuPoss][DuPosd]:~sf-w%:(e)gemtegni   EncliticOrEnd; ! 1Du possessor |
 ! -----------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
-![N][Loc][2SgPoss][SgPosd]:–gpe(g)ni      EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:–gpe(g)ni     EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)ni   EncliticOrEnd; ! 2Sg possessor |
 [N][Loc][2SgPoss][SgPosd]:–gpeni          EncliticOrEnd; [N][Loc][2SgPoss][PlPosd]:–gpeni        EncliticOrEnd; [N][Loc][2SgPoss][DuPosd]:~sf-w%:(e)gpeni      EncliticOrEnd; ! 2Sg possessor |
 [N][Loc][2PlPoss][SgPosd]:–gpesini        EncliticOrEnd; [N][Loc][2PlPoss][PlPosd]:–gpesini      EncliticOrEnd; [N][Loc][2PlPoss][DuPosd]:~sf-w%:(e)gpesini    EncliticOrEnd; ! 2Pl possessor |
 [N][Loc][2DuPoss][SgPosd]:–gpetegni       EncliticOrEnd; [N][Loc][2DuPoss][PlPosd]:–gpetegni     EncliticOrEnd; [N][Loc][2DuPoss][DuPosd]:~sf-w%:(e)gpetegni   EncliticOrEnd; ! 2Du possessor |
@@ -6893,7 +6893,6 @@ LEXICON NounInfl
 [N][Ter][1PlPoss][SgPosd]:–mnnun           EncliticOrEnd; [N][Ter][1PlPoss][PlPosd]:–mnnun         EncliticOrEnd; [N][Ter][1PlPoss][DuPosd]:~sf-w%:(e)gemnnun     EncliticOrEnd; ! 1Pl possessor |
 [N][Ter][1DuPoss][SgPosd]:–mtegnun         EncliticOrEnd; [N][Ter][1DuPoss][PlPosd]:–mtegnun       EncliticOrEnd; [N][Ter][1DuPoss][DuPosd]:~sf-w%:(e)gemtegnun   EncliticOrEnd; ! 1Du possessor |
 ! ------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
-![N][Ter][2SgPoss][SgPosd]:–gpe(g)nun      EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:–gpe(g)nun     EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpe(g)nun   EncliticOrEnd; ! 2Sg possessor |
 [N][Ter][2SgPoss][SgPosd]:–gpenun          EncliticOrEnd; [N][Ter][2SgPoss][PlPosd]:–gpenun        EncliticOrEnd; [N][Ter][2SgPoss][DuPosd]:~sf-w%:(e)gpenun      EncliticOrEnd; ! 2Sg possessor |
 [N][Ter][2PlPoss][SgPosd]:–gpesinun        EncliticOrEnd; [N][Ter][2PlPoss][PlPosd]:–gpesinun      EncliticOrEnd; [N][Ter][2PlPoss][DuPosd]:~sf-w%:(e)gpesinun    EncliticOrEnd; ! 2Pl possessor |
 [N][Ter][2DuPoss][SgPosd]:–gpetegnun       EncliticOrEnd; [N][Ter][2DuPoss][PlPosd]:–gpetegnun     EncliticOrEnd; [N][Ter][2DuPoss][DuPosd]:~sf-w%:(e)gpetegnun   EncliticOrEnd; ! 2Du possessor |
@@ -8764,8 +8763,8 @@ iingqaghyagh          	VerbIntr1; ! to catch by hooking
 iingqaghyagh          	VerbTrns1; ! to catch by hooking
 iingqighte            	VerbIntr1; ! to stab through a sea mammal's eye to kill it 
 iingqighte            	VerbTrns1; ! to stab through a sea mammal's eye to kill it 
-iingte                	VerbIntr1; ! to moulted
-iingte                	VerbTrns1; ! to moulted
+iingte                	VerbIntr1; ! to moult
+iingte                	VerbTrns1; ! to moult
 iinqe                 	VerbIntr1; ! to coo to a child; to say the customary made-up words, nonsense phrases, etc., used for that particular child to that child
 iinqe                 	VerbTrns1; ! to coo to a child; to say the customary made-up words, nonsense phrases, etc., used for that particular child to that child
 iipgite               	VerbIntr1; ! to be dull
@@ -9881,8 +9880,8 @@ malighqagh            	VerbIntr1; ! to chase after; to catch up with by chasing
 malighqagh            	VerbTrns1; ! to chase after; to catch up with by chasing
 malighqugh            	VerbIntr1; ! to chase
 malighqugh            	VerbTrns1; ! to chase
-malighqutaama         	VerbIntr1; ! to always follows the rules
-malighqutaama         	VerbTrns1; ! to always follows the rules
+maligqutagh         	VerbIntr1; ! to always follows the rules
+maligqutagh             VerbTrns1; ! to always follows the rules
 maligsaagh            	VerbIntr1; ! to follow along; to follow the pattern
 maligsaagh            	VerbTrns1; ! to follow along; to follow the pattern
 maligte                 VerbIntr1; ! to accompany; to go with; to follow
@@ -9913,8 +9912,8 @@ managh                	VerbIntr1; ! to fish with hook and line; to jig for fish;
 managh                	VerbTrns1; ! to fish with hook and line; to jig for fish; to catch (fish) with hook and line
 mangagigh             	VerbIntr1; ! to remove outer layer of skin
 mangagigh             	VerbTrns1; ! to remove outer layer of skin
-mangagte              	VerbIntr1; ! to loose (part of) outer layer of skin through rubbing or the like
-mangagte              	VerbTrns1; ! to loose (part of) outer layer of skin through rubbing or the like
+mangagte              	VerbIntr1; ! to lose (part of) outer layer of skin through rubbing or the like
+mangagte              	VerbTrns1; ! to lose (part of) outer layer of skin through rubbing or the like
 mangghute             	VerbIntr1; ! to tie rope securely
 mangghute             	VerbTrns1; ! to tie rope securely
 mangigh               	VerbIntr1; ! to stop crying
@@ -10251,6 +10250,7 @@ muluugh                 VerbTrns1; ! to tarry; to be gone for or to take a long 
 mumegh                	VerbIntr1; ! to go sideways
 mumegh                	VerbTrns1; ! to go sideways
 mumigte                 VerbIntr1; ! to turn over
+mumigte                 VerbTrns1; ! to turn over
 muugaghte             	VerbIntr1; ! to become sweet
 muugaghte             	VerbTrns1; ! to become sweet
 muugate               	VerbIntr1; ! to be sweet
@@ -10549,8 +10549,8 @@ nasiigh               	VerbIntr1; ! to pull the hood back from one's head
 nasiigh               	VerbTrns1; ! to pull the hood back from one's head
 nasiqe                	VerbIntr1; ! to take home as much as one wants or needs; to take enough
 nasiqe                	VerbTrns1; ! to take home as much as one wants or needs; to take enough
-nasiqute              	VerbIntr1; ! to set an example; to take or give enough;  approximate
-nasiqute              	VerbTrns1; ! to set an example; to take or give enough;  approximate
+nasiqute              	VerbIntr1; ! to set an example; to take or give enough; approximate
+nasiqute              	VerbTrns1; ! to set an example; to take or give enough; approximate
 naspete                 VerbIntr1; ! to estimate
 naspete                 VerbTrns1; ! to estimate
 naspeqe                 VerbIntr1; ! to estimate
@@ -11065,10 +11065,8 @@ paayghi                 VerbIntr1; ! to go meet and help someone coming
 paayghi                 VerbTrns1; ! to go meet and help someone coming
 paayngute             	VerbIntr1; ! to begin (a trend, activity, ceremony, etc.); to start (a trend, activity, ceremony, etc.); to open a ceremony
 paayngute             	VerbTrns1; ! to begin (a trend, activity, ceremony, etc.); to start (a trend, activity, ceremony, etc.); to open a ceremony
-paggaagte            	VerbIntr1; ! to audibly breathe hard
-paggaagte            	VerbTrns1; ! to audibly breathe hard
-paggaagte            	VerbIntr1; ! to be filled with air; to be bloated
-paggaagte            	VerbTrns1; ! to be filled with air; to be bloated
+paggaagte            	VerbIntr1; ! to audibly breathe hard; to be filled with air; to be bloated
+paggaagte            	VerbTrns1; ! to audibly breathe hard; to be filled with air; to be bloated
 paghqigh              	VerbIntr1; ! to learn; to discover (how)
 paghqigh              	VerbTrns1; ! to learn; to discover (how)
 paghqilngaate         	VerbIntr1; ! to steal or slip away; to do, encounter or experience something when no one else is around
@@ -11109,14 +11107,14 @@ pakreghqe             	VerbIntr1; ! to huddle up from cold; to tense up
 pakreghqe             	VerbTrns1; ! to huddle up from cold; to tense up
 pakreg                	VerbIntr1; ! to bend; to curl; to warp; to fold
 pakreg                	VerbTrns1; ! to bend; to curl; to warp; to fold
-palaghhaghte          	VerbIntr1; ! to not get or give enough; to shorchange or be shortchanged; to decrease in amount; to become fewer
-palaghhaghte          	VerbTrns1; ! to not get or give enough; to shorchange or be shortchanged; to decrease in amount; to become fewer
+palaghhaghte          	VerbIntr1; ! to not get or give enough; to short-change or be short-changed; to decrease in amount; to become fewer
+palaghhaghte          	VerbTrns1; ! to not get or give enough; to short-change or be short-changed; to decrease in amount; to become fewer
 palaghmete            	VerbIntr1; ! to be small, poor or weak; to be young and helpless; to be few
 palaghmete            	VerbTrns1; ! to be small, poor or weak; to be young and helpless; to be few
 palaghte              	VerbIntr1; ! to pacify; to appease temporarily
 palaghte              	VerbTrns1; ! to pacify; to appease temporarily
-palaghute             	VerbIntr1; ! to not get or give enough; to shorchange or be shortchanged; to decrease in amount; to become fewer
-palaghute             	VerbTrns1; ! to not get or give enough; to shorchange or be shortchanged; to decrease in amount; to become fewer
+palaghute             	VerbIntr1; ! to not get or give enough; to short-change or be short-changed; to decrease in amount; to become fewer
+palaghute             	VerbTrns1; ! to not get or give enough; to short-change or be short-changed; to decrease in amount; to become fewer
 palaghyug             	VerbIntr1; ! to feel slighted; to feel that one hasn't received his due
 palaghyug             	VerbTrns1; ! to feel slighted; to feel that one hasn't received his due
 palaghyuke            	VerbIntr1; ! to regard as insufficient or inferior
@@ -11767,8 +11765,6 @@ qaatke                	VerbIntr1; ! to obey
 qaatke                	VerbTrns1; ! to obey
 qaayeri               	VerbIntr1; ! to get blocked by ice in early winter with only a small breathing hole (of seals)
 qaayeri               	VerbTrns1; ! to get blocked by ice in early winter with only a small breathing hole (of seals)
-qafsin'gu             	VerbIntr1; ! to be how many?
-qafsin'gu             	VerbTrns1; ! to be how many?
 qafsinkaghte          	VerbIntr1; ! to get or catch how many or how much?; to pay how much?
 qafsinkaghte          	VerbTrns1; ! to get or catch how many or how much?; to pay how much?
 qafsinkuuragh         	VerbIntr1; ! to be just a few
@@ -12859,8 +12855,6 @@ savegsite             	VerbIntr1; ! to aim harpoon
 savegsite             	VerbTrns1; ! to aim harpoon
 saveg                 	VerbIntr1; ! to harpoon
 saveg                 	VerbTrns1; ! to harpoon
-sa                    	VerbIntr1; ! to do what?; to do something
-sa                    	VerbTrns1; ! to do what?; to do something
 savighhe              	VerbIntr1; ! to whittle; to carve; to make red-hot
 savighhe              	VerbTrns1; ! to whittle; to carve; to make red-hot
 savigsigh             	VerbIntr1; ! to sharpen; to get knife ready
@@ -12960,9 +12954,9 @@ sighute               	VerbTrns1; ! to get buried or covered over by action of w
 sigiqe                	VerbIntr1; ! to break or shatter glass, eggshell, ceramic, etc.
 sigiqe                	VerbTrns1; ! to break or shatter glass, eggshell, ceramic, etc.
 sigutkegsi            	VerbIntr1; ! to keep alert for important news
-sigutkegsi            	VerbIntr1; ! to stay alert for news; to “keep one's ears open”
+sigutkegsi            	VerbIntr1; ! to stay alert for news; to "keep one's ears open"
 sigutkegsi            	VerbTrns1; ! to keep alert for important news
-sigutkegsi            	VerbTrns1; ! to stay alert for news; to “keep one's ears open”
+sigutkegsi            	VerbTrns1; ! to stay alert for news; to "keep one's ears open"
 sigutkesi             	VerbIntr1; ! to listen for something
 sigutkesi             	VerbTrns1; ! to listen for something
 sigutlug              	VerbIntr1; ! to have an ear infection or earache
@@ -13289,8 +13283,8 @@ taghyughii            	VerbIntr1; ! to swell after contact with salt water (of a
 taghyughii            	VerbTrns1; ! to swell after contact with salt water (of a cut)
 taghyughnite          	VerbIntr1; ! to be salty
 taghyughnite          	VerbTrns1; ! to be salty
-tagite               	VerbIntr1; ! to give (to speaker)(not in the sense of transferring ownership)
-tagite               	VerbTrns1; ! to give (to speaker)(not in the sense of transferring ownership)
+tagite               	VerbIntr1; ! to give (to speaker) (not in the sense of transferring ownership)
+tagite               	VerbTrns1; ! to give (to speaker) (not in the sense of transferring ownership)
 tagite               	VerbIntr1; ! to bring (to speaker)
 tagite               	VerbTrns1; ! to bring (to speaker)
 tagitiqwaa            	VerbIntr1; ! to be lost in the fog
@@ -14252,8 +14246,8 @@ uveghni               	VerbIntr1; ! to be pleased; to be thankful; to be full of
 uveghni               	VerbTrns1; ! to be pleased; to be thankful; to be full of pride and joy
 uvegh                 	VerbIntr1; ! to keel over; to topple; to capsize; to overturn; to get carried away with what one is doing
 uvegh                 	VerbTrns1; ! to keel over; to topple; to capsize; to overturn; to get carried away with what one is doing
-uvegtagh              	VerbIntr1; ! to be tossed upwards from a walrus hide held taut around the edges by a group of people; to engage in a traditional “blanket toss”
-uvegtagh              	VerbTrns1; ! to be tossed upwards from a walrus hide held taut around the edges by a group of people; to engage in a traditional “blanket toss”
+uvegtagh              	VerbIntr1; ! to be tossed upwards from a walrus hide held taut around the edges by a group of people; to engage in a traditional "blanket toss"
+uvegtagh              	VerbTrns1; ! to be tossed upwards from a walrus hide held taut around the edges by a group of people; to engage in a traditional "blanket toss"
 uvegte                	VerbIntr1; ! to act before something else happens
 uvegte                	VerbTrns1; ! to act before something else happens
 uvelegtagh            	VerbIntr1; ! to vibrate; to bounce
@@ -14362,8 +14356,8 @@ wawernga              	VerbIntr1; ! to maul; to fight (of dog)
 wawernga              	VerbTrns1; ! to maul; to fight (of dog)
 wayagh                	VerbIntr1; ! to despoil; to pillage
 wayagh                	VerbTrns1; ! to despoil; to pillage
-wenigh                	VerbIntr1; ! to say “ah”;  to be surprised
-wenigh                	VerbTrns1; ! to say “ah”;  to be surprised
+wenigh                	VerbIntr1; ! to say "ah";  to be surprised
+wenigh                	VerbTrns1; ! to say "ah";  to be surprised
 wesqaawi              	VerbIntr1; ! to feel defeated; to feel incapable; to lack confidence; to lose hope; to despair
 wesqaawi              	VerbTrns1; ! to feel defeated; to feel incapable; to lack confidence; to lose hope; to despair
 wetngaqwa             	VerbIntr1; ! to crack from the cold
@@ -14611,7 +14605,7 @@ LEXICON VerbPostbase1
 -–llaag[V→V]:–llaag                           VerbPostbase2;
 -–llegagh[V→V]:–llegagh                       VerbPostbase2;
 -@₁lleqe[V→V]:@₁lleqe                         VerbPostbase2;
--–llghite**[V→V]:–llghite**                   VerbPostbase2;
+-–llghite*[V→V]:–llghite*                     VerbPostbase2;
 -–llgilliqe[V→V]:–llgilliqe                   VerbPostbase2;
 -–llgite[V→V]:–llgite                         VerbPostbase2;
 -–llgiite[V→V]:–llgiite                       VerbPostbase2;
@@ -14665,7 +14659,7 @@ LEXICON VerbPostbase1
 -~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase2;
 -–ngllagh[V→V]:–ngllagh                       VerbPostbase2;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase2;
--niigh[V→V]:niigh                             VerbPostbase2;
+-@₁~fniigh[V→V]:@₁~fniigh                     VerbPostbase2;
 -@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase2;
 -@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase2;
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase2;
@@ -14890,7 +14884,7 @@ LEXICON VerbPostbase2
 -–llaag[V→V]:–llaag                           VerbPostbase3;
 -–llegagh[V→V]:–llegagh                       VerbPostbase3;
 -@₁lleqe[V→V]:@₁lleqe                         VerbPostbase3;
--–llghite[V→V]:–llghite                       VerbPostbase3;
+-–llghite*[V→V]:–llghite*                     VerbPostbase3;
 -–llgilliqe[V→V]:–llgilliqe                   VerbPostbase3;
 -–llgite[V→V]:–llgite                         VerbPostbase3;
 -–llgiite[V→V]:–llgiite                       VerbPostbase3;
@@ -14944,7 +14938,7 @@ LEXICON VerbPostbase2
 -~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase3;
 -–ngllagh[V→V]:–ngllagh                       VerbPostbase3;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase3;
--niigh[V→V]:niigh                             VerbPostbase3;
+-@₁~fniigh[V→V]:@₁~fniigh                     VerbPostbase3;
 -@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase3;
 -@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase3;
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase3;
@@ -15156,7 +15150,7 @@ LEXICON VerbPostbase3
 -–llaag[V→V]:–llaag                           VerbPostbase4;
 -–llegagh[V→V]:–llegagh                       VerbPostbase4;
 -@₁lleqe[V→V]:@₁lleqe                         VerbPostbase4;
--–llghite[V→V]:–llghite                       VerbPostbase4;
+-–llghite*[V→V]:–llghite*                     VerbPostbase4;
 -–llgilliqe[V→V]:–llgilliqe                   VerbPostbase4;
 -–llgite[V→V]:–llgite                         VerbPostbase4;
 -–llgiite[V→V]:–llgiite                       VerbPostbase4;
@@ -15210,7 +15204,7 @@ LEXICON VerbPostbase3
 -~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase4;
 -–ngllagh[V→V]:–ngllagh                       VerbPostbase4;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase4;
--niigh[V→V]:niigh                             VerbPostbase4;
+-@₁~fniigh[V→V]:@₁~fniigh                     VerbPostbase4;
 -@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase4;
 -@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase4;
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase4;
@@ -15422,7 +15416,7 @@ LEXICON VerbPostbase4
 -–llaag[V→V]:–llaag                           VerbPostbase5;
 -–llegagh[V→V]:–llegagh                       VerbPostbase5;
 -@₁lleqe[V→V]:@₁lleqe                         VerbPostbase5;
--–llghite[V→V]:–llghite                       VerbPostbase5;
+-–llghite*[V→V]:–llghite*                     VerbPostbase5;
 -–llgilliqe[V→V]:–llgilliqe                   VerbPostbase5;
 -–llgite[V→V]:–llgite                         VerbPostbase5;
 -–llgiite[V→V]:–llgiite                       VerbPostbase5;
@@ -15476,7 +15470,7 @@ LEXICON VerbPostbase4
 -~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase5;
 -–ngllagh[V→V]:–ngllagh                       VerbPostbase5;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase5;
--niigh[V→V]:niigh                             VerbPostbase5;
+-@₁~fniigh[V→V]:@₁~fniigh                     VerbPostbase5;
 -@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase5;
 -@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase5;
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase5;
@@ -15688,7 +15682,7 @@ LEXICON VerbPostbase5
 -–llaag[V→V]:–llaag                           VerbPostbase6;
 -–llegagh[V→V]:–llegagh                       VerbPostbase6;
 -@₁lleqe[V→V]:@₁lleqe                         VerbPostbase6;
--–llghite[V→V]:–llghite                       VerbPostbase6;
+-–llghite*[V→V]:–llghite*                     VerbPostbase6;
 -–llgilliqe[V→V]:–llgilliqe                   VerbPostbase6;
 -–llgite[V→V]:–llgite                         VerbPostbase6;
 -–llgiite[V→V]:–llgiite                       VerbPostbase6;
@@ -15742,7 +15736,7 @@ LEXICON VerbPostbase5
 -~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase6;
 -–ngllagh[V→V]:–ngllagh                       VerbPostbase6;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase6;
--niigh[V→V]:niigh                             VerbPostbase6;
+-@₁~fniigh[V→V]:@₁~fniigh                     VerbPostbase6;
 -@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase6;
 -@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase6;
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase6;
@@ -15954,7 +15948,7 @@ LEXICON VerbPostbase6
 -–llaag[V→V]:–llaag                           VerbPostbase7;
 -–llegagh[V→V]:–llegagh                       VerbPostbase7;
 -@₁lleqe[V→V]:@₁lleqe                         VerbPostbase7;
--–llghite[V→V]:–llghite                       VerbPostbase7;
+-–llghite*[V→V]:–llghite*                     VerbPostbase7;
 -–llgilliqe[V→V]:–llgilliqe                   VerbPostbase7;
 -–llgite[V→V]:–llgite                         VerbPostbase7;
 -–llgiite[V→V]:–llgiite                       VerbPostbase7;
@@ -16008,7 +16002,7 @@ LEXICON VerbPostbase6
 -~%:(ng₁)u[V→V]:~%:(ng₁)u                     VerbPostbase7;
 -–ngllagh[V→V]:–ngllagh                       VerbPostbase7;
 -@₁~fniite[V→V]:@₁~fniite                     VerbPostbase7;
--niigh[V→V]:niigh                             VerbPostbase7;
+-@₁~fniigh[V→V]:@₁~fniigh                     VerbPostbase7;
 -@₁–nqegsagh[V→V]:@₁–nqegsagh                 VerbPostbase7;
 -@₁–nqegsi[V→V]:@₁–nqegsi                     VerbPostbase7;
 -@₁–nqegte[V→V]:@₁–nqegte                     VerbPostbase7;
@@ -16220,7 +16214,7 @@ LEXICON VerbPostbase7
 -–llaag[V→V]:–llaag                           VerbMoodInfl;
 -–llegagh[V→V]:–llegagh                       VerbMoodInfl;
 -@₁lleqe[V→V]:@₁lleqe                         VerbMoodInfl;
--–llghite[V→V]:–llghite                       VerbMoodInfl;
+-–llghite*[V→V]:–llghite*                     VerbMoodInfl;
 -–llgilliqe[V→V]:–llgilliqe                   VerbMoodInfl;
 -–llgite[V→V]:–llgite                         VerbMoodInfl;
 -–llgiite[V→V]:–llgiite                       VerbMoodInfl;
@@ -16461,7 +16455,6 @@ LEXICON VerbEte
 [N][Loc][1PlPoss][SgPosd]-ete:–mnni           VerbMoodInfl; [N][Loc][1PlPoss][PlPosd]-ete:–mnni        VerbMoodInfl; [N][Loc][1PlPoss][DuPosd]-ete:~sf-w%:(e)gemnni   VerbMoodInfl; ! 1Pl possessor |
 [N][Loc][1DuPoss][SgPosd]-ete:–mtegni         VerbMoodInfl; [N][Loc][1DuPoss][PlPosd]-ete:–mtegni      VerbMoodInfl; [N][Loc][1DuPoss][DuPosd]-ete:~sf-w%:(e)gemtegni VerbMoodInfl; ! 1Du possessor |
 ! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
-![N][Loc][2SgPoss][SgPosd]-ete:–gpe(g)ni      VerbMoodInfl; [N][Loc][2SgPoss][PlPosd]-ete:–gpe(g)ni    VerbMoodInfl; [N][Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpe(g)ni VerbMoodInfl; ! 2Sg possessor |
 [N][Loc][2SgPoss][SgPosd]-ete:–gpeni          VerbMoodInfl; [N][Loc][2SgPoss][PlPosd]-ete:–gpeni       VerbMoodInfl; [N][Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpeni    VerbMoodInfl; ! 2Sg possessor |
 [N][Loc][2PlPoss][SgPosd]-ete:–gpesini        VerbMoodInfl; [N][Loc][2PlPoss][PlPosd]-ete:–gpesini     VerbMoodInfl; [N][Loc][2PlPoss][DuPosd]-ete:~sf-w%:(e)gpesini  VerbMoodInfl; ! 2Pl possessor |
 [N][Loc][2DuPoss][SgPosd]-ete:–gpetegni       VerbMoodInfl; [N][Loc][2DuPoss][PlPosd]-ete:–gpetegni    VerbMoodInfl; [N][Loc][2DuPoss][DuPosd]-ete:~sf-w%:(e)gpetegni VerbMoodInfl; ! 2Du possessor |
@@ -16640,14 +16633,16 @@ LEXICON TransitiveParticipialFutureOptative
 
 
 LEXICON IntransitiveInterrogative
-!------------------------------------|----------------------------------------|----------------------------------------|
-[3Sg]:~f(g/t)a  InterrogativeEnclitic; [1Sg]:~f(t)zinga  InterrogativeEnclitic; [2Sg]:~f(t)zin    InterrogativeEnclitic;
-[3Sg]:~f(g/t)aa InterrogativeEnclitic;                                          [2Sg]:~f(t)ziin   InterrogativeEnclitic;
-[3Pl]:~f(g/t)at InterrogativeEnclitic; [1Pl]:~sf(e)sta   InterrogativeEnclitic; [2Pl]:~sf(e)tsi   InterrogativeEnclitic;
-                                                                                [2Pl]:~sf(e)tsii  InterrogativeEnclitic;
-[3Du]:~f(g/t)ak InterrogativeEnclitic; [1Du]:~sf(e)stung InterrogativeEnclitic; [2Du]:~sf(e)stek  InterrogativeEnclitic;
-                                                                                [2Du]:~sf(e)staak InterrogativeEnclitic;
-!------------------------------------|----------------------------------------|----------------------------------------|
+!-------------------------------------|-----------------------------------------|----------------------------------------|
+[3Sg]:~f(g/t)a   InterrogativeEnclitic; [1Sg]:~f(t)zinga   InterrogativeEnclitic; [2Sg]:~f(t)zin    InterrogativeEnclitic;
+[3Sg]:~f(g/t)aa  InterrogativeEnclitic; [1Sg]:~f(t)zingaa  InterrogativeEnclitic; [2Sg]:~f(t)ziin   InterrogativeEnclitic;
+
+[3Pl]:~f(g/t)at  InterrogativeEnclitic; [1Pl]:~sf(e)sta    InterrogativeEnclitic; [2Pl]:~sf(e)tsi   InterrogativeEnclitic;
+[3Pl]:~f(g/t)aat InterrogativeEnclitic; [1Pl]:~sf(e)staa   InterrogativeEnclitic; [2Pl]:~sf(e)tsii  InterrogativeEnclitic;
+
+[3Du]:~f(g/t)ak  InterrogativeEnclitic; [1Du]:~sf(e)stung  InterrogativeEnclitic; [2Du]:~sf(e)stek  InterrogativeEnclitic;
+[3Du]:~f(g/t)aak InterrogativeEnclitic; [1Du]:~sf(e)stuung InterrogativeEnclitic; [2Du]:~sf(e)staak InterrogativeEnclitic;
+!-------------------------------------|-----------------------------------------|----------------------------------------|
 
 LEXICON TransitiveInterrogative
 !----------------------------------------------|------------------------------------------------|-------------------------------------------------|
@@ -17540,8 +17535,14 @@ LEXICON InterrogativeEnclitic
 -llu[Encl]:llu    #;
 -mi[Encl]:mi      #;
 -ngam[Encl]:ngma  #;
+-nguq[Encl]:nguq  #;
+-qa[Encl]:qa      #;
+-qun[Encl]:qun    #;
+-sa[Encl]:sa      #;
+-ta[Encl]:ta      #;
 -tuq[Encl]:tuq    #;
 -wha[Encl]:wha    #;
+
 
 LEXICON EncliticOrEnd
 0:0               #;

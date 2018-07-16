@@ -28,6 +28,9 @@ define VoicelessFricative [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh"
 define VoicedNasal        [  m   |   n                 | "ng"   | "ngw"                       ] ;
 define VoicelessNasal     [ "mm" | "nn"                | "ngng" | "ngngw"                     ] ;
 
+define VoicedC    [ VoicedFricative | VoicedNasal ] ;
+define VoicelessC [ VoicelessFricative | VoicelessNasal | Stop ] ;
+
 define Fricative  [ VoicelessFricative | VoicedFricative ] ;
 define Nasal      [ VoicelessNasal     | VoicedNasal     ] ;
 
@@ -122,7 +125,7 @@ define SemiFinalE [..] -> a || WordBoundary (C) a _ C e [g | gh ("*")] MorphemeB
                   [..] -> i || WordBoundary (C) i _ C e [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-hopping
                   [..] -> u || WordBoundary (C) u _ C e [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-hopping
                      e -> 0 ||                    V C _ [g | gh ("*")] MorphemeBoundary "~sf"  ∘  ! e-dropping
-                 "~sf" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _          ;  ! finally remove intermediate symbol ~sf 
+                 "~sf" -> 0 || WordBoundary Alphabet+ MorphemeBoundary _                       ;  ! finally remove intermediate symbol ~sf 
 				 
 define FinalE     [..] -> a || WordBoundary (C) a _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
                   [..] -> i || WordBoundary (C) i _ C e MorphemeBoundary "~f"     ∘  ! e-hopping
@@ -144,22 +147,19 @@ define WeakFinalC  gh   -> 0 || [ WordBoundary | C ] FullVowel _ MorphemeBoundar
 define UnmarkStrongGh gh "*" -> gh || WordBoundary Alphabet+ MorphPhonSymbols* _ ;
 
 define FinalVCDrop V C -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "––" ∘
+                   V   -> 0 || WordBoundary Alphabet+ _ MorphemeBoundary "––" ∘
                   "––" -> 0                                                   ;
 
 define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoundary ("~f") "–" _   ∘
                                       [ gh | g ] -> g   || g  MorphemeBoundary       ("~f") "–" _   ∘
-                                      ! The line below is unfortunately required because of orthographic undoubling conventions
-                                      [ gh | g ] -> wh  || w   MorphemeBoundary ("~f") "–" _        ∘
-                                      [ gh | g ] -> w   || w   MorphemeBoundary ("~f") "–" _        ∘
+                                      [ gh | g ] -> wh  || w   MorphemeBoundary ("~f") "–" _ VoicelessC ∘
+                                      [ gh | g ] -> w   || w   MorphemeBoundary ("~f") "–" _ VoicedC    ∘
                                       [ gh | g ] -> ghw || ghw MorphemeBoundary ("~f") "–" _        ∘
                                       [  q | k ] -> qw  || [ qw | ghw ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> kw  || [ kw | w   ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] MorphemeBoundary ("~f") "–" _  ∘
-                                      [  q | k ] -> q   || [ q  | gh ("*") ] MorphemeBoundary ("~f") "–" _ \WordBoundary ∘
-            C MorphemeBoundary "~f" -> MorphemeBoundary || _ "–"  ∘
-       gh "*" MorphemeBoundary "~f" -> MorphemeBoundary || _ "–"  ∘
-                                               C -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
-                                          gh "*" -> 0   || _ MorphemeBoundary ("~f") "–"  ∘
+                                      [  q | k ] -> q   || [ q  | gh ("*") ] MorphemeBoundary ("~f") "–" _ ∘
+                 C ("*") MorphemeBoundary ("~f") -> MorphemeBoundary || _ "–"  ∘
                                              "–" -> 0   || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*) _  ;
 
 define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols*  _      ∘
@@ -174,7 +174,7 @@ define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* 
                 [..] -> e      || C t e MorphemeBoundary "@₁" ll _ ghh                   ∘
                 [..] -> n e gh || t e MorphemeBoundary "@₁" MorphPhonSymbols* ng h _     ∘ ! for postbase @–nghite
                 ng h -> 0      || t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n e gh   ∘ 
-                t e  -> s    || _ MorphemeBoundary "@₁" MorphPhonSymbols* i              ∘ ! for postbases that begin with i 
+                t e ("*") -> s || _ MorphemeBoundary "@₁" MorphPhonSymbols* i            ∘ ! for postbases that begin with i 
                 [..] -> ll   || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ l        ∘ ! for postbases that begin with apicals
                 l    -> 0    || V t e MorphemeBoundary "@₁" MorphPhonSymbols* ll _       ∘
                 [..] -> nn   || V t e MorphemeBoundary "@₁" MorphPhonSymbols* _ n        ∘
@@ -211,7 +211,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(te)"  -> t e  || C ("*") MorphemeBoundary _                                  ∘
                          "(i₁)"  -> i    || e MorphemeBoundary MorphPhonSymbols* _                      ∘
                          "(i₂)"  -> i    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
-                         "(i/u)" -> i    || t e MorphemeBoundary MorphPhonSymbols* _                    ∘
+                         "(i/u)" -> i    || t e ("*") MorphemeBoundary MorphPhonSymbols* _              ∘
                          "(i/u)" -> u    || [Alphabet - t] e MorphemeBoundary MorphPhonSymbols* _       ∘
                          "(i/u)" -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(u)"   -> u    || [Alphabet - FullVowel] MorphemeBoundary MorphPhonSymbols* _ ∘
@@ -319,7 +319,7 @@ define MultipleForms GKa ∘
                      "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ V ("*") ("*") | "(pete)fte" ] _      ∘
                      "[Opt_FUT_Intr]" -> "~sf" "–" ghh a a || gh _         ∘
                      "[Opt_FUT_Intr]" -> "~sf" "–" gg a a  || g  _         ∘
-                     "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ ghw | w | q ] _ ∘
+                     "[Opt_FUT_Intr]" -> n a k e n                         ∘
                      "[To_Feel_R_Toward]" ->       "~" "–" k e || V _      ∘
                      "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _      ∘
                      "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u || [ V ("*") ("*") | "(pete)fte" ] _     ∘
