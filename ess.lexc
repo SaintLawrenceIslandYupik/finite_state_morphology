@@ -4575,6 +4575,7 @@ umyugaleg              	NounPostbase1; ! one with a good mind; sensible person
 umyugaqegtagh          	NounPostbase1; ! sensitive person; thoughtful person
 Umyugsigh              	NounPostbase1; ! Oomyousik Pt. on St. Lawrence Island
 unaagh                 	NounPostbase1; ! morning
+unaami                	NounPostbase1; ! tomorrow; the next day
 unaaqutagh             	NounPostbase1; ! breakfast
 unaayagh               	NounPostbase1; ! morning flight of birds
 unaghsigh              	NounPostbase1; ! wood for making something (that is, wood which is not firewood)
@@ -8314,8 +8315,8 @@ iglaghtu                VerbIntr1; ! to be loud
 iglaghtu                VerbTrns1; ! to be loud
 iglagigh              	VerbIntr1; ! to untangle (hair, rope, etc.)
 iglagigh              	VerbTrns1; ! to untangle (hair, rope, etc.)
-iglaglluugte           	VerbIntr1; ! get or be hoarse
-iglaglluugte           	VerbTrns1; ! get or be hoarse
+iglaglluugte           	VerbIntr1; ! to get or be hoarse
+iglaglluugte           	VerbTrns1; ! to get or be hoarse
 iglagrugtaagh         	VerbIntr1; ! to yodel
 iglagrugtaagh         	VerbTrns1; ! to yodel
 iglagtu               	VerbIntr1; ! to have or use a loud voice
@@ -8544,8 +8545,8 @@ ilumsuggangite        	VerbIntr1; ! to feel helpless; to feel defeated
 ilumsuggangite        	VerbTrns1; ! to feel helpless; to feel defeated
 ilungighteqe          	VerbIntr1; ! to be anxious; to be worried
 ilungighteqe          	VerbTrns1; ! to be anxious; to be worried
-ilungiitaq            	VerbIntr1; ! to snack
-ilungiitaq            	VerbTrns1; ! to snack
+ilungiitagh            	VerbIntr1; ! to snack
+ilungiitagh            	VerbTrns1; ! to snack
 ilungiitigh           	VerbIntr1; ! to snack
 ilungiitigh           	VerbTrns1; ! to snack
 ilungite              	VerbIntr1; ! to be indecisive; to be unreliable; to lack mental strength or willpower
@@ -8868,7 +8869,7 @@ kaga                  	VerbTrns1; ! to be unruly; to be disordered; to be dishev
 kagaygute             	VerbIntr1; ! to excitedly run about
 kagaygute             	VerbTrns1; ! to excitedly run about
 kaghyagh               	VerbIntr1; ! to brag about
-kaghyagh               	VerbTrns1; to brag about
+kaghyagh               	VerbTrns1; ! to brag about
 kagime                	VerbIntr1; ! to crumble
 kagime                	VerbTrns1; ! to crumble
 kagimte                 VerbIntr1; ! to crush
@@ -13667,8 +13668,6 @@ umyugiighute          	VerbIntr1; ! to lose one's mind
 umyugiighute          	VerbTrns1; ! to lose one's mind
 umyugiite             	VerbIntr1; ! to be insensitive; to be thoughtless
 umyugiite             	VerbTrns1; ! to be insensitive; to be thoughtless
-unaami                	VerbIntr1; ! tomorrow; the next day
-unaami                	VerbTrns1; ! tomorrow; the next day
 unaangu               	VerbIntr1; ! to be morning
 unaangu               	VerbTrns1; ! to be morning
 unaaqusite            	VerbIntr1; ! to postpone until morning
@@ -16971,8 +16970,7 @@ ulpeg        QuantQualPostbase; ! folded back on itself (like a turned up pants 
 LEXICON PosRootPostbase
 
 @P.VALENCE.INTR@-mete:@P.VALENCE.INTR@mete    VerbMoodInfl;
-@P.VALENCE.INTR@-nga:@P.VALENCE.INTR@nga      VerbMoodInfl; ! TODO: Which version of the postbase is it?
-@P.VALENCE.INTR@-~fnga:@P.VALENCE.INTR@~fnga  VerbMoodInfl;
+@P.VALENCE.INTR@-nga:@P.VALENCE.INTR@nga      VerbMoodInfl;
 @P.VALENCE.INTR@-te:@P.VALENCE.INTR@te        VerbMoodInfl;
 @P.VALENCE.TRNS@-te:@P.VALENCE.TRNS@te        VerbMoodInfl;
 
@@ -17081,13 +17079,13 @@ yumi             EmotionalRootPostbase; ! shy; intimidated; cowering; inhibited
 LEXICON EmotionalRootPostbase
 
 @P.VALENCE.INTR@-@₁~fnagh:@P.VALENCE.INTR@@₁~fnagh                VerbPostbase2;
--@₁~fnaq:@₁~fnaq                                                  NounPostbase2;
 @P.VALENCE.TRNS@-~–ke/@₁~yuke:@P.VALENCE.TRNS@[To_Feel_R_Toward]  VerbMoodInfl;
 @P.VALENCE.INTR@-~–ketagh:@P.VALENCE.INTR@~–ketagh                VerbMoodInfl;
 @P.VALENCE.INTR@-tagh:@P.VALENCE.INTR@tagh                        VerbMoodInfl;
--~–ketaq:~–ketaq                                                  NounInfl;
--taq:taq                                                          NounInfl;
 @P.VALENCE.INTR@-@₁~fyug:@P.VALENCE.INTR@@₁~fyug                  VerbMoodInfl;
+-~–ketagh:~–ketagh                                                NounInfl;
+-@₁~fnagh:@₁~fnagh                                                NounPostbase2;
+-tagh:tagh                                                        NounInfl;
 
 
 
