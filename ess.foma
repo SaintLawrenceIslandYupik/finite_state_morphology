@@ -45,7 +45,7 @@ define Enclitic   [ ll u | ng u q ] ;
 define Alphabet [ C | V | "*" | "'" | "-" ] ;
 define MorphPhonSymbols [ "~"     | "~f"    | "~sf"   | "~h"    | "-w"    | ":"     | "–"     | "––" |
                           "@*"    | "@₁"    | "@₂"    |
-                          "(e)"   | "(g₁)"  | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" | "(s)"   | "(at)"  |
+                          "(e)"   | "(g)"   | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" | "(s)"   | "(at)"  |
 						  "(g/t)" | "(p/v)" | "(s/z)" | "(t/y)" | "(i/u)" | "(pete)fte" | "@~–(g)ka" | "@~–(g)ke" |
                           "~f-w/-w" | "~sf-w:(e)tgun/teggun" | "@₁–lghii/@*ngugh*" | "@₁~fy/~f(ng₁)" | "@₁~flu/na" | "[Cond]" ];
 
@@ -159,11 +159,13 @@ define FinalConsonantDropAssimilation [ gh | g ] -> gh  || gh ("*") MorphemeBoun
                                       [  q | k ] -> kw  || [ kw | w   ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> k   || [ k  | g   ] MorphemeBoundary ("~f") "–" _  ∘
                                       [  q | k ] -> q   || [ q  | gh ("*") ] MorphemeBoundary ("~f") "–" _ ∘
+                                              ng -> ngw || w   MorphemeBoundary ("~f") "–" _           ∘
                  C ("*") MorphemeBoundary ("~f") -> MorphemeBoundary || _ "–"  ∘
                                              "–" -> 0   || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*) _  ;
 
-define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols*  _      ∘
+define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols*       _    ∘
                 "~f" -> 0 || t e ("*") ("*") MorphemeBoundary ["@*" | "@₁" | "@₂"]  _    ∘
+                ":"  -> 0 || t e ("*") ("*") MorphemeBoundary ["@*" | "@₁" | "@₂"] "~" _ ∘
                 t e "*" "*" -> l || _ MorphemeBoundary "@*"                              ∘  ! for strongly special te's
                 t e         -> s || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, ! for postbases that begin with velars
                 t e ("*")   -> t || V _ MorphemeBoundary ("@*") "@₂" MorphPhonSymbols* k ,, 
@@ -196,9 +198,9 @@ define ModifyTE "–"  -> 0 || V ("*") ("*") MorphemeBoundary MorphPhonSymbols* 
                 "@₁" -> 0,
                 "@₂" -> 0    || WordBoundary Alphabet+ MorphemeBoundary (MorphPhonSymbols*)  _  ;
 
-define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f") | ("~")] _         ∘
-                         ["(g/t)" | "(t)"] -> t  ||   C MorphemeBoundary ("~f") _                   ∘
-                         "(ng₁)" -> "ng"         ||   V ("*") MorphemeBoundary MorphPhonSymbols* _  ∘
+define ResolveAllomorphy ["(g/t)" | "(g)"] -> g || V V MorphemeBoundary [("~f") | ("~")] _         ∘
+                         ["(g/t)" | "(t)"] -> t  ||   C MorphemeBoundary ("~f") _                  ∘
+                         "(ng₁)" -> "ng"         ||   V ("*") MorphemeBoundary MorphPhonSymbols* _ ∘
                          "(s/z)" -> s || C ("*") MorphemeBoundary _         ∘
                          "(s/z)" -> z || V       MorphemeBoundary _         ∘                                 
                          "(p/v)" -> p || C ("*") MorphemeBoundary ("~f") _  ∘
@@ -221,7 +223,7 @@ define ResolveAllomorphy ["(g/t)" | "(g₁)"] -> g || V V MorphemeBoundary [("~f
                          "(at)"  -> a t  || t MorphemeBoundary MorphPhonSymbols* _                      ∘
                          "(at)"  -> a t  || [C - t] (V) MorphemeBoundary MorphPhonSymbols* _            ∘
                          "(g/t)" -> 0,
-                         "(g₁)"  -> 0,
+                         "(g)"   -> 0,
                          "(te)"  -> 0,
                          "(t)"   -> 0,
                          "(ng₁)" -> 0,
@@ -245,13 +247,13 @@ define UvularDropping gh MorphemeBoundary ":" e -> a MorphemeBoundary || [ WordB
                       gh MorphemeBoundary ":" u -> u MorphemeBoundary || [ WordBoundary | C ] FullVowel _ ∘
                                                   ":"   -> 0 || WordBoundary Alphabet+ MorphemeBoundary _ ;
 
-define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
-                           k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
-                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary)  ∘
-                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary)  ∘
-                                   ["(g/t)" | "(g₁)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u]  ;
+define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary) ∘
+                           k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary) ∘
+                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) i (MorphemeBoundary) ∘
+                                     h -> h w, q -> qw, gh -> ghw, ghh -> ghhw || [C|V - u] _ u (MorphemeBoundary) a (MorphemeBoundary) ∘
+                                    ["(g/t)" | "(g)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u] ;
 
-define TripleVowelCluster V -> 0 || WordBoundary Alphabet+ [ V - e ] MorphemeBoundary "~" "(g₁)" _ V  ∘ ! for [Trns][Ind]
+define TripleVowelCluster V -> 0 || WordBoundary Alphabet+ [ V - e ] MorphemeBoundary "~" "(g)" _ V  ∘ ! for [Trns][Ind]
                           FullVowel -> 0 || FullVowel _ FullVowel ;
 
 define VowelDominance a i -> i i  ∘
@@ -395,7 +397,7 @@ def BaseFinalEndings ghw      -> qw ,
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 define Rules [
-	Filters                        ∘
+    Filters                        ∘
     Lexicon                        ∘
     Lowercase                      ∘
     MultipleForms                  ∘
