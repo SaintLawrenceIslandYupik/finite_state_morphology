@@ -1360,7 +1360,7 @@ LEXICON NounPostbase7
 
 LEXICON NounWithInfl
 
-yug[N][Abs][Unpd][Sg]:yuuk  EncliticOrEnd;
+0:0  #;
 
 
 
@@ -1564,15 +1564,20 @@ LEXICON NounInfl
 
 LEXICON VerbWithPostbase
 
-ggiste-@₁~%:(u)te[V→V]:ggistute        VerbIntr2;
-ggiste-@₁~%:(u)te[V→V]:ggistute        VerbTrns2;
-kaate-@₁~%:(u)te[V→V]:kaatute          VerbIntr2;
-kaate-@₁~%:(u)te[V→V]:kaatute          VerbTrns2;
-payangite-@₁~%:(u)te[V→V]:payangitute  VerbIntr2;
-payangite-@₁~%:(u)te[V→V]:payangitute  VerbTrns2;
+ggiste-@₁~%:(u)te[V→V]:ggistute         VerbIntr2;
+ggiste-@₁~%:(u)te[V→V]:ggistute         VerbTrns2;
+kaate-@₁~%:(u)te[V→V]:kaatute           VerbIntr2;
+kaate-@₁~%:(u)te[V→V]:kaatute           VerbTrns2;
+payangite-@₁~%:(u)te[V→V]:payangitute   VerbIntr2;
+payangite-@₁~%:(u)te[V→V]:payangitute   VerbTrns2;
 
-kukegte-@₁~%:(u)sigh[V→V]:kuukggusigh     NounPostbase2;
-kuukgute-@₁~%:(u)sigh[V→V]:kuukggutusigh  NounPostbase2;
+kukegte-~%:(u)sigh[V→V]:kuukggusigh     NounPostbase2;
+kuukgute-~%:(u)sigh[V→V]:kuukggutusigh  NounPostbase2;
+
+egtugute-@₁~%:(u)tke[V→V]:egtugututke   VerbIntr2;
+egtugute-@₁~%:(u)tke[V→V]:egtugututke   VerbTrns2;
+qeneghte-@₁~%:(u)tke[V→V]:qeneghtutke   VerbIntr2;
+qeneghte-@₁~%:(u)tke[V→V]:qeneghtutke   VerbTrns2;
 
 
 
