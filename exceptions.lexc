@@ -1564,6 +1564,9 @@ LEXICON NounInfl
 
 LEXICON VerbWithPostbase
 
+alinge-tagh[V→V]:alingtagh              VerbIntr2;
+alinge-tagh[V→V]:alingtagh              VerbTrns2;
+
 ggiste-@₁~%:(u)te[V→V]:ggistute         VerbIntr2;
 ggiste-@₁~%:(u)te[V→V]:ggistute         VerbTrns2;
 kaate-@₁~%:(u)te[V→V]:kaatute           VerbIntr2;
@@ -3299,8 +3302,10 @@ LEXICON VerbMoodInfl
 @R.VALENCE.INTR@[V][Intr][Conc]:@R.VALENCE.INTR@–ghnga           IntransitiveConcessive;
 @R.VALENCE.TRNS@[V][Trns][Conc]:@R.VALENCE.TRNS@–ghnga           TransitiveConcessive;
 
-@R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁–negh          IntransitiveContemporative;
-@R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁–negh          TransitiveContemporative;
+@R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁~f–negh        IntransitiveContemporative;
+@R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁~f–ngh         IntransitiveContemporative;
+@R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁~f–negh        TransitiveContemporative;
+@R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁~f–ngh         TransitiveContemporative;
 
 @R.VALENCE.INTR@[V][Intr][Cond]:@R.VALENCE.INTR@@~–(g)ka[Cond]   IntransitiveConditional;
 @R.VALENCE.TRNS@[V][Trns][Cond]:@R.VALENCE.TRNS@@~–(g)ka[Cond]   TransitiveConditional;
@@ -3795,7 +3800,8 @@ LEXICON TransitiveConcessive
 
 LEXICON IntransitiveContemporative
 |-----------------------|--------------------------|-------------------------|-------------------------|
-[3Sg]:an   EncliticOrEnd; [1Sg]:ma    EncliticOrEnd; [2Sg]:pek  EncliticOrEnd; [4Sg]:mini EncliticOrEnd; 
+[3Sg]:ani  EncliticOrEnd; [1Sg]:ma    EncliticOrEnd; [2Sg]:pek  EncliticOrEnd; [4Sg]:mini EncliticOrEnd; 
+[3Sg]:aani EncliticOrEnd;
 [3Pl]:ata  EncliticOrEnd; [1Pl]:mta   EncliticOrEnd; [2Pl]:fsi  EncliticOrEnd; [4Pl]:meng EncliticOrEnd; 
 [3Du]:ayek EncliticOrEnd; [1Du]:mtung EncliticOrEnd; [2Du]:ftek EncliticOrEnd; [4Du]:mek  EncliticOrEnd; 
 |-----------------------|--------------------------|-------------------------|-------------------------|

@@ -257,8 +257,8 @@ define VelarUvularRounding k -> kw, g -> w, gg -> wh, ng -> ngw, ngng -> ngngw |
                                     ["(g/t)" | "(g)" | g ] -> w || a u MorphemeBoundary (MorphemeBoundary) MorphPhonSymbols* _ [ V - u] ;
 
 define TripleCluster V -> 0 || WordBoundary Alphabet+ [ V - e ] MorphemeBoundary "~" "(g)" _ V  ∘  ! for [Trns][Ind]
-                     FullVowel -> 0 || FullVowel _ FullVowel     ∘
-					        gh -> 0 || [ g | gh ] t e MorphemeBoundary "@₁" "–" _ ;  ! for @–ghpagte
+                     FullVowel -> 0 || FullVowel _ FullVowel                                    ∘
+					        gh -> 0 || [ g | gh ] t e ("*") ("*") MorphemeBoundary "@₁" "–" _   ;  ! for @–ghpagte
 
 define VowelDominance a i -> i i  ∘
                       i a -> i i  ∘
@@ -315,46 +315,46 @@ define GKe "@~–(g)ke" ->          k a || "@₁" "~f" n a _ ng                 
 
 define MultipleForms GKa ∘
                      GKe ∘
-                     "[Opt_PRS_2Sg]" -> g i     || V V  _                  ∘
-                     "[Opt_PRS_2Sg]" -> "~sf" i || [C - gh] _              ∘
-                     "[Opt_PRS_2Sg]" -> "~sf" i || [e | DoubleVowel] gh _  ∘
-                     "[Opt_PRS_2Sg]" -> n       || t e _                   ∘
-                     "[Opt_PRS_2Sg]" -> "~f" i  || [C - t] e _             ∘
-                     "[Opt_PRS_2Sg]" -> ":" a   || FullVowel gh _          ∘
-                     "[Opt_PRS_2Sg]" -> 0                                  ∘
-                     "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ V ("*") ("*") | "(pete)fte" ] _      ∘
-                     "[Opt_FUT_Intr]" -> "~sf" "–" ghh a a || gh _         ∘
-                     "[Opt_FUT_Intr]" -> "~sf" "–" gg a a  || g  _         ∘
-                     "[Opt_FUT_Intr]" -> n a k e n                         ∘
-                     "[To_Feel_R_Toward]" ->       "~" "–" k e || V _      ∘
-                     "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _      ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u || [ V ("*") ("*") | "(pete)fte" ] _     ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _  ∘
-                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _                                   ∘
-	                 "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C) _  ∘
-                     "~f-w/-w" -> "~f" "-w"                                      ∘
-                     "~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] _    ,, 
-                     "~sf-w:(e)tgun/teggun" -> "~sf" "-w" ":" "(e)" t g u n      ∘
-                     "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i || [ [Alphabet - "*"] | "(pete)fte" ] _  ,,
-                     "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*" || "*" _                ∘             
-                     "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || [ V ("*") ("*") | "(pete)fte" ] _              ,,  
-                     "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ [ C | V ] ("*") ("*") | "(pete)fte" ] _      ∘
-                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" k u    -> "–" g p e n a a n         ∘
-                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t e n  -> "–" g p e n a ng          ∘
-                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t a    -> "–" g p e n a a m t a     ∘
-                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t u ng -> "–" g p e n a a m t u ng  ∘
-                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na"        -> "–" g p e n a             ∘
-                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" k u    -> "~f" "–" ng u n a a n         ∘
-                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" t e n  -> "~f" "–" ng u n a ng          ∘
-                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" t a    -> "~f" "–" ng u n a a m t a     ∘
-                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" t u ng -> "~f" "–" ng u n a a m t u ng  ∘
-                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na"        -> "~f" "–" ng u n a             ∘
-                     "@₁~flu/na" k u -> n a a n            || t e "*" _  ∘
-                     "@₁~flu/na" t e n -> n a ng           || t e "*" _  ∘
-                     "@₁~flu/na" t a -> n a a m t a        || t e "*" _  ∘
-                     "@₁~flu/na" t u ng  -> n a a m t u ng || t e "*" _  ∘
-                     "@₁~flu/na" -> "@₁" "~f" l u                        ∘
-					 [ a | u ] -> i || _ gh "~sf" ":" "(e)" s q e        ;
+                     "[Opt_PRS_2Sg]" -> g i     || V V  _                 ∘
+                     "[Opt_PRS_2Sg]" -> "~sf" i || [C - gh] _             ∘
+                     "[Opt_PRS_2Sg]" -> "~sf" i || [e | DoubleVowel] gh _ ∘
+                     "[Opt_PRS_2Sg]" -> n       || t e _                  ∘
+                     "[Opt_PRS_2Sg]" -> "~f" i  || [C - t] e _            ∘
+                     "[Opt_PRS_2Sg]" -> ":" a   || FullVowel gh _         ∘
+                     "[Opt_PRS_2Sg]" -> 0                                 ∘
+                     "[Opt_FUT_Intr]" -> "@₁" "–" l gh a a || [ V ("*") ("*") | "(pete)fte" ] _ ∘
+                     "[Opt_FUT_Intr]" -> "~sf" "–" ghh a a || gh _        ∘
+                     "[Opt_FUT_Intr]" -> "~sf" "–" gg a a  || g  _        ∘
+                     "[Opt_FUT_Intr]" -> n a k e n                        ∘
+                     "[To_Feel_R_Toward]" ->       "~" "–" k e || V _     ∘
+                     "[To_Feel_R_Toward]" -> "@₁" "~f" y u k e || C _     ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~f" "(i₁)" g u || [ V ("*") ("*") | "(pete)fte" ] _    ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" ghh u || [ q | gh | ghh | qw | ghw | ghhw ] _ ∘
+                     "[Opt_PRS_2Sg_3Sg]" -> "~sf" "–" gg u  || C _                                  ∘
+	                 "~f-w/-w" ->      "-w" || WordBoundary (C) V C (C) V (C) _                     ∘
+                     "~f-w/-w" -> "~f" "-w"                                                         ∘
+                     "~sf-w:(e)tgun/teggun" -> t e gg u n || [ gh "*" | g ] _                       ,, 
+                     "~sf-w:(e)tgun/teggun" -> "~sf" "-w" ":" "(e)" t g u n                         ∘
+                     "@₁–lghii/@*ngugh*" -> "@₁" "–" l gh i i || [ [Alphabet - "*"] | "(pete)fte" ] _ ,,
+                     "@₁–lghii/@*ngugh*" -> "@*" ng u gh "*" || "*" _                                 ∘             
+                     "@₁~fy/~f(ng₁)" -> "~f" "(ng₁)" || [ V ("*") ("*") | "(pete)fte" ] _             ,,  
+                     "@₁~fy/~f(ng₁)" -> "@₁" "~f" y  || [ [ C | V ] ("*") ("*") | "(pete)fte" ] _     ∘
+                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" k u    -> "–" g p e n a a n        ∘
+                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t e n  -> "–" g p e n a ng         ∘
+                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t a    -> "–" g p e n a a m t a    ∘
+                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na" t u ng -> "–" g p e n a a m t u ng ∘
+                     "@₁" "–" ng h i t e "*" "*" "@₁~flu/na"        -> "–" g p e n a            ∘
+                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" k u    -> "~f" "–" ng u n a a n        ∘
+                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" t e n  -> "~f" "–" ng u n a ng         ∘
+                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" t a    -> "~f" "–" ng u n a a m t a    ∘
+                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na" t u ng -> "~f" "–" ng u n a a m t u ng ∘
+                     "~" ":" "(ng₁)" i t e "*" "*" "@₁~flu/na"        -> "~f" "–" ng u n a            ∘
+                     "@₁~flu/na" k u -> n a a n            || t e "*" _ ∘
+                     "@₁~flu/na" t e n -> n a ng           || t e "*" _ ∘
+                     "@₁~flu/na" t a -> n a a m t a        || t e "*" _ ∘
+                     "@₁~flu/na" t u ng  -> n a a m t u ng || t e "*" _ ∘
+                     "@₁~flu/na" -> "@₁" "~f" l u                       ∘
+					 [ a | u ] -> i || _ gh "~sf" ":" "(e)" s q e       ;
 
 
 

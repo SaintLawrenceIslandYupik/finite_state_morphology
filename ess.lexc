@@ -1,5 +1,4 @@
 ! ADD MINIGU STUFF TO CONSEQUENTIAL I
-! The top half of obscured UP should have an initial -p
 
 
 
@@ -14261,7 +14260,7 @@ LEXICON VerbPostbase1
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase2; ! to immediately V; to briefly V; to quickly V; to suddenly V
 -~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbPostbase2; ! to just V; to V just now; to only V (and perhaps in vain)
--–qiinagh[V→V]:–qiinagh                       VerbPostbase2; ! TODO: Not used with vowel-ending bases
+-–qiinagh[V→V]:–qiinagh                       VerbPostbase2; ! to just V; to V just now; to only V (and perhaps in vain)
 -~aghtagh[V→V]:~aghtagh                       VerbPostbase2; ! to V repeatedly with back and forth movement
 -~aghte[V→V]:~aghte                           VerbPostbase2; ! to suddenly V
 -~aatagh[V→V]:~aatagh                         VerbPostbase2; ! to V finally or repeatedly and persistently, several times
@@ -14280,6 +14279,7 @@ LEXICON VerbPostbase1
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase2; ! to not have V-ed
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase2; ! to be rather V; to be fairly V; to V more and more
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase2; ! to finally V despite a feeling that it wouldn't happen; to Vat last
+-–kestagh[[V→V]:–kestagh                      VerbPostbase2;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase2; ! to casually V; to slowly V
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase2; ! to V again; to V more; to V anyway
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase2; ! to have already V-ed together; to Vas a group
@@ -14539,7 +14539,7 @@ LEXICON VerbPostbase2
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase3; ! to immediately V; to briefly V; to quickly V; to suddenly V
 -~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbPostbase3; ! to just V; to V just now; to only V (and perhaps in vain)
--–qiinagh[V→V]:–qiinagh                       VerbPostbase3; ! TODO: Not used with vowel-ending bases
+-–qiinagh[V→V]:–qiinagh                       VerbPostbase3; ! to just V; to V just now; to only V (and perhaps in vain)
 -~aghtagh[V→V]:~aghtagh                       VerbPostbase3; ! to V repeatedly with back and forth movement
 -~aghte[V→V]:~aghte                           VerbPostbase3; ! to suddenly V
 -~aatagh[V→V]:~aatagh                         VerbPostbase3; ! to V finally or repeatedly and persistently, several times
@@ -14558,6 +14558,7 @@ LEXICON VerbPostbase2
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase3; ! to not have V-ed
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase3; ! to be rather V; to be fairly V; to V more and more
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase3; ! to finally V despite a feeling that it wouldn't happen; to Vat last
+-–kestagh[[V→V]:–kestagh                      VerbPostbase3;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase3; ! to casually V; to slowly V
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase3; ! to V again; to V more; to V anyway
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase3; ! to have already V-ed together; to Vas a group
@@ -14804,7 +14805,7 @@ LEXICON VerbPostbase3
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase4; ! to immediately V; to briefly V; to quickly V; to suddenly V
 -~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbPostbase4; ! to just V; to V just now; to only V (and perhaps in vain)
--–qiinagh[V→V]:–qiinagh                       VerbPostbase4; ! TODO: Not used with vowel-ending bases
+-–qiinagh[V→V]:–qiinagh                       VerbPostbase4; ! to just V; to V just now; to only V (and perhaps in vain)
 -~aghtagh[V→V]:~aghtagh                       VerbPostbase4; ! to V repeatedly with back and forth movement
 -~aghte[V→V]:~aghte                           VerbPostbase4; ! to suddenly V
 -~aatagh[V→V]:~aatagh                         VerbPostbase4; ! to V finally or repeatedly and persistently, several times
@@ -14823,6 +14824,7 @@ LEXICON VerbPostbase3
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase4; ! to not have V-ed
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase4; ! to be rather V; to be fairly V; to V more and more
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase4; ! to finally V despite a feeling that it wouldn't happen; to Vat last
+-–kestagh[[V→V]:–kestagh                      VerbPostbase4;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase4; ! to casually V; to slowly V
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase4; ! to V again; to V more; to V anyway
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase4; ! to have already V-ed together; to Vas a group
@@ -15069,7 +15071,7 @@ LEXICON VerbPostbase4
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase5; ! to immediately V; to briefly V; to quickly V; to suddenly V
 -~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbPostbase5; ! to just V; to V just now; to only V (and perhaps in vain)
--–qiinagh[V→V]:–qiinagh                       VerbPostbase5; ! TODO: Not used with vowel-ending bases
+-–qiinagh[V→V]:–qiinagh                       VerbPostbase5; ! to just V; to V just now; to only V (and perhaps in vain)
 -~aghtagh[V→V]:~aghtagh                       VerbPostbase5; ! to V repeatedly with back and forth movement
 -~aghte[V→V]:~aghte                           VerbPostbase5; ! to suddenly V
 -~aatagh[V→V]:~aatagh                         VerbPostbase5; ! to V finally or repeatedly and persistently, several times
@@ -15088,6 +15090,7 @@ LEXICON VerbPostbase4
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase5; ! to not have V-ed
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase5; ! to be rather V; to be fairly V; to V more and more
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase5; ! to finally V despite a feeling that it wouldn't happen; to Vat last
+-–kestagh[[V→V]:–kestagh                      VerbPostbase5;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase5; ! to casually V; to slowly V
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase5; ! to V again; to V more; to V anyway
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase5; ! to have already V-ed together; to Vas a group
@@ -15334,7 +15337,7 @@ LEXICON VerbPostbase5
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase6; ! to immediately V; to briefly V; to quickly V; to suddenly V
 -~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbPostbase6; ! to just V; to V just now; to only V (and perhaps in vain)
--–qiinagh[V→V]:–qiinagh                       VerbPostbase6; ! TODO: Not used with vowel-ending bases
+-–qiinagh[V→V]:–qiinagh                       VerbPostbase6; ! to just V; to V just now; to only V (and perhaps in vain)
 -~aghtagh[V→V]:~aghtagh                       VerbPostbase6; ! to V repeatedly with back and forth movement
 -~aghte[V→V]:~aghte                           VerbPostbase6; ! to suddenly V
 -~aatagh[V→V]:~aatagh                         VerbPostbase6; ! to V finally or repeatedly and persistently, several times
@@ -15353,6 +15356,7 @@ LEXICON VerbPostbase5
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase6; ! to not have V-ed
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase6; ! to be rather V; to be fairly V; to V more and more
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase6; ! to finally V despite a feeling that it wouldn't happen; to Vat last
+-–kestagh[[V→V]:–kestagh                      VerbPostbase6;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase6; ! to casually V; to slowly V
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase6; ! to V again; to V more; to V anyway
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase6; ! to have already V-ed together; to Vas a group
@@ -15599,7 +15603,7 @@ LEXICON VerbPostbase6
 
 -aghaghte[V→V]:aghaghte                       VerbPostbase7; ! to immediately V; to briefly V; to quickly V; to suddenly V
 -~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbPostbase7; ! to just V; to V just now; to only V (and perhaps in vain)
--–qiinagh[V→V]:–qiinagh                       VerbPostbase7; ! TODO: Not used with vowel-ending bases
+-–qiinagh[V→V]:–qiinagh                       VerbPostbase7; ! to just V; to V just now; to only V (and perhaps in vain)
 -~aghtagh[V→V]:~aghtagh                       VerbPostbase7; ! to V repeatedly with back and forth movement
 -~aghte[V→V]:~aghte                           VerbPostbase7; ! to suddenly V
 -~aatagh[V→V]:~aatagh                         VerbPostbase7; ! to V finally or repeatedly and persistently, several times
@@ -15618,6 +15622,7 @@ LEXICON VerbPostbase6
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbPostbase7; ! to not have V-ed
 -~–kanigh[V→V]:~–kanigh                       VerbPostbase7; ! to be rather V; to be fairly V; to V more and more
 -~–kataghagh[V→V]:~–kataghagh                 VerbPostbase7; ! to finally V despite a feeling that it wouldn't happen; to Vat last
+-–kestagh[[V→V]:–kestagh                      VerbPostbase7;
 -–kusiigh[V→V]:–kusiigh                       VerbPostbase7; ! to casually V; to slowly V
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbPostbase7; ! to V again; to V more; to V anyway
 -~f–laghate[V→V]:~f–laghate                   VerbPostbase7; ! to have already V-ed together; to Vas a group
@@ -15864,7 +15869,7 @@ LEXICON VerbPostbase7
 
 -aghaghte[V→V]:aghaghte                       VerbMoodInfl; ! to immediately V; to briefly V; to quickly V; to suddenly V
 -~f(a)ghesnagh[V→V]:~f(a)ghesnagh             VerbMoodInfl; ! to just V; to V just now; to only V (and perhaps in vain)
--–qiinagh[V→V]:–qiinagh                       VerbMoodInfl; ! TODO: Not used with vowel-ending bases
+-–qiinagh[V→V]:–qiinagh                       VerbMoodInfl; ! to just V; to V just now; to only V (and perhaps in vain)
 -~aghtagh[V→V]:~aghtagh                       VerbMoodInfl; ! to V repeatedly with back and forth movement
 -~aghte[V→V]:~aghte                           VerbMoodInfl; ! to suddenly V
 -~aatagh[V→V]:~aatagh                         VerbMoodInfl; ! to V finally or repeatedly and persistently, several times
@@ -15883,6 +15888,7 @@ LEXICON VerbPostbase7
 -@₁~%:(i/u)mangite[V→V]:@₁~%:(i/u)mangite     VerbMoodInfl; ! to not have V-ed
 -~–kanigh[V→V]:~–kanigh                       VerbMoodInfl; ! to be rather V; to be fairly V; to V more and more
 -~–kataghagh[V→V]:~–kataghagh                 VerbMoodInfl; ! to finally V despite a feeling that it wouldn't happen; to Vat last
+-–kestagh[[V→V]:–kestagh                      VerbMoodInfl;
 -–kusiigh[V→V]:–kusiigh                       VerbMoodInfl; ! to casually V; to slowly V
 -@₁~flaatagh[V→V]:@₁~flaatagh                 VerbMoodInfl; ! to V again; to V more; to V anyway
 -~f–laghate[V→V]:~f–laghate                   VerbMoodInfl; ! to have already V-ed together; to Vas a group
@@ -16204,8 +16210,10 @@ LEXICON VerbMoodInfl
 @R.VALENCE.INTR@[V][Intr][Conc]:@R.VALENCE.INTR@–ghnga           IntransitiveConcessive;
 @R.VALENCE.TRNS@[V][Trns][Conc]:@R.VALENCE.TRNS@–ghnga           TransitiveConcessive;
 
-@R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁–negh          IntransitiveContemporative;
-@R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁–negh          TransitiveContemporative;
+@R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁~f–negh        IntransitiveContemporative; ! TODO: Is ~f involved?
+@R.VALENCE.INTR@[V][Intr][Ctmp]:@R.VALENCE.INTR@@₁~f–ngh         IntransitiveContemporative;
+@R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁~f–negh        TransitiveContemporative;
+@R.VALENCE.TRNS@[V][Trns][Ctmp]:@R.VALENCE.TRNS@@₁~f–ngh         TransitiveContemporative;
 
 @R.VALENCE.INTR@[V][Intr][Cond]:@R.VALENCE.INTR@@~–(g)ka[Cond]   IntransitiveConditional;
 @R.VALENCE.TRNS@[V][Trns][Cond]:@R.VALENCE.TRNS@@~–(g)ka[Cond]   TransitiveConditional;
@@ -16700,7 +16708,8 @@ LEXICON TransitiveConcessive
 
 LEXICON IntransitiveContemporative
 |-----------------------|--------------------------|-------------------------|-------------------------|
-[3Sg]:an   EncliticOrEnd; [1Sg]:ma    EncliticOrEnd; [2Sg]:pek  EncliticOrEnd; [4Sg]:mini EncliticOrEnd; 
+[3Sg]:ani  EncliticOrEnd; [1Sg]:ma    EncliticOrEnd; [2Sg]:pek  EncliticOrEnd; [4Sg]:mini EncliticOrEnd; 
+[3Sg]:aani EncliticOrEnd;
 [3Pl]:ata  EncliticOrEnd; [1Pl]:mta   EncliticOrEnd; [2Pl]:fsi  EncliticOrEnd; [4Pl]:meng EncliticOrEnd; 
 [3Du]:ayek EncliticOrEnd; [1Du]:mtung EncliticOrEnd; [2Du]:ftek EncliticOrEnd; [4Du]:mek  EncliticOrEnd; 
 |-----------------------|--------------------------|-------------------------|-------------------------|
@@ -17299,31 +17308,31 @@ LEXICON PersonalPronoun
 !        singular        |             plural          |              dual              |                |
 !------------------------|-----------------------------|--------------------------------|----------------|
 !                        |                             |                                |  ! 1st Person  |
-whanga      EncliticOrEnd;  whangkuta     EncliticOrEnd;  whangkutung      EncliticOrEnd;  ! Abs/Rel     |
-whangamnun  EncliticOrEnd;  whangamnun    EncliticOrEnd;  whangkutegnun    EncliticOrEnd;  ! Ter         |
-whangamkun  EncliticOrEnd;  whangkutgun   EncliticOrEnd;  whangkutegnegun  EncliticOrEnd;  ! Via         |
-whangamtun  EncliticOrEnd;  whangkutestun EncliticOrEnd;  whangkutegestun  EncliticOrEnd;  ! Equ         |
+whanga      NounPostbase1;  whangkuta     NounPostbase1;  whangkutung      NounPostbase1;  ! Abs/Rel     |
+whangamnun  NounPostbase1;  whangamnun    NounPostbase1;  whangkutegnun    NounPostbase1;  ! Ter         |
+whangamkun  NounPostbase1;  whangkutgun   NounPostbase1;  whangkutegnegun  NounPostbase1;  ! Via         |
+whangamtun  NounPostbase1;  whangkutestun NounPostbase1;  whangkutegestun  NounPostbase1;  ! Equ         |
 !------------------------|-----------------------------|--------------------------------|----------------|
 !                        |                             |                                |  ! 2nd Person  |
-elpek       EncliticOrEnd;  elpesi        EncliticOrEnd;  elpetek          EncliticOrEnd;  ! Abs/Rel     |
-elpenun     EncliticOrEnd;  elpesinun     EncliticOrEnd;  elpetegnun       EncliticOrEnd;  ! Ter         |
-elpegun     EncliticOrEnd;  elpesigun     EncliticOrEnd;  elpetegnegun     EncliticOrEnd;  ! Via         |
-elpetun     EncliticOrEnd;  elpesistun    EncliticOrEnd;  elpetegestun     EncliticOrEnd;  ! Equ         |
+elpek       NounPostbase1;  elpesi        NounPostbase1;  elpetek          NounPostbase1;  ! Abs/Rel     |
+elpenun     NounPostbase1;  elpesinun     NounPostbase1;  elpetegnun       NounPostbase1;  ! Ter         |
+elpegun     NounPostbase1;  elpesigun     NounPostbase1;  elpetegnegun     NounPostbase1;  ! Via         |
+elpetun     NounPostbase1;  elpesistun    NounPostbase1;  elpetegestun     NounPostbase1;  ! Equ         |
 !------------------------|-----------------------------|--------------------------------|----------------|
 !                        |                             |                                |  ! 3rd Person  |
-ellnga      EncliticOrEnd;  ellngit       EncliticOrEnd;  elkek            EncliticOrEnd;  ! Abs/Rel     |
-ellngan     EncliticOrEnd;  ellgita       EncliticOrEnd;  elkek            EncliticOrEnd;  ! Rel         |
-ellnganun   EncliticOrEnd;  ellngitnun    EncliticOrEnd;  elkegkenun       EncliticOrEnd;  ! Ter         |
-ellngakun   EncliticOrEnd;  ellngitgun    EncliticOrEnd;  elekegkenkun     EncliticOrEnd;  ! Via         |
-ellngatun   EncliticOrEnd;  ellngistun    EncliticOrEnd;  elkegestun       EncliticOrEnd;  ! Equ         |
-                            ellngitestun  EncliticOrEnd;                                |  ! Equ         |
+ellnga      NounPostbase1;  ellngit       NounPostbase1;  elkek            NounPostbase1;  ! Abs/Rel     |
+ellngan     NounPostbase1;  ellgita       NounPostbase1;  elkek            NounPostbase1;  ! Rel         |
+ellnganun   NounPostbase1;  ellngitnun    NounPostbase1;  elkegkenun       NounPostbase1;  ! Ter         |
+ellngakun   NounPostbase1;  ellngitgun    NounPostbase1;  elekegkenkun     NounPostbase1;  ! Via         |
+ellngatun   NounPostbase1;  ellngistun    NounPostbase1;  elkegestun       NounPostbase1;  ! Equ         |
+                            ellngitestun  NounPostbase1;                                |  ! Equ         |
 !------------------------|-----------------------------|--------------------------------|----------------|
 !                        |                             |                                |  ! 4th Person  |
-ellmi       EncliticOrEnd;  ellmeng       EncliticOrEnd;  ellmeng          EncliticOrEnd;  ! Abs/Rel     |
-ellminun    EncliticOrEnd;  ellmeggnun    EncliticOrEnd;  ellmegnun        EncliticOrEnd;  ! Ter         |
-                                                          ellmegtenun      EncliticOrEnd;  ! Ter         |
-ellmikun    EncliticOrEnd;  ellmegteggun  EncliticOrEnd;  ellmegtegnegun   EncliticOrEnd;  ! Via         |
-ellmitun    EncliticOrEnd;  ellmegestun   EncliticOrEnd;  elmegestun       EncliticOrEnd;  ! Equ         |
+ellmi       NounPostbase1;  ellmeng       NounPostbase1;  ellmeng          NounPostbase1;  ! Abs/Rel     |
+ellminun    NounPostbase1;  ellmeggnun    NounPostbase1;  ellmegnun        NounPostbase1;  ! Ter         |
+                                                          ellmegtenun      NounPostbase1;  ! Ter         |
+ellmikun    NounPostbase1;  ellmegteggun  NounPostbase1;  ellmegtegnegun   NounPostbase1;  ! Via         |
+ellmitun    NounPostbase1;  ellmegestun   NounPostbase1;  elmegestun       NounPostbase1;  ! Equ         |
 !------------------------|-----------------------------|--------------------------------|----------------|
 
 
