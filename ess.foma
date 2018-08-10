@@ -356,6 +356,16 @@ define MultipleForms GKa ∘
                      "@₁~flu/na" -> "@₁" "~f" l u                       ∘
 					 [ a | u ] -> i || _ gh "~sf" ":" "(e)" s q e       ;
 
+define EncliticAttachment "[Encl]" m i -> 0  || m i _              ∘
+                                     q -> gh || _ "[Encl]" Nasal   ∘
+									 k -> g  || _ "[Encl]" Nasal   ∘
+                                     t -> 0  || _ "[Encl]" ng      ∘
+                                     q -> gh || _ "[Encl]" q u n   ,,
+                                     q -> 0  || _ "[Encl]" q u n   ∘
+                                     t -> s  || _ "[Encl]" t a     ∘
+                                  [..] -> n  || V _ "[Encl]" t u q ∘
+                              "[Encl]" -> 0                        ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -537,6 +547,7 @@ define Rules [
     VowelDominance                 ∘
     CleanupMorphBoundary           ∘
     TripleCluster                  ∘
+	EncliticAttachment             ∘
     ClusterDevoicing               ∘
     BaseFinalEndings               ∘
     Undoubling
@@ -678,6 +689,7 @@ define RulesExceptions [
     VowelDominance                 ∘
     CleanupMorphBoundary           ∘
     TripleCluster                  ∘
+	EncliticAttachment             ∘
     ClusterDevoicing               ∘
     BaseFinalEndings               ∘
     Undoubling

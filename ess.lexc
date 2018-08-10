@@ -3062,7 +3062,6 @@ piighqutagh            	NounPostbase1; ! striker of baleen used to strike water 
 piighru                	NounPostbase1; ! sty in eye
 piighwnegh             	NounPostbase1; ! draft coming into warm house as a vapor from the outside cold when the door is opened in winter
 piigna                 	NounPostbase1; ! that one not far behind
-piikna                	NounPostbase1; ! that one up there above; that one up from the water; that one to the north (additional meaning in Chukotka)
 piina                  	NounPostbase1; ! paint
 piinegh                	NounPostbase1; ! paint
 piineqisigh            	NounPostbase1; ! paintbrush
@@ -16120,32 +16119,32 @@ LEXICON AssignValenceVerbEte
 
 LEXICON VerbEte
 
-[Quant_Qual][4Sg]-ete:~f-wmete EncliticOrEnd;
+[Quant_Qual][4Sg]-ete:~f-wmete** EncliticOrEnd;
 
-! --------------------------------------------------------|
-!             Localis Case + -ete- Contractions           |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                  singular possessed                     |                       plural possessed                 |                          dual possessed                      |
-! --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-[N][Loc][Unpd][Sg]-ete:~f-wmete               VerbMoodInfl; [N][Loc][Unpd][Pl]-ete:~f-w/-wni           VerbMoodInfl; [N][Loc][Unpd][Du]-ete:~sf-w%:(e)gni             VerbMoodInfl; ! unpossessed   |
-! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Loc][3SgPoss][SgPosd]-ete:~%:(ng₁)anite   VerbMoodInfl; [N][Loc][3SgPoss][PlPosd]-ete:~%:(ng₁)ani  VerbMoodInfl; [N][Loc][3SgPoss][DuPosd]-ete:~sf-w%:(e)gkeni    VerbMoodInfl; ! 3Sg possessor |
-[N][Loc][3PlPoss][SgPosd]-ete:~%:(ng₁)itni    VerbMoodInfl; [N][Loc][3PlPoss][PlPosd]-ete:~%:(ng₁)itni VerbMoodInfl; [N][Loc][3PlPoss][DuPosd]-ete:~%:(ng₁)itni       VerbMoodInfl; ! 3Pl possessor |
-[N][Loc][3DuPoss][SgPosd]-ete:~sf-w%:(e)gkeni VerbMoodInfl; [N][Loc][3DuPoss][PlPosd]-ete:~%:(ng₁)itni VerbMoodInfl; [N][Loc][3DuPoss][DuPosd]-ete:~%:(ng₁)itni       VerbMoodInfl; ! 3Du possessor |
-! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Loc][1SgPoss][SgPosd]-ete:–mni            VerbMoodInfl; [N][Loc][1SgPoss][PlPosd]-ete:–mni         VerbMoodInfl; [N][Loc][1SgPoss][DuPosd]-ete:~sf-w%:(e)gemni    VerbMoodInfl; ! 1Sg possessor |
-[N][Loc][1PlPoss][SgPosd]-ete:–mnni           VerbMoodInfl; [N][Loc][1PlPoss][PlPosd]-ete:–mnni        VerbMoodInfl; [N][Loc][1PlPoss][DuPosd]-ete:~sf-w%:(e)gemnni   VerbMoodInfl; ! 1Pl possessor |
-[N][Loc][1DuPoss][SgPosd]-ete:–mtegni         VerbMoodInfl; [N][Loc][1DuPoss][PlPosd]-ete:–mtegni      VerbMoodInfl; [N][Loc][1DuPoss][DuPosd]-ete:~sf-w%:(e)gemtegni VerbMoodInfl; ! 1Du possessor |
-! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
-[N][Loc][2SgPoss][SgPosd]-ete:–gpeni          VerbMoodInfl; [N][Loc][2SgPoss][PlPosd]-ete:–gpeni       VerbMoodInfl; [N][Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpeni    VerbMoodInfl; ! 2Sg possessor |
-[N][Loc][2PlPoss][SgPosd]-ete:–gpesini        VerbMoodInfl; [N][Loc][2PlPoss][PlPosd]-ete:–gpesini     VerbMoodInfl; [N][Loc][2PlPoss][DuPosd]-ete:~sf-w%:(e)gpesini  VerbMoodInfl; ! 2Pl possessor |
-[N][Loc][2DuPoss][SgPosd]-ete:–gpetegni       VerbMoodInfl; [N][Loc][2DuPoss][PlPosd]-ete:–gpetegni    VerbMoodInfl; [N][Loc][2DuPoss][DuPosd]-ete:~sf-w%:(e)gpetegni VerbMoodInfl; ! 2Du possessor |
-! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
-![N][Loc][4SgPoss][SgPosd]-ete:~f-wmini       VerbMoodInfl; [N][Loc][4SgPoss][PlPosd]-ete:~f-wmini     VerbMoodInfl; [N][Loc][4SgPoss][DuPosd]-ete:~sf-w%:(e)gmini    VerbMoodInfl; ! 4Sg possessor |
-[N][Loc][4PlPoss][SgPosd]-ete:~f-wmeggni      VerbMoodInfl; [N][Loc][4PlPoss][PlPosd]-ete:~f-wmeggni   VerbMoodInfl; [N][Loc][4PlPoss][DuPosd]-ete:~sf-w%:(e)gmeggni  VerbMoodInfl; ! 4Sg possessor |
-[N][Loc][4DuPoss][SgPosd]-ete:~f-wmegni       VerbMoodInfl; [N][Loc][4DuPoss][PlPosd]-ete:~f-wmegni    VerbMoodInfl; [N][Loc][4DuPoss][DuPosd]-ete:~sf-w%:(e)gmegni   VerbMoodInfl; ! 4Pl possessor |
-[N][Loc][4DuPoss][SgPosd]-ete:~f-wmegteni     VerbMoodInfl; [N][Loc][4DuPoss][PlPosd]-ete:~f-wmegteni  VerbMoodInfl; [N][Loc][4DuPoss][DuPosd]-ete:~sf-w%:(e)gmegteni VerbMoodInfl; ! 4Du possessor |
-! --------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------|-----------------|
+! ---------------------------------------------------------|
+!              Localis Case + -ete- Contractions           |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+!                   singular possessed                     |                        plural possessed                 |                          dual possessed                       |
+! -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
+[Loc][Unpd][Sg]-ete:~f-wmete**                 VerbMoodInfl; [Loc][Unpd][Pl]-ete:~f-w/-wnite**           VerbMoodInfl; [Loc][Unpd][Du]-ete:~sf-w%:(e)gnite**             VerbMoodInfl; ! unpossessed   |
+! ---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+[Loc][3SgPoss][SgPosd]-ete:~%:(ng₁)anite**     VerbMoodInfl; [Loc][3SgPoss][PlPosd]-ete:~%:(ng₁)anite**  VerbMoodInfl; [Loc][3SgPoss][DuPosd]-ete:~sf-w%:(e)gkenite**    VerbMoodInfl; ! 3Sg possessor |
+[Loc][3PlPoss][SgPosd]-ete:~%:(ng₁)itnite**    VerbMoodInfl; [Loc][3PlPoss][PlPosd]-ete:~%:(ng₁)itnite** VerbMoodInfl; [Loc][3PlPoss][DuPosd]-ete:~%:(ng₁)itnite**       VerbMoodInfl; ! 3Pl possessor |
+[Loc][3DuPoss][SgPosd]-ete:~sf-w%:(e)gkenite** VerbMoodInfl; [Loc][3DuPoss][PlPosd]-ete:~%:(ng₁)itnite** VerbMoodInfl; [Loc][3DuPoss][DuPosd]-ete:~%:(ng₁)itnite**       VerbMoodInfl; ! 3Du possessor |
+! ---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+[Loc][1SgPoss][SgPosd]-ete:–mnite**            VerbMoodInfl; [Loc][1SgPoss][PlPosd]-ete:–mnite**         VerbMoodInfl; [Loc][1SgPoss][DuPosd]-ete:~sf-w%:(e)gemnite**    VerbMoodInfl; ! 1Sg possessor |
+[Loc][1PlPoss][SgPosd]-ete:–mnnite**           VerbMoodInfl; [Loc][1PlPoss][PlPosd]-ete:–mnnite**        VerbMoodInfl; [Loc][1PlPoss][DuPosd]-ete:~sf-w%:(e)gemnnite**   VerbMoodInfl; ! 1Pl possessor |
+[Loc][1DuPoss][SgPosd]-ete:–mtegnite**         VerbMoodInfl; [Loc][1DuPoss][PlPosd]-ete:–mtegnite**      VerbMoodInfl; [Loc][1DuPoss][DuPosd]-ete:~sf-w%:(e)gemtegnite** VerbMoodInfl; ! 1Du possessor |
+! ---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+[Loc][2SgPoss][SgPosd]-ete:–gpenite**          VerbMoodInfl; [Loc][2SgPoss][PlPosd]-ete:–gpenite**       VerbMoodInfl; [Loc][2SgPoss][DuPosd]-ete:~sf-w%:(e)gpenite**    VerbMoodInfl; ! 2Sg possessor |
+[Loc][2PlPoss][SgPosd]-ete:–gpesinite**        VerbMoodInfl; [Loc][2PlPoss][PlPosd]-ete:–gpesinite**     VerbMoodInfl; [Loc][2PlPoss][DuPosd]-ete:~sf-w%:(e)gpesinite**  VerbMoodInfl; ! 2Pl possessor |
+[Loc][2DuPoss][SgPosd]-ete:–gpetegnite**       VerbMoodInfl; [Loc][2DuPoss][PlPosd]-ete:–gpetegnite**    VerbMoodInfl; [Loc][2DuPoss][DuPosd]-ete:~sf-w%:(e)gpetegnite** VerbMoodInfl; ! 2Du possessor |
+! ---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+![Loc][4SgPoss][SgPosd]-ete:~f-wminite**       VerbMoodInfl; [Loc][4SgPoss][PlPosd]-ete:~f-wminite**     VerbMoodInfl; [Loc][4SgPoss][DuPosd]-ete:~sf-w%:(e)gminite**    VerbMoodInfl; ! 4Sg possessor |
+[Loc][4PlPoss][SgPosd]-ete:~f-wmeggnite**      VerbMoodInfl; [Loc][4PlPoss][PlPosd]-ete:~f-wmeggnite**   VerbMoodInfl; [Loc][4PlPoss][DuPosd]-ete:~sf-w%:(e)gmeggnite**  VerbMoodInfl; ! 4Sg possessor |
+[Loc][4DuPoss][SgPosd]-ete:~f-wmegnite**       VerbMoodInfl; [Loc][4DuPoss][PlPosd]-ete:~f-wmegnite**    VerbMoodInfl; [Loc][4DuPoss][DuPosd]-ete:~sf-w%:(e)gmegnite**   VerbMoodInfl; ! 4Pl possessor |
+[Loc][4DuPoss][SgPosd]-ete:~f-wmegtenite**     VerbMoodInfl; [Loc][4DuPoss][PlPosd]-ete:~f-wmegtenite**  VerbMoodInfl; [Loc][4DuPoss][DuPosd]-ete:~sf-w%:(e)gmegtenite** VerbMoodInfl; ! 4Du possessor |
+! ---------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
 
 
 
@@ -16464,11 +16463,11 @@ LEXICON TransitiveNegativeOptative
 
 
 LEXICON IntransitiveNegativeFutureOptative
-!-----------|-----------|-----------------------|
-                          [2Sg]:ng EncliticOrEnd;
-                          [2Pl]:0  EncliticOrEnd;
-                          [2Du]:0  EncliticOrEnd;
-!-----------|-----------|-----------------------|
+!-----------|-----------|------------------------|
+                          [2Sg]:ng  EncliticOrEnd;
+                          [2Pl]:si  EncliticOrEnd;
+                          [2Du]:0   EncliticOrEnd;
+!-----------|-----------|------------------------|
 
 LEXICON TransitiveNegativeFutureOptative
 !---------------------------|-----------------------------|--------------------------------|
@@ -16927,10 +16926,9 @@ estugh       PosRootPostbase  ; ! with legs stretched out
 estugh       QuantQualPostbase; ! with legs stretched out
 guugh        PosRootPostbase  ; ! bent forward with head down
 guugh        QuantQualPostbase; ! bent forward with head down
-iggag        PosRootPostbase  ; ! leaning
-iggag        QuantQualPostbase; ! leaning
-iggag        PosRootPostbase  ; ! tilting
-iggag        QuantQualPostbase; ! tilting
+iggag        PosRootPostbase  ; ! leaning; tilting
+iggag        QuantQualPostbase; ! leaning; tilting
+iggag        AssignValenceVerbEte; ! leaning; tilting
 ighigh       PosRootPostbase  ; ! tilting (especially one's head)
 ighigh       QuantQualPostbase; ! tilting (especially one's head)
 ikigh        PosRootPostbase  ; ! open
@@ -17133,164 +17131,314 @@ LEXICON EmotionalRootPostbase
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-ukuq  EncliticOrEnd; ! this one
-ukut  EncliticOrEnd; ! these ones
-ukuk  EncliticOrEnd; ! these two
+ukuq  DemEnclitic; ! this one
+ukuk  DemEnclitic; ! these two
 
 
 LEXICON Demonstrative
-!--------------------------------------------|---------------------|
-! extended |   restricted    |   obscured    |                     |
-!--------------------------------------------|---------------------|
-! OVER (NEARER)                              |                     |
-!--------------------------------------------|---------------------|
-                          iigna         EncliticOrEnd;  aamna       EncliticOrEnd;  ! Abs Sg Pron      |
-                          ingumi        EncliticOrEnd;  amumi       EncliticOrEnd;  ! Loc Sg Pron      |
-                          iingyuq       EncliticOrEnd;  aamyuq      EncliticOrEnd;  ! Voc Sg           |
-                          iingkut       EncliticOrEnd;  aamkut      EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-                          tazigna       EncliticOrEnd;  taamna      EncliticOrEnd;  ! Anaph Abs Pron   |
-awa       EncliticOrEnd;  inga          EncliticOrEnd;  ama         EncliticOrEnd;  ! Adv Ptcl         |
-awani     EncliticOrEnd;  ingani        EncliticOrEnd;  amani       EncliticOrEnd;  ! Loc Adv          |
-awavek    EncliticOrEnd;  ingavek       EncliticOrEnd;  amavek      EncliticOrEnd;  ! Ter Adv          |
-awagun    EncliticOrEnd;  iing'ggun     EncliticOrEnd;  amagun      EncliticOrEnd;  ! Via Adv          |
-aawhkun   EncliticOrEnd;                EncliticOrEnd;  aamggun     EncliticOrEnd;  ! Via Adv          |
-awaken    EncliticOrEnd;  iingken       EncliticOrEnd;  amaken      EncliticOrEnd;  ! Abl_Mod Adv      |
-aawhken   EncliticOrEnd;  aamken        EncliticOrEnd;                  ! Abl_Mod Adv      |
-taawa     EncliticOrEnd;  tazinga       EncliticOrEnd;  taama       EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
-! OVER (FARTHER)                             |                     |
-!--------------------------------------------|---------------------|
-aagna     EncliticOrEnd;  iikna       EncliticOrEnd;  akemna      EncliticOrEnd;  ! Abs Sg Pron      |                  
-agumi     EncliticOrEnd;  ikumi       EncliticOrEnd;  akmumi      EncliticOrEnd;  ! Loc Sg Pron      |
-aagyuq    EncliticOrEnd;  iiksuq      EncliticOrEnd;  akemyuq     EncliticOrEnd;  ! Voc Sg           |
-aagkut    EncliticOrEnd;  ikegkut     EncliticOrEnd;  akemkut     EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-taagna    EncliticOrEnd;  tazikna     EncliticOrEnd;  taakemna    EncliticOrEnd;  ! Anaph Abs Pron   |
-aga       EncliticOrEnd;  ika         EncliticOrEnd;  akma        EncliticOrEnd;  ! Adv Ptcl         |
-agani     EncliticOrEnd;  ikani       EncliticOrEnd;  akmani      EncliticOrEnd;  ! Loc Adv          |
-agavek    EncliticOrEnd;  ikavek      EncliticOrEnd;  akmavek     EncliticOrEnd;  ! Ter Adv          |
-aaggun    EncliticOrEnd;  ikagun      EncliticOrEnd;  akmagun     EncliticOrEnd;  ! Via Adv          |
-aagken    EncliticOrEnd;  ikegken     EncliticOrEnd;  akmaken     EncliticOrEnd;  ! Abl_Mod Adv      |
-taaga     EncliticOrEnd;  tazika      EncliticOrEnd;  taakma      EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
-! UP                                         |                     |
-!--------------------------------------------|---------------------|
-paagna    EncliticOrEnd;  piikna      EncliticOrEnd;  aamna       EncliticOrEnd;  ! Abs Sg Pron      |
-                                                      paamna      EncliticOrEnd;
-pagumi    EncliticOrEnd;  pikumi      EncliticOrEnd;  amumi       EncliticOrEnd;  ! Loc Sg Pron      |
-paagyuq   EncliticOrEnd;  piiksuq     EncliticOrEnd;  aamyuq      EncliticOrEnd;  ! Voc Sg           |
-paagkut   EncliticOrEnd;  pikegkut    EncliticOrEnd;  aamkut      EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-espagna   EncliticOrEnd;  espigna     EncliticOrEnd;  espamna     EncliticOrEnd;  ! Anaph Abs Pron   |
-tespagna  EncliticOrEnd;  tespigna    EncliticOrEnd;  tespamna    EncliticOrEnd;  ! Anaph Abs Pron   |
-paga      EncliticOrEnd;  pika        EncliticOrEnd;  pama        EncliticOrEnd;  ! Adv Ptcl         |
-pagani    EncliticOrEnd;  pikani      EncliticOrEnd;  pamani      EncliticOrEnd;  ! Loc Adv          |
-pagavek   EncliticOrEnd;  pikavek     EncliticOrEnd;  pamavek     EncliticOrEnd;  ! Ter Adv          |
-paaggun   EncliticOrEnd;  pikagun     EncliticOrEnd;  pamagun     EncliticOrEnd;  ! Via Adv          |
-paagken   EncliticOrEnd;  pikegken    EncliticOrEnd;  pamaken     EncliticOrEnd;  ! Abl_Mod Adv      |
-espaga    EncliticOrEnd;  espika      EncliticOrEnd;  espama      EncliticOrEnd;  ! Anaph Adv Ptcl   |
-tespaga   EncliticOrEnd;  tespika     EncliticOrEnd;  tespama     EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
-! DOWN (BELOW)                               |                     |
-!--------------------------------------------|---------------------|
-unegna    EncliticOrEnd;  kaana       EncliticOrEnd;  saamna      EncliticOrEnd;  ! Abs Sg Pron      |
-un'gumi   EncliticOrEnd;  kanumi      EncliticOrEnd;  samumi      EncliticOrEnd;  ! Loc Sg Pron      |
-unegyuq   EncliticOrEnd;  kaanyuq     EncliticOrEnd;  saamyuq     EncliticOrEnd;  ! Voc Sg           |
-unegkut   EncliticOrEnd;  kaankut     EncliticOrEnd;  saamkut     EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-taanegna  EncliticOrEnd;  eskana      EncliticOrEnd;  esamna      EncliticOrEnd;  ! Anaph Abs Pron   |
-                          teskana     EncliticOrEnd;  tesamna     EncliticOrEnd;  ! Anaph Abs Pron   |
-un'ga     EncliticOrEnd;  kana        EncliticOrEnd;  sama        EncliticOrEnd;  ! Adv Ptcl         |
-un'gani   EncliticOrEnd;  kanaani     EncliticOrEnd;  samani      EncliticOrEnd;  ! Loc Adv          |
-un'gavek  EncliticOrEnd;  kanavek     EncliticOrEnd;  samavek     EncliticOrEnd;  ! Ter Adv          |
-uun'ggun  EncliticOrEnd;  kaan'ggun   EncliticOrEnd;  samagun     EncliticOrEnd;  ! Via Adv          |
-unegken   EncliticOrEnd;  kanaken     EncliticOrEnd;  samaken     EncliticOrEnd;  ! Abl_Mod Adv      |
-                          kaanken     EncliticOrEnd;  saamken     EncliticOrEnd;  ! Abl_Mod Adv      |
-taan'ga   EncliticOrEnd;  eskana      EncliticOrEnd;  esama       EncliticOrEnd;  ! Anaph Adv Ptcl   |
-                          teskana     EncliticOrEnd;  tesama      EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------| 
-! DOWN (TOWARD EXIT)                         |                     |
-!--------------------------------------------|---------------------|
-unegna    EncliticOrEnd;  uugna      EncliticOrEnd;  sakemna     EncliticOrEnd;  ! Abs Sg Pron      |
-un'gumi   EncliticOrEnd;  ugumi      EncliticOrEnd;  sakmumi     EncliticOrEnd;  ! Loc Sg Pron      |
-unegyuq   EncliticOrEnd;  uugyuq     EncliticOrEnd;  sakemyuq    EncliticOrEnd;  ! Voc Sg           |
-unegkut   EncliticOrEnd;  uugkut     EncliticOrEnd;  sakemkut    EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-taanegna  EncliticOrEnd;  taagna     EncliticOrEnd;  esakemna    EncliticOrEnd;  ! Anaph Abs Pron   |
-                          EncliticOrEnd;  tesakemna   EncliticOrEnd;  ! Anaph Abs Pron   |
-un'ga     EncliticOrEnd;  kana       EncliticOrEnd;  sakma       EncliticOrEnd;  ! Adv Ptcl         |
-un'gani   EncliticOrEnd;  kanaani    EncliticOrEnd;  sakmani     EncliticOrEnd;  ! Loc Adv          |
-un'gavek  EncliticOrEnd;  kanavek    EncliticOrEnd;  sakmavek    EncliticOrEnd;  ! Ter Adv          |
-uun'ggun  EncliticOrEnd;  kaan'ggun  EncliticOrEnd;  sakmagun    EncliticOrEnd;  ! Via Adv          |
-unegken   EncliticOrEnd;  kanaken    EncliticOrEnd;  sakmaken    EncliticOrEnd;  ! Abl_Mod Adv      |
-                 kaanken  EncliticOrEnd;                  ! Abl_Mod Adv      |
-taan'ga   EncliticOrEnd;  eskana     EncliticOrEnd;  esakma      EncliticOrEnd;  ! Anaph Adv Ptcl   |
-                 teskana  EncliticOrEnd;  tesakma     EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
-! INSIDE                                     |                     | 
-!--------------------------------------------|---------------------|
-qaawna    EncliticOrEnd;  kiiwna     EncliticOrEnd;  qaamna      EncliticOrEnd;  ! Abs Sg Pron      |
-qawani    EncliticOrEnd;  kigumi     EncliticOrEnd;  qamumi      EncliticOrEnd;  ! Loc Sg Pron      |
-                 kiwumi   EncliticOrEnd;                                     |
-kiiwyuq   EncliticOrEnd;  kiiwyuq    EncliticOrEnd;  qaamyuq     EncliticOrEnd;  ! Voc Sg           |
-qaawhkut  EncliticOrEnd;  kiiwhkut   EncliticOrEnd;  qaamkut     EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-esqawna   EncliticOrEnd;  eskiwna    EncliticOrEnd;  esqamna     EncliticOrEnd;  ! Anaph Abs Pron   |
-tesqawna  EncliticOrEnd;  teskiwna   EncliticOrEnd;  tesqamna    EncliticOrEnd;  ! Anaph Abs Pron   |
-qawa      EncliticOrEnd;  kiwa       EncliticOrEnd;  qama        EncliticOrEnd;  ! Adv Ptcl         |
-qawani    EncliticOrEnd;  kiwani     EncliticOrEnd;  qamani      EncliticOrEnd;  ! Loc Adv          |
-qawavek   EncliticOrEnd;  kiwavek    EncliticOrEnd;  qamavek     EncliticOrEnd;  ! Ter Adv          |
-qaawhun   EncliticOrEnd;  kiiwhun    EncliticOrEnd;  qamagun     EncliticOrEnd;  ! Via Adv          |
-                          qaamggun    EncliticOrEnd;  ! Via Adv          |
-qaawhken  EncliticOrEnd;  kiiwhken   EncliticOrEnd;  qamaken     EncliticOrEnd;  ! Abl_Mod Adv      |
-                          qaamken     EncliticOrEnd;  ! Abl_Mod Adv      |
-esqawa    EncliticOrEnd;  eskiwa     EncliticOrEnd;  esqama      EncliticOrEnd;  ! Anaph Adv Ptcl   |
-tesqawa   EncliticOrEnd;  teskiwa    EncliticOrEnd;  tesqama     EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
-! OUTSIDE                                    |                     |
-!--------------------------------------------|---------------------|
-qaagna    EncliticOrEnd;                    qakmena     EncliticOrEnd;  ! Abs Sg Pron      |
-qaqani    EncliticOrEnd;                    qakmumi     EncliticOrEnd;  ! Loc Sg Pron      |
-qaagyuq   EncliticOrEnd;                    qakemyuq    EncliticOrEnd;  ! Voc Sg           |
-qaagkut   EncliticOrEnd;                    qakemkut    EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-esqagna   EncliticOrEnd;                    esqakemna   EncliticOrEnd;  ! Anaph Abs Pron   |
-tesqagna  EncliticOrEnd;                    tesqakemna  EncliticOrEnd;  ! Anaph Abs Pron   |
-qaga      EncliticOrEnd;                    qakma       EncliticOrEnd;  ! Adv Ptcl         |
-qagani    EncliticOrEnd;                    qakmani     EncliticOrEnd;  ! Loc Adv          |
-qagavek   EncliticOrEnd;                    qakmavek    EncliticOrEnd;  ! Ter Adv          |
-qaagun    EncliticOrEnd;                    qakmagun    EncliticOrEnd;  ! Via Adv          |
-qaagken   EncliticOrEnd;                    qakmaken    EncliticOrEnd;  ! Abl_Mod Adv      |
-esqawa    EncliticOrEnd;                    esqakma     EncliticOrEnd;  ! Anaph Adv Ptcl   |
-tesqawa   EncliticOrEnd;                    tesqakma    EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
-! HERE                                       |                     |
-!--------------------------------------------|---------------------|
-maana     EncliticOrEnd;  una        EncliticOrEnd;  iimna       EncliticOrEnd;  ! Abs Sg Pron      |
-matumi    EncliticOrEnd;  uumi       EncliticOrEnd;  imumi       EncliticOrEnd;  ! Loc Sg Pron      |
-                 uyuq     EncliticOrEnd;  iimyuq      EncliticOrEnd;  ! Voc Sg           |
-                 ukughsi  EncliticOrEnd;                  ! Voc Pl           |
-maakut    EncliticOrEnd;  ukut       EncliticOrEnd;  imkut       EncliticOrEnd;  ! Abs/Rel Pl Pron  |
-tamana    EncliticOrEnd;  taana      EncliticOrEnd;  tazimna     EncliticOrEnd;  ! Anaph Abs Pron   |
-                 tawani   EncliticOrEnd;                  ! Anaph Abs Pron   |
-                 tawaten  EncliticOrEnd;                  ! Equ Pron         |
-maa       EncliticOrEnd;  wha        EncliticOrEnd;  ima         EncliticOrEnd;  ! Adv Ptcl         |
-maani     EncliticOrEnd;  whani      EncliticOrEnd;  imani       EncliticOrEnd;  ! Loc Adv          |
-maavek    EncliticOrEnd;  whavek     EncliticOrEnd;  imavek      EncliticOrEnd;  ! Ter Adv          |
-maagun    EncliticOrEnd;  whagun     EncliticOrEnd;  imagun      EncliticOrEnd;  ! Via Adv          |
-                          iimgun      EncliticOrEnd;  ! Via Adv          |
-maaken    EncliticOrEnd;  whaken     EncliticOrEnd;  imaken      EncliticOrEnd;  ! Abl_Mod Adv      |
-                          iimken      EncliticOrEnd;  ! Abl_Mod Adv      |
-tamaa     EncliticOrEnd;  tawa       EncliticOrEnd;  tazima      EncliticOrEnd;  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
-! NEAR, COMING                               |                     |
-!--------------------------------------------|---------------------|
-                 uukna      EncliticOrEnd;               |  ! Abs Sg Pron      |
-                 ukumi      EncliticOrEnd;               |  ! Loc Sg Pron      |
-                 uuksuq     EncliticOrEnd;               |  ! Voc Sg           |
-                 ukegkut    EncliticOrEnd;               |  ! Abs/Rel Pl Pron  |
-                 taakwna    EncliticOrEnd;               |  ! Anaph Abs Pron   |
-                 uka        EncliticOrEnd;               |  ! Adv Ptcl         |
-                 ukani      EncliticOrEnd;               |  ! Loc Adv          |
-                 ukavek     EncliticOrEnd;               |  ! Ter Adv          |
-                 ukagun     EncliticOrEnd;               |  ! Via Adv          |
-                 ukegken    EncliticOrEnd;               |  ! Abl_Mod Adv      |
-                 taakwa     EncliticOrEnd;               |  ! Anaph Adv Ptcl   |
-!--------------------------------------------|---------------------|
+!---------------------------------------------------|---------------------------|
+!         extended      |        restricted         |          obscured         |
+!---------------------------------------------------|---------------------------|
+! OVER (NEARER)                                                                 |
+!-------------------------------------------------------------------------------|---------------------------|
+                           iigna         DemEnclitic;  aamna         DemEnclitic;  ! Abs Sg Pron            |
+                           ingumi        DemEnclitic;  amumi         DemEnclitic;  ! Loc Sg Pron            |
+                           iingyuq       DemEnclitic;  aamyuq        DemEnclitic;  ! Voc Sg                 |
+                           iingkut       DemEnclitic;  aamkut        DemEnclitic;  ! Abs/Rel Pl Pron        |
+                           tazigna       DemEnclitic;  taamna        DemEnclitic;  ! Anaph Abs Pron         |
+                           tazingumi     DemEnclitic;  taamumi       DemEnclitic;  ! Anaph Loc Pron         |
+                           tazingyuq     DemEnclitic;  taamyuq       DemEnclitic;  ! Anaph Voc Sg           |
+                           tazingkut     DemEnclitic;  taamkut       DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+
+awa              DemInfl;  inga              DemInfl;  ama               DemInfl;  ! Adv Ptcl               |
+awani        DemEnclitic;  ingani        DemEnclitic;  amani         DemEnclitic;  ! Loc Adv                |
+awavek       DemEnclitic;  ingavek       DemEnclitic;  amavek        DemEnclitic;  ! Ter Adv                |
+awagun       DemEnclitic;  iing'ggun     DemEnclitic;  amagun        DemEnclitic;  ! Via Adv                |
+aawhkun      DemEnclitic;                              aamggun       DemEnclitic;  ! Via Adv                |
+awaken       DemEnclitic;  iingken       DemEnclitic;  amaken        DemEnclitic;  ! Abl_Mod Adv            |
+aawhken      DemEnclitic;                              aamken        DemEnclitic;  ! Abl_Mod Adv            |
+taawa        DemEnclitic;  tazinga       DemEnclitic;  taama         DemEnclitic;  ! Anaph Adv Ptcl         |
+taawani      DemEnclitic;  tazingani     DemEnclitic;  taamani       DemEnclitic;  ! Anaph Loc Adv          |
+taawavek     DemEnclitic;  tazingavek    DemEnclitic;  taamavek      DemEnclitic;  ! Anaph Ter Adv          |
+taawagun     DemEnclitic;  tazing'ggun   DemEnclitic;  taamagun      DemEnclitic;  ! Anaph Via Adv          |
+taawhkun     DemEnclitic;                              taamggun      DemEnclitic;  ! Anaph Via Adv          | 
+taawaken     DemEnclitic;  taziingken    DemEnclitic;  taamaken      DemEnclitic;  ! Anaph Abl_Mod Adv      |
+taawhken     DemEnclitic;                              taamken       DemEnclitlc;  ! Anaph Abl_Mod Adv      |
+!-------------------------------------------------------------------------------|---------------------------|
+! OVER (FARTHER)                                                                |                           |
+!-------------------------------------------------------------------------------|---------------------------|
+aagna        DemEnclitic;  iikna         DemEnclitic;  akemna        DemEnclitic;  ! Abs Sg Pron            |                  
+agumi        DemEnclitic;  ikumi         DemEnclitic;  akmumi        DemEnclitic;  ! Loc Sg Pron            |
+aagyuq       DemEnclitic;  iiksuq        DemEnclitic;  akemyuq       DemEnclitic;  ! Voc Sg                 |
+aagkut       DemEnclitic;  ikegkut       DemEnclitic;  akemkut       DemEnclitic;  ! Abs/Rel Pl Pron        |
+taagna       DemEnclitic;  tazikna       DemEnclitic;  taakemna      DemEnclitic;  ! Anaph Abs Pron         |
+taagumi      DemEnclitic;  tazikumi      DemEnclitic;  taakmumi      DemEnclitic;  ! Anaph Loc Pron         |
+taagyuq      DemEnclitic;  taziksuq      DemEnclitic;  taakemyuq     DemEnclitic;  ! Anaph Voc Sg           |
+taagkut      DemEnclitic;  tazikegkut    DemEnclitic;  taakemkut     DemEnclitic;  ! Anaph Ab/Rel Pl Pron   |
+
+aga              DemInfl;  ika               DemInfl;  akma              DemInfl;  ! Adv Ptcl               |
+agani        DemEnclitic;  ikani         DemEnclitic;  akmani        DemEnclitic;  ! Loc Adv                |
+agavek       DemEnclitic;  ikavek        DemEnclitic;  akmavek       DemEnclitic;  ! Ter Adv                |
+aaggun       DemEnclitic;  ikagun        DemEnclitic;  akmagun       DemEnclitic;  ! Via Adv                |
+aagken       DemEnclitic;  ikegken       DemEnclitic;  akmaken       DemEnclitic;  ! Abl_Mod Adv            |
+taaga        DemEnclitic;  tazika        DemEnclitic;  taakma        DemEnclitic;  ! Anaph Adv Ptcl         |
+taagani      DemEnclitic;  tazikani      DemEnclitic;  taakmani      DemEnclitic;  ! Anaph Loc Adv          |
+taagavek     DemEnclitic;  tazikavek     DemEnclitic;  taakmavek     DemEnclitic;  ! Anaph Ter Adv          |
+taaggun      DemEnclitic;  tazikagun     DemEnclitic;  taakmagun     DemEnclitic;  ! Anaph Via Adv          |
+taagken      DemEnclitic;  tazikegken    DemEnclitic;  taakmaken     DemEnclitic;  ! Anaph Abl_Mod Adv      |
+!-------------------------------------------------------------------------------|---------------------------|
+! UP                                                                            |                           |
+!-------------------------------------------------------------------------------|---------------------------|
+paagna       DemEnclitic;  piikna        DemEnclitic;  paamna        DemEnclitic;  ! Abs Sg Pron            |
+pagumi       DemEnclitic;  pikumi        DemEnclitic;  pamumi        DemEnclitic;  ! Loc Sg Pron            |
+paagyuq      DemEnclitic;  piiksuq       DemEnclitic;  paamyuq       DemEnclitic;  ! Voc Sg                 |
+paagkut      DemEnclitic;  pikegkut      DemEnclitic;  paamkut       DemEnclitic;  ! Abs/Rel Pl Pron        |
+espagna      DemEnclitic;  espigna       DemEnclitic;  espamna       DemEnclitic;  ! Anaph Abs Pron         |
+tespagna     DemEnclitic;  tespigna      DemEnclitic;  tespamna      DemEnclitic;  ! Anaph Abs Pron         |
+espagumi     DemEnclitic;  espikumi      DemEnclitic;  espamumi      DemEnclitic;  ! Anaph Loc Pron         |  
+tespagumi    DemEnclitic;  tespikumi     DemEnclitic;  tespamumi     DemEnclitic;  ! Anaph Loc Pron         |
+espaagyuq    DemEnclitic;  espiiksuq     DemEnclitic;  espaamyuq     DemEnclitic;  ! Anaph Voc Sg           |
+tespaagyuq   DemEnclitic;  tespiiksuq    DemEnclitic;  tespaamyuq    DemEnclitic;  ! Anaph Voc Sg           |
+espaagkut    DemEnclitic;  espikegkut    DemEnclitic;  espaamkut     DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+tespaagkut   DemEnclitic;  tespikegkut   DemEnclitic;  tespaamkut    DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+
+paga             DemInfl;  pika              DemInfl;  pama              DemInfl;  ! Adv Ptcl               |
+pagani       DemEnclitic;  pikani        DemEnclitic;  pamani        DemEnclitic;  ! Loc Adv                |
+pagavek      DemEnclitic;  pikavek       DemEnclitic;  pamavek       DemEnclitic;  ! Ter Adv                |
+paaggun      DemEnclitic;  pikagun       DemEnclitic;  pamagun       DemEnclitic;  ! Via Adv                |
+                                                       paamggun      DemEnclitic;  ! Via Adv
+paagken      DemEnclitic;  pikegken      DemEnclitic;  pamaken       DemEnclitic;  ! Abl_Mod Adv            |
+                                                       paamken       DemEnclitic;  ! Abl_Mod Adv            |
+espaga       DemEnclitic;  espika        DemEnclitic;  espama        DemEnclitic;  ! Anaph Adv Ptcl         |
+tesespaga    DemEnclitic;  tesespika     DemEnclitic;  tesespama     DemEnclitic;  ! Anaph Adv Ptcl         |
+espagani     DemEnclitic;  espikani      DemEnclitic;  espamani      DemEnclitic;  ! Anaph Loc Adv          |
+tespagani    DemEnclitic;  tespikani     DemEnclitic;  tespamani     DemEnclitic;  ! Anaph Loc Adv          |
+espagavek    DemEnclitic;  espikavek     DemEnclitic;  espamavek     DemEnclitic;  ! Anaph Ter Adv          |
+tespagavek   DemEnclitic;  tespikavek    DemEnclitic;  tespamavek    DemEnclitic;  ! Anaph Ter Adv          |
+espaaggun    DemEnclitic;  espikagun     DemEnclitic;  espamagun     DemEnclitic;  ! Anaph Via Adv          |
+tespaaggun   DemEnclitic;  tespikagun    DemEnclitic;  tespamagun    DemEnclitic;  ! Anaph Via Adv          |
+                                                       espaamggun    DemEnclitic;  ! Anaph Via Adv
+                                                       tespaamggun   DemEnclitic;  ! Anaph Via Adv
+espaagken    DemEnclitic;  espikegken    DemEnclitic;  espamaken     DemEnclitic;  ! Anaph Abl_Mod Adv      |
+tespaagken   DemEnclitic;  tespikegken   DemEnclitic;  tespamaken    DemEnclitic;  ! Anaph Abl_Mod Adv      |
+                                                       espaamken     DemEnclitic;  ! Anaph Abl_Mod Adv      |
+                                                       tespaamken    DemEnclitic;  ! Anaph Abl_Mod Adv      |
+!-------------------------------------------------------------------------------|---------------------------|
+! DOWN (BELOW)                                                                  |                           |
+! Note: The first column in this section may also mean DOWN (TOWARD EXIT)       |                           |
+!-------------------------------------------------------------------------------|---------------------------|
+unegna       DemEnclitic;  kaana         DemEnclitic;  saamna        DemEnclitic;  ! Abs Sg Pron            |
+un'gumi      DemEnclitic;  kanumi        DemEnclitic;  samumi        DemEnclitic;  ! Loc Sg Pron            |
+unegyuq      DemEnclitic;  kaanyuq       DemEnclitic;  saamyuq       DemEnclitic;  ! Voc Sg                 |
+unegkut      DemEnclitic;  kaankut       DemEnclitic;  saamkut       DemEnclitic;  ! Abs/Rel Pl Pron        |
+taanegna     DemEnclitic;  eskana        DemEnclitic;  esamna        DemEnclitic;  ! Anaph Abs Pron         |
+                           teskana       DemEnclitic;  tesamna       DemEnclitic;  ! Anaph Abs Pron         |
+taan'gumi    DemEnclitic;  eskanumi      DemEnclitic;  esamumi       DemEnclitic;  ! Anaph Loc Sg Pron      |
+                           teskanumi     DemEnclitic;  tesamumi      DemEnclitic;  ! Anaph Loc Sg Pron      |
+taanegyuq    DemEnclitic;  eskaanyuq     DemEnclitic;  esaamyuq      DemEnclitic;  ! Anaph Voc Sg           |
+                           teskaanyuq    DemEnclitic;  tesaamyuq     DemEnclitic;  ! Anaph Voc Sg           |
+taanegeskut  DemEnclitic;  kaankut       DemEnclitic;  esaamkut      DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+                           teskaankut    DemEnclitic;  tesaamkut     DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+
+un'ga            DemInfl;  kana              DemInfl;  sama              DemInfl;  ! Adv Ptcl               |
+un'gani      DemEnclitic;  kanaani       DemEnclitic;  samani        DemEnclitic;  ! Loc Adv                |
+un'gavek     DemEnclitic;  kanavek       DemEnclitic;  samavek       DemEnclitic;  ! Ter Adv                |
+uun'ggun     DemEnclitic;  kaan'ggun     DemEnclitic;  samagun       DemEnclitic;  ! Via Adv                |
+                                                       saamggun      DemEnclitic;  ! Via Adv                |
+unegken      DemEnclitic;  kanaken       DemEnclitic;  samaken       DemEnclitic;  ! Abl_Mod Adv            |
+                           kaanken       DemEnclitic;  saamken       DemEnclitic;  ! Abl_Mod Adv            |
+taan'ga      DemEnclitic;  eskana        DemEnclitic;  esama         DemEnclitic;  ! Anaph Adv Ptcl         |
+                           teskana       DemEnclitic;  tesama        DemEnclitic;  ! Anaph Adv Ptcl         |
+taan'gani    DemEnclitic;  eskanaani     DemEnclitic;  esamani       DemEnclitic;  ! Anaph Loc Adv          |
+                           teskanaani    DemEnclitic;  tesamani      DemEnclitic;  ! Anaph Loc Adv          |
+taan'gavek   DemEnclitic;  eskanavek     DemEnclitic;  esamavek      DemEnclitic;  ! Anaph Ter Adv          |
+                           teskanavek    DemEnclitic;  tesamavek     DemEnclitic;  ! Anaph Ter Adv          |
+taan'ggun    DemEnclitic;  eskaan'ggun   DemEnclitic;  esamagun      DemEnclitic;  ! Anaph Via Adv          |
+                           teskaan'ggun  DemEnclitic;  tesamagun     DemEnclitic;  ! Anaph Via Adv          |
+                                                       esaamggun     DemEnclitic;  ! Anaph Via Adv          |
+                                                       tesaamggun    DemEnclitic;  ! Anaph Via Adv          |
+taanegken    DemEnclitic;  eskanaken     DemEnclitic;  esamaken      DemEnclitic;  ! Anaph Abl_Mod Adv      |
+                           teskaanken    DemEnclitic;  tesaamken     DemEnclitic;  ! Anaph Abl_Mod Adv      |
+!-------------------------------------------------------------------------------|---------------------------|
+! DOWN (TOWARD EXIT)                                                            |                           |
+!-------------------------------------------------------------------------------|---------------------------|
+                           uugna         DemEnclitic;  sakemna       DemEnclitic;  ! Abs Sg Pron            |
+                           ugumi         DemEnclitic;  sakmumi       DemEnclitic;  ! Loc Sg Pron            |
+                           uugyuq        DemEnclitic;  sakemyuq      DemEnclitic;  ! Voc Sg                 |
+                           uugkut        DemEnclitic;  sakemkut      DemEnclitic;  ! Abs/Rel Pl Pron        |
+                           taawna        DemEnclitic;  esakemna      DemEnclitic;  ! Anaph Abs Pron         |
+                                                       tesakemna     DemEnclitic;  ! Anaph Abs Pron         |
+                           taawumi       DemEnclitic;  esakmumi      DemEnclitic;  ! Anaph Loc Sg Pron      |
+                                                       tesakmumi     DemEnclitic;  ! Anaph Loc Sg Pron      |
+                           taawyuq       DemEnclitic;  esakemyuq     DemEnclitic;  ! Anaph Voc Sg           |
+						                               tesakemyuq    DemEnclitic;  ! Anaph Anaph Voc Sg     |
+                           taawkut       DemEnclitic;  esakemkut     DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+                                                       tesakemkut    DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+
+                           kana              DemInfl;  sakma             DemInfl;  ! Adv Ptcl               |
+                           kanaani       DemEnclitic;  sakmani       DemEnclitic;  ! Loc Adv                |
+                           kanavek       DemEnclitic;  sakmavek      DemEnclitic;  ! Ter Adv                |
+                           kaan'ggun     DemEnclitic;  sakmagun      DemEnclitic;  ! Via Adv                |
+                           kanaken       DemEnclitic;  sakmaken      DemEnclitic;  ! Abl_Mod Adv            |
+                           kaanken       DemEnclitic;                              ! Abl_Mod Adv            |
+                           eskana        DemEnclitic;  esakma        DemEnclitic;  ! Anaph Adv Ptcl         |
+                           teskana       DemEnclitic;  tesakma       DemEnclitic;  ! Anaph Adv Ptcl         |
+                           eskanaani     DemEnclitic;  esakmani      DemEnclitic;  ! Anaph Loc Adv          |
+                           teskanaani    DemEnclitic;  tesakmani     DemEnclitic;  ! Anaph Loc Adv          |
+                           eskanavek     DemEnclitic;  esakmavek     DemEnclitic;  ! Anaph Ter Adv          |
+                           teskanavek    DemEnclitic;  tesakmavek    DemEnclitic;  ! Anaph Ter Adv          |
+                           eskaan'ggun   DemEnclitic;  esakmagun     DemEnclitic;  ! Anaph Via Adv          |
+                           teskaan'ggun  DemEnclitic;  tesakmagun    DemEnclitic;  ! Anaph Via Adv          |
+                           eskanaken     DemEnclitic;  esakmaken     DemEnclitic;  ! Anaph Abl_Mod Adv      |
+                           teskanaken    DemEnclitic;  tesakmaken    DemEnclitic;  ! Anaph Abl_Mod Adv      |
+                           eskaanken     DemEnclitic;                              ! Anaph Abl_Mod Adv      |
+                           teskaanken    DemEnclitic;                              ! Anaph Abl_Mod Adv      |
+!----------------------------------------------------------------------------------|------------------------|
+! INSIDE                                                                           |                        | 
+!----------------------------------------------------------------------------------|------------------------|
+qaawna       DemEnclitic;  kiiwna        DemEnclitic;  qaamna        DemEnclitic;  ! Abs Sg Pron            |      
+qawani       DemEnclitic;  kigumi        DemEnclitic;  qamumi        DemEnclitic;  ! Loc Sg Pron            |
+                           kiwumi        DemEnclitic;                              ! Loc Sg Pron            |
+qaawyuq      DemEnclitic;  kiiwyuq       DemEnclitic;  qaamyuq       DemEnclitic;  ! Voc Sg                 |
+qaawhkut     DemEnclitic;  kiiwhkut      DemEnclitic;  qaamkut       DemEnclitic;  ! Abs/Rel Pl Pron        |
+esqawna      DemEnclitic;  eskiwna       DemEnclitic;  esqamna       DemEnclitic;  ! Anaph Abs Pron         |
+tesqawna     DemEnclitic;  teskiwna      DemEnclitic;  tesqamna      DemEnclitic;  ! Anaph Abs Pron         |
+esqawani     DemEnclitic;  eskigumi      DemEnclitic;  esqamumi      DemEnclitic;  ! Anaph Loc Sg Pron      |
+                           eskiwumi      DemEnclitic;                              ! Anaph Loc Sg Pron      |
+tesqawani    DemEnclitic;  teskigumi     DemEnclitic;  tesqamumi     DemEnclitic;  ! Anaph Loc Sg Pron      |
+                           teskiwumi     DemEnclitic;                              ! Anaph Loc Sg Pron      |
+esqaawyuq    DemEnclitic;  eskiiwyuq     DemEnclitic;  esqaamyuq     DemEnclitic;  ! Anaph Voc Sg           |
+tesqaawyuq   DemEnclitic;  teskiiwyuq    DemEnclitic;  tesqaamyuq    DemEnclitic;  ! Anaph Voc Sg           |
+esqaawhkut   DemEnclitic;  eskiiwhkut    DemEnclitic;  esqaamkut     DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+tesqaawhkut  DemEnclitic;  teskiiwhkut   DemEnclitic;  tesqaamkut    DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+
+qawa             DemInfl;  kiwa              DemInfl;  qama              DemInfl;  ! Adv Ptcl               |
+qawani       DemEnclitic;  kiwani        DemEnclitic;  qamani        DemEnclitic;  ! Loc Adv                |
+qawavek      DemEnclitic;  kiwavek       DemEnclitic;  qamavek       DemEnclitic;  ! Ter Adv                |
+qaawhun      DemEnclitic;  kiiwhun       DemEnclitic;  qamagun       DemEnclitic;  ! Via Adv                |
+                                                       qaamggun      DemEnclitic;  ! Via Adv                |
+qaawhken     DemEnclitic;  kiiwhken      DemEnclitic;  qamaken       DemEnclitic;  ! Abl_Mod Adv            |
+                                                       qaamken       DemEnclitic;  ! Abl_Mod Adv            |
+esqawa       DemEnclitic;  eskiwa        DemEnclitic;  esqama        DemEnclitic;  ! Anaph Adv Ptcl         |
+tesqawa      DemEnclitic;  teskiwa       DemEnclitic;  tesqama       DemEnclitic;  ! Anaph Anaph Adv Ptcl   |
+esqawani     DemEnclitic;  eskiwani      DemEnclitic;  esqamani      DemEnclitic;  ! Anaph Loc Adv          |
+tesqawani    DemEnclitic;  teskiwani     DemEnclitic;  tesqamani     DemEnclitic;  ! Anaph Loc Adv          |
+esqawavek    DemEnclitic;  eskiwavek     DemEnclitic;  esqamavek     DemEnclitic;  ! Anaph Ter Adv          |
+tesqawavek   DemEnclitic;  teskiwavek    DemEnclitic;  tesqamavek    DemEnclitic;  ! Anaph Ter Adv          |
+esqaawhun    DemEnclitic;  eskiiwhun     DemEnclitic;  esqamagun     DemEnclitic;  ! Anaph Via Adv          |
+tesqaawhun   DemEnclitic;  teskiiwhun    DemEnclitic;  tesqamagun    DemEnclitic;  ! Anaph Via Adv          |
+                                                       esqaamggun    DemEnclitic;  ! Anaph Via Adv          |
+                                                       tesqaamggun   DemEnclitic;  ! Anaph Via Adv          |
+esqaawhken   DemEnclitic;  eskiiwhken    DemEnclitic;  esqamaken     DemEnclitic;  ! Anaph Abl_Mod Adv      |
+tesqaawhken  DemEnclitic;  teskiiwhken   DemEnclitic;  tesqamaken    DemEnclitic;  ! Anaph Abl_Mod Adv      |
+                                                       esqaamken     DemEnclitic;  ! Anaph Abl_Mod Adv      |
+                                                       tesqaamken    DemEnclitic;  ! Anaph Abl_Mod Adv      |
+!----------------------------------------------------------------------------------|------------------------|
+! OUTSIDE                                                                          |                        |
+!----------------------------------------------------------------------------------|------------------------|
+qaagna       DemEnclitic;                              qakmena       DemEnclitic;  ! Abs Sg Pron            |
+qaqani       DemEnclitic;                              qakmumi       DemEnclitic;  ! Loc Sg Pron            |
+qaagyuq      DemEnclitic;                              qakemyuq      DemEnclitic;  ! Voc Sg                 |
+qaagkut      DemEnclitic;                              qakemkut      DemEnclitic;  ! Abs/Rel Pl Pron        |
+esqagna      DemEnclitic;                              esqakemna     DemEnclitic;  ! Anaph Abs Pron         |
+tesqagna     DemEnclitic;                              tesqakemna    DemEnclitic;  ! Anaph Abs Pron         |
+esqaqani     DemEnclitic;                              esqakmumi     DemEnclitic;  ! Anaph Loc Sg Pron      |
+tesqaqani    DemEnclitic;                              tesqakmumi    DemEnclitic;  ! Anaph Loc Sg Pron      |
+esqaagyuq    DemEnclitic;                              esqakemyuq    DemEnclitic;  ! Anaph Voc Sg           |
+tesqaagyuq   DemEnclitic;                              tesqakemyuq   DemEnclitic;  ! Anaph Voc Sg           |
+esqaagkut    DemEnclitic;                              esqakemkut    DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+tesqaagkut   DemEnclitic;                              tesqakemkut   DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+
+qaga             DemInfl;                              qakma             DemInfl;  ! Adv Ptcl               |
+qagani       DemEnclitic;                              qakmani       DemEnclitic;  ! Loc Adv                |
+qagavek      DemEnclitic;                              qakmavek      DemEnclitic;  ! Ter Adv                |
+qaagun       DemEnclitic;                              qakmagun      DemEnclitic;  ! Via Adv                |
+qaagken      DemEnclitic;                              qakmaken      DemEnclitic;  ! Abl_Mod Adv            |
+esqawa       DemEnclitic;                              esqakma       DemEnclitic;  ! Anaph Adv Ptcl         |
+tesqawa      DemEnclitic;                              tesqakma      DemEnclitic;  ! Anaph Adv Ptcl         |
+esqagani     DemEnclitic;                              esqakmani     DemEnclitic;  ! Anaph Loc Adv          |
+tesqagani    DemEnclitic;                              tesqakmani    DemEnclitic;  ! Anaph Loc Adv          |
+esqagavek    DemEnclitic;                              esqakmavek    DemEnclitic;  ! Anaph Ter Adv          |
+tesqagavek   DemEnclitic;                              tesqakmavek   DemEnclitic;  ! Anaph Ter Adv          |
+esqaagun     DemEnclitic;                              esqakmagun    DemEnclitic;  ! Anaph Via Adv          |
+tesqaagun    DemEnclitic;                              tesqakmagun   DemEnclitic;  ! Anaph Via Adv          |
+esqaagken    DemEnclitic;                              esqakmaken    DemEnclitic;  ! Anaph Abl_Mod Adv      |
+tesqaagken   DemEnclitic;                              tesqakmaken   DemEnclitic;  ! Anaph Abl_Mod Adv      |
+!----------------------------------------------------------------------------------|------------------------|
+! HERE                                                                             |                        |
+!----------------------------------------------------------------------------------|------------------------|
+maana        DemEnclitic;  una           DemEnclitic;  iimna         DemEnclitic;  ! Abs Sg Pron            |
+matumi       DemEnclitic;  uumi          DemEnclitic;  imumi         DemEnclitic;  ! Loc Sg Pron            |
+                           uuyuq         DemEnclitic;  iimyuq        DemEnclitic;  ! Voc Sg                 |
+                           ukughsi       DemEnclitic;                              ! Voc Pl                 |
+maakut       DemEnclitic;  ukut          DemEnclitic;  imkut         DemEnclitic;  ! Abs/Rel Pl Pron        |
+tamana       DemEnclitic;  taana         DemEnclitic;  tazimna       DemEnclitic;  ! Anaph Abs Pron         |
+tamatumi     DemEnclitic;  taami         DemEnclitic;  tazimumi      DemEnclitic;  ! Anaph Loc Sg Pron      |
+                           taayuq        DemEnclitic;  tazimyuq      DemEnclitic;  ! Anaph Voc Sg           |
+                           takughsi      DemEnclitic;                              ! Anaph Voc Pl           |
+tamaakut     DemEnclitic;  taakut        DemEnclitic;  tazimkut      DemEnclitic;  ! Anaph Abs/Rel Pl Pron  |
+ 
+maa              DemInfl;  wha               DemInfl;  ima               DemInfl;  ! Adv Ptcl               |
+maani        DemEnclitic;  whani         DemEnclitic;  imani         DemEnclitic;  ! Loc Adv                |
+maavek       DemEnclitic;  whavek        DemEnclitic;  imavek        DemEnclitic;  ! Ter Adv                |        
+maagun       DemEnclitic;  whagun        DemEnclitic;  imagun        DemEnclitic;  ! Via Adv                |
+                                                       iimgun        DemEnclitic;  ! Via Adv                |
+maaken       DemEnclitic;  whaken        DemEnclitic;  imaken        DemEnclitic;  ! Abl_Mod Adv            |
+                                                       iimken        DemEnclitic;  ! Abl_Mod Adv            |
+                           whaten        DemEnclitic;                              ! Equ Adv                |
+tamaa        DemEnclitic;  tawa          DemEnclitic;  tazima        DemEnclitic;  ! Anaph Adv Ptcl         |
+tamaani      DemEnclitic;  tawani        DemEnclitic;  tazimani      DemEnclitic;  ! Anaph Loc Adv          |
+tamaavek     DemEnclitic;  tawavek       DemEnclitic;  tazimavek     DemEnclitic;  ! Anaph Ter Adv          |
+tamaagun     DemEnclitic;  tawagun       DemEnclitic;  tazimagun     DemEnclitic;  ! Anaph Via Adv          |
+                                                       tazimgun      DemEnclitic;  ! Anaph Via Adv          |
+tamaaken     DemEnclitic;  tawaken       DemEnclitic;  tazimaken     DemEnclitic;  ! Anaph Abl_Mod Adv      |  
+                                                       tazimken      DemEnclitic;  ! Anaph Abl_Mod Adv      |
+		                   tawaten       DemEnclitic;                              ! Anaph Anaph Equ Adv    |
+!----------------------------------------------------------------------------------|------------------------|
+! NEAR, COMING                                                                     |                        |
+!----------------------------------------------------------------------------------|------------------------|
+                           uukna          DemEnclitic;                             ! Abs Sg Pron            |
+                           ukumi          DemEnclitic;                             ! Loc Sg Pron            |
+                           uuksuq         DemEnclitic;                             ! Voc Sg                 |
+                           ukegkut        DemEnclitic;                             ! Abs/Rel Pl Pron        |
+                           taakwna        DemEnclitic;                             ! Anaph Abs Pron         |
+                           taakwumi       DemEnclitic;                             ! Anaph Loc Sg Pron      |
+                           taakwsuq       DemEnclitic;                             ! Anaph Voc Sg           |
+                           taakwegkut     DemEnclitic;                             ! Anaph Abs/Rel Pl Pron  |
+ 
+                           uka                DemInfl;                             ! Adv Ptcl               |
+                           ukani          DemEnclitic;                             ! Loc Adv                |
+                           ukavek         DemEnclitic;                             ! Ter Adv                |
+                           ukagun         DemEnclitic;                             ! Via Adv                |
+                           ukegken        DemEnclitic;                             ! Abl_Mod Adv            |            
+                           taakwa         DemEnclitic;                             ! Anaph Adv Ptcl         |
+                           taakwani       DemEnclitic;                             ! Anaph Loc Adv          |
+                           taakwavek      DemEnclitic;                             ! Anaph Ter Adv          |
+                           taakwagun      DemEnclitic;                             ! Anaph Via Adv          |
+                           taakwegken     DemEnclitic;                             ! Anaph Abl_Mod Adv      |
+!----------------------------------------------------------------------------------|------------------------|
+
+
+LEXICON DemInfl 
+0:0                  DemEnclitic;
+-pi:pi               VerbIntr2;
+-pi:pi               VerbITrns2;
+@P.VALENCE.INTR@[Loc]-ete:@P.VALENCE.INTR@~f-wnte**  VerbMoodInfl;
+
+
+LEXICON DemEnclitic
+0:0                     #;
+-lli[Encl]:lli          #;
+-llu[Encl]:llu          #;
+-mi[Encl]:[Encl]mi      #;
+-ngam[Encl]:[Encl]ngam  #;
+-nguq[Encl]:[Encl]nguq  #;
+-qaa[Encl]:[Encl]qaa    #;
+-qun[Encl]:[Encl]qun    #;
+-sa[Encl]:sa            #;
+-ta[Encl]:[Encl]ta      #;
+-tuq[Encl]:[Encl]tuq    #;
+-wha[Encl]:wha          #;
 
 
 
@@ -17348,7 +17496,7 @@ LEXICON EncliticOrEnd
 -lli[Encl]:lli    EncliticOrEnd;
 -llu[Encl]:llu    EncliticOrEnd;
 -mi[Encl]:mi      EncliticOrEnd;
--ngam[Encl]:ngma  EncliticOrEnd;
+-ngam[Encl]:ngam  EncliticOrEnd;
 -nguq[Encl]:nguq  EncliticOrEnd;
 -qaa[Encl]:qaa    EncliticOrEnd;
 -qun[Encl]:qun    EncliticOrEnd;
