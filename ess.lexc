@@ -1,12 +1,3 @@
-! ADD MINIGU STUFF TO CONSEQUENTIAL I
-
-
-
-
-
-
-
-
 Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   [N] [V] [Sg] [Pl] [Du] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [4Sg] [4Pl] [4Du] [_] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
                   [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
@@ -16,7 +7,6 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   (pete)fte @~–(g)ka @~–(g)ke
                   ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
-				  [Guess] [DemGuess]  [PtclGuess] [ERootGuess] [NounGuess] [PosRootGuess] [QuantQualGuess] [VerbGuess] [ForeignWordGuess] [Foreign]
 
 
 
@@ -45,7 +35,6 @@ LEXICON Root
 
 LEXICON Particle
 
-[PtclGuess][Guess]:[PtclGuess] EncliticOrEnd;
 aa-a                    EncliticOrEnd; ! yes
 aa                   	EncliticOrEnd; ! darn!
 aam                   	EncliticOrEnd; ! hesitation sound like English "aah" or "um"
@@ -631,7 +620,7 @@ naligh*          NounPostbase1; ! which one(s)?
 
 LEXICON ProperNoun
 
-Hotel    NounPostbase1; ! site at cliffs on the southeast side of Myghapowit Mtn. on St. Lawrence Island 
+! Hotel    NounPostbase1; ! site at cliffs on the southeast side of Myghapowit Mtn. on St. Lawrence Island 
 Sulaay   NounPostbase1; ! Independence Day (4th of July) 
 Tepraak  NounPostbase1;
 Umqilir  NounPostbase1; ! Wrangel Island (well northwest of the Yupik area)
@@ -646,8 +635,6 @@ Umqilir  NounPostbase1; ! Wrangel Island (well northwest of the Yupik area)
 
 LEXICON NounBase
 
-[ForeignWordGuess][Foreign][Guess]:[ForeignWordGuess]  NounPostbase1;
-[NounGuess][Guess]:[NounGuess]  NounPostbase1;
 aafkaneghllug          	NounPostbase1; ! durable material that will not burst
 aaggaate             	NounPostbase1; ! whetstone; sharpening stone
 aaghheghnegh           	NounPostbase1; ! person that can easily be persuaded
@@ -6664,9 +6651,6 @@ LEXICON NounInfl
 
 LEXICON VerbBase
 
-[ForeignWordGuess][Foreign][Guess]:[ForeignWordGuess]  NounPostbase1;
-[VerbGuess][Guess]:[VerbGuess]  VerbIntr1;
-[VerbGuess][Guess]:[VerbGuess]  VerbTrns1;
 aafkagh               	VerbIntr1; ! to burst
 aafkagh               	VerbTrns1; ! to burst
 aafqugh               	VerbIntr1; ! to set things aside; to divide things into groups
@@ -16910,8 +16894,6 @@ LEXICON TransitiveSubordinative
 
 LEXICON PosturalRoot
 
-[PosRootGuess][Guess]:[PosRootGuess]  PosRootPostbase;  
-[PosRootGuess][Guess]:[PosRootGuess]  QuantQualPostbase;
 aaghw        PosRootPostbase;   ! upside down
 aaghw        QuantQualPostbase; ! upside down
 agagh        PosRootPostbase;   ! hanging
@@ -17028,7 +17010,6 @@ LEXICON PosRootPostbase
 
 LEXICON QuantQual
 
-[QuantQualGuess][Guess]:[QuantQualGuess]  QuantQualPostbase;
 allakagh*      QuantQualPostbase; ! separately (from the others)
 ellnginagh*    QuantQualPostbase; ! alone; only
 kezeghhagh*    QuantQualPostbase; ! alone; only
@@ -17072,7 +17053,6 @@ LEXICON QuantQualPostbase
 
 LEXICON EmotionalRoot
 
-[ERootGuess][Guess]:[ERootGuess]  EmotionalRootPostbase;
 aghliigh         EmotionalRootPostbase; ! overwhelmed
 alangghu         EmotionalRootPostbase; ! missing something; at a loss
 anumi            EmotionalRootPostbase; ! favoring; concerned for
@@ -17141,12 +17121,11 @@ LEXICON EmotionalRootPostbase
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-[DemGuess][Guess]:[DemGuess]  DemEnclitic;
+LEXICON Demonstrative
 ukuq        DemEnclitic; ! this one
 ukuk        DemEnclitic; ! these two
 
 
-LEXICON Demonstrative
 !---------------------------------------------------|---------------------------|
 !         extended      |        restricted         |          obscured         |
 !---------------------------------------------------|---------------------------|

@@ -1,19 +1,22 @@
 #!/bin/bash
 
+# TODO: Script does not account for English borrowings.
+#       Instead, they are removed via preprocessing
 
-FILES="analyzer_output/txts/lore_volume1/toy"
+FILES="analyzer_output/txts/txts_ess-only/dummy"
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
 for file in "$FILES"/*.in; do
 
 	output=${file%.in}.out
 
-
 	echo "Processing ${file} to create ${output}..."
+
+	# Accounts for words that end in -s, -g (but not -ng), -gh
+    sed -i.bak 's/s /t /' "$file" | sed 's/\([^n]\)g /\1k /' | sed 's/gh /q /'
 
 	while IFS= read -r line; do
 
-		# TODO: Does not account for English borrowings
 		sent=$(echo "$line" | tr -d ',;:()"!?.' | tr '[:upper:]' '[:lower:]')
 
 		declare -a 'a=('"$sent"')'
@@ -21,23 +24,33 @@ for file in "$FILES"/*.in; do
 		printf '%s\n\n' "$line" | sed 's/\t/ /g'
 
 		for word in "${a[@]}"; do
-			echo "${word}" | grep -q '[0-9]'
+			if [[ "$word" == *"[]"* ]]; then
+				echo "FOREIGN WORD"\n
+			else
+				echo "${word}" | grep -q '[0-9]'
 
-			if [[ $? = 1 ]]; then
-				# Accounts for words that end in -s, -g, -gh
-				wordOriginalEnding=$(echo "$word" | sed 's/s$/t/' | sed 's/g$/k/' | sed 's/gh$/q/')
+				if [[ $? = 1 ]]; then
+					result=$(echo "$word" | flookup -w "" ./ess.fomabin)
 
-				result=$(echo "$wordOriginalEnding" | flookup -w "" ./ess.fomabin)
+					# Attempts to analyze word again without apostrophes
+					if [[ "$result" == "$word	+?" ]]; then
 
-				# Attempts to analyze word again without apostrophes
-				if [[ "$result" == "$wordOriginalEnding	+?" ]]; then
-					wordNoApostrophe=$(echo "$wordOriginalEnding" | sed "s/'//g")
+						wordNoApostrophe=$(echo "$word" | sed "s/'//g")
 
-					resultNoApostrophe=$(echo "$wordNoApostrophe" | flookup -w "" ./ess.fomabin | sed "s/$wordNoApostrophe/$word/")
+						resultNoApostrophe=$(echo "$wordNoApostrophe" | flookup -w "" ./ess.fomabin | sed "s/$wordNoApostrophe/$word/")
 
-					echo "$resultNoApostrophe"
-				else
-					echo "$result"
+						# Attempts to guess if the analyzer cannot find a valid parse
+						if [[ "$resultNoApostrophe" == "$word	+?" ]]; then
+
+							guess=$(echo "$word" | flookup -w "" ./guesser.fomabin)	
+
+							echo "$guess"
+						else
+							echo "$resultNoApostrophe"
+						fi
+					else
+						echo "$result"
+					fi
 				fi
 
 				printf "\n"
@@ -56,7 +69,7 @@ for file in "$FILES"/*.out; do
 	filename=${file%.out}
 
 	while IFS= read -r line; do
-		if [[ $line == *"?" ]]; then
+		if [[ $line == *"+?" ]]; then
 			echo "$filename: $line"
 		fi
 	done <"$file" > "$filename".errors 

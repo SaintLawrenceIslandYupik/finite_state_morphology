@@ -1,27 +1,5 @@
 #!/usr/bin/env foma -f
 
-read lexc exceptions.lexc
-eliminate flag VALENCE
-define ExceptionsNoFlags;
-define Exceptions ExceptionsNoFlags;
-
-read lexc ess.lexc
-eliminate flag VALENCE
-define LexiconNoFlags;
-define Lexicon LexiconNoFlags;
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!                                       !!!
-!!!      Phoneme/Grapheme Definition      !!!
-!!!                                       !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-define WordBoundary [ .#. ];
-define MorphemeBoundary "^";
-
 define Stop               [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ];
 define VoicedFricative    [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ];
 define VoicelessFricative [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ];
@@ -39,6 +17,46 @@ define C          [ Stop | Fricative | Nasal ];
 define FullVowel   [ a   | i   | u   ];
 define DoubleVowel [ a a | i i | u u ];
 define V           [ e | FullVowel ];
+define AnyV        [ V | DoubleVowel ];
+
+!define YupikChar   [ C | V ];
+!define ForeignChar [ ? - YupikChar ];
+
+!define PotentialForeignWord [ ?* "-" | ?* ForeignChar ?* ];
+define PotentialDem       [ (C)  V [k | m | n | q | t] | (C) AnyV (C) (C AnyV (C))* C AnyV ([k | m | n | q | t]) ];
+define PotentialPtcl      [ (C) AnyV [gg | k | ll | m | ng | n | q | y] | (C) AnyV (C) (C AnyV (C))* C AnyV ([gg | k | ll | m | ng | n | q | y]) ];
+define PotentialERoot     [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV ([g | gh]) ];
+define PotentialNoun      [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV ([g | gh]) ];
+define PotentialPosRoot   [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV  [g | gh]  ];
+define PotentialQuantQual [ (C) AnyV       gh | (C) AnyV (C) (C AnyV (C))* C AnyV       gh   ];
+define PotentialVerb      [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV ([g | gh]) ];
+
+
+read lexc guesser.lexc
+!substitute defined PotentialForeignWord for "[ForeignWordGuess]"
+substitute defined PotentialDem for "[DemGuess]"
+substitute defined PotentialPtcl for "[PtclGuess]"
+substitute defined PotentialERoot for "[ERootGuess]"
+substitute defined PotentialNoun for "[NounGuess]"
+substitute defined PotentialPosRoot for "[PosRootGuess]"
+substitute defined PotentialQuantQual for "[QuantQualGuess]"
+substitute defined PotentialVerb for "[VerbGuess]"
+
+eliminate flag VALENCE
+define LexiconNoFlags;
+define Lexicon LexiconNoFlags;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                       !!!
+!!!      Phoneme/Grapheme Definition      !!!
+!!!                                       !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+define WordBoundary [ .#. ];
+define MorphemeBoundary "^";
 
 define Enclitic   [ ll u | ng u q ];
 
@@ -552,149 +570,7 @@ define Rules [
     Undoubling
 ];
 
-define RulesExceptions [
-    Filters                        ∘
-    Exceptions                     ∘
-    Lowercase                      ∘
-    MultipleForms                  ∘
-    InsertMorphBoundary            ∘
-    TripleCluster                  ∘
-    !! ITERATION 1 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 2 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 3 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 4 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 5 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 6 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 7 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 8 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    TripleCluster                  ∘
-	EncliticAttachment             ∘
-    ClusterDevoicing               ∘
-    BaseFinalEndings               ∘
-    Undoubling
-];
 
-
-define Grammar [ RulesExceptions .P. Rules ] ;
+define Grammar [ Rules ] ;
 
 push Grammar
