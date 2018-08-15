@@ -16,6 +16,7 @@ Multichar_Symbols ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
                   (pete)fte @~–(g)ka @~–(g)ke
                   ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
                   @P.VALENCE.INTR@ @P.VALENCE.TRNS@ @R.VALENCE.INTR@ @R.VALENCE.TRNS@ @R.VALENCE@
+				  [Guess] [DemGuess]  [PtclGuess] [ERootGuess] [NounGuess] [PosRootGuess] [QuantQualGuess] [VerbGuess] [ForeignWordGuess] [Foreign]
 
 
 
@@ -44,6 +45,7 @@ LEXICON Root
 
 LEXICON Particle
 
+[PtclGuess][Guess]:[PtclGuess] EncliticOrEnd;
 aa-a                    EncliticOrEnd; ! yes
 aa                   	EncliticOrEnd; ! darn!
 aam                   	EncliticOrEnd; ! hesitation sound like English "aah" or "um"
@@ -150,7 +152,6 @@ eghhunneghagu         	EncliticOrEnd; ! every day
 egmiinaq              	EncliticOrEnd; ! hurry up; quickly
 ellmaaghaghhagh*       	EncliticOrEnd; ! a little bit more
 ellmaakwaaqun         	EncliticOrEnd; ! at some later time
-elngaatall            	EncliticOrEnd; ! very; very much
 elngaatall            	EncliticOrEnd; ! very; very much
 elngaatatlu           	EncliticOrEnd; ! very much also
 emta                  	EncliticOrEnd; ! this time act differently; for a change; instead; again
@@ -484,6 +485,8 @@ tefli                 	EncliticOrEnd; ! food particles, stains, etc., around one
 tegtaan               	EncliticOrEnd; ! working together
 temngi                	EncliticOrEnd; ! for no real or particular reason; any old way; without plan or forethought
 tengvi                	EncliticOrEnd; ! wrongly; opposite
+tugg                   	EncliticOrEnd; ! bang
+tum                    	EncliticOrEnd; ! bang
 tumangani             	EncliticOrEnd; ! on the way
 tusigatun             	EncliticOrEnd; ! comically
 uggiiy                	EncliticOrEnd; ! sigh of tiredness or frustration
@@ -628,7 +631,10 @@ naligh*          NounPostbase1; ! which one(s)?
 
 LEXICON ProperNoun
 
-Tepraak  #;
+Hotel    NounPostbase1; ! site at cliffs on the southeast side of Myghapowit Mtn. on St. Lawrence Island 
+Sulaay   NounPostbase1; ! Independence Day (4th of July) 
+Tepraak  NounPostbase1;
+Umqilir  NounPostbase1; ! Wrangel Island (well northwest of the Yupik area)
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -640,6 +646,8 @@ Tepraak  #;
 
 LEXICON NounBase
 
+[ForeignWordGuess][Foreign][Guess]:[ForeignWordGuess]  NounPostbase1;
+[NounGuess][Guess]:[NounGuess]  NounPostbase1;
 aafkaneghllug          	NounPostbase1; ! durable material that will not burst
 aaggaate             	NounPostbase1; ! whetstone; sharpening stone
 aaghheghnegh           	NounPostbase1; ! person that can easily be persuaded
@@ -1422,10 +1430,10 @@ eltuqsagh              	NounPostbase1; ! obstruction of any sort
 emama                 	NounPostbase1; ! child's word used when he/she wants to suck breast or bottle
 Emeghagh               	NounPostbase1; ! lagoon seaward of Mugum Peakon St. Lawrence Island
 emgaari                	NounPostbase1; ! foundation pole, usually whale rib, around the periphery of the traditional dome-shaped house, the mangteghapik
-emmay                  	NounPostbase1; ! mother
+em-may                  NounPostbase1; ! mother
 emuri                 	NounPostbase1; ! fish guts which are in a dugout or used to feed dogs
 emyugag                	NounPostbase1; ! Adam's Apple
-enaangaay              	NounPostbase1; ! mother
+enaangaay[VOC]:enaangaay  #; ! mother (endearing vocative form used in stories)
 enlegkutagh            	NounPostbase1; ! log towed by reindeer (used in training)
 epalgete               	NounPostbase1; ! layer of thickened fat in broth
 esavghagh              	NounPostbase1; ! person moving a boat on sea ice using a small sled; sled used to haul a boat on the ice
@@ -1530,7 +1538,6 @@ guygungwaagh           	NounPostbase1; ! small house; cabin
 guygu                  	NounPostbase1; ! summer house; modern frame building
 haanta                 	NounPostbase1; ! allterrain vehicle (ATV)
 haatware              	NounPostbase1; ! hot water
-!Hotel                  NounPostbase1; ! site at cliffs on the southeast side of Myghapowit Mtn. on St. Lawrence Island 
 huuse                 	NounPostbase1; ! hose
 ifkaasigh              	NounPostbase1; ! parachute
 igaasigh               	NounPostbase1; ! pencil; pen; writing device
@@ -4039,7 +4046,6 @@ sukitute               	NounPostbase1; ! splinter
 suklugragh             	NounPostbase1; ! parakeet auklet (Cyclorrhynchus psittacula)
 suksug                 	NounPostbase1; ! grating or hissing noise as of waves on gravel beach
 suksugtagh             	NounPostbase1; ! primus or similar pressure stove
-Sulaay                 	NounPostbase1; ! Independence Day (4th of July)
 sulemsa                	NounPostbase1; ! elderly disabled person
 sullevnegh             	NounPostbase1; ! mischievous person; one who hurts others through sorcery; inconsiderate person
 sulug                  	NounPostbase1; ! sound or noise of wind (blowing through cracks)
@@ -4361,7 +4367,6 @@ tugaate      	        NounPostbase1; ! ice pick (spud)
 tugagh                 	NounPostbase1; ! ice pick (spud)
 tugeghraasigh          	NounPostbase1; ! makeshift ice pick
 tugegh                  NounPostbase1; ! ice pick (spud)
-tugg                   	NounPostbase1; ! bang
 tughneghaam ayaviigha  	NounPostbase1; ! mushroom
 tughneghaam sigutanga 	NounPostbase1; ! toadstool
 tughneghagh*           	NounPostbase1; ! shaman's familiar spirit; devil; Satan
@@ -4401,7 +4406,6 @@ tulughyag             	NounPostbase1; ! canine tooth
 tume                  	NounPostbase1; ! footprint; track; trail; way; path; road
 tumangani              	NounPostbase1; ! on the way
 tumelqusigh            	NounPostbase1; ! the entire time spent on a journey
-tum                    	NounPostbase1; ! bang
 tunagmig               	NounPostbase1; ! bribe
 tunag                  	NounPostbase1; ! palm of hand; smooth trail
 tunegh                 	NounPostbase1; ! mat; floor covering
@@ -4582,7 +4586,6 @@ umegreghagh            	NounPostbase1; ! snow flurries
 Umeyaaleg              	NounPostbase1; ! Oomeyaluk Bay on St. Lawrence Island
 umiileg                	NounPostbase1; ! leader; boss; captain; king
 umkughagh              	NounPostbase1; ! door
-Umqilir                	NounPostbase1; ! Wrangel Island (well northwest of the Yupik area)
 umqughagh              	NounPostbase1; ! cover; lid
 umughag               	NounPostbase1; ! ice thick enough to walk on
 umuqagh                	NounPostbase1; ! thick thing
@@ -6661,6 +6664,9 @@ LEXICON NounInfl
 
 LEXICON VerbBase
 
+[ForeignWordGuess][Foreign][Guess]:[ForeignWordGuess]  NounPostbase1;
+[VerbGuess][Guess]:[VerbGuess]  VerbIntr1;
+[VerbGuess][Guess]:[VerbGuess]  VerbTrns1;
 aafkagh               	VerbIntr1; ! to burst
 aafkagh               	VerbTrns1; ! to burst
 aafqugh               	VerbIntr1; ! to set things aside; to divide things into groups
@@ -16904,100 +16910,102 @@ LEXICON TransitiveSubordinative
 
 LEXICON PosturalRoot
 
-aaghw        PosRootPostbase  ; ! upside down
+[PosRootGuess][Guess]:[PosRootGuess]  PosRootPostbase;  
+[PosRootGuess][Guess]:[PosRootGuess]  QuantQualPostbase;
+aaghw        PosRootPostbase;   ! upside down
 aaghw        QuantQualPostbase; ! upside down
-agagh        PosRootPostbase  ; ! hanging
+agagh        PosRootPostbase;   ! hanging
 agagh        QuantQualPostbase; ! hanging
-agitagh      PosRootPostbase  ; ! open-mouthed
+agitagh      PosRootPostbase;   ! open-mouthed
 agitagh      QuantQualPostbase; ! open-mouthed
-agugh        PosRootPostbase  ; ! bending; turning
+agugh        PosRootPostbase;   ! bending; turning
 agugh        QuantQualPostbase; ! bending; turning
-amsikagh*    PosRootPostbase  ; ! naked
+amsikagh*    PosRootPostbase;   ! naked
 amsikagh*    QuantQualPostbase; ! naked
-aqumgagh*    PosRootPostbase  ; ! sitting
+aqumgagh*    PosRootPostbase;   ! sitting
 aqumgagh*    QuantQualPostbase; ! sitting
-asigh        PosRootPostbase  ; ! tied in a bundle
+asigh        PosRootPostbase;   ! tied in a bundle
 asigh        QuantQualPostbase; ! tied in a bundle
-avlegh       PosRootPostbase  ; ! with legs spread; with parts which are joined at one end spread apart at the other end
+avlegh       PosRootPostbase;   ! with legs spread; with parts which are joined at one end spread apart at the other end
 avlegh       QuantQualPostbase; ! with legs spread; with parts which are joined at one end spread apart at the other end
-enleg        PosRootPostbase  ; ! attached or fastened to something secure; ! foundation; main part
+enleg        PosRootPostbase;   ! attached or fastened to something secure; ! foundation; main part
 enleg        QuantQualPostbase; ! attached or fastened to something secure; ! foundation; main part
-estugh       PosRootPostbase  ; ! with legs stretched out
+estugh       PosRootPostbase;   ! with legs stretched out
 estugh       QuantQualPostbase; ! with legs stretched out
-guugh        PosRootPostbase  ; ! bent forward with head down
+guugh        PosRootPostbase;   ! bent forward with head down
 guugh        QuantQualPostbase; ! bent forward with head down
-iggag        PosRootPostbase  ; ! leaning; tilting
+iggag        PosRootPostbase;   ! leaning; tilting
 iggag        QuantQualPostbase; ! leaning; tilting
 iggag        AssignValenceVerbEte; ! leaning; tilting
-ighigh       PosRootPostbase  ; ! tilting (especially one's head)
+ighigh       PosRootPostbase;   ! tilting (especially one's head)
 ighigh       QuantQualPostbase; ! tilting (especially one's head)
-ikigh        PosRootPostbase  ; ! open
+ikigh        PosRootPostbase;   ! open
 ikigh        QuantQualPostbase; ! open
-ingagh*      PosRootPostbase  ; ! lying down
+ingagh*      PosRootPostbase;   ! lying down
 ingagh*      QuantQualPostbase; ! lying down
 iqrag        PosRootPostbase;   ! uneven; distorted
 iqrag        QuantQualPostbase; ! uneven; distorted
-kagtagh      PosRootPostbase  ; ! concealed; secluded
+kagtagh      PosRootPostbase;   ! concealed; secluded
 kagtagh      QuantQualPostbase; ! concealed; secluded
-kallngugh    PosRootPostbase  ; ! assembled; gathered
+kallngugh    PosRootPostbase;   ! assembled; gathered
 kallngugh    QuantQualPostbase; ! assembled; gathered
-kiimllug     PosRootPostbase  ; ! dim
+kiimllug     PosRootPostbase;   ! dim
 kiimllug     QuantQualPostbase; ! dim
-matagh*      PosRootPostbase  ; ! undressed; parka-less; coat-less
+matagh*      PosRootPostbase;   ! undressed; parka-less; coat-less
 matagh*      QuantQualPostbase; ! undressed; parka-less; coat-less
-mayagh       PosRootPostbase  ; ! being or becoming thin
+mayagh       PosRootPostbase;   ! being or becoming thin
 mayagh       QuantQualPostbase; ! being or becoming thin
-mumig        PosRootPostbase  ; ! turned over; translated
+mumig        PosRootPostbase;   ! turned over; translated
 mumig        QuantQualPostbase; ! turned over; translated
-naghllug     PosRootPostbase  ; ! head downwards
+naghllug     PosRootPostbase;   ! head downwards
 naghllug     QuantQualPostbase; ! head downwards
-nakugh       PosRootPostbase  ; ! eyes crossed
+nakugh       PosRootPostbase;   ! eyes crossed
 nakugh       QuantQualPostbase; ! eyes crossed
-nanugh       PosRootPostbase  ; ! hanging lengthwise
+nanugh       PosRootPostbase;   ! hanging lengthwise
 nanugh       QuantQualPostbase; ! hanging lengthwise
-napagh       PosRootPostbase  ; ! erect; upright
+napagh       PosRootPostbase;   ! erect; upright
 napagh       QuantQualPostbase; ! erect; upright
-nekeg        PosRootPostbase  ; ! put in place; having a good home; quieted down 
+nekeg        PosRootPostbase;   ! put in place; having a good home; quieted down 
 nekeg        QuantQualPostbase; ! put in place; having a good home; quieted down 
-nekevghagh*  PosRootPostbase  ; ! standing
+nekevghagh*  PosRootPostbase;   ! standing
 nekevghagh*  QuantQualPostbase; ! standing
-nevagh       PosRootPostbase  ; ! lying on the back
+nevagh       PosRootPostbase;   ! lying on the back
 nevegh       QuantQualPostbase; ! lying on the back
-qanimigh     PosRootPostbase  ; ! finished; worked on toward completion
+qanimigh     PosRootPostbase;   ! finished; worked on toward completion
 qanimigh     QuantQualPostbase; ! finished; worked on toward completion
-qavigh       PosRootPostbase  ; ! slanted; diagonal
+qavigh       PosRootPostbase;   ! slanted; diagonal
 qavigh       QuantQualPostbase; ! slanted; diagonal
-qetegh       PosRootPostbase  ; ! spinal area of a person; back of person
+qetegh       PosRootPostbase;   ! spinal area of a person; back of person
 qetegh       QuantQualPostbase; ! spinal area of a person; back of person
-qunagh       PosRootPostbase  ; ! eyes closed; dead
+qunagh       PosRootPostbase;   ! eyes closed; dead
 qunagh       QuantQualPostbase; ! eyes closed; dead
-qunegh       PosRootPostbase  ; ! eyes closed; dead
+qunegh       PosRootPostbase;   ! eyes closed; dead
 qunegh       QuantQualPostbase; ! eyes closed; dead
-qutngugh     PosRootPostbase  ; ! bending over forward with head down while in a sitting position
+qutngugh     PosRootPostbase;   ! bending over forward with head down while in a sitting position
 qutngugh     QuantQualPostbase; ! bending over forward with head down while in a sitting position
-sanigh       PosRootPostbase  ; ! sideways
+sanigh       PosRootPostbase;   ! sideways
 sanigh       QuantQualPostbase; ! sideways
-saqfigh      PosRootPostbase  ; ! toes turned out
+saqfigh      PosRootPostbase;   ! toes turned out
 saqfigh      QuantQualPostbase; ! toes turned out
-segesqugh    PosRootPostbase  ; ! kneeling
+segesqugh    PosRootPostbase;   ! kneeling
 segesqugh    QuantQualPostbase; ! kneeling
-sivug        PosRootPostbase  ; ! head tilted up
+sivug        PosRootPostbase;   ! head tilted up
 sivug        QuantQualPostbase; ! head tilted up
-suflitagh    PosRootPostbase  ; ! lying on stomach
+suflitagh    PosRootPostbase;   ! lying on stomach
 suflitagh    QuantQualPostbase; ! lying on stomach
-supag        PosRootPostbase  ; ! tilted; slanted; leaning; at an angle
+supag        PosRootPostbase;   ! tilted; slanted; leaning; at an angle
 supag        QuantQualPostbase; ! tilted; slanted; leaning; at an angle
-suqlugh      PosRootPostbase  ; ! crumpled; folded in to narow an opening; bent
+suqlugh      PosRootPostbase;   ! crumpled; folded in to narow an opening; bent
 suqlugh      QuantQualPostbase; ! crumpled; folded in to narow an opening; bent
-taklagh      PosRootPostbase  ; ! spread out; stretched out
+taklagh      PosRootPostbase;   ! spread out; stretched out
 taklagh      QuantQualPostbase; ! spread out; stretched out
-teghleg      PosRootPostbase  ; ! fastened securely over something
+teghleg      PosRootPostbase;   ! fastened securely over something
 teghleg      QuantQualPostbase; ! fastened securely over something
-tutugh       PosRootPostbase  ; ! folded over with a crease.
+tutugh       PosRootPostbase;   ! folded over with a crease.
 tutugh       QuantQualPostbase; ! folded over with a crease.
-ulmig        PosRootPostbase  ; ! turned over; inside out
+ulmig        PosRootPostbase;   ! turned over; inside out
 ulmig        QuantQualPostbase; ! turned over; inside out
-ulpeg        PosRootPostbase  ; ! folded back on itself (like a turned up pants leg)
+ulpeg        PosRootPostbase;   ! folded back on itself (like a turned up pants leg)
 ulpeg        QuantQualPostbase; ! folded back on itself (like a turned up pants leg)
 
 
@@ -17020,6 +17028,7 @@ LEXICON PosRootPostbase
 
 LEXICON QuantQual
 
+[QuantQualGuess][Guess]:[QuantQualGuess]  QuantQualPostbase;
 allakagh*      QuantQualPostbase; ! separately (from the others)
 ellnginagh*    QuantQualPostbase; ! alone; only
 kezeghhagh*    QuantQualPostbase; ! alone; only
@@ -17063,6 +17072,7 @@ LEXICON QuantQualPostbase
 
 LEXICON EmotionalRoot
 
+[ERootGuess][Guess]:[ERootGuess]  EmotionalRootPostbase;
 aghliigh         EmotionalRootPostbase; ! overwhelmed
 alangghu         EmotionalRootPostbase; ! missing something; at a loss
 anumi            EmotionalRootPostbase; ! favoring; concerned for
@@ -17131,8 +17141,9 @@ LEXICON EmotionalRootPostbase
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-ukuq  DemEnclitic; ! this one
-ukuk  DemEnclitic; ! these two
+[DemGuess][Guess]:[DemGuess]  DemEnclitic;
+ukuq        DemEnclitic; ! this one
+ukuk        DemEnclitic; ! these two
 
 
 LEXICON Demonstrative
@@ -17144,6 +17155,7 @@ LEXICON Demonstrative
                            iigna         DemEnclitic;  aamna         DemEnclitic;  ! Abs Sg Pron            |
                            ingumi        DemEnclitic;  amumi         DemEnclitic;  ! Loc Sg Pron            |
                            iingyuq       DemEnclitic;  aamyuq        DemEnclitic;  ! Voc Sg                 |
+						   ingum         DemEnclitic;                              ! Rel Sg Pron            |
                            iingkut       DemEnclitic;  aamkut        DemEnclitic;  ! Abs/Rel Pl Pron        |
                            tazigna       DemEnclitic;  taamna        DemEnclitic;  ! Anaph Abs Pron         |
                            tazingumi     DemEnclitic;  taamumi       DemEnclitic;  ! Anaph Loc Pron         |
@@ -17163,7 +17175,7 @@ taawavek     DemEnclitic;  tazingavek    DemEnclitic;  taamavek      DemEnclitic
 taawagun     DemEnclitic;  tazing'ggun   DemEnclitic;  taamagun      DemEnclitic;  ! Anaph Via Adv          |
 taawhkun     DemEnclitic;                              taamggun      DemEnclitic;  ! Anaph Via Adv          | 
 taawaken     DemEnclitic;  taziingken    DemEnclitic;  taamaken      DemEnclitic;  ! Anaph Abl_Mod Adv      |
-taawhken     DemEnclitic;                              taamken       DemEnclitlc;  ! Anaph Abl_Mod Adv      |
+taawhken     DemEnclitic;                              taamken       DemEnclitic;  ! Anaph Abl_Mod Adv      |
 !-------------------------------------------------------------------------------|---------------------------|
 ! OVER (FARTHER)                                                                |                           |
 !-------------------------------------------------------------------------------|---------------------------|
@@ -17422,7 +17434,7 @@ tamaaken     DemEnclitic;  tawaken       DemEnclitic;  tazimaken     DemEnclitic
 LEXICON DemInfl 
 0:0                  DemEnclitic;
 -pi:pi               VerbIntr2;
--pi:pi               VerbITrns2;
+-pi:pi               VerbTrns2;
 @P.VALENCE.INTR@[Loc]-ete:@P.VALENCE.INTR@~f-wnte**  VerbMoodInfl;
 
 

@@ -1,28 +1,5 @@
 #!/usr/bin/env foma -f
 
-read lexc exceptions.lexc
-eliminate flag VALENCE
-define ExceptionsNoFlags;
-define Exceptions ExceptionsNoFlags;
-
-read lexc ess.lexc
-eliminate flag VALENCE
-define LexiconNoFlags;
-define Lexicon LexiconNoFlags;
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!                                       !!!
-!!!      Phoneme/Grapheme Definition      !!!
-!!!                                       !!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-define WordBoundary [ .#. ];
-define MorphemeBoundary "^";
-
-
 define Stop               [  p   |   t                 |  k     | "kw"   |  q    | "qw"       ];
 define VoicedFricative    [  v   |   l  | z | y |  r   |  g     |  w     | "gh"  | "ghw"      ];
 define VoicelessFricative [  f   | "ll" |   s   | "rr" | "gg"   | "wh"   | "ghh" | "ghhw" | h ];
@@ -40,6 +17,53 @@ define C          [ Stop | Fricative | Nasal ];
 define FullVowel   [ a   | i   | u   ];
 define DoubleVowel [ a a | i i | u u ];
 define V           [ e | FullVowel ];
+define AnyV        [ V | DoubleVowel ];
+!define YupikChar   [ C | V ];
+!define ForeignChar [ ? - YupikChar ];
+
+read lexc exceptions.lexc
+eliminate flag VALENCE
+define ExceptionsNoFlags;
+define Exceptions ExceptionsNoFlags;
+
+! GUESSER CATEGORY FOR WORDS THAT END IN -M = IN RELATIVE CASE OR A PARTICLE
+! Guesser for foreign words aka anything followed by a dash
+!define PotentialForeignWord [ ?* "-" | ?* ForeignChar ?* ];
+
+define PotentialDem       [ (C)  V [k | m | n | q | t] | (C) AnyV (C) (C AnyV (C))* C AnyV ([k | m | n | q | t]) ];
+define PotentialPtcl      [ (C) AnyV [gg | k | ll | m | ng | n | q | y] | (C) AnyV (C) (C AnyV (C))* C AnyV ([gg | k | ll | m | ng | n | q | y]) ];
+define PotentialERoot     [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV ([g | gh]) ];
+define PotentialNoun      [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV ([g | gh]) ];
+define PotentialPosRoot   [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV  [g | gh]  ];
+define PotentialQuantQual [ (C) AnyV       gh | (C) AnyV (C) (C AnyV (C))* C AnyV       gh   ];
+define PotentialVerb      [ (C) AnyV [g | gh] | (C) AnyV (C) (C AnyV (C))* C AnyV ([g | gh]) ];
+
+
+read lexc ess.lexc
+!substitute defined PotentialForeignWord for "[ForeignWordGuess]"
+substitute defined PotentialDem for "[DemGuess]"
+substitute defined PotentialPtcl for "[PtclGuess]"
+substitute defined PotentialERoot for "[ERootGuess]"
+substitute defined PotentialNoun for "[NounGuess]"
+substitute defined PotentialPosRoot for "[PosRootGuess]"
+substitute defined PotentialQuantQual for "[QuantQualGuess]"
+substitute defined PotentialVerb for "[VerbGuess]"
+
+eliminate flag VALENCE
+define LexiconNoFlags;
+define Lexicon LexiconNoFlags;
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!                                       !!!
+!!!      Phoneme/Grapheme Definition      !!!
+!!!                                       !!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+define WordBoundary [ .#. ];
+define MorphemeBoundary "^";
 
 define Enclitic   [ ll u | ng u q ];
 
