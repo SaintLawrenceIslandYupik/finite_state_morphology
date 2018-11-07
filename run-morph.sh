@@ -3,7 +3,7 @@
 # TODO: Script does not account for English borrowings.
 #       Instead, they are removed via preprocessing
 
-FILES="analyzer_output/txts/txts_ess-only/ungipaghaghlanga.ess/dummy"
+FILES="analyzer_output/txts/original_txts/jacobson_eoc"
 
 # Runs each *.in file through the analyzer and copies the output to a *.out file
 for file in "$FILES"/*.in; do
@@ -13,10 +13,11 @@ for file in "$FILES"/*.in; do
 	echo "Processing ${file} to create ${output}..."
 
 	# Accounts for words that end in -s, -g (but not -ng), -gh
-    sed -i.bak 's/s /t /' "$file" | sed 's/\([^n]\)g /\1k /' | sed 's/gh /q /'
+    sed -i 's/s /t /' "$file" | sed 's/\([^n]\)g /\1k /' | sed 's/gh /q /'
 
 	while IFS= read -r line; do
 
+		# Handles punctuation
 		sent=$(echo "$line" | tr -d ',;:()"!?.=' | sed 's/ - / /g' | sed "s/'$//" | sed "s/^'//" | sed "s/ '/ /" | tr '[:upper:]' '[:lower:]')
 
 		declare -a 'a=('"$sent"')'
@@ -24,9 +25,11 @@ for file in "$FILES"/*.in; do
 		printf '%s\n\n' "$line" | sed 's/\t/ /g'
 
 		for word in "${a[@]}"; do
+			# Accounts for English borrowings that were manually replaced in the text with the phrase "FOREIGN WORD"
 			if [[ "$word" == *"[]"* ]]; then
 				echo -e "FOREIGN WORD\n"
 			else
+				# Handles inflected numbers, e.g. 1999-em
 				echo "${word}" | grep -q '[0-9]'
 
 				if [[ $? = 1 ]]; then
@@ -51,10 +54,10 @@ for file in "$FILES"/*.in; do
 						# fi
 
 					# Attempts to guess if the analyzer cannot find a valid parse
-					elif [[ "$result" == "$word	+?" ]]; then 
-						guess=$(echo "$word" | flookup -w "" ./guesser.fomabin)	
+					# elif [[ "$result" == "$word	+?" ]]; then 
+						# guess=$(echo "$word" | flookup -w "" ./guesser.fomabin)	
 
-						echo "$guess"
+						# echo "$guess"
 
 					# Otherwise, prints the parses that were found
 					else
