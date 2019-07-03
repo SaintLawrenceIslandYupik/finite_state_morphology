@@ -704,3 +704,6 @@ define Grammar [ RulesExceptions .P. Rules ] ;
 
 !regex Grammar.l;
 push Grammar
+
+!define InvertedGrammar [ Grammar.i ];
+!push InvertedGrammar
