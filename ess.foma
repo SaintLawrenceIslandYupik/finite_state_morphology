@@ -472,7 +472,7 @@ define IntermediateToSurfaceRulesExceptions [
     FinalSteps
 ];
 
-define IntermediateGrammar [ IntermediateToSurfaceRulesExceptions .P. IntermediateToSurfaceRules ];
+define IntermediateGrammar [ [ IntermediateToSurfaceRulesExceptions .P. IntermediateToSurfaceRules ].i .o. [ MorphPhonSymbols -> 0 ] ].i;
 
 define UnderlyingToSurfaceRules [
     LexiconWithBoundaries        ∘
