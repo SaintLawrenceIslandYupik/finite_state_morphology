@@ -44,7 +44,7 @@ define V           [ e | FullVowel ];
 
 define Enclitic   [ ll u | ng u q ];
 
-define Alphabet [ C | V | "*" | "'" | "-" ];
+define Alphabet [ C | V | "*" | "'" | "-" | ">" ];
 define MorphPhonSymbols [ "~"     | "~f"    | "~sf"   | "~h"    | "-w"    | ":"     | "–"     | "––" |
                           "@*"    | "@₁"    | "@₂"    |
                           "(e)"   | "(g)"   | "(ng₁)" | "(ng₂)" | "(t)"   | "(te)"  | "(i₁)"  | "(i₂)" | "(u)" | "(a)" | "(s)"   | "(at)"  |
@@ -90,7 +90,7 @@ define Lowercase "A"    -> a,
 
 define InsertMorphBoundary [..] -> MorphemeBoundary || Alphabet _ MorphPhonSymbols ;
 
-define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet+ _ ;
+define CleanupMorphBoundary MorphemeBoundary -> ">" || WordBoundary Alphabet+ _ ;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!
