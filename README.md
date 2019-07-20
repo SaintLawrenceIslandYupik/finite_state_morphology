@@ -4,6 +4,9 @@
 
 If you agree to these conditions, you may access this resource under the terms of the Creative Commons Attribution No-Commercial 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).
 
+## Files 
+
+
 
 ## Links
 
@@ -16,4 +19,5 @@ https://fomafst.github.io/morphtut.html
 https://fomafst.github.io/regexreference.html
 
 http://foma.sourceforge.net/lrec2010/
+
 
