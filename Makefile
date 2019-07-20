@@ -1,4 +1,4 @@
-all: clean ess.seg.fomabin ess.mor.fomabin #test #ess.pdf
+all: ess.seg.fomabin ess.mor.fomabin ess.autoseg.hfst #test #ess.pdf
 
 export LC_ALL = 'C'
 
@@ -27,9 +27,9 @@ ess.lex.fomabin: ess.seg.foma *.lexc
 # This is a morphological segmenter:
 #   ghevriqkuftegnenga:ghevr>iq>kuftegnenga
 .deps/ess.seg.hfst: .deps/.d ess.seg.fomabin ess.mor.fomabin
-	zcat ess.seg.fomabin | hfst-fst2fst -t -o .deps/ess.seg.hfst
+	zcat ess.seg.fomabin | hfst-fst2fst -t -o .deps/ess.hfst
 	zcat ess.mor.fomabin | hfst-fst2fst -t -o .deps/ess.mor.hfst
-	hfst-invert .deps/ess.mor.hfst | hfst-compose -F -1 - -2 .deps/ess.seg.hfst -o $@
+	hfst-invert .deps/ess.mor.hfst | hfst-compose -F -1 - -2 .deps/ess.hfst | hfst-reweight -a 1 -O '>' -o $@
 
 # This is a version of the segmenter in optimised-lookup format, for use
 #   with hfst-proc
@@ -150,7 +150,7 @@ test-postbases: ess.pairs.gold/A-Badten_Postbases.tsv ess.pairs.gold/E-Badten_Po
 
 
 clean:
-	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin
+	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin *.hfst .deps
 
 
 bases.tsv: bases.tab
