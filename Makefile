@@ -3,20 +3,23 @@ all: clean test #ess.pdf
 export LC_ALL = 'C'
 
 ess.fomabin: ess.foma *.lexc
-	foma -l ess.foma -e "save stack ess.fomabin" -s
+	foma -l ess.foma -e "push Grammar" -e "save stack ess.fomabin" -s
+
+ess.lex.fomabin: ess.foma *.lexc
+	foma -l ess.foma -e "push IntermediateGrammar" -e "save stack ess.lex.fomabin" -s
 
 # ess.dot: ess.foma *.lexc
 #	foma -l ess.foma -e "print dot > ess.dot" -s
 
 ess.pairs: ess.foma *.lexc
-	foma -l ess.foma -e "pairs > ess.pairs" -s
+	foma -l ess.foma -e "push Grammar" -e "pairs > ess.pairs" -s
 
 # ess.pdf: ess.dot
 #	dot -Tpdf ess.dot > ess.pdf
 
 
 interactive: ess.foma *.lexc
-	foma -l ess.foma
+	foma -l ess.foma -e "push Grammar"
 
 
 

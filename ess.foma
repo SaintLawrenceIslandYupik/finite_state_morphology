@@ -3,8 +3,14 @@
 read lexc exceptions.lexc
 define Exceptions
 
+
+
+
 read lexc ess.lexc
 define Lexicon
+
+
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -409,156 +415,25 @@ def BaseFinalEndings ghw      -> qw ,
 !!!                        !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-define Rules [
+define LexiconWithBoundaries [
     Filters                        ∘
     Lexicon                        ∘
     Lowercase                      ∘
     MultipleForms                  ∘
     InsertMorphBoundary            ∘
-    TripleCluster                  ∘
-    !! ITERATION 1 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 2 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 3 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 4 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 5 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 6 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 7 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           
-    !! ITERATION 8 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    TripleCluster                  ∘
-	EncliticAttachment             ∘
-    ClusterDevoicing               ∘
-    BaseFinalEndings               ∘
-    Undoubling
+    TripleCluster
 ];
 
-define RulesExceptions [
+define ExceptionLexiconWithBoundaries [
     Filters                        ∘
     Exceptions                     ∘
     Lowercase                      ∘
     MultipleForms                  ∘
     InsertMorphBoundary            ∘
     TripleCluster                  
-    !! ITERATION 1 !!
+];
+
+define Iteration [
     ResolveAllomorphy              ∘
     ModifyTE                       ∘
     NoHopNoDropE                   ∘
@@ -573,131 +448,42 @@ define RulesExceptions [
     VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 2 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 3 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 4 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 5 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 6 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 7 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
-    !! ITERATION 8 !!
-    ResolveAllomorphy              ∘
-    ModifyTE                       ∘
-    NoHopNoDropE                   ∘
-    SemiAndFinalE                  ∘
-    SemiFinalE                     ∘
-    FinalVCDrop                    ∘
-    FinalConsonantDropAssimilation ∘
-    WeakFinalC                     ∘
-    UnmarkStrongGh                 ∘
-    InterConsonantalE              ∘
-    UvularDropping                 ∘
-    VelarUvularRounding            ∘
-    FinalE                         ∘
-    VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
+    CleanupMorphBoundary
+];
+
+define FinalSteps [
     TripleCluster                  ∘
-	EncliticAttachment             ∘
+    EncliticAttachment             ∘
     ClusterDevoicing               ∘
     BaseFinalEndings               ∘
     Undoubling
 ];
 
 
-define Grammar [ RulesExceptions .P. Rules ] ;
+define IntermediateToSurfaceRules [
+    LexiconWithBoundaries.l        ∘
+    Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘
+    FinalSteps
+];
 
-!regex Grammar.l;
-push Grammar
+define IntermediateToSurfaceRulesExceptions [
+    ExceptionLexiconWithBoundaries.l ∘
+    Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘
+    FinalSteps
+];
 
-!define InvertedGrammar [ Grammar.i ];
-!push InvertedGrammar
+define IntermediateGrammar [ [ IntermediateToSurfaceRulesExceptions .P. IntermediateToSurfaceRules ].i .o. [ MorphPhonSymbols -> 0 ] ].i;
+
+define UnderlyingToSurfaceRules [
+    LexiconWithBoundaries        ∘
+    Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘
+    FinalSteps
+];
+
+define UnderlyingToSurfaceRulesExceptions [
+    ExceptionLexiconWithBoundaries ∘
+    Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘
+    FinalSteps
+];
+
+define Grammar [ UnderlyingToSurfaceRulesExceptions .P. UnderlyingToSurfaceRules ] ;
