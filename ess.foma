@@ -2,15 +2,9 @@
 
 read lexc exceptions.lexc
 define Exceptions
-!eliminate flag VALENCE
-!define ExceptionsNoFlags;
-!define Exceptions ExceptionsNoFlags;
 
 read lexc ess.lexc
 define Lexicon
-!eliminate flag VALENCE
-!define LexiconNoFlags;
-!define Lexicon LexiconNoFlags;
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -533,7 +527,7 @@ define Rules [
     VelarUvularRounding            ∘
     FinalE                         ∘
     VowelDominance                 ∘
-    CleanupMorphBoundary           ∘
+    CleanupMorphBoundary           
     !! ITERATION 8 !!
     ResolveAllomorphy              ∘
     ModifyTE                       ∘
@@ -563,7 +557,7 @@ define RulesExceptions [
     Lowercase                      ∘
     MultipleForms                  ∘
     InsertMorphBoundary            ∘
-    TripleCluster                  ∘
+    TripleCluster                  
     !! ITERATION 1 !!
     ResolveAllomorphy              ∘
     ModifyTE                       ∘
@@ -704,3 +698,6 @@ define Grammar [ RulesExceptions .P. Rules ] ;
 
 !regex Grammar.l;
 push Grammar
+
+!define InvertedGrammar [ Grammar.i ];
+!push InvertedGrammar
