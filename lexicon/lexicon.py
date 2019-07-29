@@ -567,7 +567,6 @@ def main():
     args = arg_parser.parse_args()
 
     logging.basicConfig(
-        level=args.verbose,
         stream=sys.stderr,
         datefmt="%Y-%m-%d %H:%M:%S",
         format="%(asctime)s\t%(message)s",
