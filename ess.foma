@@ -474,6 +474,8 @@ define IntermediateToSurfaceRulesExceptions [
 
 define IntermediateGrammar [ [ IntermediateToSurfaceRulesExceptions .P. IntermediateToSurfaceRules ].i .o. [ MorphPhonSymbols -> 0 ] ].i;
 
+define UnderlyingGrammar [ExceptionLexiconWithBoundaries .P. LexiconWithBoundaries ] .o. [ MorphPhonSymbols -> 0 ] ;
+
 define UnderlyingToSurfaceRules [
     LexiconWithBoundaries        ∘
     Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘ Iteration ∘

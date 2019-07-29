@@ -1,4 +1,5 @@
-all: clean test #ess.pdf
+all: ess.foma *.lexc
+	foma -l ess.foma -e "push Grammar" -e "save stack ess.fomabin" -e "pop" -e "push IntermediateGrammar" -e "save stack ess.lex.fomabin" -e "pop" -e "push UnderlyingGrammar" -e "save stack ess.underlying.fomabin" -s
 
 export LC_ALL = 'C'
 
@@ -7,6 +8,9 @@ ess.fomabin: ess.foma *.lexc
 
 ess.lex.fomabin: ess.foma *.lexc
 	foma -l ess.foma -e "push IntermediateGrammar" -e "save stack ess.lex.fomabin" -s
+
+ess.underlying.fomabin: ess.foma *.lexc
+	foma -l ess.foma -e "push UnderlyingGrammar" -e "save stack ess.underlying.fomabin" -s
 
 # ess.dot: ess.foma *.lexc
 #	foma -l ess.foma -e "print dot > ess.dot" -s
