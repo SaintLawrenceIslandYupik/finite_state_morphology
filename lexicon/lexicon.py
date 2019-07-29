@@ -405,7 +405,7 @@ class Lexicon:
 
             self.underlying2morpheme = dict()
             section = None
-            lexicon = dict()
+            self.sections = dict()
             index = 0
             for line in all_lines.split('\n'):
                 line = line.strip()
