@@ -4,6 +4,7 @@ ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 [Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
 [Abs] [Abl_Mod] [Equ] [Loc] [Rel] [Ter] [Via] [Intr] [Trns] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Sbrd] [Ptcp_Obl] [Cmpd_Vbl] [Quant_Qual] [Encl]
 [Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
+[Foreign]
 @* @₁ @₂ ~sf ~f ~h -w –– (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g) (t) (te) (i₁) (i₂) (i/u) (u) (a) (s) (at) (q/t)
 (pete)fte @~–(g)ka @~–(g)ke
 ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
@@ -22,6 +23,7 @@ LEXICON Root
     ProperNoun      ;
     QuantQual       ;
     VerbBase        ;
+    ForeignWord     ;
 
 
 
@@ -9802,125 +9804,125 @@ LEXICON IntransitiveParticipialOblique
 !-----------------------|------------------------|-------------------------|
 
 LEXICON TransitiveParticipialOblique
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][3Sg]:0          EncliticOrEnd; [1Sg][3Pl]:nka        EncliticOrEnd; [1Sg][3Du]:gka         EncliticOrEnd;
 [1Pl][3Sg]:vut        EncliticOrEnd; [1Pl][3Pl]:vut        EncliticOrEnd; [1Pl][3Du]:gput        EncliticOrEnd;
 [1Du][3Sg]:vung       EncliticOrEnd; [1Du][3Pl]:vung       EncliticOrEnd; [1Du][3Du]:gpung       EncliticOrEnd;
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][3Sg]:n          EncliticOrEnd; [2Sg][3Pl]:yen        EncliticOrEnd; [2Sg][3Du]:gkenn       EncliticOrEnd;
 [2Pl][3Sg]:zi         EncliticOrEnd; [2Pl][3Pl]:zi         EncliticOrEnd; [2Pl][3Du]:gsi         EncliticOrEnd;
 [2Du][3Sg]:yek        EncliticOrEnd; [2Du][3Pl]:yek        EncliticOrEnd; [2Du][3Du]:gtek        EncliticOrEnd;
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][3Sg]:minigu     EncliticOrEnd; [4Sg][3Pl]:miniki     EncliticOrEnd; [4Sg][3Du]:minikek     EncliticOrEnd;
 [4Pl][3Sg]:megteggu   EncliticOrEnd; [4Pl][3Pl]:megtek     EncliticOrEnd; [4Pl][3Du]:megtekek    EncliticOrEnd;
 [4Du][3Sg]:megnegu    EncliticOrEnd; [4Du][3Pl]:megneki    EncliticOrEnd; [4Du][3Du]:megnekek    EncliticOrEnd;
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][1Sg]:vnga       EncliticOrEnd; [2Sg][1Pl]:fkut       EncliticOrEnd; [2Sg][1Du]:pekung      EncliticOrEnd;
 [2Pl][1Sg]:fsinga     EncliticOrEnd; [2Pl][1Pl]:pesikut    EncliticOrEnd; [2Pl][1Du]:pesikung    EncliticOrEnd;
 [2Du][1Sg]:petegnenga EncliticOrEnd; [2Du][1Pl]:petegnekut EncliticOrEnd; [2Du][1Du]:petegnekung EncliticOrEnd;
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][1Sg]:mininga    EncliticOrEnd; [4Sg][1Pl]:minikut    EncliticOrEnd; [4Sg][1Du]:minikung    EncliticOrEnd;
 [4Pl][1Sg]:megtengnga EncliticOrEnd; [4Pl][1Pl]:megtekut   EncliticOrEnd; [4Pl][1Du]:megtekung   EncliticOrEnd;
 [4Du][1Sg]:megnenga   EncliticOrEnd; [4Du][1Pl]:megnekut   EncliticOrEnd; [4Du][1Du]:megnekung   EncliticOrEnd;
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][2Sg]:mken       EncliticOrEnd; [1Sg][2Pl]:msi        EncliticOrEnd; [1Sg][2Du]:mtek        EncliticOrEnd;
 [1Pl][2Sg]:mken       EncliticOrEnd; [1Pl][2Pl]:msi        EncliticOrEnd; [1Pl][2Du]:mtek        EncliticOrEnd;
 [1Du][2Sg]:mken       EncliticOrEnd; [1Du][2Pl]:msi        EncliticOrEnd; [1Du][2Du]:mtek        EncliticOrEnd;
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][2Sg]:miniten    EncliticOrEnd; [4Sg][2Pl]:minisi     EncliticOrEnd; [4Sg][2Du]:minitek  EncliticOrEnd;  |
 [4Pl][2Sg]:miniten    EncliticOrEnd; [4Pl][2Pl]:minisi     EncliticOrEnd; [4Pl][2Du]:minitek  EncliticOrEnd;  |
 [4Du][2Sg]:miniten    EncliticOrEnd; [4Du][2Pl]:minisi     EncliticOrEnd; [4Du][2Du]:minitek  EncliticOrEnd;  |
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 
 
 LEXICON IntransitivePrecessiveConsequential
-|-------------------------|--------------------------|-------------------------|-------------------------|
+!-------------------------|--------------------------|-------------------------|-------------------------|
 [3Sg]:n      EncliticOrEnd; [1Sg]:ma    EncliticOrEnd; [2Sg]:vek  EncliticOrEnd; [4Sg]:mi   EncliticOrEnd;
 [3Pl]:ta     EncliticOrEnd; [1Pl]:mta   EncliticOrEnd; [2Pl]:fsi  EncliticOrEnd; [4Pl]:meng EncliticOrEnd;
 [3Du]:yek    EncliticOrEnd; [1Du]:mtung EncliticOrEnd; [2Du]:ftek EncliticOrEnd; [4Du]:mek  EncliticOrEnd;
-|-------------------------|--------------------------|-------------------------|-------------------------|
+!-------------------------|--------------------------|-------------------------|-------------------------|
 
 LEXICON TransitivePrecessiveConsequential
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [3Sg][3Sg]:gu         EncliticOrEnd; [3Sg][3Pl]:ki        EncliticOrEnd; [3Sg][3Du]:kek        EncliticOrEnd;
 [3Pl][3Sg]:tgu        EncliticOrEnd; [3Pl][3Pl]:tki       EncliticOrEnd; [3Pl][3Du]:tkek       EncliticOrEnd;
 [3Du][3Sg]:gnegu      EncliticOrEnd; [3Du][3Pl]:gneki     EncliticOrEnd; [3Du][3Du]:gnekek     EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [1Sg][3Sg]:mkun       EncliticOrEnd; [1Sg][3Pl]:mki       EncliticOrEnd; [1Sg][3Du]:mkek       EncliticOrEnd;
 [1Pl][3Sg]:mteggu     EncliticOrEnd; [1Pl][3Pl]:mteki     EncliticOrEnd; [1Pl][3Du]:mtekek     EncliticOrEnd;
 [1Du][3Sg]:mtegnegu   EncliticOrEnd; [1Du][3Pl]:mtegneki  EncliticOrEnd; [1Du][3Du]:mtegnekek  EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [2Sg][3Sg]:vgu        EncliticOrEnd; [2Sg][3Pl]:fki       EncliticOrEnd; [2Sg][3Du]:fkek       EncliticOrEnd;
 [2Pl][3Sg]:fsigu      EncliticOrEnd; [2Pl][3Pl]:fsiki     EncliticOrEnd; [2Pl][3Du]:fsikek     EncliticOrEnd;
 [2Du][3Sg]:ftegnegu   EncliticOrEnd; [2Du][3Pl]:ftegneki  EncliticOrEnd; [2Du][3Du]:ftegnekek  EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [4Sg][3Sg]:migu       EncliticOrEnd; [4Sg][3Pl]:miki      EncliticOrEnd; [4Sg][3Du]:mikek      EncliticOrEnd;
 [4Pl][3Sg]:megteggu   EncliticOrEnd; [4Pl][3Pl]:megteki   EncliticOrEnd; [4Pl][3Du]:megtekek   EncliticOrEnd;
 [4Du][3Sg]:megnegu    EncliticOrEnd; [4Du][3Pl]:megneki   EncliticOrEnd; [4Du][3Du]:megnekek   EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [3Sg][1Sg]:nga        EncliticOrEnd; [3Sg][1Pl]:nkut      EncliticOrEnd; [3Sg][1Du]:nkung      EncliticOrEnd;
 [3Pl][1Sg]:tnga       EncliticOrEnd; [3Pl][1Pl]:nkut      EncliticOrEnd; [3Pl][1Du]:nkung      EncliticOrEnd;
 [3Du][1Sg]:gnenga     EncliticOrEnd; [3Du][1Pl]:nkut      EncliticOrEnd; [3Du][1Du]:nkung      EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 !                                  |                                   |                                    |
 !                                  |                                   |                                    |
 !                                  |                                   |                                    |
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [2Sg][1Sg]:vnga       EncliticOrEnd; [2Sg][1Pl]:fkut      EncliticOrEnd; [2Sg][1Du]:fkung      EncliticOrEnd;
 [2Pl][1Sg]:fsinga     EncliticOrEnd; [2Pl][1Pl]:fsikut    EncliticOrEnd; [2Pl][1Du]:fsikung    EncliticOrEnd;
 [2Du][1Sg]:ftegnenga  EncliticOrEnd; [2Du][1Pl]:ftegnekut EncliticOrEnd; [2Du][1Du]:ftegnekung EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [4Sg][1Sg]:minga      EncliticOrEnd; [4Sg][1Pl]:mikut     EncliticOrEnd; [4Sg][1Du]:mikung     EncliticOrEnd;
 [4Pl][1Sg]:megtengnga EncliticOrEnd; [4Pl][1Pl]:megtekut  EncliticOrEnd; [4Pl][1Du]:megtekung  EncliticOrEnd;
 [4Du][1Sg]:megnenga   EncliticOrEnd; [4Du][1Pl]:megnekut  EncliticOrEnd; [4Du][1Du]:megnekung  EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [3Sg][2Sg]:ten        EncliticOrEnd; [3Sg][2Pl]:si        EncliticOrEnd; [3Sg][2Du]:stek       EncliticOrEnd;
 [3Pl][2Sg]:ten        EncliticOrEnd; [3Pl][2Pl]:si        EncliticOrEnd; [3Pl][2Du]:stek       EncliticOrEnd;
 [3Du][2Sg]:ten        EncliticOrEnd; [3Du][2Pl]:si        EncliticOrEnd; [3Du][2Du]:stek       EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [1Sg][2Sg]:mken       EncliticOrEnd; [1Sg][2Pl]:msi       EncliticOrEnd; [1Sg][2Du]:mtek       EncliticOrEnd;
 [1Pl][2Sg]:mken       EncliticOrEnd; [1Pl][2Pl]:msi       EncliticOrEnd; [1Pl][2Du]:mtek       EncliticOrEnd;
 [1Du][2Sg]:mken       EncliticOrEnd; [1Du][2Pl]:msi       EncliticOrEnd; [1Du][2Du]:mtek       EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 !                                  |                                   |                                    |
 !                                  |                                   |                                    |
 !                                  |                                   |                                    |
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [4Sg][2Sg]:miten      EncliticOrEnd; [4Sg][2Pl]:misi      EncliticOrEnd; [4Sg][2Du]:mitek      EncliticOrEnd;
 [4Pl][2Sg]:miten      EncliticOrEnd; [4Pl][2Pl]:misi      EncliticOrEnd; [4Pl][2Du]:mitek      EncliticOrEnd;
 [4Du][2Sg]:miten      EncliticOrEnd; [4Du][2Pl]:misi      EncliticOrEnd; [4Du][2Du]:mitek      EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [3Sg][4Sg]:tni        EncliticOrEnd; [3Sg][4Pl]:steng     EncliticOrEnd; [3Sg][4Du]:stek       EncliticOrEnd;
 [3Pl][4Sg]:tni        EncliticOrEnd; [3Pl][4Pl]:steng     EncliticOrEnd; [3Pl][4Du]:stek       EncliticOrEnd;
 [3Du][4Sg]:tni        EncliticOrEnd; [3Du][4Pl]:steng     EncliticOrEnd; [3Du][4Du]:stek       EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [1Sg][4Sg]:mni        EncliticOrEnd; [1Sg][4Pl]:mteng     EncliticOrEnd; [1Sg][4Du]:mtek       EncliticOrEnd;
 [1Pl][4Sg]:mnni       EncliticOrEnd; [1Pl][4Pl]:mteng     EncliticOrEnd; [1Pl][4Du]:mtek       EncliticOrEnd;
 [1Du][4Sg]:mtegnegu   EncliticOrEnd; [1Du][4Pl]:mtegneki  EncliticOrEnd; [1Du][4Du]:mtegnekek  EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 [2Sg][4Sg]:vgu        EncliticOrEnd; [2Sg][4Pl]:fki       EncliticOrEnd; [2Sg][4Du]:fkek       EncliticOrEnd;
 [2Pl][4Sg]:fsigu      EncliticOrEnd; [2Pl][4Pl]:fsiki     EncliticOrEnd; [2Pl][4Du]:fsikek     EncliticOrEnd;
 [2Du][4Sg]:ftegnegu   EncliticOrEnd; [2Du][4Pl]:ftegneki  EncliticOrEnd; [2Du][4Du]:ftegnekek  EncliticOrEnd;
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 !                                  |                                   |                                    |
 !                                  |                                   |                                    |
 !                                  |                                   |                                    |
-|----------------------------------|-----------------------------------|------------------------------------|
+!----------------------------------|-----------------------------------|------------------------------------|
 
 LEXICON IntransitiveConcessive
-|------------------------|----------------------------|----------------------------|----------------------------|
+!------------------------|----------------------------|----------------------------|----------------------------|
 [3Sg]:an    EncliticOrEnd; [1Sg]:aghma   EncliticOrEnd; [2Sg]:aghpek  EncliticOrEnd; [4Sg]:aghmi   EncliticOrEnd;
 [3Pl]:ita   EncliticOrEnd; [1Pl]:amta    EncliticOrEnd; [2Pl]:aghfsi  EncliticOrEnd; [4Pl]:aghmeng EncliticOrEnd;
 [3Du]:ayek  EncliticOrEnd; [1Du]:amtung  EncliticOrEnd; [2Du]:aghftek EncliticOrEnd; [4Du]:aghmek  EncliticOrEnd;
-|------------------------|----------------------------|----------------------------|----------------------------|
+!------------------------|----------------------------|----------------------------|----------------------------|
 
 LEXICON TransitiveConcessive
 !-------------------------------------|---------------------------------------|----------------------------------------|
@@ -9991,176 +9993,176 @@ LEXICON TransitiveConcessive
 
 
 LEXICON IntransitiveContemporative
-|-----------------------|--------------------------|-------------------------|-------------------------|
+!-----------------------|--------------------------|-------------------------|-------------------------|
 [3Sg]:ani  EncliticOrEnd; [1Sg]:ma    EncliticOrEnd; [2Sg]:pek  EncliticOrEnd; [4Sg]:mini EncliticOrEnd; 
 [3Sg]:aani EncliticOrEnd;
 [3Pl]:ata  EncliticOrEnd; [1Pl]:mta   EncliticOrEnd; [2Pl]:fsi  EncliticOrEnd; [4Pl]:meng EncliticOrEnd; 
 [3Du]:ayek EncliticOrEnd; [1Du]:mtung EncliticOrEnd; [2Du]:ftek EncliticOrEnd; [4Du]:mek  EncliticOrEnd; 
-|-----------------------|--------------------------|-------------------------|-------------------------|
+!-----------------------|--------------------------|-------------------------|-------------------------|
 
 LEXICON TransitiveContemporative
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][3Sg]:agu        EncliticOrEnd; [3Sg][3Pl]:aki        EncliticOrEnd; [3Sg][3Du]:akek        EncliticOrEnd; 
 [3Pl][3Sg]:atgu       EncliticOrEnd; [3Pl][3Pl]:atki       EncliticOrEnd; [3Pl][3Du]:atkek       EncliticOrEnd; 
 [3Du][3Sg]:agnegu     EncliticOrEnd; [3Du][3Pl]:agneki     EncliticOrEnd; [3Du][3Du]:agnekek     EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][3Sg]:mkun       EncliticOrEnd; [1Sg][3Pl]:mki        EncliticOrEnd; [1Sg][3Du]:mkek        EncliticOrEnd; 
 [1Pl][3Sg]:mteggu     EncliticOrEnd; [1Pl][3Pl]:mteki      EncliticOrEnd; [1Pl][3Du]:mtekek      EncliticOrEnd; 
 [1Du][3Sg]:mtegnegu   EncliticOrEnd; [1Du][3Pl]:mtegneki   EncliticOrEnd; [1Du][3Du]:mtegnekek   EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][3Sg]:pegu       EncliticOrEnd; [2Sg][3Pl]:peki       EncliticOrEnd; [2Sg][3Du]:pekek       EncliticOrEnd; 
 [2Pl][3Sg]:pesigu     EncliticOrEnd; [2Pl][3Pl]:pesiki     EncliticOrEnd; [2Pl][3Du]:pesikek     EncliticOrEnd; 
 [2Du][3Sg]:petegnegu  EncliticOrEnd; [2Du][3Pl]:petegneki  EncliticOrEnd; [2Du][3Du]:petegnekek  EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][3Sg]:minigu     EncliticOrEnd; [4Sg][3Pl]:miniki     EncliticOrEnd; [4Sg][3Du]:minikek     EncliticOrEnd; 
 [4Pl][3Sg]:megteggu   EncliticOrEnd; [4Pl][3Pl]:megteki    EncliticOrEnd; [4Pl][3Du]:megtekek    EncliticOrEnd; 
 [4Du][3Sg]:megnegu    EncliticOrEnd; [4Du][3Pl]:megneki    EncliticOrEnd; [4Du][3Du]:megnekek    EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][1Sg]:anga       EncliticOrEnd; [3Sg][1Pl]:ankut      EncliticOrEnd; [3Sg][1Du]:ankung      EncliticOrEnd; 
 [3Pl][1Sg]:atnga      EncliticOrEnd; [3Pl][1Pl]:ankut      EncliticOrEnd; [3Pl][1Du]:ankung      EncliticOrEnd; 
 [3Du][1Sg]:agnenga    EncliticOrEnd; [3Du][1Pl]:ankut      EncliticOrEnd; [3Du][1Du]:ankung      EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][1Sg]:penga      EncliticOrEnd; [2Sg][1Pl]:pekut      EncliticOrEnd; [2Sg][1Du]:pekung      EncliticOrEnd; 
 [2Pl][1Sg]:pesinga    EncliticOrEnd; [2Pl][1Pl]:pesikut    EncliticOrEnd; [2Pl][1Du]:pesikung    EncliticOrEnd; 
 [2Du][1Sg]:petegnenga EncliticOrEnd; [2Du][1Pl]:petegnekut EncliticOrEnd; [2Du][1Du]:petegnekung EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][1Sg]:mininga    EncliticOrEnd; [4Sg][1Pl]:minikut    EncliticOrEnd; [4Sg][1Du]:minikung    EncliticOrEnd; 
 [4Pl][1Sg]:megtengnga EncliticOrEnd; [4Pl][1Pl]:megtekut   EncliticOrEnd; [4Pl][1Du]:megtekung   EncliticOrEnd; 
 [4Du][1Sg]:megnenga   EncliticOrEnd; [4Du][1Pl]:megnekut   EncliticOrEnd; [4Du][1Du]:megnekung   EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][2Sg]:aten       EncliticOrEnd; [3Sg][2Pl]:asi        EncliticOrEnd; [3Sg][2Du]:astek       EncliticOrEnd; 
 [3Pl][2Sg]:aten       EncliticOrEnd; [3Pl][2Pl]:asi        EncliticOrEnd; [3Pl][2Du]:astek       EncliticOrEnd; 
 [3Du][2Sg]:aten       EncliticOrEnd; [3Du][2Pl]:asi        EncliticOrEnd; [3Du][2Du]:astek       EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][2Sg]:mken       EncliticOrEnd; [1Sg][2Pl]:msi        EncliticOrEnd; [1Sg][2Du]:mtek        EncliticOrEnd; 
 [1Pl][2Sg]:mken       EncliticOrEnd; [1Pl][2Pl]:msi        EncliticOrEnd; [1Pl][2Du]:mtek        EncliticOrEnd; 
 [1Du][2Sg]:mken       EncliticOrEnd; [1Du][2Pl]:msi        EncliticOrEnd; [1Du][2Du]:mtek        EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][2Sg]:miniten    EncliticOrEnd; [4Sg][2Pl]:minisi     EncliticOrEnd; [4Sg][2Du]:minitek     EncliticOrEnd; 
 [4Pl][2Sg]:miniten    EncliticOrEnd; [4Pl][2Pl]:minisi     EncliticOrEnd; [4Pl][2Du]:minitek     EncliticOrEnd; 
 [4Du][2Sg]:miniten    EncliticOrEnd; [4Du][2Pl]:minisi     EncliticOrEnd; [4Du][2Du]:minitek     EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][4Sg]:atni       EncliticOrEnd; [3Sg][4Pl]:asteng     EncliticOrEnd; [3Sg][4Du]:astek       EncliticOrEnd; 
 [3Pl][4Sg]:atni       EncliticOrEnd; [3Pl][4Pl]:asteng     EncliticOrEnd; [3Pl][4Du]:astek       EncliticOrEnd; 
 [3Du][4Sg]:atni       EncliticOrEnd; [3Du][4Pl]:asteng     EncliticOrEnd; [3Du][4Du]:astek       EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][4Sg]:mni        EncliticOrEnd; [1Sg][4Pl]:mteng      EncliticOrEnd; [1Sg][4Du]:mtek        EncliticOrEnd; 
 [1Pl][4Sg]:mnni       EncliticOrEnd; [1Pl][4Pl]:mteng      EncliticOrEnd; [1Pl][4Du]:mtek        EncliticOrEnd; 
 [1Du][4Sg]:mtegnegu   EncliticOrEnd; [1Du][4Pl]:mteng      EncliticOrEnd; [1Du][4Du]:mtek        EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][4Sg]:pegu       EncliticOrEnd; [2Sg][4Pl]:peki       EncliticOrEnd; [2Sg][4Du]:pekek       EncliticOrEnd; 
 [2Pl][4Sg]:pesigu     EncliticOrEnd; [2Pl][4Pl]:pesiki     EncliticOrEnd; [2Pl][4Du]:pesikek     EncliticOrEnd; 
 [2Du][4Sg]:petegnegu  EncliticOrEnd; [2Du][4Pl]:petegneki  EncliticOrEnd; [2Du][4Du]:petegnekek  EncliticOrEnd; 
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
 |                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+!----------------------------------|------------------------------------|-------------------------------------|
 
 
 LEXICON IntransitiveConditional
-|-----------------------|---------------------------|--------------------------|---------------------------|
+!-----------------------|---------------------------|--------------------------|---------------------------|
 [3Sg]:an   EncliticOrEnd; [1Sg]:uma    EncliticOrEnd; [2Sg]:uvek  EncliticOrEnd; [4Sg]:umi    EncliticOrEnd;
                                                                                  [4Sg]:uni    EncliticOrEnd;
-|-----------------------|---------------------------|--------------------------|---------------------------|
+!-----------------------|---------------------------|--------------------------|---------------------------|
 [3Pl]:ata  EncliticOrEnd; [1Pl]:umta   EncliticOrEnd; [2Pl]:ufsi  EncliticOrEnd; [4Pl]:umeng  EncliticOrEnd;
                                                                                  [4Pl]:uyeng  EncliticOrEnd;
-|-----------------------|---------------------------|--------------------------|---------------------------|
+!-----------------------|---------------------------|--------------------------|---------------------------|
 [3Du]:ayek EncliticOrEnd; [1Du]:umtung EncliticOrEnd; [2Du]:uftek EncliticOrEnd; [4Du]:umek   EncliticOrEnd;
                                                                                  [4Du]:uyek   EncliticOrEnd;
-|-----------------------|---------------------------|--------------------------|---------------------------|
+!-----------------------|---------------------------|--------------------------|---------------------------|
 
 LEXICON TransitiveConditional
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][3Sg]:agu         EncliticOrEnd; [3Sg][3Pl]:aki        EncliticOrEnd; [3Sg][3Du]:akek        EncliticOrEnd; 
 [3Pl][3Sg]:atgu        EncliticOrEnd; [3Pl][3Pl]:atki       EncliticOrEnd; [3Pl][3Du]:atkek       EncliticOrEnd; 
 [3Du][3Sg]:agnegu      EncliticOrEnd; [3Du][3Pl]:agneki     EncliticOrEnd; [3Du][3Du]:agnekek     EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][3Sg]:umkun       EncliticOrEnd; [1Sg][3Pl]:umki       EncliticOrEnd; [1Sg][3Du]:umkek       EncliticOrEnd; 
 [1Pl][3Sg]:umteggu     EncliticOrEnd; [1Pl][3Pl]:umteki     EncliticOrEnd; [1Pl][3Du]:umtekek     EncliticOrEnd; 
 [1Du][3Sg]:umtegnegu   EncliticOrEnd; [1Du][3Pl]:umtegneki  EncliticOrEnd; [1Du][3Du]:umtegnekek  EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][3Sg]:uvgu        EncliticOrEnd; [2Sg][3Pl]:ufki       EncliticOrEnd; [2Sg][3Du]:ufkek       EncliticOrEnd; 
 [2Pl][3Sg]:ufsigu      EncliticOrEnd; [2Pl][3Pl]:ufsiki     EncliticOrEnd; [2Pl][3Du]:ufsikek     EncliticOrEnd; 
 [2Du][3Sg]:uftegnegu   EncliticOrEnd; [2Du][3Pl]:uftegneki  EncliticOrEnd; [2Du][3Du]:uftegnekek  EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][3Sg]:umigu       EncliticOrEnd; [4Sg][3Pl]:umiki      EncliticOrEnd; [4Sg][3Du]:umikek      EncliticOrEnd; 
 [4Sg][3Sg]:unigu       EncliticOrEnd; [4Sg][3Pl]:uniki      EncliticOrEnd; [4Sg][3Du]:unikek      EncliticOrEnd; 
 [4Pl][3Sg]:umegteggu   EncliticOrEnd; [4Pl][3Pl]:umegteki   EncliticOrEnd; [4Pl][3Du]:umegtekek   EncliticOrEnd; 
 [4Pl][3Sg]:uyigteggu   EncliticOrEnd; [4Pl][3Pl]:uyigteki   EncliticOrEnd; [4Pl][3Du]:uyigtekek   EncliticOrEnd; 
 [4Du][3Sg]:umegnegu    EncliticOrEnd; [4Du][3Pl]:umegneki   EncliticOrEnd; [4Du][3Du]:umegnekek   EncliticOrEnd; 
 [4Du][3Sg]:uyignegu    EncliticOrEnd; [4Du][3Pl]:uyigneki   EncliticOrEnd; [4Du][3Du]:uyignekek   EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][1Sg]:anga        EncliticOrEnd; [3Sg][1Pl]:ankut      EncliticOrEnd; [3Sg][1Du]:ankung      EncliticOrEnd; 
 [3Pl][1Sg]:atnga       EncliticOrEnd; [3Pl][1Pl]:ankut      EncliticOrEnd; [3Pl][1Du]:ankung      EncliticOrEnd; 
 [3Du][1Sg]:agnenga     EncliticOrEnd; [3Du][1Pl]:ankut      EncliticOrEnd; [3Du][1Du]:ankung      EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][1Sg]:uvnga       EncliticOrEnd; [2Sg][1Pl]:ufkut      EncliticOrEnd; [2Sg][1Du]:ufkung      EncliticOrEnd; 
 [2Pl][1Sg]:ufsinga     EncliticOrEnd; [2Pl][1Pl]:ufsikut    EncliticOrEnd; [2Pl][1Du]:ufsikung    EncliticOrEnd; 
 [2Du][1Sg]:uftegnenga  EncliticOrEnd; [2Du][1Pl]:uftegnekut EncliticOrEnd; [2Du][1Du]:uftegnekung EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [4Sg][1Sg]:uminga      EncliticOrEnd; [4Sg][1Pl]:umikut     EncliticOrEnd; [4Sg][1Du]:umikung     EncliticOrEnd; 
 [4Sg][1Sg]:uninga      EncliticOrEnd; [4Sg][1Pl]:unikut     EncliticOrEnd; [4Sg][1Du]:unikung     EncliticOrEnd; 
 [4Pl][1Sg]:umegtengnga EncliticOrEnd; [4Pl][1Pl]:umegtekut  EncliticOrEnd; [4Pl][1Du]:umegtekung  EncliticOrEnd; 
 [4Pl][1Sg]:uyigtengnga EncliticOrEnd; [4Pl][1Pl]:uyigtekut  EncliticOrEnd; [4Pl][1Du]:uyigtekung  EncliticOrEnd; 
 [4Du][1Sg]:umegnenga   EncliticOrEnd; [4Du][1Pl]:umegnekut  EncliticOrEnd; [4Du][1Du]:umegnekung  EncliticOrEnd; 
 [4Du][1Sg]:uyignenga   EncliticOrEnd; [4Du][1Pl]:uyignekut  EncliticOrEnd; [4Du][1Du]:uyignekung  EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][2Sg]:aten        EncliticOrEnd; [3Sg][2Pl]:asi        EncliticOrEnd; [3Sg][2Du]:astek       EncliticOrEnd; 
 [3Pl][2Sg]:aten        EncliticOrEnd; [3Pl][2Pl]:asi        EncliticOrEnd; [3Pl][2Du]:astek       EncliticOrEnd; 
 [3Du][2Sg]:aten        EncliticOrEnd; [3Du][2Pl]:asi        EncliticOrEnd; [3Du][2Du]:astek       EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][2Sg]:umken       EncliticOrEnd; [1Sg][2Pl]:umsi       EncliticOrEnd; [1Sg][2Du]:umtek       EncliticOrEnd; 
 [1Pl][2Sg]:umken       EncliticOrEnd; [1Pl][2Pl]:umsi       EncliticOrEnd; [1Pl][2Du]:umtek       EncliticOrEnd; 
 [1Du][2Sg]:umken       EncliticOrEnd; [1Du][2Pl]:umsi       EncliticOrEnd; [1Du][2Du]:umtek       EncliticOrEnd; 
 [4Sg][2Sg]:umiten      EncliticOrEnd; [4Sg][2Pl]:umisi      EncliticOrEnd; [4Sg][2Du]:umitek      EncliticOrEnd; 
 [4Sg][2Sg]:uniten      EncliticOrEnd; [4Sg][2Pl]:unisi      EncliticOrEnd; [4Sg][2Du]:unitek      EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [4Pl][2Sg]:umiten      EncliticOrEnd; [4Pl][2Pl]:umisi      EncliticOrEnd; [4Pl][2Du]:umitek      EncliticOrEnd; 
 [4Pl][2Sg]:uniten      EncliticOrEnd; [4Pl][2Pl]:unisi      EncliticOrEnd; [4Pl][2Du]:unitek      EncliticOrEnd; 
 [4Du][2Sg]:umiten      EncliticOrEnd; [4Du][2Pl]:umisi      EncliticOrEnd; [4Du][2Du]:umitek      EncliticOrEnd; 
 [4Du][2Sg]:uniten      EncliticOrEnd; [4Du][2Pl]:unisi      EncliticOrEnd; [4Du][2Du]:unitek      EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [3Sg][4Sg]:atni        EncliticOrEnd; [3Sg][4Pl]:asteng     EncliticOrEnd; [3Sg][4Du]:astek       EncliticOrEnd; 
 [3Pl][4Sg]:atni        EncliticOrEnd; [3Pl][4Pl]:asteng     EncliticOrEnd; [3Pl][4Du]:astek       EncliticOrEnd;
 [3Du][4Sg]:atni        EncliticOrEnd; [3Du][4Pl]:asteng     EncliticOrEnd; [3Du][4Du]:astek       EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [1Sg][4Sg]:umni        EncliticOrEnd; [1Sg][4Pl]:umteng     EncliticOrEnd; [1Sg][4Du]:umtek       EncliticOrEnd; 
 [1Pl][4Sg]:umnni       EncliticOrEnd; [1Pl][4Pl]:umteng     EncliticOrEnd; [1Pl][4Du]:umtek       EncliticOrEnd; 
 [1Du][4Sg]:umtegnegu   EncliticOrEnd; [1Du][4Pl]:umteng     EncliticOrEnd; [1Du][4Du]:umtek       EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 [2Sg][4Sg]:uvgu        EncliticOrEnd; [2Sg][4Pl]:ufki       EncliticOrEnd; [2Sg][4Du]:ufkek       EncliticOrEnd; 
 [2Pl][4Sg]:ufsigu      EncliticOrEnd; [2Pl][4Pl]:ufsiki     EncliticOrEnd; [2Pl][4Du]:ufsikek     EncliticOrEnd; 
 [2Du][4Sg]:uftegnegu   EncliticOrEnd; [2Du][4Pl]:uftegneki  EncliticOrEnd; [2Du][4Du]:uftegnekek  EncliticOrEnd; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
 |                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------------|------------------------------------|-------------------------------------|
 
 
 LEXICON IntransitiveSubordinative
@@ -10171,11 +10173,11 @@ LEXICON IntransitiveSubordinative
 !-----------------------|-------------------------|-------------------------|
 
 LEXICON TransitiveSubordinative
-|-------------------------|--------------------------|----------------------------|
+!-------------------------|--------------------------|----------------------------|
 [_][3Sg]:ku  EncliticOrEnd; [_][3Pl]:ki EncliticOrEnd; [_][3Du]:kek  EncliticOrEnd; 
 [_][1Sg]:nga EncliticOrEnd; [_][1Pl]:ta EncliticOrEnd; [_][1Du]:tung EncliticOrEnd; 
 [_][2Sg]:ten EncliticOrEnd; [_][2Pl]:si EncliticOrEnd; [_][2Du]:tek  EncliticOrEnd; 
-|-------------------------|--------------------------|----------------------------|
+!-------------------------|--------------------------|----------------------------|
 
 
 
@@ -10802,3 +10804,1063 @@ maalghug               	NounTag; ! two
 pingayuneng ingluleg   	NounTag; ! eight
 pingayut               	NounTag; ! three
 tallimat               	NounTag; ! five
+
+
+LEXICON ForeignWord
+
+ANLC    ForeignTag;
+ATG    ForeignTag;
+Aaron    ForeignTag;
+Abel    ForeignTag;
+Abijah    ForeignTag;
+Abiud    ForeignTag;
+Abraham    ForeignTag;
+Abyss    ForeignTag;
+Achaia    ForeignTag;
+Achaicus    ForeignTag;
+Achim    ForeignTag;
+Adam    ForeignTag;
+Adramyttium    ForeignTag;
+Adriatic    ForeignTag;
+Agabus    ForeignTag;
+Agrippa    ForeignTag;
+Ahaz    ForeignTag;
+Akeldama    ForeignTag;
+Alaska    ForeignTag;
+Alaskan    ForeignTag;
+Alexander    ForeignTag;
+Alexandria    ForeignTag;
+Alpha    ForeignTag;
+Alphaeus    ForeignTag;
+Amen    ForeignTag;
+America    ForeignTag;
+Amminadab    ForeignTag;
+Amos    ForeignTag;
+Amphipolis    ForeignTag;
+Ananias    ForeignTag;
+Anchurage    ForeignTag;
+Andrew    ForeignTag;
+Andronicus    ForeignTag;
+Angeles    ForeignTag;
+Anica    ForeignTag;
+Antioch    ForeignTag;
+Antipatris    ForeignTag;
+Apollonia    ForeignTag;
+Apollos    ForeignTag;
+Apostle    ForeignTag;
+Apphia    ForeignTag;
+Appius    ForeignTag;
+Apprentice    ForeignTag;
+April    ForeignTag;
+Aquila    ForeignTag;
+Arabia    ForeignTag;
+Archelaus    ForeignTag;
+Archippus    ForeignTag;
+Arctic    ForeignTag;
+Areopagus    ForeignTag;
+Aretas    ForeignTag;
+Arimathea    ForeignTag;
+Aristarchus    ForeignTag;
+Aristobulus    ForeignTag;
+Ark    ForeignTag;
+Armageddon    ForeignTag;
+Army    ForeignTag;
+Artemis    ForeignTag;
+Arts    ForeignTag;
+Asa    ForeignTag;
+Asher    ForeignTag;
+Asia    ForeignTag;
+Assos    ForeignTag;
+Asyncritus    ForeignTag;
+Athens    ForeignTag;
+Attalia    ForeignTag;
+August    ForeignTag;
+Ayaangaa    ForeignTag;
+Azor    ForeignTag;
+Azotus    ForeignTag;
+BIA    ForeignTag;
+Baal    ForeignTag;
+Babylon    ForeignTag;
+Balaam    ForeignTag;
+Balak    ForeignTag;
+Balena    ForeignTag;
+Barachiah    ForeignTag;
+Barak    ForeignTag;
+Barnabas    ForeignTag;
+Barrow    ForeignTag;
+Barruw    ForeignTag;
+Barsabbas    ForeignTag;
+Bartholomew    ForeignTag;
+Bedroom    ForeignTag;
+Beelzebul    ForeignTag;
+Beginners    ForeignTag;
+Benjamin    ForeignTag;
+Beor    ForeignTag;
+Berea    ForeignTag;
+Bernice    ForeignTag;
+Bethany    ForeignTag;
+Bethlehem    ForeignTag;
+Bethphage    ForeignTag;
+Bethsaida    ForeignTag;
+Bible    ForeignTag;
+Bithynia    ForeignTag;
+Blastus    ForeignTag;
+Boanerges    ForeignTag;
+Boaz    ForeignTag;
+Boiler    ForeignTag;
+Book    ForeignTag;
+Boxer    ForeignTag;
+Brower    ForeignTag;
+Brown    ForeignTag;
+Brush    ForeignTag;
+Buckland    ForeignTag;
+Bundi    ForeignTag;
+CAA    ForeignTag;
+CD    ForeignTag;
+Caesar    ForeignTag;
+Caesarea    ForeignTag;
+Caiaphas    ForeignTag;
+Cain    ForeignTag;
+California    ForeignTag;
+Campaign    ForeignTag;
+Campbell    ForeignTag;
+Canaan    ForeignTag;
+Canada    ForeignTag;
+Candace    ForeignTag;
+Capernaum    ForeignTag;
+Cappadocia    ForeignTag;
+Cards    ForeignTag;
+Carpus    ForeignTag;
+Castell    ForeignTag;
+Cat    ForeignTag;
+Cauda    ForeignTag;
+Cenchrea    ForeignTag;
+Cenchreae    ForeignTag;
+Chaldea    ForeignTag;
+Chariot    ForeignTag;
+Cheechaku    ForeignTag;
+Chios    ForeignTag;
+Chloe    ForeignTag;
+Chorazin    ForeignTag;
+Christ    ForeignTag;
+Christian    ForeignTag;
+Chukotka    ForeignTag;
+Cilicia    ForeignTag;
+Circumcise    ForeignTag;
+Claudia    ForeignTag;
+Claudius    ForeignTag;
+Claus    ForeignTag;
+Clement    ForeignTag;
+Cnidus    ForeignTag;
+Coal    ForeignTag;
+Colossae    ForeignTag;
+Company    ForeignTag;
+Corban    ForeignTag;
+Corinth    ForeignTag;
+Cornelius    ForeignTag;
+Corral    ForeignTag;
+Cos    ForeignTag;
+Covenant    ForeignTag;
+Crete    ForeignTag;
+Crispus    ForeignTag;
+Cross    ForeignTag;
+Cutter    ForeignTag;
+Cyprus    ForeignTag;
+Cyrene    ForeignTag;
+Dalmanutha    ForeignTag;
+Dalmatia    ForeignTag;
+Damaris    ForeignTag;
+Damascus    ForeignTag;
+Dance    ForeignTag;
+Daniel    ForeignTag;
+Daugherty    ForeignTag;
+David    ForeignTag;
+Deacon    ForeignTag;
+Decapolis    ForeignTag;
+December    ForeignTag;
+Demas    ForeignTag;
+Demetrius    ForeignTag;
+Department    ForeignTag;
+Derbe    ForeignTag;
+Derhly    ForeignTag;
+Dionysius    ForeignTag;
+Diotrephes    ForeignTag;
+Diumede    ForeignTag;
+Dorcas    ForeignTag;
+Dragon    ForeignTag;
+Drum    ForeignTag;
+Dupertuis    ForeignTag;
+Egypt    ForeignTag;
+Elam    ForeignTag;
+Elder    ForeignTag;
+Eleazar    ForeignTag;
+Eliakim    ForeignTag;
+Elijah    ForeignTag;
+Eliud    ForeignTag;
+Elvira    ForeignTag;
+Elymas    ForeignTag;
+Engine    ForeignTag;
+Enoch    ForeignTag;
+Entaa    ForeignTag;
+Epaphras    ForeignTag;
+Epaphroditus    ForeignTag;
+Ephesus    ForeignTag;
+Epicurean    ForeignTag;
+Erastus    ForeignTag;
+Erskeviik    ForeignTag;
+Esau    ForeignTag;
+Eskimo    ForeignTag;
+Ethiopia    ForeignTag;
+Eubulus    ForeignTag;
+Eunice    ForeignTag;
+Eunuch    ForeignTag;
+Euphrates    ForeignTag;
+Excercise    ForeignTag;
+Exercise    ForeignTag;
+Eygpt    ForeignTag;
+Fairbanks    ForeignTag;
+Family    ForeignTag;
+Farlis    ForeignTag;
+Fast    ForeignTag;
+February    ForeignTag;
+Felix    ForeignTag;
+Festus    ForeignTag;
+Field    ForeignTag;
+Figs    ForeignTag;
+Five    ForeignTag;
+Flu    ForeignTag;
+Flute    ForeignTag;
+Foil    ForeignTag;
+Fortunatus    ForeignTag;
+Francisco    ForeignTag;
+Gad    ForeignTag;
+Gadara    ForeignTag;
+Gaius    ForeignTag;
+Galatia    ForeignTag;
+Galilee    ForeignTag;
+Gallegher    ForeignTag;
+Gallio    ForeignTag;
+Gamaliel    ForeignTag;
+Gate    ForeignTag;
+Gaza    ForeignTag;
+Geist    ForeignTag;
+Gennesaret    ForeignTag;
+Gentile    ForeignTag;
+Gerasa    ForeignTag;
+Gethsemane    ForeignTag;
+Gideon    ForeignTag;
+Gog    ForeignTag;
+Gold    ForeignTag;
+Golgotha    ForeignTag;
+Gomorah    ForeignTag;
+Gomorrah    ForeignTag;
+Government    ForeignTag;
+Governor    ForeignTag;
+Grain    ForeignTag;
+Grapes    ForeignTag;
+Greece    ForeignTag;
+Greek    ForeignTag;
+Grind    ForeignTag;
+Gruening    ForeignTag;
+Guard    ForeignTag;
+Hades    ForeignTag;
+Hamor    ForeignTag;
+Haran    ForeignTag;
+Heaven    ForeignTag;
+Hebrew    ForeignTag;
+Herd    ForeignTag;
+Herder    ForeignTag;
+Herman    ForeignTag;
+Hermas    ForeignTag;
+Hermes    ForeignTag;
+Hermogenes    ForeignTag;
+Herod    ForeignTag;
+Herodian    ForeignTag;
+Herodias    ForeignTag;
+Hezekiah    ForeignTag;
+Hezron    ForeignTag;
+Hierapolis    ForeignTag;
+Holmes    ForeignTag;
+Homonym    ForeignTag;
+Honda    ForeignTag;
+Hope    ForeignTag;
+Hosea    ForeignTag;
+Hospital    ForeignTag;
+Hour    ForeignTag;
+House    ForeignTag;
+Hupe    ForeignTag;
+Hymenaeus    ForeignTag;
+II    ForeignTag;
+Iconium    ForeignTag;
+Idumea    ForeignTag;
+Illyricum    ForeignTag;
+Incense    ForeignTag;
+Indian    ForeignTag;
+Institution    ForeignTag;
+Isaac    ForeignTag;
+Isaiah    ForeignTag;
+Iscariot    ForeignTag;
+Island    ForeignTag;
+Israel    ForeignTag;
+Issachar    ForeignTag;
+Italy    ForeignTag;
+JESUS    ForeignTag;
+JEWS    ForeignTag;
+Jack    ForeignTag;
+Jacket    ForeignTag;
+Jacob    ForeignTag;
+Jacobson    ForeignTag;
+Jairus    ForeignTag;
+Jambres    ForeignTag;
+James    ForeignTag;
+Jannes    ForeignTag;
+January    ForeignTag;
+Japanese    ForeignTag;
+Jason    ForeignTag;
+Jechoniah    ForeignTag;
+Jehoshaphat    ForeignTag;
+Jephthah    ForeignTag;
+Jeremiah    ForeignTag;
+Jericho    ForeignTag;
+Jerusalem    ForeignTag;
+Jesse    ForeignTag;
+Jesus    ForeignTag;
+Jew    ForeignTag;
+Jewish    ForeignTag;
+Jews    ForeignTag;
+Jezebel    ForeignTag;
+Job    ForeignTag;
+Joel    ForeignTag;
+John    ForeignTag;
+Jonah    ForeignTag;
+Jones    ForeignTag;
+Joppa    ForeignTag;
+Joram    ForeignTag;
+Jordan    ForeignTag;
+Joseph    ForeignTag;
+Joses    ForeignTag;
+Joshua    ForeignTag;
+Josiah    ForeignTag;
+Jotham    ForeignTag;
+Judah    ForeignTag;
+Judas    ForeignTag;
+Jude    ForeignTag;
+Judea    ForeignTag;
+Juice    ForeignTag;
+Julia    ForeignTag;
+Julius    ForeignTag;
+July    ForeignTag;
+June    ForeignTag;
+Junias    ForeignTag;
+Justus    ForeignTag;
+Kaplan    ForeignTag;
+Ketangaa    ForeignTag;
+Key    ForeignTag;
+Kidnap    ForeignTag;
+Kish    ForeignTag;
+Kitchen    ForeignTag;
+Korah    ForeignTag;
+Laodicea    ForeignTag;
+Lapland    ForeignTag;
+Lasea    ForeignTag;
+Leavitt    ForeignTag;
+Leipzig    ForeignTag;
+Leningrad    ForeignTag;
+Leper    ForeignTag;
+Levi    ForeignTag;
+Levite    ForeignTag;
+Libya    ForeignTag;
+Lighthouse    ForeignTag;
+Linen    ForeignTag;
+Linus    ForeignTag;
+Lishuurne    ForeignTag;
+Locust    ForeignTag;
+Lois    ForeignTag;
+Lucius    ForeignTag;
+Luke    ForeignTag;
+Lycaonia    ForeignTag;
+Lycia    ForeignTag;
+Lydda    ForeignTag;
+Lydia    ForeignTag;
+Lysias    ForeignTag;
+Lystra    ForeignTag;
+Macedonia    ForeignTag;
+Mackinaw    ForeignTag;
+Magadan    ForeignTag;
+Magazine    ForeignTag;
+Magdala    ForeignTag;
+Magog    ForeignTag;
+Mail    ForeignTag;
+Malta    ForeignTag;
+Manasseh    ForeignTag;
+Manna    ForeignTag;
+Mark    ForeignTag;
+Marston    ForeignTag;
+Mary    ForeignTag;
+Mate    ForeignTag;
+Matthan    ForeignTag;
+Matthew    ForeignTag;
+Matthias    ForeignTag;
+May    ForeignTag;
+Mayor    ForeignTag;
+Media    ForeignTag;
+Meeting    ForeignTag;
+Melchizedek    ForeignTag;
+Menovshchikov    ForeignTag;
+Mesopotamia    ForeignTag;
+Messiah    ForeignTag;
+Michael    ForeignTag;
+Midian    ForeignTag;
+Miletus    ForeignTag;
+Minister    ForeignTag;
+Mission    ForeignTag;
+Mitylene    ForeignTag;
+Mnason    ForeignTag;
+Moloch    ForeignTag;
+Money    ForeignTag;
+Moses    ForeignTag;
+Movie    ForeignTag;
+Munz    ForeignTag;
+Myra    ForeignTag;
+Mysia    ForeignTag;
+Nahshon    ForeignTag;
+Nanek    ForeignTag;
+Naphtali    ForeignTag;
+Narcissus    ForeignTag;
+Nazareth    ForeignTag;
+Neapolis    ForeignTag;
+Nereus    ForeignTag;
+Nicanor    ForeignTag;
+Nickerson    ForeignTag;
+Nicolaus    ForeignTag;
+Nicopolis    ForeignTag;
+Niger    ForeignTag;
+Nine    ForeignTag;
+Nineveh    ForeignTag;
+Noah    ForeignTag;
+Nome    ForeignTag;
+November    ForeignTag;
+Nume    ForeignTag;
+Nurse    ForeignTag;
+Nympha    ForeignTag;
+Oats    ForeignTag;
+Obed    ForeignTag;
+Ocean    ForeignTag;
+October    ForeignTag;
+Office    ForeignTag;
+Olives    ForeignTag;
+Olympas    ForeignTag;
+Omega    ForeignTag;
+One    ForeignTag;
+Onesimus    ForeignTag;
+Onesiphorus    ForeignTag;
+Oven    ForeignTag;
+Ox    ForeignTag;
+Pac    ForeignTag;
+Pagaveg    ForeignTag;
+Pamphylia    ForeignTag;
+Pamphyllia    ForeignTag;
+Paphos    ForeignTag;
+Paradise    ForeignTag;
+Parmenas    ForeignTag;
+Parthia    ForeignTag;
+Passover    ForeignTag;
+Patara    ForeignTag;
+Patmos    ForeignTag;
+Patrobas    ForeignTag;
+Paul    ForeignTag;
+Paulus    ForeignTag;
+Pedersen    ForeignTag;
+Penny    ForeignTag;
+Pentecost    ForeignTag;
+Perez    ForeignTag;
+Perga    ForeignTag;
+Pergamum    ForeignTag;
+Peter    ForeignTag;
+Pharaoh    ForeignTag;
+Pharisee    ForeignTag;
+Pharisees    ForeignTag;
+Philadelphia    ForeignTag;
+Philemon    ForeignTag;
+Philetus    ForeignTag;
+Philip    ForeignTag;
+Philippi    ForeignTag;
+Philologus    ForeignTag;
+Phlegon    ForeignTag;
+Phoebe    ForeignTag;
+Phoenicia    ForeignTag;
+Phoenix    ForeignTag;
+Phrygia    ForeignTag;
+Phygelus    ForeignTag;
+Pilate    ForeignTag;
+Pisidia    ForeignTag;
+Plastic    ForeignTag;
+Police    ForeignTag;
+Pontus    ForeignTag;
+Porch    ForeignTag;
+Portage    ForeignTag;
+Pot    ForeignTag;
+Praetorium    ForeignTag;
+Priest    ForeignTag;
+Priscilla    ForeignTag;
+Prochorus    ForeignTag;
+Program    ForeignTag;
+Proof    ForeignTag;
+Provideniya    ForeignTag;
+Provost    ForeignTag;
+Psalms    ForeignTag;
+Ptolemais    ForeignTag;
+Publius    ForeignTag;
+Pudens    ForeignTag;
+Puteoli    ForeignTag;
+Pyrrhus    ForeignTag;
+Quart    ForeignTag;
+Quartus    ForeignTag;
+Queen    ForeignTag;
+Rachel    ForeignTag;
+Rahab    ForeignTag;
+Ram    ForeignTag;
+Ramah    ForeignTag;
+Rebecca    ForeignTag;
+Rehoboam    ForeignTag;
+Rephan    ForeignTag;
+Reuben    ForeignTag;
+Rhegium    ForeignTag;
+Rhoda    ForeignTag;
+Rhodes    ForeignTag;
+Rocky    ForeignTag;
+Rome    ForeignTag;
+Rooster    ForeignTag;
+Rosa    ForeignTag;
+Rubstov    ForeignTag;
+Rufus    ForeignTag;
+Russia    ForeignTag;
+Sabbath    ForeignTag;
+Sadducees    ForeignTag;
+Salamis    ForeignTag;
+Salem    ForeignTag;
+Salmon    ForeignTag;
+Salome    ForeignTag;
+Samaria    ForeignTag;
+Samos    ForeignTag;
+Samothrace    ForeignTag;
+Samson    ForeignTag;
+Samuel    ForeignTag;
+Sapphira    ForeignTag;
+Sarah    ForeignTag;
+Sardis    ForeignTag;
+Satan    ForeignTag;
+Saul    ForeignTag;
+Sceva    ForeignTag;
+Scientist    ForeignTag;
+Scorpion    ForeignTag;
+Scow    ForeignTag;
+Scupholm    ForeignTag;
+Scythian    ForeignTag;
+Sea    ForeignTag;
+Seattle    ForeignTag;
+Secundus    ForeignTag;
+Seleucia    ForeignTag;
+September    ForeignTag;
+Sergeant    ForeignTag;
+Service    ForeignTag;
+Sex    ForeignTag;
+Sharon    ForeignTag;
+Shealtiel    ForeignTag;
+Sheba    ForeignTag;
+Shechem    ForeignTag;
+Sidon    ForeignTag;
+Silas    ForeignTag;
+Simeon    ForeignTag;
+Simon    ForeignTag;
+Sinai    ForeignTag;
+Sinang    ForeignTag;
+Six    ForeignTag;
+Smyrna    ForeignTag;
+Soap    ForeignTag;
+Sodom    ForeignTag;
+Solomon    ForeignTag;
+Sosipater    ForeignTag;
+Spain    ForeignTag;
+Stanley    ForeignTag;
+Star    ForeignTag;
+State    ForeignTag;
+Steamer    ForeignTag;
+Stephanas    ForeignTag;
+Stephen    ForeignTag;
+Stoic    ForeignTag;
+Strait    ForeignTag;
+Sunday    ForeignTag;
+Swensen    ForeignTag;
+Synagogue    ForeignTag;
+Syracuse    ForeignTag;
+Syria    ForeignTag;
+Syrtis    ForeignTag;
+Tabitha    ForeignTag;
+Table    ForeignTag;
+Tape    ForeignTag;
+Tarsus    ForeignTag;
+Tea    ForeignTag;
+Teacher    ForeignTag;
+Teller    ForeignTag;
+Temple    ForeignTag;
+Ten    ForeignTag;
+Tertius    ForeignTag;
+Tertullus    ForeignTag;
+Thaddaeus    ForeignTag;
+Thessalonica    ForeignTag;
+Thetis    ForeignTag;
+Thomas    ForeignTag;
+Thompson    ForeignTag;
+Thumbo    ForeignTag;
+Thyatira    ForeignTag;
+Timaeus    ForeignTag;
+Timon    ForeignTag;
+Timothy    ForeignTag;
+Titus    ForeignTag;
+Town    ForeignTag;
+Tractor    ForeignTag;
+Trade    ForeignTag;
+Troas    ForeignTag;
+Trophimus    ForeignTag;
+Troutman    ForeignTag;
+Tryphaena    ForeignTag;
+Tryphosa    ForeignTag;
+Tughneghaan    ForeignTag;
+Tughneghagh    ForeignTag;
+Twelve    ForeignTag;
+Two    ForeignTag;
+Tychicus    ForeignTag;
+Tyrannus    ForeignTag;
+Tyre    ForeignTag;
+UAF    ForeignTag;
+Unalaska    ForeignTag;
+Understand    ForeignTag;
+University    ForeignTag;
+Uriah    ForeignTag;
+Uzziah    ForeignTag;
+Walter    ForeignTag;
+Wednesday    ForeignTag;
+Weeds    ForeignTag;
+Wien    ForeignTag;
+William    ForeignTag;
+Wine    ForeignTag;
+Year    ForeignTag;
+Yeast    ForeignTag;
+Zadok    ForeignTag;
+Zealot    ForeignTag;
+Zebedee    ForeignTag;
+Zebulun    ForeignTag;
+Zechariah    ForeignTag;
+Zerah    ForeignTag;
+Zerubbabel    ForeignTag;
+Zeus    ForeignTag;
+Zion    ForeignTag;
+accordian    ForeignTag;
+agate    ForeignTag;
+aghveghaa    ForeignTag;
+aide    ForeignTag;
+alabaster    ForeignTag;
+allamenguq    ForeignTag;
+amethyst    ForeignTag;
+amsanaghllugllak    ForeignTag;
+anoint    ForeignTag;
+apostle    ForeignTag;
+apprentice    ForeignTag;
+archangel    ForeignTag;
+archeologist    ForeignTag;
+ark    ForeignTag;
+army    ForeignTag;
+artifact    ForeignTag;
+artist    ForeignTag;
+ashes    ForeignTag;
+ashtray    ForeignTag;
+asphalt    ForeignTag;
+ayaangaa    ForeignTag;
+ayveghaa    ForeignTag;
+bag    ForeignTag;
+bank    ForeignTag;
+barbarian    ForeignTag;
+barge    ForeignTag;
+barley    ForeignTag;
+barrow    ForeignTag;
+beater    ForeignTag;
+beaver    ForeignTag;
+beginning    ForeignTag;
+bell    ForeignTag;
+beryl    ForeignTag;
+boat    ForeignTag;
+boiler    ForeignTag;
+bowl    ForeignTag;
+box    ForeignTag;
+bread    ForeignTag;
+breaker    ForeignTag;
+breed    ForeignTag;
+bridge    ForeignTag;
+brush    ForeignTag;
+bugle    ForeignTag;
+bull    ForeignTag;
+butter    ForeignTag;
+camel    ForeignTag;
+can    ForeignTag;
+candle    ForeignTag;
+candy    ForeignTag;
+canvas    ForeignTag;
+cap    ForeignTag;
+captain    ForeignTag;
+cards    ForeignTag;
+care    ForeignTag;
+carnelian    ForeignTag;
+catalog    ForeignTag;
+catch    ForeignTag;
+cattle    ForeignTag;
+ceiling    ForeignTag;
+cent    ForeignTag;
+chariot    ForeignTag;
+cherubim    ForeignTag;
+chrysolite    ForeignTag;
+chrysoprase    ForeignTag;
+church    ForeignTag;
+cinnamon    ForeignTag;
+circumcise    ForeignTag;
+circumcize    ForeignTag;
+class    ForeignTag;
+classroom    ForeignTag;
+clinic    ForeignTag;
+clip    ForeignTag;
+clothesline    ForeignTag;
+coal    ForeignTag;
+coffee    ForeignTag;
+collar    ForeignTag;
+color    ForeignTag;
+communion    ForeignTag;
+company    ForeignTag;
+compare    ForeignTag;
+compass    ForeignTag;
+contract    ForeignTag;
+contractor    ForeignTag;
+copper    ForeignTag;
+core    ForeignTag;
+corn    ForeignTag;
+corporal    ForeignTag;
+corral    ForeignTag;
+cotton    ForeignTag;
+council    ForeignTag;
+court    ForeignTag;
+courtyard    ForeignTag;
+cracker    ForeignTag;
+crystal    ForeignTag;
+culture    ForeignTag;
+cummin    ForeignTag;
+cumpass    ForeignTag;
+cup    ForeignTag;
+curse    ForeignTag;
+curtain    ForeignTag;
+dance    ForeignTag;
+date    ForeignTag;
+day    ForeignTag;
+deacon    ForeignTag;
+deaconess    ForeignTag;
+deer    ForeignTag;
+denarii    ForeignTag;
+denarius    ForeignTag;
+denim    ForeignTag;
+dictorary    ForeignTag;
+dill    ForeignTag;
+director    ForeignTag;
+dog    ForeignTag;
+dollar    ForeignTag;
+dollars    ForeignTag;
+donkey    ForeignTag;
+dory    ForeignTag;
+dove    ForeignTag;
+doves    ForeignTag;
+drachmas    ForeignTag;
+dragon    ForeignTag;
+driver    ForeignTag;
+drum    ForeignTag;
+dynamite    ForeignTag;
+eggbeater    ForeignTag;
+eight    ForeignTag;
+elder    ForeignTag;
+emerald    ForeignTag;
+engine    ForeignTag;
+eraser    ForeignTag;
+eunuch    ForeignTag;
+evangelist    ForeignTag;
+exercise    ForeignTag;
+explain    ForeignTag;
+family    ForeignTag;
+fast    ForeignTag;
+favorite    ForeignTag;
+feet    ForeignTag;
+figs    ForeignTag;
+file    ForeignTag;
+fire    ForeignTag;
+first    ForeignTag;
+five    ForeignTag;
+flannel    ForeignTag;
+floor    ForeignTag;
+flute    ForeignTag;
+foil    ForeignTag;
+follow    ForeignTag;
+four    ForeignTag;
+frankincense    ForeignTag;
+frog    ForeignTag;
+fruit    ForeignTag;
+gallon    ForeignTag;
+galvanize    ForeignTag;
+generation    ForeignTag;
+generator    ForeignTag;
+gift    ForeignTag;
+goat    ForeignTag;
+gold    ForeignTag;
+government    ForeignTag;
+governor    ForeignTag;
+grade    ForeignTag;
+grain    ForeignTag;
+grapes    ForeignTag;
+grind    ForeignTag;
+guard    ForeignTag;
+guess    ForeignTag;
+guitar    ForeignTag;
+gun    ForeignTag;
+hacksaw    ForeignTag;
+handkerchief    ForeignTag;
+harp    ForeignTag;
+head    ForeignTag;
+heater    ForeignTag;
+hell    ForeignTag;
+herd    ForeignTag;
+herder    ForeignTag;
+holda    ForeignTag;
+holiday    ForeignTag;
+honey    ForeignTag;
+honor    ForeignTag;
+hospital    ForeignTag;
+hour    ForeignTag;
+hours    ForeignTag;
+house    ForeignTag;
+housing    ForeignTag;
+hyssop    ForeignTag;
+incense    ForeignTag;
+inch    ForeignTag;
+inches    ForeignTag;
+inhc    ForeignTag;
+ink    ForeignTag;
+interest    ForeignTag;
+iodine    ForeignTag;
+iron    ForeignTag;
+itagnaghtaa    ForeignTag;
+iyaa    ForeignTag;
+jacinth    ForeignTag;
+jacket    ForeignTag;
+jacks    ForeignTag;
+jam    ForeignTag;
+jasper    ForeignTag;
+jeans    ForeignTag;
+jewel    ForeignTag;
+juice    ForeignTag;
+key    ForeignTag;
+kidnap    ForeignTag;
+kitchen    ForeignTag;
+lamp    ForeignTag;
+lard    ForeignTag;
+launch    ForeignTag;
+laws    ForeignTag;
+lawyer    ForeignTag;
+leopard    ForeignTag;
+leprosy    ForeignTag;
+letter    ForeignTag;
+library    ForeignTag;
+lieutenant    ForeignTag;
+linen    ForeignTag;
+linguist    ForeignTag;
+lion    ForeignTag;
+locust    ForeignTag;
+machine    ForeignTag;
+magazine    ForeignTag;
+mail    ForeignTag;
+mainland    ForeignTag;
+major    ForeignTag;
+manna    ForeignTag;
+map    ForeignTag;
+marble    ForeignTag;
+mat    ForeignTag;
+mattress    ForeignTag;
+mayor    ForeignTag;
+meeting    ForeignTag;
+member    ForeignTag;
+mile    ForeignTag;
+milk    ForeignTag;
+million    ForeignTag;
+mining    ForeignTag;
+minister    ForeignTag;
+mint    ForeignTag;
+mission    ForeignTag;
+money    ForeignTag;
+month    ForeignTag;
+moon    ForeignTag;
+moth    ForeignTag;
+movie    ForeignTag;
+muff    ForeignTag;
+mustard    ForeignTag;
+myrrh    ForeignTag;
+name    ForeignTag;
+nard    ForeignTag;
+nation    ForeignTag;
+needle    ForeignTag;
+nest    ForeignTag;
+northwest    ForeignTag;
+number    ForeignTag;
+nuts    ForeignTag;
+office    ForeignTag;
+olive    ForeignTag;
+olives    ForeignTag;
+one    ForeignTag;
+onyx    ForeignTag;
+ornament    ForeignTag;
+oven    ForeignTag;
+overcome    ForeignTag;
+ox    ForeignTag;
+paaaa    ForeignTag;
+package    ForeignTag;
+palace    ForeignTag;
+palm    ForeignTag;
+paper    ForeignTag;
+part    ForeignTag;
+party    ForeignTag;
+pasket    ForeignTag;
+passenger    ForeignTag;
+pattern    ForeignTag;
+pearl    ForeignTag;
+penny    ForeignTag;
+permit    ForeignTag;
+pie    ForeignTag;
+pillar    ForeignTag;
+pin    ForeignTag;
+plywood    ForeignTag;
+poison    ForeignTag;
+police    ForeignTag;
+pound    ForeignTag;
+pounds    ForeignTag;
+priest    ForeignTag;
+program    ForeignTag;
+prophecy    ForeignTag;
+psalms    ForeignTag;
+publish    ForeignTag;
+quart    ForeignTag;
+quilt    ForeignTag;
+rack    ForeignTag;
+radio    ForeignTag;
+reptile    ForeignTag;
+respect    ForeignTag;
+rice    ForeignTag;
+rod    ForeignTag;
+roof    ForeignTag;
+room    ForeignTag;
+rooster    ForeignTag;
+rubber    ForeignTag;
+ruble    ForeignTag;
+ruler    ForeignTag;
+sack    ForeignTag;
+sackcloth    ForeignTag;
+salisigataguu    ForeignTag;
+sanctuary    ForeignTag;
+sandwich    ForeignTag;
+sangantuq    ForeignTag;
+sanim    ForeignTag;
+sapphire    ForeignTag;
+schedule    ForeignTag;
+school    ForeignTag;
+scorpion    ForeignTag;
+seal    ForeignTag;
+seat    ForeignTag;
+sergeant    ForeignTag;
+seven    ForeignTag;
+sex    ForeignTag;
+share    ForeignTag;
+shirt    ForeignTag;
+side    ForeignTag;
+silk    ForeignTag;
+silver    ForeignTag;
+six    ForeignTag;
+sixteen    ForeignTag;
+skate    ForeignTag;
+skin    ForeignTag;
+slant    ForeignTag;
+sling    ForeignTag;
+slingshot    ForeignTag;
+sloop    ForeignTag;
+sluup    ForeignTag;
+snap    ForeignTag;
+snowman    ForeignTag;
+soap    ForeignTag;
+sooth    ForeignTag;
+southwest    ForeignTag;
+space    ForeignTag;
+specimen    ForeignTag;
+spice    ForeignTag;
+steam    ForeignTag;
+steamer    ForeignTag;
+sticks    ForeignTag;
+strike    ForeignTag;
+study    ForeignTag;
+suicide    ForeignTag;
+suit    ForeignTag;
+sulphur    ForeignTag;
+survive    ForeignTag;
+swearing    ForeignTag;
+synagogue    ForeignTag;
+tabernacle    ForeignTag;
+table    ForeignTag;
+tan    ForeignTag;
+tank    ForeignTag;
+tape    ForeignTag;
+tax    ForeignTag;
+teacher    ForeignTag;
+temple    ForeignTag;
+ten    ForeignTag;
+tent    ForeignTag;
+test    ForeignTag;
+three    ForeignTag;
+tile    ForeignTag;
+title    ForeignTag;
+toboggan    ForeignTag;
+topaz    ForeignTag;
+torch    ForeignTag;
+town    ForeignTag;
+trackor    ForeignTag;
+tractor    ForeignTag;
+triangle    ForeignTag;
+truck    ForeignTag;
+turn    ForeignTag;
+two    ForeignTag;
+understand    ForeignTag;
+up    ForeignTag;
+village    ForeignTag;
+villages    ForeignTag;
+vine    ForeignTag;
+violin    ForeignTag;
+wagon    ForeignTag;
+wave    ForeignTag;
+weeds    ForeignTag;
+week    ForeignTag;
+wheat    ForeignTag;
+win    ForeignTag;
+wine    ForeignTag;
+wool    ForeignTag;
+worship    ForeignTag;
+year    ForeignTag;
+yearling    ForeignTag;
+years    ForeignTag;
+yeast    ForeignTag;
+yellow    ForeignTag;
+zipper    ForeignTag;
+
+LEXICON ForeignTag
+[Foreign]:0  #;
+[Foreign]^:0    NounPostbase ;
+[Foreign]^:0    VerbPostbase ;
+[Foreign]^:-    NounPostbase ;
+[Foreign]^:-    VerbPostbase ;
