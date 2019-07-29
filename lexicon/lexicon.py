@@ -559,6 +559,15 @@ def program_arguments():
         help="fomabin file of intermediate-to-underlying form analyzer"
         )
 
+    arg_parser.add_argument(
+        "-v",
+        "--verbose",
+        metavar="LEVEL",
+        type=str,
+        default="INFO",
+        help="Verbosity level",
+    )
+
     return arg_parser
 
 
@@ -567,6 +576,7 @@ def main():
     args = arg_parser.parse_args()
 
     logging.basicConfig(
+        level=args.level,
         stream=sys.stderr,
         datefmt="%Y-%m-%d %H:%M:%S",
         format="%(asctime)s\t%(message)s",
