@@ -455,13 +455,15 @@ class Lexicon:
 
     def dump(self, filename: str) -> None:
         result = dict()
+        max_index = -1
         for key, morpheme in self.underlying2morpheme.items():
             index = morpheme.index
+            max_index = max(index, max_index)
             features = morpheme.feature_vector()
             result[key] = (index, features)
 
         with open(filename, "wb") as output:
-                pickle.dump(result, output)
+                pickle.dump((max_index+1, result), output)
 
     def print(self, output_file) -> None:
         for section in self.sections.keys():
