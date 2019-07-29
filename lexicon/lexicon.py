@@ -1,9 +1,32 @@
 #!/usr/bin/env python3.7
 
-import re
-from typing import Iterable, Optional, Dict, List, Tuple
-import foma
+import argparse
 from foma import FST
+import logging
+import re
+import pickle
+import sys
+from typing import Dict, Tuple
+
+"""Code to analyze text using the St. Lawrence Island Yupik morphological analyzer.                                                                                                           
+
+This file was developed as part of the Neural Polysynthetic Language Modelling project                                                                                                                      
+at the 2019 Frederick Jelinek Memorial Summer Workshop at École de Technologie Supérieure in Montréal, Québec, Canada.                                                                                      
+https://www.clsp.jhu.edu/workshops/19-workshop/                                                                                                                                                             
+"""
+
+__author__ = "Lane Schwartz"
+__copyright__ = "Copyright 2019, Lane Schwartz"
+__license__ = "MPL 2.0"
+__credits__ = ["Lane Schwartz"]
+__maintainer = "Lane Schwartz"
+__email__ = "dowobeha@gmail.com"
+__version__ = "0.0.1"
+__status__ = "Prototype"
+
+if sys.version_info < (3, 7):
+    raise RuntimeError(f"{__file__} requires Python 3.7 or later")
+
 
 class Morpheme:
 
@@ -30,8 +53,10 @@ class Morpheme:
         self.underlying: str = underlying
         self.continuation: str = continuation
         self.duplicates = list()
+        """List of tuples for variants of the morpheme that have the same surface form and the same underlying form."""
 
         self.features: Dict[str, bool] = dict()
+        """Features of the morpheme"""
 
         self.features["demonstrative"] = (self.category == "Demonstrative" or
                                           self.category == "DemInfl")
@@ -364,203 +389,211 @@ class Morpheme:
             raise TypeError
 
 
-def process_line(category: str, line: str):
-    start_of_comment = line.find("!")
-    if start_of_comment >= 0:
-        definition = line[start_of_comment+1:].strip()
-        definition = [gloss.strip() for gloss in definition.split(";")] if ";" in definition else [definition]
-    else:
-        definition = list()
+class Lexicon:
 
-    semicolon = line.find(";")
-    parts = line[:semicolon].split()
+    def __init__(self, lexc_filename: str):
+        with open(lexc_filename, "rt") as lexc:
+            entry = re.compile('^((?:.*?)+)\\s+([A-Za-z\#]+)\\s*(;)')
+            entry_parts = re.compile('^((?:.*?)[^%]):(.*)')
+            all_lines = ""
+            for line in lexc:
+                if '!' in line:
+                    line = line[:line.find('!')]
+                    line = line.strip()
+                if len(line) > 0:
+                    all_lines += line.replace(';', ';\n')
 
-    continuation = parts[-1]
-
-    entry = " ".join(parts[0:-1])
-    if ":" in entry:
-        split_point = re.search('[^%]:', entry).end()
-        underlying = entry[0:split_point-1]
-        surface = entry[split_point:]
-    else:
-        underlying = entry
-        surface = entry
-
-    return Morpheme(category, surface, underlying, definition, continuation)
-
-
-def process(lexc: Iterable[str]):
-
-    section: Optional[str] = None
-
-    for line in lexc:  # type: str
-        line = line.strip()
-        if line.startswith("!"):
-            pass
-        elif line.startswith("LEXICON"):
-            section = line.split("LEXICON ")[1]
-        elif section and ";" in line:
-            print()
-            print(line)
-            print(process_line(section, line))
-
-
-if __name__ == "__main2__":
-
-    sections = ["DemInfl",
-                "Demonstrative",
-                "EmotionalRoot",
-                "EmotionalRootPostbase",
-                "EncliticOrEnd",
-                "Interrogative",
-                "Multichar_Symbols",
-                "NounBase",
-                "NounInfl",
-                "NounPostbase",
-                "Numeral",
-                "Particle",
-                "PersonalPronoun",
-                "PosRootPostbase",
-                "PosturalRoot",
-                "ProperNoun",
-                "QuantQual",
-                "QuantQualPostbase",
-                "Root",
-                "UnpdOblique",
-                "VerbBase",
-                "VerbEte",
-                "VerbMoodInfl",
-                "VerbPersonNumber",
-                "VerbPostbase"]
-
-    for section in sections:
-        with open(f"sections/{section}.lexc") as lexc:
-            process(lexc)
-
-if __name__ == "__main__":
-    #sections=dict()
-    all_lines=""
-    import re
-    entry = re.compile('^((?:.*?)+)\\s+([A-Za-z\#]+)\\s*(;)')
-    entry_parts = re.compile('^((?:.*?)[^%]):(.*)')
-    with open(f"../ess.lexc") as lexc, open(f"../all.train.ess") as corpus, open(f"../all.train.analyzed.ess", "wt") as analyzed_file:
-        for line in lexc:
-            if '!' in line:
-                line = line[:line.find('!')]
+            self.underlying2morpheme = dict()
+            section = None
+            lexicon = dict()
+            index = 0
+            for line in all_lines.split('\n'):
                 line = line.strip()
-            if len(line) > 0:
-                all_lines += line.replace(';',';\n')
-
-        underlying2morpheme = dict()
-        section=None
-        lexicon=dict()
-        index = 0
-        for line in all_lines.split('\n'):
-            line = line.strip()
-            if len(line) > 0:
-                #print("-"+line.strip()+"-")
-                #continue
-            #line = line.strip()
-                if section==None or section=="Root":
-                    pass
-                if line.startswith("LEXICON"):
-            #    print(line)
-                    section=line.split()[1]
-            #        print(section)
-                    if section != "Root":
-                        lexicon[section] = list()
-                elif section=="NounTag" or section=="VerbTag" or section=="ForeignTag":
-                    pass
-                elif ';' in line:
-                    match = entry.search(line)
-                    if match:
-                    #    print(match[1] + "___\t___" + match[2])
-                        lexical_entry = match[1]
-                        continuation = match[2]
-                        match_lexical_entry = entry_parts.match(lexical_entry)
-                        if match_lexical_entry:
-                            underlying = match_lexical_entry[1]
-                            surface = match_lexical_entry[2]
-                        else:
-                            underlying = lexical_entry
-                            surface    = lexical_entry
-
-                        morpheme = Morpheme(index=index+1,
-                                            category=section,
-                                            surface=surface,
-                                            underlying=underlying,
-                                            continuation=continuation)
-                        key = morpheme.entry()
-                        if key in underlying2morpheme:
-                            duplicate: Tuple[str,str] = (section, continuation)
-                            morpheme.duplicates.append(duplicate)
-                        else:
-                            index += 1
-                            lexicon[section].append(morpheme)
-                            underlying2morpheme[key] = morpheme
-                    else:
+                if len(line) > 0:
+                    # print("-"+line.strip()+"-")
+                    # continue
+                    # line = line.strip()
+                    if section is None or section == "Root":
                         pass
+                    if line.startswith("LEXICON"):
+                        #    print(line)
+                        section = line.split()[1]
+                        #        print(section)
+                        if section != "Root":
+                            self.sections[section] = list()
+                    elif section == "NounTag" or section == "VerbTag" or section == "ForeignTag":
+                        pass
+                    elif ';' in line:
+                        match = entry.search(line)
+                        if match:
+                            #    print(match[1] + "___\t___" + match[2])
+                            lexical_entry = match[1]
+                            continuation = match[2]
+                            match_lexical_entry = entry_parts.match(lexical_entry)
+                            if match_lexical_entry:
+                                underlying = match_lexical_entry[1]
+                                surface = match_lexical_entry[2]
+                            else:
+                                underlying = lexical_entry
+                                surface = lexical_entry
 
+                            morpheme = Morpheme(index=index + 1,
+                                                category=section,
+                                                surface=surface,
+                                                underlying=underlying,
+                                                continuation=continuation)
+                            key = morpheme.entry()
+                            if key in self.underlying2morpheme:
+                                duplicate: Tuple[str, str] = (section, continuation)
+                                morpheme.duplicates.append(duplicate)
+                            else:
+                                index += 1
+                                self.sections[section].append(morpheme)
+                                self.underlying2morpheme[key] = morpheme
+                        else:
+                            pass
 
+    def dump(self, filename: str) -> None:
         result = dict()
-        for key, morpheme in underlying2morpheme.items():
+        for key, morpheme in self.underlying2morpheme.items():
             index = morpheme.index
             features = morpheme.feature_vector()
             result[key] = (index, features)
 
-#        with open("morphemes.ess.pickle", "wb") as output:
-#            import pickle
-#            pickle.dump(result, output)
+        with open(filename, "wb") as output:
+                pickle.dump(result, output)
 
-        def heuristic(analysis):
-            result = 0
-            parts = analysis.split(":")
-            segments_in_lhs = parts[0].count("^") + 1
-            segments_in_rhs = parts[1].count("^") + 1
-            result += (segments_in_lhs - segments_in_rhs) * 1000
+    def print(self, output_file) -> None:
+        for section in self.sections.keys():
+            for morpheme in self.sections[section]:
+                print(f"{str(morpheme.feature_vector()).replace(' ','')}\t{morpheme.index}\t{str(morpheme)}",
+                      file=output_file)
 
-            lhs_elements = set(parts[0].split("^"))
-            duplicates = segments_in_lhs - len(lhs_elements)
-            result += duplicates * 10000
 
-            result += len(parts[0])
+class MorphologicalAnalyzer:
 
-            result += segments_in_rhs
+    def __init__(self, s2u_filename: str, i2u_filename: str):
+        self.s2u = FST.load(s2u_filename)
+        self.i2u = FST.load(i2u_filename)
+        self.cache: Dict[str, str] = dict()
 
-            return result
+    @staticmethod
+    def heuristic(analysis: str) -> int:
+        result = 0
+        parts = analysis.split(":")
+        segments_in_lhs = parts[0].count("^") + 1
+        segments_in_rhs = parts[1].count("^") + 1
+        result += (segments_in_lhs - segments_in_rhs) * 1000
 
-        analyzed: Dict[str, str] = dict()
+        lhs_elements = set(parts[0].split("^"))
+        duplicates = segments_in_lhs - len(lhs_elements)
+        result += duplicates * 10000
 
-        s2u = FST.load("../ess.fomabin")
-        s2i = FST.load("../ess.lex.fomabin")
-        i2u = FST.load("../ess.underlying.fomabin")
+        result += len(parts[0])
 
-        for line in corpus:
-            tokens = line.strip().split()
-            for token in tokens:
-                #analyzed_tokens = list()
-                if token not in analyzed:
-                    underlying_analyses = list(s2u.apply_up(token))
-                    if not underlying_analyses:
-                        underlying_analyses = list(s2u.apply_up(token.lower()))
-                    intermediate_analyses = [list(i2u.apply_down(underlying_analysis))[0] for underlying_analysis in underlying_analyses]
-                    #print("\t".join(underlying_analyses))
-                    options = sorted([underlying_analyses[i]+":"+intermediate_analyses[i] for i in range(len(underlying_analyses))], key=heuristic)
-                    if len(options) > 0:
-                        #analyzed_tokens.append(options[0])
-                        analyzed[token] = options[0] + ":" + token
-                    else:
-                        analyzed[token] = "*" + token
-                        #analyzed_tokens.append("*" + token)
-                    #z="\t".join(options)
-                    #print(token + "\t" + z)
-                    #for option in options:
-                    #    print(f"{heuristic(option)}\t{option}")
-            print(" ".join([analyzed[token] for token in tokens]), file=analyzed_file)
-   #     out = open("morphemes.out", "wt")
-   #     for section in lexicon.keys():
-   #         for morpheme in lexicon[section]:
-   #             #if ":" in str(morpheme):
-   #             #if morpheme["inflection"]:
-   #             print(f"{str(morpheme.feature_vector()).replace(' ','')}\t{morpheme.index}\t{str(morpheme)}", file=out)
-   #         #print(f"{len(lexicon[section])}\t{section}")
+        result += segments_in_rhs
+
+        return result
+
+    def best_analysis(self, token: str) -> str:
+        if token not in self.cache:
+            underlying_analyses = list(self.s2u.apply_up(token))
+            if not underlying_analyses:
+                underlying_analyses = list(self.s2u.apply_up(token.lower()))
+            intermediate_analyses = [list(self.i2u.apply_down(underlying_analysis))[0] for underlying_analysis in
+                                     underlying_analyses]
+            options = sorted(
+                [underlying_analyses[i] + ":" + intermediate_analyses[i] for i in range(len(underlying_analyses))],
+                key=MorphologicalAnalyzer.heuristic)
+            if len(options) > 0:
+                self.cache[token] = options[0] + ":" + token
+            else:
+                self.cache[token] = "*" + token
+
+        return self.cache[token]
+
+
+def program_arguments():
+    arg_parser = argparse.ArgumentParser(description="Morphologically analyze St. Lawrence Island Yupik")
+
+    arg_parser.add_argument(
+        "--mode",
+        type=str,
+        required=True,
+        help="Mode: "
+        + "l2p (dump lexicon to pickle file)"
+        + "t2a (analyze each token), "
+        )
+
+    arg_parser.add_argument(
+        "--output",
+        type=str,
+        required=True,
+        help="Output file"
+        )
+
+    arg_parser.add_argument(
+        "--corpus",
+        type=str,
+        help="Corpus of tokenized text to be analyzed."
+        )
+
+    arg_parser.add_argument(
+        "--lexc",
+        type=str,
+        required=False,
+        help="St. Lawrence Island Yupik lexc file"
+        )
+
+    arg_parser.add_argument(
+        "--s2u",
+        type=str,
+        required=False,
+        help="fomabin file of surface-to-underlying form analyzer"
+        )
+
+    arg_parser.add_argument(
+        "--i2u",
+        type=str,
+        required=False,
+        help="fomabin file of intermediate-to-underlying form analyzer"
+        )
+
+    return arg_parser
+
+
+def main():
+    arg_parser = program_arguments()
+    args = arg_parser.parse_args()
+
+    logging.basicConfig(
+        level=args.verbose,
+        stream=sys.stderr,
+        datefmt="%Y-%m-%d %H:%M:%S",
+        format="%(asctime)s\t%(message)s",
+    )
+
+    if args.mode == "l2p" and args.lexc and args.output:
+        logging.info(f"Reading lexicon from {args.lexc}")
+        lexicon = Lexicon(args.lexc)
+        logging.info(f"Pickling lexicon to {args.output}")
+        lexicon.dump(args.output)
+        logging.info(f"Done pickling lexicon to {args.output}")
+
+    elif args.mode == "t2a" and args.corpus and args.s2u and args.i2u and args.output:
+        logging.info(f"Loading morphological analyzers from {args.s2u} and {args.i2u}")
+        analyzer: MorphologicalAnalyzer = MorphologicalAnalyzer(args.s2u, args.i2u)
+
+        logging.info(f"Analyzing tokens from corpus {args.corpus} to {args.output}")
+        with open(args.corpus, "rt") as corpus, open(args.output, "wt") as analyzed_file:
+            for line in corpus:
+                tokens = line.strip().split()
+                print(" ".join([analyzer.best_analysis(token) for token in tokens]), file=analyzed_file)
+
+    else:
+        arg_parser.print_usage(file=sys.stderr)
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
