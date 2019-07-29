@@ -482,7 +482,7 @@ class MorphologicalAnalyzer:
     @staticmethod
     def heuristic(analysis: str) -> int:
         result = 0
-        parts = analysis.split(":")
+        parts = analysis.split("\u241E")
         segments_in_lhs = parts[0].count("^") + 1
         segments_in_rhs = parts[1].count("^") + 1
         result += (segments_in_lhs - segments_in_rhs) * 1000
