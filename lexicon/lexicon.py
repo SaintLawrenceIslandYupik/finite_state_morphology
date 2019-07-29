@@ -505,10 +505,10 @@ class MorphologicalAnalyzer:
             intermediate_analyses = [list(self.i2u.apply_down(underlying_analysis))[0] for underlying_analysis in
                                      underlying_analyses]
             options = sorted(
-                [underlying_analyses[i] + ":" + intermediate_analyses[i] for i in range(len(underlying_analyses))],
+                [underlying_analyses[i] + "\u241E" + intermediate_analyses[i] for i in range(len(underlying_analyses))],
                 key=MorphologicalAnalyzer.heuristic)
             if len(options) > 0:
-                self.cache[token] = options[0] + ":" + token
+                self.cache[token] = options[0] + "\u241E" + token
             else:
                 self.cache[token] = "*" + token
 
