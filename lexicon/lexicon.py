@@ -569,6 +569,20 @@ def program_arguments():
         default="INFO",
         help="Verbosity level",
     )
+    arg_parser.add_argument(
+        "--word_separator",
+        metavar="CODEPOINT",
+        type=str,
+        default="\\u0009",
+        help="Word delimiter in output analysis",
+    )
+    arg_parser.add_argument(
+        "--morpheme_separator",
+        metavar="CODEPOINT",
+        type=str,
+        default="\\u0032",
+        help="Word delimiter in output analysis",
+    )
 
     return arg_parser
 
