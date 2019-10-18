@@ -1,0 +1,13 @@
+!----------------------------------------
+LEXICON NounInflX
+!  for noun roots that end in final -e
+!      that can be dropped but not hopped
+!----------------------------------------
+
+[Abs][Sg]:%^   #;
+[Abs][Pl]:%^t  #;
+[Abs][Du]:%^k  #;
+
+[Abl.Mod][Sg]:%^%{.f.%}meng  #;
+
+

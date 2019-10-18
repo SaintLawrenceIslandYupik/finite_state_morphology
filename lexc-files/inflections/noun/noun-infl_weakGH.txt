@@ -1,0 +1,12 @@
+!-------------------------------------
+LEXICON NounInflIII
+!  for noun roots that end in weak -gh
+!-------------------------------------
+
+[Abs][Sg]:%^          #;
+[Abs][Pl]:%^%{.w.%}t  #;
+[Abs][Du]:%^%{.w.%}k  #;
+
+[Abl.Mod][Sg]:%^%{.w.%}meng  #;
+
+

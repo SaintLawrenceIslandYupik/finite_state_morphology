@@ -1,0 +1,12 @@
+!--------------------------------
+LEXICON NounInflVI
+!  for noun roots that end in -te
+!--------------------------------
+
+[Abs][Sg]:%^   #;
+[Abs][Pl]:%^t  #;
+[Abs][Du]:%^k  #;
+
+[Abl.Mod][Sg]:%^%{.f.%}meng  #;
+
+
