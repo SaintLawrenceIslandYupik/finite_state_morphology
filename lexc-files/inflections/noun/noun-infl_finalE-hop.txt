@@ -1,0 +1,12 @@
+!--------------------------------------------------
+LEXICON NounInflIX
+!  for noun roots that end in -e that can be hopped
+!--------------------------------------------------
+
+[Abs][Sg]:%^   #;
+[Abs][Pl]:%^t  #;
+[Abs][Du]:%^k  #;
+
+[Abl.Mod][Sg]:%^%{.f.%}meng   #;
+
+

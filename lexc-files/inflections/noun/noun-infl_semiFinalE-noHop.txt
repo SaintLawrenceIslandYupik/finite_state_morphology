@@ -1,0 +1,13 @@
+!---------------------------------------------
+LEXICON NounInflVIII
+!  for noun roots that have semi-final -e
+!           that can be dropped but not hopped
+!---------------------------------------------
+
+[Abs][Sg]:%^            #;
+[Abs][Pl]:%^%{.sf.%}et  #;
+[Abs][Du]:%^%{.sf.%}ek  #;
+
+[Abl.Mod][Sg]:%^meng  #;
+
+

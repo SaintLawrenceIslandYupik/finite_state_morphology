@@ -1,0 +1,15 @@
+!-------------------------------------------------
+LEXICON NounInflV
+!  for noun roots that end in strong -gh:
+!      -aagh, -iigh, -uugh
+!      -egh where e-dropping is not possible
+!      (would result in a three-consonant cluster)
+!-------------------------------------------------
+
+[Abs][Sg]:%^    #;
+[Abs][Pl]:%^et  #;
+[Abs][Du]:%^ek  #;
+
+[Abl.Mod][Sg]:%^meng  #;
+
+
