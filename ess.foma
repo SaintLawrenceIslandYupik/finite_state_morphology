@@ -1,0 +1,35 @@
+#!/usr/bin/env foma -f
+
+read lexc ess.lexc
+define Lexicon
+
+! HEADER
+! "^"	moprpheme boundary
+! .#.word boundary
+
+define C           [ f | g | h | k | l | m | n | p | q | r | s | t | v | w | y | z];
+
+define FullVowel   [ a   | i   | u   ];
+define V           [ e | FullVowel ];
+
+! RULES
+
+define BaseFinalEndings %{t%} e ->  n || V _ "^" .#. , !
+%{t%} e -> t a .o. !
+e -> a || _ "^" .#. .o. !
+w -> k w || [C - h] _ "^" .#. .o. !
+g h -> q || _ (w) "^" .#. .o.
+%{g%} h -> q || _ "^" .#. .o.
+g -> k || _ "^" .#. 
+;
+
+
+define CleanupMorphBoundary "^" -> 0 ;
+
+
+define Rules [
+BaseFinalEndings
+.o. CleanupMorphBoundary
+];
+
+define Grammar [ Lexicon .o. Rules] ;
