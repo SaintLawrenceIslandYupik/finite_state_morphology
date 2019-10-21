@@ -4,32 +4,67 @@ read lexc ess.lexc
 define Lexicon
 
 ! HEADER
-! "^"	moprpheme boundary
-! .#.word boundary
+! "^"    moprpheme boundary
+! .#.    word boundary
+! {g} h  weak gh
 
-define C           [ f | g | h | k | l | m | n | p | q | r | s | t | v | w | y | z];
+define C         [ f | g | h | k | l | m | n | p | q | r | s | t | v | w | y | z ] ;
+define FullVowel                                                     [ a | i | u ] ;
+define V                                                         [ e | FullVowel ] ;
 
-define FullVowel   [ a   | i   | u   ];
-define V           [ e | FullVowel ];
+! SYMBOLS
 
-! RULES
+define HopSemiFinalE          a -> a a || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o. ! Lengthen a full vowel when semi-final e is dropped (e hopping)
+                              i -> i i || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
+                              u -> u u || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
+                              e -> 0   ||     V C _ g (h)     "^" %{%.sf%.%} .o. 
+                     %{%.sf%.%} -> 0                                         ;
 
-define BaseFinalEndings %{t%} e ->  n || V _ "^" .#. , !
-%{t%} e -> t a .o. !
-e -> a || _ "^" .#. .o. !
-w -> k w || [C - h] _ "^" .#. .o. !
-g h -> q || _ (w) "^" .#. .o.
-%{g%} h -> q || _ "^" .#. .o.
-g -> k || _ "^" .#. 
-;
+define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
+                 %{%.w%.%} -> 0;
+
+define DropUvular g h -> 0 || (C) FullVowel _ "^" %{e%} .o. ! Drop the uvular gh between two single vowels in case of adding (e) 
+                    a -> a a || (C) _ "^" %{e%} .o.
+                    i -> i i || (C) _ "^" %{e%} .o.
+                    u -> u u || (C) _ "^" %{e%} ;
+
+define AddE %{e%} -> e || C "^" _ .o.
+            %{e%} -> 0 || V "^" _ ;
+
+
+! EXCEPTIONS
+
+define BaseException u -> u u || .#. y _ g "^" ; !! Not sure how to handle this exception
+
+! CLEAN-UP
+
+define BaseFinalEndings %{t%} e -> n   ||       V _ "^" .#.     ,   ! Jacobson 2.2.1 Words and Bases
+                        %{t%} e -> t a                          .o. 
+                              e -> a   ||         _ "^" .#.     .o. 
+                              w -> k w || [C - h] _ "^" .#.     .o. 
+                            g h -> q   ||         _ (w) "^" .#. .o.
+                        %{g%} h -> q   ||         _ "^" .#.     .o.  
+                              g -> k   ||         _ "^" .#.     ;
+
+define CleanupDigraph   %{k%} w -> k w .o. !! Not sure what {k} is
+                        %{g%} h -> g h .o.
+                        %{t%} e -> t e ;
+
 
 
 define CleanupMorphBoundary "^" -> 0 ;
 
+! RULE CASCADE
 
 define Rules [
-BaseFinalEndings
-.o. CleanupMorphBoundary
+    HopSemiFinalE .o.
+    DropWeakC .o.
+    DropUvular .o.
+    AddE .o.
+    BaseException .o.
+    BaseFinalEndings .o. 
+    CleanupDigraph .o.
+    CleanupMorphBoundary
 ];
 
-define Grammar [ Lexicon .o. Rules] ;
+define Grammar [ Lexicon .o. Rules ] ;
