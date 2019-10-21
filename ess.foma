@@ -23,7 +23,7 @@ define HopSemiFinalE          a -> a a || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
                  %{%.w%.%} -> 0;
 
-define DropUvular g h -> 0 || (C) FullVowel _ "^" %{e%} .o. ! Drop the uvular gh between two single vowels in case of adding (e) 
+define DropUvular g h -> 0   || (C) FullVowel _ "^" %{e%} .o. ! Drop the uvular gh between two single vowels in case of adding (e) 
                     a -> a a || (C) _ "^" %{e%} .o.
                     i -> i i || (C) _ "^" %{e%} .o.
                     u -> u u || (C) _ "^" %{e%} ;
