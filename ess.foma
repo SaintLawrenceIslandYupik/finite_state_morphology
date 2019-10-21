@@ -24,9 +24,9 @@ define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the b
                %{%.w%.%} -> 0                    ;
 
 define DropUvular g h -> 0   || (C) FullVowel _ "^" %{e%} .o. ! Drop the uvular gh between two single vowels in case of adding (e) 
-                    a -> a a || (C) _ "^" %{e%} .o.
-                    i -> i i || (C) _ "^" %{e%} .o.
-                    u -> u u || (C) _ "^" %{e%} ;
+                    a -> a a ||           (C) _ "^" %{e%} .o.
+                    i -> i i ||           (C) _ "^" %{e%} .o.
+                    u -> u u ||           (C) _ "^" %{e%} ;
 
 define AddE %{e%} -> e || C "^" _ .o.
             %{e%} -> 0 || V "^" _ ;
@@ -37,13 +37,13 @@ define BaseException u -> u u || .#. y _ g "^" ; !! Not sure how to handle this 
 
 ! CLEAN-UP
 
-define BaseFinalEndings %{t%} e -> n   ||       V _ "^" .#.     ,   ! Jacobson 2.2.1 Words and Bases
-                        %{t%} e -> t a                          .o. 
-                              e -> a   ||         _ "^" .#.     .o. 
+define BaseFinalEndings %{t%} e -> n   ||               V _ "^" .#.     ,   ! Jacobson 2.2.1 Words and Bases
+                        %{t%} e -> t a                                  .o. 
+                              e -> a   ||                 _ "^" .#.     .o. 
                               w -> k w || [C - h | %{k%}] _ "^" .#.     .o. 
-                            g h -> q   ||         _ (w) "^" .#. .o.
-                        %{g%} h -> q   ||         _ "^" .#.     .o.  
-                              g -> k   ||         _ "^" .#.     ;
+                            g h -> q   ||                 _ (w) "^" .#. .o.
+                        %{g%} h -> q   ||                 _ "^" .#.     .o.  
+                              g -> k   ||                 _ "^" .#.     ;
 
 define CleanupDigraph %{k%} -> 0   .o. 
                     %{g%} h -> g h .o.
