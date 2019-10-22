@@ -1,0 +1,49 @@
+!================
+Multichar_Symbols
+!================
+%^     ! morpheme boundary
+
+%{g%}  ! for digraph -gh
+%{k%}  ! for digraph -kw
+%{t%}  ! for -te
+
+%{e%}  ! for (e)
+
+!----------------------------
+! morphophonological symbols
+!----------------------------
+%{.w.%}   ! drop weak -gh
+%{.f.%}   ! drop and hop final -e
+%{.sf.%}  ! drop and hop semi-final -e
+%{.m.%}   ! drop root-final consonants
+
+!--------------------
+! morphological tags
+!--------------------
+[N]   ! noun
+
+[Sg]  ! singular
+[Pl]  ! plural
+[Du]  ! dual
+
+[Abs]      ! absolutive case
+[Abl.Mod]  ! ablative-modalis case
+
+[V]     ! verb
+
+[Intr]  ! intransitive (valency)
+[Trns]  ! transitive (valency)
+
+[Ind]   ! indicative mood
+
+
+!===========
+LEXICON Root
+!===========
+NounExceptions;
+
+
+!======================
+LEXICON  NounExceptions
+!======================
+yug[Abs][Sg]:yuuk  #;
