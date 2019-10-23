@@ -1,18 +1,32 @@
 #!/usr/bin/env foma -f
 
+read lexc exceptions.lexc
+define Exceptions
+
 read lexc ess.lexc
 define Lexicon
 
-! HEADER
-! "^"    moprpheme boundary
+
+!==============
+! MISC SYMBOLS 
+!==============
+! "^"    morpheme boundary
 ! .#.    word boundary
 ! {g} h  weak gh
+
+
+!======
+! SETS 
+!======
 
 define C         [ f | g | h | k | l | m | n | p | q | r | s | t | v | w | y | z ] ;
 define FullVowel                                                     [ a | i | u ] ;
 define V                                                         [ e | FullVowel ] ;
 
-! SYMBOLS
+
+!=======
+! RULES
+!=======
 
 define HopSemiFinalE a -> a a || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o. ! Lengthen a full vowel when semi-final e is dropped (e hopping)
                      i -> i i || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
@@ -31,11 +45,10 @@ define DropUvular g h -> 0   || (C) FullVowel _ "^" %{e%} .o. ! Drop the uvular 
 define AddE %{e%} -> e || C "^" _ .o.
             %{e%} -> 0 || V "^" _ ;
 
-! EXCEPTIONS
 
-define BaseException u -> u u || .#. y _ g "^" ; !! Not sure how to handle this exception
-
-! CLEAN-UP
+!================
+! CLEAN-UP RULES
+!================
 
 define BaseFinalEndings %{t%} e -> n   ||               V _ "^" .#.     ,   ! Jacobson 2.2.1 Words and Bases
                         %{t%} e -> t a                                  .o. 
@@ -51,17 +64,19 @@ define CleanupDigraph %{k%} -> 0   .o.
 
 define CleanupMorphBoundary "^" -> 0 ;
 
+
+!==============
 ! RULE CASCADE
+!==============
 
 define Rules [
     HopSemiFinalE .o.
     DropWeakC .o.
     DropUvular .o.
     AddE .o.
-    BaseException .o.
     BaseFinalEndings .o. 
     CleanupDigraph .o.
     CleanupMorphBoundary
 ];
 
-define Grammar [ Lexicon .o. Rules ] ;
+define Grammar [ Exceptions .P. [ Lexicon .o. Rules ] ] ;
