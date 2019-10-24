@@ -1,0 +1,20 @@
+!=======================================================
+LEXICON NounSuffixII
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in -g, -w, -ghw
+!=======================================================
+
+                                    NounInflII;
+
+-ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having N
+
+-u[N.V]:%^u                         VerbSuffixI;    ! to be N
+
+

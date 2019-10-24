@@ -1,22 +1,36 @@
-!----------------
+!================
+!
 Multichar_Symbols
-!----------------
+!
+!================
 %^     ! morpheme boundary
 
 %{g%}  ! for digraph -gh
 %{k%}  ! for digraph -kw
 %{t%}  ! for -te
 
-%{e%}  ! for (e)
+!-----------
+! allomorphs 
+!-----------
+%{E%}  ! for (e)
+%{G%}  ! for (g) 
 
-! MORPHOPHONOLOGICAL SYMBOLS 
+!---------------------------
+! morphophonological symbols 
+!---------------------------
 %{.w.%}   ! drop weak -gh
+%{.c.%}   ! drop uvular (-gh) between single vowels
 %{.f.%}   ! drop and hop final -e
+%{.fL.%}  ! drop and hop final -e if root exceeds two syllables
 %{.sf.%}  ! drop and hop semi-final -e
 %{.m.%}   ! drop root-final consonants
+%{.at.%}  ! modify root-final -te 
 
-! MORPHOLOGICAL TAGS 
-[N]   ! noun
+!-----------------------------
+! morphological tags for nouns
+!-----------------------------
+[N.N]  ! noun-elaborating derivational suffix
+[N.V]  ! verbalizing derivational suffix
 
 [Sg]  ! singular
 [Pl]  ! plural 
@@ -24,8 +38,16 @@ Multichar_Symbols
 
 [Abs]      ! absolutive case
 [Abl.Mod]  ! ablative-modalis case
+[Loc]      ! locative case 
+[All]      ! allative case
+[Per]      ! perlative case
+[Equ]      ! equative case
 
-[V]     ! verb
+!-----------------------------
+! morphological tags for verbs
+!-----------------------------
+[V.V]    ! verb-elaborating derivational suffix
+[V.N]    ! nominalizing derivational suffix
 
 [Intr]  ! intransitive (valency)
 [Trns]  ! transitive (valency)
@@ -33,26 +55,30 @@ Multichar_Symbols
 [Ind]   ! indicative mood
 
 
-!-----------
+!===========
+!
 LEXICON Root
-!-----------
+!
+!===========
 NounRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
 NounRootII;    ! ends in -g, -w, -ghw
 NounRootIII;   ! ends in weak -gh
 NounRootIV;    ! ends in marked strong -gh
 NounRootV;     ! ends in strong -gh
 NounRootVI;    ! ends in -te
-NounRootVII;   ! has semi-final -e that can be hopped
-NounRootVIII;  ! has semi-final -e that cannot be hopped
-NounRootIX;    ! has final -e that can be hopped
-NounRootX;     ! has final -e that cannot be hopped 
+NounRootVII;   ! has semi-final -e that can drop and hop
+NounRootVIII;  ! has semi-final -e that can drop but not hop
+NounRootIX;    ! has final -e that can drop and hop
+NounRootX;     ! has final -e that can drop but not hop 
+
 VerbRootI;     ! ends in -a, -i, -u
-VerbRootII;    ! ends in -aa, -ii, -uu
+VerbRootII;    ! has final -e
 VerbRootIII;   ! ends in -g, -w, -ghw
-VerbRootIV;    ! ends in -agh, -igh, -ugh
+VerbRootIV;    ! ends in -agh, -igh, -ugh or -egh where e cannot be drop
 VerbRootV;     ! ends in -te
-VerbRootVI;    ! has semi-final -e that can be hopped
-VerbRootVII;   ! has semi-final -e that cannot be hopped
-VerbRootVIII;  ! has final -e
+VerbRootVI;    ! has semi-final -e that can drop and hop
+VerbRootVII;   ! has semi-final -e that can drop but not hop
+
+Particle;
 
 

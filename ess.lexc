@@ -1,22 +1,36 @@
-!----------------
+!================
+!
 Multichar_Symbols
-!----------------
+!
+!================
 %^     ! morpheme boundary
 
 %{g%}  ! for digraph -gh
 %{k%}  ! for digraph -kw
 %{t%}  ! for -te
 
-%{e%}  ! for (e)
+!-----------
+! allomorphs 
+!-----------
+%{E%}  ! for (e)
+%{G%}  ! for (g) 
 
-! MORPHOPHONOLOGICAL SYMBOLS 
+!---------------------------
+! morphophonological symbols 
+!---------------------------
 %{.w.%}   ! drop weak -gh
+%{.c.%}   ! drop uvular (-gh) between single vowels
 %{.f.%}   ! drop and hop final -e
+%{.fL.%}  ! drop and hop final -e if root exceeds two syllables
 %{.sf.%}  ! drop and hop semi-final -e
 %{.m.%}   ! drop root-final consonants
+%{.at.%}  ! modify root-final -te 
 
-! MORPHOLOGICAL TAGS 
-[N]   ! noun
+!-----------------------------
+! morphological tags for nouns
+!-----------------------------
+[N.N]  ! noun-elaborating derivational suffix
+[N.V]  ! verbalizing derivational suffix
 
 [Sg]  ! singular
 [Pl]  ! plural 
@@ -24,8 +38,16 @@ Multichar_Symbols
 
 [Abs]      ! absolutive case
 [Abl.Mod]  ! ablative-modalis case
+[Loc]      ! locative case 
+[All]      ! allative case
+[Per]      ! perlative case
+[Equ]      ! equative case
 
-[V]     ! verb
+!-----------------------------
+! morphological tags for verbs
+!-----------------------------
+[V.V]    ! verb-elaborating derivational suffix
+[V.N]    ! nominalizing derivational suffix
 
 [Intr]  ! intransitive (valency)
 [Trns]  ! transitive (valency)
@@ -33,202 +55,256 @@ Multichar_Symbols
 [Ind]   ! indicative mood
 
 
-!-----------
+!===========
+!
 LEXICON Root
-!-----------
+!
+!===========
 NounRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
 NounRootII;    ! ends in -g, -w, -ghw
 NounRootIII;   ! ends in weak -gh
 NounRootIV;    ! ends in marked strong -gh
 NounRootV;     ! ends in strong -gh
 NounRootVI;    ! ends in -te
-NounRootVII;   ! has semi-final -e that can be hopped
-NounRootVIII;  ! has semi-final -e that cannot be hopped
-NounRootIX;    ! has final -e that can be hopped
-NounRootX;     ! has final -e that cannot be hopped 
+NounRootVII;   ! has semi-final -e that can drop and hop
+NounRootVIII;  ! has semi-final -e that can drop but not hop
+NounRootIX;    ! has final -e that can drop and hop
+NounRootX;     ! has final -e that can drop but not hop 
+
 VerbRootI;     ! ends in -a, -i, -u
-VerbRootII;    ! ends in -aa, -ii, -uu
+VerbRootII;    ! has final -e
 VerbRootIII;   ! ends in -g, -w, -ghw
-VerbRootIV;    ! ends in -agh, -igh, -ugh
+VerbRootIV;    ! ends in -agh, -igh, -ugh or -egh where e cannot be drop
 VerbRootV;     ! ends in -te
-VerbRootVI;    ! has semi-final -e that can be hopped
-VerbRootVII;   ! has semi-final -e that cannot be hopped
-VerbRootVIII;  ! has final -e
+VerbRootVI;    ! has semi-final -e that can drop and hop
+VerbRootVII;   ! has semi-final -e that can drop but not hop
+
+Particle;
 
 
-!----------------------------------
+!================
+LEXICON Particle
+!================
+
+elngaatall  #;  ! very much
+quunpeng    #;  ! always
+unaami      #;  ! tomorrow
+
+
+!==================================
 LEXICON NounRootI
 !  end in -a, -i, -u, -aa, -ii, -uu
-!----------------------------------
+!==================================
 
-amaa      NounInflI;  ! wolf
-anigu     NounInflI;  ! snow on ground
-anipa     NounInflI;  ! owl
-esla      NounInflI;  ! outdoors; weather; awareness; world
-kayu      NounInflI;  ! sculpin; ocean fish (in general)
-kii       NounInflI;  ! wound
-kufi      NounInflI;  ! coffee
-nuna      NounInflI;  ! land
-repa      NounInflI;  ! hammer
-siku      NounInflI;  ! ice
-tafsi     NounInflI;  ! belt
-uupa      NounInflI;  !"sea peach" (Halocynthia aurantia)
-yavlu     NounInflI;  ! sweetheart
-yaywaali  NounInflI;  ! orphan
+amaa      NounSuffixI;  ! wolf
+anigu     NounSuffixI;  ! snow on ground
+anipa     NounSuffixI;  ! owl
+apa       NounSuffixI;  ! grandfather
+ata       NounSuffixI;  ! father
+esla      NounSuffixI;  ! outdoors; weather; awareness; world
+kayu      NounSuffixI;  ! sculpin; ocean fish (in general)
+kii       NounSuffixI;  ! wound
+kufi      NounSuffixI;  ! coffee
+naa       NounSuffixI;  ! mother
+ne        NounSuffixI;  ! home
+nuna      NounSuffixI;  ! land
+repa      NounSuffixI;  ! hammer
+puu       NounSuffixI;  ! handle
+siku      NounSuffixI;  ! ice
+tafsi     NounSuffixI;  ! belt
+ugi       NounSuffixI;  ! husband
+uupa      NounSuffixI;  !"sea peach" (Halocynthia aurantia)
+yavlu     NounSuffixI;  ! sweetheart
+yaywaali  NounSuffixI;  ! orphan
 
 
-!------------------------------
+!==============================
 LEXICON NounRootIX
 !  end in -e that can be hopped
-!------------------------------
+!==============================
 
-iye   NounInflIX;  ! eye
-tume  NounInflIX;  ! footprint
+iye   NounSuffixIX;  ! eye
+tume  NounSuffixIX;  ! footprint
 
 
-!--------------------------------------
+!=====================================
 LEXICON NounRootX
 !  end in final -e that can be dropped
-!                        but not hopped
-!--------------------------------------
+!  but not hopped
+!=====================================
 
-akume       NounInflX;  ! granulated sugar
-ne          NounInflX;  ! home
-neqe        NounInflX;  ! food
+akume      NounSuffixX;  ! granulated sugar
+iigge      NounSuffixX;  ! hand
+neqe       NounSuffixX;  ! food
+tepe       NounSuffixX;  ! odor
 
-Laluramke   NounInflX;  ! white person; Caucasian
+Laluramke  NounSuffixX;  ! white person; Caucasian
 
 
-!----------------------
+!=====================
 LEXICON NounRootII
 !  end in -g, -w, -ghw
-!----------------------
+!=====================
 
-aqavzig  NounInflII;  ! salmonberry, cloudberry
-atkug    NounInflII;  ! parka
-iqallug  NounInflII;  ! fish
-kemeg    NounInflII;  ! flesh; skin
-manig    NounInflII;  ! egg
-savig    NounInflII;  ! knife
-sikig    NounInflII;  ! squirrel
-uyghag   NounInflII;  ! stone; rock
-veg      NounInflII;  ! grass
-yug      NounInflII;  ! person; man
-
-Yupig    NounInflII;  ! Siberian/St. Lawrence Island Eskimo person
-
-
-aaw:aa%{k%}w    NounInflII;  ! blood
-kiiw:kii%{k%}w  NounInflII;  ! river
+aqavzig     NounSuffixII;  ! salmonberry, cloudberry
+atkug       NounSuffixII;  ! parka
+igaghvig    NounSuffixII;  ! school
+iqallug     NounSuffixII;  ! fish
+manig       NounSuffixII;  ! egg
+nayag       NounSuffixII;  ! sister of a male
+nunivag     NounSuffixII;  ! rosewort plant
+panig       NounSuffixII;  ! daughter
+savig       NounSuffixII;  ! knife
+sikig       NounSuffixII;  ! squirrel
+uyghag      NounSuffixII;  ! stone; rock
+veg         NounSuffixII;  ! grass
+yug         NounSuffixII;  ! person; man
+yughaghvig  NounSuffixII;  ! church
 
 
-qiighw  NounInflII;  ! gray hair; cough
-saaghw  NounInflII;  ! side
+Yupig       NounSuffixII;  ! Siberian/St. Lawrence Island Eskimo person
 
 
-!------------------------------
+aaw:aa%{k%}w    NounSuffixII;  ! blood
+kiiw:kii%{k%}w  NounSuffixII;  ! river
+
+
+qiighw  NounSuffixII;  ! gray hair; cough
+saaghw  NounSuffixII;  ! side
+
+
+!==============================
 LEXICON NounRootIV
 !  end in marked strong -gh (*)
-!------------------------------
+!==============================
 
-afsengagh     NounInflIV;  ! vole, locally mouse
-ayumigh       NounInflIV;  ! long ago; year
-megh          NounInflIV;  ! water
-nanugh        NounInflIV;  ! polar bear
-pagunghagh    NounInflIV;  ! crowberry; berry (in general)
-sikugh        NounInflIV;  ! needle
-taghnughhagh  NounInflIV;  ! child
+aakagh          NounSuffixIV;  ! older sister of a female
+afsengagh       NounSuffixIV;  ! vole, locally mouse
+aghnaghagh      NounSuffixIV;  ! young girl
+ayumigh         NounSuffixIV;  ! long ago; year
+eltughagh       NounSuffixIV;  ! grandchild
+estugagh        NounSuffixIV;  ! store 
+megh            NounSuffixIV;  ! water
+mekestaaghhagh  NounSuffixIV;  ! small thing
+nanugh          NounSuffixIV;  ! polar bear
+nengyugh        NounSuffixIV;  ! grandmother
+pagunghagh      NounSuffixIV;  ! crowberry; berry (in general)
+sikugh          NounSuffixIV;  ! needle
+taghnughhagh    NounSuffixIV;  ! child
+takestaaghhagh  NounSuffixIV;  ! short thing
+tukugh          NounSuffixIV;  ! host
+uyughagh        NounSuffixIV;  ! younger sibling (sister or brother)
 
-Sivungagh     NounInflIV;  ! Savoonga
-Sivugagh      NounInflIV;  ! Gambell; St. Lawrence Island (in general)
+Sivungagh       NounSuffixIV;  ! Savoonga
+Sivugagh        NounSuffixIV;  ! Gambell; St. Lawrence Island (in general)
 
 
-!--------------------------------------
+!======================================
 LEXICON NounRootVII
 !  has semi-final -e that can be hopped
-!--------------------------------------
+!======================================
 
-ategh   NounInflVII;  ! name
-kameg   NounInflVII;  ! skin boot, mukluk
-taqegh  NounInflVII;  ! vein
+ategh   NounSuffixVII;  ! name
+kameg   NounSuffixVII;  ! skin boot, mukluk
+papeg   NounSuffixVII;  ! tail
+qanegh  NounSuffixVII;  ! mouth (anatomical)
+taqegh  NounSuffixVII;  ! vein
 
 
-!---------------------------------------
+!=======================================
 LEXICON NounRootVIII
 !  has semi-final -e that can be dropped
-!                         but not hopped
-!---------------------------------------
+!  but not hopped
+!=======================================
 
-aliinegh   NounInflVIII;  ! clear, calm day
-ughluvegh  NounInflVIII;  ! bow
+aliinegh   NounSuffixVIII;  ! clear, calm day
+kemeg      NounSuffixVIII;  ! flesh; skin
+ughluvegh  NounSuffixVIII;  ! bow
+yaquleg    NounSuffixVIII;  ! angel
 
 
-!----------------------------------------------------------------
+!================================================================
 LEXICON NounRootV
 !  end in strong -gh: -aagh, -iigh, -uugh
 !                     -egh where e-dropping is not possible
 !                     (would result in a three-consonant cluster)
-!----------------------------------------------------------------
+!================================================================
 
-aghnegh     NounInflV;  ! day
-aghvegh     NounInflV;  ! whale
-ayvegh      NounInflV;  ! walrus
-ighnegh     NounInflV;  ! son
-kaviigh     NounInflV;  ! fox
-kiigh       NounInflV;  ! summer
-neghqwaagh  NounInflV;  ! bone
-ulaagh      NounInflV;  ! semi-lunar knife; woman's knife; ulu
-ulghaagh    NounInflV;  ! sea lion
-vegaagh     NounInflV;  ! grass
-yaqulegh    NounInflV;  ! angel
+aghnegh      NounSuffixV;  ! day
+aghvegh      NounSuffixV;  ! whale
+ayvegh       NounSuffixV;  ! walrus
+ighnegh      NounSuffixV;  ! son
+kaviigh      NounSuffixV;  ! fox
+kiigh        NounSuffixV;  ! summer
+mekelghiigh  NounSuffixV;  ! boy
+neghqwaagh   NounSuffixV;  ! bone
+nuliigh      NounSuffixV;  ! wife
+seghlegh     NounSuffixV;  ! bad thing
+ulaagh       NounSuffixV;  ! semi-lunar knife; woman's knife; ulu
+ulghaagh     NounSuffixV;  ! sea lion
+vegaagh      NounSuffixV;  ! grass
 
 
-!-----------------
+!=================
 LEXICON NounRootVI
 !  end in -te
-!-----------------
+!=================
 
-piitute:piitu%{t%}e        NounInflVI;  ! seed
-qulmesiite:qulmesii%{t%}e  NounInflVI;  ! cooking pot
-riigte:riig%{t%}e          NounInflVI;  ! animal's den
-sigute:sigu%{t%}e          NounInflVI;  ! ear
-yughaghte:yughagh%{t%}e    NounInflVI;  ! minister, clergyman
+piitute:piitu%{t%}e        NounSuffixVI;  ! seed
+qulmesiite:qulmesii%{t%}e  NounSuffixVI;  ! cooking pot
+riigte:riig%{t%}e          NounSuffixVI;  ! animal's den
+sigute:sigu%{t%}e          NounSuffixVI;  ! ear
+yughaghte:yughagh%{t%}e    NounSuffixVI;  ! minister, clergyman
 
 ! POSSIBLE e-HOPPING
-ggute:ggu%{t%}e            NounInflVI; ! tooth
+ggute:ggu%{t%}e            NounSuffixVI; ! tooth
 
 
-!------------------
+!==================
 LEXICON NounRootIII
 !  end in weak -gh
-!------------------
+!==================
 
-aghnagh:aghna%{g%}h          NounInflIII;  ! woman
-angyagh:angya%{g%}h          NounInflIII;  ! boat
-aqelqagh:aqelqa%{g%}h        NounInflIII;  ! visitor
-mangteghagh:mangtegha%{g%}h  NounInflIII;  ! house
-naayghagh:naaygha%{g%}h      NounInflIII;  ! mountain
-naayvagh:naayva%{g%}h        NounInflIII;  ! lake
-neghsagh:neghsa%{g%}h        NounInflIII;  ! seal (in general)
-qayagh:qaya%{g%}h            NounInflIII;  ! kayak
-qikmigh:qikmi%{g%}h          NounInflIII;  ! dog
-ukazigh:ukazi%{g%}h          NounInflIII;  ! hare, rabbit
-uqugh:uqu%{g%}h              NounInflIII;  ! fat; blubber
+aghnagh:aghna%{g%}h          NounSuffixIII;  ! woman
+anengagh:anenga%{g%}h        NounSuffixIII;  ! older brother
+angyagh:angya%{g%}h          NounSuffixIII;  ! boat
+aqelqagh:aqelqa%{g%}h        NounSuffixIII;  ! visitor
+avaqutagh:avaquta%{g%}h      NounSuffixIII;  ! child, offspring
+itegagh:itega%{g%}h          NounSuffixIII;  ! foot
+mangteghagh:mangtegha%{g%}h  NounSuffixIII;  ! house
+naasqugh:naasqu%{g%}h        NounSuffixIII;  ! head
+naayghagh:naaygha%{g%}h      NounSuffixIII;  ! mountain
+naayvagh:naayva%{g%}h        NounSuffixIII;  ! lake
+ngelqagh:ngelqa%{g%}h        NounSuffixIII;  ! cormorant
+nuyagh:nuya%{g%}h            NounSuffixIII;  ! hair
+neghsagh:neghsa%{g%}h        NounSuffixIII;  ! seal (in general)
+suflugagh:sufluga%{g%}h      NounSuffixIII;  ! gun
+qayagh:qaya%{g%}h            NounSuffixIII;  ! kayak
+qengagh:qenga%{g%}h          NounSuffixIII;  ! nose
+qikmigh:qikmi%{g%}h          NounSuffixIII;  ! dog
+ukazigh:ukazi%{g%}h          NounSuffixIII;  ! hare, rabbit
+uqugh:uqu%{g%}h              NounSuffixIII;  ! fat; blubber
 
-Ungazigh:Ungazi%{g%}h        NounInflIII; ! Old Chaplino, Indian Point (in Chukotka)
+Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)
 
 
-!-------------------
+
+!===================
 LEXICON VerbRootI
 !  end in -a, -i, -u
-!-------------------
+!===================
 
-aghula  VerbInflI;  ! to dance
-ifla    VerbInflI;  ! to lose; to get lost
-inghu   VerbInflI;  ! to pick berries
-qiya    VerbInflI;  ! to cry
-tagi    VerbInflI;  ! to come
-tuqu    VerbInflI;  ! to die
+aghula         VerbSuffixI;  ! to dance
+aqii           VerbSuffixI;  ! to take a pleasure trip; to take a vacation
+ifla           VerbSuffixI;  ! to lose; to get lost
+inghu          VerbSuffixI;  ! to pick berries
+mekestaaghhaa  VerbSuffixI; ! to be small
+qiya           VerbSuffixI;  ! to cry
+tagi           VerbSuffixI;  ! to come
+takestaaghhaa  VerbSuffixI; ! to be short
+tuqu           VerbSuffixI;  ! to die
+umughqaa       VerbSuffixI;  ! to have sleep paralysis
+
 
 
 !-----------------------
@@ -239,201 +315,962 @@ LEXICON VerbRootII
 aqii  VerbInflII;  ! to take a pleasure trip; to take a vacation
 
 
-!-------------------
-LEXICON VerbRootVIII
+!=================
+LEXICON VerbRootII
 !  has final -e
-!-------------------
+!=================
 
-aghulaqe  VerbInflVIII;  ! to leave
-alinge    VerbInflVIII;  ! to be afraid
-aane      VerbInflVIII;  ! to go out
-aange     VerbInflVIII;  ! to be big
-esleqe    VerbInflVIII;  ! to be full
-kuuve     VerbInflVIII;  ! to spill
-meghe     VerbInflVIII;  ! to drink
-neghe     VerbInflVIII;  ! to eat
-taake     VerbInflVIII;  ! to be long
+aghulaqe  VerbSuffixII;  ! to leave
+alinge    VerbSuffixII;  ! to be afraid
+aane      VerbSuffixII;  ! to go out
+aange     VerbSuffixII;  ! to be big
+esleqe    VerbSuffixII;  ! to be full
+kuuve     VerbSuffixII;  ! to spill
+meghe     VerbSuffixII;  ! to drink
+neghe     VerbSuffixII;  ! to eat
+taake     VerbSuffixII;  ! to be long
+taaqe     VerbSuffixII;  ! to finish; to quit
 
 
-!-------------------------
+!===================================
 LEXICON VerbRootIV
 !  end in -agh, -igh, -ugh
-!-------------------------
+!  or -egh where e cannot be dropped
+!===================================
 
-gaagh       VerbInflIV;  ! to cook
-nenglagh    VerbInflIV;  ! to laugh
-pinigh      VerbInflIV;  ! to be good
-qavagh      VerbInflIV;  ! to sleep
+aglagh    VerbSuffixIV;  ! to go home; to go over to another place
+gaagh     VerbSuffixIV;  ! to cook
+igatagh   VerbSuffixIV;  ! to be hungry
+iyatagh   VerbSuffixIV;  ! to be hungry
+mayugh    VerbSuffixIV;  ! to go up
+megh      VerbSuffixIV;  ! to drink
+negh      VerbSuffixIV;  ! to eat
+nenglagh  VerbSuffixIV;  ! to laugh
+pinigh    VerbSuffixIV;  ! to be good
+qavagh    VerbSuffixIV;  ! to sleep
+qepghagh  VerbSuffixIV;  ! to work
+yughagh   VerbSuffixIV;  ! to pray, to worship
 
 
-!---------------------
+
+!=====================
 LEXICON VerbRootIII
 !  end in -g, -w, -ghw
-!---------------------
+!=====================
 
-qiighw  VerbInflIII;  ! to cough
+ukig    VerbSuffixIII;  ! to go down
+qiighw  VerbSuffixIII;  ! to cough
 
 
-!--------------------------------------
+!======================================
 LEXICON VerbRootVI
 !  has semi-final -e that can be hopped
-!--------------------------------------
+!======================================
 
-itegh  VerbInflVI;  ! to go in; to enter
+itegh  VerbSuffixVI;  ! to go in; to enter
 
 
-!---------------------------------------
+!=======================================
 LEXICON VerbRootVII
 !  has semi-final -e that can be dropped
-!                         but not hopped
-!---------------------------------------
+!  but not hopped
+!=======================================
 
-megh  VerbInflVII;  ! to drink
-negh  VerbInflVII;  ! to eat
+aghyanegh  VerbSuffixVII; ! to hurry; to get ready fast; to rush
 
 
-!----------------
+!================
 LEXICON VerbRootV
 !  end in -te
-!----------------
+!================
 
-esghaate  VerbInflV;  ! to see something
-ingaghte  VerbInflV;  ! to lie down
-kaate     VerbInflV;  ! to arrive
-nagate    VerbInflV;  ! to listen
+esghaate  VerbSuffixV;  ! to see something
+ingaghte  VerbSuffixV;  ! to lie down
+kaate     VerbSuffixV;  ! to arrive
+nagate    VerbSuffixV;  ! to listen
 
 
-!-------------------------------------------------------
+!=====================================================
+LEXICON NounSuffixI
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in -a, -i, -u
+!=====================================================
+
+                             NounInflI;
+
+-ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+
+-ngu[N.V]:%^ngu              VerbSuffixI;    ! to be N
+
+
+!=====================================================
+LEXICON NounSuffixIX
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that have final -e
+!  that can be hopped
+!=====================================================
+
+                             NounInflIX;
+
+-ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+
+-ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+
+
+!=====================================================
+LEXICON NounSuffixX
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that have final -e
+!  that can be dropped but not hopped
+!=====================================================
+
+                             NounInflX;
+
+-ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+
+-ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+
+
+!=======================================================
+LEXICON NounSuffixII
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in -g, -w, -ghw
+!=======================================================
+
+                                    NounInflII;
+
+-ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having N
+
+-u[N.V]:%^u                         VerbSuffixI;    ! to be N
+
+
+!================================================================
+LEXICON NounSuffixIV
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in marked strong -gh (*)
+!================================================================
+
+                                    NounInflIV;
+
+-ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+
+-u[N.V]:%^%{.c.%}u                  VerbSuffixI;    ! to be N
+
+
+!======================================================
+LEXICON NounSuffixVII
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that have semi-final -e
+!  that can be hopped
+!======================================================
+
+                                    NounInflVII;
+
+-ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+
+-u[N.V]:%^%{.sf.%}u                 VerbSuffixI;    ! to be N
+
+
+!======================================================
+LEXICON NounSuffixVIII
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that have semi-final -e
+!  that can be dropped but not hopped
+!======================================================
+
+                                    NounInflVIII;
+
+-ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+
+-u[N.V]:%^%{.sf.%}u                 VerbSuffixI;    ! to be N
+
+
+!=====================================================
+LEXICON NounSuffixV
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in strong -gh
+!=====================================================
+
+                                    NounInflV;
+
+-ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+
+-u[N.V]:%^u                         VerbSuffixI;    ! to be N
+
+
+!=====================================================
+LEXICON NounSuffixVI
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in -te
+!=====================================================
+
+                             NounInflVI;
+
+-ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+
+-leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+
+-ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+
+
+!=====================================================
+LEXICON NounSuffixIII
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in weak -gh 
+!=====================================================
+
+                                    NounInflIII;
+
+-ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+
+-kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
+-qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N 
+
+-leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+
+-u[N.V]:%^%{.c.%}u                  VerbSuffixI;    ! to be N
+
+
+!======================================================
+LEXICON VerbSuffixI
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that end in -a, -i, -u
+!======================================================
+
+                      VerbInflI;
+ 
+-aqe[V.V]:%^%{G%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+
+-lleqe[V.V]:%^lleqe   VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^naqe     VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^yug       VerbSuffixIII; ! to want to V
+
+
+!======================================================
+LEXICON VerbSuffixII
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that have final -e
+!======================================================
+
+                         VerbInflII;
+
+-aqe[V.V]:%^%{.f.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^%{.f.%}yug   VerbSuffixIII; ! to want to V
+
+
+!============================================================
+LEXICON VerbSuffixIV
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that end in -agh, -igh, -ugh 
+!  or -egh where e cannot be dropped
+!============================================================
+
+                     VerbInflIV;
+
+-aqe[V.V]:%^aqe      VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^lleqe  VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^naqe    VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^yug      VerbSuffixIII; ! to want to V
+
+
+!========================================================
+LEXICON VerbSuffixIII
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that end in -g, -w, -ghw
+!========================================================
+
+                     VerbInflIII;
+
+-aqe[V.V]:%^aqe      VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^lleqe  VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^naqe    VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^yug      VerbSuffixIII; ! to want to V
+
+
+!======================================================
+LEXICON VerbSuffixVI
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that have semi-final -e
+!  that can be hopped
+!======================================================
+
+                         VerbInflVI;
+
+-aqe[V.V]:%^%{.sf.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^naqe        VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^yug          VerbSuffixIII; ! to want to V
+
+
+!======================================================
+LEXICON VerbSuffixVII
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that have semi-final -e
+!  that can be dropped but not hopped
+!======================================================
+
+                         VerbInflVII;
+
+-aqe[V.V]:%^%{.sf.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^naqe        VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^yug          VerbSuffixIII; ! to want to V
+
+
+!======================================================
+LEXICON VerbSuffixV
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that end in -te
+!======================================================
+
+                             VerbInflV;
+
+-aqe[V.V]:%^%{.f.%}aqe       VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^%{.at.%}lleqe  VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^%{.at.%}naqe    VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^%{.at.%}yug      VerbSuffixIII; ! to want to V
+
+
+!=======================================================
 LEXICON NounInflI
 !  for noun roots that end in -a, -i, -u, -aa, -ii-, -uu
-!-------------------------------------------------------
+!=======================================================
 
-[Abs][Sg]:%^   #;
-[Abs][Pl]:%^t  #;
-[Abs][Du]:%^k  #;
+!---------------------------|
+!        ABSOLUTIVE         |
+!---------------------------|-----------------------------|------------------------------|
+[Abs][Sg]:%^               #; [Abs][Pl]:%^t              #; [Abs][Du]:%^k               #;
+!---------------------------|-----------------------------|------------------------------|
+[Abs][Sg][1SgPoss]:%^ka    #; [Abs][Pl][1SgPoss]:%^nka   #; [Abs][Du][1SgPoss]:%^gka    #;
+[Abs][Sg][1PlPoss]:%^vut   #; [Abs][Pl][1PlPoss]:%^put   #; [Abs][Du][1PlPoss]:%^gput   #;
+[Abs][Sg][1DuPoss]:%^vung  #; [Abs][Pl][1DuPoss]:%^pung  #; [Abs][Du][1DuPoss]:%^gpung  #;
+!---------------------------|-----------------------------|------------------------------|
+[Abs][Sg][2SgPoss]:%^n     #; [Abs][Pl][2SgPoss]:%^ten   #; [Abs][Du][2SgPoss]:%^gken   #;
+[Abs][Sg][2PlPoss]:%^zi    #; [Abs][Pl][2PlPoss]:%^si    #; [Abs][Du][2PlPoss]:%^gsi    #;
+[Abs][Sg][2DuPoss]:%^yek   #; [Abs][Pl][2DuPoss]:%^ten   #; [Abs][Du][2DuPoss]:%^gtek   #;
+!---------------------------|-----------------------------|------------------------------|
 
-[Abl.Mod][Sg]:%^meng  #;
+
+!---------------------------|
+!     ABLATIVE MODALIS      |
+!---------------------------|-----------------------------|------------------------------|
+[Abl.Mod][Sg]:%^meng       #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^gneng       #;
+!---------------------------|-----------------------------|------------------------------|
 
 
-!--------------------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^mi             #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^gni             #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^mun            #; [All][Pl]:%^nun            #; [All][Du]:%^gnun            #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Per][Sg]:%^kun            #; [Per][Pl]:%^tgun           #; [Per][Du]:%^gnegun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Equ][Sg]:%^tun            #; [Equ][Pl]:%^stun           #; [Equ][Du]:%^gestun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!==================================================
 LEXICON NounInflIX
 !  for noun roots that end in -e that can be hopped
-!--------------------------------------------------
+!==================================================
 
-[Abs][Sg]:%^   #;
-[Abs][Pl]:%^t  #;
-[Abs][Du]:%^k  #;
+!--------------------------------|
+!          ABSOLUTIVE            |
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k               #;
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka    #;
+[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput   #;
+[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung  #;
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken   #;
+                                   [Abs][Pl][2SgPoss]:%^%{.f.%}ten  #;
+[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi    #;
+[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek   #;
+!--------------------------------|-----------------------------------|------------------------------|
 
-[Abl.Mod][Sg]:%^%{.f.%}meng   #;
+
+!-----------------------------|
+!      ABLATIVE MODALIS       |
+!-----------------------------|-----------------------------|------------------------------|
+[Abl.Mod][Sg]:%^%{.f.%}meng  #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^gneng       #;
+!-----------------------------|-----------------------------|------------------------------|
 
 
-!----------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^%{.f.%}mi      #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^gni             #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^%{.f.%}mun     #; [All][Pl]:%^nun            #; [All][Du]:%^gnun            #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Per][Sg]:%^%{.f.%}kun     #; [Per][Pl]:%^tgun           #; [Per][Du]:%^gnegun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Equ][Sg]:%^%{.f.%}tun     #; [Equ][Pl]:%^stun           #; [Equ][Du]:%^gestun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!========================================
 LEXICON NounInflX
 !  for noun roots that end in final -e
 !      that can be dropped but not hopped
-!----------------------------------------
+!========================================
 
-[Abs][Sg]:%^   #;
-[Abs][Pl]:%^t  #;
-[Abs][Du]:%^k  #;
+!--------------------------------|
+!          ABSOLUTIVE            |
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k               #;
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka    #;
+[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput   #;
+[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung  #;
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken   #;
+                                   [Abs][Pl][2SgPoss]:%^%{.f.%}ten  #;
+[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi    #;
+[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek   #;
+!--------------------------------|-----------------------------------|------------------------------|
 
-[Abl.Mod][Sg]:%^%{.f.%}meng  #;
+
+!-----------------------------|
+!      ABLATIVE MODALIS       | 
+!-----------------------------|--------------------------------|------------------------------|
+[Abl.Mod][Sg]:%^%{.f.%}meng  #; [Abl.Mod][Pl]:%^%{.fL.%}neng  #; [Abl.Mod][Du]:%^gneng       #;
+!-----------------------------|--------------------------------|------------------------------|
 
 
-!-----------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^%{.f.%}mi      #; [Loc][Pl]:%^%{.fL.%}ni     #; [Loc][Du]:%^gni             #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^%{.f.%}mun     #; [All][Pl]:%^%{.fL.%}nun    #; [All][Du]:%^gnun            #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Per][Sg]:%^%{.f.%}kun     #; [Per][Pl]:%^tgun           #; [Per][Du]:%^gnegun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Equ][Sg]:%^%{.f.%}tun     #; [Equ][Pl]:%^stun           #; [Equ][Du]:%^gestun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!=========================================
 LEXICON NounInflII
 !  for noun roots that end in -g, -w, -ghw
-!-----------------------------------------
+!=========================================
 
-[Abs][Sg]:%^    #;
-[Abs][Pl]:%^et  #;
-[Abs][Du]:%^ek  #;
+!--------------------------------|
+!          ABSOLUTIVE            |
+!--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^et                    #; [Abs][Du]:%^ek               #;
+!--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.m.%}ka  #; [Abs][Pl][1SgPoss]:%^enka         #; [Abs][Du][1SgPoss]:%^egka    #;
+[Abs][Sg][1PlPoss]:%^put        #; [Abs][Pl][1PlPoss]:%^%{.m.%}put   #; [Abs][Du][1PlPoss]:%^egput   #;
+[Abs][Sg][1DuPoss]:%^pung       #; [Abs][Pl][1DuPoss]:%^%{.m.%}pung  #; [Abs][Du][1DuPoss]:%^egpung  #;
+!--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][2SgPoss]:%^en         #; [Abs][Pl][2SgPoss]:%^ten          #; [Abs][Du][2SgPoss]:%^egken   #;
+[Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^egsi    #;
+[Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^egtek   #;
+!--------------------------------|------------------------------------|-------------------------------|
 
-[Abl.Mod][Sg]:%^meng  #;
+
+!---------------------------|
+!     ABLATIVE MODALIS      |
+!---------------------------|-----------------------------|------------------------------|
+[Abl.Mod][Sg]:%^meng       #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^egneng      #;
+!---------------------------|-----------------------------|------------------------------|
 
 
-!--------------------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^mi             #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^egni            #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^mun            #; [All][Pl]:%^nun            #; [All][Du]:%^egnun           #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Per][Sg]:%^kun            #; [Per][Pl]:%^etgun          #; [Per][Du]:%^egnegun         #;
+                              [Per][Pl]:%^teggun         #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Equ][Sg]:%^tun            #; [Equ][Pl]:%^estun          #; [Equ][Du]:%^egestun         #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!==================================================
 LEXICON NounInflIV
 !  for noun roots that end in marked strong -gh (*)
-!--------------------------------------------------
+!==================================================
 
-[Abs][Sg]:%^        #;
-[Abs][Pl]:%^%{e%}t  #;
-[Abs][Du]:%^%{e%}k  #;
+!------------------------------------|
+!            ABSOLUTIVE              |
+!------------------------------------|----------------------------------------|------------------------------------------|
+[Abs][Sg]:%^                        #; [Abs][Pl]:%^%{.c.%}%{E%}t             #; [Abs][Du]:%^%{.c.%}%{E%}k               #;
+!------------------------------------|----------------------------------------|------------------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.m.%}ka      #; [Abs][Pl][1SgPoss]:%^%{.c.%}%{E%}nka  #; [Abs][Du][1SgPoss]:%^%{.c.%}%{E%}gka    #;
+[Abs][Sg][1PlPoss]:%^put            #; [Abs][Pl][1PlPoss]:%^%{.m.%}put       #; [Abs][Du][1PlPoss]:%^%{.c.%}%{E%}gput   #;
+[Abs][Sg][1DuPoss]:%^pung           #; [Abs][Pl][1DuPoss]:%^%{.m.%}pung      #; [Abs][Du][1DuPoss]:%^%{.c.%}%{E%}gpung  #;
+!------------------------------------|----------------------------------------|------------------------------------------|
+[Abs][Sg][2SgPoss]:%^%{.c.%}%{E%}n  #; [Abs][Pl][2SgPoss]:%^ten              #; [Abs][Du][2SgPoss]:%^%{.c.%}%{E%}gken   #;
+[Abs][Sg][2PlPoss]:%^si             #; [Abs][Pl][2PlPoss]:%^%{.m.%}si        #; [Abs][Du][2PlPoss]:%^%{.c.%}%{E%}gsi    #;
+[Abs][Sg][2DuPoss]:%^tek            #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek       #; [Abs][Du][2DuPoss]:%^%{.c.%}%{E%}gtek   #;
+!------------------------------------|----------------------------------------|------------------------------------------|
 
-[Abl.Mod][Sg]:%^meng  #;
+
+!---------------------------|
+!     ABLATIVE MODALIS      |
+!---------------------------|-----------------------------|-------------------------------------|
+[Abl.Mod][Sg]:%^meng       #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^%{.c.%}%{E%}gneng  #;
+!---------------------------|-----------------------------|-------------------------------------|
 
 
-!-----------------------------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|-------------------------------|
+[Loc][Sg]:%^mi             #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^%{.c.%}%{E%}gni  #;
+!---------------------------|-----------------------------|-------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|--------------------------------|
+[All][Sg]:%^mun            #; [All][Pl]:%^nun            #; [All][Du]:%^%{.c.%}%{E%}gnun  #;
+!---------------------------|-----------------------------|--------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|--------------------------------|----------------------------------|
+[Per][Sg]:%^kun            #; [Per][Pl]:%^%{.c.%}%{E%}tgun  #; [Per][Du]:%^%{.c.%}%{E%}gnegun  #;
+                              [Per][Pl]:%^teggun            #;
+!---------------------------|--------------------------------|----------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|--------------------------------|----------------------------------|
+[Equ][Sg]:%^tun            #; [Equ][Pl]:%^%{.c.%}%{E%}stun  #; [Equ][Du]:%^%{.c.%}%{E%}gestun  #;
+!---------------------------|--------------------------------|----------------------------------|
+
+
+!===========================================================
 LEXICON NounInflVII
 !  for noun roots that have semi-final -e that can be hopped
-!-----------------------------------------------------------
+!===========================================================
 
-[Abs][Sg]:%^          #;
-[Abs][Pl]:%^{.sf.}et  #;
-[Abs][Du]:%^{.sf.}ek  #;
+!----------------------------------------|
+!              ABSOLUTIVE                |
+!----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg]:%^                            #; [Abs][Pl]:%^%{.sf.%}et             #; [Abs][Du]:%^%{.sf.%}ek               #;
+!----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.sf.%}%{.m.%}ka  #; [Abs][Pl][1SgPoss]:%^%{.sf.%}enka  #; [Abs][Du][1SgPoss]:%^%{.sf.%}egka    #;
+[Abs][Sg][1PlPoss]:%^put                #; [Abs][Pl][1PlPoss]:%^%{.m.%}put    #; [Abs][Du][1PlPoss]:%^%{.sf.%}egput   #;
+[Abs][Sg][1DuPoss]:%^pung               #; [Abs][Pl][1DuPoss]:%^%{.m.%}pung   #; [Abs][Du][1DuPoss]:%^%{.sf.%}egpung  #;
+!----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg][2SgPoss]:%^%{.sf.%}en         #; [Abs][Pl][2SgPoss]:%^ten           #; [Abs][Du][2SgPoss]:%^%{.sf.%}egken   #;
+[Abs][Sg][2PlPoss]:%^si                 #; [Abs][Pl][2PlPoss]:%^%{.m.%}si     #; [Abs][Du][2PlPoss]:%^%{.sf.%}egsi    #;
+[Abs][Sg][2DuPoss]:%^tek                #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek    #; [Abs][Du][2DuPoss]:%^%{.sf.%}egtek   #;
+!----------------------------------------|-------------------------------------|---------------------------------------|
 
-[Abl.Mod][Sg]:%^meng  #;
+
+!---------------------------|
+!     ABLATIVE MODALIS      |
+!---------------------------|-----------------------------|----------------------------------|
+[Abl.Mod][Sg]:%^meng       #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^%{.sf.%}egneng  #;
+!---------------------------|-----------------------------|----------------------------------|
 
 
-!---------------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^mi             #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^%{.sf.%}egni    #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^mun            #; [All][Pl]:%^nun            #; [All][Du]:%^%{.sf.%}egnun   #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|-------------------------------|
+[Per][Sg]:%^kun            #; [Per][Pl]:%^%{.sf.%}etgun  #; [Per][Du]:%^%{.sf.%}egnegun  #;
+!---------------------------|-----------------------------|-------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|-------------------------------|
+[Equ][Sg]:%^tun            #; [Equ][Pl]:%^%{.sf.%}estun  #; [Equ][Du]:%^%{.sf.%}egestun  #;
+!---------------------------|-----------------------------|-------------------------------|
+
+
+!========================================
 LEXICON NounInflVIII
 !  for noun roots that have semi-final -e
-!           that can be dropped but not hopped
-!---------------------------------------------
+!  that can be dropped but not hopped
+!========================================
 
-[Abs][Sg]:%^            #;
-[Abs][Pl]:%^%{.sf.%}et  #;
-[Abs][Du]:%^%{.sf.%}ek  #;
+!----------------------------------------|
+!              ABSOLUTIVE                |
+!----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg]:%^                            #; [Abs][Pl]:%^%{.sf.%}et             #; [Abs][Du]:%^%{.sf.%}ek               #;
+!----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.sf.%}%{.m.%}ka  #; [Abs][Pl][1SgPoss]:%^%{.sf.%}enka  #; [Abs][Du][1SgPoss]:%^%{.sf.%}egka    #;
+[Abs][Sg][1PlPoss]:%^put                #; [Abs][Pl][1PlPoss]:%^%{.m.%}put    #; [Abs][Du][1PlPoss]:%^%{.sf.%}egput   #;
+[Abs][Sg][1DuPoss]:%^pung               #; [Abs][Pl][1DuPoss]:%^%{.m.%}pung   #; [Abs][Du][1DuPoss]:%^%{.sf.%}egpung  #;
+!----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg][2SgPoss]:%^%{.sf.%}en         #; [Abs][Pl][2SgPoss]:%^ten           #; [Abs][Du][2SgPoss]:%^%{.sf.%}egken   #;
+[Abs][Sg][2PlPoss]:%^si                 #; [Abs][Pl][2PlPoss]:%^%{.m.%}si     #; [Abs][Du][2PlPoss]:%^%{.sf.%}egsi    #;
+[Abs][Sg][2DuPoss]:%^tek                #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek    #; [Abs][Du][2DuPoss]:%^%{.sf.%}egtek   #;
+!----------------------------------------|-------------------------------------|---------------------------------------|
 
-[Abl.Mod][Sg]:%^meng  #;
+
+!---------------------------|
+!     ABLATIVE MODALIS      |
+!---------------------------|-----------------------------|----------------------------------|
+[Abl.Mod][Sg]:%^meng       #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^%{.sf.%}egneng  #;
+!---------------------------|-----------------------------|----------------------------------|
 
 
-!-------------------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^mi             #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^%{.sf.%}egni    #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^mun            #; [All][Pl]:%^nun            #; [All][Du]:%^%{.sf.%}egnun   #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!          VIALIS           |
+!---------------------------|-----------------------------|-------------------------------|
+[Per][Sg]:%^kun            #; [Per][Pl]:%^%{.sf.%}etgun  #; [Per][Du]:%^%{.sf.%}egnegun  #;
+!---------------------------|-----------------------------|-------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|-------------------------------|
+[Equ][Sg]:%^tun            #; [Equ][Pl]:%^%{.sf.%}estun  #; [Equ][Du]:%^%{.sf.%}egestun  #;
+!---------------------------|-----------------------------|-------------------------------|
+
+
+!=================================================
 LEXICON NounInflV
 !  for noun roots that end in strong -gh:
 !      -aagh, -iigh, -uugh
 !      -egh where e-dropping is not possible
 !      (would result in a three-consonant cluster)
-!-------------------------------------------------
+!=================================================
 
-[Abs][Sg]:%^    #;
-[Abs][Pl]:%^et  #;
-[Abs][Du]:%^ek  #;
+!--------------------------------|
+!          ABSOLUTIVE            |
+!--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^et                    #; [Abs][Du]:%^ek               #;
+!--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.m.%}ka  #; [Abs][Pl][1SgPoss]:%^enka         #; [Abs][Du][1SgPoss]:%^egka    #;
+[Abs][Sg][1PlPoss]:%^put        #; [Abs][Pl][1PlPoss]:%^%{.m.%}put   #; [Abs][Du][1PlPoss]:%^egput   #;
+[Abs][Sg][1DuPoss]:%^pung       #; [Abs][Pl][1DuPoss]:%^%{.m.%}pung  #; [Abs][Du][1DuPoss]:%^egpung  #;
+!--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][2SgPoss]:%^en         #; [Abs][Pl][2SgPoss]:%^ten          #; [Abs][Du][2SgPoss]:%^egken   #;
+[Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^egsi    #;
+[Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^egtek   #;
+!--------------------------------|------------------------------------|-------------------------------|
 
-[Abl.Mod][Sg]:%^meng  #;
+
+!---------------------------|
+!     ABLATIVE MODALIS      |
+!---------------------------|-----------------------------|------------------------------|
+[Abl.Mod][Sg]:%^meng       #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^egneng      #;
+!---------------------------|-----------------------------|------------------------------|
 
 
-!--------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^mi             #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^egni            #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^mun            #; [All][Pl]:%^nun            #; [All][Du]:%^egnun           #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Per][Sg]:%^kun            #; [Per][Pl]:%^etgun          #; [Per][Du]:%^egnegun         #;
+                              [Per][Pl]:%^teggun         #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Equ][Sg]:%^tun            #; [Equ][Pl]:%^estun          #; [Equ][Du]:%^egestun         #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!================================
 LEXICON NounInflVI
 !  for noun roots that end in -te
-!--------------------------------
+!================================
 
-[Abs][Sg]:%^   #;
-[Abs][Pl]:%^t  #;
-[Abs][Du]:%^k  #;
+!--------------------------------|
+!          ABSOLUTIVE            |
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k               #;
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka    #;
+[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput   #;
+[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung  #;
+!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken   #;
+                                   [Abs][Pl][2SgPoss]:%^%{.f.%}ten  #;
+[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi    #;
+[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^ten         #; [Abs][Du][2DuPoss]:%^gtek   #;
+!--------------------------------|-----------------------------------|------------------------------|
 
-[Abl.Mod][Sg]:%^%{.f.%}meng  #;
+
+!-----------------------------|
+!      ABLATIVE MODALIS       |
+!-----------------------------|--------------------------------|------------------------------|
+[Abl.Mod][Sg]:%^%{.f.%}meng  #; [Abl.Mod][Pl]:%^%{.fL.%}neng  #; [Abl.Mod][Du]:%^gneng       #;
+!-----------------------------|--------------------------------|------------------------------|
 
 
-!-------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^%{.f.%}mi      #; [Loc][Pl]:%^%{.fL.%}ni     #; [Loc][Du]:%^gni             #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^%{.f.%}mun     #; [All][Pl]:%^%{.fL.%}nun    #; [All][Du]:%^gnun            #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Per][Sg]:%^%{.f.%}kun     #; [Per][Pl]:%^tgun           #; [Per][Du]:%^gnegun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Equ][Sg]:%^%{.f.%}tun     #; [Equ][Pl]:%^stun           #; [Equ][Du]:%^gestun          #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!=====================================
 LEXICON NounInflIII
 !  for noun roots that end in weak -gh
-!-------------------------------------
+!=====================================
 
-[Abs][Sg]:%^          #;
-[Abs][Pl]:%^%{.w.%}t  #;
-[Abs][Du]:%^%{.w.%}k  #;
+!--------------------------------|
+!          ABSOLUTIVE            |
+!--------------------------------|------------------------------------|-------------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^%{.w.%}t              #; [Abs][Du]:%^{%.w.%}k               #;
+!--------------------------------|------------------------------------|-------------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.m.%}ka  #; [Abs][Pl][1SgPoss]:%^%{.w.%}nka   #; [Abs][Du][1SgPoss]:%^%{.w.%}gka    #;
+[Abs][Sg][1PlPoss]:%^put        #; [Abs][Pl][1PlPoss]:%^%{.m.%}put   #; [Abs][Du][1PlPoss]:%^%{.w.%}gput   #;
+[Abs][Sg][1DuPoss]:%^pung       #; [Abs][Pl][1DuPoss]:%^%{.m.%}pung  #; [Abs][Du][1DuPoss]:%^%{.w.%}gpung  #;
+!--------------------------------|------------------------------------|-------------------------------------|
+[Abs][Sg][2SgPoss]:%^%{.w.%}n   #; [Abs][Pl][2SgPoss]:%^ten          #; [Abs][Du][2SgPoss]:%^%{.w.%}gken   #;
+                                   [Abs][Pl][2SgPoss]:%^%{.w.%}ten   #;
+[Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^%{.w.%}gsi    #;
+[Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^%{.w.%}gtek   #;
+!--------------------------------|------------------------------------|-------------------------------------|
 
-[Abl.Mod][Sg]:%^%{.w.%}meng  #;
+
+!-----------------------------|
+!      ABLATIVE MODALIS       |
+!-----------------------------|-------------------------------|--------------------------------|
+[Abl.Mod][Sg]:%^%{.w.%}meng  #; [Abl.Mod][Pl]:%^%{.w.%}neng  #; [Abl.Mod][Du]:%^%{.w.%}gneng  #;
+!-----------------------------|-------------------------------|--------------------------------|
 
 
-!---------------------------------------
+!---------------------------|
+!    LOCATIVE (localis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Loc][Sg]:%^%{.w.%}mi      #; [Loc][Pl]:%^%{.w.%}ni      #; [Loc][Du]:%^%{.w.%}gni      #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!   ALLATIVE (terminalis)   |
+!---------------------------|-----------------------------|------------------------------|
+[All][Sg]:%^%{.w.%}mun     #; [All][Pl]:%^%{.w.%}nun     #; [All][Du]:%^%{.w.%}gnun     #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    PERLATIVE (vialis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Per][Sg]:%^%{.w.%}kun     #; [Per][Pl]:%^%{.w.%}tgun    #; [Per][Du]:%^%{.w.%}gnegun   #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!---------------------------|
+!    EQUATIVE (equalis)     |
+!---------------------------|-----------------------------|------------------------------|
+[Equ][Sg]:%^%{.w.%}tun     #; [Equ][Pl]:%^%{.w.%}stun    #; [Equ][Du]:%^%{.w.%}gestun   #;
+!---------------------------|-----------------------------|------------------------------|
+
+
+!=======================================
 LEXICON VerbInflI
 !  for verb roots that end in -a, -i, -u
-!---------------------------------------
+!=======================================
 
-[Intr][Ind]:%^ugh  IntrIndPtcp;
+[Intr][Ind]:%^%{G%}ugh  IntrIndPtcp;
 
 
 !-------------------------------------
@@ -442,60 +1279,61 @@ LEXICON VerbInflII
 !-------------------------------------
 
 [Intr][Ind]:%^gugh  IntrIndPtcp;
-!---------------------------------
-LEXICON VerbInflVIII
+!=================================
+LEXICON VerbInflII
 !  for verbs that end in -final -e
-!---------------------------------
+!=================================
 
 [Intr][Ind]:%^%{.f.%}ugh  IntrIndPtcp;
 
 
-!---------------------------------------------
+!=============================================
 LEXICON VerbInflIV
 !  for verb roots that end in -agh, -igh, -ugh
-!---------------------------------------------
+!  or -egh where e cannot be dropped
+!=============================================
 
 [Intr][Ind]:%^tugh  IntrIndPtcp;
 
 
-!------------------------------------
+!====================================
 LEXICON VerbInflIII
 !  for verbs that end in -g, -w, -ghw 
-!------------------------------------
+!====================================
 
 [Intr][Ind]:%^tugh  IntrIndPtcp;
-!---------------------------------------
+!=======================================
 LEXICON VerbInflVI
 !  for verbs that end in semi-final -e
 !                     that can be hopped
-!---------------------------------------
+!=======================================
 
 [Intr][Ind]:%^tugh  IntrIndPtcp;
 
 
-!----------------------------------------
+!========================================
 LEXICON VerbInflVII
 !  for verbs that end in semi-final -e
 !      that can be dropped but not hopped
-!----------------------------------------
+!========================================
 
 [Intr][Ind]:%^tugh  IntrIndPtcp;
 
 
-!-------------------------------------
+!=====================================
 LEXICON VerbInflV
 !  for verbs that end in -aa, -ii, -uu
-!-------------------------------------
+!=====================================
 
 [Intr][Ind]:%^%{.f.%}ugh  IntrIndPtcp;
 
 
-!-----------------------------
+!=============================
 LEXICON IntrIndPtcp
 !  person/number markers for
 !     intransitive indicative
 !     intransitive participial
-!-----------------------------
+!=============================
 
 [3Sg]:%^          #;    [1Sg]:%^%{.m.%}nga   #;    [2Sg]:%^%{.m.%}ten  #;
 [3Pl]:%^%{.m.%}t  #;    [1Pl]:%^%{.m.%}kut   #;    [2Pl]:%^%{.m.%}si   #;
