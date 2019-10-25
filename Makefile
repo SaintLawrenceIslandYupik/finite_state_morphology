@@ -1,4 +1,4 @@
-all: clean test-ch2 test-ch4
+all: clean test
 	ls | cat lexc-files/header.txt lexc-files/particles.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt > ess.lexc
 
 

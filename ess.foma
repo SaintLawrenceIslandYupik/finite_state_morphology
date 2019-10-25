@@ -64,13 +64,16 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define DropFinalC g h -> g   || g     "^" %{%.m%.%} _               .o. ! assimilate gh- onset to dropped -g
-                  g h -> w h || w     "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
-                  g h -> w   || w     "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
-                  g h -> w   || g h w "^" %{%.m%.%} _               .o. ! assimilate gh- onset to dropped -ghw
-                    C -> 0   ||                     _ "^" %{%.m%.%} .o. ! drop root-final consonant
-        [ g | %{g%} ] -> 0   ||                     _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh 
-            %{%.m%.%} -> 0                                          ;
+define DropFinalC g h -> g     || g       "^" %{%.m%.%} _               .o. ! assimilate gh- onset to dropped -g
+                  g h -> g h w || g h w   "^" %{%.m%.%} _               .o. ! assimilate gh- onset to dropped -ghw
+                  g h -> w h   || %{k%} w "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
+                  g h -> w     || %{k%} w "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
+				    k -> q w   || g h w   "^" %{%.m%.%} _               .o. ! assimilate k-  onset to dropped -ghw
+				    k -> q     || g h     "^" %{%.m%.%} _               .o. ! assimilate k-  onset to dropped -gh
+				    k -> k w   || w       "^" %{%.m%.%} _               .o. ! assimilate k-  onset to dropped -w
+                    C -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop root-final consonant
+  [ g | %{g%} ] ( h ) -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
+            %{%.m%.%} -> 0                                              ;
 
 define VowelDominance a i -> i i  .o.
                       i a -> i i  .o.
