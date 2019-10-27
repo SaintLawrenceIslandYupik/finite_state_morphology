@@ -1,0 +1,15 @@
+!======================================================
+LEXICON VerbSuffixV
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that end in -te
+!======================================================
+
+                             VerbInflV;
+
+-aqe[V.V]:%^%{.f.%}aqe       VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^%{.at.%}lleqe  VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^%{.at.%}naqe    VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^%{.at.%}yug      VerbSuffixIII; ! to want to V
+
+

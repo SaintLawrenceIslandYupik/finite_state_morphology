@@ -1,5 +1,5 @@
 all: clean test
-	cat lexc-files/header.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt > ess.lexc
+	ls | cat lexc-files/header.txt lexc-files/particles.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt > ess.lexc
 
 
 ess.fomabin: ess.foma *.lexc

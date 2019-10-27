@@ -1,0 +1,16 @@
+!======================================================
+LEXICON VerbSuffixVI
+!  verb-elaborating [VV] and nominalizing [VN] suffixes
+!  when suffixing to verb roots that have semi-final -e
+!  that can be hopped
+!======================================================
+
+                         VerbInflVI;
+
+-aqe[V.V]:%^%{.sf.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
+-naqe[V.V]:%^naqe        VerbSuffixII;  ! to be going to V, to be about to V
+
+-yug[V.V]:%^yug          VerbSuffixIII; ! to want to V
+
+
