@@ -19,7 +19,7 @@ define Lexicon
 ! SETS 
 !======
 
-define C         [ f | g | h | k | l | m | n | p | q | r | s | t | v | w | y | z ] ;
+define C         [ f | g | h | k | l | m | n | p | q | r | s | t | v | w | y | z | %{t%} | %{g%} | %{k%}] ;
 define FullVowel                                                     [ a | i | u ] ;
 define V                                                         [ e | FullVowel ] ;
 
@@ -28,11 +28,9 @@ define V                                                         [ e | FullVowel
 ! RULES
 !=======
 
-define HopSemiFinalE a -> a a || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o. ! Lengthen a full vowel when semi-final e is dropped (e hopping)
-                     i -> i i || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
-                     u -> u u || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
-                     e -> 0   ||     V C _ g (h)     "^" %{%.sf%.%} .o. 
-            %{%.sf%.%} -> 0                                         ;
+define HopSemiFinalE [..] -> e || .#. (C) (C) FullVowel _ C e g (h) "^" %{%.sf%.%} .o. ! Insert an e to lengthen a full vowel when semi-final e is dropped (e hopping)
+                        e -> 0 ||               V C _ g (h)     "^" %{%.sf%.%} .o. ! VowelDominance will apply later
+               %{%.sf%.%} -> 0                                                     ;
 
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
                %{%.w%.%} -> 0                    ;
@@ -45,6 +43,21 @@ define DropUvular g h -> 0   || (C) FullVowel _ "^" %{e%} .o. ! Drop the uvular 
 define AddE %{e%} -> e || C "^" _ .o.
             %{e%} -> 0 || V "^" _ ;
 
+define HopFinalE  %{%.f%.%} -> 0 ||             C C e "^" _ C                  .o. ! Do not drop and hop the final e if that leads to a cluster of thress consonats
+                       [..] -> e || .#. (C) (C) FullVowel _ C e  "^" %{%.f%.%} .o. ! Insert an e to lengthen a full vowel when final e is dropped (e hopping)
+                          e -> 0 ||                       _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
+                  %{%.f%.%} -> 0                                                   ;
+
+
+define VowelDominance a ("^") i -> i i .o.
+                      i ("^") a -> i i .o.
+                      u ("^") i -> i i .o.
+                      i ("^") u -> i i .o.
+                      a ("^") u -> a a .o.
+                      u ("^") a -> a a .o.
+                      a ("^") e -> a a .o. ! Handle e happing
+                      i ("^") e -> i i .o.
+                      u ("^") e -> u u ;
 
 !================
 ! CLEAN-UP RULES
@@ -60,7 +73,7 @@ define BaseFinalEndings %{t%} e -> n   ||               V _ "^" .#.     ,   ! Ja
 
 define CleanupDigraph %{k%} -> 0   .o. 
                     %{g%} h -> g h .o.
-                    %{t%} e -> t e ;
+                      %{t%} -> t   ;
 
 define CleanupMorphBoundary "^" -> 0 ;
 
@@ -74,6 +87,8 @@ define Rules [
     DropWeakC .o.
     DropUvular .o.
     AddE .o.
+    HopFinalE .o.
+    VowelDominance .o.
     BaseFinalEndings .o. 
     CleanupDigraph .o.
     CleanupMorphBoundary
