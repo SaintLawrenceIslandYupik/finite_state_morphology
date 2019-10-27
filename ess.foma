@@ -19,61 +19,95 @@ define Lexicon
 ! SETS 
 !======
 
-define C         [ f | g | h | k | l | m | n | p | q | r | s | t | v | w | y | z | %{t%} | %{g%} | %{k%}] ;
-define FullVowel                                                     [ a | i | u ] ;
-define V                                                         [ e | FullVowel ] ;
+define C         [ f | g | h | k | l | m |
+                   n | p | q | r | s | t |
+                   v | w | y | z ] ;
+
+define VoicedC   [ g h w | g h |
+                   v | l | z   | y | r | g | w |
+                   m | n | n g | n g w ] ;
+
+define UnvoicedC [ p   | t   | k   | q   |
+                   k w | q w |
+                   f   | s   | h   |
+                   l l | r r | g g | w h | g h h | g h h w | 
+                   m m | n n | n g n g   | n g n g w ] ;
+
+define FullVowel [ a | i | u ]     ;
+define V         [ e | FullVowel ] ;
 
 
 !=======
 ! RULES
 !=======
 
-define HopSemiFinalE [..] -> e || .#. (C) (C) FullVowel _ C e g (h) "^" %{%.sf%.%} .o. ! Insert an e to lengthen a full vowel when semi-final e is dropped (e hopping)
-                        e -> 0 ||               V C _ g (h)     "^" %{%.sf%.%} .o. ! VowelDominance will apply later
-               %{%.sf%.%} -> 0                                                     ;
+define HopSemiFinalE a -> a a || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o. ! Lengthen a full vowel when semi-final e is dropped (e hopping)
+                     i -> i i || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
+                     u -> u u || .#. (C) _ C e g (h) "^" %{%.sf%.%} .o.
+                     e -> 0   || [ ? - C ] C _ g (h) "^" %{%.sf%.%} .o. ! -e cannot drop if it would lead to a three-consonant cluster
+            %{%.sf%.%} -> 0                                         ;
+
 
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
                %{%.w%.%} -> 0                    ;
 
-define DropUvular g h -> 0   || (C) FullVowel _ "^" %{e%} .o. ! Drop the uvular gh between two single vowels in case of adding (e) 
-                    a -> a a ||           (C) _ "^" %{e%} .o.
-                    i -> i i ||           (C) _ "^" %{e%} .o.
-                    u -> u u ||           (C) _ "^" %{e%} ;
 
-define AddE %{e%} -> e || C "^" _ .o.
-            %{e%} -> 0 || V "^" _ ;
-
-define HopFinalE  %{%.f%.%} -> 0 ||             C C e "^" _ C                  .o. ! Do not drop and hop the final e if that leads to a cluster of thress consonats
-                       [..] -> e || .#. (C) (C) FullVowel _ C e  "^" %{%.f%.%} .o. ! Insert an e to lengthen a full vowel when final e is dropped (e hopping)
-                          e -> 0 ||                       _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
-                  %{%.f%.%} -> 0                                                   ;
+define DropUvular %{g%} h -> 0   || (C) FullVowel _ "^" %{%.c%.%} [ FullVowel | %{E%} ] .o. ! Drop the uvular -gh between two single vowels
+                      g h -> 0   || (C) FullVowel _ "^" %{%.c%.%} [ FullVowel | %{E%} ] .o. ! where the second vowel can be a full vowel
+                %{%.c%.%} -> 0                                                          ;   ! or the allomorph {E}
 
 
-define VowelDominance a ("^") i -> i i .o.
-                      i ("^") a -> i i .o.
-                      u ("^") i -> i i .o.
-                      i ("^") u -> i i .o.
-                      a ("^") u -> a a .o.
-                      u ("^") a -> a a .o.
-                      a ("^") e -> a a .o. ! Handle e happing
-                      i ("^") e -> i i .o.
-                      u ("^") e -> u u ;
+define AddE %{E%} -> a || a "^" _ .o.
+            %{E%} -> i || i "^" _ .o.
+            %{E%} -> u || u "^" _ .o.
+            %{E%} -> e || C "^" _ .o.
+            %{E%} -> 0            ;
 
-!================
+
+define DropFinalC g h -> g     || g       "^" %{%.m%.%} _               .o. ! assimilate gh- onset to dropped -g
+                  g h -> g h w || g h w   "^" %{%.m%.%} _               .o. ! assimilate gh- onset to dropped -ghw
+                  g h -> w h   || %{k%} w "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
+                  g h -> w     || %{k%} w "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
+				    k -> q w   || g h w   "^" %{%.m%.%} _               .o. ! assimilate k-  onset to dropped -ghw
+				    k -> q     || g h     "^" %{%.m%.%} _               .o. ! assimilate k-  onset to dropped -gh
+				    k -> k w   || w       "^" %{%.m%.%} _               .o. ! assimilate k-  onset to dropped -w
+                    C -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop root-final consonant
+  [ g | %{g%} ] ( h ) -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
+            %{%.m%.%} -> 0                                              ;
+
+define VowelDominance a i -> i i  .o.
+                      i a -> i i  .o.
+                      u i -> i i  .o.
+                      i u -> i i  .o. 
+                      a u -> a a  .o. 
+                      u a -> a a  ;
+
+
+!-------------------
+! ALLOMORPHY RULES
+!-------------------
+
+define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
+                %{G%} -> 0                                    ;
+
+
+!----------------
 ! CLEAN-UP RULES
-!================
+!----------------
 
-define BaseFinalEndings %{t%} e -> n   ||               V _ "^" .#.     ,   ! Jacobson 2.2.1 Words and Bases
+define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,   ! Jacobson 2.2.1 Words and Bases
                         %{t%} e -> t a                                  .o. 
-                              e -> a   ||                 _ "^" .#.     .o. 
-                              w -> k w || [C - h | %{k%}] _ "^" .#.     .o. 
+                              e -> a   ||                 _     "^" .#. .o. 
+                              w -> k w || [C - h | %{k%}] _     "^" .#. .o. 
                             g h -> q   ||                 _ (w) "^" .#. .o.
-                        %{g%} h -> q   ||                 _ "^" .#.     .o.  
-                              g -> k   ||                 _ "^" .#.     ;
+                        %{g%} h -> q   ||                 _     "^" .#. .o.  
+                              g -> k   ||                 _     "^" .#. ;
 
-define CleanupDigraph %{k%} -> 0   .o. 
-                    %{g%} h -> g h .o.
-                      %{t%} -> t   ;
+
+define CleanupDigraph %{k%}   -> 0   .o. 
+                      %{g%} h -> g h .o.
+                      %{t%} e -> t e ;
+
 
 define CleanupMorphBoundary "^" -> 0 ;
 
@@ -83,15 +117,16 @@ define CleanupMorphBoundary "^" -> 0 ;
 !==============
 
 define Rules [
-    HopSemiFinalE .o.
-    DropWeakC .o.
-    DropUvular .o.
-    AddE .o.
-    HopFinalE .o.
-    VowelDominance .o.
-    BaseFinalEndings .o. 
-    CleanupDigraph .o.
-    CleanupMorphBoundary
+    HopSemiFinalE        .o.
+    DropWeakC            .o.
+    DropUvular           .o.
+    AddE                 .o.
+    DropFinalC           .o.
+    ResolveG             .o.
+    BaseFinalEndings     .o. 
+    CleanupDigraph       .o.
+    CleanupMorphBoundary .o.
+	VowelDominance
 ];
 
 define Grammar [ Exceptions .P. [ Lexicon .o. Rules ] ] ;
