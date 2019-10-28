@@ -307,14 +307,6 @@ umughqaa       VerbSuffixI; ! to have sleep paralysis
 
 
 
-!-----------------------
-LEXICON VerbRootII
-!  end in -aa, -ii, -uu
-!-----------------------
-
-aqii  VerbInflII;  ! to take a pleasure trip; to take a vacation
-
-
 !=================
 LEXICON VerbRootII
 !  has final -e
@@ -1273,12 +1265,6 @@ LEXICON VerbInflI
 [Intr][Ind]:%^%{G%}ugh  IntrIndPtcp;
 
 
-!-------------------------------------
-LEXICON VerbInflII
-!  for verbs that end in -aa, -ii, -uu
-!-------------------------------------
-
-[Intr][Ind]:%^gugh  IntrIndPtcp;
 !=================================
 LEXICON VerbInflII
 !  for verbs that end in -final -e
