@@ -107,13 +107,6 @@ define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
 ! CLEAN-UP RULES
 !----------------
 
-define DevoiceClusters y -> s || _ k ;
-
-
-!----------------
-! CLEAN-UP RULES
-!----------------
-
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,   ! Jacobson 2.2.1 Words and Bases
                         %{t%} e -> t a                                  .o. 
                               e -> a   ||                 _     "^" .#. .o. 
@@ -129,6 +122,8 @@ define CleanupDigraph %{k%}   -> 0   .o.
 
 
 define CleanupMorphBoundary "^" -> 0 ;
+
+define DevoiceClusters y -> s || _ k ;
 
 
 !==============
@@ -146,8 +141,8 @@ define Rules [
     BaseFinalEndings     .o. 
     CleanupDigraph       .o.
     CleanupMorphBoundary .o.
-	VowelDominance       .o.
-	DevoiceClusters
+	  VowelDominance       .o.
+	  DevoiceClusters
 ];
 
 define Grammar [ Exceptions .P. [ Lexicon .o. Rules ] ] ;
