@@ -116,16 +116,18 @@ ugi       NounSuffixI;  ! husband
 uupa      NounSuffixI;  !"sea peach" (Halocynthia aurantia)
 yavlu     NounSuffixI;  ! sweetheart
 yaywaali  NounSuffixI;  ! orphan
-
-
+ila       NounSuffixI;  ! relative; associate; part; one or some (of)
+lalala    NounSuffixI;  ! dew
+mesuuna   NounSuffixI;  ! hairbrush; comb
 !==============================
 LEXICON NounRootIX
 !  end in -e that can be hopped
 !==============================
 
 iye   NounSuffixIX;  ! eye
-tume  NounSuffixIX;  ! footprint
-
+tume  NounSuffixIX;  ! track, footprint; trail
+paye  NounSuffixIX;  ! mouth (non-anatomical); hatch of kayak
+qaye  NounSuffixIX;  ! surface; top
 
 !=====================================
 LEXICON NounRootX
@@ -140,6 +142,8 @@ tepe       NounSuffixX;  ! odor
 
 Laluramke  NounSuffixX;  ! white person; Caucasian
 
+Karake     NounSuffixX;  ! Koryak
+
 
 !=====================
 LEXICON NounRootII
@@ -150,7 +154,7 @@ aqavzig     NounSuffixII;  ! salmonberry, cloudberry
 atkug       NounSuffixII;  ! parka
 igaghvig    NounSuffixII;  ! school
 iqallug     NounSuffixII;  ! fish
-manig       NounSuffixII;  ! egg
+manig       NounSuffixII;  ! bird's egg
 nayag       NounSuffixII;  ! sister of a male
 nunivag     NounSuffixII;  ! rosewort plant
 panig       NounSuffixII;  ! daughter
@@ -171,6 +175,11 @@ kiiw:kii%{k%}w  NounSuffixII;  ! river
 
 qiighw  NounSuffixII;  ! gray hair; cough
 saaghw  NounSuffixII;  ! side
+
+nunivag      NounSuffixII; ! rosewort plant (Sedum rosea), locally greens; tundra
+asag         NounSuffixII; ! paternal aunt
+tengegkayug  NounSuffixII; ! airplane (plural, tengegkayuget, often used for one airplane)
+walguyaag    NounSuffixII; ! snowshoe
 
 
 !==============================
@@ -209,6 +218,8 @@ kameg   NounSuffixVII;  ! skin boot, mukluk
 papeg   NounSuffixVII;  ! tail
 qanegh  NounSuffixVII;  ! mouth (anatomical)
 taqegh  NounSuffixVII;  ! vein
+papeg   NounSuffixVII;  ! tail
+qanegh  NounSuffixVII;  ! mouth (anatomical)
 
 
 !=======================================
@@ -221,6 +232,7 @@ aliinegh   NounSuffixVIII;  ! clear, calm day
 kemeg      NounSuffixVIII;  ! flesh; skin
 ughluvegh  NounSuffixVIII;  ! bow
 yaquleg    NounSuffixVIII;  ! angel
+siqinegh   NounSuffixVIII;  ! sun
 
 
 !================================================================
@@ -230,19 +242,22 @@ LEXICON NounRootV
 !                     (would result in a three-consonant cluster)
 !================================================================
 
-aghnegh      NounSuffixV;  ! day
-aghvegh      NounSuffixV;  ! whale
-ayvegh       NounSuffixV;  ! walrus
-ighnegh      NounSuffixV;  ! son
-kaviigh      NounSuffixV;  ! fox
-kiigh        NounSuffixV;  ! summer
-mekelghiigh  NounSuffixV;  ! boy
-neghqwaagh   NounSuffixV;  ! bone
-nuliigh      NounSuffixV;  ! wife
-seghlegh     NounSuffixV;  ! bad thing
-ulaagh       NounSuffixV;  ! semi-lunar knife; woman's knife; ulu
-ulghaagh     NounSuffixV;  ! sea lion
-vegaagh      NounSuffixV;  ! grass
+aghnegh        NounSuffixV;  ! day
+aghvegh        NounSuffixV;  ! whale
+ayvegh         NounSuffixV;  ! walrus
+ighnegh        NounSuffixV;  ! son
+kaviigh        NounSuffixV;  ! fox
+kiigh          NounSuffixV;  ! summer
+mekelghiigh    NounSuffixV;  ! boy
+neghqwaagh     NounSuffixV;  ! bone
+nuliigh        NounSuffixV;  ! wife
+seghlegh       NounSuffixV;  ! bad thing
+ulaagh         NounSuffixV;  ! semi-lunar knife; woman's knife; ulu
+ulghaagh       NounSuffixV;  ! sea lion
+vegaagh        NounSuffixV;  ! grass
+aghnalqwaagh   NounSuffixV; ! old lady
+ighaleqetaagh  NounSuffixV; ! star
+siivanllegh    NounSuffixV; ! elder
 
 
 !=================
@@ -259,6 +274,8 @@ yughaghte:yughagh%{t%}e    NounSuffixVI;  ! minister, clergyman
 ! POSSIBLE e-HOPPING
 ggute:ggu%{t%}e            NounSuffixVI; ! tooth
 
+apeghtughiste  NounSuffixVI; ! teacher
+Yupigestute    NounSuffixVI; ! in the Yupik language (inflected form)
 
 !==================
 LEXICON NounRootIII
@@ -287,6 +304,17 @@ uqugh:uqu%{g%}h              NounSuffixIII;  ! fat; blubber
 
 Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)
 
+akuutagh:akuuta%{g%}h        NounSuffixIII; ! mixture of berries, seal oil, sugar etc., "Eskimo ice cream"
+alangqugh:alangqu%{g%}h      NounSuffixIII; ! ring finger
+nulugh:nulu%{g%}h            NounSuffixIII; ! tea bag
+pengugh:pengu%{g%}h          NounSuffixIII; ! mound
+qagugh:qagu%{g%}h            NounSuffixIII; ! forehead
+qayugh:qayu%{g%}h            NounSuffixIII; ! tea; broth
+tanqigh:tanqi%{g%}h          NounSuffixIII; ! moon; month
+teghikusagh:teghikusa%{g%}h  NounSuffixIII; ! animal
+ungipaghagh:ungipagha%{g%}h  NounSuffixIII; ! traditional story; tale; legend
+uyaqugh:uyaqu%{g%}h          NounSuffixIII; ! neck
+
 
 
 !===================
@@ -303,7 +331,10 @@ qiya           VerbSuffixI; ! to cry
 tagi           VerbSuffixI; ! to come
 takestaaghhaa  VerbSuffixI; ! to be short
 tuqu           VerbSuffixI; ! to die
-umughqaa       VerbSuffixI; ! to have sleep paralysis
+umughqaa       VerbSuffixI; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+akuzi          VerbSuffixI; ! to speak
+kaki           VerbSuffixI; ! to sew
+mesuuna        VerbSuffixI; ! to brush or comb one's hair
 
 
 
@@ -330,19 +361,21 @@ LEXICON VerbRootIV
 !  or -egh where e cannot be dropped
 !===================================
 
-aglagh    VerbSuffixIV;  ! to go home; to go over to another place
-gaagh     VerbSuffixIV;  ! to cook
-igatagh   VerbSuffixIV;  ! to be hungry
-iyatagh   VerbSuffixIV;  ! to be hungry
-mayugh    VerbSuffixIV;  ! to go up
-megh      VerbSuffixIV;  ! to drink
-negh      VerbSuffixIV;  ! to eat
-nenglagh  VerbSuffixIV;  ! to laugh
-pinigh    VerbSuffixIV;  ! to be good
-qavagh    VerbSuffixIV;  ! to sleep
-qepghagh  VerbSuffixIV;  ! to work
-yughagh   VerbSuffixIV;  ! to pray, to worship
-
+aglagh       VerbSuffixIV;  ! to go home; to go over to another place
+gaagh        VerbSuffixIV;  ! to cook
+igatagh      VerbSuffixIV;  ! to be hungry
+iyatagh      VerbSuffixIV;  ! to be hungry
+mayugh       VerbSuffixIV;  ! to go up
+megh         VerbSuffixIV;  ! to drink
+negh         VerbSuffixIV;  ! to eat
+nenglagh     VerbSuffixIV;  ! to laugh
+pinigh       VerbSuffixIV;  ! to be good
+qavagh       VerbSuffixIV;  ! to sleep
+qepghagh     VerbSuffixIV;  ! to work
+yughagh      VerbSuffixIV;  ! to pray, to worship
+atugh        VerbSuffixIV;  ! to use
+nulugh       VerbSuffixIV;  ! to ice-fish; to dunk a tea bag
+ungipaghagh  VerbSuffixIV;  ! to tell a story
 
 
 !=====================
@@ -380,6 +413,7 @@ esghaate  VerbSuffixV;  ! to see something
 ingaghte  VerbSuffixV;  ! to lie down
 kaate     VerbSuffixV;  ! to arrive
 nagate    VerbSuffixV;  ! to listen
+igleghte  VerbSuffixV;  ! to travel
 
 
 !=====================================================
@@ -695,7 +729,7 @@ LEXICON VerbSuffixV
 -yug[V.V]:%^%{.at.%}yug      VerbSuffixIII; ! to want to V
 
 
-!=======================================================
+s!=======================================================
 LEXICON NounInflI
 !  for noun roots that end in -a, -i, -u, -aa, -ii-, -uu
 !=======================================================
@@ -713,6 +747,24 @@ LEXICON NounInflI
 [Abs][Sg][2PlPoss]:%^zi    #; [Abs][Pl][2PlPoss]:%^si    #; [Abs][Du][2PlPoss]:%^gsi    #;
 [Abs][Sg][2DuPoss]:%^yek   #; [Abs][Pl][2DuPoss]:%^ten   #; [Abs][Du][2DuPoss]:%^gtek   #;
 !---------------------------|-----------------------------|------------------------------|
+[Abs][Sg][3SgPoss]:%^nga   #; [Abs][Pl][3SgPoss]:%^ngi   #; [Abs][Du][3SgPoss]:%^kek    #;
+[Abs][Sg][3PlPoss]:%^ngat  #; [Abs][Pl][3PlPoss]:%^ngit  #; [Abs][Du][3PlPoss]:%^gket   #;
+[Abs][Sg][3DuPoss]:%^ngak  #; [Abs][Pl][3DuPoss]:%^ngik  #; [Abs][Du][3DuPoss]:%^gkek   #;
+!---------------------------|-----------------------------|------------------------------|
+
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^gma     #;
+[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
+[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
+[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
+[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+!---------------------------|-----------------------------|-------------------------------|
 
 
 !---------------------------|
@@ -757,19 +809,36 @@ LEXICON NounInflIX
 
 !--------------------------------|
 !          ABSOLUTIVE            |
-!--------------------------------|-----------------------------------|------------------------------|
-[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k               #;
-!--------------------------------|-----------------------------------|------------------------------|
-[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka    #;
-[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput   #;
-[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung  #;
-!--------------------------------|-----------------------------------|------------------------------|
-[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken   #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k                   #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka        #;
+[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput       #;
+[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung      #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken       #;
                                    [Abs][Pl][2SgPoss]:%^%{.f.%}ten  #;
-[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi    #;
-[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek   #;
-!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi        #;
+[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek       #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg][3SgPoss]:%^%{.f.%}a   #; [Abs][Pl][3SgPoss]:%^%{.f.%}i    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
+[Abs][Sg][3PlPoss]:%^%{.f.%}at  #; [Abs][Pl][3PlPoss]:%^%{.f.%}it   #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3DuPoss]:%^%{.f.%}ak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ik   #; [Abs][Du][3DuPoss]:%^gkek       #;
+!--------------------------------|-----------------------------------|----------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Rel][Du][1SgPoss]:%^gma     #;
+[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
+[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
+[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
+[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+!---------------------------|-----------------------------|-------------------------------|
 
 !-----------------------------|
 !      ABLATIVE MODALIS       |
@@ -814,18 +883,36 @@ LEXICON NounInflX
 
 !--------------------------------|
 !          ABSOLUTIVE            |
-!--------------------------------|-----------------------------------|------------------------------|
-[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k               #;
-!--------------------------------|-----------------------------------|------------------------------|
-[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka    #;
-[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput   #;
-[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung  #;
-!--------------------------------|-----------------------------------|------------------------------|
-[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken   #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k                   #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka        #;
+[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput       #;
+[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung      #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken       #;
                                    [Abs][Pl][2SgPoss]:%^%{.f.%}ten  #;
-[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi    #;
-[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek   #;
-!--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi        #;
+[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek       #;
+!--------------------------------|-----------------------------------|----------------------------------|
+[Abs][Sg][3SgPoss]:%^%{.f.%}a   #; [Abs][Pl][3SgPoss]:%^%{.f.%}i    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
+[Abs][Sg][3PlPoss]:%^%{.f.%}at  #; [Abs][Pl][3PlPoss]:%^%{.f.%}it   #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3DuPoss]:%^%{.f.%}ak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ik   #; [Abs][Du][3DuPoss]:%^gkek       #;
+!--------------------------------|-----------------------------------|----------------------------------|
+
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Rel][Du][1SgPoss]:%^gma     #;
+[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
+[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
+[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
+[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+!---------------------------|-----------------------------|-------------------------------|
 
 
 !-----------------------------|
@@ -881,7 +968,24 @@ LEXICON NounInflII
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^egsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^egtek   #;
 !--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][3SgPoss]:%^a          #; [Abs][Pl][3SgPoss]:%^i            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^at         #; [Abs][Pl][3PlPoss]:%^it           #; [Abs][Du][3PlPoss]:%^egket   #;
+[Abs][Sg][3DuPoss]:%^ak         #; [Abs][Pl][3DuPoss]:%^ik           #; [Abs][Du][3DuPoss]:%^egkek   #;
+!--------------------------------|------------------------------------|-------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^et             #; [Rel][Du]:%^ek                #;
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^egma     #;
+[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^egemta   #;
+[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^egemtung #;
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^egpek    #;
+[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^egpesi   #;
+[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^egpetek  #;
+!---------------------------|-----------------------------|--------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -937,6 +1041,24 @@ LEXICON NounInflIV
 [Abs][Sg][2PlPoss]:%^si             #; [Abs][Pl][2PlPoss]:%^%{.m.%}si        #; [Abs][Du][2PlPoss]:%^%{.c.%}%{E%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek            #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek       #; [Abs][Du][2DuPoss]:%^%{.c.%}%{E%}gtek   #;
 !------------------------------------|----------------------------------------|------------------------------------------|
+[Abs][Sg][3SgPoss]:%^%{.c.%}%{NG%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}%{NG%}i            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}%{NG%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}%{NG%}it           #; [Abs][Du][3PlPoss]:%^%{.c.%}%{E%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}%{NG%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}%{NG%}ik           #; [Abs][Du][3DuPoss]:%^%{.c.%}%{E%}gkek   #;
+!--------------------------------|------------------------------------|-------------------------------|
+
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|-------------------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.c.%}%{E%}   #; [Rel][Du]:%^%{.c.%}%{E%}k                #;
+!---------------------------|-----------------------------|-------------------------------------------|
+[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
+[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
+[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.c.%}%{E%}gemtung #;
+!---------------------------|-----------------------------|-------------------------------------------|
+[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.c.%}%{E%}gpek    #;
+[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
+[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
+!---------------------------|-----------------------------|-------------------------------------------|
 
 
 !---------------------------|
@@ -993,7 +1115,24 @@ LEXICON NounInflVII
 [Abs][Sg][2PlPoss]:%^si                 #; [Abs][Pl][2PlPoss]:%^%{.m.%}si     #; [Abs][Du][2PlPoss]:%^%{.sf.%}egsi    #;
 [Abs][Sg][2DuPoss]:%^tek                #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek    #; [Abs][Du][2DuPoss]:%^%{.sf.%}egtek   #;
 !----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg][3SgPoss]:%^%{.sf.%}a  #; [Abs][Pl][3SgPoss]:%^%{.sf.%}i   #; [Abs][Du][3SgPoss]:%^kek           #;
+[Abs][Sg][3PlPoss]:%^%{.sf.%}at #; [Abs][Pl][3PlPoss]:%^%{.sf.%}it  #; [Abs][Du][3PlPoss]:%^%{.sf.%}egket #;
+[Abs][Sg][3DuPoss]:%^%{.sf.%}ak #; [Abs][Pl][3DuPoss]:%^%{.sf.%}ik  #; [Abs][Du][3DuPoss]:%^%{.sf.%}egkek #;
+!--------------------------------|-----------------------------------|-------------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|----------------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.sf.%}et     #; [Rel][Du]:%^%{.sf.%}ek                #;
+!---------------------------|-----------------------------|----------------------------------------|
+[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.sf.%}egma     #;
+[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.sf.%}egemta   #;
+[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.sf.%}egemtung #;
+!---------------------------|-----------------------------|----------------------------------------|
+[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.sf.%}egpek    #;
+[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
+[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
+!---------------------------|-----------------------------|----------------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -1049,7 +1188,24 @@ LEXICON NounInflVIII
 [Abs][Sg][2PlPoss]:%^si                 #; [Abs][Pl][2PlPoss]:%^%{.m.%}si     #; [Abs][Du][2PlPoss]:%^%{.sf.%}egsi    #;
 [Abs][Sg][2DuPoss]:%^tek                #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek    #; [Abs][Du][2DuPoss]:%^%{.sf.%}egtek   #;
 !----------------------------------------|-------------------------------------|---------------------------------------|
+[Abs][Sg][3SgPoss]:%^%{.sf.%}a  #; [Abs][Pl][3SgPoss]:%^%{.sf.%}i   #; [Abs][Du][3SgPoss]:%^kek           #;
+[Abs][Sg][3PlPoss]:%^%{.sf.%}at #; [Abs][Pl][3PlPoss]:%^%{.sf.%}it  #; [Abs][Du][3PlPoss]:%^%{.sf.%}egket #;
+[Abs][Sg][3DuPoss]:%^%{.sf.%}ak #; [Abs][Pl][3DuPoss]:%^%{.sf.%}ik  #; [Abs][Du][3DuPoss]:%^%{.sf.%}egkek #;
+!--------------------------------|-----------------------------------|-------------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|----------------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.sf.%}et     #; [Rel][Du]:%^%{.sf.%}ek                #;
+!---------------------------|-----------------------------|----------------------------------------|
+[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.sf.%}egma     #;
+[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.sf.%}egemta   #;
+[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.sf.%}egemtung #;
+!---------------------------|-----------------------------|----------------------------------------|
+[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.sf.%}egpek    #;
+[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
+[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
+!---------------------------|-----------------------------|----------------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -1107,7 +1263,24 @@ LEXICON NounInflV
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^egsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^egtek   #;
 !--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][3SgPoss]:%^a          #; [Abs][Pl][3SgPoss]:%^i            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^at         #; [Abs][Pl][3PlPoss]:%^it           #; [Abs][Du][3PlPoss]:%^egket   #;
+[Abs][Sg][3DuPoss]:%^ak         #; [Abs][Pl][3DuPoss]:%^ik           #; [Abs][Du][3DuPoss]:%^egkek   #;
+!--------------------------------|------------------------------------|-------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^et             #; [Rel][Du]:%^ek                #;
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^egma     #;
+[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^egemta   #;
+[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^egemtung #;
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^egpek    #;
+[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^egpesi   #;
+[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^egpetek  #;
+!---------------------------|-----------------------------|--------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -1164,7 +1337,24 @@ LEXICON NounInflVI
 [Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi    #;
 [Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^ten         #; [Abs][Du][2DuPoss]:%^gtek   #;
 !--------------------------------|-----------------------------------|------------------------------|
+[Abs][Sg][3SgPoss]:%^%{.f.%}a   #; [Abs][Pl][3SgPoss]:%^%{.f.%}i    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
+[Abs][Sg][3PlPoss]:%^%{.f.%}at  #; [Abs][Pl][3PlPoss]:%^%{.f.%}it   #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3DuPoss]:%^%{.f.%}ak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ik   #; [Abs][Du][3DuPoss]:%^gkek       #;
+!--------------------------------|-----------------------------------|----------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Rel][Du][1SgPoss]:%^gma     #;
+[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
+[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+!---------------------------|-----------------------------|-------------------------------|
+[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
+[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
+[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+!---------------------------|-----------------------------|-------------------------------|
 
 !-----------------------------|
 !      ABLATIVE MODALIS       |
@@ -1220,7 +1410,24 @@ LEXICON NounInflIII
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^%{.w.%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^%{.w.%}gtek   #;
 !--------------------------------|------------------------------------|-------------------------------------|
+[Abs][Sg][3SgPoss]:%^%{.c.%}%{NG%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}%{NG%}i            #; [Abs][Du][3SgPoss]:%^%{.w.%}kek     #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}%{NG%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}%{NG%}it           #; [Abs][Du][3PlPoss]:%^%{.w.%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}%{NG%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}%{NG%}ik           #; [Abs][Du][3DuPoss]:%^%{.w.%}gkek   #;
+!--------------------------------|------------------------------------|-------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|--------------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.w.%}t       #; [Rel][Du]:%^%{.w.%}k                #;
+!---------------------------|-----------------------------|--------------------------------------|
+[Rel][Sg][1SgPoss]:%^%{.w.%}ma                           #; [Rel][Du][1SgPoss]:%^%{.w.%}gma     #;
+[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.w.%}gemta   #;
+[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.w.%}gemtung #;
+!---------------------------|-----------------------------|--------------------------------------|
+[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.w.%}gpek    #;
+[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.w.%}gpesi   #;
+[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.w.%}gpetek  #;
+!---------------------------|-----------------------------|--------------------------------------|
 
 !-----------------------------|
 !      ABLATIVE MODALIS       |

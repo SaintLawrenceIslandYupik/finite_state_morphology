@@ -57,7 +57,6 @@ define FinalE  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e  "^" %{%.f%.%
                   e -> 0 ||             V [ MultiCharC | C ] _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
           %{%.f%.%} -> 0                                                          ;
 
-
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
                %{%.w%.%} -> 0                    ;
 
@@ -78,7 +77,6 @@ define DropFinalC g h -> g     || g       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! as
   [ g | %{g%} ] ( h ) -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
             %{%.m%.%} -> 0                                              ;
 
-
 define VowelDominance a i -> i i  .o.
                       i a -> i i  .o.
                       u i -> i i  .o.
@@ -88,7 +86,6 @@ define VowelDominance a i -> i i  .o.
 					  i e -> i i  .o.
 					  a e -> a a  .o.
 					  u e -> u u  ;
-
 
 !-------------------
 ! ALLOMORPHY RULES
@@ -104,13 +101,6 @@ define AddE %{E%} -> a || a "^" _ .o.
 
 define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
                 %{G%} -> 0                                    ;
-
-
-!----------------
-! CLEAN-UP RULES
-!----------------
-
-define DevoiceClusters y -> s || _ k ;
 
 
 !----------------
@@ -133,6 +123,8 @@ define CleanupDigraph %{k%}   -> 0   .o.
 
 define CleanupMorphBoundary "^" -> 0 ;
 
+define DevoiceClusters y -> s || _ k ;
+
 
 !==============
 ! RULE CASCADE
@@ -149,8 +141,8 @@ define Rules [
     BaseFinalEndings     .o. 
     CleanupDigraph       .o.
     CleanupMorphBoundary .o.
-	VowelDominance       .o.
-	DevoiceClusters
+	  VowelDominance       .o.
+	  DevoiceClusters
 ];
 
 define Grammar [ Exceptions .P. [ Lexicon .o. Rules ] ] ;

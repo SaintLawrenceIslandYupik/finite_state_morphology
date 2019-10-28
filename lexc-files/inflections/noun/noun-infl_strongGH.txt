@@ -19,7 +19,24 @@ LEXICON NounInflV
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^egsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^egtek   #;
 !--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][3SgPoss]:%^a          #; [Abs][Pl][3SgPoss]:%^i            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^at         #; [Abs][Pl][3PlPoss]:%^it           #; [Abs][Du][3PlPoss]:%^egket   #;
+[Abs][Sg][3DuPoss]:%^ak         #; [Abs][Pl][3DuPoss]:%^ik           #; [Abs][Du][3DuPoss]:%^egkek   #;
+!--------------------------------|------------------------------------|-------------------------------|
 
+!---------------------------|
+!         RELATIVE          |
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg]:%^m              #; [Rel][Pl]:%^et             #; [Rel][Du]:%^ek                #;
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^egma     #;
+[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^egemta   #;
+[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^egemtung #;
+!---------------------------|-----------------------------|--------------------------------|
+[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^egpek    #;
+[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^egpesi   #;
+[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^egpetek  #;
+!---------------------------|-----------------------------|--------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
