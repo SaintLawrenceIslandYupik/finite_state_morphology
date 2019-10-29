@@ -19,6 +19,25 @@ LEXICON NounInflV
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^egsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^egtek   #;
 !--------------------------------|------------------------------------|-------------------------------|
+[Abs][Sg][3SgPoss]:%^a          #; [Abs][Pl][3SgPoss]:%^i            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^at         #; [Abs][Pl][3PlPoss]:%^it           #; [Abs][Du][3PlPoss]:%^egket   #;
+[Abs][Sg][3DuPoss]:%^ak         #; [Abs][Pl][3DuPoss]:%^ik           #; [Abs][Du][3DuPoss]:%^egkek   #;
+!--------------------------------|------------------------------------|-------------------------------|
+
+
+!---------------------------|
+!    ERGATIVE (relative)    |
+!---------------------------|-----------------------------|--------------------------------|
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^et             #; [Erg][Du]:%^ek                #;
+!---------------------------|-----------------------------|--------------------------------|
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^egma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^egemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^egemtung #;
+!---------------------------|-----------------------------|--------------------------------|
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^egpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^egpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^egpetek  #;
+!---------------------------|-----------------------------|--------------------------------|
 
 
 !---------------------------|
