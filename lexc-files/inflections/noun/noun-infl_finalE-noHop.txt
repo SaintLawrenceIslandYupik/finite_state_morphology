@@ -24,17 +24,17 @@ LEXICON NounInflX
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^t              #; [Erg][Du]:%^k                #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Rel][Du][1SgPoss]:%^gma     #;
-[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
-[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+[Erg][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Erg][Du][1SgPoss]:%^gma     #;
+[Erg][Sg][1PlPoss]:%^mta                                 #; [Erg][Du][1PlPoss]:%^gemta   #;
+[Erg][Sg][1DuPoss]:%^mtung                               #; [Erg][Du][1DuPoss]:%^gemtung #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
-[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
-[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+[Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
+[Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
+[Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
 
 

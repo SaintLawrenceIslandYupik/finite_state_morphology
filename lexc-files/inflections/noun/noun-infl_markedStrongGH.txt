@@ -22,17 +22,17 @@ LEXICON NounInflIV
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.c.%}%{E%}   #; [Rel][Du]:%^%{.c.%}%{E%}k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.c.%}%{E%}   #; [Erg][Du]:%^%{.c.%}%{E%}k                #;
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.c.%}%{E%}gemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^%{.c.%}%{E%}gemtung #;
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.c.%}%{E%}gpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.c.%}%{E%}gpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
 !---------------------------|-----------------------------|-------------------------------------------|
 
 

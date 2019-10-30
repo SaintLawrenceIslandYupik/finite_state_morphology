@@ -14,6 +14,7 @@ Multichar_Symbols
 !-----------
 %{E%}  ! for (e)
 %{G%}  ! for (g) 
+%{NG%} ! for (ng)
 
 !---------------------------
 ! morphophonological symbols 
@@ -118,56 +119,55 @@ yavlu     NounSuffixI;  ! sweetheart
 yaywaali  NounSuffixI;  ! orphan
 ila       NounSuffixI;  ! relative; associate; part; one or some (of)
 lalala    NounSuffixI;  ! dew
-mesuuna   NounSuffixI;  ! hairbrush; comb
-!==============================
+mesuuna   NounSuffixI;  ! hairbrush; comb!==============================
 LEXICON NounRootIX
 !  end in -e that can be hopped
 !==============================
 
-iye   NounSuffixIX;  ! eye
-tume  NounSuffixIX;  ! track, footprint; trail
-paye  NounSuffixIX;  ! mouth (non-anatomical); hatch of kayak
-qaye  NounSuffixIX;  ! surface; top
-
-!=====================================
+iye   NounSuffixIX; ! eye
+tume  NounSuffixIX; ! track, footprint; trail
+paye  NounSuffixIX; ! mouth (non-anatomical); hatch of kayak
+qaye  NounSuffixIX; ! surface; top!=====================================
 LEXICON NounRootX
 !  end in final -e that can be dropped
 !  but not hopped
 !=====================================
 
-akume      NounSuffixX;  ! granulated sugar
-iigge      NounSuffixX;  ! hand
-neqe       NounSuffixX;  ! food
-tepe       NounSuffixX;  ! odor
+akume      NounSuffixX; ! granulated sugar
+iigge      NounSuffixX; ! hand
+neqe       NounSuffixX; ! food
+tepe       NounSuffixX; ! odor
 
-Laluramke  NounSuffixX;  ! white person; Caucasian
+Karake     NounSuffixX; ! Koryak
+Laluramke  NounSuffixX; ! white person; Caucasian
 
 Karake     NounSuffixX;  ! Koryak
-
-
+waape      NounSuffixX;  ! rope
+qergese    NounSuffixX;  ! window
 !=====================
 LEXICON NounRootII
 !  end in -g, -w, -ghw
 !=====================
 
-aqavzig     NounSuffixII;  ! salmonberry, cloudberry
-atkug       NounSuffixII;  ! parka
-igaghvig    NounSuffixII;  ! school
-iqallug     NounSuffixII;  ! fish
-manig       NounSuffixII;  ! bird's egg
-nayag       NounSuffixII;  ! sister of a male
-nunivag     NounSuffixII;  ! rosewort plant
-panig       NounSuffixII;  ! daughter
-savig       NounSuffixII;  ! knife
-sikig       NounSuffixII;  ! squirrel
-uyghag      NounSuffixII;  ! stone; rock
-veg         NounSuffixII;  ! grass
-yug         NounSuffixII;  ! person; man
-yughaghvig  NounSuffixII;  ! church
+aqavzig      NounSuffixII; ! salmonberry, cloudberry
+asag         NounSuffixII; ! paternal aunt
+atkug        NounSuffixII; ! parka
+igaghvig     NounSuffixII; ! school
+iqallug      NounSuffixII; ! fish
+manig        NounSuffixII; ! bird's egg
+nayag        NounSuffixII; ! sister of a male
+nunivag      NounSuffixII; ! rosewort plant
+panig        NounSuffixII; ! daughter
+savig        NounSuffixII; ! knife
+sikig        NounSuffixII; ! squirrel
+tengegkayug  NounSuffixII; ! airplane (plural, tengegkayuget, often used for one airplane)
+uyghag       NounSuffixII; ! stone; rock
+walguyaag    NounSuffixII; ! snowshoe
+veg          NounSuffixII; ! grass
+yug          NounSuffixII; ! person; man
+yughaghvig   NounSuffixII; ! church
 
-
-Yupig       NounSuffixII;  ! Siberian/St. Lawrence Island Eskimo person
-
+Yupig        NounSuffixII; ! Siberian/St. Lawrence Island Eskimo person
 
 aaw:aa%{k%}w    NounSuffixII;  ! blood
 kiiw:kii%{k%}w  NounSuffixII;  ! river
@@ -187,25 +187,25 @@ LEXICON NounRootIV
 !  end in marked strong -gh (*)
 !==============================
 
-aakagh          NounSuffixIV;  ! older sister of a female
-afsengagh       NounSuffixIV;  ! vole, locally mouse
-aghnaghagh      NounSuffixIV;  ! young girl
-ayumigh         NounSuffixIV;  ! long ago; year
-eltughagh       NounSuffixIV;  ! grandchild
-estugagh        NounSuffixIV;  ! store 
-megh            NounSuffixIV;  ! water
-mekestaaghhagh  NounSuffixIV;  ! small thing
-nanugh          NounSuffixIV;  ! polar bear
-nengyugh        NounSuffixIV;  ! grandmother
-pagunghagh      NounSuffixIV;  ! crowberry; berry (in general)
-sikugh          NounSuffixIV;  ! needle
-taghnughhagh    NounSuffixIV;  ! child
-takestaaghhagh  NounSuffixIV;  ! short thing
-tukugh          NounSuffixIV;  ! host
-uyughagh        NounSuffixIV;  ! younger sibling (sister or brother)
+aakagh          NounSuffixIV; ! older sister of a female
+afsengagh       NounSuffixIV; ! vole, locally mouse
+aghnaghagh      NounSuffixIV; ! young girl
+ayumigh         NounSuffixIV; ! long ago; year
+eltughagh       NounSuffixIV; ! grandchild
+estugagh        NounSuffixIV; ! store 
+megh            NounSuffixIV; ! water
+mekestaaghhagh  NounSuffixIV; ! small thing
+nanugh          NounSuffixIV; ! polar bear
+nengyugh        NounSuffixIV; ! grandmother
+pagunghagh      NounSuffixIV; ! crowberry; berry (in general)
+sikugh          NounSuffixIV; ! needle
+taghnughhagh    NounSuffixIV; ! child
+takestaaghhagh  NounSuffixIV; ! short thing
+tukugh          NounSuffixIV; ! host
+uyughagh        NounSuffixIV; ! younger sibling (sister or brother)
 
-Sivungagh       NounSuffixIV;  ! Savoonga
-Sivugagh        NounSuffixIV;  ! Gambell; St. Lawrence Island (in general)
+Sivungagh       NounSuffixIV; ! Savoonga
+Sivugagh        NounSuffixIV; ! Gambell; St. Lawrence Island (in general)
 
 
 !======================================
@@ -213,13 +213,13 @@ LEXICON NounRootVII
 !  has semi-final -e that can be hopped
 !======================================
 
-ategh   NounSuffixVII;  ! name
-kameg   NounSuffixVII;  ! skin boot, mukluk
-papeg   NounSuffixVII;  ! tail
-qanegh  NounSuffixVII;  ! mouth (anatomical)
-taqegh  NounSuffixVII;  ! vein
-papeg   NounSuffixVII;  ! tail
-qanegh  NounSuffixVII;  ! mouth (anatomical)
+ategh   NounSuffixVII; ! name
+kameg   NounSuffixVII; ! skin boot, mukluk
+papeg   NounSuffixVII; ! tail
+qanegh  NounSuffixVII; ! mouth (anatomical)
+taqegh  NounSuffixVII; ! vein
+papeg   NounSuffixVII; ! tail
+qanegh  NounSuffixVII; ! mouth (anatomical)
 
 
 !=======================================
@@ -228,51 +228,49 @@ LEXICON NounRootVIII
 !  but not hopped
 !=======================================
 
-aliinegh   NounSuffixVIII;  ! clear, calm day
-kemeg      NounSuffixVIII;  ! flesh; skin
-ughluvegh  NounSuffixVIII;  ! bow
-yaquleg    NounSuffixVIII;  ! angel
-siqinegh   NounSuffixVIII;  ! sun
-
-
-!================================================================
+aliinegh   NounSuffixVIII; ! clear, calm day
+kemeg      NounSuffixVIII; ! flesh; skin
+siqinegh   NounSuffixVIII; ! sun
+ughluvegh  NounSuffixVIII; ! bow
+yaquleg    NounSuffixVIII; ! angel!================================================================
 LEXICON NounRootV
 !  end in strong -gh: -aagh, -iigh, -uugh
 !                     -egh where e-dropping is not possible
 !                     (would result in a three-consonant cluster)
 !================================================================
 
-aghnegh        NounSuffixV;  ! day
-aghvegh        NounSuffixV;  ! whale
-ayvegh         NounSuffixV;  ! walrus
-ighnegh        NounSuffixV;  ! son
-kaviigh        NounSuffixV;  ! fox
-kiigh          NounSuffixV;  ! summer
-mekelghiigh    NounSuffixV;  ! boy
-neghqwaagh     NounSuffixV;  ! bone
-nuliigh        NounSuffixV;  ! wife
-seghlegh       NounSuffixV;  ! bad thing
-ulaagh         NounSuffixV;  ! semi-lunar knife; woman's knife; ulu
-ulghaagh       NounSuffixV;  ! sea lion
-vegaagh        NounSuffixV;  ! grass
 aghnalqwaagh   NounSuffixV; ! old lady
+aghnegh        NounSuffixV; ! day
+aghvegh        NounSuffixV; ! whale
+ayvegh         NounSuffixV; ! walrus
 ighaleqetaagh  NounSuffixV; ! star
+ighnegh        NounSuffixV; ! son
+kaviigh        NounSuffixV; ! fox
+kiigh          NounSuffixV; ! summer
+mekelghiigh    NounSuffixV; ! boy
+neghqwaagh     NounSuffixV; ! bone
+nuliigh        NounSuffixV; ! wife
+seghlegh       NounSuffixV; ! bad thing
 siivanllegh    NounSuffixV; ! elder
-
-
-!=================
+ulaagh         NounSuffixV; ! semi-lunar knife; woman's knife; ulu
+ulghaagh       NounSuffixV; ! sea lion
+vegaagh        NounSuffixV; ! grass!=================
 LEXICON NounRootVI
 !  end in -te
 !=================
 
-piitute:piitu%{t%}e        NounSuffixVI;  ! seed
-qulmesiite:qulmesii%{t%}e  NounSuffixVI;  ! cooking pot
-riigte:riig%{t%}e          NounSuffixVI;  ! animal's den
-sigute:sigu%{t%}e          NounSuffixVI;  ! ear
-yughaghte:yughagh%{t%}e    NounSuffixVI;  ! minister, clergyman
+apeghtughiste:apeghtughis%{t%%e  NounSuffixVI; ! teacher
+piitute:piitu%{t%}e              NounSuffixVI; ! seed
+qulmesiite:qulmesii%{t%}e        NounSuffixVI; ! cooking pot
+riigte:riig%{t%}e                NounSuffixVI; ! animal's den
+sigute:sigu%{t%}e                NounSuffixVI; ! ear
+yughaghte:yughagh%{t%}e          NounSuffixVI; ! minister, clergyman
 
 ! POSSIBLE e-HOPPING
-ggute:ggu%{t%}e            NounSuffixVI; ! tooth
+ggute:ggu%{t%}e                  NounSuffixVI; ! tooth
+
+
+Yupigestute:Yupigestu%{t%}e      NounSuffixVI; ! in the Yupik language (inflected form)
 
 apeghtughiste  NounSuffixVI; ! teacher
 Yupigestute    NounSuffixVI; ! in the Yupik language (inflected form)
@@ -282,63 +280,54 @@ LEXICON NounRootIII
 !  end in weak -gh
 !==================
 
-aghnagh:aghna%{g%}h          NounSuffixIII;  ! woman
-anengagh:anenga%{g%}h        NounSuffixIII;  ! older brother
-angyagh:angya%{g%}h          NounSuffixIII;  ! boat
-aqelqagh:aqelqa%{g%}h        NounSuffixIII;  ! visitor
-avaqutagh:avaquta%{g%}h      NounSuffixIII;  ! child, offspring
-itegagh:itega%{g%}h          NounSuffixIII;  ! foot
-mangteghagh:mangtegha%{g%}h  NounSuffixIII;  ! house
-naasqugh:naasqu%{g%}h        NounSuffixIII;  ! head
-naayghagh:naaygha%{g%}h      NounSuffixIII;  ! mountain
-naayvagh:naayva%{g%}h        NounSuffixIII;  ! lake
-ngelqagh:ngelqa%{g%}h        NounSuffixIII;  ! cormorant
-nuyagh:nuya%{g%}h            NounSuffixIII;  ! hair
-neghsagh:neghsa%{g%}h        NounSuffixIII;  ! seal (in general)
-suflugagh:sufluga%{g%}h      NounSuffixIII;  ! gun
-qayagh:qaya%{g%}h            NounSuffixIII;  ! kayak
-qengagh:qenga%{g%}h          NounSuffixIII;  ! nose
-qikmigh:qikmi%{g%}h          NounSuffixIII;  ! dog
-ukazigh:ukazi%{g%}h          NounSuffixIII;  ! hare, rabbit
-uqugh:uqu%{g%}h              NounSuffixIII;  ! fat; blubber
-
-Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)
-
+aghnagh:aghna%{g%}h          NounSuffixIII; ! woman
 akuutagh:akuuta%{g%}h        NounSuffixIII; ! mixture of berries, seal oil, sugar etc., "Eskimo ice cream"
 alangqugh:alangqu%{g%}h      NounSuffixIII; ! ring finger
+anengagh:anenga%{g%}h        NounSuffixIII; ! older brother
+angyagh:angya%{g%}h          NounSuffixIII; ! boat
+aqelqagh:aqelqa%{g%}h        NounSuffixIII; ! visitor
+avaqutagh:avaquta%{g%}h      NounSuffixIII; ! child, offspring
+itegagh:itega%{g%}h          NounSuffixIII; ! foot
+mangteghagh:mangtegha%{g%}h  NounSuffixIII; ! house
+naasqugh:naasqu%{g%}h        NounSuffixIII; ! head
+naayghagh:naaygha%{g%}h      NounSuffixIII; ! mountain
+naayvagh:naayva%{g%}h        NounSuffixIII; ! lake
+ngelqagh:ngelqa%{g%}h        NounSuffixIII; ! cormorant
 nulugh:nulu%{g%}h            NounSuffixIII; ! tea bag
+nuyagh:nuya%{g%}h            NounSuffixIII; ! hair
+neghsagh:neghsa%{g%}h        NounSuffixIII; ! seal (in general)
 pengugh:pengu%{g%}h          NounSuffixIII; ! mound
+suflugagh:sufluga%{g%}h      NounSuffixIII; ! gun
 qagugh:qagu%{g%}h            NounSuffixIII; ! forehead
+qayagh:qaya%{g%}h            NounSuffixIII; ! kayak
 qayugh:qayu%{g%}h            NounSuffixIII; ! tea; broth
+qengagh:qenga%{g%}h          NounSuffixIII; ! nose
+qikmigh:qikmi%{g%}h          NounSuffixIII; ! dog
 tanqigh:tanqi%{g%}h          NounSuffixIII; ! moon; month
 teghikusagh:teghikusa%{g%}h  NounSuffixIII; ! animal
+ukazigh:ukazi%{g%}h          NounSuffixIII; ! hare, rabbit
 ungipaghagh:ungipagha%{g%}h  NounSuffixIII; ! traditional story; tale; legend
+uqugh:uqu%{g%}h              NounSuffixIII; ! fat; blubber; seal oil
 uyaqugh:uyaqu%{g%}h          NounSuffixIII; ! neck
 
-
-
-!===================
+Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)!===================
 LEXICON VerbRootI
 !  end in -a, -i, -u
 !===================
 
 aghula         VerbSuffixI; ! to dance
+akuzi          VerbSuffixI; ! to speak
 aqii           VerbSuffixI; ! to take a pleasure trip; to take a vacation
 ifla           VerbSuffixI; ! to lose; to get lost
 inghu          VerbSuffixI; ! to pick berries
+kaki           VerbSuffixI; ! to sew
 mekestaaghhaa  VerbSuffixI; ! to be small
+mesuuna        VerbSuffixI; ! to brush or comb one's hair
 qiya           VerbSuffixI; ! to cry
 tagi           VerbSuffixI; ! to come
 takestaaghhaa  VerbSuffixI; ! to be short
 tuqu           VerbSuffixI; ! to die
-umughqaa       VerbSuffixI; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
-akuzi          VerbSuffixI; ! to speak
-kaki           VerbSuffixI; ! to sew
-mesuuna        VerbSuffixI; ! to brush or comb one's hair
-
-
-
-!=================
+umughqaa       VerbSuffixI; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)!=================
 LEXICON VerbRootII
 !  has final -e
 !=================
@@ -383,8 +372,8 @@ LEXICON VerbRootIII
 !  end in -g, -w, -ghw
 !=====================
 
-ukig    VerbSuffixIII;  ! to go down
-qiighw  VerbSuffixIII;  ! to cough
+ukig    VerbSuffixIII; ! to go down
+qiighw  VerbSuffixIII; ! to cough
 
 
 !======================================
@@ -392,7 +381,7 @@ LEXICON VerbRootVI
 !  has semi-final -e that can be hopped
 !======================================
 
-itegh  VerbSuffixVI;  ! to go in; to enter
+itegh  VerbSuffixVI; ! to go in; to enter
 
 
 !=======================================
@@ -409,14 +398,11 @@ LEXICON VerbRootV
 !  end in -te
 !================
 
-esghaate  VerbSuffixV;  ! to see something
-ingaghte  VerbSuffixV;  ! to lie down
-kaate     VerbSuffixV;  ! to arrive
-nagate    VerbSuffixV;  ! to listen
-igleghte  VerbSuffixV;  ! to travel
-
-
-!=====================================================
+esghaate:esghaa%{t%}e  VerbSuffixV; ! to see something
+igleghte:iglegh%{t%}e  VerbSuffixV; ! to travel
+ingaghte:ingagh%{t%}e  VerbSuffixV; ! to lie down
+kaate:kaa%{t%}e        VerbSuffixV; ! to arrive
+nagate:naga%{t%}e      VerbSuffixV; ! to listen!=====================================================
 LEXICON NounSuffixI
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
 !  when suffixing to noun roots that end in -a, -i, -u
@@ -729,7 +715,7 @@ LEXICON VerbSuffixV
 -yug[V.V]:%^%{.at.%}yug      VerbSuffixIII; ! to want to V
 
 
-s!=======================================================
+!=======================================================
 LEXICON NounInflI
 !  for noun roots that end in -a, -i, -u, -aa, -ii-, -uu
 !=======================================================
@@ -753,17 +739,17 @@ LEXICON NounInflI
 !---------------------------|-----------------------------|------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^t              #; [Erg][Du]:%^k                #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^gma     #;
-[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
-[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^gma     #;
+[Erg][Sg][1PlPoss]:%^mta                                 #; [Erg][Du][1PlPoss]:%^gemta   #;
+[Erg][Sg][1DuPoss]:%^mtung                               #; [Erg][Du][1DuPoss]:%^gemtung #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
-[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
-[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+[Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
+[Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
+[Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
 
 
@@ -827,17 +813,17 @@ LEXICON NounInflIX
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^t              #; [Erg][Du]:%^k                #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Rel][Du][1SgPoss]:%^gma     #;
-[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
-[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+[Erg][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Erg][Du][1SgPoss]:%^gma     #;
+[Erg][Sg][1PlPoss]:%^mta                                 #; [Erg][Du][1PlPoss]:%^gemta   #;
+[Erg][Sg][1DuPoss]:%^mtung                               #; [Erg][Du][1DuPoss]:%^gemtung #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
-[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
-[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+[Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
+[Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
+[Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
 
 !-----------------------------|
@@ -901,17 +887,17 @@ LEXICON NounInflX
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^t              #; [Erg][Du]:%^k                #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Rel][Du][1SgPoss]:%^gma     #;
-[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
-[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+[Erg][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Erg][Du][1SgPoss]:%^gma     #;
+[Erg][Sg][1PlPoss]:%^mta                                 #; [Erg][Du][1PlPoss]:%^gemta   #;
+[Erg][Sg][1DuPoss]:%^mtung                               #; [Erg][Du][1DuPoss]:%^gemtung #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
-[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
-[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+[Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
+[Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
+[Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
 
 
@@ -974,17 +960,17 @@ LEXICON NounInflII
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|--------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^et             #; [Rel][Du]:%^ek                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^et             #; [Erg][Du]:%^ek                #;
 !---------------------------|-----------------------------|--------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^egma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^egemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^egemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^egma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^egemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^egemtung #;
 !---------------------------|-----------------------------|--------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^egpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^egpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^egpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^egpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^egpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^egpetek  #;
 !---------------------------|-----------------------------|--------------------------------|
 
 !---------------------------|
@@ -1047,17 +1033,17 @@ LEXICON NounInflIV
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.c.%}%{E%}   #; [Rel][Du]:%^%{.c.%}%{E%}k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.c.%}%{E%}   #; [Erg][Du]:%^%{.c.%}%{E%}k                #;
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.c.%}%{E%}gemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^%{.c.%}%{E%}gemtung #;
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.c.%}%{E%}gpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.c.%}%{E%}gpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
 !---------------------------|-----------------------------|-------------------------------------------|
 
 
@@ -1121,17 +1107,17 @@ LEXICON NounInflVII
 !--------------------------------|-----------------------------------|-------------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|----------------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.sf.%}et     #; [Rel][Du]:%^%{.sf.%}ek                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.sf.%}et     #; [Erg][Du]:%^%{.sf.%}ek                #;
 !---------------------------|-----------------------------|----------------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.sf.%}egma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.sf.%}egemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.sf.%}egemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^%{.sf.%}egma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.sf.%}egemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^%{.sf.%}egemtung #;
 !---------------------------|-----------------------------|----------------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.sf.%}egpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.sf.%}egpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
 !---------------------------|-----------------------------|----------------------------------------|
 
 !---------------------------|
@@ -1194,17 +1180,17 @@ LEXICON NounInflVIII
 !--------------------------------|-----------------------------------|-------------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|----------------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.sf.%}et     #; [Rel][Du]:%^%{.sf.%}ek                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.sf.%}et     #; [Erg][Du]:%^%{.sf.%}ek                #;
 !---------------------------|-----------------------------|----------------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.sf.%}egma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.sf.%}egemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.sf.%}egemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^%{.sf.%}egma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.sf.%}egemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^%{.sf.%}egemtung #;
 !---------------------------|-----------------------------|----------------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.sf.%}egpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.sf.%}egpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
 !---------------------------|-----------------------------|----------------------------------------|
 
 !---------------------------|
@@ -1269,17 +1255,17 @@ LEXICON NounInflV
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|--------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^et             #; [Rel][Du]:%^ek                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^et             #; [Erg][Du]:%^ek                #;
 !---------------------------|-----------------------------|--------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^egma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^egemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^egemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^egma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^egemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^egemtung #;
 !---------------------------|-----------------------------|--------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^egpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^egpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^egpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^egpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^egpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^egpetek  #;
 !---------------------------|-----------------------------|--------------------------------|
 
 !---------------------------|
@@ -1343,17 +1329,17 @@ LEXICON NounInflVI
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^t              #; [Rel][Du]:%^k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^t              #; [Erg][Du]:%^k                #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Rel][Du][1SgPoss]:%^gma     #;
-[Rel][Sg][1PlPoss]:%^mta                                 #; [Rel][Du][1PlPoss]:%^gemta   #;
-[Rel][Sg][1DuPoss]:%^mtung                               #; [Rel][Du][1DuPoss]:%^gemtung #;
+[Erg][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Erg][Du][1SgPoss]:%^gma     #;
+[Erg][Sg][1PlPoss]:%^mta                                 #; [Erg][Du][1PlPoss]:%^gemta   #;
+[Erg][Sg][1DuPoss]:%^mtung                               #; [Erg][Du][1DuPoss]:%^gemtung #;
 !---------------------------|-----------------------------|-------------------------------|
-[Rel][Sg][2SgPoss]:%^gpek                                #; [Rel][Du][2SgPoss]:%^gpek    #;
-[Rel][Sg][2PlPoss]:%^gpesi                               #; [Rel][Du][2PlPoss]:%^gpesi   #;
-[Rel][Sg][2DuPoss]:%^gpetek                              #; [Rel][Du][2DuPoss]:%^gpetek  #;
+[Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
+[Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
+[Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
 
 !-----------------------------|
@@ -1416,17 +1402,17 @@ LEXICON NounInflIII
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|--------------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.w.%}t       #; [Rel][Du]:%^%{.w.%}k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.w.%}t       #; [Erg][Du]:%^%{.w.%}k                #;
 !---------------------------|-----------------------------|--------------------------------------|
-[Rel][Sg][1SgPoss]:%^%{.w.%}ma                           #; [Rel][Du][1SgPoss]:%^%{.w.%}gma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.w.%}gemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.w.%}gemtung #;
+[Erg][Sg][1SgPoss]:%^%{.w.%}ma                           #; [Erg][Du][1SgPoss]:%^%{.w.%}gma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.w.%}gemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^%{.w.%}gemtung #;
 !---------------------------|-----------------------------|--------------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.w.%}gpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.w.%}gpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.w.%}gpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.w.%}gpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.w.%}gpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.w.%}gpetek  #;
 !---------------------------|-----------------------------|--------------------------------------|
 
 !-----------------------------|
