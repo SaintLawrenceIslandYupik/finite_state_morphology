@@ -28,7 +28,7 @@ LEXICON Root
 
 LEXICON NounWithPostbase
 
-Laluramke-tagh[N→N][N][Abs][Unpd][Sg]:laluramkatagh NounPostbase2;
+Laluramke-tagh[N→N][N][Abs][Unpd][Sg]:laluramkatagh NounPostbase;
 
 
 
@@ -1531,3 +1531,50 @@ pi[V][Trns][Ptcp_Obl][4Sg][2Sg]:piyaqminiten    EncliticOrEnd; pi[V][Trns][Ptcp_
 pi[V][Trns][Ptcp_Obl][4Pl][2Sg]:piyaqminiten    EncliticOrEnd; pi[V][Trns][Ptcp_Obl][4Pl][2Pl]:piyaqminisi   EncliticOrEnd; pi[V][Trns][Ptcp_Obl][4Pl][2Du]:piyaqminitek   EncliticOrEnd;
 pi[V][Trns][Ptcp_Obl][4Du][2Sg]:piyaqminiten    EncliticOrEnd; pi[V][Trns][Ptcp_Obl][4Du][2Pl]:piyaqminisi   EncliticOrEnd; pi[V][Trns][Ptcp_Obl][4Du][2Du]:piyaqminitek   EncliticOrEnd;
 |------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------|
+
+
+
+LEXICON QuantQualPostbase
+
+!---------------------------------|
+!  Quantifier-Qualifier Endings   |
+!----------------------------------------------|
+[Quant_Qual][3Sg]:~%:(ng₁)an      EncliticOrEnd;
+[Quant_Qual][3Pl]:~%:(ng₁)ita     EncliticOrEnd;
+[Quant_Qual][3Du]:~%:(ng₁)ita     EncliticOrEnd;
+!----------------------------------------------|
+[Quant_Qual][1Sg]:~f-wma          EncliticOrEnd;
+[Quant_Qual][1Pl]:%:emta          EncliticOrEnd;
+[Quant_Qual][1Du]:%:emtung        EncliticOrEnd;
+!----------------------------------------------|
+[Quant_Qual][2Sg]:–gpek           EncliticOrEnd;
+[Quant_Qual][2Pl]:–gpesi          EncliticOrEnd;
+[Quant_Qual][2Du]:–gpetek         EncliticOrEnd;
+!----------------------------------------------|
+[Quant_Qual][4Sg]:~f-wmi          EncliticOrEnd;
+[Quant_Qual][4Pl]:~f-wmeng        EncliticOrEnd;
+[Quant_Qual][4Du]:%:egmek         EncliticOrEnd;
+!----------------------------------------------|
+
+
+
+!!!!!!!!!!!!!!!!!!!!!
+!!!               !!!
+!!!   Enclitics   !!!
+!!!               !!!
+!!!!!!!!!!!!!!!!!!!!!
+
+LEXICON EncliticOrEnd
+#;
+
+-lli[Encl]:^lli    EncliticOrEnd;
+-llu[Encl]:^llu    EncliticOrEnd;
+-mi[Encl]:^mi      EncliticOrEnd;
+-ngam[Encl]:^ngam  EncliticOrEnd;
+-nguq[Encl]:^nguq  EncliticOrEnd;
+-qaa[Encl]:^qaa    EncliticOrEnd;
+-qun[Encl]:^qun    EncliticOrEnd;
+-sa[Encl]:^sa      EncliticOrEnd;
+-ta[Encl]:^ta      EncliticOrEnd;
+-tuq[Encl]:^tuq    EncliticOrEnd;
+-wha[Encl]:^wha    EncliticOrEnd;o
