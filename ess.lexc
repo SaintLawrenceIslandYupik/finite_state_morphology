@@ -14,7 +14,6 @@ Multichar_Symbols
 !-----------
 %{E%}  ! for (e)
 %{G%}  ! for (g) 
-%{NG%} ! for (ng)
 
 !---------------------------
 ! morphophonological symbols 
@@ -1027,9 +1026,9 @@ LEXICON NounInflIV
 [Abs][Sg][2PlPoss]:%^si             #; [Abs][Pl][2PlPoss]:%^%{.m.%}si        #; [Abs][Du][2PlPoss]:%^%{.c.%}%{E%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek            #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek       #; [Abs][Du][2DuPoss]:%^%{.c.%}%{E%}gtek   #;
 !------------------------------------|----------------------------------------|------------------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.c.%}%{NG%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}%{NG%}i            #; [Abs][Du][3SgPoss]:%^kek     #;
-[Abs][Sg][3PlPoss]:%^%{.c.%}%{NG%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}%{NG%}it           #; [Abs][Du][3PlPoss]:%^%{.c.%}%{E%}gket   #;
-[Abs][Sg][3DuPoss]:%^%{.c.%}%{NG%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}%{NG%}ik           #; [Abs][Du][3DuPoss]:%^%{.c.%}%{E%}gkek   #;
+[Abs][Sg][3SgPoss]:%^%{.c.%}nga          #; [Abs][Pl][3SgPoss]:%^%{.c.%}ngi            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}ngat         #; [Abs][Pl][3PlPoss]:%^%{.c.%}ngit           #; [Abs][Du][3PlPoss]:%^%{.c.%}%{E%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}ngak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ngik           #; [Abs][Du][3DuPoss]:%^%{.c.%}%{E%}gkek   #;
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
@@ -1396,9 +1395,9 @@ LEXICON NounInflIII
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^%{.w.%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^%{.w.%}gtek   #;
 !--------------------------------|------------------------------------|-------------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.c.%}%{NG%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}%{NG%}i            #; [Abs][Du][3SgPoss]:%^%{.w.%}kek     #;
-[Abs][Sg][3PlPoss]:%^%{.c.%}%{NG%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}%{NG%}it           #; [Abs][Du][3PlPoss]:%^%{.w.%}gket   #;
-[Abs][Sg][3DuPoss]:%^%{.c.%}%{NG%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}%{NG%}ik           #; [Abs][Du][3DuPoss]:%^%{.w.%}gkek   #;
+[Abs][Sg][3SgPoss]:%^%{.c.%}nga          #; [Abs][Pl][3SgPoss]:%^%{.c.%}ngi            #; [Abs][Du][3SgPoss]:%^%{.w.%}kek     #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}ngat         #; [Abs][Pl][3PlPoss]:%^%{.c.%}ngit           #; [Abs][Du][3PlPoss]:%^%{.w.%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}ngak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ngik           #; [Abs][Du][3DuPoss]:%^%{.w.%}gkek   #;
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|

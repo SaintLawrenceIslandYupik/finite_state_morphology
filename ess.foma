@@ -64,9 +64,9 @@ define DropFinalC g h -> g     || g       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! as
                   g h -> g h w || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -ghw
                   g h -> w h   || %{k%} w "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
                   g h -> w     || %{k%} w "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
-				    k -> q w   || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw
-				    k -> q     || g h     "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
-				    k -> k w   || w       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
+                    k -> q w   || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
+                    k -> q     || g h     "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
+                    k -> k w   || w       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
                     C -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop root-final consonant
   [ g | %{g%} ] ( h ) -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
             %{%.m%.%} -> 0                                              ;
@@ -89,6 +89,16 @@ define VowelDominance a i -> i i  .o.
                       a e -> a a  .o.
                       u e -> u u  ;
 
+define VelarUvularRounding n g n g -> n g n g w , ! velar/uvular rounding [Jacobson (2001) p.  36]
+                               n g -> n g w     , ! needs to occur before VowelDominance
+                             g h h -> g h h w   , ! conditions should apply to the longest match
+                               g h -> g h w     ,  
+                               g g -> w h       ,  
+                                 k -> k w       ,  
+                                 g -> w         , 
+                                 q -> q w || [ C | V - u ] _ u [ i | a ] ; 
+                                
+
 !-------------------
 ! ALLOMORPHY RULES
 !-------------------
@@ -104,17 +114,16 @@ define ResolveG %{G%} -> w || u "^" _ [ a | i ]               .o. ! velar roundi
                 %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
                 %{G%} -> 0                                    ;
 
-
 !------------------
 ! MODIFY -TE RULES
 !------------------
 	
 define DevoiceApicalTE y   -> s,
-	                   n   -> n n   || %{t%} e "^" %{%.at%.%} _                       .o.
+	                     n   -> n n   || %{t%} e "^" %{%.at%.%} _                       .o.
                        g   -> g g                                                     ,   ! the only consonants before -te that double
                        l   -> l l                                                     ,   ! to show voicelessness are -g, -l, -gh
-					   g h -> g h h || _ %{t%} e "^" %{%.at%.%} n                     .o. ! [Jacobson (2001) p.31]
-					   n   -> 0     || [ g g | l l | g h h ] %{t%} e "^" %{%.at%.%} _ ;   ! undouble the -n according to undoubling rules
+                       g h -> g h h || _ %{t%} e "^" %{%.at%.%} n                     .o. ! [Jacobson (2001) p.31]
+                       n   -> 0     || [ g g | l l | g h h ] %{t%} e "^" %{%.at%.%} _ ;   ! undouble the -n according to undoubling rules
 
 define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
            %{%.at%.%} -> 0                     ; 
@@ -155,19 +164,20 @@ define CleanupMorphBoundary "^" -> 0 ;
 
 define Rules [
     SemiFinalE           .o.
-    FinalE               .o.
     LongRootFinalE       .o.
     DevoiceApicalTE      .o.
     DropTE               .o.
     DropFinalC           .o.
     DropWeakC            .o.
     DropUvular           .o.
+    FinalE               .o.
     AddE                 .o.
     ResolveG             .o.
     BaseFinalEndings     .o. 
     PreventGemination    .o.
     CleanupDigraph       .o.
     CleanupMorphBoundary .o.
+    VelarUvularRounding  .o.
     VowelDominance       .o.
     MatchVoicing
 ];
