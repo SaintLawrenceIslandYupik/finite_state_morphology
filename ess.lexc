@@ -871,18 +871,17 @@ LEXICON NounInflX
 !--------------------------------|-----------------------------------|----------------------------------|
 [Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k                   #;
 !--------------------------------|-----------------------------------|----------------------------------|
-[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka        #;
+[Abs][Sg][1SgPoss]:%^ka         #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka        #;
 [Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput       #;
 [Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung      #;
 !--------------------------------|-----------------------------------|----------------------------------|
 [Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken       #;
-                                   [Abs][Pl][2SgPoss]:%^%{.f.%}ten  #;
 [Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi        #;
 [Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
-[Abs][Sg][3SgPoss]:%^%nga       #; [Abs][Pl][3SgPoss]:%^%ngi        #; [Abs][Du][3SgPoss]:%^%kek       #;
-[Abs][Sg][3PlPoss]:%^%ngat      #; [Abs][Pl][3PlPoss]:%^%ngit       #; [Abs][Du][3PlPoss]:%^gket       #;
-[Abs][Sg][3DuPoss]:%^%ngak      #; [Abs][Pl][3DuPoss]:%^%ngik       #; [Abs][Du][3DuPoss]:%^gkek       #;
+[Abs][Sg][3SgPoss]:%^nga       #; [Abs][Pl][3SgPoss]:%^ngi          #; [Abs][Du][3SgPoss]:%^kek        #;
+[Abs][Sg][3PlPoss]:%^ngat      #; [Abs][Pl][3PlPoss]:%^ngit         #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3DuPoss]:%^ngak      #; [Abs][Pl][3DuPoss]:%^ngik         #; [Abs][Du][3DuPoss]:%^gkek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
@@ -1181,7 +1180,7 @@ LEXICON NounInflVIII
 !---------------------------|
 !    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|----------------------------------------|
-[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.sf.%}et     #; [Erg][Du]:%^%{.sf.%}ek                #;
+[Erg][Sg]:%^%{.sf.%}em     #; [Erg][Pl]:%^%{.sf.%}et     #; [Erg][Du]:%^%{.sf.%}ek                #;
 !---------------------------|-----------------------------|----------------------------------------|
 [Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^%{.sf.%}egma     #;
 [Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.sf.%}egemta   #;
