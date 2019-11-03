@@ -16,23 +16,23 @@ LEXICON NounInflIV
 [Abs][Sg][2PlPoss]:%^si             #; [Abs][Pl][2PlPoss]:%^%{.m.%}si        #; [Abs][Du][2PlPoss]:%^%{.c.%}%{E%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek            #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek       #; [Abs][Du][2DuPoss]:%^%{.c.%}%{E%}gtek   #;
 !------------------------------------|----------------------------------------|------------------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.c.%}%{NG%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}%{NG%}i            #; [Abs][Du][3SgPoss]:%^kek     #;
-[Abs][Sg][3PlPoss]:%^%{.c.%}%{NG%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}%{NG%}it           #; [Abs][Du][3PlPoss]:%^%{.c.%}%{E%}gket   #;
-[Abs][Sg][3DuPoss]:%^%{.c.%}%{NG%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}%{NG%}ik           #; [Abs][Du][3DuPoss]:%^%{.c.%}%{E%}gkek   #;
+[Abs][Sg][3SgPoss]:%^%{.c.%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}i            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}it           #; [Abs][Du][3PlPoss]:%^%{.c.%}%{E%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ik           #; [Abs][Du][3DuPoss]:%^%{.c.%}%{E%}gkek   #;
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
-!         RELATIVE          |
+!    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg]:%^m              #; [Rel][Pl]:%^%{.c.%}%{E%}   #; [Rel][Du]:%^%{.c.%}%{E%}k                #;
+[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.c.%}%{E%}   #; [Erg][Du]:%^%{.c.%}%{E%}k                #;
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg][1SgPoss]:%^ma                                  #; [Rel][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
-[Rel][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Rel][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
-[Rel][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Rel][Du][1DuPoss]:%^%{.c.%}%{E%}gemtung #;
+[Erg][Sg][1SgPoss]:%^ma                                  #; [Erg][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
+[Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
+[Erg][Sg][1DuPoss]:%^%{.m.%}mtung                        #; [Erg][Du][1DuPoss]:%^%{.c.%}%{E%}gemtung #;
 !---------------------------|-----------------------------|-------------------------------------------|
-[Rel][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Rel][Du][2SgPoss]:%^%{.c.%}%{E%}gpek    #;
-[Rel][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Rel][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
-[Rel][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Rel][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
+[Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.c.%}%{E%}gpek    #;
+[Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
+[Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
 !---------------------------|-----------------------------|-------------------------------------------|
 
 
