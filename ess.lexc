@@ -806,9 +806,9 @@ LEXICON NounInflIX
 [Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi        #;
 [Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.f.%}a   #; [Abs][Pl][3SgPoss]:%^%{.f.%}i    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
-[Abs][Sg][3PlPoss]:%^%{.f.%}at  #; [Abs][Pl][3PlPoss]:%^%{.f.%}it   #; [Abs][Du][3PlPoss]:%^gket       #;
-[Abs][Sg][3DuPoss]:%^%{.f.%}ak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ik   #; [Abs][Du][3DuPoss]:%^gkek       #;
+[Abs][Sg][3SgPoss]:%^%{.f.%}nga   #; [Abs][Pl][3SgPoss]:%^%{.f.%}ngi    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
+[Abs][Sg][3PlPoss]:%^%{.f.%}ngat  #; [Abs][Pl][3PlPoss]:%^%{.f.%}ngit   #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3DuPoss]:%^%{.f.%}ngak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ngik   #; [Abs][Du][3DuPoss]:%^gkek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
@@ -880,9 +880,9 @@ LEXICON NounInflX
 [Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi        #;
 [Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.f.%}a   #; [Abs][Pl][3SgPoss]:%^%{.f.%}i    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
-[Abs][Sg][3PlPoss]:%^%{.f.%}at  #; [Abs][Pl][3PlPoss]:%^%{.f.%}it   #; [Abs][Du][3PlPoss]:%^gket       #;
-[Abs][Sg][3DuPoss]:%^%{.f.%}ak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ik   #; [Abs][Du][3DuPoss]:%^gkek       #;
+[Abs][Sg][3SgPoss]:%^%nga       #; [Abs][Pl][3SgPoss]:%^%ngi        #; [Abs][Du][3SgPoss]:%^%kek       #;
+[Abs][Sg][3PlPoss]:%^%ngat      #; [Abs][Pl][3PlPoss]:%^%ngit       #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3DuPoss]:%^%ngak      #; [Abs][Pl][3DuPoss]:%^%ngik       #; [Abs][Du][3DuPoss]:%^gkek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
@@ -1026,9 +1026,9 @@ LEXICON NounInflIV
 [Abs][Sg][2PlPoss]:%^si             #; [Abs][Pl][2PlPoss]:%^%{.m.%}si        #; [Abs][Du][2PlPoss]:%^%{.c.%}%{E%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek            #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek       #; [Abs][Du][2DuPoss]:%^%{.c.%}%{E%}gtek   #;
 !------------------------------------|----------------------------------------|------------------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.c.%}nga          #; [Abs][Pl][3SgPoss]:%^%{.c.%}ngi            #; [Abs][Du][3SgPoss]:%^kek     #;
-[Abs][Sg][3PlPoss]:%^%{.c.%}ngat         #; [Abs][Pl][3PlPoss]:%^%{.c.%}ngit           #; [Abs][Du][3PlPoss]:%^%{.c.%}%{E%}gket   #;
-[Abs][Sg][3DuPoss]:%^%{.c.%}ngak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ngik           #; [Abs][Du][3DuPoss]:%^%{.c.%}%{E%}gkek   #;
+[Abs][Sg][3SgPoss]:%^%{.c.%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}i            #; [Abs][Du][3SgPoss]:%^kek     #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}it           #; [Abs][Du][3PlPoss]:%^%{.c.%}%{E%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ik           #; [Abs][Du][3DuPoss]:%^%{.c.%}%{E%}gkek   #;
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
@@ -1322,9 +1322,9 @@ LEXICON NounInflVI
 [Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi    #;
 [Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^ten         #; [Abs][Du][2DuPoss]:%^gtek   #;
 !--------------------------------|-----------------------------------|------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.f.%}a   #; [Abs][Pl][3SgPoss]:%^%{.f.%}i    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
-[Abs][Sg][3PlPoss]:%^%{.f.%}at  #; [Abs][Pl][3PlPoss]:%^%{.f.%}it   #; [Abs][Du][3PlPoss]:%^gket       #;
-[Abs][Sg][3DuPoss]:%^%{.f.%}ak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ik   #; [Abs][Du][3DuPoss]:%^gkek       #;
+[Abs][Sg][3SgPoss]:%^%{.f.%}nga   #; [Abs][Pl][3SgPoss]:%^%{.f.%}ngi    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
+[Abs][Sg][3PlPoss]:%^%{.f.%}ngat  #; [Abs][Pl][3PlPoss]:%^%{.f.%}ngit   #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3DuPoss]:%^%{.f.%}ngak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ngik   #; [Abs][Du][3DuPoss]:%^gkek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
 
 !---------------------------|
@@ -1395,9 +1395,9 @@ LEXICON NounInflIII
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^%{.w.%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^%{.w.%}gtek   #;
 !--------------------------------|------------------------------------|-------------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.c.%}nga          #; [Abs][Pl][3SgPoss]:%^%{.c.%}ngi            #; [Abs][Du][3SgPoss]:%^%{.w.%}kek     #;
-[Abs][Sg][3PlPoss]:%^%{.c.%}ngat         #; [Abs][Pl][3PlPoss]:%^%{.c.%}ngit           #; [Abs][Du][3PlPoss]:%^%{.w.%}gket   #;
-[Abs][Sg][3DuPoss]:%^%{.c.%}ngak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ngik           #; [Abs][Du][3DuPoss]:%^%{.w.%}gkek   #;
+[Abs][Sg][3SgPoss]:%^%{.c.%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}i            #; [Abs][Du][3SgPoss]:%^%{.w.%}kek     #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}it           #; [Abs][Du][3PlPoss]:%^%{.w.%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ik           #; [Abs][Du][3DuPoss]:%^%{.w.%}gkek   #;
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|

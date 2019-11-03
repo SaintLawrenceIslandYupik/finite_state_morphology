@@ -36,9 +36,9 @@ define UnvoicedC  [ p   | t   | k   | q   |
 
 define MultiCharC [ n g n g w |
                     n g n g   | g h h w | g h h |
-				    g h w     | n g w   |
-					g g       | g h     | k w   | l l | m m |
-					n g       | n n     | r r   | q w | w h ];
+                    g h w     | n g w   |
+                    g g       | g h     | k w   | l l | m m |
+                    n g       | n n     | r r   | q w | w h ];
 
 define FullVowel  [ a | i | u ]     ;
 define V          [ e | FullVowel ] ;
@@ -89,15 +89,17 @@ define VowelDominance a i -> i i  .o.
                       a e -> a a  .o.
                       u e -> u u  ;
 
-define VelarUvularRounding n g n g -> n g n g w , ! velar/uvular rounding [Jacobson (2001) p.  36]
-                               n g -> n g w     , ! needs to occur before VowelDominance
-                             g h h -> g h h w   , ! conditions should apply to the longest match
-                               g h -> g h w     ,  
-                               g g -> w h       ,  
-                                 k -> k w       ,  
-                                 g -> w         , 
-                                 q -> q w || [ C | V - u ] _ u [ i | a ] ; 
-                                
+define VelarUvularRounding n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ] .o. ! velar/uvular rounding [Jacobson (2001) p.36]
+                               n g -> n g w     || [ C | V - u ] _ u [ i | a ] .o. ! needs to occur before VowelDominance
+                             g h h -> g h h w   || [ C | V - u ] _ u [ i | a ] .o. ! conditions should apply to the longest match
+                               g h -> g h w     || [ C | V - u ] _ u [ i | a ] .o.   
+                               g g -> w h       || [ C | V - u ] _ u [ i | a ] .o.   
+                                 k -> k w       || [ C | V - u ] _ u [ i | a ] .o.   
+                                 g -> w         || [ C | V - u ] _ u [ i | a ] .o.  
+                                 q -> q w       || [ C | V - u ] _ u [ i | a ] ; 
+
+define ShortBaseFinlaE e -> e || .#. C (C) V C (C) _ "^" (%{%.f%.%}) n g a , ! [Jacobson (2001) p.38]
+                       e -> a || .#. C (C) V C (C) _ "^" (%{%.f%.%}) n g a ; ! needs to occur before e dropping
 
 !-------------------
 ! ALLOMORPHY RULES
@@ -170,6 +172,7 @@ define Rules [
     DropFinalC           .o.
     DropWeakC            .o.
     DropUvular           .o.
+    ShortBaseFinlaE      .o. 
     FinalE               .o.
     AddE                 .o.
     ResolveG             .o.
