@@ -36,6 +36,8 @@ Multichar_Symbols
 
 [Ind]   ! indicative mood
 
+[N.N]  ! noun-elaborating derivational suffix
+[N.V]  ! verbalizing derivational suffix
 
 !===========
 LEXICON Root
@@ -50,3 +52,5 @@ yug[Abs][Sg]:yuuk #;
 naasqugh[Abs][Sg][3SgPoss]:naasqwa #;
 uyaqugh[Abs][Sg][3SgPoss]:uyaqghwa #;
 alangqugh[Abs][Sg][3SgPoss]:alangqghwa #;
+Sivugagh-mii[N.N][Abs][Sg]:Sivuqaghhmii #;
+Sivugagh-mii[N.N]-ngu[N.V][Intr][Ind][1Sg]:Sivuqaghhmiinguunga #;

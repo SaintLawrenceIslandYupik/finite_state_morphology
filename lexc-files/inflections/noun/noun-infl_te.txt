@@ -35,6 +35,10 @@ LEXICON NounInflVI
 [Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
 [Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.f.%}an                           #; [Erg][Du][3SgPoss]:%^gkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.f.%}ita                          #; [Erg][Du][3PlPoss]:%^gkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.f.%}ita                          #; [Erg][Du][3DuPoss]:%^gkenka  #;
+!---------------------------|-----------------------------|-------------------------------|
 
 !-----------------------------|
 !      ABLATIVE MODALIS       |

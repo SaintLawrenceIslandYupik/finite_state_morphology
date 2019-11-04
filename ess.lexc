@@ -101,6 +101,7 @@ anigu     NounSuffixI;  ! snow on ground
 anipa     NounSuffixI;  ! owl
 apa       NounSuffixI;  ! grandfather
 ata       NounSuffixI;  ! father
+egllu     NounSuffixI; ! stove (dual eglluk generally used for one stove)
 esla      NounSuffixI;  ! outdoors; weather; awareness; world
 kayu      NounSuffixI;  ! sculpin; ocean fish (in general)
 kii       NounSuffixI;  ! wound
@@ -118,7 +119,10 @@ yavlu     NounSuffixI;  ! sweetheart
 yaywaali  NounSuffixI;  ! orphan
 ila       NounSuffixI;  ! relative; associate; part; one or some (of)
 lalala    NounSuffixI;  ! dew
-mesuuna   NounSuffixI;  ! hairbrush; comb!==============================
+mesuuna   NounSuffixI;  ! hairbrush; comb
+
+
+!==============================
 LEXICON NounRootIX
 !  end in -e that can be hopped
 !==============================
@@ -126,59 +130,58 @@ LEXICON NounRootIX
 iye   NounSuffixIX; ! eye
 tume  NounSuffixIX; ! track, footprint; trail
 paye  NounSuffixIX; ! mouth (non-anatomical); hatch of kayak
-qaye  NounSuffixIX; ! surface; top!=====================================
+qaye  NounSuffixIX; ! surface; top
+
+
+!=====================================
 LEXICON NounRootX
 !  end in final -e that can be dropped
 !  but not hopped
 !=====================================
 
 akume      NounSuffixX; ! granulated sugar
+efluge     NounSuffixX; ! floor
 iigge      NounSuffixX; ! hand
-neqe       NounSuffixX; ! food
-tepe       NounSuffixX; ! odor
-
 Karake     NounSuffixX; ! Koryak
 Laluramke  NounSuffixX; ! white person; Caucasian
+neqe       NounSuffixX; ! food
+qergese    NounSuffixX; ! window
+tepe       NounSuffixX; ! odor
+tipele     NounSuffixX; ! table (dual tipelek generally used for one table) (from English)
+waape      NounSuffixX; ! rope
 
-Karake     NounSuffixX;  ! Koryak
-waape      NounSuffixX;  ! rope
-qergese    NounSuffixX;  ! window
+
 !=====================
 LEXICON NounRootII
 !  end in -g, -w, -ghw
 !=====================
 
-aqavzig      NounSuffixII; ! salmonberry, cloudberry
-asag         NounSuffixII; ! paternal aunt
-atkug        NounSuffixII; ! parka
-igaghvig     NounSuffixII; ! school
-iqallug      NounSuffixII; ! fish
-manig        NounSuffixII; ! bird's egg
-nayag        NounSuffixII; ! sister of a male
-nunivag      NounSuffixII; ! rosewort plant
-panig        NounSuffixII; ! daughter
-savig        NounSuffixII; ! knife
-sikig        NounSuffixII; ! squirrel
-tengegkayug  NounSuffixII; ! airplane (plural, tengegkayuget, often used for one airplane)
-uyghag       NounSuffixII; ! stone; rock
-walguyaag    NounSuffixII; ! snowshoe
-veg          NounSuffixII; ! grass
-yug          NounSuffixII; ! person; man
-yughaghvig   NounSuffixII; ! church
-
-Yupig        NounSuffixII; ! Siberian/St. Lawrence Island Eskimo person
+amig            NounSuffixII; ! door
+aqavzig         NounSuffixII; ! salmonberry, cloudberry
+asag            NounSuffixII; ! paternal aunt
+atkug           NounSuffixII; ! parka
+igaghvig        NounSuffixII; ! school
+iqallug         NounSuffixII; ! fish
+kemekrag        NounSuffixII; ! meat
+manig           NounSuffixII; ! bird's egg
+nayag           NounSuffixII; ! sister of a male
+nunivag         NounSuffixII; ! rosewort plant (Sedum rosea), locally greens; tundra
+panig           NounSuffixII; ! daughter
+savig           NounSuffixII; ! knife
+sikig           NounSuffixII; ! squirrel
+tengegkayug     NounSuffixII; ! airplane (plural, tengegkayuget, often used for one airplane)
+uyghag          NounSuffixII; ! stone; rock
+walguyaag       NounSuffixII; ! snowshoe
+veg             NounSuffixII; ! grass
+yug             NounSuffixII; ! person; man
+yughaghvig      NounSuffixII; ! church
+Yupig           NounSuffixII; ! Siberian/St. Lawrence Island Eskimo person
 
 aaw:aa%{k%}w    NounSuffixII;  ! blood
 kiiw:kii%{k%}w  NounSuffixII;  ! river
 
-
-qiighw  NounSuffixII;  ! gray hair; cough
-saaghw  NounSuffixII;  ! side
-
-nunivag      NounSuffixII; ! rosewort plant (Sedum rosea), locally greens; tundra
-asag         NounSuffixII; ! paternal aunt
-tengegkayug  NounSuffixII; ! airplane (plural, tengegkayuget, often used for one airplane)
-walguyaag    NounSuffixII; ! snowshoe
+qiighw          NounSuffixII;  ! gray hair; cough
+saaghw          NounSuffixII;  ! side
 
 
 !==============================
@@ -202,7 +205,6 @@ taghnughhagh    NounSuffixIV; ! child
 takestaaghhagh  NounSuffixIV; ! short thing
 tukugh          NounSuffixIV; ! host
 uyughagh        NounSuffixIV; ! younger sibling (sister or brother)
-
 Sivungagh       NounSuffixIV; ! Savoonga
 Sivugagh        NounSuffixIV; ! Gambell; St. Lawrence Island (in general)
 
@@ -213,12 +215,11 @@ LEXICON NounRootVII
 !======================================
 
 ategh   NounSuffixVII; ! name
+aveg    NounSuffixVII; ! half
 kameg   NounSuffixVII; ! skin boot, mukluk
 papeg   NounSuffixVII; ! tail
 qanegh  NounSuffixVII; ! mouth (anatomical)
 taqegh  NounSuffixVII; ! vein
-papeg   NounSuffixVII; ! tail
-qanegh  NounSuffixVII; ! mouth (anatomical)
 
 
 !=======================================
@@ -231,7 +232,10 @@ aliinegh   NounSuffixVIII; ! clear, calm day
 kemeg      NounSuffixVIII; ! flesh; skin
 siqinegh   NounSuffixVIII; ! sun
 ughluvegh  NounSuffixVIII; ! bow
-yaquleg    NounSuffixVIII; ! angel!================================================================
+yaquleg    NounSuffixVIII; ! angel
+
+
+!================================================================
 LEXICON NounRootV
 !  end in strong -gh: -aagh, -iigh, -uugh
 !                     -egh where e-dropping is not possible
@@ -253,7 +257,10 @@ seghlegh       NounSuffixV; ! bad thing
 siivanllegh    NounSuffixV; ! elder
 ulaagh         NounSuffixV; ! semi-lunar knife; woman's knife; ulu
 ulghaagh       NounSuffixV; ! sea lion
-vegaagh        NounSuffixV; ! grass!=================
+vegaagh        NounSuffixV; ! grass
+
+
+!=================
 LEXICON NounRootVI
 !  end in -te
 !=================
@@ -264,15 +271,11 @@ qulmesiite:qulmesii%{t%}e        NounSuffixVI; ! cooking pot
 riigte:riig%{t%}e                NounSuffixVI; ! animal's den
 sigute:sigu%{t%}e                NounSuffixVI; ! ear
 yughaghte:yughagh%{t%}e          NounSuffixVI; ! minister, clergyman
+Yupigestute:Yupigestu%{t%}e      NounSuffixVI; ! in the Yupik language (inflected form)
 
 ! POSSIBLE e-HOPPING
 ggute:ggu%{t%}e                  NounSuffixVI; ! tooth
 
-
-Yupigestute:Yupigestu%{t%}e      NounSuffixVI; ! in the Yupik language (inflected form)
-
-apeghtughiste  NounSuffixVI; ! teacher
-Yupigestute    NounSuffixVI; ! in the Yupik language (inflected form)
 
 !==================
 LEXICON NounRootIII
@@ -286,6 +289,7 @@ anengagh:anenga%{g%}h        NounSuffixIII; ! older brother
 angyagh:angya%{g%}h          NounSuffixIII; ! boat
 aqelqagh:aqelqa%{g%}h        NounSuffixIII; ! visitor
 avaqutagh:avaquta%{g%}h      NounSuffixIII; ! child, offspring
+eflugagh:efluga%{g%}h        NounSuffixIII; ! floor (from English)
 itegagh:itega%{g%}h          NounSuffixIII; ! foot
 mangteghagh:mangtegha%{g%}h  NounSuffixIII; ! house
 naasqugh:naasqu%{g%}h        NounSuffixIII; ! head
@@ -308,8 +312,10 @@ ukazigh:ukazi%{g%}h          NounSuffixIII; ! hare, rabbit
 ungipaghagh:ungipagha%{g%}h  NounSuffixIII; ! traditional story; tale; legend
 uqugh:uqu%{g%}h              NounSuffixIII; ! fat; blubber; seal oil
 uyaqugh:uyaqu%{g%}h          NounSuffixIII; ! neck
+Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)
 
-Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)!===================
+
+!===================
 LEXICON VerbRootI
 !  end in -a, -i, -u
 !===================
@@ -323,24 +329,33 @@ kaki           VerbSuffixI; ! to sew
 mekestaaghhaa  VerbSuffixI; ! to be small
 mesuuna        VerbSuffixI; ! to brush or comb one's hair
 qiya           VerbSuffixI; ! to cry
+seghleghu      VerbSuffixI; ! to be bad
 tagi           VerbSuffixI; ! to come
 takestaaghhaa  VerbSuffixI; ! to be short
 tuqu           VerbSuffixI; ! to die
-umughqaa       VerbSuffixI; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)!=================
+umughqaa       VerbSuffixI; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+
+
+!=================
 LEXICON VerbRootII
 !  has final -e
 !=================
 
-aghulaqe  VerbSuffixII;  ! to leave
-alinge    VerbSuffixII;  ! to be afraid
-aane      VerbSuffixII;  ! to go out
-aange     VerbSuffixII;  ! to be big
-esleqe    VerbSuffixII;  ! to be full
-kuuve     VerbSuffixII;  ! to spill
-meghe     VerbSuffixII;  ! to drink
-neghe     VerbSuffixII;  ! to eat
-taake     VerbSuffixII;  ! to be long
-taaqe     VerbSuffixII;  ! to finish; to quit
+aane             VerbSuffixII;  ! to go out
+aange            VerbSuffixII;  ! to be big
+aghulaqe         VerbSuffixII;  ! to leave
+alinge           VerbSuffixII;  ! to be afraid
+atuqe            VerbSuffixII;  ! to use; to wear (takes transitive endings only)
+esleqe           VerbSuffixII;  ! to be full
+igamsiqayugvike  VerbSuffixII; ! to feel thankful toward (transitive only)
+kuuve            VerbSuffixII;  ! to spill
+laalighfike      VerbSuffixII; ! to visit (transitive only)
+meghe            VerbSuffixII;  ! to drink
+nalluke          VerbSuffixII; ! to not know (transitive only)
+neghe            VerbSuffixII;  ! to eat
+piniqe           VerbSuffixII; ! to like (transitive only)
+taake            VerbSuffixII;  ! to be long
+taaqe            VerbSuffixII;  ! to finish; to quit
 
 
 !===================================
@@ -349,21 +364,24 @@ LEXICON VerbRootIV
 !  or -egh where e cannot be dropped
 !===================================
 
-aglagh       VerbSuffixIV;  ! to go home; to go over to another place
-gaagh        VerbSuffixIV;  ! to cook
-igatagh      VerbSuffixIV;  ! to be hungry
-iyatagh      VerbSuffixIV;  ! to be hungry
-mayugh       VerbSuffixIV;  ! to go up
-megh         VerbSuffixIV;  ! to drink
-negh         VerbSuffixIV;  ! to eat
-nenglagh     VerbSuffixIV;  ! to laugh
-pinigh       VerbSuffixIV;  ! to be good
-qavagh       VerbSuffixIV;  ! to sleep
-qepghagh     VerbSuffixIV;  ! to work
-yughagh      VerbSuffixIV;  ! to pray, to worship
-atugh        VerbSuffixIV;  ! to use
-nulugh       VerbSuffixIV;  ! to ice-fish; to dunk a tea bag
-ungipaghagh  VerbSuffixIV;  ! to tell a story
+aglagh        VerbSuffixIV;  ! to go home; to go over to another place
+esghagh       VerbSuffixIV; ! to see (transitive only)
+gaagh         VerbSuffixIV;  ! to cook
+igamsiqanagh  VerbSuffixIV; ! to make one thankful (intransitive only)
+igatagh       VerbSuffixIV;  ! to be hungry
+iyamsiqanagh  VerbSuffixIV; ! to make one thankful (intransitive only)
+iyatagh       VerbSuffixIV;  ! to be hungry
+mayugh        VerbSuffixIV;  ! to go up
+megh          VerbSuffixIV;  ! to drink
+negh          VerbSuffixIV;  ! to eat
+nenglagh      VerbSuffixIV;  ! to laugh
+pinigh        VerbSuffixIV;  ! to be good
+qavagh        VerbSuffixIV;  ! to sleep
+qepghagh      VerbSuffixIV;  ! to work
+yughagh       VerbSuffixIV;  ! to pray, to worship
+atugh         VerbSuffixIV;  ! to use
+nulugh        VerbSuffixIV;  ! to ice-fish; to dunk a tea bag
+ungipaghagh   VerbSuffixIV;  ! to tell a story
 
 
 !=====================
@@ -371,8 +389,10 @@ LEXICON VerbRootIII
 !  end in -g, -w, -ghw
 !=====================
 
-ukig    VerbSuffixIII; ! to go down
-qiighw  VerbSuffixIII; ! to cough
+igamsiqayug  VerbSuffixIII; ! to feel thankful (intransitive only)
+ukig         VerbSuffixIII; ! to go down
+qiighw       VerbSuffixIII; ! to cough
+qilug        VerbSuffixIII; ! to bark (at) (transitive or intransitive)
 
 
 !======================================
@@ -380,7 +400,9 @@ LEXICON VerbRootVI
 !  has semi-final -e that can be hopped
 !======================================
 
+aveg   VerbSuffixVI; ! to divide in two
 itegh  VerbSuffixVI; ! to go in; to enter
+umeg   VerbSuffixVI; ! to close (transitive or intransitive)
 
 
 !=======================================
@@ -397,11 +419,19 @@ LEXICON VerbRootV
 !  end in -te
 !================
 
-esghaate:esghaa%{t%}e  VerbSuffixV; ! to see something
-igleghte:iglegh%{t%}e  VerbSuffixV; ! to travel
-ingaghte:ingagh%{t%}e  VerbSuffixV; ! to lie down
-kaate:kaa%{t%}e        VerbSuffixV; ! to arrive
-nagate:naga%{t%}e      VerbSuffixV; ! to listen!=====================================================
+esghaate:esghaa%{t%}e    VerbSuffixV; ! to see something
+guute:guu%{t%}e          VerbSuffixV; ! to shoot (transitive or intransitive)
+igleghte:iglegh%{t%}e    VerbSuffixV; ! to travel
+ingaghte:ingagh%{t%}e    VerbSuffixV; ! to lie down
+kaate:kaa%{t%}e          VerbSuffixV; ! to arrive
+laalighte:laaligh%{t%}e  VerbSuffixV; ! to visit (intransitive only
+liite:lii%{t%}e          VerbSuffixV; ! to learn; to become aware of one's surroundings (transitive or intransitive)
+nagate:naga%{t%}e        VerbSuffixV; ! to listen
+qelpeghte:qelpegh%{t%}e  VerbSuffixV; ! to open (transitive or intransitive)
+tuqute:tuqu%{t%}e        VerbSuffixV; ! to kill
+
+
+!=====================================================
 LEXICON NounSuffixI
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
 !  when suffixing to noun roots that end in -a, -i, -u
@@ -418,8 +448,18 @@ LEXICON NounSuffixI
 
 -leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^ngu              VerbSuffixI;    ! to be N
+-u[N.V]:%^ngu                VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii              NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^squghhagh   NounSuffixIV;   ! little N, small N
+
+-lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
 !=====================================================
 LEXICON NounSuffixIX
@@ -439,9 +479,18 @@ LEXICON NounSuffixIX
 
 -leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+-u[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^ghhalek                   #; ! how V! (exclamation)
 
+-mii[N.N]:%^mii              NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 !=====================================================
 LEXICON NounSuffixX
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -460,8 +509,18 @@ LEXICON NounSuffixX
 
 -leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+-u[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii              NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
 !=======================================================
 LEXICON NounSuffixII
@@ -482,6 +541,16 @@ LEXICON NounSuffixII
 
 -u[N.V]:%^u                         VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^%{.m.%}ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii                   NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^%{.m.%}squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
 !================================================================
 LEXICON NounSuffixIV
@@ -502,6 +571,16 @@ LEXICON NounSuffixIV
 
 -u[N.V]:%^%{.c.%}u                  VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^%{.m.%}ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii                     NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^%{.m.%}squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
 !======================================================
 LEXICON NounSuffixVII
@@ -523,6 +602,16 @@ LEXICON NounSuffixVII
 
 -u[N.V]:%^%{.sf.%}u                 VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^%{.m.%}ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii                     NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
 !======================================================
 LEXICON NounSuffixVIII
@@ -544,6 +633,16 @@ LEXICON NounSuffixVIII
 
 -u[N.V]:%^%{.sf.%}u                 VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^%{.m.%}ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii                     NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^%{.m.%}squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
 !=====================================================
 LEXICON NounSuffixV
@@ -564,6 +663,16 @@ LEXICON NounSuffixV
 
 -u[N.V]:%^u                         VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^%{.m.%}ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii                     NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^%{.m.%}squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
 !=====================================================
 LEXICON NounSuffixVI
@@ -582,8 +691,18 @@ LEXICON NounSuffixVI
 
 -leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+-u[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii              NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
 !=====================================================
 LEXICON NounSuffixIII
@@ -604,6 +723,16 @@ LEXICON NounSuffixIII
 
 -u[N.V]:%^%{.c.%}u                  VerbSuffixI;    ! to be N
 
+-ghhalek[N.V]:%^%{.m.%}ghhalek                   #; ! how V! (exclamation)
+
+-mii[N.N]:%^mii                     NounSuffixI;    ! resident of N
+
+-ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
+
+-squq[N.N]:%^%{.m.%}squ%{g%}h       NounSuffixIII;  ! little N, small N
+-squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
+
+-lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
 !======================================================
 LEXICON VerbSuffixI
@@ -620,6 +749,12 @@ LEXICON VerbSuffixI
 
 -yug[V.V]:%^yug       VerbSuffixIII; ! to want to V
 
+-ghhalek[V.V]:%^ghhalek           #; ! how V! (exclamation)
+
+-nghite[V.V]:%^nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+
+-igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
+
 
 !======================================================
 LEXICON VerbSuffixII
@@ -631,12 +766,15 @@ LEXICON VerbSuffixII
 
 -aqe[V.V]:%^%{.f.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
+-naqe[V.V]:%^%{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
 
 -yug[V.V]:%^%{.f.%}yug   VerbSuffixIII; ! to want to V
 
+-ghhalek[V.V]:%^ghhalek              #; ! how V! (exclamation)
 
-!============================================================
+-nghite[V.V]:%^nghite     VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+
+-igate[V.V]:%^%{.f.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)!============================================================
 LEXICON VerbSuffixIV
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
 !  when suffixing to verb roots that end in -agh, -igh, -ugh 
@@ -651,7 +789,11 @@ LEXICON VerbSuffixIV
 
 -yug[V.V]:%^yug      VerbSuffixIII; ! to want to V
 
+-ghhalek[V.V]:%^%{.m.%}ghhalek           #; ! how V! (exclamation)
 
+-nghite[V.V]:%^%{.m.%}nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+
+-igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 !========================================================
 LEXICON VerbSuffixIII
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -665,6 +807,12 @@ LEXICON VerbSuffixIII
 -naqe[V.V]:%^naqe    VerbSuffixII;  ! to be going to V, to be about to V
 
 -yug[V.V]:%^yug      VerbSuffixIII; ! to want to V
+
+-ghhalek[V.V]:%^%{.m.%}ghhalek    #; ! how V! (exclamation)
+
+-nghite[V.V]:%^%{.m.%}nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+
+-igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
 
 !======================================================
@@ -682,6 +830,11 @@ LEXICON VerbSuffixVI
 
 -yug[V.V]:%^yug          VerbSuffixIII; ! to want to V
 
+-ghhalek[V.V]:%^%{.m.%}ghhalek    #; ! how V! (exclamation)
+
+-nghite[V.V]:%^%{.m.%}nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+
+-igate[V.V]:%^%{.sf.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
 !======================================================
 LEXICON VerbSuffixVII
@@ -698,6 +851,11 @@ LEXICON VerbSuffixVII
 
 -yug[V.V]:%^yug          VerbSuffixIII; ! to want to V
 
+-ghhalek[V.V]:%^%{.m.%}ghhalek    #; ! how V! (exclamation)
+
+-nghite[V.V]:%^%{.m.%}nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+
+-igate[V.V]:%^%{.sf.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
 !======================================================
 LEXICON VerbSuffixV
@@ -713,6 +871,11 @@ LEXICON VerbSuffixV
 
 -yug[V.V]:%^%{.at.%}yug      VerbSuffixIII; ! to want to V
 
+-ghhalek[V.V]:%^ghhalek    #; ! how V! (exclamation)
+
+-nghite[V.V]:%^%{.at.%}neghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+
+-igate[V.V]:%^%{.f.%}%{.at.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
 !=======================================================
 LEXICON NounInflI
@@ -749,6 +912,10 @@ LEXICON NounInflI
 [Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
 [Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
 [Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
+!---------------------------|-----------------------------|-------------------------------|
+[Erg][Sg][3SgPoss]:%^ngan                                #; [Erg][Du][3SgPoss]:%^gkenka  #;
+[Erg][Sg][3PlPoss]:%^ngita                               #; [Erg][Du][3PlPoss]:%^gkenka  #;
+[Erg][Sg][3DuPoss]:%^ngita                               #; [Erg][Du][3DuPoss]:%^gkenka  #;
 !---------------------------|-----------------------------|-------------------------------|
 
 
@@ -824,6 +991,10 @@ LEXICON NounInflIX
 [Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
 [Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.f.%}ngan                         #; [Erg][Du][3SgPoss]:%^gkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.f.%}ngita                        #; [Erg][Du][3PlPoss]:%^gkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.f.%}ngita                        #; [Erg][Du][3DuPoss]:%^gkenka  #;
+!---------------------------|-----------------------------|-------------------------------|
 
 !-----------------------------|
 !      ABLATIVE MODALIS       |
@@ -883,6 +1054,7 @@ LEXICON NounInflX
 [Abs][Sg][3PlPoss]:%^ngat      #; [Abs][Pl][3PlPoss]:%^ngit         #; [Abs][Du][3PlPoss]:%^gket       #;
 [Abs][Sg][3DuPoss]:%^ngak      #; [Abs][Pl][3DuPoss]:%^ngik         #; [Abs][Du][3DuPoss]:%^gkek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
+!%{%.f%.%} not included according to footnotes about no e hopping -> no e dropping [Jacobson (2001) p.36, p.38]
 
 !---------------------------|
 !    ERGATIVE (relative)    |
@@ -896,6 +1068,10 @@ LEXICON NounInflX
 [Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
 [Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
 [Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
+!---------------------------|-----------------------------|-------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.f.%}ngan                         #; [Erg][Du][3SgPoss]:%^gkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.f.%}ngita                        #; [Erg][Du][3PlPoss]:%^gkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.f.%}ngita                        #; [Erg][Du][3DuPoss]:%^gkenka  #;
 !---------------------------|-----------------------------|-------------------------------|
 
 
@@ -970,6 +1146,10 @@ LEXICON NounInflII
 [Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^egpesi   #;
 [Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^egpetek  #;
 !---------------------------|-----------------------------|--------------------------------|
+[Erg][Sg][3SgPoss]:%^an                                  #; [Erg][Du][3SgPoss]:%^egkenka  #;
+[Erg][Sg][3PlPoss]:%^ita                                 #; [Erg][Du][3PlPoss]:%^egkenka  #;
+[Erg][Sg][3DuPoss]:%^ita                                 #; [Erg][Du][3DuPoss]:%^egkenka  #;
+!---------------------------|-----------------------------|--------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -1043,7 +1223,10 @@ LEXICON NounInflIV
 [Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.c.%}%{E%}gpesi   #;
 [Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.c.%}%{E%}gpetek  #;
 !---------------------------|-----------------------------|-------------------------------------------|
-
+[Erg][Sg][3SgPoss]:%^%{.c.%}an                           #; [Erg][Du][3SgPoss]:%^%{.c.%}%{E%}gkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.c.%}ita                          #; [Erg][Du][3PlPoss]:%^%{.c.%}%{E%}gkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.c.%}ita                          #; [Erg][Du][3DuPoss]:%^%{.c.%}%{E%}gkenka  #;
+!---------------------------|-----------------------------|-------------------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -1117,6 +1300,10 @@ LEXICON NounInflVII
 [Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
 [Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
 !---------------------------|-----------------------------|----------------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.sf.%}an                           #; [Erg][Du][3SgPoss]:%^%{.sf.%}egkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.sf.%}ita                          #; [Erg][Du][3PlPoss]:%^%{.sf.%}egkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.sf.%}ita                          #; [Erg][Du][3DuPoss]:%^%{.sf.%}egkenka  #;
+!---------------------------|-----------------------------|----------------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -1189,6 +1376,10 @@ LEXICON NounInflVIII
 [Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.sf.%}egpek    #;
 [Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.sf.%}egpesi   #;
 [Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.sf.%}egpetek  #;
+!---------------------------|-----------------------------|----------------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.sf.%}an                           #; [Erg][Du][3SgPoss]:%^%{.sf.%}egkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.sf.%}ita                          #; [Erg][Du][3PlPoss]:%^%{.sf.%}egkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.sf.%}ita                          #; [Erg][Du][3DuPoss]:%^%{.sf.%}egkenka  #;
 !---------------------------|-----------------------------|----------------------------------------|
 
 !---------------------------|
@@ -1265,6 +1456,10 @@ LEXICON NounInflV
 [Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^egpesi   #;
 [Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^egpetek  #;
 !---------------------------|-----------------------------|--------------------------------|
+[Erg][Sg][3SgPoss]:%^an                                  #; [Erg][Du][3SgPoss]:%^egkenka  #;
+[Erg][Sg][3PlPoss]:%^ita                                 #; [Erg][Du][3PlPoss]:%^egkenka  #;
+[Erg][Sg][3DuPoss]:%^ita                                 #; [Erg][Du][3DuPoss]:%^egkenka  #;
+!---------------------------|-----------------------------|--------------------------------|
 
 !---------------------------|
 !     ABLATIVE MODALIS      |
@@ -1339,6 +1534,10 @@ LEXICON NounInflVI
 [Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
 [Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
 !---------------------------|-----------------------------|-------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.f.%}an                           #; [Erg][Du][3SgPoss]:%^gkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.f.%}ita                          #; [Erg][Du][3PlPoss]:%^gkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.f.%}ita                          #; [Erg][Du][3DuPoss]:%^gkenka  #;
+!---------------------------|-----------------------------|-------------------------------|
 
 !-----------------------------|
 !      ABLATIVE MODALIS       |
@@ -1394,15 +1593,15 @@ LEXICON NounInflIII
 [Abs][Sg][2PlPoss]:%^si         #; [Abs][Pl][2PlPoss]:%^%{.m.%}si    #; [Abs][Du][2PlPoss]:%^%{.w.%}gsi    #;
 [Abs][Sg][2DuPoss]:%^tek        #; [Abs][Pl][2DuPoss]:%^%{.m.%}tek   #; [Abs][Du][2DuPoss]:%^%{.w.%}gtek   #;
 !--------------------------------|------------------------------------|-------------------------------------|
-[Abs][Sg][3SgPoss]:%^%{.c.%}a          #; [Abs][Pl][3SgPoss]:%^%{.c.%}i            #; [Abs][Du][3SgPoss]:%^%{.w.%}kek     #;
-[Abs][Sg][3PlPoss]:%^%{.c.%}at         #; [Abs][Pl][3PlPoss]:%^%{.c.%}it           #; [Abs][Du][3PlPoss]:%^%{.w.%}gket   #;
-[Abs][Sg][3DuPoss]:%^%{.c.%}ak         #; [Abs][Pl][3DuPoss]:%^%{.c.%}ik           #; [Abs][Du][3DuPoss]:%^%{.w.%}gkek   #;
+[Abs][Sg][3SgPoss]:%^%{.c.%}a   #; [Abs][Pl][3SgPoss]:%^%{.c.%}i     #; [Abs][Du][3SgPoss]:%^%{.w.%}kek    #;
+[Abs][Sg][3PlPoss]:%^%{.c.%}at  #; [Abs][Pl][3PlPoss]:%^%{.c.%}it    #; [Abs][Du][3PlPoss]:%^%{.w.%}gket   #;
+[Abs][Sg][3DuPoss]:%^%{.c.%}ak  #; [Abs][Pl][3DuPoss]:%^%{.c.%}ik    #; [Abs][Du][3DuPoss]:%^%{.w.%}gkek   #;
 !--------------------------------|------------------------------------|-------------------------------|
 
 !---------------------------|
 !    ERGATIVE (relative)    |
 !---------------------------|-----------------------------|--------------------------------------|
-[Erg][Sg]:%^m              #; [Erg][Pl]:%^%{.w.%}t       #; [Erg][Du]:%^%{.w.%}k                #;
+[Erg][Sg]:%^%{.w.%}m       #; [Erg][Pl]:%^%{.w.%}t       #; [Erg][Du]:%^%{.w.%}k                #;
 !---------------------------|-----------------------------|--------------------------------------|
 [Erg][Sg][1SgPoss]:%^%{.w.%}ma                           #; [Erg][Du][1SgPoss]:%^%{.w.%}gma     #;
 [Erg][Sg][1PlPoss]:%^%{.m.%}mta                          #; [Erg][Du][1PlPoss]:%^%{.w.%}gemta   #;
@@ -1411,6 +1610,10 @@ LEXICON NounInflIII
 [Erg][Sg][2SgPoss]:%^%{.m.%}gpek                         #; [Erg][Du][2SgPoss]:%^%{.w.%}gpek    #;
 [Erg][Sg][2PlPoss]:%^%{.m.%}gpesi                        #; [Erg][Du][2PlPoss]:%^%{.w.%}gpesi   #;
 [Erg][Sg][2DuPoss]:%^%{.m.%}gpetek                       #; [Erg][Du][2DuPoss]:%^%{.w.%}gpetek  #;
+!---------------------------|-----------------------------|--------------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.c.%}an                           #; [Erg][Du][3SgPoss]:%^%{.w.%}gkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.c.%}ita                          #; [Erg][Du][3PlPoss]:%^%{.w.%}gkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.c.%}ita                          #; [Erg][Du][3DuPoss]:%^%{.w.%}gkenka  #;
 !---------------------------|-----------------------------|--------------------------------------|
 
 !-----------------------------|
@@ -1454,7 +1657,7 @@ LEXICON VerbInflI
 !=======================================
 
 [Intr][Ind]:%^%{G%}ugh  IntrIndPtcp;
-
+[Trns][Ind]:%^%{G%}a    TrnsIndPtcp;
 
 !=================================
 LEXICON VerbInflII
@@ -1462,7 +1665,7 @@ LEXICON VerbInflII
 !=================================
 
 [Intr][Ind]:%^%{.f.%}ugh  IntrIndPtcp;
-
+[Trns][Ind]:%^%{.f.%}a    TrnsIndPtcp;
 
 !=============================================
 LEXICON VerbInflIV
@@ -1471,6 +1674,7 @@ LEXICON VerbInflIV
 !=============================================
 
 [Intr][Ind]:%^tugh  IntrIndPtcp;
+[Trns][Ind]:%^a     TrnsIndPtcp;
 
 
 !====================================
@@ -1479,13 +1683,15 @@ LEXICON VerbInflIII
 !====================================
 
 [Intr][Ind]:%^tugh  IntrIndPtcp;
+[Trns][Ind]:%^a     TrnsIndPtcp;
 !=======================================
 LEXICON VerbInflVI
 !  for verbs that end in semi-final -e
 !                     that can be hopped
 !=======================================
 
-[Intr][Ind]:%^tugh  IntrIndPtcp;
+[Intr][Ind]:%^tugh            IntrIndPtcp;
+[Trns][Ind]:%^%{.sf.%}%{G%}a  TrnsIndPtcp;
 
 
 !========================================
@@ -1494,15 +1700,17 @@ LEXICON VerbInflVII
 !      that can be dropped but not hopped
 !========================================
 
-[Intr][Ind]:%^tugh  IntrIndPtcp;
+[Intr][Ind]:%^tugh            IntrIndPtcp;
+[Trns][Ind]:%^%{.sf.%}%{G%}a  TrnsIndPtcp;
 
 
 !=====================================
 LEXICON VerbInflV
-!  for verbs that end in -aa, -ii, -uu
+!  for verbs that end in -te
 !=====================================
 
 [Intr][Ind]:%^%{.f.%}ugh  IntrIndPtcp;
+[Trns][Ind]:%^%{.f.%}a    TrnsIndPtcp;
 
 
 !=============================
@@ -1512,8 +1720,43 @@ LEXICON IntrIndPtcp
 !     intransitive participial
 !=============================
 
-[3Sg]:%^          #;    [1Sg]:%^%{.m.%}nga   #;    [2Sg]:%^%{.m.%}ten  #;
-[3Pl]:%^%{.m.%}t  #;    [1Pl]:%^%{.m.%}kut   #;    [2Pl]:%^%{.m.%}si   #;
-[3Du]:%^%{.m.%}k  #;    [1Du]:%^%{.m.%}kung  #;    [2Du]:%^%{.m.%}tek  #;
+[3Sg]:%^            #;    [1Sg]:%^%{.m.%}%^nga   #;    [2Sg]:%^%{.m.%}%^ten  #;
+[3Pl]:%^%{.m.%}%^t  #;    [1Pl]:%^%{.m.%}%^kut   #;    [2Pl]:%^%{.m.%}%^si   #;
+[3Du]:%^%{.m.%}%^k  #;    [1Du]:%^%{.m.%}%^kung  #;    [2Du]:%^%{.m.%}%^tek  #;
 
+!=============================
+LEXICON TrnsIndPtcp
+!  person/number markers for
+!     transitive indicative
+!     transitive participial
+!=============================
 
+!----------------------|----------------------- |------------------------ |
+[3Sg][3Sg]:%^a          #;  [3Sg][3Pl]:%^i         #; [3Sg][3Du]:%^q           #;
+[3Pl][3Sg]:%^at         #;  [3Pl][3Pl]:%^it        #; [3Pl][3Du]:%^gket        #;
+[3Du][3Sg]:%^it         #;  [3Du][3Pl]:%^ik        #; [3Du][3Du]:%^gket        #;
+!----------------------|------------------------|-------------------------|
+[1Sg][3Sg]:%^qa         #; [1Sg][3Pl]:%^nka        #; [1Sg][3Du]:%^gka         #;
+[1Pl][3Sg]:%^put        #; [1Pl][3Pl]:%^put        #; [1Pl][3Du]:%^gput        #;
+[1Du][3Sg]:%^pung       #; [1Du][3Pl]:%^pung       #; [1Du][3Du]:%^gpung       #;
+!----------------------|------------------------|-------------------------|
+[2Sg][3Sg]:%^n          #; [2Sg][3Pl]:%^ten        #; [2Sg][3Du]:%^gken        #;
+[2Pl][3Sg]:%^si         #; [2Pl][3Pl]:%^si         #; [2Pl][3Du]:%^gsi         #;
+[2Du][3Sg]:%^tek        #; [2Du][3Pl]:%^tek        #; [2Du][3Du]:%^gtek        #;
+!----------------------|------------------------|-------------------------|
+[3Sg][1Sg]:%^anga       #; [3Sg][1Pl]:%^inkut      #; [3Sg][1Du]:%^inkung      #;
+[3Pl][1Sg]:%^atnga      #; [3Pl][1Pl]:%^inkut      #; [3Pl][1Du]:%^inkung      #;
+[3Du][1Sg]:%^agnenga    #; [3Du][1Pl]:%^inkut      #; [3Du][1Du]:%^inkung      #;
+!----------------------|------------------------|-------------------------|
+[2Sg][1Sg]:%^penga      #; [2Sg][1Pl]:%^pekut      #; [2Sg][1Du]:%^pekung      #;
+[2Pl][1Sg]:%^pesinga    #; [2Pl][1Pl]:%^pesikut    #; [2Pl][1Du]:%^pesikung    #;
+[2Du][1Sg]:%^petegnenga #; [2Du][1Pl]:%^petegnekut #; [2Du][1Du]:%^petegnekung #;
+!----------------------|------------------------|-------------------------|
+[3Sg][2Sg]:%^aten       #; [3Sg][2Pl]:%^isi        #; [3Sg][2Du]:%^itek        #;
+[3Pl][2Sg]:%^aten       #; [3Pl][2Pl]:%^isi        #; [3Pl][2Du]:%^itek        #;
+[3Du][2Sg]:%^aten       #; [3Du][2Pl]:%^isi        #; [3Du][2Du]:%^itek        #;
+!----------------------|------------------------|-------------------------|
+[1Sg][2Sg]:%^mken       #; [1Sg][2Pl]:%^msi        #; [1Sg][2Du]:%^mtek        #;
+[1Pl][2Sg]:%^mken       #; [1Pl][2Pl]:%^msi        #; [1Pl][2Du]:%^mtek        #;
+[1Du][2Sg]:%^mken       #; [1Du][2Pl]:%^msi        #; [1Du][2Du]:%^mtek        #;
+!----------------------|------------------------|-------------------------|

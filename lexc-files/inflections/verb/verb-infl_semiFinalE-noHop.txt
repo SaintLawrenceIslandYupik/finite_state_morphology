@@ -4,6 +4,7 @@ LEXICON VerbInflVII
 !      that can be dropped but not hopped
 !========================================
 
-[Intr][Ind]:%^tugh  IntrIndPtcp;
+[Intr][Ind]:%^tugh            IntrIndPtcp;
+[Trns][Ind]:%^%{.sf.%}%{G%}a  TrnsIndPtcp;
 
 

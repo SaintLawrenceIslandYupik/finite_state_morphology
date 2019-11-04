@@ -1,8 +1,9 @@
 !=====================================
 LEXICON VerbInflV
-!  for verbs that end in -aa, -ii, -uu
+!  for verbs that end in -te
 !=====================================
 
 [Intr][Ind]:%^%{.f.%}ugh  IntrIndPtcp;
+[Trns][Ind]:%^%{.f.%}a    TrnsIndPtcp;
 
 

@@ -112,7 +112,8 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define ResolveG %{G%} -> w || u "^" _ [ a | i ]               .o. ! velar rounding [Jacobson (2001) p.30]
+define ResolveG %{G%} -> w || u "^" _ [ a | i ] ("^") C .o. ! velar rounding [Jacobson (2001) p.30]. 
+! Added the condition about C in order not to do this rounding when DropMiddleVowel can occur [Jacobson (2001) p.44]. 
                 %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
                 %{G%} -> 0                                    ;
 
@@ -159,6 +160,7 @@ define CleanupDigraph %{k%}   -> 0   .o.
 
 define CleanupMorphBoundary "^" -> 0 ;
 
+define DropMiddleVowel V -> 0 || V _ V ;
 
 !==============
 ! RULE CASCADE
@@ -180,6 +182,7 @@ define Rules [
     PreventGemination    .o.
     CleanupDigraph       .o.
     CleanupMorphBoundary .o.
+    DropMiddleVowel      .o.
     VelarUvularRounding  .o.
     VowelDominance       .o.
     MatchVoicing
