@@ -3,75 +3,159 @@ LEXICON NounInflIX
 !  for noun roots that end in -e that can be hopped
 !==================================================
 
-!--------------------------------|
-!          ABSOLUTIVE            |
-!--------------------------------|-----------------------------------|----------------------------------|
-[Abs][Sg]:%^                    #; [Abs][Pl]:%^t                    #; [Abs][Du]:%^k                   #;
-!--------------------------------|-----------------------------------|----------------------------------|
-[Abs][Sg][1SgPoss]:%^%{.f.%}ka  #; [Abs][Pl][1SgPoss]:%^nka         #; [Abs][Du][1SgPoss]:%^gka        #;
-[Abs][Sg][1PlPoss]:%^vut        #; [Abs][Pl][1PlPoss]:%^put         #; [Abs][Du][1PlPoss]:%^gput       #;
-[Abs][Sg][1DuPoss]:%^vung       #; [Abs][Pl][1DuPoss]:%^pung        #; [Abs][Du][1DuPoss]:%^gpung      #;
-!--------------------------------|-----------------------------------|----------------------------------|
-[Abs][Sg][2SgPoss]:%^n          #; [Abs][Pl][2SgPoss]:%^ten         #; [Abs][Du][2SgPoss]:%^gken       #;
-                                   [Abs][Pl][2SgPoss]:%^%{.f.%}ten  #;
-[Abs][Sg][2PlPoss]:%^zi         #; [Abs][Pl][2PlPoss]:%^si          #; [Abs][Du][2PlPoss]:%^gsi        #;
-[Abs][Sg][2DuPoss]:%^yek        #; [Abs][Pl][2DuPoss]:%^tek         #; [Abs][Du][2DuPoss]:%^gtek       #;
-!--------------------------------|-----------------------------------|----------------------------------|
+!----------------------------------|
+!            ABSOLUTIVE            |
+!----------------------------------|-------------------------------------|----------------------------------|
+[Abs][Sg]:%^                      #; [Abs][Pl]:%^t                      #; [Abs][Du]:%^k                   #;
+!----------------------------------|-------------------------------------|----------------------------------|
+[Abs][Sg][1SgPoss]:%^%{.f.%}ka    #; [Abs][Pl][1SgPoss]:%^nka           #; [Abs][Du][1SgPoss]:%^gka        #;
+[Abs][Sg][1PlPoss]:%^vut          #; [Abs][Pl][1PlPoss]:%^put           #; [Abs][Du][1PlPoss]:%^gput       #;
+[Abs][Sg][1DuPoss]:%^vung         #; [Abs][Pl][1DuPoss]:%^pung          #; [Abs][Du][1DuPoss]:%^gpung      #;
+!----------------------------------|-------------------------------------|----------------------------------|
+[Abs][Sg][2SgPoss]:%^n            #; [Abs][Pl][2SgPoss]:%^ten           #; [Abs][Du][2SgPoss]:%^gken       #;
+                                     [Abs][Pl][2SgPoss]:%^%{.f.%}ten    #;
+[Abs][Sg][2PlPoss]:%^zi           #; [Abs][Pl][2PlPoss]:%^si            #; [Abs][Du][2PlPoss]:%^gsi        #;
+[Abs][Sg][2DuPoss]:%^yek          #; [Abs][Pl][2DuPoss]:%^tek           #; [Abs][Du][2DuPoss]:%^gtek       #;
+!----------------------------------|-------------------------------------|----------------------------------|
 [Abs][Sg][3SgPoss]:%^%{.f.%}nga   #; [Abs][Pl][3SgPoss]:%^%{.f.%}ngi    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
 [Abs][Sg][3PlPoss]:%^%{.f.%}ngat  #; [Abs][Pl][3PlPoss]:%^%{.f.%}ngit   #; [Abs][Du][3PlPoss]:%^gket       #;
 [Abs][Sg][3DuPoss]:%^%{.f.%}ngak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ngik   #; [Abs][Du][3DuPoss]:%^gkek       #;
-!--------------------------------|-----------------------------------|----------------------------------|
+!----------------------------------|-------------------------------------|----------------------------------|
+[Abs][Sg][4SgPoss]:%^nun          #; [Abs][Pl][4SgPoss]:%^nun           #; [Abs][Du][4SgPoss]:%^gnun       #;
+[Abs][Sg][4PlPoss]:%^yeng         #; [Abs][Pl][4PlPoss]:%^teng          #; [Abs][Du][4PlPoss]:%^gteng      #;
+[Abs][Sg][4DuPoss]:%^yek          #; [Abs][Pl][4DuPoss]:%^tek           #; [Abs][Du][4DuPoss]:%^gtek       #;
+!----------------------------------|-------------------------------------|----------------------------------|
 
-!---------------------------|
-!    ERGATIVE (relative)    |
-!---------------------------|-----------------------------|-------------------------------|
-[Erg][Sg]:%^m              #; [Erg][Pl]:%^t              #; [Erg][Du]:%^k                #;
-!---------------------------|-----------------------------|-------------------------------|
-[Erg][Sg][1SgPoss]:%^%{.f.%}ma                           #; [Erg][Du][1SgPoss]:%^gma     #;
-[Erg][Sg][1PlPoss]:%^mta                                 #; [Erg][Du][1PlPoss]:%^gemta   #;
-[Erg][Sg][1DuPoss]:%^mtung                               #; [Erg][Du][1DuPoss]:%^gemtung #;
-!---------------------------|-----------------------------|-------------------------------|
-[Erg][Sg][2SgPoss]:%^gpek                                #; [Erg][Du][2SgPoss]:%^gpek    #;
-[Erg][Sg][2PlPoss]:%^gpesi                               #; [Erg][Du][2PlPoss]:%^gpesi   #;
-[Erg][Sg][2DuPoss]:%^gpetek                              #; [Erg][Du][2DuPoss]:%^gpetek  #;
-!---------------------------|-----------------------------|-------------------------------|
-[Erg][Sg][3SgPoss]:%^%{.f.%}ngan                         #; [Erg][Du][3SgPoss]:%^gkenka  #;
-[Erg][Sg][3PlPoss]:%^%{.f.%}ngita                        #; [Erg][Du][3PlPoss]:%^gkenka  #;
-[Erg][Sg][3DuPoss]:%^%{.f.%}ngita                        #; [Erg][Du][3DuPoss]:%^gkenka  #;
-!---------------------------|-----------------------------|-------------------------------|
+!-----------------------------------|
+!        ERGATIVE (relative)        |
+!-----------------------------------|-------------------------------------|-------------------------------|
+[Erg][Sg]:%^m                      #; [Erg][Pl]:%^t                      #; [Erg][Du]:%^k                #;
+!-----------------------------------|-------------------------------------|-------------------------------|
+[Erg][Sg][1SgPoss]:%^%{.f.%}ma     #; [Erg][Pl][1SgPoss]:%^%{.f.%}ma     #; [Erg][Du][1SgPoss]:%^gma     #;
+[Erg][Sg][1PlPoss]:%^mta           #; [Erg][Pl][1PlPoss]:%^mta           #; [Erg][Du][1PlPoss]:%^gemta   #;
+[Erg][Sg][1DuPoss]:%^mtung         #; [Erg][Pl][1DuPoss]:%^mtung         #; [Erg][Du][1DuPoss]:%^gemtung #;
+!-----------------------------------|-------------------------------------|-------------------------------|
+[Erg][Sg][2SgPoss]:%^gpek          #; [Erg][Pl][2SgPoss]:%^gpek          #; [Erg][Du][2SgPoss]:%^gpek    #;
+[Erg][Sg][2PlPoss]:%^gpesi         #; [Erg][Pl][2PlPoss]:%^gpesi         #; [Erg][Du][2PlPoss]:%^gpesi   #;
+[Erg][Sg][2DuPoss]:%^gpetek        #; [Erg][Pl][2DuPoss]:%^gpetek        #; [Erg][Du][2DuPoss]:%^gpetek  #;
+!-----------------------------------|-------------------------------------|-------------------------------|
+[Erg][Sg][3SgPoss]:%^%{.f.%}ngan   #; [Erg][Pl][3SgPoss]:%^%{.f.%}ngan   #; [Erg][Du][3SgPoss]:%^gkenka  #;
+[Erg][Sg][3PlPoss]:%^%{.f.%}ngita  #; [Erg][Pl][3PlPoss]:%^%{.f.%}ngita  #; [Erg][Du][3PlPoss]:%^gkenka  #;
+[Erg][Sg][3DuPoss]:%^%{.f.%}ngita  #; [Erg][Pl][3DuPoss]:%^%{.f.%}ngita  #; [Erg][Du][3DuPoss]:%^gkenka  #;
+!-----------------------------------|-------------------------------------|-------------------------------|
 
-!-----------------------------|
-!      ABLATIVE MODALIS       |
-!-----------------------------|-----------------------------|------------------------------|
-[Abl.Mod][Sg]:%^%{.f.%}meng  #; [Abl.Mod][Pl]:%^neng       #; [Abl.Mod][Du]:%^gneng       #;
-!-----------------------------|-----------------------------|------------------------------|
+!----------------------------------------------|
+!               ABLATIVE MODALIS               |
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Abl.Mod][Sg]:%^%{.f.%}meng                   #; [Abl.Mod][Pl]:%^neng                          #; [Abl.Mod][Du]:%^gneng                       #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Abl.Mod][Sg][1SgPoss]:%^mneng                #; [Abl.Mod][Pl][1SgPoss]:%^mneng                #; [Abl.Mod][Du][1SgPoss]:%^gemneng            #;
+[Abl.Mod][Sg][1PlPoss]:%^mnneng               #; [Abl.Mod][Pl][1PlPoss]:%^mnneng               #; [Abl.Mod][Du][1PlPoss]:%^gemnneng           #;
+[Abl.Mod][Sg][1DuPoss]:%^mtegneng             #; [Abl.Mod][Pl][1DuPoss]:%^mtegneng             #; [Abl.Mod][Du][1DuPoss]:%^gemtegneng         #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Abl.Mod][Sg][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Pl][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Du][2SgPoss]:%^gpe%{G%}neng       #;
+[Abl.Mod][Sg][2PlPoss]:%^gpesineng            #; [Abl.Mod][Pl][2PlPoss]:%^gpesineng            #; [Abl.Mod][Du][2PlPoss]:%^gpesineng          #;
+[Abl.Mod][Sg][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Pl][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Du][2DuPoss]:%^gpetegneng         #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Abl.Mod][Sg][3SgPoss]:%^%{.f.%}nganeng       #; [Abl.Mod][Pl][3SgPoss]:%^%{.f.%}nganeng       #; [Abl.Mod][Du][3SgPoss]:%^gkeneng            #;
+[Abl.Mod][Sg][3PlPoss]:%^%{.f.%}ngitneng      #; [Abl.Mod][Pl][3PlPoss]:%^%{.f.%}ngitneng      #; [Abl.Mod][Du][3PlPoss]:%^%{.f.%}ngitneng    #;
+[Abl.Mod][Sg][3DuPoss]:%^gkeneng              #; [Abl.Mod][Pl][3DuPoss]:%^%{.f.%}ngitneng      #; [Abl.Mod][Du][3DuPoss]:%^%{.f.%}ngitneng    #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Abl.Mod][Sg][4SgPoss]:%^%{.f.%}mineng        #; [Abl.Mod][Pl][4SgPoss]:%^%{.f.%}mineng        #; [Abl.Mod][Du][4SgPoss]:%^gmineng            #;
+[Abl.Mod][Sg][4PlPoss]:%^%{.f.%}meggneng      #; [Abl.Mod][Pl][4PlPoss]:%^%{.f.%}meggneng      #; [Abl.Mod][Du][4PlPoss]:%^gmeggneng          #;
+[Abl.Mod][Sg][4DuPoss]:%^%{.f.%}megteneng     #; [Abl.Mod][Pl][4DuPoss]:%^%{.f.%}megteneng     #; [Abl.Mod][Du][4DuPoss]:%^gmegteneng         #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
 
+!----------------------------------------------|
+!              LOCATIVE (localis)              |
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Loc][Sg]:%^%{.f.%}mi                         #; [Loc][Pl]:%^ni                                #; [Loc][Du]:%^gni                             #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Loc][Sg][1SgPoss]:%^mni                      #; [Loc][Pl][1SgPoss]:%^mni                      #; [Loc][Du][1SgPoss]:%^gemni                  #;
+[Loc][Sg][1PlPoss]:%^mnni                     #; [Loc][Pl][1PlPoss]:%^mnni                     #; [Loc][Du][1PlPoss]:%^gemnni                 #;
+[Loc][Sg][1DuPoss]:%^mtegni                   #; [Loc][Pl][1DuPoss]:%^mtegni                   #; [Loc][Du][1DuPoss]:%^gemtegni               #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Loc][Sg][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Pl][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Du][2SgPoss]:%^gpe%{G%}ni             #;
+[Loc][Sg][2PlPoss]:%^gpesini                  #; [Loc][Pl][2PlPoss]:%^gpesini                  #; [Loc][Du][2PlPoss]:%^gpesini                #;
+[Loc][Sg][2DuPoss]:%^gpetegni                 #; [Loc][Pl][2DuPoss]:%^gpetegni                 #; [Loc][Du][2DuPoss]:%^gpetegni               #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Loc][Sg][3SgPoss]:%^%{.f.%}ngani             #; [Loc][Pl][3SgPoss]:%^%{.f.%}ngani             #; [Loc][Du][3SgPoss]:%^gkeni                  #;
+[Loc][Sg][3PlPoss]:%^%{.f.%}ngitni            #; [Loc][Pl][3PlPoss]:%^%{.f.%}ngitni            #; [Loc][Du][3PlPoss]:%^%{.f.%}ngitni          #;
+[Loc][Sg][3DuPoss]:%^gkeni                    #; [Loc][Pl][3DuPoss]:%^%{.f.%}ngitni            #; [Loc][Du][3DuPoss]:%^%{.f.%}ngitni          #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[Loc][Sg][4SgPoss]:%^%{.f.%}mini              #; [Loc][Pl][4SgPoss]:%^%{.f.%}mini              #; [Loc][Du][4SgPoss]:%^gmini                  #;
+[Loc][Sg][4PlPoss]:%^%{.f.%}meggni            #; [Loc][Pl][4PlPoss]:%^%{.f.%}meggni            #; [Loc][Du][4PlPoss]:%^gmeggni                #;
+[Loc][Sg][4DuPoss]:%^%{.f.%}megteni           #; [Loc][Pl][4DuPoss]:%^%{.f.%}megteni           #; [Loc][Du][4DuPoss]:%^gmegteni               #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
 
-!---------------------------|
-!    LOCATIVE (localis)     |
-!---------------------------|-----------------------------|------------------------------|
-[Loc][Sg]:%^%{.f.%}mi      #; [Loc][Pl]:%^ni             #; [Loc][Du]:%^gni             #;
-!---------------------------|-----------------------------|------------------------------|
-
-
-!---------------------------|
-!   ALLATIVE (terminalis)   |
-!---------------------------|-----------------------------|------------------------------|
-[All][Sg]:%^%{.f.%}mun     #; [All][Pl]:%^nun            #; [All][Du]:%^gnun            #;
-!---------------------------|-----------------------------|------------------------------|
-
+!----------------------------------------------|
+!           ALLATIVE (terminalis)              |
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[All][Sg]:%^%{.f.%}mun                        #; [All][Pl]:%^nun                               #; [All][Du]:%^gnun                            #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[All][Sg][1SgPoss]:%^mnun                     #; [All][Pl][1SgPoss]:%^mnun                     #; [All][Du][1SgPoss]:%^gemnun                 #;
+[All][Sg][1PlPoss]:%^mnnun                    #; [All][Pl][1PlPoss]:%^mnnun                    #; [All][Du][1PlPoss]:%^gemnnun                #;
+[All][Sg][1DuPoss]:%^mtegnun                  #; [All][Pl][1DuPoss]:%^mtegnun                  #; [All][Du][1DuPoss]:%^gemtegnun              #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[All][Sg][2SgPoss]:%^gpe%{G%}nun              #; [All][Pl][2SgPoss]:%^gpe%{G%}nun              #; [All][Du][2SgPoss]:%^gpe%{G%}nun            #;
+[All][Sg][2PlPoss]:%^gpesinun                 #; [All][Pl][2PlPoss]:%^gpesinun                 #; [All][Du][2PlPoss]:%^gpesinun               #;
+[All][Sg][2DuPoss]:%^gpetegnun                #; [All][Pl][2DuPoss]:%^gpetegnun                #; [All][Du][2DuPoss]:%^gpetegnun              #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[All][Sg][3SgPoss]:%^%{.f.%}nganun            #; [All][Pl][3SgPoss]:%^%{.f.%}nganun            #; [All][Du][3SgPoss]:%^gkenun                 #;
+[All][Sg][3PlPoss]:%^%{.f.%}ngitnun           #; [All][Pl][3PlPoss]:%^%{.f.%}ngitnun           #; [All][Du][3PlPoss]:%^%{.f.%}ngitnun         #;
+[All][Sg][3DuPoss]:%^gkenun                   #; [All][Pl][3DuPoss]:%^%{.f.%}ngitnun           #; [All][Du][3DuPoss]:%^%{.f.%}ngitnun         #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
+[All][Sg][4SgPoss]:%^%{.f.%}munnun            #; [All][Pl][4SgPoss]:%^%{.f.%}munnun            #; [All][Du][4SgPoss]:%^gmunnun                #;
+[All][Sg][4PlPoss]:%^%{.f.%}meggnun           #; [All][Pl][4PlPoss]:%^%{.f.%}meggnun           #; [All][Du][4PlPoss]:%^gmeggnun               #;
+[All][Sg][4DuPoss]:%^%{.f.%}megtenun          #; [All][Pl][4DuPoss]:%^%{.f.%}megtenun          #; [All][Du][4DuPoss]:%^gmegtenun              #;
+!----------------------------------------------|------------------------------------------------|----------------------------------------------|
 
 !---------------------------|
 !    PERLATIVE (vialis)     |
-!---------------------------|-----------------------------|------------------------------|
-[Per][Sg]:%^%{.f.%}kun     #; [Per][Pl]:%^tgun           #; [Per][Du]:%^gnegun          #;
-!---------------------------|-----------------------------|------------------------------|
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Per][Sg]:%^%{.f.%}kun                  #; [Per][Pl]:%^tgun                        #; [Per][Du]:%^gnegun                    #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Per][Sg][1SgPoss]:%^mkun               #; [Per][Pl][1SgPoss]:%^mkun        #; [Per][Du][1SgPoss]:%^gemkun          #;
+[Per][Sg][1PlPoss]:%^mteggun            #; [Per][Pl][1PlPoss]:%^mteggun     #; [Per][Du][1PlPoss]:%^gemteggun       #;
+[Per][Sg][1DuPoss]:%^mtegnegun          #; [Per][Pl][1DuPoss]:%^mtegnegun   #; [Per][Du][1DuPoss]:%^gemtegnegun     #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Per][Sg][2SgPoss]:%^gpegun             #; [Per][Pl][2SgPoss]:%^gpegun      #; [Per][Du][2SgPoss]:%^gpegun          #;
+[Per][Sg][2PlPoss]:%^gpesigun           #; [Per][Pl][2PlPoss]:%^gpesigun    #; [Per][Du][2PlPoss]:%^gpesigun        #;
+[Per][Sg][2DuPoss]:%^gpetegnegun        #; [Per][Pl][2DuPoss]:%^gpetegnegun #; [Per][Du][2DuPoss]:%^gpetegnegun     #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Per][Sg][3SgPoss]:%^%{.f.%}%ngakun     #; [Per][Sg][3SgPoss]:%^%{.f.%}%ngakun     #; [Per][Du][3SgPoss]:%^gkenkun          #;
+[Per][Sg][3PlPoss]:%^%{.f.%}%ngitgun    #; [Per][Sg][3PlPoss]:%^%{.f.%}%ngitgun    #; [Per][Du][3PlPoss]:%^%{.f.%}%ngitgun          #;
+[Per][Sg][3DuPoss]:%^gkenkun            #; [Per][Pl][3DuPoss]:%^%{.f.%}%ngakun     #; [Per][Du][3PlPoss]:%^%{.f.%}%ngitgun          #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Per][Sg][4SgPoss]:%^%{.f.%}mikun       #; [Per][Pl][4SgPoss]:%^%{.f.%}mikun     #; [Per][Du][4SgPoss]:%^gmikun         #;
+[Per][Sg][4PlPoss]:%^%{.f.%}megteggun   #; [Per][Pl][4PlPoss]:%^%{.f.%}megteggun #;  [Per][Du][4PlPoss]:%^gmegteggun     #;
+[Per][Sg][4DuPoss]:%^%{.f.%}megtegnegun #; [Per][Pl][4DuPoss]:%^%{.f.%}megtegnegun #; [Per][Du][4DuPoss]:%^gmegtegnegun   #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
 
 
 !---------------------------|
 !    EQUATIVE (equalis)     |
 !---------------------------|-----------------------------|------------------------------|
 [Equ][Sg]:%^%{.f.%}tun     #; [Equ][Pl]:%^stun           #; [Equ][Du]:%^gestun          #;
-!---------------------------|-----------------------------|------------------------------|
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Equ][Sg][1SgPoss]:%^mtun        #; [Equ][Pl][1SgPoss]:%^mtun        #; [Equ][Du][1SgPoss]:%^gemtun          #;
+[Equ][Sg][1PlPoss]:%^mtestun     #; [Equ][Pl][1PlPoss]:%^mtestun     #; [Equ][Du][1PlPoss]:%^gemtestun       #;
+[Equ][Sg][1DuPoss]:%^mtegestun   #; [Equ][Pl][1DuPoss]:%^mtegestun   #; [Equ][Du][1DuPoss]:%^gemtegestun     #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Equ][Sg][2SgPoss]:%^gpetun      #; [Equ][Pl][2SgPoss]:%^gpetun      #; [Equ][Du][2SgPoss]:%^gpetun          #;
+[Equ][Sg][2PlPoss]:%^gpesistun    #; [Equ][Pl][2PlPoss]:%^gpesistun    #; [Equ][Du][2PlPoss]:%^gpesistun        #;
+[Equ][Sg][2DuPoss]:%^gpetegetun #; [Equ][Pl][2DuPoss]:%^gpetegetun #; [Equ][Du][2DuPoss]:%^gpetegetun     #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Equ][Sg][3SgPoss]:%^%{.f.%}ngatun     #; [Equ][Sg][3SgPoss]:%^%{.f.%}ngatun     #; [Equ][Du][3SgPoss]:%^gketun          #;
+[Equ][Sg][3PlPoss]:%^%{.f.%}ngitun    #; [Equ][Sg][3PlPoss]:%^%{.f.%}ngitun    #; [Equ][Du][3PlPoss]:%^%{.f.%}ngitun          #;
+[Equ][Sg][3DuPoss]:%^gketun   #; [Equ][Pl][3DuPoss]:%^%{.f.%}ngitun     #; [Equ][Du][3PlPoss]:%^%{.f.%}ngitun          #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+[Equ][Sg][4SgPoss]:%^%{.f.%}mitun     #; [Equ][Pl][4SgPoss]:%^%{.f.%}mitun     #; [Equ][Du][4SgPoss]:%^gmitun         #;
+[Equ][Sg][4PlPoss]:%^%{.f.%}megestun #; [Equ][Pl][4PlPoss]:%^%{.f.%}megestun #;  [Equ][Du][4PlPoss]:%^gmegestun     #;
+[Equ][Sg][4DuPoss]:%^%{.f.%}megestun #; [Equ][Pl][4DuPoss]:%^%{.f.%}megestun #; [Equ][Du][4DuPoss]:%^gmegestun   #;
+!----------------------------------------|------------------------------------------|----------------------------------------|
+
+
+
 
 

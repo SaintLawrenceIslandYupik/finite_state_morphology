@@ -60,15 +60,15 @@ define FinalE  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e  "^" %{%.f%.%
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables [Jacobson (2001) p.32]
              %{%.fL%.%} -> 0                     ;
 
-define DropFinalC g h -> g     || g       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -g
-                  g h -> g h w || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -ghw
-                  g h -> w h   || %{k%} w "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
-                  g h -> w     || %{k%} w "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
-                    k -> q w   || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
-                    k -> q     || g h     "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
-                    k -> k w   || w       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
-                    C -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop root-final consonant
-  [ g | %{g%} ] ( h ) -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
+define DropFinalC g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -g
+                  g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -ghw
+                  g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
+                  g h -> w     || %{k%} w         "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
+                    k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
+                    k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
+                    k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
+                    C -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop root-final consonant
+  [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
             %{%.m%.%} -> 0                                              ;
 
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
@@ -188,4 +188,4 @@ define Rules [
     MatchVoicing
 ];
 
-define Grammar [ Exceptions .P. [ Lexicon .o. Rules ] ] ;
+define Grammar [ [ Exceptions .o. Rules ] .P. [ Lexicon .o. Rules ] ] ;

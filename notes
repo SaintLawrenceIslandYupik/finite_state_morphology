@@ -1,0 +1,68 @@
+Chapter 7
+
+1. I did not include the following suffix from 7.2.1:
+-ae[N.N]:%^e ! used to make English words into Yupik words
+
+because we do not have a class for English words :)
+We could potentially have a guesser that would turn a word that ends in a letter that's not allowed in Yupik (e.g. computer) to be assumed as a loan word and put this suffix to create a Yupik-like suffix?
+
+2. I wasn't sure how to handle seghlegh-ghhalek >	seghleghhalek 
+The problem was that -ghhalek[V.V] was said to be suffixing a verb (how V!), but this example shows that a noun like seghlegh-(bad thing) can take the suffix. I ended up with adding this suffix to all noun classes as below (depending on the ending of the base):
+
+-ghhalek[N.V]:%^ghhalek    #; ! how V! (exclamation)
+or 
+-ghhalek[N.V]:%^%{.m.%}ghhalek    #; ! how V! (exclamation)
+
+but I'm not sure if this suffix is actually used with other roots at all. 
+
+I did add the suffix to all verb classes like the following too (depending on the ending of the base):
+
+-ghhalek[V.V]:%^ghhalek    #; ! how V! (exclamation)
+or 
+-ghhalek[V.V]:%^%{.m.%}ghhalek    #; ! how V! (exclamation)
+
+but I wonder if it's also bettter to put the two examples discussed in the book (seghlegh-ghhalek[N.V]:seghleghhalek and igamsiqanagh-ghhalek[V.V]:igamsiqanaghhalek) as exceptions instead. I'm not sure how productive this suffix is...
+
+3. Sivugagh-mii[N.N][Abs][Sg]	Sivuqaghhmii	'resident of Gambell' (p. 42)
+Again not sure how generalizable this is... Jacobson said "note devoicing" with this one. So as far as I can tell, Gambell was introduced in Chapter 3 as Sivugagh (Gambell; St. Lawrence Island in general), and all of sudden it gets devoiced when it take the +mii suffix. For now, I made this an exception, but I wonder if there's a rule for this.
+
+4. Added the following exception:
+Sivugagh-mii[N.N]:Sivuqaghhmii NounSuffixI;
+
+5. This is just a heads-up. I added the following postbase that is mentioned in a footnote in chapter 7.
+
+-igate[V.V]:%^%{.f.%}%{.at.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
+
+This postbase will be discussed in chapter 14, and I might have missed a point or two so let's make sure to update it when we go over chapter 14.
+
+6. The following suffixes were added:
+
+seghleghu      VerbSuffixI; ! to be bad
+-lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
+(or -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N)
+
+but they can be analyzed like the following:
+
+seghleghu = seghlegh (bad thing) + -u (to be)
+-lgu = -leg (to have) + -u (to be)
+
+We'll see if we need to keep them as lexical items or not.
+
+7. Remember this part from DropFinalC (chapter 4)?
+
+                  g h -> g     || g       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -g
+                  g h -> g h w || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -ghw
+                  g h -> w h   || %{k%} w "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
+                  g h -> w     || %{k%} w "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
+
+                    k -> q w   || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
+                    k -> q     || g h     "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
+                    k -> k w   || w       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
+
+It seems that these rules do not apply to verbal inflection (they apply to nouns). A case in point is angyagh-squghhaq[N.N]-lgu[N.V]-nghite[V.V][Intr][Ind][1Du]	angyasqughhalgunghitukung. The last -kung (inflection) becomes -qung if we apply this rule, but that's not the correct surface form. So for now, I put an extra morpheme symbol after {.m.} for inflection as below to prevent the rules from applying to the inflection:
+
+[3Sg]:%^            #;    [1Sg]:%^%{.m.%}%^nga   #;    [2Sg]:%^%{.m.%}%^ten  #;
+[3Pl]:%^%{.m.%}%^t  #;    [1Pl]:%^%{.m.%}%^kut   #;    [2Pl]:%^%{.m.%}%^si   #;
+[3Du]:%^%{.m.%}%^k  #;    [1Du]:%^%{.m.%}%^kung  #;    [2Du]:%^%{.m.%}%^tek  #;
+
+8. I updated the lexi files and test files so that -u[N.V] (to be N) is always listed as -u[N.V] instead of -u[N.V] or -ngu[N.V] depending on the base. But we'll discuss this with Lane and Silvia and decide if we want to call it this way.
