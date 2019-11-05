@@ -129,12 +129,18 @@ def main():
                     if root[-1] == "-":
                         verbRoot = root[:-1]
                         classIdx = classify_verb_root(verbRoot)
-                        idx2VerbClass[classIdx].append((verbRoot, line[1]))
+                        if classIdx in idx2VerbClass.keys():
+                          idx2VerbClass[classIdx].append((verbRoot, line[1]))
+                        else:
+                          print("{} not found".format(verbRoot))
 
                     else:
                         nounRoot = convert_to_base_form(root)
                         classIdx = classify_noun_root(nounRoot)
-                        idx2NounClass[classIdx].append((nounRoot, line[1]))
+                        if classIdx in idx2NounClass.keys():
+                          idx2NounClass[classIdx].append((nounRoot, line[1]))
+                        else:
+                          print("{} not found".format(nounRoot))
 
     print_inflection_classes("Verb", idx2VerbClass)
     print_inflection_classes("Noun", idx2NounClass)
