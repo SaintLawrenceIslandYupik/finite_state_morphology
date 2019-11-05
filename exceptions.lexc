@@ -89,7 +89,7 @@ LEXICON Particle
 elngaatall  #;  ! very much
 quunpeng    #;  ! always
 unaami      #;  ! tomorrow
-
+qayughllak  #;  ! because
 
 !=====================================================
 LEXICON NounSuffixI
@@ -121,6 +121,18 @@ LEXICON NounSuffixI
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
+
+
+
+
+
 !=====================================================
 LEXICON NounSuffixIX
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -151,6 +163,14 @@ LEXICON NounSuffixIX
 -squghhaq[N.N]:%^squghhagh   NounSuffixIV;  ! little N, small N
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
+
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixX
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -182,6 +202,13 @@ LEXICON NounSuffixX
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=======================================================
 LEXICON NounSuffixII
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -212,7 +239,13 @@ LEXICON NounSuffixII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
-!================================================================
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N!================================================================
 LEXICON NounSuffixIV
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
 !  when suffixing to noun roots that end in marked strong -gh (*)
@@ -241,6 +274,14 @@ LEXICON NounSuffixIV
 -squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
+
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 
 !======================================================
 LEXICON NounSuffixVII
@@ -273,6 +314,14 @@ LEXICON NounSuffixVII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
+
 !======================================================
 LEXICON NounSuffixVIII
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -304,6 +353,13 @@ LEXICON NounSuffixVIII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixV
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -334,6 +390,13 @@ LEXICON NounSuffixV
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixVI
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -364,6 +427,13 @@ LEXICON NounSuffixVI
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixIII
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -394,6 +464,13 @@ LEXICON NounSuffixIII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !======================================================
 LEXICON VerbSuffixI
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -415,6 +492,8 @@ LEXICON VerbSuffixI
 
 -igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed
+
 
 !======================================================
 LEXICON VerbSuffixII
@@ -434,7 +513,9 @@ LEXICON VerbSuffixII
 
 -nghite[V.V]:%^nghite     VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
 
--igate[V.V]:%^%{.f.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)!============================================================
+-igate[V.V]:%^%{.f.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
+
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed!============================================================
 LEXICON VerbSuffixIV
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
 !  when suffixing to verb roots that end in -agh, -igh, -ugh 
@@ -454,6 +535,10 @@ LEXICON VerbSuffixIV
 -nghite[V.V]:%^%{.m.%}nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
 
 -igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
+
+-fte[V.V]:%^petefte        VerbSuffixV;  ! to evidently V or have V-ed
+
+-fte[V.V]:%^pete       VerbSuffixV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 !========================================================
 LEXICON VerbSuffixIII
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -474,6 +559,9 @@ LEXICON VerbSuffixIII
 
 -igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^petefte        VerbSuffixV;  ! to evidently V or have V-ed
+
+-fte[V.V]:%^pete       VerbSuffixV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 
 !======================================================
 LEXICON VerbSuffixVI
@@ -496,6 +584,8 @@ LEXICON VerbSuffixVI
 
 -igate[V.V]:%^%{.sf.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed
+
 !======================================================
 LEXICON VerbSuffixVII
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -517,6 +607,10 @@ LEXICON VerbSuffixVII
 
 -igate[V.V]:%^%{.sf.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^petefte        VerbSuffixV;  ! to evidently V or have V-ed
+
+-fte[V.V]:%^pete       VerbSuffixV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
+
 !======================================================
 LEXICON VerbSuffixV
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -537,6 +631,7 @@ LEXICON VerbSuffixV
 
 -igate[V.V]:%^%{.f.%}%{.at.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed
 !=======================================================
 LEXICON NounInflI
 !  for noun roots that end in -a, -i, -u, -aa, -ii-, -uu

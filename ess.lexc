@@ -89,38 +89,43 @@ LEXICON Particle
 elngaatall  #;  ! very much
 quunpeng    #;  ! always
 unaami      #;  ! tomorrow
-
+qayughllak  #;  ! because
 
 !==================================
 LEXICON NounRootI
 !  end in -a, -i, -u, -aa, -ii, -uu
 !==================================
 
-amaa      NounSuffixI;  ! wolf
-anigu     NounSuffixI;  ! snow on ground
-anipa     NounSuffixI;  ! owl
-apa       NounSuffixI;  ! grandfather
-ata       NounSuffixI;  ! father
+amaa      NounSuffixI; ! wolf
+anigu     NounSuffixI; ! snow on ground
+anipa     NounSuffixI; ! owl
+apa       NounSuffixI; ! grandfather
+ata       NounSuffixI; ! father
 egllu     NounSuffixI; ! stove (dual eglluk generally used for one stove)
-esla      NounSuffixI;  ! outdoors; weather; awareness; world
-kayu      NounSuffixI;  ! sculpin; ocean fish (in general)
-kii       NounSuffixI;  ! wound
-kufi      NounSuffixI;  ! coffee
-naa       NounSuffixI;  ! mother
-ne        NounSuffixI;  ! home
-nuna      NounSuffixI;  ! land
-repa      NounSuffixI;  ! hammer
-puu       NounSuffixI;  ! handle
-siku      NounSuffixI;  ! ice
-tafsi     NounSuffixI;  ! belt
-ugi       NounSuffixI;  ! husband
-uupa      NounSuffixI;  !"sea peach" (Halocynthia aurantia)
-yavlu     NounSuffixI;  ! sweetheart
-yaywaali  NounSuffixI;  ! orphan
-ila       NounSuffixI;  ! relative; associate; part; one or some (of)
-lalala    NounSuffixI;  ! dew
-mesuuna   NounSuffixI;  ! hairbrush; comb
+esla      NounSuffixI; ! outdoors; weather; awareness; world
+kayu      NounSuffixI; ! sculpin; ocean fish (in general)
+kii       NounSuffixI; ! wound
+kufi      NounSuffixI; ! coffee
+naa       NounSuffixI; ! mother
+ne        NounSuffixI; ! home
+nuna      NounSuffixI; ! land
+repa      NounSuffixI; ! hammer
+pi        NounSuffixI; ! thing
+puu       NounSuffixI; ! handle
+siku      NounSuffixI; ! ice
+tafsi     NounSuffixI; ! belt
+ugi       NounSuffixI; ! husband
+uupa      NounSuffixI; !"sea peach" (Halocynthia aurantia)
+yavlu     NounSuffixI; ! sweetheart
+yaywaali  NounSuffixI; ! orphan
+ila       NounSuffixI; ! relative; associate; part; one or some (of)
+lalala    NounSuffixI; ! dew
+mesuuna   NounSuffixI; ! hairbrush; comb
 
+kina     NounSuffixI; ! who? (relative case is kitum)
+nani     NounSuffixI; ! (at) where?
+qafsina  NounSuffixI; ! how many?
+sa       NounSuffixI; ! what?
 
 !==============================
 LEXICON NounRootIX
@@ -167,6 +172,7 @@ manig           NounSuffixII; ! bird's egg
 nayag           NounSuffixII; ! sister of a male
 nunivag         NounSuffixII; ! rosewort plant (Sedum rosea), locally greens; tundra
 panig           NounSuffixII; ! daughter
+qawaag          NounSuffixII; ! bird
 savig           NounSuffixII; ! knife
 sikig           NounSuffixII; ! squirrel
 tengegkayug     NounSuffixII; ! airplane (plural, tengegkayuget, often used for one airplane)
@@ -221,6 +227,7 @@ papeg   NounSuffixVII; ! tail
 qanegh  NounSuffixVII; ! mouth (anatomical)
 taqegh  NounSuffixVII; ! vein
 
+naveg  NounSuffixVII; ! to where?
 
 !=======================================
 LEXICON NounRootVIII
@@ -230,6 +237,7 @@ LEXICON NounRootVIII
 
 aliinegh   NounSuffixVIII; ! clear, calm day
 kemeg      NounSuffixVIII; ! flesh; skin
+Quyilleg   NounSuffixVIII; ! Chukchi
 siqinegh   NounSuffixVIII; ! sun
 ughluvegh  NounSuffixVIII; ! bow
 yaquleg    NounSuffixVIII; ! angel
@@ -276,7 +284,10 @@ Yupigestute:Yupigestu%{t%}e      NounSuffixVI; ! in the Yupik language (inflecte
 ! POSSIBLE e-HOPPING
 ggute:ggu%{t%}e                  NounSuffixVI; ! tooth
 
-
+nakete:nake%{t%}e                NounSuffixVI; ! from where?
+natete:nate%{t%}e                NounSuffixVI; ! how?
+qakute:qaku%{t%}e                NounSuffixVI; ! when? (future)
+sangate:sanga%{t%}e              NounSuffixVI; ! why? (in general)
 !==================
 LEXICON NounRootIII
 !  end in weak -gh
@@ -285,10 +296,12 @@ LEXICON NounRootIII
 aghnagh:aghna%{g%}h          NounSuffixIII; ! woman
 akuutagh:akuuta%{g%}h        NounSuffixIII; ! mixture of berries, seal oil, sugar etc., "Eskimo ice cream"
 alangqugh:alangqu%{g%}h      NounSuffixIII; ! ring finger
+alquutagh:alquuta%{g%}h      NounSuffixIII; ! spoon
 anengagh:anenga%{g%}h        NounSuffixIII; ! older brother
 angyagh:angya%{g%}h          NounSuffixIII; ! boat
 aqelqagh:aqelqa%{g%}h        NounSuffixIII; ! visitor
 avaqutagh:avaquta%{g%}h      NounSuffixIII; ! child, offspring
+Ayuqligh:Ayuqli%{g%}h        NounSuffixIII; ! mainland Alaskan Eskimo
 eflugagh:efluga%{g%}h        NounSuffixIII; ! floor (from English)
 itegagh:itega%{g%}h          NounSuffixIII; ! foot
 mangteghagh:mangtegha%{g%}h  NounSuffixIII; ! house
@@ -314,6 +327,7 @@ uqugh:uqu%{g%}h              NounSuffixIII; ! fat; blubber; seal oil
 uyaqugh:uyaqu%{g%}h          NounSuffixIII; ! neck
 Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)
 
+qavngagh   NounSuffixIII; ! when? (past)
 
 !===================
 LEXICON VerbRootI
@@ -328,7 +342,10 @@ inghu          VerbSuffixI; ! to pick berries
 kaki           VerbSuffixI; ! to sew
 mekestaaghhaa  VerbSuffixI; ! to be small
 mesuuna        VerbSuffixI; ! to brush or comb one's hair
+pi             VerbSuffixI; ! to do; to go; etc. (transitive or intransitive)
+qavaghni       VerbSuffixI; ! to be sleepy (intransitive only)
 qiya           VerbSuffixI; ! to cry
+sa             VerbSuffixI; ! to do what? (transitive or intransitive)
 seghleghu      VerbSuffixI; ! to be bad
 tagi           VerbSuffixI; ! to come
 takestaaghhaa  VerbSuffixI; ! to be short
@@ -341,21 +358,22 @@ LEXICON VerbRootII
 !  has final -e
 !=================
 
-aane             VerbSuffixII;  ! to go out
-aange            VerbSuffixII;  ! to be big
-aghulaqe         VerbSuffixII;  ! to leave
-alinge           VerbSuffixII;  ! to be afraid
-atuqe            VerbSuffixII;  ! to use; to wear (takes transitive endings only)
-esleqe           VerbSuffixII;  ! to be full
+aane             VerbSuffixII; ! to go out
+aange            VerbSuffixII; ! to be big
+aghulaqe         VerbSuffixII; ! to leave
+alinge           VerbSuffixII; ! to be afraid
+atuqe            VerbSuffixII; ! to use; to wear (takes transitive endings only)
+esleqe           VerbSuffixII; ! to be full
 igamsiqayugvike  VerbSuffixII; ! to feel thankful toward (transitive only)
-kuuve            VerbSuffixII;  ! to spill
+kuuve            VerbSuffixII; ! to spill
 laalighfike      VerbSuffixII; ! to visit (transitive only)
-meghe            VerbSuffixII;  ! to drink
+liisimake        VerbSuffixII; ! to know (transitive only)
+meghe            VerbSuffixII; ! to drink
 nalluke          VerbSuffixII; ! to not know (transitive only)
-neghe            VerbSuffixII;  ! to eat
+neghe            VerbSuffixII; ! to eat
 piniqe           VerbSuffixII; ! to like (transitive only)
-taake            VerbSuffixII;  ! to be long
-taaqe            VerbSuffixII;  ! to finish; to quit
+taake            VerbSuffixII; ! to be long
+taaqe            VerbSuffixII; ! to finish; to quit
 
 
 !===================================
@@ -364,24 +382,30 @@ LEXICON VerbRootIV
 !  or -egh where e cannot be dropped
 !===================================
 
-aglagh        VerbSuffixIV;  ! to go home; to go over to another place
+aglagh        VerbSuffixIV; ! to go home; to go over to another place
 esghagh       VerbSuffixIV; ! to see (transitive only)
-gaagh         VerbSuffixIV;  ! to cook
+gaagh         VerbSuffixIV; ! to cook
 igamsiqanagh  VerbSuffixIV; ! to make one thankful (intransitive only)
-igatagh       VerbSuffixIV;  ! to be hungry
+igatagh       VerbSuffixIV; ! to be hungry
 iyamsiqanagh  VerbSuffixIV; ! to make one thankful (intransitive only)
-iyatagh       VerbSuffixIV;  ! to be hungry
-mayugh        VerbSuffixIV;  ! to go up
-megh          VerbSuffixIV;  ! to drink
-negh          VerbSuffixIV;  ! to eat
-nenglagh      VerbSuffixIV;  ! to laugh
-pinigh        VerbSuffixIV;  ! to be good
-qavagh        VerbSuffixIV;  ! to sleep
-qepghagh      VerbSuffixIV;  ! to work
-yughagh       VerbSuffixIV;  ! to pray, to worship
-atugh         VerbSuffixIV;  ! to use
-nulugh        VerbSuffixIV;  ! to ice-fish; to dunk a tea bag
-ungipaghagh   VerbSuffixIV;  ! to tell a story
+iyatagh       VerbSuffixIV; ! to be hungry
+kayusigh      VerbSuffixIV; ! to help (transitive only)
+mayugh        VerbSuffixIV; ! to go up
+megh          VerbSuffixIV; ! to drink
+meghnugh      VerbSuffixIV; ! to be tired (intransitive only)
+negh          VerbSuffixIV; ! to eat
+nenglagh      VerbSuffixIV; ! to laugh
+pinigh        VerbSuffixIV; ! to be good
+qavagh        VerbSuffixIV; ! to sleep
+qepghagh      VerbSuffixIV; ! to work
+tukfigh       VerbSuffixIV; ! to buy (transitive only)
+yughagh       VerbSuffixIV; ! to pray, to worship
+atugh         VerbSuffixIV; ! to use
+nulugh        VerbSuffixIV; ! to ice-fish; to dunk a tea bag
+ungipaghagh   VerbSuffixIV; ! to tell a story
+
+
+
 
 
 !=====================
@@ -390,6 +414,7 @@ LEXICON VerbRootIII
 !=====================
 
 igamsiqayug  VerbSuffixIII; ! to feel thankful (intransitive only)
+meqsug       VerbSuffixIII; ! to be thirsty (intransitive only)
 ukig         VerbSuffixIII; ! to go down
 qiighw       VerbSuffixIII; ! to cough
 qilug        VerbSuffixIII; ! to bark (at) (transitive or intransitive)
@@ -400,6 +425,7 @@ LEXICON VerbRootVI
 !  has semi-final -e that can be hopped
 !======================================
 
+alleg  VerbSuffixVI; ! to sweep (transitive or intransitive)
 aveg   VerbSuffixVI; ! to divide in two
 itegh  VerbSuffixVI; ! to go in; to enter
 umeg   VerbSuffixVI; ! to close (transitive or intransitive)
@@ -424,6 +450,7 @@ guute:guu%{t%}e          VerbSuffixV; ! to shoot (transitive or intransitive)
 igleghte:iglegh%{t%}e    VerbSuffixV; ! to travel
 ingaghte:ingagh%{t%}e    VerbSuffixV; ! to lie down
 kaate:kaa%{t%}e          VerbSuffixV; ! to arrive
+kayusiite:kayusii%{t%}e  VerbSuffixV; ! to help out (transitive or intransitive)
 laalighte:laaligh%{t%}e  VerbSuffixV; ! to visit (intransitive only
 liite:lii%{t%}e          VerbSuffixV; ! to learn; to become aware of one's surroundings (transitive or intransitive)
 nagate:naga%{t%}e        VerbSuffixV; ! to listen
@@ -461,6 +488,18 @@ LEXICON NounSuffixI
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
+
+
+
+
+
 !=====================================================
 LEXICON NounSuffixIX
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -491,6 +530,14 @@ LEXICON NounSuffixIX
 -squghhaq[N.N]:%^squghhagh   NounSuffixIV;  ! little N, small N
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
+
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixX
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -522,6 +569,13 @@ LEXICON NounSuffixX
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=======================================================
 LEXICON NounSuffixII
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -552,7 +606,13 @@ LEXICON NounSuffixII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
-!================================================================
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N!================================================================
 LEXICON NounSuffixIV
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
 !  when suffixing to noun roots that end in marked strong -gh (*)
@@ -581,6 +641,14 @@ LEXICON NounSuffixIV
 -squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
+
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 
 !======================================================
 LEXICON NounSuffixVII
@@ -613,6 +681,14 @@ LEXICON NounSuffixVII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
+
 !======================================================
 LEXICON NounSuffixVIII
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -644,6 +720,13 @@ LEXICON NounSuffixVIII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixV
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -674,6 +757,13 @@ LEXICON NounSuffixV
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixVI
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -704,6 +794,13 @@ LEXICON NounSuffixVI
 
 -lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !=====================================================
 LEXICON NounSuffixIII
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -734,6 +831,13 @@ LEXICON NounSuffixIII
 
 -lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 
+-liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+
+-niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
+
+-te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
+
+-tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
 !======================================================
 LEXICON VerbSuffixI
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -755,6 +859,8 @@ LEXICON VerbSuffixI
 
 -igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed
+
 
 !======================================================
 LEXICON VerbSuffixII
@@ -774,7 +880,9 @@ LEXICON VerbSuffixII
 
 -nghite[V.V]:%^nghite     VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
 
--igate[V.V]:%^%{.f.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)!============================================================
+-igate[V.V]:%^%{.f.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
+
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed!============================================================
 LEXICON VerbSuffixIV
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
 !  when suffixing to verb roots that end in -agh, -igh, -ugh 
@@ -794,6 +902,10 @@ LEXICON VerbSuffixIV
 -nghite[V.V]:%^%{.m.%}nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
 
 -igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
+
+-fte[V.V]:%^petefte        VerbSuffixV;  ! to evidently V or have V-ed
+
+-fte[V.V]:%^pete       VerbSuffixV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 !========================================================
 LEXICON VerbSuffixIII
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -814,6 +926,9 @@ LEXICON VerbSuffixIII
 
 -igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^petefte        VerbSuffixV;  ! to evidently V or have V-ed
+
+-fte[V.V]:%^pete       VerbSuffixV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 
 !======================================================
 LEXICON VerbSuffixVI
@@ -836,6 +951,8 @@ LEXICON VerbSuffixVI
 
 -igate[V.V]:%^%{.sf.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed
+
 !======================================================
 LEXICON VerbSuffixVII
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -857,6 +974,10 @@ LEXICON VerbSuffixVII
 
 -igate[V.V]:%^%{.sf.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^petefte        VerbSuffixV;  ! to evidently V or have V-ed
+
+-fte[V.V]:%^pete       VerbSuffixV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
+
 !======================================================
 LEXICON VerbSuffixV
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
@@ -877,6 +998,7 @@ LEXICON VerbSuffixV
 
 -igate[V.V]:%^%{.f.%}%{.at.%}ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
 
+-fte[V.V]:%^fte        VerbSuffixV;  ! to evidently V or have V-ed
 !=======================================================
 LEXICON NounInflI
 !  for noun roots that end in -a, -i, -u, -aa, -ii-, -uu

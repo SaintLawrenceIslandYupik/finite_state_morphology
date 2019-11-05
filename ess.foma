@@ -40,6 +40,11 @@ define MultiCharC [ n g n g w |
                     g g       | g h     | k w   | l l | m m |
                     n g       | n n     | r r   | q w | w h ];
 
+define NonMultiCharC  [ f | g | h | l | m |
+                        n | p | r | s | t |
+                        v | w | y | z | 
+                    %{t%} | %{g%} | %{k%} ] ;
+
 define FullVowel  [ a | i | u ]     ;
 define V          [ e | FullVowel ] ;
 
@@ -53,9 +58,11 @@ define SemiFinalE [..] -> e || .#. (C) (C) FullVowel _ C e g (h) "^" %{%.sf%.%} 
             %{%.sf%.%} -> 0                                                     ;
 
 
-define FinalE  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e  "^" %{%.f%.%} .o. ! hop final -e
-                  e -> 0 ||             V [ MultiCharC | C ] _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
-          %{%.f%.%} -> 0                                                          ;
+define FinalE  %{%.f%.%} -> 0 || MultiCharC MultiCharC e "^" _ MultiCharC                      .o. ! do not hop or drop final e if doing so results in a cluster of three consonants [Jacobson (2001) p.21]
+               %{%.f%.%} -> 0 || MultiCharC MultiCharC e "^" _ MultiCharC                      .o. ! do not hop or drop final e if doing so results in a cluster of three consonants [Jacobson (2001) p.21]
+                    [..] -> e ||          .#. ( MultiCharC | C ) FullVowel _ C e  "^" %{%.f%.%} .o. ! hop final -e
+                       e -> 0 || V ([ MultiCharC | C ]) [ MultiCharC | C ] _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
+               %{%.f%.%} -> 0                                                          ;
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables [Jacobson (2001) p.32]
              %{%.fL%.%} -> 0                     ;
