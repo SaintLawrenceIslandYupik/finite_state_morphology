@@ -52,23 +52,24 @@ define SemiFinalE [..] -> e || .#. (C) (C) FullVowel _ C e g (h) "^" %{%.sf%.%} 
                      e -> 0 ||           [ ? - C ] C _ g (h) "^" %{%.sf%.%}     .o. ! -e cannot drop if it leads to a 3-consonant cluster
             %{%.sf%.%} -> 0                                                     ;
 
-
-define FinalE  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e  "^" %{%.f%.%} .o. ! hop final -e
-                  e -> 0 ||             V [ MultiCharC | C ] _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
-          %{%.f%.%} -> 0                                                          ;
+define FinalE  %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC ] e "^" _ [ MultiCharC | C ]               .o. ! do not hop or drop final e if doing so results in a cluster of three consonants e.g. riigte[Abl.Mod][Sg] -> riigtmeng (cf. yughaghte[Abs][Sg][3SgPoss] -> yughaghtenga) [Jacobson (2001) p.21]
+                    [..] -> e ||          .#. ( MultiCharC | C ) FullVowel _ C e  "^" %{%.f%.%} .o. ! hop final -e
+                       e -> 0 || [ V | "^"] ([ MultiCharC | C ]) [ MultiCharC | C ] _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
+               %{%.f%.%} -> 0                                                          ;
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables [Jacobson (2001) p.32]
              %{%.fL%.%} -> 0                     ;
 
-define DropFinalC g h -> g     || g       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -g
-                  g h -> g h w || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -ghw
-                  g h -> w h   || %{k%} w "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
-                  g h -> w     || %{k%} w "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
-                    k -> q w   || g h w   "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
-                    k -> q     || g h     "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
-                    k -> k w   || w       "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
-                    C -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop root-final consonant
-  [ g | %{g%} ] ( h ) -> 0     ||                       _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
+define DropFinalC g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -g
+                  g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -ghw
+                  g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
+                  g h -> w     || %{k%} w         "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
+                    g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ]   .o. ! assimilate g to gh when dropping the gh of a base 
+                    k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
+                    k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
+                    k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
+                    C -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop root-final consonant
+  [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
             %{%.m%.%} -> 0                                              ;
 
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
@@ -112,7 +113,8 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define ResolveG %{G%} -> w || u "^" _ [ a | i ]               .o. ! velar rounding [Jacobson (2001) p.30]
+define ResolveG %{G%} -> w || u "^" _ [ a | i ] ("^") C .o. ! velar rounding [Jacobson (2001) p.30]. 
+! Added the condition about C in order not to do this rounding when DropMiddleVowel can occur [Jacobson (2001) p.44]. 
                 %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
                 %{G%} -> 0                                    ;
 
@@ -159,6 +161,7 @@ define CleanupDigraph %{k%}   -> 0   .o.
 
 define CleanupMorphBoundary "^" -> 0 ;
 
+define DropMiddleVowel V -> 0 || V _ V ;
 
 !==============
 ! RULE CASCADE
@@ -180,9 +183,10 @@ define Rules [
     PreventGemination    .o.
     CleanupDigraph       .o.
     CleanupMorphBoundary .o.
+    DropMiddleVowel      .o.
     VelarUvularRounding  .o.
     VowelDominance       .o.
     MatchVoicing
 ];
 
-define Grammar [ Exceptions .P. [ Lexicon .o. Rules ] ] ;
+define Grammar [ [ Exceptions .o. Rules ] .P. [ Lexicon .o. Rules ] ] ;
