@@ -1054,7 +1054,8 @@ LEXICON NounInflI
 [Abl.Mod][Sg][1PlPoss]:%^mnneng               #; [Abl.Mod][Pl][1PlPoss]:%^mnneng               #; [Abl.Mod][Du][1PlPoss]:%^gemnneng           #;
 [Abl.Mod][Sg][1DuPoss]:%^mtegneng             #; [Abl.Mod][Pl][1DuPoss]:%^mtegneng             #; [Abl.Mod][Du][1DuPoss]:%^gemtegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Pl][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Du][2SgPoss]:%^gpe%{G%}neng       #;
+[Abl.Mod][Sg][2SgPoss]:%^gpeneng              #; [Abl.Mod][Pl][2SgPoss]:%^gpeneng              #; [Abl.Mod][Du][2SgPoss]:%^gpeneng            #;
+[Abl.Mod][Sg][2SgPoss]:%^gpegneng             #; [Abl.Mod][Pl][2SgPoss]:%^gpegneng             #; [Abl.Mod][Du][2SgPoss]:%^gpegneng           #;
 [Abl.Mod][Sg][2PlPoss]:%^gpesineng            #; [Abl.Mod][Pl][2PlPoss]:%^gpesineng            #; [Abl.Mod][Du][2PlPoss]:%^gpesineng          #;
 [Abl.Mod][Sg][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Pl][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Du][2DuPoss]:%^gpetegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1076,7 +1077,8 @@ LEXICON NounInflI
 [Loc][Sg][1PlPoss]:%^mnni               #; [Loc][Pl][1PlPoss]:%^mnni               #; [Loc][Du][1PlPoss]:%^gemnni           #;
 [Loc][Sg][1DuPoss]:%^mtegni             #; [Loc][Pl][1DuPoss]:%^mtegni             #; [Loc][Du][1DuPoss]:%^gemtegni         #;
 !----------------------------------------|------------------------------------------|----------------------------------------|
-[Loc][Sg][2SgPoss]:%^gpe%{G%}ni         #; [Loc][Pl][2SgPoss]:%^gpe%{G%}ni         #; [Loc][Du][2SgPoss]:%^gpe%{G%}ni       #;
+[Loc][Sg][2SgPoss]:%^gpeni              #; [Loc][Pl][2SgPoss]:%^gpeni              #; [Loc][Du][2SgPoss]:%^gpeni            #;
+[Loc][Sg][2SgPoss]:%^gpegni             #; [Loc][Pl][2SgPoss]:%^gpegni             #; [Loc][Du][2SgPoss]:%^gpegni           #;
 [Loc][Sg][2PlPoss]:%^gpesini            #; [Loc][Pl][2PlPoss]:%^gpesini            #; [Loc][Du][2PlPoss]:%^gpesini          #;
 [Loc][Sg][2DuPoss]:%^gpetegni           #; [Loc][Pl][2DuPoss]:%^gpetegni           #; [Loc][Du][2DuPoss]:%^gpetegni         #;
 !----------------------------------------|------------------------------------------|----------------------------------------|
@@ -1098,7 +1100,8 @@ LEXICON NounInflI
 [All][Sg][1PlPoss]:%^mnnun              #; [All][Pl][1PlPoss]:%^mnnun              #; [All][Du][1PlPoss]:%^gemnnun          #;
 [All][Sg][1DuPoss]:%^mtegnun            #; [All][Pl][1DuPoss]:%^mtegnun            #; [All][Du][1DuPoss]:%^gemtegnun        #;
 !----------------------------------------|------------------------------------------|----------------------------------------|
-[All][Sg][2SgPoss]:%^gpe%{G%}nun        #; [All][Pl][2SgPoss]:%^gpe%{G%}nun        #; [All][Du][2SgPoss]:%^gpe%{G%}nun      #;
+[All][Sg][2SgPoss]:%^gpenun             #; [All][Pl][2SgPoss]:%^gpenun             #; [All][Du][2SgPoss]:%^gpenun           #;
+[All][Sg][2SgPoss]:%^gpegnun            #; [All][Pl][2SgPoss]:%^gpegnun            #; [All][Du][2SgPoss]:%^gpegnun          #;
 [All][Sg][2PlPoss]:%^gpesinun           #; [All][Pl][2PlPoss]:%^gpesinun           #; [All][Du][2PlPoss]:%^gpesinun         #;
 [All][Sg][2DuPoss]:%^gpetegnun          #; [All][Pl][2DuPoss]:%^gpetegnun          #; [All][Du][2DuPoss]:%^gpetegnun        #;
 !----------------------------------------|------------------------------------------|----------------------------------------|
@@ -1213,7 +1216,8 @@ LEXICON NounInflIX
 [Abl.Mod][Sg][1PlPoss]:%^mnneng               #; [Abl.Mod][Pl][1PlPoss]:%^mnneng               #; [Abl.Mod][Du][1PlPoss]:%^gemnneng           #;
 [Abl.Mod][Sg][1DuPoss]:%^mtegneng             #; [Abl.Mod][Pl][1DuPoss]:%^mtegneng             #; [Abl.Mod][Du][1DuPoss]:%^gemtegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Pl][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Du][2SgPoss]:%^gpe%{G%}neng       #;
+[Abl.Mod][Sg][2SgPoss]:%^gpeneng              #; [Abl.Mod][Pl][2SgPoss]:%^gpeneng              #; [Abl.Mod][Du][2SgPoss]:%^gpeneng            #;
+[Abl.Mod][Sg][2SgPoss]:%^gpegneng             #; [Abl.Mod][Pl][2SgPoss]:%^gpegneng             #; [Abl.Mod][Du][2SgPoss]:%^gpegneng           #;
 [Abl.Mod][Sg][2PlPoss]:%^gpesineng            #; [Abl.Mod][Pl][2PlPoss]:%^gpesineng            #; [Abl.Mod][Du][2PlPoss]:%^gpesineng          #;
 [Abl.Mod][Sg][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Pl][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Du][2DuPoss]:%^gpetegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1235,7 +1239,8 @@ LEXICON NounInflIX
 [Loc][Sg][1PlPoss]:%^mnni                     #; [Loc][Pl][1PlPoss]:%^mnni                     #; [Loc][Du][1PlPoss]:%^gemnni                 #;
 [Loc][Sg][1DuPoss]:%^mtegni                   #; [Loc][Pl][1DuPoss]:%^mtegni                   #; [Loc][Du][1DuPoss]:%^gemtegni               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Loc][Sg][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Pl][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Du][2SgPoss]:%^gpe%{G%}ni             #;
+[Loc][Sg][2SgPoss]:%^gpeni                    #; [Loc][Pl][2SgPoss]:%^gpeni                    #; [Loc][Du][2SgPoss]:%^gpeni                  #;
+[Loc][Sg][2SgPoss]:%^gpegni                   #; [Loc][Pl][2SgPoss]:%^gpegni                   #; [Loc][Du][2SgPoss]:%^gpegni                 #;
 [Loc][Sg][2PlPoss]:%^gpesini                  #; [Loc][Pl][2PlPoss]:%^gpesini                  #; [Loc][Du][2PlPoss]:%^gpesini                #;
 [Loc][Sg][2DuPoss]:%^gpetegni                 #; [Loc][Pl][2DuPoss]:%^gpetegni                 #; [Loc][Du][2DuPoss]:%^gpetegni               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1257,7 +1262,8 @@ LEXICON NounInflIX
 [All][Sg][1PlPoss]:%^mnnun                    #; [All][Pl][1PlPoss]:%^mnnun                    #; [All][Du][1PlPoss]:%^gemnnun                #;
 [All][Sg][1DuPoss]:%^mtegnun                  #; [All][Pl][1DuPoss]:%^mtegnun                  #; [All][Du][1DuPoss]:%^gemtegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[All][Sg][2SgPoss]:%^gpe%{G%}nun              #; [All][Pl][2SgPoss]:%^gpe%{G%}nun              #; [All][Du][2SgPoss]:%^gpe%{G%}nun            #;
+[All][Sg][2SgPoss]:%^gpenun                   #; [All][Pl][2SgPoss]:%^gpenun                   #; [All][Du][2SgPoss]:%^gpenun                 #;
+[All][Sg][2SgPoss]:%^gpegnun                  #; [All][Pl][2SgPoss]:%^gpegnun                  #; [All][Du][2SgPoss]:%^gpegnun                #;
 [All][Sg][2PlPoss]:%^gpesinun                 #; [All][Pl][2PlPoss]:%^gpesinun                 #; [All][Du][2PlPoss]:%^gpesinun               #;
 [All][Sg][2DuPoss]:%^gpetegnun                #; [All][Pl][2DuPoss]:%^gpetegnun                #; [All][Du][2DuPoss]:%^gpetegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1376,7 +1382,8 @@ LEXICON NounInflX
 [Abl.Mod][Sg][1PlPoss]:%^mnneng               #; [Abl.Mod][Pl][1PlPoss]:%^mnneng               #; [Abl.Mod][Du][1PlPoss]:%^gemnneng           #;
 [Abl.Mod][Sg][1DuPoss]:%^mtegneng             #; [Abl.Mod][Pl][1DuPoss]:%^mtegneng             #; [Abl.Mod][Du][1DuPoss]:%^gemtegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Pl][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Du][2SgPoss]:%^gpe%{G%}neng       #;
+[Abl.Mod][Sg][2SgPoss]:%^gpeneng              #; [Abl.Mod][Pl][2SgPoss]:%^gpeneng              #; [Abl.Mod][Du][2SgPoss]:%^gpeneng            #;
+[Abl.Mod][Sg][2SgPoss]:%^gpegneng             #; [Abl.Mod][Pl][2SgPoss]:%^gpegneng             #; [Abl.Mod][Du][2SgPoss]:%^gpegneng           #;
 [Abl.Mod][Sg][2PlPoss]:%^gpesineng            #; [Abl.Mod][Pl][2PlPoss]:%^gpesineng            #; [Abl.Mod][Du][2PlPoss]:%^gpesineng          #;
 [Abl.Mod][Sg][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Pl][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Du][2DuPoss]:%^gpetegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1398,7 +1405,8 @@ LEXICON NounInflX
 [Loc][Sg][1PlPoss]:%^mnni                     #; [Loc][Pl][1PlPoss]:%^mnni                     #; [Loc][Du][1PlPoss]:%^gemnni                 #;
 [Loc][Sg][1DuPoss]:%^mtegni                   #; [Loc][Pl][1DuPoss]:%^mtegni                   #; [Loc][Du][1DuPoss]:%^gemtegni               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Loc][Sg][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Pl][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Du][2SgPoss]:%^gpe%{G%}ni             #;
+[Loc][Sg][2SgPoss]:%^gpeni                    #; [Loc][Pl][2SgPoss]:%^gpeni                    #; [Loc][Du][2SgPoss]:%^gpeni                  #;
+[Loc][Sg][2SgPoss]:%^gpegni                   #; [Loc][Pl][2SgPoss]:%^gpegni                   #; [Loc][Du][2SgPoss]:%^gpegni                 #;
 [Loc][Sg][2PlPoss]:%^gpesini                  #; [Loc][Pl][2PlPoss]:%^gpesini                  #; [Loc][Du][2PlPoss]:%^gpesini                #;
 [Loc][Sg][2DuPoss]:%^gpetegni                 #; [Loc][Pl][2DuPoss]:%^gpetegni                 #; [Loc][Du][2DuPoss]:%^gpetegni               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1420,7 +1428,8 @@ LEXICON NounInflX
 [All][Sg][1PlPoss]:%^mnnun                     #; [All][Pl][1PlPoss]:%^mnnun                     #; [All][Du][1PlPoss]:%^gemnnun                 #;
 [All][Sg][1DuPoss]:%^mtegnun                   #; [All][Pl][1DuPoss]:%^mtegnun                   #; [All][Du][1DuPoss]:%^gemtegnun               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[All][Sg][2SgPoss]:%^gpe%{G%}nun               #; [All][Pl][2SgPoss]:%^gpe%{G%}nun               #; [All][Du][2SgPoss]:%^gpe%{G%}nun             #;
+[All][Sg][2SgPoss]:%^gpenun                   #; [All][Pl][2SgPoss]:%^gpenun                   #; [All][Du][2SgPoss]:%^gpenun                    #;
+[All][Sg][2SgPoss]:%^gpegnun                  #; [All][Pl][2SgPoss]:%^gpegnun                  #; [All][Du][2SgPoss]:%^gpegnun                   #;
 [All][Sg][2PlPoss]:%^gpesinun                  #; [All][Pl][2PlPoss]:%^gpesinun                  #; [All][Du][2PlPoss]:%^gpesinun                #;
 [All][Sg][2DuPoss]:%^gpetegnun                 #; [All][Pl][2DuPoss]:%^gpetegnun                 #; [All][Du][2DuPoss]:%^gpetegnun               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1535,7 +1544,8 @@ LEXICON NounInflII
 [Abl.Mod][Sg][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Pl][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Du][1PlPoss]:%^egemnneng          #;
 [Abl.Mod][Sg][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Pl][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Du][1DuPoss]:%^egemtegneng        #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Du][2SgPoss]:%^egpe%{G%}neng      #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Du][2SgPoss]:%^egpeneng           #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Du][2SgPoss]:%^egpegneng          #;
 [Abl.Mod][Sg][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Pl][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Du][2PlPoss]:%^egpesineng         #;
 [Abl.Mod][Sg][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Pl][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Du][2DuPoss]:%^egpetegneng        #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1557,7 +1567,8 @@ LEXICON NounInflII
 [Loc][Sg][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Pl][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Du][1PlPoss]:%^egemnni                #;
 [Loc][Sg][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Pl][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Du][1DuPoss]:%^egemtegni              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Loc][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Du][2SgPoss]:%^egpe%{G%}ni            #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Du][2SgPoss]:%^egpeni                 #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Du][2SgPoss]:%^egpegni                #;
 [Loc][Sg][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Pl][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Du][2PlPoss]:%^egpesini               #;
 [Loc][Sg][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Pl][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Du][2DuPoss]:%^egpetegni              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1579,7 +1590,8 @@ LEXICON NounInflII
 [All][Sg][1PlPoss]:%^%{.m.%}mnnun              #; [All][Pl][1PlPoss]:%^%{.m.%}mnnun              #; [All][Du][1PlPoss]:%^egemnnun                #;
 [All][Sg][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Pl][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Du][1DuPoss]:%^egemtegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[All][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Du][2SgPoss]:%^egpe%{G%}nun            #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpenun             #; [All][Pl][2SgPoss]:%^%{.m.%}gpenun             #; [All][Du][2SgPoss]:%^egpenun                 #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Pl][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Du][2SgPoss]:%^egpegnun                #;
 [All][Sg][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Pl][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Du][2PlPoss]:%^egpesinun               #;
 [All][Sg][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Pl][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Du][2DuPoss]:%^egpetegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -1695,7 +1707,8 @@ LEXICON NounInflIV
 [Abl.Mod][Sg][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Pl][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Du][1PlPoss]:%^%{.c.%}%{E%}gemnneng          #;
 [Abl.Mod][Sg][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Pl][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Du][1DuPoss]:%^%{.c.%}%{E%}gemtegneng        #;
 !----------------------------------------------|------------------------------------------------|---------------------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Du][2SgPoss]:%^%{.c.%}%{E%}gpe%{G%}neng      #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Du][2SgPoss]:%^%{.c.%}%{E%}gpeneng           #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Du][2SgPoss]:%^%{.c.%}%{E%}gpegneng          #;
 [Abl.Mod][Sg][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Pl][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Du][2PlPoss]:%^%{.c.%}%{E%}gpesineng         #;
 [Abl.Mod][Sg][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Pl][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Du][2DuPoss]:%^%{.c.%}%{E%}gpetegneng        #;
 !----------------------------------------------|------------------------------------------------|---------------------------------------------------------|
@@ -1717,7 +1730,8 @@ LEXICON NounInflIV
 [Loc][Sg][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Pl][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Du][1PlPoss]:%^%{.c.%}%{E%}gemnni          #;
 [Loc][Sg][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Pl][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Du][1DuPoss]:%^%{.c.%}%{E%}gemtegni        #;
 !----------------------------------------------|------------------------------------------------|---------------------------------------------------|
-[Loc][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Du][2SgPoss]:%^%{.c.%}%{E%}gpe%{G%}ni      #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Du][2SgPoss]:%^%{.c.%}%{E%}gpeni           #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Du][2SgPoss]:%^%{.c.%}%{E%}gpegni          #;
 [Loc][Sg][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Pl][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Du][2PlPoss]:%^%{.c.%}%{E%}gpesini         #;
 [Loc][Sg][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Pl][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Du][2DuPoss]:%^%{.c.%}%{E%}gpetegni        #;
 !----------------------------------------------|------------------------------------------------|---------------------------------------------------|
@@ -1739,7 +1753,8 @@ LEXICON NounInflIV
 [All][Sg][1PlPoss]:%^%{.m.%}mnnun              #; [All][Pl][1PlPoss]:%^%{.m.%}mnnun              #; [All][Du][1PlPoss]:%^%{.c.%}%{E%}gemnnun          #;
 [All][Sg][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Pl][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Du][1DuPoss]:%^%{.c.%}%{E%}gemtegnun        #;
 !----------------------------------------------|------------------------------------------------|---------------------------------------------------|
-[All][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Du][2SgPoss]:%^%{.c.%}%{E%}gpe%{G%}nun      #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpenun             #; [All][Pl][2SgPoss]:%^%{.m.%}gpenun             #; [All][Du][2SgPoss]:%^%{.c.%}%{E%}gpenun           #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Pl][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Du][2SgPoss]:%^%{.c.%}%{E%}gpegnun          #;
 [All][Sg][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Pl][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Du][2PlPoss]:%^%{.c.%}%{E%}gpesinun         #;
 [All][Sg][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Pl][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Du][2DuPoss]:%^%{.c.%}%{E%}gpetegnun        #;
 !----------------------------------------------|------------------------------------------------|---------------------------------------------------|
@@ -1856,7 +1871,8 @@ LEXICON NounInflVII
 [Abl.Mod][Sg][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Pl][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Du][1PlPoss]:%^%{.sf.%}egemnneng      #;
 [Abl.Mod][Sg][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Pl][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Du][1DuPoss]:%^%{.sf.%}egemtegneng    #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Du][2SgPoss]:%^%{.sf.%}egpe%{G%}neng  #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Du][2SgPoss]:%^%{.sf.%}egpeneng       #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Du][2SgPoss]:%^%{.sf.%}egpegneng      #;
 [Abl.Mod][Sg][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Pl][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Du][2PlPoss]:%^%{.sf.%}egpesineng     #;
 [Abl.Mod][Sg][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Pl][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Du][2DuPoss]:%^%{.sf.%}egpetegneng    #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -1878,7 +1894,8 @@ LEXICON NounInflVII
 [Loc][Sg][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Pl][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Du][1PlPoss]:%^%{.sf.%}egemnni            #;
 [Loc][Sg][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Pl][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Du][1DuPoss]:%^%{.sf.%}egemtegni          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
-[Loc][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Du][2SgPoss]:%^%{.sf.%}egpe%{G%}ni        #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Du][2SgPoss]:%^%{.sf.%}egpeni             #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Du][2SgPoss]:%^%{.sf.%}egpegni            #;
 [Loc][Sg][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Pl][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Du][2PlPoss]:%^%{.sf.%}egpesini           #;
 [Loc][Sg][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Pl][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Du][2DuPoss]:%^%{.sf.%}egpetegni          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -1900,7 +1917,8 @@ LEXICON NounInflVII
 [All][Sg][1PlPoss]:%^%{.m.%}mnnun              #; [All][Pl][1PlPoss]:%^%{.m.%}mnnun              #; [All][Du][1PlPoss]:%^%{.sf.%}egemnnun            #;
 [All][Sg][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Pl][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Du][1DuPoss]:%^%{.sf.%}egemtegnun          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
-[All][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Du][2SgPoss]:%^%{.sf.%}egpe%{G%}nun        #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpenun             #; [All][Pl][2SgPoss]:%^%{.m.%}gpenun             #; [All][Du][2SgPoss]:%^%{.sf.%}egpenun             #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Pl][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Du][2SgPoss]:%^%{.sf.%}egpegnun            #;
 [All][Sg][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Pl][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Du][2PlPoss]:%^%{.sf.%}egpesinun           #;
 [All][Sg][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Pl][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Du][2DuPoss]:%^%{.sf.%}egpetegnun          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -2017,7 +2035,8 @@ LEXICON NounInflVIII
 [Abl.Mod][Sg][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Pl][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Du][1PlPoss]:%^%{.sf.%}egemnneng      #;
 [Abl.Mod][Sg][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Pl][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Du][1DuPoss]:%^%{.sf.%}egemtegneng    #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Du][2SgPoss]:%^%{.sf.%}egpe%{G%}neng  #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Du][2SgPoss]:%^%{.sf.%}egpeneng       #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Du][2SgPoss]:%^%{.sf.%}egpegneng      #;
 [Abl.Mod][Sg][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Pl][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Du][2PlPoss]:%^%{.sf.%}egpesineng     #;
 [Abl.Mod][Sg][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Pl][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Du][2DuPoss]:%^%{.sf.%}egpetegneng    #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -2039,7 +2058,8 @@ LEXICON NounInflVIII
 [Loc][Sg][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Pl][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Du][1PlPoss]:%^%{.sf.%}egemnni            #;
 [Loc][Sg][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Pl][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Du][1DuPoss]:%^%{.sf.%}egemtegni          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
-[Loc][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Du][2SgPoss]:%^%{.sf.%}egpe%{G%}ni        #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Du][2SgPoss]:%^%{.sf.%}egpeni             #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Du][2SgPoss]:%^%{.sf.%}egpegni            #;
 [Loc][Sg][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Pl][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Du][2PlPoss]:%^%{.sf.%}egpesini           #;
 [Loc][Sg][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Pl][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Du][2DuPoss]:%^%{.sf.%}egpetegni          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -2061,7 +2081,8 @@ LEXICON NounInflVIII
 [All][Sg][1PlPoss]:%^%{.m.%}mnnun              #; [All][Pl][1PlPoss]:%^%{.m.%}mnnun              #; [All][Du][1PlPoss]:%^%{.sf.%}egemnnun            #;
 [All][Sg][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Pl][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Du][1DuPoss]:%^%{.sf.%}egemtegnun          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
-[All][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Du][2SgPoss]:%^%{.sf.%}egpe%{G%}nun        #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpenun             #; [All][Pl][2SgPoss]:%^%{.m.%}gpenun             #; [All][Du][2SgPoss]:%^%{.sf.%}egpenun             #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Pl][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Du][2SgPoss]:%^%{.sf.%}egpegnun            #;
 [All][Sg][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Pl][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Du][2PlPoss]:%^%{.sf.%}egpesinun           #;
 [All][Sg][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Pl][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Du][2DuPoss]:%^%{.sf.%}egpetegnun          #;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
@@ -2180,7 +2201,8 @@ LEXICON NounInflV
 [Abl.Mod][Sg][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Pl][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Du][1PlPoss]:%^egemnneng          #;
 [Abl.Mod][Sg][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Pl][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Du][1DuPoss]:%^egemtegneng        #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Du][2SgPoss]:%^egpe%{G%}neng      #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Du][2SgPoss]:%^egpeneng           #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Du][2SgPoss]:%^egpegneng          #;
 [Abl.Mod][Sg][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Pl][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Du][2PlPoss]:%^egpesineng         #;
 [Abl.Mod][Sg][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Pl][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Du][2DuPoss]:%^egpetegneng        #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -2202,7 +2224,8 @@ LEXICON NounInflV
 [Loc][Sg][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Pl][1PlPoss]:%^%{.m.%}mnni              #; [Loc][Du][1PlPoss]:%^egemnni                #;
 [Loc][Sg][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Pl][1DuPoss]:%^%{.m.%}mtegni            #; [Loc][Du][1DuPoss]:%^egemtegni              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Loc][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}ni        #; [Loc][Du][2SgPoss]:%^egpe%{G%}ni            #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpeni             #; [Loc][Du][2SgPoss]:%^egpeni                 #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpegni            #; [Loc][Du][2SgPoss]:%^egpegni                #;
 [Loc][Sg][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Pl][2PlPoss]:%^%{.m.%}gpesini           #; [Loc][Du][2PlPoss]:%^egpesini               #;
 [Loc][Sg][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Pl][2DuPoss]:%^%{.m.%}gpetegni          #; [Loc][Du][2DuPoss]:%^egpetegni              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -2224,7 +2247,8 @@ LEXICON NounInflV
 [All][Sg][1PlPoss]:%^%{.m.%}mnnun              #; [All][Pl][1PlPoss]:%^%{.m.%}mnnun              #; [All][Du][1PlPoss]:%^egemnnun                #;
 [All][Sg][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Pl][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Du][1DuPoss]:%^egemtegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[All][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Du][2SgPoss]:%^egpe%{G%}nun            #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpenun             #; [All][Pl][2SgPoss]:%^%{.m.%}gpenun             #; [All][Du][2SgPoss]:%^egpenun                 #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Pl][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Du][2SgPoss]:%^egpegnun                #;
 [All][Sg][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Pl][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Du][2PlPoss]:%^egpesinun               #;
 [All][Sg][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Pl][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Du][2DuPoss]:%^egpetegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -2341,7 +2365,8 @@ LEXICON NounInflVI
 [Abl.Mod][Sg][1PlPoss]:%^mnneng               #; [Abl.Mod][Pl][1PlPoss]:%^mnneng               #; [Abl.Mod][Du][1PlPoss]:%^gemnneng           #;
 [Abl.Mod][Sg][1DuPoss]:%^mtegneng             #; [Abl.Mod][Pl][1DuPoss]:%^mtegneng             #; [Abl.Mod][Du][1DuPoss]:%^gemtegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Pl][2SgPoss]:%^gpe%{G%}neng         #; [Abl.Mod][Du][2SgPoss]:%^gpe%{G%}neng       #;
+[Abl.Mod][Sg][2SgPoss]:%^gpeneng              #; [Abl.Mod][Pl][2SgPoss]:%^gpeneng              #; [Abl.Mod][Du][2SgPoss]:%^gpeneng            #;
+[Abl.Mod][Sg][2SgPoss]:%^gpegneng             #; [Abl.Mod][Pl][2SgPoss]:%^gpegneng             #; [Abl.Mod][Du][2SgPoss]:%^gpegneng           #;
 [Abl.Mod][Sg][2PlPoss]:%^gpesineng            #; [Abl.Mod][Pl][2PlPoss]:%^gpesineng            #; [Abl.Mod][Du][2PlPoss]:%^gpesineng          #;
 [Abl.Mod][Sg][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Pl][2DuPoss]:%^gpetegneng           #; [Abl.Mod][Du][2DuPoss]:%^gpetegneng         #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -2363,7 +2388,8 @@ LEXICON NounInflVI
 [Loc][Sg][1PlPoss]:%^mnni                     #; [Loc][Pl][1PlPoss]:%^mnni                     #; [Loc][Du][1PlPoss]:%^gemnni                 #;
 [Loc][Sg][1DuPoss]:%^mtegni                   #; [Loc][Pl][1DuPoss]:%^mtegni                   #; [Loc][Du][1DuPoss]:%^gemtegni               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[Loc][Sg][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Pl][2SgPoss]:%^gpe%{G%}ni               #; [Loc][Du][2SgPoss]:%^gpe%{G%}ni             #;
+[Loc][Sg][2SgPoss]:%^gpeni                    #; [Loc][Pl][2SgPoss]:%^gpeni                    #; [Loc][Du][2SgPoss]:%^gpeni                  #;
+[Loc][Sg][2SgPoss]:%^gpegni                   #; [Loc][Pl][2SgPoss]:%^gpegni                   #; [Loc][Du][2SgPoss]:%^gpegni                 #;
 [Loc][Sg][2PlPoss]:%^gpesini                  #; [Loc][Pl][2PlPoss]:%^gpesini                  #; [Loc][Du][2PlPoss]:%^gpesini                #;
 [Loc][Sg][2DuPoss]:%^gpetegni                 #; [Loc][Pl][2DuPoss]:%^gpetegni                 #; [Loc][Du][2DuPoss]:%^gpetegni               #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -2385,7 +2411,8 @@ LEXICON NounInflVI
 [All][Sg][1PlPoss]:%^mnnun                    #; [All][Pl][1PlPoss]:%^mnnun                    #; [All][Du][1PlPoss]:%^gemnnun                #;
 [All][Sg][1DuPoss]:%^mtegnun                  #; [All][Pl][1DuPoss]:%^mtegnun                  #; [All][Du][1DuPoss]:%^gemtegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
-[All][Sg][2SgPoss]:%^gpe%{G%}nun              #; [All][Pl][2SgPoss]:%^gpe%{G%}nun              #; [All][Du][2SgPoss]:%^gpe%{G%}nun            #;
+[All][Sg][2SgPoss]:%^gpenun                   #; [All][Pl][2SgPoss]:%^gpenun                   #; [All][Du][2SgPoss]:%^gpenun                 #;
+[All][Sg][2SgPoss]:%^gpegnun                  #; [All][Pl][2SgPoss]:%^gpegnun                  #; [All][Du][2SgPoss]:%^gpegnun                #;
 [All][Sg][2PlPoss]:%^gpesinun                 #; [All][Pl][2PlPoss]:%^gpesinun                 #; [All][Du][2PlPoss]:%^gpesinun               #;
 [All][Sg][2DuPoss]:%^gpetegnun                #; [All][Pl][2DuPoss]:%^gpetegnun                #; [All][Du][2DuPoss]:%^gpetegnun              #;
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|
@@ -2501,7 +2528,8 @@ LEXICON NounInflIII
 [Abl.Mod][Sg][1PlPoss]:%^%{.m.%}mnneng         #; [Abl.Mod][Pl][1PlPoss]:%^%{.m.%}mnneng        #; [Abl.Mod][Du][1PlPoss]:%^%{.w.%}gemnneng      #;
 [Abl.Mod][Sg][1DuPoss]:%^%{.m.%}mtegneng       #; [Abl.Mod][Pl][1DuPoss]:%^%{.m.%}mtegneng      #; [Abl.Mod][Du][1DuPoss]:%^%{.w.%}gemtegneng    #;
 !-----------------------------------------------|------------------------------------------------|------------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}neng   #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}neng  #; [Abl.Mod][Du][2SgPoss]:%^%{.w.%}gpe%{G%}neng  #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpeneng        #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpeneng       #; [Abl.Mod][Du][2SgPoss]:%^%{.w.%}gpeneng       #;
+[Abl.Mod][Sg][2SgPoss]:%^%{.m.%}gpegneng       #; [Abl.Mod][Pl][2SgPoss]:%^%{.m.%}gpegneng      #; [Abl.Mod][Du][2SgPoss]:%^%{.w.%}gpegneng      #;
 [Abl.Mod][Sg][2PlPoss]:%^%{.m.%}gpesineng      #; [Abl.Mod][Pl][2PlPoss]:%^%{.m.%}gpesineng     #; [Abl.Mod][Du][2PlPoss]:%^%{.w.%}gpesineng     #;
 [Abl.Mod][Sg][2DuPoss]:%^%{.m.%}gpetegneng     #; [Abl.Mod][Pl][2DuPoss]:%^%{.m.%}gpetegneng    #; [Abl.Mod][Du][2DuPoss]:%^%{.w.%}gpetegneng    #;
 !-----------------------------------------------|------------------------------------------------|------------------------------------------------|
@@ -2523,7 +2551,8 @@ LEXICON NounInflIII
 [Loc][Sg][1PlPoss]:%^%{.m.%}mnni                #; [Loc][Pl][1PlPoss]:%^%{.m.%}mnni             #; [Loc][Du][1PlPoss]:%^%{.w.%}gemnni            #;
 [Loc][Sg][1DuPoss]:%^%{.m.%}mtegni              #; [Loc][Pl][1DuPoss]:%^%{.m.%}mtegni           #; [Loc][Du][1DuPoss]:%^%{.w.%}gemtegni          #;
 !-----------------------------------------------|------------------------------------------------|------------------------------------------------|
-[Loc][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}ni          #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}ni       #; [Loc][Du][2SgPoss]:%^%{.w.%}gpe%{G%}ni        #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpeni               #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpeni            #; [Loc][Du][2SgPoss]:%^%{.w.%}gpeni             #;
+[Loc][Sg][2SgPoss]:%^%{.m.%}gpegni              #; [Loc][Pl][2SgPoss]:%^%{.m.%}gpegni           #; [Loc][Du][2SgPoss]:%^%{.w.%}gpegni            #;
 [Loc][Sg][2PlPoss]:%^%{.m.%}gpesini             #; [Loc][Pl][2PlPoss]:%^%{.m.%}gpesini          #; [Loc][Du][2PlPoss]:%^%{.w.%}gpesini           #;
 [Loc][Sg][2DuPoss]:%^%{.m.%}gpetegni            #; [Loc][Pl][2DuPoss]:%^%{.m.%}gpetegni         #; [Loc][Du][2DuPoss]:%^%{.w.%}gpetegni          #;
 !-----------------------------------------------|------------------------------------------------|------------------------------------------------|
@@ -2545,7 +2574,8 @@ LEXICON NounInflIII
 [All][Sg][1PlPoss]:%^%{.m.%}mnnun              #; [All][Pl][1PlPoss]:%^%{.m.%}mnnun             #; [All][Du][1PlPoss]:%^%{.w.%}gemnnun           #;
 [All][Sg][1DuPoss]:%^%{.m.%}mtegnun            #; [All][Pl][1DuPoss]:%^%{.m.%}mtegnun           #; [All][Du][1DuPoss]:%^%{.w.%}gemtegnun         #;
 !-----------------------------------------------|------------------------------------------------|------------------------------------------------|
-[All][Sg][2SgPoss]:%^%{.m.%}gpe%{G%}nun        #; [All][Pl][2SgPoss]:%^%{.m.%}gpe%{G%}nun       #; [All][Du][2SgPoss]:%^%{.w.%}gpe%{G%}nun       #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpenun             #; [All][Pl][2SgPoss]:%^%{.m.%}gpenun            #; [All][Du][2SgPoss]:%^%{.w.%}gpenun            #;
+[All][Sg][2SgPoss]:%^%{.m.%}gpegnun            #; [All][Pl][2SgPoss]:%^%{.m.%}gpegnun           #; [All][Du][2SgPoss]:%^%{.w.%}gpegnun           #;
 [All][Sg][2PlPoss]:%^%{.m.%}gpesinun           #; [All][Pl][2PlPoss]:%^%{.m.%}gpesinun          #; [All][Du][2PlPoss]:%^%{.w.%}gpesinun          #;
 [All][Sg][2DuPoss]:%^%{.m.%}gpetegnun          #; [All][Pl][2DuPoss]:%^%{.m.%}gpetegnun         #; [All][Du][2DuPoss]:%^%{.w.%}gpetegnun         #;
 !-----------------------------------------------|------------------------------------------------|------------------------------------------------|

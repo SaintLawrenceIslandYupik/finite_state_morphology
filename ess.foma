@@ -40,11 +40,6 @@ define MultiCharC [ n g n g w |
                     g g       | g h     | k w   | l l | m m |
                     n g       | n n     | r r   | q w | w h ];
 
-define NonMultiCharC  [ f | g | h | l | m |
-                        n | p | r | s | t |
-                        v | w | y | z | 
-                    %{t%} | %{g%} | %{k%} ] ;
-
 define FullVowel  [ a | i | u ]     ;
 define V          [ e | FullVowel ] ;
 
@@ -57,11 +52,9 @@ define SemiFinalE [..] -> e || .#. (C) (C) FullVowel _ C e g (h) "^" %{%.sf%.%} 
                      e -> 0 ||           [ ? - C ] C _ g (h) "^" %{%.sf%.%}     .o. ! -e cannot drop if it leads to a 3-consonant cluster
             %{%.sf%.%} -> 0                                                     ;
 
-
-define FinalE  %{%.f%.%} -> 0 || MultiCharC MultiCharC e "^" _ MultiCharC                      .o. ! do not hop or drop final e if doing so results in a cluster of three consonants [Jacobson (2001) p.21]
-               %{%.f%.%} -> 0 || MultiCharC MultiCharC e "^" _ MultiCharC                      .o. ! do not hop or drop final e if doing so results in a cluster of three consonants [Jacobson (2001) p.21]
+define FinalE  %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC ] e "^" _ [ MultiCharC | C ]               .o. ! do not hop or drop final e if doing so results in a cluster of three consonants e.g. riigte[Abl.Mod][Sg] -> riigtmeng (cf. yughaghte[Abs][Sg][3SgPoss] -> yughaghtenga) [Jacobson (2001) p.21]
                     [..] -> e ||          .#. ( MultiCharC | C ) FullVowel _ C e  "^" %{%.f%.%} .o. ! hop final -e
-                       e -> 0 || V ([ MultiCharC | C ]) [ MultiCharC | C ] _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
+                       e -> 0 || [ V | "^"] ([ MultiCharC | C ]) [ MultiCharC | C ] _      "^" %{%.f%.%} .o. ! VowelDominance will apply later             
                %{%.f%.%} -> 0                                                          ;
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables [Jacobson (2001) p.32]
@@ -71,6 +64,7 @@ define DropFinalC g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]   
                   g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate gh- onset to dropped -ghw
                   g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC     .o. ! assimilate gh- onset to dropped -w
                   g h -> w     || %{k%} w         "^" %{%.m%.%} _ VoicedC       .o. ! assimilate gh- onset to dropped -w
+                    g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ]   .o. ! assimilate g to gh when dropping the gh of a base 
                     k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
                     k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
                     k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
