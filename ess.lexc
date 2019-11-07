@@ -86,9 +86,10 @@ Particle;
 LEXICON Particle
 !================
 
-elngaatall  #;  ! very much
-quunpeng    #;  ! always
-unaami      #;  ! tomorrow
+elngaatall  #; ! very much
+quunpeng    #; ! always
+unaami      #; ! tomorrow
+wanlegi     #; ! more than ever
 
 
 !==================================
@@ -96,37 +97,44 @@ LEXICON NounRootI
 !  end in -a, -i, -u, -aa, -ii, -uu
 !==================================
 
-amaa      NounSuffixI;  ! wolf
-anigu     NounSuffixI;  ! snow on ground
-anipa     NounSuffixI;  ! owl
-apa       NounSuffixI;  ! grandfather
-ata       NounSuffixI;  ! father
-esla      NounSuffixI;  ! outdoors; weather; awareness; world
-kayu      NounSuffixI;  ! sculpin; ocean fish (in general)
-kii       NounSuffixI;  ! wound
-kufi      NounSuffixI;  ! coffee
-naa       NounSuffixI;  ! mother
-ne        NounSuffixI;  ! home
-nuna      NounSuffixI;  ! land
-repa      NounSuffixI;  ! hammer
-puu       NounSuffixI;  ! handle
-siku      NounSuffixI;  ! ice
-tafsi     NounSuffixI;  ! belt
-ugi       NounSuffixI;  ! husband
-uupa      NounSuffixI;  !"sea peach" (Halocynthia aurantia)
-yavlu     NounSuffixI;  ! sweetheart
-yaywaali  NounSuffixI;  ! orphan
-ila       NounSuffixI;  ! relative; associate; part; one or some (of)
-lalala    NounSuffixI;  ! dew
-mesuuna   NounSuffixI;  ! hairbrush; comb!==============================
+amaa        NounSuffixI; ! wolf
+anigu       NounSuffixI; ! snow on ground
+anipa       NounSuffixI; ! owl
+apa         NounSuffixI; ! grandfather
+ata         NounSuffixI; ! father
+ayngananga  NounSuffixI; ! musical instrument; phonograph (often dual for one)
+esla        NounSuffixI; ! outdoors; weather; awareness; world
+ila         NounSuffixI; ! relative; associate; part; one or some (of)
+lalala      NounSuffixI; ! dew
+kayu        NounSuffixI; ! sculpin; ocean fish (in general)
+kii         NounSuffixI; ! wound
+kufi        NounSuffixI; ! coffee
+mesuuna     NounSuffixI; ! hairbrush; comb
+naa         NounSuffixI; ! mother
+ne          NounSuffixI; ! home
+nuna        NounSuffixI; ! land
+repa        NounSuffixI; ! hammer
+puu         NounSuffixI; ! handle
+siku        NounSuffixI; ! ice
+tafsi       NounSuffixI; ! belt
+ugi         NounSuffixI; ! husband
+uupa        NounSuffixI; !"sea peach" (Halocynthia aurantia)
+yavlu       NounSuffixI; ! sweetheart
+yaywaali    NounSuffixI; ! orphan
+
+
+!==============================
 LEXICON NounRootIX
 !  end in -e that can be hopped
 !==============================
 
 iye   NounSuffixIX; ! eye
-tume  NounSuffixIX; ! track, footprint; trail
 paye  NounSuffixIX; ! mouth (non-anatomical); hatch of kayak
-qaye  NounSuffixIX; ! surface; top!=====================================
+qaye  NounSuffixIX; ! surface; top
+tume  NounSuffixIX; ! track, footprint; trail
+
+
+!=====================================
 LEXICON NounRootX
 !  end in final -e that can be dropped
 !  but not hopped
@@ -135,14 +143,14 @@ LEXICON NounRootX
 akume      NounSuffixX; ! granulated sugar
 iigge      NounSuffixX; ! hand
 neqe       NounSuffixX; ! food
+qergese    NounSuffixX; ! window
 tepe       NounSuffixX; ! odor
+waape      NounSuffixX; ! rope
 
 Karake     NounSuffixX; ! Koryak
 Laluramke  NounSuffixX; ! white person; Caucasian
 
-Karake     NounSuffixX;  ! Koryak
-waape      NounSuffixX;  ! rope
-qergese    NounSuffixX;  ! window
+
 !=====================
 LEXICON NounRootII
 !  end in -g, -w, -ghw
@@ -155,7 +163,8 @@ igaghvig     NounSuffixII; ! school
 iqallug      NounSuffixII; ! fish
 manig        NounSuffixII; ! bird's egg
 nayag        NounSuffixII; ! sister of a male
-nunivag      NounSuffixII; ! rosewort plant
+neqekrag     NounSuffixII; ! bread (especially, pilot bread)
+nunivag      NounSuffixII; ! rosewort plant (Sedum rosea), locally greens; tundra
 panig        NounSuffixII; ! daughter
 savig        NounSuffixII; ! knife
 sikig        NounSuffixII; ! squirrel
@@ -168,17 +177,13 @@ yughaghvig   NounSuffixII; ! church
 
 Yupig        NounSuffixII; ! Siberian/St. Lawrence Island Eskimo person
 
+
 aaw:aa%{k%}w    NounSuffixII;  ! blood
 kiiw:kii%{k%}w  NounSuffixII;  ! river
 
 
 qiighw  NounSuffixII;  ! gray hair; cough
 saaghw  NounSuffixII;  ! side
-
-nunivag      NounSuffixII; ! rosewort plant (Sedum rosea), locally greens; tundra
-asag         NounSuffixII; ! paternal aunt
-tengegkayug  NounSuffixII; ! airplane (plural, tengegkayuget, often used for one airplane)
-walguyaag    NounSuffixII; ! snowshoe
 
 
 !==============================
@@ -194,6 +199,7 @@ eltughagh       NounSuffixIV; ! grandchild
 estugagh        NounSuffixIV; ! store 
 megh            NounSuffixIV; ! water
 mekestaaghhagh  NounSuffixIV; ! small thing
+naligh          NounSuffixIV; ! which one(s)? (discussed below)
 nanugh          NounSuffixIV; ! polar bear
 nengyugh        NounSuffixIV; ! grandmother
 pagunghagh      NounSuffixIV; ! crowberry; berry (in general)
@@ -217,8 +223,6 @@ kameg   NounSuffixVII; ! skin boot, mukluk
 papeg   NounSuffixVII; ! tail
 qanegh  NounSuffixVII; ! mouth (anatomical)
 taqegh  NounSuffixVII; ! vein
-papeg   NounSuffixVII; ! tail
-qanegh  NounSuffixVII; ! mouth (anatomical)
 
 
 !=======================================
@@ -229,9 +233,13 @@ LEXICON NounRootVIII
 
 aliinegh   NounSuffixVIII; ! clear, calm day
 kemeg      NounSuffixVIII; ! flesh; skin
+kenegh     NounSuffixVIII; ! light, lamp
 siqinegh   NounSuffixVIII; ! sun
 ughluvegh  NounSuffixVIII; ! bow
-yaquleg    NounSuffixVIII; ! angel!================================================================
+yaquleg    NounSuffixVIII; ! angel
+
+
+!================================================================
 LEXICON NounRootV
 !  end in strong -gh: -aagh, -iigh, -uugh
 !                     -egh where e-dropping is not possible
@@ -241,6 +249,7 @@ LEXICON NounRootV
 aghnalqwaagh   NounSuffixV; ! old lady
 aghnegh        NounSuffixV; ! day
 aghvegh        NounSuffixV; ! whale
+apayepayiigh   NounSuffixV; ! spider
 ayvegh         NounSuffixV; ! walrus
 ighaleqetaagh  NounSuffixV; ! star
 ighnegh        NounSuffixV; ! son
@@ -253,7 +262,10 @@ seghlegh       NounSuffixV; ! bad thing
 siivanllegh    NounSuffixV; ! elder
 ulaagh         NounSuffixV; ! semi-lunar knife; woman's knife; ulu
 ulghaagh       NounSuffixV; ! sea lion
-vegaagh        NounSuffixV; ! grass!=================
+vegaagh        NounSuffixV; ! grass
+
+
+!=================
 LEXICON NounRootVI
 !  end in -te
 !=================
@@ -268,11 +280,8 @@ yughaghte:yughagh%{t%}e          NounSuffixVI; ! minister, clergyman
 ! POSSIBLE e-HOPPING
 ggute:ggu%{t%}e                  NounSuffixVI; ! tooth
 
-
 Yupigestute:Yupigestu%{t%}e      NounSuffixVI; ! in the Yupik language (inflected form)
 
-apeghtughiste  NounSuffixVI; ! teacher
-Yupigestute    NounSuffixVI; ! in the Yupik language (inflected form)
 
 !==================
 LEXICON NounRootIII
@@ -291,9 +300,11 @@ mangteghagh:mangtegha%{g%}h  NounSuffixIII; ! house
 naasqugh:naasqu%{g%}h        NounSuffixIII; ! head
 naayghagh:naaygha%{g%}h      NounSuffixIII; ! mountain
 naayvagh:naayva%{g%}h        NounSuffixIII; ! lake
+nasaperagh:nasapera%{g%}h    NounSuffixIII; ! hat
 ngelqagh:ngelqa%{g%}h        NounSuffixIII; ! cormorant
 nulugh:nulu%{g%}h            NounSuffixIII; ! tea bag
 nuyagh:nuya%{g%}h            NounSuffixIII; ! hair
+nuzigh:nuzi%{g%}h            NounSuffixIII; ! one's child's spouse's parent
 neghsagh:neghsa%{g%}h        NounSuffixIII; ! seal (in general)
 pengugh:pengu%{g%}h          NounSuffixIII; ! mound
 suflugagh:sufluga%{g%}h      NounSuffixIII; ! gun
@@ -309,7 +320,10 @@ ungipaghagh:ungipagha%{g%}h  NounSuffixIII; ! traditional story; tale; legend
 uqugh:uqu%{g%}h              NounSuffixIII; ! fat; blubber; seal oil
 uyaqugh:uyaqu%{g%}h          NounSuffixIII; ! neck
 
-Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)!===================
+Ungazigh:Ungazi%{g%}h        NounSuffixIII; ! Old Chaplino, Indian Point (in Chukotka)
+
+
+!===================
 LEXICON VerbRootI
 !  end in -a, -i, -u
 !===================
@@ -323,24 +337,32 @@ kaki           VerbSuffixI; ! to sew
 mekestaaghhaa  VerbSuffixI; ! to be small
 mesuuna        VerbSuffixI; ! to brush or comb one's hair
 qiya           VerbSuffixI; ! to cry
+siku           VerbSuffixI; ! to freeze (optional impersonal agent verb)
 tagi           VerbSuffixI; ! to come
 takestaaghhaa  VerbSuffixI; ! to be short
 tuqu           VerbSuffixI; ! to die
-umughqaa       VerbSuffixI; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)!=================
+ulima          VerbSuffixI; ! to make (something) (intransitive or transitive)
+umughqaa       VerbSuffixI; ! to have sleep paralysis (when one is temporarily incapable of moving upon waking up)
+
+
+!=================
 LEXICON VerbRootII
 !  has final -e
 !=================
 
-aghulaqe  VerbSuffixII;  ! to leave
-alinge    VerbSuffixII;  ! to be afraid
-aane      VerbSuffixII;  ! to go out
-aange     VerbSuffixII;  ! to be big
-esleqe    VerbSuffixII;  ! to be full
-kuuve     VerbSuffixII;  ! to spill
-meghe     VerbSuffixII;  ! to drink
-neghe     VerbSuffixII;  ! to eat
-taake     VerbSuffixII;  ! to be long
-taaqe     VerbSuffixII;  ! to finish; to quit
+aghulaqe  VerbSuffixII; ! to leave
+alinge    VerbSuffixII; ! to be afraid
+aane      VerbSuffixII; ! to go out
+aange     VerbSuffixII; ! to be big
+esleqe    VerbSuffixII; ! to be full
+iknaqe    VerbSuffixII; ! to be strong (intransitive only)
+kuuve     VerbSuffixII; ! to spill
+meghe     VerbSuffixII; ! to drink
+naalke    VerbSuffixII; ! to find (transitive only)
+neghe     VerbSuffixII; ! to eat
+taake     VerbSuffixII; ! to be long
+taaqe     VerbSuffixII; ! to finish; to quit
+ugpeqe    VerbSuffixII; ! to believe (transitive only)
 
 
 !===================================
@@ -349,21 +371,29 @@ LEXICON VerbRootIV
 !  or -egh where e cannot be dropped
 !===================================
 
-aglagh       VerbSuffixIV;  ! to go home; to go over to another place
-gaagh        VerbSuffixIV;  ! to cook
-igatagh      VerbSuffixIV;  ! to be hungry
-iyatagh      VerbSuffixIV;  ! to be hungry
-mayugh       VerbSuffixIV;  ! to go up
-megh         VerbSuffixIV;  ! to drink
-negh         VerbSuffixIV;  ! to eat
-nenglagh     VerbSuffixIV;  ! to laugh
-pinigh       VerbSuffixIV;  ! to be good
-qavagh       VerbSuffixIV;  ! to sleep
-qepghagh     VerbSuffixIV;  ! to work
-yughagh      VerbSuffixIV;  ! to pray, to worship
-atugh        VerbSuffixIV;  ! to use
-nulugh       VerbSuffixIV;  ! to ice-fish; to dunk a tea bag
-ungipaghagh  VerbSuffixIV;  ! to tell a story
+aghvigh      VerbSuffixIV; !  to cross over; to go to the mainland (transitive or intransitive)
+aglagh       VerbSuffixIV; ! to go home; to go over to another place
+aleghqugh    VerbSuffixIV; ! to talk to; to tell (transitive only)
+atightugh    VerbSuffixIV; ! to read (transitive or intransitive)
+atugh        VerbSuffixIV; ! to use
+gaagh        VerbSuffixIV; ! to cook
+igagh        VerbSuffixIV; ! to write (on) (transitive or intransitive)
+igatagh      VerbSuffixIV; ! to be hungry
+isekinagh    VerbSuffixIV; ! to be cold (solid, liquid) (intransitive only)
+ivagh        VerbSuffixIV; ! to look for (transitive only)
+iyatagh      VerbSuffixIV; ! to be hungry
+mayugh       VerbSuffixIV; ! to go up
+megh         VerbSuffixIV; ! to drink
+negh         VerbSuffixIV; ! to eat
+nenglagh     VerbSuffixIV; ! to laugh
+nulugh       VerbSuffixIV; ! to ice-fish; to dunk a tea bag
+pinigh       VerbSuffixIV; ! to be good
+pinighsagh   VerbSuffixIV; ! to fix, to repair; to fix up oneself (transitive or intransitive)
+qavagh       VerbSuffixIV; ! to sleep
+qepghagh     VerbSuffixIV; ! to work
+uglagh       VerbSuffixIV; ! to be many, to be numerous (intransitive only)
+ungipaghagh  VerbSuffixIV; ! to tell a story
+yughagh      VerbSuffixIV; ! to pray, to worship
 
 
 !=====================
@@ -371,6 +401,7 @@ LEXICON VerbRootIII
 !  end in -g, -w, -ghw
 !=====================
 
+ughug   VerbSuffixIII; ! to melt (optional impersonal agent verb)
 ukig    VerbSuffixIII; ! to go down
 qiighw  VerbSuffixIII; ! to cough
 
@@ -380,7 +411,8 @@ LEXICON VerbRootVI
 !  has semi-final -e that can be hopped
 !======================================
 
-itegh  VerbSuffixVI; ! to go in; to enter
+itegh   VerbSuffixVI; ! to go in; to enter
+payegh  VerbSuffixVI; ! to meet, to encounter; to go over to help (transitive only)
 
 
 !=======================================
@@ -397,28 +429,39 @@ LEXICON VerbRootV
 !  end in -te
 !================
 
-esghaate:esghaa%{t%}e  VerbSuffixV; ! to see something
-igleghte:iglegh%{t%}e  VerbSuffixV; ! to travel
-ingaghte:ingagh%{t%}e  VerbSuffixV; ! to lie down
-kaate:kaa%{t%}e        VerbSuffixV; ! to arrive
-nagate:naga%{t%}e      VerbSuffixV; ! to listen!=====================================================
+aleghquute:aleghquu%{t%}e      VerbSuffixV; ! to talk together; to converse (non-singular intransitive only)
+amqeghte:amqegh%{t%}e          VerbSuffixV; ! to bite (transitive only)
+aqlaghate:aqlagha%{t%}e        VerbSuffixV; ! for it to be cold (weather) (intransitive only)
+aqlaghaghte:aqlaghagh%{t%}e    VerbSuffixV; ! for it to get cold (weather) (optional impersonal agent verb; see
+esghaate:esghaa%{t%}e          VerbSuffixV; ! to see something
+ghhuute:ghhuu%{t%}e            VerbSuffixV; ! to be cold (person) (optional impersonal agent verb)
+igleghte:iglegh%{t%}e          VerbSuffixV; ! to travel
+ingaghte:ingagh%{t%}e          VerbSuffixV; ! to lie down
+kaate:kaa%{t%}e                VerbSuffixV; ! to arrive
+nagate:naga%{t%}e              VerbSuffixV; ! to listen
+naallghute:naallghu%{t%}e      VerbSuffixV; ! to adjust (transitive only)
+qaamte:qaam%{t%}e              VerbSuffixV; ! to extinguish; to turn off (transitive only)
+ungipaghaate:ungipaghaa%{t%}e  VerbSuffixV; ! to tell a story to (transitive only)
+
+
+!=====================================================
 LEXICON NounSuffixI
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
 !  when suffixing to noun roots that end in -a, -i, -u
 !=====================================================
 
-                             NounInflI;
+                              NounInflI;
 
--ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh             NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^ngu              VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^ngu          VerbSuffixI;    ! to be N
 
 
 !=====================================================
@@ -428,18 +471,18 @@ LEXICON NounSuffixIX
 !  that can be hopped
 !=====================================================
 
-                             NounInflIX;
+                              NounInflIX;
 
--ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh             NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^%{.f.%}ngu   VerbSuffixI;    ! to be N
 
 
 !=====================================================
@@ -449,18 +492,18 @@ LEXICON NounSuffixX
 !  that can be dropped but not hopped
 !=====================================================
 
-                             NounInflX;
+                              NounInflX;
 
--ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh             NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^%{.f.%}ngu   VerbSuffixI;    ! to be N
 
 
 !=======================================================
@@ -469,18 +512,18 @@ LEXICON NounSuffixII
 !  when suffixing to noun roots that end in -g, -w, -ghw
 !=======================================================
 
-                                    NounInflII;
+                                     NounInflII;
 
--ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh                    NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having N
+-–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having N
 
--u[N.V]:%^u                         VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^u                   VerbSuffixI;    ! to be N
 
 
 !================================================================
@@ -489,18 +532,18 @@ LEXICON NounSuffixIV
 !  when suffixing to noun roots that end in marked strong -gh (*)
 !================================================================
 
-                                    NounInflIV;
+                                     NounInflIV;
 
--ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh                    NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
 
--u[N.V]:%^%{.c.%}u                  VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^%{.c.%}u            VerbSuffixI;    ! to be N
 
 
 !======================================================
@@ -510,18 +553,18 @@ LEXICON NounSuffixVII
 !  that can be hopped
 !======================================================
 
-                                    NounInflVII;
+                                     NounInflVII;
 
--ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh                    NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
 
--u[N.V]:%^%{.sf.%}u                 VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^%{.sf.%}u           VerbSuffixI;    ! to be N
 
 
 !======================================================
@@ -531,18 +574,18 @@ LEXICON NounSuffixVIII
 !  that can be dropped but not hopped
 !======================================================
 
-                                    NounInflVIII;
+                                     NounInflVIII;
 
--ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh                    NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
 
--u[N.V]:%^%{.sf.%}u                 VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^%{.sf.%}u           VerbSuffixI;    ! to be N
 
 
 !=====================================================
@@ -551,18 +594,18 @@ LEXICON NounSuffixV
 !  when suffixing to noun roots that end in strong -gh
 !=====================================================
 
-                                    NounInflV;
+                                     NounInflV;
 
--ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh                    NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
 
--u[N.V]:%^u                         VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^u                   VerbSuffixI;    ! to be N
 
 
 !=====================================================
@@ -571,18 +614,18 @@ LEXICON NounSuffixVI
 !  when suffixing to noun roots that end in -te
 !=====================================================
 
-                             NounInflVI;
+                              NounInflVI;
 
--ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh            NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
+-kagh[N.N]:%^kagh             NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^qragh          NounSuffixIII;  ! small N; thing like N
 
--leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
 
--ngu[N.V]:%^%{.f.%}ngu       VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^%{.f.%}ngu   VerbSuffixI;    ! to be N
 
 
 !=====================================================
@@ -591,18 +634,18 @@ LEXICON NounSuffixIII
 !  when suffixing to noun roots that end in weak -gh 
 !=====================================================
 
-                                    NounInflIII;
+                                     NounInflIII;
 
--ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
--ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
--krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+-–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+-–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+-–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
 
--kagh[N.N]:%^kagh                   NounSuffixIII;  ! raw material for N
--qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N 
+-kagh[N.N]:%^kagh                    NounSuffixIII;  ! raw material for N
+-–qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N 
 
--leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+-–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
 
--u[N.V]:%^%{.c.%}u                  VerbSuffixI;    ! to be N
+-~%:(ng)u[N.V]:%^%{.c.%}u            VerbSuffixI;    ! to be N
 
 
 !======================================================
@@ -611,14 +654,19 @@ LEXICON VerbSuffixI
 !  when suffixing to verb roots that end in -a, -i, -u
 !======================================================
 
-                      VerbInflI;
+                           VerbInflI;
+
+-@~sf–(g)kau:%^%{G%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^ni                 VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
  
--aqe[V.V]:%^%{G%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-~(g)aqe[V.V]:%^%{G%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe       VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^naqe       VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^ste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
--lleqe[V.V]:%^lleqe   VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^naqe     VerbSuffixII;  ! to be going to V, to be about to V
+-@~fyug[V.V]:%^yug         VerbSuffixIII; ! to want to V
 
--yug[V.V]:%^yug       VerbSuffixIII; ! to want to V
+-@~sf–(g)kagh:%^%{G%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 
 !======================================================
@@ -627,13 +675,19 @@ LEXICON VerbSuffixII
 !  when suffixing to verb roots that have final -e
 !======================================================
 
-                         VerbInflII;
+                            VerbInflII;
 
--aqe[V.V]:%^%{.f.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^kau          VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^%{.f.%}ni           VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^%{.f.%}yug   VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^%{.f.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe        VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^ste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^%{.f.%}yug   VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^kagh        NounSuffixIII; ! one that has V-ed or been V-ed
 
 
 !============================================================
@@ -643,13 +697,19 @@ LEXICON VerbSuffixIV
 !  or -egh where e cannot be dropped
 !============================================================
 
-                     VerbInflIV;
+                             VerbInflIV;
 
--aqe[V.V]:%^aqe      VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^lleqe  VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^naqe    VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^%{.m.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^ni                   VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^yug      VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^aqe          VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe         VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^naqe         VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^teste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^yug           VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 
 !========================================================
@@ -658,13 +718,19 @@ LEXICON VerbSuffixIII
 !  when suffixing to verb roots that end in -g, -w, -ghw
 !========================================================
 
-                     VerbInflIII;
+                             VerbInflIII;
 
--aqe[V.V]:%^aqe      VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^lleqe  VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^naqe    VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^%{.m.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^ni                   VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^yug      VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^aqe          VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe         VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^naqe         VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^teste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^yug           VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 
 !======================================================
@@ -674,13 +740,19 @@ LEXICON VerbSuffixVI
 !  that can be hopped
 !======================================================
 
-                         VerbInflVI;
+                              VerbInflVI;
 
--aqe[V.V]:%^%{.sf.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^naqe        VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^%{.sf.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^ni                    VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^yug          VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^%{.sf.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe          VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^naqe          VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^teste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^yug            VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^%{.sf.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 
 !======================================================
@@ -690,13 +762,19 @@ LEXICON VerbSuffixVII
 !  that can be dropped but not hopped
 !======================================================
 
-                         VerbInflVII;
+                              VerbInflVII;
 
--aqe[V.V]:%^%{.sf.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^naqe        VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^%{.sf.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^ni                    VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^yug          VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^%{.sf.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe          VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^naqe          VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^teste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^yug            VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^%{.sf.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 
 !======================================================
@@ -705,13 +783,19 @@ LEXICON VerbSuffixV
 !  when suffixing to verb roots that end in -te
 !======================================================
 
-                             VerbInflV;
+                              VerbInflV;
 
--aqe[V.V]:%^%{.f.%}aqe       VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^%{.at.%}lleqe  VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^%{.at.%}naqe    VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^%{.at.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^%{.at.%}ni            VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^%{.at.%}yug      VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^%{.f.%}aqe    VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^%{.at.%}lleqe  VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^%{.at.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^ste                VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^%{.at.%}yug    VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^%{.at.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 
 !=======================================================
@@ -883,6 +967,7 @@ LEXICON NounInflX
 [Abs][Sg][3PlPoss]:%^ngat      #; [Abs][Pl][3PlPoss]:%^ngit         #; [Abs][Du][3PlPoss]:%^gket       #;
 [Abs][Sg][3DuPoss]:%^ngak      #; [Abs][Pl][3DuPoss]:%^ngik         #; [Abs][Du][3DuPoss]:%^gkek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
+!%{%.f%.%} not included according to footnotes [Jacobson (2001) p.36, p.38]
 
 !---------------------------|
 !    ERGATIVE (relative)    |

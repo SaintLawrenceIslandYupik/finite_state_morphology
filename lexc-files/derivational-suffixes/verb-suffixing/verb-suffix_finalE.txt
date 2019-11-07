@@ -4,12 +4,18 @@ LEXICON VerbSuffixII
 !  when suffixing to verb roots that have final -e
 !======================================================
 
-                         VerbInflII;
+                            VerbInflII;
 
--aqe[V.V]:%^%{.f.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^lleqe      VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^kau          VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^%{.f.%}ni           VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^%{.f.%}yug   VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^%{.f.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe        VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^ste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^%{.f.%}yug   VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^kagh        NounSuffixIII; ! one that has V-ed or been V-ed
 
 
