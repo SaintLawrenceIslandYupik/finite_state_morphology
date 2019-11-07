@@ -1,0 +1,51 @@
+LEXICON IntransitiveInterrogative
+!-----------------------------|---------------------------------|--------------------------------|
+[3Sg]:~f(g/t)a   EncliticOrEnd; [1Sg]:~f(t)zinga   EncliticOrEnd; [2Sg]:~f(t)zin    EncliticOrEnd;
+[3Sg]:~f(g/t)aa  EncliticOrEnd; [1Sg]:~f(t)zingaa  EncliticOrEnd; [2Sg]:~f(t)ziin   EncliticOrEnd;
+
+[3Pl]:~f(g/t)at  EncliticOrEnd; [1Pl]:~sf(e)sta    EncliticOrEnd; [2Pl]:~sf(e)tsi   EncliticOrEnd;
+[3Pl]:~f(g/t)aat EncliticOrEnd; [1Pl]:~sf(e)staa   EncliticOrEnd; [2Pl]:~sf(e)tsii  EncliticOrEnd;
+
+[3Du]:~f(g/t)ak  EncliticOrEnd; [1Du]:~sf(e)stung  EncliticOrEnd; [2Du]:~sf(e)stek  EncliticOrEnd;
+[3Du]:~f(g/t)aak EncliticOrEnd; [1Du]:~sf(e)stuung EncliticOrEnd; [2Du]:~sf(e)staak EncliticOrEnd;
+!-----------------------------|---------------------------------|--------------------------------|
+
+LEXICON TransitiveInterrogative
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[3Sg][3Sg]:~f(g/t)agu     EncliticOrEnd; [3Sg][3Pl]:~f(g/t)aki     EncliticOrEnd; [3Sg][3Du]:~f(g/t)akek     EncliticOrEnd;
+[3Sg][3Sg]:~f(g/t)aguu    EncliticOrEnd;
+[3Pl][3Sg]:~f(g/t)atgu    EncliticOrEnd; [3Pl][3Pl]:~f(g/t)atki    EncliticOrEnd; [3Pl][3Du]:~f(g/t)atkek    EncliticOrEnd;
+[3Du][3Sg]:~f(g/t)agnegu  EncliticOrEnd; [3Du][3Pl]:~f(g/t)agneki  EncliticOrEnd; [3Du][3Du]:~f(g/t)agnekek  EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[1Sg][3Sg]:~f(t)zikun     EncliticOrEnd; [1Sg][3Pl]:~f(t)zingi     EncliticOrEnd; [1Sg][3Du]:~f(t)zigngek    EncliticOrEnd;
+[1Pl][3Sg]:~sf(e)steggu   EncliticOrEnd; [1Pl][3Pl]:~sf(e)steki    EncliticOrEnd; [1Pl][3Du]:~sf(e)stekek    EncliticOrEnd;
+[1Du][3Sg]:~sf(e)stegnegu EncliticOrEnd; [1Du][3Pl]:~sf(e)stegneki EncliticOrEnd; [1Du][3Du]:~sf(e)stegnekek EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[2Sg][3Sg]:~f(t)zigu      EncliticOrEnd; [2Sg][3Pl]:~f(t)ziki      EncliticOrEnd; [2Sg][3Du]:~f(t)zikek      EncliticOrEnd;
+[2Pl][3Sg]:~sf(e)ggu      EncliticOrEnd; [2Pl][3Pl]:~sf(e)ki       EncliticOrEnd; [2Pl][3Du]:~sf(g)kek      EncliticOrEnd;
+[2Du][3Sg]:~sf(e)gnegu    EncliticOrEnd; [2Du][3Pl]:~sf(e)gneki    EncliticOrEnd; [2Du][3Du]:~sf(g)gnekek   EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[3Sg][1Sg]:~f(g/t)anga    EncliticOrEnd; [3Sg][1Pl]:~f(g/t)inkut   EncliticOrEnd; [3Sg][1Du]:~f(g/t)inkung   EncliticOrEnd;
+[3Pl][1Sg]:~f(g/t)atnga   EncliticOrEnd; [3Pl][1Pl]:~f(g/t)inkut   EncliticOrEnd; [3Pl][1Du]:~f(g/t)inkung   EncliticOrEnd;
+[3Du][1Sg]:~f(g/t)agnenga EncliticOrEnd; [3Du][1Pl]:~f(g/t)inkut   EncliticOrEnd; [3Du][1Du]:~f(g/t)inkung   EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+!                                      |                                        |                                         | 
+!                                      |                                        |                                         | 
+!                                      |                                        |                                         | 
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[2Sg][1Sg]:~f(t)zinga     EncliticOrEnd; [2Sg][1Pl]:~f(t)zikut     EncliticOrEnd; [2Sg][1Du]:~f(t)zikung     EncliticOrEnd;
+[2Pl][1Sg]:~sf(e)ngnga    EncliticOrEnd; [2Pl][1Pl]:~sf(e)kut      EncliticOrEnd; [2Pl][1Du]:~sf(e)kung      EncliticOrEnd;
+[2Du][1Sg]:~sf(e)gnenga   EncliticOrEnd; [2Du][1Pl]:~sf(e)gneku    EncliticOrEnd; [2Du][1Du]:~sf(e)gnekung   EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[3Sg][2Sg]:~f(g/t)aten    EncliticOrEnd; [3Sg][2Pl]:~f(g/t)isi     EncliticOrEnd; [3Sg][2Du]:~f(g/t)istek    EncliticOrEnd;
+[3Pl][2Sg]:~f(g/t)aten    EncliticOrEnd; [3Pl][2Pl]:~f(g/t)isi     EncliticOrEnd; [3Pl][2Du]:~f(g/t)istek    EncliticOrEnd;
+[3Du][2Sg]:~f(g/t)aten    EncliticOrEnd; [3Du][2Pl]:~f(g/t)isi     EncliticOrEnd; [3Du][2Du]:~f(g/t)istek    EncliticOrEnd;
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+[1Sg][2Sg]:~f(t)ziken     EncliticOrEnd;                                        |                                         |
+[1Pl][2Sg]:~sf(e)steken   EncliticOrEnd;                                        |                                         |
+[1Du][2Sg]:~sf(e)steken   EncliticOrEnd;                                        |                                         |
+!--------------------------------------|----------------------------------------|-----------------------------------------|
+!                                      |                                        |                                         | 
+!                                      |                                        |                                         | 
+!                                      |                                        |                                         | 
+!--------------------------------------|----------------------------------------|-----------------------------------------|

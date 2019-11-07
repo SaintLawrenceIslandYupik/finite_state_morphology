@@ -1,6 +1,8 @@
 import argparse
 import glob
 
+from methods import idx_to_roman_numeral
+
 symbols = { "~": "%{.f.%}%{.sf.%}", # Jacobson notation: foma v.2 notation
            "~f": "%{.f.%}", 
            "~sf": "%{.sf.%}",  
@@ -15,17 +17,12 @@ symbols = { "~": "%{.f.%}%{.sf.%}", # Jacobson notation: foma v.2 notation
 
 			#(g/t) (ng) (e)
 
-def print_inflection_classes(inflType, idx2InflClass):
+def print_inflections(inflType):
     '''
     :param inflType: "Noun" or "Verb"
     :type inflType: str
-    :param idx2InflClass: dictionary where each key is an
-                          inflection class # and its value
-                          is a list of roots that belong to
-                          that inflection class
-    :type idx2InflClass: dict
 
-    Janky print function to print each root in each
+    Janky print function to print each suffix in each
     inflection class in lexc-compatible format.
 
     '''
