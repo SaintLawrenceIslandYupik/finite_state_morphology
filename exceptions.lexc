@@ -2278,6 +2278,8 @@ LEXICON VerbInflI
 [Intr][Ind]:%^%{G%}ugh  IntrIndPtcp;
 [Trns][Ind]:%^%{G%}a    TrnsIndPtcp;
 
+[Intr][Intrg]:                           IntrIntrg; 
+[Trns][Intrg]:                           TrnsIntrg;
 !=================================
 LEXICON VerbInflII
 !  for verbs that end in -final -e
@@ -2285,6 +2287,9 @@ LEXICON VerbInflII
 
 [Intr][Ind]:%^%{.f.%}ugh  IntrIndPtcp;
 [Trns][Ind]:%^%{.f.%}a    TrnsIndPtcp;
+
+[Intr][Intrg]:                           IntrIntrg; 
+[Trns][Intrg]:                           TrnsIntrg;
 
 !=============================================
 LEXICON VerbInflIV
@@ -2295,6 +2300,9 @@ LEXICON VerbInflIV
 [Intr][Ind]:%^tugh  IntrIndPtcp;
 [Trns][Ind]:%^a     TrnsIndPtcp;
 
+[Intr][Intrg]:                           IntrIntrg; 
+[Trns][Intrg]:                           TrnsIntrg;
+
 
 !====================================
 LEXICON VerbInflIII
@@ -2303,6 +2311,10 @@ LEXICON VerbInflIII
 
 [Intr][Ind]:%^tugh  IntrIndPtcp;
 [Trns][Ind]:%^a     TrnsIndPtcp;
+
+[Intr][Intrg]:                           IntrIntrg; 
+[Trns][Intrg]:                           TrnsIntrg;
+
 !=======================================
 LEXICON VerbInflVI
 !  for verbs that end in semi-final -e
@@ -2312,6 +2324,8 @@ LEXICON VerbInflVI
 [Intr][Ind]:%^tugh            IntrIndPtcp;
 [Trns][Ind]:%^%{.sf.%}%{G%}a  TrnsIndPtcp;
 
+[Intr][Intrg]:                           IntrIntrg; 
+[Trns][Intrg]:                           TrnsIntrg;
 
 !========================================
 LEXICON VerbInflVII
@@ -2322,6 +2336,8 @@ LEXICON VerbInflVII
 [Intr][Ind]:%^tugh            IntrIndPtcp;
 [Trns][Ind]:%^%{.sf.%}%{G%}a  TrnsIndPtcp;
 
+[Intr][Intrg]:                           IntrIntrg; 
+[Trns][Intrg]:                           TrnsIntrg;
 
 !=====================================
 LEXICON VerbInflV
@@ -2331,6 +2347,8 @@ LEXICON VerbInflV
 [Intr][Ind]:%^%{.f.%}ugh  IntrIndPtcp;
 [Trns][Ind]:%^%{.f.%}a    TrnsIndPtcp;
 
+[Intr][Intrg]:                           IntrIntrg; 
+[Trns][Intrg]:                           TrnsIntrg;
 
 !=============================
 LEXICON IntrIndPtcp
@@ -2379,7 +2397,17 @@ LEXICON TrnsIndPtcp
 [1Pl][2Sg]:%^mken       #; [1Pl][2Pl]:%^msi        #; [1Pl][2Du]:%^mtek        #;
 [1Du][2Sg]:%^mken       #; [1Du][2Pl]:%^msi        #; [1Du][2Du]:%^mtek        #;
 !----------------------|------------------------|-------------------------|
-!===========
+!=============================
+LEXICON IntrIntrg
+!  person/number markers for
+!     intransitive interrogative
+!=============================
+
+!=============================
+LEXICON TrnsIntrg
+!  person/number markers for
+!     transitive interrogative
+!=============================!===========
 LEXICON Root
 !===========
 NounExceptions;
