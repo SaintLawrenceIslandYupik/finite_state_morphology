@@ -435,9 +435,10 @@ def classify_noun_root(root):
             else:
                 return 9
 
-        # root is longer than (C)VCe
+        # root is longer than (C)VCe or
+        # of the form ...CCe
         # -e can drop but not hop
-        elif len(cv) > 4:
+        elif (len(cv) > 4 or ''.join(cv[-3:-1]) == "CC"):
             return 10
 
         # root is of the form (C)VCe
