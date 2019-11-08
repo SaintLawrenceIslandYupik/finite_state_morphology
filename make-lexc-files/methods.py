@@ -127,27 +127,27 @@ def classify_verb_root(root):
             if (len(cv) == 4 and cv[0] == "V"):
                 # eCeg -> -e can drop but not hop
                 if root[0] == "e":
-                    return 7
+                    return 8
                 # [aa|ii|uu]Ceg -> -e can drop but not hop
                 elif (''.join(root[0:2]) == "aa" or
                       ''.join(root[0:2]) == "ii" or
                       ''.join(root[0:2]) == "uu"):
-                    return 7
+                    return 8
                 else:
-                    return 6
+                    return 7
 
             # root is of the form CVCeg
             elif (len(cv) == 5 and cv[0] == "C"):
                 # CeCeg -> -e can drop but not hop
                 if root[1] == "e":
-                    return 7
+                    return 8
                 # [aa|ii|uu]Ceg -> -e can drop but not hop
                 elif (''.join(root[1:3]) == "aa" or
                       ''.join(root[1:3]) == "ii" or
                       ''.join(root[1:3]) == "uu"):
-                    return 7
+                    return 8
                 else:
-                    return 6
+                    return 7
 
             # root is too short or ends with CCeg
             # -e cannot drop or hop
@@ -157,21 +157,28 @@ def classify_verb_root(root):
             # root does not end with CCeg and is longer than (C)VCeg
             # -e can drop but not hop
             elif (len(cv) > 5 and ''.join(cv[-4:-2]) != "CC"):
-                return 7
+                return 8
 
         # root ends in -ag, -ig, -ug,
         else:
             return 3
 
+    # root ends in -aagh, -iigh, -uugh
+    elif (root[-2:] == "gh"   and
+          (root[-4:-2] == "aa" or
+          root[-4:-2] == "ii" or
+          root[-4:-2] == "uu")):
+        return 4
+
     # root ends in -agh, -igh, -ugh
     elif (root[-3:] == "agh" or
           root[-3:] == "igh" or
           root[-3:] == "ugh"):
-        return 4
+        return 5
 
     # root ends in -te
     elif root[-2:] == "te":
-        return 5
+        return 6
 
     # root ends in semi-final -e
     #    -e hops if the word is of
@@ -183,27 +190,27 @@ def classify_verb_root(root):
         if (len(cv) == 4 and cv[0] == "V"):
             # eCegh -> -e can drop but not hop
             if root[0] == "e":
-                return 7
+                return 8
             # [aa|ii|uu]Cegh -> -e can drop but not hop
             elif (''.join(root[0:2]) == "aa" or
                   ''.join(root[0:2]) == "ii" or
                   ''.join(root[0:2]) == "uu"):
-                return 7
+                return 8
             else:
-                return 6
+                return 7
 
         # root is of the form CVCegh
         elif (len(cv) == 5 and cv[0] == "C"):
             # CeCegh -> -e can drop but not hop
             if root[1] == "e":
-                return 7
+                return 8
             # [aa|ii|uu]Cegh -> -e can drop but not hop
             elif (''.join(root[1:3]) == "aa" or
                   ''.join(root[1:3]) == "ii" or
                   ''.join(root[1:3]) == "uu"):
-                return 7
+                return 8
             else:
-                return 6
+                return 7
 
         # root is too short or ends with CCegh
         # -e cannot drop or hop
@@ -213,12 +220,12 @@ def classify_verb_root(root):
         # root does not end with CCegh and is longer than (C)VCegh
         # -e can drop but not hop
         elif (len(cv) > 5 and ''.join(cv[-4:-2]) != "CC"):
-            return 7
+            return 8
 
         # root is of the form (C)VCegh
         # -e can drop and hop
         else:
-            return 6
+            return 7
 
     return -1
 
@@ -445,3 +452,5 @@ def classify_noun_root(root):
         # -e can drop and hop
         else:
             return 9
+
+    return -1

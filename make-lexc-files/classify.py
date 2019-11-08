@@ -49,7 +49,7 @@ def print_inflection_classes(inflType, idx2InflClass):
             if inflType == "Noun" and i == 2:
                 for root, definition in idx2InflClass[i]:
                     # if noun root ends in -w, add %{k%} -->  kiiw:kii%{k%}w
-                    if root[-1] == "w":
+                    if root[-1] == "w" and ''.join(root[-3:-1]) != "gh":
                         padding = maxLength - (len(root) * 2 + 6) + 2
                         print(root + ":" + root[:-1] + "%{k%}w" + " " * padding + \
                               inflType + "Suffix" + romanNumeral + "; ! " + definition)
@@ -77,7 +77,7 @@ def print_inflection_classes(inflType, idx2InflClass):
             # class of roots that end in -te
             #   if root ends in -te, add %{t%} --> riigte:riig%{t%}e
             elif (inflType == "Noun" and i == 6 or
-                  inflType == "Verb" and i == 5):
+                  inflType == "Verb" and i == 6):
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - (len(root) * 2 + 5) + 2
                     print(root + ":" + root[:-2] + "%{t%}e" + " " * padding + \
@@ -156,7 +156,7 @@ def get_max_length(inflType, classIdx, inflClass):
     #        riig%{t%}e
     elif (inflType == "Noun" and classIdx == 3 or
           inflType == "Noun" and classIdx == 6 or
-          inflType == "Verb" and classIdx == 5):
+          inflType == "Verb" and classIdx == 6):
         maxLength = maxLength * 2 + 5 # adding :, %, {, %, }
 
     return maxLength
@@ -260,8 +260,12 @@ def main():
 
     print_inflection_classes("Verb", idx2VerbClass)
     print_inflection_classes("Noun", idx2NounClass)
-    print_nonroots("Particles", particles)
-    print_nonroots("Question Words", questionWords)
+
+    if particles:
+        print_nonroots("Particles", particles)
+
+    if questionWords:
+        print_nonroots("Question Words", questionWords)
 
 
 if __name__ == "__main__":
