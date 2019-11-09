@@ -117,7 +117,7 @@ def main():
                      -1 : []   # cannot be classified
                     }
 
-    for filename in glob.glob(args.dirname + "/*.csv"):
+    for filename in glob.glob(args.dirname + "/*"):
         with open(filename, 'r') as csvfile:
             reader = csv.reader(csvfile, delimiter = ',')
 
@@ -129,18 +129,12 @@ def main():
                     if root[-1] == "-":
                         verbRoot = root[:-1]
                         classIdx = classify_verb_root(verbRoot)
-                        if classIdx in idx2VerbClass.keys():
-                          idx2VerbClass[classIdx].append((verbRoot, line[1]))
-                        else:
-                          print("{} not found".format(verbRoot))
+                        idx2VerbClass[classIdx].append((verbRoot, line[1]))
 
                     else:
                         nounRoot = convert_to_base_form(root)
                         classIdx = classify_noun_root(nounRoot)
-                        if classIdx in idx2NounClass.keys():
-                          idx2NounClass[classIdx].append((nounRoot, line[1]))
-                        else:
-                          print("{} not found".format(nounRoot))
+                        idx2NounClass[classIdx].append((nounRoot, line[1]))
 
     print_inflection_classes("Verb", idx2VerbClass)
     print_inflection_classes("Noun", idx2NounClass)
