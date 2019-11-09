@@ -10,9 +10,9 @@ usage: python modify_suffixes.py -s suffix_lists/Intrg.txt -r Noun
 '''
 
 
-symbol_conversion = { "~": "%{.f.%}%{.sf.%}", # Jacobson notation <-> foma v.2 notation
-                    "~f": "%{.f.%}", 
-                    "~sf": "%{.sf.%}",  
+symbol_conversion = {"~f": "%{.f.%}", # Jacobson notation <-> foma v.2 notation
+                    "~sf": "%{.sf.%}", 
+                    "~": "%{.f.%}%{.sf.%}", 
                     "@": "%{.at.%}", 
                     "%:": "%{.c.%}", 
                     "–": "%{.m.%}",
@@ -22,22 +22,26 @@ symbol_conversion = { "~": "%{.f.%}%{.sf.%}", # Jacobson notation <-> foma v.2 n
                     ":": ":%^",
                     "EncliticOrEnd": "#;"}
 
-rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: noun roots that end in -a, -i, -u, -aa, -ii-, -uu
-                  {"%{E%}": "e", "(ng)": ""},  # NounInflII: noun roots that end in -g, -w, -ghw
-                  {"%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.w.%}": "%{.w.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIII: noun roots that end in weak -gh
-                  {"%^%{.c.%}%{E%}":"%^%{.c.%}%{E%}", "%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.c.%}": "%{.c.%}"}# NounInflIV for noun roots that end in marked strong -gh (*)
+rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: when suffixing to noun roots that end in -a, -i, -u, -aa, -ii-, -uu
+                  {"%{E%}": "e", "(ng)": ""},  # NounInflII: when suffixing to noun roots that end in -g, -w, -ghw
+                  {"%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.w.%}": "%{.w.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIII: when suffixing to noun roots that end in weak -gh
+                  {"%^%{.c.%}%{E%}":"%^%{.c.%}%{E%}", "%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIV: when suffixing to noun roots that end in marked strong -gh (*)
+                  {"%{E%}": "e", "(ng)": "", "%{.m.%}": "%{.m.%}"}, # NounSuffixV: when suffixing to noun roots that end in strong -gh
+                  {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"}, # NounInflVI: when suffixing to noun roots that end in -te
+                  {"%{E%}": "e", "(ng)": "", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"}, # NounInflVII: when suffixing to noun roots that have semi-final -e that can be hopped
+                  {"%{E%}": "e", "(ng)": "", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"}, # NounInflVIII: when suffixing to noun roots that have semi-final -e that can be dropped but not hopped
+                  {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"}, # NounInflIX: when suffixing to noun roots that end in -e that can be hopped
+                  {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"} # NounInflX: when suffixing to noun roots that end in final -e that can be dropped but not hopped
                   ]
 
-# rules_for_verb = {1: 
-#                   2:
-#                  3:
-#                 4: 
-#                 5:
-#                 6:
-#                 7:
-#                 }
-
-			#(g/t) (ng) (e)
+rules_for_verb = [{"(g/t)": "%{G%}"}, # VerbSuffixI: when suffixing to verb roots that end in -a, -i, -u
+                  {"(g/t)": "", "%{.f.%}": "%{.f.%}"}, # VerbSuffixII: when suffixing to verb roots that have final -e
+                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIII: when suffixing to verb roots that end in -g, -w, -ghw
+                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIV: when suffixing to verb roots that end in -agh, -igh, -ugh or -egh where e cannot be dropped
+                  {"(g/t)": "", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"}, # VerbInflV: when suffixing to verbs that end in -te
+                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"}, # VerbSuffixVI: when suffixing to verb roots that have semi-final -e that can be hopped
+                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"} # VerbSuffixVII: when suffixing to verb roots that have semi-final -e that can be dropped but not hopped
+                  ]
 
 def replace_all(my_text, my_dict):
     for i, j in my_dict.items():
@@ -54,10 +58,13 @@ def print_inflections(my_suffixes, my_root_type):
 
     '''
     if my_root_type == "Noun":
-        n_class = len(rules_for_noun)
+        rules = rules_for_noun
+        n_class = len(rules)
+        
 
     elif my_root_type == "Verb":
-        n_class = len(rules_for_verb)
+        rules = rules_for_verb
+        n_class = len(rules)
 
     else:
         raise ValueError('root_type needs to be either "Noun" or "Verb"')
@@ -65,8 +72,7 @@ def print_inflections(my_suffixes, my_root_type):
     with open(my_suffixes, 'r') as suffix_input:
         suffix_org = suffix_input.read()
 
-    # for i in range(1, n_class+1):
-    for i in range(1, 3):
+    for i in range(1, n_class+1):
 
         romanNumeral = idx_to_roman_numeral(i)
 
@@ -75,19 +81,18 @@ def print_inflections(my_suffixes, my_root_type):
         print("-" * 22 + "-" * len(romanNumeral)) 
         suffixes_new =replace_all(suffix_org, symbol_conversion)
 
+        for symbol in rules[i-1]:
+            suffixes_new = suffixes_new.replace(symbol, rules[i-1][symbol])
+
         for symbol in symbol_conversion.values():
             if symbol == ":%^":
                 continue
-            elif symbol not in rules_for_noun[i-1]:
+            elif symbol not in rules[i-1]:
                 suffixes_new = suffixes_new.replace(symbol, "")
-            else:
-                suffixes_new = suffixes_new.replace(symbol, rules_for_noun[i-1][symbol])
-        
+    
         print(suffixes_new)
-            # symbol_conversion = dict((re.escape(k), v) for k, v in symbol_conversion.items()) 
-            # pattern = re.compile("|".join(symbol_conversion.keys()))
-            # new_line = pattern.sub(lambda m: symbol_conversion[re.escape(m.group(0))], line)
-            # print(new_line)
+
+        
 
 
 
