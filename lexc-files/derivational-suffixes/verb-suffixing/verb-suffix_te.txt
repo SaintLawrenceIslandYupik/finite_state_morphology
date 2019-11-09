@@ -4,13 +4,19 @@ LEXICON VerbSuffixV
 !  when suffixing to verb roots that end in -te
 !======================================================
 
-                             VerbInflV;
+                              VerbInflV;
 
--aqe[V.V]:%^%{.f.%}aqe       VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--lleqe[V.V]:%^%{.at.%}lleqe  VerbSuffixII;  ! to V in the future; will V
--naqe[V.V]:%^%{.at.%}naqe    VerbSuffixII;  ! to be going to V, to be about to V
+-@~sf–(g)kau:%^%{.at.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+@~fni:%^%{.at.%}ni            VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--yug[V.V]:%^%{.at.%}yug      VerbSuffixIII; ! to want to V
+-~(g)aqe[V.V]:%^%{.f.%}aqe    VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^%{.at.%}lleqe  VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^%{.at.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
++(te)ste:%^ste                VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+
+-@~fyug[V.V]:%^%{.at.%}yug    VerbSuffixIII; ! to want to V
+
+-@~sf–(g)kagh:%^%{.at.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^ghhaleg    #; ! how V! (exclamation)
 
