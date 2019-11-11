@@ -24,6 +24,9 @@ define C          [ f | g | h | k | l | m |
                     v | w | y | z |
 				    %{t%} | %{g%} | %{k%} ] ;
 
+define Stop       [ p   | t   | k   | q   |
+                    k w | q w ];
+
 define VoicedC    [ g h w | g h |
                     v | l | z   | y | r | g | w |
                     m | n | n g | n g w ] ;
@@ -102,6 +105,8 @@ define VelarUvularRounding n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ] .
 define ShortBaseFinlaE e -> e || .#. C (C) V C (C) _ "^" (%{%.f%.%}) n g a , ! [Jacobson (2001) p.38]
                        e -> a || .#. C (C) V C (C) _ "^" (%{%.f%.%}) n g a ; ! needs to occur before e dropping
 
+define ResolveEA e -> 0 || _ "^" a ; ! not sure where this rule is stated, but [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
+
 !-------------------
 ! ALLOMORPHY RULES
 !-------------------
@@ -137,9 +142,10 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 ! CLEAN-UP RULES
 !----------------
 
-define MatchVoicing y -> s || _ [ k | q ] .o.
-                    y -> s || [ k | q ] _ .o.
-                    k -> q || g h _       ;
+define MatchVoicing y -> s ||            _ [ k | q ] .o.
+                    y -> s ||  [ k | q ] _           .o.
+                    k -> q ||        g h _           .o.
+                    z -> s || Stop ("^") _           ; ! [Jacobson (2001) p.51] e.g. qiyaaqsin
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,   ! Jacobson 2.2.1 Words and Bases
@@ -148,7 +154,8 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,   ! Ja
                               w -> k w || [C - h | %{k%}] _     "^" .#. .o. 
                             g h -> q   ||                 _ (w) "^" .#. .o.
                         %{g%} h -> q   ||                 _     "^" .#. .o.  
-                              g -> k   ||                 _     "^" .#. ;
+                              g -> k   ||                 _     "^" .#. .o.
+          [ %{t%} | t ] ("^") z -> s                                    ; ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
 define PreventGemination n -> 0 || _ "^" n ; ! is this the only instance of accidental gemination? [Jacobson (2001) p.31]
@@ -179,6 +186,7 @@ define Rules [
     FinalE               .o.
     AddE                 .o.
     ResolveG             .o.
+    ResolveEA            .o.
     BaseFinalEndings     .o. 
     PreventGemination    .o.
     CleanupDigraph       .o.

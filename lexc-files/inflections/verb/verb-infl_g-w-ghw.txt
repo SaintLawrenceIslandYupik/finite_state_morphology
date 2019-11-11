@@ -11,14 +11,14 @@ LEXICON VerbInflIII
 !     intransitive interrogative
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
-[Intr][Intrg][3Sg]:%^ta%^   ; [Intr][Intrg][1Sg]:%^tzi%^nga   ; [Intr][Intrg][2Sg]:%^tzin    ;
-[Intr][Intrg][3Sg]:%^taa%^  ; [Intr][Intrg][1Sg]:%^tzi%^ngaa  ; [Intr][Intrg][2Sg]:%^tziin   ;
+[Intr][Intrg][3Sg]:%^ta%^   #; [Intr][Intrg][1Sg]:%^tzi%^nga   #; [Intr][Intrg][2Sg]:%^tzin    #;
+[Intr][Intrg][3Sg]:%^taa%^  #; [Intr][Intrg][1Sg]:%^tzi%^ngaa  #; [Intr][Intrg][2Sg]:%^tziin   #;
 
-[Intr][Intrg][3Pl]:%^ta%^t  ; [Intr][Intrg][1Pl]:%^este%^a    ; [Intr][Intrg][2Pl]:%^etsi   ;
-[Intr][Intrg][3Pl]:%^taa%^t ; [Intr][Intrg][1Pl]:%^este%^aa   ; [Intr][Intrg][2Pl]:%^etsii  ;
+[Intr][Intrg][3Pl]:%^ta%^t  #; [Intr][Intrg][1Pl]:%^este%^a    #; [Intr][Intrg][2Pl]:%^etsi   #;
+[Intr][Intrg][3Pl]:%^taa%^t #; [Intr][Intrg][1Pl]:%^este%^aa   #; [Intr][Intrg][2Pl]:%^etsii  #;
 
-[Intr][Intrg][3Du]:%^ta%^k  ; [Intr][Intrg][1Du]:%^este%^ung  ; [Intr][Intrg][2Du]:%^estek  ;
-[Intr][Intrg][3Du]:%^taa%^k ; [Intr][Intrg][1Du]:%^este%^uung ; [Intr][Intrg][2Du]:%^estaak ;
+[Intr][Intrg][3Du]:%^ta%^k  #; [Intr][Intrg][1Du]:%^este%^ung  #; [Intr][Intrg][2Du]:%^estek  #;
+[Intr][Intrg][3Du]:%^taa%^k #; [Intr][Intrg][1Du]:%^este%^uung #; [Intr][Intrg][2Du]:%^estaak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -26,38 +26,38 @@ LEXICON VerbInflIII
 !     transitive interrogative
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Intr][Trns][3Sg][3Sg]:%^ta%^gu     ; [Intr][Trns][3Sg][3Pl]:%^ta%^ki     ; [Intr][Trns][3Sg][3Du]:%^ta%^kek     ;
-[Intr][Trns][3Sg][3Sg]:%^ta%^guu    ;
-[Intr][Trns][3Pl][3Sg]:%^ta%^tgu    ; [Intr][Trns][3Pl][3Pl]:%^ta%^tki    ; [Intr][Trns][3Pl][3Du]:%^ta%^tkek    ;
-[Intr][Trns][3Du][3Sg]:%^ta%^gnegu  ; [Intr][Trns][3Du][3Pl]:%^ta%^gneki  ; [Intr][Trns][3Du][3Du]:%^ta%^gnekek  ;
+[Trns][Intrg][3Sg][3Sg]:%^ta%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^ta%^ki     #; [Trns][Intrg][3Sg][3Du]:%^ta%^kek     #;
+[Trns][Intrg][3Sg][3Sg]:%^ta%^guu    #;
+[Trns][Intrg][3Pl][3Sg]:%^ta%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^ta%^tki    #; [Trns][Intrg][3Pl][3Du]:%^ta%^tkek    #;
+[Trns][Intrg][3Du][3Sg]:%^ta%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^ta%^gneki  #; [Trns][Intrg][3Du][3Du]:%^ta%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Intr][Trns][1Sg][3Sg]:%^tzi%^kun     ; [Intr][Trns][1Sg][3Pl]:%^tzi%^ngi     ; [Intr][Trns][1Sg][3Du]:%^tzi%^gngek    ;
-[Intr][Trns][1Pl][3Sg]:%^este%^ggu   ; [Intr][Trns][1Pl][3Pl]:%^este%^ki    ; [Intr][Trns][1Pl][3Du]:%^este%^kek    ;
-[Intr][Trns][1Du][3Sg]:%^este%^gnegu ; [Intr][Trns][1Du][3Pl]:%^este%^gneki ; [Intr][Trns][1Du][3Du]:%^este%^gnekek ;
+[Trns][Intrg][1Sg][3Sg]:%^tzi%^kun     #; [Trns][Intrg][1Sg][3Pl]:%^tzi%^ngi     #; [Trns][Intrg][1Sg][3Du]:%^tzi%^gngek    #;
+[Trns][Intrg][1Pl][3Sg]:%^este%^ggu   #; [Trns][Intrg][1Pl][3Pl]:%^este%^ki    #; [Trns][Intrg][1Pl][3Du]:%^este%^kek    #;
+[Trns][Intrg][1Du][3Sg]:%^este%^gnegu #; [Trns][Intrg][1Du][3Pl]:%^este%^gneki #; [Trns][Intrg][1Du][3Du]:%^este%^gnekek #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Intr][Trns][2Sg][3Sg]:%^tzi%^gu      ; [Intr][Trns][2Sg][3Pl]:%^tzi%^ki      ; [Intr][Trns][2Sg][3Du]:%^tzi%^kek      ;
-[Intr][Trns][2Pl][3Sg]:%^e%^ggu      ; [Intr][Trns][2Pl][3Pl]:%^e%^ki       ; [Intr][Trns][2Pl][3Du]:%^e%^kek      ; ! typo in the original lexc file
-[Intr][Trns][2Du][3Sg]:%^e%^gnegu    ; [Intr][Trns][2Du][3Pl]:%^e%^gneki    ; [Intr][Trns][2Du][3Du]:%^e%^gnekek   ; ! typo in the original lexc file
+[Trns][Intrg][2Sg][3Sg]:%^tzi%^gu      #; [Trns][Intrg][2Sg][3Pl]:%^tzi%^ki      #; [Trns][Intrg][2Sg][3Du]:%^tzi%^kek      #;
+[Trns][Intrg][2Pl][3Sg]:%^e%^ggu      #; [Trns][Intrg][2Pl][3Pl]:%^e%^ki       #; [Trns][Intrg][2Pl][3Du]:%^e%^kek      #; ! typo in the original lexc file
+[Trns][Intrg][2Du][3Sg]:%^e%^gnegu    #; [Trns][Intrg][2Du][3Pl]:%^e%^gneki    #; [Trns][Intrg][2Du][3Du]:%^e%^gnekek   #; ! typo in the original lexc file
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Intr][Trns][3Sg][1Sg]:%^ta%^nga    ; [Intr][Trns][3Sg][1Pl]:%^ti%^nkut   ; [Intr][Trns][3Sg][1Du]:%^ti%^nkung   ;
-[Intr][Trns][3Pl][1Sg]:%^ta%^tnga   ; [Intr][Trns][3Pl][1Pl]:%^ti%^nkut   ; [Intr][Trns][3Pl][1Du]:%^ti%^nkung   ;
-[Intr][Trns][3Du][1Sg]:%^ta%^gnenga ; [Intr][Trns][3Du][1Pl]:%^ti%^nkut   ; [Intr][Trns][3Du][1Du]:%^ti%^nkung   ;
+[Trns][Intrg][3Sg][1Sg]:%^ta%^nga    #; [Trns][Intrg][3Sg][1Pl]:%^ti%^nkut   #; [Trns][Intrg][3Sg][1Du]:%^ti%^nkung   #;
+[Trns][Intrg][3Pl][1Sg]:%^ta%^tnga   #; [Trns][Intrg][3Pl][1Pl]:%^ti%^nkut   #; [Trns][Intrg][3Pl][1Du]:%^ti%^nkung   #;
+[Trns][Intrg][3Du][1Sg]:%^ta%^gnenga #; [Trns][Intrg][3Du][1Pl]:%^ti%^nkut   #; [Trns][Intrg][3Du][1Du]:%^ti%^nkung   #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 !                                      |                                        |                                         | 
 !                                      |                                        |                                         | 
 !                                      |                                        |                                         | 
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Intr][Trns][2Sg][1Sg]:%^tzi%^nga     ; [Intr][Trns][2Sg][1Pl]:%^tzi%^kut     ; [Intr][Trns][2Sg][1Du]:%^tzi%^kung     ;
-[Intr][Trns][2Pl][1Sg]:%^e%^ngnga    ; [Intr][Trns][2Pl][1Pl]:%^e%^kut      ; [Intr][Trns][2Pl][1Du]:%^e%^kung      ;
-[Intr][Trns][2Du][1Sg]:%^e%^gnenga   ; [Intr][Trns][2Du][1Pl]:%^e%^gneku    ; [Intr][Trns][2Du][1Du]:%^e%^gnekung   ;
+[Trns][Intrg][2Sg][1Sg]:%^tzi%^nga     #; [Trns][Intrg][2Sg][1Pl]:%^tzi%^kut     #; [Trns][Intrg][2Sg][1Du]:%^tzi%^kung     #;
+[Trns][Intrg][2Pl][1Sg]:%^e%^ngnga    #; [Trns][Intrg][2Pl][1Pl]:%^e%^kut      #; [Trns][Intrg][2Pl][1Du]:%^e%^kung      #;
+[Trns][Intrg][2Du][1Sg]:%^e%^gnenga   #; [Trns][Intrg][2Du][1Pl]:%^e%^gneku    #; [Trns][Intrg][2Du][1Du]:%^e%^gnekung   #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Intr][Trns][3Sg][2Sg]:%^ta%^ten    ; [Intr][Trns][3Sg][2Pl]:%^ti%^si     ; [Intr][Trns][3Sg][2Du]:%^ti%^stek    ;
-[Intr][Trns][3Pl][2Sg]:%^ta%^ten    ; [Intr][Trns][3Pl][2Pl]:%^ti%^si     ; [Intr][Trns][3Pl][2Du]:%^ti%^stek    ;
-[Intr][Trns][3Du][2Sg]:%^ta%^ten    ; [Intr][Trns][3Du][2Pl]:%^ti%^si     ; [Intr][Trns][3Du][2Du]:%^ti%^stek    ;
+[Trns][Intrg][3Sg][2Sg]:%^ta%^ten    #; [Trns][Intrg][3Sg][2Pl]:%^ti%^si     #; [Trns][Intrg][3Sg][2Du]:%^ti%^stek    #;
+[Trns][Intrg][3Pl][2Sg]:%^ta%^ten    #; [Trns][Intrg][3Pl][2Pl]:%^ti%^si     #; [Trns][Intrg][3Pl][2Du]:%^ti%^stek    #;
+[Trns][Intrg][3Du][2Sg]:%^ta%^ten    #; [Trns][Intrg][3Du][2Pl]:%^ti%^si     #; [Trns][Intrg][3Du][2Du]:%^ti%^stek    #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Intr][Trns][1Sg][2Sg]:%^tzi%^ken     ;                                        |                                         |
-[Intr][Trns][1Pl][2Sg]:%^este%^ken   ;                                        |                                         |
-[Intr][Trns][1Du][2Sg]:%^este%^ken   ;                                        |                                         |
+[Trns][Intrg][1Sg][2Sg]:%^tzi%^ken     #;                                        |                                         |
+[Trns][Intrg][1Pl][2Sg]:%^este%^ken   #;                                        |                                         |
+[Trns][Intrg][1Du][2Sg]:%^este%^ken   #;                                        |                                         |
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 !                                      |                                        |                                         | 
 !                                      |                                        |                                         | 

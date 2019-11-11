@@ -20,7 +20,7 @@ LEXICON NounInflI
 [Abs][Sg][3PlPoss]:%^ngat  #; [Abs][Pl][3PlPoss]:%^ngit  #; [Abs][Du][3PlPoss]:%^gket   #;
 [Abs][Sg][3DuPoss]:%^ngak  #; [Abs][Pl][3DuPoss]:%^ngik  #; [Abs][Du][3DuPoss]:%^gkek   #;
 !---------------------------|-----------------------------|------------------------------|
-[Abs][Sg][4SgPoss]:%^nun   #; [Abs][Pl][4SgPoss]:%^nun   #; [Abs][Du][4SgPoss]:%^gnun   #;
+[Abs][Sg][4SgPoss]:%^ni    #; [Abs][Pl][4SgPoss]:%^ni    #; [Abs][Du][4SgPoss]:%^gni    #;
 [Abs][Sg][4PlPoss]:%^yeng  #; [Abs][Pl][4PlPoss]:%^teng  #; [Abs][Du][4PlPoss]:%^gteng  #;
 [Abs][Sg][4DuPoss]:%^yek   #; [Abs][Pl][4DuPoss]:%^tek   #; [Abs][Du][4DuPoss]:%^gtek   #;
 !---------------------------|-----------------------------|------------------------------|
@@ -41,6 +41,10 @@ LEXICON NounInflI
 [Erg][Sg][3SgPoss]:%^ngan   #; [Erg][Pl][3SgPoss]:%^ngan   #; [Erg][Du][3SgPoss]:%^gkenka  #;
 [Erg][Sg][3PlPoss]:%^ngita  #; [Erg][Pl][3PlPoss]:%^ngita  #; [Erg][Du][3PlPoss]:%^gkenka  #;
 [Erg][Sg][3DuPoss]:%^ngita  #; [Erg][Pl][3DuPoss]:%^ngita  #; [Erg][Du][3DuPoss]:%^gkenka  #;
+!----------------------------|------------------------------|-------------------------------|
+[Erg][Sg][4SgPoss]:%^mi     #; [Erg][Pl][4SgPoss]:%^mi     #; [Erg][Du][4SgPoss]:%^gmi     #;
+[Erg][Sg][4PlPoss]:%^meng   #; [Erg][Pl][4PlPoss]:%^meng   #; [Erg][Du][4PlPoss]:%^gmeng   #;
+[Erg][Sg][4DuPoss]:%^meng   #; [Erg][Pl][4DuPoss]:%^meng   #; [Erg][Du][4DuPoss]:%^gmeng   #;
 !----------------------------|------------------------------|-------------------------------|
 
 

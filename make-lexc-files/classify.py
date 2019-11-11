@@ -233,7 +233,7 @@ def main():
     # initialize list of question words
     questionWords = []
 
-    for filename in glob.glob(args.dirname + "/*"):
+    for filename in glob.glob(args.dirname + "/*.csv"):
         with open(filename, 'r') as csvfile:
             reader = csv.reader(csvfile, delimiter = ',')
 

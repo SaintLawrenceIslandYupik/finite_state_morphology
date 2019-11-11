@@ -21,7 +21,7 @@ LEXICON NounInflIX
 [Abs][Sg][3PlPoss]:%^%{.f.%}ngat  #; [Abs][Pl][3PlPoss]:%^%{.f.%}ngit   #; [Abs][Du][3PlPoss]:%^gket       #;
 [Abs][Sg][3DuPoss]:%^%{.f.%}ngak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ngik   #; [Abs][Du][3DuPoss]:%^gkek       #;
 !----------------------------------|-------------------------------------|----------------------------------|
-[Abs][Sg][4SgPoss]:%^nun          #; [Abs][Pl][4SgPoss]:%^nun           #; [Abs][Du][4SgPoss]:%^gnun       #;
+[Abs][Sg][4SgPoss]:%^ni           #; [Abs][Pl][4SgPoss]:%^ni            #; [Abs][Du][4SgPoss]:%^gni       #;
 [Abs][Sg][4PlPoss]:%^yeng         #; [Abs][Pl][4PlPoss]:%^teng          #; [Abs][Du][4PlPoss]:%^gteng      #;
 [Abs][Sg][4DuPoss]:%^yek          #; [Abs][Pl][4DuPoss]:%^tek           #; [Abs][Du][4DuPoss]:%^gtek       #;
 !----------------------------------|-------------------------------------|----------------------------------|
@@ -43,7 +43,10 @@ LEXICON NounInflIX
 [Erg][Sg][3PlPoss]:%^%{.f.%}ngita  #; [Erg][Pl][3PlPoss]:%^%{.f.%}ngita  #; [Erg][Du][3PlPoss]:%^gkenka  #;
 [Erg][Sg][3DuPoss]:%^%{.f.%}ngita  #; [Erg][Pl][3DuPoss]:%^%{.f.%}ngita  #; [Erg][Du][3DuPoss]:%^gkenka  #;
 !-----------------------------------|-------------------------------------|-------------------------------|
-
+[Erg][Sg][4SgPoss]:%^%{.f.%}mi     #; [Erg][Pl][4SgPoss]:%^%{.f.%}mi     #; [Erg][Du][4SgPoss]:%^gmi     #;
+[Erg][Sg][4PlPoss]:%^%{.f.%}meng   #; [Erg][Pl][4PlPoss]:%^%{.f.%}meng   #; [Erg][Du][4PlPoss]:%^gmeng   #;
+[Erg][Sg][4DuPoss]:%^%{.f.%}meng   #; [Erg][Pl][4DuPoss]:%^%{.f.%}meng   #; [Erg][Du][4DuPoss]:%^gmeng   #;
+!-----------------------------------|-------------------------------------|-------------------------------|
 !----------------------------------------------|
 !               ABLATIVE MODALIS               |
 !----------------------------------------------|------------------------------------------------|----------------------------------------------|

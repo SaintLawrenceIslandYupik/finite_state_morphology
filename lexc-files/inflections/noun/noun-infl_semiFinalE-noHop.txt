@@ -21,7 +21,7 @@ LEXICON NounInflVIII
 [Abs][Sg][3PlPoss]:%^%{.sf.%}at         #; [Abs][Pl][3PlPoss]:%^%{.sf.%}it    #; [Abs][Du][3PlPoss]:%^%{.sf.%}egket   #;
 [Abs][Sg][3DuPoss]:%^%{.sf.%}ak         #; [Abs][Pl][3DuPoss]:%^%{.sf.%}ik    #; [Abs][Du][3DuPoss]:%^%{.sf.%}egkek   #;
 !----------------------------------------|-------------------------------------|---------------------------------------|
-[Abs][Sg][4SgPoss]:%^%{.m.%}nun         #; [Abs][Pl][4SgPoss]:%^%{.m.%}nun    #; [Abs][Du][4SgPoss]:%^%{.sf.%}egnun   #;
+[Abs][Sg][4SgPoss]:%^%{.m.%}ni          #; [Abs][Pl][4SgPoss]:%^%{.m.%}ni     #; [Abs][Du][4SgPoss]:%^%{.sf.%}egni    #;
 [Abs][Sg][4PlPoss]:%^teng               #; [Abs][Pl][4PlPoss]:%^%{.m.%}teng   #; [Abs][Du][4PlPoss]:%^%{.sf.%}egteng  #;
 [Abs][Sg][4DuPoss]:%^tek                #; [Abs][Pl][4DuPoss]:%^%{.m.%}tek    #; [Abs][Du][4DuPoss]:%^%{.sf.%}egtek   #;
 !----------------------------------------|-------------------------------------|---------------------------------------|
@@ -42,6 +42,10 @@ LEXICON NounInflVIII
 [Erg][Sg][3SgPoss]:%^%{.sf.%}an      #; [Erg][Pl][3SgPoss]:%^%{.sf.%}an      #; [Erg][Du][3SgPoss]:%^%{.sf.%}egkenka  #;
 [Erg][Sg][3PlPoss]:%^%{.sf.%}ita     #; [Erg][Pl][3PlPoss]:%^%{.sf.%}ita     #; [Erg][Du][3PlPoss]:%^%{.sf.%}egkenka  #;
 [Erg][Sg][3DuPoss]:%^%{.sf.%}ita     #; [Erg][Pl][3DuPoss]:%^%{.sf.%}ita     #; [Erg][Du][3DuPoss]:%^%{.sf.%}egkenka  #;
+!-------------------------------------|---------------------------------------|----------------------------------------|
+[Erg][Sg][4SgPoss]:%^mi              #; [Erg][Pl][4SgPoss]:%^mi              #; [Erg][Du][4SgPoss]:%^%{.sf.%}egmi     #;
+[Erg][Sg][4PlPoss]:%^meng            #; [Erg][Pl][4PlPoss]:%^meng            #; [Erg][Du][4PlPoss]:%^%{.sf.%}egmeng   #;
+[Erg][Sg][4DuPoss]:%^meng            #; [Erg][Pl][4DuPoss]:%^meng            #; [Erg][Du][4DuPoss]:%^%{.sf.%}egmeng   #;
 !-------------------------------------|---------------------------------------|----------------------------------------|
 
 !----------------------------------------------|

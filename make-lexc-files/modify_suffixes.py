@@ -20,12 +20,12 @@ symbol_conversion = {"~f": "%{.f.%}", # Jacobson notation <-> foma v.2 notation
                     "(e)": "%{E%}",
                     "(g)": "%{G%}",
                     ":": ":%^",
-                    "EncliticOrEnd": "#;"}
+                    "EncliticOrEnd": "#"}
 
 rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: when suffixing to noun roots that end in -a, -i, -u, -aa, -ii-, -uu
                   {"%{E%}": "e", "(ng)": ""},  # NounInflII: when suffixing to noun roots that end in -g, -w, -ghw
-                  {"%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.w.%}": "%{.w.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIII: when suffixing to noun roots that end in weak -gh
-                  {"%^%{.c.%}%{E%}":"%^%{.c.%}%{E%}", "%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIV: when suffixing to noun roots that end in marked strong -gh (*)
+                  {"%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.w.%}%{.c.%}":"%{.w.%}", "%{.w.%}": "%{.w.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIII: when suffixing to noun roots that end in weak -gh
+                  {"%{E%}": "%{E%}", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIV: when suffixing to noun roots that end in marked strong -gh (*)
                   {"%{E%}": "e", "(ng)": "", "%{.m.%}": "%{.m.%}"}, # NounSuffixV: when suffixing to noun roots that end in strong -gh
                   {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"}, # NounInflVI: when suffixing to noun roots that end in -te
                   {"%{E%}": "e", "(ng)": "", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"}, # NounInflVII: when suffixing to noun roots that have semi-final -e that can be hopped
@@ -34,11 +34,11 @@ rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: when suffixing to no
                   {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"} # NounInflX: when suffixing to noun roots that end in final -e that can be dropped but not hopped
                   ]
 
-rules_for_verb = [{"(g/t)": "%{G%}"}, # VerbSuffixI: when suffixing to verb roots that end in -a, -i, -u
-                  {"(g/t)": "", "%{.f.%}": "%{.f.%}"}, # VerbSuffixII: when suffixing to verb roots that have final -e
+rules_for_verb = [{"(g/t)": "%{G%}", "(t)":""}, # VerbSuffixI: when suffixing to verb roots that end in -a, -i, -u
+                  {"(g/t)": "", "(t)":"", "%{.f.%}": "%{.f.%}"}, # VerbSuffixII: when suffixing to verb roots that have final -e
                   {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIII: when suffixing to verb roots that end in -g, -w, -ghw
                   {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIV: when suffixing to verb roots that end in -agh, -igh, -ugh or -egh where e cannot be dropped
-                  {"(g/t)": "", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"}, # VerbInflV: when suffixing to verbs that end in -te
+                  {"(g/t)": "", "(t)":"", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"}, # VerbInflV: when suffixing to verbs that end in -te
                   {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"}, # VerbSuffixVI: when suffixing to verb roots that have semi-final -e that can be hopped
                   {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"} # VerbSuffixVII: when suffixing to verb roots that have semi-final -e that can be dropped but not hopped
                   ]
@@ -79,18 +79,17 @@ def print_inflections(my_suffixes, my_root_type):
         print("-" * 22 + "-" * len(romanNumeral)) 
         print(my_root_type + " Inflection Class " + romanNumeral)
         print("-" * 22 + "-" * len(romanNumeral)) 
-        suffixes_new =replace_all(suffix_org, symbol_conversion)
+        suffixes_new = replace_all(suffix_org, symbol_conversion) # convert the Jacobson symbols to our new notations
 
-        for symbol in rules[i-1]:
-            suffixes_new = suffixes_new.replace(symbol, rules[i-1][symbol])
+        suffixes_specific = replace_all(suffixes_new, rules[i-1]) # apply the class-specific rules
 
-        for symbol in symbol_conversion.values():
-            if symbol == ":%^":
+        for symbol in symbol_conversion.values(): # remove any symbols that are not specified in the class-specific rules
+            if symbol == ":%^" or symbol == "#": # do not remove these symbols
                 continue
             elif symbol not in rules[i-1]:
-                suffixes_new = suffixes_new.replace(symbol, "")
+                suffixes_specific = suffixes_specific.replace(symbol, "")
     
-        print(suffixes_new)
+        print(suffixes_specific)
 
         
 
