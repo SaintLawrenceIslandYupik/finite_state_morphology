@@ -81,7 +81,7 @@ VerbRootVII;   ! has semi-final -e that can drop but not hop
 
 Particle;
 
-
+Interrogatives;
 !================
 LEXICON Particle
 !================
@@ -92,9 +92,11 @@ quunpeng    #; ! always
 unaami      #; ! tomorrow
 wanlegi     #; ! more than ever
 
---------------
-Question Words
---------------
+
+!================
+LEXICON Interrogatives
+question words that do not inflect
+!================s
 
 !kina        #; ! who? (relative case is kitum)
 !kinkut      #; ! who? (plural)
@@ -118,9 +120,6 @@ sangan      #; ! why? (in general) ! question words; why? (focused on 3rd person
 sangankek   #; ! why? (focused on 3rd person dual object of verb)
 sangavek    #; ! why? (focused on 2nd person singular subject of verb)
 sangita     #; ! why? (focused on 3rd person plural object of verb)
-
-
-
 !==================================
 LEXICON NounRootI
 !  end in -a, -i, -u, -aa, -ii, -uu
@@ -428,6 +427,7 @@ igamsiqanagh  VerbSuffixIV; ! to make one thankful (intransitive only)
 igatagh       VerbSuffixIV; ! to be hungry
 isekinagh     VerbSuffixIV; ! to be cold (solid, liquid) (intransitive only)
 ivagh         VerbSuffixIV; ! to look for (transitive only)
+iyagh         VerbSuffixIV; ! to write (on) (transitive or intransitive)
 iyamsiqanagh  VerbSuffixIV; ! to make one thankful (intransitive only)
 iyatagh       VerbSuffixIV; ! to be hungry
 kayusigh      VerbSuffixIV; ! to help (transitive only)
@@ -2779,13 +2779,8 @@ LEXICON VerbInflI
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^a%^   #; [Intr][Intrg][1Sg]:%^zi%^nga   #; [Intr][Intrg][2Sg]:%^zin    #;
-[Intr][Intrg][3Sg]:%^aa%^  #; [Intr][Intrg][1Sg]:%^zi%^ngaa  #; [Intr][Intrg][2Sg]:%^ziin   #;
-
 [Intr][Intrg][3Pl]:%^a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
-[Intr][Intrg][3Pl]:%^aa%^t #; [Intr][Intrg][1Pl]:%^ste%^aa   #; [Intr][Intrg][2Pl]:%^tsii  #;
-
 [Intr][Intrg][3Du]:%^a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
-[Intr][Intrg][3Du]:%^aa%^k #; [Intr][Intrg][1Du]:%^ste%^uung #; [Intr][Intrg][2Du]:%^staak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -2794,7 +2789,6 @@ LEXICON VerbInflI
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^a%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^a%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^a%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^a%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
@@ -2843,13 +2837,8 @@ LEXICON VerbInflII
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^%{.f.%}a%^   #; [Intr][Intrg][1Sg]:%^%{.f.%}zi%^nga   #; [Intr][Intrg][2Sg]:%^%{.f.%}zin    #;
-[Intr][Intrg][3Sg]:%^%{.f.%}aa%^  #; [Intr][Intrg][1Sg]:%^%{.f.%}zi%^ngaa  #; [Intr][Intrg][2Sg]:%^%{.f.%}ziin   #;
-
 [Intr][Intrg][3Pl]:%^%{.f.%}a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
-[Intr][Intrg][3Pl]:%^%{.f.%}aa%^t #; [Intr][Intrg][1Pl]:%^ste%^aa   #; [Intr][Intrg][2Pl]:%^tsii  #;
-
 [Intr][Intrg][3Du]:%^%{.f.%}a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
-[Intr][Intrg][3Du]:%^%{.f.%}aa%^k #; [Intr][Intrg][1Du]:%^ste%^uung #; [Intr][Intrg][2Du]:%^staak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -2858,7 +2847,6 @@ LEXICON VerbInflII
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^%{.f.%}a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^%{.f.%}a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^%{.f.%}a%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^%{.f.%}a%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^%{.f.%}a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^%{.f.%}a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^%{.f.%}a%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^%{.f.%}a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^%{.f.%}a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^%{.f.%}a%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
@@ -2910,13 +2898,8 @@ LEXICON VerbInflIV
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^ta%^   #; [Intr][Intrg][1Sg]:%^tzi%^nga   #; [Intr][Intrg][2Sg]:%^tzin    #;
-[Intr][Intrg][3Sg]:%^taa%^  #; [Intr][Intrg][1Sg]:%^tzi%^ngaa  #; [Intr][Intrg][2Sg]:%^tziin   #;
-
 [Intr][Intrg][3Pl]:%^ta%^t  #; [Intr][Intrg][1Pl]:%^este%^a    #; [Intr][Intrg][2Pl]:%^etsi   #;
-[Intr][Intrg][3Pl]:%^taa%^t #; [Intr][Intrg][1Pl]:%^este%^aa   #; [Intr][Intrg][2Pl]:%^etsii  #;
-
 [Intr][Intrg][3Du]:%^ta%^k  #; [Intr][Intrg][1Du]:%^este%^ung  #; [Intr][Intrg][2Du]:%^estek  #;
-[Intr][Intrg][3Du]:%^taa%^k #; [Intr][Intrg][1Du]:%^este%^uung #; [Intr][Intrg][2Du]:%^estaak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -2925,7 +2908,6 @@ LEXICON VerbInflIV
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^ta%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^ta%^ki     #; [Trns][Intrg][3Sg][3Du]:%^ta%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^ta%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^ta%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^ta%^tki    #; [Trns][Intrg][3Pl][3Du]:%^ta%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^ta%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^ta%^gneki  #; [Trns][Intrg][3Du][3Du]:%^ta%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
@@ -2974,13 +2956,8 @@ LEXICON VerbInflIII
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^ta%^   #; [Intr][Intrg][1Sg]:%^tzi%^nga   #; [Intr][Intrg][2Sg]:%^tzin    #;
-[Intr][Intrg][3Sg]:%^taa%^  #; [Intr][Intrg][1Sg]:%^tzi%^ngaa  #; [Intr][Intrg][2Sg]:%^tziin   #;
-
 [Intr][Intrg][3Pl]:%^ta%^t  #; [Intr][Intrg][1Pl]:%^este%^a    #; [Intr][Intrg][2Pl]:%^etsi   #;
-[Intr][Intrg][3Pl]:%^taa%^t #; [Intr][Intrg][1Pl]:%^este%^aa   #; [Intr][Intrg][2Pl]:%^etsii  #;
-
 [Intr][Intrg][3Du]:%^ta%^k  #; [Intr][Intrg][1Du]:%^este%^ung  #; [Intr][Intrg][2Du]:%^estek  #;
-[Intr][Intrg][3Du]:%^taa%^k #; [Intr][Intrg][1Du]:%^este%^uung #; [Intr][Intrg][2Du]:%^estaak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -2989,7 +2966,6 @@ LEXICON VerbInflIII
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^ta%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^ta%^ki     #; [Trns][Intrg][3Sg][3Du]:%^ta%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^ta%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^ta%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^ta%^tki    #; [Trns][Intrg][3Pl][3Du]:%^ta%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^ta%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^ta%^gneki  #; [Trns][Intrg][3Du][3Du]:%^ta%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
@@ -3040,13 +3016,8 @@ LEXICON VerbInflVI
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^ta%^   #; [Intr][Intrg][1Sg]:%^tzi%^nga   #; [Intr][Intrg][2Sg]:%^tzin    #;
-[Intr][Intrg][3Sg]:%^taa%^  #; [Intr][Intrg][1Sg]:%^tzi%^ngaa  #; [Intr][Intrg][2Sg]:%^tziin   #;
-
 [Intr][Intrg][3Pl]:%^ta%^t  #; [Intr][Intrg][1Pl]:%^%{.sf.%}este%^a    #; [Intr][Intrg][2Pl]:%^%{.sf.%}etsi   #;
-[Intr][Intrg][3Pl]:%^taa%^t #; [Intr][Intrg][1Pl]:%^%{.sf.%}este%^aa   #; [Intr][Intrg][2Pl]:%^%{.sf.%}etsii  #;
-
 [Intr][Intrg][3Du]:%^ta%^k  #; [Intr][Intrg][1Du]:%^%{.sf.%}este%^ung  #; [Intr][Intrg][2Du]:%^%{.sf.%}estek  #;
-[Intr][Intrg][3Du]:%^taa%^k #; [Intr][Intrg][1Du]:%^%{.sf.%}este%^uung #; [Intr][Intrg][2Du]:%^%{.sf.%}estaak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -3055,7 +3026,6 @@ LEXICON VerbInflVI
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^ta%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^ta%^ki     #; [Trns][Intrg][3Sg][3Du]:%^ta%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^ta%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^ta%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^ta%^tki    #; [Trns][Intrg][3Pl][3Du]:%^ta%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^ta%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^ta%^gneki  #; [Trns][Intrg][3Du][3Du]:%^ta%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
@@ -3105,13 +3075,8 @@ LEXICON VerbInflVII
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^ta%^   #; [Intr][Intrg][1Sg]:%^tzi%^nga   #; [Intr][Intrg][2Sg]:%^tzin    #;
-[Intr][Intrg][3Sg]:%^taa%^  #; [Intr][Intrg][1Sg]:%^tzi%^ngaa  #; [Intr][Intrg][2Sg]:%^tziin   #;
-
 [Intr][Intrg][3Pl]:%^ta%^t  #; [Intr][Intrg][1Pl]:%^%{.sf.%}este%^a    #; [Intr][Intrg][2Pl]:%^%{.sf.%}etsi   #;
-[Intr][Intrg][3Pl]:%^taa%^t #; [Intr][Intrg][1Pl]:%^%{.sf.%}este%^aa   #; [Intr][Intrg][2Pl]:%^%{.sf.%}etsii  #;
-
 [Intr][Intrg][3Du]:%^ta%^k  #; [Intr][Intrg][1Du]:%^%{.sf.%}este%^ung  #; [Intr][Intrg][2Du]:%^%{.sf.%}estek  #;
-[Intr][Intrg][3Du]:%^taa%^k #; [Intr][Intrg][1Du]:%^%{.sf.%}este%^uung #; [Intr][Intrg][2Du]:%^%{.sf.%}estaak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -3120,7 +3085,6 @@ LEXICON VerbInflVII
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^ta%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^ta%^ki     #; [Trns][Intrg][3Sg][3Du]:%^ta%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^ta%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^ta%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^ta%^tki    #; [Trns][Intrg][3Pl][3Du]:%^ta%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^ta%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^ta%^gneki  #; [Trns][Intrg][3Du][3Du]:%^ta%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
@@ -3170,13 +3134,8 @@ LEXICON VerbInflV
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^%{.f.%}a%^   #; [Intr][Intrg][1Sg]:%^%{.f.%}zi%^nga   #; [Intr][Intrg][2Sg]:%^%{.f.%}zin    #;
-[Intr][Intrg][3Sg]:%^%{.f.%}aa%^  #; [Intr][Intrg][1Sg]:%^%{.f.%}zi%^ngaa  #; [Intr][Intrg][2Sg]:%^%{.f.%}ziin   #;
-
 [Intr][Intrg][3Pl]:%^%{.f.%}a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
-[Intr][Intrg][3Pl]:%^%{.f.%}aa%^t #; [Intr][Intrg][1Pl]:%^ste%^aa   #; [Intr][Intrg][2Pl]:%^tsii  #;
-
 [Intr][Intrg][3Du]:%^%{.f.%}a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
-[Intr][Intrg][3Du]:%^%{.f.%}aa%^k #; [Intr][Intrg][1Du]:%^ste%^uung #; [Intr][Intrg][2Du]:%^staak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -3185,7 +3144,6 @@ LEXICON VerbInflV
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^%{.f.%}a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^%{.f.%}a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^%{.f.%}a%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^%{.f.%}a%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^%{.f.%}a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^%{.f.%}a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^%{.f.%}a%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^%{.f.%}a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^%{.f.%}a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^%{.f.%}a%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|

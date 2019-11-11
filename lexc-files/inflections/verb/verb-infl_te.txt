@@ -12,13 +12,8 @@ LEXICON VerbInflV
 !=============================
 !-----------------------------|---------------------------------|--------------------------------|
 [Intr][Intrg][3Sg]:%^%{.f.%}a%^   #; [Intr][Intrg][1Sg]:%^%{.f.%}zi%^nga   #; [Intr][Intrg][2Sg]:%^%{.f.%}zin    #;
-[Intr][Intrg][3Sg]:%^%{.f.%}aa%^  #; [Intr][Intrg][1Sg]:%^%{.f.%}zi%^ngaa  #; [Intr][Intrg][2Sg]:%^%{.f.%}ziin   #;
-
 [Intr][Intrg][3Pl]:%^%{.f.%}a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
-[Intr][Intrg][3Pl]:%^%{.f.%}aa%^t #; [Intr][Intrg][1Pl]:%^ste%^aa   #; [Intr][Intrg][2Pl]:%^tsii  #;
-
 [Intr][Intrg][3Du]:%^%{.f.%}a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
-[Intr][Intrg][3Du]:%^%{.f.%}aa%^k #; [Intr][Intrg][1Du]:%^ste%^uung #; [Intr][Intrg][2Du]:%^staak #;
 !-----------------------------|---------------------------------|--------------------------------|
 
 !=============================
@@ -27,7 +22,6 @@ LEXICON VerbInflV
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][3Sg][3Sg]:%^%{.f.%}a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^%{.f.%}a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^%{.f.%}a%^kek     #;
-[Trns][Intrg][3Sg][3Sg]:%^%{.f.%}a%^guu    #;
 [Trns][Intrg][3Pl][3Sg]:%^%{.f.%}a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^%{.f.%}a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^%{.f.%}a%^tkek    #;
 [Trns][Intrg][3Du][3Sg]:%^%{.f.%}a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^%{.f.%}a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^%{.f.%}a%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|

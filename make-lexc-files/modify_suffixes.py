@@ -24,7 +24,7 @@ symbol_conversion = {"~f": "%{.f.%}", # Jacobson notation <-> foma v.2 notation
 
 rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: when suffixing to noun roots that end in -a, -i, -u, -aa, -ii-, -uu
                   {"%{E%}": "e", "(ng)": ""},  # NounInflII: when suffixing to noun roots that end in -g, -w, -ghw
-                  {"%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.w.%}%{.c.%}":"%{.w.%}", "%{.w.%}": "%{.w.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIII: when suffixing to noun roots that end in weak -gh
+                  {"%{E%}": "", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.w.%}%{.c.%}":"%{.w.%}%{.c.%}", "%{.w.%}": "%{.w.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIII: when suffixing to noun roots that end in weak -gh
                   {"%{E%}": "%{E%}", "(ng)": "", "%{.m.%}": "%{.m.%}", "%{.c.%}": "%{.c.%}"}, # NounInflIV: when suffixing to noun roots that end in marked strong -gh (*)
                   {"%{E%}": "e", "(ng)": "", "%{.m.%}": "%{.m.%}"}, # NounSuffixV: when suffixing to noun roots that end in strong -gh
                   {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"}, # NounInflVI: when suffixing to noun roots that end in -te
@@ -34,13 +34,13 @@ rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: when suffixing to no
                   {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"} # NounInflX: when suffixing to noun roots that end in final -e that can be dropped but not hopped
                   ]
 
-rules_for_verb = [{"(g/t)": "%{G%}", "(t)":""}, # VerbSuffixI: when suffixing to verb roots that end in -a, -i, -u
-                  {"(g/t)": "", "(t)":"", "%{.f.%}": "%{.f.%}"}, # VerbSuffixII: when suffixing to verb roots that have final -e
-                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIII: when suffixing to verb roots that end in -g, -w, -ghw
-                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIV: when suffixing to verb roots that end in -agh, -igh, -ugh or -egh where e cannot be dropped
-                  {"(g/t)": "", "(t)":"", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"}, # VerbInflV: when suffixing to verbs that end in -te
-                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"}, # VerbSuffixVI: when suffixing to verb roots that have semi-final -e that can be hopped
-                  {"(g/t)": "t", "(t)":"t", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"} # VerbSuffixVII: when suffixing to verb roots that have semi-final -e that can be dropped but not hopped
+rules_for_verb = [{"(g/t)": "%{G%}", "(t)":"", "(te)":""}, # VerbSuffixI: when suffixing to verb roots that end in -a, -i, -u
+                  {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}"}, # VerbSuffixII: when suffixing to verb roots that have final -e
+                  {"(g/t)": "t", "(t)":"t", "(te)":"te", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIII: when suffixing to verb roots that end in -g, -w, -ghw
+                  {"(g/t)": "t", "(t)":"t", "(te)":"te",  "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIV: when suffixing to verb roots that end in -agh, -igh, -ugh or -egh where e cannot be dropped
+                  {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"}, # VerbInflV: when suffixing to verbs that end in -te
+                  {"(g/t)": "t", "(t)":"t", "(te)":"te", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"}, # VerbSuffixVI: when suffixing to verb roots that have semi-final -e that can be hopped
+                  {"(g/t)": "t", "(t)":"t", "(te)":"te", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"} # VerbSuffixVII: when suffixing to verb roots that have semi-final -e that can be dropped but not hopped
                   ]
 
 def replace_all(my_text, my_dict):
