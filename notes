@@ -112,3 +112,27 @@ laalighfike[Trns][Intrg][2Sg][3Du]	laalighfisikek -> laalighfi"k"sikek
 laalighfike[Trns][Ind][3Sg][3Sg]	laalighfika -> laalighfikaa
 There's no laalighfike[Trns][Ind][3Sg]"[4Sg]", right? If so, I think Jacobson made a mistake with the first word of the following sentence:
 Laalighfika  aakaghmi uginga, He visited his (own) sister's husband.
+
+!! Chapter 9
+
+1. Thankfully, chapter 9 wasn't too complicated, so I'm done with chapter 9.. Almost! I have one test case that's failing as below:
+qikmigh[Erg][Sg][1SgPoss]	qikmighma as in Naliita qikmighma amqeghtaten? (which one  of my dogs bit you?) (p. 61) 
+My output is qikmima, which I think should be correct if the root for dog (qikmigh) has a weak gh. I went back to chapter 2 to see if Jacobson said the root has a strong gh ending, but I didn't see a star at the end of the entry. So I'm thinking this might be a typo, but I wanted to double-check with you before I say I'm done :D Everything is pushed to my branch so far in case you want to start the merge.
+
+2. This is probably low-priority, but the classify.py script might need some debugging. I was trying to add one more entry (iyagh-, a variation of igagh-) and used the script and I got the following:
+```
+-----------------------
+Verb Inflection Class V
+-----------------------
+igagh         VerbSuffixV; ! to write (on) (transitive or intransitive)
+iyagh         VerbSuffixV; ! to write (on) (transitive or intransitive)
+```
+I'm only listing the two entries, but all the entries seem to belong to Verb Inflection Class IV, instead of V. 
+
+3. This is just a note to myself that I thought you might also want to be reminded of:
+negh<e> has to have the final e for the following.
+neghe+(te)ste[V.V][Trns][Ind][3Sg][3Sg]	neghestaa
+
+4. Just to let you know that some more ugliness has been introduced in chapter 9:
+kinangagh:kinanga%{g%}h      NounSuffixIII; ! who (base for 3rd person singular)
+kinkungagh:kinkunga%{g%}h    NounSuffixIII; ! who (base for 3rd person plural)

@@ -10,20 +10,20 @@ LEXICON VerbInflI
 !  person/number markers for
 !     intransitive interrogative
 !=============================
-!-----------------------------|---------------------------------|--------------------------------|
-[Intr][Intrg][3Sg]:%^a%^   #; [Intr][Intrg][1Sg]:%^zi%^nga   #; [Intr][Intrg][2Sg]:%^zin    #;
-[Intr][Intrg][3Pl]:%^a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
-[Intr][Intrg][3Du]:%^a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
-!-----------------------------|---------------------------------|--------------------------------|
+!--------------------------------|---------------------------------|--------------------------------|
+[Intr][Intrg][3Sg]:%^%{G%}a%^   #; [Intr][Intrg][1Sg]:%^zi%^nga   #; [Intr][Intrg][2Sg]:%^zin    #;
+[Intr][Intrg][3Pl]:%^%{G%}a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
+[Intr][Intrg][3Du]:%^%{G%}a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
+!--------------------------------|---------------------------------|--------------------------------|
 
 !=============================
 !  person/number markers for
 !     transitive interrogative
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][3Sg][3Sg]:%^a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^a%^kek     #;
-[Trns][Intrg][3Pl][3Sg]:%^a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^a%^tkek    #;
-[Trns][Intrg][3Du][3Sg]:%^a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^a%^gnekek  #;
+[Trns][Intrg][3Sg][3Sg]:%^%{G%}a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^a%^kek     #;
+[Trns][Intrg][3Pl][3Sg]:%^%{G%}a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^a%^tkek    #;
+[Trns][Intrg][3Du][3Sg]:%^%{G%}a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^a%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][1Sg][3Sg]:%^zi%^kun     #; [Trns][Intrg][1Sg][3Pl]:%^zi%^ngi     #; [Trns][Intrg][1Sg][3Du]:%^zi%^gngek    #;
 [Trns][Intrg][1Pl][3Sg]:%^ste%^ggu   #; [Trns][Intrg][1Pl][3Pl]:%^ste%^ki    #; [Trns][Intrg][1Pl][3Du]:%^ste%^kek    #;

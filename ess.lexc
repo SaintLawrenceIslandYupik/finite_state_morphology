@@ -331,6 +331,8 @@ avaqutagh:avaquta%{g%}h      NounSuffixIII; ! child, offspring
 Ayuqligh:Ayuqli%{g%}h        NounSuffixIII; ! mainland Alaskan Eskimo
 eflugagh:efluga%{g%}h        NounSuffixIII; ! floor (from English)
 itegagh:itega%{g%}h          NounSuffixIII; ! foot
+kinangagh:kinanga%{g%}h      NounSuffixIII; ! who (base for 3rd person singular)
+kinkungagh:kinkunga%{g%}h    NounSuffixIII; ! who (base for 3rd person plural)
 mangteghagh:mangtegha%{g%}h  NounSuffixIII; ! house
 naasqugh:naasqu%{g%}h        NounSuffixIII; ! head
 naayghagh:naaygha%{g%}h      NounSuffixIII; ! mountain
@@ -342,6 +344,7 @@ nuyagh:nuya%{g%}h            NounSuffixIII; ! hair
 nuzigh:nuzi%{g%}h            NounSuffixIII; ! one's child's spouse's parent
 neghsagh:neghsa%{g%}h        NounSuffixIII; ! seal (in general)
 pengugh:pengu%{g%}h          NounSuffixIII; ! mound
+sangagh:sanga%{g%}h          NounSuffixIII; ! why (base for 3rd person)
 suflugagh:sufluga%{g%}h      NounSuffixIII; ! gun
 qagugh:qagu%{g%}h            NounSuffixIII; ! forehead
 qayagh:qaya%{g%}h            NounSuffixIII; ! kayak
@@ -894,17 +897,17 @@ LEXICON VerbSuffixI
 
                            VerbInflI;
 
--@~sf–(g)kau:%^%{G%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
-@~fni:%^ni                 VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~sf–(g)kau[V.V]:%^kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+-@~fni[V.V]:%^ni                 VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
  
 -~(g)aqe[V.V]:%^%{G%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -@lleqe[V.V]:%^lleqe       VerbSuffixII;  ! to V in the future; will V
 -@~fnaqe[V.V]:%^naqe       VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste:%^ste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
++(te)ste[V.V]:%^ste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
 -@~fyug[V.V]:%^yug         VerbSuffixIII; ! to want to V
 
--@~sf–(g)kagh:%^%{G%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^kagh       NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^ghhaleg           #; ! how V! (exclamation)
 
@@ -923,17 +926,18 @@ LEXICON VerbSuffixII
 
                             VerbInflII;
 
--@~sf–(g)kau:%^kau          VerbSuffixI;   ! to have V-ed or been V-ed 
-@~fni:%^%{.f.%}ni           VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~sf–(g)kau[V.V]:%^%{G%}kau          VerbSuffixI;   ! to have V-ed or been V-ed 
+-@~fni[V.V]:%^%{.f.%}ni           VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
 -~(g)aqe[V.V]:%^%{.f.%}aqe  VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -@lleqe[V.V]:%^lleqe        VerbSuffixII;  ! to V in the future; will V
 -@~fnaqe[V.V]:%^{.f.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste:%^ste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
++(te)ste[V.V]:%^ste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
 -@~fyug[V.V]:%^%{.f.%}yug   VerbSuffixIII; ! to want to V
 
--@~sf–(g)kagh:%^kagh        NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^gkagh        NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^%{.f.%}kagh        NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^ghhaleg              #; ! how V! (exclamation)
 
@@ -951,16 +955,16 @@ LEXICON VerbSuffixIV
                              VerbInflIV;
 
 -@~sf–(g)kau:%^%{.m.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
-@~fni:%^ni                   VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~fni[V.V]:%^ni                   VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
 -~(g)aqe[V.V]:%^aqe          VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -@lleqe[V.V]:%^lleqe         VerbSuffixII;  ! to V in the future; will V
 -@~fnaqe[V.V]:%^naqe         VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste:%^teste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
++(te)ste[V.V]:%^teste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
 -@~fyug[V.V]:%^yug           VerbSuffixIII; ! to want to V
 
--@~sf–(g)kagh:%^%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^%{.m.%}ghhaleg           #; ! how V! (exclamation)
 
@@ -979,17 +983,17 @@ LEXICON VerbSuffixIII
 
                              VerbInflIII;
 
--@~sf–(g)kau:%^%{.m.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
-@~fni:%^ni                   VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~sf–(g)kau[V.V]:%^%{.m.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+-@~fni[V.V]:%^ni                   VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
 -~(g)aqe[V.V]:%^aqe          VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -@lleqe[V.V]:%^lleqe         VerbSuffixII;  ! to V in the future; will V
 -@~fnaqe[V.V]:%^naqe         VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste:%^teste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
++(te)ste[V.V]:%^teste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
 -@~fyug[V.V]:%^yug           VerbSuffixIII; ! to want to V
 
--@~sf–(g)kagh:%^%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^%{.m.%}ghhaleg    #; ! how V! (exclamation)
 
@@ -1010,17 +1014,17 @@ LEXICON VerbSuffixVI
 
                               VerbInflVI;
 
--@~sf–(g)kau:%^%{.sf.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
-@~fni:%^ni                    VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~sf–(g)kau[V.V]:%^%{.sf.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+-@~fni[V.V]:%^ni                    VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
 -~(g)aqe[V.V]:%^%{.sf.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -@lleqe[V.V]:%^lleqe          VerbSuffixII;  ! to V in the future; will V
 -@~fnaqe[V.V]:%^naqe          VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste:%^teste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
++(te)ste[V.V]:%^teste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
 -@~fyug[V.V]:%^yug            VerbSuffixIII; ! to want to V
 
--@~sf–(g)kagh:%^%{.sf.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^%{.sf.%}%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^%{.m.%}ghhaleg    #; ! how V! (exclamation)
 
@@ -1039,17 +1043,17 @@ LEXICON VerbSuffixVII
 
                               VerbInflVII;
 
--@~sf–(g)kau:%^%{.sf.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
-@~fni:%^ni                    VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~sf–(g)kau[V.V]:%^%{.sf.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+-@~fni[V.V]:%^ni                    VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
 -~(g)aqe[V.V]:%^%{.sf.%}aqe   VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -@lleqe[V.V]:%^lleqe          VerbSuffixII;  ! to V in the future; will V
 -@~fnaqe[V.V]:%^naqe          VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste:%^teste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
++(te)ste[V.V]:%^teste              VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
 -@~fyug[V.V]:%^yug            VerbSuffixIII; ! to want to V
 
--@~sf–(g)kagh:%^%{.sf.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^%{.sf.%}%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^%{.m.%}ghhaleg    #; ! how V! (exclamation)
 
@@ -1069,17 +1073,17 @@ LEXICON VerbSuffixV
 
                               VerbInflV;
 
--@~sf–(g)kau:%^%{.at.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
-@~fni:%^%{.at.%}ni            VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~sf–(g)kau[V.V]:%^%{.at.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
+-@~fni[V.V]:%^%{.at.%}ni            VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
 -~(g)aqe[V.V]:%^%{.f.%}aqe    VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
 -@lleqe[V.V]:%^%{.at.%}lleqe  VerbSuffixII;  ! to V in the future; will V
 -@~fnaqe[V.V]:%^%{.at.%}naqe  VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste:%^ste                VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
++(te)ste[V.V]:%^ste                VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
 -@~fyug[V.V]:%^%{.at.%}yug    VerbSuffixIII; ! to want to V
 
--@~sf–(g)kagh:%^%{.at.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
+-@~sf–(g)kagh[V.N]:%^%{.at.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
 -ghhaleg[V.V]:%^ghhaleg    #; ! how V! (exclamation)
 
@@ -1620,7 +1624,7 @@ LEXICON NounInflII
 !------------------------------------|
 !          ERGATIVE (relative)       |
 !------------------------------------|--------------------------------------|--------------------------------|
-[Erg][Sg]:%^m                       #; [Erg][Pl]:%^et                      #; [Erg][Du]:%^ek                #;
+[Erg][Sg]:%^em                      #; [Erg][Pl]:%^et                      #; [Erg][Du]:%^ek                #;
 !------------------------------------|--------------------------------------|--------------------------------|
 [Erg][Sg][1SgPoss]:%^ma             #; [Erg][Pl][1SgPoss]:%^ma             #; [Erg][Du][1SgPoss]:%^egma     #;
 [Erg][Sg][1PlPoss]:%^%{.m.%}mta     #; [Erg][Pl][1PlPoss]:%^%{.m.%}mta     #; [Erg][Du][1PlPoss]:%^egemta   #;
@@ -1787,7 +1791,7 @@ LEXICON NounInflIV
 !------------------------------------|
 !         ERGATIVE (relative)        |
 !------------------------------------|--------------------------------------|-------------------------------------------|
-[Erg][Sg]:%^m                       #; [Erg][Pl]:%^%{.c.%}%{E%}            #; [Erg][Du]:%^%{.c.%}%{E%}k                #;
+[Erg][Sg]:%^%{.c.%}%{E%}m           #; [Erg][Pl]:%^%{.c.%}%{E%}t           #; [Erg][Du]:%^%{.c.%}%{E%}k                #;
 !------------------------------------|--------------------------------------|-------------------------------------------|
 [Erg][Sg][1SgPoss]:%^ma             #; [Erg][Pl][1SgPoss]:%^ma             #; [Erg][Du][1SgPoss]:%^%{.c.%}%{E%}gma     #;
 [Erg][Sg][1PlPoss]:%^%{.m.%}mta     #; [Erg][Pl][1PlPoss]:%^%{.m.%}mta     #; [Erg][Du][1PlPoss]:%^%{.c.%}%{E%}gemta   #;
@@ -2777,20 +2781,20 @@ LEXICON VerbInflI
 !  person/number markers for
 !     intransitive interrogative
 !=============================
-!-----------------------------|---------------------------------|--------------------------------|
-[Intr][Intrg][3Sg]:%^a%^   #; [Intr][Intrg][1Sg]:%^zi%^nga   #; [Intr][Intrg][2Sg]:%^zin    #;
-[Intr][Intrg][3Pl]:%^a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
-[Intr][Intrg][3Du]:%^a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
-!-----------------------------|---------------------------------|--------------------------------|
+!--------------------------------|---------------------------------|--------------------------------|
+[Intr][Intrg][3Sg]:%^%{G%}a%^   #; [Intr][Intrg][1Sg]:%^zi%^nga   #; [Intr][Intrg][2Sg]:%^zin    #;
+[Intr][Intrg][3Pl]:%^%{G%}a%^t  #; [Intr][Intrg][1Pl]:%^ste%^a    #; [Intr][Intrg][2Pl]:%^tsi   #;
+[Intr][Intrg][3Du]:%^%{G%}a%^k  #; [Intr][Intrg][1Du]:%^ste%^ung  #; [Intr][Intrg][2Du]:%^stek  #;
+!--------------------------------|---------------------------------|--------------------------------|
 
 !=============================
 !  person/number markers for
 !     transitive interrogative
 !=============================
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][3Sg][3Sg]:%^a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^a%^kek     #;
-[Trns][Intrg][3Pl][3Sg]:%^a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^a%^tkek    #;
-[Trns][Intrg][3Du][3Sg]:%^a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^a%^gnekek  #;
+[Trns][Intrg][3Sg][3Sg]:%^%{G%}a%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^a%^ki     #; [Trns][Intrg][3Sg][3Du]:%^a%^kek     #;
+[Trns][Intrg][3Pl][3Sg]:%^%{G%}a%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^a%^tki    #; [Trns][Intrg][3Pl][3Du]:%^a%^tkek    #;
+[Trns][Intrg][3Du][3Sg]:%^%{G%}a%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^a%^gneki  #; [Trns][Intrg][3Du][3Du]:%^a%^gnekek  #;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 [Trns][Intrg][1Sg][3Sg]:%^zi%^kun     #; [Trns][Intrg][1Sg][3Pl]:%^zi%^ngi     #; [Trns][Intrg][1Sg][3Du]:%^zi%^gngek    #;
 [Trns][Intrg][1Pl][3Sg]:%^ste%^ggu   #; [Trns][Intrg][1Pl][3Pl]:%^ste%^ki    #; [Trns][Intrg][1Pl][3Du]:%^ste%^kek    #;

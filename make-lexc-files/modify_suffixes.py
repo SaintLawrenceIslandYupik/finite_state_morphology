@@ -20,7 +20,9 @@ symbol_conversion = {"~f": "%{.f.%}", # Jacobson notation <-> foma v.2 notation
                     "(e)": "%{E%}",
                     "(g)": "%{G%}",
                     ":": ":%^",
-                    "EncliticOrEnd": "#"}
+                    "EncliticOrEnd": "#",
+                    "-":"",
+                    "+":""}
 
 rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: when suffixing to noun roots that end in -a, -i, -u, -aa, -ii-, -uu
                   {"%{E%}": "e", "(ng)": ""},  # NounInflII: when suffixing to noun roots that end in -g, -w, -ghw
@@ -34,8 +36,8 @@ rules_for_noun = [{"%{E%}": "", "(ng)": "ng"}, # NounInflI: when suffixing to no
                   {"%{E%}": "", "(ng)": "ng", "%{.f.%}": "%{.f.%}"} # NounInflX: when suffixing to noun roots that end in final -e that can be dropped but not hopped
                   ]
 
-rules_for_verb = [{"(g/t)": "%{G%}", "(t)":"", "(te)":""}, # VerbSuffixI: when suffixing to verb roots that end in -a, -i, -u
-                  {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}"}, # VerbSuffixII: when suffixing to verb roots that have final -e
+rules_for_verb = [{"(g/t)": "%{G%}", "%{G%}":"%{G%}", "(t)":"", "(te)":""}, # VerbSuffixI: when suffixing to verb roots that end in -a, -i, -u
+                  {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}", "%{G%}":"%{G%}"}, # VerbSuffixII: when suffixing to verb roots that have final -e
                   {"(g/t)": "t", "(t)":"t", "(te)":"te", "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIII: when suffixing to verb roots that end in -g, -w, -ghw
                   {"(g/t)": "t", "(t)":"t", "(te)":"te",  "%{E%}":"e", "%{.m.%}": "%{.m.%}"}, # VerbSuffixIV: when suffixing to verb roots that end in -agh, -igh, -ugh or -egh where e cannot be dropped
                   {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"}, # VerbInflV: when suffixing to verbs that end in -te

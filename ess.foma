@@ -71,8 +71,9 @@ define DropFinalC g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]   
                     k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -ghw 
                     k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -gh
                     k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]   .o. ! assimilate k-  onset to dropped -w
-                    C -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop root-final consonant
+  [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop root-final consonant
   [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop -g in root-final -gh, -gh in -ghw
+           MultiCharC -> 0     ||                               _ "^" %{%.m%.%} .o. ! drop root-final consonant
             %{%.m%.%} -> 0                                              ;
 
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! Drop a weak gh from the base
@@ -118,7 +119,7 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define ResolveG %{G%} -> w || u "^" _ [ a | i ] ("^") C .o. ! velar rounding [Jacobson (2001) p.30]. 
+define ResolveG %{G%} -> w || u "^" _ [ a | i ] ("^") [ C | .#. ] .o. ! velar rounding [Jacobson (2001) p.30]. 
 ! Added the condition about C in order not to do this rounding when DropMiddleVowel can occur [Jacobson (2001) p.44]. 
                 %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
                 %{G%} -> 0                                    ;
@@ -134,8 +135,13 @@ define DevoiceApicalTE y   -> s,
                        g h -> g h h || _ %{t%} e "^" %{%.at%.%} n                     .o. ! [Jacobson (2001) p.31]
                        n   -> 0     || [ g g | l l | g h h ] %{t%} e "^" %{%.at%.%} _ ;   ! undouble the -n according to undoubling rules
 
-define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
-           %{%.at%.%} -> 0                     ; 
+define DoNotDropTE  e -> 0 , e -> e ||   V %{t%} _ "^" %{%.at%.%} k a g h .o. ! specific to -@~sf–(g)kagh[V.N] as in tuqute-@~sf–(g)kagh[V.N][Abs][Sg] 
+         %{t%} -> %{t%}, %{t%} -> s ||         V _ "^" %{%.at%.%} k a g h .o. ! tuqutkaq, tuquskaq [Jacobson (2001) p.58]
+                    %{%.at%.%} -> g ||   V %{t%} e "^" _ k a g h          .o. ! tuqutegkaq
+                    %{%.at%.%} -> 0 ||   C %{t%} e "^" _ k a g h          ;   ! e.g. ingaghte-@~sf–(g)kagh[V.N][Abs][Sg]  ingaghtekaq
+
+define DropTE %{t%} e -> 0 ||         _ "^" %{%.at%.%}             .o.
+           %{%.at%.%} -> 0                                          ; 
 
 
 !----------------
@@ -145,7 +151,8 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 define MatchVoicing y -> s ||            _ [ k | q ] .o.
                     y -> s ||  [ k | q ] _           .o.
                     k -> q ||        g h _           .o.
-                    z -> s || Stop ("^") _           ; ! [Jacobson (2001) p.51] e.g. qiyaaqsin
+                    z -> s || Stop ("^") _           .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
+                    v -> f || _ ("^") Stop           ;   ! [Jacobson (2001) p.58] e.g. kuufkaq
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,   ! Jacobson 2.2.1 Words and Bases
@@ -178,6 +185,7 @@ define Rules [
     SemiFinalE           .o.
     LongRootFinalE       .o.
     DevoiceApicalTE      .o.
+    DoNotDropTE          .o.
     DropTE               .o.
     DropFinalC           .o.
     DropWeakC            .o.
