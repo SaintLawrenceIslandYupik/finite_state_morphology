@@ -77,7 +77,7 @@ def print_inflection_classes(inflType, idx2InflClass):
             # class of roots that end in -te
             #   if root ends in -te, add %{t%} --> riigte:riig%{t%}e
             elif (inflType == "Noun" and i == 6 or
-                  inflType == "Verb" and i == 6):
+                  inflType == "Verb" and i == 5):
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - (len(root) * 2 + 5) + 2
                     print(root + ":" + root[:-2] + "%{t%}e" + " " * padding + \
@@ -156,7 +156,7 @@ def get_max_length(inflType, classIdx, inflClass):
     #        riig%{t%}e
     elif (inflType == "Noun" and classIdx == 3 or
           inflType == "Noun" and classIdx == 6 or
-          inflType == "Verb" and classIdx == 6):
+          inflType == "Verb" and classIdx == 5):
         maxLength = maxLength * 2 + 5 # adding :, %, {, %, }
 
     return maxLength
@@ -185,7 +185,7 @@ def print_nonroots(nonRootType, nonRootList):
         definition = pair[1]
 
         padding = maxLength - len(nonRoot) + 2
-        print(nonRoot + " " * padding + "; ! " + definition)
+        print(nonRoot + " " * padding + "#; ! " + definition)
 
     print()
 
@@ -233,7 +233,7 @@ def main():
     # initialize list of question words
     questionWords = []
 
-    for filename in glob.glob(args.dirname + "/*.csv"):
+    for filename in glob.glob(args.dirname + "/*"):
         with open(filename, 'r') as csvfile:
             reader = csv.reader(csvfile, delimiter = ',')
 
