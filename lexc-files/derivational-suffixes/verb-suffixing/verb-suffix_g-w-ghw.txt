@@ -4,27 +4,27 @@ LEXICON VerbSuffixIII
 !  when suffixing to verb roots that end in -g, -w, -ghw
 !========================================================
 
-                             VerbInflIII;
+                                  VerbInflIII;
+
+-ghhaleg[V.V]:%^%{.m.%}ghhaleg    #;             ! how V! (exclamation)
 
 -@~sf–(g)kau[V.V]:%^%{.m.%}kau    VerbSuffixI;   ! to have V-ed or been V-ed 
--@~fni[V.V]:%^ni                   VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
+-@~fni[V.V]:%^ni                  VerbSuffixI;   ! to say that one V-s (compound-verbal postbase)
 
--~(g)aqe[V.V]:%^aqe          VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
--@lleqe[V.V]:%^lleqe         VerbSuffixII;  ! to V in the future; will V
--@~fnaqe[V.V]:%^naqe         VerbSuffixII;  ! to be going to V, to be about to V
-+(te)ste[V.V]:%^teste             VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
+-~(g)aqe[V.V]:%^aqe               VerbSuffixII;  ! to be V-ing; to regularly or repeatedly V
+-@lleqe[V.V]:%^lleqe              VerbSuffixII;  ! to V in the future; will V
+-@~fnaqe[V.V]:%^naqe              VerbSuffixII;  ! to be going to V, to be about to V
+-~sf%:(e)sqe[V.V]:%^esqe          VerbSuffixII;  ! to ask or tell one to V (compoundverbal postbase)
+-+(te)ste[V.V]:%^teste            VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
--@~fyug[V.V]:%^yug           VerbSuffixIII; ! to want to V
+-+(te)sug:%^tesug                 VerbSuffixIII; ! to want one to V (compoundverbal postbase)
+-@~fyug[V.V]:%^yug                VerbSuffixIII; ! to want to V
+
+-@–nghite[V.V]:%^%{.m.%}nghite    VerbSuffixV;   ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
+-~:(ng)igate[V.V]:%^ngigate       VerbSuffixV;   ! to not V (present-time implication for action verbs)
+-+(pete)fte[V.V]:%^petefte        VerbSuffixV;   ! to evidently V or have V-ed
+-+(pete)fte[V.V]:%^pete           VerbSuffixV;   ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 
 -@~sf–(g)kagh[V.N]:%^%{.m.%}kagh  NounSuffixIII; ! one that has V-ed or been V-ed
 
--ghhaleg[V.V]:%^%{.m.%}ghhaleg    #; ! how V! (exclamation)
-
--nghite[V.V]:%^%{.m.%}nghite  VerbSuffixV;  ! to not V (past-time implication for action verbs and present-time implication for descriptive verbs)
-
--igate[V.V]:%^ngigate  VerbSuffixV;  ! to not V (present-time implication for action verbs)
-
--fte[V.V]:%^petefte        VerbSuffixV;  ! to evidently V or have V-ed
-
--fte[V.V]:%^pete       VerbSuffixV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 

@@ -58,30 +58,4 @@ Multichar_Symbols
 [Opt]   ! optative mood
 [NEG]   ! negative (optative)
 
-!===========
-!
-LEXICON Root
-!
-!===========
-NounRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
-NounRootII;    ! ends in -g, -w, -ghw
-NounRootIII;   ! ends in weak -gh
-NounRootIV;    ! ends in marked strong -gh
-NounRootV;     ! ends in strong -gh
-NounRootVI;    ! ends in -te
-NounRootVII;   ! has semi-final -e that can drop and hop
-NounRootVIII;  ! has semi-final -e that can drop but not hop
-NounRootIX;    ! has final -e that can drop and hop
-NounRootX;     ! has final -e that can drop but not hop 
 
-VerbRootI;     ! ends in -a, -i, -u
-VerbRootII;    ! has final -e
-VerbRootIII;   ! ends in -g, -w, -ghw
-VerbRootIV;    ! ends in -agh, -igh, -ugh or -egh where e cannot be drop
-VerbRootV;     ! ends in -te
-VerbRootVI;    ! has semi-final -e that can drop and hop
-VerbRootVII;   ! has semi-final -e that can drop but not hop
-
-Particle;
-
-Interrogative;
