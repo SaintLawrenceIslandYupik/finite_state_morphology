@@ -4,10 +4,10 @@ ess.lexc:
 	cat lexc-files/header.txt lexc-files/particles.txt lexc-files/interrogatives.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt > ess.lexc
 	cat exceptions/header-exceptions.txt exceptions/exceptions.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt > exceptions.lexc
 
-ess.fomabin: ess.foma *.lexc
+ess.fomabin: ess.foma ess.lexc exceptions.lexc
 	foma -l ess.foma -e "push Grammar" -e "save stack ess.fomabin" -s
 
-interactive: ess.foma *.lexc
+interactive: ess.foma ess.lexc exceptions.lexc
 	foma -l ess.foma -e "push Grammar"
 
 

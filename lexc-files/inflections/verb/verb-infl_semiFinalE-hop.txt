@@ -64,54 +64,54 @@ LEXICON VerbInflVI
 ! OPTATIVE MOOD 
 !===============
 
-!---------------------------|------------------------------------|-------------------------------|
-[Intr][Opt][3Sg]:@₁~fli%^  #; [Intr][Opt][1Sg]:@₁~fla%^nga      #; [Intr][Opt][2Sg]:FIX         #;
-[Intr][Opt][3Pl]:@₁~fli%^t #; [Intr][Opt][1Pl]:~sf%:(e)lte%^a   #; [Intr][Opt][2Pl]:@₁(i₂)%^tek #;
-[Intr][Opt][3Du]:@₁~fli%^k #; [Intr][Opt][1Du]:~sf%:(e)lte%^ung #; [Intr][Opt][2Du]:@₁(i₂)%^tek #;
-!---------------------------|------------------------------------|-------------------------------|
+!-------------------------|---------------------------------------|-------------------------------|
+[Intr][Opt][3Sg]:%^li%^  #; [Intr][Opt][1Sg]:%^la%^nga           #; [Intr][Opt][2Sg]:%^%{.sf.%}i #;
+[Intr][Opt][3Pl]:%^li%^t #; [Intr][Opt][1Pl]:%^%{.sf.%}elte%^a   #; [Intr][Opt][2Pl]:%^%^tek     #;
+[Intr][Opt][3Du]:%^li%^k #; [Intr][Opt][1Du]:%^%{.sf.%}elte%^ung #; [Intr][Opt][2Du]:%^%^tek     #;
+!-------------------------|---------------------------------------|-------------------------------|
 
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
-[Trns][Opt][3Sg][3Sg]:@₁~fli%^gu         #; [Trns][Opt][3Sg][3Pl]:@₁~fli%^ki         #; [Trns][Opt][3Sg][3Du]:@₁~fli%^kek         #;
-[Trns][Opt][3Pl][3Sg]:@₁~fli%^tgu        #; [Trns][Opt][3Pl][3Pl]:@₁~fli%^tki        #; [Trns][Opt][3Pl][3Du]:@₁~fli%^tkek        #;
-[Trns][Opt][3Du][3Sg]:@₁~fli%^gnegu      #; [Trns][Opt][3Du][3Pl]:@₁~fli%^gneki      #; [Trns][Opt][3Du][3Du]:@₁~fli%^gnekek      #;
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
-[Trns][Opt][1Sg][3Sg]:@₁~fla%^kun        #; [Trns][Opt][1Sg][3Pl]:@₁~fla%^ngi        #; [Trns][Opt][1Sg][3Du]:@₁~fla%^ngak        #;
-[Trns][Opt][1Pl][3Sg]:~sf%:(e)lte%^ggu   #; [Trns][Opt][1Pl][3Pl]:~sf%:(e)lte%^ki    #; [Trns][Opt][1Pl][3Du]:~sf%:(e)lte%^kek    #;
-[Trns][Opt][1Du][3Sg]:~sf%:(e)lte%^gnegu #; [Trns][Opt][1Du][3Pl]:~sf%:(e)lte%^gneki #; [Trns][Opt][1Du][3Du]:~sf%:(e)lte%^gnekek #;
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
-[Trns][Opt][2Sg][3Sg]:FIX                #; [Trns][Opt][2Sg][3Pl]:~f(i₁)%^ki         #; [Trns][Opt][2Sg][3Du]:~f(i₁)%^kek         #;
-[Trns][Opt][2Pl][3Sg]:@₁(i₁)te%^ggu      #; [Trns][Opt][2Pl][3Pl]:@₁(i₁)te%^ki       #; [Trns][Opt][2Pl][3Du]:@₁(i₁)te%^kek       #;
-[Trns][Opt][2Du][3Sg]:@₁(i₁)te%^gnegu    #; [Trns][Opt][2Du][3Pl]:@₁(i₁)te%^gneki    #; [Trns][Opt][2Du][3Du]:@₁(i₁)te%^gnekek    #;
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
-[Trns][Opt][3Sg][1Sg]:@₁~fli%^nga        #; [Trns][Opt][3Sg][1Pl]:@₁~fli%^kut        #; [Trns][Opt][3Sg][1Du]:@₁~fli%^kung        #;
-[Trns][Opt][3Pl][1Sg]:@₁~fli%^tnga       #; [Trns][Opt][3Pl][1Pl]:@₁~fli%^nkut       #; [Trns][Opt][3Pl][1Du]:@₁~fli%^nkung       #;
-[Trns][Opt][3Du][1Sg]:@₁~fli%^gnenga     #; [Trns][Opt][3Du][1Pl]:@₁~fli%^nkut       #; [Trns][Opt][3Du][1Du]:@₁~fli%^nkung       #;
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
-[Trns][Opt][2Sg][1Sg]:~f(i₁)%^nga        #; [Trns][Opt][2Sg][1Pl]:~f(i₁)%^kut        #; [Trns][Opt][2Sg][1Du]:~f(i₁)%^kung        #;
-[Trns][Opt][2Pl][1Sg]:@₁(i₁)te%^ngnga    #; [Trns][Opt][2Pl][1Pl]:@₁(i₁)te%^kut      #; [Trns][Opt][2Pl][1Du]:@₁(i₁)te%^kung      #;
-[Trns][Opt][2Du][1Sg]:@₁(i₁)te%^gnenga   #; [Trns][Opt][2Du][1Pl]:@₁(i₁)te%^gnekut   #; [Trns][Opt][2Du][1Du]:@₁(i₁)te%^gnekung   #;
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
-[Trns][Opt][3Sg][2Sg]:~fla%^ten          #; [Trns][Opt][3Sg][2Pl]:~fli%^si           #; [Trns][Opt][3Sg][2Du]:~fli%^stek          #;
-[Trns][Opt][3Pl][2Sg]:~fla%^ten          #; [Trns][Opt][3Pl][2Pl]:~fli%^si           #; [Trns][Opt][3Pl][2Du]:~fli%^stek          #;
-[Trns][Opt][3Du][2Sg]:~fla%^ten          #; [Trns][Opt][3Du][2Pl]:~fli%^si           #; [Trns][Opt][3Du][2Du]:~fli%^stek          #;
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
-[Trns][Opt][1Sg][2Sg]:~fla%^ken          #; [Trns][Opt][1Sg][2Pl]:~fla%^msi          #; [Trns][Opt][1Sg][2Du]:~fla%^mtek          #;
-[Trns][Opt][1Pl][2Sg]:~fla%^ken          #; [Trns][Opt][1Pl][2Pl]:~fla%^msi          #; [Trns][Opt][1Pl][2Du]:~fla%^mtek          #;
-[Trns][Opt][1Du][2Sg]:~fla%^ken          #; [Trns][Opt][1Du][2Pl]:~fla%^msi          #; [Trns][Opt][1Du][2Du]:~fla%^mtek          #;
-!-----------------------------------------|-------------------------------------------|--------------------------------------------|
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Opt][3Sg][3Sg]:%^li%^gu              #; [Trns][Opt][3Sg][3Pl]:%^li%^ki              #; [Trns][Opt][3Sg][3Du]:%^li%^kek              #;
+[Trns][Opt][3Pl][3Sg]:%^li%^tgu             #; [Trns][Opt][3Pl][3Pl]:%^li%^tki             #; [Trns][Opt][3Pl][3Du]:%^li%^tkek             #;
+[Trns][Opt][3Du][3Sg]:%^li%^gnegu           #; [Trns][Opt][3Du][3Pl]:%^li%^gneki           #; [Trns][Opt][3Du][3Du]:%^li%^gnekek           #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Opt][1Sg][3Sg]:%^la%^kun             #; [Trns][Opt][1Sg][3Pl]:%^la%^ngi             #; [Trns][Opt][1Sg][3Du]:%^la%^ngak             #;
+[Trns][Opt][1Pl][3Sg]:%^%{.sf.%}elte%^ggu   #; [Trns][Opt][1Pl][3Pl]:%^%{.sf.%}elte%^ki    #; [Trns][Opt][1Pl][3Du]:%^%{.sf.%}elte%^kek    #;
+[Trns][Opt][1Du][3Sg]:%^%{.sf.%}elte%^gnegu #; [Trns][Opt][1Du][3Pl]:%^%{.sf.%}elte%^gneki #; [Trns][Opt][1Du][3Du]:%^%{.sf.%}elte%^gnekek #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Opt][2Sg][3Sg]:%^%{.sf.%}%{.m.%}ggu  #; [Trns][Opt][2Sg][3Pl]:%^%^ki                #; [Trns][Opt][2Sg][3Du]:%^%^kek                #;
+[Trns][Opt][2Pl][3Sg]:%^te%^ggu             #; [Trns][Opt][2Pl][3Pl]:%^te%^ki              #; [Trns][Opt][2Pl][3Du]:%^te%^kek              #;
+[Trns][Opt][2Du][3Sg]:%^te%^gnegu           #; [Trns][Opt][2Du][3Pl]:%^te%^gneki           #; [Trns][Opt][2Du][3Du]:%^te%^gnekek           #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Opt][3Sg][1Sg]:%^li%^nga             #; [Trns][Opt][3Sg][1Pl]:%^li%^kut             #; [Trns][Opt][3Sg][1Du]:%^li%^kung             #;
+[Trns][Opt][3Pl][1Sg]:%^li%^tnga            #; [Trns][Opt][3Pl][1Pl]:%^li%^nkut            #; [Trns][Opt][3Pl][1Du]:%^li%^nkung            #;
+[Trns][Opt][3Du][1Sg]:%^li%^gnenga          #; [Trns][Opt][3Du][1Pl]:%^li%^nkut            #; [Trns][Opt][3Du][1Du]:%^li%^nkung            #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Opt][2Sg][1Sg]:%^%^nga               #; [Trns][Opt][2Sg][1Pl]:%^%^kut               #; [Trns][Opt][2Sg][1Du]:%^%^kung               #;
+[Trns][Opt][2Pl][1Sg]:%^te%^ngnga           #; [Trns][Opt][2Pl][1Pl]:%^te%^kut             #; [Trns][Opt][2Pl][1Du]:%^te%^kung             #;
+[Trns][Opt][2Du][1Sg]:%^te%^gnenga          #; [Trns][Opt][2Du][1Pl]:%^te%^gnekut          #; [Trns][Opt][2Du][1Du]:%^te%^gnekung          #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Opt][3Sg][2Sg]:%^la%^ten             #; [Trns][Opt][3Sg][2Pl]:%^li%^si              #; [Trns][Opt][3Sg][2Du]:%^li%^stek             #;
+[Trns][Opt][3Pl][2Sg]:%^la%^ten             #; [Trns][Opt][3Pl][2Pl]:%^li%^si              #; [Trns][Opt][3Pl][2Du]:%^li%^stek             #;
+[Trns][Opt][3Du][2Sg]:%^la%^ten             #; [Trns][Opt][3Du][2Pl]:%^li%^si              #; [Trns][Opt][3Du][2Du]:%^li%^stek             #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Opt][1Sg][2Sg]:%^la%^ken             #; [Trns][Opt][1Sg][2Pl]:%^la%^msi             #; [Trns][Opt][1Sg][2Du]:%^la%^mtek             #;
+[Trns][Opt][1Pl][2Sg]:%^la%^ken             #; [Trns][Opt][1Pl][2Pl]:%^la%^msi             #; [Trns][Opt][1Pl][2Du]:%^la%^mtek             #;
+[Trns][Opt][1Du][2Sg]:%^la%^ken             #; [Trns][Opt][1Du][2Pl]:%^la%^msi             #; [Trns][Opt][1Du][2Du]:%^la%^mtek             #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
 
-!-----------------------------------|
-[Intr][Opt][NEG][2Sg]:–fqaa%^vek   #;
-[Intr][Opt][NEG][2Pl]:–fqaa%^fsi   #;
-[Intr][Opt][NEG][2Du]:–fqaa%^ftek  #;
-!-----------------------------------|
+!------------------------------------------|
+[Intr][Opt][NEG][2Sg]:%^%{.m.%}fqaa%^vek  #;
+[Intr][Opt][NEG][2Pl]:%^%{.m.%}fqaa%^fsi  #;
+[Intr][Opt][NEG][2Du]:%^%{.m.%}fqaa%^ftek #;
+!------------------------------------------|
 
-!-------------------------------------|----------------------------------------|-------------------------------------------|
-[Trns][Opt][NEG][2Sg][3Sg]:–fqaa%^n  #; [Trns][Opt][NEG][2Sg][3Pl]:–fqiita    #; [Trns][Opt][NEG][2Sg][3Du]:–fqaa%^gkenka #;
-[Trns][Opt][NEG][2Pl][3Sg]:–fqaa%^n  #; [Trns][Opt][NEG][2Pl][3Pl]:–fqiita    #; [Trns][Opt][NEG][2Pl][3Du]:–fqaa%^gkenka #;
-[Trns][Opt][NEG][2Du][3Sg]:–fqaa%^n  #; [Trns][Opt][NEG][2Du][3Pl]:–fqiita    #; [Trns][Opt][NEG][2Du][3Du]:–fqaa%^gkenka #;
-!-------------------------------------|----------------------------------------|-------------------------------------------|
-[Trns][Opt][NEG][2Sg][1Sg]:–fqaa%^ma #; [Trns][Opt][NEG][2Sg][1Pl]:–fqaa%^mta #; [Trns][Opt][NEG][2Sg][1Du]:–fqaa%^mtung  #;
-[Trns][Opt][NEG][2Pl][1Sg]:–fqaa%^ma #; [Trns][Opt][NEG][2Pl][1Pl]:–fqaa%^mta #; [Trns][Opt][NEG][2Pl][1Du]:–fqaa%^mtung  #;
-[Trns][Opt][NEG][2Du][1Sg]:–fqaa%^ma #; [Trns][Opt][NEG][2Du][1Pl]:–fqaa%^mta #; [Trns][Opt][NEG][2Du][1Du]:–fqaa%^mtung  #;
-!-------------------------------------|----------------------------------------|-------------------------------------------|
+!---------------------------------------------|------------------------------------------------|---------------------------------------------------|
+[Trns][Opt][NEG][2Sg][3Sg]:%^%{.m.%}fqaa%^n  #; [Trns][Opt][NEG][2Sg][3Pl]:%^%{.m.%}fqiita    #; [Trns][Opt][NEG][2Sg][3Du]:%^%{.m.%}fqaa%^gkenka #;
+[Trns][Opt][NEG][2Pl][3Sg]:%^%{.m.%}fqaa%^n  #; [Trns][Opt][NEG][2Pl][3Pl]:%^%{.m.%}fqiita    #; [Trns][Opt][NEG][2Pl][3Du]:%^%{.m.%}fqaa%^gkenka #;
+[Trns][Opt][NEG][2Du][3Sg]:%^%{.m.%}fqaa%^n  #; [Trns][Opt][NEG][2Du][3Pl]:%^%{.m.%}fqiita    #; [Trns][Opt][NEG][2Du][3Du]:%^%{.m.%}fqaa%^gkenka #;
+!---------------------------------------------|------------------------------------------------|---------------------------------------------------|
+[Trns][Opt][NEG][2Sg][1Sg]:%^%{.m.%}fqaa%^ma #; [Trns][Opt][NEG][2Sg][1Pl]:%^%{.m.%}fqaa%^mta #; [Trns][Opt][NEG][2Sg][1Du]:%^%{.m.%}fqaa%^mtung  #;
+[Trns][Opt][NEG][2Pl][1Sg]:%^%{.m.%}fqaa%^ma #; [Trns][Opt][NEG][2Pl][1Pl]:%^%{.m.%}fqaa%^mta #; [Trns][Opt][NEG][2Pl][1Du]:%^%{.m.%}fqaa%^mtung  #;
+[Trns][Opt][NEG][2Du][1Sg]:%^%{.m.%}fqaa%^ma #; [Trns][Opt][NEG][2Du][1Pl]:%^%{.m.%}fqaa%^mta #; [Trns][Opt][NEG][2Du][1Du]:%^%{.m.%}fqaa%^mtung  #;
+!---------------------------------------------|------------------------------------------------|---------------------------------------------------|

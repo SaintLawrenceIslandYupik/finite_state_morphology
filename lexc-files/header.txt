@@ -14,13 +14,15 @@ Multichar_Symbols
 !-----------
 %{E%}  ! for (e)
 %{G%}  ! for (g) 
+%{I%}  ! for (e) in ~sf:(e)sqe [Jacobson (2001) p.64]
+%{GI%} ! for Intr.Opt-2Sg (-a,-i, -u, -aa, -ii, -uu) [Jacobson (2001) p.65]
+%{AI%} ! for Intr.Opt-2Sg (-agh, -igh, -ugh, -aagh, -iigh, -uugh) [Jacobson (2001) p.65]
 
 !---------------------------
 ! morphophonological symbols 
 !---------------------------
 %{.w.%}   ! drop weak -gh
 %{.c.%}   ! drop uvular (-gh) between single vowels
-%{.cV.%}  ! drop uvular (-gh) between single vowels for VERBS
 %{.f.%}   ! drop and hop final -e
 %{.fL.%}  ! drop and hop final -e if root exceeds two syllables
 %{.sf.%}  ! drop and hop semi-final -e
