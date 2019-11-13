@@ -1,38 +1,36 @@
 !======================================================
 LEXICON NounSuffixVIII
-!  noun-elaborating [NN] and verbalizing [NV] suffixes
-!  when suffixing to noun roots that have semi-final -e
+!  nounelaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that have semifinal -e
 !  that can be dropped but not hopped
 !======================================================
 
-                                     NounInflVIII;
+                                    NounInflVIII;
 
--–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
--–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
--–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
+–ghhaleg[N.V]:%^%{.m.%}ghhaleg      #;              ! how V! (exclamation)
 
--kagh[N.N]:%^kagh                    NounSuffixIII;  ! raw material for N
--–qragh[N.N]:%^%{.m.%}qragh          NounSuffixIII;  ! small N; thing like N
++mii[N.N]:%^mii                     NounSuffixI;    ! resident of N
 
--–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+–ghllag[N.N]:%^%{.m.%}ghllag        NounSuffixII;   ! big N; lots of N
+–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounSuffixII;   ! big N, huge N
+–krag[N.N]:%^%{.m.%}krag            NounSuffixII;   ! fancy piece of N
 
--~%:(ng)u[N.V]:%^%{.sf.%}u           VerbSuffixI;    ! to be N
++kagh[N.N]:%^ka%{g%}h               NounSuffixIII;  ! raw material for N
+–qragh[N.N]:%^%{.m.%}qra%{g%}h      NounSuffixIII;  ! small N; thing like N
+–squq[N.N]:%^%{.m.%}squ%{g%}h       NounSuffixIII;  ! little N, small N
 
--ghhaleg[N.V]:%^%{.m.%}ghhaleg                   #; ! how V! (exclamation)
+–squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;   ! little N, small N
 
--mii[N.N]:%^mii                     NounSuffixI;    ! resident of N
+–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
 
--ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
+–lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
+~%:(ng)u[N.V]:%^%{.sf.%}u           VerbSuffixI;    ! to be N
 
--squq[N.N]:%^%{.m.%}squ%{g%}h       NounSuffixIII;  ! little N, small N
--squghhaq[N.N]:%^%{.m.%}squghhagh   NounSuffixIV;  ! little N, small N
+–liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
+–ngllagh[N.V]:%^%{.m.%}ngllagh      VerbSuffixIV;   ! to make N
++niigh[N.V]:%^niigh                 VerbSuffixIV;   ! to hunt for N, to search for N, to ask for N, to work with N
++tugh[N.V]:%^tugh                   VerbSuffixIV;   ! to eat N, to use N
 
--lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
++te[N.V]:%^te                       VerbSuffixV;    ! to go to N, to catch N
 
--liigh[N.V]:%^%{.m.%}liigh          VerbSuffixIV;   ! to prepare N, to cook N
 
--niigh[N.V]:%^niigh          VerbSuffixIV;   ! to hunt for N, to search for n, to ask for N, to work with N
-
--te[N.V]:%^te                VerbSuffixV;   ! to go to N, to catch N
-
--tugh[N.V]:%^tugh            VerbSuffixIV;   ! to eat N, to use N
