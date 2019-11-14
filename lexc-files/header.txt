@@ -49,16 +49,17 @@ Multichar_Symbols
 !-----------------------------
 ! morphological tags for verbs
 !-----------------------------
-[V.V]    ! verb-elaborating derivational suffix
-[V.N]    ! nominalizing derivational suffix
+[V.V]   ! verb-elaborating derivational suffix
+[V.N]   ! nominalizing derivational suffix
 
 [Intr]  ! intransitive (valency)
 [Trns]  ! transitive (valency)
 
 [Ind]   ! indicative mood
-[Intrg] ! interrogative mood
+[Int]   ! interrogative mood
 [Opt]   ! optative mood
 [NEG]   ! negative (optative)
+
 
 !===========
 !

@@ -1,12 +1,14 @@
 !===========
 LEXICON Root
 !===========
-NounExceptions;
+  NounExceptions;
+  VerbExceptions;
 
 
 !======================
 LEXICON  NounExceptions
 !======================
+
 alangqugh[Abs][Sg][3SgPoss]:alangqghwa  #; ! strange velar/uvular rounding rules
 naasqugh[Abs][Sg][3SgPoss]:naasqwa      #; ! for anatomical noun roots that end
 uyaqugh[Abs][Sg][3SgPoss]:uyaqghwa      #; ! in -quq [Jacobson p.37]
@@ -14,6 +16,12 @@ yug[Abs][Sg]:yuuk                       #;
 
 Sivuqagh+mii[N.N]:Sivuqaghhmii          NounSuffixI;
 
-qafsina~%:(ng)u[N.V][Intr][Intrg][2Pl]:qafsin'gutsi #;
+
+!======================
+LEXICON  VerbExceptions
+!======================
+
+qafsina~%:(ng)u[N.V][Intr][Int][2Pl]:qafsin'gutsi #;
+sa~%:(ng)u[N.V][Intr][Int][3Sg]:sangaawa          #;
 
 

@@ -4,65 +4,66 @@ LEXICON VerbInflVII
 !      that can be dropped but not hopped
 !========================================
 
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+! indicative & participial
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 [Intr][Ind]:%^tugh            IntrIndPtcp;
 [Trns][Ind]:%^%{.sf.%}%{G%}a  TrnsIndPtcp;
 
-!=============================
-!  person/number markers for
-!     intransitive interrogative
-!=============================
-!-----------------------------|---------------------------------|--------------------------------|
-[Intr][Intrg][3Sg]:%^ta%^   #; [Intr][Intrg][1Sg]:%^tzi%^nga   #; [Intr][Intrg][2Sg]:%^tzin    #;
-[Intr][Intrg][3Pl]:%^ta%^t  #; [Intr][Intrg][1Pl]:%^%{.sf.%}este%^a    #; [Intr][Intrg][2Pl]:%^%{.sf.%}etsi   #;
-[Intr][Intrg][3Du]:%^ta%^k  #; [Intr][Intrg][1Du]:%^%{.sf.%}este%^ung  #; [Intr][Intrg][2Du]:%^%{.sf.%}estek  #;
-!-----------------------------|---------------------------------|--------------------------------|
 
-!=============================
-!  person/number markers for
-!     transitive interrogative
-!=============================
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][3Sg][3Sg]:%^ta%^gu     #; [Trns][Intrg][3Sg][3Pl]:%^ta%^ki     #; [Trns][Intrg][3Sg][3Du]:%^ta%^kek     #;
-[Trns][Intrg][3Pl][3Sg]:%^ta%^tgu    #; [Trns][Intrg][3Pl][3Pl]:%^ta%^tki    #; [Trns][Intrg][3Pl][3Du]:%^ta%^tkek    #;
-[Trns][Intrg][3Du][3Sg]:%^ta%^gnegu  #; [Trns][Intrg][3Du][3Pl]:%^ta%^gneki  #; [Trns][Intrg][3Du][3Du]:%^ta%^gnekek  #;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][1Sg][3Sg]:%^tzi%^kun     #; [Trns][Intrg][1Sg][3Pl]:%^tzi%^ngi     #; [Trns][Intrg][1Sg][3Du]:%^tzi%^gngek    #;
-[Trns][Intrg][1Pl][3Sg]:%^%{.sf.%}este%^ggu   #; [Trns][Intrg][1Pl][3Pl]:%^%{.sf.%}este%^ki    #; [Trns][Intrg][1Pl][3Du]:%^%{.sf.%}este%^kek    #;
-[Trns][Intrg][1Du][3Sg]:%^%{.sf.%}este%^gnegu #; [Trns][Intrg][1Du][3Pl]:%^%{.sf.%}este%^gneki #; [Trns][Intrg][1Du][3Du]:%^%{.sf.%}este%^gnekek #;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][2Sg][3Sg]:%^tzi%^gu      #; [Trns][Intrg][2Sg][3Pl]:%^tzi%^ki      #; [Trns][Intrg][2Sg][3Du]:%^tzi%^kek      #;
-[Trns][Intrg][2Pl][3Sg]:%^%{.sf.%}e%^ggu      #; [Trns][Intrg][2Pl][3Pl]:%^%{.sf.%}e%^ki       #; [Trns][Intrg][2Pl][3Du]:%^%{.sf.%}e%^kek      #; ! typo in the original lexc file
-[Trns][Intrg][2Du][3Sg]:%^%{.sf.%}e%^gnegu    #; [Trns][Intrg][2Du][3Pl]:%^%{.sf.%}e%^gneki    #; [Trns][Intrg][2Du][3Du]:%^%{.sf.%}e%^gnekek   #; ! typo in the original lexc file
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][3Sg][1Sg]:%^ta%^nga    #; [Trns][Intrg][3Sg][1Pl]:%^ti%^nkut   #; [Trns][Intrg][3Sg][1Du]:%^ti%^nkung   #;
-[Trns][Intrg][3Pl][1Sg]:%^ta%^tnga   #; [Trns][Intrg][3Pl][1Pl]:%^ti%^nkut   #; [Trns][Intrg][3Pl][1Du]:%^ti%^nkung   #;
-[Trns][Intrg][3Du][1Sg]:%^ta%^gnenga #; [Trns][Intrg][3Du][1Pl]:%^ti%^nkut   #; [Trns][Intrg][3Du][1Du]:%^ti%^nkung   #;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][2Sg][1Sg]:%^tzi%^nga     #; [Trns][Intrg][2Sg][1Pl]:%^tzi%^kut     #; [Trns][Intrg][2Sg][1Du]:%^tzi%^kung     #;
-[Trns][Intrg][2Pl][1Sg]:%^%{.sf.%}e%^ngnga    #; [Trns][Intrg][2Pl][1Pl]:%^%{.sf.%}e%^kut      #; [Trns][Intrg][2Pl][1Du]:%^%{.sf.%}e%^kung      #;
-[Trns][Intrg][2Du][1Sg]:%^%{.sf.%}e%^gnenga   #; [Trns][Intrg][2Du][1Pl]:%^%{.sf.%}e%^gneku    #; [Trns][Intrg][2Du][1Du]:%^%{.sf.%}e%^gnekung   #;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][3Sg][2Sg]:%^ta%^ten    #; [Trns][Intrg][3Sg][2Pl]:%^ti%^si     #; [Trns][Intrg][3Sg][2Du]:%^ti%^stek    #;
-[Trns][Intrg][3Pl][2Sg]:%^ta%^ten    #; [Trns][Intrg][3Pl][2Pl]:%^ti%^si     #; [Trns][Intrg][3Pl][2Du]:%^ti%^stek    #;
-[Trns][Intrg][3Du][2Sg]:%^ta%^ten    #; [Trns][Intrg][3Du][2Pl]:%^ti%^si     #; [Trns][Intrg][3Du][2Du]:%^ti%^stek    #;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-[Trns][Intrg][1Sg][2Sg]:%^tzi%^ken     #;                                        |                                         |
-[Trns][Intrg][1Pl][2Sg]:%^%{.sf.%}este%^ken   #;                                        |                                         |
-[Trns][Intrg][1Du][2Sg]:%^%{.sf.%}este%^ken   #;                                        |                                         |
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! interrogative 
+!   exhibits some fusional properties
+!   so the full paradigms are given here
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!-------------------------|---------------------------------------|-----------------------------------|
+[Intr][Int][3Sg]:%^ta%^  #; [Intr][Int][1Sg]:%^tzi%^nga          #; [Intr][Int][2Sg]:%^tzin          #;
+[Intr][Int][3Pl]:%^ta%^t #; [Intr][Int][1Pl]:%^%{.sf.%}este%^a   #; [Intr][Int][2Pl]:%^%{.sf.%}etsi  #;
+[Intr][Int][3Du]:%^ta%^k #; [Intr][Int][1Du]:%^%{.sf.%}este%^ung #; [Intr][Int][2Du]:%^%{.sf.%}estek #;
+!-------------------------|---------------------------------------|-----------------------------------|
+
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Int][3Sg][3Sg]:%^ta%^gu              #; [Trns][Int][3Sg][3Pl]:%^ta%^ki              #; [Trns][Int][3Sg][3Du]:%^ta%^kek              #;
+[Trns][Int][3Pl][3Sg]:%^ta%^tgu             #; [Trns][Int][3Pl][3Pl]:%^ta%^tki             #; [Trns][Int][3Pl][3Du]:%^ta%^tkek             #;
+[Trns][Int][3Du][3Sg]:%^ta%^gnegu           #; [Trns][Int][3Du][3Pl]:%^ta%^gneki           #; [Trns][Int][3Du][3Du]:%^ta%^gnekek           #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Int][1Sg][3Sg]:%^tzi%^kun            #; [Trns][Int][1Sg][3Pl]:%^tzi%^ngi            #; [Trns][Int][1Sg][3Du]:%^tzi%^gngek           #;
+[Trns][Int][1Pl][3Sg]:%^%{.sf.%}este%^ggu   #; [Trns][Int][1Pl][3Pl]:%^%{.sf.%}este%^ki    #; [Trns][Int][1Pl][3Du]:%^%{.sf.%}este%^kek    #;
+[Trns][Int][1Du][3Sg]:%^%{.sf.%}este%^gnegu #; [Trns][Int][1Du][3Pl]:%^%{.sf.%}este%^gneki #; [Trns][Int][1Du][3Du]:%^%{.sf.%}este%^gnekek #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Int][2Sg][3Sg]:%^tzi%^gu             #; [Trns][Int][2Sg][3Pl]:%^tzi%^ki             #; [Trns][Int][2Sg][3Du]:%^tzi%^kek             #;
+[Trns][Int][2Pl][3Sg]:%^%{.sf.%}e%^ggu      #; [Trns][Int][2Pl][3Pl]:%^%{.sf.%}e%^ki       #; [Trns][Int][2Pl][3Du]:%^%{.sf.%}e%^kek       #;
+[Trns][Int][2Du][3Sg]:%^%{.sf.%}e%^gnegu    #; [Trns][Int][2Du][3Pl]:%^%{.sf.%}e%^gneki    #; [Trns][Int][2Du][3Du]:%^%{.sf.%}e%^gnekek    #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Int][3Sg][1Sg]:%^ta%^nga             #; [Trns][Int][3Sg][1Pl]:%^ti%^nkut            #; [Trns][Int][3Sg][1Du]:%^ti%^nkung            #;
+[Trns][Int][3Pl][1Sg]:%^ta%^tnga            #; [Trns][Int][3Pl][1Pl]:%^ti%^nkut            #; [Trns][Int][3Pl][1Du]:%^ti%^nkung            #;
+[Trns][Int][3Du][1Sg]:%^ta%^gnenga          #; [Trns][Int][3Du][1Pl]:%^ti%^nkut            #; [Trns][Int][3Du][1Du]:%^ti%^nkung            #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+! no [1--][1--] forms                                                                                                                       |
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Int][2Sg][1Sg]:%^tzi%^nga            #; [Trns][Int][2Sg][1Pl]:%^tzi%^kut            #; [Trns][Int][2Sg][1Du]:%^tzi%^kung            #;
+[Trns][Int][2Pl][1Sg]:%^%{.sf.%}e%^ngnga    #; [Trns][Int][2Pl][1Pl]:%^%{.sf.%}e%^kut      #; [Trns][Int][2Pl][1Du]:%^%{.sf.%}e%^kung      #;
+[Trns][Int][2Du][1Sg]:%^%{.sf.%}e%^gnenga   #; [Trns][Int][2Du][1Pl]:%^%{.sf.%}e%^gneku    #; [Trns][Int][2Du][1Du]:%^%{.sf.%}e%^gnekung   #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Int][3Sg][2Sg]:%^ta%^ten             #; [Trns][Int][3Sg][2Pl]:%^ti%^si              #; [Trns][Int][3Sg][2Du]:%^ti%^stek             #;
+[Trns][Int][3Pl][2Sg]:%^ta%^ten             #; [Trns][Int][3Pl][2Pl]:%^ti%^si              #; [Trns][Int][3Pl][2Du]:%^ti%^stek             #;
+[Trns][Int][3Du][2Sg]:%^ta%^ten             #; [Trns][Int][3Du][2Pl]:%^ti%^si              #; [Trns][Int][3Du][2Du]:%^ti%^stek             #;
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+[Trns][Int][1Sg][2Sg]:%^tzi%^ken            #;                                              |                                               |
+[Trns][Int][1Pl][2Sg]:%^%{.sf.%}este%^ken   #;                                              |                                               |
+[Trns][Int][1Du][2Sg]:%^%{.sf.%}este%^ken   #;                                              |                                               |
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+! no [2--][2--] forms                                                                                                                       |
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
 
 
-!===============
-! OPTATIVE MOOD 
-!===============
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! present optative 
+!   exhibits some fusional properties
+!   so the full paradigms are given here
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 !-------------------------|---------------------------------------|-------------------------------|
 [Intr][Opt][3Sg]:%^li%^  #; [Intr][Opt][1Sg]:%^la%^nga           #; [Intr][Opt][2Sg]:%^%{.sf.%}i #;
@@ -87,6 +88,8 @@ LEXICON VerbInflVII
 [Trns][Opt][3Pl][1Sg]:%^li%^tnga            #; [Trns][Opt][3Pl][1Pl]:%^li%^nkut            #; [Trns][Opt][3Pl][1Du]:%^li%^nkung            #;
 [Trns][Opt][3Du][1Sg]:%^li%^gnenga          #; [Trns][Opt][3Du][1Pl]:%^li%^nkut            #; [Trns][Opt][3Du][1Du]:%^li%^nkung            #;
 !--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+! no [1--][1--] forms                                                                                                                       |
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
 [Trns][Opt][2Sg][1Sg]:%^%^nga               #; [Trns][Opt][2Sg][1Pl]:%^%^kut               #; [Trns][Opt][2Sg][1Du]:%^%^kung               #;
 [Trns][Opt][2Pl][1Sg]:%^te%^ngnga           #; [Trns][Opt][2Pl][1Pl]:%^te%^kut             #; [Trns][Opt][2Pl][1Du]:%^te%^kung             #;
 [Trns][Opt][2Du][1Sg]:%^te%^gnenga          #; [Trns][Opt][2Du][1Pl]:%^te%^gnekut          #; [Trns][Opt][2Du][1Du]:%^te%^gnekung          #;
@@ -99,19 +102,23 @@ LEXICON VerbInflVII
 [Trns][Opt][1Pl][2Sg]:%^la%^ken             #; [Trns][Opt][1Pl][2Pl]:%^la%^msi             #; [Trns][Opt][1Pl][2Du]:%^la%^mtek             #;
 [Trns][Opt][1Du][2Sg]:%^la%^ken             #; [Trns][Opt][1Du][2Pl]:%^la%^msi             #; [Trns][Opt][1Du][2Du]:%^la%^mtek             #;
 !--------------------------------------------|----------------------------------------------|-----------------------------------------------|
+! no [2--][2--] forms                                                                                                                       |
+!--------------------------------------------|----------------------------------------------|-----------------------------------------------|
 
-!------------------------------------------|
-[Intr][Opt][NEG][2Sg]:%^%{.m.%}fqaa%^vek  #;
-[Intr][Opt][NEG][2Pl]:%^%{.m.%}fqaa%^fsi  #;
-[Intr][Opt][NEG][2Du]:%^%{.m.%}fqaa%^ftek #;
-!------------------------------------------|
 
-!---------------------------------------------|------------------------------------------------|---------------------------------------------------|
-[Trns][Opt][NEG][2Sg][3Sg]:%^%{.m.%}fqaa%^n  #; [Trns][Opt][NEG][2Sg][3Pl]:%^%{.m.%}fqiita    #; [Trns][Opt][NEG][2Sg][3Du]:%^%{.m.%}fqaa%^gkenka #;
-[Trns][Opt][NEG][2Pl][3Sg]:%^%{.m.%}fqaa%^n  #; [Trns][Opt][NEG][2Pl][3Pl]:%^%{.m.%}fqiita    #; [Trns][Opt][NEG][2Pl][3Du]:%^%{.m.%}fqaa%^gkenka #;
-[Trns][Opt][NEG][2Du][3Sg]:%^%{.m.%}fqaa%^n  #; [Trns][Opt][NEG][2Du][3Pl]:%^%{.m.%}fqiita    #; [Trns][Opt][NEG][2Du][3Du]:%^%{.m.%}fqaa%^gkenka #;
-!---------------------------------------------|------------------------------------------------|---------------------------------------------------|
-[Trns][Opt][NEG][2Sg][1Sg]:%^%{.m.%}fqaa%^ma #; [Trns][Opt][NEG][2Sg][1Pl]:%^%{.m.%}fqaa%^mta #; [Trns][Opt][NEG][2Sg][1Du]:%^%{.m.%}fqaa%^mtung  #;
-[Trns][Opt][NEG][2Pl][1Sg]:%^%{.m.%}fqaa%^ma #; [Trns][Opt][NEG][2Pl][1Pl]:%^%{.m.%}fqaa%^mta #; [Trns][Opt][NEG][2Pl][1Du]:%^%{.m.%}fqaa%^mtung  #;
-[Trns][Opt][NEG][2Du][1Sg]:%^%{.m.%}fqaa%^ma #; [Trns][Opt][NEG][2Du][1Pl]:%^%{.m.%}fqaa%^mta #; [Trns][Opt][NEG][2Du][1Du]:%^%{.m.%}fqaa%^mtung  #;
-!---------------------------------------------|------------------------------------------------|---------------------------------------------------|
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! negative present optative
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!-----------------------------------------|
+[Intr][Opt][NEG]:%^%{.m.%}fqaa  IntrOptNEG;
+[Trns][Opt][NEG]:%^%{.m.%}fqaa  TrnsOptNEG;
+!-----------------------------------------|
+
+!-------------------------------------------|
+[Trns][Opt][NEG][2Sg][3Pl]:%^%{.m.%}fqiita #;
+[Trns][Opt][NEG][2Pl][3Pl]:%^%{.m.%}fqiita #;
+[Trns][Opt][NEG][2Du][3Pl]:%^%{.m.%}fqiita #;
+!-------------------------------------------|
+
+

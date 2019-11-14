@@ -1,0 +1,30 @@
+!===========================================
+LEXICON IntrOptNEG
+!  person/number markers for
+!     intransitive negative present optative 
+!===========================================
+
+!-------------|
+[2Sg]:%^vek  #;
+[2Pl]:%^fsi  #;
+[2Du]:%^ftek #;
+!-------------|
+
+
+!=========================================
+LEXICON TrnsOptNEG
+!  person/number markers for
+!     transitive negative present optative 
+!=========================================
+
+!----------------|-------------------|----------------------|
+[2Sg][3Sg]:%^n  #; ! exceptions for    [2Sg][3Du]:%^gkenka #;
+[2Pl][3Sg]:%^n  #; ! [Trns][Opt][NEG]  [2Pl][3Du]:%^gkenka #;
+[2Du][3Sg]:%^n  #; ! [2--][3Pl] forms  [2Du][3Du]:%^gkenka #;
+!----------------|-------------------|----------------------|
+[2Sg][1Sg]:%^ma #; [2Sg][1Pl]:%^mta #; [2Sg][1Du]:%^mtung  #;
+[2Pl][1Sg]:%^ma #; [2Pl][1Pl]:%^mta #; [2Pl][1Du]:%^mtung  #;
+[2Du][1Sg]:%^ma #; [2Du][1Pl]:%^mta #; [2Du][1Du]:%^mtung  #;
+!----------------|-------------------|----------------------|
+
+
