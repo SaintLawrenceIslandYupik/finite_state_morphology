@@ -8,6 +8,11 @@ into its respective inflection class.
 Eventually, this script should automatically generate
 the lexc files from the completed Yupik database.
 
+NOTE: There are several problem children for this script
+      when it comes to identifying part of speech,
+      especially if "particle" or "?" appears in the
+      definition of a noun root or verb root (e.g. tefli-).
+
 '''
 import argparse
 import csv
@@ -233,12 +238,30 @@ def main():
     # initialize list of question words
     questionWords = []
 
+    # initialize list of postural roots
+    posturalRoots = []
+
+    # initialize list of emotional roots 
+    emotionalRoots = []
+
     for filename in glob.glob(args.dirname + "/*"):
         with open(filename, 'r') as csvfile:
             reader = csv.reader(csvfile, delimiter = ',')
 
             for line in reader:
-                if "particle" not in line[1] and "?" not in line[1]:
+                if "particle" in line[1]:
+                    particles.append((line[0], line[1]))
+
+                elif "?" in line[1]:
+                    questionWords.append((line[0], line[1]))
+
+                elif "postural root" in line[1]:
+                    posturalRoots.append((line[0], line[1]))
+
+                elif "emotional root" in line[1]:
+                    emotionalRoots.append((line[0], line[1]))
+
+                else: 
                     root = line[0]
 
                     # verb roots are annotated with a hyphen at the end
@@ -252,11 +275,6 @@ def main():
                         classIdx = classify_noun_root(nounRoot)
                         idx2NounClass[classIdx].append((nounRoot, line[1]))
 
-                elif "particle" in line[1]:
-                    particles.append((line[0], line[1]))
-
-                elif "?" in line[1]:
-                    questionWords.append((line[0], line[1]))
 
     print_inflection_classes("Verb", idx2VerbClass)
     print_inflection_classes("Noun", idx2NounClass)
@@ -266,6 +284,12 @@ def main():
 
     if questionWords:
         print_nonroots("Question Words", questionWords)
+
+    if posturalRoots:
+        print_nonroots("Postural Roots", posturalRoots)
+
+    if emotionalRoots:
+        print_nonroots("Emotional Roots", emotionalRoots)
 
 
 if __name__ == "__main__":
