@@ -1,13 +1,6 @@
-!===========
-LEXICON Root
-!===========
-  NounExceptions;
-  VerbExceptions;
-
-
-!======================
-LEXICON  NounExceptions
-!======================
+!=====================
+LEXICON  NounException
+!=====================
 
 alangqugh[Abs][Sg][3SgPoss]:alangqghwa  #; ! strange velar/uvular rounding rules
 naasqugh[Abs][Sg][3SgPoss]:naasqwa      #; ! for anatomical noun roots that end
@@ -17,11 +10,16 @@ yug[Abs][Sg]:yuuk                       #;
 Sivuqagh+mii[N.N]:Sivuqaghhmii          NounSuffixI;
 
 
-!======================
-LEXICON  VerbExceptions
-!======================
+!=====================
+LEXICON  VerbException
+!=====================
 
-qafsina~%:(ng)u[N.V][Intr][Int][2Pl]:qafsin'gutsi #;
-sa~%:(ng)u[N.V][Intr][Int][3Sg]:sangaawa          #;
+kina[Q]~%:(ng)u[N.V][Intr][Int][2Sg]:kinanguzin       #;
+kina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:kinkungutsi      #;
+qafsina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:qafsin'gutsi  #;
+kina[Q]~%:(ng)u[N.V][Intr][Int][3Sg]:kinangaawa       #;
+kina[Q]~%:(ng)u[N.V][Intr][Int][3Pl]:kinkungaawat     #;
+sa~%:(ng)u[N.V][Intr][Int][3Sg]:sangaawa              #;
+sa~%:(ng)u[N.V][Intr][Int][3Pl]:sangaawat             #;
 
 

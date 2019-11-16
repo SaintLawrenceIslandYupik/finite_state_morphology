@@ -1,28 +1,76 @@
 !===================================
 LEXICON Interrogative
-! question words that do not inflect
+!  this section needs some help and
+!  love ):
 !===================================
 
-kina        #; ! who? (relative case is kitum)
-kinkut      #; ! who? (plural)
-kitum       #; ! who? (relative case)
-naken       #; ! from where?
-nani        #; ! (at) where?
-naten       #; ! how?
-navek       #; ! to where?
-qafsina     #; ! how many?
-qakun       #; ! when? (future)
-qavngaq     #; ! when? (past)
-sa          #; ! what?
-naligh      #; ! which one(s)? (discussed below)
-sangafsi    #; ! why? (focused on 2nd person plural subject of verb)
-sangama     #; ! why? (focused on 1st person singular object of verb)
-sangameng   #; ! why? (focused on 3rd person plural subject of verb)
-sangami     #; ! why? (focused on 3rd person singular subject of verb)
-sangamta    #; ! why? (focused on 1st person plural object of verb)
-sangan      #; ! why? (in general) ! question words; why? (focused on 3rd person singular object of verb)
-sangankek   #; ! why? (focused on 3rd person dual object of verb)
-sangavek    #; ! why? (focused on 2nd person singular subject of verb)
-sangita     #; ! why? (focused on 3rd person plural object of verb)
+naken[Q]:naken      #; ! (from) where
+nani[Q]:nani        #; ! (at) where
+naten[Q]:naten      #; ! how 
+navek[Q]:navek      #; ! (to) where
+qakun[Q]:qakun      #; ! when (in the future)
+qavngaq[Q]:qavngaq  #; ! when (in the past)
+sameng[Q]:sameng    #; ! what
+
+!------------------------------------------------------------------------
+
+! WARNING: This is where things fall apart...
+!   Jacobson (2001) states that some Yupik question words
+!   inflect like nouns and take derivational suffixes.
+!   The examples given only ever show these question words
+!   affixing to the derivational suffix ~:(ng)u 'to be N'
+!   however, and some strange root form of the question word
+!   is used, to never appear again in other derivations.
+!   e.g. The root of 'kinkungutsi' is 'kinku-' but we don't 
+!        know anything else about the productivity of 'kinku-'.
+!
+!   Since this is the case, we're going to disregard these
+!   one-time-use roots and encode these "question-word + ~:(ng)u"
+!   derivations as exceptions.
+!
+!   Cheers to future fieldwork that might be able to figure this out.
+!   -Emily (2019)
+
+!------------------------------------------------------------------------
+
+! "The word for 'who' inflects but not in the regular manner that nouns
+! inflect several forms (kina, kitum, kinkut) are given in the vocabulary
+! above" [Jacobson (2001) p.53].
+!
+! What's the word for 'who'...?
+
+kina[Q]:kina      #; ! who (SG)
+kinkut[Q]:kinkut  #; ! who (PL)
+kitum[Q]:kitum    #; ! whose
+
+!------------------------------------------------------------------------
+
+! Question word 'qafsina' appears to inflect like other noun roots,
+! although it is "of necessity always plural exception in [its]
+! citation form" [Jacobson (2001) p.53], so some overgeneration is
+! to be expected.
+
+qafsina[Q]:qafsina  NounInflI;
+
+!------------------------------------------------------------------------
+
+! Question words meaning 'why' follow their own inflectional paradigm
+
+sangavek[Q]:sangavek    #; why (focused on 2SG SBJ)
+sangafsi[Q]:sangafsi    #; why (focused on 2PL SBJ)
+sangami[Q]:sangami      #; why (focused on 3SG SBJ)
+sangameng[Q]:sangameng  #; why (focused on 3PL SBJ)
+
+sangama[Q]:sangama      #; why (focused on 1SG OBJ)
+sangamta[Q]:sangamta    #; why (focused on 1PL OBJ)
+sangan[Q]:sangan        #; why (focused on 3SG OBJ)
+sangita[Q]:sangita      #; why (focused on 3PL OBJ)
+sangankek[Q]:sangankek  #; why (focused on 3DU OBJ)
+
+!------------------------------------------------------------------------
+
+! Question word 'naligh*' appears to inflect like other noun roots
+
+naligh[Q]:naligh  NounInflIV;
 
 

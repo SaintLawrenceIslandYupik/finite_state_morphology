@@ -60,12 +60,19 @@ Multichar_Symbols
 [Opt]   ! optative mood
 [NEG]   ! negative (optative)
 
+!-------------------------
+! misc morphological tags
+!-------------------------
+
+[Q]  ! for question words
+
 
 !===========
 !
 LEXICON Root
 !
 !===========
+
 NounRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
 NounRootII;    ! ends in -g, -w, -ghw
 NounRootIII;   ! ends in weak -gh
