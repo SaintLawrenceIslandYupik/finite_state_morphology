@@ -133,8 +133,9 @@ define VowelDominance a i -> i i  .o.
                       u e -> u u  ;
 
 
-define DeleteEBeforeVowel e -> 0 || _ "^" a , ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
-                          e -> 0 || _ "^" i ; ! [Intr][Opt][2Pl/Du] drop final -e, e.g. aanitek but there is no ~f in these morphemes
+define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
+                          e -> 0 || _ "^" i .o. ! [Intr][Opt][2Pl/Du] drop final -e, e.g. aanitek but there is no ~f in these morphemes
+                          e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
 
 
 define DropMiddleVowel V -> 0 || V _ V ;
