@@ -53,6 +53,26 @@ define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ] ;
 ! RULES
 !=======
 
+define Lowercase "A" -> a ,
+                 "I" -> i ,
+                 "U" -> u ,
+                 "E" -> e ,
+                 "P" -> p ,
+                 "T" -> t ,
+                 "K" -> k ,
+                 "Q" -> q ,
+                 "V" -> v ,
+                 "L" -> l ,
+                 "Z" -> z ,
+                 "Y" -> y ,
+                 "R" -> r ,
+                 "G" -> g ,
+                 "W" -> w ,
+                 "F" -> f ,
+                 "S" -> s ,
+                 "M" -> m ,
+                 "N" -> n ;
+
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
@@ -66,10 +86,10 @@ define FinalE %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC ] e "^" _ [ MultiCharC |
                      e -> 0 || [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}         .o. ! drop final -e as long it isn't in the first syllable
                %{%.f%.%} -> 0                                                        ;
 
-define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _ [ MultiCharC | C ]  .o. ! follows same conditions as those
-                        [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e g (h) "^" %{%.sf%.%} .o. ! described in FinalE
-                           e -> 0 || [ ? - .#. ] [ MultiCharC | C ] _ g (h) "^" %{%.sf%.%}       .o.
-                  %{%.sf%.%} -> 0                                                                ;
+define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _ [ MultiCharC | C ]                        .o.
+                        [..] -> e ||      .#. ( MultiCharC | C ) FullVowel _ [ MultiCharC | C ] e g (h) "^" %{%.sf%.%} .o.
+                           e -> 0 ||        [ ? - .#. ] [ MultiCharC | C ] _ g (h) "^" %{%.sf%.%}                      .o.
+                  %{%.sf%.%} -> 0                                                                                      ;
 
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables [Jacobson (2001) p.32]
@@ -278,4 +298,4 @@ define Rules [
 	Undoubling
 ];
 
-define Grammar [ [ Exceptions .o. Rules ] .P. [ Lexicon .o. Rules ] ] ;
+define Grammar [ [ Exceptions .o. Rules ] .P. [ Lexicon .o. Lowercase .o. Rules ] ] ;
