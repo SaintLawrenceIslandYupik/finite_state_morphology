@@ -1,8 +1,7 @@
 !======================================================
 LEXICON NounSuffixVII
-!  nounelaborating [NN] and verbalizing [NV] suffixes
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
 !  when suffixing to noun roots that have semifinal -e
-!  that can be hopped
 !======================================================
 
                                     NounInflVII;
@@ -21,7 +20,7 @@ LEXICON NounSuffixVII
 
 –squghhagh[N.N]:%^squghhagh         NounSuffixIV;   ! little N, small N
 
-–leg[N.N]:%^%{.m.%}leg              NounSuffixVIII; ! one having lots of N
+–leg[N.N]:%^%{.m.%}leg              NounSuffixVII;  ! one having lots of N
 
 –lgu[N.V]:%^%{.m.%}lgu              VerbSuffixI;    ! to have N
 ~%:(ng)u[N.V]:%^%{.sf.%}u           VerbSuffixI;    ! to be N

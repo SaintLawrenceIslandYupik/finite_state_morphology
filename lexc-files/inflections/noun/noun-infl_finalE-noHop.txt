@@ -1,5 +1,5 @@
 !========================================
-LEXICON NounInflX
+LEXICON NounInflVIII
 !  for noun roots that end in final -e
 !      that can be dropped but not hopped
 !========================================
@@ -25,7 +25,7 @@ LEXICON NounInflX
 [Abs][Sg][4PlPoss]:%^yeng       #; [Abs][Pl][4PlPoss]:%^teng        #; [Abs][Du][4PlPoss]:%^gteng      #;
 [Abs][Sg][4DuPoss]:%^yek        #; [Abs][Pl][4DuPoss]:%^tek         #; [Abs][Du][4DuPoss]:%^gtek       #;
 !--------------------------------|-----------------------------------|----------------------------------|
-!%{%.f%.%} not included according to footnotes about no e hopping -> no e dropping [Jacobson (2001) p.36, p.38]
+! %{%.f%.%} not included according to footnotes about no e hopping -> no e dropping [Jacobson (2001) p.36, p.38]
 
 
 !-----------------------------------|
@@ -73,6 +73,7 @@ LEXICON NounInflX
 [Abl.Mod][Sg][4PlPoss]:%^%{.f.%}meggneng  #; [Abl.Mod][Pl][4PlPoss]:%^%{.f.%}meggneng  #; [Abl.Mod][Du][4PlPoss]:%^gmeggneng       #;
 [Abl.Mod][Sg][4DuPoss]:%^%{.f.%}megteneng #; [Abl.Mod][Pl][4DuPoss]:%^%{.f.%}megteneng #; [Abl.Mod][Du][4DuPoss]:%^gmegteneng      #;
 !------------------------------------------|--------------------------------------------|-------------------------------------------|
+! %{%.fL%.%} [Jacobson (2001) p.38]
 
 
 !------------------------------------|
@@ -97,6 +98,7 @@ LEXICON NounInflX
 [Loc][Sg][4PlPoss]:%^%{.f.%}meggni  #; [Loc][Pl][4PlPoss]:%^%{.f.%}meggni  #; [Loc][Du][4PlPoss]:%^gmeggni       #;
 [Loc][Sg][4DuPoss]:%^%{.f.%}megteni #; [Loc][Pl][4DuPoss]:%^%{.f.%}megteni #; [Loc][Du][4DuPoss]:%^gmegteni      #;
 !------------------------------------|--------------------------------------|-------------------------------------|
+! %{%.fL%.%} [Jacobson (2001) p.38]
 
 
 !-------------------------------------|
@@ -121,6 +123,8 @@ LEXICON NounInflX
 [All][Sg][4PlPoss]:%^%{.f.%}meggnun  #; [All][Pl][4PlPoss]:%^%{.f.%}meggnun  #; [All][Du][4PlPoss]:%^gmeggnun       #;
 [All][Sg][4DuPoss]:%^%{.f.%}megtenun #; [All][Pl][4DuPoss]:%^%{.f.%}megtenun #; [All][Du][4DuPoss]:%^gmegtenun      #;
 !-------------------------------------|---------------------------------------|--------------------------------------|
+! %{%.fL%.%} [Jacobson (2001) p.38]
+
 
 !----------------------------------------|
 !          PERLATIVE (vialis)            |

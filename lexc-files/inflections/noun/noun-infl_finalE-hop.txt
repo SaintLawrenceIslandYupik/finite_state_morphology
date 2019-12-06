@@ -13,18 +13,22 @@ LEXICON NounInflIX
 [Abs][Sg][1DuPoss]:%^vung         #; [Abs][Pl][1DuPoss]:%^pung          #; [Abs][Du][1DuPoss]:%^gpung      #;
 !----------------------------------|-------------------------------------|----------------------------------|
 [Abs][Sg][2SgPoss]:%^n            #; [Abs][Pl][2SgPoss]:%^ten           #; [Abs][Du][2SgPoss]:%^gken       #;
-                                     [Abs][Pl][2SgPoss]:%^%{.f.%}ten    #;
 [Abs][Sg][2PlPoss]:%^zi           #; [Abs][Pl][2PlPoss]:%^si            #; [Abs][Du][2PlPoss]:%^gsi        #;
 [Abs][Sg][2DuPoss]:%^yek          #; [Abs][Pl][2DuPoss]:%^tek           #; [Abs][Du][2DuPoss]:%^gtek       #;
 !----------------------------------|-------------------------------------|----------------------------------|
 [Abs][Sg][3SgPoss]:%^%{.f.%}nga   #; [Abs][Pl][3SgPoss]:%^%{.f.%}ngi    #; [Abs][Du][3SgPoss]:%^%{.f.%}kek #;
+[Abs][Sg][3SgPoss]:%^%{.fS.%}nga  #;                                                                        |
 [Abs][Sg][3PlPoss]:%^%{.f.%}ngat  #; [Abs][Pl][3PlPoss]:%^%{.f.%}ngit   #; [Abs][Du][3PlPoss]:%^gket       #;
+[Abs][Sg][3PlPoss]:%^%{.fS.%}ngat #;                                                                        |
 [Abs][Sg][3DuPoss]:%^%{.f.%}ngak  #; [Abs][Pl][3DuPoss]:%^%{.f.%}ngik   #; [Abs][Du][3DuPoss]:%^gkek       #;
+[Abs][Sg][3DuPoss]:%^%{.fS.%}ngak #;                                                                        |
 !----------------------------------|-------------------------------------|----------------------------------|
-[Abs][Sg][4SgPoss]:%^ni           #; [Abs][Pl][4SgPoss]:%^ni            #; [Abs][Du][4SgPoss]:%^gni       #;
+[Abs][Sg][4SgPoss]:%^ni           #; [Abs][Pl][4SgPoss]:%^ni            #; [Abs][Du][4SgPoss]:%^gni        #;
 [Abs][Sg][4PlPoss]:%^yeng         #; [Abs][Pl][4PlPoss]:%^teng          #; [Abs][Du][4PlPoss]:%^gteng      #;
 [Abs][Sg][4DuPoss]:%^yek          #; [Abs][Pl][4DuPoss]:%^tek           #; [Abs][Du][4DuPoss]:%^gtek       #;
 !----------------------------------|-------------------------------------|----------------------------------|
+! %{%.fS%.%} [Jacobson (2001) p.38]
+
 
 !-----------------------------------|
 !        ERGATIVE (relative)        |

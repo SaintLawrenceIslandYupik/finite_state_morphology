@@ -1,6 +1,6 @@
 !=====================================================
 LEXICON NounSuffixIX
-!  nounelaborating [NN] and verbalizing [NV] suffixes
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
 !  when suffixing to noun roots that have final e
 !  that can be hopped
 !=====================================================
@@ -21,7 +21,7 @@ LEXICON NounSuffixIX
 
 –squghhagh[N.N]:%^squghhagh  NounSuffixIV;   ! little N, small N
 
-–leg[N.N]:%^leg              NounSuffixVIII; ! one having lots of N
+–leg[N.N]:%^leg              NounSuffixVII;  ! one having lots of N
 
 –lgu[N.V]:%^lgu              VerbSuffixI;    ! to have N
 ~%:(ng)u[N.V]:%^%{.f.%}ngu   VerbSuffixI;    ! to be N

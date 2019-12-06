@@ -1,11 +1,10 @@
 !======================================================
-LEXICON VerbSuffixVII
+LEXICON VerbSuffixVI
 !  verbelaborating [VV] and nominalizing [VN] suffixes
 !  when suffixing to verb roots that have semifinal -e
-!  that can be dropped but not hopped
 !======================================================
 
-                                             VerbInflVII;
+                                             VerbInflVI;
 
 –ghhaleg[V.V]:%^%{.m.%}ghhaleg               #;             ! how V! (exclamation)
 
@@ -18,13 +17,12 @@ LEXICON VerbSuffixVII
 ~sf%:(e)sqe[V.V]:%^%{.sf.%}esqe              VerbSuffixII;  ! to ask or tell one to V (compound-verbal postbase)
 +(te)ste[V.V]:%^teste                        VerbSuffixII;  ! to have, make, or let one V (compound-verbal postbase)
 
-+(te)sug[V.V]:%^tesug                        VerbSuffixIII; ! to want one to V (compound-verbal postbase) 
++(te)sug[V.V]:%^tesug                        VerbSuffixIII; ! to want one to V (compound-verbal postbase)
 @~fyug[V.V]:%^yug                            VerbSuffixIII; ! to want to V
 
 @–nghite[V.V]:%^%{.m.%}nghite                VerbSuffixV;   ! to not V
 @~%:(ng)igate[V.V]:%^%{.sf.%}igate           VerbSuffixV;   ! to not V
-+(pete)fte[V.V]:%^petefte                    VerbSuffixV;   ! to evidently V or have V-ed
-+(pete)fte[V.V]:%^pete                       VerbSuffixV;   ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
++(pete)fte[V.V]:%^fte                        VerbSuffixV;   ! to evidently V or have V-ed
 
 @~sf–(g)kagh[V.N]:%^%{.sf.%}%{.m.%}ka%{g%}h  NounSuffixIII; ! one that has V-ed or been V-ed
 
