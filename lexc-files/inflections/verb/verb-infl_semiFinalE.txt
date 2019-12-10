@@ -7,7 +7,7 @@ LEXICON VerbInflVI
 ! indicative & participial
 !~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Intr][Ind]:%^tugh            IntrIndPtcp;
+[Intr][Ind]:%^tu              IntrIndPtcp;
 [Trns][Ind]:%^%{.sf.%}%{G%}a  TrnsIndPtcp;
 
 

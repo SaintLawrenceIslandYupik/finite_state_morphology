@@ -128,9 +128,11 @@ define DropUvular %{g%} h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Al
                 %{%.c%.%} -> 0                                                            ;   ! or an allomorph
 
 
-define VelarUvularRounding n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ] .o. ! velar/uvular rounding [Jacobson (2001) p.36]
-                               n g -> n g w     || [ C | V - u ] _ u [ i | a ] .o. ! needs to occur before VowelDominance
-                             g h h -> g h h w   || [ C | V - u ] _ u [ i | a ] .o. ! conditions should apply to the longest match
+define VelarUvularRounding       g -> w         || [ i | a ] u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30]
+                                                                                   ! unclear if this affects other phonemes besides -g
+                           n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ] .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
+                               n g -> n g w     || [ C | V - u ] _ u [ i | a ] .o. ! needs to occur before vowel dominance
+                             g h h -> g h h w   || [ C | V - u ] _ u [ i | a ] .o.
                                g h -> g h w     || [ C | V - u ] _ u [ i | a ] .o.
                                g g -> w h       || [ C | V - u ] _ u [ i | a ] .o.
                                  k -> k w       || [ C | V - u ] _ u [ i | a ] .o.
@@ -172,9 +174,7 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define ResolveG %{G%} -> w || u "^" _ [ a | i ] ("^") [ C | .#. ] .o. ! velar rounding [Jacobson (2001) p.30]
-                                                                      ! do not round if DropMiddleVowel can occur [Jacobson (2001) p.44]
-                %{G%} -> g || FullVowel ("^") FullVowel "^" _     .o.
+define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _     .o.
                 %{G%} -> 0                                        ;
 
 
@@ -194,17 +194,17 @@ define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. !
 !------------------
 
 define DevoiceApicalTE y   -> s,
-                       n   -> n n   || %{t%} e "^" %{%.at%.%} _                       .o.
+                       n   -> n n   || %{t%} e "^" %{%.at%.%} _                       .o. ! [Jacobson (2001) p.177]
                        g   -> g g                                                     ,   ! the only consonants before -te that double
                        l   -> l l                                                     ,   ! to show voicelessness are -g, -l, -gh
                        g h -> g h h || _ %{t%} e "^" %{%.at%.%} n                     .o. ! [Jacobson (2001) p.31]
                        n   -> 0     || [ g g | l l | g h h ] %{t%} e "^" %{%.at%.%} _ ;   ! undouble the -n according to undoubling rules
 
 
-define DoNotDropTE  e -> 0 , e -> e ||       V %{t%} _ "^" %{%.at%.%} k .o. ! specific to -@~sf–(g)kagh[V.N] as in tuqute-@~sf–(g)kagh[V.N][Abs][Sg]
-         %{t%} -> %{t%}, %{t%} -> s ||             V _ "^" %{%.at%.%} k .o. ! tuqutkaq, tuquskaq [Jacobson (2001) p.58]
-                    %{%.at%.%} -> g || V %{t%} e "^" _ k                .o. ! tuqutegkaq
-                    %{%.at%.%} -> 0 || C %{t%} e "^" _ k                ;   ! e.g. ingaghte-@~sf–(g)kagh[V.N][Abs][Sg]  ingaghtekaq
+define VelarTE  e -> 0      || V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
+            %{t%} -> %{t%},
+			%{t%} -> s      ||       V _ "^" %{%.at%.%} k .o. ! e.g. tuqutkuvgu, tuquskuvgu
+       %{%.at%.%} -> 0      || C %{t%} e "^" _ k          ;   ! e.g. qelpeghtekuvgu
 
 
 define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
@@ -268,7 +268,7 @@ define Rules [
     ! modify -te rules
     !-------------------------------
     DevoiceApicalTE      .o.
-    DoNotDropTE          .o.
+    VelarTE              .o.
     DropTE               .o.
     !-------------------------------
     ! consonant-related rules
