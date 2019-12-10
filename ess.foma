@@ -197,8 +197,7 @@ define DevoiceApicalTE y   -> s,
                        n   -> n n   || %{t%} e "^" %{%.at%.%} _                       .o. ! [Jacobson (2001) p.177]
                        g   -> g g                                                     ,   ! the only consonants before -te that double
                        l   -> l l                                                     ,   ! to show voicelessness are -g, -l, -gh
-                       g h -> g h h || _ %{t%} e "^" %{%.at%.%} n                     .o. ! [Jacobson (2001) p.31]
-                       n   -> 0     || [ g g | l l | g h h ] %{t%} e "^" %{%.at%.%} _ ;   ! undouble the -n according to undoubling rules
+                       g h -> g h h || _ %{t%} e "^" %{%.at%.%} n                     ;   ! [Jacobson (2001) p.31]
 
 
 define VelarTE  e -> 0      || V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
@@ -243,13 +242,12 @@ define CleanupDigraph %{k%}   -> 0   .o.
 define CleanupMorphBoundary "^" -> 0 ;
 
 
-define Undoubling g h h -> g h || [ Stop | f | s | h ] _ ;
-!define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ [Stop | f | s]     .o.
-!                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [Stop | f | s | h] _ .o.
-!                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w        || [Stop | f | s | h] _ .o.
-!                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ l l .o.
-!                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [l l| r r | g g | g h h | g h h w] _ .o.
-!                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w        || [l l| r r | g g | g h h |g h h w] _ ;
+define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ [ Stop | f |  s]                     .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] _     .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ l l                                  .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l| r r | g g | g h h | g h h w ] _ .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] _     .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l| r r | g g | g h h | g h h w ] _ ;
 
 
 !==============

@@ -13,14 +13,15 @@ NOTE: There are several problem children for this script
       especially if "particle" or "?" appears in the
       definition of a noun root or verb root (e.g. tefli-).
 
+Usage: python3 classify.py [dirname]
 '''
 import argparse
 import csv
 import glob
 from operator import itemgetter
 
-from methods import classify_verb_root, \
-                    convert_to_base_form, classify_noun_root
+from methods_for_classify import classify_verb_root, \
+                                 convert_to_base_form, classify_noun_root
 
 
 def print_inflection_classes(inflType, idx2InflClass):
@@ -87,14 +88,26 @@ def print_inflection_classes(inflType, idx2InflClass):
                     padding = maxLength - (len(root) * 2 + 5) + 2
                     print(root + ":" + root[:-2] + "%{t%}e" + " " * padding + \
                           inflType + "Suffix" + romanNumeral + "; ! " + definition)
+                print("[ WARNING: check for roots that actually end in -ta ]")
 
             else:
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - len(root) + 2
                     print(root + " " * padding + inflType + "Suffix" + romanNumeral + \
                           "; ! " + definition)
-
             print()
+
+    # print roots that could not be classified, usually those with non-traditional endings
+    if idx2InflClass[0]:
+        maxLength = get_max_length("None", 0, idx2InflClass[0])
+
+        print("-------------------------------------------")
+        print(inflType + " Roots (?) that Could Not Be Classified")
+        print("-------------------------------------------")
+        for root, definition in idx2InflClass[0]:
+            padding = maxLength - len(root) + 2
+            print(root + " " * padding + definition)
+    print()
 
 
 def idx_to_roman_numeral(idx):
@@ -201,35 +214,29 @@ def main():
     args = parser.parse_args()
 
     # initialize verbal inflection classes
-    idx2VerbClass = { 1 : [],  # ends in -a, -i, -u
+    idx2VerbClass = { 0 : [],  # cannot be classified
+                      1 : [],  # ends in -a, -i, -u
                       2 : [],  # ends in -e
                       3 : [],  # ends in -g, -w, -ghw
                       4 : [],  # ends in -agh, -igh, -ugh,
                                #   -egh if -e cannot drop/hop
                       5 : [],  # ends in -te
-                      6 : [],  # ends in semi-final -e that
-                               # can drop and hop
-                      7 : [],  # ends in semi-final -e that
-                               # can drop but not hop
-                     -1 : []   # cannot be classified
+                      6 : [],  # ends in semi-final -e
                     }
 
     # initialize nominal inflection classes
-    idx2NounClass = { 1 : [],  # ends in -a, -i, -u
+    idx2NounClass = { 0 : [],  # cannot be classified
+                      1 : [],  # ends in -a, -i, -u
                       2 : [],  # ends in -g, -w, -ghw
                       3 : [],  # ends in weak -gh
                       4 : [],  # ends in marked strong -gh
                       5 : [],  # ends in strong -gh
                       6 : [],  # ends in -te
-                      7 : [],  # ends in semi-final -e that
+                      7 : [],  # ends in semi-final -e
+                      8 : [],  # ends in final -e that
                                # can drop and hop
-                      8 : [],  # ends in semi-final -e that
+                      9 : []   # ends in final -e that
                                # can drop but not hop
-                      9 : [],  # ends in final -e that
-                               # can drop and hop
-                     10 : [],  # ends in final -e that
-                               # can drop but not hop
-                     -1 : []   # cannot be classified
                     }
 
     # initialize list of particles
@@ -274,7 +281,6 @@ def main():
                         nounRoot = convert_to_base_form(root)
                         classIdx = classify_noun_root(nounRoot)
                         idx2NounClass[classIdx].append((nounRoot, line[1]))
-
 
     print_inflection_classes("Verb", idx2VerbClass)
     print_inflection_classes("Noun", idx2NounClass)
