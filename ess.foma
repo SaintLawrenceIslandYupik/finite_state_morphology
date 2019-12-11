@@ -193,17 +193,19 @@ define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. !
 ! MODIFY -TE RULES
 !------------------
 
+define UnmarkSpecialTE "*" -> 0 ;
+
 define DevoiceApicalTE y   -> s,
-                       n   -> n n   || %{t%} e "^" %{%.at%.%} _                       .o. ! [Jacobson (2001) p.177]
-                       g   -> g g                                                     ,   ! the only consonants before -te that double
-                       l   -> l l                                                     ,   ! to show voicelessness are -g, -l, -gh
-                       g h -> g h h || _ %{t%} e "^" %{%.at%.%} n                     ;   ! [Jacobson (2001) p.31]
+                       n   -> n n   || %{t%} e "^" %{%.at%.%} _   .o. ! [Jacobson (2001) p.177]
+                       g   -> g g                                 ,   ! the only consonants before -te that double
+                       l   -> l l                                 ,   ! to show voicelessness are -g, -l, -gh
+                       g h -> g h h || _ %{t%} e "^" %{%.at%.%} n ;   ! [Jacobson (2001) p.31]
 
 
-define VelarTE  e -> 0      || V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
-            %{t%} -> %{t%},
-			%{t%} -> s      ||       V _ "^" %{%.at%.%} k .o. ! e.g. tuqutkuvgu, tuquskuvgu
-       %{%.at%.%} -> 0      || C %{t%} e "^" _ k          ;   ! e.g. qelpeghtekuvgu
+define VelarTE  e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
+            %{t%} -> t,
+			%{t%} -> s  ||             V _ "^" %{%.at%.%} k .o. ! e.g. tuqutkuvgu, tuquskuvgu
+       %{%.at%.%} -> 0  || C %{t%} e "^" _ k                ;   ! e.g. qelpeghtekuvgu
 
 
 define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
@@ -221,7 +223,7 @@ define MatchVoicing y -> s ||            _ [ k | q | g h h ] .o. ! [Jacobson (20
                     v -> f || _ ("^") Stop                   ;   ! [Jacobson (2001) p.58] e.g. kuufkaq
 
 
-define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,   ! Jacobson 2.2.1 Words and Bases
+define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
                         %{t%} e -> t a                                  .o.
                               e -> a   ||                 _     "^" .#. .o.
                               w -> k w || [C - h | %{k%}] _     "^" .#. .o.
@@ -256,18 +258,19 @@ define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w |
 
 define Rules [
     !-------------------------------
+    ! modify -te rules
+    !-------------------------------
+	UnmarkSpecialTE      .o.
+    DevoiceApicalTE      .o.
+    VelarTE              .o.
+    DropTE               .o.
+    !-------------------------------
     ! -e dropping and hopping rules
     !-------------------------------
     SemiFinalE           .o.
     ShortRootFinalE      .o.
     LongRootFinalE       .o.
     FinalE               .o.
-    !-------------------------------
-    ! modify -te rules
-    !-------------------------------
-    DevoiceApicalTE      .o.
-    VelarTE              .o.
-    DropTE               .o.
     !-------------------------------
     ! consonant-related rules
     !-------------------------------

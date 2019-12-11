@@ -11,7 +11,7 @@ interactive: ess.foma ess.lexc exceptions.lexc
 	foma -l ess.foma -e "push Grammar"
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11
 
 test-ch2: tests/jacobson_examples/jacobson_ch2.tsv ess.fomabin
 	@cut -f 1 tests/jacobson_examples/jacobson_ch2.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch2.tsv)' && echo "Jacobson (2001) Ch2 - PASS" || echo "Jacobson (2001) Ch2 - FAIL"
@@ -39,6 +39,9 @@ test-ch9: tests/jacobson_examples/jacobson_ch9.tsv ess.fomabin
 
 test-ch10: tests/jacobson_examples/jacobson_ch10.tsv ess.fomabin
 	@cut -f 1 tests/jacobson_examples/jacobson_ch10.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch10.tsv)' && echo "Jacobson (2001) Ch10 - PASS" || echo "Jacobson (2001) Ch10 - FAIL"
+
+test-ch11: tests/jacobson_examples/jacobson_ch11.tsv ess.fomabin
+	@cut -f 1 tests/jacobson_examples/jacobson_ch11.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch11.tsv)' && echo "Jacobson (2001) Ch11 - PASS" || echo "Jacobson (2001) Ch11 - FAIL"
 
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin *.lexc

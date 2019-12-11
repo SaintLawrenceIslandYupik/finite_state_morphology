@@ -84,11 +84,13 @@ def print_inflection_classes(inflType, idx2InflClass):
             #   if root ends in -te, add %{t%} --> riigte:riig%{t%}e
             elif (inflType == "Noun" and i == 6 or
                   inflType == "Verb" and i == 5):
+                print()
+                print("[ WARNING: check for roots that actually end in -ta ]")
+                print()
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - (len(root) * 2 + 5) + 2
                     print(root + ":" + root[:-2] + "%{t%}e" + " " * padding + \
                           inflType + "Suffix" + romanNumeral + "; ! " + definition)
-                print("[ WARNING: check for roots that actually end in -ta ]")
 
             else:
                 for root, definition in idx2InflClass[i]:
