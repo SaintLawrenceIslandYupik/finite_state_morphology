@@ -21,14 +21,15 @@ Multichar_Symbols
 !---------------------------
 ! morphophonological symbols 
 !---------------------------
-%{.w.%}   ! drop weak -gh
-%{.c.%}   ! drop uvular (-gh) between single vowels
-%{.f.%}   ! drop and hop final -e
-%{.fS.%}  ! treat final -e like -a if root has two syllables or less [Jacobson (2001) p.38]
-%{.fL.%}  ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
-%{.sf.%}  ! drop and hop semi-final -e
-%{.m.%}   ! drop root-final consonants
-%{.at.%}  ! modify root-final -te 
+%{.w.%}     ! drop weak -gh
+%{.c.%}     ! drop uvular (-gh) between single vowels
+%{.f.%}     ! drop and hop final -e
+%{.fS.%}    ! treat final -e like -a if root has two syllables or less [Jacobson (2001) p.38]
+%{.fL.%}    ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
+%{.sf.%}    ! drop and hop semi-final -e
+%{.m.%}     ! drop root-final consonants
+%{.at.%}    ! modify root-final -te 
+%{.atSP.%}  ! modify special root-final -te 
 
 !-----------------------------
 ! morphological tags for nouns
@@ -89,7 +90,8 @@ VerbRootII;    ! has final -e
 VerbRootIII;   ! ends in -g, -w, -ghw
 VerbRootIV;    ! ends in -agh, -igh, -ugh or -egh where e cannot be drop
 VerbRootV;     ! ends in -te
-VerbRootVI;    ! has semi-final -e
+VerbRootVI;    ! ends in special -te 
+VerbRootVII;   ! has semi-final -e
 
 Particle;
 

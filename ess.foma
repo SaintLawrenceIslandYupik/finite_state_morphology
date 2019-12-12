@@ -92,8 +92,8 @@ define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _ [ M
                   %{%.sf%.%} -> 0                                                                                      ;
 
 
-define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%} .o. ! [Jacobson (2001) p.38]
-              %{%.fS%.%} -> 0                                       ;
+define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%}                                 .o. ! [Jacobson (2001) p.38]
+              %{%.fS%.%} -> 0                                                                       ;
 
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables
@@ -183,23 +183,33 @@ define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for postbase ~sf:(e)sqe [Jac
                 %{I%} -> 0                    ;
 
 
-define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u vs. -aa, -ii, -uu [Jacobson p.65]
-                          %{AI%} -> i   ||                       g h "^" _ .o. ! -agh, -igh, -ugh vs. -aagh, -iigh, -uugh [Jacobson p.65]
+define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u vs. -aa, -ii, -uu [Jacobson (2001) p.65]
+                          %{AI%} -> i   ||                       g h "^" _ .o. ! -agh, -igh, -ugh vs. -aagh, -iigh, -uugh [Jacobson (2001) p.65]
                           %{AI%} -> a   ||                 FullVowel "^" _ .o.
                           %{GI%} -> 0                                      ;
+
+define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
 
 
 !------------------
 ! MODIFY -TE RULES
 !------------------
 
+define SpecialTE %{t%} e "*" -> l || _ "^" %{%.at%.%} ;
+
 define UnmarkSpecialTE "*" -> 0 ;
 
-define DevoiceApicalTE y   -> s,
-                       n   -> n n   || %{t%} e "^" %{%.at%.%} _   .o. ! [Jacobson (2001) p.177]
-                       g   -> g g                                 ,   ! the only consonants before -te that double
-                       l   -> l l                                 ,   ! to show voicelessness are -g, -l, -gh
-                       g h -> g h h || _ %{t%} e "^" %{%.at%.%} n ;   ! [Jacobson (2001) p.31]
+define ISuffixTE e -> 0 || %{t%} _ "^" %{%.at%.%} i .o.
+             %{t%} -> s ||       _ "^" %{%.at%.%} i ;
+
+
+define ApicalTE y   -> s,
+                n   -> n n     || %{t%} e "^" %{%.at%.%} _                 .o. ! [Jacobson (2001) p.177]
+                g   -> g g                                                 ,   ! apical -n [Jacobson (2001) p.31]
+                l   -> l l                                                 ,   !   the only consonants before -te that double
+                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} n               .o. !   to show voicelessness are -g, -l, -gh
+				l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ]   .o. ! apical -l [Jacobson (2001) p.70]
+                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _           ;   ! for suffix @–lghii
 
 
 define VelarTE  e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
@@ -244,12 +254,12 @@ define CleanupDigraph %{k%}   -> 0   .o.
 define CleanupMorphBoundary "^" -> 0 ;
 
 
-define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ [ Stop | f |  s]                     .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] _     .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ l l                                  .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l| r r | g g | g h h | g h h w ] _ .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] _     .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l| r r | g g | g h h | g h h w ] _ ;
+define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ [ Stop | f |  s]                      .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] _ .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ l l                                   .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l | r r | g g | g h h | g h h w ] _ .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] _      .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l | r r | g g | g h h | g h h w ] _ ;
 
 
 !==============
@@ -260,8 +270,10 @@ define Rules [
     !-------------------------------
     ! modify -te rules
     !-------------------------------
+	SpecialTE            .o.
 	UnmarkSpecialTE      .o.
-    DevoiceApicalTE      .o.
+	ISuffixTE            .o.
+    ApicalTE             .o.
     VelarTE              .o.
     DropTE               .o.
     !-------------------------------
@@ -285,6 +297,7 @@ define Rules [
     ResolveG             .o.
     ResolveI             .o.
     OptativeAllomorphs   .o.
+	SFGKeKa              .o.
     !-------------------------------
     ! clean up
     !-------------------------------

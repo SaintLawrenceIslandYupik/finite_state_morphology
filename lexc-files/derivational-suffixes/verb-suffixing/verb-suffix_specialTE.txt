@@ -1,10 +1,10 @@
 !======================================================
-LEXICON VerbSuffixV
+LEXICON VerbSuffixVI
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
-!  when suffixing to verb roots that end in te
+!  when suffixing to verb roots that end in special -te
 !======================================================
 
-                                        VerbInflV;
+                                        VerbInflVI;
 
 –ghhaleg[V.V]:%^ghhaleg                 #;              ! how V! (exclamation)
 
@@ -27,10 +27,10 @@ LEXICON VerbSuffixV
 
 @–nghite[V.V]:%^%{.at.%}neghi%{t%}e*    VerbSuffixVI;   ! to not V
 
-@–lghii[V.N]:%^%{.at.%}lghii            NounSuffixI;    ! one that is V-ing 
-
 @~sf–(g)kagh[V.N]:%^gka%{g%}h           NounSuffixIII;  ! one that has V-ed or been V-ed
 @~sf–(g)kagh[V.N]:%^%{.at.%}ka%{g%}h    NounSuffixIII;  ! one that has V-ed or been V-ed
+
+@ngugh[V.N]:%^%{.at.%}ngugh             NounSuffixIV;   ! one that is V-ing 
 
 @~sf–(g)ke[V.N]:%^%{.at.%}ke            NounSuffixVIII; ! one that the possessor is V-ing
 

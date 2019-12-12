@@ -1,10 +1,10 @@
 !======================================================
-LEXICON VerbSuffixVI
+LEXICON VerbSuffixVII
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
 !  when suffixing to verb roots that have semifinal -e
 !======================================================
 
-                                             VerbInflVI;
+                                             VerbInflVII;
 
 –ghhaleg[V.V]:%^%{.m.%}ghhaleg               #;              ! how V! (exclamation)
 
@@ -20,17 +20,16 @@ LEXICON VerbSuffixVI
 +(te)sug[V.V]:%^tesug                        VerbSuffixIII;  ! to want one to V (compound-verbal postbase)
 @~fyug[V.V]:%^yug                            VerbSuffixIII;  ! to want to V
 
-@–nghite[V.V]:%^%{.m.%}nghi%{t%}e*           VerbSuffixV;    ! to not V
 @~%:(ng)igate[V.V]:%^%{.sf.%}iga%{t%e        VerbSuffixV;    ! to not V
 +(pete)fte[V.V]:%^f%{t%}e                    VerbSuffixV;    ! to evidently V or have V-ed
 +(te)ste[V.V]:%^tes%{t%}e                    VerbSuffixV;    ! to have, make, or let one V (compound-verbal postbase)
 ~%:(u)te[V.V]:%^%{.sf.%}u%{t%}e              VerbSuffixV;    ! to V with, for or to object; to V object along with oneself; to V each other
 
-–lghii[V.N]:%^%{.m.%}lghii                   NounSuffixI;    ! one that is V-ing 
+@–nghite[V.V]:%^%{.m.%}nghi%{t%}e*           VerbSuffixVI;    ! to not V
+
+@–lghii[V.N]:%^%{.m.%}lghii                  NounSuffixI;    ! one that is V-ing 
 
 @~sf–(g)kagh[V.N]:%^%{.sf.%}%{.m.%}ka%{g%}h  NounSuffixIII;  ! one that has V-ed or been V-ed
-
-@ngugh[V.N]:%^ngugh                          NounSuffixIV;   ! one that is V-ing 
 
 @~sf–(g)ke[V.N]:%^%{.sf.%}ke                 NounSuffixVIII; ! one that the possessor is V-ing
 
