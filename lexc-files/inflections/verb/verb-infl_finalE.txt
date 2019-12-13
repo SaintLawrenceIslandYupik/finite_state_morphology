@@ -7,8 +7,13 @@ LEXICON VerbInflII
 ! indicative & participial
 !~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Intr][Ind]:%^%{.f.%}u  IntrIndPtcp;
-[Trns][Ind]:%^%{.f.%}a  TrnsIndPtcp;
+[Intr][Ind]:%^%{.f.%}u  IntrInd;
+[Trns][Ind]:%^%{.f.%}a  TrnsInd;
+
+[Intr][Ptcp]:%^lghii    IntrPtcp;
+[Trns][Ptcp]:%^gke      TrnsPtcp;
+[Intr][Ptcp]:%^gka      IntrPtcpAlternate; ! second participial mood?
+[Trns][Ptcp]:%^gka      TrnsPtcpAlternate; ! [Jacobson (2001) p.73]
 
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

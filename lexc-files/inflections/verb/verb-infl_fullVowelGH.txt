@@ -8,9 +8,14 @@ LEXICON VerbInflIV
 ! indicative & participial
 !~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-[Intr][Ind]:%^tu  IntrIndPtcp;
-[Trns][Ind]:%^a   TrnsIndPtcp;
-
+[Intr][Ind]:%^tu             IntrInd;
+[Trns][Ind]:%^a              TrnsInd;
+ 
+[Intr][Ptcp]:%^%{.m.%}lghii  IntrPtcp;
+[Trns][Ptcp]:%^%{.m.%}ke     TrnsPtcp;
+[Intr][Ptcp]:%^%{.m.%}ka     IntrPtcpAlternate; ! second participial mood?
+[Trns][Ptcp]:%^%{.m.%}ka     TrnsPtcpAlternate; ! [Jacobson (2001) p.73]
+ 
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! interrogative 
