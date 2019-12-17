@@ -3,7 +3,6 @@
 Multichar_Symbols
 !
 !================
-
 %^     ! morpheme boundary
 %{g%}  ! for digraph -gh
 %{k%}  ! for digraph -kw
@@ -29,24 +28,37 @@ Multichar_Symbols
 %{.sf.%}    ! drop and hop semi-final -e
 %{.m.%}     ! drop root-final consonants
 %{.at.%}    ! modify root-final -te 
-%{.atSP.%}  ! modify special root-final -te 
 
 !-----------------------------
 ! morphological tags for nouns
 !-----------------------------
-[N.N]  ! noun-elaborating derivational suffix
-[N.V]  ! verbalizing derivational suffix
+[N.N]      ! noun-elaborating derivational suffix
+[N.V]      ! verbalizing derivational suffix
 
-[Sg]  ! singular
-[Pl]  ! plural 
-[Du]  ! dual
+[Sg]       ! singular
+[Pl]       ! plural 
+[Du]       ! dual
+
+[1SgPoss]  ! 1st person singular possessor
+[2SgPoss]  ! 2nd person singular possessor
+[3SgPoss]  ! 3rd person singular possessor
+[4SgPoss]  ! 4th person singular possessor
+[1PlPoss]  ! 1st person plural possessor
+[2PlPoss]  ! 2nd person plural possessor
+[3PlPoss]  ! 3rd person plural possessor
+[4PlPoss]  ! 4th person plural possessor
+[1DuPoss]  ! 1st person dual possessor
+[2DuPoss]  ! 2nd person dual possessor
+[3DuPoss]  ! 3rd person dual possessor
+[4DuPoss]  ! 4th person dual possessor
 
 [Abs]      ! absolutive case
+[Erg]      ! ergative (relative) case
 [Abl.Mod]  ! ablative-modalis case
-[Loc]      ! locative case 
-[All]      ! allative case
-[Per]      ! perlative case
-[Equ]      ! equative case
+[Loc]      ! locative (localis) case 
+[All]      ! allative (terminalis) case
+[Per]      ! perlative (vialis) case
+[Equ]      ! equative (equalis) case
 
 !-----------------------------
 ! morphological tags for verbs
@@ -60,13 +72,29 @@ Multichar_Symbols
 [Ind]   ! indicative mood
 [Int]   ! interrogative mood
 [Opt]   ! optative mood
-[NEG]   ! negative (optative)
+[Prs]   ! present (optative)
+[Fut]   ! future (optative)
+[Neg]   ! negative (optative)
+[Ptcp]  ! participial mood
+
+[1Sg]   ! 1st person singular subject/object
+[2Sg]   ! 2nd person singular subject/object
+[3Sg]   ! 3rd person singular subject/object
+[4Sg]   ! 4th person singular subject/object
+[1Pl]   ! 1st person plural subject/object
+[2Pl]   ! 2nd person plural subject/object
+[3Pl]   ! 3rd person plural subject/object
+[4Pl]   ! 4th person plural subject/object
+[1Du]   ! 1st peson dual subject/object
+[2Du]   ! 2nd person dual subject/object
+[3Du]   ! 3rd person dual subject/object
+[4Du]   ! 4th person dual subject/object
 
 !-------------------------
 ! misc morphological tags
 !-------------------------
-
-[Q]  ! for question words
+[Q]          ! for question words
+[QuantQual]  ! for quantifier-qualifier constructions
 
 
 !===========
@@ -74,7 +102,6 @@ Multichar_Symbols
 LEXICON Root
 !
 !===========
-
 NounRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
 NounRootII;    ! ends in -g, -w, -ghw
 NounRootIII;   ! ends in weak -gh
@@ -93,6 +120,8 @@ VerbRootV;     ! ends in -te
 VerbRootVI;    ! ends in special -te 
 VerbRootVII;   ! has semi-final -e
 
-Particle;
-
 Interrogative;
+Particle;
+QuantifierQualifier;
+
+

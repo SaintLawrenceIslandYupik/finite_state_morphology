@@ -3,7 +3,6 @@
 Multichar_Symbols
 !
 !================
-
 %^     ! morpheme boundary
 %{g%}  ! for digraph -gh
 %{k%}  ! for digraph -kw
@@ -12,43 +11,60 @@ Multichar_Symbols
 !-----------
 ! allomorphs 
 !-----------
-%{E%}  ! for (e)
-%{G%}  ! for (g) 
+%{E%}   ! for (e)
+%{G%}   ! for (g) 
+%{I%}   ! for (e) in ~sf:(e)sqe [Jacobson (2001) p.64]
+%{GI%}  ! for Intr.Opt-2Sg (-a,-i, -u, -aa, -ii, -uu) [Jacobson (2001) p.65]
+%{AI%}  ! for Intr.Opt-2Sg (-agh, -igh, -ugh, -aagh, -iigh, -uugh) [Jacobson (2001) p.65]
 
 !---------------------------
 ! morphophonological symbols 
 !---------------------------
-%{.w.%}   ! drop weak -gh
-%{.c.%}   ! drop uvular (-gh) between single vowels
-%{.cV.%}  ! drop uvular (-gh) between single vowels for VERBS
-%{.f.%}   ! drop and hop final -e
-%{.fL.%}  ! drop and hop final -e if root exceeds two syllables
-%{.sf.%}  ! drop and hop semi-final -e
-%{.m.%}   ! drop root-final consonants
-%{.at.%}  ! modify root-final -te 
+%{.w.%}     ! drop weak -gh
+%{.c.%}     ! drop uvular (-gh) between single vowels
+%{.f.%}     ! drop and hop final -e
+%{.fS.%}    ! treat final -e like -a if root has two syllables or less [Jacobson (2001) p.38]
+%{.fL.%}    ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
+%{.sf.%}    ! drop and hop semi-final -e
+%{.m.%}     ! drop root-final consonants
+%{.at.%}    ! modify root-final -te 
 
 !-----------------------------
 ! morphological tags for nouns
 !-----------------------------
-[N.N]  ! noun-elaborating derivational suffix
-[N.V]  ! verbalizing derivational suffix
+[N.N]      ! noun-elaborating derivational suffix
+[N.V]      ! verbalizing derivational suffix
 
-[Sg]  ! singular
-[Pl]  ! plural 
-[Du]  ! dual
+[Sg]       ! singular
+[Pl]       ! plural 
+[Du]       ! dual
+
+[1SgPoss]  ! 1st person singular possessor
+[2SgPoss]  ! 2nd person singular possessor
+[3SgPoss]  ! 3rd person singular possessor
+[4SgPoss]  ! 4th person singular possessor
+[1PlPoss]  ! 1st person plural possessor
+[2PlPoss]  ! 2nd person plural possessor
+[3PlPoss]  ! 3rd person plural possessor
+[4PlPoss]  ! 4th person plural possessor
+[1DuPoss]  ! 1st person dual possessor
+[2DuPoss]  ! 2nd person dual possessor
+[3DuPoss]  ! 3rd person dual possessor
+[4DuPoss]  ! 4th person dual possessor
 
 [Abs]      ! absolutive case
+[Erg]      ! ergative (relative) case
 [Abl.Mod]  ! ablative-modalis case
-[Loc]      ! locative case 
-[All]      ! allative case
-[Per]      ! perlative case
-[Equ]      ! equative case
+[Loc]      ! locative (localis) case 
+[All]      ! allative (terminalis) case
+[Per]      ! perlative (vialis) case
+[Equ]      ! equative (equalis) case
 
 !-----------------------------
 ! morphological tags for verbs
 !-----------------------------
-[V.V]    ! verb-elaborating derivational suffix
-[V.N]    ! nominalizing derivational suffix
+[V.V]   ! verb-elaborating derivational suffix
+[V.N]   ! nominalizing derivational suffix
 
 [Intr]  ! intransitive (valency)
 [Trns]  ! transitive (valency)
@@ -56,13 +72,29 @@ Multichar_Symbols
 [Ind]   ! indicative mood
 [Int]   ! interrogative mood
 [Opt]   ! optative mood
-[NEG]   ! negative (optative)
+[Prs]   ! present (optative)
+[Fut]   ! future (optative)
+[Neg]   ! negative (optative)
+[Ptcp]  ! participial mood
 
-!-----------------------------
-! morphological tags for verbs
-!-----------------------------
+[1Sg]   ! 1st person singular subject/object
+[2Sg]   ! 2nd person singular subject/object
+[3Sg]   ! 3rd person singular subject/object
+[4Sg]   ! 4th person singular subject/object
+[1Pl]   ! 1st person plural subject/object
+[2Pl]   ! 2nd person plural subject/object
+[3Pl]   ! 3rd person plural subject/object
+[4Pl]   ! 4th person plural subject/object
+[1Du]   ! 1st peson dual subject/object
+[2Du]   ! 2nd person dual subject/object
+[3Du]   ! 3rd person dual subject/object
+[4Du]   ! 4th person dual subject/object
 
-[Q]  ! for question words
+!-------------------------
+! misc morphological tags
+!-------------------------
+[Q]          ! for question words
+[QuantQual]  ! for quantifier-qualifier constructions
 
 
 !===========
@@ -70,6 +102,7 @@ Multichar_Symbols
 LEXICON Root
 !
 !===========
-
 NounException;
 VerbException;
+
+

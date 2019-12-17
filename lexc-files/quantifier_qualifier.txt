@@ -1,0 +1,32 @@
+!==========================
+LEXICON QuantifierQualifier
+!==========================
+allakagh    QuantQualInfl; ! separately from others
+ellnginagh  QuantQualInfl; ! only; alone
+iingunagh   QuantQualInfl; ! all; whole
+qerngagh    QuantQualInfl; ! together
+
+
+!====================
+LEXICON QuantQualInfl
+!====================
+
+!----------------------------------|
+[QuantQual][3Sg]:%^an             #;
+[QuantQual][3Pl]:%^ita            #;
+[QuantQual][3Du]:%^ita            #;
+!----------------------------------|
+[QuantQual][1Sg]:%^ma             #;
+[QuantQual][1Pl]:%^%{.c.%}emta    #;
+[QuantQual][1Du]:%^%{.c.%}emtung  #;
+!----------------------------------|
+[QuantQual][2Sg]:%^%{.m.%}gpek    #;
+[QuantQual][2Pl]:%^%{.m.%}gpesi   #;
+[QuantQual][2Du]:%^%{.m.^}gpetek  #;
+!----------------------------------|
+[QuantQual][4Sg]:%^mi             #;
+[QuantQual][4Pl]:%^meng           #;
+[QuantQual][4Du]:%^%{.c.%}egmek   #;
+!----------------------------------|
+
+

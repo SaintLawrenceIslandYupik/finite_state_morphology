@@ -9,6 +9,7 @@ LEXICON VerbSuffixVI
 –ghhaleg[V.V]:%^ghhaleg                 #;              ! how V! (exclamation)
 
 @~sf–(g)kau[V.V]:%^%{.at.%}kau          VerbSuffixI;    ! to have V-ed or been V-ed 
+~–kayugu[V.V]:%^%{.f.%}kayugu           VerbSuffixI;    ! to be able to V
 @~%:(i/u)ma[V.V]:%^%{.at.%}ima          VerbSuffixI;    ! to have V-ed or to have been V-ed; to evidently have V-ed
 @~fni[V.V]:%^%{.at.%}ni                 VerbSuffixI;    ! to say that one V-s (compound-verbal postbase)
 
@@ -30,8 +31,12 @@ LEXICON VerbSuffixVI
 @~sf–(g)kagh[V.N]:%^gka%{g%}h           NounSuffixIII;  ! one that has V-ed or been V-ed
 @~sf–(g)kagh[V.N]:%^%{.at.%}ka%{g%}h    NounSuffixIII;  ! one that has V-ed or been V-ed
 
+~–kayug[V.N]:%^%{.f.%}kayug             NounSuffixII;   ! one who is able to V
+
 @ngugh[V.N]:%^%{.at.%}ngugh             NounSuffixIV;   ! one that is V-ing 
 
 @~sf–(g)ke[V.N]:%^%{.at.%}ke            NounSuffixVIII; ! one that the possessor is V-ing
+
+@~%:(i/u)magh:%^%{.at.%}imagh           QuantQualInfl;  ! while V-ing
 
 
