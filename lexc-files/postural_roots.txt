@@ -13,8 +13,10 @@ matagh    QuantQualInfl;
 mumig     PosturalRootSuffix; ! turned over (postural root; see 12.2.2)
 mumig     QuantQualInfl;
 
-aqumgagh    QuantQualInfl; ! to be sitting
-nekevghagh  QuantQualInfl; ! to be standing
+! expanded stative forms
+aqumgagh     QuantQualInfl; ! to be sitting
+matangghagh  QuantQualInfl; ! undressed; parka-less
+nekevghagh   QuantQualInfl; ! to be standing
 
 
 !=========================
@@ -23,4 +25,5 @@ LEXICON PosturalRootSuffix
 
 +nga:%^nga  VerbSuffixI;  ! to be in the R posture
 +te:%^te    VerbSuffixV; ! to get into the R posture; to put into the R posture
+
 
