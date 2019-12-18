@@ -97,6 +97,7 @@ LEXICON NounInflIX
 !------------------------------------|--------------------------------------|-------------------------------------|
 [Loc][Sg][4SgPoss]:%^%{.f.%}mini    #; [Loc][Pl][4SgPoss]:%^%{.f.%}mini    #; [Loc][Du][4SgPoss]:%^gmini         #;
 [Loc][Sg][4PlPoss]:%^%{.f.%}meggni  #; [Loc][Pl][4PlPoss]:%^%{.f.%}meggni  #; [Loc][Du][4PlPoss]:%^gmeggni       #;
+[Loc][Sg][4DuPoss]:%^%{.f.%}megni   #; [Loc][Pl][4DuPoss]:%^%{.f.%}megni   #; [Loc][Du][4DuPoss]:%^gmegni        #;
 [Loc][Sg][4DuPoss]:%^%{.f.%}megteni #; [Loc][Pl][4DuPoss]:%^%{.f.%}megteni #; [Loc][Du][4DuPoss]:%^gmegteni      #;
 !------------------------------------|--------------------------------------|-------------------------------------|
 
@@ -169,5 +170,31 @@ LEXICON NounInflIX
 [Equ][Sg][4PlPoss]:%^%{.f.%}megestun #; [Equ][Pl][4PlPoss]:%^%{.f.%}megestun #;  [Equ][Du][4PlPoss]:%^gmegestun    #;
 [Equ][Sg][4DuPoss]:%^%{.f.%}megestun #; [Equ][Pl][4DuPoss]:%^%{.f.%}megestun #; [Equ][Du][4DuPoss]:%^gmegestun     #;
 !-------------------------------------|---------------------------------------|-------------------------------------|
+
+
+!---------------------------------------------|
+! Obsolete Verb Root -ete                     |
+!   [Jacobson (2001) p.78]                    |
+!---------------------------------------------|-----------------------------------------------|----------------------------------------------|
+[Loc][Sg]:%^%{.f.%}m               VerbRootEte; [Loc][Pl]:%^n                      VerbRootEte; [Loc][Du]:%^gn                    VerbRootEte;
+!---------------------------------------------|-----------------------------------------------|----------------------------------------------|
+[Loc][Sg][1SgPoss]:%^mn            VerbRootEte; [Loc][Pl][1SgPoss]:%^mn            VerbRootEte; [Loc][Du][1SgPoss]:%^gemn         VerbRootEte;
+[Loc][Sg][1PlPoss]:%^mnn           VerbRootEte; [Loc][Pl][1PlPoss]:%^mnn           VerbRootEte; [Loc][Du][1PlPoss]:%^gemnn        VerbRootEte;
+[Loc][Sg][1DuPoss]:%^mtegn         VerbRootEte; [Loc][Pl][1DuPoss]:%^mtegn         VerbRootEte; [Loc][Du][1DuPoss]:%^gemtegn      VerbRootEte;
+!---------------------------------------------|-----------------------------------------------|----------------------------------------------|
+[Loc][Sg][2SgPoss]:%^gpen          VerbRootEte; [Loc][Pl][2SgPoss]:%^gpen          VerbRootEte; [Loc][Du][2SgPoss]:%^gpen         VerbRootEte;
+[Loc][Sg][2SgPoss]:%^gpegn         VerbRootEte; [Loc][Pl][2SgPoss]:%^gpegn         VerbRootEte; [Loc][Du][2SgPoss]:%^gpegn        VerbRootEte;
+[Loc][Sg][2PlPoss]:%^gpesin        VerbRootEte; [Loc][Pl][2PlPoss]:%^gpesin        VerbRootEte; [Loc][Du][2PlPoss]:%^gpesin       VerbRootEte;
+[Loc][Sg][2DuPoss]:%^gpetegn       VerbRootEte; [Loc][Pl][2DuPoss]:%^gpetegn       VerbRootEte; [Loc][Du][2DuPoss]:%^gpetegn      VerbRootEte;
+!---------------------------------------------|-----------------------------------------------|----------------------------------------------|
+[Loc][Sg][3SgPoss]:%^%{.f.%}ngan   VerbRootEte; [Loc][Pl][3SgPoss]:%^%{.f.%}ngan   VerbRootEte; [Loc][Du][3SgPoss]:%^gken         VerbRootEte;
+[Loc][Sg][3PlPoss]:%^%{.f.%}ngitn  VerbRootEte; [Loc][Pl][3PlPoss]:%^%{.f.%}ngitn  VerbRootEte; [Loc][Du][3PlPoss]:%^%{.f.%}ngitn VerbRootEte;
+[Loc][Sg][3DuPoss]:%^gken          VerbRootEte; [Loc][Pl][3DuPoss]:%^%{.f.%}ngitn  VerbRootEte; [Loc][Du][3DuPoss]:%^%{.f.%}ngitn VerbRootEte;
+!---------------------------------------------|-----------------------------------------------|----------------------------------------------|
+[Loc][Sg][4SgPoss]:%^%{.f.%}min    VerbRootEte; [Loc][Pl][4SgPoss]:%^%{.f.%}min    VerbRootEte; [Loc][Du][4SgPoss]:%^gmin         VerbRootEte;
+[Loc][Sg][4PlPoss]:%^%{.f.%}meggn  VerbRootEte; [Loc][Pl][4PlPoss]:%^%{.f.%}meggn  VerbRootEte; [Loc][Du][4PlPoss]:%^gmeggn       VerbRootEte;
+[Loc][Sg][4DuPoss]:%^%{.f.%}megn   VerbRootEte; [Loc][Pl][4DuPoss]:%^%{.f.%}megn   VerbRootEte; [Loc][Du][4DuPoss]:%^gmegn        VerbRootEte;
+[Loc][Sg][4DuPoss]:%^%{.f.%}megten VerbRootEte; [Loc][Pl][4DuPoss]:%^%{.f.%}megten VerbRootEte; [Loc][Du][4DuPoss]:%^gmegten      VerbRootEte;
+!---------------------------------------------|-----------------------------------------------|----------------------------------------------|
 
 

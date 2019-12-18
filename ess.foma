@@ -178,8 +178,10 @@ define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _     .o.
                 %{G%} -> 0                                        ;
 
 
-define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for postbase ~sf:(e)sqe [Jacobson p.64]
+define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for derivational suffix ~sf:(e)sqe [Jacobson (2001) p.64]
                 %{I%} -> i || FullVowel "^" _ .o.
+                %{I%} -> e || m "^" _         .o. ! for obsolete verb root -ete [Jacobson (2001) p.78]
+                %{I%} -> i || n "^" _         .o.
                 %{I%} -> 0                    ;
 
 
@@ -208,13 +210,13 @@ define ApicalTE y   -> s,
                 g   -> g g                                                 ,   ! apical -n [Jacobson (2001) p.31]
                 l   -> l l                                                 ,   !   the only consonants before -te that double
                 g h -> g h h   || _ %{t%} e "^" %{%.at%.%} n               .o. !   to show voicelessness are -g, -l, -gh
-				l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ]   .o. ! apical -l [Jacobson (2001) p.70]
+                l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ]   .o. ! apical -l [Jacobson (2001) p.70]
                 g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _           ;   ! for suffix @–lghii
 
 
 define VelarTE  e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
             %{t%} -> t,
-			%{t%} -> s  ||             V _ "^" %{%.at%.%} k .o. ! e.g. tuqutkuvgu, tuquskuvgu
+            %{t%} -> s  ||             V _ "^" %{%.at%.%} k .o. ! e.g. tuqutkuvgu, tuquskuvgu
        %{%.at%.%} -> 0  || C %{t%} e "^" _ k                ;   ! e.g. qelpeghtekuvgu
 
 
@@ -270,9 +272,9 @@ define Rules [
     !-------------------------------
     ! modify -te rules
     !-------------------------------
-	SpecialTE            .o.
-	UnmarkSpecialTE      .o.
-	ISuffixTE            .o.
+    SpecialTE            .o.
+    UnmarkSpecialTE      .o.
+    ISuffixTE            .o.
     ApicalTE             .o.
     VelarTE              .o.
     DropTE               .o.
@@ -297,7 +299,7 @@ define Rules [
     ResolveG             .o.
     ResolveI             .o.
     OptativeAllomorphs   .o.
-	SFGKeKa              .o.
+    SFGKeKa              .o.
     !-------------------------------
     ! clean up
     !-------------------------------

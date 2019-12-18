@@ -92,6 +92,7 @@ LEXICON NounInflI
 !------------------------------|--------------------------------|--------------------------------|
 [Loc][Sg][4SgPoss]:%^mini     #; [Loc][Pl][4SgPoss]:%^mini     #; [Loc][Du][4SgPoss]:%^gmini    #;
 [Loc][Sg][4PlPoss]:%^meggni   #; [Loc][Pl][4PlPoss]:%^meggni   #; [Loc][Du][4PlPoss]:%^gmeggni  #;
+[Loc][Sg][4DuPoss]:%^megni    #; [Loc][Pl][4DuPoss]:%^megni    #; [Loc][Du][4DuPoss]:%^gmegni   #;
 [Loc][Sg][4DuPoss]:%^megteni  #; [Loc][Pl][4DuPoss]:%^megteni  #; [Loc][Du][4DuPoss]:%^gmegteni #;
 !------------------------------|--------------------------------|--------------------------------|
 
@@ -164,5 +165,31 @@ LEXICON NounInflI
 [Equ][Sg][4PlPoss]:%^megestun   #; [Equ][Pl][4PlPoss]:%^megestun   #; [Equ][Du][4PlPoss]:%^gmegestun   #;
 [Equ][Sg][4DuPoss]:%^megestun   #; [Equ][Pl][4DuPoss]:%^megestun   #; [Equ][Du][4DuPoss]:%^gmegestun   #;
 !--------------------------------|----------------------------------|-----------------------------------|
+
+
+!---------------------------------------|
+! Obsolete Verb Root -ete               |
+!   [Jacobson (2001) p.78]              |
+!---------------------------------------|-----------------------------------------|-----------------------------------------|
+[Loc][Sg]:%^m                VerbRootEte; [Loc][Pl]:%^n                VerbRootEte; [Loc][Du]:%^gn               VerbRootEte;
+!---------------------------------------|-----------------------------------------|-----------------------------------------|
+[Loc][Sg][1SgPoss]:%^mn      VerbRootEte; [Loc][Pl][1SgPoss]:%^mn      VerbRootEte; [Loc][Du][1SgPoss]:%^gemn    VerbRootEte;
+[Loc][Sg][1PlPoss]:%^mnn     VerbRootEte; [Loc][Pl][1PlPoss]:%^mnn     VerbRootEte; [Loc][Du][1PlPoss]:%^gemnn   VerbRootEte;
+[Loc][Sg][1DuPoss]:%^mtegn   VerbRootEte; [Loc][Pl][1DuPoss]:%^mtegn   VerbRootEte; [Loc][Du][1DuPoss]:%^gemtegn VerbRootEte;
+!---------------------------------------|-----------------------------------------|-----------------------------------------|
+[Loc][Sg][2SgPoss]:%^gpen    VerbRootEte; [Loc][Pl][2SgPoss]:%^gpen    VerbRootEte; [Loc][Du][2SgPoss]:%^gpen    VerbRootEte;
+[Loc][Sg][2SgPoss]:%^gpegn   VerbRootEte; [Loc][Pl][2SgPoss]:%^gpegn   VerbRootEte; [Loc][Du][2SgPoss]:%^gpegn   VerbRootEte;
+[Loc][Sg][2PlPoss]:%^gpesin  VerbRootEte; [Loc][Pl][2PlPoss]:%^gpesin  VerbRootEte; [Loc][Du][2PlPoss]:%^gpesin  VerbRootEte;
+[Loc][Sg][2DuPoss]:%^gpetegn VerbRootEte; [Loc][Pl][2DuPoss]:%^gpetegn VerbRootEte; [Loc][Du][2DuPoss]:%^gpetegn VerbRootEte;
+!---------------------------------------|-----------------------------------------|-----------------------------------------|
+[Loc][Sg][3SgPoss]:%^ngan    VerbRootEte; [Loc][Pl][3SgPoss]:%^ngan    VerbRootEte; [Loc][Du][3SgPoss]:%^gken    VerbRootEte;
+[Loc][Sg][3PlPoss]:%^ngitn   VerbRootEte; [Loc][Pl][3PlPoss]:%^ngitn   VerbRootEte; [Loc][Du][3PlPoss]:%^ngitn   VerbRootEte;
+[Loc][Sg][3DuPoss]:%^gken    VerbRootEte; [Loc][Pl][3DuPoss]:%^ngitn   VerbRootEte; [Loc][Du][3DuPoss]:%^ngitn   VerbRootEte;
+!---------------------------------------|-----------------------------------------|-----------------------------------------|
+[Loc][Sg][4SgPoss]:%^min     VerbRootEte; [Loc][Pl][4SgPoss]:%^min     VerbRootEte; [Loc][Du][4SgPoss]:%^gmin    VerbRootEte;
+[Loc][Sg][4PlPoss]:%^meggn   VerbRootEte; [Loc][Pl][4PlPoss]:%^meggn   VerbRootEte; [Loc][Du][4PlPoss]:%^gmeggn  VerbRootEte;
+[Loc][Sg][4DuPoss]:%^megn    VerbRootEte; [Loc][Pl][4DuPoss]:%^megn    VerbRootEte; [Loc][Du][4DuPoss]:%^gmegn   VerbRootEte;
+[Loc][Sg][4DuPoss]:%^megten  VerbRootEte; [Loc][Pl][4DuPoss]:%^megten  VerbRootEte; [Loc][Du][4DuPoss]:%^gmegten VerbRootEte;
+!---------------------------------------|-----------------------------------------|-----------------------------------------|
 
 
