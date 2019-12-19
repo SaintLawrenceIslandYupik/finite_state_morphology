@@ -80,7 +80,6 @@ define Lowercase "A" -> a ,
 define FinalE %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC ] e "^" _ [ MultiCharC | C ] .o. ! do not hop or drop final e if doing so results
                                                                                          ! in a cluster of three consonants e.g.
                                                                                          ! riigte[Abl.Mod][Sg] -> riigtmeng
-                                                                                         ! (cf. yughaghte[Abs][Sg][3SgPoss] -> yughaghtenga)
                                                                                          ! [Jacobson (2001) p.21]
                   [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}  .o. ! hop final -e
                      e -> 0 || [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}         .o. ! drop final -e as long it isn't in the first syllable

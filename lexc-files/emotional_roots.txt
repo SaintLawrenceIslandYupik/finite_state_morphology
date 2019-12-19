@@ -1,13 +1,115 @@
-!=====================
-LEXICON EmotionalRoots
-!=====================
+!====================
+LEXICON EmotionalRoot
+!====================
 
-kusge    #; ! squeamish; finicky (emotional root; see 13.2.2)
-eflegh   #; ! uncomfortable from something on the skin (emotional root; see 13.2.2 below)
-kayngu   #; ! embarrassed (emotional root; see below)
-qaazugh  #; ! alienated; depressed; out of sorts (emotional root; see below)
-quginag  #; ! terrified of supernatural (emotional root; see below)
-sikna    #; ! possessive; holding dear; selfish (emotional root; see below)
-yimi     #; ! shy; inhibited; intimidated (emotional root; see below)
+kayngu   EmotionalRootPostbaseI;   ! embarrassed (emotional root; see below)
+sikna    EmotionalRootPostbaseI;   ! possessive; holding dear; selfish (emotional root; see below)
+yimi     EmotionalRootPostbaseI;   ! shy; inhibited; intimidated (emotional root; see below)
+
+kusge    EmotionalRootPostbaseII;  ! squeamish; finicky (emotional root; see 13.2.2)
+
+quginag  EmotionalRootPostbaseIII; ! terrified of supernatural (emotional root; see below)
+
+eflegh   EmotionalRootPostbaseIV;  ! uncomfortable from something on the skin (emotional root; see 13.2.2 below)
+qaazugh  EmotionalRootPostbaseIV;  ! alienated; depressed; out of sorts (emotional root; see below)
+
+
+!=============================
+LEXICON EmotionalRootPostbaseI
+!=============================
+
+~–ketagh:%^keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+@~fnagh:%^na%{g%}h     NounPostbaseIII; ! something that causes one to feel R
+~–tagh:%^ta%{g%}h      NounPostbaseIII; ! one who tends to often feel R
+
+~–ke:%^ke              VerbPostbaseII;  ! to feel R toward object
+@~fyug:%^yug           VerbPostbaseIII; ! to feel R
+~–ketagh:%^ketagh      VerbPostbaseIV;  ! to tend to often feel R
+@~fnagh:%^nagh         VerbPostbaseIV;  ! to tend to cause one to feel R
+~–tagh:%^tagh          VerbPostbaseIV;  ! to tend to often feel R
+
+!==============================
+LEXICON EmotionalRootPostbaseII
+!==============================
+
+~–ketagh:%^%{.f.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+@~fnagh:%^%{.f.%}na%{g%}h     NounPostbaseIII; ! something that causes one to feel R
+~–tagh:%^%{.f.%}ta%{g%}h      NounPostbaseIII; ! one who tends to often feel R
+
+~–ke:%^%{.f.%}ke              VerbPostbaseII;  ! to feel R toward object
+@~fyug:%^%{.f.%}yug           VerbPostbaseIII;  ! to feel R
+~–ketagh:%^%{.f.%}ketagh      VerbPostbaseIV; ! to tend to often feel R
+@~fnagh:%^%{.f.%}nagh         VerbPostbaseIV;  ! to tend to cause one to feel R
+~–tagh:%^%{.f.%}tagh          VerbPostbaseIV;  ! to tend to often feel R
+
+!===============================
+LEXICON EmotionalRootPostbaseIII
+!===============================
+
+~–ketagh:%^%{.m.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+@~fnagh:%^na%{g%}h            NounPostbaseIII; ! something that causes one to feel R
+~–tagh:%^%{.m.%}ta%{g%}h      NounPostbaseIII; ! one who tends to often feel R
+
+~–ke:%^%{.m.%}ke              VerbPostbaseII;  ! to feel R toward object
+@~fyug:%^yug                  VerbPostbaseIII; ! to feel R
+~–ketagh:%^%{.m.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+@~fnagh:%^nagh                VerbPostbaseIV;  ! to tend to cause one to feel R
+~–tagh:%^%{.m.%}tagh          VerbPostbaseIV;  ! to tend to often feel R
+
+!==============================
+LEXICON EmotionalRootPostbaseIV
+!==============================
+
+~–ketagh:%^%{.m.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+@~fnagh:%^na%{g%}h            NounPostbaseIII; ! something that causes one to feel R
+~–tagh:%^%{.m.%}ta%{g%}h      NounPostbaseIII; ! one who tends to often feel R
+
+~–ke:%^%{.m.%}ke              VerbPostbaseII;  ! to feel R toward object
+@~fyug:%^yug                  VerbPostbaseIII; ! to feel R
+~–ketagh:%^%{.m.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+@~fnagh:%^nagh                VerbPostbaseIV;  ! to tend to cause one to feel R
+~–tagh:%^%{.m.%}tagh          VerbPostbaseIV;  ! to tend to often feel R
+
+!=============================
+LEXICON EmotionalRootPostbaseV
+!=============================
+
+~–ketagh:%^%{.f.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+@~fnagh:%^%{.at.%}na%{g%}h    NounPostbaseIII; ! something that causes one to feel R
+~–tagh:%^%{.f.%}ta%{g%}h      NounPostbaseIII; ! one who tends to often feel R
+
+~–ke:%^%{.f.%}ke              VerbPostbaseII;  ! to feel R toward object
+@~fyug:%^%{.at.%}yug          VerbPostbaseIII; ! to feel R
+~–ketagh:%^%{.f.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+@~fnagh:%^%{.at.%}nagh        VerbPostbaseIV;  ! to tend to cause one to feel R
+~–tagh:%^%{.f.%}tagh          VerbPostbaseIV;  ! to tend to often feel R
+
+!==============================
+LEXICON EmotionalRootPostbaseVI
+!==============================
+
+~–ketagh:%^%{.f.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+@~fnagh:%^%{.at.%}na%{g%}h    NounPostbaseIII; ! something that causes one to feel R
+~–tagh:%^%{.f.%}ta%{g%}h      NounPostbaseIII; ! one who tends to often feel R
+
+~–ke:%^%{.f.%}ke              VerbPostbaseII;  ! to feel R toward object
+@~fyug:%^%{.at.%}yug          VerbPostbaseIII; ! to feel R
+~–ketagh:%^%{.f.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+@~fnagh:%^%{.at.%}nagh        VerbPostbaseIV;  ! to tend to cause one to feel R
+~–tagh:%^%{.f.%}tagh          VerbPostbaseIV;  ! to tend to often feel R
+
+!===============================
+LEXICON EmotionalRootPostbaseVII
+!===============================
+
+~–ketagh:%^%{.sf.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+@~fnagh:%^na%{g%}h             NounPostbaseIII; ! something that causes one to feel R
+~–tagh:%^%{.sf.%}ta%{g%}h      NounPostbaseIII; ! one who tends to often feel R
+
+~–ke:%^%{.sf.%}ke              VerbPostbaseII;  ! to feel R toward object
+@~fyug:%^yug                   VerbPostbaseIII; ! to feel R
+~–ketagh:%^%{.sf.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+@~fnagh:%^nagh                 VerbPostbaseIV;  ! to tend to cause one to feel R
+~–tagh:%^%{.sf.%}tagh          VerbPostbaseIV;  ! to tend to often feel R
 
 

@@ -1,0 +1,41 @@
+!=====================================================
+LEXICON NounPostbaseV
+!  noun-elaborating [NN] and verbalizing [NV] suffixes
+!  when suffixing to noun roots that end in strong gh
+!=====================================================
+
+                                    NounInflV;
+
+–ghhaleg[N.V]:%^%{.m.%}ghhalek      #;                ! how V! (exclamation)
+~sf-w%:(e)nkut[N.N]:%^enkut         #;                ! N and company (or family)
+~sf-w%:(e)nkuk[N.N]:%^enkuk         #;                ! N and partner (or spouse)
+
++mii[N.N]:%^mii                     NounPostbaseI;    ! resident of N
+
+–ghllag[N.N]:%^%{.m.%}ghllag        NounPostbaseII;   ! big N; lots of N
+–ghrugllag[N.N]:%^%{.m.%}ghrugllag  NounPostbaseII;   ! big N, huge N
+–krag[N.N]:%^%{.m.%}krag            NounPostbaseII;   ! fancy piece of N
+
++kagh[N.N]:%^ka%{g%}h               NounPostbaseIII;  ! raw material for N
+–qragh[N.N]:%^%{.m.%}qra%{g%}h      NounPostbaseIII;  ! small N; thing like N
+–squgh[N.N]:%^%{.m.%}squ%{g%}h      NounPostbaseIII;  ! little N, small N
+
+–squghhagh[N.N]:%^%{.m.%}squghhagh  NounPostbaseIV;   ! little N, small N
+
+–leg[N.N]:%^%{.m.%}leg              NounPostbaseVII;  ! one having lots of N
+
+–lgu[N.V]:%^%{.m.%}lgu              VerbPostbaseI;    ! to have N
+~%:(ng)u[N.V]:%^u                   VerbPostbaseI;    ! to be N
++ti[N.V]:%^ti                       VerbPostbaseI;    ! to speak the language of N
+
+–ligh[N.V]:%^{.m.%}ligh             VerbPostbaseIV;   ! to provide with N; to put N in
+–liigh[N.V]:%^%{.m.%}liigh          VerbPostbaseIV;   ! to prepare N, to cook N
++niigh[N.V]:%^niigh                 VerbPostbaseIV;   ! to hunt for N, to search for N, to ask for N, to work with N
+–ngllagh[N.V]:%^%{.m.%}ngllagh      VerbPostbaseIV;   ! to make N
++tugh[N.V]:%^tugh                   VerbPostbaseIV;   ! to eat N, to use N
+
++te[N.V]:%^%{t%}e                   VerbPostbaseV;    ! to go to N, to catch N
+
++tuumagh:%^tuumagh                  QuantQualInfl;    ! together with one's Ns
+
+
