@@ -1,0 +1,79 @@
+!============================
+LEXICON IntrPrec
+!  person/number markers for
+!     intransitive precessive 
+!============================
+!---------------|----------------|---------------|---------------|
+[3Sg]:^n       #; [1Sg]:^ma     #; [2Sg]:^vek   #; [4Sg]:^mi    #;
+[3Pl]:^ta      #; [1Pl]:^mta    #; [2Pl]:^fsi   #; [4Pl]:^meng  #;
+[3Du]:^yek     #; [1Du]:^mtung  #; [2Du]:^ftek  #; [4Du]:^mek   #;
+[3Du]:^gkenka  #;
+!---------------|----------------|---------------|---------------|
+
+
+!===========================
+LEXICON TrnsPrec
+!  person/number markers for
+!     transitive precessive 
+!===========================
+!-----------------------|------------------------|-------------------------|
+[3Sg][3Sg]:^gu         #; [3Sg][3Pl]:^ki        #; [3Sg][3Du]:^kek        #;
+[3Pl][3Sg]:^tgu        #; [3Pl][3Pl]:^tki       #; [3Pl][3Du]:^tkek       #;
+[3Du][3Sg]:^gnegu      #; [3Du][3Pl]:^gneki     #; [3Du][3Du]:^gnekek     #;
+!-----------------------|------------------------|-------------------------|
+[1Sg][3Sg]:^mkun       #; [1Sg][3Pl]:^mki       #; [1Sg][3Du]:^mkek       #;
+[1Pl][3Sg]:^mteggu     #; [1Pl][3Pl]:^mteki     #; [1Pl][3Du]:^mtekek     #;
+[1Du][3Sg]:^mtegnegu   #; [1Du][3Pl]:^mtegneki  #; [1Du][3Du]:^mtegnekek  #;
+!-----------------------|------------------------|-------------------------|
+[2Sg][3Sg]:^vgu        #; [2Sg][3Pl]:^fki       #; [2Sg][3Du]:^fkek       #;
+[2Pl][3Sg]:^fsigu      #; [2Pl][3Pl]:^fsiki     #; [2Pl][3Du]:^fsikek     #;
+[2Du][3Sg]:^ftegnegu   #; [2Du][3Pl]:^ftegneki  #; [2Du][3Du]:^ftegnekek  #;
+!-----------------------|------------------------|-------------------------|
+[4Sg][3Sg]:^migu       #; [4Sg][3Pl]:^miki      #; [4Sg][3Du]:^mikek      #;
+[4Pl][3Sg]:^megteggu   #; [4Pl][3Pl]:^megteki   #; [4Pl][3Du]:^megtekek   #;
+[4Du][3Sg]:^megnegu    #; [4Du][3Pl]:^megneki   #; [4Du][3Du]:^megnekek   #;
+!-----------------------|------------------------|-------------------------|
+[3Sg][1Sg]:^nga        #; [3Sg][1Pl]:^nkut      #; [3Sg][1Du]:^nkung      #;
+[3Pl][1Sg]:^tnga       #; [3Pl][1Pl]:^nkut      #; [3Pl][1Du]:^nkung      #;
+[3Du][1Sg]:^gnenga     #; [3Du][1Pl]:^nkut      #; [3Du][1Du]:^nkung      #;
+!-----------------------|------------------------|-------------------------|
+! no [1--][1--] forms                                                      |
+!-----------------------|------------------------|-------------------------|
+[2Sg][1Sg]:^vnga       #; [2Sg][1Pl]:^fkut      #; [2Sg][1Du]:^fkung      #;
+[2Pl][1Sg]:^fsinga     #; [2Pl][1Pl]:^fsikut    #; [2Pl][1Du]:^fsikung    #;
+[2Du][1Sg]:^ftegnenga  #; [2Du][1Pl]:^ftegnekut #; [2Du][1Du]:^ftegnekung #;
+!-----------------------|------------------------|-------------------------|
+[4Sg][1Sg]:^minga      #; [4Sg][1Pl]:^mikut     #; [4Sg][1Du]:^mikung     #;
+[4Pl][1Sg]:^megtengnga #; [4Pl][1Pl]:^megtekut  #; [4Pl][1Du]:^megtekung  #;
+[4Du][1Sg]:^megnenga   #; [4Du][1Pl]:^megneku   #; [4Du][1Du]:^megnekung  #;
+!-----------------------|------------------------|-------------------------|
+[3Sg][2Sg]:^ten        #; [3Sg][2Pl]:^si        #; [3Sg][2Du]:^stek       #;
+[3Pl][2Sg]:^ten        #; [3Pl][2Pl]:^si        #; [3Pl][2Du]:^stek       #;
+[3Du][2Sg]:^ten        #; [3Du][2Pl]:^si        #; [3Du][2Du]:^stek       #;
+!-----------------------|------------------------|-------------------------|
+[1Sg][2Sg]:^mken       #; [1Sg][2Pl]:^msi       #; [1Sg][2Du]:^mtek       #;
+[1Pl][2Sg]:^mken       #; [1Pl][2Pl]:^msi       #; [1Pl][2Du]:^mtek       #;
+[1Du][2Sg]:^mken       #; [1Du][2Pl]:^msi       #; [1Du][2Du]:^mtek       #;
+!-----------------------|------------------------|-------------------------|
+! no [2--][2--] forms                                                      |
+!-----------------------|------------------------|-------------------------|
+[4Sg][2Sg]:^miten      #; [4Sg][2Pl]:^misi      #; [4Sg][2Du]:^mitek      #;
+[4Pl][2Sg]:^miten      #; [4Pl][2Pl]:^misi      #; [4Pl][2Du]:^mitek      #;
+[4Du][2Sg]:^miten      #; [4Du][2Pl]:^misi      #; [4Du][2Du]:^mitek      #;
+!-----------------------|------------------------|-------------------------|
+[3Sg][4Sg]^tni         #; [3Sg][4Pl]^steng      #; [3Sg][4Du]^stek        #;
+[3Pl][4Sg]^tni         #; [3Pl][4Pl]^steng      #; [3Pl][4Du]^stek        #;
+[3Du][4Sg]^tni         #; [3Du][4Pl]^steng      #; [3Du][4Du]^stek        #;
+!-----------------------|------------------------|-------------------------|
+[1Sg][4Sg]^mni         #; [1Sg][4Pl]^mteng      #; [1Sg][4Du]^mtek        #;
+[1Pl][4Sg]^mnni        #; [1Pl][4Pl]^mteng      #; [1Pl][4Du]^mtek        #;
+[1Du][4Sg]^mtegnegu    #; [1Du][4Pl]^mtegneki   #; [1Du][4Du]^mtegnekek   #;
+!-----------------------|------------------------|-------------------------|
+[2Sg][4Sg]^vgu         #; [2Sg][4Pl]^fki        #; [2Sg][4Du]^fkek        #;
+[2Pl][4Sg]^fsigu       #; [2Pl][4Pl]^fsiki      #; [2Pl][4Du]^fsikek      #;
+[2Du][4Sg]^ftegnegu    #; [2Du][4Pl]^ftegneki   #; [2Du][4Du]^ftegnekek   #;
+!-----------------------|------------------------|-------------------------|
+! no [4--][4--] forms                                                      |
+!-----------------------|------------------------|-------------------------|
+
+

@@ -1,0 +1,79 @@
+!============================
+LEXICON IntrConc
+!  person/number markers for
+!     intransitive concessive 
+!============================
+!----------------|-------------------|------------------|------------------|
+[3Sg]:^an       #; [1Sg]:agh^ma     #; [2Sg]:agh^pek   #; [4Sg]:agh^mi    #;
+[3Pl]:^ita      #; [1Pl]:agh^mta    #; [2Pl]:agh^fsi   #; [4Pl]:agh^meng  #;
+[3Du]:^ayek     #; [1Du]:agh^mtung  #; [2Du]:agh^ftek  #; [4Du]:agh^mek   #;
+[3Du]:^agkenka  #;
+!----------------|-------------------|------------------|------------------|
+
+
+!===========================
+LEXICON TrnsConc
+!  person/number markers for
+!     transitive concessive 
+!===========================
+!--------------------------|---------------------------|----------------------------|
+[3Sg][3Sg]:^agu           #; [3Sg][3Pl]:^aki          #; [3Sg][3Du]:^akek          #;
+[3Pl][3Sg]:^itgu          #; [3Pl][3Pl]:^itki         #; [3Pl][3Du]:^itkek         #;
+[3Du][3Sg]:^agnegu        #; [3Du][3Pl]:^agneki       #; [3Du][3Du]:^agnekek       #;
+!--------------------------|---------------------------|----------------------------|
+[1Sg][3Sg]:agh^mkun       #; [1Sg][3Pl]:agh^mki       #; [1Sg][3Du]:agh^mkek       #;
+[1Pl][3Sg]:agh^mteggu     #; [1Pl][3Pl]:agh^mteki     #; [1Pl][3Du]:agh^mtekek     #;
+[1Du][3Sg]:agh^mtegnegu   #; [1Du][3Pl]:agh^mtegneki  #; [1Du][3Du]:agh^mtegnekek  #;
+!--------------------------|---------------------------|----------------------------|
+[2Sg][3Sg]:agh^vgu        #; [2Sg][3Pl]:agh^fki       #; [2Sg][3Du]:agh^fkek       #;
+[2Pl][3Sg]:agh^fsigu      #; [2Pl][3Pl]:agh^fsiki     #; [2Pl][3Du]:agh^fsikek     #;
+[2Du][3Sg]:agh^ftegnegu   #; [2Du][3Pl]:agh^ftegneki  #; [2Du][3Du]:agh^ftegnekek  #;
+!--------------------------|---------------------------|----------------------------|
+[4Sg][3Sg]:agh^migu       #; [4Sg][3Pl]:agh^miki      #; [4Sg][3Du]:agh^mikek      #;
+[4Pl][3Sg]:agh^megteggu   #; [4Pl][3Pl]:agh^megteki   #; [4Pl][3Du]:agh^megtekek   #;
+[4Du][3Sg]:agh^megnegu    #; [4Du][3Pl]:agh^megneki   #; [4Du][3Du]:agh^megnekek   #;
+!--------------------------|---------------------------|----------------------------|
+[3Sg][1Sg]:^anga          #; [3Sg][1Pl]:^inkut        #; [3Sg][1Du]:^inkung        #;
+[3Pl][1Sg]:^atnga         #; [3Pl][1Pl]:^inkut        #; [3Pl][1Du]:^inkung        #;
+[3Du][1Sg]:^agnenga       #; [3Du][1Pl]:^inkut        #; [3Du][1Du]:^inkung        #;
+!--------------------------|---------------------------|----------------------------|
+! no [1--][1--] forms                                                               |
+!--------------------------|---------------------------|----------------------------|
+[2Sg][1Sg]:agh^vnga       #; [2Sg][1Pl]:agh^fkut      #; [2Sg][1Du]:agh^fkung      #;
+[2Pl][1Sg]:agh^fsinga     #; [2Pl][1Pl]:agh^fsikut    #; [2Pl][1Du]:agh^fsikung    #;
+[2Du][1Sg]:agh^ftegnenga  #; [2Du][1Pl]:agh^ftegnekut #; [2Du][1Du]:agh^ftegnekung #;
+!--------------------------|---------------------------|----------------------------|
+[4Sg][1Sg]:agh^minga      #; [4Sg][1Pl]:agh^mikut     #; [4Sg][1Du]:agh^mikung     #;
+[4Pl][1Sg]:agh^megtengnga #; [4Pl][1Pl]:agh^megtekut  #; [4Pl][1Du]:agh^megtekung  #;
+[4Du][1Sg]:agh^megnenga   #; [4Du][1Pl]:agh^megneku   #; [4Du][1Du]:agh^megnekung  #;
+!--------------------------|---------------------------|----------------------------|
+[3Sg][2Sg]:^aten          #; [3Sg][2Pl]:^isi          #; [3Sg][2Du]:^istek         #;
+[3Pl][2Sg]:^aten          #; [3Pl][2Pl]:^isi          #; [3Pl][2Du]:^istek         #;
+[3Du][2Sg]:^aten          #; [3Du][2Pl]:^isi          #; [3Du][2Du]:^istek         #;
+!--------------------------|---------------------------|----------------------------|
+[1Sg][2Sg]:agh^mken       #; [1Sg][2Pl]:agh^msi       #; [1Sg][2Du]:agh^mtek       #;
+[1Pl][2Sg]:agh^mken       #; [1Pl][2Pl]:agh^msi       #; [1Pl][2Du]:agh^mtek       #;
+[1Du][2Sg]:agh^mken       #; [1Du][2Pl]:agh^msi       #; [1Du][2Du]:agh^mtek       #;
+!--------------------------|---------------------------|----------------------------|
+! no [2--][2--] forms                                                               |
+!--------------------------|---------------------------|----------------------------|
+[4Sg][2Sg]:agh^miten      #; [4Sg][2Pl]:agh^misi      #; [4Sg][2Du]:agh^mitek      #;
+[4Pl][2Sg]:agh^miten      #; [4Pl][2Pl]:agh^misi      #; [4Pl][2Du]:agh^mitek      #;
+[4Du][2Sg]:agh^miten      #; [4Du][2Pl]:agh^misi      #; [4Du][2Du]:agh^mitek      #;
+!--------------------------|---------------------------|----------------------------|
+[3Sg][4Sg]^atni           #; [3Sg][4Pl]^isteng        #; [3Sg][4Du]^istek          #;
+[3Pl][4Sg]^atni           #; [3Pl][4Pl]^isteng        #; [3Pl][4Du]^istek          #;
+[3Du][4Sg]^atni           #; [3Du][4Pl]^isteng        #; [3Du][4Du]^istek          #;
+|--------------------------|---------------------------|----------------------------|
+[1Sg][4Sg]agh^mni         #; [1Sg][4Pl]agh^mteng      #; [1Sg][4Du]agh^mtek        #;
+[1Pl][4Sg]agh^mnni        #; [1Pl][4Pl]agh^mteng      #; [1Pl][4Du]agh^mtek        #;
+[1Du][4Sg]agh^mtegnegu    #; [1Du][4Pl]agh^mtegneki   #; [1Du][4Du]agh^mtegnekek   #;
+|--------------------------|---------------------------|----------------------------|
+[2Sg][4Sg]agh^vgu         #; [2Sg][4Pl]agh^fki        #; [2Sg][4Du]agh^fkek        #;
+[2Pl][4Sg]agh^fsigu       #; [2Pl][4Pl]agh^fsiki      #; [2Pl][4Du]agh^fsikek      #;
+[2Du][4Sg]agh^ftegnegu    #; [2Du][4Pl]agh^ftegneki   #; [2Du][4Du]agh^ftegnekek   #;
+|--------------------------|---------------------------|----------------------------|
+! no [4--][4--] forms                                                               |
+|--------------------------|---------------------------|----------------------------|
+
+

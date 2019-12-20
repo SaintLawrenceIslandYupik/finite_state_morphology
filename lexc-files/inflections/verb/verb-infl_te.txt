@@ -3,25 +3,25 @@ LEXICON VerbInflV
 !  for verbs that end in -te
 !=====================================
 
-!~~~~~~~~~~~~~~~~~~~~~~~~~~
-! indicative & participial
-!~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+!~~~~~~~~~~~~
+! indicative
+!~~~~~~~~~~~~
 [Intr][Ind]:%^%{.f.%}u        IntrInd;
 [Trns][Ind]:%^%{.f.%}a        TrnsInd;
 
+!~~~~~~~~~~~~~
+! participial
+!~~~~~~~~~~~~~
 [Intr][Ptcp]:%^%{.at.%}lghii  IntrPtcp;
 [Trns][Ptcp]:%^%{.at.%}ke     TrnsPtcp;
 [Intr][Ptcp]:%^%{.at.%}ka     IntrPtcpAlternate; ! second participial mood?
 [Trns][Ptcp]:%^%{.at.%}ka     TrnsPtcpAlternate; ! [Jacobson (2001) p.73]
-
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! interrogative 
 !   exhibits some fusional properties
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 !--------------------------------|------------------------------------|--------------------------------|
 [Intr][Int][3Sg]:%^%{.f.%}a%^   #; [Intr][Int][1Sg]:%^%{.f.%}zi%^nga #; [Intr][Int][2Sg]:%^%{.f.%}zin #;
 [Intr][Int][3Pl]:%^%{.f.%}a%^t  #; [Intr][Int][1Pl]:%^ste%^a         #; [Intr][Int][2Pl]:%^tsi        #;
@@ -62,13 +62,11 @@ LEXICON VerbInflV
 ! no [2--][2--] forms                                                                                                            |
 !-----------------------------------------|------------------------------------------|-------------------------------------------|
 
-
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! present optative 
 !   exhibits some fusional properties
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 !---------------------------------|-------------------------------------|-----------------------------------|
 [Intr][Opt][3Sg]:%^%{.at.%}li%^  #; [Intr][Opt][1Sg]:%^%{.at.%}la%^nga #; [Intr][Opt][2Sg]:%^n             #;
 [Intr][Opt][3Pl]:%^%{.at.%}li%^t #; [Intr][Opt][1Pl]:%^lte%^a          #; [Intr][Opt][2Pl]:%^%{.at.%}%^tek #;
@@ -109,11 +107,9 @@ LEXICON VerbInflV
 ! no [2--][2--] forms                                                                                                                  |
 !-------------------------------------------|--------------------------------------------|---------------------------------------------|
 
-
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! negative present optative
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 !----------------------------------|
 [Intr][Opt][NEG]:%^fqaa  IntrOptNEG;
 [Trns][Opt][NEG]:%^fqaa  TrnsOptNEG;
@@ -124,5 +120,17 @@ LEXICON VerbInflV
 [Trns][Opt][NEG][2Pl][3Pl]:%^fqiita #;
 [Trns][Opt][NEG][2Du][3Pl]:%^fqiita #;
 !------------------------------------|
+
+!~~~~~~~~~~~~
+! precessive 
+!~~~~~~~~~~~~
+[Intr][Prec]:%^%{.at.%}vagilga  IntrPrec;
+[Trns][Prec]:%^%{.at.%}vagilga  TrnsPrec;
+
+!~~~~~~~~~~~~
+! concessive 
+!~~~~~~~~~~~~
+[Intr][Conc]:%^ghnga  IntrConc;
+[Trns][Conc]:%^ghnga  TrnsConc;
 
 
