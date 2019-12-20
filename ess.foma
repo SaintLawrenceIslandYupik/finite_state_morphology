@@ -85,14 +85,15 @@ define FinalE %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC ] e "^" _ [ MultiCharC |
                      e -> 0 || [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}         .o. ! drop final -e as long it isn't in the first syllable
                %{%.f%.%} -> 0                                                        ;
 
-define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _ [ MultiCharC | C ]                        .o.
+
+define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _                                           .o.
                         [..] -> e ||      .#. ( MultiCharC | C ) FullVowel _ [ MultiCharC | C ] e g (h) "^" %{%.sf%.%} .o.
                            e -> 0 ||        [ ? - .#. ] [ MultiCharC | C ] _ g (h) "^" %{%.sf%.%}                      .o.
                   %{%.sf%.%} -> 0                                                                                      ;
 
 
-define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%}                                 .o. ! [Jacobson (2001) p.38]
-              %{%.fS%.%} -> 0                                                                       ;
+define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%} .o. ! [Jacobson (2001) p.38]
+              %{%.fS%.%} -> 0                                       ;
 
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables

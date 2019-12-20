@@ -3,7 +3,6 @@
 Multichar_Symbols
 !
 !================
-%^     ! morpheme boundary
 %{g%}  ! for digraph -gh
 %{k%}  ! for digraph -kw
 %{t%}  ! for -te
@@ -117,7 +116,7 @@ NounRootIX;    ! has final -e that can drop and hop
 VerbRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
 VerbRootII;    ! has final -e
 VerbRootIII;   ! ends in -g, -w, -ghw
-VerbRootIV;    ! ends in -agh, -igh, -ugh or -egh where e cannot be drop
+VerbRootIV;    ! ends in -agh, -igh, -ugh
 VerbRootV;     ! ends in -te
 VerbRootVI;    ! ends in special -te 
 VerbRootVII;   ! has semi-final -e
