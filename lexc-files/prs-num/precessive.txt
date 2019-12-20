@@ -61,17 +61,17 @@ LEXICON TrnsPrec
 [4Pl][2Sg]:^miten      #; [4Pl][2Pl]:^misi      #; [4Pl][2Du]:^mitek      #;
 [4Du][2Sg]:^miten      #; [4Du][2Pl]:^misi      #; [4Du][2Du]:^mitek      #;
 !-----------------------|------------------------|-------------------------|
-[3Sg][4Sg]^tni         #; [3Sg][4Pl]^steng      #; [3Sg][4Du]^stek        #;
-[3Pl][4Sg]^tni         #; [3Pl][4Pl]^steng      #; [3Pl][4Du]^stek        #;
-[3Du][4Sg]^tni         #; [3Du][4Pl]^steng      #; [3Du][4Du]^stek        #;
+[3Sg][4Sg]:^tni        #; [3Sg][4Pl]:^steng     #; [3Sg][4Du]:^stek       #;
+[3Pl][4Sg]:^tni        #; [3Pl][4Pl]:^steng     #; [3Pl][4Du]:^stek       #;
+[3Du][4Sg]:^tni        #; [3Du][4Pl]:^steng     #; [3Du][4Du]:^stek       #;
 !-----------------------|------------------------|-------------------------|
-[1Sg][4Sg]^mni         #; [1Sg][4Pl]^mteng      #; [1Sg][4Du]^mtek        #;
-[1Pl][4Sg]^mnni        #; [1Pl][4Pl]^mteng      #; [1Pl][4Du]^mtek        #;
-[1Du][4Sg]^mtegnegu    #; [1Du][4Pl]^mtegneki   #; [1Du][4Du]^mtegnekek   #;
+[1Sg][4Sg]:^mni        #; [1Sg][4Pl]:^mteng     #; [1Sg][4Du]:^mtek       #;
+[1Pl][4Sg]:^mnni       #; [1Pl][4Pl]:^mteng     #; [1Pl][4Du]:^mtek       #;
+[1Du][4Sg]:^mtegnegu   #; [1Du][4Pl]:^mtegneki  #; [1Du][4Du]:^mtegnekek  #;
 !-----------------------|------------------------|-------------------------|
-[2Sg][4Sg]^vgu         #; [2Sg][4Pl]^fki        #; [2Sg][4Du]^fkek        #;
-[2Pl][4Sg]^fsigu       #; [2Pl][4Pl]^fsiki      #; [2Pl][4Du]^fsikek      #;
-[2Du][4Sg]^ftegnegu    #; [2Du][4Pl]^ftegneki   #; [2Du][4Du]^ftegnekek   #;
+[2Sg][4Sg]:^vgu        #; [2Sg][4Pl]:^fki       #; [2Sg][4Du]:^fkek       #;
+[2Pl][4Sg]:^fsigu      #; [2Pl][4Pl]:^fsiki     #; [2Pl][4Du]:^fsikek     #;
+[2Du][4Sg]:^ftegnegu   #; [2Du][4Pl]:^ftegneki  #; [2Du][4Du]:^ftegnekek  #;
 !-----------------------|------------------------|-------------------------|
 ! no [4--][4--] forms                                                      |
 !-----------------------|------------------------|-------------------------|

@@ -206,11 +206,12 @@ define ISuffixTE e -> 0 || %{t%} _ "^" %{%.at%.%} i .o.
              %{t%} -> s ||       _ "^" %{%.at%.%} i ;
 
 
-define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]         .o. ! labial -m and -v 
-                n   -> n n   ||         _ %{t%} e "^" %{%.at%.%} [ m | v ] .o. ! [Jacobson (2001) p.83]
-                l   -> l l   ||         _ %{t%} e "^" %{%.at%.%} [ m | v ] .o. !
-                g h -> g h h ||         _ %{t%} e "^" %{%.at%.%} [ m | v ] .o.
-            %{t%} e -> 0     ||       C _         "^" %{%.at%.%} [ m | v ] ;
+define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial -m and -v 
+                n   -> n n   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -e if -Vte
+                l   -> l l   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -te if -Cte
+                g h -> g h h ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   and the resulting
+				  v -> f     ||         C %{t%} e "^" %{%.at%.%} _  .o. !   consonant cluster devoices
+            %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
 define ApicalTE y   -> s,
@@ -240,7 +241,8 @@ define MatchVoicing y -> s ||            _ [ k | q | g h h ] .o. ! [Jacobson (20
                     y -> s ||  [ k | q ] _                   .o.
                     k -> q ||        g h _                   .o.
                     z -> s || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
-                    v -> f || _ ("^") Stop                   ; ! [Jacobson (2001) p.58] e.g. kuufkaq
+                    v -> f || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
+					v -> f || [ k | t ] _                    ;
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
