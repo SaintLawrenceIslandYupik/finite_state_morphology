@@ -215,13 +215,14 @@ define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial
             %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
-define ApicalTE y   -> s,
-                n   -> n n     || %{t%} e "^" %{%.at%.%} _                 .o. ! [Jacobson (2001) p.177]
-                g   -> g g                                                 ,   ! apical -n [Jacobson (2001) p.31]
-                l   -> l l                                                 ,   !   the only consonants before -te that double
-                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} n               .o. !   to show voicelessness are -g, -l, -gh
-                l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ]   .o. ! apical -l [Jacobson (2001) p.70]
-                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _           ;   ! for suffix @–lghii
+define ApicalTE y   -> s                                                 ,
+                n   -> n n                                               ,   ! [Jacobson (2001) p.177]
+                r   -> r r     || %{t%} e "^" %{%.at%.%} _               .o.
+                g   -> g g                                               ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
+                l   -> l l                                               ,   !   the only consonants before -te that double
+                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o. !   to show voicelessness are -g, -l, -gh
+                l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
+                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         ;   ! for suffix @–lghii
 
 
 define VelarTE  e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
@@ -237,6 +238,11 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 !----------------
 ! CLEAN-UP RULES
 !----------------
+
+define AssimilateEnclitic g h -> q  || _ ("^") "^" l l u .#.   .o. ! [Jacobson (2001) p.91]
+                          l l -> l                             ,   ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
+						    t -> n                             ,
+						    k -> g  || _ ("^") "^" n g u q .#. ;
 
 define MatchVoicing y -> s ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
                     y -> s ||  [ k | q ] _                   .o.
@@ -318,6 +324,7 @@ define Rules [
     BaseFinalEndings     .o.
     PreventGemination    .o.
     CleanupDigraph       .o.
+	AssimilateEnclitic   .o.
     CleanupMorphBoundary .o.
     VelarUvularRounding  .o.
     DropMiddleVowel      .o.

@@ -62,39 +62,46 @@ Multichar_Symbols
 !-----------------------------
 ! morphological tags for verbs
 !-----------------------------
-[V.V]   ! verb-elaborating derivational suffix
-[V.N]   ! nominalizing derivational suffix
+[V.V]      ! verb-elaborating derivational suffix
+[V.N]      ! nominalizing derivational suffix
 
-[Intr]  ! intransitive (valency)
-[Trns]  ! transitive (valency)
+[Intr]     ! intransitive (valency)
+[Trns]     ! transitive (valency)
 
-[Ind]   ! indicative mood
-[Int]   ! interrogative mood
-[Opt]   ! optative mood
-[Prs]   ! present (optative)
-[Fut]   ! future (optative)
-[Neg]   ! negative (optative)
-[Ptcp]  ! participial mood
-[Prec]  ! precessive mood
-[Conc]  ! concessive mood
+[Ind]      ! indicative mood
+[Int]      ! interrogative mood
+[Opt]      ! optative mood
+[Prs]      ! present (optative)
+[Fut]      ! future (optative)
+[Neg]      ! negative (optative)
+[Ptcp]     ! participial mood
+[Prec]     ! precessive mood
+[Conc]     ! concessive mood
+[CnsqI]    ! consequential I mood
+[CnsqII]   ! consequential II mood
+[Ctmp]     ! contemporative mood
+[Subr]     ! subordinative mood
 
-[1Sg]   ! 1st person singular subject/object
-[2Sg]   ! 2nd person singular subject/object
-[3Sg]   ! 3rd person singular subject/object
-[4Sg]   ! 4th person singular subject/object
-[1Pl]   ! 1st person plural subject/object
-[2Pl]   ! 2nd person plural subject/object
-[3Pl]   ! 3rd person plural subject/object
-[4Pl]   ! 4th person plural subject/object
-[1Du]   ! 1st peson dual subject/object
-[2Du]   ! 2nd person dual subject/object
-[3Du]   ! 3rd person dual subject/object
-[4Du]   ! 4th person dual subject/object
+[1Sg]      ! 1st person singular subject/object
+[2Sg]      ! 2nd person singular subject/object
+[3Sg]      ! 3rd person singular subject/object
+[4Sg]      ! 4th person singular subject/object
+[1Pl]      ! 1st person plural subject/object
+[2Pl]      ! 2nd person plural subject/object
+[3Pl]      ! 3rd person plural subject/object
+[4Pl]      ! 4th person plural subject/object
+[1Du]      ! 1st peson dual subject/object
+[2Du]      ! 2nd person dual subject/object
+[3Du]      ! 3rd person dual subject/object
+[4Du]      ! 4th person dual subject/object
 
 !-------------------------
 ! misc morphological tags
 !-------------------------
-[Q]          ! for question words
+[Encl]       ! enclitic
+[Dem]        ! demonstrative
+[Ptcl]       ! particle
+[Q]          ! question word
 [QuantQual]  ! for quantifier-qualifier constructions
 
 

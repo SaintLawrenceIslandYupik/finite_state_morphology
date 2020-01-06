@@ -1,8 +1,8 @@
-!======================================================
+!=======================================================
 LEXICON VerbPostbaseIII
 !  verb-elaborating [VV] and nominalizing [VN] suffixes
-!  when suffixing to verb roots that end in g, -w, -ghw
-!======================================================
+!  when suffixing to verb roots that end in -g, -w, -ghw
+!=======================================================
 
                                      VerbInflIII;
 
@@ -22,7 +22,9 @@ LEXICON VerbPostbaseIII
 +(te)sug:^tesug                     VerbPostbaseIII;  ! to want one to V (compound-verbal postbase)
 @~fyug[V.V]:^yug                    VerbPostbaseIII;  ! to want to V
 
-@~%:(ng)igate[V.V]:^igate           VerbPostbaseV;    ! to not V
+@~f–ragkiigh[V.V]:^%{.m.%}ragkiigh  VerbPostbaseIV;   ! to V quickly
+
+@~%:(ng)igate[V.V]:^igate           VerbPostbaseV;    ! to never V; to not be V-ing
 +(pete)fte[V.V]:^petefte            VerbPostbaseV;    ! to evidently V or have V-ed
 +(pete)fte[V.V]:^pete               VerbPostbaseV;    ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 +(te)ste[V.V]:^teste                VerbPostbaseV;    ! to have, make, or let one V (compound-verbal postbase)
