@@ -197,7 +197,17 @@ define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q
 ! MODIFY -TE RULES
 !------------------
 
-define SpecialTE %{t%} e "*" -> l || _ "^" %{%.at%.%} ;
+! what is %{K%}?
+!  the conditional mood marker is @~sf–(g)k which is nearly identical to the derivational morpheme @~sf–(g)ka/ke.
+!  all special -te becomes -l and only -l before the derivational morpheme @~sf–ka/ke [Jacobson (2001) p.72],
+!  but some special -te (weakly special -te) become -l, -s, or -t before the conditional mood marker [p.92].
+!  we introduce %{K%} in the conditional mood marker to differentiate these environments -> @~sf–(g)%{K%}
+
+define SpecialTE %{t%} e ("*") "*" -> l ||         _ "^" %{%.at%.%}           ,,  ! special -te always changes to -l
+                                 e -> 0 || V %{t%} _ "*" "^" %{%.at%.%} %{K%} .o. ! in the conditional mood,
+                         %{t%} "*" -> t                                       ,   !   weakly special -te can also 
+	         			 %{t%} "*" -> s ||       V _ "*" "^" %{%.at%.%} %{K%} .o. !   change to -t or -s
+                             %{K%} -> k                                       ;
 
 
 define UnmarkSpecialTE "*" -> 0 ;
@@ -211,16 +221,16 @@ define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial
                 n   -> n n   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -e if -Vte
                 l   -> l l   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -te if -Cte
                 g h -> g h h ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   and the resulting
-				  v -> f     ||         C %{t%} e "^" %{%.at%.%} _  .o. !   consonant cluster devoices
+                  v -> f     ||         C %{t%} e "^" %{%.at%.%} _  .o. !   consonant cluster devoices
             %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
-define ApicalTE y   -> s                                                 ,
-                n   -> n n                                               ,   ! [Jacobson (2001) p.177]
-                r   -> r r     || %{t%} e "^" %{%.at%.%} _               .o.
-                g   -> g g                                               ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
-                l   -> l l                                               ,   !   the only consonants before -te that double
-                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o. !   to show voicelessness are -g, -l, -gh
+define ApicalTE y   -> s                                                 ,   ! apical -y [Jacobson (2001) p.177]
+                n   -> n n                                               ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
+                r   -> r r     || %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
+                g   -> g g                                               ,   !   to show voicelessness are -g, -l, -gh
+                l   -> l l                                               ,
+                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o.
                 l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
                 g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         ;   ! for suffix @–lghii
 
@@ -239,17 +249,14 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 ! CLEAN-UP RULES
 !----------------
 
-define AssimilateEnclitic g h -> q  || _ ("^") "^" l l u .#.   .o. ! [Jacobson (2001) p.91]
-                          l l -> l                             ,   ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
-						    t -> n                             ,
-						    k -> g  || _ ("^") "^" n g u q .#. ;
-
-define MatchVoicing y -> s ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                    y -> s ||  [ k | q ] _                   .o.
-                    k -> q ||        g h _                   .o.
-                    z -> s || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
-                    v -> f || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
-					v -> f || [ k | t ] _                    ;
+define MatchVoicing t [z | y] -> s                                   .o. ! tz / ty = s
+                            y -> s ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
+                            y -> s ||  [ k | q ] _                   .o.
+                            z -> s || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
+                            k -> q ||        g h _                   .o.
+                          g h -> 0 ||          C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
+                            v -> f || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
+                            v -> f || [ k | t ] _                    ;
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
@@ -268,6 +275,12 @@ define PreventGemination n -> 0 || _ "^" n ; ! is this the only instance of acci
 define CleanupDigraph %{k%}   -> 0   .o.
                       %{g%} h -> g h .o.
                       %{t%}   -> t   ;
+
+
+define AssimilateEnclitic g h -> q  || _ ("^") "^" l l u .#.   .o. ! [Jacobson (2001) p.91]
+                          l l -> l                             ,   ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
+                            t -> n                             ,
+                            k -> g  || _ ("^") "^" n g u q .#. ;
 
 
 define CleanupMorphBoundary "^" -> 0 ;
@@ -292,7 +305,7 @@ define Rules [
     SpecialTE            .o.
     UnmarkSpecialTE      .o.
     ISuffixTE            .o.
-	LabialTE             .o.
+    LabialTE             .o.
     ApicalTE             .o.
     VelarTE              .o.
     DropTE               .o.
@@ -324,7 +337,7 @@ define Rules [
     BaseFinalEndings     .o.
     PreventGemination    .o.
     CleanupDigraph       .o.
-	AssimilateEnclitic   .o.
+    AssimilateEnclitic   .o.
     CleanupMorphBoundary .o.
     VelarUvularRounding  .o.
     DropMiddleVowel      .o.

@@ -1,0 +1,83 @@
+!================================
+LEXICON IntrCtmp
+!  person/number markers for
+!     intransitive contemporative
+!================================
+!----------------|-----------------|---------------|-----------------|
+[3Sg]:^an       #; [1Sg]:^ma     #; [2Sg]:^pek    #; [4Sg]:^mini    #;
+[3Pl]:^ata      #; [1Pl]:^mta    #; [2Pl]:^pesi   #; [4Pl]:^meggni  #;
+[3Du]:^ayek     #; [1Du]:^mtung  #; [2Du]:^petek  #; [4Du]:^mek     #;
+[3Du]:^agkenka  #;
+!----------------|-----------------|---------------|-----------------|
+
+
+!==============================
+LEXICON TrnsCtmp
+!  person/number markers for
+!     transitive contemporative
+!==============================
+!-----------------------|-------------------------|--------------------------|
+[3Sg][3Sg]:^agu        #; [3Sg][3Pl]:^aki        #; [3Sg][3Du]:^akek        #;
+[3Pl][3Sg]:^atgu       #; [3Pl][3Pl]:^atki       #; [3Pl][3Du]:^atkek       #;
+[3Du][3Sg]:^agnegu     #; [3Du][3Pl]:^agneki     #; [3Du][3Du]:^agnekek     #;
+!-----------------------|-------------------------|--------------------------|
+[1Sg][3Sg]:^mkun       #; [1Sg][3Pl]:^mki        #; [1Sg][3Du]:^mkek        #;
+[1Pl][3Sg]:^mteggu     #; [1Pl][3Pl]:^mteki      #; [1Pl][3Du]:^mtekek      #;
+[1Du][3Sg]:^mtegnegu   #; [1Du][3Pl]:^mtegneki   #; [1Du][3Du]:^mtegnekek   #;
+!-----------------------|--------------------------|-------------------------|
+[2Sg][3Sg]:^pegu       #; [2Sg][3Pl]:^peki       #; [2Sg][3Du]:^pekek       #;
+                          [2Sg][3Pl]:^peni       #;                            ! unclear if this is what Jacobson (2001) p.172 means
+[2Pl][3Sg]:^pesigu     #; [2Pl][3Pl]:^pesiki     #; [2Pl][3Du]:^pesikek     #;
+[2Du][3Sg]:^petegnegu  #; [2Du][3Pl]:^petegneki  #; [2Du][3Du]:^petegnekek  #;
+!-----------------------|-------------------------|--------------------------|
+[4Sg][3Sg]:^minigu     #; [4Sg][3Pl]:^miniki     #; [4Sg][3Du]:^minikek     #;
+[4Pl][3Sg]:^megteggu   #; [4Pl][3Pl]:^megteki    #; [4Pl][3Du]:^megtekek    #;
+[4Du][3Sg]:^megnegu    #; [4Du][3Pl]:^megneki    #; [4Du][3Du]:^megnekek    #;
+!-----------------------|-------------------------|--------------------------|
+[3Sg][1Sg]:^anga       #; [3Sg][1Pl]:^ankut      #; [3Sg][1Du]:^ankung      #;
+[3Pl][1Sg]:^atnga      #; [3Pl][1Pl]:^ankut      #; [3Pl][1Du]:^ankung      #;
+[3Du][1Sg]:^agnenga    #; [3Du][1Pl]:^ankut      #; [3Du][1Du]:^ankung      #;
+!-----------------------|-------------------------|--------------------------|
+! no [1--][1--] forms                                                        |
+!-----------------------|-------------------------|--------------------------|
+[2Sg][1Sg]:^penga      #; [2Sg][1Pl]:^pekut      #; [2Sg][1Du]:^pekung      #;
+[2Pl][1Sg]:^pesinga    #; [2Pl][1Pl]:^pesikut    #; [2Pl][1Du]:^pesikung    #;
+[2Du][1Sg]:^petegnenga #; [2Du][1Pl]:^petegnekut #; [2Du][1Du]:^petegnekung #;
+!-----------------------|-------------------------|--------------------------|
+[4Sg][1Sg]:^mininga    #; [4Sg][1Pl]:^minikut    #; [4Sg][1Du]:^minikung    #;
+[4Pl][1Sg]:^megtengnga #; [4Pl][1Pl]:^megtekut   #; [4Pl][1Du]:^megtekung   #;
+[4Du][1Sg]:^megnenga   #; [4Du][1Pl]:^megneku    #; [4Du][1Du]:^megnekung   #;
+!-----------------------|-------------------------|--------------------------|
+[3Sg][2Sg]:^aten       #; [3Sg][2Pl]:^asi        #; [3Sg][2Du]:^astek       #;
+[3Pl][2Sg]:^aten       #; [3Pl][2Pl]:^asi        #; [3Pl][2Du]:^astek       #;
+[3Du][2Sg]:^aten       #; [3Du][2Pl]:^asi        #; [3Du][2Du]:^astek       #;
+!-----------------------|-------------------------|--------------------------|
+[1Sg][2Sg]:^mken       #; [1Sg][2Pl]:^msi        #; [1Sg][2Du]:^mtek        #;
+[1Pl][2Sg]:^mken       #; [1Pl][2Pl]:^msi        #; [1Pl][2Du]:^mtek        #;
+[1Du][2Sg]:^mken       #; [1Du][2Pl]:^msi        #; [1Du][2Du]:^mtek        #;
+!-----------------------|-------------------------|--------------------------|
+! no [2--][2--] forms                                                        |
+!-----------------------|-------------------------|--------------------------|
+[4Sg][2Sg]:^miniten    #; [4Sg][2Pl]:^minisi     #; [4Sg][2Du]:^minitek     #;
+[4Pl][2Sg]:^miniten    #; [4Pl][2Pl]:^minisi     #; [4Pl][2Du]:^minitek     #;
+[4Du][2Sg]:^miniten    #; [4Du][2Pl]:^minisi     #; [4Du][2Du]:^minitek     #;
+!-----------------------|-------------------------|--------------------------|
+[3Sg][4Sg]:^atni       #; [3Sg][4Pl]:^asteng     #; [3Sg][4Du]:^astek       #;
+[3Pl][4Sg]:^atni       #; [3Pl][4Pl]:^asteng     #; [3Pl][4Du]:^astek       #;
+[3Du][4Sg]:^atni       #; [3Du][4Pl]:^asteng     #; [3Du][4Du]:^astek       #;
+!-----------------------|-------------------------|--------------------------|
+[1Sg][4Sg]:^mni        #; [1Sg][4Pl]:^mteng      #; [1Sg][4Du]:^mtek        #;
+[1Pl][4Sg]:^mnni       #; [1Pl][4Pl]:^mteng      #; [1Pl][4Du]:^mtek        #;
+[1Du][4Sg]:^mtegnegu   #; [1Du][4Pl]:^mtegneki   #; [1Du][4Du]:^mtegnekek   #;
+!-----------------------|-------------------------|--------------------------|
+[2Sg][4Sg]:^pegu       #; [2Sg][4Pl]:^peki       #; [2Sg][4Du]:^pekek       #;
+                          [2Sg][4Pl]:^peni       #;                            ! unclear if this is what Jacobson (2001) p.172 means
+[2Pl][4Sg]:^pesigu     #; [2Pl][4Pl]:^pesiki     #; [2Pl][4Du]:^pesikek     #;
+[2Du][4Sg]:^petegnegu  #; [2Du][4Pl]:^petegneki  #; [2Du][4Du]:^petegnekek  #;
+!-----------------------|-------------------------|--------------------------|
+! no [4--][4--] forms                                                        |
+!-----------------------|-------------------------|--------------------------|
+! alternative forms for 4th person subject are described on Jacobson (2001) p.93
+! and on p.172
+
+

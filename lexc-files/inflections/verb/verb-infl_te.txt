@@ -67,70 +67,96 @@ LEXICON VerbInflV
 !   exhibits some fusional properties
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-!-------------------------------|-----------------------------------|---------------------------------|
-[Intr][Opt][3Sg]:^%{.at.%}li^  #; [Intr][Opt][1Sg]:^%{.at.%}la^nga #; [Intr][Opt][2Sg]:^n            #;
-[Intr][Opt][3Pl]:^%{.at.%}li^t #; [Intr][Opt][1Pl]:^lte^a          #; [Intr][Opt][2Pl]:^%{.at.%}^tek #;
-[Intr][Opt][3Du]:^%{.at.%}li^k #; [Intr][Opt][1Du]:^lte^ung        #; [Intr][Opt][2Du]:^%{.at.%}^tek #;
-!-------------------------------|-----------------------------------|---------------------------------|
+!-------------------------------------|-----------------------------------------|---------------------------------------|
+[Intr][Opt][Pres][3Sg]:^%{.at.%}li^  #; [Intr][Opt][Pres][1Sg]:^%{.at.%}la^nga #; [Intr][Opt][Pres][2Sg]:^n            #;
+[Intr][Opt][Pres][3Pl]:^%{.at.%}li^t #; [Intr][Opt][Pres][1Pl]:^lte^a          #; [Intr][Opt][Pres][2Pl]:^%{.at.%}^tek #;
+[Intr][Opt][Pres][3Du]:^%{.at.%}li^k #; [Intr][Opt][Pres][1Du]:^lte^ung        #; [Intr][Opt][Pres][2Du]:^%{.at.%}^tek #;
+!-------------------------------------|-----------------------------------------|---------------------------------------|
 
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-[Trns][Opt][3Sg][3Sg]:^%{.at.%}li^gu     #; [Trns][Opt][3Sg][3Pl]:^%{.at.%}li^ki    #; [Trns][Opt][3Sg][3Du]:^%{.at.%}li^kek    #;
-[Trns][Opt][3Pl][3Sg]:^%{.at.%}li^tgu    #; [Trns][Opt][3Pl][3Pl]:^%{.at.%}li^tki   #; [Trns][Opt][3Pl][3Du]:^%{.at.%}li^tkek   #;
-[Trns][Opt][3Du][3Sg]:^%{.at.%}li^gnegu  #; [Trns][Opt][3Du][3Pl]:^%{.at.%}li^gneki #; [Trns][Opt][3Du][3Du]:^%{.at.%}li^gnekek #;
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-[Trns][Opt][1Sg][3Sg]:^%{.at.%}la^kun    #; [Trns][Opt][1Sg][3Pl]:^%{.at.%}la^ngi   #; [Trns][Opt][1Sg][3Du]:^%{.at.%}la^ngak   #;
-[Trns][Opt][1Pl][3Sg]:^lte^ggu           #; [Trns][Opt][1Pl][3Pl]:^lte^ki           #; [Trns][Opt][1Pl][3Du]:^lte^kek           #;
-[Trns][Opt][1Du][3Sg]:^lte^gnegu         #; [Trns][Opt][1Du][3Pl]:^lte^gneki        #; [Trns][Opt][1Du][3Du]:^lte^gnekek        #;
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-[Trns][Opt][2Sg][3Sg]:^%{.f.%}igu        #; [Trns][Opt][2Sg][3Pl]:^%{.f.%}i^ki      #; [Trns][Opt][2Sg][3Du]:^i^%{.f.%}kek      #; ! typo in appendix, forgot ~f [Jacobson p.183]
-[Trns][Opt][2Pl][3Sg]:^%{.at.%}e^ggu     #; [Trns][Opt][2Pl][3Pl]:^%{.at.%}e^ki     #; [Trns][Opt][2Pl][3Du]:^%{.at.%}e^kek     #;
-[Trns][Opt][2Du][3Sg]:^%{.at.%}e^gnegu   #; [Trns][Opt][2Du][3Pl]:^%{.at.%}e^gneki  #; [Trns][Opt][2Du][3Du]:^%{.at.%}e^gnekek  #;
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-[Trns][Opt][3Sg][1Sg]:^%{.at.%}li^nga    #; [Trns][Opt][3Sg][1Pl]:^%{.at.%}li^kut   #; [Trns][Opt][3Sg][1Du]:^%{.at.%}li^kung   #;
-[Trns][Opt][3Pl][1Sg]:^%{.at.%}li^tnga   #; [Trns][Opt][3Pl][1Pl]:^%{.at.%}li^nkut  #; [Trns][Opt][3Pl][1Du]:^%{.at.%}li^nkung  #;
-[Trns][Opt][3Du][1Sg]:^%{.at.%}li^gnenga #; [Trns][Opt][3Du][1Pl]:^%{.at.%}li^nkut  #; [Trns][Opt][3Du][1Du]:^%{.at.%}li^nkung  #;
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-! no [1--][1--] forms                                                                                                            |
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-[Trns][Opt][2Sg][1Sg]:^%{.f.%}i^nga      #; [Trns][Opt][2Sg][1Pl]:^%{%.f.%}i^kut    #; [Trns][Opt][2Sg][1Du]:^%{.f.%}i^kung     #; ! typo in appendix, forgot ~f [Jacobson p.183]
-[Trns][Opt][2Pl][1Sg]:^%{.at.%}e^ngnga   #; [Trns][Opt][2Pl][1Pl]:^%{.at.%}e^kut    #; [Trns][Opt][2Pl][1Du]:^%{.at.%}e^kung    #;
-[Trns][Opt][2Du][1Sg]:^%{.at.%}e^gnenga  #; [Trns][Opt][2Du][1Pl]:^%{.at.%}e^gnekut #; [Trns][Opt][2Du][1Du]:^%{.at.%}e^gnekung #;
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-[Trns][Opt][3Sg][2Sg]:^%{.at.%}la^ten    #; [Trns][Opt][3Sg][2Pl]:^%{.at.%}li^si    #; [Trns][Opt][3Sg][2Du]:^%{.at.%}li^stek   #;
-[Trns][Opt][3Pl][2Sg]:^%{.at.%}la^ten    #; [Trns][Opt][3Pl][2Pl]:^%{.at.%}li^si    #; [Trns][Opt][3Pl][2Du]:^%{.at.%}li^stek   #;
-[Trns][Opt][3Du][2Sg]:^%{.at.%}la^ten    #; [Trns][Opt][3Du][2Pl]:^%{.at.%}li^si    #; [Trns][Opt][3Du][2Du]:^%{.at.%}li^stek   #;
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-[Trns][Opt][1Sg][2Sg]:^%{.at.%}la^ken    #; [Trns][Opt][1Sg][2Pl]:^%{.at.%}la^msi   #; [Trns][Opt][1Sg][2Du]:^%{.at.%}la^mtek   #;
-[Trns][Opt][1Pl][2Sg]:^%{.at.%}la^ken    #; [Trns][Opt][1Pl][2Pl]:^%{.at.%}la^msi   #; [Trns][Opt][1Pl][2Du]:^%{.at.%}la^mtek   #;
-[Trns][Opt][1Du][2Sg]:^%{.at.%}la^ken    #; [Trns][Opt][1Du][2Pl]:^%{.at.%}la^msi   #; [Trns][Opt][1Du][2Du]:^%{.at.%}la^mtek   #;
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
-! no [2--][2--] forms                                                                                                            |
-!-----------------------------------------|------------------------------------------|-------------------------------------------|
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[Trns][Opt][Pres][3Sg][3Sg]:^%{.at.%}li^gu     #; [Trns][Opt][Pres][3Sg][3Pl]:^%{.at.%}li^ki    #; [Trns][Opt][Pres][3Sg][3Du]:^%{.at.%}li^kek    #;
+[Trns][Opt][Pres][3Pl][3Sg]:^%{.at.%}li^tgu    #; [Trns][Opt][Pres][3Pl][3Pl]:^%{.at.%}li^tki   #; [Trns][Opt][Pres][3Pl][3Du]:^%{.at.%}li^tkek   #;
+[Trns][Opt][Pres][3Du][3Sg]:^%{.at.%}li^gnegu  #; [Trns][Opt][Pres][3Du][3Pl]:^%{.at.%}li^gneki #; [Trns][Opt][Pres][3Du][3Du]:^%{.at.%}li^gnekek #;
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[Trns][Opt][Pres][1Sg][3Sg]:^%{.at.%}la^kun    #; [Trns][Opt][Pres][1Sg][3Pl]:^%{.at.%}la^ngi   #; [Trns][Opt][Pres][1Sg][3Du]:^%{.at.%}la^ngak   #;
+[Trns][Opt][Pres][1Pl][3Sg]:^lte^ggu           #; [Trns][Opt][Pres][1Pl][3Pl]:^lte^ki           #; [Trns][Opt][Pres][1Pl][3Du]:^lte^kek           #;
+[Trns][Opt][Pres][1Du][3Sg]:^lte^gnegu         #; [Trns][Opt][Pres][1Du][3Pl]:^lte^gneki        #; [Trns][Opt][Pres][1Du][3Du]:^lte^gnekek        #;
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[Trns][Opt][Pres][2Sg][3Sg]:^%{.f.%}igu        #; [Trns][Opt][Pres][2Sg][3Pl]:^%{.f.%}i^ki      #; [Trns][Opt][Pres][2Sg][3Du]:^i^%{.f.%}kek      #; ! typo in appendix, forgot ~f [Jacobson p.183]
+[Trns][Opt][Pres][2Pl][3Sg]:^%{.at.%}e^ggu     #; [Trns][Opt][Pres][2Pl][3Pl]:^%{.at.%}e^ki     #; [Trns][Opt][Pres][2Pl][3Du]:^%{.at.%}e^kek     #;
+[Trns][Opt][Pres][2Du][3Sg]:^%{.at.%}e^gnegu   #; [Trns][Opt][Pres][2Du][3Pl]:^%{.at.%}e^gneki  #; [Trns][Opt][Pres][2Du][3Du]:^%{.at.%}e^gnekek  #;
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[Trns][Opt][Pres][3Sg][1Sg]:^%{.at.%}li^nga    #; [Trns][Opt][Pres][3Sg][1Pl]:^%{.at.%}li^kut   #; [Trns][Opt][Pres][3Sg][1Du]:^%{.at.%}li^kung   #;
+[Trns][Opt][Pres][3Pl][1Sg]:^%{.at.%}li^tnga   #; [Trns][Opt][Pres][3Pl][1Pl]:^%{.at.%}li^nkut  #; [Trns][Opt][Pres][3Pl][1Du]:^%{.at.%}li^nkung  #;
+[Trns][Opt][Pres][3Du][1Sg]:^%{.at.%}li^gnenga #; [Trns][Opt][Pres][3Du][1Pl]:^%{.at.%}li^nkut  #; [Trns][Opt][Pres][3Du][1Du]:^%{.at.%}li^nkung  #;
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+! no [1--][1--] forms                                                                                                                              |
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[Trns][Opt][Pres][2Sg][1Sg]:^%{.f.%}i^nga      #; [Trns][Opt][Pres][2Sg][1Pl]:^%{%.f.%}i^kut    #; [Trns][Opt][Pres][2Sg][1Du]:^%{.f.%}i^kung     #; ! typo in appendix, forgot ~f [Jacobson p.183]
+[Trns][Opt][Pres][2Pl][1Sg]:^%{.at.%}e^ngnga   #; [Trns][Opt][Pres][2Pl][1Pl]:^%{.at.%}e^kut    #; [Trns][Opt][Pres][2Pl][1Du]:^%{.at.%}e^kung    #;
+[Trns][Opt][Pres][2Du][1Sg]:^%{.at.%}e^gnenga  #; [Trns][Opt][Pres][2Du][1Pl]:^%{.at.%}e^gnekut #; [Trns][Opt][Pres][2Du][1Du]:^%{.at.%}e^gnekung #;
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[Trns][Opt][Pres][3Sg][2Sg]:^%{.at.%}la^ten    #; [Trns][Opt][Pres][3Sg][2Pl]:^%{.at.%}li^si    #; [Trns][Opt][Pres][3Sg][2Du]:^%{.at.%}li^stek   #;
+[Trns][Opt][Pres][3Pl][2Sg]:^%{.at.%}la^ten    #; [Trns][Opt][Pres][3Pl][2Pl]:^%{.at.%}li^si    #; [Trns][Opt][Pres][3Pl][2Du]:^%{.at.%}li^stek   #;
+[Trns][Opt][Pres][3Du][2Sg]:^%{.at.%}la^ten    #; [Trns][Opt][Pres][3Du][2Pl]:^%{.at.%}li^si    #; [Trns][Opt][Pres][3Du][2Du]:^%{.at.%}li^stek   #;
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+[Trns][Opt][Pres][1Sg][2Sg]:^%{.at.%}la^ken    #; [Trns][Opt][Pres][1Sg][2Pl]:^%{.at.%}la^msi   #; [Trns][Opt][Pres][1Sg][2Du]:^%{.at.%}la^mtek   #;
+[Trns][Opt][Pres][1Pl][2Sg]:^%{.at.%}la^ken    #; [Trns][Opt][Pres][1Pl][2Pl]:^%{.at.%}la^msi   #; [Trns][Opt][Pres][1Pl][2Du]:^%{.at.%}la^mtek   #;
+[Trns][Opt][Pres][1Du][2Sg]:^%{.at.%}la^ken    #; [Trns][Opt][Pres][1Du][2Pl]:^%{.at.%}la^msi   #; [Trns][Opt][Pres][1Du][2Du]:^%{.at.%}la^mtek   #;
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
+! no [2--][2--] forms                                                                                                                              |
+!-----------------------------------------------|------------------------------------------------|-------------------------------------------------|
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! negative present optative
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~
-!---------------------------------|
-[Intr][Opt][NEG]:^fqaa  IntrOptNEG;
-[Trns][Opt][NEG]:^fqaa  TrnsOptNEG;
-!---------------------------------|
+[Intr][Opt][Pres][Neg]:^fqaa  IntrOptNEG;
+[Trns][Opt][Pres][Neg]:^fqaa  TrnsOptNEG;
 
-!-----------------------------------|
-[Trns][Opt][NEG][2Sg][3Pl]:^fqiita #;
-[Trns][Opt][NEG][2Pl][3Pl]:^fqiita #;
-[Trns][Opt][NEG][2Du][3Pl]:^fqiita #;
-!-----------------------------------|
+!-----------------------------------------|
+[Trns][Opt][Pres][Neg][2Sg][3Pl]:^fqiita #;
+[Trns][Opt][Pres][Neg][2Pl][3Pl]:^fqiita #;
+[Trns][Opt][Pres][Neg][2Du][3Pl]:^fqiita #;
+!-----------------------------------------|
 
 !~~~~~~~~~~~~
 ! precessive 
 !~~~~~~~~~~~~
-[Intr][Prec]:^%{.at.%}vagilga  IntrPrec;
-[Trns][Prec]:^%{.at.%}vagilga  TrnsPrec;
+[Intr][Prec]:^%{.at.%}vagilga  IntrPrecCnsq;
+[Trns][Prec]:^%{.at.%}vagilga  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~
 ! concessive 
 !~~~~~~~~~~~~
-[Intr][Conc]:^ghnga  IntrConc;
-[Trns][Conc]:^ghnga  TrnsConc;
+[Intr][Conc]:^ghnga            IntrConc;
+[Trns][Conc]:^ghnga            TrnsConc;
+
+!~~~~~~~~~~~~~~~~~
+! consequential I
+!~~~~~~~~~~~~~~~~~
+[Intr][CnsqI]:^%{.at.%}ya      IntrPrecCnsq;
+[Trns][CnsqI]:^%{.at.%}ya      TrnsPrecCnsq;
+[Intr][CnsqI]:^%{.f.%}nga      IntrPrecCnsq;
+[Trns][CnsqI]:^%{.f.%}nga      TrnsPrecCnsq;
+
+!~~~~~~~~~~~~~~~~~~
+! consequential II
+!~~~~~~~~~~~~~~~~~~
+[Intr][CnsqII]:^%{.f.%}aqnga  IntrPrecCnsq;
+[Trns][CnsqII]:^%{.f.%}aqnga  TrnsPrecCnsq;
+
+!~~~~~~~~~~~~~
+! conditional
+!~~~~~~~~~~~~~
+[Intr][Cond]:^%{.at.%}k        IntrCond;
+[Trns][Cond]:^%{.at.%}k        TrnsCond;
+
+!~~~~~~~~~~~~~~~~
+! contemporative 
+!~~~~~~~~~~~~~~~~
+[Intr][Ctmp]:^%{.at.%}negh     IntrCtmp;
+[Trns][Ctmp]:^%{.at.%}negh     TrnsCtmp; 
+[Intr][Ctmp]:^%{.at.%}ngh      IntrCtmp;
+[Trns][Ctmp]:^%{.at.%}ngh      TrnsCtmp;
 
 

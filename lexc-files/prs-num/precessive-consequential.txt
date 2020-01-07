@@ -1,8 +1,9 @@
-!============================
-LEXICON IntrPrec
+!=================================
+LEXICON IntrPrecCnsq
 !  person/number markers for
-!     intransitive precessive 
-!============================
+!     intransitive precessive
+!                  consequential I
+!=================================
 !---------------|----------------|---------------|---------------|
 [3Sg]:^n       #; [1Sg]:^ma     #; [2Sg]:^vek   #; [4Sg]:^mi    #;
 [3Pl]:^ta      #; [1Pl]:^mta    #; [2Pl]:^fsi   #; [4Pl]:^meng  #;
@@ -11,11 +12,12 @@ LEXICON IntrPrec
 !---------------|----------------|---------------|---------------|
 
 
-!===========================
-LEXICON TrnsPrec
+!===============================
+LEXICON TrnsPrecCnsq
 !  person/number markers for
 !     transitive precessive 
-!===========================
+!                consequential I
+!===============================
 !-----------------------|------------------------|-------------------------|
 [3Sg][3Sg]:^gu         #; [3Sg][3Pl]:^ki        #; [3Sg][3Du]:^kek        #;
 [3Pl][3Sg]:^tgu        #; [3Pl][3Pl]:^tki       #; [3Pl][3Du]:^tkek       #;

@@ -15,6 +15,7 @@ Multichar_Symbols
 %{I%}   ! for (e) in ~sf:(e)sqe [Jacobson (2001) p.64]
 %{GI%}  ! for Intr.Opt-2Sg (-a,-i, -u, -aa, -ii, -uu) [Jacobson (2001) p.65]
 %{AI%}  ! for Intr.Opt-2Sg (-agh, -igh, -ugh, -aagh, -iigh, -uugh) [Jacobson (2001) p.65]
+%{K%}   ! for differentiating the conditional mood (see foma rule "SpecialTE")
 
 !---------------------------
 ! morphophonological symbols 
@@ -71,7 +72,7 @@ Multichar_Symbols
 [Ind]      ! indicative mood
 [Int]      ! interrogative mood
 [Opt]      ! optative mood
-[Prs]      ! present (optative)
+[Pres]     ! present (optative)
 [Fut]      ! future (optative)
 [Neg]      ! negative (optative)
 [Ptcp]     ! participial mood

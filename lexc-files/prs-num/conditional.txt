@@ -1,0 +1,92 @@
+!=============================
+LEXICON IntrCond
+!  person/number markers for
+!     intransitive conditional
+!=============================
+!----------------|-----------------|----------------|----------------|
+[3Sg]:^an       #; [1Sg]:^uma     #; [2Sg]:^uvek   #; [4Sg]:^umi    #;
+                                                      [4Sg]:^uni    #;
+[3Pl]:^ata      #; [1Pl]:^umta    #; [2Pl]:^ufsi   #; [4Pl]:^umeng  #;
+                                                      [4Pl]:^uyeng  #;
+[3Du]:^ayek     #; [1Du]:^umtung  #; [2Du]:^uftek  #; [4Du]:^umek   #;
+[3Du]:^agkenka  #;                                    [4Du]:^uyek   #;
+!----------------|-----------------|----------------|----------------|
+
+
+!===========================
+LEXICON TrnsCond
+!  person/number markers for
+!     transitive conditional
+!===========================
+!-------------------------|--------------------------|---------------------------|
+[3Sg][3Sg]:^agu          #; [3Sg][3Pl]:^aki         #; [3Sg][3Du]:^akek         #;
+[3Pl][3Sg]:^atgu         #; [3Pl][3Pl]:^atki        #; [3Pl][3Du]:^atkek        #;
+[3Du][3Sg]:^agnegu       #; [3Du][3Pl]:^agneki      #; [3Du][3Du]:^agnekek      #;
+!-------------------------|--------------------------|---------------------------|
+[1Sg][3Sg]:^umkun        #; [1Sg][3Pl]:^umki        #; [1Sg][3Du]:^umkek        #;
+[1Pl][3Sg]:^umteggu      #; [1Pl][3Pl]:^umteki      #; [1Pl][3Du]:^umtekek      #;
+[1Du][3Sg]:^umtegnegu    #; [1Du][3Pl]:^umtegneki   #; [1Du][3Du]:^umtegnekek   #;
+!-------------------------|--------------------------|---------------------------|
+[2Sg][3Sg]:^uvgu         #; [2Sg][3Pl]:^ufki        #; [2Sg][3Du]:^ufkek        #;
+[2Pl][3Sg]:^ufsigu       #; [2Pl][3Pl]:^ufsiki      #; [2Pl][3Du]:^ufsikek      #;
+[2Du][3Sg]:^uftegnegu    #; [2Du][3Pl]:^uftegneki   #; [2Du][3Du]:^uftegnekek   #;
+!-------------------------|--------------------------|---------------------------|
+[4Sg][3Sg]:^umigu        #; [4Sg][3Pl]:^umiki       #; [4Sg][3Du]:^umikek       #;
+[4Sg][3Sg]:^unigu        #; [4Sg][3Pl]:^uniki       #; [4Sg][3Du]:^unikek       #;
+[4Pl][3Sg]:^umegteggu    #; [4Pl][3Pl]:^umegteki    #; [4Pl][3Du]:^umegtekek    #;
+[4Pl][3Sg]:^uyigteggu    #; [4Pl][3Pl]:^uyigteki    #; [4Pl][3Du]:^uyigtekek    #;
+[4Du][3Sg]:^umegnegu     #; [4Du][3Pl]:^umegneki    #; [4Du][3Du]:^umegnekek    #;
+[4Du][3Sg]:^unegnegu     #; [4Du][3Pl]:^unegneki    #; [4Du][3Du]:^unegnekek    #;
+!-------------------------|--------------------------|---------------------------|
+[3Sg][1Sg]:^anga         #; [3Sg][1Pl]:^ankut       #; [3Sg][1Du]:^ankung       #;
+[3Pl][1Sg]:^atnga        #; [3Pl][1Pl]:^ankut       #; [3Pl][1Du]:^ankung       #;
+[3Du][1Sg]:^agnenga      #; [3Du][1Pl]:^ankut       #; [3Du][1Du]:^ankung       #;
+!-------------------------|--------------------------|---------------------------|
+! no [1--][1--] forms                                                            |
+!-------------------------|--------------------------|---------------------------|
+[2Sg][1Sg]:^uvnga        #; [2Sg][1Pl]:^ufkut       #; [2Sg][1Du]:^ufkung       #;
+[2Pl][1Sg]:^ufsinga      #; [2Pl][1Pl]:^ufsikut     #; [2Pl][1Du]:^ufsikung     #;
+[2Du][1Sg]:^uftegnenga   #; [2Du][1Pl]:^uftegnekut  #; [2Du][1Du]:^uftegnekung  #;
+!-------------------------|--------------------------|---------------------------|
+[4Sg][1Sg]:^uminga       #; [4Sg][1Pl]:^umikut      #; [4Sg][1Du]:^umikung      #;
+[4Sg][1Sg]:^uninga       #; [4Sg][1Pl]:^unikut      #; [4Sg][1Du]:^unikung      #;
+[4Pl][1Sg]:^umegtengnga  #; [4Pl][1Pl]:^umegtekut   #; [4Pl][1Du]:^umegtekung   #;
+[4Pl][1Sg]:^uyigtengnga  #; [4Pl][1Pl]:^uyigtekut   #; [4Pl][1Du]:^uyigtekung   #;
+[4Du][1Sg]:^umegnenga    #; [4Du][1Pl]:^umegneku    #; [4Du][1Du]:^umegnekung   #;
+[4Du][1Sg]:^unegnenga    #; [4Du][1Pl]:^unegneku    #; [4Du][1Du]:^unegnekung   #;
+!-------------------------|--------------------------|---------------------------|
+[3Sg][2Sg]:^aten         #; [3Sg][2Pl]:^asi         #; [3Sg][2Du]:^astek        #;
+[3Pl][2Sg]:^aten         #; [3Pl][2Pl]:^asi         #; [3Pl][2Du]:^astek        #;
+[3Du][2Sg]:^aten         #; [3Du][2Pl]:^asi         #; [3Du][2Du]:^astek        #;
+!-------------------------|--------------------------|---------------------------|
+[1Sg][2Sg]:^umken        #; [1Sg][2Pl]:^umsi        #; [1Sg][2Du]:^umtek        #;
+[1Pl][2Sg]:^umken        #; [1Pl][2Pl]:^umsi        #; [1Pl][2Du]:^umtek        #;
+[1Du][2Sg]:^umken        #; [1Du][2Pl]:^umsi        #; [1Du][2Du]:^umtek        #;
+!-------------------------|--------------------------|---------------------------|
+! no [2--][2--] forms                                                            |
+!-------------------------|--------------------------|---------------------------|
+[4Sg][2Sg]:^umiten       #; [4Sg][2Pl]:^umisi       #; [4Sg][2Du]:^umitek       #;
+[4Sg][2Sg]:^uniten       #; [4Sg][2Pl]:^unisi       #; [4Sg][2Du]:^unitek       #;
+[4Pl][2Sg]:^umiten       #; [4Pl][2Pl]:^umisi       #; [4Pl][2Du]:^umitek       #;
+[4Pl][2Sg]:^uniten       #; [4Pl][2Pl]:^unisi       #; [4Pl][2Du]:^unitek       #;
+[4Du][2Sg]:^umiten       #; [4Du][2Pl]:^umisi       #; [4Du][2Du]:^umitek       #;
+[4Du][2Sg]:^uniten       #; [4Du][2Pl]:^unisi       #; [4Du][2Du]:^unitek       #;
+!-------------------------|--------------------------|---------------------------|
+[3Sg][4Sg]:^atni         #; [3Sg][4Pl]:^asteng      #; [3Sg][4Du]:^astek        #;
+[3Pl][4Sg]:^atni         #; [3Pl][4Pl]:^asteng      #; [3Pl][4Du]:^astek        #;
+[3Du][4Sg]:^atni         #; [3Du][4Pl]:^asteng      #; [3Du][4Du]:^astek        #;
+!-------------------------|--------------------------|---------------------------|
+[1Sg][4Sg]:^umni         #; [1Sg][4Pl]:^umteng      #; [1Sg][4Du]:^umtek        #;
+[1Pl][4Sg]:^umnni        #; [1Pl][4Pl]:^umteng      #; [1Pl][4Du]:^umtek        #;
+[1Du][4Sg]:^umtegnegu    #; [1Du][4Pl]:^umtegneki   #; [1Du][4Du]:^umtegnekek   #;
+!-------------------------|--------------------------|---------------------------|
+[2Sg][4Sg]:^uvgu         #; [2Sg][4Pl]:^ufki        #; [2Sg][4Du]:^ufkek        #;
+[2Pl][4Sg]:^ufsigu       #; [2Pl][4Pl]:^ufsiki      #; [2Pl][4Du]:^ufsikek      #;
+[2Du][4Sg]:^uftegnegu    #; [2Du][4Pl]:^uftegneki   #; [2Du][4Du]:^uftegnekek   #;
+!-------------------------|--------------------------|---------------------------|
+! no [4--][4--] forms                                                            |
+!-------------------------|--------------------------|---------------------------|
+! alternative forms for 4th person subject are described on Jacobson (2001) p.92
+! and on p.172 with some discrepancies -> alternative 4Du forms are unclear
+
+
