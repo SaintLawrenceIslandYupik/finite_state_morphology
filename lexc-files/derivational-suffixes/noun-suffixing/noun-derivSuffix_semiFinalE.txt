@@ -4,7 +4,7 @@ LEXICON NounPostbaseVII
 !  when suffixing to noun roots that have semifinal -e
 !======================================================
 
-                                    NounInflVII;
+                                   NounInflVII;
 
 –ghhaleg[N.V]:^%{.m.%}ghhalek      #;                ! how V! (exclamation)
 ~sf-w%:(e)nkut[N.N]:^%{.sf.%}enkut #;                ! N and company (or family)
@@ -35,6 +35,8 @@ LEXICON NounPostbaseVII
 +tugh[N.V]:^tugh                   VerbPostbaseIV;   ! to eat N, to use N
 
 +te[N.V]:^%{t%}e                   VerbPostbaseV;    ! to go to N, to catch N
+
+~%:(ng)ite[N.V]:^%{.sf.%}i%{t%}e** VerbPostbaseVI;   ! to not have N, to lack N
 
 +tuumagh:^tuumagh                  QuantQualInfl;    ! together with one's Ns
 

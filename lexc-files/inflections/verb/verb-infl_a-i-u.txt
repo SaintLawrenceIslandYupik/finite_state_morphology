@@ -128,16 +128,16 @@ LEXICON VerbInflI
 !~~~~~~~~~~~~
 ! concessive 
 !~~~~~~~~~~~~
-[Intr][Conc]:^ghnga    IntrConc;
-[Trns][Conc]:^ghnga    TrnsConc;
+[Intr][Conc]:^ghnga  IntrConc;
+[Trns][Conc]:^ghnga  TrnsConc;
 
 !~~~~~~~~~~~~~~~~~
 ! consequential I
 !~~~~~~~~~~~~~~~~~
-[Intr][CnsqI]:^ya     IntrPrecCnsq;
-[Trns][CnsqI]:^ya     TrnsPrecCnsq;
-[Intr][CnsqI]:^nga    IntrPrecCnsq;
-[Trns][CnsqI]:^nga    TrnsPrecCnsq;
+[Intr][CnsqI]:^ya   IntrPrecCnsq;
+[Trns][CnsqI]:^ya   TrnsPrecCnsq;
+[Intr][CnsqI]:^nga  IntrPrecCnsq;
+[Trns][CnsqI]:^nga  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~~~~~~~
 ! consequential II
@@ -148,15 +148,23 @@ LEXICON VerbInflI
 !~~~~~~~~~~~~~
 ! conditional
 !~~~~~~~~~~~~~
-[Intr][Cond]:^k       IntrCond;
-[Trns][Cond]:^k       TrnsCond;
+[Intr][Cond]:^k  IntrCond;
+[Trns][Cond]:^k  TrnsCond;
 
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-[Intr][Ctmp]:^negh    IntrCtmp;
-[Trns][Ctmp]:^negh    TrnsCtmp; 
-[Intr][Ctmp]:^ngh     IntrCtmp;
-[Trns][Ctmp]:^ngh     TrnsCtmp;
+[Intr][Ctmp]:^negh  IntrCtmp;
+[Trns][Ctmp]:^negh  TrnsCtmp; 
+[Intr][Ctmp]:^ngh   IntrCtmp; ! sometimes -e is absent, idk why
+[Trns][Ctmp]:^ngh   TrnsCtmp; ! e.g. amsanaanghani ['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
+
+!~~~~~~~~~~~~~~~
+! subordinative
+!~~~~~~~~~~~~~~~
+[Intr][Subr]:^lu   IntrSubr;
+[Trns][Subr]:^lu   TrnsSubr; 
+![Intr][Subr]:^llu  IntrSubr; ! sometimes -l is devoiced, idk why
+![Trns][Subr]:^llu  TrnsSubr; ! e.g. kayusiisqellunga [Jacobson (2001) p.101]
 
 

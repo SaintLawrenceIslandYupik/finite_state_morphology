@@ -12,10 +12,10 @@ LEXICON VerbInflII
 !~~~~~~~~~~~~~
 ! participial
 !~~~~~~~~~~~~~
-[Intr][Ptcp]:^lghii    IntrPtcp;
-[Trns][Ptcp]:^gke      TrnsPtcp;
-[Intr][Ptcp]:^gka      IntrPtcpAlternate; ! second participial mood?
-[Trns][Ptcp]:^gka      TrnsPtcpAlternate; ! [Jacobson (2001) p.73]
+[Intr][Ptcp]:^lghii  IntrPtcp;
+[Trns][Ptcp]:^gke    TrnsPtcp;
+[Intr][Ptcp]:^gka    IntrPtcpAlternate; ! second participial mood?
+[Trns][Ptcp]:^gka    TrnsPtcpAlternate; ! [Jacobson (2001) p.73]
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! interrogative 
@@ -128,16 +128,16 @@ LEXICON VerbInflII
 !~~~~~~~~~~~~
 ! concessive 
 !~~~~~~~~~~~~
-[Intr][Conc]:^ghnga           IntrConc;
-[Trns][Conc]:^ghnga           TrnsConc;
+[Intr][Conc]:^ghnga  IntrConc;
+[Trns][Conc]:^ghnga  TrnsConc;
 
 !~~~~~~~~~~~~~~~~~
 ! consequential I
 !~~~~~~~~~~~~~~~~~
-[Intr][CnsqI]:^%{.f.%}ya     IntrPrecCnsq;
-[Trns][CnsqI]:^%{.f.%}ya     TrnsPrecCnsq;
-[Intr][CnsqI]:^%{.f.%}nga    IntrPrecCnsq;
-[Trns][CnsqI]:^%{.f.%}nga    TrnsPrecCnsq;
+[Intr][CnsqI]:^%{.f.%}ya   IntrPrecCnsq;
+[Trns][CnsqI]:^%{.f.%}ya   TrnsPrecCnsq;
+[Intr][CnsqI]:^%{.f.%}nga  IntrPrecCnsq;
+[Trns][CnsqI]:^%{.f.%}nga  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~~~~~~~
 ! consequential II
@@ -148,17 +148,25 @@ LEXICON VerbInflII
 !~~~~~~~~~~~~~
 ! conditional
 !~~~~~~~~~~~~~
-[Intr][Cond]:^gk             IntrCond;
-[Trns][Cond]:^gk             TrnsCond;
-[Intr][Cond]:^%{.f.%}k       IntrCond;
-[Trns][Cond]:^%{.f.%}k       TrnsCond;
+[Intr][Cond]:^gk        IntrCond;
+[Trns][Cond]:^gk        TrnsCond;
+[Intr][Cond]:^%{.f.%}k  IntrCond;
+[Trns][Cond]:^%{.f.%}k  TrnsCond;
 
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-[Intr][Ctmp]:^%{.f.%}negh     IntrCtmp;
-[Trns][Ctmp]:^%{.f.%}negh     TrnsCtmp; 
-[Intr][Ctmp]:^%{.f.%}ngh      IntrCtmp;
-[Trns][Ctmp]:^%{.f.%}ngh      TrnsCtmp;
+[Intr][Ctmp]:^%{.f.%}negh  IntrCtmp;
+[Trns][Ctmp]:^%{.f.%}negh  TrnsCtmp; 
+[Intr][Ctmp]:^%{.f.%}ngh   IntrCtmp; ! sometimes -e is absent, idk why
+[Trns][Ctmp]:^%{.f.%}ngh   TrnsCtmp; ! e.g. amsanaanghani ['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
+
+!~~~~~~~~~~~~~~~
+! subordinative
+!~~~~~~~~~~~~~~~
+[Intr][Subr]:^%{.f.%}lu   IntrSubr;
+[Trns][Subr]:^%{.f.%}lu   TrnsSubr; 
+![Intr][Subr]:^%{.f.%}llu  IntrSubr; ! sometimes -l is devoiced, idk why
+![Trns][Subr]:^%{.f.%}llu  TrnsSubr; ! e.g. kayusiisqellunga [Jacobson (2001) p.101]
 
 

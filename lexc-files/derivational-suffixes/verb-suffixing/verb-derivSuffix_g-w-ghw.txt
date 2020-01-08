@@ -4,13 +4,15 @@ LEXICON VerbPostbaseIII
 !  when suffixing to verb roots that end in -g, -w, -ghw
 !=======================================================
 
-                                     VerbInflIII;
+                                    VerbInflIII;
 
 –ghhaleg[V.V]:^%{.m.%}ghhalek       #;                ! how V! (exclamation)
 
+~i[V.V]:^i                          VerbPostbaseI;    ! to V something
 @~sf–(g)kau[V.V]:^%{.m.%}kau        VerbPostbaseI;    ! to have V-ed or been V-ed 
 ~–kayugu[V.V]:^%{.m.%}kayugu        VerbPostbaseI;    ! to be able to V
 @~%:(i/u)ma[V.V]:^uma               VerbPostbaseI;    ! to have V-ed or to have been V-ed; to evidently have V-ed
+@~fna[V.V]:^na                      VerbPostbaseI;    ! in order to V
 @~fni[V.V]:^ni                      VerbPostbaseI;    ! to say that one V-s (compound-verbal postbase)
 
 ~(g)aqe[V.V]:^aqe                   VerbPostbaseII;   ! to be V-ing; to regularly or repeatedly V
@@ -24,12 +26,13 @@ LEXICON VerbPostbaseIII
 
 @~f–ragkiigh[V.V]:^%{.m.%}ragkiigh  VerbPostbaseIV;   ! to V quickly
 
-@~%:(ng)igate[V.V]:^igate           VerbPostbaseV;    ! to never V; to not be V-ing
-+(pete)fte[V.V]:^petefte            VerbPostbaseV;    ! to evidently V or have V-ed
-+(pete)fte[V.V]:^pete               VerbPostbaseV;    ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
-+(te)ste[V.V]:^teste                VerbPostbaseV;    ! to have, make, or let one V (compound-verbal postbase)
-~%:(u)te[V.V]:^ute                  VerbPostbaseV;    ! to V with, for or to object; to V object along with oneself; to V each other
+@~%:(ng)igate[V.V]:^iga%{t%}e       VerbPostbaseV;    ! to never V; to not be V-ing
++(pete)fte[V.V]:^petef%{t%}e        VerbPostbaseV;    ! to evidently V or have V-ed
++(pete)fte[V.V]:^pe%{t%}e           VerbPostbaseV;    ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
++(te)ste[V.V]:^tes%{t%}e            VerbPostbaseV;    ! to have, make, or let one V (compound-verbal postbase)
+~%:(u)te[V.V]:^u%{t%}e              VerbPostbaseV;    ! to V with, for or to object; to V object along with oneself; to V each other
 
+@~fnaanghite[V.V]:^naanghi%{t%}e*   VerbPostbaseVI;   ! to not V in the future; "won't V"
 @–nghite[V.V]:^%{.m.%}nghite**      VerbPostbaseVI;   ! to not V
 
 @–lghii[V.N]:^%{.m.%}lghii          NounPostbaseI;    ! one that is V-ing 

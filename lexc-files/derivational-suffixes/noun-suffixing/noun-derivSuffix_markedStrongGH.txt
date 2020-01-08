@@ -4,7 +4,7 @@ LEXICON NounPostbaseIV
 !  when suffixing to noun roots that end in marked strong -gh (*)
 !================================================================
 
-                                         NounInflIV;
+                                        NounInflIV;
 
 –ghhaleg[N.V]:^%{.m.%}ghhalek           #;                ! how V! (exclamation)
 ~sf-w%:(e)nkut[N.N]:^%{.c.%}%{E%}nkut   #;                ! N and company (or family)
@@ -35,6 +35,8 @@ LEXICON NounPostbaseIV
 +tugh[N.V]:^tugh                        VerbPostbaseIV;   ! to eat N, to use N
 
 +te[N.V]:^%{t%}e                        VerbPostbaseV;    ! to go to N, to catch N
+
+~%:(ng)ite[N.V]:^i%{t%}e**              VerbPostbaseVI;   ! to not have N, to lack N
 
 +tuumagh:^tuumagh                       QuantQualInfl;    ! together with one's Ns
 

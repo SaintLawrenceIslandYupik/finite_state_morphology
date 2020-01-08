@@ -3,15 +3,16 @@ all: clean ess.lexc test
 ess.lexc:
 	cat lexc-files/header.txt lexc-files/demonstratives.txt lexc-files/emotional_roots.txt lexc-files/interrogatives.txt lexc-files/particles.txt lexc-files/postural_roots.txt lexc-files/quantifier_qualifier.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/verb_root_ete.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/enclitics.txt > ess.lexc
 	cat exceptions/header-exceptions.txt exceptions/exceptions.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/enclitics.txt > exceptions.lexc
+	cat parallel/header-parallel.txt parallel/parallel-forms.txt > parallel.lexc
 
-ess.fomabin: ess.foma ess.lexc exceptions.lexc
+ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
 	foma -l ess.foma -e "push Grammar" -e "save stack ess.fomabin" -s
 
-interactive: ess.foma ess.lexc exceptions.lexc
+interactive: ess.foma ess.lexc exceptions.lexc parallel.lexc
 	foma -l ess.foma -e "push Grammar"
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15
 
 test-ch2: tests/jacobson_examples/jacobson_ch2.tsv ess.fomabin
 	@cut -f 1 tests/jacobson_examples/jacobson_ch2.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch2.tsv)' && echo "Jacobson (2001) Ch2 - PASS" || echo "Jacobson (2001) Ch2 - FAIL"
@@ -51,6 +52,10 @@ test-ch13: tests/jacobson_examples/jacobson_ch13.tsv ess.fomabin
 
 test-ch14: tests/jacobson_examples/jacobson_ch14.tsv ess.fomabin
 	@cut -f 1 tests/jacobson_examples/jacobson_ch14.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch14.tsv)' && echo "Jacobson (2001) Ch14 - PASS" || echo "Jacobson (2001) Ch14 - FAIL"
+
+test-ch15: tests/jacobson_examples/jacobson_ch15.tsv ess.fomabin
+	@cut -f 1 tests/jacobson_examples/jacobson_ch15.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch15.tsv)' && echo "Jacobson (2001) Ch15 - PASS" || echo "Jacobson (2001) Ch15 - FAIL"
+
 
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin *.lexc

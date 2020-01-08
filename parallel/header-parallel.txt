@@ -3,33 +3,6 @@
 Multichar_Symbols
 !
 !================
-%{g%}  ! for digraph -gh
-%{k%}  ! for digraph -kw
-%{t%}  ! for -te
-
-!-----------
-! allomorphs 
-!-----------
-%{E%}     ! for (e)
-%{G%}     ! for (g) 
-%{I%}     ! for (e) in ~sf:(e)sqe [Jacobson (2001) p.64]
-%{GI%}    ! for Intr.Opt-2Sg (-a,-i, -u, -aa, -ii, -uu) [Jacobson (2001) p.65]
-%{AI%}    ! for Intr.Opt-2Sg (-agh, -igh, -ugh, -aagh, -iigh, -uugh) [Jacobson (2001) p.65]
-%{K%}     ! for differentiating the conditional mood (see foma rule "SpecialTE")
-%{SUBR%}  ! for subordinative mood exceptions (see foma rule "RewriteSubordinative")
-
-!---------------------------
-! morphophonological symbols 
-!---------------------------
-%{.w.%}     ! drop weak -gh
-%{.c.%}     ! drop uvular (-gh) between single vowels
-%{.f.%}     ! drop and hop final -e
-%{.fS.%}    ! treat final -e like -a if root has two syllables or less [Jacobson (2001) p.38]
-%{.fL.%}    ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
-%{.sf.%}    ! drop and hop semi-final -e
-%{.m.%}     ! drop root-final consonants
-%{.at.%}    ! modify root-final -te 
-
 !-----------------------------
 ! morphological tags for nouns
 !-----------------------------
@@ -73,7 +46,7 @@ Multichar_Symbols
 [Ind]      ! indicative mood
 [Int]      ! interrogative mood
 [Opt]      ! optative mood
-[Pres]     ! present (optative)
+[Prs]      ! present (optative)
 [Fut]      ! future (optative)
 [Neg]      ! negative (optative)
 [Ptcp]     ! participial mood
@@ -97,44 +70,13 @@ Multichar_Symbols
 [3Du]      ! 3rd person dual subject/object
 [4Du]      ! 4th person dual subject/object
 
-!-------------------------
-! misc morphological tags
-!-------------------------
-[Encl]       ! enclitic
-[Dem]        ! demonstrative
-[Ptcl]       ! particle
-[Q]          ! question word
-[QuantQual]  ! for quantifier-qualifier constructions
-
 
 !===========
 !
 LEXICON Root
 !
 !===========
-NounRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
-NounRootII;    ! ends in -g, -w, -ghw
-NounRootIII;   ! ends in weak -gh
-NounRootIV;    ! ends in marked strong -gh
-NounRootV;     ! ends in strong -gh
-NounRootVI;    ! ends in -te
-NounRootVII;   ! has semi-final -e
-NounRootVIII;  ! has final -e that can drop but not hop 
-NounRootIX;    ! has final -e that can drop and hop
 
-VerbRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
-VerbRootII;    ! has final -e
-VerbRootIII;   ! ends in -g, -w, -ghw
-VerbRootIV;    ! ends in -agh, -igh, -ugh
-VerbRootV;     ! ends in -te
-VerbRootVI;    ! ends in special -te 
-VerbRootVII;   ! has semi-final -e
-
-Demonstrative;
-EmotionalRoot;
-Interrogative;
-Particle;
-PosturalRoot;
-QuantifierQualifier;
+ParallelForm;
 
 

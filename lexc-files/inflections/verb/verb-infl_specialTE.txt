@@ -6,8 +6,8 @@ LEXICON VerbInflVI
 !~~~~~~~~~~~~
 ! indicative
 !~~~~~~~~~~~~
-[Intr][Ind]:^%{.f.%}u        IntrInd;
-[Trns][Ind]:^%{.f.%}a        TrnsInd;
+[Intr][Ind]:^%{.f.%}u  IntrInd;
+[Trns][Ind]:^%{.f.%}a  TrnsInd;
 
 !~~~~~~~~~~~~~
 ! participial
@@ -128,16 +128,16 @@ LEXICON VerbInflVI
 !~~~~~~~~~~~~
 ! concessive 
 !~~~~~~~~~~~~
-[Intr][Conc]:^ghnga            IntrConc;
-[Trns][Conc]:^ghnga            TrnsConc;
+[Intr][Conc]:^ghnga  IntrConc;
+[Trns][Conc]:^ghnga  TrnsConc;
 
 !~~~~~~~~~~~~~~~~~
 ! consequential I
 !~~~~~~~~~~~~~~~~~
-[Intr][CnsqI]:^%{.f.%}ya       IntrPrecCnsq; ! this ending is given as @~fya on Jacobson (2001) p.91
-[Trns][CnsqI]:^%{.f.%}ya       TrnsPrecCnsq; ! but the phenomenon described is better modeled as ~fya
-[Intr][CnsqI]:^%{.f.%}nga      IntrPrecCnsq;
-[Trns][CnsqI]:^%{.f.%}nga      TrnsPrecCnsq;
+[Intr][CnsqI]:^%{.f.%}ya   IntrPrecCnsq; ! this ending is given as @~fya on Jacobson (2001) p.91
+[Trns][CnsqI]:^%{.f.%}ya   TrnsPrecCnsq; ! but the phenomenon described is better modeled as ~fya
+[Intr][CnsqI]:^%{.f.%}nga  IntrPrecCnsq;
+[Trns][CnsqI]:^%{.f.%}nga  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~~~~~~~
 ! consequential II
@@ -148,15 +148,21 @@ LEXICON VerbInflVI
 !~~~~~~~~~~~~~
 ! conditional
 !~~~~~~~~~~~~~
-[Intr][Cond]:^%{.at.%}%{K%}    IntrCond;
-[Trns][Cond]:^%{.at.%}%{K%}    TrnsCond;
+[Intr][Cond]:^%{.at.%}%{K%}  IntrCond;
+[Trns][Cond]:^%{.at.%}%{K%}  TrnsCond;
 
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-[Intr][Ctmp]:^%{.at.%}negh     IntrCtmp;
-[Trns][Ctmp]:^%{.at.%}negh     TrnsCtmp; 
-[Intr][Ctmp]:^%{.at.%}ngh      IntrCtmp;
-[Trns][Ctmp]:^%{.at.%}ngh      TrnsCtmp;
+[Intr][Ctmp]:^%{.at.%}negh  IntrCtmp;
+[Trns][Ctmp]:^%{.at.%}negh  TrnsCtmp; 
+[Intr][Ctmp]:^%{.at.%}ngh   IntrCtmp; ! sometimes -e is absent, idk why
+[Trns][Ctmp]:^%{.at.%}ngh   TrnsCtmp; ! e.g. amsanaanghani ['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
+
+!~~~~~~~~~~~~~~~
+! subordinative
+!~~~~~~~~~~~~~~~
+[Intr][Subr]:^%{SUBR%}  IntrSubr;
+[Trns][Subr]:^%{SUBR%}  TrnsSubr; 
 
 

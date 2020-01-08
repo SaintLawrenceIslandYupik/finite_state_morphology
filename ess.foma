@@ -3,6 +3,9 @@
 read lexc exceptions.lexc
 define Exceptions
 
+read lexc parallel.lexc
+define ParallelForms
+
 read lexc ess.lexc
 define Lexicon
 
@@ -193,6 +196,56 @@ define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. !
 define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
 
 
+! what is %{SUBR%}?
+!   in the context of the subordinative mood, derivational suffixes @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
+!   the subordinative mood marker is also +na for these strongly special -te roots, hence a placeholder %{SUBR%}, while the ordinary
+!   subordinative mood marker @~flu (or @~fllu) is used with all other special -te roots. lastly, some of the person/number markers
+!   are also different for strongly special -te roots, using the subordinative mood marker +na [Jacobson (2001) p.102].
+
+define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     -> %{%.m%.%} n g u "^" n a "^" a n         .o. 
+                            %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   -> %{%.m%.%} n g u "^" n a "^" n g         .o. 
+                            %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     -> %{%.m%.%} n g u "^" n a "^" a m t a     .o. 
+                            %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g -> %{%.m%.%} n g u "^" n a "^" a m t u n g .o. 
+                            %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^"         -> %{%.m%.%} n g u "^" n a                 .o.
+                         %{%.f%.%} n g i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     -> %{%.f%.%} n g u "^" n a "^" a n         .o. 
+                         %{%.f%.%} n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   -> %{%.f%.%} n g u "^" n a "^" n g         .o. 
+                         %{%.f%.%} n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     -> %{%.f%.%} n g u "^" n a "^" a m t a     .o. 
+                         %{%.f%.%} n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g -> %{%.f%.%} n g u "^" n a "^" a m t u n g .o. 
+                         %{%.f%.%} n g i %{t%} e "*" "*" "^" %{SUBR%} "^"         -> %{%.f%.%} n g u "^" n a                 .o.
+                             %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     -> %{%.m%.%} n g u "^" n a "^" a n         .o. 
+                             %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   -> %{%.m%.%} n g u "^" n a "^" n g         .o. 
+                             %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     -> %{%.m%.%} n g u "^" n a "^" a m t a     .o. 
+                             %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g -> %{%.m%.%} n g u "^" n a "^" a m t u n g .o. 
+                             %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^"         -> %{%.m%.%} n g u "^" n a                 .o.
+                                   n g i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     ->           n g u "^" n a "^" a n         .o. 
+                                   n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   ->           n g u "^" n a "^" n g         .o. 
+                                   n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     ->           n g u "^" n a "^" a m t a     .o. 
+                                   n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g ->           n g u "^" n a "^" a m t u n g .o. 
+                                   n g i %{t%} e "*" "*" "^" %{SUBR%} "^"         ->           n g u "^" n a                 .o. 
+                      %{%.at%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     -> %{%.m%.%} g p e "^" n a "^" a n         .o.
+                      %{%.at%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   -> %{%.m%.%} g p e "^" n a "^" n g         .o.
+                      %{%.at%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     -> %{%.m%.%} g p e "^" n a "^" a m t a     .o.
+                      %{%.at%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g -> %{%.m%.%} g p e "^" n a "^" a m t u n g .o.
+                      %{%.at%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^"         -> %{%.m%.%} g p e "^" n a                 .o.
+                    %{%.at%.%} n e g h i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     -> %{%.m%.%} g p e "^" n a "^" a n         .o.
+                    %{%.at%.%} n e g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   -> %{%.m%.%} g p e "^" n a "^" n g         .o.
+                    %{%.at%.%} n e g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     -> %{%.m%.%} g p e "^" n a "^" a m t a     .o.
+                    %{%.at%.%} n e g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g -> %{%.m%.%} g p e "^" n a "^" a m t u n g .o.
+                    %{%.at%.%} n e g h i %{t%} e "*" "*" "^" %{SUBR%} "^"         -> %{%.m%.%} g p e "^" n a                 .o.
+                       %{%.m%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     -> %{%.m%.%} g p e "^" n a "^" a n         .o.
+                       %{%.m%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   -> %{%.m%.%} g p e "^" n a "^" n g         .o.
+                       %{%.m%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     -> %{%.m%.%} g p e "^" n a "^" a m t a     .o.
+                       %{%.m%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g -> %{%.m%.%} g p e "^" n a "^" a m t u n g .o.
+                       %{%.m%.%} n g h i %{t%} e "*" "*" "^" %{SUBR%} "^"         -> %{%.m%.%} g p e "^" n a                 .o.
+                                 n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" k u     -> %{%.m%.%} g p e "^" n a "^" a n         .o.
+                                 n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n   -> %{%.m%.%} g p e "^" n a "^" n g         .o.
+                                 n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t a     -> %{%.m%.%} g p e "^" n a "^" a m t a     .o.
+                                 n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g -> %{%.m%.%} g p e "^" n a "^" a m t u n g .o.
+                                 n g h i %{t%} e "*" "*" "^" %{SUBR%} "^"         -> %{%.m%.%} g p e "^" n a                 .o.
+                                                                         %{SUBR%} -> %{%.at%.%} %{%.f%.%} l u                ;
+!                                                                        %{SUBR%} -> %{%.at%.%} %{%.f%.%} l l u              ;
+
+
 !------------------
 ! MODIFY -TE RULES
 !------------------
@@ -204,9 +257,9 @@ define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q
 !  we introduce %{K%} in the conditional mood marker to differentiate these environments -> @~sf–(g)%{K%}
 
 define SpecialTE %{t%} e ("*") "*" -> l ||         _ "^" %{%.at%.%}           ,,  ! special -te always changes to -l
-                                 e -> 0 || V %{t%} _ "*" "^" %{%.at%.%} %{K%} .o. ! in the conditional mood,
+                                 e -> 0 || V %{t%} _ "*" "^" %{%.at%.%} %{K%} .o. ! but in the conditional mood,
                          %{t%} "*" -> t                                       ,   !   weakly special -te can also 
-	         			 %{t%} "*" -> s ||       V _ "*" "^" %{%.at%.%} %{K%} .o. !   change to -t or -s
+                         %{t%} "*" -> s ||       V _ "*" "^" %{%.at%.%} %{K%} .o. !   change to -t or -s
                              %{K%} -> k                                       ;
 
 
@@ -299,6 +352,7 @@ define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w |
 !==============
 
 define Rules [
+    RewriteSubordinative .o.
     !-------------------------------
     ! modify -te rules
     !-------------------------------
@@ -346,4 +400,4 @@ define Rules [
     Undoubling
 ];
 
-define Grammar [ [ Exceptions .o. Rules ] .P. [ Lexicon .o. Lowercase .o. Rules ] ] ;
+define Grammar [ [ Exceptions .o. Rules ] .P. [ [ Lexicon .o. Lowercase .o. Rules ] | ParallelForms ] ] ;

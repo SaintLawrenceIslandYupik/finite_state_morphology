@@ -6,8 +6,8 @@ LEXICON VerbInflV
 !~~~~~~~~~~~~
 ! indicative
 !~~~~~~~~~~~~
-[Intr][Ind]:^%{.f.%}u        IntrInd;
-[Trns][Ind]:^%{.f.%}a        TrnsInd;
+[Intr][Ind]:^%{.f.%}u  IntrInd;
+[Trns][Ind]:^%{.f.%}a  TrnsInd;
 
 !~~~~~~~~~~~~~
 ! participial
@@ -128,16 +128,16 @@ LEXICON VerbInflV
 !~~~~~~~~~~~~
 ! concessive 
 !~~~~~~~~~~~~
-[Intr][Conc]:^ghnga            IntrConc;
-[Trns][Conc]:^ghnga            TrnsConc;
+[Intr][Conc]:^ghnga  IntrConc;
+[Trns][Conc]:^ghnga  TrnsConc;
 
 !~~~~~~~~~~~~~~~~~
 ! consequential I
 !~~~~~~~~~~~~~~~~~
-[Intr][CnsqI]:^%{.at.%}ya      IntrPrecCnsq;
-[Trns][CnsqI]:^%{.at.%}ya      TrnsPrecCnsq;
-[Intr][CnsqI]:^%{.f.%}nga      IntrPrecCnsq;
-[Trns][CnsqI]:^%{.f.%}nga      TrnsPrecCnsq;
+[Intr][CnsqI]:^%{.at.%}ya  IntrPrecCnsq;
+[Trns][CnsqI]:^%{.at.%}ya  TrnsPrecCnsq;
+[Intr][CnsqI]:^%{.f.%}nga  IntrPrecCnsq;
+[Trns][CnsqI]:^%{.f.%}nga  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~~~~~~~
 ! consequential II
@@ -148,15 +148,23 @@ LEXICON VerbInflV
 !~~~~~~~~~~~~~
 ! conditional
 !~~~~~~~~~~~~~
-[Intr][Cond]:^%{.at.%}k        IntrCond;
-[Trns][Cond]:^%{.at.%}k        TrnsCond;
+[Intr][Cond]:^%{.at.%}k  IntrCond;
+[Trns][Cond]:^%{.at.%}k  TrnsCond;
 
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-[Intr][Ctmp]:^%{.at.%}negh     IntrCtmp;
-[Trns][Ctmp]:^%{.at.%}negh     TrnsCtmp; 
-[Intr][Ctmp]:^%{.at.%}ngh      IntrCtmp;
-[Trns][Ctmp]:^%{.at.%}ngh      TrnsCtmp;
+[Intr][Ctmp]:^%{.at.%}negh  IntrCtmp;
+[Trns][Ctmp]:^%{.at.%}negh  TrnsCtmp; 
+[Intr][Ctmp]:^%{.at.%}ngh   IntrCtmp; ! sometimes -e is absent, idk why
+[Trns][Ctmp]:^%{.at.%}ngh   TrnsCtmp; ! e.g. amsanaanghani ['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
+
+!~~~~~~~~~~~~~~~
+! subordinative
+!~~~~~~~~~~~~~~~
+[Intr][Subr]:^%{.at.%}lu   IntrSubr;
+[Trns][Subr]:^%{.at.%}lu   TrnsSubr; 
+![Intr][Subr]:^%{.at.%}llu  IntrSubr; ! sometimes -l is devoiced, idk why
+![Trns][Subr]:^%{.at.%}llu  TrnsSubr; ! e.g. kayusiisqellunga [Jacobson (2001) p.101]
 
 
