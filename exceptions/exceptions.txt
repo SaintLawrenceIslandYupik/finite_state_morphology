@@ -2,7 +2,8 @@
 LEXICON  DemonstrativeException
 !==============================
 
-whani-ete:whaante  VerbPostbaseVI;
+whani-ete:whaante                                  VerbPostbaseVI;
+tawaten[Dem]+staaghhagh[N.N]:tawatestaaghha%{g%}h  PostInflIII;
 
 
 !=====================
@@ -16,6 +17,8 @@ yug[Abs][Sg]:yuuk                       Enclitic;
 
 Sivuqagh+mii[N.N]:Sivuqaghhmii          NounPostbaseI;
 
+qule[All][Sg]:quulmun  #;
+kete[All][Sg]:ketmun   #;
 
 !=====================
 LEXICON  VerbException

@@ -1,4 +1,5 @@
 ! this needs work...
+! consider post inflectional morphology
 
 !====================
 LEXICON Demonstrative
@@ -259,13 +260,13 @@ maaken[Dem]:maaken           Enclitic;  whaken[Dem]:whaken           Enclitic;  
                                                                                    iimken[Dem]:iimken           Enclitic;  ! Abl Mod Adv            |
                                         whaten[Dem]:whaten           Enclitic;                                             ! Equ Adv                |
 tamaa[Dem]:tamaa             Enclitic;  tawa[Dem]:tawa               Enclitic;     tazima[Dem]:tazima           Enclitic;  ! Anaph Adv Ptcl         |
-tamaani[Dem]:tamaani         Enclitic;  tawani[Dem]:tawani           Enclitic;     tazimani[Dem]:tazimani       Enclitic;  ! Anaph Loc Adv          |
+tamaani[Dem]:tamaani         Enclitic;  tawani[Dem]:tawani           PostInflI;     tazimani[Dem]:tazimani       Enclitic;  ! Anaph Loc Adv          |
 tamaavek[Dem]:tamaavek       Enclitic;  tawavek[Dem]:tawavek         Enclitic;     tazimavek[Dem]:tazimavek     Enclitic;  ! Anaph All Adv          |
 tamaagun[Dem]:tamaagun       Enclitic;  tawagun[Dem]:tawagun         Enclitic;     tazimagun[Dem]:tazimagun     Enclitic;  ! Anaph Per Adv          |
                                                                                    tazimgun[Dem]:tazimgun       Enclitic;  ! Anaph Per Adv          |
 tamaaken[Dem]:tamaaken       Enclitic;  tawaken[Dem]:tawaken         Enclitic;     tazimaken[Dem]:tazimaken     Enclitic;  ! Anaph Abl Mod Adv      |
                                                                                    tazimken[Dem]:tazimken       Enclitic;  ! Anaph Abl Mod Adv      |
-		                                tawaten[Dem]:tawaten         Enclitic;                                             ! Anaph Anaph Equ Adv    |
+		                                tawaten[Dem]:tawaten         PostInflI;                                             ! Anaph Anaph Equ Adv    |
 !--------------------------------------------------------------------------------------------------------------------------|------------------------|
 ! NEAR, COMING                                                                                                             |                        |
 !--------------------------------------------------------------------------------------------------------------------------|------------------------|

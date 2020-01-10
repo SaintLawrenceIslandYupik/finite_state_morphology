@@ -6,167 +6,167 @@ LEXICON NounInflVI
 !----------------------------------------|
 !              ABSOLUTIVE                |
 !----------------------------------------|-----------------------------------------|----------------------------------------|
-[Abs][Sg]:^                      Enclitic; [Abs][Pl]:^t                    Enclitic; [Abs][Du]:^k                   Enclitic;
+[Abs][Sg]:^                      PostInflVI; [Abs][Pl]:^t                    PostInflVI; [Abs][Du]:^k                   PostInflVI;
 !----------------------------------------|-----------------------------------------|----------------------------------------|
-[Abs][Sg][1SgPoss]:^%{.f.%}ka    Enclitic; [Abs][Pl][1SgPoss]:^nka         Enclitic; [Abs][Du][1SgPoss]:^gka        Enclitic;
-[Abs][Sg][1PlPoss]:^vut          Enclitic; [Abs][Pl][1PlPoss]:^put         Enclitic; [Abs][Du][1PlPoss]:^gput       Enclitic;
-[Abs][Sg][1DuPoss]:^vung         Enclitic; [Abs][Pl][1DuPoss]:^pung        Enclitic; [Abs][Du][1DuPoss]:^gpung      Enclitic;
+[Abs][Sg][1SgPoss]:^%{.f.%}ka    PostInflVI; [Abs][Pl][1SgPoss]:^nka         PostInflVI; [Abs][Du][1SgPoss]:^gka        PostInflVI;
+[Abs][Sg][1PlPoss]:^vut          PostInflVI; [Abs][Pl][1PlPoss]:^put         PostInflVI; [Abs][Du][1PlPoss]:^gput       PostInflVI;
+[Abs][Sg][1DuPoss]:^vung         PostInflVI; [Abs][Pl][1DuPoss]:^pung        PostInflVI; [Abs][Du][1DuPoss]:^gpung      PostInflVI;
 !----------------------------------------|-----------------------------------------|----------------------------------------|
-[Abs][Sg][2SgPoss]:^n            Enclitic; [Abs][Pl][2SgPoss]:^ten         Enclitic; [Abs][Du][2SgPoss]:^gken       Enclitic;
-                                     [Abs][Pl][2SgPoss]:^%{.f.%}ten  Enclitic;                                 |
-[Abs][Sg][2PlPoss]:^zi           Enclitic; [Abs][Pl][2PlPoss]:^si          Enclitic; [Abs][Du][2PlPoss]:^gsi        Enclitic;
-[Abs][Sg][2DuPoss]:^yek          Enclitic; [Abs][Pl][2DuPoss]:^ten         Enclitic; [Abs][Du][2DuPoss]:^gtek       Enclitic;
+[Abs][Sg][2SgPoss]:^n            PostInflVI; [Abs][Pl][2SgPoss]:^ten         PostInflVI; [Abs][Du][2SgPoss]:^gken       PostInflVI;
+                                     [Abs][Pl][2SgPoss]:^%{.f.%}ten  PostInflVI;                                 |
+[Abs][Sg][2PlPoss]:^zi           PostInflVI; [Abs][Pl][2PlPoss]:^si          PostInflVI; [Abs][Du][2PlPoss]:^gsi        PostInflVI;
+[Abs][Sg][2DuPoss]:^yek          PostInflVI; [Abs][Pl][2DuPoss]:^ten         PostInflVI; [Abs][Du][2DuPoss]:^gtek       PostInflVI;
 !----------------------------------------|-----------------------------------------|----------------------------------------|
-[Abs][Sg][3SgPoss]:^%{.f.%}nga   Enclitic; [Abs][Pl][3SgPoss]:^%{.f.%}ngi  Enclitic; [Abs][Du][3SgPoss]:^%{.f.%}kek Enclitic;
-[Abs][Sg][3SgPoss]:^%{.fS.%}nga  Enclitic;                                                                     |
-[Abs][Sg][3PlPoss]:^%{.f.%}ngat  Enclitic; [Abs][Pl][3PlPoss]:^%{.f.%}ngit Enclitic; [Abs][Du][3PlPoss]:^gket       Enclitic;
-[Abs][Sg][3PlPoss]:^%{.fS.%}ngat Enclitic;                                                                     |
-[Abs][Sg][3DuPoss]:^%{.f.%}ngak  Enclitic; [Abs][Pl][3DuPoss]:^%{.f.%}ngik Enclitic; [Abs][Du][3DuPoss]:^gkek       Enclitic;
-[Abs][Sg][3DuPoss]:^%{.fS.%}ngak Enclitic;                                                                     |
+[Abs][Sg][3SgPoss]:^%{.f.%}nga   PostInflVI; [Abs][Pl][3SgPoss]:^%{.f.%}ngi  PostInflVI; [Abs][Du][3SgPoss]:^%{.f.%}kek PostInflVI;
+[Abs][Sg][3SgPoss]:^%{.fS.%}nga  PostInflVI;                                                                     |
+[Abs][Sg][3PlPoss]:^%{.f.%}ngat  PostInflVI; [Abs][Pl][3PlPoss]:^%{.f.%}ngit PostInflVI; [Abs][Du][3PlPoss]:^gket       PostInflVI;
+[Abs][Sg][3PlPoss]:^%{.fS.%}ngat PostInflVI;                                                                     |
+[Abs][Sg][3DuPoss]:^%{.f.%}ngak  PostInflVI; [Abs][Pl][3DuPoss]:^%{.f.%}ngik PostInflVI; [Abs][Du][3DuPoss]:^gkek       PostInflVI;
+[Abs][Sg][3DuPoss]:^%{.fS.%}ngak PostInflVI;                                                                     |
 !----------------------------------------|-----------------------------------------|----------------------------------------|
-[Abs][Sg][4SgPoss]:^ni           Enclitic; [Abs][Pl][4SgPoss]:^ni          Enclitic; [Abs][Du][4SgPoss]:^gni        Enclitic;
-[Abs][Sg][4PlPoss]:^yeng         Enclitic; [Abs][Pl][4PlPoss]:^teng        Enclitic; [Abs][Du][4PlPoss]:^gteng      Enclitic;
-[Abs][Sg][4DuPoss]:^yek          Enclitic; [Abs][Pl][4DuPoss]:^tek         Enclitic; [Abs][Du][4DuPoss]:^gtek       Enclitic;
+[Abs][Sg][4SgPoss]:^ni           PostInflVI; [Abs][Pl][4SgPoss]:^ni          PostInflVI; [Abs][Du][4SgPoss]:^gni        PostInflVI;
+[Abs][Sg][4PlPoss]:^yeng         PostInflVI; [Abs][Pl][4PlPoss]:^teng        PostInflVI; [Abs][Du][4PlPoss]:^gteng      PostInflVI;
+[Abs][Sg][4DuPoss]:^yek          PostInflVI; [Abs][Pl][4DuPoss]:^tek         PostInflVI; [Abs][Du][4DuPoss]:^gtek       PostInflVI;
 !----------------------------------------|-----------------------------------------|----------------------------------------|
 ! %{%.fS%.%} [Jacobson (2001) p.38]
 
 !----------------------------------------|
 !            ERGATIVE (relative)         |
 !----------------------------------------|------------------------------------------|-------------------------------------|
-[Erg][Sg]:^m                     Enclitic; [Erg][Pl]:^t                     Enclitic; [Erg][Du]:^k                Enclitic;
+[Erg][Sg]:^m                     PostInflVI; [Erg][Pl]:^t                     PostInflVI; [Erg][Du]:^k                PostInflVI;
 !----------------------------------------|------------------------------------------|-------------------------------------|
-[Erg][Sg][1SgPoss]:^%{.f.%}ma    Enclitic; [Erg][Pl][1SgPoss]:^%{.f.%}ma    Enclitic; [Erg][Du][1SgPoss]:^gma     Enclitic;
-[Erg][Sg][1PlPoss]:^mta          Enclitic; [Erg][Pl][1PlPoss]:^mta          Enclitic; [Erg][Du][1PlPoss]:^gemta   Enclitic;
-[Erg][Sg][1DuPoss]:^mtung        Enclitic; [Erg][Pl][1DuPoss]:^mtung        Enclitic; [Erg][Du][1DuPoss]:^gemtung Enclitic;
+[Erg][Sg][1SgPoss]:^%{.f.%}ma    PostInflVI; [Erg][Pl][1SgPoss]:^%{.f.%}ma    PostInflVI; [Erg][Du][1SgPoss]:^gma     PostInflVI;
+[Erg][Sg][1PlPoss]:^mta          PostInflVI; [Erg][Pl][1PlPoss]:^mta          PostInflVI; [Erg][Du][1PlPoss]:^gemta   PostInflVI;
+[Erg][Sg][1DuPoss]:^mtung        PostInflVI; [Erg][Pl][1DuPoss]:^mtung        PostInflVI; [Erg][Du][1DuPoss]:^gemtung PostInflVI;
 !----------------------------------------|------------------------------------------|-------------------------------------|
-[Erg][Sg][2SgPoss]:^gpek         Enclitic; [Erg][Pl][2SgPoss]:^gpek         Enclitic; [Erg][Du][2SgPoss]:^gpek    Enclitic;
-[Erg][Sg][2PlPoss]:^gpesi        Enclitic; [Erg][Pl][2PlPoss]:^gpesi        Enclitic; [Erg][Du][2PlPoss]:^gpesi   Enclitic;
-[Erg][Sg][2DuPoss]:^gpetek       Enclitic; [Erg][Pl][2DuPoss]:^gpetek       Enclitic; [Erg][Du][2DuPoss]:^gpetek  Enclitic;
+[Erg][Sg][2SgPoss]:^gpek         PostInflVI; [Erg][Pl][2SgPoss]:^gpek         PostInflVI; [Erg][Du][2SgPoss]:^gpek    PostInflVI;
+[Erg][Sg][2PlPoss]:^gpesi        PostInflVI; [Erg][Pl][2PlPoss]:^gpesi        PostInflVI; [Erg][Du][2PlPoss]:^gpesi   PostInflVI;
+[Erg][Sg][2DuPoss]:^gpetek       PostInflVI; [Erg][Pl][2DuPoss]:^gpetek       PostInflVI; [Erg][Du][2DuPoss]:^gpetek  PostInflVI;
 !----------------------------------------|------------------------------------------|-------------------------------------|
-[Erg][Sg][3SgPoss]:^%{.f.%}an    Enclitic; [Erg][Pl][3SgPoss]:^%{.f.%}an    Enclitic; [Erg][Du][3SgPoss]:^gkenka  Enclitic;
-[Erg][Sg][3PlPoss]:^%{.f.%}ita   Enclitic; [Erg][Pl][3PlPoss]:^%{.f.%}ita   Enclitic; [Erg][Du][3PlPoss]:^gkenka  Enclitic;
-[Erg][Sg][3DuPoss]:^%{.f.%}ita   Enclitic; [Erg][Pl][3DuPoss]:^%{.f.%}ita   Enclitic; [Erg][Du][3DuPoss]:^gkenka  Enclitic;
+[Erg][Sg][3SgPoss]:^%{.f.%}an    PostInflVI; [Erg][Pl][3SgPoss]:^%{.f.%}an    PostInflVI; [Erg][Du][3SgPoss]:^gkenka  PostInflVI;
+[Erg][Sg][3PlPoss]:^%{.f.%}ita   PostInflVI; [Erg][Pl][3PlPoss]:^%{.f.%}ita   PostInflVI; [Erg][Du][3PlPoss]:^gkenka  PostInflVI;
+[Erg][Sg][3DuPoss]:^%{.f.%}ita   PostInflVI; [Erg][Pl][3DuPoss]:^%{.f.%}ita   PostInflVI; [Erg][Du][3DuPoss]:^gkenka  PostInflVI;
 !----------------------------------------|------------------------------------------|-------------------------------------|
-[Erg][Sg][4SgPoss]:^%{.f.%}mi    Enclitic; [Erg][Pl][4SgPoss]:^%{.f.%}mi    Enclitic; [Erg][Du][4SgPoss]:^gmi     Enclitic;
-[Erg][Sg][4PlPoss]:^%{.f.%}meng  Enclitic; [Erg][Pl][4PlPoss]:^%{.f.%}meng  Enclitic; [Erg][Du][4PlPoss]:^gmeng   Enclitic;
-[Erg][Sg][4DuPoss]:^%{.f.%}meng  Enclitic; [Erg][Pl][4DuPoss]:^%{.f.%}meng  Enclitic; [Erg][Du][4DuPoss]:^gmeng   Enclitic;
+[Erg][Sg][4SgPoss]:^%{.f.%}mi    PostInflVI; [Erg][Pl][4SgPoss]:^%{.f.%}mi    PostInflVI; [Erg][Du][4SgPoss]:^gmi     PostInflVI;
+[Erg][Sg][4PlPoss]:^%{.f.%}meng  PostInflVI; [Erg][Pl][4PlPoss]:^%{.f.%}meng  PostInflVI; [Erg][Du][4PlPoss]:^gmeng   PostInflVI;
+[Erg][Sg][4DuPoss]:^%{.f.%}meng  PostInflVI; [Erg][Pl][4DuPoss]:^%{.f.%}meng  PostInflVI; [Erg][Du][4DuPoss]:^gmeng   PostInflVI;
 !----------------------------------------|------------------------------------------|-------------------------------------|
 
 !------------------------------------------------|
 !                ABLATIVE MODALIS                |
 !------------------------------------------------|--------------------------------------------------|-------------------------------------------------|
-[Abl.Mod][Sg]:^%{.f.%}meng               Enclitic; [Abl.Mod][Pl]:^%{.fL.%}neng              Enclitic; [Abl.Mod][Du]:^gneng                    Enclitic;
+[Abl.Mod][Sg]:^%{.f.%}meng               PostInflVI; [Abl.Mod][Pl]:^%{.fL.%}neng              PostInflVI; [Abl.Mod][Du]:^gneng                    PostInflVI;
 !------------------------------------------------|--------------------------------------------------|-------------------------------------------------|
-[Abl.Mod][Sg][1SgPoss]:^mneng            Enclitic; [Abl.Mod][Pl][1SgPoss]:^mneng            Enclitic; [Abl.Mod][Du][1SgPoss]:^gemneng         Enclitic;
-[Abl.Mod][Sg][1PlPoss]:^mnneng           Enclitic; [Abl.Mod][Pl][1PlPoss]:^mnneng           Enclitic; [Abl.Mod][Du][1PlPoss]:^gemnneng        Enclitic;
-[Abl.Mod][Sg][1DuPoss]:^mtegneng         Enclitic; [Abl.Mod][Pl][1DuPoss]:^mtegneng         Enclitic; [Abl.Mod][Du][1DuPoss]:^gemtegneng      Enclitic;
+[Abl.Mod][Sg][1SgPoss]:^mneng            PostInflVI; [Abl.Mod][Pl][1SgPoss]:^mneng            PostInflVI; [Abl.Mod][Du][1SgPoss]:^gemneng         PostInflVI;
+[Abl.Mod][Sg][1PlPoss]:^mnneng           PostInflVI; [Abl.Mod][Pl][1PlPoss]:^mnneng           PostInflVI; [Abl.Mod][Du][1PlPoss]:^gemnneng        PostInflVI;
+[Abl.Mod][Sg][1DuPoss]:^mtegneng         PostInflVI; [Abl.Mod][Pl][1DuPoss]:^mtegneng         PostInflVI; [Abl.Mod][Du][1DuPoss]:^gemtegneng      PostInflVI;
 !------------------------------------------------|--------------------------------------------------|-------------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:^gpeneng          Enclitic; [Abl.Mod][Pl][2SgPoss]:^gpeneng          Enclitic; [Abl.Mod][Du][2SgPoss]:^gpeneng         Enclitic;
-[Abl.Mod][Sg][2SgPoss]:^gpegneng         Enclitic; [Abl.Mod][Pl][2SgPoss]:^gpegneng         Enclitic; [Abl.Mod][Du][2SgPoss]:^gpegneng        Enclitic;
-[Abl.Mod][Sg][2PlPoss]:^gpesineng        Enclitic; [Abl.Mod][Pl][2PlPoss]:^gpesineng        Enclitic; [Abl.Mod][Du][2PlPoss]:^gpesineng       Enclitic;
-[Abl.Mod][Sg][2DuPoss]:^gpetegneng       Enclitic; [Abl.Mod][Pl][2DuPoss]:^gpetegneng       Enclitic; [Abl.Mod][Du][2DuPoss]:^gpetegneng      Enclitic;
+[Abl.Mod][Sg][2SgPoss]:^gpeneng          PostInflVI; [Abl.Mod][Pl][2SgPoss]:^gpeneng          PostInflVI; [Abl.Mod][Du][2SgPoss]:^gpeneng         PostInflVI;
+[Abl.Mod][Sg][2SgPoss]:^gpegneng         PostInflVI; [Abl.Mod][Pl][2SgPoss]:^gpegneng         PostInflVI; [Abl.Mod][Du][2SgPoss]:^gpegneng        PostInflVI;
+[Abl.Mod][Sg][2PlPoss]:^gpesineng        PostInflVI; [Abl.Mod][Pl][2PlPoss]:^gpesineng        PostInflVI; [Abl.Mod][Du][2PlPoss]:^gpesineng       PostInflVI;
+[Abl.Mod][Sg][2DuPoss]:^gpetegneng       PostInflVI; [Abl.Mod][Pl][2DuPoss]:^gpetegneng       PostInflVI; [Abl.Mod][Du][2DuPoss]:^gpetegneng      PostInflVI;
 !------------------------------------------------|--------------------------------------------------|-------------------------------------------------|
-[Abl.Mod][Sg][3SgPoss]:^%{.f.%}nganeng   Enclitic; [Abl.Mod][Pl][3SgPoss]:^%{.f.%}nganeng   Enclitic; [Abl.Mod][Du][3SgPoss]:^gkeneng         Enclitic;
-[Abl.Mod][Sg][3PlPoss]:^%{.f.%}ngitneng  Enclitic; [Abl.Mod][Pl][3PlPoss]:^%{.f.%}ngitneng  Enclitic; [Abl.Mod][Du][3PlPoss]:^%{.f.%}ngitneng Enclitic;
-[Abl.Mod][Sg][3DuPoss]:^gkeneng          Enclitic; [Abl.Mod][Pl][3DuPoss]:^%{.f.%}ngitneng  Enclitic; [Abl.Mod][Du][3DuPoss]:^%{.f.%}ngitneng Enclitic;
+[Abl.Mod][Sg][3SgPoss]:^%{.f.%}nganeng   PostInflVI; [Abl.Mod][Pl][3SgPoss]:^%{.f.%}nganeng   PostInflVI; [Abl.Mod][Du][3SgPoss]:^gkeneng         PostInflVI;
+[Abl.Mod][Sg][3PlPoss]:^%{.f.%}ngitneng  PostInflVI; [Abl.Mod][Pl][3PlPoss]:^%{.f.%}ngitneng  PostInflVI; [Abl.Mod][Du][3PlPoss]:^%{.f.%}ngitneng PostInflVI;
+[Abl.Mod][Sg][3DuPoss]:^gkeneng          PostInflVI; [Abl.Mod][Pl][3DuPoss]:^%{.f.%}ngitneng  PostInflVI; [Abl.Mod][Du][3DuPoss]:^%{.f.%}ngitneng PostInflVI;
 !------------------------------------------------|--------------------------------------------------|-------------------------------------------------|
-[Abl.Mod][Sg][4SgPoss]:^%{.f.%}mineng    Enclitic; [Abl.Mod][Pl][4SgPoss]:^%{.f.%}mineng    Enclitic; [Abl.Mod][Du][4SgPoss]:^gmineng         Enclitic;
-[Abl.Mod][Sg][4PlPoss]:^%{.f.%}meggneng  Enclitic; [Abl.Mod][Pl][4PlPoss]:^%{.f.%}meggneng  Enclitic; [Abl.Mod][Du][4PlPoss]:^gmeggneng       Enclitic;
-[Abl.Mod][Sg][4DuPoss]:^%{.f.%}megteneng Enclitic; [Abl.Mod][Pl][4DuPoss]:^%{.f.%}megteneng Enclitic; [Abl.Mod][Du][4DuPoss]:^gmegteneng      Enclitic;
+[Abl.Mod][Sg][4SgPoss]:^%{.f.%}mineng    PostInflVI; [Abl.Mod][Pl][4SgPoss]:^%{.f.%}mineng    PostInflVI; [Abl.Mod][Du][4SgPoss]:^gmineng         PostInflVI;
+[Abl.Mod][Sg][4PlPoss]:^%{.f.%}meggneng  PostInflVI; [Abl.Mod][Pl][4PlPoss]:^%{.f.%}meggneng  PostInflVI; [Abl.Mod][Du][4PlPoss]:^gmeggneng       PostInflVI;
+[Abl.Mod][Sg][4DuPoss]:^%{.f.%}megteneng PostInflVI; [Abl.Mod][Pl][4DuPoss]:^%{.f.%}megteneng PostInflVI; [Abl.Mod][Du][4DuPoss]:^gmegteneng      PostInflVI;
 !------------------------------------------------|--------------------------------------------------|-------------------------------------------------|
 ! %{%.fL%.%} [Jacobson (2001) p.38]
 
 !------------------------------------------|
 !           LOCATIVE (localis)             |
 !------------------------------------------|--------------------------------------------|-------------------------------------------|
-[Loc][Sg]:^%{.f.%}mi               Enclitic; [Loc][Pl]:^%{.fL.%}ni              Enclitic; [Loc][Du]:^gni                    Enclitic;
+[Loc][Sg]:^%{.f.%}mi               PostInflVI; [Loc][Pl]:^%{.fL.%}ni              PostInflVI; [Loc][Du]:^gni                    PostInflVI;
 !------------------------------------------|--------------------------------------------|-------------------------------------------|
-[Loc][Sg][1SgPoss]:^mni            Enclitic; [Loc][Pl][1SgPoss]:^mni            Enclitic; [Loc][Du][1SgPoss]:^gemni         Enclitic;
-[Loc][Sg][1PlPoss]:^mnni           Enclitic; [Loc][Pl][1PlPoss]:^mnni           Enclitic; [Loc][Du][1PlPoss]:^gemnni        Enclitic;
-[Loc][Sg][1DuPoss]:^mtegni         Enclitic; [Loc][Pl][1DuPoss]:^mtegni         Enclitic; [Loc][Du][1DuPoss]:^gemtegni      Enclitic;
+[Loc][Sg][1SgPoss]:^mni            PostInflVI; [Loc][Pl][1SgPoss]:^mni            PostInflVI; [Loc][Du][1SgPoss]:^gemni         PostInflVI;
+[Loc][Sg][1PlPoss]:^mnni           PostInflVI; [Loc][Pl][1PlPoss]:^mnni           PostInflVI; [Loc][Du][1PlPoss]:^gemnni        PostInflVI;
+[Loc][Sg][1DuPoss]:^mtegni         PostInflVI; [Loc][Pl][1DuPoss]:^mtegni         PostInflVI; [Loc][Du][1DuPoss]:^gemtegni      PostInflVI;
 !------------------------------------------|--------------------------------------------|-------------------------------------------|
-[Loc][Sg][2SgPoss]:^gpeni          Enclitic; [Loc][Pl][2SgPoss]:^gpeni          Enclitic; [Loc][Du][2SgPoss]:^gpeni         Enclitic;
-[Loc][Sg][2SgPoss]:^gpegni         Enclitic; [Loc][Pl][2SgPoss]:^gpegni         Enclitic; [Loc][Du][2SgPoss]:^gpegni        Enclitic;
-[Loc][Sg][2PlPoss]:^gpesini        Enclitic; [Loc][Pl][2PlPoss]:^gpesini        Enclitic; [Loc][Du][2PlPoss]:^gpesini       Enclitic;
-[Loc][Sg][2DuPoss]:^gpetegni       Enclitic; [Loc][Pl][2DuPoss]:^gpetegni       Enclitic; [Loc][Du][2DuPoss]:^gpetegni      Enclitic;
+[Loc][Sg][2SgPoss]:^gpeni          PostInflVI; [Loc][Pl][2SgPoss]:^gpeni          PostInflVI; [Loc][Du][2SgPoss]:^gpeni         PostInflVI;
+[Loc][Sg][2SgPoss]:^gpegni         PostInflVI; [Loc][Pl][2SgPoss]:^gpegni         PostInflVI; [Loc][Du][2SgPoss]:^gpegni        PostInflVI;
+[Loc][Sg][2PlPoss]:^gpesini        PostInflVI; [Loc][Pl][2PlPoss]:^gpesini        PostInflVI; [Loc][Du][2PlPoss]:^gpesini       PostInflVI;
+[Loc][Sg][2DuPoss]:^gpetegni       PostInflVI; [Loc][Pl][2DuPoss]:^gpetegni       PostInflVI; [Loc][Du][2DuPoss]:^gpetegni      PostInflVI;
 !------------------------------------------|--------------------------------------------|-------------------------------------------|
-[Loc][Sg][3SgPoss]:^%{.f.%}ngani   Enclitic; [Loc][Pl][3SgPoss]:^%{.f.%}ngani   Enclitic; [Loc][Du][3SgPoss]:^gkeni         Enclitic;
-[Loc][Sg][3PlPoss]:^%{.f.%}ngitni  Enclitic; [Loc][Pl][3PlPoss]:^%{.f.%}ngitni  Enclitic; [Loc][Du][3PlPoss]:^%{.f.%}ngitni Enclitic;
-[Loc][Sg][3DuPoss]:^gkeni          Enclitic; [Loc][Pl][3DuPoss]:^%{.f.%}ngitni  Enclitic; [Loc][Du][3DuPoss]:^%{.f.%}ngitni Enclitic;
+[Loc][Sg][3SgPoss]:^%{.f.%}ngani   PostInflVI; [Loc][Pl][3SgPoss]:^%{.f.%}ngani   PostInflVI; [Loc][Du][3SgPoss]:^gkeni         PostInflVI;
+[Loc][Sg][3PlPoss]:^%{.f.%}ngitni  PostInflVI; [Loc][Pl][3PlPoss]:^%{.f.%}ngitni  PostInflVI; [Loc][Du][3PlPoss]:^%{.f.%}ngitni PostInflVI;
+[Loc][Sg][3DuPoss]:^gkeni          PostInflVI; [Loc][Pl][3DuPoss]:^%{.f.%}ngitni  PostInflVI; [Loc][Du][3DuPoss]:^%{.f.%}ngitni PostInflVI;
 !------------------------------------------|--------------------------------------------|-------------------------------------------|
-[Loc][Sg][4SgPoss]:^%{.f.%}mini    Enclitic; [Loc][Pl][4SgPoss]:^%{.f.%}mini    Enclitic; [Loc][Du][4SgPoss]:^gmini         Enclitic;
-[Loc][Sg][4PlPoss]:^%{.f.%}meggni  Enclitic; [Loc][Pl][4PlPoss]:^%{.f.%}meggni  Enclitic; [Loc][Du][4PlPoss]:^gmeggni       Enclitic;
-[Loc][Sg][4DuPoss]:^%{.f.%}megni   Enclitic; [Loc][Pl][4DuPoss]:^%{.f.%}megni   Enclitic; [Loc][Du][4DuPoss]:^gmegni        Enclitic;
-[Loc][Sg][4DuPoss]:^%{.f.%}megteni Enclitic; [Loc][Pl][4DuPoss]:^%{.f.%}megteni Enclitic; [Loc][Du][4DuPoss]:^gmegteni      Enclitic;
+[Loc][Sg][4SgPoss]:^%{.f.%}mini    PostInflVI; [Loc][Pl][4SgPoss]:^%{.f.%}mini    PostInflVI; [Loc][Du][4SgPoss]:^gmini         PostInflVI;
+[Loc][Sg][4PlPoss]:^%{.f.%}meggni  PostInflVI; [Loc][Pl][4PlPoss]:^%{.f.%}meggni  PostInflVI; [Loc][Du][4PlPoss]:^gmeggni       PostInflVI;
+[Loc][Sg][4DuPoss]:^%{.f.%}megni   PostInflVI; [Loc][Pl][4DuPoss]:^%{.f.%}megni   PostInflVI; [Loc][Du][4DuPoss]:^gmegni        PostInflVI;
+[Loc][Sg][4DuPoss]:^%{.f.%}megteni PostInflVI; [Loc][Pl][4DuPoss]:^%{.f.%}megteni PostInflVI; [Loc][Du][4DuPoss]:^gmegteni      PostInflVI;
 !------------------------------------------|--------------------------------------------|-------------------------------------------|
 ! %{%.fL%.%} [Jacobson (2001) p.38]
 
 !-------------------------------------------|
 !         ALLATIVE (terminalis)             |
 !-------------------------------------------|---------------------------------------------|--------------------------------------------|
-[All][Sg]:^%{.f.%}mun               Enclitic; [All][Pl]:^%{.fL.%}nun              Enclitic; [All][Du]:^gnun                    Enclitic;
+[All][Sg]:^%{.f.%}mun               PostInflVI; [All][Pl]:^%{.fL.%}nun              PostInflVI; [All][Du]:^gnun                    PostInflVI;
 !-------------------------------------------|---------------------------------------------|--------------------------------------------|
-[All][Sg][1SgPoss]:^mnun            Enclitic; [All][Pl][1SgPoss]:^mnun            Enclitic; [All][Du][1SgPoss]:^gemnun         Enclitic;
-[All][Sg][1PlPoss]:^mnnun           Enclitic; [All][Pl][1PlPoss]:^mnnun           Enclitic; [All][Du][1PlPoss]:^gemnnun        Enclitic;
-[All][Sg][1DuPoss]:^mtegnun         Enclitic; [All][Pl][1DuPoss]:^mtegnun         Enclitic; [All][Du][1DuPoss]:^gemtegnun      Enclitic;
+[All][Sg][1SgPoss]:^mnun            PostInflVI; [All][Pl][1SgPoss]:^mnun            PostInflVI; [All][Du][1SgPoss]:^gemnun         PostInflVI;
+[All][Sg][1PlPoss]:^mnnun           PostInflVI; [All][Pl][1PlPoss]:^mnnun           PostInflVI; [All][Du][1PlPoss]:^gemnnun        PostInflVI;
+[All][Sg][1DuPoss]:^mtegnun         PostInflVI; [All][Pl][1DuPoss]:^mtegnun         PostInflVI; [All][Du][1DuPoss]:^gemtegnun      PostInflVI;
 !-------------------------------------------|---------------------------------------------|--------------------------------------------|
-[All][Sg][2SgPoss]:^gpenun          Enclitic; [All][Pl][2SgPoss]:^gpenun          Enclitic; [All][Du][2SgPoss]:^gpenun         Enclitic;
-[All][Sg][2SgPoss]:^gpegnun         Enclitic; [All][Pl][2SgPoss]:^gpegnun         Enclitic; [All][Du][2SgPoss]:^gpegnun        Enclitic;
-[All][Sg][2PlPoss]:^gpesinun        Enclitic; [All][Pl][2PlPoss]:^gpesinun        Enclitic; [All][Du][2PlPoss]:^gpesinun       Enclitic;
-[All][Sg][2DuPoss]:^gpetegnun       Enclitic; [All][Pl][2DuPoss]:^gpetegnun       Enclitic; [All][Du][2DuPoss]:^gpetegnun      Enclitic;
+[All][Sg][2SgPoss]:^gpenun          PostInflVI; [All][Pl][2SgPoss]:^gpenun          PostInflVI; [All][Du][2SgPoss]:^gpenun         PostInflVI;
+[All][Sg][2SgPoss]:^gpegnun         PostInflVI; [All][Pl][2SgPoss]:^gpegnun         PostInflVI; [All][Du][2SgPoss]:^gpegnun        PostInflVI;
+[All][Sg][2PlPoss]:^gpesinun        PostInflVI; [All][Pl][2PlPoss]:^gpesinun        PostInflVI; [All][Du][2PlPoss]:^gpesinun       PostInflVI;
+[All][Sg][2DuPoss]:^gpetegnun       PostInflVI; [All][Pl][2DuPoss]:^gpetegnun       PostInflVI; [All][Du][2DuPoss]:^gpetegnun      PostInflVI;
 !-------------------------------------------|---------------------------------------------|--------------------------------------------|
-[All][Sg][3SgPoss]:^%{.f.%}nganun   Enclitic; [All][Pl][3SgPoss]:^%{.f.%}nganun   Enclitic; [All][Du][3SgPoss]:^gkenun         Enclitic;
-[All][Sg][3PlPoss]:^%{.f.%}ngitnun  Enclitic; [All][Pl][3PlPoss]:^%{.f.%}ngitnun  Enclitic; [All][Du][3PlPoss]:^%{.f.%}ngitnun Enclitic;
-[All][Sg][3DuPoss]:^gkenun          Enclitic; [All][Pl][3DuPoss]:^%{.f.%}ngitnun  Enclitic; [All][Du][3DuPoss]:^%{.f.%}ngitnun Enclitic;
+[All][Sg][3SgPoss]:^%{.f.%}nganun   PostInflVI; [All][Pl][3SgPoss]:^%{.f.%}nganun   PostInflVI; [All][Du][3SgPoss]:^gkenun         PostInflVI;
+[All][Sg][3PlPoss]:^%{.f.%}ngitnun  PostInflVI; [All][Pl][3PlPoss]:^%{.f.%}ngitnun  PostInflVI; [All][Du][3PlPoss]:^%{.f.%}ngitnun PostInflVI;
+[All][Sg][3DuPoss]:^gkenun          PostInflVI; [All][Pl][3DuPoss]:^%{.f.%}ngitnun  PostInflVI; [All][Du][3DuPoss]:^%{.f.%}ngitnun PostInflVI;
 !-------------------------------------------|---------------------------------------------|--------------------------------------------|
-[All][Sg][4SgPoss]:^%{.f.%}minun    Enclitic; [All][Pl][4SgPoss]:^%{.f.%}minun    Enclitic; [All][Du][4SgPoss]:^gminun         Enclitic;
-[All][Sg][4PlPoss]:^%{.f.%}meggnun  Enclitic; [All][Pl][4PlPoss]:^%{.f.%}meggnun  Enclitic; [All][Du][4PlPoss]:^gmeggnun       Enclitic;
-[All][Sg][4DuPoss]:^%{.f.%}megtenun Enclitic; [All][Pl][4DuPoss]:^%{.f.%}megtenun Enclitic; [All][Du][4DuPoss]:^gmegtenun      Enclitic;
+[All][Sg][4SgPoss]:^%{.f.%}minun    PostInflVI; [All][Pl][4SgPoss]:^%{.f.%}minun    PostInflVI; [All][Du][4SgPoss]:^gminun         PostInflVI;
+[All][Sg][4PlPoss]:^%{.f.%}meggnun  PostInflVI; [All][Pl][4PlPoss]:^%{.f.%}meggnun  PostInflVI; [All][Du][4PlPoss]:^gmeggnun       PostInflVI;
+[All][Sg][4DuPoss]:^%{.f.%}megtenun PostInflVI; [All][Pl][4DuPoss]:^%{.f.%}megtenun PostInflVI; [All][Du][4DuPoss]:^gmegtenun      PostInflVI;
 !-------------------------------------------|---------------------------------------------|--------------------------------------------|
 ! %{%.fL%.%} [Jacobson (2001) p.38]
 
 !----------------------------------------------|
 !             PERLATIVE (vialis)               |
 !----------------------------------------------|------------------------------------------------|--------------------------------------------|
-[Per][Sg]:^%{.f.%}kun                  Enclitic; [Per][Pl]:^tgun                        Enclitic; [Per][Du]:^gnegun                  Enclitic;
+[Per][Sg]:^%{.f.%}kun                  PostInflVI; [Per][Pl]:^tgun                        PostInflVI; [Per][Du]:^gnegun                  PostInflVI;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------|
-[Per][Sg][1SgPoss]:^mkun               Enclitic; [Per][Pl][1SgPoss]:^mkun               Enclitic; [Per][Du][1SgPoss]:^gemkun         Enclitic;
-[Per][Sg][1PlPoss]:^mteggun            Enclitic; [Per][Pl][1PlPoss]:^mteggun            Enclitic; [Per][Du][1PlPoss]:^gemteggun      Enclitic;
-[Per][Sg][1DuPoss]:^mtegnegun          Enclitic; [Per][Pl][1DuPoss]:^mtegnegun          Enclitic; [Per][Du][1DuPoss]:^gemtegnegun    Enclitic;
+[Per][Sg][1SgPoss]:^mkun               PostInflVI; [Per][Pl][1SgPoss]:^mkun               PostInflVI; [Per][Du][1SgPoss]:^gemkun         PostInflVI;
+[Per][Sg][1PlPoss]:^mteggun            PostInflVI; [Per][Pl][1PlPoss]:^mteggun            PostInflVI; [Per][Du][1PlPoss]:^gemteggun      PostInflVI;
+[Per][Sg][1DuPoss]:^mtegnegun          PostInflVI; [Per][Pl][1DuPoss]:^mtegnegun          PostInflVI; [Per][Du][1DuPoss]:^gemtegnegun    PostInflVI;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------|
-[Per][Sg][2SgPoss]:^gpegun             Enclitic; [Per][Pl][2SgPoss]:^gpegun             Enclitic; [Per][Du][2SgPoss]:^gpegun         Enclitic;
-[Per][Sg][2PlPoss]:^gpesigun           Enclitic; [Per][Pl][2PlPoss]:^gpesigun           Enclitic; [Per][Du][2PlPoss]:^gpesigun       Enclitic;
-[Per][Sg][2DuPoss]:^gpetegnegun        Enclitic; [Per][Pl][2DuPoss]:^gpetegnegun        Enclitic; [Per][Du][2DuPoss]:^gpetegnegun    Enclitic;
+[Per][Sg][2SgPoss]:^gpegun             PostInflVI; [Per][Pl][2SgPoss]:^gpegun             PostInflVI; [Per][Du][2SgPoss]:^gpegun         PostInflVI;
+[Per][Sg][2PlPoss]:^gpesigun           PostInflVI; [Per][Pl][2PlPoss]:^gpesigun           PostInflVI; [Per][Du][2PlPoss]:^gpesigun       PostInflVI;
+[Per][Sg][2DuPoss]:^gpetegnegun        PostInflVI; [Per][Pl][2DuPoss]:^gpetegnegun        PostInflVI; [Per][Du][2DuPoss]:^gpetegnegun    PostInflVI;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------|
-[Per][Sg][3SgPoss]:^%{.f.%}ngakun      Enclitic; [Per][Sg][3SgPoss]:^%{.f.%}ngakun      Enclitic; [Per][Du][3SgPoss]:^gkenkun        Enclitic;
-[Per][Sg][3PlPoss]:^%{.f.%}ngitgun     Enclitic; [Per][Sg][3PlPoss]:^%{.f.%}ngitgun     Enclitic; [Per][Du][3PlPoss]:^%{.f.%}ngitgun Enclitic;
-[Per][Sg][3DuPoss]:^gkenkun            Enclitic; [Per][Pl][3DuPoss]:^%{.f.%}ngakun      Enclitic; [Per][Du][3PlPoss]:^%{.f.%}ngitgun Enclitic;
+[Per][Sg][3SgPoss]:^%{.f.%}ngakun      PostInflVI; [Per][Sg][3SgPoss]:^%{.f.%}ngakun      PostInflVI; [Per][Du][3SgPoss]:^gkenkun        PostInflVI;
+[Per][Sg][3PlPoss]:^%{.f.%}ngitgun     PostInflVI; [Per][Sg][3PlPoss]:^%{.f.%}ngitgun     PostInflVI; [Per][Du][3PlPoss]:^%{.f.%}ngitgun PostInflVI;
+[Per][Sg][3DuPoss]:^gkenkun            PostInflVI; [Per][Pl][3DuPoss]:^%{.f.%}ngakun      PostInflVI; [Per][Du][3PlPoss]:^%{.f.%}ngitgun PostInflVI;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------|
-[Per][Sg][4SgPoss]:^%{.f.%}mikun       Enclitic; [Per][Pl][4SgPoss]:^%{.f.%}mikun       Enclitic; [Per][Du][4SgPoss]:^gmikun         Enclitic;
-[Per][Sg][4PlPoss]:^%{.f.%}megteggun   Enclitic; [Per][Pl][4PlPoss]:^%{.f.%}megteggun   Enclitic; [Per][Du][4PlPoss]:^gmegteggun     Enclitic;
-[Per][Sg][4DuPoss]:^%{.f.%}megtegnegun Enclitic; [Per][Pl][4DuPoss]:^%{.f.%}megtegnegun Enclitic; [Per][Du][4DuPoss]:^gmegtegnegun   Enclitic;
+[Per][Sg][4SgPoss]:^%{.f.%}mikun       PostInflVI; [Per][Pl][4SgPoss]:^%{.f.%}mikun       PostInflVI; [Per][Du][4SgPoss]:^gmikun         PostInflVI;
+[Per][Sg][4PlPoss]:^%{.f.%}megteggun   PostInflVI; [Per][Pl][4PlPoss]:^%{.f.%}megteggun   PostInflVI; [Per][Du][4PlPoss]:^gmegteggun     PostInflVI;
+[Per][Sg][4DuPoss]:^%{.f.%}megtegnegun PostInflVI; [Per][Pl][4DuPoss]:^%{.f.%}megtegnegun PostInflVI; [Per][Du][4DuPoss]:^gmegtegnegun   PostInflVI;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------|
 
 !-------------------------------------------|
 !            EQUATIVE (equalis)             |
 !-------------------------------------------|---------------------------------------------|-------------------------------------------|
-[Equ][Sg]:^%{.f.%}tun               Enclitic; [Equ][Pl]:^stun                     Enclitic; [Equ][Du]:^gestun                 Enclitic;
+[Equ][Sg]:^%{.f.%}tun               PostInflVI; [Equ][Pl]:^stun                     PostInflVI; [Equ][Du]:^gestun                 PostInflVI;
 !-------------------------------------------|---------------------------------------------|-------------------------------------------|
-[Equ][Sg][1SgPoss]:^mtun            Enclitic; [Equ][Pl][1SgPoss]:^mtun            Enclitic; [Equ][Du][1SgPoss]:^gemtun        Enclitic;
-[Equ][Sg][1PlPoss]:^mtestun         Enclitic; [Equ][Pl][1PlPoss]:^mtestun         Enclitic; [Equ][Du][1PlPoss]:^gemtestun     Enclitic;
-[Equ][Sg][1DuPoss]:^mtegestun       Enclitic; [Equ][Pl][1DuPoss]:^mtegestun       Enclitic; [Equ][Du][1DuPoss]:^gemtegestun   Enclitic;
+[Equ][Sg][1SgPoss]:^mtun            PostInflVI; [Equ][Pl][1SgPoss]:^mtun            PostInflVI; [Equ][Du][1SgPoss]:^gemtun        PostInflVI;
+[Equ][Sg][1PlPoss]:^mtestun         PostInflVI; [Equ][Pl][1PlPoss]:^mtestun         PostInflVI; [Equ][Du][1PlPoss]:^gemtestun     PostInflVI;
+[Equ][Sg][1DuPoss]:^mtegestun       PostInflVI; [Equ][Pl][1DuPoss]:^mtegestun       PostInflVI; [Equ][Du][1DuPoss]:^gemtegestun   PostInflVI;
 !-------------------------------------------|---------------------------------------------|-------------------------------------------|
-[Equ][Sg][2SgPoss]:^gpetun          Enclitic; [Equ][Pl][2SgPoss]:^gpetun          Enclitic; [Equ][Du][2SgPoss]:^gpetun        Enclitic;
-[Equ][Sg][2PlPoss]:^gpesistun       Enclitic; [Equ][Pl][2PlPoss]:^gpesistun       Enclitic; [Equ][Du][2PlPoss]:^gpesistun     Enclitic;
-[Equ][Sg][2DuPoss]:^gpetegetun      Enclitic; [Equ][Pl][2DuPoss]:^gpetegetun      Enclitic; [Equ][Du][2DuPoss]:^gpetegetun    Enclitic;
+[Equ][Sg][2SgPoss]:^gpetun          PostInflVI; [Equ][Pl][2SgPoss]:^gpetun          PostInflVI; [Equ][Du][2SgPoss]:^gpetun        PostInflVI;
+[Equ][Sg][2PlPoss]:^gpesistun       PostInflVI; [Equ][Pl][2PlPoss]:^gpesistun       PostInflVI; [Equ][Du][2PlPoss]:^gpesistun     PostInflVI;
+[Equ][Sg][2DuPoss]:^gpetegetun      PostInflVI; [Equ][Pl][2DuPoss]:^gpetegetun      PostInflVI; [Equ][Du][2DuPoss]:^gpetegetun    PostInflVI;
 !-------------------------------------------|---------------------------------------------|-------------------------------------------|
-[Equ][Sg][3SgPoss]:^%{.f.%}ngatun   Enclitic; [Equ][Sg][3SgPoss]:^%{.f.%}ngatun   Enclitic; [Equ][Du][3SgPoss]:^gketun        Enclitic;
-[Equ][Sg][3PlPoss]:^%{.f.%}ngitun   Enclitic; [Equ][Sg][3PlPoss]:^%{.f.%}ngitun   Enclitic; [Equ][Du][3PlPoss]:^%{.f.%}ngitun Enclitic;
-[Equ][Sg][3DuPoss]:^gketun          Enclitic; [Equ][Pl][3DuPoss]:^%{.f.%}ngitun   Enclitic; [Equ][Du][3PlPoss]:^%{.f.%}ngitun Enclitic;
+[Equ][Sg][3SgPoss]:^%{.f.%}ngatun   PostInflVI; [Equ][Sg][3SgPoss]:^%{.f.%}ngatun   PostInflVI; [Equ][Du][3SgPoss]:^gketun        PostInflVI;
+[Equ][Sg][3PlPoss]:^%{.f.%}ngitun   PostInflVI; [Equ][Sg][3PlPoss]:^%{.f.%}ngitun   PostInflVI; [Equ][Du][3PlPoss]:^%{.f.%}ngitun PostInflVI;
+[Equ][Sg][3DuPoss]:^gketun          PostInflVI; [Equ][Pl][3DuPoss]:^%{.f.%}ngitun   PostInflVI; [Equ][Du][3PlPoss]:^%{.f.%}ngitun PostInflVI;
 !-------------------------------------------|---------------------------------------------|-------------------------------------------|
-[Equ][Sg][4SgPoss]:^%{.f.%}mitun    Enclitic; [Equ][Pl][4SgPoss]:^%{.f.%}mitun    Enclitic; [Equ][Du][4SgPoss]:^gmitun        Enclitic;
-[Equ][Sg][4PlPoss]:^%{.f.%}megestun Enclitic; [Equ][Pl][4PlPoss]:^%{.f.%}megestun Enclitic;  [Equ][Du][4PlPoss]:^gmegestun    Enclitic;
-[Equ][Sg][4DuPoss]:^%{.f.%}megestun Enclitic; [Equ][Pl][4DuPoss]:^%{.f.%}megestun Enclitic; [Equ][Du][4DuPoss]:^gmegestun     Enclitic;
+[Equ][Sg][4SgPoss]:^%{.f.%}mitun    PostInflVI; [Equ][Pl][4SgPoss]:^%{.f.%}mitun    PostInflVI; [Equ][Du][4SgPoss]:^gmitun        PostInflVI;
+[Equ][Sg][4PlPoss]:^%{.f.%}megestun PostInflVI; [Equ][Pl][4PlPoss]:^%{.f.%}megestun PostInflVI;  [Equ][Du][4PlPoss]:^gmegestun    PostInflVI;
+[Equ][Sg][4DuPoss]:^%{.f.%}megestun PostInflVI; [Equ][Pl][4DuPoss]:^%{.f.%}megestun PostInflVI; [Equ][Du][4DuPoss]:^gmegestun     PostInflVI;
 !-------------------------------------------|---------------------------------------------|-------------------------------------------|
 
 !--------------------------------------------|

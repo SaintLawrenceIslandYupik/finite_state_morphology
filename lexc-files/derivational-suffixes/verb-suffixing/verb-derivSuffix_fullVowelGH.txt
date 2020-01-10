@@ -8,6 +8,10 @@ LEXICON VerbPostbaseIV
 
 –ghhaleg[V.V]:^%{.m.%}ghhalek         #;                ! how V! (exclamation)
 
+–ghllag[Augmentive]:^%{.m.%}ghllag    NounInflII;       ! big N (augmentive)
++tuqagh[Augmentive]:^tuqa%{g%}h       NounInflIII;      ! one with lots of N (augmentive)
++aagh[Augmentive]:^aagh               NounInflV;        ! one who keeps V-ing (augmentive)
+
 ~i[V.V]:^i                            VerbPostbaseI;    ! to V something
 @~sf–(g)kau[V.V]:^%{.m.%}kau          VerbPostbaseI;    ! to have V-ed or been V-ed 
 ~–kayugu[V.V]:^%{.m.%}kayugu          VerbPostbaseI;    ! to be able to V
@@ -25,8 +29,12 @@ LEXICON VerbPostbaseIV
 +(te)sug[V.V]:^tesug                  VerbPostbaseIII;  ! to want one to V (compound-verbal postbase)
 @~fyug[V.V]:^yug                      VerbPostbaseIII;  ! to want to V
 
+@~flaatagh[V.V]:^laatagh              VerbPostbaseIV;   ! to V anyway despite everything; to still V
+@~fnanigh[V.V]:^nanigh                VerbPostbaseIV;   ! to cease V-ing; to stop V-ing
+@qugh[V.V]:^qugh                      VerbPostbaseIV;   ! to V completely
 @~f–ragkiigh[V.V]:^%{.m.%}ragkiigh    VerbPostbaseIV;   ! to V quickly
 @~fyagh[V.V]:^yagh                    VerbPostbaseIV;   ! to go V-ing; to V in vain
+@~fyaghtugh[V.V]:^yaghtugh            VerbPostbaseIV;   ! to be about to V; to go somewhere to V
 
 @~%:(ng)igate[V.V]:^%{.c.%}iga%{t%}e  VerbPostbaseV;    ! to never V; to not be V-ing
 +(pete)fte[V.V]:^petef%{t%}e          VerbPostbaseV;    ! to evidently V or have V-ed
@@ -42,11 +50,13 @@ LEXICON VerbPostbaseIV
 @–lghii[V.N]:^%{.m.%}lghii            NounPostbaseI;    ! one that is V-ing 
 
 ~–kayug[V.N]:^%{.m.%}kayug            NounPostbaseII;   ! one who is able to V
-@~fvig[V.N]:^vig                      NounPostbaseII; ! place to V
+@~fvig[V.N]:^vig                      NounPostbaseII;   ! place to V
 
 @~sf–(g)kagh[V.N]:^%{.m.%}ka%{g%}h    NounPostbaseIII;  ! one that has V-ed or been V-ed
 
-@~%:(u)te[V.N]:^%{.c.%}u%{t%}e        NounPostbaseVI; ! condition with respect to V-ing
+@~%:(u)te[V.N]:^%{.c.%}u%{t%}e        NounPostbaseVI;   ! condition with respect to V-ing
+
+@–negh[V.N]:^%{.m.%}negh              NounPostbaseVII;  ! the act or activity of V-ing
 
 @~sf–(g)ke[V.N]:^%{.m.%}ke            NounPostbaseVIII; ! one that the possessor is V-ing
 

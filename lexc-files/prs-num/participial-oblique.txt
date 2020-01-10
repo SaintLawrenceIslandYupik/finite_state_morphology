@@ -22,11 +22,11 @@ LEXICON TrnsPtcpObl
 [2Sg][3Sg]:^n                 #; [2Sg][3Pl]:^ten              #; [2Sg][3Du]:^gken              #;
 [2Pl][3Sg]:^zi                #; [2Pl][3Pl]:^si               #; [2Pl][3Du]:^gsi               #;
 [2Du][3Sg]:^yek               #; [2Du][3Pl]:^tek              #; [2Du][3Du]:^gtek              #;
-|------------------------------|-------------------------------|--------------------------------|
-[4Sg][3Sg]:^%{.f.%}minigu     #; [4Sg][3Pl]:^%{.f.%}miniki    #; [4Sg][3Du]:^%{.f.%}minikek    #;
-[4Pl][3Sg]:^%{.f.%}megteggu   #; [4Pl][3Pl]:^%{.f.%}megtek    #; [4Pl][3Du]:^%{.f.%}megtekek   #;
-[4Du][3Sg]:^%{.f.%}megnegu    #; [4Du][3Pl]:^%{.f.%}megneki   #; [4Du][3Du]:^%{.f.%}megnekek   #;
-|------------------------------|-------------------------------|--------------------------------|
+|------------------------------|-------------------------------|--------------------------------| ! this ~f is not documented
+[4Sg][3Sg]:^%{.f.%}minigu     #; [4Sg][3Pl]:^%{.f.%}miniki    #; [4Sg][3Du]:^%{.f.%}minikek    #; ! anywhere, but all of the observed
+[4Pl][3Sg]:^%{.f.%}megteggu   #; [4Pl][3Pl]:^%{.f.%}megtek    #; [4Pl][3Du]:^%{.f.%}megtekek   #; ! 4th person forms drop the -e
+[4Du][3Sg]:^%{.f.%}megnegu    #; [4Du][3Pl]:^%{.f.%}megneki   #; [4Du][3Du]:^%{.f.%}megnekek   #; ! in the transitive participial
+|------------------------------|-------------------------------|--------------------------------| ! oblique morpheme @~fyaqe
 ! no [1--][1--] forms                                                                           |
 |------------------------------|-------------------------------|--------------------------------|
 [2Sg][1Sg]:^vnga              #; [2Sg][1Pl]:^fkut             #; [2Sg][1Du]:^pekung            #;

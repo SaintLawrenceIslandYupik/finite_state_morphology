@@ -1,0 +1,29 @@
+!=================
+LEXICON Positional
+!=================
+
+asi         NounPostbaseI;    ! area below; lower part
+ilu         NounPostbaseI;    ! area inside; interior
+kelu        NounPostbaseI;    ! area back from sea
+kingu       NounPostbaseI;    ! back part; stern of boat; time after
+sivu        NounPostbaseI;    ! front part; bow of boat; time before
+saaghw      NounPostbaseII;   ! side; area beside
+kelute      NounPostbaseVIII; ! area back from sea
+kete        NounPostbaseVIII; ! area toward sea
+
+asi         AlternativeTerminalis; ! area below; lower part
+ilu         AlternativeTerminalis; ! area inside; interior
+kelu        AlternativeTerminalis; ! area back from sea
+kingu       AlternativeTerminalis; ! back part; stern of boat; time after
+sivu        AlternativeTerminalis; ! front part; bow of boat; time before
+saaghw      AlternativeTerminalis; ! side; area beside
+kelute      AlternativeTerminalis; ! area back from sea
+kete        AlternativeTerminalis; ! area toward sea
+
+!============================
+LEXICON AlternativeTerminalis
+!============================
+
+[All][Sg]:^tmun  #; ! toward [Jacobson (2001) p.113]
+
+
