@@ -195,6 +195,9 @@ define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. !
 
 define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
 
+define Uteta e -> a || "^" [ %{%.at%.%} | %{%.sf%.%} | %{%.f%.%} | %{%.c%.%} ] u %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o. ! @~:(u)te [Jacobson (2001) p.116]
+             e -> a || "^"                                                       %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g ;
+
 
 ! what is %{SUBR%}?
 !   in the context of the subordinative mood, derivational suffixes @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
@@ -353,7 +356,12 @@ define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w |
 !==============
 
 define Rules [
+	!------------------------------
+	! lexical string rewrite
+	!------------------------------
     RewriteSubordinative .o.
+    SFGKeKa              .o.
+	Uteta                .o.
     !-------------------------------
     ! modify -te rules
     !-------------------------------
@@ -385,7 +393,6 @@ define Rules [
     ResolveG             .o.
     ResolveI             .o.
     OptativeAllomorphs   .o.
-    SFGKeKa              .o.
     !-------------------------------
     ! clean up
     !-------------------------------

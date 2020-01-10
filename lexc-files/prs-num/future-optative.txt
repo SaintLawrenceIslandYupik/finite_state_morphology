@@ -1,0 +1,57 @@
+!=================================
+LEXICON IntrOptFut
+!  person/number markers for
+!     intransitive future optative 
+!=================================
+!-----------|----------------|---------------|
+[3Sg]:^aq  #; [1Sg]:^inga   #; [2Sg]:^aten  #;
+[3Pl]:^at  #; [1Pl]:^akut   #; [2Pl]:^asi   #;
+[3Du]:^ak  #; [1Du]:^akung  #; [2Du]:^atek  #;
+!-----------|----------------|---------------|
+
+!===============================
+LEXICON TrnsOptFut
+!  person/number markers for
+!     transitive future optative 
+!===============================
+!-----------------------|-------------------------|--------------------------|
+[2Sg][3Sg]:^n          #; [2Sg][3Pl]:^ten        #; [2Sg][3Du]:^gken        #;
+[2Pl][3Sg]:^zi         #; [2Pl][3Pl]:^si         #; [2Pl][3Du]:^gsi         #;
+[2Du][3Sg]:^yek        #; [2Du][3Pl]:^tek        #; [2Du][3Du]:^gtek        #;
+!-----------------------|-------------------------|--------------------------|
+[2Sg][1Sg]:^vnga       #; [2Sg][1Pl]:^fkut       #; [2Sg][1Du]:^pekung      #;
+[2Pl][1Sg]:^fsinga     #; [2Pl][1Pl]:^pesikut    #; [2Pl][1Du]:^pesikung    #;
+[2Du][1Sg]:^petegnenga #; [2Du][1Pl]:^petegnekut #; [2Du][1Du]:^petegnekung #;
+!-----------------------|-------------------------|--------------------------|
+
+!=========================================
+LEXICON IntrOptFutNEG
+!  person/number markers for
+!    intransitive future negative optative 
+!=========================================
+|-------------|
+[2Sg]:^ng    #;
+[2Pl]:^si    #;
+[2Du]:^tek   #;
+!-------------|
+
+!=======================================
+LEXICON TrnsOptFutNEG
+!  person/number markers for
+!    transitive future negative optative
+!=======================================
+|----------------|-------------------|---------------------|
+[2Sg][3Sg]:^an  #; [2Sg][3Pl]:^ki   #; [2Sg][3Du]:^kek    #;
+[2Pl][3Sg]:^an  #; [2Pl][3Pl]:^ki   #; [2Pl][3Du]:^kek    #;
+[2Du][3Sg]:^an  #; [2Du][3Pl]:^ki   #; [2Du][3Du]:^kek    #;
+|----------------|-------------------|---------------------|
+[2Sg][1Sg]:^nga #; [2Sg][1Pl]:^amta #; [2Sg][1Du]:^amtung #;
+[2Pl][1Sg]:^nga #; [2Pl][1Pl]:^amta #; [2Pl][1Du]:^amtung #;
+[2Du][1Sg]:^nga #; [2Du][1Pl]:^amta #; [2Du][1Du]:^amtung #;
+|----------------|-------------------|---------------------|
+[2Sg][2Sg]:^ng  #; [2Sg][2Pl]:^si   #; [2Sg][2Du]:^tek    #;
+[2Pl][2Sg]:^ng  #; [2Pl][2Pl]:^si   #; [2Pl][2Du]:^tek    #;
+[2Du][2Sg]:^ng  #; [2Du][2Pl]:^si   #; [2Du][2Du]:^tek    #;
+|----------------|-------------------|---------------------|
+
+

@@ -2,8 +2,24 @@
 LEXICON ParallelForm
 !===================
 
+!-------------------------
+! [Jacobson (2001) p.105]
+!-------------------------
 aqlaghaghte+(te)ste[V.V]@–nghite[V.V][Trns][Subr][_][3Sg]:aqlaghagtestengngunaan  #;
 neghe+(te)ste[V.V]@–nghite[V.V][Trns][Subr][_][3Pl]:neghestengngunaki             #;
 sukangite[Intr][Subr][4Sg]:sukangunani                                            #;
+
+
+!--------------------------------------------------------------------------
+! certain verb bases in certain circumstances may be used with unpossessed
+! oblique case endings as if they were noun bases [Jacobson (2001) p.119]
+!   not sure how many other instances like these there are.
+!   implementing these words in any other way would SEVERELY overgenerate.
+!--------------------------------------------------------------------------
+piyug[Abl.Mod][Sg]:piyugmeng              #;
+pinigh[Equ][Sg]:pinitun                   #;
+seghlegh[Equ][Sg]:seghletun               #;
+neghe@–nghite[V.V][Erg][Sg]:neghenghitem  #;
+aqlaghaghte[Loc][Sg]:aqlaghaghtemmi       #;
 
 

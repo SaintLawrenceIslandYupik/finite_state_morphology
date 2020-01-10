@@ -19,18 +19,22 @@ LEXICON VerbPostbaseIV
 @lleqe[V.V]:^lleqe                    VerbPostbaseII;   ! to V in the future; will V
 @~fmiqe[V.V]:^miqe                    VerbPostbaseII;   ! to make, compel, or force one to V (a compound-verbal postbase) 
 @~fnaqe[V.V]:^naqe                    VerbPostbaseII;   ! to be going to V, to be about to V
++qe[V.V]:^qe                          VerbPostbaseII;   ! to act on so as to cause to V
 ~sf%:(e)sqe[V.V]:^%{.c.%}%{I%}sqe     VerbPostbaseII;   ! to ask or tell one to V (compound-verbal postbase)
 
 +(te)sug[V.V]:^tesug                  VerbPostbaseIII;  ! to want one to V (compound-verbal postbase)
 @~fyug[V.V]:^yug                      VerbPostbaseIII;  ! to want to V
 
 @~f–ragkiigh[V.V]:^%{.m.%}ragkiigh    VerbPostbaseIV;   ! to V quickly
+@~fyagh[V.V]:^yagh                    VerbPostbaseIV;   ! to go V-ing; to V in vain
 
 @~%:(ng)igate[V.V]:^%{.c.%}iga%{t%}e  VerbPostbaseV;    ! to never V; to not be V-ing
 +(pete)fte[V.V]:^petef%{t%}e          VerbPostbaseV;    ! to evidently V or have V-ed
 +(pete)fte[V.V]:^pe%{t%}e             VerbPostbaseV;    ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 +(te)ste[V.V]:^tes%{t%}e              VerbPostbaseV;    ! to have, make, or let one V (compound-verbal postbase)
 ~%:(u)te[V.V]:^%{.c.%}u%{t%}e         VerbPostbaseV;    ! to V with, for or to object; to V object along with oneself; to V each other
+–pigte[V.V]:^%{.m.%}pig%{t%}e         VerbPostbaseV;    ! to be very V; to V very much
++te[V.V]:^%{t%}e                      VerbPostbaseV;    ! to act on so as to cause to V
 
 @~fnaanghite[V.V]:^naanghi%{t%}e*     VerbPostbaseVI;   ! to not V in the future; "won't V"
 @–nghite[V.V]:^%{.m.%}nghi%{t%}e**    VerbPostbaseVI;   ! to not V
@@ -38,8 +42,11 @@ LEXICON VerbPostbaseIV
 @–lghii[V.N]:^%{.m.%}lghii            NounPostbaseI;    ! one that is V-ing 
 
 ~–kayug[V.N]:^%{.m.%}kayug            NounPostbaseII;   ! one who is able to V
+@~fvig[V.N]:^vig                      NounPostbaseII; ! place to V
 
 @~sf–(g)kagh[V.N]:^%{.m.%}ka%{g%}h    NounPostbaseIII;  ! one that has V-ed or been V-ed
+
+@~%:(u)te[V.N]:^%{.c.%}u%{t%}e        NounPostbaseVI; ! condition with respect to V-ing
 
 @~sf–(g)ke[V.N]:^%{.m.%}ke            NounPostbaseVIII; ! one that the possessor is V-ing
 

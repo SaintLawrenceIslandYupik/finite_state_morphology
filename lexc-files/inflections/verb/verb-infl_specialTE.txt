@@ -119,6 +119,24 @@ LEXICON VerbInflVI
 [Trns][Opt][Pres][Neg][2Du][3Pl]:^fqiita #;
 !-----------------------------------------|
 
+!~~~~~~~~~~~~~~~~~
+! future optative
+!~~~~~~~~~~~~~~~~~
+[Intr][Opt][Fut]:^%{.at.%}lgha  IntrOptFut;
+[Trns][Opt][Fut]:^%{.at.%}nake  TrnsOptFut;
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+! negative future optative
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Intr][Opt][Fut][Neg]:^%{.at.%}yaquna  IntrOptFutNEG;
+[Trns][Opt][Fut][Neg]:^%{.at.%}yaquna  TrnsOptFutNEG;
+
+!~~~~~~~~~~~~~~~~~~~~~
+! participial-oblique 
+!~~~~~~~~~~~~~~~~~~~~~
+[Intr][Ptcp.Obl]:^%{.at.%}yalghii IntrPtcpObl;
+[Trns][Ptcp.Obl]:^%{.at.%}yaqe    TrnsPtcpObl; 
+
 !~~~~~~~~~~~~
 ! precessive 
 !~~~~~~~~~~~~
