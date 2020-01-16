@@ -58,10 +58,10 @@ def print_inflection_classes(inflType, idx2InflClass):
                     if root[-1] == "w" and ''.join(root[-3:-1]) != "gh":
                         padding = maxLength - (len(root) * 2 + 6) + 2
                         print(root + ":" + root[:-1] + "%{k%}w" + " " * padding + \
-                              inflType + "Suffix" + romanNumeral + "; ! " + definition)
+                              inflType + "Postbase" + romanNumeral + "; ! " + definition)
                     else:
                         padding = maxLength - len(root) + 2
-                        print(root + " " * padding + inflType + "Suffix" + romanNumeral + \
+                        print(root + " " * padding + inflType + "Postbase" + romanNumeral + \
                               "; ! " + definition)
 
             # class of noun roots that end in weak -gh
@@ -70,14 +70,14 @@ def print_inflection_classes(inflType, idx2InflClass):
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - (len(root) * 2 + 5) + 2
                     print(root + ":" + root[:-2] + "%{g%}h" + " " * padding + \
-                          inflType + "Suffix" + romanNumeral + "; ! " + definition)
+                          inflType + "Postbase" + romanNumeral + "; ! " + definition)
 
             # class of noun roots that end in marked strong -gh (*)
             #   remove * at the end of the root, e.g. afsengagh*  --> afsengagh
             elif inflType == "Noun" and i == 4:
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - len(root) + 2
-                    print(root[:-1] + " " * padding + inflType + "Suffix" + romanNumeral + \
+                    print(root[:-1] + " " * padding + inflType + "Postbase" + romanNumeral + \
                           "; ! " + definition)
 
             # class of roots that end in -te
@@ -90,12 +90,12 @@ def print_inflection_classes(inflType, idx2InflClass):
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - (len(root) * 2 + 5) + 2
                     print(root + ":" + root[:-2] + "%{t%}e" + " " * padding + \
-                          inflType + "Suffix" + romanNumeral + "; ! " + definition)
+                          inflType + "Postbase" + romanNumeral + "; ! " + definition)
 
             else:
                 for root, definition in idx2InflClass[i]:
                     padding = maxLength - len(root) + 2
-                    print(root + " " * padding + inflType + "Suffix" + romanNumeral + \
+                    print(root + " " * padding + inflType + "Postbase" + romanNumeral + \
                           "; ! " + definition)
             print()
 
@@ -258,13 +258,13 @@ def main():
             reader = csv.reader(csvfile, delimiter = ',')
 
             for line in reader:
-                if "particle" in line[1]:
-                    particles.append((line[0], line[1]))
+                #if "particle" in line[1]:
+                #    particles.append((line[0], line[1]))
 
-                elif "?" in line[1]:
-                    questionWords.append((line[0], line[1]))
+                #elif "?" in line[1]:
+                #    questionWords.append((line[0], line[1]))
 
-                elif "postural root" in line[1]:
+                if "postural root" in line[1]:
                     posturalRoots.append((line[0], line[1]))
 
                 elif "emotional root" in line[1]:

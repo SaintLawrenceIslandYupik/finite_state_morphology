@@ -257,37 +257,37 @@ def classify_noun_root(root):
         if (len(cv) == 3 and cv[0] == "V"):
             # eCe -> -e can drop but not hop
             if root[0] == "e":
-                return 9
+                return 8
             # [aa|ii|uu]Ce -> -e can drop but not hop
             elif (''.join(root[0:2]) == "aa" or
                   ''.join(root[0:2]) == "ii" or
                   ''.join(root[0:2]) == "uu"):
-                return 9
-            else:
                 return 8
+            else:
+                return 9
 
         # root is of the form CVCe
         elif (len(cv) == 4 and cv[0] == "C"):
             # CeCe -> -e can drop but not hop
             if root[1] == "e":
-                return 9
+                return 8
             # [aa|ii|uu]Ce -> -e can drop but not hop
             elif (''.join(root[1:3]) == "aa" or
                   ''.join(root[1:3]) == "ii" or
                   ''.join(root[1:3]) == "uu"):
-                return 9
-            else:
                 return 8
+            else:
+                return 9
 
         # root is longer than (C)VCe or
         # of the form ...CCe
         # -e can drop but not hop
         elif (len(cv) > 4 or ''.join(cv[-3:-1]) == "CC"):
-            return 9
+            return 8
 
         # root is of the form (C)VCe
         # -e can drop and hop
         else:
-            return 8
+            return 9
 
     return 0
