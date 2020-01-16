@@ -122,13 +122,7 @@ def classify_verb_root(root):
 
         # root ends in -eg
         if root[-2] == "e":
-
-            # root is too short or ends with CCeg
-            # -e cannot drop or hop
-            if (len(cv) < 4 or ''.join(cv[-4:-2]) == "CC"):
-                return 3
-            else:
-                return 6
+            return 7
 
         # root ends in -ag, -ig, -ug,
         else:
@@ -146,13 +140,7 @@ def classify_verb_root(root):
 
     # root ends in semi-final -e
     elif (root[-3:] == "egh"):
-
-        # root is too short or ends with CCegh
-        # -e cannot drop or hop
-        if (len(cv) < 4 or ''.join(cv[-4:-2]) == "CC"):
-            return 4
-        else:
-            return 6
+        return 7
 
     return 0
 
@@ -207,7 +195,7 @@ def classify_noun_root(root):
              nominal inflection class
 
     Classifies the given noun root into one
-    of 10 inflectional classes for nouns.
+    of nine inflectional classes for nouns.
 
     '''
     cv = convert_to_c_v(root)
@@ -228,13 +216,7 @@ def classify_noun_root(root):
 
         # root ends in -eg
         if root[-2] == "e":
-
-            # root is too short or ends with CCeg
-            # -e cannot drop or hop
-            if (len(cv) < 4 or ''.join(cv[-4:-2]) == "CC"):
-                return 2
-            else:
-                return 7
+            return 7
 
         # root ends in -ag, -ig, -ug,
         else:
@@ -263,13 +245,7 @@ def classify_noun_root(root):
 
     # root ends in semi-final -e
     elif (root[-3:] == "egh"):
-
-        # root is too short or ends with CCegh
-        # -e cannot drop or hop
-        if (len(cv) < 4 or ''.join(cv[-4:-2]) == "CC"):
-            return 5
-        else:
-            return 7
+        return 7
 
     # root ends in final -e
     #    -e hops if the root is of

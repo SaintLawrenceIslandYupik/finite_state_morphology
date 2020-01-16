@@ -2,7 +2,7 @@
 :author: Emily Chen
 :date:   2019
 
-Given a word list in .csv format, classifies each word
+Given a root list in .csv format, classifies each root
 into its respective inflection class.
 
 Eventually, this script should automatically generate
@@ -132,7 +132,6 @@ def idx_to_roman_numeral(idx):
                  7: "VII" ,
                  8: "VIII",
                  9: "IX"  ,
-                 10: "X"
                }
     return switcher.get(idx, "nothing...")
 
@@ -223,7 +222,8 @@ def main():
                       4 : [],  # ends in -agh, -igh, -ugh,
                                #   -egh if -e cannot drop/hop
                       5 : [],  # ends in -te
-                      6 : [],  # ends in semi-final -e
+                      6 : [],  # ends in special -te
+                      7 : [],  # ends in semi-final -e
                     }
 
     # initialize nominal inflection classes

@@ -2,28 +2,114 @@
 LEXICON PosturalRoot
 !===================
 
-amsikagh  PosturalRootPostbase; ! naked (postural root; see 12.2.2)
-amsikagh  QuantQualInfl;
-iggag     PosturalRootPostbase; ! tilting; leaning against something (postural root; see 12.2.2)
-iggag     QuantQualInfl;
-ingagh    PosturalRootPostbase; ! lying down
-ingagh    QuantQualInfl;
-matagh    PosturalRootPostbase; ! undressed; parka-less (postural root; see 12.2.2)
-matagh    QuantQualInfl;
-mumig     PosturalRootPostbase; ! turned over (postural root; see 12.2.2)
-mumig     QuantQualInfl;
+aaghw        PosturalRootPostbase; ! upside down
+aaghw        QuantQualInfl;
+agagh        PosturalRootPostbase; ! hanging
+agagh        QuantQualInfl;
+agitagh      PosturalRootPostbase; ! open-mouthed
+agitagh      QuantQualInfl;
+agugh        PosturalRootPostbase; ! bending; turning
+agugh        QuantQualInfl;
+amsikagh     PosturalRootPostbase; ! undressed; naked
+amsikagh     QuantQualInfl;
+asigh        PosturalRootPostbase; ! tied in a bundle
+asigh        QuantQualInfl;
+avlegh       PosturalRootPostbase; ! with legs spread; with parts which are joined at one end spread apart at the other end
+avlegh       QuantQualInfl;
+enleg        PosturalRootPostbase; ! attached or fastened to something secure
+enleg        QuantQualInfl;
+estugh       PosturalRootPostbase; ! with legs stretched out
+estugh       QuantQualInfl;
+guugh        PosturalRootPostbase; ! bent forward with head downward
+guugh        QuantQualInfl;
+iggag        PosturalRootPostbase; ! tilting
+iggag        QuantQualInfl;
+ighigh       PosturalRootPostbase; ! tilting (especially the head)
+ighigh       QuantQualInfl;
+ikigh        PosturalRootPostbase; ! open
+ikigh        QuantQualInfl;
+ingagh       PosturalRootPostbase; ! lying down
+ingagh       QuantQualInfl;
+iqrag        PosturalRootPostbase; ! uneven; distorted
+iqrag        QuantQualInfl;
+kagtagh      PosturalRootPostbase; ! concealed; secluded
+kagtagh      QuantQualInfl;
+kallngugh    PosturalRootPostbase; ! assembled; gathered
+kallngugh    QuantQualInfl;
+kiimllug     PosturalRootPostbase; ! dim
+kiimllug     QuantQualInfl;
+matagh       PosturalRootPostbase; ! undressed; parka-less; coatless
+matagh       QuantQualInfl;
+matangghagh  QuantQualInfl;
+mayagh       PosturalRootPostbase; ! being or becoming thin
+mayagh       QuantQualInfl;
+mumig        PosturalRootPostbase; ! turned over; translated
+mumig        QuantQualInfl;
+naghllug     PosturalRootPostbase; ! head downwards
+naghllug     QuantQualInfl;
+nakugh       PosturalRootPostbase; ! eyes crossed
+nakugh       QuantQualInfl;
+nanugh       PosturalRootPostbase; ! hanging lengthwise
+nanugh       QuantQualInfl;
+napagh       PosturalRootPostbase; ! erect; upright
+napagh       QuantQualInfl;
+neghllugh    PosturalRootPostbase; ! head first
+neghllugh    QuantQualInfl;
+nekeg        PosturalRootPostbase; ! put in place; having a good home; quieted down 
+nekeg        QuantQualInfl;
+nevagh       PosturalRootPostbase; ! lying on the back
+nevagh       QuantQualInfl;
+nevegh       PosturalRootPostbase; ! lying on the back
+nevegh       QuantQualInfl;
+qanimigh     PosturalRootPostbase; ! finished; worked on towardcompletion
+qanimigh     QuantQualInfl;
+qavigh       PosturalRootPostbase; ! slanted; diagonal
+qavigh       QuantQualInfl;
+qetegh       PosturalRootPostbase; ! bending backwards
+qetegh       QuantQualInfl;
+qunagh       PosturalRootPostbase; ! eyes closed
+qunagh       QuantQualInfl;
+qunegh       PosturalRootPostbase; ! eyes closed
+qunegh       QuantQualInfl;
+qutngugh     PosturalRootPostbase; ! bending over forward with head down while in a sitting position
+qutngugh     QuantQualInfl;
+sanigh       PosturalRootPostbase; ! sideways
+sanigh       QuantQualInfl;
+saqfigh      PosturalRootPostbase; ! toes out turned out
+saqfigh      QuantQualInfl;
+segesqugh    PosturalRootPostbase; ! kneeling
+segesqugh    QuantQualInfl;
+sivug        PosturalRootPostbase; ! head tilted up
+sivug        QuantQualInfl;
+suflitagh    PosturalRootPostbase; ! lying on stomach
+suflitagh    QuantQualInfl;
+supag        PosturalRootPostbase; ! tilted; slanted; leaning; at an angle
+supag        QuantQualInfl;
+suqlugh      PosturalRootPostbase; ! crumpled; folded in to narow an opening; bent
+suqlugh      QuantQualInfl;
+taklagh      PosturalRootPostbase; ! spread out; stretched out
+taklagh      QuantQualInfl;
+teghleg      PosturalRootPostbase; ! fastened securely over something
+teghleg      QuantQualInfl;
+tutugh       PosturalRootPostbase; ! folded over with a crease
+tutugh       QuantQualInfl;
+ulmig        PosturalRootPostbase; ! turned over; inside out
+ulmig        QuantQualInfl;
+ulpeg        PosturalRootPostbase; ! folded back on self
+ulpeg        QuantQualInfl;
 
-! expanded stative forms
-aqumgagh     QuantQualInfl; ! to be sitting
-matangghagh  QuantQualInfl; ! undressed; parka-less
-nekevghagh   QuantQualInfl; ! to be standing
+! verb bases that behave like postural roots 
+aqumga       PosturalRootPostbase; ! to be sitting
+aqumgagh     QuantQualInfl;
+nekevgha     PosturalRootPostbase; ! to be standing
+nekevghagh   QuantQualInfl;
 
 
 !=========================
 LEXICON PosturalRootPostbase
 !=========================
 
-+nga:^nga  VerbPostbaseI; ! to be in the R posture
-+te:^te    VerbPostbaseV; ! to get into the R posture; to put into the R posture
++nga:^nga    VerbPostbaseI; ! to be in the R posture
++te:^%{t%}e  VerbPostbaseV; ! to get into the R posture; to put into the R posture
 
 
