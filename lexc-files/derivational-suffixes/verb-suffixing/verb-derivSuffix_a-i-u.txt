@@ -4,13 +4,13 @@ LEXICON VerbPostbaseI
 !  when suffixing to verb roots that end in a, -i, -u
 !======================================================
 
-                                   VerbInflI;
+0:0  VerbInflI;
 
-–ghhaleg[V.V]:^ghhalek             #;                ! how V! (exclamation)
+–ghhaleg[V.V]:^ghhalek  #; ! how V! (exclamation)
 
-–ghllag[Augmentive]:^ghllag        NounInflII;       ! big N (augmentive)
-+tuqagh[Augmentive]:^tuqa%{g%}h    NounInflIII;      ! one with lots of N (augmentive)
-+aagh[Augmentive]:^aagh            NounInflV;        ! one who keeps V-ing (augmentive)
+–ghllag[Augmentive]:^ghllag      NounInflII;  ! big N (augmentive)
++tuqagh[Augmentive]:^tuqa%{g%}h  NounInflIII; ! one with lots of N (augmentive)
++aagh[Augmentive]:^aagh          NounInflV;   ! one who keeps V-ing (augmentive)
 
 ~i[V.V]:^i                         VerbPostbaseI;    ! to V something
 @~sf–(g)kau[V.V]:^kau              VerbPostbaseI;    ! to have V-ed or been V-ed 
@@ -46,19 +46,47 @@ LEXICON VerbPostbaseI
 @~fnaanghite[V.V]:^naanghi%{t%}e*  VerbPostbaseVI;   ! to not V in the future; "won't V"
 @–nghite[V.V]:^nghi%{t%}e**        VerbPostbaseVI;   ! to not V
 
-@–lghii[V.N]:^lghii                NounPostbaseI;    ! one that is V-ing 
+@~%:(i/u)ma[V.N]:^ma                NounPostbaseI;    ! one who V-s
+@–lghii[V.N]:^lghii                 NounPostbaseI;    ! the one that V-ed
++tala[V.N]:^tala                    NounPostbaseI;    ! the extent of V-ness
+@~f–yu[V.N]:^yu                     NounPostbaseI;    ! one who is good at V-ing
+@~f–neghllug[V.N]:^neghllug         NounPostbaseII;   ! something that is difficult or hard to V; one who hardly needs to V
+–rkapig[V.N]:^rkapig                NounPostbaseII;   ! one that is very V
+–sag[V.N]:^sag                      NounPostbaseII;   ! one who V-s; habitual V-er
+@~fvig[V.N]:^vig                    NounPostbaseII;   ! place to V; time to V (esp. in month names)
+~–kayug[V.N]:^kayug                 NounPostbaseII;   ! one that V-s readily; one who is able to V
++kagh[V.N]:^ka%{g%}h                NounPostbaseIII;  ! raw material for V-ing; something to be V-ed
+–lleghpigagh[V.N]:^lleghpiga%{g%}h  NounPostbaseIII;  ! most V one
+–lleghqagh[V.N]:^lleghqa%{g%}h      NounPostbaseIII;  ! future act of V-ing
+@–nghhagh[V.N]:^nghha%{g%}h         NounPostbaseIII;  ! one that has recently V-ed
+~%:(ng)iitagh[V.N]:^ngiita%{g%}h    NounPostbaseIII;  ! device to prevent V-ing
+~fnigh[V.N]:^ni%{g%}h               NounPostbaseIII;  ! thing that is good to V
+@–nqegtagh[V.N]:^nqegta%{g%}h       NounPostbaseIII;  ! one that V-s easily; one that V-s readily
++qagh[V.N]:^qa%{g%}h                NounPostbaseIII;  ! one that is V
++qutagh[V.N]:^quta%{g%}h            NounPostbaseIII;  ! device associated with V-ing
+@~f–rakegtagh[V.N]:^rakegta%{g%}h   NounPostbaseIII;  ! one that Vs quickly 
+–rkaggagh[V.N]:^rkagga%{g%}h        NounPostbaseIII;  ! one that is a little bit V; one that is slightly V
++tuqagh[V.N]:^tuqa%{g%}h            NounPostbaseIII;  ! one that V-s habitually
+–tuqagh[V.N]:^tuqa%{g%}h            NounPostbaseIII;  ! one that V-s habitually
+~%:(u)sagh[V.N]:^sa%{g%}h           NounPostbaseIII;  ! something that has been V-ed
+~%:(u)sigh[V.N]:^si%{g%}h           NounPostbaseIII;  ! device for V-ing; instrument for V-ing
+@~fyaghqagh[V.N]:^yaghqa%{g%}h      NounPostbaseIII;  ! something that will V or be V-ed
+@~f–yuqagh[V.N]:^yuqa%{g%}h         NounPostbaseIII;  ! one who is good at V-ing; proficient V-er
+@~–(g)kagh[V.N]:^ka%{g%}h           NounPostbaseIII;  ! one that has V-ed; one that has been V-ed
+~fmiigh[V.N]:^miigh                 NounPostbaseV;    ! thing held by V-ing 
+~–qumtaagh[V.N]:^qumtaagh           NounPostbaseV;    ! frequently V-ed thing; usually V-ed thing; commonly V-ed thing
+@~fyuggaagh[V.N]:^yuggaagh          NounPostbaseV;    ! first one to V
+@~fyuwhaagh[V.N]:^yuwhaagh          NounPostbaseV;    ! first one to V
+@~%:(i/u)mate[V.N]:^ma%{t%}e        NounPostbaseVI;   ! the time while V-ing; the course of V-ing
+(s)ta[V.N]:^s%{t%}e                 NounPostbaseVI;   ! habitual V-er; one who V-s as an occupation
+@~%:(u)te[V.N]:^%{t%}e              NounPostbaseVI;   ! condition with respect to V-ing
+–llegh[V.N]:^llegh                  NounPostbaseVII;  ! one that has V-ed or been V-ed; act of V-ing; activity of V-ing; the one the possessor V-ed; one or ones which are V to the greatest extent; most V ones; more V ones
+–lleg[V.N]:^lleg                    NounPostbaseVII;  ! one who V-s well; proficient V-er; good V-er
+@~f–negh[V.N]:^negh                 NounPostbaseVII;  ! the act of V-ing; the activity of V-ing; the state of being V
+@–negh[V.N]:^negh                   NounPostbaseVII;  ! the one or ones which are V to the greatest extent
+@~fnaqe[V.N]:^naqe                  NounPostbaseVIII; ! one who is going to V
+@~–(g)ke[V.N]:^ke                   NounPostbaseVIII; ! the ones possessor is V-ing
 
-~–kayug[V.N]:^kayug                NounPostbaseII;   ! one who is able to V
-@~fvig[V.N]:^vig                   NounPostbaseII;   ! place to V
-
-@~sf–(g)kagh[V.N]:^ka%{g%}h        NounPostbaseIII;  ! one that has V-ed or been V-ed
-
-@~%:(u)te[V.N]:^%{t%}e             NounPostbaseVI;   ! condition with respect to V-ing
-
-@–negh[V.N]:^negh                  NounPostbaseVII;  ! the act or activity of V-ing
-
-@~sf–(g)ke[V.N]:^ke                NounPostbaseVIII; ! one that the possessor is V-ing
-
-@~%:(i/u)magh[V.N]:^magh           QuantQualInfl;    ! while V-ing
+@~%:(i/u)magh[V.N]:^magh  QuantQualInfl; ! while V-ing
 
 

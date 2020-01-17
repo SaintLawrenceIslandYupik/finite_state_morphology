@@ -337,10 +337,10 @@ define CleanupDigraph %{k%}   -> 0   .o.
 define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
                           n g -> 0                            ,   ! [Jacobson (2001) p.91]
                           l l -> l                            ,   ! [Badten (2008) Appendix p.705]
-						    t -> n                            ,
+                            t -> n                            ,
                             k -> g || _ ("^") "^" n g u q .#. .o.
                           g h -> q || _ ("^") "^" s a     .#. .o.
-						    t -> s || _ ("^") "^" t a     .#. ;
+                            t -> s || _ ("^") "^" t a     .#. ;
 
 
 define CleanupMorphBoundary "^" -> 0 ;
@@ -359,12 +359,12 @@ define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w |
 !==============
 
 define Rules [
-	!------------------------------
-	! lexical string rewrite
-	!------------------------------
+    !------------------------------
+    ! lexical string rewrite
+    !------------------------------
     RewriteSubordinative .o.
     SFGKeKa              .o.
-	Uteta                .o.
+    Uteta                .o.
     !-------------------------------
     ! modify -te rules
     !-------------------------------

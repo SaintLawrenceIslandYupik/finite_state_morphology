@@ -34,15 +34,15 @@ symbol_conversion["+"]   = ""
 rules_for_noun_roots = [ # Noun Class I: end in -a, -i, -u
                          {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v"},
                          # Noun Class II: end in -g, -w, -ghw
-                         {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"v"},
+                         {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"v", "%{.m.%}":"%{.m.%}"},
                          # Noun Class III: end in weak -gh
                          {"%{E%}":"", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.w.%}":"%{.w.%}", "%{.c.%}":"%{.c.%}"},
                          # Noun Class IV: end in marked strong -gh (*)
                          {"%{E%}":"%{E%}", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
                          # Noun Class V: end in strong -gh
-                         {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}"},
+                         {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
                          # Noun Class VI: end in -te 
-                         {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}"},
+                         {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
                          # Noun Class VII: have semi-final -e
                          {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.sf.%}":"%{.sf.%}", "%{.m.%}":"%{.m.%}"},
                          # Noun Class VIII: end in -e that can be dropped but not hopped
@@ -52,19 +52,19 @@ rules_for_noun_roots = [ # Noun Class I: end in -a, -i, -u
                        ]
 
 rules_for_verb_roots = [ # Verb Class I: end in -a, -i, -u
-                         {"(g/t)": "%{G%}", "%{G%}":"%{G%}", "(t)":"", "(te)":""},
+                         {"(g/t)":"%{G%}", "(i/u)": "", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":""},
                          # Verb Class II: end in -e
-                         {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}", "%{G%}":"%{G%}"},
+                         {"(g/t)":"", "(i/u)":"u", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}": "%{.f.%}", "%{G%}":"%{G%}"},
                          # Verb Class III: end in -g, -w, -ghw
-                         {"(g/t)": "t", "(t)":"t", "(te)":"te", "%{E%}":"e", "%{.m.%}": "%{.m.%}"},
+                         {"(g/t)":"t", "(i/u)":"u", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.m.%}":"%{.m.%}"},
                          # Verb Class IV: end in -agh, -igh, -ugh
-                         {"(g/t)": "t", "(t)":"t", "(te)":"te",  "%{E%}":"e", "%{.m.%}": "%{.m.%}"},
+                         {"(g/t)":"t", "(i/u)":"u", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
                          # Verb Class V: end in -te
-                         {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"},
+                         {"(g/t)":"", "(i/u)":"i", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
                          # Verb Class VI: end in special -te
-                         {"(g/t)": "", "(t)":"", "(te)":"", "%{.f.%}": "%{.f.%}", "%{.at.%}": "%{.at.%}"},
+                         {"(g/t)":"", "(i/u)":"i", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
                          # Verb Class VII: have semi-final -e
-                         {"(g/t)": "t", "(t)":"t", "(te)":"te", "%{E%}":"e", "%{.sf.%}%{G%}": "%{.sf.%}%{G%}", "%{.sf.%}": "%{.sf.%}", "%{.m.%}": "%{.m.%}"},
+                         {"(g/t)":"t", "(i/u)":"u", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.sf.%}%{G%}":"%{.sf.%}%{G%}", "%{.sf.%}":"%{.sf.%}", "%{.m.%}":"%{.m.%}"}
                        ]
 
 
@@ -161,35 +161,48 @@ def print_suffixes(inflClass, jacobson_notation_suffixes, class_specific_suffixe
         if suffixWithDefinition:
             suffix, definition = suffixWithDefinition.split(",", 1)
 
+            # buggy
+            # insert %: when printing
+            # {.c.} and {.w.} isn't a good pairing
+            # {.f.} and {.at.}
+            # won't handle special -te
+            # (g) isn't always {G}
             jacobsonSuffix = re.sub('-[^w]', '', jacobsonSuffixes[i].split(",", 1)[0])
 
             # determine the derivational suffix's continuation class
             if resultType == "Noun":
                 sffx = convert_to_base_form(suffix)
+                classIdx = classify_noun_root(sffx)
             else:
                 sffx = suffix[:-1]
+                classIdx = classify_verb_root(sffx)
 
-            classIdx = classify_noun_root(sffx)
             suffixMapping = jacobsonSuffix + "[" + rootType[0] + "." + resultType[0] + "]" + ":^" + sffx
             idx2InflClass[classIdx].append((suffixMapping, definition))
 
+    # get length of longest root in inflection class
+    # in order to properly calculate padding
+    maximum = 0
+    for i in range(1, len(idx2InflClass)):
+        if idx2InflClass[i]:
+             maxLength = get_max_length_suffixes(resultType, i, idx2InflClass[i])
+             if maxLength > maximum:
+                 maximum = maxLength
+ 
     # for the given class of roots, print each class of annotated suffixes
     for i in range(1, len(idx2InflClass)):
         if idx2InflClass[i]:
-             # get length of longest root in inflection class
-             # in order to properly calculate padding
-             maxLength = get_max_length_suffixes(resultType, i, idx2InflClass[i])
- 
+
              # class of noun roots that end in -g, -w, -ghw
              if resultType == "Noun" and i == 2:
                  for root, definition in idx2InflClass[i]:
                      # if noun root ends in -w, add %{k%} -->  kiiw:kii%{k%}w
                      if root[-1] == "w" and ''.join(root[-3:-1]) != "gh":
-                         padding = maxLength - (len(root) + 5) + 2
+                         padding = maximum - (len(root) + 5) + 2
                          print(root[:-1] + "%{k%}w" + " " * padding + \
                                resultType + "Postbase" + idx_to_roman_numeral(i) + "; ! " + definition)
                      else:
-                         padding = maxLength - len(root) + 2
+                         padding = maximum - len(root) + 2
                          print(root + " " * padding + resultType + "Postbase" + idx_to_roman_numeral(i) + \
                                "; ! " + definition)
  
@@ -197,7 +210,7 @@ def print_suffixes(inflClass, jacobson_notation_suffixes, class_specific_suffixe
              #   add %{g%} --> nasaperagh:nasapera%{g%}h
              elif resultType == "Noun" and i == 3:
                  for root, definition in idx2InflClass[i]:
-                     padding = maxLength - (len(root) + 4) + 2
+                     padding = maximum - (len(root) + 4) + 2
                      print(root[:-2] + "%{g%}h" + " " * padding + \
                            resultType + "Postbase" + idx_to_roman_numeral(i) + "; ! " + definition)
  
@@ -205,7 +218,7 @@ def print_suffixes(inflClass, jacobson_notation_suffixes, class_specific_suffixe
              #   remove * at the end of the root, e.g. afsengagh*  --> afsengagh
              elif resultType == "Noun" and i == 4:
                  for root, definition in idx2InflClass[i]:
-                     padding = maxLength - len(root) + 2
+                     padding = maximum - len(root) + 2 + 2
                      print(root[:-1] + " " * padding + resultType + "Postbase" + idx_to_roman_numeral(i) + \
                            "; ! " + definition)
  
@@ -214,16 +227,15 @@ def print_suffixes(inflClass, jacobson_notation_suffixes, class_specific_suffixe
              elif (resultType == "Noun" and i == 6 or
                    resultType == "Verb" and i == 5):
                  for root, definition in idx2InflClass[i]:
-                     padding = maxLength - (len(root) + 4) + 2
+                     padding = maximum - (len(root) + 4) + 2
                      print(root[:-2] + "%{t%}e" + " " * padding + \
                            resultType + "Postbase" + idx_to_roman_numeral(i) + "; ! " + definition)
  
              else:
                  for root, definition in idx2InflClass[i]:
-                     padding = maxLength - len(root) + 2
+                     padding = maximum - len(root) + 2
                      print(root + " " * padding + resultType + "Postbase" + idx_to_roman_numeral(i) + \
                            "; ! " + definition)
-             print()
  
     # print roots that could not be classified, usually those with non-traditional endings
     if idx2InflClass[0]:
