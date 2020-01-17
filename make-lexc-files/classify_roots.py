@@ -163,7 +163,6 @@ def get_max_length(inflType, classIdx, inflClass):
             if root[-1] == "w":
                 alteredLength = len(root) * 2 + 6  # adding :, %, {, k, %, }
                 if alteredLength > alteredMaxLength:
-
                     alteredMaxLength = alteredLength
 
         if alteredMaxLength > maxLength:
