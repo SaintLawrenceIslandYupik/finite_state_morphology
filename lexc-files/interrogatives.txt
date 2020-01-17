@@ -4,13 +4,13 @@ LEXICON Interrogative
 !  love ):
 !===================================
 
-naken[Q]:naken      #; ! (from) where
-nani[Q]:nani        #; ! (at) where
-naten[Q]:naten      #; ! how 
-navek[Q]:navek      #; ! (to) where
-qakun[Q]:qakun      #; ! when (in the future)
-qavngaq[Q]:qavngaq  #; ! when (in the past)
-sameng[Q]:sameng    #; ! what
+naken[Q]:naken      Enclitic; ! (from) where
+nani[Q]:nani        Enclitic; ! (at) where
+naten[Q]:naten      Enclitic; ! how 
+navek[Q]:navek      Enclitic; ! (to) where
+qakun[Q]:qakun      Enclitic; ! when (in the future)
+qavngaq[Q]:qavngaq  Enclitic; ! when (in the past)
+sameng[Q]:sameng    Enclitic; ! what
 
 !------------------------------------------------------------------------
 
@@ -39,9 +39,9 @@ sameng[Q]:sameng    #; ! what
 !
 ! What's the word for 'who'...?
 
-kina[Q]:kina      #; ! who (SG)
-kinkut[Q]:kinkut  #; ! who (PL)
-kitum[Q]:kitum    #; ! whose
+kina[Q]:kina      Enclitic; ! who (SG)
+kinkut[Q]:kinkut  Enclitic; ! who (PL)
+kitum[Q]:kitum    Enclitic; ! whose
 
 !------------------------------------------------------------------------
 
@@ -56,16 +56,16 @@ qafsina[Q]:qafsina  NounInflI;
 
 ! Question words meaning 'why' follow their own inflectional paradigm
 
-sangavek[Q]:sangavek    #; why (focused on 2SG SBJ)
-sangafsi[Q]:sangafsi    #; why (focused on 2PL SBJ)
-sangami[Q]:sangami      #; why (focused on 3SG SBJ)
-sangameng[Q]:sangameng  #; why (focused on 3PL SBJ)
+sangavek[Q]:sangavek    Enclitic; why (focused on 2SG SBJ)
+sangafsi[Q]:sangafsi    Enclitic; why (focused on 2PL SBJ)
+sangami[Q]:sangami      Enclitic; why (focused on 3SG SBJ)
+sangameng[Q]:sangameng  Enclitic; why (focused on 3PL SBJ)
 
-sangama[Q]:sangama      #; why (focused on 1SG OBJ)
-sangamta[Q]:sangamta    #; why (focused on 1PL OBJ)
-sangan[Q]:sangan        #; why (focused on 3SG OBJ)
-sangita[Q]:sangita      #; why (focused on 3PL OBJ)
-sangankek[Q]:sangankek  #; why (focused on 3DU OBJ)
+sangama[Q]:sangama      Enclitic; why (focused on 1SG OBJ)
+sangamta[Q]:sangamta    Enclitic; why (focused on 1PL OBJ)
+sangan[Q]:sangan        Enclitic; why (focused on 3SG OBJ)
+sangita[Q]:sangita      Enclitic; why (focused on 3PL OBJ)
+sangankek[Q]:sangankek  Enclitic; why (focused on 3DU OBJ)
 
 !------------------------------------------------------------------------
 

@@ -12,7 +12,7 @@ interactive: ess.foma ess.lexc exceptions.lexc parallel.lexc
 	foma -l ess.foma -e "push Grammar"
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-emotionalroots test-posturalroots
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-emotionalroots test-posturalroots test-enclitics
 
 test-ch2: tests/jacobson_examples/jacobson_ch2.tsv ess.fomabin
 	@cut -f 1 tests/jacobson_examples/jacobson_ch2.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch2.tsv)' && echo "Jacobson (2001) Ch2 - PASS" || echo "Jacobson (2001) Ch2 - FAIL"
@@ -67,6 +67,9 @@ test-emotionalroots: tests/badten_examples/emotional_roots.tsv ess.fomabin
 
 test-posturalroots: tests/badten_examples/postural_roots.tsv ess.fomabin
 	@cut -f 1 tests/badten_examples/postural_roots.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/postural_roots.tsv)' && echo "Badten (2008) Postural Roots - PASS" || echo "Badten (2008) Postural Roots - FAIL"
+
+test-enclitics: tests/badten_examples/enclitics.tsv ess.fomabin
+	@cut -f 1 tests/badten_examples/enclitics.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/enclitics.tsv)' && echo "Badten (2008) Enclitics - PASS" || echo "Badten (2008) Enclitics - FAIL"
 
 
 clean:

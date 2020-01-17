@@ -4,12 +4,12 @@ LEXICON IntrCond
 !     intransitive conditional
 !=============================
 !----------------|-----------------|----------------|----------------|
-[3Sg]:^an       #; [1Sg]:^uma     #; [2Sg]:^uvek   #; [4Sg]:^umi    #;
-                                                      [4Sg]:^uni    #;
-[3Pl]:^ata      #; [1Pl]:^umta    #; [2Pl]:^ufsi   #; [4Pl]:^umeng  #;
-                                                      [4Pl]:^uyeng  #;
-[3Du]:^ayek     #; [1Du]:^umtung  #; [2Du]:^uftek  #; [4Du]:^umek   #;
-[3Du]:^agkenka  #;                                    [4Du]:^uyek   #;
+[3Sg]:^an       Enclitic; [1Sg]:^uma     Enclitic; [2Sg]:^uvek   Enclitic; [4Sg]:^umi    Enclitic;
+                                                      [4Sg]:^uni    Enclitic;
+[3Pl]:^ata      Enclitic; [1Pl]:^umta    Enclitic; [2Pl]:^ufsi   Enclitic; [4Pl]:^umeng  Enclitic;
+                                                      [4Pl]:^uyeng  Enclitic;
+[3Du]:^ayek     Enclitic; [1Du]:^umtung  Enclitic; [2Du]:^uftek  Enclitic; [4Du]:^umek   Enclitic;
+[3Du]:^agkenka  Enclitic;                                    [4Du]:^uyek   Enclitic;
 !----------------|-----------------|----------------|----------------|
 
 !===========================
@@ -18,70 +18,70 @@ LEXICON TrnsCond
 !     transitive conditional
 !===========================
 !-------------------------|--------------------------|---------------------------|
-[3Sg][3Sg]:^agu          #; [3Sg][3Pl]:^aki         #; [3Sg][3Du]:^akek         #;
-[3Pl][3Sg]:^atgu         #; [3Pl][3Pl]:^atki        #; [3Pl][3Du]:^atkek        #;
-[3Du][3Sg]:^agnegu       #; [3Du][3Pl]:^agneki      #; [3Du][3Du]:^agnekek      #;
+[3Sg][3Sg]:^agu          Enclitic; [3Sg][3Pl]:^aki         Enclitic; [3Sg][3Du]:^akek         Enclitic;
+[3Pl][3Sg]:^atgu         Enclitic; [3Pl][3Pl]:^atki        Enclitic; [3Pl][3Du]:^atkek        Enclitic;
+[3Du][3Sg]:^agnegu       Enclitic; [3Du][3Pl]:^agneki      Enclitic; [3Du][3Du]:^agnekek      Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[1Sg][3Sg]:^umkun        #; [1Sg][3Pl]:^umki        #; [1Sg][3Du]:^umkek        #;
-[1Pl][3Sg]:^umteggu      #; [1Pl][3Pl]:^umteki      #; [1Pl][3Du]:^umtekek      #;
-[1Du][3Sg]:^umtegnegu    #; [1Du][3Pl]:^umtegneki   #; [1Du][3Du]:^umtegnekek   #;
+[1Sg][3Sg]:^umkun        Enclitic; [1Sg][3Pl]:^umki        Enclitic; [1Sg][3Du]:^umkek        Enclitic;
+[1Pl][3Sg]:^umteggu      Enclitic; [1Pl][3Pl]:^umteki      Enclitic; [1Pl][3Du]:^umtekek      Enclitic;
+[1Du][3Sg]:^umtegnegu    Enclitic; [1Du][3Pl]:^umtegneki   Enclitic; [1Du][3Du]:^umtegnekek   Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[2Sg][3Sg]:^uvgu         #; [2Sg][3Pl]:^ufki        #; [2Sg][3Du]:^ufkek        #;
-[2Pl][3Sg]:^ufsigu       #; [2Pl][3Pl]:^ufsiki      #; [2Pl][3Du]:^ufsikek      #;
-[2Du][3Sg]:^uftegnegu    #; [2Du][3Pl]:^uftegneki   #; [2Du][3Du]:^uftegnekek   #;
+[2Sg][3Sg]:^uvgu         Enclitic; [2Sg][3Pl]:^ufki        Enclitic; [2Sg][3Du]:^ufkek        Enclitic;
+[2Pl][3Sg]:^ufsigu       Enclitic; [2Pl][3Pl]:^ufsiki      Enclitic; [2Pl][3Du]:^ufsikek      Enclitic;
+[2Du][3Sg]:^uftegnegu    Enclitic; [2Du][3Pl]:^uftegneki   Enclitic; [2Du][3Du]:^uftegnekek   Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[4Sg][3Sg]:^umigu        #; [4Sg][3Pl]:^umiki       #; [4Sg][3Du]:^umikek       #;
-[4Sg][3Sg]:^unigu        #; [4Sg][3Pl]:^uniki       #; [4Sg][3Du]:^unikek       #;
-[4Pl][3Sg]:^umegteggu    #; [4Pl][3Pl]:^umegteki    #; [4Pl][3Du]:^umegtekek    #;
-[4Pl][3Sg]:^uyigteggu    #; [4Pl][3Pl]:^uyigteki    #; [4Pl][3Du]:^uyigtekek    #;
-[4Du][3Sg]:^umegnegu     #; [4Du][3Pl]:^umegneki    #; [4Du][3Du]:^umegnekek    #;
-[4Du][3Sg]:^unegnegu     #; [4Du][3Pl]:^unegneki    #; [4Du][3Du]:^unegnekek    #;
+[4Sg][3Sg]:^umigu        Enclitic; [4Sg][3Pl]:^umiki       Enclitic; [4Sg][3Du]:^umikek       Enclitic;
+[4Sg][3Sg]:^unigu        Enclitic; [4Sg][3Pl]:^uniki       Enclitic; [4Sg][3Du]:^unikek       Enclitic;
+[4Pl][3Sg]:^umegteggu    Enclitic; [4Pl][3Pl]:^umegteki    Enclitic; [4Pl][3Du]:^umegtekek    Enclitic;
+[4Pl][3Sg]:^uyigteggu    Enclitic; [4Pl][3Pl]:^uyigteki    Enclitic; [4Pl][3Du]:^uyigtekek    Enclitic;
+[4Du][3Sg]:^umegnegu     Enclitic; [4Du][3Pl]:^umegneki    Enclitic; [4Du][3Du]:^umegnekek    Enclitic;
+[4Du][3Sg]:^unegnegu     Enclitic; [4Du][3Pl]:^unegneki    Enclitic; [4Du][3Du]:^unegnekek    Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[3Sg][1Sg]:^anga         #; [3Sg][1Pl]:^ankut       #; [3Sg][1Du]:^ankung       #;
-[3Pl][1Sg]:^atnga        #; [3Pl][1Pl]:^ankut       #; [3Pl][1Du]:^ankung       #;
-[3Du][1Sg]:^agnenga      #; [3Du][1Pl]:^ankut       #; [3Du][1Du]:^ankung       #;
+[3Sg][1Sg]:^anga         Enclitic; [3Sg][1Pl]:^ankut       Enclitic; [3Sg][1Du]:^ankung       Enclitic;
+[3Pl][1Sg]:^atnga        Enclitic; [3Pl][1Pl]:^ankut       Enclitic; [3Pl][1Du]:^ankung       Enclitic;
+[3Du][1Sg]:^agnenga      Enclitic; [3Du][1Pl]:^ankut       Enclitic; [3Du][1Du]:^ankung       Enclitic;
 !-------------------------|--------------------------|---------------------------|
 ! no [1--][1--] forms                                                            |
 !-------------------------|--------------------------|---------------------------|
-[2Sg][1Sg]:^uvnga        #; [2Sg][1Pl]:^ufkut       #; [2Sg][1Du]:^ufkung       #;
-[2Pl][1Sg]:^ufsinga      #; [2Pl][1Pl]:^ufsikut     #; [2Pl][1Du]:^ufsikung     #;
-[2Du][1Sg]:^uftegnenga   #; [2Du][1Pl]:^uftegnekut  #; [2Du][1Du]:^uftegnekung  #;
+[2Sg][1Sg]:^uvnga        Enclitic; [2Sg][1Pl]:^ufkut       Enclitic; [2Sg][1Du]:^ufkung       Enclitic;
+[2Pl][1Sg]:^ufsinga      Enclitic; [2Pl][1Pl]:^ufsikut     Enclitic; [2Pl][1Du]:^ufsikung     Enclitic;
+[2Du][1Sg]:^uftegnenga   Enclitic; [2Du][1Pl]:^uftegnekut  Enclitic; [2Du][1Du]:^uftegnekung  Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[4Sg][1Sg]:^uminga       #; [4Sg][1Pl]:^umikut      #; [4Sg][1Du]:^umikung      #;
-[4Sg][1Sg]:^uninga       #; [4Sg][1Pl]:^unikut      #; [4Sg][1Du]:^unikung      #;
-[4Pl][1Sg]:^umegtengnga  #; [4Pl][1Pl]:^umegtekut   #; [4Pl][1Du]:^umegtekung   #;
-[4Pl][1Sg]:^uyigtengnga  #; [4Pl][1Pl]:^uyigtekut   #; [4Pl][1Du]:^uyigtekung   #;
-[4Du][1Sg]:^umegnenga    #; [4Du][1Pl]:^umegneku    #; [4Du][1Du]:^umegnekung   #;
-[4Du][1Sg]:^unegnenga    #; [4Du][1Pl]:^unegneku    #; [4Du][1Du]:^unegnekung   #;
+[4Sg][1Sg]:^uminga       Enclitic; [4Sg][1Pl]:^umikut      Enclitic; [4Sg][1Du]:^umikung      Enclitic;
+[4Sg][1Sg]:^uninga       Enclitic; [4Sg][1Pl]:^unikut      Enclitic; [4Sg][1Du]:^unikung      Enclitic;
+[4Pl][1Sg]:^umegtengnga  Enclitic; [4Pl][1Pl]:^umegtekut   Enclitic; [4Pl][1Du]:^umegtekung   Enclitic;
+[4Pl][1Sg]:^uyigtengnga  Enclitic; [4Pl][1Pl]:^uyigtekut   Enclitic; [4Pl][1Du]:^uyigtekung   Enclitic;
+[4Du][1Sg]:^umegnenga    Enclitic; [4Du][1Pl]:^umegneku    Enclitic; [4Du][1Du]:^umegnekung   Enclitic;
+[4Du][1Sg]:^unegnenga    Enclitic; [4Du][1Pl]:^unegneku    Enclitic; [4Du][1Du]:^unegnekung   Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[3Sg][2Sg]:^aten         #; [3Sg][2Pl]:^asi         #; [3Sg][2Du]:^astek        #;
-[3Pl][2Sg]:^aten         #; [3Pl][2Pl]:^asi         #; [3Pl][2Du]:^astek        #;
-[3Du][2Sg]:^aten         #; [3Du][2Pl]:^asi         #; [3Du][2Du]:^astek        #;
+[3Sg][2Sg]:^aten         Enclitic; [3Sg][2Pl]:^asi         Enclitic; [3Sg][2Du]:^astek        Enclitic;
+[3Pl][2Sg]:^aten         Enclitic; [3Pl][2Pl]:^asi         Enclitic; [3Pl][2Du]:^astek        Enclitic;
+[3Du][2Sg]:^aten         Enclitic; [3Du][2Pl]:^asi         Enclitic; [3Du][2Du]:^astek        Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[1Sg][2Sg]:^umken        #; [1Sg][2Pl]:^umsi        #; [1Sg][2Du]:^umtek        #;
-[1Pl][2Sg]:^umken        #; [1Pl][2Pl]:^umsi        #; [1Pl][2Du]:^umtek        #;
-[1Du][2Sg]:^umken        #; [1Du][2Pl]:^umsi        #; [1Du][2Du]:^umtek        #;
+[1Sg][2Sg]:^umken        Enclitic; [1Sg][2Pl]:^umsi        Enclitic; [1Sg][2Du]:^umtek        Enclitic;
+[1Pl][2Sg]:^umken        Enclitic; [1Pl][2Pl]:^umsi        Enclitic; [1Pl][2Du]:^umtek        Enclitic;
+[1Du][2Sg]:^umken        Enclitic; [1Du][2Pl]:^umsi        Enclitic; [1Du][2Du]:^umtek        Enclitic;
 !-------------------------|--------------------------|---------------------------|
 ! no [2--][2--] forms                                                            |
 !-------------------------|--------------------------|---------------------------|
-[4Sg][2Sg]:^umiten       #; [4Sg][2Pl]:^umisi       #; [4Sg][2Du]:^umitek       #;
-[4Sg][2Sg]:^uniten       #; [4Sg][2Pl]:^unisi       #; [4Sg][2Du]:^unitek       #;
-[4Pl][2Sg]:^umiten       #; [4Pl][2Pl]:^umisi       #; [4Pl][2Du]:^umitek       #;
-[4Pl][2Sg]:^uniten       #; [4Pl][2Pl]:^unisi       #; [4Pl][2Du]:^unitek       #;
-[4Du][2Sg]:^umiten       #; [4Du][2Pl]:^umisi       #; [4Du][2Du]:^umitek       #;
-[4Du][2Sg]:^uniten       #; [4Du][2Pl]:^unisi       #; [4Du][2Du]:^unitek       #;
+[4Sg][2Sg]:^umiten       Enclitic; [4Sg][2Pl]:^umisi       Enclitic; [4Sg][2Du]:^umitek       Enclitic;
+[4Sg][2Sg]:^uniten       Enclitic; [4Sg][2Pl]:^unisi       Enclitic; [4Sg][2Du]:^unitek       Enclitic;
+[4Pl][2Sg]:^umiten       Enclitic; [4Pl][2Pl]:^umisi       Enclitic; [4Pl][2Du]:^umitek       Enclitic;
+[4Pl][2Sg]:^uniten       Enclitic; [4Pl][2Pl]:^unisi       Enclitic; [4Pl][2Du]:^unitek       Enclitic;
+[4Du][2Sg]:^umiten       Enclitic; [4Du][2Pl]:^umisi       Enclitic; [4Du][2Du]:^umitek       Enclitic;
+[4Du][2Sg]:^uniten       Enclitic; [4Du][2Pl]:^unisi       Enclitic; [4Du][2Du]:^unitek       Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[3Sg][4Sg]:^atni         #; [3Sg][4Pl]:^asteng      #; [3Sg][4Du]:^astek        #;
-[3Pl][4Sg]:^atni         #; [3Pl][4Pl]:^asteng      #; [3Pl][4Du]:^astek        #;
-[3Du][4Sg]:^atni         #; [3Du][4Pl]:^asteng      #; [3Du][4Du]:^astek        #;
+[3Sg][4Sg]:^atni         Enclitic; [3Sg][4Pl]:^asteng      Enclitic; [3Sg][4Du]:^astek        Enclitic;
+[3Pl][4Sg]:^atni         Enclitic; [3Pl][4Pl]:^asteng      Enclitic; [3Pl][4Du]:^astek        Enclitic;
+[3Du][4Sg]:^atni         Enclitic; [3Du][4Pl]:^asteng      Enclitic; [3Du][4Du]:^astek        Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[1Sg][4Sg]:^umni         #; [1Sg][4Pl]:^umteng      #; [1Sg][4Du]:^umtek        #;
-[1Pl][4Sg]:^umnni        #; [1Pl][4Pl]:^umteng      #; [1Pl][4Du]:^umtek        #;
-[1Du][4Sg]:^umtegnegu    #; [1Du][4Pl]:^umtegneki   #; [1Du][4Du]:^umtegnekek   #;
+[1Sg][4Sg]:^umni         Enclitic; [1Sg][4Pl]:^umteng      Enclitic; [1Sg][4Du]:^umtek        Enclitic;
+[1Pl][4Sg]:^umnni        Enclitic; [1Pl][4Pl]:^umteng      Enclitic; [1Pl][4Du]:^umtek        Enclitic;
+[1Du][4Sg]:^umtegnegu    Enclitic; [1Du][4Pl]:^umtegneki   Enclitic; [1Du][4Du]:^umtegnekek   Enclitic;
 !-------------------------|--------------------------|---------------------------|
-[2Sg][4Sg]:^uvgu         #; [2Sg][4Pl]:^ufki        #; [2Sg][4Du]:^ufkek        #;
-[2Pl][4Sg]:^ufsigu       #; [2Pl][4Pl]:^ufsiki      #; [2Pl][4Du]:^ufsikek      #;
-[2Du][4Sg]:^uftegnegu    #; [2Du][4Pl]:^uftegneki   #; [2Du][4Du]:^uftegnekek   #;
+[2Sg][4Sg]:^uvgu         Enclitic; [2Sg][4Pl]:^ufki        Enclitic; [2Sg][4Du]:^ufkek        Enclitic;
+[2Pl][4Sg]:^ufsigu       Enclitic; [2Pl][4Pl]:^ufsiki      Enclitic; [2Pl][4Du]:^ufsikek      Enclitic;
+[2Du][4Sg]:^uftegnegu    Enclitic; [2Du][4Pl]:^uftegneki   Enclitic; [2Du][4Du]:^uftegnekek   Enclitic;
 !-------------------------|--------------------------|---------------------------|
 ! no [4--][4--] forms                                                            |
 !-------------------------|--------------------------|---------------------------|

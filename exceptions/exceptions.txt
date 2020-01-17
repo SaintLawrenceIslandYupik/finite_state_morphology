@@ -1,15 +1,16 @@
-!==============================
-LEXICON  DemonstrativeException
-!==============================
+!=================
+LEXICON  Exception
+!=================
 
+!--------------------------
+! Demonstrative Exceptions
+!--------------------------
 whani-ete:whaante                                  VerbPostbaseVI;
 tawaten[Dem]+staaghhagh[N.N]:tawatestaaghha%{g%}h  PostInflIII;
 
-
-!=====================
-LEXICON  NounException
-!=====================
-
+!-----------------
+! Noun Exceptions
+!-----------------
 alangqugh[Abs][Sg][3SgPoss]:alangqghwa  Enclitic; ! strange velar/uvular rounding rules
 naasqugh[Abs][Sg][3SgPoss]:naasqwa      Enclitic; ! for anatomical noun roots that end
 uyaqugh[Abs][Sg][3SgPoss]:uyaqghwa      Enclitic; ! in -quq [Jacobson p.37]
@@ -20,17 +21,15 @@ Sivuqagh+mii[N.N]:Sivuqaghhmii          NounPostbaseI;
 qule[All][Sg]:quulmun  #;
 kete[All][Sg]:ketmun   #;
 
-
-!=====================
-LEXICON  VerbException
-!=====================
-
-kina[Q]~%:(ng)u[N.V][Intr][Int][2Sg]:kinanguzin       #;
-kina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:kinkungutsi      #;
-qafsina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:qafsin'gutsi  #;
-kina[Q]~%:(ng)u[N.V][Intr][Int][3Sg]:kinangaawa       #;
-kina[Q]~%:(ng)u[N.V][Intr][Int][3Pl]:kinkungaawat     #;
-sa~%:(ng)u[N.V][Intr][Int][3Sg]:sangaawa              #;
-sa~%:(ng)u[N.V][Intr][Int][3Pl]:sangaawat             #;
+!---------------------------
+! Interrogtative Exceptions
+!---------------------------
+kina[Q]~%:(ng)u[N.V][Intr][Int][2Sg]:kinanguzin       Enclitic;
+kina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:kinkungutsi      Enclitic;
+qafsina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:qafsin'gutsi  Enclitic;
+kina[Q]~%:(ng)u[N.V][Intr][Int][3Sg]:kinangaawa       Enclitic;
+kina[Q]~%:(ng)u[N.V][Intr][Int][3Pl]:kinkungaawat     Enclitic;
+sa~%:(ng)u[N.V][Intr][Int][3Sg]:sangaawa              Enclitic;
+sa~%:(ng)u[N.V][Intr][Int][3Pl]:sangaawat             Enclitic;
 
 

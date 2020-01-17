@@ -326,7 +326,7 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,
           [ %{t%} | t ] ("^") z -> s                                    ; ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
-define PreventGemination n -> 0 || _ "^" n ; ! is this the only instance of accidental gemination? [Jacobson (2001) p.31]
+define PreventGemination n -> 0 || .#. a a _ "^" n ; ! is aane the only root involved in cases of accidental gemination? [Jacobson (2001) p.31]
 
 
 define CleanupDigraph %{k%}   -> 0   .o.
@@ -334,10 +334,13 @@ define CleanupDigraph %{k%}   -> 0   .o.
                       %{t%}   -> t   ;
 
 
-define AssimilateEnclitic g h -> q  || _ ("^") "^" l l u .#.   .o. ! [Jacobson (2001) p.91]
-                          l l -> l                             ,   ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
-                            t -> n                             ,
-                            k -> g  || _ ("^") "^" n g u q .#. ;
+define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
+                          n g -> 0                            ,   ! [Jacobson (2001) p.91]
+                          l l -> l                            ,   ! [Badten (2008) Appendix p.705]
+						    t -> n                            ,
+                            k -> g || _ ("^") "^" n g u q .#. .o.
+                          g h -> q || _ ("^") "^" s a     .#. .o.
+						    t -> s || _ ("^") "^" t a     .#. ;
 
 
 define CleanupMorphBoundary "^" -> 0 ;

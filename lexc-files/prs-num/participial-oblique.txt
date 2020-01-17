@@ -4,9 +4,9 @@ LEXICON IntrPtcpObl
 !     intransitive participial-oblique
 !=====================================
 !-------------|---------------|--------------|
-[4Sg]:^mi    #; [1Sg]:^nga   #; [2Sg]:^ten  #;
-[4Pl]:^meng  #; [1Pl]:^kut   #; [2Pl]:^si   #;
-[4Du]:^mek   #; [1Du]:^kung  #; [2Du]:^tek  #;
+[4Sg]:^mi    Enclitic; [1Sg]:^nga   Enclitic; [2Sg]:^ten  Enclitic;
+[4Pl]:^meng  Enclitic; [1Pl]:^kut   Enclitic; [2Pl]:^si   Enclitic;
+[4Du]:^mek   Enclitic; [1Du]:^kung  Enclitic; [2Du]:^tek  Enclitic;
 !-------------|---------------|--------------|
 
 !===================================
@@ -15,37 +15,37 @@ LEXICON TrnsPtcpObl
 !     transitive participial-oblique 
 !===================================
 |------------------------------|-------------------------------|--------------------------------|
-[1Sg][3Sg]:^gka               #; [1Sg][3Pl]:^nka              #; [1Sg][3Du]:^gka               #;
-[1Pl][3Sg]:^vut               #; [1Pl][3Pl]:^put              #; [1Pl][3Du]:^gput              #;
-[1Du][3Sg]:^vung              #; [1Du][3Pl]:^pung             #; [1Du][3Du]:^gpung             #;
+[1Sg][3Sg]:^gka               Enclitic; [1Sg][3Pl]:^nka              Enclitic; [1Sg][3Du]:^gka               Enclitic;
+[1Pl][3Sg]:^vut               Enclitic; [1Pl][3Pl]:^put              Enclitic; [1Pl][3Du]:^gput              Enclitic;
+[1Du][3Sg]:^vung              Enclitic; [1Du][3Pl]:^pung             Enclitic; [1Du][3Du]:^gpung             Enclitic;
 |------------------------------|-------------------------------|--------------------------------|
-[2Sg][3Sg]:^n                 #; [2Sg][3Pl]:^ten              #; [2Sg][3Du]:^gken              #;
-[2Pl][3Sg]:^zi                #; [2Pl][3Pl]:^si               #; [2Pl][3Du]:^gsi               #;
-[2Du][3Sg]:^yek               #; [2Du][3Pl]:^tek              #; [2Du][3Du]:^gtek              #;
+[2Sg][3Sg]:^n                 Enclitic; [2Sg][3Pl]:^ten              Enclitic; [2Sg][3Du]:^gken              Enclitic;
+[2Pl][3Sg]:^zi                Enclitic; [2Pl][3Pl]:^si               Enclitic; [2Pl][3Du]:^gsi               Enclitic;
+[2Du][3Sg]:^yek               Enclitic; [2Du][3Pl]:^tek              Enclitic; [2Du][3Du]:^gtek              Enclitic;
 |------------------------------|-------------------------------|--------------------------------| ! this ~f is not documented
-[4Sg][3Sg]:^%{.f.%}minigu     #; [4Sg][3Pl]:^%{.f.%}miniki    #; [4Sg][3Du]:^%{.f.%}minikek    #; ! anywhere, but all of the observed
-[4Pl][3Sg]:^%{.f.%}megteggu   #; [4Pl][3Pl]:^%{.f.%}megtek    #; [4Pl][3Du]:^%{.f.%}megtekek   #; ! 4th person forms drop the -e
-[4Du][3Sg]:^%{.f.%}megnegu    #; [4Du][3Pl]:^%{.f.%}megneki   #; [4Du][3Du]:^%{.f.%}megnekek   #; ! in the transitive participial
+[4Sg][3Sg]:^%{.f.%}minigu     Enclitic; [4Sg][3Pl]:^%{.f.%}miniki    Enclitic; [4Sg][3Du]:^%{.f.%}minikek    Enclitic; ! anywhere, but all of the observed
+[4Pl][3Sg]:^%{.f.%}megteggu   Enclitic; [4Pl][3Pl]:^%{.f.%}megtek    Enclitic; [4Pl][3Du]:^%{.f.%}megtekek   Enclitic; ! 4th person forms drop the -e
+[4Du][3Sg]:^%{.f.%}megnegu    Enclitic; [4Du][3Pl]:^%{.f.%}megneki   Enclitic; [4Du][3Du]:^%{.f.%}megnekek   Enclitic; ! in the transitive participial
 |------------------------------|-------------------------------|--------------------------------| ! oblique morpheme @~fyaqe
 ! no [1--][1--] forms                                                                           |
 |------------------------------|-------------------------------|--------------------------------|
-[2Sg][1Sg]:^vnga              #; [2Sg][1Pl]:^fkut             #; [2Sg][1Du]:^pekung            #;
-[2Pl][1Sg]:^fsinga            #; [2Pl][1Pl]:^pesikut          #; [2Pl][1Du]:^pesikung          #;
-[2Du][1Sg]:^petegnenga        #; [2Du][1Pl]:^petegnekut       #; [2Du][1Du]:^petegnekung       #;
+[2Sg][1Sg]:^vnga              Enclitic; [2Sg][1Pl]:^fkut             Enclitic; [2Sg][1Du]:^pekung            Enclitic;
+[2Pl][1Sg]:^fsinga            Enclitic; [2Pl][1Pl]:^pesikut          Enclitic; [2Pl][1Du]:^pesikung          Enclitic;
+[2Du][1Sg]:^petegnenga        Enclitic; [2Du][1Pl]:^petegnekut       Enclitic; [2Du][1Du]:^petegnekung       Enclitic;
 |------------------------------|-------------------------------|--------------------------------|
-[4Sg][1Sg]:^%{.f.%}mininga    #; [4Sg][1Pl]:^%{.f.%}minikut   #; [4Sg][1Du]:^%{.f.%}minikung   #;
-[4Pl][1Sg]:^%{.f.%}megtengnga #; [4Pl][1Pl]:^%{.f.%}megtekut  #; [4Pl][1Du]:^%{.f.%}megtekung  #;
-[4Du][1Sg]:^%{.f.%}megnenga   #; [4Du][1Pl]:^%{.f.%}megnekut  #; [4Du][1Du]:^%{.f.%}megnekung  #;
+[4Sg][1Sg]:^%{.f.%}mininga    Enclitic; [4Sg][1Pl]:^%{.f.%}minikut   Enclitic; [4Sg][1Du]:^%{.f.%}minikung   Enclitic;
+[4Pl][1Sg]:^%{.f.%}megtengnga Enclitic; [4Pl][1Pl]:^%{.f.%}megtekut  Enclitic; [4Pl][1Du]:^%{.f.%}megtekung  Enclitic;
+[4Du][1Sg]:^%{.f.%}megnenga   Enclitic; [4Du][1Pl]:^%{.f.%}megnekut  Enclitic; [4Du][1Du]:^%{.f.%}megnekung  Enclitic;
 |------------------------------|-------------------------------|--------------------------------|
-[1Sg][2Sg]:^%{.f.%}mken       #; [1Sg][2Pl]:^%{.f.%}msi       #; [1Sg][2Du]:^%{.f.%}mtek       #;
-[1Pl][2Sg]:^%{.f.%}mken       #; [1Pl][2Pl]:^%{.f.%}msi       #; [1Pl][2Du]:^%{.f.%}mtek       #;
-[1Du][2Sg]:^%{.f.%}mken       #; [1Du][2Pl]:^%{.f.%}msi       #; [1Du][2Du]:^%{.f.%}mtek       #;
+[1Sg][2Sg]:^%{.f.%}mken       Enclitic; [1Sg][2Pl]:^%{.f.%}msi       Enclitic; [1Sg][2Du]:^%{.f.%}mtek       Enclitic;
+[1Pl][2Sg]:^%{.f.%}mken       Enclitic; [1Pl][2Pl]:^%{.f.%}msi       Enclitic; [1Pl][2Du]:^%{.f.%}mtek       Enclitic;
+[1Du][2Sg]:^%{.f.%}mken       Enclitic; [1Du][2Pl]:^%{.f.%}msi       Enclitic; [1Du][2Du]:^%{.f.%}mtek       Enclitic;
 |------------------------------|-------------------------------|--------------------------------|
 ! no [2--][2--] forms                                                                           |
 |------------------------------|-------------------------------|--------------------------------|
-[4Sg][2Sg]:^%{.f.%}miniten    #; [4Sg][2Pl]:^%{.f.%}minisi    #; [4Sg][2Du]:^%{.f.%}minitek    #;
-[4Pl][2Sg]:^%{.f.%}miniten    #; [4Pl][2Pl]:^%{.f.%}minisi    #; [4Pl][2Du]:^%{.f.%}minitek    #;
-[4Du][2Sg]:^%{.f.%}miniten    #; [4Du][2Pl]:^%{.f.%}minisi    #; [4Du][2Du]:^%{.f.%}minitek    #;
+[4Sg][2Sg]:^%{.f.%}miniten    Enclitic; [4Sg][2Pl]:^%{.f.%}minisi    Enclitic; [4Sg][2Du]:^%{.f.%}minitek    Enclitic;
+[4Pl][2Sg]:^%{.f.%}miniten    Enclitic; [4Pl][2Pl]:^%{.f.%}minisi    Enclitic; [4Pl][2Du]:^%{.f.%}minitek    Enclitic;
+[4Du][2Sg]:^%{.f.%}miniten    Enclitic; [4Du][2Pl]:^%{.f.%}minisi    Enclitic; [4Du][2Du]:^%{.f.%}minitek    Enclitic;
 |------------------------------|-------------------------------|--------------------------------|
 
 
