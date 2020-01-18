@@ -1,7 +1,6 @@
 '''
-:author:      Hayley Park
-:modified by: Emily Chen
-:date:        2020
+:author: Hayley Park and Emily Chen
+:date:   2020
 
 Given a list of Yupik NN, NV, VN, VV derivational suffixes
 in .csv format, annotates each suffix for each inflection
@@ -9,20 +8,16 @@ class and prints them in lexc-compatible format.
 
 Usage: python make_derivsuffix_lexc.py -s [csv] -r [NN | NV | VN | VV]
 
-
-
-                    # insert %: when printing
-                    # {.c.} and {.w.} isn't a good pairing
-                    # {.f.} and {.at.}
-                    # won't handle special -te
-                    # (g) isn't always {G}
-                    #print("[ WARNING: check for roots that actually end in -ta ]")
-        
+NOTE: Script does not at the moment
+  * escape : character
+  * mark special -te
+  * identify roots that actually end in -ta
 
 '''
 import argparse
 import csv
 import re 
+import pprint
 
 from annotate_helper_methods import annotate_suffixes
 from classify_helper_methods import classify_verb_root, \
@@ -84,13 +79,13 @@ def main():
                     # determine the derivational suffix's continuation class
                     if resultType == "Noun":
                         suffix = convert_to_base_form(annotatedSuffix)
-                        classIdx = classify_noun_root(suffix)
+                        resultClassIdx = classify_noun_root(suffix)
                     else:
                         suffix = annotatedSuffix[:-1]
-                        classIdx = classify_verb_root(suffix)
+                        resultClassIdx = classify_verb_root(suffix)
         
                     suffixMapping = jacobsonSuffix + "[" + rootType[0] + "." + resultType[0] + "]" + ":^" + suffix
-                    idx2InflClass[classIdx].append((suffixMapping, definition))
+                    idx2InflClass[classIdx].append((suffixMapping, resultClassIdx, definition))
 
     print_inflection_classes("DerixSuffix", resultType, idx2InflClass)
 

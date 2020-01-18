@@ -13,7 +13,7 @@ import csv
 import glob
 
 from classify_helper_methods import classify_verb_root, \
-                                       convert_to_base_form, classify_noun_root
+                                    convert_to_base_form, classify_noun_root
 from print_helper_methods import print_inflection_classes
 
 
@@ -24,7 +24,8 @@ def main():
 
     # initialize a dictionary where each key is an int
     # representing an inflection class, and each value
-    # is a list of (root, definition) tuples
+    # is a list of tuples: (root, continuationClassIdx,
+    # definition)
     idx2InflClass = { 0 : [],
                       1 : [],
                       2 : [],
@@ -52,7 +53,7 @@ def main():
                     trueRoot = convert_to_base_form(root)
                     classIdx = classify_noun_root(trueRoot)
 
-                idx2InflClass[classIdx].append((trueRoot, line[1]))
+                idx2InflClass[classIdx].append((trueRoot, classIdx, line[1]))
 
     print_inflection_classes("Root", "Verb", idx2InflClass)
     print_inflection_classes("Root", "Noun", idx2InflClass)

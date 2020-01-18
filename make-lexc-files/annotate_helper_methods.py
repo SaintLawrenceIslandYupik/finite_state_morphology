@@ -1,5 +1,5 @@
 '''
-:author: Emily Chen
+:author: Hayley Park and Emily Chen
 :date:   2020
 
 Methods related to printing Yupik lexical items
@@ -21,41 +21,43 @@ symbol_conversion["(e)"] = "%{E%}"
 symbol_conversion["(g)"] = "%{G%}"
 symbol_conversion["+"]   = ""
 
+# TODO: should check these and eliminate incorrect pairings, e.g. %{.w.%}%{.c.%}
+#       also (g) doesn't always map to %{G%}
 rules_for_nouns = [ # Noun Class I: end in -a, -i, -u
-                         {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v"},
-                         # Noun Class II: end in -g, -w, -ghw
-                         {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"v", "%{.m.%}":"%{.m.%}"},
-                         # Noun Class III: end in weak -gh
-                         {"%{E%}":"", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.w.%}":"%{.w.%}", "%{.c.%}":"%{.c.%}"},
-                         # Noun Class IV: end in marked strong -gh (*)
-                         {"%{E%}":"%{E%}", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
-                         # Noun Class V: end in strong -gh
-                         {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
-                         # Noun Class VI: end in -te 
-                         {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
-                         # Noun Class VII: have semi-final -e
-                         {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.sf.%}":"%{.sf.%}", "%{.m.%}":"%{.m.%}"},
-                         # Noun Class VIII: end in -e that can be dropped but not hopped
-                         {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}"},
-                         # Noun Class IX: end in -e that can be dropped and hopped
-                         {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}"}
-                       ]
+                    {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v"},
+                    # Noun Class II: end in -g, -w, -ghw
+                    {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"v", "%{.m.%}":"%{.m.%}"},
+                    # Noun Class III: end in weak -gh
+                    {"%{E%}":"", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.w.%}":"%{.w.%}", "%{.c.%}":"%{.c.%}"},
+                    # Noun Class IV: end in marked strong -gh (*)
+                    {"%{E%}":"%{E%}", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
+                    # Noun Class V: end in strong -gh
+                    {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
+                    # Noun Class VI: end in -te 
+                    {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
+                    # Noun Class VII: have semi-final -e
+                    {"%{E%}":"e", "(ng)":"", "(te)":"te", "(p/v)":"p", "%{.sf.%}":"%{.sf.%}", "%{.m.%}":"%{.m.%}"},
+                    # Noun Class VIII: end in -e that can be dropped but not hopped
+                    {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}"},
+                    # Noun Class IX: end in -e that can be dropped and hopped
+                    {"%{E%}":"", "(ng)":"ng", "(te)":"", "(p/v)":"v", "%{.f.%}":"%{.f.%}"}
+                 ]
 
 rules_for_verbs = [ # Verb Class I: end in -a, -i, -u
-                         {"(g/t)":"%{G%}", "(i/u)": "", "(p/v)":"v", "(q/t)":"", "(at)":"at", "(ng)":"ng", "(te)":"", "(a)":"", "(s)":"s", "(t)":"", "(u)":""},
-                         # Verb Class II: end in -e
-                         {"(g/t)":"", "(i/u)":"u", "(p/v)":"v", "(q/t)":"", "(at)":"at", "(ng)":"ng", "(te)":"", "(a)":"a", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}": "%{.f.%}", "%{G%}":"%{G%}"},
-                         # Verb Class III: end in -g, -w, -ghw
-                         {"(g/t)":"t", "(i/u)":"u", "(p/v)":"p", "(q/t)":"t", "(at)":"at", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.m.%}":"%{.m.%}"},
-                         # Verb Class IV: end in -agh, -igh, -ugh
-                         {"(g/t)":"t", "(i/u)":"u", "(p/v)":"p", "(q/t)":"t", "(at)":"at", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
-                         # Verb Class V: end in -te
-                         {"(g/t)":"", "(i/u)":"i", "(p/v)":"v", "(q/t)":"q", "(at)":"", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
-                         # Verb Class VI: end in special -te
-                         {"(g/t)":"", "(i/u)":"i", "(p/v)":"v", "(q/t)":"q", "(at)":"", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
-                         # Verb Class VII: have semi-final -e
-                         {"(g/t)":"t", "(i/u)":"u", "(p/v)":"p", "(q/t)":"t", "(at)":"at", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.sf.%}%{G%}":"%{.sf.%}%{G%}", "%{.sf.%}":"%{.sf.%}", "%{.m.%}":"%{.m.%}"}
-                       ]
+                    {"(g/t)":"%{G%}", "(i/u)": "", "(p/v)":"v", "(q/t)":"", "(at)":"at", "(ng)":"ng", "(te)":"", "(a)":"", "(s)":"s", "(t)":"", "(u)":""},
+                    # Verb Class II: end in -e
+                    {"(g/t)":"", "(i/u)":"u", "(p/v)":"v", "(q/t)":"", "(at)":"at", "(ng)":"ng", "(te)":"", "(a)":"a", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}": "%{.f.%}", "%{G%}":"%{G%}"},
+                    # Verb Class III: end in -g, -w, -ghw
+                    {"(g/t)":"t", "(i/u)":"u", "(p/v)":"p", "(q/t)":"t", "(at)":"at", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.m.%}":"%{.m.%}"},
+                    # Verb Class IV: end in -agh, -igh, -ugh
+                    {"(g/t)":"t", "(i/u)":"u", "(p/v)":"p", "(q/t)":"t", "(at)":"at", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.m.%}":"%{.m.%}", "%{.c.%}":"%{.c.%}"},
+                    # Verb Class V: end in -te
+                    {"(g/t)":"", "(i/u)":"i", "(p/v)":"v", "(q/t)":"q", "(at)":"", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
+                    # Verb Class VI: end in special -te
+                    {"(g/t)":"", "(i/u)":"i", "(p/v)":"v", "(q/t)":"q", "(at)":"", "(ng)":"ng", "(te)":"", "(s)":"s", "(t)":"", "(u)":"u", "%{.f.%}":"%{.f.%}", "%{.at.%}":"%{.at.%}"},
+                    # Verb Class VII: have semi-final -e
+                    {"(g/t)":"t", "(i/u)":"u", "(p/v)":"p", "(q/t)":"t", "(at)":"at", "(ng)":"", "(te)":"te", "(s)":"", "(t)":"t", "(u)":"u", "%{E%}":"e", "%{.sf.%}%{G%}":"%{.sf.%}%{G%}", "%{.sf.%}":"%{.sf.%}", "%{.m.%}":"%{.m.%}"}
+                  ]
 
 
 def replace_all(my_text, my_dict):

@@ -18,8 +18,9 @@ def print_inflection_classes(lexicalItemType, resultType, idx2InflClass):
     :type resultType: str
     :param idx2InflClass: dictionary where each key is the
                           index of an inflection class and
-                          each value is a list of
-                          (lexicalItem, definition) tuples
+                          each value is a list of tuples:
+                          (lexicalItem, continuationClassIdx,
+                          definition)
     :type idx2InflClass: dict
 
     Janky print function to print each lexical item in each
@@ -41,7 +42,7 @@ def print_inflection_classes(lexicalItemType, resultType, idx2InflClass):
 
             # for class of roots or derivational suffixes that end in -g, -w, -ghw
             if resultType == "Noun" and i == 2:
-                for lexitem, definition in idx2InflClass[i]:
+                for lexitem, contClassIdx, definition in idx2InflClass[i]:
 
                     # if lexical item ends in -w, add %{k%} -->  kiiw:kii%{k%}w
                     if lexitem[-1] == "w" and ''.join(lexitem[-3:-1]) != "gh":
@@ -49,45 +50,48 @@ def print_inflection_classes(lexicalItemType, resultType, idx2InflClass):
                         if lexicalItemType == "Root":
                             padding = maxLength - (len(lexitem) * 2 + 6) + 2
                             print(lexitem+ ":" + lexitem[:-1] + "%{k%}w" + " " * padding + \
-                                  resultType + "Postbase" + romanNumeral + "; ! " + definition)
+                                  resultType + "Postbase" + idx_to_roman_numeral(contClassIdx) + \
+                                  "; ! " + definition)
 
                         elif lexicalItemType == "DerivSuffix":
                             padding = maxLength - (len(lexitem) + 5) + 2
                             print(lexitem[:-1] + "%{k%}w" + " " * padding + \
-                                  resultType + "Postbase" + romanNumeral + "; ! " + definition)
+                                  resultType + "Postbase" + idx_to_roman_numeral(contClassIdx) + \
+                                  "; ! " + definition)
 
                     # otherwise lexical item ends in -g or -ghw
                     else:
                         padding = maxLength - len(lexitem) + 2
-                        print(lexitem+ " " * padding + resultType + "Postbase" + romanNumeral + \
-                              "; ! " + definition)
+                        print(lexitem+ " " * padding + resultType + "Postbase" + \
+                              idx_to_roman_numeral(contClassIdx) + "; ! " + definition)
 
             # for class of noun roots that end in weak -gh
             #   add %{g%} --> nasaperagh:nasapera%{g%}h
             elif resultType == "Noun" and i == 3:
-                for root, definition in idx2InflClass[i]:
+                for root, contClassIdx, definition in idx2InflClass[i]:
                     padding = maxLength - (len(root) * 2 + 5) + 2
                     print(root + ":" + root[:-2] + "%{g%}h" + " " * padding + \
-                          resultType + "Postbase" + romanNumeral + "; ! " + definition)
+                          resultType + "Postbase" + idx_to_roman_numeral(contClassIdx) + "; ! " + definition)
 
             # for class of noun roots that end in marked strong -gh (*)
             #   remove * at the end of the root, e.g. afsengagh*  --> afsengagh
             elif resultType == "Noun" and i == 4:
-                for root, definition in idx2InflClass[i]:
+                for root, contClassIdx, definition in idx2InflClass[i]:
                     padding = maxLength - len(root) + 2
-                    print(root[:-1] + " " * padding + resultType + "Postbase" + romanNumeral + \
-                          "; ! " + definition)
+                    print(root[:-1] + " " * padding + resultType + "Postbase" + \
+                          idx_to_roman_numeral(contClassIdx) + "; ! " + definition)
 
             # for class of roots or derivational suffixes that end in -te
             #   if root ends in -te, replace t with %{t%} --> riigte:riig%{t%}e
             elif (resultType == "Noun" and i == 6 or
                   resultType == "Verb" and i == 5):
-                for lexitem, definition in idx2InflClass[i]:
+                for lexitem, contClassIdx, definition in idx2InflClass[i]:
 
                     if lexicalItemType == "Root":
                         padding = maxLength - (len(lexitem) * 2 + 5) + 2
                         print(lexitem+ ":" + lexitem[:-2] + "%{t%}e" + " " * padding + \
-                              resultType + "Postbase" + romanNumeral + "; ! " + definition)
+                              resultType + "Postbase" + idx_to_roman_numeral(contClassIdx) + \
+                              "; ! " + definition)
 
                     elif lexicalItemType == "DerivSuffix":
                         padding = maximum - (len(root) + 4) + 2
@@ -95,9 +99,10 @@ def print_inflection_classes(lexicalItemType, resultType, idx2InflClass):
                               resultType + "Postbase" + i + "; ! " + definition)
 
             else:
-                for lexitem, definition in idx2InflClass[i]:
+                for lexitem, contClassIdx, definition in idx2InflClass[i]:
                     padding = maxLength - len(lexitem) + 2
-                    print(lexitem + " " * padding + resultType + "Postbase" + romanNumeral + \
+                    print(lexitem + " " * padding + resultType + "Postbase" + \
+                          idx_to_roman_numeral(contClassIdx) + \
                           "; ! " + definition)
             print()
 
@@ -109,7 +114,7 @@ def print_inflection_classes(lexicalItemType, resultType, idx2InflClass):
         print("----------------------------------")
         print("Items that Could Not Be Classified")
         print("----------------------------------")
-        for lexitem, definition in idx2InflClass[0]:
+        for lexitem, contClassIdx, definition in idx2InflClass[0]:
             padding = maxLength - len(lexitem) + 2
             print(lexitem + " " * padding + definition)
     print()
@@ -151,8 +156,9 @@ def get_max_length(lexicalItemType, resultType, classIdx, inflClass):
     :type classIdx: int
     :param inflClass: all lexical items in a given 
                       inflection class, where each item
-                      is represented as a
-                      (lexicalItem, definition) tuple
+                      is represented as a tuple:
+                      (lexicalItem, continuationClassIdx,
+                      definition)
     :type inflClass: list of tuples
 
     Calculates the length of the longest root in the inflection
