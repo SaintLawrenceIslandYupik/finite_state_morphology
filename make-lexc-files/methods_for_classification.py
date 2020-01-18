@@ -2,7 +2,7 @@
 :author: Emily Chen
 :date:   2019
 
-Methods for the Python script that classifies Yupik roots
+Methods related to classifying Yupik roots
 into their respective inflection classes.
 
 '''

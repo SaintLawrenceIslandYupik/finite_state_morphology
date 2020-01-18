@@ -4,47 +4,221 @@ LEXICON VerbPostbaseV
 !  when suffixing to verb roots that end in -te
 !======================================================
 
-                                          VerbInflV;
+0:0  VerbInflV;
 
-–ghhaleg[V.V]:^ghhalek                    #;                ! how V! (exclamation)
+–ghhaleg[V.V]:^ghhalek  #; ! how V! (exclamation)
 
-–ghllag[Augmentive]:^ghllag               NounInflII;       ! big N (augmentive)
-+tuqagh[Augmentive]:^tuqa%{g%}h           NounInflIII;      ! one with lots of N (augmentive)
-+aagh[Augmentive]:^aagh                   NounInflV;        ! one who keeps V-ing (augmentive)
+–ghllag[Augmentive]:^ghllag      NounInflII;  ! big N (augmentive)
++tuqagh[Augmentive]:^tuqa%{g%}h  NounInflIII; ! one with lots of N (augmentive)
++aagh[Augmentive]:^aagh          NounInflV;   ! one who keeps V-ing (augmentive)
 
-~i[V.V]:^%{.f.%}i                         VerbPostbaseI;    ! to V something
-@~sf–(g)kau[V.V]:^%{.at.%}kau             VerbPostbaseI;    ! to have V-ed or been V-ed 
-~–kayugu[V.V]:^%{.f.%}kayugu              VerbPostbaseI;    ! to be able to V
-@~%:(i/u)ma[V.V]:^%{.at.%}ima             VerbPostbaseI;    ! to have V-ed or to have been V-ed; to evidently have V-ed
-@~fna[V.V]:^%{.at.%}na                    VerbPostbaseI;    ! in order to V
-@~fni[V.V]:^%{.at.%}ni                    VerbPostbaseI;    ! to say that one V-s (compound-verbal postbase)
-
-~(g)aqe[V.V]:^%{.f.%}aqe                  VerbPostbaseII;   ! to be V-ing; to regularly or repeatedly V
-@lleqe[V.V]:^%{.at.%}lleqe                VerbPostbaseII;   ! to V in the future; will V
-@~fmiqe[V.V]:^%{.at.%}miqe                VerbPostbaseII;   ! to make, compel, or force one to V (a compound-verbal postbase) 
-@~fnaqe[V.V]:^%{.at.%}naqe                VerbPostbaseII;   ! to be going to V, to be about to V
-+qe[V.V]:^qe                              VerbPostbaseII;   ! to act on so as to cause to V
-~sf%:(e)sqe[V.V]:^sqe                     VerbPostbaseII;   ! to ask or tell one to V (compound-verbal postbase)
-
-+(te)sug[V.V]:^sug                        VerbPostbaseIII;  ! to want one to V (compound-verbal postbase)
-@~fyug[V.V]:^%{.at.%}yug                  VerbPostbaseIII;  ! to want to V
-
-@~flaatagh[V.V]:^%{.at.%}laatagh          VerbPostbaseIV;   ! to V anyway despite everything; to still V
-@~fnanigh[V.V]:^%{.at.%}nanigh            VerbPostbaseIV;   ! to cease V-ing; to stop V-ing
-@qugh[V.V]:^%{.at.%}qugh                  VerbPostbaseIV;   ! to V completely
-@~f–ragkiigh[V.V]:^%{.at.%}ragkiigh       VerbPostbaseIV;   ! to V quickly
-@~fyagh[V.V]:^%{.at.%}yagh                VerbPostbaseIV;   ! to go V-ing; to V in vain
-@~fyaghtugh[V.V]:^%{.at.%}yaghtugh        VerbPostbaseIV;   ! to be about to V; to go somewhere to V
-
-@~%:(ng)igate[V.V]:^%{.at.%}iga%{t%}e     VerbPostbaseV;    ! to never V; to not be V-ing
-(pete)fte[V.V]:^f%{t%}e                   VerbPostbaseV;    ! to evidently V or have V-ed
-+(te)ste[V.V]:^s%{t%}e                    VerbPostbaseV;    ! to have, make, or let one V (compound-verbal postbase)
-~%:(u)te[V.V]:^u%{t%}e                    VerbPostbaseV;    ! to V with, for or to object; to V object along with oneself; to V each other
-–pigte[V.V]:^pig%{t%}e                    VerbPostbaseV;    ! to be very V; to V very much
-+te[V.V]:^%{t%}e                          VerbPostbaseV;    ! to act on so as to cause to V
-
-@~fnaanghite[V.V]:^%{.at.%}naanghi%{t%}e* VerbPostbaseVI;   ! to not V in the future; "won't V"
-@–nghite[V.V]:^%{.at.%}neghi%{t%}e**      VerbPostbaseVI;   ! to not V
+–ghllagu[V.V]:^ghllagu                         VerbPostbaseI;   ! to be very V; to be busy V-ing
+@~%:(i/u)ma[V.V]:^%{.at.%}ima                  VerbPostbaseI;   ! to have V-ed or been V-ed; to be in a state of having V-ed or been V-ed; to evidently have V-ed or been V-ed
+@laataqu[V.V]:^%{.at.%}laataqu                 VerbPostbaseI;   ! to luckily have V-ed well
+–llgu[V.V]:^llgu                               VerbPostbaseI;   ! to V well 
+@~fna[V.V]:^%{.at.%}na                         VerbPostbaseI;   ! in order to V; to V 
+@~fnaqngu[V.V]:^%{.at.%}naqngu                 VerbPostbaseI;   ! to have to V
+@~f–neghtu[V.V]:^%{.at.%}neghtu                VerbPostbaseI;   ! to V habitually; to V frequently
+~fnga[V.V]:^%{.f.%}nga                         VerbPostbaseI;   ! to be in a state of V or of having V-ed
+~%:(ng)u[V.V]:^%{.f.%}ngu                      VerbPostbaseI;   ! to be V-ing; to be V-habitually or as an occupation; while in the process of V-ing
+@–nqegsi[V.V]:^%{.at.%}nqegsi                  VerbPostbaseI;   ! to be good with respect to V-ing
+–pigu[V.V]:^pigu                               VerbPostbaseI;   ! to be so V
+–qaqu[V.V]:^qaqu                               VerbPostbaseI;   ! to V intermittently
+–qu[V.V]:^qu                                   VerbPostbaseI;   ! to repeatedly V 
++tu[V.V]:^tu                                   VerbPostbaseI;   ! to V habitually
+–tu[V.V]:^tu                                   VerbPostbaseI;   ! to V habitually
++tulli[V.V]:^tulli                             VerbPostbaseI;   ! for it to be getting feasible to go V-ing b
++tutka[V.V]:^tutka                             VerbPostbaseI;   ! to be V to an indicated degree
+@~fyaghqaa[V.V]:^%{.at.%}yaghqaa               VerbPostbaseI;   ! to need to V; to be supposed to V; to V in the future
+@~fyaghqau[V.V]:^%{.at.%}yaghqau               VerbPostbaseI;   ! to need to V; to be supposed to V; to V in the future
+@~f–yu[V.V]:^%{.at.%}yu                        VerbPostbaseI;   ! to be good at V-ing; to generally V well
+@~fyuguma[V.V]:^%{.at.%}yuguma                 VerbPostbaseI;   ! to be easy to V
+@~fyuneghtu[V.V]:^%{.at.%}yuneghtu             VerbPostbaseI;   ! to love to V
+~i[V.V]:^%{.f.%}i                              VerbPostbaseI;   ! to V something; to suffer something's V-ing
+@~–(g)kau[V.V]:^%{.at.%}kau                    VerbPostbaseI;   ! to have V-ed; to have been V-ed
+~–(g)kayugu[V.V]:^%{.at.%}kayugu               VerbPostbaseI;   ! to be able to V; can V
+@~fni[V.V]:^%{.at.%}ni                         VerbPostbaseI;   ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
+~(g)aqe[V.V]:^%{.f.%}aqe                       VerbPostbaseII;  ! to be currently V-ing; to V now and then; to always V
+––iqe[V.V]:^iqe                                VerbPostbaseII;  ! to have trouble with one's V-ing over a period of time
+–lgutke[V.V]:^lgutke                           VerbPostbaseII;  ! to V together with; to help (object) V
+@lleqe[V.V]:^%{.at.%}lleqe                     VerbPostbaseII;  ! to V in the future; will V
+–llgilliqe[V.V]:^llgilliqe                     VerbPostbaseII;  ! to experience trouble in V-ing 
++lliqe[V.V]:^lliqe                             VerbPostbaseII;  ! to have trouble V-ing
+–lliqe[V.V]:^lliqe                             VerbPostbaseII;  ! to have trouble V-ing
+@~fnanighqe[V.V]:^%{.at.%}nanighqe             VerbPostbaseII;  ! to make one cease V-ing
+@~fnaqe[V.V]:^%{.at.%}naqe                     VerbPostbaseII;  ! to be going to V in the near future; to try to V
+@~fnaqutke[V.V]:^%{.at.%}naqutke               VerbPostbaseII;  ! to try to V (it)
+@~fnatke[V.V]:^%{.at.%}natke                   VerbPostbaseII;  ! to use or have (it) in order to V
+~–qaghaqe[V.V]:^%{.f.%}qaghaqe                 VerbPostbaseII;  ! to intermittently V; to V now and then
+–qaghnaqe[V.V]:^qaghnaqe                       VerbPostbaseII;  ! to be about to V for a moment 
+@~%:(u)tke[V.V]:^%{.at.%}utke                  VerbPostbaseII;  ! to V over or on account of
+@~fvike[V.V]:^%{.at.%}vike                     VerbPostbaseII;  ! to have as a place or as object of one's V-ing
+@~fyaghqaqe[V.V]:^%{.at.%}yaghqaqe             VerbPostbaseII;  ! to need to V; to be supposed to V; to V in the future
+@~f–yiilliqe[V.V]:^%{.at.%}yiilliqe            VerbPostbaseII;  ! to have trouble V-ing
+@~–(g)kaqe[V.V]:^%{.at.%}kaqe                  VerbPostbaseII;  ! to have V-ed (him/it) 
+@~fnayuke[V.V]:^%{.at.%}nayuke                 VerbPostbaseII;  ! to think that one might V
+@~fmiqe[V.V]:^%{.at.%}miqe                     VerbPostbaseII;  ! to compel one to V; to make one V
+@~fyuke[V.V]:^%{.at.%}yuke                     VerbPostbaseII;  ! to think that one is V-ing or has V-ed
+~sf%:(e)sqe[V.V]:^sqe                          VerbPostbaseII;  ! to ask one to V; to tell one to V
++qe[V.V]:^qe                                   VerbPostbaseII;  ! to act on so as to cause to V
+–ghllag[V.V]:^ghllag                           VerbPostbaseIII; ! to V or be V in a big way; to V for a long time
+–ghraag[V.V]:^ghraag                           VerbPostbaseIII; ! to do some V-ing; to gradually V; to get V-er; to be somewhat V
+–llaag[V.V]:^llaag                             VerbPostbaseIII; ! to V in a crude or clumsy way; crude one V-s
++llug[V.V]:^llug                               VerbPostbaseIII; ! to V in an undesirable or bad way; for undesirable or bad one to V
+–llug[V.V]:^llug                               VerbPostbaseIII; ! to V in an undesirable or bad way; for undesirable or bad one to V
+@~f–neghllug[V.V]:^%{.at.%}neghllug            VerbPostbaseIII; ! to V wrongly or with difficulty
++pag[V.V]:^pag                                 VerbPostbaseIII; ! to V in a big way; to V intensively; to V excessively
+–pag[V.V]:^pag                                 VerbPostbaseIII; ! to V in a big way; to V intensively; to V excessively
+–pagllag[V.V]:^pagllag                         VerbPostbaseIII; ! to V too much, so much, intensively, excessively
+–pigllag[V.V]:^pigllag                         VerbPostbaseIII; ! to really, really V; to V all the way 
+–qrug[V.V]:^qrug                               VerbPostbaseIII; ! for troublesome one to V 
++raag[V.V]:^raag                               VerbPostbaseIII; ! to do some V-ing; to kind of, but not exactly
++saag[V.V]:^saag                               VerbPostbaseIII; ! to V in a strange way; to V weirdly
+–saag[V.V]:^saag                               VerbPostbaseIII; ! to V in a strange way; to V weirdly
+~f–vag[V.V]:^%{.f.%}vag                        VerbPostbaseIII; ! to V in a big way; to V hard; to V intensely
+@~f–yaag[V.V]:^%{.at.%}yaag                    VerbPostbaseIII; ! to V in a strange way; to V weirdly
+@~fyug[V.V]:^%{.at.%}yug                       VerbPostbaseIII; ! to want to V; to tend toward V-ing; to feel V
++(te)stepag[V.V]:^stepag                       VerbPostbaseIII; ! to cause or allow one to V too much
++(te)sug[V.V]:^sug                             VerbPostbaseIII; ! to want one to V
+–qiinagh[V.V]:^qiinagh                         VerbPostbaseIV;  ! to just V; to V just now; to only V (and perhaps in vain)
+~aghtagh[V.V]:^%{.f.%}aghtagh                  VerbPostbaseIV;  ! to V repeatedly with back and forth movement
+~aatagh[V.V]:^%{.f.%}aatagh                    VerbPostbaseIV;  ! to V finally or repeatedly and persistently, several times
+~(at)aghagh[V.V]:^%{.f.%}aghagh                VerbPostbaseIV;  ! to be V-er; to V more; to be more V
+–ghrukutaagh[V.V]:^ghrukutaagh                 VerbPostbaseIV;  ! for very large, huge one to V 
++iiraagh[V.V]:^iiraagh                         VerbPostbaseIV;  ! to play at V-ing; to keep on V-ing
+@~%:(i/u)manginagh[V.V]:^%{.at.%}imanginagh    VerbPostbaseIV;  ! to V continuously, all the time; to keep V-ing 
+~–kanigh[V.V]:^%{.f.%}kanigh                   VerbPostbaseIV;  ! to be rather V; to be fairly V; to V more and more
+~–kataghagh[V.V]:^%{.f.%}kataghagh             VerbPostbaseIV;  ! to finally V despite a feeling that it wouldn't happen; to V at last
+–kestagh[V.V]:^kestagh                         VerbPostbaseIV;  ! to V ahead of time; to V patiently; to V slowly; to V peacefully; to V leisurely; to start V-ing (for seasons and atmospheric phenomena)
+–kusiigh[V.V]:^kusiigh                         VerbPostbaseIV;  ! to casually V; to slowly V
+@~flaatagh[V.V]:^%{.at.%}laatagh               VerbPostbaseIV;  ! to V again; to V more; to V anyway
+@–lghaghtugh[V.V]:^%{.at.%}lghaghtugh          VerbPostbaseIV;  ! to V already, unexpectedly, surprisingly
+–lgusigh[V.V]:^lgusigh                         VerbPostbaseIV;  ! to V together with; to help (object) V
+–llegagh[V.V]:^llegagh                         VerbPostbaseIV;  ! to V crudely
+–lqinagh[V.V]:^lqinagh                         VerbPostbaseIV;  ! to V for a long time
+–lqiinagh[V.V]:^lqiinagh                       VerbPostbaseIV;  ! to V for a long time
+–lqusiigh[V.V]:^lqusiigh                       VerbPostbaseIV;  ! to V a little; little one V-s
+@lugh[V.V]:^%{.at.%}lugh                       VerbPostbaseIV;  ! to V angrily
+–mlaagh[V.V]:^mlaagh                           VerbPostbaseIV;  ! to V a little
+–mraagh[V.V]:^mraagh                           VerbPostbaseIV;  ! to V a little
+–mzaagh[V.V]:^mzaagh                           VerbPostbaseIV;  ! to V a little
+–mlegagh[V.V]:^mlegagh                         VerbPostbaseIV;  ! to V a little
+–mreghagh[V.V]:^mreghagh                       VerbPostbaseIV;  ! to V a little
+–mzegagh[V.V]:^mzegagh                         VerbPostbaseIV;  ! to V a little
+–vlaagh[V.V]:^vlaagh                           VerbPostbaseIV;  ! to V a little
+–vleghagh[V.V]:^vleghagh                       VerbPostbaseIV;  ! to V a little
+–msiigh[V.V]:^msiigh                           VerbPostbaseIV;  ! to V ineffectively or without putting effort into it; to V under conditions of hardship
+@~fnagh[V.V]:^%{.at.%}nagh                     VerbPostbaseIV;  ! to cause V-ing
+@~fnaagh[V.V]:^%{.at.%}naagh                   VerbPostbaseIV;  ! to be going to V eventually
+@~fnanigh[V.V]:^%{.at.%}nanigh                 VerbPostbaseIV;  ! to cease V-ing; to stop V-ing; to quit V-ing
+@~fnaqelqusiigh[V.V]:^%{.at.%}naqelqusiigh     VerbPostbaseIV;  ! to stall or delay at V-ing.
+@~fnaqlaatagh[V.V]:^%{.at.%}naqlaatagh         VerbPostbaseIV;  ! to V again be going to V
+@~f–nasiigh[V.V]:^%{.at.%}nasiigh              VerbPostbaseIV;  ! to put off V-ing; to stall at V-ing; to V angrily
+@~fnayagh[V.V]:^%{.at.%}nayagh                 VerbPostbaseIV;  ! could V; might V; should V; would V
+@~f–neghsigh[V.V]:^%{.at.%}neghsigh            VerbPostbaseIV;  ! to wait for (it) to V; to wait for (it) to be V or to become V
+–ngeltagh[V.V]:^ngeltagh                       VerbPostbaseIV;  ! to V in a small way
+–ngertagh[V.V]:^ngertagh                       VerbPostbaseIV;  ! to V in a small way
+–ngestagh[V.V]:^ngestagh                       VerbPostbaseIV;  ! to V in a small way
+%:(ng)inagh[V.V]:^nginagh                      VerbPostbaseIV;  ! to only V; to go right on V-ing
+–ngllagh[V.V]:^ngllagh                         VerbPostbaseIV;  ! to endeavor to induce one to V; to make one V
+@~fniigh[V.V]:^%{.at.%}niigh                   VerbPostbaseIV;  ! to hunt by means of V-ing; to carry out the process of V-ing
+@–nqegsagh[V.V]:^%{.at.%}nqegsagh              VerbPostbaseIV;  ! to V completely, correctly, thoroughly
+~f(p/v)agaatagh[V.V]:^%{.f.%}vagaatagh         VerbPostbaseIV;  ! to V repeatedly and hard
+–pagnanigh[V.V]:^pagnanigh                     VerbPostbaseIV;  ! to cease V-ing too much; to quit V-ing too much
+–pestaagh[V.V]:^pestaagh                       VerbPostbaseIV;  ! to truly V
+–pigagh[V.V]:^pigagh                           VerbPostbaseIV;  ! to be V exaclty (location)
+–pigesnagh[V.V]:^pigesnagh                     VerbPostbaseIV;  ! to V in vain; to V for naught; to finally V
+~–qagh[V.V]:^%{.f.%}qagh                       VerbPostbaseIV;  ! please V; just V; suddenly V; briefly
+–qaghnayagh[V.V]:^qaghnayagh                   VerbPostbaseIV;  ! would V for a short time
+~–qaghtagh[V.V]:^%{.f.%}qaghtagh               VerbPostbaseIV;  ! to continuously V with back and forth or up and down movement
+–qragh[V.V]:^qragh                             VerbPostbaseIV;  ! to do fancy V-ing; to V a new thing
+@qugh[V.V]:^%{.at.%}qugh                       VerbPostbaseIV;  ! to V all things available; to V completely
+–raaghinagh[V.V]:^raaghinagh*                  VerbPostbaseIV;  ! to only V; to do nothing but V (ironically?) 
+@~fragh[V.V]:^%{.at.%}ragh                     VerbPostbaseIV;  ! to repeatedly or continuously V though perhaps unnecessarily or unsucessfully
+@~f–ragkiigh[V.V]:^%{.at.%}ragkiigh            VerbPostbaseIV;  ! to V quickly
+@~f–rakguugh[V.V]:^%{.at.%}rakguugh            VerbPostbaseIV;  ! to be fast at V-ing; to learn to V quickly
++rragh[V.V]:^rragh                             VerbPostbaseIV;  ! to V in a fancy way
++sagh[V.V]:^sagh                               VerbPostbaseIV;  ! to cause one to V or be V-ed; to endeavor to V
++saghtugh[V.V]:^saghtugh                       VerbPostbaseIV;  ! to be about to V; to go somewhere to V
++sigh[V.V]:^sigh                               VerbPostbaseIV;  ! to wait for (it) to V; to cause to V
+–sighwaagh[V.V]:^sighwaagh                     VerbPostbaseIV;  ! to pretend to V; to V without putting effort into it; half-heartedly V
++sugh[V.V]:^sugh                               VerbPostbaseIV;  ! to test how V (it) is; to check how V (it) is
++tagh[V.V]:^tagh                               VerbPostbaseIV;  ! to be V by nature or disposition; to keep on V-ing
++tugh[V.V]:^tugh                               VerbPostbaseIV;  ! to keep on V-ing; to V by repeated actions
++tuqagh[V.V]:^tuqagh                           VerbPostbaseIV;  ! to V for a (short) while
++tutkaligh[V.V]:^tutkaligh                     VerbPostbaseIV;  ! to measure the approximate the V of (it)
+~fughtagh[V.V]:^%{.f.%}ughtagh                 VerbPostbaseIV;  ! to V all things available; to V completely
+–vyigh[V.V]:^vyigh                             VerbPostbaseIV;  ! to almost V; to V to the extent that one is able
+–vzigh[V.V]:^vzigh                             VerbPostbaseIV;  ! to almost V; to V to the extent that one is able
+–vyiigh[V.V]:^vyiigh                           VerbPostbaseIV;  ! to V carelessly; to V in a rough way 
+–vziigh[V.V]:^vziigh                           VerbPostbaseIV;  ! to V carelessly; to V in a rough way
+@~fyagh[V.V]:^%{.at.%}yagh                     VerbPostbaseIV;  ! to go somewhere in order to V; to go V-ing
+@~fyaghagh[V.V]:^%{.at.%}yaghagh               VerbPostbaseIV;  ! to V early
+@~fyaaghagh[V.V]:^%{.at.%}yaaghagh             VerbPostbaseIV;  ! to readily V
+@~fyaghtugh[V.V]:^%{.at.%}yaghtugh             VerbPostbaseIV;  ! to be about to V; to go somewhere to V
+@~fyaghtuqagh[V.V]:^%{.at.%}yaghtuqagh         VerbPostbaseIV;  ! to briefly go somewhere to V
+@~fyuggaagh[V.V]:^%{.at.%}yuggaagh             VerbPostbaseIV;  ! to first V; to V in the beginning
++yuggaaqagh[V.V]:^yuggaaqagh                   VerbPostbaseIV;  ! to briefly V first, to briefly V in the beginning
+@~fyugnagh[V.V]:^%{.at.%}yugnagh               VerbPostbaseIV;  ! to be easy to V
+@~fyukagh[V.V]:^%{.at.%}yukagh                 VerbPostbaseIV;  ! to be ready to V; to be about to V; to be all set to V; to make a move toward V-ing
+@~fyuwhaagh[V.V]:^%{.at.%}yuwhaagh             VerbPostbaseIV;  ! to first V; to V in the beginning
+@~–(g)kaayagh[V.V]:^%{.at.%}kaayagh            VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
+@~–(g)kaqsagh[V.V]:^%{.at.%}kaqsagh            VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
++saghagh[V.V]:^saghagh                         VerbPostbaseIV;  ! to try to induce one to V
++(te)snanigh[V.V]:^snanigh                     VerbPostbaseIV;  ! to tell not to V; to forbid one to V
++aghaghte[V.V]:^aghagh%{t%}e                   VerbPostbaseV;   ! to immediately V; to briefly V; to quickly V; to suddenly V
+~aghte[V.V]:^%{.f.%}agh%{t%}e                  VerbPostbaseV;   ! to suddenly V
+@–ghpagte[V.V]:^%{.at.%}ghpag%{t%}e            VerbPostbaseV;   ! to V rapidly, suddenly or in a major way
+–ghraagte[V.V]:^ghraag%{t%}e                   VerbPostbaseV;   ! to be somewhat V-er; to be partly V 
+@~%:(i/u)mafte[V.V]:^%{.at.%}imaf%{t%}e        VerbPostbaseV;   ! how much subject evidently has V-ed!
+@~%:(i/u)mangite[V.V]:^%{.at.%}imangi%{t%}e    VerbPostbaseV;   ! to not have V-ed
+~f–laghate[V.V]:^%{.f.%}lagha%{t%}e            VerbPostbaseV;   ! to have already V-ed together; to V as a group
+@laaghigate[V.V]:^%{.at.%}laaghiga%{t%}e       VerbPostbaseV;   ! to seldom V; to infrequently V; to not V enough; inadequately V
+–lgute[V.V]:^lgu%{t%}e                         VerbPostbaseV;   ! to V together with; to help (object) V
+–llgite[V.V]:^llgi%{t%}e                       VerbPostbaseV;   ! to V poorly
+–llgiite[V.V]:^llgii%{t%}e                     VerbPostbaseV;   ! to become a poor V-er
+–mrugnite[V.V]:^mrugni%{t%}e                   VerbPostbaseV;   ! to seem to be somewhat V 
+@~fnaqute[V.V]:^%{.at.%}naqu%{t%}e             VerbPostbaseV;   ! to try to V
+@~f–neghllugte[V.V]:^%{.at.%}neghllug%{t%}e    VerbPostbaseV;   ! to V wrongly or with difficulty
+@–nghiighte[V.V]:^%{.at.%}nghiigh%{t%}e        VerbPostbaseV;   ! to V to a large extent; to V in a big way
+@~fniite[V.V]:^%{.at.%}nii%{t%}e               VerbPostbaseV;   ! to not cause one to V
+@–nqegte[V.V]:^%{.at.%}nqeg%{t%}e              VerbPostbaseV;   ! to V easily; to V readily
+@–nqigte[V.V]:^%{.at.%}nqig%{t%}e              VerbPostbaseV;   ! to V again
+–pagigate[V.V]:^pagiga%{t%}e                   VerbPostbaseV;   ! to V infrequently; to seldom V 
+–pagite[V.V]:^pagi%{t%}e                       VerbPostbaseV;   ! for there not to be much V-ness
+–pagnaanghite[V.V]:^pagnaanghi%{t%}e           VerbPostbaseV;   ! to not V too much, very much in the future 
++pagningite[V.V]:^pagningi%{t%}e               VerbPostbaseV;   ! to not be able to V; cannot V
+–pagumangite[V.V]:^pagumangi%{t%}e             VerbPostbaseV;   ! to not have V-ed so much
++panghite[V.V]:^panghi%{t%}e                   VerbPostbaseV;   ! to insufficiently V; to not V enough
+–panghite[V.V]:^panghi%{t%}e                   VerbPostbaseV;   ! to insufficiently V; to not V enough
+–pigte[V.V]:^pig%{t%}e                         VerbPostbaseV;   ! to be very V
+~–qaghte[V.V]:^%{.f.%}qagh%{t%}e               VerbPostbaseV;   ! to suddenly V
+–qiigate[V.V]:^qiiga%{t%}e                     VerbPostbaseV;   ! to never briefly V
+~–qite[V.V]:^%{.f.%}qi%{t%}e                   VerbPostbaseV;   ! to encounter V
+~(q/t)uute[V.V]:^%{.f.%}quu%{t%}e              VerbPostbaseV;   ! to V as a group; to V together
+@~f–ragkiighute[V.V]:^%{.at.%}ragkiighu%{t%}e  VerbPostbaseV;   ! to V quickly
+@~f–rakegte[V.V]:^%{.at.%}rakeg%{t%}e          VerbPostbaseV;   ! to V quickly
++sugnite[V.V]:^sugni%{t%}e                     VerbPostbaseV;   ! to seem to be V-ing
+@~%:(u)te[V.V]:^%{.at.%}u%{t%}e                VerbPostbaseV;   ! to V for; to V together with; to V each other
+@~fyaghpete[V.V]:^%{.at.%}yaghpe%{t%}e         VerbPostbaseV;   ! to evidently have V-ed but in vain
+@~fyaghqaaghte[V.V]:^%{.at.%}yaghqaagh%{t%}e   VerbPostbaseV;   ! to become necessary to V; to have to V now
++yaghqiite[V.V]:^yaghqii%{t%}e                 VerbPostbaseV;   ! to not to have to V
+@~fyaaghte[V.V]:^%{.at.%}yaagh%{t%}e           VerbPostbaseV;   ! to learn to V
+@~fyagute[V.V]:^%{.at.%}yagu%{t%}e             VerbPostbaseV;   ! to reach a state of V-ing
+@~f–yiite[V.V]:^%{.at.%}yii%{t%}e              VerbPostbaseV;   ! to poorly V habitually
++yugniite[V.V]:^yugnii%{t%}e                   VerbPostbaseV;   ! to not find it easy to V; to not want to V
+@~–(g)kayugughte[V.V]:^%{.at.%}kayugugh%{t%}e  VerbPostbaseV;   ! to become able to V
++(te)sigate[V.V]:^siga%{t%}e                   VerbPostbaseV;   ! to prevent or keep one from V-ing; to not allow one to V; to not let one V
++(te)snaanghite[V.V]:^snaanghi%{t%}e           VerbPostbaseV;   ! to tell one not to V in the future; to forbid one from V-ing in the future
++(te)ste[V.V]:^s%{t%}e                         VerbPostbaseV;   ! to cause one to V; to allow one to V; to make one V; to let one V; to have one V
+(pete)fte[V.V]:^f%{t%}e                        VerbPostbaseV;   ! to evidently V or have V-ed
++te[V.V]:^%{t%}e                               VerbPostbaseV;   ! to act on so as to cause to V
+–llghite[V.V]:^llghi%{t%}e*                    VerbPostbaseVI;  ! to not V
+@~fnaanghite[V.V]:^%{.at.%}naanghi%{t%}e*      VerbPostbaseVI;  ! to not V in the future; won't V
+@–nghite[V.V]:^%{.at.%}neghi%{t%}e**           VerbPostbaseVI;  ! to not V
+@~%:(ng)igate[V.V]:^%{.at.%}iga%{t%}e*         VerbPostbaseVI;  ! to never V; to not be V-ing at the present time
++pagunghite[V.V]:^pagunghi%{t%}e**             VerbPostbaseVI;  ! to not be sufficiently V
+–pagunghite[V.V]:^pagunghi%{t%}e**             VerbPostbaseVI;  ! to not be sufficiently V
 
 @~%:(i/u)ma[V.N]:^%{.at.%}ima              NounPostbaseI;    ! one who V-s
 @–lghii[V.N]:^%{.at.%}lghii                NounPostbaseI;    ! the one that V-ed
