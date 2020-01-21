@@ -12,7 +12,7 @@ interactive: ess.foma ess.lexc exceptions.lexc parallel.lexc
 	foma -l ess.foma -e "push Grammar"
 
 
-test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-emotionalroots test-posturalroots test-enclitics
+test: test-ch2 test-ch3 test-ch4 test-ch5 test-ch6 test-ch7 test-ch8 test-ch9 test-ch10 test-ch11 test-ch12 test-ch13 test-ch14 test-ch15 test-ch17 test-ch18 test-emotionalroots test-posturalroots test-enclitics test-postbases
 
 test-ch2: tests/jacobson_examples/jacobson_ch2.tsv ess.fomabin
 	@cut -f 1 tests/jacobson_examples/jacobson_ch2.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/jacobson_examples/jacobson_ch2.tsv)' && echo "Jacobson (2001) Ch2 - PASS" || echo "Jacobson (2001) Ch2 - FAIL"
@@ -70,6 +70,11 @@ test-posturalroots: tests/badten_examples/postural_roots.tsv ess.fomabin
 
 test-enclitics: tests/badten_examples/enclitics.tsv ess.fomabin
 	@cut -f 1 tests/badten_examples/enclitics.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/enclitics.tsv)' && echo "Badten (2008) Enclitics - PASS" || echo "Badten (2008) Enclitics - FAIL"
+
+test-postbases: tests/badten_examples/*-postbases.tsv ess.fomabin
+	@cut -f 1 tests/badten_examples/A-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/A-postbases.tsv)' && echo "Badten (2008) A-Postbases - PASS" || echo "Badten (2008) A-Postbases - FAIL"
+	@cut -f 1 tests/badten_examples/E-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/E-postbases.tsv)' && echo "Badten (2008) E-Postbases - PASS" || echo "Badten (2008) E-Postbases - FAIL"
+	@cut -f 1 tests/badten_examples/F-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/F-postbases.tsv)' && echo "Badten (2008) F-Postbases - PASS" || echo "Badten (2008) F-Postbases - FAIL"
 
 
 clean:
