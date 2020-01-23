@@ -75,6 +75,7 @@ test-postbases: tests/badten_examples/*-postbases.tsv ess.fomabin
 	@cut -f 1 tests/badten_examples/A-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/A-postbases.tsv)' && echo "Badten (2008) A-Postbases - PASS" || echo "Badten (2008) A-Postbases - FAIL"
 	@cut -f 1 tests/badten_examples/E-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/E-postbases.tsv)' && echo "Badten (2008) E-Postbases - PASS" || echo "Badten (2008) E-Postbases - FAIL"
 	@cut -f 1 tests/badten_examples/F-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/F-postbases.tsv)' && echo "Badten (2008) F-Postbases - PASS" || echo "Badten (2008) F-Postbases - FAIL"
+	@cut -f 1 tests/badten_examples/G-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/G-postbases.tsv)' && echo "Badten (2008) G-Postbases - PASS" || echo "Badten (2008) G-Postbases - FAIL"
 
 
 clean:

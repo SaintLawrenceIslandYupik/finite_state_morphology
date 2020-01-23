@@ -2,23 +2,29 @@
 LEXICON Numeral
 !==============
 
-ataasiq          #; ! one
-maalghuk         #; ! two
-pingayut         #; ! three
-estamat          #; ! four
-tallimat         #; ! five
-aghvinlek        #; ! six
-maaghraghvinlek  #; ! seven
-pingayuneng      #; ! eight
-estamaneng       #; ! nine
-inglulek         #; ! one having a complement
-qula             #; ! ten 
-siipneqluku      #; ! having a remainder of one
-siipneqlukek     #; ! having a remainder of two
-siipneqluki      #; ! having a remainder
-akimigaq         #; ! fifteen
-yuginaq          #; ! twenty
-pingayuneng      #; ! 'qula pingayuneng inglulek siipneqluku'
-estamaneng       #; ! 'qula estamaneng inglulek siipneqluku'
+ataasiq          NumeralPostbase; ! one
+maalghuk         NumeralPostbase; ! two
+pingayut         NumeralPostbase; ! three
+estamat          NumeralPostbase; ! four
+tallimat         NumeralPostbase; ! five
+aghvinlek        NumeralPostbase; ! six
+maaghraghvinlek  NumeralPostbase; ! seven
+pingayuneng      NumeralPostbase; ! eight
+estamaneng       NumeralPostbase; ! nine
+inglulek         NumeralPostbase; ! one having a complement
+qula             NumeralPostbase; ! ten 
+siipneqluku      NumeralPostbase; ! having a remainder of one
+siipneqlukek     NumeralPostbase; ! having a remainder of two
+siipneqluki      NumeralPostbase; ! having a remainder
+akimigaq         NumeralPostbase; ! fifteen
+yuginaq          NumeralPostbase; ! twenty
+pingayuneng      NumeralPostbase; ! 'qula pingayuneng inglulek siipneqluku'
+estamaneng       NumeralPostbase; ! 'qula estamaneng inglulek siipneqluku'
+
+!======================
+LEXICON NumeralPostbase
+!======================
+
+–gnegh[N.N]:%{.m.%}gnegh  NounInflVII; ! N (number) of things; N (number) of groups
 
 
