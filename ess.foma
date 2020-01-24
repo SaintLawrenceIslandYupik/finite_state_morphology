@@ -107,19 +107,20 @@ define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not 
 ! CONSONANT-RELATED RULES
 !-------------------------
 
-define DropFinalC g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -g
-                  g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -ghw
-                  g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC         .o. ! assimilate gh- onset to dropped -w
-                  g h -> w     || %{k%} w         "^" %{%.m%.%} _ VoicedC           .o. ! assimilate gh- onset to dropped -w
-                    g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ] .o. ! assimilate g- onset to dropped -gh
-                    k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -ghw
-                    k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -gh
-                    k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -w
-                  g g -> g h h ||             g h "^" %{%.m%.%} _                   .o. ! assimilate gg- onset to dropped -gh [Jacobson (2001) p.66]
-  [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
-  [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop -g in root-final -gh, -gh in -ghw
-           MultiCharC -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
-            %{%.m%.%} -> 0                                                          ;
+define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate ghh- onset to dropped -w
+                    g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -g
+                    g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -ghw
+                    g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC         .o. ! assimilate gh- onset to dropped -w
+                    g h -> w     || %{k%} w         "^" %{%.m%.%} _ VoicedC           .o. ! assimilate gh- onset to dropped -w
+                      g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ] .o. ! assimilate g- onset to dropped -gh
+                      k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -ghw
+                      k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -gh
+                      k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -w
+                    g g -> g h h ||             g h "^" %{%.m%.%} _                   .o. ! assimilate gg- onset to dropped -gh [Jacobson (2001) p.66]
+    [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
+    [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop -g in root-final -gh, -gh in -ghw
+             MultiCharC -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
+              %{%.m%.%} -> 0                                                          ;
 
 
 define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! drop weak -gh from the root
@@ -193,7 +194,9 @@ define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. !
                           %{AI%} -> a   ||                 FullVowel "^" _ .o.
                           %{GI%} -> 0                                      ;
 
-define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
+define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g   ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
+!            [..] -> g || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] e "^" _ k a ;   ! @~sf–(g)ke/ka [Badten (2008) p.617]
+
 
 define Uteta e -> a || "^" [ %{%.at%.%} | %{%.sf%.%} | %{%.f%.%} | %{%.c%.%} ] u %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o. ! @~:(u)te [Jacobson (2001) p.116]
              e -> a || "^"                                                       %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g ;

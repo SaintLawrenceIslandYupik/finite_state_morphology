@@ -2,22 +2,23 @@
 LEXICON Numeral
 !==============
 
-ataasiq          NumeralPostbase; ! one
-maalghuk         NumeralPostbase; ! two
+ataasigh         NumeralPostbase; ! one
+maalghug         NumeralPostbase; ! two
+malghug          NumeralPostbase; ! two
 pingayut         NumeralPostbase; ! three
 estamat          NumeralPostbase; ! four
 tallimat         NumeralPostbase; ! five
-aghvinlek        NumeralPostbase; ! six
-maaghraghvinlek  NumeralPostbase; ! seven
+aghvinleg        NumeralPostbase; ! six
+maaghraghvinleg  NumeralPostbase; ! seven
 pingayuneng      NumeralPostbase; ! eight
 estamaneng       NumeralPostbase; ! nine
-inglulek         NumeralPostbase; ! one having a complement
+ingluleg         NumeralPostbase; ! one having a complement
 qula             NumeralPostbase; ! ten 
 siipneqluku      NumeralPostbase; ! having a remainder of one
-siipneqlukek     NumeralPostbase; ! having a remainder of two
+siipneqlukeg     NumeralPostbase; ! having a remainder of two
 siipneqluki      NumeralPostbase; ! having a remainder
-akimigaq         NumeralPostbase; ! fifteen
-yuginaq          NumeralPostbase; ! twenty
+akimigagh        NumeralPostbase; ! fifteen
+yuginagh         NumeralPostbase; ! twenty
 pingayuneng      NumeralPostbase; ! 'qula pingayuneng inglulek siipneqluku'
 estamaneng       NumeralPostbase; ! 'qula estamaneng inglulek siipneqluku'
 
@@ -25,6 +26,7 @@ estamaneng       NumeralPostbase; ! 'qula estamaneng inglulek siipneqluku'
 LEXICON NumeralPostbase
 !======================
 
-–gnegh[N.N]:%{.m.%}gnegh  NounInflVII; ! N (number) of things; N (number) of groups
+–ghqe[N.V]:^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
+–gnegh[N.N]:^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 
 

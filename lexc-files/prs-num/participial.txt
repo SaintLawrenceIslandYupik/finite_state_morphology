@@ -51,7 +51,7 @@ LEXICON IntrPtcpAlternate
 !============================
 
 !----------|---------------|--------------|
-[3Sg]:^   Enclitic; [1Sg]:^nga   Enclitic; [2Sg]:^ten  Enclitic;
+[3Sg]:^q  Enclitic; [1Sg]:^nga   Enclitic; [2Sg]:^ten  Enclitic;
 [3Pl]:^t  Enclitic; [1Pl]:^kut   Enclitic; [2Pl]:^si   Enclitic;
 [3Du]:^k  Enclitic; [1Du]:^kung  Enclitic; [2Du]:^tek  Enclitic;
 !----------|---------------|--------------|
@@ -67,12 +67,13 @@ LEXICON TrnsPtcpAlternate
 [3Pl][3Sg]:^ngat       Enclitic; [3Pl][3Pl]:^ngit       Enclitic; [3Pl][3Du]:^gket        Enclitic;
 [3Du][3Sg]:^ngit       Enclitic; [3Du][3Pl]:^ngik       Enclitic; [3Du][3Du]:^gket        Enclitic;
 !-----------------------|-------------------------|--------------------------|
-[1Sg][3Sg]:^gka        Enclitic; [1Sg][3Pl]:^nka        Enclitic; [1Sg][3Du]:^gka         Enclitic;
-[1Pl][3Sg]:^vut        Enclitic; [1Pl][3Pl]:^put        Enclitic; [1Pl][3Du]:^gput        Enclitic;
+[1Sg][3Sg]:^ghqa        Enclitic; [1Sg][3Pl]:^nka        Enclitic; [1Sg][3Du]:^ghqa         Enclitic;
+[1Pl][3Sg]:^vut        Enclitic; [1Pl][3Pl]:^put        Enclitic; [1Pl][3Du]:^ghput        Enclitic;
 [1Du][3Sg]:^vung       Enclitic; [1Du][3Pl]:^pung       Enclitic; [1Du][3Du]:^gpung       Enclitic;
-[2Sg][3Sg]:^n          Enclitic; [2Sg][3Pl]:^ten        Enclitic; [2Sg][3Du]:^gken        Enclitic;
-[2Pl][3Sg]:^zi         Enclitic; [2Pl][3Pl]:^si         Enclitic; [2Pl][3Du]:^gsi         Enclitic;
-[2Du][3Sg]:^yek        Enclitic; [2Du][3Pl]:^tek        Enclitic; [2Du][3Du]:^gtek        Enclitic;
+!-----------------------|-------------------------|--------------------------|
+[2Sg][3Sg]:^n          Enclitic; [2Sg][3Pl]:^ten        Enclitic; [2Sg][3Du]:^ghqen        Enclitic;
+[2Pl][3Sg]:^zi         Enclitic; [2Pl][3Pl]:^si         Enclitic; [2Pl][3Du]:^ghsi         Enclitic;
+[2Du][3Sg]:^yek        Enclitic; [2Du][3Pl]:^tek        Enclitic; [2Du][3Du]:^ghtek        Enclitic;
 !-----------------------|-------------------------|--------------------------|
 [3Sg][1Sg]:^anga       Enclitic; [3Sg][1Pl]:^inkut      Enclitic; [3Sg][1Du]:^inkung      Enclitic;
 [3Pl][1Sg]:^atnga      Enclitic; [3Pl][1Pl]:^inkut      Enclitic; [3Pl][1Du]:^inkung      Enclitic;

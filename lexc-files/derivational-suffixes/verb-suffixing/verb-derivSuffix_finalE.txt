@@ -36,7 +36,9 @@ LEXICON VerbPostbaseII
 @~fyuneghtu[V.V]:^%{.f.%}yuneghtu             VerbPostbaseI;   ! to love to V
 ~i[V.V]:^%{.f.%}i                             VerbPostbaseI;   ! to V something; to suffer something's V-ing
 @~–(g)kau[V.V]:^%{.f.%}kau                    VerbPostbaseI;   ! to have V-ed; to have been V-ed
-~–(g)kayugu[V.V]:^%{.f.%}kayugu               VerbPostbaseI;   ! to be able to V; can V
+@~–(g)kau[V.V]:^gkau                          VerbPostbaseI;   ! to have V-ed; to have been V-ed
+@~–(g)kayugu[V.V]:^gkayugu                    VerbPostbaseI;   ! to be able to V; can V
+@~–(g)kayugu[V.V]:^%{.f.%}kayugu              VerbPostbaseI;   ! to be able to V; can V
 @~fni[V.V]:^%{.f.%}ni                         VerbPostbaseI;   ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
 ~(g)aqe[V.V]:^%{.f.%}aqe                      VerbPostbaseII;  ! to be currently V-ing; to V now and then; to always V
 ––iqe[V.V]:^iqe                               VerbPostbaseII;  ! to have trouble with one's V-ing over a period of time
@@ -55,6 +57,7 @@ LEXICON VerbPostbaseII
 @~fvike[V.V]:^%{.f.%}vike                     VerbPostbaseII;  ! to have as a place or as object of one's V-ing
 @~fyaghqaqe[V.V]:^%{.f.%}yaghqaqe             VerbPostbaseII;  ! to need to V; to be supposed to V; to V in the future
 @~f–yiilliqe[V.V]:^%{.f.%}yiilliqe            VerbPostbaseII;  ! to have trouble V-ing
+@~–(g)kaqe[V.V]:^gkaqe                        VerbPostbaseII;  ! to have V-ed (him/it) 
 @~–(g)kaqe[V.V]:^%{.f.%}kaqe                  VerbPostbaseII;  ! to have V-ed (him/it) 
 @~fnayuke[V.V]:^%{.f.%}nayuke                 VerbPostbaseII;  ! to think that one might V
 @~fmiqe[V.V]:^%{.f.%}miqe                     VerbPostbaseII;  ! to compel one to V; to make one V
@@ -164,7 +167,9 @@ LEXICON VerbPostbaseII
 @~fyukagh[V.V]:^%{.f.%}yukagh                 VerbPostbaseIV;  ! to be ready to V; to be about to V; to be all set to V; to make a move toward V-ing
 @~fyuwhaagh[V.V]:^%{.f.%}yuwhaagh             VerbPostbaseIV;  ! to first V; to V in the beginning
 @~–(g)kaayagh[V.V]:^%{.f.%}kaayagh            VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
+@~–(g)kaayagh[V.V]:^gkaayagh                  VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
 @~–(g)kaqsagh[V.V]:^%{.f.%}kaqsagh            VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
+@~–(g)kaqsagh[V.V]:^gkaqsagh                  VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
 +saghagh[V.V]:^saghagh                        VerbPostbaseIV;  ! to try to induce one to V
 +(te)snanigh[V.V]:^snanigh                    VerbPostbaseIV;  ! to tell not to V; to forbid one to V
 +aghaghte[V.V]:^aghagh%{t%}e                  VerbPostbaseV;   ! to immediately V; to briefly V; to quickly V; to suddenly V
