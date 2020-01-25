@@ -144,6 +144,13 @@ define VelarUvularRounding       g -> w         || [ i | a ] u _ [ C | V - u ] .
                                  q -> q w       || [ C | V - u ] _ u [ i | a ] ;
 
 
+define DropFinalVC V -> 0 || _ ( C | %{g%} | %{k%} ) "^" %{%.mm%.%} .o. 
+                   C -> 0 || _ "^" %{%.mm%.%}                        .o.     
+ [ g | %{g%} ] ( h ) -> 0 || _ "^" %{%.mm%.%}                        .o.
+          MultiCharC -> 0 || _ "^" %{%.mm%.%}                        .o.
+     %{%.mm%.%} -> 0                                                 ;
+
+
 !---------------------------------------
 ! OTHER / MISC MORPHOPHONOLOGICAL RULES
 !---------------------------------------
@@ -388,6 +395,7 @@ define Rules [
     !-------------------------------
     ! consonant-related rules
     !-------------------------------
+    DropFinalVC          .o.
     DropFinalC           .o.
     DropWeakC            .o.
     DropUvular           .o.

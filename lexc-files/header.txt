@@ -28,6 +28,7 @@ Multichar_Symbols
 %{.fL.%}    ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
 %{.sf.%}    ! drop and hop semi-final -e
 %{.m.%}     ! drop root-final consonants
+%{.mm.%}    ! drop root-final vowel + consonant
 %{.at.%}    ! modify root-final -te 
 
 !-----------------------------
