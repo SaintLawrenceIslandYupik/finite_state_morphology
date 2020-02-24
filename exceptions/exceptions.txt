@@ -5,9 +5,9 @@ LEXICON  Exception
 !--------------------------
 ! Demonstrative Exceptions
 !--------------------------
-maakut[Dem]+ghsi:maakughsi                         #;
-ukut[Dem]+ghsi:ukughsi                             #;
-tawaten[Dem]+staaghhagh[N.N]:tawatestaaghha%{g%}h  PostInflIII;
+maakut(DEM)+ghsi:maakughsi                         #;
+ukut(DEM)+ghsi:ukughsi                             #;
+tawaten(DEM)+staaghhagh[N.N]:tawatestaaghha%{g%}h  PostInflIII;
 whani-ete:whaante                                  VerbPostbaseVI;
 
 !-----------------
@@ -26,11 +26,11 @@ kete[All][Sg]:ketmun   #;
 !---------------------------
 ! Interrogtative Exceptions
 !---------------------------
-kina[Q]~%:(ng)u[N.V][Intr][Int][2Sg]:kinanguzin       Enclitic;
-kina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:kinkungutsi      Enclitic;
-qafsina[Q]~%:(ng)u[N.V][Intr][Int][2Pl]:qafsin'gutsi  Enclitic;
-kina[Q]~%:(ng)u[N.V][Intr][Int][3Sg]:kinangaawa       Enclitic;
-kina[Q]~%:(ng)u[N.V][Intr][Int][3Pl]:kinkungaawat     Enclitic;
+kina(WH)~%:(ng)u[N.V][Intr][Int][2Sg]:kinanguzin       Enclitic;
+kina(WH)~%:(ng)u[N.V][Intr][Int][2Pl]:kinkungutsi      Enclitic;
+qafsina(WH)~%:(ng)u[N.V][Intr][Int][2Pl]:qafsin'gutsi  Enclitic;
+kina(WH)~%:(ng)u[N.V][Intr][Int][3Sg]:kinangaawa       Enclitic;
+kina(WH)~%:(ng)u[N.V][Intr][Int][3Pl]:kinkungaawat     Enclitic;
 sa~%:(ng)u[N.V][Intr][Int][3Sg]:sangaawa              Enclitic;
 sa~%:(ng)u[N.V][Intr][Int][3Pl]:sangaawat             Enclitic;
 

@@ -2,31 +2,39 @@
 LEXICON Numeral
 !==============
 
-ataasigh         NumeralPostbase; ! one
-maalghug         NumeralPostbase; ! two
-malghug          NumeralPostbase; ! two
-pingayut         NumeralPostbase; ! three
-estamat          NumeralPostbase; ! four
-tallimat         NumeralPostbase; ! five
-aghvinleg        NumeralPostbase; ! six
-maaghraghvinleg  NumeralPostbase; ! seven
-pingayuneng      NumeralPostbase; ! eight
-estamaneng       NumeralPostbase; ! nine
-ingluleg         NumeralPostbase; ! one having a complement
-qula             NumeralPostbase; ! ten 
-siipneqluku      NumeralPostbase; ! having a remainder of one
-siipneqlukeg     NumeralPostbase; ! having a remainder of two
-siipneqluki      NumeralPostbase; ! having a remainder
-akimigagh        NumeralPostbase; ! fifteen
-yuginagh         NumeralPostbase; ! twenty
-pingayuneng      NumeralPostbase; ! 'qula pingayuneng inglulek siipneqluku'
-estamaneng       NumeralPostbase; ! 'qula estamaneng inglulek siipneqluku'
+ataasigh         NumeralTag; ! one
+maalghug         NumeralTag; ! two
+malghug          NumeralTag; ! two
+pingayut         NumeralTag; ! three
+estamat          NumeralTag; ! four
+tallimat         NumeralTag; ! five
+aghvinleg        NumeralTag; ! six
+maaghraghvinleg  NumeralTag; ! seven
+pingayuneng      NumeralTag; ! eight
+estamaneng       NumeralTag; ! nine
+ingluleg         NumeralTag; ! one having a complement
+qula             NumeralTag; ! ten 
+siipneqluku      NumeralTag; ! having a remainder of one
+siipneqlukeg     NumeralTag; ! having a remainder of two
+siipneqluki      NumeralTag; ! having a remainder
+akimigagh        NumeralTag; ! fifteen
+yuginagh         NumeralTag; ! twenty
+pingayuneng      NumeralTag; ! 'qula pingayuneng inglulek siipneqluku'
+estamaneng       NumeralTag; ! 'qula estamaneng inglulek siipneqluku'
+
+
+!=================
+LEXICON NumeralTag
+!=================
+
+(NUM):0  NumeralPostbase;
+
 
 !======================
 LEXICON NumeralPostbase
 !======================
 
-–ghqe[N.V]:^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
-–gnegh[N.N]:^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
+–ghqe(NUM→V):^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
+–gnegh(NUM→N):^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 
 

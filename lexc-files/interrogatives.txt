@@ -4,13 +4,13 @@ LEXICON Interrogative
 !  love ):
 !===================================
 
-naken[Q]:naken      Enclitic; ! (from) where
-nani[Q]:nani        Enclitic; ! (at) where
-naten[Q]:naten      Enclitic; ! how 
-navek[Q]:navek      Enclitic; ! (to) where
-qakun[Q]:qakun      Enclitic; ! when (in the future)
-qavngaq[Q]:qavngaq  Enclitic; ! when (in the past)
-sameng[Q]:sameng    Enclitic; ! what
+naken    WHTag; ! (from) where
+nani     WHTag; ! (at) where
+naten    WHTag; ! how 
+navek    WHTag; ! (to) where
+qakun    WHTag; ! when (in the future)
+qavngaq  WHTag; ! when (in the past)
+sameng   WHTag; ! what
 
 !------------------------------------------------------------------------
 
@@ -28,7 +28,6 @@ sameng[Q]:sameng    Enclitic; ! what
 !   one-time-use roots and encode these "question-word + ~:(ng)u"
 !   derivations as exceptions.
 !
-!   Cheers to future fieldwork that might be able to figure this out.
 !   -Emily (2019)
 
 !------------------------------------------------------------------------
@@ -39,9 +38,9 @@ sameng[Q]:sameng    Enclitic; ! what
 !
 ! What's the word for 'who'...?
 
-kina[Q]:kina      Enclitic; ! who (SG)
-kinkut[Q]:kinkut  Enclitic; ! who (PL)
-kitum[Q]:kitum    Enclitic; ! whose
+kina    WHTag; ! who (SG)
+kinkut  WHTag; ! who (PL)
+kitum   WHTag; ! whose
 
 !------------------------------------------------------------------------
 
@@ -50,27 +49,34 @@ kitum[Q]:kitum    Enclitic; ! whose
 ! citation form" [Jacobson (2001) p.53], so some overgeneration is
 ! to be expected.
 
-qafsina[Q]:qafsina  NounInflI;
+qafsina(WH):qafsina  NounInflI;
 
 !------------------------------------------------------------------------
 
 ! Question words meaning 'why' follow their own inflectional paradigm
 
-sangavek[Q]:sangavek    Enclitic; why (focused on 2SG SBJ)
-sangafsi[Q]:sangafsi    Enclitic; why (focused on 2PL SBJ)
-sangami[Q]:sangami      Enclitic; why (focused on 3SG SBJ)
-sangameng[Q]:sangameng  Enclitic; why (focused on 3PL SBJ)
+sangavek   WHTag; why (focused on 2SG SBJ)
+sangafsi   WHTag; why (focused on 2PL SBJ)
+sangami    WHTag; why (focused on 3SG SBJ)
+sangameng  WHTag; why (focused on 3PL SBJ)
 
-sangama[Q]:sangama      Enclitic; why (focused on 1SG OBJ)
-sangamta[Q]:sangamta    Enclitic; why (focused on 1PL OBJ)
-sangan[Q]:sangan        Enclitic; why (focused on 3SG OBJ)
-sangita[Q]:sangita      Enclitic; why (focused on 3PL OBJ)
-sangankek[Q]:sangankek  Enclitic; why (focused on 3DU OBJ)
+sangama    WHTag; why (focused on 1SG OBJ)
+sangamta   WHTag; why (focused on 1PL OBJ)
+sangan     WHTag; why (focused on 3SG OBJ)
+sangita    WHTag; why (focused on 3PL OBJ)
+sangankek  WHTag; why (focused on 3DU OBJ)
 
 !------------------------------------------------------------------------
 
 ! Question word 'naligh*' appears to inflect like other noun roots
 
-naligh[Q]:naligh  NounInflIV;
+naligh(WH):naligh  NounInflIV;
+
+
+!============
+LEXICON WHTag
+!============
+
+(WH):0  Enclitic;
 
 

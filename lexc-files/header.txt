@@ -65,8 +65,16 @@ Multichar_Symbols
 !-----------------------------
 ! morphological tags for verbs
 !-----------------------------
+(V)        ! verb root
+(EMO)      ! emotional roots
+(POS)      ! postural roots
+
 [V.V]      ! verb-elaborating derivational suffix
 [V.N]      ! nominalizing derivational suffix
+(EMO→N)    ! emotional root to noun stem postbase
+(EMO→V)    ! emotional root to verb stem postbase
+(POS→STATIVE)  ! postural root to stative form postbase
+(POS→ACTIVE)   ! postural root to active form postbase
 
 [Intr]     ! intransitive (valency)
 [Trns]     ! transitive (valency)
@@ -102,13 +110,17 @@ Multichar_Symbols
 !-------------------------
 ! misc morphological tags
 !-------------------------
-[Augmentive] ! augmentive derivational suffixes [Jacobson (2001) p.127]
-[Encl]       ! enclitic
-[Dem]        ! demonstrative
-[Ptcl]       ! particle
-[Pro]        ! pronoun
-[Q]          ! question word
-[QuantQual]  ! for quantifier-qualifier constructions
+[Augmentive]   ! augmentive derivational suffixes [Jacobson (2001) p.127]
+(DEM)          ! demonstrative
+(NUM)          ! numeral
+(NUM→N)        ! numeral to noun stem
+(NUM→V)        ! numeral to verb stem
+(PTCL)         ! particle
+(PRO)          ! pronoun
+(WH)           ! question word
+(QUANTQUAL)    ! for quantifier-qualifier constructions
+(N→QUANTQUAL)  ! noun stem to quantifier-qualifier postbase
+(V→QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
 [Volitive.Of.Fear]  ! for volitive of fear mood [Jacobson (2001) p.129] 
 
 
