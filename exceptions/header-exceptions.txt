@@ -34,8 +34,10 @@ Multichar_Symbols
 !-----------------------------
 ! morphological tags for nouns
 !-----------------------------
-[N.N]      ! noun-elaborating derivational suffix
-[N.V]      ! verbalizing derivational suffix
+(N)        ! noun root
+
+(N→N)      ! noun-elaborating derivational suffix
+(N→V)      ! verbalizing derivational suffix
 
 [Sg]       ! singular
 [Pl]       ! plural 
@@ -69,8 +71,8 @@ Multichar_Symbols
 (EMO)      ! emotional root
 (POS)      ! postural root
 
-[V.V]      ! verb-elaborating derivational suffix
-[V.N]      ! nominalizing derivational suffix
+(V→V)      ! verb-elaborating derivational suffix
+(V→N)      ! nominalizing derivational suffix
 (EMO→N)    ! emotional root to noun stem postbase
 (EMO→V)    ! emotional root to verb stem postbase
 (POS→STATIVE)  ! postural root to stative form postbase
@@ -121,6 +123,8 @@ Multichar_Symbols
 (QUANTQUAL)    ! for quantifier-qualifier constructions
 (N→QUANTQUAL)  ! noun stem to quantifier-qualifier postbase
 (V→QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
+(N→XCLM)       ! noun stem to exclamation
+(V→XCLM)       ! verb stem to exclamation
 [Volitive.Of.Fear]  ! for volitive of fear mood [Jacobson (2001) p.129] 
 
 

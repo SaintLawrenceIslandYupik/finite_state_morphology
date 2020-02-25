@@ -2,14 +2,14 @@
 LEXICON ParallelForm
 !===================
 
-kuuve@~%:(i/u)ma[V.V]:kuvuma  VerbInflI; ! [Badten (2008) p.625]
+kuuve(V)@~%:(i/u)ma(V→V):kuvuma  VerbInflI; ! [Badten (2008) p.625]
 
 !-------------------------
 ! [Jacobson (2001) p.105]
 !-------------------------
-aqlaghaghte+(te)ste[V.V]@–nghite[V.V][Trns][Subr][_][3Sg]:aqlaghagtestengngunaan  #;
-neghe+(te)ste[V.V]@–nghite[V.V][Trns][Subr][_][3Pl]:neghestengngunaki             #;
-sukangite[Intr][Subr][4Sg]:sukangunani                                            #;
+aqlaghaghte(V)+(te)ste(V→V)@–nghite(V→V)[Trns][Subr][_][3Sg]:aqlaghagtestengngunaan  #;
+neghe(V)+(te)ste(V→V)@–nghite(V→V)[Trns][Subr][_][3Pl]:neghestengngunaki             #;
+sukangite(V)[Intr][Subr][4Sg]:sukangunani                                            #;
 
 !--------------------------------------------------------------------------
 ! certain verb bases in certain circumstances may be used with unpossessed
@@ -17,16 +17,16 @@ sukangite[Intr][Subr][4Sg]:sukangunani                                          
 !   not sure how many other instances like these there are.
 !   implementing these words in any other way would SEVERELY overgenerate.
 !--------------------------------------------------------------------------
-pinigh[Equ][Sg]:pinitun                   #;
-neghe@–nghite[V.V][Erg][Sg]:neghenghitem  #;
-seghlegh[Equ][Sg]:seghletun               #;
-aqlaghaghte[Loc][Sg]:aqlaghaghtemmi       #;
+pinigh(V)[Equ][Sg]:pinitun                   #;
+neghe(V)@–nghite(V→V)[Erg][Sg]:neghenghitem  #;
+seghlegh(N)[Equ][Sg]:seghletun               #;
+aqlaghaghte(V)[Loc][Sg]:aqlaghaghtemmi       #;
 
 !-----------------------------------------------------------
 ! there's a lot of discrepancies in the "~–(g)k" postbases,
 ! specifically in regards to when (g) surfaces, and
 ! whether they should also include "@" [Badten (2008) p.617]
 !-----------------------------------------------------------
-amqeghte@~–(g)ke[V.N]:amqeghtegke  VerbPostbaseII;
+amqeghte(V)@~–(g)ke(V→N):amqeghtegke  VerbPostbaseII;
 
 
