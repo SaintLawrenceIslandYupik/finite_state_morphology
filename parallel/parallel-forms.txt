@@ -17,10 +17,10 @@ sukangite(V)[Intr][Subr][4Sg]:sukangunani                                       
 !   not sure how many other instances like these there are.
 !   implementing these words in any other way would SEVERELY overgenerate.
 !--------------------------------------------------------------------------
-pinigh(V)[Equ][Sg]:pinitun                   #;
-neghe(V)@–nghite(V→V)[Erg][Sg]:neghenghitem  #;
-seghlegh(N)[Equ][Sg]:seghletun               #;
-aqlaghaghte(V)[Loc][Sg]:aqlaghaghtemmi       #;
+pinigh(V)[Equ.Sg]:pinitun                   #;
+neghe(V)@–nghite(V→V)[Rel.Sg]:neghenghitem  #;
+seghlegh(N)[Equ.Sg]:seghletun               #;
+aqlaghaghte(V)[Loc.Sg]:aqlaghaghtemmi       #;
 
 !-----------------------------------------------------------
 ! there's a lot of discrepancies in the "~–(g)k" postbases,
