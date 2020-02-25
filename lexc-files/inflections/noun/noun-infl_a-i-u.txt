@@ -3,167 +3,167 @@ LEXICON NounInflI
 !  for noun roots that end in -a, -i, -u
 !=======================================
 
-!---------------------------------|
-!           ABSOLUTIVE            |
-!---------------------------------|-----------------------------------|------------------------------------|
-[Abs][Sg]:^               PostInflI; [Abs][Pl]:^t              PostInflI; [Abs][Du]:^k               PostInflI;
-!---------------------------------|-----------------------------------|------------------------------------|
-[Abs][Sg][1SgPoss]:^ka    PostInflI; [Abs][Pl][1SgPoss]:^nka   PostInflI; [Abs][Du][1SgPoss]:^gka    PostInflI;
-[Abs][Sg][1PlPoss]:^vut   PostInflI; [Abs][Pl][1PlPoss]:^put   PostInflI; [Abs][Du][1PlPoss]:^gput   PostInflI;
-[Abs][Sg][1DuPoss]:^vung  PostInflI; [Abs][Pl][1DuPoss]:^pung  PostInflI; [Abs][Du][1DuPoss]:^gpung  PostInflI;
-!---------------------------------|-----------------------------------|------------------------------------|
-[Abs][Sg][2SgPoss]:^n     PostInflI; [Abs][Pl][2SgPoss]:^ten   PostInflI; [Abs][Du][2SgPoss]:^gken   PostInflI;
-[Abs][Sg][2PlPoss]:^zi    PostInflI; [Abs][Pl][2PlPoss]:^si    PostInflI; [Abs][Du][2PlPoss]:^gsi    PostInflI;
-[Abs][Sg][2DuPoss]:^yek   PostInflI; [Abs][Pl][2DuPoss]:^ten   PostInflI; [Abs][Du][2DuPoss]:^gtek   PostInflI;
-!---------------------------------|-----------------------------------|------------------------------------|
-[Abs][Sg][3SgPoss]:^nga   PostInflI; [Abs][Pl][3SgPoss]:^ngi   PostInflI; [Abs][Du][3SgPoss]:^kek    PostInflI;
-[Abs][Sg][3PlPoss]:^ngat  PostInflI; [Abs][Pl][3PlPoss]:^ngit  PostInflI; [Abs][Du][3PlPoss]:^gket   PostInflI;
-[Abs][Sg][3DuPoss]:^ngak  PostInflI; [Abs][Pl][3DuPoss]:^ngik  PostInflI; [Abs][Du][3DuPoss]:^gkek   PostInflI;
-!---------------------------------|-----------------------------------|------------------------------------|
-[Abs][Sg][4SgPoss]:^ni    PostInflI; [Abs][Pl][4SgPoss]:^ni    PostInflI; [Abs][Du][4SgPoss]:^gni    PostInflI;
-[Abs][Sg][4PlPoss]:^yeng  PostInflI; [Abs][Pl][4PlPoss]:^teng  PostInflI; [Abs][Du][4PlPoss]:^gteng  PostInflI;
-[Abs][Sg][4DuPoss]:^yek   PostInflI; [Abs][Pl][4DuPoss]:^tek   PostInflI; [Abs][Du][4DuPoss]:^gtek   PostInflI;
-!---------------------------------|-----------------------------------|------------------------------------|
+!-------------------------------|
+!         ABSOLUTIVE            |
+!-------------------------------|---------------------------------|----------------------------------|
+[Abs.Sg]:^             PostInflI; [Abs.Pl]:^t            PostInflI; [Abs.Du]:^k             PostInflI;
+!-------------------------------|---------------------------------|----------------------------------|
+[Abs.1SgPoss.Sg]:^ka   PostInflI; [Abs.1SgPoss.Pl]:^nka  PostInflI; [Abs.1SgPoss.Du]:^gka   PostInflI;
+[Abs.1PlPoss.Sg]:^vut  PostInflI; [Abs.1PlPoss.Pl]:^put  PostInflI; [Abs.1PlPoss.Du]:^gput  PostInflI;
+[Abs.1DuPoss.Sg]:^vung PostInflI; [Abs.1DuPoss.Pl]:^pung PostInflI; [Abs.1DuPoss.Du]:^gpung PostInflI;
+!-------------------------------|---------------------------------|----------------------------------|
+[Abs.2SgPoss.Sg]:^n    PostInflI; [Abs.2SgPoss.Pl]:^ten  PostInflI; [Abs.2SgPoss.Du]:^gken  PostInflI;
+[Abs.2PlPoss.Sg]:^zi   PostInflI; [Abs.2PlPoss.Pl]:^si   PostInflI; [Abs.2PlPoss.Du]:^gsi   PostInflI;
+[Abs.2DuPoss.Sg]:^yek  PostInflI; [Abs.2DuPoss.Pl]:^ten  PostInflI; [Abs.2DuPoss.Du]:^gtek  PostInflI;
+!-------------------------------|---------------------------------|----------------------------------|
+[Abs.3SgPoss.Sg]:^nga  PostInflI; [Abs.3SgPoss.Pl]:^ngi  PostInflI; [Abs.3SgPoss.Du]:^kek   PostInflI;
+[Abs.3PlPoss.Sg]:^ngat PostInflI; [Abs.3PlPoss.Pl]:^ngit PostInflI; [Abs.3PlPoss.Du]:^gket  PostInflI;
+[Abs.3DuPoss.Sg]:^ngak PostInflI; [Abs.3DuPoss.Pl]:^ngik PostInflI; [Abs.3DuPoss.Du]:^gkek  PostInflI;
+!-------------------------------|---------------------------------|----------------------------------|
+[Abs.4SgPoss.Sg]:^ni   PostInflI; [Abs.4SgPoss.Pl]:^ni   PostInflI; [Abs.4SgPoss.Du]:^gni   PostInflI;
+[Abs.4PlPoss.Sg]:^yeng PostInflI; [Abs.4PlPoss.Pl]:^teng PostInflI; [Abs.4PlPoss.Du]:^gteng PostInflI;
+[Abs.4DuPoss.Sg]:^yek  PostInflI; [Abs.4DuPoss.Pl]:^tek  PostInflI; [Abs.4DuPoss.Du]:^gtek  PostInflI;
+!-------------------------------|---------------------------------|----------------------------------|
 
-!----------------------------------|
-!        ERGATIVE (relative)       |
-!----------------------------------|------------------------------------|-------------------------------------|
-[Erg][Sg]:^m               PostInflI; [Erg][Pl]:^t               PostInflI; [Erg][Du]:^k                PostInflI;
-!----------------------------------|------------------------------------|-------------------------------------|
-[Erg][Sg][1SgPoss]:^ma     PostInflI; [Erg][Pl][1SgPoss]:^ma     PostInflI; [Erg][Du][1SgPoss]:^gma     PostInflI;
-[Erg][Sg][1PlPoss]:^mta    PostInflI; [Erg][Pl][1PlPoss]:^mta    PostInflI; [Erg][Du][1PlPoss]:^gemta   PostInflI;
-[Erg][Sg][1DuPoss]:^mtung  PostInflI; [Erg][Pl][1DuPoss]:^mtung  PostInflI; [Erg][Du][1DuPoss]:^gemtung PostInflI;
-!----------------------------------|------------------------------------|-------------------------------------|
-[Erg][Sg][2SgPoss]:^gpek   PostInflI; [Erg][Pl][2SgPoss]:^gpek   PostInflI; [Erg][Du][2SgPoss]:^gpek    PostInflI;
-[Erg][Sg][2PlPoss]:^gpesi  PostInflI; [Erg][Pl][2PlPoss]:^gpesi  PostInflI; [Erg][Du][2PlPoss]:^gpesi   PostInflI;
-[Erg][Sg][2DuPoss]:^gpetek PostInflI; [Erg][Pl][2DuPoss]:^gpetek PostInflI; [Erg][Du][2DuPoss]:^gpetek  PostInflI;
-!----------------------------------|------------------------------------|-------------------------------------|
-[Erg][Sg][3SgPoss]:^ngan   PostInflI; [Erg][Pl][3SgPoss]:^ngan   PostInflI; [Erg][Du][3SgPoss]:^gkenka  PostInflI;
-[Erg][Sg][3PlPoss]:^ngita  PostInflI; [Erg][Pl][3PlPoss]:^ngita  PostInflI; [Erg][Du][3PlPoss]:^gkenka  PostInflI;
-[Erg][Sg][3DuPoss]:^ngita  PostInflI; [Erg][Pl][3DuPoss]:^ngita  PostInflI; [Erg][Du][3DuPoss]:^gkenka  PostInflI;
-!----------------------------------|------------------------------------|-------------------------------------|
-[Erg][Sg][4SgPoss]:^mi     PostInflI; [Erg][Pl][4SgPoss]:^mi     PostInflI; [Erg][Du][4SgPoss]:^gmi     PostInflI;
-[Erg][Sg][4PlPoss]:^meng   PostInflI; [Erg][Pl][4PlPoss]:^meng   PostInflI; [Erg][Du][4PlPoss]:^gmeng   PostInflI;
-[Erg][Sg][4DuPoss]:^meng   PostInflI; [Erg][Pl][4DuPoss]:^meng   PostInflI; [Erg][Du][4DuPoss]:^gmeng   PostInflI;
-!----------------------------------|------------------------------------|-------------------------------------|
+!---------------------------------|
+! RELATIVE (ergative & genitive)  |
+!---------------------------------|-----------------------------------|------------------------------------|
+[Rel.Sg]:^m              PostInflI; [Rel.Pl]:^t              PostInflI; [Rel.Du]:^k               PostInflI;
+!---------------------------------|-----------------------------------|------------------------------------|
+[Rel.1SgPoss.Sg]:^ma     PostInflI; [Rel.1SgPoss.Pl]:^ma     PostInflI; [Rel.1SgPoss.Du]:^gma     PostInflI;
+[Rel.1PlPoss.Sg]:^mta    PostInflI; [Rel.1PlPoss.Pl]:^mta    PostInflI; [Rel.1PlPoss.Du]:^gemta   PostInflI;
+[Rel.1DuPoss.Sg]:^mtung  PostInflI; [Rel.1DuPoss.Pl]:^mtung  PostInflI; [Rel.1DuPoss.Du]:^gemtung PostInflI;
+!---------------------------------|-----------------------------------|------------------------------------|
+[Rel.2SgPoss.Sg]:^gpek   PostInflI; [Rel.2SgPoss.Pl]:^gpek   PostInflI; [Rel.2SgPoss.Du]:^gpek    PostInflI;
+[Rel.2PlPoss.Sg]:^gpesi  PostInflI; [Rel.2PlPoss.Pl]:^gpesi  PostInflI; [Rel.2PlPoss.Du]:^gpesi   PostInflI;
+[Rel.2DuPoss.Sg]:^gpetek PostInflI; [Rel.2DuPoss.Pl]:^gpetek PostInflI; [Rel.2DuPoss.Du]:^gpetek  PostInflI;
+!---------------------------------|-----------------------------------|------------------------------------|
+[Rel.3SgPoss.Sg]:^ngan   PostInflI; [Rel.3SgPoss.Pl]:^ngan   PostInflI; [Rel.3SgPoss.Du]:^gkenka  PostInflI;
+[Rel.3PlPoss.Sg]:^ngita  PostInflI; [Rel.3PlPoss.Pl]:^ngita  PostInflI; [Rel.3PlPoss.Du]:^gkenka  PostInflI;
+[Rel.3DuPoss.Sg]:^ngita  PostInflI; [Rel.3DuPoss.Pl]:^ngita  PostInflI; [Rel.3DuPoss.Du]:^gkenka  PostInflI;
+!---------------------------------|-----------------------------------|------------------------------------|
+[Rel.4SgPoss.Sg]:^mi     PostInflI; [Rel.4SgPoss.Pl]:^mi     PostInflI; [Rel.4SgPoss.Du]:^gmi     PostInflI;
+[Rel.4PlPoss.Sg]:^meng   PostInflI; [Rel.4PlPoss.Pl]:^meng   PostInflI; [Rel.4PlPoss.Du]:^gmeng   PostInflI;
+[Rel.4DuPoss.Sg]:^meng   PostInflI; [Rel.4DuPoss.Pl]:^meng   PostInflI; [Rel.4DuPoss.Du]:^gmeng   PostInflI;
+!---------------------------------|-----------------------------------|------------------------------------|
 
 
 !------------------------------------------|
 !             ABLATIVE MODALIS             |
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
-[Abl.Mod][Sg]:^meng                PostInflI; [Abl.Mod][Pl]:^neng                PostInflI; [Abl.Mod][Du]:^gneng               PostInflI;
+[Abl_Mod.Sg]:^meng                PostInflI; [Abl_Mod.Pl]:^neng                PostInflI; [Abl_Mod.Du]:^gneng               PostInflI;
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
-[Abl.Mod][Sg][1SgPoss]:^mneng      PostInflI; [Abl.Mod][Pl][1SgPoss]:^mneng      PostInflI; [Abl.Mod][Du][1SgPoss]:^gemneng    PostInflI;
-[Abl.Mod][Sg][1PlPoss]:^mnneng     PostInflI; [Abl.Mod][Pl][1PlPoss]:^mnneng     PostInflI; [Abl.Mod][Du][1PlPoss]:^gemnneng   PostInflI;
-[Abl.Mod][Sg][1DuPoss]:^mtegneng   PostInflI; [Abl.Mod][Pl][1DuPoss]:^mtegneng   PostInflI; [Abl.Mod][Du][1DuPoss]:^gemtegneng PostInflI;
+[Abl_Mod.1SgPoss.Sg]:^mneng      PostInflI; [Abl_Mod.1SgPoss.Pl]:^mneng      PostInflI; [Abl_Mod.1SgPoss.Du]:^gemneng    PostInflI;
+[Abl_Mod.1PlPoss.Sg]:^mnneng     PostInflI; [Abl_Mod.1PlPoss.Pl]:^mnneng     PostInflI; [Abl_Mod.1PlPoss.Du]:^gemnneng   PostInflI;
+[Abl_Mod.1DuPoss.Sg]:^mtegneng   PostInflI; [Abl_Mod.1DuPoss.Pl]:^mtegneng   PostInflI; [Abl_Mod.1DuPoss.Du]:^gemtegneng PostInflI;
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
-[Abl.Mod][Sg][2SgPoss]:^gpeneng    PostInflI; [Abl.Mod][Pl][2SgPoss]:^gpeneng    PostInflI; [Abl.Mod][Du][2SgPoss]:^gpeneng    PostInflI;
-[Abl.Mod][Sg][2SgPoss]:^gpegneng   PostInflI; [Abl.Mod][Pl][2SgPoss]:^gpegneng   PostInflI; [Abl.Mod][Du][2SgPoss]:^gpegneng   PostInflI;
-[Abl.Mod][Sg][2PlPoss]:^gpesineng  PostInflI; [Abl.Mod][Pl][2PlPoss]:^gpesineng  PostInflI; [Abl.Mod][Du][2PlPoss]:^gpesineng  PostInflI;
-[Abl.Mod][Sg][2DuPoss]:^gpetegneng PostInflI; [Abl.Mod][Pl][2DuPoss]:^gpetegneng PostInflI; [Abl.Mod][Du][2DuPoss]:^gpetegneng PostInflI;
+[Abl_Mod.2SgPoss.Sg]:^gpeneng    PostInflI; [Abl_Mod.2SgPoss.Pl]:^gpeneng    PostInflI; [Abl_Mod.2SgPoss.Du]:^gpeneng    PostInflI;
+[Abl_Mod.2SgPoss.Sg]:^gpegneng   PostInflI; [Abl_Mod.2SgPoss.Pl]:^gpegneng   PostInflI; [Abl_Mod.2SgPoss.Du]:^gpegneng   PostInflI;
+[Abl_Mod.2PlPoss.Sg]:^gpesineng  PostInflI; [Abl_Mod.2PlPoss.Pl]:^gpesineng  PostInflI; [Abl_Mod.2PlPoss.Du]:^gpesineng  PostInflI;
+[Abl_Mod.2DuPoss.Sg]:^gpetegneng PostInflI; [Abl_Mod.2DuPoss.Pl]:^gpetegneng PostInflI; [Abl_Mod.2DuPoss.Du]:^gpetegneng PostInflI;
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
-[Abl.Mod][Sg][3SgPoss]:^nganeng    PostInflI; [Abl.Mod][Pl][3SgPoss]:^nganeng    PostInflI; [Abl.Mod][Du][3SgPoss]:^gkeneng    PostInflI;
-[Abl.Mod][Sg][3PlPoss]:^ngitneng   PostInflI; [Abl.Mod][Pl][3PlPoss]:^ngitneng   PostInflI; [Abl.Mod][Du][3PlPoss]:^ngitneng   PostInflI;
-[Abl.Mod][Sg][3DuPoss]:^gkeneng    PostInflI; [Abl.Mod][Pl][3DuPoss]:^ngitneng   PostInflI; [Abl.Mod][Du][3DuPoss]:^ngitneng   PostInflI;
+[Abl_Mod.3SgPoss.Sg]:^nganeng    PostInflI; [Abl_Mod.3SgPoss.Pl]:^nganeng    PostInflI; [Abl_Mod.3SgPoss.Du]:^gkeneng    PostInflI;
+[Abl_Mod.3PlPoss.Sg]:^ngitneng   PostInflI; [Abl_Mod.3PlPoss.Pl]:^ngitneng   PostInflI; [Abl_Mod.3PlPoss.Du]:^ngitneng   PostInflI;
+[Abl_Mod.3DuPoss.Sg]:^gkeneng    PostInflI; [Abl_Mod.3DuPoss.Pl]:^ngitneng   PostInflI; [Abl_Mod.3DuPoss.Du]:^ngitneng   PostInflI;
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
-[Abl.Mod][Sg][4SgPoss]:^mineng     PostInflI; [Abl.Mod][Pl][4SgPoss]:^mineng     PostInflI; [Abl.Mod][Du][4SgPoss]:^gmineng    PostInflI;
-[Abl.Mod][Sg][4PlPoss]:^meggneng   PostInflI; [Abl.Mod][Pl][4PlPoss]:^meggneng   PostInflI; [Abl.Mod][Du][4PlPoss]:^gmeggneng  PostInflI;
-[Abl.Mod][Sg][4DuPoss]:^megteneng  PostInflI; [Abl.Mod][Pl][4DuPoss]:^megteneng  PostInflI; [Abl.Mod][Du][4DuPoss]:^gmegteneng PostInflI;
+[Abl_Mod.4SgPoss.Sg]:^mineng     PostInflI; [Abl_Mod.4SgPoss.Pl]:^mineng     PostInflI; [Abl_Mod.4SgPoss.Du]:^gmineng    PostInflI;
+[Abl_Mod.4PlPoss.Sg]:^meggneng   PostInflI; [Abl_Mod.4PlPoss.Pl]:^meggneng   PostInflI; [Abl_Mod.4PlPoss.Du]:^gmeggneng  PostInflI;
+[Abl_Mod.4DuPoss.Sg]:^megteneng  PostInflI; [Abl_Mod.4DuPoss.Pl]:^megteneng  PostInflI; [Abl_Mod.4DuPoss.Du]:^gmegteneng PostInflI;
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
 
 
 !------------------------------------|
 !         LOCATIVE (localis)         |
 !------------------------------------|--------------------------------------|--------------------------------------|
-[Loc][Sg]:^mi                PostInflI; [Loc][Pl]:^ni                PostInflI; [Loc][Du]:^gni               PostInflI;
+[Loc.Sg]:^mi                PostInflI; [Loc.Pl]:^ni                PostInflI; [Loc.Du]:^gni               PostInflI;
 !------------------------------------|--------------------------------------|--------------------------------------|
-[Loc][Sg][1SgPoss]:^mni      PostInflI; [Loc][Pl][1SgPoss]:^mni      PostInflI; [Loc][Du][1SgPoss]:^gemni    PostInflI;
-[Loc][Sg][1PlPoss]:^mnni     PostInflI; [Loc][Pl][1PlPoss]:^mnni     PostInflI; [Loc][Du][1PlPoss]:^gemnni   PostInflI;
-[Loc][Sg][1DuPoss]:^mtegni   PostInflI; [Loc][Pl][1DuPoss]:^mtegni   PostInflI; [Loc][Du][1DuPoss]:^gemtegni PostInflI;
+[Loc.1SgPoss.Sg]:^mni      PostInflI; [Loc.1SgPoss.Pl]:^mni      PostInflI; [Loc.1SgPoss.Du]:^gemni    PostInflI;
+[Loc.1PlPoss.Sg]:^mnni     PostInflI; [Loc.1PlPoss.Pl]:^mnni     PostInflI; [Loc.1PlPoss.Du]:^gemnni   PostInflI;
+[Loc.1DuPoss.Sg]:^mtegni   PostInflI; [Loc.1DuPoss.Pl]:^mtegni   PostInflI; [Loc.1DuPoss.Du]:^gemtegni PostInflI;
 !------------------------------------|--------------------------------------|--------------------------------------|
-[Loc][Sg][2SgPoss]:^gpeni    PostInflI; [Loc][Pl][2SgPoss]:^gpeni    PostInflI; [Loc][Du][2SgPoss]:^gpeni    PostInflI;
-[Loc][Sg][2SgPoss]:^gpegni   PostInflI; [Loc][Pl][2SgPoss]:^gpegni   PostInflI; [Loc][Du][2SgPoss]:^gpegni   PostInflI;
-[Loc][Sg][2PlPoss]:^gpesini  PostInflI; [Loc][Pl][2PlPoss]:^gpesini  PostInflI; [Loc][Du][2PlPoss]:^gpesini  PostInflI;
-[Loc][Sg][2DuPoss]:^gpetegni PostInflI; [Loc][Pl][2DuPoss]:^gpetegni PostInflI; [Loc][Du][2DuPoss]:^gpetegni PostInflI;
+[Loc.2SgPoss.Sg]:^gpeni    PostInflI; [Loc.2SgPoss.Pl]:^gpeni    PostInflI; [Loc.2SgPoss.Du]:^gpeni    PostInflI;
+[Loc.2SgPoss.Sg]:^gpegni   PostInflI; [Loc.2SgPoss.Pl]:^gpegni   PostInflI; [Loc.2SgPoss.Du]:^gpegni   PostInflI;
+[Loc.2PlPoss.Sg]:^gpesini  PostInflI; [Loc.2PlPoss.Pl]:^gpesini  PostInflI; [Loc.2PlPoss.Du]:^gpesini  PostInflI;
+[Loc.2DuPoss.Sg]:^gpetegni PostInflI; [Loc.2DuPoss.Pl]:^gpetegni PostInflI; [Loc.2DuPoss.Du]:^gpetegni PostInflI;
 !------------------------------------|--------------------------------------|--------------------------------------|
-[Loc][Sg][3SgPoss]:^ngani    PostInflI; [Loc][Pl][3SgPoss]:^ngani    PostInflI; [Loc][Du][3SgPoss]:^gkeni    PostInflI;
-[Loc][Sg][3PlPoss]:^ngitni   PostInflI; [Loc][Pl][3PlPoss]:^ngitni   PostInflI; [Loc][Du][3PlPoss]:^ngitni   PostInflI;
-[Loc][Sg][3DuPoss]:^gkeni    PostInflI; [Loc][Pl][3DuPoss]:^ngitni   PostInflI; [Loc][Du][3DuPoss]:^ngitni   PostInflI;
+[Loc.3SgPoss.Sg]:^ngani    PostInflI; [Loc.3SgPoss.Pl]:^ngani    PostInflI; [Loc.3SgPoss.Du]:^gkeni    PostInflI;
+[Loc.3PlPoss.Sg]:^ngitni   PostInflI; [Loc.3PlPoss.Pl]:^ngitni   PostInflI; [Loc.3PlPoss.Du]:^ngitni   PostInflI;
+[Loc.3DuPoss.Sg]:^gkeni    PostInflI; [Loc.3DuPoss.Pl]:^ngitni   PostInflI; [Loc.3DuPoss.Du]:^ngitni   PostInflI;
 !------------------------------------|--------------------------------------|--------------------------------------|
-[Loc][Sg][4SgPoss]:^mini     PostInflI; [Loc][Pl][4SgPoss]:^mini     PostInflI; [Loc][Du][4SgPoss]:^gmini    PostInflI;
-[Loc][Sg][4PlPoss]:^meggni   PostInflI; [Loc][Pl][4PlPoss]:^meggni   PostInflI; [Loc][Du][4PlPoss]:^gmeggni  PostInflI;
-[Loc][Sg][4DuPoss]:^megni    PostInflI; [Loc][Pl][4DuPoss]:^megni    PostInflI; [Loc][Du][4DuPoss]:^gmegni   PostInflI;
-[Loc][Sg][4DuPoss]:^megteni  PostInflI; [Loc][Pl][4DuPoss]:^megteni  PostInflI; [Loc][Du][4DuPoss]:^gmegteni PostInflI;
+[Loc.4SgPoss.Sg]:^mini     PostInflI; [Loc.4SgPoss.Pl]:^mini     PostInflI; [Loc.4SgPoss.Du]:^gmini    PostInflI;
+[Loc.4PlPoss.Sg]:^meggni   PostInflI; [Loc.4PlPoss.Pl]:^meggni   PostInflI; [Loc.4PlPoss.Du]:^gmeggni  PostInflI;
+[Loc.4DuPoss.Sg]:^megni    PostInflI; [Loc.4DuPoss.Pl]:^megni    PostInflI; [Loc.4DuPoss.Du]:^gmegni   PostInflI;
+[Loc.4DuPoss.Sg]:^megteni  PostInflI; [Loc.4DuPoss.Pl]:^megteni  PostInflI; [Loc.4DuPoss.Du]:^gmegteni PostInflI;
 !------------------------------------|--------------------------------------|--------------------------------------|
 
 
 !-------------------------------------|
 !       ALLATIVE (terminalis)         |
 !-------------------------------------|---------------------------------------|---------------------------------------|
-[All][Sg]:^mun                PostInflI; [All][Pl]:^nun                PostInflI; [All][Du]:^gnun               PostInflI;
+[All.Sg]:^mun                PostInflI; [All.Pl]:^nun                PostInflI; [All.Du]:^gnun               PostInflI;
 !-------------------------------------|---------------------------------------|---------------------------------------|
-[All][Sg][1SgPoss]:^mnun      PostInflI; [All][Pl][1SgPoss]:^mnun      PostInflI; [All][Du][1SgPoss]:^gemnun    PostInflI;
-[All][Sg][1PlPoss]:^mnnun     PostInflI; [All][Pl][1PlPoss]:^mnnun     PostInflI; [All][Du][1PlPoss]:^gemnnun   PostInflI;
-[All][Sg][1DuPoss]:^mtegnun   PostInflI; [All][Pl][1DuPoss]:^mtegnun   PostInflI; [All][Du][1DuPoss]:^gemtegnun PostInflI;
+[All.1SgPoss.Sg]:^mnun      PostInflI; [All.1SgPoss.Pl]:^mnun      PostInflI; [All.1SgPoss.Du]:^gemnun    PostInflI;
+[All.1PlPoss.Sg]:^mnnun     PostInflI; [All.1PlPoss.Pl]:^mnnun     PostInflI; [All.1PlPoss.Du]:^gemnnun   PostInflI;
+[All.1DuPoss.Sg]:^mtegnun   PostInflI; [All.1DuPoss.Pl]:^mtegnun   PostInflI; [All.1DuPoss.Du]:^gemtegnun PostInflI;
 !-------------------------------------|---------------------------------------|---------------------------------------|
-[All][Sg][2SgPoss]:^gpenun    PostInflI; [All][Pl][2SgPoss]:^gpenun    PostInflI; [All][Du][2SgPoss]:^gpenun    PostInflI;
-[All][Sg][2SgPoss]:^gpegnun   PostInflI; [All][Pl][2SgPoss]:^gpegnun   PostInflI; [All][Du][2SgPoss]:^gpegnun   PostInflI;
-[All][Sg][2PlPoss]:^gpesinun  PostInflI; [All][Pl][2PlPoss]:^gpesinun  PostInflI; [All][Du][2PlPoss]:^gpesinun  PostInflI;
-[All][Sg][2DuPoss]:^gpetegnun PostInflI; [All][Pl][2DuPoss]:^gpetegnun PostInflI; [All][Du][2DuPoss]:^gpetegnun PostInflI;
+[All.2SgPoss.Sg]:^gpenun    PostInflI; [All.2SgPoss.Pl]:^gpenun    PostInflI; [All.2SgPoss.Du]:^gpenun    PostInflI;
+[All.2SgPoss.Sg]:^gpegnun   PostInflI; [All.2SgPoss.Pl]:^gpegnun   PostInflI; [All.2SgPoss.Du]:^gpegnun   PostInflI;
+[All.2PlPoss.Sg]:^gpesinun  PostInflI; [All.2PlPoss.Pl]:^gpesinun  PostInflI; [All.2PlPoss.Du]:^gpesinun  PostInflI;
+[All.2DuPoss.Sg]:^gpetegnun PostInflI; [All.2DuPoss.Pl]:^gpetegnun PostInflI; [All.2DuPoss.Du]:^gpetegnun PostInflI;
 !-------------------------------------|---------------------------------------|---------------------------------------|
-[All][Sg][3SgPoss]:^nganun    PostInflI; [All][Pl][3SgPoss]:^nganun    PostInflI; [All][Du][3SgPoss]:^gkenun    PostInflI;
-[All][Sg][3PlPoss]:^ngitnun   PostInflI; [All][Pl][3PlPoss]:^ngitnun   PostInflI; [All][Du][3PlPoss]:^ngitnun   PostInflI;
-[All][Sg][3DuPoss]:^gkenun    PostInflI; [All][Pl][3DuPoss]:^ngitnun   PostInflI; [All][Du][3DuPoss]:^ngitnun   PostInflI;
+[All.3SgPoss.Sg]:^nganun    PostInflI; [All.3SgPoss.Pl]:^nganun    PostInflI; [All.3SgPoss.Du]:^gkenun    PostInflI;
+[All.3PlPoss.Sg]:^ngitnun   PostInflI; [All.3PlPoss.Pl]:^ngitnun   PostInflI; [All.3PlPoss.Du]:^ngitnun   PostInflI;
+[All.3DuPoss.Sg]:^gkenun    PostInflI; [All.3DuPoss.Pl]:^ngitnun   PostInflI; [All.3DuPoss.Du]:^ngitnun   PostInflI;
 !-------------------------------------|---------------------------------------|---------------------------------------|
-[All][Sg][4SgPoss]:^munnun    PostInflI; [All][Pl][4SgPoss]:^munnun    PostInflI; [All][Du][4SgPoss]:^gmunnun   PostInflI;
-[All][Sg][4PlPoss]:^meggnun   PostInflI; [All][Pl][4PlPoss]:^meggnun   PostInflI; [All][Du][4PlPoss]:^gmeggnun  PostInflI;
-[All][Sg][4DuPoss]:^megtenun  PostInflI; [All][Pl][4DuPoss]:^megtenun  PostInflI; [All][Du][4DuPoss]:^gmegtenun PostInflI;
+[All.4SgPoss.Sg]:^munnun    PostInflI; [All.4SgPoss.Pl]:^munnun    PostInflI; [All.4SgPoss.Du]:^gmunnun   PostInflI;
+[All.4PlPoss.Sg]:^meggnun   PostInflI; [All.4PlPoss.Pl]:^meggnun   PostInflI; [All.4PlPoss.Du]:^gmeggnun  PostInflI;
+[All.4DuPoss.Sg]:^megtenun  PostInflI; [All.4DuPoss.Pl]:^megtenun  PostInflI; [All.4DuPoss.Du]:^gmegtenun PostInflI;
 !-------------------------------------|---------------------------------------|---------------------------------------|
 
 
 !---------------------------------------|
 !          PERLATIVE (vialis)           |
 !---------------------------------------|-----------------------------------------|------------------------------------------|
-[Per][Sg]:^kun                  PostInflI; [Per][Pl]:^tgun                 PostInflI; [Per][Du]:^gnegun                PostInflI;
+[Prl.Sg]:^kun                  PostInflI; [Prl.Pl]:^tgun                 PostInflI; [Prl.Du]:^gnegun                PostInflI;
 !---------------------------------------|-----------------------------------------|------------------------------------------|
-[Per][Sg][1SgPoss]:^mkun        PostInflI; [Per][Pl][1SgPoss]:^mkun        PostInflI; [Per][Du][1SgPoss]:^gemkun       PostInflI;
-[Per][Sg][1PlPoss]:^mteggun     PostInflI; [Per][Pl][1PlPoss]:^mteggun     PostInflI; [Per][Du][1PlPoss]:^gemteggun    PostInflI;
-[Per][Sg][1DuPoss]:^mtegnegun   PostInflI; [Per][Pl][1DuPoss]:^mtegnegun   PostInflI; [Per][Du][1DuPoss]:^gemtegnegun  PostInflI;
+[Prl.1SgPoss.Sg]:^mkun        PostInflI; [Prl.1SgPoss.Pl]:^mkun        PostInflI; [Prl.1SgPoss.Du]:^gemkun       PostInflI;
+[Prl.1PlPoss.Sg]:^mteggun     PostInflI; [Prl.1PlPoss.Pl]:^mteggun     PostInflI; [Prl.1PlPoss.Du]:^gemteggun    PostInflI;
+[Prl.1DuPoss.Sg]:^mtegnegun   PostInflI; [Prl.1DuPoss.Pl]:^mtegnegun   PostInflI; [Prl.1DuPoss.Du]:^gemtegnegun  PostInflI;
 !---------------------------------------|-----------------------------------------|------------------------------------------|
-[Per][Sg][2SgPoss]:^gpegun      PostInflI; [Per][Pl][2SgPoss]:^gpegun      PostInflI; [Per][Du][2SgPoss]:^gpegun       PostInflI;
-[Per][Sg][2PlPoss]:^gpesigun    PostInflI; [Per][Pl][2PlPoss]:^gpesigun    PostInflI; [Per][Du][2PlPoss]:^gpesigun     PostInflI;
-[Per][Sg][2DuPoss]:^gpetegnegun PostInflI; [Per][Pl][2DuPoss]:^gpetegnegun PostInflI; [Per][Du][2DuPoss]:^gpetegnegun  PostInflI;
+[Prl.2SgPoss.Sg]:^gpegun      PostInflI; [Prl.2SgPoss.Pl]:^gpegun      PostInflI; [Prl.2SgPoss.Du]:^gpegun       PostInflI;
+[Prl.2PlPoss.Sg]:^gpesigun    PostInflI; [Prl.2PlPoss.Pl]:^gpesigun    PostInflI; [Prl.2PlPoss.Du]:^gpesigun     PostInflI;
+[Prl.2DuPoss.Sg]:^gpetegnegun PostInflI; [Prl.2DuPoss.Pl]:^gpetegnegun PostInflI; [Prl.2DuPoss.Du]:^gpetegnegun  PostInflI;
 !---------------------------------------|-----------------------------------------|------------------------------------------|
-[Per][Sg][3SgPoss]:^ngakun      PostInflI; [Per][Sg][3SgPoss]:^ngakun      PostInflI; [Per][Du][3SgPoss]:^gkenkun      PostInflI;
-[Per][Sg][3PlPoss]:^ngitgun     PostInflI; [Per][Sg][3PlPoss]:^ngitgun     PostInflI; [Per][Du][3PlPoss]:^ngitgun      PostInflI;
-[Per][Sg][3DuPoss]:^gkenkun     PostInflI; [Per][Pl][3DuPoss]:^ngakun      PostInflI; [Per][Du][3PlPoss]:^ngitgun      PostInflI;
+[Prl.3SgPoss.Sg]:^ngakun      PostInflI; [Prl.Sg.3SgPoss]:^ngakun      PostInflI; [Prl.3SgPoss.Du]:^gkenkun      PostInflI;
+[Prl.3PlPoss.Sg]:^ngitgun     PostInflI; [Prl.Sg.3PlPoss]:^ngitgun     PostInflI; [Prl.3PlPoss.Du]:^ngitgun      PostInflI;
+[Prl.3DuPoss.Sg]:^gkenkun     PostInflI; [Prl.3DuPoss.Pl]:^ngakun      PostInflI; [Prl.3PlPoss.Du]:^ngitgun      PostInflI;
 !---------------------------------------|-----------------------------------------|------------------------------------------|
-[Per][Sg][4SgPoss]:^mikun       PostInflI; [Per][Pl][4SgPoss]:^mikun       PostInflI; [Per][Du][4SgPoss]:^gmikun       PostInflI;
-[Per][Sg][4PlPoss]:^megteggun   PostInflI; [Per][Pl][4PlPoss]:^megteggun   PostInflI; [Per][Du][4PlPoss]:^gmegteggun   PostInflI;
-[Per][Sg][4DuPoss]:^megtegnegun PostInflI; [Per][Pl][4DuPoss]:^megtegnegun PostInflI; [Per][Du][4DuPoss]:^gmegtegnegun PostInflI;
+[Prl.4SgPoss.Sg]:^mikun       PostInflI; [Prl.4SgPoss.Pl]:^mikun       PostInflI; [Prl.4SgPoss.Du]:^gmikun       PostInflI;
+[Prl.4PlPoss.Sg]:^megteggun   PostInflI; [Prl.4PlPoss.Pl]:^megteggun   PostInflI; [Prl.4PlPoss.Du]:^gmegteggun   PostInflI;
+[Prl.4DuPoss.Sg]:^megtegnegun PostInflI; [Prl.4DuPoss.Pl]:^megtegnegun PostInflI; [Prl.4DuPoss.Du]:^gmegtegnegun PostInflI;
 !---------------------------------------|-----------------------------------------|------------------------------------------|
 
 
 !--------------------------------------|
 !          EQUATIVE (equalis)          |
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Equ][Sg]:^tun                 PostInflI; [Equ][Pl]:^stun                PostInflI; [Equ][Du]:^gestun               PostInflI;
+[Equ.Sg]:^tun                 PostInflI; [Equ.Pl]:^stun                PostInflI; [Equ.Du]:^gestun               PostInflI;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Equ][Sg][1SgPoss]:^mtun       PostInflI; [Equ][Pl][1SgPoss]:^mtun       PostInflI; [Equ][Du][1SgPoss]:^gemtun      PostInflI;
-[Equ][Sg][1PlPoss]:^mtestun    PostInflI; [Equ][Pl][1PlPoss]:^mtestun    PostInflI; [Equ][Du][1PlPoss]:^gemtestun   PostInflI;
-[Equ][Sg][1DuPoss]:^mtegestun  PostInflI; [Equ][Pl][1DuPoss]:^mtegestun  PostInflI; [Equ][Du][1DuPoss]:^gemtegestun PostInflI;
+[Equ.1SgPoss.Sg]:^mtun       PostInflI; [Equ.1SgPoss.Pl]:^mtun       PostInflI; [Equ.1SgPoss.Du]:^gemtun      PostInflI;
+[Equ.1PlPoss.Sg]:^mtestun    PostInflI; [Equ.1PlPoss.Pl]:^mtestun    PostInflI; [Equ.1PlPoss.Du]:^gemtestun   PostInflI;
+[Equ.1DuPoss.Sg]:^mtegestun  PostInflI; [Equ.1DuPoss.Pl]:^mtegestun  PostInflI; [Equ.1DuPoss.Du]:^gemtegestun PostInflI;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Equ][Sg][2SgPoss]:^gpetun     PostInflI; [Equ][Pl][2SgPoss]:^gpetun     PostInflI; [Equ][Du][2SgPoss]:^gpetun      PostInflI;
-[Equ][Sg][2PlPoss]:^gpesistun  PostInflI; [Equ][Pl][2PlPoss]:^gpesistun  PostInflI; [Equ][Du][2PlPoss]:^gpesistun   PostInflI;
-[Equ][Sg][2DuPoss]:^gpetegetun PostInflI; [Equ][Pl][2DuPoss]:^gpetegetun PostInflI; [Equ][Du][2DuPoss]:^gpetegetun  PostInflI;
+[Equ.2SgPoss.Sg]:^gpetun     PostInflI; [Equ.2SgPoss.Pl]:^gpetun     PostInflI; [Equ.2SgPoss.Du]:^gpetun      PostInflI;
+[Equ.2PlPoss.Sg]:^gpesistun  PostInflI; [Equ.2PlPoss.Pl]:^gpesistun  PostInflI; [Equ.2PlPoss.Du]:^gpesistun   PostInflI;
+[Equ.2DuPoss.Sg]:^gpetegetun PostInflI; [Equ.2DuPoss.Pl]:^gpetegetun PostInflI; [Equ.2DuPoss.Du]:^gpetegetun  PostInflI;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Equ][Sg][3SgPoss]:^ngatun     PostInflI; [Equ][Sg][3SgPoss]:^ngatun     PostInflI; [Equ][Du][3SgPoss]:^gketun      PostInflI;
-[Equ][Sg][3PlPoss]:^ngitun     PostInflI; [Equ][Sg][3PlPoss]:^ngitun     PostInflI; [Equ][Du][3PlPoss]:^ngitun      PostInflI;
-[Equ][Sg][3DuPoss]:^gketun     PostInflI; [Equ][Pl][3DuPoss]:^ngitun     PostInflI; [Equ][Du][3PlPoss]:^ngitun      PostInflI;
+[Equ.3SgPoss.Sg]:^ngatun     PostInflI; [Equ.Sg.3SgPoss]:^ngatun     PostInflI; [Equ.3SgPoss.Du]:^gketun      PostInflI;
+[Equ.3PlPoss.Sg]:^ngitun     PostInflI; [Equ.Sg.3PlPoss]:^ngitun     PostInflI; [Equ.3PlPoss.Du]:^ngitun      PostInflI;
+[Equ.3DuPoss.Sg]:^gketun     PostInflI; [Equ.3DuPoss.Pl]:^ngitun     PostInflI; [Equ.3PlPoss.Du]:^ngitun      PostInflI;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-[Equ][Sg][4SgPoss]:^mitun      PostInflI; [Equ][Pl][4SgPoss]:^mitun      PostInflI; [Equ][Du][4SgPoss]:^gmitun      PostInflI;
-[Equ][Sg][4PlPoss]:^megestun   PostInflI; [Equ][Pl][4PlPoss]:^megestun   PostInflI; [Equ][Du][4PlPoss]:^gmegestun   PostInflI;
-[Equ][Sg][4DuPoss]:^megestun   PostInflI; [Equ][Pl][4DuPoss]:^megestun   PostInflI; [Equ][Du][4DuPoss]:^gmegestun   PostInflI;
+[Equ.4SgPoss.Sg]:^mitun      PostInflI; [Equ.4SgPoss.Pl]:^mitun      PostInflI; [Equ.4SgPoss.Du]:^gmitun      PostInflI;
+[Equ.4PlPoss.Sg]:^megestun   PostInflI; [Equ.4PlPoss.Pl]:^megestun   PostInflI; [Equ.4PlPoss.Du]:^gmegestun   PostInflI;
+[Equ.4DuPoss.Sg]:^megestun   PostInflI; [Equ.4DuPoss.Pl]:^megestun   PostInflI; [Equ.4DuPoss.Du]:^gmegestun   PostInflI;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 
 
@@ -171,25 +171,25 @@ LEXICON NounInflI
 ! Obsolete Verb Root -ete              |
 !   [Jacobson (2001) p.78]             |
 !--------------------------------------|----------------------------------------|----------------------------------------|
-[Loc][Sg]:^m                VerbRootEte; [Loc][Pl]:^n                VerbRootEte; [Loc][Du]:^gn               VerbRootEte;
+[Loc.Sg]:^m                VerbRootEte; [Loc.Pl]:^n                VerbRootEte; [Loc.Du]:^gn               VerbRootEte;
 !--------------------------------------|----------------------------------------|----------------------------------------|
-[Loc][Sg][1SgPoss]:^mn      VerbRootEte; [Loc][Pl][1SgPoss]:^mn      VerbRootEte; [Loc][Du][1SgPoss]:^gemn    VerbRootEte;
-[Loc][Sg][1PlPoss]:^mnn     VerbRootEte; [Loc][Pl][1PlPoss]:^mnn     VerbRootEte; [Loc][Du][1PlPoss]:^gemnn   VerbRootEte;
-[Loc][Sg][1DuPoss]:^mtegn   VerbRootEte; [Loc][Pl][1DuPoss]:^mtegn   VerbRootEte; [Loc][Du][1DuPoss]:^gemtegn VerbRootEte;
+[Loc.1SgPoss.Sg]:^mn      VerbRootEte; [Loc.1SgPoss.Pl]:^mn      VerbRootEte; [Loc.1SgPoss.Du]:^gemn    VerbRootEte;
+[Loc.1PlPoss.Sg]:^mnn     VerbRootEte; [Loc.1PlPoss.Pl]:^mnn     VerbRootEte; [Loc.1PlPoss.Du]:^gemnn   VerbRootEte;
+[Loc.1DuPoss.Sg]:^mtegn   VerbRootEte; [Loc.1DuPoss.Pl]:^mtegn   VerbRootEte; [Loc.1DuPoss.Du]:^gemtegn VerbRootEte;
 !--------------------------------------|----------------------------------------|----------------------------------------|
-[Loc][Sg][2SgPoss]:^gpen    VerbRootEte; [Loc][Pl][2SgPoss]:^gpen    VerbRootEte; [Loc][Du][2SgPoss]:^gpen    VerbRootEte;
-[Loc][Sg][2SgPoss]:^gpegn   VerbRootEte; [Loc][Pl][2SgPoss]:^gpegn   VerbRootEte; [Loc][Du][2SgPoss]:^gpegn   VerbRootEte;
-[Loc][Sg][2PlPoss]:^gpesin  VerbRootEte; [Loc][Pl][2PlPoss]:^gpesin  VerbRootEte; [Loc][Du][2PlPoss]:^gpesin  VerbRootEte;
-[Loc][Sg][2DuPoss]:^gpetegn VerbRootEte; [Loc][Pl][2DuPoss]:^gpetegn VerbRootEte; [Loc][Du][2DuPoss]:^gpetegn VerbRootEte;
+[Loc.2SgPoss.Sg]:^gpen    VerbRootEte; [Loc.2SgPoss.Pl]:^gpen    VerbRootEte; [Loc.2SgPoss.Du]:^gpen    VerbRootEte;
+[Loc.2SgPoss.Sg]:^gpegn   VerbRootEte; [Loc.2SgPoss.Pl]:^gpegn   VerbRootEte; [Loc.2SgPoss.Du]:^gpegn   VerbRootEte;
+[Loc.2PlPoss.Sg]:^gpesin  VerbRootEte; [Loc.2PlPoss.Pl]:^gpesin  VerbRootEte; [Loc.2PlPoss.Du]:^gpesin  VerbRootEte;
+[Loc.2DuPoss.Sg]:^gpetegn VerbRootEte; [Loc.2DuPoss.Pl]:^gpetegn VerbRootEte; [Loc.2DuPoss.Du]:^gpetegn VerbRootEte;
 !--------------------------------------|----------------------------------------|----------------------------------------|
-[Loc][Sg][3SgPoss]:^ngan    VerbRootEte; [Loc][Pl][3SgPoss]:^ngan    VerbRootEte; [Loc][Du][3SgPoss]:^gken    VerbRootEte;
-[Loc][Sg][3PlPoss]:^ngitn   VerbRootEte; [Loc][Pl][3PlPoss]:^ngitn   VerbRootEte; [Loc][Du][3PlPoss]:^ngitn   VerbRootEte;
-[Loc][Sg][3DuPoss]:^gken    VerbRootEte; [Loc][Pl][3DuPoss]:^ngitn   VerbRootEte; [Loc][Du][3DuPoss]:^ngitn   VerbRootEte;
+[Loc.3SgPoss.Sg]:^ngan    VerbRootEte; [Loc.3SgPoss.Pl]:^ngan    VerbRootEte; [Loc.3SgPoss.Du]:^gken    VerbRootEte;
+[Loc.3PlPoss.Sg]:^ngitn   VerbRootEte; [Loc.3PlPoss.Pl]:^ngitn   VerbRootEte; [Loc.3PlPoss.Du]:^ngitn   VerbRootEte;
+[Loc.3DuPoss.Sg]:^gken    VerbRootEte; [Loc.3DuPoss.Pl]:^ngitn   VerbRootEte; [Loc.3DuPoss.Du]:^ngitn   VerbRootEte;
 !--------------------------------------|----------------------------------------|----------------------------------------|
-[Loc][Sg][4SgPoss]:^min     VerbRootEte; [Loc][Pl][4SgPoss]:^min     VerbRootEte; [Loc][Du][4SgPoss]:^gmin    VerbRootEte;
-[Loc][Sg][4PlPoss]:^meggn   VerbRootEte; [Loc][Pl][4PlPoss]:^meggn   VerbRootEte; [Loc][Du][4PlPoss]:^gmeggn  VerbRootEte;
-[Loc][Sg][4DuPoss]:^megn    VerbRootEte; [Loc][Pl][4DuPoss]:^megn    VerbRootEte; [Loc][Du][4DuPoss]:^gmegn   VerbRootEte;
-[Loc][Sg][4DuPoss]:^megten  VerbRootEte; [Loc][Pl][4DuPoss]:^megten  VerbRootEte; [Loc][Du][4DuPoss]:^gmegten VerbRootEte;
+[Loc.4SgPoss.Sg]:^min     VerbRootEte; [Loc.4SgPoss.Pl]:^min     VerbRootEte; [Loc.4SgPoss.Du]:^gmin    VerbRootEte;
+[Loc.4PlPoss.Sg]:^meggn   VerbRootEte; [Loc.4PlPoss.Pl]:^meggn   VerbRootEte; [Loc.4PlPoss.Du]:^gmeggn  VerbRootEte;
+[Loc.4DuPoss.Sg]:^megn    VerbRootEte; [Loc.4DuPoss.Pl]:^megn    VerbRootEte; [Loc.4DuPoss.Du]:^gmegn   VerbRootEte;
+[Loc.4DuPoss.Sg]:^megten  VerbRootEte; [Loc.4DuPoss.Pl]:^megten  VerbRootEte; [Loc.4DuPoss.Du]:^gmegten VerbRootEte;
 !--------------------------------------|----------------------------------------|----------------------------------------|
 
 

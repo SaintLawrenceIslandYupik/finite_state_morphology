@@ -13,10 +13,10 @@ whani(DEM)-ete:whaante                             VerbPostbaseVI;
 !-----------------
 ! Noun Exceptions
 !-----------------
-alangqugh(N)[Abs][Sg][3SgPoss]:alangqghwa  Enclitic; ! strange velar/uvular rounding rules
-naasqugh(N)[Abs][Sg][3SgPoss]:naasqwa      Enclitic; ! for anatomical noun roots that end
-uyaqugh(N)[Abs][Sg][3SgPoss]:uyaqghwa      Enclitic; ! in -quq [Jacobson p.37]
-yug(N)[Abs][Sg]:yuuk                       Enclitic;
+alangqugh(N)[Abs.3SgPoss.Sg]:alangqghwa  Enclitic; ! strange velar/uvular rounding rules
+naasqugh(N)[Abs.3SgPoss.Sg]:naasqwa      Enclitic; ! for anatomical noun roots that end
+uyaqugh(N)[Abs.3SgPoss.Sg]:uyaqghwa      Enclitic; ! in -quq [Jacobson p.37]
+yug(N)[Abs.Sg]:yuuk                       Enclitic;
 
 Sivuqagh(N)~fmii(N→N):Sivuqaghhmii  NounPostbaseI;
 
@@ -37,16 +37,16 @@ sa(N)~%:(ng)u(N→V)[Intr][Int][3Pl]:sangaawat           Enclitic;
 !--------------------
 ! Postbase Exceptions
 !--------------------
-kaatute(V)~f(a)ghesnagh(V→V)[Abs][Sg]:kaatutaghesnaq  #;
-amqeghte(V)@–ghpagte(V→V):amqeghpag%{t%}e             VerbPostbaseV;
-nenge(V)@–ghpagte(V→V):nengpag%{t%}e                  VerbPostbaseV;
-nuugte(V)@–ghpagte(V→V):nuugpag%{t%}e                 VerbPostbaseV;
-qanigh(N)–ghquute(N→V):qanighquu%{t%}e                VerbPostbaseV; ! used with weather nouns 
-megh(N)–ghquute(N→V):meghquu%{t%}e                    VerbPostbaseV; ! and some others
-alla(N)–ghquute(N→V):allaghquu%{t%}e                  VerbPostbaseV; ! [Badten (2008) p.614]
-eslallug(N)–ghquute(N→V):eslallughquu%{t%}e           VerbPostbaseV;
-gheve(V)–ghraag(V→V):ghevraag                         VerbPostbaseIII;
-ggute(V)––iqe(V→V):ggusiqe                            VerbPostbaseII;
-pi(V)@~%:(i/u)manginagh(V→V)[Abs][Sg]:pimanginaq      #;
+kaatute(V)~f(a)ghesnagh(V→V)[Abs.Sg]:kaatutaghesnaq  #;
+amqeghte(V)@–ghpagte(V→V):amqeghpag%{t%}e            VerbPostbaseV;
+nenge(V)@–ghpagte(V→V):nengpag%{t%}e                 VerbPostbaseV;
+nuugte(V)@–ghpagte(V→V):nuugpag%{t%}e                VerbPostbaseV;
+qanigh(N)–ghquute(N→V):qanighquu%{t%}e               VerbPostbaseV; ! used with weather nouns 
+megh(N)–ghquute(N→V):meghquu%{t%}e                   VerbPostbaseV; ! and some others
+alla(N)–ghquute(N→V):allaghquu%{t%}e                 VerbPostbaseV; ! [Badten (2008) p.614]
+eslallug(N)–ghquute(N→V):eslallughquu%{t%}e          VerbPostbaseV;
+gheve(V)–ghraag(V→V):ghevraag                        VerbPostbaseIII;
+ggute(V)––iqe(V→V):ggusiqe                           VerbPostbaseII;
+pi(V)@~%:(i/u)manginagh(V→V)[Abs.Sg]:pimanginaq      #;
 
 

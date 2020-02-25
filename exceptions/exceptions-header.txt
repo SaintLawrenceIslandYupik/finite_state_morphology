@@ -1,7 +1,5 @@
 !================
-!
 Multichar_Symbols
-!
 !================
 %{g%}  ! for digraph -gh
 %{k%}  ! for digraph -kw
@@ -200,39 +198,9 @@ Multichar_Symbols
 
 
 !===========
-!
 LEXICON Root
-!
 !===========
 
-NounRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
-NounRootII;    ! ends in -g, -w, -ghw
-NounRootIII;   ! ends in weak -gh
-NounRootIV;    ! ends in marked strong -gh
-NounRootV;     ! ends in strong -gh
-NounRootVI;    ! ends in -te
-NounRootVII;   ! has semi-final -e
-NounRootVIII;  ! has final -e that can drop but not hop 
-NounRootIX;    ! has final -e that can drop and hop
-
-ProperNoun;
-
-VerbRootI;     ! ends in -a, -i, -u, -aa, -ii, -uu
-VerbRootII;    ! has final -e
-VerbRootIII;   ! ends in -g, -w, -ghw
-VerbRootIV;    ! ends in -agh, -igh, -ugh
-VerbRootV;     ! ends in -te
-VerbRootVI;    ! ends in special -te 
-VerbRootVII;   ! has semi-final -e
-
-Demonstrative;
-EmotionalRoot;
-Interrogative;
-Numeral;
-Particle;
-PersonalPronoun;
-Positional;
-PosturalRoot;
-QuantifierQualifier;
+Exception;
 
 
