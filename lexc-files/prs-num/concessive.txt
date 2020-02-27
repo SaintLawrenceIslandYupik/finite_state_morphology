@@ -16,63 +16,63 @@ LEXICON TrnsConc
 !     transitive concessive 
 !===========================
 !---------------------------|----------------------------|-----------------------------|
-[3Sg][3Sg]:^agu            Enclitic; [3Sg][3Pl]:^aki           Enclitic; [3Sg][3Du]:^akek           Enclitic;
-[3Pl][3Sg]:^itgu           Enclitic; [3Pl][3Pl]:^itki          Enclitic; [3Pl][3Du]:^itkek          Enclitic;
-[3Du][3Sg]:^agnegu         Enclitic; [3Du][3Pl]:^agneki        Enclitic; [3Du][3Du]:^agnekek        Enclitic;
+[3Sg.3Sg]:^agu            Enclitic; [3Sg.3Pl]:^aki           Enclitic; [3Sg.3Du]:^akek           Enclitic;
+[3Pl.3Sg]:^itgu           Enclitic; [3Pl.3Pl]:^itki          Enclitic; [3Pl.3Du]:^itkek          Enclitic;
+[3Du.3Sg]:^agnegu         Enclitic; [3Du.3Pl]:^agneki        Enclitic; [3Du.3Du]:^agnekek        Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[1Sg][3Sg]:agh^mkun        Enclitic; [1Sg][3Pl]:agh^mki        Enclitic; [1Sg][3Du]:agh^mkek        Enclitic;
-[1Pl][3Sg]:agh^mteggu      Enclitic; [1Pl][3Pl]:agh^mteki      Enclitic; [1Pl][3Du]:agh^mtekek      Enclitic;
-[1Du][3Sg]:agh^mtegnegu    Enclitic; [1Du][3Pl]:agh^mtegneki   Enclitic; [1Du][3Du]:agh^mtegnekek   Enclitic;
+[1Sg.3Sg]:agh^mkun        Enclitic; [1Sg.3Pl]:agh^mki        Enclitic; [1Sg.3Du]:agh^mkek        Enclitic;
+[1Pl.3Sg]:agh^mteggu      Enclitic; [1Pl.3Pl]:agh^mteki      Enclitic; [1Pl.3Du]:agh^mtekek      Enclitic;
+[1Du.3Sg]:agh^mtegnegu    Enclitic; [1Du.3Pl]:agh^mtegneki   Enclitic; [1Du.3Du]:agh^mtegnekek   Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[2Sg][3Sg]:agh^pegu        Enclitic; [2Sg][3Pl]:agh^peki       Enclitic; [2Sg][3Du]:agh^pekek       Enclitic;
-[2Pl][3Sg]:agh^pesigu      Enclitic; [2Pl][3Pl]:agh^pesiki     Enclitic; [2Pl][3Du]:agh^pesikek     Enclitic;
-[2Du][3Sg]:agh^petegnegu   Enclitic; [2Du][3Pl]:agh^petegneki  Enclitic; [2Du][3Du]:agh^petegnekek  Enclitic;
+[2Sg.3Sg]:agh^pegu        Enclitic; [2Sg.3Pl]:agh^peki       Enclitic; [2Sg.3Du]:agh^pekek       Enclitic;
+[2Pl.3Sg]:agh^pesigu      Enclitic; [2Pl.3Pl]:agh^pesiki     Enclitic; [2Pl.3Du]:agh^pesikek     Enclitic;
+[2Du.3Sg]:agh^petegnegu   Enclitic; [2Du.3Pl]:agh^petegneki  Enclitic; [2Du.3Du]:agh^petegnekek  Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[4Sg][3Sg]:agh^migu        Enclitic; [4Sg][3Pl]:agh^miki       Enclitic; [4Sg][3Du]:agh^mikek       Enclitic;
-[4Pl][3Sg]:agh^megteggu    Enclitic; [4Pl][3Pl]:agh^megteki    Enclitic; [4Pl][3Du]:agh^megtekek    Enclitic;
-[4Du][3Sg]:agh^megnegu     Enclitic; [4Du][3Pl]:agh^megneki    Enclitic; [4Du][3Du]:agh^megnekek    Enclitic;
+[4Sg.3Sg]:agh^migu        Enclitic; [4Sg.3Pl]:agh^miki       Enclitic; [4Sg.3Du]:agh^mikek       Enclitic;
+[4Pl.3Sg]:agh^megteggu    Enclitic; [4Pl.3Pl]:agh^megteki    Enclitic; [4Pl.3Du]:agh^megtekek    Enclitic;
+[4Du.3Sg]:agh^megnegu     Enclitic; [4Du.3Pl]:agh^megneki    Enclitic; [4Du.3Du]:agh^megnekek    Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[3Sg][1Sg]:^anga           Enclitic; [3Sg][1Pl]:^inkut         Enclitic; [3Sg][1Du]:^inkung         Enclitic;
-[3Pl][1Sg]:^atnga          Enclitic; [3Pl][1Pl]:^inkut         Enclitic; [3Pl][1Du]:^inkung         Enclitic;
-[3Du][1Sg]:^agnenga        Enclitic; [3Du][1Pl]:^inkut         Enclitic; [3Du][1Du]:^inkung         Enclitic;
+[3Sg.1Sg]:^anga           Enclitic; [3Sg.1Pl]:^inkut         Enclitic; [3Sg.1Du]:^inkung         Enclitic;
+[3Pl.1Sg]:^atnga          Enclitic; [3Pl.1Pl]:^inkut         Enclitic; [3Pl.1Du]:^inkung         Enclitic;
+[3Du.1Sg]:^agnenga        Enclitic; [3Du.1Pl]:^inkut         Enclitic; [3Du.1Du]:^inkung         Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-! no [1--][1--] forms                                                                  |
+! no [1--.1--] forms                                                                  |
 !---------------------------|----------------------------|-----------------------------|
-[2Sg][1Sg]:agh^penga       Enclitic; [2Sg][1Pl]:agh^pekut      Enclitic; [2Sg][1Du]:agh^pekung      Enclitic;
-[2Pl][1Sg]:agh^pesinga     Enclitic; [2Pl][1Pl]:agh^pesikut    Enclitic; [2Pl][1Du]:agh^pesikung    Enclitic;
-[2Du][1Sg]:agh^petegnenga  Enclitic; [2Du][1Pl]:agh^petegnekut Enclitic; [2Du][1Du]:agh^petegnekung Enclitic;
+[2Sg.1Sg]:agh^penga       Enclitic; [2Sg.1Pl]:agh^pekut      Enclitic; [2Sg.1Du]:agh^pekung      Enclitic;
+[2Pl.1Sg]:agh^pesinga     Enclitic; [2Pl.1Pl]:agh^pesikut    Enclitic; [2Pl.1Du]:agh^pesikung    Enclitic;
+[2Du.1Sg]:agh^petegnenga  Enclitic; [2Du.1Pl]:agh^petegnekut Enclitic; [2Du.1Du]:agh^petegnekung Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[4Sg][1Sg]:agh^minga       Enclitic; [4Sg][1Pl]:agh^mikut      Enclitic; [4Sg][1Du]:agh^mikung      Enclitic;
-[4Pl][1Sg]:agh^megtengnga  Enclitic; [4Pl][1Pl]:agh^megtekut   Enclitic; [4Pl][1Du]:agh^megtekung   Enclitic;
-[4Du][1Sg]:agh^megnenga    Enclitic; [4Du][1Pl]:agh^megneku    Enclitic; [4Du][1Du]:agh^megnekung   Enclitic;
+[4Sg.1Sg]:agh^minga       Enclitic; [4Sg.1Pl]:agh^mikut      Enclitic; [4Sg.1Du]:agh^mikung      Enclitic;
+[4Pl.1Sg]:agh^megtengnga  Enclitic; [4Pl.1Pl]:agh^megtekut   Enclitic; [4Pl.1Du]:agh^megtekung   Enclitic;
+[4Du.1Sg]:agh^megnenga    Enclitic; [4Du.1Pl]:agh^megneku    Enclitic; [4Du.1Du]:agh^megnekung   Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[3Sg][2Sg]:^aten           Enclitic; [3Sg][2Pl]:^isi           Enclitic; [3Sg][2Du]:^istek          Enclitic;
-[3Pl][2Sg]:^aten           Enclitic; [3Pl][2Pl]:^isi           Enclitic; [3Pl][2Du]:^istek          Enclitic;
-[3Du][2Sg]:^aten           Enclitic; [3Du][2Pl]:^isi           Enclitic; [3Du][2Du]:^istek          Enclitic;
+[3Sg.2Sg]:^aten           Enclitic; [3Sg.2Pl]:^isi           Enclitic; [3Sg.2Du]:^istek          Enclitic;
+[3Pl.2Sg]:^aten           Enclitic; [3Pl.2Pl]:^isi           Enclitic; [3Pl.2Du]:^istek          Enclitic;
+[3Du.2Sg]:^aten           Enclitic; [3Du.2Pl]:^isi           Enclitic; [3Du.2Du]:^istek          Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[1Sg][2Sg]:agh^mken        Enclitic; [1Sg][2Pl]:agh^msi        Enclitic; [1Sg][2Du]:agh^mtek        Enclitic;
-[1Pl][2Sg]:agh^mken        Enclitic; [1Pl][2Pl]:agh^msi        Enclitic; [1Pl][2Du]:agh^mtek        Enclitic;
-[1Du][2Sg]:agh^mken        Enclitic; [1Du][2Pl]:agh^msi        Enclitic; [1Du][2Du]:agh^mtek        Enclitic;
+[1Sg.2Sg]:agh^mken        Enclitic; [1Sg.2Pl]:agh^msi        Enclitic; [1Sg.2Du]:agh^mtek        Enclitic;
+[1Pl.2Sg]:agh^mken        Enclitic; [1Pl.2Pl]:agh^msi        Enclitic; [1Pl.2Du]:agh^mtek        Enclitic;
+[1Du.2Sg]:agh^mken        Enclitic; [1Du.2Pl]:agh^msi        Enclitic; [1Du.2Du]:agh^mtek        Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-! no [2--][2--] forms                                                                  |
+! no [2--.2--] forms                                                                  |
 !---------------------------|----------------------------|-----------------------------|
-[4Sg][2Sg]:agh^miten       Enclitic; [4Sg][2Pl]:agh^misi       Enclitic; [4Sg][2Du]:agh^mitek       Enclitic;
-[4Pl][2Sg]:agh^miten       Enclitic; [4Pl][2Pl]:agh^misi       Enclitic; [4Pl][2Du]:agh^mitek       Enclitic;
-[4Du][2Sg]:agh^miten       Enclitic; [4Du][2Pl]:agh^misi       Enclitic; [4Du][2Du]:agh^mitek       Enclitic;
+[4Sg.2Sg]:agh^miten       Enclitic; [4Sg.2Pl]:agh^misi       Enclitic; [4Sg.2Du]:agh^mitek       Enclitic;
+[4Pl.2Sg]:agh^miten       Enclitic; [4Pl.2Pl]:agh^misi       Enclitic; [4Pl.2Du]:agh^mitek       Enclitic;
+[4Du.2Sg]:agh^miten       Enclitic; [4Du.2Pl]:agh^misi       Enclitic; [4Du.2Du]:agh^mitek       Enclitic;
 !---------------------------|----------------------------|-----------------------------|
-[3Sg][4Sg]:^atni           Enclitic; [3Sg][4Pl]:^isteng        Enclitic; [3Sg][4Du]:^istek          Enclitic;
-[3Pl][4Sg]:^atni           Enclitic; [3Pl][4Pl]:^isteng        Enclitic; [3Pl][4Du]:^istek          Enclitic;
-[3Du][4Sg]:^atni           Enclitic; [3Du][4Pl]:^isteng        Enclitic; [3Du][4Du]:^istek          Enclitic;
+[3Sg.4Sg]:^atni           Enclitic; [3Sg.4Pl]:^isteng        Enclitic; [3Sg.4Du]:^istek          Enclitic;
+[3Pl.4Sg]:^atni           Enclitic; [3Pl.4Pl]:^isteng        Enclitic; [3Pl.4Du]:^istek          Enclitic;
+[3Du.4Sg]:^atni           Enclitic; [3Du.4Pl]:^isteng        Enclitic; [3Du.4Du]:^istek          Enclitic;
 |---------------------------|----------------------------|-----------------------------|
-[1Sg][4Sg]:agh^mni         Enclitic; [1Sg][4Pl]:agh^mteng      Enclitic; [1Sg][4Du]:agh^mtek        Enclitic;
-[1Pl][4Sg]:agh^mnni        Enclitic; [1Pl][4Pl]:agh^mteng      Enclitic; [1Pl][4Du]:agh^mtek        Enclitic;
-[1Du][4Sg]:agh^mtegnegu    Enclitic; [1Du][4Pl]:agh^mtegnek    Enclitic; [1Du][4Du]:agh^mtegnekek   Enclitic;
+[1Sg.4Sg]:agh^mni         Enclitic; [1Sg.4Pl]:agh^mteng      Enclitic; [1Sg.4Du]:agh^mtek        Enclitic;
+[1Pl.4Sg]:agh^mnni        Enclitic; [1Pl.4Pl]:agh^mteng      Enclitic; [1Pl.4Du]:agh^mtek        Enclitic;
+[1Du.4Sg]:agh^mtegnegu    Enclitic; [1Du.4Pl]:agh^mtegnek    Enclitic; [1Du.4Du]:agh^mtegnekek   Enclitic;
 |---------------------------|----------------------------|-----------------------------|
-[2Sg][4Sg]:agh^pegu        Enclitic; [2Sg][4Pl]:agh^peki       Enclitic; [2Sg][4Du]:agh^pekek       Enclitic;
-[2Pl][4Sg]:agh^pesigu      Enclitic; [2Pl][4Pl]:agh^pesiki     Enclitic; [2Pl][4Du]:agh^pesikek     Enclitic;
-[2Du][4Sg]:agh^petegnegu   Enclitic; [2Du][4Pl]:agh^petegneki  Enclitic; [2Du][4Du]:agh^petegnekek  Enclitic;
+[2Sg.4Sg]:agh^pegu        Enclitic; [2Sg.4Pl]:agh^peki       Enclitic; [2Sg.4Du]:agh^pekek       Enclitic;
+[2Pl.4Sg]:agh^pesigu      Enclitic; [2Pl.4Pl]:agh^pesiki     Enclitic; [2Pl.4Du]:agh^pesikek     Enclitic;
+[2Du.4Sg]:agh^petegnegu   Enclitic; [2Du.4Pl]:agh^petegneki  Enclitic; [2Du.4Du]:agh^petegnekek  Enclitic;
 |---------------------------|----------------------------|-----------------------------|
-! no [4--][4--] forms                                                                  |
+! no [4--.4--] forms                                                                  |
 |---------------------------|----------------------------|-----------------------------|
 
 
