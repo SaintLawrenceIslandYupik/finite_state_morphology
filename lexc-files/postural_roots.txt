@@ -62,15 +62,15 @@ nekevghagh   PosturalRootTag;
 LEXICON PosturalRootTag
 !======================
 
-(POS):0  PosturalRootPostbase;
-(POS):0  QuantQualInfl;
+(POS):0            PosturalRootPostbase;
+(POS→QUANTQUAL):0  QuantQualInfl;
 
 
 !===========================
 LEXICON PosturalRootPostbase
 !===========================
 
-+nga(POS→STATIVE):^nga    VerbPostbaseI; ! to be in the R posture
-+te(POS→ACTIVE):^%{t%}e   VerbPostbaseV; ! to get into the R posture; to put into the R posture
+^+nga(POS→STATIVE):^nga    VerbPostbaseI; ! to be in the R posture
+^+te(POS→ACTIVE):^%{t%}e   VerbPostbaseV; ! to get into the R posture; to put into the R posture
 
 

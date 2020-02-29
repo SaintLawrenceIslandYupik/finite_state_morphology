@@ -109,15 +109,17 @@ Multichar_Symbols
 !-----------------------------
 ! morphological tags for verbs
 !-----------------------------
-(V)        ! verb root
-(EMO)      ! emotional roots
-(POS)      ! postural roots
+(V)             ! verb root
+(EMO)           ! emotional roots
+(POS)           ! postural roots
 
-(V→V)      ! verb-elaborating postbase
-(V→N)      ! nominalizing postbase
-(EMO→N)    ! emotional root to noun stem postbase
-(EMO→V)    ! emotional root to verb stem postbase
-(POS→STATIVE)  ! postural root to stative form postbase
+(V→V)           ! verb-elaborating postbase
+(V→N)           ! nominalizing postbase
+(EMO→N)         ! emotional root to noun stem postbase
+(EMO→V)         ! emotional root to verb stem postbase
+(POS→STATIVE)   ! postural root to stative form postbase
+(POS→ACTIVE)    ! postural root to active form postbase
+(POS→QUANTQUAL) ! postural root to quantifier-qualifier construction
 
 [Ind.Intr]      ! intransitive indicative mood
 [Ind.Trns]      ! transitive indicative mood
@@ -262,6 +264,7 @@ Multichar_Symbols
 (V→QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
 (N→XCLM)       ! noun stem to exclamation
 (V→XCLM)       ! verb stem to exclamation
+(VOC)          ! vocative
 [Volitive.Of.Fear]  ! for volitive of fear mood [Jacobson (2001) p.129] 
 
 

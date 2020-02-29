@@ -6,16 +6,16 @@ LEXICON VerbInflVII
 !~~~~~~~~~~~~
 ! indicative
 !~~~~~~~~~~~~
-[Ind.Intr]:^tu              IntrInd;
-[Ind.Trns]:^%{.sf.%}%{G%}a  TrnsInd;
+^[Ind.Intr]:^tu              IntrInd;
+^[Ind.Trns]:^%{.sf.%}%{G%}a  TrnsInd;
 
 !~~~~~~~~~~~~~
 ! participial
 !~~~~~~~~~~~~~
-[Ptcp.Intr]:^%{.m.%}lghii       IntrPtcp;
-[Ptcp.Trns]:^%{.sf.%}ke         TrnsPtcp;
-[Ptcp.Intr]:^%{.sf.%}%{.m.%}ka  IntrPtcpAlternate; ! second participial mood?
-[Ptcp.Trns]:^%{.sf.%}%{.m.%}ka  TrnsPtcpAlternate; ! [Jacobson (2001) p.73]
+^[Ptcp.Intr]:^%{.m.%}lghii       IntrPtcp;
+^[Ptcp.Trns]:^%{.sf.%}ke         TrnsPtcp;
+^[Ptcp.Intr]:^%{.sf.%}%{.m.%}ka  IntrPtcpAlternate; ! second participial mood?
+^[Ptcp.Trns]:^%{.sf.%}%{.m.%}ka  TrnsPtcpAlternate; ! ^[Jacobson (2001) p.73]
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! interrogative 
@@ -23,43 +23,43 @@ LEXICON VerbInflVII
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !-----------------------|--------------------------------------|-----------------------------------|
-[Intrg.Intr.3Sg]:^ta^  Enclitic; [Intrg.Intr.1Sg]:^tzi^nga           Enclitic; [Intrg.Intr.2Sg]:^tzin           Enclitic;
-[Intrg.Intr.3Pl]:^ta^t Enclitic; [Intrg.Intr.1Pl]:^%{.sf.%}este^a    Enclitic; [Intrg.Intr.2Pl]:^%{.sf.%}etsi   Enclitic;
-[Intrg.Intr.3Du]:^ta^k Enclitic; [Intrg.Intr.1Du]:^%{.sf.%}este^ung  Enclitic; [Intrg.Intr.2Du]:^%{.sf.%}estek  Enclitic;
+^[Intrg.Intr.3Sg]:^ta^  Enclitic; ^[Intrg.Intr.1Sg]:^tzi^nga           Enclitic; ^[Intrg.Intr.2Sg]:^tzin           Enclitic;
+^[Intrg.Intr.3Pl]:^ta^t Enclitic; ^[Intrg.Intr.1Pl]:^%{.sf.%}este^a    Enclitic; ^[Intrg.Intr.2Pl]:^%{.sf.%}etsi   Enclitic;
+^[Intrg.Intr.3Du]:^ta^k Enclitic; ^[Intrg.Intr.1Du]:^%{.sf.%}este^ung  Enclitic; ^[Intrg.Intr.2Du]:^%{.sf.%}estek  Enclitic;
 !-----------------------|--------------------------------------|-----------------------------------|
 
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-[Intrg.Trns.3Sg.3Sg]:^ta^gu              Enclitic; [Intrg.Trns.3Sg.3Pl]:^ta^ki              Enclitic; [Intrg.Trns.3Sg.3Du]:^ta^kek              Enclitic;
-[Intrg.Trns.3Pl.3Sg]:^ta^tgu             Enclitic; [Intrg.Trns.3Pl.3Pl]:^ta^tki             Enclitic; [Intrg.Trns.3Pl.3Du]:^ta^tkek             Enclitic;
-[Intrg.Trns.3Du.3Sg]:^ta^gnegu           Enclitic; [Intrg.Trns.3Du.3Pl]:^ta^gneki           Enclitic; [Intrg.Trns.3Du.3Du]:^ta^gnekek           Enclitic;
+^[Intrg.Trns.3Sg.3Sg]:^ta^gu              Enclitic; ^[Intrg.Trns.3Sg.3Pl]:^ta^ki              Enclitic; ^[Intrg.Trns.3Sg.3Du]:^ta^kek              Enclitic;
+^[Intrg.Trns.3Pl.3Sg]:^ta^tgu             Enclitic; ^[Intrg.Trns.3Pl.3Pl]:^ta^tki             Enclitic; ^[Intrg.Trns.3Pl.3Du]:^ta^tkek             Enclitic;
+^[Intrg.Trns.3Du.3Sg]:^ta^gnegu           Enclitic; ^[Intrg.Trns.3Du.3Pl]:^ta^gneki           Enclitic; ^[Intrg.Trns.3Du.3Du]:^ta^gnekek           Enclitic;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-[Intrg.Trns.1Sg.3Sg]:^tzi^kun            Enclitic; [Intrg.Trns.1Sg.3Pl]:^tzi^ngi            Enclitic; [Intrg.Trns.1Sg.3Du]:^tzi^gngek           Enclitic;
-[Intrg.Trns.1Pl.3Sg]:^%{.sf.%}este^ggu   Enclitic; [Intrg.Trns.1Pl.3Pl]:^%{.sf.%}este^ki    Enclitic; [Intrg.Trns.1Pl.3Du]:^%{.sf.%}este^kek    Enclitic;
-[Intrg.Trns.1Du.3Sg]:^%{.sf.%}este^gnegu Enclitic; [Intrg.Trns.1Du.3Pl]:^%{.sf.%}este^gneki Enclitic; [Intrg.Trns.1Du.3Du]:^%{.sf.%}este^gnekek Enclitic;
+^[Intrg.Trns.1Sg.3Sg]:^tzi^kun            Enclitic; ^[Intrg.Trns.1Sg.3Pl]:^tzi^ngi            Enclitic; ^[Intrg.Trns.1Sg.3Du]:^tzi^gngek           Enclitic;
+^[Intrg.Trns.1Pl.3Sg]:^%{.sf.%}este^ggu   Enclitic; ^[Intrg.Trns.1Pl.3Pl]:^%{.sf.%}este^ki    Enclitic; ^[Intrg.Trns.1Pl.3Du]:^%{.sf.%}este^kek    Enclitic;
+^[Intrg.Trns.1Du.3Sg]:^%{.sf.%}este^gnegu Enclitic; ^[Intrg.Trns.1Du.3Pl]:^%{.sf.%}este^gneki Enclitic; ^[Intrg.Trns.1Du.3Du]:^%{.sf.%}este^gnekek Enclitic;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-[Intrg.Trns.2Sg.3Sg]:^tzi^gu             Enclitic; [Intrg.Trns.2Sg.3Pl]:^tzi^ki             Enclitic; [Intrg.Trns.2Sg.3Du]:^tzi^kek             Enclitic;
-[Intrg.Trns.2Pl.3Sg]:^%{.sf.%}e^ggu      Enclitic; [Intrg.Trns.2Pl.3Pl]:^%{.sf.%}e^ki       Enclitic; [Intrg.Trns.2Pl.3Du]:^%{.sf.%}e^kek       Enclitic;
-[Intrg.Trns.2Du.3Sg]:^%{.sf.%}e^gnegu    Enclitic; [Intrg.Trns.2Du.3Pl]:^%{.sf.%}e^gneki    Enclitic; [Intrg.Trns.2Du.3Du]:^%{.sf.%}e^gnekek    Enclitic;
+^[Intrg.Trns.2Sg.3Sg]:^tzi^gu             Enclitic; ^[Intrg.Trns.2Sg.3Pl]:^tzi^ki             Enclitic; ^[Intrg.Trns.2Sg.3Du]:^tzi^kek             Enclitic;
+^[Intrg.Trns.2Pl.3Sg]:^%{.sf.%}e^ggu      Enclitic; ^[Intrg.Trns.2Pl.3Pl]:^%{.sf.%}e^ki       Enclitic; ^[Intrg.Trns.2Pl.3Du]:^%{.sf.%}e^kek       Enclitic;
+^[Intrg.Trns.2Du.3Sg]:^%{.sf.%}e^gnegu    Enclitic; ^[Intrg.Trns.2Du.3Pl]:^%{.sf.%}e^gneki    Enclitic; ^[Intrg.Trns.2Du.3Du]:^%{.sf.%}e^gnekek    Enclitic;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-[Intrg.Trns.3Sg.1Sg]:^ta^nga             Enclitic; [Intrg.Trns.3Sg.1Pl]:^ti^nkut            Enclitic; [Intrg.Trns.3Sg.1Du]:^ti^nkung            Enclitic;
-[Intrg.Trns.3Pl.1Sg]:^ta^tnga            Enclitic; [Intrg.Trns.3Pl.1Pl]:^ti^nkut            Enclitic; [Intrg.Trns.3Pl.1Du]:^ti^nkung            Enclitic;
-[Intrg.Trns.3Du.1Sg]:^ta^gnenga          Enclitic; [Intrg.Trns.3Du.1Pl]:^ti^nkut            Enclitic; [Intrg.Trns.3Du.1Du]:^ti^nkung            Enclitic;
+^[Intrg.Trns.3Sg.1Sg]:^ta^nga             Enclitic; ^[Intrg.Trns.3Sg.1Pl]:^ti^nkut            Enclitic; ^[Intrg.Trns.3Sg.1Du]:^ti^nkung            Enclitic;
+^[Intrg.Trns.3Pl.1Sg]:^ta^tnga            Enclitic; ^[Intrg.Trns.3Pl.1Pl]:^ti^nkut            Enclitic; ^[Intrg.Trns.3Pl.1Du]:^ti^nkung            Enclitic;
+^[Intrg.Trns.3Du.1Sg]:^ta^gnenga          Enclitic; ^[Intrg.Trns.3Du.1Pl]:^ti^nkut            Enclitic; ^[Intrg.Trns.3Du.1Du]:^ti^nkung            Enclitic;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-! no [1--.1--] forms                                                                                                                 |
+! no ^[1--.1--] forms                                                                                                                 |
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-[Intrg.Trns.2Sg.1Sg]:^tzi^nga            Enclitic; [Intrg.Trns.2Sg.1Pl]:^tzi^kut            Enclitic; [Intrg.Trns.2Sg.1Du]:^tzi^kung            Enclitic;
-[Intrg.Trns.2Pl.1Sg]:^%{.sf.%}e^ngnga    Enclitic; [Intrg.Trns.2Pl.1Pl]:^%{.sf.%}e^kut      Enclitic; [Intrg.Trns.2Pl.1Du]:^%{.sf.%}e^kung      Enclitic;
-[Intrg.Trns.2Du.1Sg]:^%{.sf.%}e^gnenga   Enclitic; [Intrg.Trns.2Du.1Pl]:^%{.sf.%}e^gneku    Enclitic; [Intrg.Trns.2Du.1Du]:^%{.sf.%}e^gnekung   Enclitic;
+^[Intrg.Trns.2Sg.1Sg]:^tzi^nga            Enclitic; ^[Intrg.Trns.2Sg.1Pl]:^tzi^kut            Enclitic; ^[Intrg.Trns.2Sg.1Du]:^tzi^kung            Enclitic;
+^[Intrg.Trns.2Pl.1Sg]:^%{.sf.%}e^ngnga    Enclitic; ^[Intrg.Trns.2Pl.1Pl]:^%{.sf.%}e^kut      Enclitic; ^[Intrg.Trns.2Pl.1Du]:^%{.sf.%}e^kung      Enclitic;
+^[Intrg.Trns.2Du.1Sg]:^%{.sf.%}e^gnenga   Enclitic; ^[Intrg.Trns.2Du.1Pl]:^%{.sf.%}e^gneku    Enclitic; ^[Intrg.Trns.2Du.1Du]:^%{.sf.%}e^gnekung   Enclitic;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-[Intrg.Trns.3Sg.2Sg]:^ta^ten             Enclitic; [Intrg.Trns.3Sg.2Pl]:^ti^si              Enclitic; [Intrg.Trns.3Sg.2Du]:^ti^stek             Enclitic;
-[Intrg.Trns.3Pl.2Sg]:^ta^ten             Enclitic; [Intrg.Trns.3Pl.2Pl]:^ti^si              Enclitic; [Intrg.Trns.3Pl.2Du]:^ti^stek             Enclitic;
-[Intrg.Trns.3Du.2Sg]:^ta^ten             Enclitic; [Intrg.Trns.3Du.2Pl]:^ti^si              Enclitic; [Intrg.Trns.3Du.2Du]:^ti^stek             Enclitic;
+^[Intrg.Trns.3Sg.2Sg]:^ta^ten             Enclitic; ^[Intrg.Trns.3Sg.2Pl]:^ti^si              Enclitic; ^[Intrg.Trns.3Sg.2Du]:^ti^stek             Enclitic;
+^[Intrg.Trns.3Pl.2Sg]:^ta^ten             Enclitic; ^[Intrg.Trns.3Pl.2Pl]:^ti^si              Enclitic; ^[Intrg.Trns.3Pl.2Du]:^ti^stek             Enclitic;
+^[Intrg.Trns.3Du.2Sg]:^ta^ten             Enclitic; ^[Intrg.Trns.3Du.2Pl]:^ti^si              Enclitic; ^[Intrg.Trns.3Du.2Du]:^ti^stek             Enclitic;
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-[Intrg.Trns.1Sg.2Sg]:^tzi^ken            Enclitic;                                            |                                             |
-[Intrg.Trns.1Pl.2Sg]:^%{.sf.%}este^ken   Enclitic;                                            |                                             |
-[Intrg.Trns.1Du.2Sg]:^%{.sf.%}este^ken   Enclitic;                                            |                                             |
+^[Intrg.Trns.1Sg.2Sg]:^tzi^ken            Enclitic;                                            |                                             |
+^[Intrg.Trns.1Pl.2Sg]:^%{.sf.%}este^ken   Enclitic;                                            |                                             |
+^[Intrg.Trns.1Du.2Sg]:^%{.sf.%}este^ken   Enclitic;                                            |                                             |
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
-! no [2--.2--] forms                                                                                                                 |
+! no ^[2--.2--] forms                                                                                                                 |
 !------------------------------------------|--------------------------------------------|---------------------------------------------|
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -68,124 +68,124 @@ LEXICON VerbInflVII
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !-----------------------------|-------------------------------------------|------------------------------------|
-[Opt.Pres.Intr.3Sg]:^li^  Enclitic; [Opt.Pres.Intr.1Sg]:^la^nga           Enclitic; [Opt.Pres.Intr.2Sg]:^%{.sf.%}i Enclitic;
-[Opt.Pres.Intr.3Pl]:^li^t Enclitic; [Opt.Pres.Intr.1Pl]:^%{.sf.%}elte^a   Enclitic; [Opt.Pres.Intr.2Pl]:^tek       Enclitic;
-[Opt.Pres.Intr.3Du]:^li^k Enclitic; [Opt.Pres.Intr.1Du]:^%{.sf.%}elte^ung Enclitic; [Opt.Pres.Intr.2Du]:^tek       Enclitic;
+^[Opt.Pres.Intr.3Sg]:^li^  Enclitic; ^[Opt.Pres.Intr.1Sg]:^la^nga           Enclitic; ^[Opt.Pres.Intr.2Sg]:^%{.sf.%}i Enclitic;
+^[Opt.Pres.Intr.3Pl]:^li^t Enclitic; ^[Opt.Pres.Intr.1Pl]:^%{.sf.%}elte^a   Enclitic; ^[Opt.Pres.Intr.2Pl]:^tek       Enclitic;
+^[Opt.Pres.Intr.3Du]:^li^k Enclitic; ^[Opt.Pres.Intr.1Du]:^%{.sf.%}elte^ung Enclitic; ^[Opt.Pres.Intr.2Du]:^tek       Enclitic;
 !-----------------------------|-------------------------------------------|------------------------------------|
 
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-[Opt.Pres.Trns.3Sg.3Sg]:^li^gu              Enclitic; [Opt.Pres.Trns.3Sg.3Pl]:^li^ki              Enclitic; [Opt.Pres.Trns.3Sg.3Du]:^li^kek              Enclitic;
-[Opt.Pres.Trns.3Pl.3Sg]:^li^tgu             Enclitic; [Opt.Pres.Trns.3Pl.3Pl]:^li^tki             Enclitic; [Opt.Pres.Trns.3Pl.3Du]:^li^tkek             Enclitic;
-[Opt.Pres.Trns.3Du.3Sg]:^li^gnegu           Enclitic; [Opt.Pres.Trns.3Du.3Pl]:^li^gneki           Enclitic; [Opt.Pres.Trns.3Du.3Du]:^li^gnekek           Enclitic;
+^[Opt.Pres.Trns.3Sg.3Sg]:^li^gu              Enclitic; ^[Opt.Pres.Trns.3Sg.3Pl]:^li^ki              Enclitic; ^[Opt.Pres.Trns.3Sg.3Du]:^li^kek              Enclitic;
+^[Opt.Pres.Trns.3Pl.3Sg]:^li^tgu             Enclitic; ^[Opt.Pres.Trns.3Pl.3Pl]:^li^tki             Enclitic; ^[Opt.Pres.Trns.3Pl.3Du]:^li^tkek             Enclitic;
+^[Opt.Pres.Trns.3Du.3Sg]:^li^gnegu           Enclitic; ^[Opt.Pres.Trns.3Du.3Pl]:^li^gneki           Enclitic; ^[Opt.Pres.Trns.3Du.3Du]:^li^gnekek           Enclitic;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-[Opt.Pres.Trns.1Sg.3Sg]:^la^kun             Enclitic; [Opt.Pres.Trns.1Sg.3Pl]:^la^ngi             Enclitic; [Opt.Pres.Trns.1Sg.3Du]:^la^ngak             Enclitic;
-[Opt.Pres.Trns.1Pl.3Sg]:^%{.sf.%}elte^ggu   Enclitic; [Opt.Pres.Trns.1Pl.3Pl]:^%{.sf.%}elte^ki    Enclitic; [Opt.Pres.Trns.1Pl.3Du]:^%{.sf.%}elte^kek    Enclitic;
-[Opt.Pres.Trns.1Du.3Sg]:^%{.sf.%}elte^gnegu Enclitic; [Opt.Pres.Trns.1Du.3Pl]:^%{.sf.%}elte^gneki Enclitic; [Opt.Pres.Trns.1Du.3Du]:^%{.sf.%}elte^gnekek Enclitic;
+^[Opt.Pres.Trns.1Sg.3Sg]:^la^kun             Enclitic; ^[Opt.Pres.Trns.1Sg.3Pl]:^la^ngi             Enclitic; ^[Opt.Pres.Trns.1Sg.3Du]:^la^ngak             Enclitic;
+^[Opt.Pres.Trns.1Pl.3Sg]:^%{.sf.%}elte^ggu   Enclitic; ^[Opt.Pres.Trns.1Pl.3Pl]:^%{.sf.%}elte^ki    Enclitic; ^[Opt.Pres.Trns.1Pl.3Du]:^%{.sf.%}elte^kek    Enclitic;
+^[Opt.Pres.Trns.1Du.3Sg]:^%{.sf.%}elte^gnegu Enclitic; ^[Opt.Pres.Trns.1Du.3Pl]:^%{.sf.%}elte^gneki Enclitic; ^[Opt.Pres.Trns.1Du.3Du]:^%{.sf.%}elte^gnekek Enclitic;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-[Opt.Pres.Trns.2Sg.3Sg]:^%{.sf.%}%{.m.%}ggu Enclitic; [Opt.Pres.Trns.2Sg.3Pl]:^^ki                Enclitic; [Opt.Pres.Trns.2Sg.3Du]:^^kek                Enclitic;
-[Opt.Pres.Trns.2Pl.3Sg]:^te^ggu             Enclitic; [Opt.Pres.Trns.2Pl.3Pl]:^te^ki              Enclitic; [Opt.Pres.Trns.2Pl.3Du]:^te^kek              Enclitic;
-[Opt.Pres.Trns.2Du.3Sg]:^te^gnegu           Enclitic; [Opt.Pres.Trns.2Du.3Pl]:^te^gneki           Enclitic; [Opt.Pres.Trns.2Du.3Du]:^te^gnekek           Enclitic;
+^[Opt.Pres.Trns.2Sg.3Sg]:^%{.sf.%}%{.m.%}ggu Enclitic; ^[Opt.Pres.Trns.2Sg.3Pl]:^^ki                Enclitic; ^[Opt.Pres.Trns.2Sg.3Du]:^^kek                Enclitic;
+^[Opt.Pres.Trns.2Pl.3Sg]:^te^ggu             Enclitic; ^[Opt.Pres.Trns.2Pl.3Pl]:^te^ki              Enclitic; ^[Opt.Pres.Trns.2Pl.3Du]:^te^kek              Enclitic;
+^[Opt.Pres.Trns.2Du.3Sg]:^te^gnegu           Enclitic; ^[Opt.Pres.Trns.2Du.3Pl]:^te^gneki           Enclitic; ^[Opt.Pres.Trns.2Du.3Du]:^te^gnekek           Enclitic;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-[Opt.Pres.Trns.3Sg.1Sg]:^li^nga             Enclitic; [Opt.Pres.Trns.3Sg.1Pl]:^li^kut             Enclitic; [Opt.Pres.Trns.3Sg.1Du]:^li^kung             Enclitic;
-[Opt.Pres.Trns.3Pl.1Sg]:^li^tnga            Enclitic; [Opt.Pres.Trns.3Pl.1Pl]:^li^nkut            Enclitic; [Opt.Pres.Trns.3Pl.1Du]:^li^nkung            Enclitic;
-[Opt.Pres.Trns.3Du.1Sg]:^li^gnenga          Enclitic; [Opt.Pres.Trns.3Du.1Pl]:^li^nkut            Enclitic; [Opt.Pres.Trns.3Du.1Du]:^li^nkung            Enclitic;
+^[Opt.Pres.Trns.3Sg.1Sg]:^li^nga             Enclitic; ^[Opt.Pres.Trns.3Sg.1Pl]:^li^kut             Enclitic; ^[Opt.Pres.Trns.3Sg.1Du]:^li^kung             Enclitic;
+^[Opt.Pres.Trns.3Pl.1Sg]:^li^tnga            Enclitic; ^[Opt.Pres.Trns.3Pl.1Pl]:^li^nkut            Enclitic; ^[Opt.Pres.Trns.3Pl.1Du]:^li^nkung            Enclitic;
+^[Opt.Pres.Trns.3Du.1Sg]:^li^gnenga          Enclitic; ^[Opt.Pres.Trns.3Du.1Pl]:^li^nkut            Enclitic; ^[Opt.Pres.Trns.3Du.1Du]:^li^nkung            Enclitic;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-! no [1--.1--] forms                                                                                                                                   |
+! no ^[1--.1--] forms                                                                                                                                   |
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-[Opt.Pres.Trns.2Sg.1Sg]:^^nga               Enclitic; [Opt.Pres.Trns.2Sg.1Pl]:^^kut               Enclitic; [Opt.Pres.Trns.2Sg.1Du]:^^kung               Enclitic;
-[Opt.Pres.Trns.2Pl.1Sg]:^te^ngnga           Enclitic; [Opt.Pres.Trns.2Pl.1Pl]:^te^kut             Enclitic; [Opt.Pres.Trns.2Pl.1Du]:^te^kung             Enclitic;
-[Opt.Pres.Trns.2Du.1Sg]:^te^gnenga          Enclitic; [Opt.Pres.Trns.2Du.1Pl]:^te^gnekut          Enclitic; [Opt.Pres.Trns.2Du.1Du]:^te^gnekung          Enclitic;
+^[Opt.Pres.Trns.2Sg.1Sg]:^^nga               Enclitic; ^[Opt.Pres.Trns.2Sg.1Pl]:^^kut               Enclitic; ^[Opt.Pres.Trns.2Sg.1Du]:^^kung               Enclitic;
+^[Opt.Pres.Trns.2Pl.1Sg]:^te^ngnga           Enclitic; ^[Opt.Pres.Trns.2Pl.1Pl]:^te^kut             Enclitic; ^[Opt.Pres.Trns.2Pl.1Du]:^te^kung             Enclitic;
+^[Opt.Pres.Trns.2Du.1Sg]:^te^gnenga          Enclitic; ^[Opt.Pres.Trns.2Du.1Pl]:^te^gnekut          Enclitic; ^[Opt.Pres.Trns.2Du.1Du]:^te^gnekung          Enclitic;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-[Opt.Pres.Trns.3Sg.2Sg]:^la^ten             Enclitic; [Opt.Pres.Trns.3Sg.2Pl]:^li^si              Enclitic; [Opt.Pres.Trns.3Sg.2Du]:^li^stek             Enclitic;
-[Opt.Pres.Trns.3Pl.2Sg]:^la^ten             Enclitic; [Opt.Pres.Trns.3Pl.2Pl]:^li^si              Enclitic; [Opt.Pres.Trns.3Pl.2Du]:^li^stek             Enclitic;
-[Opt.Pres.Trns.3Du.2Sg]:^la^ten             Enclitic; [Opt.Pres.Trns.3Du.2Pl]:^li^si              Enclitic; [Opt.Pres.Trns.3Du.2Du]:^li^stek             Enclitic;
+^[Opt.Pres.Trns.3Sg.2Sg]:^la^ten             Enclitic; ^[Opt.Pres.Trns.3Sg.2Pl]:^li^si              Enclitic; ^[Opt.Pres.Trns.3Sg.2Du]:^li^stek             Enclitic;
+^[Opt.Pres.Trns.3Pl.2Sg]:^la^ten             Enclitic; ^[Opt.Pres.Trns.3Pl.2Pl]:^li^si              Enclitic; ^[Opt.Pres.Trns.3Pl.2Du]:^li^stek             Enclitic;
+^[Opt.Pres.Trns.3Du.2Sg]:^la^ten             Enclitic; ^[Opt.Pres.Trns.3Du.2Pl]:^li^si              Enclitic; ^[Opt.Pres.Trns.3Du.2Du]:^li^stek             Enclitic;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-[Opt.Pres.Trns.1Sg.2Sg]:^la^ken             Enclitic; [Opt.Pres.Trns.1Sg.2Pl]:^la^msi             Enclitic; [Opt.Pres.Trns.1Sg.2Du]:^la^mtek             Enclitic;
-[Opt.Pres.Trns.1Pl.2Sg]:^la^ken             Enclitic; [Opt.Pres.Trns.1Pl.2Pl]:^la^msi             Enclitic; [Opt.Pres.Trns.1Pl.2Du]:^la^mtek             Enclitic;
-[Opt.Pres.Trns.1Du.2Sg]:^la^ken             Enclitic; [Opt.Pres.Trns.1Du.2Pl]:^la^msi             Enclitic; [Opt.Pres.Trns.1Du.2Du]:^la^mtek             Enclitic;
+^[Opt.Pres.Trns.1Sg.2Sg]:^la^ken             Enclitic; ^[Opt.Pres.Trns.1Sg.2Pl]:^la^msi             Enclitic; ^[Opt.Pres.Trns.1Sg.2Du]:^la^mtek             Enclitic;
+^[Opt.Pres.Trns.1Pl.2Sg]:^la^ken             Enclitic; ^[Opt.Pres.Trns.1Pl.2Pl]:^la^msi             Enclitic; ^[Opt.Pres.Trns.1Pl.2Du]:^la^mtek             Enclitic;
+^[Opt.Pres.Trns.1Du.2Sg]:^la^ken             Enclitic; ^[Opt.Pres.Trns.1Du.2Pl]:^la^msi             Enclitic; ^[Opt.Pres.Trns.1Du.2Du]:^la^mtek             Enclitic;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-! no [2--.2--] forms                                                                                                                                   |
+! no ^[2--.2--] forms                                                                                                                                   |
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! negative present optative
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~
-[Opt.Neg.Pres.Intr]:^%{.m.%}fqaa  IntrOptNEG;
-[Opt.Neg.Pres.Trns]:^%{.m.%}fqaa  TrnsOptNEG;
+^[Opt.Neg.Pres.Intr]:^%{.m.%}fqaa  IntrOptNEG;
+^[Opt.Neg.Pres.Trns]:^%{.m.%}fqaa  TrnsOptNEG;
 
 !------------------------------------------------|
-[Opt.Neg.Pres.Trns.2Sg.3Pl]:^%{.m.%}fqiita Enclitic;
-[Opt.Neg.Pres.Trns.2Pl.3Pl]:^%{.m.%}fqiita Enclitic;
-[Opt.Neg.Pres.Trns.2Du.3Pl]:^%{.m.%}fqiita Enclitic;
+^[Opt.Neg.Pres.Trns.2Sg.3Pl]:^%{.m.%}fqiita Enclitic;
+^[Opt.Neg.Pres.Trns.2Pl.3Pl]:^%{.m.%}fqiita Enclitic;
+^[Opt.Neg.Pres.Trns.2Du.3Pl]:^%{.m.%}fqiita Enclitic;
 !------------------------------------------------|
 
 !~~~~~~~~~~~~~~~~~
 ! future optative
 !~~~~~~~~~~~~~~~~~
-[Opt.Fut.Intr]:^%{.sf.%}%{.m.%}ghha  IntrOptFut;
-[Opt.Fut.Trns]:^nake                 TrnsOptFut;
+^[Opt.Fut.Intr]:^%{.sf.%}%{.m.%}ghha  IntrOptFut;
+^[Opt.Fut.Trns]:^nake                 TrnsOptFut;
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! negative future optative
 !~~~~~~~~~~~~~~~~~~~~~~~~~~
-[Opt.Neg.Fut.Intr]:^yaquna  IntrOptFutNEG;
-[Opt.Neg.Fut.Trns]:^yaquna  TrnsOptFutNEG;
+^[Opt.Neg.Fut.Intr]:^yaquna  IntrOptFutNEG;
+^[Opt.Neg.Fut.Trns]:^yaquna  TrnsOptFutNEG;
 
 !~~~~~~~~~~~~~~~~~~~~~
 ! participial-oblique 
 !~~~~~~~~~~~~~~~~~~~~~
-[PtcpObl.Intr]:^yalghii IntrPtcpObl;
-[PtcpObl.Trns]:^yaqe    TrnsPtcpObl; 
+^[PtcpObl.Intr]:^yalghii IntrPtcpObl;
+^[PtcpObl.Trns]:^yaqe    TrnsPtcpObl; 
 
 !~~~~~~~~~~~~
 ! precessive 
 !~~~~~~~~~~~~
-[Prec.Intr]:^vagilga  IntrPrecCnsq;
-[Prec.Trns]:^vagilga  TrnsPrecCnsq;
+^[Prec.Intr]:^vagilga  IntrPrecCnsq;
+^[Prec.Trns]:^vagilga  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~
 ! concessive 
 !~~~~~~~~~~~~
-[Conc.Intr]:^%{.m.%}ghnga  IntrConc;
-[Conc.Trns]:^%{.m.%}ghnga  TrnsConc;
+^[Conc.Intr]:^%{.m.%}ghnga  IntrConc;
+^[Conc.Trns]:^%{.m.%}ghnga  TrnsConc;
 
 !~~~~~~~~~~~~~~~~~
 ! consequential I
 !~~~~~~~~~~~~~~~~~
-[Cnsq1.Intr]:^ya  IntrPrecCnsq;
-[Cnsq1.Trns]:^ya  TrnsPrecCnsq;
+^[Cnsq1.Intr]:^ya  IntrPrecCnsq;
+^[Cnsq1.Trns]:^ya  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~~~~~~~
 ! consequential II
 !~~~~~~~~~~~~~~~~~~
-[Cnsq2.Intr]:^%{.sf.%}aqnga  IntrPrecCnsq;
-[Cnsq2.Trns]:^%{.sf.%}aqnga  TrnsPrecCnsq;
+^[Cnsq2.Intr]:^%{.sf.%}aqnga  IntrPrecCnsq;
+^[Cnsq2.Trns]:^%{.sf.%}aqnga  TrnsPrecCnsq;
 
 !~~~~~~~~~~~~~
 ! conditional
 !~~~~~~~~~~~~~
-[Cond.Intr]:^%{.sf.%}k  IntrCond;
-[Cond.Trns]:^%{.sf.%}k  TrnsCond;
+^[Cond.Intr]:^%{.sf.%}k  IntrCond;
+^[Cond.Trns]:^%{.sf.%}k  TrnsCond;
 
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-[Ctmp.Intr]:^%{.m.%}negh  IntrCtmp;
-[Ctmp.Trns]:^%{.m.%}negh  TrnsCtmp; 
-[Ctmp.Intr]:^%{.m.%}ngh   IntrCtmp; ! sometimes -e is absent, idk why
-[Ctmp.Trns]:^%{.m.%}ngh   TrnsCtmp; ! e.g. amsanaanghani ['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
+^[Ctmp.Intr]:^%{.m.%}negh  IntrCtmp;
+^[Ctmp.Trns]:^%{.m.%}negh  TrnsCtmp; 
+^[Ctmp.Intr]:^%{.m.%}ngh   IntrCtmp; ! sometimes -e is absent, idk why
+^[Ctmp.Trns]:^%{.m.%}ngh   TrnsCtmp; ! e.g. amsanaanghani ^['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
 
 !~~~~~~~~~~~~~~~
 ! subordinative
 !~~~~~~~~~~~~~~~
-[Sbrd.Intr]:^lu  IntrSubr;
-[Sbrd.Trns]:^lu  TrnsSubr; 
-[Sbrd.Intr]:^llu  IntrSubr; ! sometimes -l is devoiced, idk why
-[Sbrd.Trns]:^llu  TrnsSubr; ! e.g. kayusiisqellunga [Jacobson (2001) p.101]
+^[Sbrd.Intr]:^lu  IntrSubr;
+^[Sbrd.Trns]:^lu  TrnsSubr; 
+^[Sbrd.Intr]:^llu  IntrSubr; ! sometimes -l is devoiced, idk why
+^[Sbrd.Trns]:^llu  TrnsSubr; ! e.g. kayusiisqellunga ^[Jacobson (2001) p.101]
 
 !~~~~~~~~~~~~~~~~~~
 ! volitive of fear
 !~~~~~~~~~~~~~~~~~~
-[Volitive.Of.Fear]:^nayuka VolitiveOfFear;
+^[Volitive.Of.Fear]:^nayuka VolitiveOfFear;
 
 

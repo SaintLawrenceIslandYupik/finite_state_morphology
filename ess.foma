@@ -411,5 +411,6 @@ define Rules [
     Undoubling
 ];
 
-define GrammarLower [ [ Exceptions .o. Rules ] .P. [ [ Lexicon .o. Rules ] | ParallelForms ] ] ;
-define GrammarUpper [ [ Exceptions .o. Rules ] .P. [ [ Lexicon .o. Rules .o. Uppercase ] | ParallelForms ] ] ;
+define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | ParallelForms ] ] ;
+!define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Uppercase] ] ] ;
+define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules] | [ParallelForms .o. Uppercase] ] ] ;
