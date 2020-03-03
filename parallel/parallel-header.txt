@@ -1,6 +1,33 @@
 !================
 Multichar_Symbols
 !================
+%{g%}  ! for digraph -gh
+%{k%}  ! for digraph -kw
+%{t%}  ! for -te
+
+!-----------
+! allomorphs 
+!-----------
+%{E%}     ! for (e)
+%{G%}     ! for (g) 
+%{I%}     ! for (e) in ~sf:(e)sqe [Jacobson (2001) p.64]
+%{GI%}    ! for Intr.Opt-2Sg (-a,-i, -u, -aa, -ii, -uu) [Jacobson (2001) p.65]
+%{AI%}    ! for Intr.Opt-2Sg (-agh, -igh, -ugh, -aagh, -iigh, -uugh) [Jacobson (2001) p.65]
+%{K%}     ! for differentiating the conditional mood (see foma rule "SpecialTE")
+%{SUBR%}  ! for subordinative mood exceptions (see foma rule "RewriteSubordinative")
+
+!---------------------------
+! morphophonological symbols 
+!---------------------------
+%{.w.%}     ! drop weak -gh
+%{.c.%}     ! drop uvular (-gh) between single vowels
+%{.f.%}     ! drop and hop final -e
+%{.fS.%}    ! treat final -e like -a if root has two syllables or less [Jacobson (2001) p.38]
+%{.fL.%}    ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
+%{.sf.%}    ! drop and hop semi-final -e
+%{.m.%}     ! drop root-final consonants
+%{.mm.%}    ! drop root-final vowel + consonant
+%{.at.%}    ! modify root-final -te 
 
 !-----------------------------
 ! morphological tags for nouns
@@ -251,7 +278,6 @@ Multichar_Symbols
 !-------------------------
 ! misc morphological tags
 !-------------------------
-[Augmentive]   ! augmentive postbasees [Jacobson (2001) p.127]
 (DEM)          ! demonstrative
 (NUM)          ! numeral
 (NUM→N)        ! numeral to noun stem

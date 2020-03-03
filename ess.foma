@@ -111,7 +111,6 @@ define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ] 
                     g g -> g h h ||             g h "^" %{%.m%.%} _                   .o. ! assimilate gg- onset to dropped -gh [Jacobson (2001) p.66]
     [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
     [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop -g in root-final -gh, -gh in -ghw
-             MultiCharC -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
               %{%.m%.%} -> 0                                                          ;
 
 
@@ -291,10 +290,11 @@ define ApicalTE y   -> s                                                 ,   ! a
                 g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         ;   ! for suffix @–lghii
 
 
-define VelarTE  e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
-            %{t%} -> t,
-            %{t%} -> s  ||             V _ "^" %{%.at%.%} k .o. ! e.g. tuqutkuvgu, tuquskuvgu
-       %{%.at%.%} -> 0  || C %{t%} e "^" _ k                ;   ! e.g. qelpeghtekuvgu
+define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq(N>N)
+                     e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k                 .o. ! [Jacobson (2001) p.177]
+                 %{t%} -> t,
+                 %{t%} -> s  ||             V _ "^" %{%.at%.%} k                 .o. ! e.g. tuqutkuvgu, tuquskuvgu
+            %{%.at%.%} -> 0  || C %{t%} e "^" _ k                                ;   ! e.g. qelpeghtekuvgu
 
 
 define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
@@ -411,5 +411,5 @@ define Rules [
     Undoubling
 ];
 
-define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | ParallelForms ] ] ;
-define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Uppercase] ] ] ;
+define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | [ParallelForms .o. Rules] ] ] ;
+define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Rules .o. Uppercase] ] ] ;

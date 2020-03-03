@@ -6,7 +6,7 @@ ess.lexc: lexc-files/header.txt lexc-files/demonstratives.txt lexc-files/emotion
 exceptions.lexc: exceptions/exceptions-header.txt exceptions/exceptions.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
 	@cat $^ > $@
 
-parallel.lexc: parallel/parallel-header.txt parallel/parallel-forms.txt
+parallel.lexc: parallel/parallel-header.txt parallel/parallel-forms.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
 	cat $^ > $@
 
 lower.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
@@ -34,7 +34,7 @@ test-posturalroots: tests/badten_examples/postural_roots.tsv lower.fomabin
 test-enclitics: tests/badten_examples/enclitics.tsv lower.fomabin
 	@cut -f 1 tests/badten_examples/enclitics.tsv | sort -d -f | uniq | flookup -i -w "" lower.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/enclitics.tsv)' && echo "Badten (2008) Enclitics - PASS" || echo "Badten (2008) Enclitics - FAIL"
 
-test-postbases: $(foreach n,A E F G I,test-$n-postbases)
+test-postbases: $(foreach n,A E F G I K,test-$n-postbases)
 
 test-%-postbases: tests/badten_examples/%-postbases.tsv lower.fomabin
 	@cut -f 1 tests/badten_examples/$*-postbases.tsv | sort -d -f | uniq | flookup -i -w "" lower.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/$*-postbases.tsv)' && echo "Badten (2008) $*-Postbases - PASS" || echo "Badten (2008) $*-Postbases - FAIL"
