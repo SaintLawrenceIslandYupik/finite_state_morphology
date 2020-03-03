@@ -1,3 +1,6 @@
+! TODO: redo all of this.
+
+
 !====================
 LEXICON Demonstrative
 !====================
@@ -307,5 +310,15 @@ LEXICON DemInfl
 0:0               Enclitic;
 ^+ghsi(VOC):ghsi  #;
 ^pi:pi            VerbSuffixI;
+
+!-----------------------------------------
+! ok, these postbases only suffix to
+! demonstrative adverb bases, but i'm
+! putting them here for now, because
+! i have to redo all of the demonstrative
+! lexicon anyway
+!-----------------------------------------
+^+kaghtagh(DEM→N):kaghta%{g%}h  NounInflIII; ! one from N
+^+keghtagh(DEM→N):keghta%{g%}h  NounInflIII; ! one from N
 
 
