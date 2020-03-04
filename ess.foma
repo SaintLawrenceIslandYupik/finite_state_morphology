@@ -88,7 +88,7 @@ define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _    
 
 
 define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%} .o. ! [Jacobson (2001) p.38]
-              %{%.fS%.%} -> 0                                       ;
+              %{%.fS%.%} -> %{%.f%.%}                               ;
 
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables

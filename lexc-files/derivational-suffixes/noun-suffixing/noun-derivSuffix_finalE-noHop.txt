@@ -8,8 +8,10 @@ LEXICON NounPostbaseVIII
 0:0  NounInflVIII;
 
 ^~sf–ghhaleg(N→XCLM):^ghhalek            #;               ! how N! (exclamation)
+^–lqusigh(N→PTCL):^lqusiq                #;               ! all N; throughout the N; since last N; big N
 ^~sf-w%:(e)nkut(N→N):^nkut               Enclitic;        ! N and company (or family)
 ^~sf-w%:(e)nkuk(N→N):^nkuk               Enclitic;        ! N and partner (or spouse)
+^+tuumagh(N→QUANTQUAL):^tuumagh          QuantQualInfl;   ! together with one's Ns
 
 ^~fmii(N→N):^%{.f.%}mii                  NounPostbaseI;   ! resident of N; inhabitant of N
 ^+ni(N→N):^ni                            NounPostbaseI;   ! the smell of N; the odor of N; the taste of N
@@ -95,8 +97,8 @@ LEXICON NounPostbaseVIII
 ^–vyiigh(N→N):^vyiigh                    NounPostbaseV;   ! crude N; makeshift N
 ^–vziigh(N→N):^vziigh                    NounPostbaseV;   ! crude N; makeshift N
 ^–yaagh(N→N):^yaagh                      NounPostbaseV;   ! short or small N (article of clothing)
-^–lghun(N→N):^lghu%{t%}e                 NounPostbaseVI;  ! lots of N; a number of N; several N; a group of N
-^–lgun(N→N):^lgu%{t%}e                   NounPostbaseVI;  ! one with the same N
+^–lghute(N→N):^lghu%{t%}e                NounPostbaseVI;  ! lots of N; a number of N; several N; a group of N
+^–lgute(N→N):^lgu%{t%}e                  NounPostbaseVI;  ! one with the same N
 ^–leg(N→N):^leg                          NounPostbaseVII; ! one having N; one with N
 
 ^–ghqu(N→V):^ghqu                      VerbPostbaseI;   ! to go to get N or to get something from N
@@ -158,7 +160,5 @@ LEXICON NounPostbaseVIII
 ^+uute(N→V):^uu%{t%}e                  VerbPostbaseV;   ! to make the N sound 
 ^~%:(ng)ite(N→V):^%{.f.%}ngi%{t%}e**   VerbPostbaseVI;  ! to lack N; to not have N
 ^+sugnite(N→V):^sugni%{t%}e*           VerbPostbaseVI;  ! to resemble N; to be like N
-
-^+tuumagh(N→QUANTQUAL):^tuumagh        QuantQualInfl; ! together with one's Ns
 
 

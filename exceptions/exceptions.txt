@@ -5,10 +5,13 @@ LEXICON  Exception
 !--------------------------
 ! Demonstrative Exceptions
 !--------------------------
-maakut(DEM)^+ghsi(VOC):maakughsi                         #;
-ukut(DEM)^+ghsi(VOC):ukughsi                             #;
+maakut(DEM)^+ghsi(VOC):maakughsi                    #;
+ukut(DEM)^+ghsi(VOC):ukughsi                        #;
+aawhkan(DEM)^–lqusigh(N→PTCL):aawhkalqusiq          #; ! [Badten (2008) p.642]
+ighvigaq(DEM)^–lqusigh(N→PTCL):ighivgalqusiq        #; ! [Badten (2008) p.642]
+unuk(DEM)^–lqusigh(N→PTCL):unulqusiq                #; ! [Badten (2008) p.642]
 tawaten(DEM)^+staaghhagh(N→N):tawatestaaghha%{g%}h  PostInflIII;
-whani(DEM)^ete:whaante                             VerbPostbaseVI;
+whani(DEM)^ete:whaante                              VerbPostbaseVI;
 
 !-----------------
 ! Noun Exceptions

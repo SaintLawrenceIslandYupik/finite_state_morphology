@@ -7,8 +7,10 @@ LEXICON NounPostbaseVII
 0:0  NounInflVII;
 
 ^~sf–ghhaleg(N→XCLM):^%{.sf.%}%{.m.%}ghhalek    #;               ! how N! (exclamation)
+^–lqusigh(N→PTCL):^%{.m.%}lqusiq                #;               ! all N; throughout the N; since last N; big N
 ^~sf-w%:(e)nkut(N→N):^%{.sf.%}enkut             Enclitic;        ! N and company (or family)
 ^~sf-w%:(e)nkuk(N→N):^%{.sf.%}enkuk             Enclitic;        ! N and partner (or spouse)
+^+tuumagh(N→QUANTQUAL):^tuumagh                 QuantQualInfl;   ! together with one's Ns
 
 ^~fmii(N→N):^mii                                NounPostbaseI;   ! resident of N; inhabitant of N
 ^+ni(N→N):^ni                                   NounPostbaseI;   ! the smell of N; the odor of N; the taste of N
@@ -94,8 +96,8 @@ LEXICON NounPostbaseVII
 ^–vyiigh(N→N):^%{.m.%}vyiigh                    NounPostbaseV;   ! crude N; makeshift N
 ^–vziigh(N→N):^%{.m.%}vziigh                    NounPostbaseV;   ! crude N; makeshift N
 ^–yaagh(N→N):^%{.m.%}yaagh                      NounPostbaseV;   ! short or small N (article of clothing)
-^–lghun(N→N):^%{.m.%}lghu%{t%}e                 NounPostbaseVI;  ! lots of N; a number of N; several N; a group of N
-^–lgun(N→N):^%{.m.%}lgu%{t%}e                   NounPostbaseVI;  ! one with the same N
+^–lghute(N→N):^%{.m.%}lghu%{t%}e                NounPostbaseVI;  ! lots of N; a number of N; several N; a group of N
+^–lgute(N→N):^%{.m.%}lgu%{t%}e                  NounPostbaseVI;  ! one with the same N
 ^–leg(N→N):^%{.m.%}leg                          NounPostbaseVII; ! one having N; one with N
 
 ^–ghqu(N→V):^%{.m.%}ghqu                   VerbPostbaseI;   ! to go to get N or to get something from N
@@ -157,7 +159,5 @@ LEXICON NounPostbaseVII
 ^+uute(N→V):^uu%{t%}e                      VerbPostbaseV;   ! to make the N sound 
 ^~%:(ng)ite(N→V):^%{.sf.%}i%{t%}e**        VerbPostbaseVI;  ! to lack N; to not have N
 ^+sugnite(N→V):^sugni%{t%}e*               VerbPostbaseVI;  ! to resemble N; to be like N
-
-^+tuumagh(N→QUANTQUAL):^tuumagh            QuantQualInfl; ! together with one's Ns
 
 
