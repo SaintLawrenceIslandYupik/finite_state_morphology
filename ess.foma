@@ -25,20 +25,20 @@ define Lexicon
 define C          [ f | g | h | k | l | m |
                     n | p | q | r | s | t |
                     v | w | y | z |
-                    %{t%} | %{g%} | %{k%} ] ;
+                    %{t%} | %{g%} | %{k%} ];
 
 define Stop       [ p   | t   | k   | q   |
                     k w | q w ];
 
 define VoicedC    [ g h w | g h |
                     v | l | z   | y | r | g | w |
-                    m | n | n g | n g w ] ;
+                    m | n | n g | n g w ];
 
 define UnvoicedC  [ p   | t   | k   | q   |
                     k w | q w |
                     f   | s   | h   |
                     l l | r r | g g | w h | g h h | g h h w |
-                    m m | n n | n g n g   | n g n g w ] ;
+                    m m | n n | n g n g   | n g n g w ];
 
 define MultiCharC [ n g n g w |
                     n g n g   | g h h w | g h h |
@@ -47,9 +47,9 @@ define MultiCharC [ n g n g w |
                     n g       | n n     | r r   | q w | w h ];
 
 define FullVowel  [ a | i | u ]     ;
-define V          [ e | FullVowel ] ;
+define V          [ e | FullVowel ];
 
-define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ] ;
+define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
 
 
 !=======
@@ -132,7 +132,7 @@ define VelarUvularRounding       g -> w         || [ i | a ] u _ [ C | V - u ] .
                                g g -> w h       || [ C | V - u ] _ u [ i | a ] .o.
                                  k -> k w       || [ C | V - u ] _ u [ i | a ] .o.
                                  g -> w         || [ C | V - u ] _ u [ i | a ] .o.
-                                 q -> q w       || [ C | V - u ] _ u [ i | a ] ;
+                                 q -> q w       || [ C | V - u ] _ u [ i | a ];
 
 
 define DropFinalVC V (C) (h) -> 0 || _ "^" %{%.mm%.%} .o. 
@@ -411,5 +411,5 @@ define Rules [
     Undoubling
 ];
 
-define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | [ParallelForms .o. Rules] ] ] ;
-define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Rules .o. Uppercase] ] ] ;
+define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | [ParallelForms .o. Rules] ] ];
+define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Rules .o. Uppercase] ] ];
