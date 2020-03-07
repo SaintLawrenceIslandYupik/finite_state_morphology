@@ -280,14 +280,15 @@ define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial
             %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
-define ApicalTE y   -> s                                                 ,   ! apical -y [Jacobson (2001) p.177]
+define ApicalTE n   -> n n e   || %{t%} e "^" %{%.at%.%} _ g h h         .o. ! for postbase @–nghhagh(V>N)
+                y   -> s                                                 ,   ! apical -y [Jacobson (2001) p.177]
                 n   -> n n                                               ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
                 r   -> r r     || %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
                 g   -> g g                                               ,   !   to show voicelessness are -g, -l, -gh
                 l   -> l l                                               ,
                 g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o.
                 l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
-                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         ;   ! for suffix @–lghii
+                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         ;   ! for postbase @–lghii
 
 
 define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq(N>N)
@@ -325,7 +326,8 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,
           [ %{t%} | t ] ("^") z -> s                                    ; ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
-define PreventGemination n -> 0 || .#. a a _ "^" n ; ! is aane the only root involved in cases of accidental gemination? [Jacobson (2001) p.31]
+define PreventGemination n -> 0 || .#. a a _ "^" n   .o. ! aane+naqe [Jacobson (2001) p.31]
+                         n -> 0 || .#. t u u _ "^" n ;   ! tuune+naqutke [Badten (2008) p.650]
 
 
 define CleanupDigraph %{k%}   -> 0   .o.

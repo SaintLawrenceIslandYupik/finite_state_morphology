@@ -51,11 +51,26 @@ tutugh       PosturalRootTag; ! folded over with a crease
 ulmig        PosturalRootTag; ! turned over; inside out
 ulpeg        PosturalRootTag; ! folded back on self
 
+!--------------------------------------------
 ! verb bases that behave like postural roots 
+!--------------------------------------------
 aqumga       PosturalRootTag; ! to be sitting
 aqumgagh     PosturalRootTag;
 nekevgha     PosturalRootTag; ! to be standing
 nekevghagh   PosturalRootTag;
+
+!----------------------------------------------
+! postbases associated with postural roots may
+! be used with some verb roots [Badten p.648]
+!----------------------------------------------
+atkug(V):atkug            PosturalRootPostbase; ! to put on a parka
+aveg(V):aveg              PosturalRootPostbase; ! to divide in two
+kepe(V):kepe              PosturalRootPostbase; ! to sever
+liite(V):liite            PosturalRootPostbase; ! to learn
+nasaperagh(V):nasaperagh  PosturalRootPostbase; ! to put on a hat
+piifte(V):piif%{t%}e      PosturalRootPostbase; ! to set out for use
+piiste(V):piis%{t%}e      PosturalRootPostbase; ! to stick out; to project
+qiwaagh(V):qiwaagh        PosturalRootPostbase; ! to shear fur short
 
 
 !======================
@@ -70,7 +85,7 @@ LEXICON PosturalRootTag
 LEXICON PosturalRootPostbase
 !===========================
 
-^+nga(POS→STATIVE):^nga    VerbPostbaseI; ! to be in the R posture
-^+te(POS→ACTIVE):^%{t%}e   VerbPostbaseV; ! to get into the R posture; to put into the R posture
+^~fnga(POS→STATIVE):^%{.f.%}nga  VerbPostbaseI; ! to be in the R posture
+^+te(POS→ACTIVE):^%{t%}e         VerbPostbaseV; ! to get into the R posture; to put into the R posture
 
 
