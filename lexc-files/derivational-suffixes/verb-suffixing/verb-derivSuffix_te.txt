@@ -55,8 +55,9 @@ LEXICON VerbPostbaseV
 ^@~fnayuke(V→V):^%{.at.%}nayuke                 VerbPostbaseII;  ! to think that one might V
 ^@~fmiqe(V→V):^%{.at.%}miqe                     VerbPostbaseII;  ! to compel one to V; to make one V
 ^@~fyuke(V→V):^%{.at.%}yuke                     VerbPostbaseII;  ! to think that one is V-ing or has V-ed
-^~sf%:(e)sqe(V→V):^sqe                          VerbPostbaseII;  ! to ask one to V; to tell one to V
 ^+qe(V→V):^qe                                   VerbPostbaseII;  ! to act on so as to cause to V
+^~sf%:(e)sqe(V→V):^sqe                          VerbPostbaseII;  ! to ask one to V; to tell one to V
+^+te(V→V):^%{t%}e                               VerbPostbaseII;  ! to act on so as to cause to V
 ^–ghllag(V→V):^ghllag                           VerbPostbaseIII; ! to V or be V in a big way; to V for a long time
 ^–ghraag(V→V):^ghraag                           VerbPostbaseIII; ! to do some V-ing; to gradually V; to get V-er; to be somewhat V
 ^–llaag(V→V):^llaag                             VerbPostbaseIII; ! to V in a crude or clumsy way; crude one V-s
@@ -210,7 +211,6 @@ LEXICON VerbPostbaseV
 ^+(te)snaanghite(V→V):^snaanghi%{t%}e           VerbPostbaseV;   ! to tell one not to V in the future; to forbid one from V-ing in the future
 ^+(te)ste(V→V):^s%{t%}e                         VerbPostbaseV;   ! to cause one to V; to allow one to V; to make one V; to let one V; to have one V
 ^(pete)fte(V→V):^f%{t%}e                        VerbPostbaseV;   ! to evidently V or have V-ed
-^+te(V→V):^%{t%}e                               VerbPostbaseV;   ! to act on so as to cause to V
 ^–llghite(V→V):^llghi%{t%}e*                    VerbPostbaseVI;  ! to not V
 ^@~fnaanghite(V→V):^%{.at.%}naanghi%{t%}e*      VerbPostbaseVI;  ! to not V in the future; won't V
 ^@–nghite(V→V):^%{.at.%}neghi%{t%}e**           VerbPostbaseVI;  ! to not V

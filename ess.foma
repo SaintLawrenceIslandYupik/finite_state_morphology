@@ -121,7 +121,7 @@ define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! drop weak -gh from the ro
 define DropUvular %{g%} h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Allomorph ] .o. ! drop uvular -gh between two single vowels
                       g h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Allomorph ] .o. ! where the second vowel can be a full vowel
                 %{%.c%.%} -> 0                                                            ;   ! or an allomorph
-
+ 
 
 define VelarUvularRounding       g -> w         || [ i | a ] u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30]
                                                                                    ! unclear if this affects other phonemes besides -g
@@ -219,6 +219,11 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
                              %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       -> %{%.m%.%} n g u "^" n a "^" a m t a     .o. 
                              %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g   -> %{%.m%.%} n g u "^" n a "^" a m t u n g .o. 
                              %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> %{%.m%.%} n g u "^" n a                 .o.
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" k u       -> "^" %{%.m%.%} n g u "^" n a "^" a n         .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n "^" -> "^" %{%.m%.%} n g u "^" n a "^" n g         .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       -> "^" %{%.m%.%} n g u "^" n a "^" a m t a     .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g   -> "^" %{%.m%.%} n g u "^" n a "^" a m t u n g .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> "^" %{%.m%.%} n g u "^" n a                 .o.
                                    n g i %{t%} e "*" "*" "^" %{SUBR%} "^" k u       ->           n g u "^" n a "^" a n         .o. 
                                    n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n "^" ->           n g u "^" n a "^" n g         .o. 
                                    n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       ->           n g u "^" n a "^" a m t a     .o. 
@@ -280,15 +285,15 @@ define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial
             %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
-define ApicalTE n   -> n n e   || %{t%} e "^" %{%.at%.%} _ g h h         .o. ! for postbase @–nghhagh(V>N)
-                y   -> s                                                 ,   ! apical -y [Jacobson (2001) p.177]
+define ApicalTE y   -> s                                                 ,   ! apical -y [Jacobson (2001) p.177]
                 n   -> n n                                               ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
                 r   -> r r     || %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
                 g   -> g g                                               ,   !   to show voicelessness are -g, -l, -gh
                 l   -> l l                                               ,
                 g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o.
                 l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
-                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         ;   ! for postbase @–lghii
+                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         .o. ! for postbase @–lghii
+			   [..] -> e       || %{t%} e "^" %{%.at%.%} n n _ g h h     ;   ! for postbase @–nghhagh(V>N)
 
 
 define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq(N>N)
