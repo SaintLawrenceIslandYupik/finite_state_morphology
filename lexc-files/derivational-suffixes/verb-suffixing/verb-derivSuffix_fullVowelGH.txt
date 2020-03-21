@@ -132,7 +132,7 @@ LEXICON VerbPostbaseIV
 ^~–qaghtagh(V→V):^%{.m.%}qaghtagh              VerbPostbaseIV;  ! to continuously V with back and forth or up and down movement
 ^–qragh(V→V):^%{.m.%}qragh                     VerbPostbaseIV;  ! to do fancy V-ing; to V a new thing
 ^@qugh(V→V):^qugh                              VerbPostbaseIV;  ! to V all things available; to V completely
-^–raaghinagh*(V→V):^%{.m.%}raaghinagh*    to only V; to do nothing but V (ironically?) 
+^–raaghinagh*(V→V):^%{.m.%}raaghinagh*         VerbPostbaseIV;  ! to only V; to do nothing but V (ironically?) 
 ^@~fragh(V→V):^ragh                            VerbPostbaseIV;  ! to repeatedly or continuously V though perhaps unnecessarily or unsucessfully
 ^@~f–ragkiigh(V→V):^%{.m.%}ragkiigh            VerbPostbaseIV;  ! to V quickly
 ^@~f–rakguugh(V→V):^%{.m.%}rakguugh            VerbPostbaseIV;  ! to be fast at V-ing; to learn to V quickly
@@ -183,7 +183,6 @@ LEXICON VerbPostbaseIV
 ^@~fniite(V→V):^nii%{t%}e                      VerbPostbaseV;   ! to not cause one to V
 ^@–nqegte(V→V):^%{.m.%}nqeg%{t%}e              VerbPostbaseV;   ! to V easily; to V readily
 ^@–nqigte(V→V):^%{.m.%}nqig%{t%}e              VerbPostbaseV;   ! to V again
-^–pagigate(V→V):^%{.m.%}pagiga%{t%}e           VerbPostbaseV;   ! to V infrequently; to seldom V 
 ^–pagite(V→V):^%{.m.%}pagi%{t%}e               VerbPostbaseV;   ! for there not to be much V-ness
 ^–pagnaanghite(V→V):^%{.m.%}pagnaanghi%{t%}e   VerbPostbaseV;   ! to not V too much, very much in the future 
 ^+pagningite(V→V):^pagningi%{t%}e              VerbPostbaseV;   ! to not be able to V; cannot V
@@ -216,6 +215,7 @@ LEXICON VerbPostbaseIV
 ^@~fnaanghite(V→V):^naanghi%{t%}e*             VerbPostbaseVI;  ! to not V in the future; won't V
 ^@–nghite(V→V):^%{.m.%}nghi%{t%}e**            VerbPostbaseVI;  ! to not V
 ^@~%:(ng)igate(V→V):^%{.c.%}iga%{t%}e*         VerbPostbaseVI;  ! to never V; to not be V-ing at the present time
+^–pagigate(V→V):^%{.m.%}pagiga%{t%}e*          VerbPostbaseVI;  ! to V infrequently; to seldom V 
 ^+pagunghite(V→V):^pagunghi%{t%}e**            VerbPostbaseVI;  ! to not be sufficiently V
 ^–pagunghite(V→V):^%{.m.%}pagunghi%{t%}e**     VerbPostbaseVI;  ! to not be sufficiently V
 
@@ -249,6 +249,7 @@ LEXICON VerbPostbaseIV
 ^@~f–yuqagh(V→N):^%{.m.%}yuqa%{g%}h         NounPostbaseIII;  ! one who is good at V-ing; proficient V-er
 ^@~–(g)kagh(V→N):^%{.m.%}ka%{g%}h           NounPostbaseIII;  ! one that has V-ed; one that has been V-ed
 ^+aagh(V→N):^aagh                           NounInflV;        ! one who keeps V-ing (augmentive)
+^–perewaagh(V→N):^%{.m.%}perewaagh          NounPostbaseIV;   ! all, only, or totally V
 ^~fmiigh(V→N):^miigh                        NounPostbaseV;    ! thing held by V-ing 
 ^~–qumtaagh(V→N):^%{.m.%}qumtaagh           NounPostbaseV;    ! frequently V-ed thing; usually V-ed thing; commonly V-ed thing
 ^@~fyuggaagh(V→N):^yuggaagh                 NounPostbaseV;    ! first one to V

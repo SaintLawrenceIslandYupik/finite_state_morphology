@@ -183,7 +183,6 @@ LEXICON VerbPostbaseV
 ^@~fniite(V→V):^%{.at.%}nii%{t%}e               VerbPostbaseV;   ! to not cause one to V
 ^@–nqegte(V→V):^%{.at.%}nqeg%{t%}e              VerbPostbaseV;   ! to V easily; to V readily
 ^@–nqigte(V→V):^%{.at.%}nqig%{t%}e              VerbPostbaseV;   ! to V again
-^–pagigate(V→V):^pagiga%{t%}e                   VerbPostbaseV;   ! to V infrequently; to seldom V 
 ^–pagite(V→V):^pagi%{t%}e                       VerbPostbaseV;   ! for there not to be much V-ness
 ^–pagnaanghite(V→V):^pagnaanghi%{t%}e           VerbPostbaseV;   ! to not V too much, very much in the future 
 ^+pagningite(V→V):^pagningi%{t%}e               VerbPostbaseV;   ! to not be able to V; cannot V
@@ -215,6 +214,7 @@ LEXICON VerbPostbaseV
 ^@~fnaanghite(V→V):^%{.at.%}naanghi%{t%}e*      VerbPostbaseVI;  ! to not V in the future; won't V
 ^@–nghite(V→V):^%{.at.%}neghi%{t%}e**           VerbPostbaseVI;  ! to not V
 ^@~%:(ng)igate(V→V):^%{.at.%}iga%{t%}e*         VerbPostbaseVI;  ! to never V; to not be V-ing at the present time
+^–pagigate(V→V):^pagiga%{t%}e*                  VerbPostbaseVI;  ! to V infrequently; to seldom V 
 ^+pagunghite(V→V):^pagunghi%{t%}e**             VerbPostbaseVI;  ! to not be sufficiently V
 ^–pagunghite(V→V):^pagunghi%{t%}e**             VerbPostbaseVI;  ! to not be sufficiently V
 
@@ -249,6 +249,7 @@ LEXICON VerbPostbaseV
 ^@~–(g)kagh(V→N):^%{.at.%}ka%{g%}h          NounPostbaseIII;  ! one that has V-ed or been V-ed
 ^@~–(g)kagh(V→N):^gka%{g%}h                 NounPostbaseIII;  ! one that has V-ed or been V-ed
 ^+aagh(V→N):^aagh                           NounInflV;        ! one who keeps V-ing (augmentive)
+^–perewaagh(V→N):^perewaagh                 NounPostbaseIV;   ! all, only, or totally V
 ^~fmiigh(V→N):^%{.f.%}miigh                 NounPostbaseV;    ! thing held by V-ing 
 ^~–qumtaagh(V→N):^%{.f.%}qumtaagh           NounPostbaseV;    ! frequently V-ed thing; usually V-ed thing; commonly V-ed thing
 ^@~fyuggaagh(V→N):^%{.at.%}yuggaagh         NounPostbaseV;    ! first one to V
