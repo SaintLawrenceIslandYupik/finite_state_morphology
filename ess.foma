@@ -72,13 +72,14 @@ define Uppercase [ a:A | i:I | u:U | e:E |
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
 
-define FinalE %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC ] e "^" _ [ MultiCharC | C ] .o. ! do not hop or drop final e if doing so results
-                                                                                         ! in a cluster of three consonants e.g.
-                                                                                         ! riigte[Abl.Mod][Sg] -> riigtmeng
-                                                                                         ! [Jacobson (2001) p.21]
-                  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}  .o. ! hop final -e
-                     e -> 0 || [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}         .o. ! drop final -e as long it isn't in the first syllable
-               %{%.f%.%} -> 0                                                        ;
+define FinalE %{%.f%.%} -> 0 || [ C C & ~MultiCharC & ~[h h] ] e "^" _ [ MultiCharC | C ] .o. ! do not hop or drop final e if doing so results
+                                                                                                ! in a cluster of three consonants e.g.
+                                                                                                ! riigte[Abl.Mod][Sg] -> riigtmeng
+                                                                                                ! [Jacobson (2001) p.21]
+                                                                                                ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten (2008) p.657]
+                  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}         .o. ! hop final -e
+                     e -> 0 ||    [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}             .o. ! drop final -e as long it isn't in the first syllable
+               %{%.f%.%} -> 0                                                               ;
 
 
 define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _                                           .o.
@@ -293,7 +294,8 @@ define ApicalTE y   -> s                                                 ,   ! a
                 g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o.
                 l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
                 g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         .o. ! for postbase @–lghii
-			   [..] -> e       || %{t%} e "^" %{%.at%.%} n n _ g h h     ;   ! for postbase @–nghhagh(V>N)
+			   [..] -> e       || %{t%} e "^" %{%.at%.%} n n _ g h h     .o. ! for postbase @–nghhagh(V>N)
+			   [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q         ;   ! for postbase @–nqigte(V>V)
 
 
 define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq(N>N)
@@ -304,7 +306,7 @@ define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h
 
 
 define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
-           %{%.at%.%} -> 0                     ;
+            %{%.at%.%} -> 0                    ;
 
 
 !----------------

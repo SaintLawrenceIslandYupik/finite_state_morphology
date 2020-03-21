@@ -2,10 +2,20 @@
 LEXICON ParallelForm
 !===================
 
-kuuve(V)^@~%:(i/u)ma(V→V):kuvuma          VerbInflI;   ! [Badten (2008) p.625]
-yug(N)^~–kegte(N→V):yuukeg%{t%}e          VerbInflV;   ! [Badten (2008) p.630]
-uqugh(N)^+kwaagh(N→N):uquqwaagh           NounInflV;   ! [Badten (2008) p.631]
-negh(V)^%:(ng)inagh(V→V):neghngina%{g%}h  VerbInflIII; ! [Badten (2008) p.654]
+kuuve(V)^@~%:(i/u)ma(V→V):kuvuma            VerbInflI;   ! [Badten (2008) p.625]
+yug(N)^~–kegte(N→V):yuukeg%{t%}e            VerbInflV;   ! [Badten (2008) p.630]
+uqugh(N)^+kwaagh(N→N):uquqwaagh             NounInflV;   ! [Badten (2008) p.631]
+negh(V)^%:(ng)inagh(V→V):neghngina%{g%}h    VerbInflIII; ! [Badten (2008) p.654]
+
+!-----------------------------------------------------------------------------
+! final -e may become -a??
+! Jacobson (2001) p.38 documents this, but only for "short" bases and before
+! an inflectional ending in particular. aside from these cases, it's not clear
+! when else this can occur
+!-----------------------------------------------------------------------------
+sigute(N)^~%:(ng)ite(N→V):sigutangi%{t%}e**  VerbPostbaseVI;
+tume(N)^~%:(ng)ite(N→V):tumangi%{t%}e**      VerbPostbaseVI;
+tume(N)^~%:(ng)igh(N→V):tumangi%{g%}h        VerbPostbaseIV;
 
 !-------------------------
 ! [Jacobson (2001) p.105]
