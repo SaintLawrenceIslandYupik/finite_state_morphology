@@ -101,6 +101,7 @@ define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not 
 !-------------------------
 
 define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate ghh- onset to dropped -w
+                  g h h -> g g   || g               "^" %{%.m%.%} _ a "^"             .o. ! Intr.Opt.Fut [Jacobson (2001) p.119]
                     g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -g
                     g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -ghw
                     g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC         .o. ! assimilate gh- onset to dropped -w
@@ -185,10 +186,11 @@ define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for derivational suffix ~sf:
                 %{I%} -> 0                    ;
 
 
-define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u vs. -aa, -ii, -uu [Jacobson (2001) p.65]
-                          %{AI%} -> i   ||                       g h "^" _ .o. ! -agh, -igh, -ugh vs. -aagh, -iigh, -uugh [Jacobson (2001) p.65]
-                          %{AI%} -> a   ||                 FullVowel "^" _ .o.
-                          %{GI%} -> 0                                      ;
+define OptativeAllomorphs %{GI%} -> g i   || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u vs. -aa, -ii, -uu [Jacobson (2001) p.65]
+                          %{GI%} -> 0                                        .o.
+                          %{AI%} -> i     ||                       g h "^" _ .o. ! -agh, -igh, -ugh vs. -aagh, -iigh, -uugh [Jacobson (2001) p.65]
+                          %{AI%} -> a     ||                 FullVowel "^" _ ;
+
 
 define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g   ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
 !            [..] -> g || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] e "^" _ k a ;   ! @~sf–(g)ke/ka [Badten (2008) p.617]
