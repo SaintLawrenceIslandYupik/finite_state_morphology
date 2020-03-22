@@ -1,4 +1,3 @@
-napagh(V)^+pag(V→V)^[Ind.Intr]^[3Sg]	napaghpagtuq
 tupag(V)^+pag(V→V)^[Ind.Intr]^[3Sg]	tupagpagtuq
 aqfaate(V)^+pag(V→V)^[Ind.Intr]^[3Sg]	aqfaatepagtuq
 ayveghagh(V)^–pag(V→V)^[Ind.Intr]^[3Sg]	ayveghapagtuq
@@ -10,7 +9,7 @@ tenglug(V)^+pag(V→V)^[Ind.Trns]^[3Sg.3Sg]	tenglugpagaa
 kaksagte(V)^~f(p/v)agaatagh(V→V)^[Ind.Trns]^[3Sg.3Sg]	kaksagpagaataghaa
 siinge(V)^~f(p/v)agaatagh(V→V)^[Ind.Trns]^[3Sg.3Sg]	siingvagaataghaa
 ketngig(V)^~f(p/v)agaatagh(V→V)^[Ind.Trns]^[3Sg.3Sg]	ketngigpagaataghaa
-milugh(V)^~f(p/v)agaatagh(V→V)^[Ind.Trns]^[3Sg.3Sg]	milughpagaataghaqaghpesikut	
+milugh(V)^~f(p/v)agaatagh(V→V)^~(g)aqe(V→V)^[Ind.Trns]^[2Pl.1Pl]	milughpagaataghaqapesikut
 qepghagh(V)^–pagigate(V→V)^[Ind.Intr]^[3Sg]	qepghapagigatuq
 atuqe(V)^–pagigate(V→V)^[Ptcp.Trns]^[3Pl.3Sg]	atuqepagigalkangat
 tengegkayug(N)^–pagite(N→V)^[Ind.Intr]^[3Sg]	tengegkayupagituq
@@ -19,7 +18,7 @@ kaviigh(N)^–pagite(N→V)^[Sbrd.Intr]^[4Sg]	kaviipagilluni
 sa(N)^+pagnite(N→V)^[Ind.Intr]^[3Sg]	sapagnituq
 anagh(N)^+pagnite(N→V)^[Ind.Intr]^[3Sg]	anaghpagnituq
 uqug(N)^+pagnite(N→V)^[Ind.Intr]^[3Sg]	uqugpagnituq
-qavagh(V)^–pagunghite(V→V)^[Ptcp.Intr]^[3Sg]	qavapagunghilnguq
+qavagh(V)^–pagunghite(V→V)^@ngugh(V→N)^[Abs.Sg]	qavapagunghilnguq
 sighunegh(N)^~f(p/v)allugh(N→N)^[Abs.Sg]	sighuneghpalluq
 megh(N)^~f(p/v)allugh(N→N)^[Abs.Sg]	meghpalluq
 tume(N)^~f(p/v)allugh(N→N)^[Abs.Sg]	tuumvalluq
@@ -36,7 +35,7 @@ atkug(N)^–peragh(N→N)^[Abs.Sg]	atkuperaq
 unaghsigh(N)^–perewaagh(N→N)^[Abs.Sg]	unaghsiperewaaq
 savikenghaagh(N)^–perewaagh(N→N)^[Abs.Sg]	savikenghaaperewaaq
 siku(N)^–perewaagh(N→N)^[Abs.Sg]	sikuperewaaq
-qategh(V)^–perewaagh(V→N)^[Abl_Mod]^[Sg]	qateperewaaghmeng
+qategh(V)^–perewaagh(V→N)^[Abl_Mod.Sg]	qateperewaaghmeng
 angqagh(N)^–perug(N→N)^[Abs.Sg]	angqaperuk
 sukate(V)^–pestaagh(V→V)^[Sbrd.Trns]^[_.3Sg]	sukatepestaaghluku
 sukate(V)^–pestaagh(V→V)^[Sbrd.Trns]^[_.3Sg]	sukatepestaaghlluku
@@ -44,7 +43,7 @@ qikmigh(N)^–pestaagh(N→N)^[Abs.Sg]	qikmipestaaq
 ipa(N)^–pestaagh(N→N)^[Abs.Sg]	ipapestaaq
 uglagh(N)^–pestaagh(N→N)^–ghllag(N→N)^[Abs.Sg]	uglapestaaghllak
 seghlegh(N)^–pestaagh(N→N)^[Abs.Pl]	seghlepestaaghet
-qepghaqagh(N)^–ghllag(N→N)^–pestaagh(N→N)^[Abs.Pl]	qepghaqaghllapestaaghuyaghtuq
+qepghaqagh(N)^–ghllag(N→N)^–pestaagh(N→N)^~:(ng)u(N→V)^@~fyagh(V→V)^[Ind.Intr]^[3Sg]	qepghaqaghllapestaaghuyaghtuq
 tagi(V)^–pigesnagh(V→V)^[Ind.Intr]^[3Sg]	tagipigesnaghtuq
 itegh(V)^–pigesnagh(V→V)^[Ind.Intr]^[3Sg]	itepigesnaghtuq
 kaate(V)^–pigesnagh(V→V)^[Ind.Intr]^[3Sg]	kaatepigesnaghtuq
