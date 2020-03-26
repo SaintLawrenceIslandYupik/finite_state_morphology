@@ -106,10 +106,11 @@ define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ] 
                     g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -ghw
                     g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC         .o. ! assimilate gh- onset to dropped -w
                     g h -> w     || %{k%} w         "^" %{%.m%.%} _ VoicedC           .o. ! assimilate gh- onset to dropped -w
-                      g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ] .o. ! assimilate g- onset to dropped -gh
+                      g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ] .o. ! assimilate g-  onset to dropped -gh
                       k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -ghw
                       k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -gh
                       k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -w
+					  q -> k     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate q-  onset to dropped -g
                     g g -> g h h ||             g h "^" %{%.m%.%} _                   .o. ! assimilate gg- onset to dropped -gh [Jacobson (2001) p.66]
     [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
     [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop -g in root-final -gh, -gh in -ghw
