@@ -101,7 +101,7 @@ define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not 
 !-------------------------
 
 define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate ghh- onset to dropped -w
-                  g h h -> g g   || g               "^" %{%.m%.%} _ a "^"             .o. ! Intr.Opt.Fut [Jacobson (2001) p.119]
+                  g h h -> g g   || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! Intr.Opt.Fut [Jacobson (2001) p.119]
                     g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -g
                     g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -ghw
                     g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC         .o. ! assimilate gh- onset to dropped -w

@@ -2,10 +2,12 @@
 LEXICON ParallelForm
 !===================
 
-kuuve(V)^@~%:(i/u)ma(V→V):kuvuma            VerbInflI;   ! [Badten (2008) p.625]
-yug(N)^~–kegte(N→V):yuukeg%{t%}e            VerbInflV;   ! [Badten (2008) p.630]
-uqugh(N)^+kwaagh(N→N):uquqwaagh             NounInflV;   ! [Badten (2008) p.631]
-negh(V)^%:(ng)inagh(V→V):neghngina%{g%}h    VerbInflIII; ! [Badten (2008) p.654]
+kuuve(V)^@~%:(i/u)ma(V→V):kuvuma                     VerbPostbaseI;   ! [Badten (2008) p.625]
+yug(N)^~–kegte(N→V):yuukeg%{t%}e                     VerbPostbaseV;   ! [Badten (2008) p.630]
+uqugh(N)^+kwaagh(N→N):uquqwaagh                      NounPostbaseV;   ! [Badten (2008) p.631]
+negh(V)^%:(ng)inagh(V→V):neghngina%{g%}h             VerbPostbaseIII; ! [Badten (2008) p.654]
+sukate(V)^@~f–ragkiighute(V→V):sukarragkiighu%{t%}e  VerbPostbaseV;   ! [Badten (2008) p.670]
+
 
 !-----------------------------------------------------------------------------
 ! final -e may become -a??
