@@ -2,11 +2,17 @@
 LEXICON ParallelForm
 !===================
 
-kuuve(V)^@~%:(i/u)ma(V→V):kuvuma                     VerbPostbaseI;   ! [Badten (2008) p.625]
-yug(N)^~–kegte(N→V):yuukeg%{t%}e                     VerbPostbaseV;   ! [Badten (2008) p.630]
-uqugh(N)^+kwaagh(N→N):uquqwaagh                      NounPostbaseV;   ! [Badten (2008) p.631]
-negh(V)^%:(ng)inagh(V→V):neghngina%{g%}h             VerbPostbaseIII; ! [Badten (2008) p.654]
-sukate(V)^@~f–ragkiighute(V→V):sukarragkiighu%{t%}e  VerbPostbaseV;   ! [Badten (2008) p.670]
+!---------------------------------------
+! parallel forms found in Badten (2008)
+!---------------------------------------
+kuuve(V)^@~%:(i/u)ma(V→V):kuvuma                     VerbPostbaseI;
+yug(N)^~–kegte(N→V):yuukeg%{t%}e                     VerbPostbaseV;
+uqugh(N)^+kwaagh(N→N):uquqwaagh                      NounPostbaseV;
+negh(V)^%:(ng)inagh(V→V):neghngina%{g%}h             VerbPostbaseIII;
+sukate(V)^@~f–ragkiighute(V→V):sukarragkiighu%{t%}e  VerbPostbaseV;
+awa(DEM)^+ta(DEM→N)^[Loc.3SgPoss.Sg]:awatngani       #;
+uka(DEM)^+ta(DEM→N)^[Loc.3SgPoss.Sg]:ukatngani       #;
+tagtala(N)^[Abs.3SgPoss.Sg]:tagtalgna                #;
 
 
 !-----------------------------------------------------------------------------
@@ -22,7 +28,7 @@ tume(N)^~%:(ng)igh(N→V):tumangi%{g%}h        VerbPostbaseIV;
 !-------------------------
 ! [Jacobson (2001) p.105]
 !-------------------------
-aqlaghaghte(V)^+(te)ste(V→V)^@–nghite(V→V)^[Sbrd.Trns]^[_.3Sg]:aqlaghagtestengngunaan  #;
+aqlaghaghte(V)^+(te)ste(CmpdVbl)^@–nghite(V→V)^[Sbrd.Trns]^[_.3Sg]:aqlaghagtestengngunaan  #;
 neghe(V)^+(te)ste(V→V)^@–nghite(V→V)^[Sbrd.Trns][_.3Pl]:neghestengngunaki              #;
 sukangite(V)^[Sbrd.Intr]^[4Sg]:sukangunani                                             #;
 

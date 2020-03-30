@@ -76,8 +76,8 @@ LEXICON VerbPostbaseIII
 ^~f–vag(V→V):^%{.m.%}vag                       VerbPostbaseIII; ! to V in a big way; to V hard; to V intensely
 ^@~f–yaag(V→V):^%{.m.%}yaag                    VerbPostbaseIII; ! to V in a strange way; to V weirdly
 ^@~fyug(V→V):^yug                              VerbPostbaseIII; ! to want to V; to tend toward V-ing; to feel V
-^+(te)stepag(V→V):^testepag                    VerbPostbaseIII; ! to cause or allow one to V too much
-^+(te)sug(V→V):^tesug                          VerbPostbaseIII; ! to want one to V
+^+(te)stepag(CmpdVbl):^testepag                VerbPostbaseIII; ! to cause or allow one to V too much
+^+(te)sug(CmpdVbl):^tesug                      VerbPostbaseIII; ! to want one to V
 ^–qiinagh(V→V):^%{.m.%}qiinagh                 VerbPostbaseIV;  ! to just V; to V just now; to only V (and perhaps in vain)
 ^~aghtagh(V→V):^aghtagh                        VerbPostbaseIV;  ! to V repeatedly with back and forth movement
 ^~aatagh(V→V):^aatagh                          VerbPostbaseIV;  ! to V finally or repeatedly and persistently, several times
@@ -164,7 +164,7 @@ LEXICON VerbPostbaseIII
 ^@~–(g)kaayagh(V→V):^%{.m.%}kaayagh            VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
 ^@~–(g)kaqsagh(V→V):^%{.m.%}kaqsagh            VerbPostbaseIV;  ! to have V-ed fruitlessly; to have V-ed in vain; to have V-ed but ...
 ^+saghagh(CmpdVbl):^saghagh                    VerbPostbaseIV;  ! to try to induce one to V
-^+(te)snanigh(V→V):^tesnanigh                  VerbPostbaseIV;  ! to tell not to V; to forbid one to V
+^+(te)snanigh(CmpdVbl):^tesnanigh              VerbPostbaseIV;  ! to tell not to V; to forbid one to V
 ^~aghte(V→V):^agh%{t%}e                        VerbPostbaseV;   ! to suddenly V
 ^@–ghpagte(V→V):^%{.m.%}ghpag%{t%}e            VerbPostbaseV;   ! to V rapidly, suddenly or in a major way
 ^–ghraagte(V→V):^%{.m.%}ghraag%{t%}e           VerbPostbaseV;   ! to be somewhat V-er; to be partly V 
@@ -206,9 +206,8 @@ LEXICON VerbPostbaseIII
 ^@~f–yiite(V→V):^%{.m.%}yii%{t%}e              VerbPostbaseV;   ! to poorly V habitually
 ^+yugniite(V→V):^yugnii%{t%}e                  VerbPostbaseV;   ! to not find it easy to V; to not want to V
 ^@~–(g)kayugughte(V→V):^%{.m.%}kayugugh%{t%}e  VerbPostbaseV;   ! to become able to V
-^+(te)sigate(V→V):^tesiga%{t%}e                VerbPostbaseV;   ! to prevent or keep one from V-ing; to not allow one to V; to not let one V
-^+(te)snaanghite(V→V):^tesnaanghi%{t%}e        VerbPostbaseV;   ! to tell one not to V in the future; to forbid one from V-ing in the future
-^+(te)ste(V→V):^tes%{t%}e                      VerbPostbaseV;   ! to cause one to V; to allow one to V; to make one V; to let one V; to have one V
+^+(te)snaanghite(CmpdVbl):^tesnaanghi%{t%}e    VerbPostbaseV;   ! to tell one not to V in the future; to forbid one from V-ing in the future
+^+(te)ste(CmpdVbl):^tes%{t%}e                  VerbPostbaseV;   ! to cause one to V; to allow one to V; to make one V; to let one V; to have one V
 ^+(pete)fte(V→V):^petef%{t%}e                  VerbPostbaseV;   ! to evidently V or have V-ed
 ^+(pete)fte(V→V):^pe%{t%}e                     VerbPostbaseV;   ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
 ^–llghite(V→V):^%{.m.%}llghi%{t%}e*            VerbPostbaseVI;  !  to not V
@@ -218,6 +217,7 @@ LEXICON VerbPostbaseIII
 ^–pagigate(V→V):^%{.m.%}pagiga%{t%}e*          VerbPostbaseVI;  ! to V infrequently; to seldom V 
 ^+pagunghite(V→V):^pagunghi%{t%}e**            VerbPostbaseVI;  ! to not be sufficiently V
 ^–pagunghite(V→V):^%{.m.%}pagunghi%{t%}e**     VerbPostbaseVI;  ! to not be sufficiently V
+^+(te)sigate(CmpdVbl):^tesiga%{t%}e**          VerbPostbaseVI;  ! to prevent or keep one from V-ing; to not allow one to V; to not let one V
 
 ^@~%:(i/u)ma(V→N):^uma                      NounPostbaseI;    ! one who V-s
 ^@–lghii(V→N):^%{.m.%}lghii                 NounPostbaseI;    ! the one that V-ed

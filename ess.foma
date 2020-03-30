@@ -317,13 +317,14 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 !----------------
 
 define MatchVoicing t [z | y] -> s                                   .o. ! tz / ty = s
-                            y -> s ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                            y -> s ||  [ k | q ] _                   .o.
-                            z -> s || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
-                            k -> q ||        g h _                   .o.
-                          g h -> 0 ||          C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
-                            v -> f || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
-                            v -> f || [ k | t ] _                    ;
+                            y -> s   ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
+                            y -> s   ||  [ k | q ] _                   .o.
+                            z -> s   || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
+                            k -> q   ||        g h _                   .o.
+                          g h -> 0   ||          C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
+                            v -> f   || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
+                            v -> f   || [ k | t ] _                    .o.
+                            w -> w h || _ t                            ;   ! [Badten (2008) p.682] 
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
