@@ -198,7 +198,9 @@ define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q
 
 
 define Uteta e -> a || "^" [ %{%.at%.%} | %{%.sf%.%} | %{%.f%.%} | %{%.c%.%} ] u %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o. ! @~:(u)te [Jacobson (2001) p.116]
-             e -> a || "^"                                                       %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g ;
+             e -> a || "^"                                                       %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o.
+    %{%.at%.%} -> 0 || [? - g] %{t%} e "^" _ u %{t%} [ e | a ]                                                              .o. ! drop -te if -gte, otherwise just drop -e for postbases ~:(u)te, ~:(u)tke [Badten (2008) p.691]
+    %{%.at%.%} -> 0 || [? - g] %{t%} e "^" _ u t k e                                                                        ;
 
 
 ! what is %{SUBR%}?
