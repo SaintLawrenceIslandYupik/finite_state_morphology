@@ -325,7 +325,7 @@ define MatchVoicing t [z | y] -> s                                   .o. ! tz / 
                             k -> q   ||        g h _                   .o.
                           g h -> 0   ||          C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
                             v -> f   || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
-                            v -> f   || [ k | t ] _                    .o.
+                            v -> f   || Stop ("^") _                   .o. ! e.g. taaqfik
                             w -> w h || _ t                            ;   ! [Badten (2008) p.682] 
 
 
@@ -340,7 +340,8 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,
 
 
 define PreventGemination n -> 0 || .#. a a _ "^" n   .o. ! aane+naqe [Jacobson (2001) p.31]
-                         n -> 0 || .#. t u u _ "^" n ;   ! tuune+naqutke [Badten (2008) p.650]
+                         n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
+						 v -> 0 || .#. n u u _ "^" v ;   ! nuuve+vig [Badten (2008) p.693]
 
 
 define CleanupDigraph %{k%}   -> 0   .o.

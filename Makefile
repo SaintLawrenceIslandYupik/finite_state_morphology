@@ -34,7 +34,7 @@ test-posturalroots: tests/badten_examples/postural_roots.tsv lower.fomabin
 test-enclitics: tests/badten_examples/enclitics.tsv lower.fomabin
 	@cut -f 1 tests/badten_examples/enclitics.tsv | sort -d -f | uniq | flookup -i -w "" lower.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/enclitics.tsv)' && echo "Badten (2008) Enclitics - PASS" || echo "Badten (2008) Enclitics - FAIL"
 
-test-postbases: $(foreach n,A E F G I K L M N P Q R S T U,test-$n-postbases)
+test-postbases: $(foreach n,A E F G I K L M N P Q R S T U V,test-$n-postbases)
 
 test-%-postbases: tests/badten_examples/%-postbases.tsv lower.fomabin
 	@cut -f 1 tests/badten_examples/$*-postbases.tsv | sort -d -f | uniq | flookup -i -w "" lower.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/$*-postbases.tsv)' && echo "Badten (2008) $*-Postbases - PASS" || echo "Badten (2008) $*-Postbases - FAIL"
