@@ -72,11 +72,11 @@ define Uppercase [ a:A | i:I | u:U | e:E |
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
 
-define FinalE %{%.f%.%} -> 0 || [ C C & ~MultiCharC & ~[h h] ] e "^" _ [ MultiCharC | C ] .o. ! do not hop or drop final e if doing so results
-                                                                                                ! in a cluster of three consonants e.g.
-                                                                                                ! riigte[Abl.Mod][Sg] -> riigtmeng
-                                                                                                ! [Jacobson (2001) p.21]
-                                                                                                ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten (2008) p.657]
+define FinalE %{%.f%.%} -> 0 || [ C C & ~MultiCharC & ~[h h] & ~[h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not hop or drop -e if doing so results
+                                                                                                       ! in a cluster of three consonants e.g.
+                                                                                                       ! riigte[Abl.Mod][Sg] -> riigtmeng
+                                                                                                       ! [Jacobson (2001) p.21]
+                                                                                                       ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten (2008) p.657] and ~[h w] for aaghhwe(V)^@~fyug(V→V)
                   [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}         .o. ! hop final -e
                      e -> 0 ||    [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}             .o. ! drop final -e as long it isn't in the first syllable
                %{%.f%.%} -> 0                                                               ;
@@ -318,9 +318,9 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 ! CLEAN-UP RULES
 !----------------
 
-define MatchVoicing t [z | y] -> s                                   .o. ! tz / ty = s
+define MatchVoicing t [z | y] -> s                                     .o. ! tz / ty = s
                             y -> s   ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                            y -> s   ||  [ k | q ] _                   .o.
+                            y -> s   ||  [ k | q | g h h w ] _         .o.
                             z -> s   || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
                             k -> q   ||        g h _                   .o.
                           g h -> 0   ||          C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan

@@ -14,7 +14,6 @@ LEXICON NounPostbaseI
 
 ^~fmii(N→N):^mii                         NounPostbaseI;   ! resident of N; inhabitant of N
 ^+ni(N→N):^ni                            NounPostbaseI;   ! the smell of N; the odor of N; the taste of N
-^+yaga(N→N):^yaga                        NounPostbaseI;   ! multitude of N; abundance of N; lots of N
 ^–ghllag(N→N):^ghllag                    NounPostbaseII;  ! big N; large N; lots of N
 ^–ghrugllag(N→N):^ghrugllag              NounPostbaseII;  ! big N; large N
 ^–ghrug(N→N):^ghrug                      NounPostbaseII;  ! big old N; poor old N
@@ -99,6 +98,7 @@ LEXICON NounPostbaseI
 ^–lghute(N→N):^lghu%{t%}e                NounPostbaseVI;  ! lots of N; a number of N; several N; a group of N
 ^–lgute(N→N):^lgu%{t%}e                  NounPostbaseVI;  ! one with the same N
 ^–leg(N→N):^leg                          NounPostbaseVII; ! one having N; one with N
+^+yage(N→N):^yage                        NounPostbaseVIII; ! multitude of N; abundance of N; lots of N
 
 ^–ghqu(N→V):^ghqu                  VerbPostbaseI;   ! to go to get N or to get something from N
 ^––ii(N→V):^%{.mm.%}ii             VerbPostbaseI;   ! to cut up N; to butcher N; to prepare N 

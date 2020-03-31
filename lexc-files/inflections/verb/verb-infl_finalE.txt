@@ -128,8 +128,8 @@ LEXICON VerbInflII
 !~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! negative future optative
 !~~~~~~~~~~~~~~~~~~~~~~~~~~
-^[Opt.Neg.Fut.Intr]:^yaquna  IntrOptFutNEG;
-^[Opt.Neg.Fut.Trns]:^yaquna  TrnsOptFutNEG;
+^[Opt.Neg.Fut.Intr]:^%{.f.%}yaquna  IntrOptFutNEG;
+^[Opt.Neg.Fut.Trns]:^%{.f.%}yaquna  TrnsOptFutNEG;
 
 !~~~~~~~~~~~~~~~~~~~~~
 ! participial-oblique 
