@@ -13,8 +13,8 @@ define Lexicon
 !==============
 ! MISC SYMBOLS
 !==============
-! "^"    morpheme boundary
-! .#.    word boundary
+! "^"      morpheme boundary
+! .#.      word boundary
 ! %{g%} h  weak gh
 
 
@@ -46,7 +46,7 @@ define MultiCharC [ n g n g w |
                     g g       | g h     | k w   | l l | m m |
                     n g       | n n     | r r   | q w | w h ];
 
-define FullVowel  [ a | i | u ]     ;
+define FullVowel  [ a | i | u ];
 define V          [ e | FullVowel ];
 
 define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
@@ -72,14 +72,12 @@ define Uppercase [ a:A | i:I | u:U | e:E |
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
 
-define FinalE %{%.f%.%} -> 0 || [ C C & ~MultiCharC & ~[h h] & ~[h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not hop or drop -e if doing so results
-                                                                                                       ! in a cluster of three consonants e.g.
-                                                                                                       ! riigte[Abl.Mod][Sg] -> riigtmeng
-                                                                                                       ! [Jacobson (2001) p.21]
-                                                                                                       ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten (2008) p.657] and ~[h w] for aaghhwe(V)^@~fyug(V→V)
-                  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}         .o. ! hop final -e
-                     e -> 0 ||    [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}             .o. ! drop final -e as long it isn't in the first syllable
-               %{%.f%.%} -> 0                                                               ;
+define FinalE %{%.f%.%} -> 0 || [ C C & ~MultiCharC & ~[h h] & ~[h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not drop -e if it results in a CCC cluster
+                                                                                                       ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten p.657]
+                                                                                                       ! ~[h w] for aaghhwe(V)^@~fyug(V→V)
+                   [..] -> e ||              .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}  .o. ! hop final -e
+                      e -> 0 ||                 [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}      .o. ! drop final -e if it isn't in the first syllable
+              %{%.f%.%} -> 0                                                                       ;
 
 
 define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _                                           .o.
@@ -92,8 +90,8 @@ define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%} .o. ! [Jacob
               %{%.fS%.%} -> %{%.f%.%}                               ;
 
 
-define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables
-             %{%.fL%.%} -> 0                     ;   ! [Jacobson (2001) p.32]
+define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! [Jacobson (2001) p.32] 
+             %{%.fL%.%} -> 0                     ;
 
 
 !-------------------------
@@ -126,16 +124,15 @@ define DropUvular %{g%} h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Al
                 %{%.c%.%} -> 0                                                            ;   ! or an allomorph
  
 
-define VelarUvularRounding       g -> w         || [ i | a ] u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30]
-                                                                                   ! unclear if this affects other phonemes besides -g
-                           n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ] .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
-                               n g -> n g w     || [ C | V - u ] _ u [ i | a ] .o. ! needs to occur before vowel dominance
-                             g h h -> g h h w   || [ C | V - u ] _ u [ i | a ] .o.
-                               g h -> g h w     || [ C | V - u ] _ u [ i | a ] .o.
-                               g g -> w h       || [ C | V - u ] _ u [ i | a ] .o.
-                                 k -> k w       || [ C | V - u ] _ u [ i | a ] .o.
-                                 g -> w         || [ C | V - u ] _ u [ i | a ] .o.
-                                 q -> q w       || [ C | V - u ] _ u [ i | a ];
+define VelarUvularRounding       g -> w         ||   [ i | a ] u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30]
+                           n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ]   .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
+                               n g -> n g w     || [ C | V - u ] _ u [ i | a ]   .o. ! needs to occur before vowel dominance
+                             g h h -> g h h w   || [ C | V - u ] _ u [ i | a ]   .o.
+                               g h -> g h w     || [ C | V - u ] _ u [ i | a ]   .o.
+                               g g -> w h       || [ C | V - u ] _ u [ i | a ]   .o.
+                                 k -> k w       || [ C | V - u ] _ u [ i | a ]   .o.
+                                 g -> w         || [ C | V - u ] _ u [ i | a ]   .o.
+                                 q -> q w       || [ C | V - u ] _ u [ i | a ]   ;
 
 
 define DropFinalVC V (C) (h) -> 0 || _ "^" %{%.mm%.%} .o. 
@@ -162,7 +159,7 @@ define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a ->
                           e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
 
 
-define DropMiddleVowel a -> 0 || V _ V ; ! occurs something with the transitive indicative [Jacobson (2001) p.44]
+define DropMiddleVowel a -> 0 || V _ V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
 
 
 !-------------------
@@ -176,20 +173,20 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _     .o.
-                %{G%} -> 0                                        ;
+define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
+                %{G%} -> 0                                    ;
 
 
-define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for derivational suffix ~sf:(e)sqe [Jacobson (2001) p.64]
+define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for postbase ~sf:(e)sqe [Jacobson (2001) p.64]
                 %{I%} -> i || FullVowel "^" _ .o.
                 %{I%} -> e || m "^" _         .o. ! for obsolete verb root -ete [Jacobson (2001) p.78]
                 %{I%} -> i || n "^" _         .o.
                 %{I%} -> 0                    ;
 
 
-define OptativeAllomorphs %{GI%} -> g i   || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u vs. -aa, -ii, -uu [Jacobson (2001) p.65]
+define OptativeAllomorphs %{GI%} -> g i   || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u stems vs. -aa, -ii, -uu roots [Jacobson (2001) p.65]
                           %{GI%} -> 0                                        .o.
-                          %{AI%} -> i     ||                       g h "^" _ .o. ! -agh, -igh, -ugh vs. -aagh, -iigh, -uugh [Jacobson (2001) p.65]
+                          %{AI%} -> i     ||                       g h "^" _ .o. ! -agh, -igh, -ugh stems vs. -aagh, -iigh, -uugh stems [Jacobson (2001) p.65]
                           %{AI%} -> a     ||                 FullVowel "^" _ ;
 
 
@@ -199,15 +196,15 @@ define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q
 
 define Uteta e -> a || "^" [ %{%.at%.%} | %{%.sf%.%} | %{%.f%.%} | %{%.c%.%} ] u %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o. ! @~:(u)te [Jacobson (2001) p.116]
              e -> a || "^"                                                       %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o.
-    %{%.at%.%} -> 0 || [? - g] %{t%} e "^" _ u %{t%} [ e | a ]                                                              .o. ! drop -te if -gte, otherwise just drop -e for postbases ~:(u)te, ~:(u)tke [Badten (2008) p.691]
-    %{%.at%.%} -> 0 || [? - g] %{t%} e "^" _ u t k e                                                                        ;
+    %{%.at%.%} -> 0 ||                                             [? - g] %{t%} e "^" _ u %{t%} [ e | a ]                  .o. ! drop -te if -gte, otherwise -e [Badten (2008) p.691]
+    %{%.at%.%} -> 0 ||                                             [? - g] %{t%} e "^" _ u t k e                            ;   ! also true for postbase ~:(u)tke [Badten (2008) p.691]
 
 
 ! what is %{SUBR%}?
-!   in the context of the subordinative mood, derivational suffixes @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
-!   the subordinative mood marker is also +na for these strongly special -te roots, hence a placeholder %{SUBR%}, while the ordinary
-!   subordinative mood marker @~flu (or @~fllu) is used with all other special -te roots. lastly, some of the person/number markers
-!   are also different for strongly special -te roots, using the subordinative mood marker +na [Jacobson (2001) p.102].
+!   in the context of the subordinative mood, postbasees @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
+!   the subordinative mood marker is also +na for these strongly special -te stems, hence a placeholder %{SUBR%}, while the ordinary
+!   subordinative mood marker @~flu (or @~fllu) is used with all other special -te stems. lastly, some of the person/number markers
+!   are also different for strongly special -te stems, using the subordinative mood marker +na [Jacobson (2001) p.102].
 ! there's probably a better way to write this tbh, especially the "t e n ^" -> "n g". how do we differentiate "ten" versus "teng"?
 
 define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u       -> %{%.m%.%} n g u "^" n a "^" a n         .o. 
@@ -284,26 +281,26 @@ define ISuffixTE e -> 0 || %{t%} _ "^" %{%.at%.%} i .o.
 
 
 define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial -m and -v 
-                n   -> n n   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -e if -Vte
-                l   -> l l   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -te if -Cte
+                n   -> n n   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   delete -e if -Vte
+                l   -> l l   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   delete -te if -Cte
                 g h -> g h h ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   and the resulting
-                  v -> f     ||         C %{t%} e "^" %{%.at%.%} _  .o. !   consonant cluster devoices
+                  v -> f     || C %{t%} e "^" %{%.at%.%} _          .o. !   consonant cluster devoices
             %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
-define ApicalTE y   -> s                                                 ,   ! apical -y [Jacobson (2001) p.177]
-                n   -> n n                                               ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
-                r   -> r r     || %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
-                g   -> g g                                               ,   !   to show voicelessness are -g, -l, -gh
-                l   -> l l                                               ,
-                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o.
-                l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
-                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         .o. ! for postbase @–lghii
-			   [..] -> e       || %{t%} e "^" %{%.at%.%} n n _ g h h     .o. ! for postbase @–nghhagh(V>N)
-			   [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q         ;   ! for postbase @–nqigte(V>V)
+define ApicalTE y   -> s                                                       ,   ! apical -y [Jacobson (2001) p.177]
+                n   -> n n                                                     ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
+                r   -> r r     ||       %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
+                g   -> g g                                                     ,   !   to show voicelessness are -g, -l, -gh
+                l   -> l l                                                     ,
+                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]           .o.
+                l   -> l l     ||       %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
+                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _               .o. ! for postbase @–lghii
+			   [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h h         .o. ! for postbase @–nghhagh
+			   [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q             ;   ! for postbase @–nqigte
 
 
-define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq(N>N)
+define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq
                      e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k                 .o. ! [Jacobson (2001) p.177]
                  %{t%} -> t,
                  %{t%} -> s  ||             V _ "^" %{%.at%.%} k                 .o. ! e.g. tuqutkuvgu, tuquskuvgu
@@ -318,15 +315,15 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 ! CLEAN-UP RULES
 !----------------
 
-define MatchVoicing t [z | y] -> s                                     .o. ! tz / ty = s
-                            y -> s   ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                            y -> s   ||  [ k | q | g h h w ] _         .o.
-                            z -> s   || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
-                            k -> q   ||        g h _                   .o.
-                          g h -> 0   ||          C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
-                            v -> f   || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
-                            v -> f   || Stop ("^") _                   .o. ! e.g. taaqfik
-                            w -> w h || _ t                            ;   ! [Badten (2008) p.682] 
+define MatchVoicing t [z | y] -> s                                              .o. ! tz / ty = s
+                            y -> s   ||                     _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
+                            y -> s   || [ k | q | g h h w ] _                   .o.
+                            z -> s   ||          Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
+                            k -> q   ||                 g h _                   .o.
+                          g h -> 0   ||                   C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
+                            v -> f   ||                     _ ("^") Stop        .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
+                            v -> f   ||          Stop ("^") _                   .o. ! e.g. taaqfik
+                            w -> w h ||                     _ t                 ;   ! [Badten (2008) p.682] 
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
@@ -336,10 +333,10 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,
                             g h -> q   ||                 _ (w) "^" .#. .o.
                         %{g%} h -> q   ||                 _     "^" .#. .o.
                               g -> k   ||                 _     "^" .#. .o.
-          [ %{t%} | t ] ("^") z -> s                                    ; ! [Jacobson (2001) p.51] e.g. ~f(t)zin
+          [ %{t%} | t ] ("^") z -> s                                    ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
-define PreventGemination n -> 0 || .#. a a _ "^" n   .o. ! aane+naqe [Jacobson (2001) p.31]
+define PreventGemination n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
                          n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
 						 v -> 0 || .#. n u u _ "^" v ;   ! nuuve+vig [Badten (2008) p.693]
 
