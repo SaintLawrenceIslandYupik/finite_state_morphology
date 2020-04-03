@@ -1,50 +1,338 @@
+!================
 Multichar_Symbols
+!================
 ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
-[N] [V] [Sg] [Pl] [Du] [1Sg] [1Du] [1Pl] [2Sg] [2Du] [2Pl] [3Sg] [3Du] [3Pl] [4Sg] [4Pl] [4Du] [_] [N→N] [N→V] [V→N] [V→V] [Imprs_Agnt]
-[Unpd] [1SgPoss] [2SgPoss] [3SgPoss] [4SgPoss] [1PlPoss] [2PlPoss] [3PlPoss] [4PlPoss] [1DuPoss] [2DuPoss] [3DuPoss] [4DuPoss] [SgPosd] [PlPosd] [DuPosd]
-[Abs] [Abl_Mod] [Equ] [Loc] [Rel] [Ter] [Via] [Intr] [Trns] [Ind] [Intrg] [Opt] [PRS] [NEG] [FUT] [Ptcp] [Prec] [Conc] [CnsqI] [CnsqII] [Cond] [Ctmp] [Sbrd] [Ptcp_Obl] [Cmpd_Vbl] [Quant_Qual] [Encl]
-[Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr] [To_Feel_R_Toward]
+
 @* @₁ @₂ ~sf ~f ~h -w –– (e) (g/t) (ng₁) (ng₂) (p/v) (t/y) (s/z) (g) (t) (te) (i₁) (i₂) (i/u) (u) (a) (s) (at) (q/t)
 (pete)fte @~–(g)ka @~–(g)ke
 ~f-w/-w ~sf-w%:(e)tgun/teggun @₁–lghii/@*ngugh* @₁~fy/~f(ng₁) @₁~flu/na
-[Guess] [DemGuess] [ERootGuess] [NounGuess] [PtclGuess] [PosRootGuess] [QuantQualGuess] [VerbGuess] [ForeignWordGuess] [Foreign]
+[Opt_PRS_2Sg] [Opt_PRS_2Sg_3Sg] [Opt_FUT_Intr]
+
+! [Guess] [DemGuess] [ERootGuess] [NounGuess] [PtclGuess] [PosRootGuess] [QuantQualGuess] [VerbGuess] [ForeignWordGuess] [Foreign]
+
+!-----------------------------
+! morphological tags for nouns
+!-----------------------------
+(N)   ! noun root
+
+(N→N) ! noun-elaborating postbase
+(N→V) ! verbalizing postbase
+
+!~~~~~~~~~~~~~~~~
+! absolutive case
+!~~~~~~~~~~~~~~~~
+[Abs.Sg]         [Abs.Pl]         [Abs.Du]
+[Abs.1SgPoss.Sg] [Abs.1SgPoss.Pl] [Abs.1SgPoss.Du]
+[Abs.1PlPoss.Sg] [Abs.1PlPoss.Pl] [Abs.1PlPoss.Du]
+[Abs.1DuPoss.Sg] [Abs.1DuPoss.Pl] [Abs.1DuPoss.Du]
+[Abs.2SgPoss.Sg] [Abs.2SgPoss.Pl] [Abs.2SgPoss.Du]
+[Abs.2PlPoss.Sg] [Abs.2PlPoss.Pl] [Abs.2PlPoss.Du]
+[Abs.2DuPoss.Sg] [Abs.2DuPoss.Pl] [Abs.2DuPoss.Du]
+[Abs.3SgPoss.Sg] [Abs.3SgPoss.Pl] [Abs.3SgPoss.Du]
+[Abs.3PlPoss.Sg] [Abs.3PlPoss.Pl] [Abs.3PlPoss.Du]
+[Abs.3DuPoss.Sg] [Abs.3DuPoss.Pl] [Abs.3DuPoss.Du]
+[Abs.4SgPoss.Sg] [Abs.4SgPoss.Pl] [Abs.4SgPoss.Du]
+[Abs.4PlPoss.Sg] [Abs.4PlPoss.Pl] [Abs.4PlPoss.Du]
+[Abs.4DuPoss.Sg] [Abs.4DuPoss.Pl] [Abs.4DuPoss.Du]
+!~~~~~~~~~~~~~~
+! relative case
+!~~~~~~~~~~~~~~
+[Rel.Sg]         [Rel.Pl]         [Rel.Du]
+[Rel.1SgPoss.Sg] [Rel.1SgPoss.Pl] [Rel.1SgPoss.Du]
+[Rel.1PlPoss.Sg] [Rel.1PlPoss.Pl] [Rel.1PlPoss.Du]
+[Rel.1DuPoss.Sg] [Rel.1DuPoss.Pl] [Rel.1DuPoss.Du]
+[Rel.2SgPoss.Sg] [Rel.2SgPoss.Pl] [Rel.2SgPoss.Du]
+[Rel.2PlPoss.Sg] [Rel.2PlPoss.Pl] [Rel.2PlPoss.Du]
+[Rel.2DuPoss.Sg] [Rel.2DuPoss.Pl] [Rel.2DuPoss.Du]
+[Rel.3SgPoss.Sg] [Rel.3SgPoss.Pl] [Rel.3SgPoss.Du]
+[Rel.3PlPoss.Sg] [Rel.3PlPoss.Pl] [Rel.3PlPoss.Du]
+[Rel.3DuPoss.Sg] [Rel.3DuPoss.Pl] [Rel.3DuPoss.Du]
+[Rel.4SgPoss.Sg] [Rel.4SgPoss.Pl] [Rel.4SgPoss.Du]
+[Rel.4PlPoss.Sg] [Rel.4PlPoss.Pl] [Rel.4PlPoss.Du]
+[Rel.4DuPoss.Sg] [Rel.4DuPoss.Pl] [Rel.4DuPoss.Du]
+!~~~~~~~~~~~~~~~~~~~~~~
+! ablative-modalis case
+!~~~~~~~~~~~~~~~~~~~~~~
+[Abl_Mod.Sg]         [Abl_Mod.Pl]         [Abl_Mod.Du]
+[Abl_Mod.1SgPoss.Sg] [Abl_Mod.1SgPoss.Pl] [Abl_Mod.1SgPoss.Du]
+[Abl_Mod.1PlPoss.Sg] [Abl_Mod.1PlPoss.Pl] [Abl_Mod.1PlPoss.Du]
+[Abl_Mod.1DuPoss.Sg] [Abl_Mod.1DuPoss.Pl] [Abl_Mod.1DuPoss.Du]
+[Abl_Mod.2SgPoss.Sg] [Abl_Mod.2SgPoss.Pl] [Abl_Mod.2SgPoss.Du]
+[Abl_Mod.2SgPoss.Sg] [Abl_Mod.2SgPoss.Pl] [Abl_Mod.2SgPoss.Du]
+[Abl_Mod.2PlPoss.Sg] [Abl_Mod.2PlPoss.Pl] [Abl_Mod.2PlPoss.Du]
+[Abl_Mod.2DuPoss.Sg] [Abl_Mod.2DuPoss.Pl] [Abl_Mod.2DuPoss.Du]
+[Abl_Mod.3SgPoss.Sg] [Abl_Mod.3SgPoss.Pl] [Abl_Mod.3SgPoss.Du]
+[Abl_Mod.3PlPoss.Sg] [Abl_Mod.3PlPoss.Pl] [Abl_Mod.3PlPoss.Du]
+[Abl_Mod.3DuPoss.Sg] [Abl_Mod.3DuPoss.Pl] [Abl_Mod.3DuPoss.Du]
+[Abl_Mod.4SgPoss.Sg] [Abl_Mod.4SgPoss.Pl] [Abl_Mod.4SgPoss.Du]
+[Abl_Mod.4PlPoss.Sg] [Abl_Mod.4PlPoss.Pl] [Abl_Mod.4PlPoss.Du]
+[Abl_Mod.4DuPoss.Sg] [Abl_Mod.4DuPoss.Pl] [Abl_Mod.4DuPoss.Du]
+!~~~~~~~~~~~~~~~~~~~~~~~~
+! locative (localis) case
+!~~~~~~~~~~~~~~~~~~~~~~~~
+[Loc.Sg]         [Loc.Pl]         [Loc.Du]
+[Loc.1SgPoss.Sg] [Loc.1SgPoss.Pl] [Loc.1SgPoss.Du]
+[Loc.1PlPoss.Sg] [Loc.1PlPoss.Pl] [Loc.1PlPoss.Du]
+[Loc.1DuPoss.Sg] [Loc.1DuPoss.Pl] [Loc.1DuPoss.Du]
+[Loc.2SgPoss.Sg] [Loc.2SgPoss.Pl] [Loc.2SgPoss.Du]
+[Loc.2SgPoss.Sg] [Loc.2SgPoss.Pl] [Loc.2SgPoss.Du]
+[Loc.2PlPoss.Sg] [Loc.2PlPoss.Pl] [Loc.2PlPoss.Du]
+[Loc.2DuPoss.Sg] [Loc.2DuPoss.Pl] [Loc.2DuPoss.Du]
+[Loc.3SgPoss.Sg] [Loc.3SgPoss.Pl] [Loc.3SgPoss.Du]
+[Loc.3PlPoss.Sg] [Loc.3PlPoss.Pl] [Loc.3PlPoss.Du]
+[Loc.3DuPoss.Sg] [Loc.3DuPoss.Pl] [Loc.3DuPoss.Du]
+[Loc.4SgPoss.Sg] [Loc.4SgPoss.Pl] [Loc.4SgPoss.Du]
+[Loc.4PlPoss.Sg] [Loc.4PlPoss.Pl] [Loc.4PlPoss.Du]
+[Loc.4DuPoss.Sg] [Loc.4DuPoss.Pl] [Loc.4DuPoss.Du]
+[Loc.4DuPoss.Sg] [Loc.4DuPoss.Pl] [Loc.4DuPoss.Du]
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! allative (terminalis) case
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[All.Sg]         [All.Pl]         [All.Du]
+[All.1SgPoss.Sg] [All.1SgPoss.Pl] [All.1SgPoss.Du]
+[All.1PlPoss.Sg] [All.1PlPoss.Pl] [All.1PlPoss.Du]
+[All.1DuPoss.Sg] [All.1DuPoss.Pl] [All.1DuPoss.Du]
+[All.2SgPoss.Sg] [All.2SgPoss.Pl] [All.2SgPoss.Du]
+[All.2SgPoss.Sg] [All.2SgPoss.Pl] [All.2SgPoss.Du]
+[All.2PlPoss.Sg] [All.2PlPoss.Pl] [All.2PlPoss.Du]
+[All.2DuPoss.Sg] [All.2DuPoss.Pl] [All.2DuPoss.Du]
+[All.3SgPoss.Sg] [All.3SgPoss.Pl] [All.3SgPoss.Du]
+[All.3PlPoss.Sg] [All.3PlPoss.Pl] [All.3PlPoss.Du]
+[All.3DuPoss.Sg] [All.3DuPoss.Pl] [All.3DuPoss.Du]
+[All.4SgPoss.Sg] [All.4SgPoss.Pl] [All.4SgPoss.Du]
+[All.4PlPoss.Sg] [All.4PlPoss.Pl] [All.4PlPoss.Du]
+[All.4DuPoss.Sg] [All.4DuPoss.Pl] [All.4DuPoss.Du]
+!~~~~~~~~~~~~~~~~~~~~~~~~
+! perlative (vialis) case
+!~~~~~~~~~~~~~~~~~~~~~~~~
+[Prl.Sg]         [Prl.Pl]         [Prl.Du]
+[Prl.1SgPoss.Sg] [Prl.1SgPoss.Pl] [Prl.1SgPoss.Du]
+[Prl.1PlPoss.Sg] [Prl.1PlPoss.Pl] [Prl.1PlPoss.Du]
+[Prl.1DuPoss.Sg] [Prl.1DuPoss.Pl] [Prl.1DuPoss.Du]
+[Prl.2SgPoss.Sg] [Prl.2SgPoss.Pl] [Prl.2SgPoss.Du]
+[Prl.2PlPoss.Sg] [Prl.2PlPoss.Pl] [Prl.2PlPoss.Du]
+[Prl.2DuPoss.Sg] [Prl.2DuPoss.Pl] [Prl.2DuPoss.Du]
+[Prl.3SgPoss.Sg] [Prl.Sg.3SgPoss] [Prl.3SgPoss.Du]
+[Prl.3PlPoss.Sg] [Prl.Sg.3PlPoss] [Prl.3PlPoss.Du]
+[Prl.3DuPoss.Sg] [Prl.3DuPoss.Pl] [Prl.3PlPoss.Du]
+[Prl.4SgPoss.Sg] [Prl.4SgPoss.Pl] [Prl.4SgPoss.Du]
+[Prl.4PlPoss.Sg] [Prl.4PlPoss.Pl] [Prl.4PlPoss.Du]
+[Prl.4DuPoss.Sg] [Prl.4DuPoss.Pl] [Prl.4DuPoss.Du]
+!~~~~~~~~~~~~~~~~~~~~~~~~
+! equative (equalis) case
+!~~~~~~~~~~~~~~~~~~~~~~~~
+[Equ.Sg]         [Equ.Pl]         [Equ.Du]
+[Equ.1SgPoss.Sg] [Equ.1SgPoss.Pl] [Equ.1SgPoss.Du]
+[Equ.1PlPoss.Sg] [Equ.1PlPoss.Pl] [Equ.1PlPoss.Du]
+[Equ.1DuPoss.Sg] [Equ.1DuPoss.Pl] [Equ.1DuPoss.Du]
+[Equ.2SgPoss.Sg] [Equ.2SgPoss.Pl] [Equ.2SgPoss.Du]
+[Equ.2PlPoss.Sg] [Equ.2PlPoss.Pl] [Equ.2PlPoss.Du]
+[Equ.2DuPoss.Sg] [Equ.2DuPoss.Pl] [Equ.2DuPoss.Du]
+[Equ.3SgPoss.Sg] [Equ.Sg.3SgPoss] [Equ.3SgPoss.Du]
+[Equ.3PlPoss.Sg] [Equ.Sg.3PlPoss] [Equ.3PlPoss.Du]
+[Equ.3DuPoss.Sg] [Equ.3DuPoss.Pl] [Equ.3PlPoss.Du]
+[Equ.4SgPoss.Sg] [Equ.4SgPoss.Pl] [Equ.4SgPoss.Du]
+[Equ.4PlPoss.Sg] [Equ.4PlPoss.Pl] [Equ.4PlPoss.Du]
+[Equ.4DuPoss.Sg] [Equ.4DuPoss.Pl] [Equ.4DuPoss.Du]
+
+!-----------------------------
+! morphological tags for verbs
+!-----------------------------
+(V)             ! verb root
+(EMO)           ! emotional roots
+(POS)           ! postural roots
+
+(V→V)           ! verb-elaborating postbase
+(V→N)           ! nominalizing postbase
+(CmpdVbl)       ! compound-verbal postbase
+(EMO→N)         ! emotional root to noun stem postbase
+(EMO→V)         ! emotional root to verb stem postbase
+(POS→STATIVE)   ! postural root to stative form postbase
+(POS→ACTIVE)    ! postural root to active form postbase
+(POS→QUANTQUAL) ! postural root to quantifier-qualifier construction
+
+[Ind.Intr]      ! intransitive indicative mood
+[Ind.Trns]      ! transitive indicative mood
+[Ptcp.Intr]     ! intransitive participial mood
+[Ptcp.Trns]     ! transitive participial mood
+[PtcpObl.Intr]  ! intransitive participial-oblique mood
+[PtcpObl.Trns]  ! transitive participial-oblique mood
+[Prec.Intr]     ! intransitive precessive mood
+[Prec.Trns]     ! transitive precessive mood
+[Conc.Intr]     ! intransitive concessive mood
+[Conc.Trns]     ! transitive concessive mood
+[Cnsq1.Intr]    ! intransitive consequential I mood
+[Cnsq1.Trns]    ! transitive consequential I mood
+[Cnsq2.Intr]    ! intransitive consequential II mood
+[Cnsq2.Trns]    ! transitive consequential II mood
+[Cond.Intr]     ! intransitive conditional mood
+[Cond.Trns]     ! transitive conditional mood
+[Ctmp.Intr]     ! intransitive contemporative mood
+[Ctmp.Trns]     ! transitive contemporative mood
+[Sbrd.Intr]     ! intransitive subordinative mood
+[Sbrd.Trns]     ! transitive subordinative mood
+!~~~~~~~~~~~~~~~~~~~
+! interrogative mood 
+!~~~~~~~~~~~~~~~~~~~
+[Intrg.Intr.3Sg]  [Intrg.Intr.1Sg]  [Intrg.Intr.2Sg]
+[Intrg.Intr.3Pl]  [Intrg.Intr.1Pl]  [Intrg.Intr.2Pl]
+[Intrg.Intr.3Du]  [Intrg.Intr.1Du]  [Intrg.Intr.2Du]
+[Intrg.Trns.3Sg.3Sg]  [Intrg.Trns.3Sg.3Pl]  [Intrg.Trns.3Sg.3Du]
+[Intrg.Trns.3Pl.3Sg]  [Intrg.Trns.3Pl.3Pl]  [Intrg.Trns.3Pl.3Du]
+[Intrg.Trns.3Du.3Sg]  [Intrg.Trns.3Du.3Pl]  [Intrg.Trns.3Du.3Du]
+[Intrg.Trns.1Sg.3Sg]  [Intrg.Trns.1Sg.3Pl]  [Intrg.Trns.1Sg.3Du]
+[Intrg.Trns.1Pl.3Sg]  [Intrg.Trns.1Pl.3Pl]  [Intrg.Trns.1Pl.3Du]
+[Intrg.Trns.1Du.3Sg]  [Intrg.Trns.1Du.3Pl]  [Intrg.Trns.1Du.3Du]
+[Intrg.Trns.2Sg.3Sg]  [Intrg.Trns.2Sg.3Pl]  [Intrg.Trns.2Sg.3Du]
+[Intrg.Trns.2Pl.3Sg]  [Intrg.Trns.2Pl.3Pl]  [Intrg.Trns.2Pl.3Du]
+[Intrg.Trns.2Du.3Sg]  [Intrg.Trns.2Du.3Pl]  [Intrg.Trns.2Du.3Du]
+[Intrg.Trns.3Sg.1Sg]  [Intrg.Trns.3Sg.1Pl]  [Intrg.Trns.3Sg.1Du]
+[Intrg.Trns.3Pl.1Sg]  [Intrg.Trns.3Pl.1Pl]  [Intrg.Trns.3Pl.1Du]
+[Intrg.Trns.3Du.1Sg]  [Intrg.Trns.3Du.1Du]
+[Intrg.Trns.2Sg.1Sg]  [Intrg.Trns.2Sg.1Du]
+[Intrg.Trns.2Pl.1Sg]  [Intrg.Trns.2Pl.1Du]
+[Intrg.Trns.2Du.1Sg]  [Intrg.Trns.2Du.1Du]
+[Intrg.Trns.3Sg.2Sg]  [Intrg.Trns.3Sg.2Du]
+[Intrg.Trns.3Pl.2Sg]  [Intrg.Trns.3Pl.2Du]
+[Intrg.Trns.3Du.2Sg]  [Intrg.Trns.3Du.2Du]
+[Intrg.Trns.1Sg.2Sg]
+[Intrg.Trns.1Pl.2Sg]
+[Intrg.Trns.1Du.2Sg]
+!~~~~~~~~~~~~~~
+! optative mood 
+!~~~~~~~~~~~~~~
+[Opt.Pres.Intr.3Sg]  [Opt.Pres.Intr.1Sg]  [Opt.Pres.Intr.2Sg]
+[Opt.Pres.Intr.3Pl]  [Opt.Pres.Intr.1Pl]  [Opt.Pres.Intr.2Pl]
+[Opt.Pres.Intr.3Du]  [Opt.Pres.Intr.1Du]  [Opt.Pres.Intr.2Du]
+[Opt.Pres.Trns.3Sg.3Sg]  [Opt.Pres.Trns.3Sg.3Pl]  [Opt.Pres.Trns.3Sg.3Du]
+[Opt.Pres.Trns.3Pl.3Sg]  [Opt.Pres.Trns.3Pl.3Pl]  [Opt.Pres.Trns.3Pl.3Du]
+[Opt.Pres.Trns.3Du.3Sg]  [Opt.Pres.Trns.3Du.3Pl]  [Opt.Pres.Trns.3Du.3Du]
+[Opt.Pres.Trns.1Sg.3Sg]  [Opt.Pres.Trns.1Sg.3Pl]  [Opt.Pres.Trns.1Sg.3Du]
+[Opt.Pres.Trns.1Pl.3Sg]  [Opt.Pres.Trns.1Pl.3Pl]  [Opt.Pres.Trns.1Pl.3Du]
+[Opt.Pres.Trns.1Du.3Sg]  [Opt.Pres.Trns.1Du.3Pl]  [Opt.Pres.Trns.1Du.3Du]
+[Opt.Pres.Trns.2Sg.3Sg]  [Opt.Pres.Trns.2Sg.3Pl]  [Opt.Pres.Trns.2Sg.3Du]
+[Opt.Pres.Trns.2Pl.3Sg]  [Opt.Pres.Trns.2Pl.3Pl]  [Opt.Pres.Trns.2Pl.3Du]
+[Opt.Pres.Trns.2Du.3Sg]  [Opt.Pres.Trns.2Du.3Pl]  [Opt.Pres.Trns.2Du.3Du]
+[Opt.Pres.Trns.3Sg.1Sg]  [Opt.Pres.Trns.3Sg.1Pl]  [Opt.Pres.Trns.3Sg.1Du]
+[Opt.Pres.Trns.3Pl.1Sg]  [Opt.Pres.Trns.3Pl.1Pl]  [Opt.Pres.Trns.3Pl.1Du]
+[Opt.Pres.Trns.3Du.1Sg]  [Opt.Pres.Trns.3Du.1Pl]  [Opt.Pres.Trns.3Du.1Du]
+[Opt.Pres.Trns.2Sg.1Sg]  [Opt.Pres.Trns.2Sg.1Pl]  [Opt.Pres.Trns.2Sg.1Du]
+[Opt.Pres.Trns.2Pl.1Sg]  [Opt.Pres.Trns.2Pl.1Pl]  [Opt.Pres.Trns.2Pl.1Du]
+[Opt.Pres.Trns.2Du.1Sg]  [Opt.Pres.Trns.2Du.1Pl]  [Opt.Pres.Trns.2Du.1Du]
+[Opt.Pres.Trns.3Sg.2Sg]  [Opt.Pres.Trns.3Sg.2Pl]  [Opt.Pres.Trns.3Sg.2Du]
+[Opt.Pres.Trns.3Pl.2Sg]  [Opt.Pres.Trns.3Pl.2Pl]  [Opt.Pres.Trns.3Pl.2Du]
+[Opt.Pres.Trns.3Du.2Sg]  [Opt.Pres.Trns.3Du.2Pl]  [Opt.Pres.Trns.3Du.2Du]
+[Opt.Pres.Trns.1Sg.2Sg]  [Opt.Pres.Trns.1Sg.2Pl]  [Opt.Pres.Trns.1Sg.2Du]
+[Opt.Pres.Trns.1Pl.2Sg]  [Opt.Pres.Trns.1Pl.2Pl]  [Opt.Pres.Trns.1Pl.2Du]
+[Opt.Pres.Trns.1Du.2Sg]  [Opt.Pres.Trns.1Du.2Pl]  [Opt.Pres.Trns.1Du.2Du]
+[Opt.Neg.Pres.Intr]
+[Opt.Neg.Pres.Trns]
+[Opt.Neg.Pres.Trns.2Sg.3Pl]
+[Opt.Neg.Pres.Trns.2Pl.3Pl]
+[Opt.Neg.Pres.Trns.2Du.3Pl]
+[Opt.Fut.Intr]
+[Opt.Fut.Trns]
+[Opt.Fut.Neg.Intr]
+[Opt.Fut.Neg.Trns]
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! intransitive person-number markers
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3Sg]  [1Sg]  [2Sg]  [4Sg]
+[3Pl]  [1Pl]  [2Pl]  [4Pl]
+[3Du]  [1Du]  [2Du]  [4Du]
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! transitive person-number markers
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[3Sg.3Sg]  [3Sg.3Pl]  [3Sg.3Du]
+[3Pl.3Sg]  [3Pl.3Pl]  [3Pl.3Du]
+[3Du.3Sg]  [3Du.3Pl]  [3Du.3Du]
+[1Sg.3Sg]  [1Sg.3Pl]  [1Sg.3Du]
+[1Pl.3Sg]  [1Pl.3Pl]  [1Pl.3Du]
+[1Du.3Sg]  [1Du.3Pl]  [1Du.3Du]
+[2Sg.3Sg]  [2Sg.3Pl]  [2Sg.3Du]
+[2Pl.3Sg]  [2Pl.3Pl]  [2Pl.3Du]
+[2Du.3Sg]  [2Du.3Pl]  [2Du.3Du]
+[4Sg.4Sg]  [4Sg.4Pl]  [4Sg.4Du]
+[4Pl.4Sg]  [4Pl.4Pl]  [4Pl.4Du]
+[4Du.4Sg]  [4Du.4Pl]  [4Du.4Du]
+[3Sg.1Sg]  [3Sg.1Pl]  [3Sg.1Du]
+[3Pl.1Sg]  [3Pl.1Pl]  [3Pl.1Du]
+[3Du.1Sg]  [3Du.1Pl]  [3Du.1Du]
+[2Sg.1Sg]  [2Sg.1Pl]  [2Sg.1Du]
+[2Pl.1Sg]  [2Pl.1Pl]  [2Pl.1Du]
+[2Du.1Sg]  [2Du.1Pl]  [2Du.1Du]
+[4Sg.1Sg]  [4Sg.1Pl]  [4Sg.1Du]
+[4Pl.1Sg]  [4Pl.1Pl]  [4Pl.1Du]
+[4Du.1Sg]  [4Du.1Pl]  [4Du.1Du]
+[3Sg.2Sg]  [3Sg.2Pl]  [3Sg.2Du]
+[3Pl.2Sg]  [3Pl.2Pl]  [3Pl.2Du]
+[3Du.2Sg]  [3Du.2Pl]  [3Du.2Du]
+[1Sg.2Sg]  [1Sg.2Pl]  [1Sg.2Du]
+[1Pl.2Sg]  [1Pl.2Pl]  [1Pl.2Du]
+[1Du.2Sg]  [1Du.2Pl]  [1Du.2Du]
+[4Sg.2Sg]  [4Sg.2Pl]  [4Sg.2Du]
+[4Pl.2Sg]  [4Pl.2Pl]  [4Pl.2Du]
+[4Du.2Sg]  [4Du.2Pl]  [4Du.2Du]
+[_.3Sg]    [_.3Pl]    [_.3Du]
+[_.1Sg]    [_.1Pl]    [_.1Du]
+[_.2Sg]    [_.2Pl]    [_.2Du]
+
+!-------------------------
+! misc morphological tags
+!-------------------------
+(DEM)          ! demonstrative
+(DEM→N)        ! demonstrative to noun stem
+(NUM)          ! numeral
+(NUM→N)        ! numeral to noun stem
+(NUM→V)        ! numeral to verb stem
+(PTCL)         ! particle
+(PRO)          ! pronoun
+(WH)           ! question word
+(QUANTQUAL)    ! for quantifier-qualifier constructions
+(N→QUANTQUAL)  ! noun stem to quantifier-qualifier postbase
+(V→QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
+(N→XCLM)       ! noun stem to exclamation
+(V→XCLM)       ! verb stem to exclamation
 
 
-
+!===========
 LEXICON Root
-    NounWithPostbase ;
-    VerbWithPostbase ;
-    VerbWithInfl ;
+!===========
+  NounWithPostbase ;
+  VerbWithPostbase ;
+  VerbWithInfl ;
 
 
-	
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                             !!!!!!
-!!!!!!  Noun Bases with Postbases  !!!!!!
-!!!!!!                             !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                  !!!!!!
+!!!!!!      Noun Bases + Postbases      !!!!!!
+!!!!!!                                  !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+!=======================
 LEXICON NounWithPostbase
+!=======================
+Laluramke(N)-tagh(N→N)[Abs.Sg]:laluramkatagh NounPostbase;
 
-Laluramke-tagh[N→N][N][Abs][Unpd][Sg]:laluramkatagh NounPostbase;
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!                                     !!!!!!
+!!!!!!      (N->N) / (N->V) Postbases      !!!!!!
+!!!!!!                                     !!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                                                                 !!!!!!
-!!!!!!     Derivational Morphemes Applied To Nouns / Derived Bases     !!!!!!
-!!!!!!                                                                 !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
+!===================
 LEXICON NounPostbase
-NounInfl;
-VerbEte;
+!===================
+0:0  NounInfl;
+0:0  VerbEte;
 
--~sf–ghhalek[N→XCLM]:~sf–ghhalek  EncliticOrEnd; ! how much N it has!
+-~sf–ghhaleg[N→XCLM]:~sf–ghhalek  EncliticOrEnd; ! how much N it has!
 
 -~sf-w%:(e)nkuk[N→N]:~sf-w%:(e)nkuk      NounPostbase; ! N and partner; N and associate(s); N and family
 -~sf-w%:(e)nkut[N→N]:~sf-w%:(e)nkut      NounPostbase; ! N and partner; N and associate(s); N and family
