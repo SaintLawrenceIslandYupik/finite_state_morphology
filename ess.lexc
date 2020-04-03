@@ -294,6 +294,7 @@ ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 (V→XCLM)       ! verb stem to exclamation
 
 
+
 !===========
 LEXICON Root
 !===========
@@ -308,6 +309,7 @@ LEXICON Root
   ProperNoun      ;
   QuantQual       ;
   VerbBase        ;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -840,6 +842,7 @@ LEXICON PtclTag
 (PTCL):0  Enclitic;
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                          !!!!!!
@@ -894,6 +897,7 @@ sangameng(WH):sangameng        Enclitic; ! why? (focused on [3Pl] SBJ)
 sangami(WH):sangami            Enclitic; ! why? (focused on [3Sg] SBJ)
 
 naligh*(WH):naligh*            NounPostbase; ! which one(s)?
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -1288,6 +1292,7 @@ Yupig                  	NounTag; ! Siberian / St. Lawrence Island Eskimo person;
 Yuughapaatat           	NounTag; ! Youghapotit Rocks off the southern coast of St. Lawrence Island
 Yuughapag              	NounTag; ! Sekinak Lagoon (or the spit between it and the ocean) on St. Lawrence Island
 Yuug Savileg           	NounTag; ! the constellation of Orion
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -5197,6 +5202,7 @@ LEXICON NounTag
 (N):0  NounPostbase;
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                     !!!!!!
@@ -5364,6 +5370,7 @@ LEXICON NounPostbase
 ^+tuumagh(N→QUANTQUAL):tuumagh           QuantQualPostbase; ! together with one's N(s)
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                      !!!!!!
@@ -5376,183 +5383,183 @@ LEXICON NounPostbase
 LEXICON NounInfl
 !===============
 
-!-------------------------------------------|
-! Absolutive Case Endings                   |
-!-------------------------------------------|-----------------------------------------------|-------------------------------------------------|-----------------|
-! singular possessed                        | plural possessed                              | dual possessed                                  |                 |
-!-------------------------------------------|-----------------------------------------------|-------------------------------------------------|-----------------|
+!--------------------------------------|
+! Absolutive Case Endings              |
+!--------------------------------------|------------------------------------------|----------------------------------------------|---------------|
+! singular possessed                   | plural possessed                         | dual possessed                               |               |
+!--------------------------------------|------------------------------------------|----------------------------------------------|---------------|
 ^[Abs.Sg]:^                    Enclitic; ^[Abs.Pl]:^~sf-w%:(e)t           Enclitic; ^[Abs.Du]:^~sf-w%:(e)k             Enclitic; ! unpossessed   |
-!-------------------------------------------|-----------------------------------------------|-------------------------------------------------|-----------------|
+!--------------------------------------|------------------------------------------|----------------------------------------------|---------------|
 ^[Abs.3SgPoss.Sg]:^~h%:(ng₁)a  Enclitic; ^[Abs.3SgPoss.Pl]:^~h%:(ng₁)i    Enclitic; ^[Abs.3SgPoss.Du]:^~h-wkek         Enclitic; ! 3SG possessor |
 ^[Abs.3PlPoss.Sg]:^~h%:(ng₁)at Enclitic; ^[Abs.3PlPoss.Pl]:^~h%:(ng₁)it   Enclitic; ^[Abs.3PlPoss.Du]:^~h-w%:(e)gket   Enclitic; ! 3PL possessor |
 ^[Abs.3DuPoss.Sg]:^~h%:(ng₁)ak Enclitic; ^[Abs.3DuPoss.Pl]:^~h%:(ng₁)ik   Enclitic; ^[Abs.3DuPoss.Du]:^~h-w%:(e)gkek   Enclitic; ! 3Du possessor |
-!-------------------------------------------|-----------------------------------------------|-------------------------------------------------|-----------------|
+!--------------------------------------|------------------------------------------|----------------------------------------------|---------------|
 ^[Abs.1SgPoss.Sg]:^~–ka        Enclitic; ^[Abs.1SgPoss.Pl]:^~sf-w%:(e)nka Enclitic; ^[Abs.1SgPoss.Du]:^~sf-w%:(e)gka   Enclitic; ! 1SG possessor |
 ^[Abs.1PlPoss.Sg]:^(p/v)ut     Enclitic; ^[Abs.1PlPoss.Pl]:^–put          Enclitic; ^[Abs.1PlPoss.Du]:^~sf-w%:(e)gput  Enclitic; ! 1PL possessor |
 ^[Abs.1DuPoss.Sg]:^(p/v)ung    Enclitic; ^[Abs.1DuPoss.Pl]:^–pung         Enclitic; ^[Abs.1DuPoss.Du]:^~sf-w%:(e)gpung Enclitic; ! 1Du possessor |
-!-------------------------------------------|-----------------------------------------------|-------------------------------------------------|-----------------|
+!--------------------------------------|------------------------------------------|----------------------------------------------|---------------|
 ^[Abs.2SgPoss.Sg]:^~sf-w%:(e)n Enclitic; ^[Abs.2SgPoss.Pl]:^ten           Enclitic; ^[Abs.2SgPoss.Du]:^~sf-w%:(e)gken  Enclitic; ! 2SG possessor |
-                                              ^[Abs.2SgPoss.Pl]:^~f-wten       Enclitic; !                                               |                 |
+                                         ^[Abs.2SgPoss.Pl]:^~f-wten       Enclitic; !                                            |               |
 ^[Abs.2PlPoss.Sg]:^(s/z)i      Enclitic; ^[Abs.2PlPoss.Pl]:^–si           Enclitic; ^[Abs.2PlPoss.Du]:^~sf-w%:(e)gsi   Enclitic; ! 2Pl possessor |
 ^[Abs.2DuPoss.Sg]:^(t/y)ek     Enclitic; ^[Abs.2DuPoss.Pl]:^–tek          Enclitic; ^[Abs.2DuPoss.Du]:^~sf-w%:(e)gtek  Enclitic; ! 2Du possessor |
-!-------------------------------------------|-----------------------------------------------|-------------------------------------------------|-----------------|
+!--------------------------------------|------------------------------------------|----------------------------------------------|---------------|
 ^[Abs.4SgPoss.Sg]:^–ni         Enclitic; ^[Abs.4SgPoss.Pl]:^–ni           Enclitic; ^[Abs.4SgPoss.Du]:^~sf-w%:(e)gni   Enclitic; ! 4SG possessor |
 ^[Abs.4PlPoss.Sg]:^(t/y)eng    Enclitic; ^[Abs.4PlPoss.Pl]:^–teng         Enclitic; ^[Abs.4PlPoss.Du]:^~sf-w%:(e)gtek  Enclitic; ! 4Pl possessor |
 ^[Abs.4DuPoss.Sg]:^(t/y)ek     Enclitic; ^[Abs.4DuPoss.Pl]:^–tek          Enclitic; ^[Abs.4DuPoss.Du]:^~sf-w%:(e)gtek  Enclitic; ! 4Du possessor |
-!-------------------------------------------|-----------------------------------------------|-------------------------------------------------|-----------------|
+!--------------------------------------|------------------------------------------|----------------------------------------------|---------------|
 
 
-!------------------------------------------------------------|
-!                Ablative-Modalis Case Endings               |
-!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                      singular possessed                    |                        plural possessed                    |                            dual possessed                         |
-!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-^[Abl_Mod.Sg]:^~f-wmeng                 Enclitic; ^[Abl_Mod.Pl]:^~f-w/-wneng            Enclitic; ^[Abl_Mod.Du]:^~sf-w%:(e)gneng               Enclitic; ! unpossessed   |
-!------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+!------------------------------------------------|
+! Ablative-Modalis Case Endings                  |
+!------------------------------------------------|------------------------------------------------|-------------------------------------------------------|-----------------|
+! singular possessed                             | plural possessed                               | dual possessed                                        |                 |
+!------------------------------------------------|------------------------------------------------|-------------------------------------------------------|-----------------|
+^[Abl_Mod.Sg]:^~f-wmeng                  Enclitic; ^[Abl_Mod.Pl]:^~f-w/-wneng             Enclitic; ^[Abl_Mod.Du]:^~sf-w%:(e)gneng                Enclitic; ! unpossessed   |
+!------------------------------------------------|------------------------------------------------|-------------------------------------------------------|-----------------|
 ^[Abl_Mod.3SgPoss.Sg]:^~%:(ng₁)aneng     Enclitic; ^[Abl_Mod.3SgPoss.Pl]:^~%:(ng₁)aneng   Enclitic; ^[Abl_Mod.3SgPoss.Du]:^~sf-w%:(e)gkeneng      Enclitic; ! 3Sg possessor |
 ^[Abl_Mod.3PlPoss.Sg]:^~%:(ng₁)itneng    Enclitic; ^[Abl_Mod.3PlPoss.Pl]:^~%:(ng₁)itneng  Enclitic; ^[Abl_Mod.3PlPoss.Du]:^~%:(ng₁)itneng         Enclitic; ! 3Pl possessor |
 ^[Abl_Mod.3DuPoss.Sg]:^~sf-w%:(e)gkeneng Enclitic; ^[Abl_Mod.3DuPoss.Pl]:^~%:(ng₁)itneng  Enclitic; ^[Abl_Mod.3DuPoss.Du]:^~%:(ng₁)itneng         Enclitic; ! 3Du possessor |
-!------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+!------------------------------------------------|------------------------------------------------|-------------------------------------------------------|-----------------|
 ^[Abl_Mod.1SgPoss.Sg]:^–mneng            Enclitic; ^[Abl_Mod.1SgPoss.Pl]:^–mneng          Enclitic; ^[Abl_Mod.1SgPoss.Du]:^~sf-w%:(e)gemneng      Enclitic; ! 1Sg possessor |
 ^[Abl_Mod.1PlPoss.Sg]:^–mnneng           Enclitic; ^[Abl_Mod.1PlPoss.Pl]:^–mnneng         Enclitic; ^[Abl_Mod.1PlPoss.Du]:^~sf-w%:(e)gemnneng     Enclitic; ! 1Pl possessor |
 ^[Abl_Mod.1DuPoss.Sg]:^–mtegneng         Enclitic; ^[Abl_Mod.1DuPoss.Pl]:^–mtegneng       Enclitic; ^[Abl_Mod.1DuPoss.Du]:^~sf-w%:(e)gemtegneng   Enclitic; ! 1Du possessor |
-!------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+!------------------------------------------------|------------------------------------------------|-------------------------------------------------------|-----------------|
 ^[Abl_Mod.2SgPoss.Sg]:^–gpeneng          Enclitic; ^[Abl_Mod.2SgPoss.Pl]:^–gpeneng        Enclitic; ^[Abl_Mod.2SgPoss.Du]:^~sf-w%:(e)gpeneng      Enclitic; ! 2Sg possessor |
 ^[Abl_Mod.2PlPoss.Sg]:^–gpesineng        Enclitic; ^[Abl_Mod.2PlPoss.Pl]:^–gpesineng      Enclitic; ^[Abl_Mod.2PlPoss.Du]:^~sf-w%:(e)gpesineng    Enclitic; ! 2Pl possessor |
 ^[Abl_Mod.2DuPoss.Sg]:^–gpetegneng       Enclitic; ^[Abl_Mod.2DuPoss.Pl]:^–gpetegneng     Enclitic; ^[Abl_Mod.2DuPoss.Du]:^~sf-w%:(e)gpetegneng   Enclitic; ! 2Du possessor |
-!------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+!------------------------------------------------|------------------------------------------------|-------------------------------------------------------|-----------------|
 ^[Abl_Mod.4SgPoss.Sg]:^~f-wmineng        Enclitic; ^[Abl_Mod.4SgPoss.Pl]:^~f-wmineng      Enclitic; ^[Abl_Mod.4SgPoss.Du]:^~sf-w%:(e)gmineng      Enclitic; ! 4Sg possessor |
 ^[Abl_Mod.4PlPoss.Sg]:^~f-wmeggneng      Enclitic; ^[Abl_Mod.4PlPoss.Pl]:^~f-wmeggneng    Enclitic; ^[Abl_Mod.4PlPoss.Du]:^~sf-w%:(e)gmeggneng    Enclitic; ! 4Pl possessor |
 ^[Abl_Mod.4DuPoss.Sg]:^~f-wmegneng       Enclitic; ^[Abl_Mod.4DuPoss.Pl]:^~f-wmegneng     Enclitic; ^[Abl_Mod.4DuPoss.Du]:^~sf-w%:(e)gmegneng     Enclitic; ! 4Du possessor |
 ^[Abl_Mod.4DuPoss.Sg]:^~f-wmegteneng     Enclitic; ^[Abl_Mod.4DuPoss.Pl]:^~f-wmegteneng   Enclitic; ^[Abl_Mod.4DuPoss.Du]:^~sf-w%:(e)gmegteneng   Enclitic; ! 4Du possessor |
-!------------------------------------------------------------|------------------------------------------------------------|-------------------------------------------------------------------|-----------------|
+!------------------------------------------------|------------------------------------------------|-------------------------------------------------------|-----------------|
 
 
-!------------------------------------------------------|
-!           Localis Case Endings (at N; in N)          |
-!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                  singular possessed                  |                     plural possessed                 |                          dual possessed                     |
-!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-^[Loc.Sg]:^~f-wmi                 Enclitic; ^[Loc.Pl]:^~f-w/-wni            Enclitic; ^[Loc.Du]:^~sf-w%:(e)gni               Enclitic; ! unpossessed   |
-!------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+!------------------------------------------|
+! Localis Case Endings (at N; in N)        |
+!------------------------------------------|------------------------------------------|---------------------------------------------------|---------------|
+! singular possessed                       | plural possessed                         | dual possessed                                    |               |
+!------------------------------------------|------------------------------------------|---------------------------------------------------|---------------|
+^[Loc.Sg]:^~f-wmi                  Enclitic; ^[Loc.Pl]:^~f-w/-wni             Enclitic; ^[Loc.Du]:^~sf-w%:(e)gni                Enclitic; ! unpossessed   |
+!------------------------------------------|------------------------------------------|---------------------------------------------------|---------------|
 ^[Loc.3SgPoss.Sg]:^~%:(ng₁)ani     Enclitic; ^[Loc.3SgPoss.Pl]:^~%:(ng₁)ani   Enclitic; ^[Loc.3SgPoss.Du]:^~sf-w%:(e)gkeni      Enclitic; ! 3Sg possessor |
 ^[Loc.3PlPoss.Sg]:^~%:(ng₁)itni    Enclitic; ^[Loc.3PlPoss.Pl]:^~%:(ng₁)itni  Enclitic; ^[Loc.3PlPoss.Du]:^~%:(ng₁)itni         Enclitic; ! 3Pl possessor |
 ^[Loc.3DuPoss.Sg]:^~sf-w%:(e)gkeni Enclitic; ^[Loc.3DuPoss.Pl]:^~%:(ng₁)itni  Enclitic; ^[Loc.3DuPoss.Du]:^~%:(ng₁)itni         Enclitic; ! 3Du possessor |
-!------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+!------------------------------------------|------------------------------------------|---------------------------------------------------|---------------|
 ^[Loc.1SgPoss.Sg]:^–mni            Enclitic; ^[Loc.1SgPoss.Pl]:^–mni          Enclitic; ^[Loc.1SgPoss.Du]:^~sf-w%:(e)gemni      Enclitic; ! 1Sg possessor |
 ^[Loc.1PlPoss.Sg]:^–mnni           Enclitic; ^[Loc.1PlPoss.Pl]:^–mnni         Enclitic; ^[Loc.1PlPoss.Du]:^~sf-w%:(e)gemnni     Enclitic; ! 1Pl possessor |
 ^[Loc.1DuPoss.Sg]:^–mtegni         Enclitic; ^[Loc.1DuPoss.Pl]:^–mtegni       Enclitic; ^[Loc.1DuPoss.Du]:^~sf-w%:(e)gemtegni   Enclitic; ! 1Du possessor |
-!------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+!------------------------------------------|------------------------------------------|---------------------------------------------------|---------------|
 ^[Loc.2SgPoss.Sg]:^–gpeni          Enclitic; ^[Loc.2SgPoss.Pl]:^–gpeni        Enclitic; ^[Loc.2SgPoss.Du]:^~sf-w%:(e)gpeni      Enclitic; ! 2Sg possessor |
 ^[Loc.2PlPoss.Sg]:^–gpesini        Enclitic; ^[Loc.2PlPoss.Pl]:^–gpesini      Enclitic; ^[Loc.2PlPoss.Du]:^~sf-w%:(e)gpesini    Enclitic; ! 2Pl possessor |
 ^[Loc.2DuPoss.Sg]:^–gpetegni       Enclitic; ^[Loc.2DuPoss.Pl]:^–gpetegni     Enclitic; ^[Loc.2DuPoss.Du]:^~sf-w%:(e)gpetegni   Enclitic; ! 2Du possessor |
-!------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+!------------------------------------------|------------------------------------------|---------------------------------------------------|---------------|
 ^[Loc.4SgPoss.Sg]:^~f-wmini        Enclitic; ^[Loc.4SgPoss.Pl]:^~f-wmini      Enclitic; ^[Loc.4SgPoss.Du]:^~sf-w%:(e)gmini      Enclitic; ! 4Sg possessor |
 ^[Loc.4PlPoss.Sg]:^~f-wmeggni      Enclitic; ^[Loc.4PlPoss.Pl]:^~f-wmeggni    Enclitic; ^[Loc.4PlPoss.Du]:^~sf-w%:(e)gmeggni    Enclitic; ! 4Pl possessor |
 ^[Loc.4DuPoss.Sg]:^~f-wmegni       Enclitic; ^[Loc.4DuPoss.Pl]:^~f-wmegni     Enclitic; ^[Loc.4DuPoss.Du]:^~sf-w%:(e)gmegni     Enclitic; ! 4Du possessor |
 ^[Loc.4DuPoss.Sg]:^~f-wmegteni     Enclitic; ^[Loc.4DuPoss.Pl]:^~f-wmegteni   Enclitic; ^[Loc.4DuPoss.Du]:^~sf-w%:(e)gmegteni   Enclitic; ! 4Du possessor |
-!------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------|-----------------|
+!------------------------------------------|------------------------------------------|---------------------------------------------------|---------------|
 
 
-!-------------------------------------------------------|
-!            Terminalis Case Endings (to N)             | 
-!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                   singular possessed                  |                      plural possessed                 |                          dual possessed                      |
-!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-^[All.Sg]:^~f-wmun                 Enclitic; ^[All.Pl]:^~f-w/-wnun            Enclitic; ^[All.Du]:^~sf-w%:(e)gnun               Enclitic; ! unpossessed   |
-!-------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|
+! Terminalis Case Endings (to N)            | 
+!-------------------------------------------|-------------------------------------------|--------------------------------------------------|-----------------|
+! singular possessed                        | plural possessed                          | dual possessed                                   |                 |
+!-------------------------------------------|-------------------------------------------|--------------------------------------------------|-----------------|
+^[All.Sg]:^~f-wmun                  Enclitic; ^[All.Pl]:^~f-w/-wnun             Enclitic; ^[All.Du]:^~sf-w%:(e)gnun                Enclitic; ! unpossessed   |
+!-------------------------------------------|-------------------------------------------|--------------------------------------------------|-----------------|
 ^[All.3SgPoss.Sg]:^~%:(ng₁)anun     Enclitic; ^[All.3SgPoss.Pl]:^~%:(ng₁)anun   Enclitic; ^[All.3SgPoss.Du]:^~sf-w%:(e)gkenun      Enclitic; ! 3Sg possessor |
 ^[All.3PlPoss.Sg]:^~%:(ng₁)itnun    Enclitic; ^[All.3PlPoss.Pl]:^~%:(ng₁)itnun  Enclitic; ^[All.3PlPoss.Du]:^~%:(ng₁)itnun         Enclitic; ! 3Pl possessor |
 ^[All.3DuPoss.Sg]:^~sf-w%:(e)gkenun Enclitic; ^[All.3DuPoss.Pl]:^~%:(ng₁)itnun  Enclitic; ^[All.3DuPoss.Du]:^~%:(ng₁)itnun         Enclitic; ! 3Du possessor |
-!-------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-------------------------------------------|--------------------------------------------------|-----------------|
 ^[All.1SgPoss.Sg]:^–mnun            Enclitic; ^[All.1SgPoss.Pl]:^–mnun          Enclitic; ^[All.1SgPoss.Du]:^~sf-w%:(e)gemnun      Enclitic; ! 1Sg possessor |
 ^[All.1PlPoss.Sg]:^–mnnun           Enclitic; ^[All.1PlPoss.Pl]:^–mnnun         Enclitic; ^[All.1PlPoss.Du]:^~sf-w%:(e)gemnnun     Enclitic; ! 1Pl possessor |
 ^[All.1DuPoss.Sg]:^–mtegnun         Enclitic; ^[All.1DuPoss.Pl]:^–mtegnun       Enclitic; ^[All.1DuPoss.Du]:^~sf-w%:(e)gemtegnun   Enclitic; ! 1Du possessor |
-!-------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-------------------------------------------|--------------------------------------------------|-----------------|
 ^[All.2SgPoss.Sg]:^–gpenun          Enclitic; ^[All.2SgPoss.Pl]:^–gpenun        Enclitic; ^[All.2SgPoss.Du]:^~sf-w%:(e)gpenun      Enclitic; ! 2Sg possessor |
 ^[All.2PlPoss.Sg]:^–gpesinun        Enclitic; ^[All.2PlPoss.Pl]:^–gpesinun      Enclitic; ^[All.2PlPoss.Du]:^~sf-w%:(e)gpesinun    Enclitic; ! 2Pl possessor |
 ^[All.2DuPoss.Sg]:^–gpetegnun       Enclitic; ^[All.2DuPoss.Pl]:^–gpetegnun     Enclitic; ^[All.2DuPoss.Du]:^~sf-w%:(e)gpetegnun   Enclitic; ! 2Du possessor |
-!-------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-------------------------------------------|--------------------------------------------------|-----------------|
 ^[All.4SgPoss.Sg]:^~f-wminun        Enclitic; ^[All.4SgPoss.Pl]:^~f-wminun      Enclitic; ^[All.4SgPoss.Du]:^~sf-w%:(e)gminun      Enclitic; ! 4Sg possessor |
 ^[All.4PlPoss.Sg]:^~f-wmeggnun      Enclitic; ^[All.4PlPoss.Pl]:^~f-wmeggnun    Enclitic; ^[All.4PlPoss.Du]:^~sf-w%:(e)gmeggnun    Enclitic; ! 4Pl possessor |
 ^[All.4DuPoss.Sg]:^~f-wmegnun       Enclitic; ^[All.4DuPoss.Pl]:^~f-wmegnun     Enclitic; ^[All.4DuPoss.Du]:^~sf-w%:(e)gmegnun     Enclitic; ! 4Du possessor |
 ^[All.4DuPoss.Sg]:^~f-wmegtenun     Enclitic; ^[All.4DuPoss.Pl]:^~f-wmegtenun   Enclitic; ^[All.4DuPoss.Du]:^~sf-w%:(e)gmegtenun   Enclitic; ! 4Du possessor |
-!-------------------------------------------------------|-------------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-------------------------------------------|--------------------------------------------------|-----------------|
 
 
-!--------------------------------------------------------|
-!              Vialis Case Endings (through N)           |
-!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                  singular possessed                    |                      plural possessed                  |                           dual possessed                      |
-!---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------- -|
-^[Prl.Sg]:^~h-wkun                  Enclitic; ^[Prl.Pl]:^~sf-w%:(e)tgun/teggun  Enclitic; ^[Prl.Du]:^~sf-w%:(e)gnegun               Enclitic; ! unpossessed   |
-!--------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+!--------------------------------------------|
+! Vialis Case Endings (through N)            |
+!--------------------------------------------|--------------------------------------------|------------------------------------------------------|---------------|
+! singular possessed                         | plural possessed                           | dual possessed                                       |               |
+!--------------------------------------------|--------------------------------------------|------------------------------------------------------|---------------|
+^[Prl.Sg]:^~h-wkun                   Enclitic; ^[Prl.Pl]:^~sf-w%:(e)tgun/teggun   Enclitic; ^[Prl.Du]:^~sf-w%:(e)gnegun                Enclitic; ! unpossessed   |
+!--------------------------------------------|--------------------------------------------|------------------------------------------------------|---------------|
 ^[Prl.3SgPoss.Sg]:^~%:(ng₁)akun      Enclitic; ^[Prl.3SgPoss.Pl]:^~%:(ng₁)akun    Enclitic; ^[Prl.3SgPoss.Du]:^~sf-w%:(e)gkenkun       Enclitic; ! 3Sg possessor |
 ^[Prl.3PlPoss.Sg]:^~%:(ng₁)itgun     Enclitic; ^[Prl.3PlPoss.Pl]:^~%:(ng₁)itgun   Enclitic; ^[Prl.3PlPoss.Du]:^~%:(ng₁)itgun           Enclitic; ! 3Pl possessor |
 ^[Prl.3DuPoss.Sg]:^~sf-w%:(e)gkenkun Enclitic; ^[Prl.3DuPoss.Pl]:^~%:(ng₁)akun    Enclitic; ^[Prl.3DuPoss.Du]:^~%:(ng₁)itgun           Enclitic; ! 3Du possessor |
-!--------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+!--------------------------------------------|--------------------------------------------|------------------------------------------------------|---------------|
 ^[Prl.1SgPoss.Sg]:^–mkun             Enclitic; ^[Prl.1SgPoss.Pl]:^–mkun           Enclitic; ^[Prl.1SgPoss.Du]:^~sf-w%:(e)gemkun        Enclitic; ! 1Sg possessor |
 ^[Prl.1PlPoss.Sg]:^–mteggun          Enclitic; ^[Prl.1PlPoss.Pl]:^–mteggun        Enclitic; ^[Prl.1PlPoss.Du]:^~sf-w%:(e)gemteggun     Enclitic; ! 1Pl possessor |
 ^[Prl.1DuPoss.Sg]:^–mtegnegun        Enclitic; ^[Prl.1DuPoss.Pl]:^–mtegnegun      Enclitic; ^[Prl.1DuPoss.Du]:^~sf-w%:(e)gemtegnegun   Enclitic; ! 1Du possessor |
-!--------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+!--------------------------------------------|--------------------------------------------|------------------------------------------------------|---------------|
 ^[Prl.2SgPoss.Sg]:^–gpekun           Enclitic; ^[Prl.2SgPoss.Pl]:^–gpegun         Enclitic; ^[Prl.2SgPoss.Du]:^~sf-w%:(e)gpegun        Enclitic; ! 2Sg possessor |
 ^[Prl.2PlPoss.Sg]:^–gpesigun         Enclitic; ^[Prl.2PlPoss.Pl]:^–gpesigun       Enclitic; ^[Prl.2PlPoss.Du]:^~sf-w%:(e)gpesigun      Enclitic; ! 2Pl possessor |
 ^[Prl.2DuPoss.Sg]:^–gpetegnegun      Enclitic; ^[Prl.2DuPoss.Pl]:^–gpetegnegun    Enclitic; ^[Prl.2DuPoss.Du]:^~sf-w%:(e)gpetegnegun   Enclitic; ! 2Du possessor |
-!--------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+!--------------------------------------------|--------------------------------------------|------------------------------------------------------|---------------|
 ^[Prl.4SgPoss.Sg]:^~f-wmikun         Enclitic; ^[Prl.4SgPoss.Pl]:^~f-wmikun       Enclitic; ^[Prl.4SgPoss.Du]:^~sf-w%:(e)gmikun        Enclitic; ! 4Sg possessor |
 ^[Prl.4PlPoss.Sg]:^~f-wmegteggun     Enclitic; ^[Prl.4PlPoss.Pl]:^~f-wmegteggun   Enclitic; ^[Prl.4PlPoss.Du]:^~sf-w%:(e)gmegteggun    Enclitic; ! 4Pl possessor |
 ^[Prl.4DuPoss.Sg]:^~f-wmegtegnegun   Enclitic; ^[Prl.4DuPoss.Pl]:^~f-wmegtegnegun Enclitic;  ^[Prl.4DuPoss.Du]:^~sf-w%:(e)gmegtegnegun Enclitic; ! 4Du possessor |
-!--------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|-----------------|
+!--------------------------------------------|--------------------------------------------|------------------------------------------------------|---------------|
 
 
-!-------------------------------------------------------|
-!             Equalis Case Endings (like N)             |
-!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                  singular possessed                   |                     plural possessed                |                          dual possessed                      |
-!----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-^[Equ.Sg]:^~f-wtun                 Enclitic; ^[Equ.Pl]:^~sf-w%:(e)stun      Enclitic; ^[Equ.Du]:^~sf-w%:(e)gestun             Enclitic; ! unpossessed   |
-!-------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|
+! Equalis Case Endings (like N)             |
+!-------------------------------------------|-----------------------------------------|--------------------------------------------------|-----------------|
+! singular possessed                        | plural possessed                        | dual possessed                                   |                 |
+!-------------------------------------------|-----------------------------------------|--------------------------------------------------|-----------------|
+^[Equ.Sg]:^~f-wtun                  Enclitic; ^[Equ.Pl]:^~sf-w%:(e)stun       Enclitic; ^[Equ.Du]:^~sf-w%:(e)gestun              Enclitic; ! unpossessed   |
+!-------------------------------------------|-----------------------------------------|--------------------------------------------------|-----------------|
 ^[Equ.3SgPoss.Sg]:^~%:(ng₁)atun     Enclitic; ^[Equ.3SgPoss.Pl]:^~%:(ng₁)atun Enclitic; ^[Equ.3SgPoss.Du]:^~sf-w%:(e)gketun      Enclitic; ! 3Sg possessor |
 ^[Equ.3PlPoss.Sg]:^~%:(ng₁)itun     Enclitic; ^[Equ.3PlPoss.Pl]:^~%:(ng₁)itun Enclitic; ^[Equ.3PlPoss.Du]:^~%:(ng₁)itun          Enclitic; ! 3Pl possessor |
 ^[Equ.3DuPoss.Sg]:^~sf-w%:(e)gketun Enclitic; ^[Equ.3DuPoss.Pl]:^~%:(ng₁)itun Enclitic; ^[Equ.3DuPoss.Du]:^~%:(ng₁)itun          Enclitic; ! 3Du possessor |
-!-------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-----------------------------------------|--------------------------------------------------|-----------------|
 ^[Equ.1SgPoss.Sg]:^–mtun            Enclitic; ^[Equ.1SgPoss.Pl]:^–mtun        Enclitic; ^[Equ.1SgPoss.Du]:^~sf-w%:(e)gemtun      Enclitic; ! 1Sg possessor |
 ^[Equ.1PlPoss.Sg]:^–mtestun         Enclitic; ^[Equ.1PlPoss.Pl]:^–mtestun     Enclitic; ^[Equ.1PlPoss.Du]:^~sf-w%:(e)gemtestun   Enclitic; ! 1Pl possessor |
 ^[Equ.1DuPoss.Sg]:^–mtegestun       Enclitic; ^[Equ.1DuPoss.Pl]:^–mtegestun   Enclitic; ^[Equ.1DuPoss.Du]:^~sf-w%:(e)gemtegestun Enclitic; ! 1Du possessor |
-!-------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-----------------------------------------|--------------------------------------------------|-----------------|
 ^[Equ.2SgPoss.Sg]:^–gpetun          Enclitic; ^[Equ.2SgPoss.Pl]:^–gpetun      Enclitic; ^[Equ.2SgPoss.Du]:^~sf-w%:(e)gpetun      Enclitic; ! 2Sg possessor |
 ^[Equ.2PlPoss.Sg]:^–gpesistun       Enclitic; ^[Equ.2PlPoss.Pl]:^–gpesistun   Enclitic; ^[Equ.2PlPoss.Du]:^~sf-w%:(e)gpesistun   Enclitic; ! 2Pl possessor |
 ^[Equ.2DuPoss.Sg]:^–gpetegetun      Enclitic; ^[Equ.2DuPoss.Pl]:^–gpetegetun  Enclitic; ^[Equ.2DuPoss.Du]:^~sf-w%:(e)gpetegetun  Enclitic; ! 2Du possessor |
-!-------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-----------------------------------------|--------------------------------------------------|-----------------|
 ^[Equ.4SgPoss.Sg]:^~f-wmitun        Enclitic; ^[Equ.4SgPoss.Pl]:^~f-wmitun    Enclitic; ^[Equ.4SgPoss.Du]:^~sf-w%:(e)gmitun      Enclitic; ! 4Sg possessor |
 ^[Equ.4PlPoss.Sg]:^~f-wmegestun     Enclitic; ^[Equ.4PlPoss.Pl]:^~f-wmegestun Enclitic; ^[Equ.4PlPoss.Du]:^~sf-w%:(e)gmegestun   Enclitic; ! 4Pl possessor |
 ^[Equ.4DuPoss.Sg]:^~f-wmegestun     Enclitic; ^[Equ.4DuPoss.Pl]:^~f-wmegestun Enclitic; ^[Equ.4DuPoss.Du]:^~sf-w%:(e)gmegestun   Enclitic; ! 4Du possessor |
-!-------------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------------|-----------------|
+!-------------------------------------------|-----------------------------------------|--------------------------------------------------|-----------------|
 
 
-!--------------------------------------------------|
-!              Relative Case Endings               | 
-!-----------------------------------------------------------------------------------------------------------------------------------------------------|
-!               singular possessed                 |                    plural possessed                |               dual possessed                |    
-!------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-^[Rel.Sg]:^~sf-w%:(e)m        Enclitic;^[Rel.Pl]:^~sf-w%:(e)t         Enclitic; ^[Rel.Du]:^~sf-w%:(e)k              Enclitic; ! unpossessed   |
-!--------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+!--------------------------------------|
+! Relative Case Endings                | 
+!--------------------------------------|----------------------------------------|------------------------------------------------|---------------|
+! singular possessed                   | plural possessed                       | dual possessed                                 |               |
+!--------------------------------------|----------------------------------------|------------------------------------------------|---------------|
+^[Rel.Sg]:^~sf-w%:(e)m         Enclitic; ^[Rel.Pl]:^~sf-w%:(e)t         Enclitic; ^[Rel.Du]:^~sf-w%:(e)k               Enclitic; ! unpossessed   |
+!--------------------------------------|----------------------------------------|------------------------------------------------|---------------|
 ^[Rel.3SgPoss.Sg]:^~%:(ng₁)an  Enclitic; ^[Rel.3SgPoss.Pl]:^~%:(ng₁)an  Enclitic; ^[Rel.3SgPoss.Du]:^~sf-w%:(e)gkenka  Enclitic; ! 3Sg possessor |
 ^[Rel.3PlPoss.Sg]:^~%:(ng₁)ita Enclitic; ^[Rel.3PlPoss.Pl]:^~%:(ng₁)ita Enclitic; ^[Rel.3PlPoss.Du]:^~%:(ng₁)gkenka    Enclitic; ! 3Pl possessor |
 ^[Rel.3DuPoss.Sg]:^~%:(ng₁)ita Enclitic; ^[Rel.3DuPoss.Pl]:^~%:(ng₁)ita Enclitic; ^[Rel.3DuPoss.Du]:^~%:(ng₁)gkenka    Enclitic; ! 3Du possessor |
-!--------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+!--------------------------------------|----------------------------------------|------------------------------------------------|---------------|
 ^[Rel.1SgPoss.Sg]:^~f-wma      Enclitic; ^[Rel.1SgPoss.Pl]:^~f-wma      Enclitic; ^[Rel.1SgPoss.Du]:^~sf-w%:(e)gma     Enclitic; ! 1Sg possessor |
 ^[Rel.1PlPoss.Sg]:^–mta        Enclitic; ^[Rel.1PlPoss.Pl]:^–mta        Enclitic; ^[Rel.1PlPoss.Du]:^~sf-w%:(e)gemta   Enclitic; ! 1Pl possessor |
 ^[Rel.1DuPoss.Sg]:^–mtung      Enclitic; ^[Rel.1DuPoss.Pl]:^–mtung      Enclitic; ^[Rel.1DuPoss.Du]:^~sf-w%:(e)gemtung Enclitic; ! 1Du possessor |
-!--------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+!--------------------------------------|----------------------------------------|------------------------------------------------|---------------|
 ^[Rel.2SgPoss.Sg]:^–gpek       Enclitic; ^[Rel.2SgPoss.Pl]:^–gpek       Enclitic; ^[Rel.2SgPoss.Du]:^~sf-w%:(e)gpek    Enclitic; ! 2Sg possessor |
 ^[Rel.2PlPoss.Sg]:^–gpesi      Enclitic; ^[Rel.2PlPoss.Pl]:^–gpesi      Enclitic; ^[Rel.2PlPoss.Du]:^~sf-w%:(e)gpesi   Enclitic; ! 2Pl possessor |
 ^[Rel.2DuPoss.Sg]:^–gpetek     Enclitic; ^[Rel.2DuPoss.Pl]:^–gpetek     Enclitic; ^[Rel.2DuPoss.Du]:^~sf-w%:(e)gpetek  Enclitic; ! 2Du possessor |
-!--------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+!--------------------------------------|----------------------------------------|------------------------------------------------|---------------|
 ^[Rel.4SgPoss.Sg]:^~f-wmi      Enclitic; ^[Rel.4SgPoss.Pl]:^~f-wmi      Enclitic; ^[Rel.4SgPoss.Du]:^~sf-w%:(e)gmi     Enclitic; ! 4Sg possessor |
 ^[Rel.4PlPoss.Sg]:^~f-wmeng    Enclitic; ^[Rel.4PlPoss.Pl]:^~f-wmeng    Enclitic; ^[Rel.4PlPoss.Du]:^~sf-w%:(e)gmeng   Enclitic; ! 4Pl possessor |
-:Rel.4DuPoss.Sg]:^~f-wmeng    Enclitic; ^[Rel.4DuPoss.Pl]:^~f-wmeng    Enclitic; ^[Rel.4DuPoss.Du]:^~sf-w%:(e)gmeng   Enclitic; ! 4Du possessor |
-!--------------------------------------------------|----------------------------------------------------|----------------------------------------------------------|-----------------|
+^Rel.4DuPoss.Sg]:^~f-wmeng     Enclitic; ^[Rel.4DuPoss.Pl]:^~f-wmeng    Enclitic; ^[Rel.4DuPoss.Du]:^~sf-w%:(e)gmeng   Enclitic; ! 4Du possessor |
+!--------------------------------------|----------------------------------------|------------------------------------------------|---------------|
 
 
 
@@ -9373,6 +9380,7 @@ LEXICON UnpdOblique
 [Rel.Sg]:~sf-w%:(e)m   Enclitic; [Rel.Pl]:~sf-w%:(e)t      Enclitic; [Rel.Du]:~sf-w%:(e)k          Enclitic;
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                     !!!!!!
@@ -9648,6 +9656,7 @@ LEXICON VerbPostbase
 ^+(te)sug(CmpdVbl):(te)sug                VerbPostbase; ! to want one to V
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                               !!!!!!
@@ -9662,30 +9671,30 @@ LEXICON VerbEte
 
 [4Sg]-ete:~f-wmete** Enclitic;
 
-!----------------------------------------------------------|
-!              Localis Case + -ete- Contractions           |
-!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-!                   singular possessed                     |                        plural possessed                 |                          dual possessed                       |
-!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-^[Loc.Sg]^ete:~f-wmete**                 VerbMoodInfl; ^[Loc.Pl]^ete:~f-w/-wnite**           VerbMoodInfl; ^[Loc.Du]^ete:~sf-w%:(e)gnite**             VerbMoodInfl; ! unpossessed   |
-!----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+!----------------------------------------------------|
+! Localis Case + -ete- Contractions                  |
+!----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|-----------------|
+! singular possessed                                 | plural possessed                                    | dual possessed                                           |                 |
+!----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|-----------------|
+^[Loc.Sg]^ete:~f-wmete**                  VerbMoodInfl; ^[Loc.Pl]^ete:~f-w/-wnite**            VerbMoodInfl; ^[Loc.Du]^ete:~sf-w%:(e)gnite**              VerbMoodInfl; ! unpossessed   |
+!----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|-----------------|
 ^[Loc.3SgPoss.Sg]^ete:~%:(ng₁)anite**     VerbMoodInfl; ^[Loc.3SgPoss.Pl]^ete:~%:(ng₁)anite**  VerbMoodInfl; ^[Loc.3SgPoss.Du]^ete:~sf-w%:(e)gkenite**    VerbMoodInfl; ! 3Sg possessor |
 ^[Loc.3PlPoss.Sg]^ete:~%:(ng₁)itnite**    VerbMoodInfl; ^[Loc.3PlPoss.Pl]^ete:~%:(ng₁)itnite** VerbMoodInfl; ^[Loc.3PlPoss.Du]^ete:~%:(ng₁)itnite**       VerbMoodInfl; ! 3Pl possessor |
 ^[Loc.3DuPoss.Sg]^ete:~sf-w%:(e)gkenite** VerbMoodInfl; ^[Loc.3DuPoss.Pl]^ete:~%:(ng₁)itnite** VerbMoodInfl; ^[Loc.3DuPoss.Du]^ete:~%:(ng₁)itnite**       VerbMoodInfl; ! 3Du possessor |
-!----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+!----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|-----------------|
 ^[Loc.1SgPoss.Sg]^ete:–mnite**            VerbMoodInfl; ^[Loc.1SgPoss.Pl]^ete:–mnite**         VerbMoodInfl; ^[Loc.1SgPoss.Du]^ete:~sf-w%:(e)gemnite**    VerbMoodInfl; ! 1Sg possessor |
 ^[Loc.1PlPoss.Sg]^ete:–mnnite**           VerbMoodInfl; ^[Loc.1PlPoss.Pl]^ete:–mnnite**        VerbMoodInfl; ^[Loc.1PlPoss.Du]^ete:~sf-w%:(e)gemnnite**   VerbMoodInfl; ! 1Pl possessor |
 ^[Loc.1DuPoss.Sg]^ete:–mtegnite**         VerbMoodInfl; ^[Loc.1DuPoss.Pl]^ete:–mtegnite**      VerbMoodInfl; ^[Loc.1DuPoss.Du]^ete:~sf-w%:(e)gemtegnite** VerbMoodInfl; ! 1Du possessor |
-!----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+!----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|-----------------|
 ^[Loc.2SgPoss.Sg]^ete:–gpenite**          VerbMoodInfl; ^[Loc.2SgPoss.Pl]^ete:–gpenite**       VerbMoodInfl; ^[Loc.2SgPoss.Du]^ete:~sf-w%:(e)gpenite**    VerbMoodInfl; ! 2Sg possessor |
 ^[Loc.2PlPoss.Sg]^ete:–gpesinite**        VerbMoodInfl; ^[Loc.2PlPoss.Pl]^ete:–gpesinite**     VerbMoodInfl; ^[Loc.2PlPoss.Du]^ete:~sf-w%:(e)gpesinite**  VerbMoodInfl; ! 2Pl possessor |
 ^[Loc.2DuPoss.Sg]^ete:–gpetegnite**       VerbMoodInfl; ^[Loc.2DuPoss.Pl]^ete:–gpetegnite**    VerbMoodInfl; ^[Loc.2DuPoss.Du]^ete:~sf-w%:(e)gpetegnite** VerbMoodInfl; ! 2Du possessor |
-!----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+!----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|-----------------|
 !^[Loc.4SgPoss.Sg]^ete:~f-wminite**       VerbMoodInfl; ^[Loc.4SgPoss.Pl]^ete:~f-wminite**     VerbMoodInfl; ^[Loc.4SgPoss.Du]^ete:~sf-w%:(e)gminite**    VerbMoodInfl; ! 4Sg possessor |
 ^[Loc.4PlPoss.Sg]^ete:~f-wmeggnite**      VerbMoodInfl; ^[Loc.4PlPoss.Pl]^ete:~f-wmeggnite**   VerbMoodInfl; ^[Loc.4PlPoss.Du]^ete:~sf-w%:(e)gmeggnite**  VerbMoodInfl; ! 4Sg possessor |
 ^[Loc.4DuPoss.Sg]^ete:~f-wmegnite**       VerbMoodInfl; ^[Loc.4DuPoss.Pl]^ete:~f-wmegnite**    VerbMoodInfl; ^[Loc.4DuPoss.Du]^ete:~sf-w%:(e)gmegnite**   VerbMoodInfl; ! 4Pl possessor |
 ^[Loc.4DuPoss.Sg]^ete:~f-wmegtenite**     VerbMoodInfl; ^[Loc.4DuPoss.Pl]^ete:~f-wmegtenite**  VerbMoodInfl; ^[Loc.4DuPoss.Du]^ete:~sf-w%:(e)gmegtenite** VerbMoodInfl; ! 4Du possessor |
-!----------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|-----------------|
+!----------------------------------------------------|-----------------------------------------------------|----------------------------------------------------------|-----------------|
 
 
 
@@ -9704,29 +9713,29 @@ LEXICON VerbInfl
 !--------------------------
 ! independent mood markers
 !--------------------------
-^[Ind.Intr]:~f(g/t)u                 IntransitiveIndicativeFutureOptative;
-^[Ind.Trns]:~(g)a                    TransitiveIndicative; 
+^[Ind.Intr]:~f(g/t)u             IntransitiveIndicativeFutureOptative;
+^[Ind.Trns]:~(g)a                TransitiveIndicative; 
 
-^[Ptcp.Intr]:@₁–lghii/@*ngugh*       IntransitiveParticipial;
-^[Ptcp.Trns]:@~–(g)ke                TransitiveParticipialFutureOptative; 
+^[Ptcp.Intr]:@₁–lghii/@*ngugh*   IntransitiveParticipial;
+^[Ptcp.Trns]:@~–(g)ke            TransitiveParticipialFutureOptative; 
 
-^[Intrg.Intr]:                       IntransitiveInterrogative; 
-^[Intrg.Trns]:                       TransitiveInterrogative; 
+^[Intrg.Intr]:                   IntransitiveInterrogative; 
+^[Intrg.Trns]:                   TransitiveInterrogative; 
 
-^[Opt.Pres.Intr]:                    IntransitivePresentOptative;
-^[Opt.Pres.Trns]:                    TransitivePresentOptative;
+^[Opt.Pres.Intr]:                IntransitivePresentOptative;
+^[Opt.Pres.Trns]:                TransitivePresentOptative;
 
-^[Opt.Neg.Pres.Intr]:–fqaa           IntransitiveNegativeOptative;
-^[Opt.Neg.Pres.Trns]:                TransitiveNegativeOptative;
+^[Opt.Neg.Pres.Intr]:–fqaa       IntransitiveNegativeOptative;
+^[Opt.Neg.Pres.Trns]:            TransitiveNegativeOptative;
 
 ^[Opt.Fut.Intr]:^[Opt_FUT_Intr]  IntransitiveIndicativeFutureOptative;
-^[Opt.Fut.Trns]:@₁~fna@~–(g)ke       TransitiveParticipialFutureOptative;
+^[Opt.Fut.Trns]:@₁~fna@~–(g)ke   TransitiveParticipialFutureOptative;
 
-^[Opt.Neg.Fut.Intr]:@₁~fyaquna       IntransitiveNegativeFutureOptative;
-^[Opt.Neg.Fut.Trns]:@₁~fyaquna       TransitiveNegativeFutureOptative;
+^[Opt.Neg.Fut.Intr]:@₁~fyaquna   IntransitiveNegativeFutureOptative;
+^[Opt.Neg.Fut.Trns]:@₁~fyaquna   TransitiveNegativeFutureOptative;
 
-^[PtcpObl.Intr]:@₁~fyalghii          IntransitiveParticipialOblique;
-^[PtcpObl.Trns]:@₁~fyaqe             TransitiveParticipialOblique;
+^[PtcpObl.Intr]:@₁~fyalghii      IntransitiveParticipialOblique;
+^[PtcpObl.Trns]:@₁~fyaqe         TransitiveParticipialOblique;
 
 !-------------------------
 ! connective mood markers
@@ -9755,6 +9764,7 @@ LEXICON VerbInfl
 ^[Sbrd.Trns]:@₁~flu/na        TransitiveSubordinative;
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                    !!!!!!
@@ -9766,708 +9776,603 @@ LEXICON VerbInfl
 !===========================================
 LEXICON IntransitiveIndicativeFutureOptative
 !===========================================
-!---------------------|--------------------------|-------------------------|
+!-----------------|----------------------|---------------------|
 ^[3Sg]:q  Enclitic; ^[1Sg]:nga   Enclitic; ^[2Sg]:ten  Enclitic;
 ^[3Pl]:t  Enclitic; ^[1Pl]:kut   Enclitic; ^[2Pl]:si   Enclitic;
 ^[3Du]:k  Enclitic; ^[1Du]:kung  Enclitic; ^[2Du]:tek  Enclitic;
-!---------------------|--------------------------|-------------------------|
+!-----------------|----------------------|---------------------|
 
 LEXICON IntransitiveParticipial
-!---------------------|--------------------------|-------------------------|
+!-----------------|----------------------|---------------------|
 ^[3Sg]:0  Enclitic; ^[1Sg]:nga   Enclitic; ^[2Sg]:ten  Enclitic;
 ^[3Pl]:t  Enclitic; ^[1Pl]:kut   Enclitic; ^[2Pl]:si   Enclitic;
 ^[3Du]:k  Enclitic; ^[1Du]:kung  Enclitic; ^[2Du]:tek  Enclitic;
-!---------------------|--------------------------|-------------------------|
+!-----------------|----------------------|---------------------|
 
 !===========================
 LEXICON TransitiveIndicative
 !===========================
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.3Sg]:a          Enclitic;  ^[3Sg.3Pl]:i         Enclitic; ^[3Sg.3Du]:q           Enclitic;
 ^[3Pl.3Sg]:at         Enclitic;  ^[3Pl.3Pl]:it        Enclitic; ^[3Pl.3Du]:gket        Enclitic;
 ^[3Du.3Sg]:it         Enclitic;  ^[3Du.3Pl]:ik        Enclitic; ^[3Du.3Du]:gket        Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.3Sg]:qa         Enclitic; ^[1Sg.3Pl]:nka        Enclitic; ^[1Sg.3Du]:gka         Enclitic;
 ^[1Pl.3Sg]:put        Enclitic; ^[1Pl.3Pl]:put        Enclitic; ^[1Pl.3Du]:gput        Enclitic;
 ^[1Du.3Sg]:pung       Enclitic; ^[1Du.3Pl]:pung       Enclitic; ^[1Du.3Du]:gpung       Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.3Sg]:n          Enclitic; ^[2Sg.3Pl]:ten        Enclitic; ^[2Sg.3Du]:gken        Enclitic;
 ^[2Pl.3Sg]:si         Enclitic; ^[2Pl.3Pl]:si         Enclitic; ^[2Pl.3Du]:gsi         Enclitic;
 ^[2Du.3Sg]:tek        Enclitic; ^[2Du.3Pl]:tek        Enclitic; ^[2Du.3Du]:gtek        Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.1Sg]:anga       Enclitic; ^[3Sg.1Pl]:inkut      Enclitic; ^[3Sg.1Du]:inkung      Enclitic;
 ^[3Pl.1Sg]:atnga      Enclitic; ^[3Pl.1Pl]:inkut      Enclitic; ^[3Pl.1Du]:inkung      Enclitic;
 ^[3Du.1Sg]:agnenga    Enclitic; ^[3Du.1Pl]:inkut      Enclitic; ^[3Du.1Du]:inkung      Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.1Sg]:penga      Enclitic; ^[2Sg.1Pl]:pekut      Enclitic; ^[2Sg.1Du]:pekung      Enclitic;
 ^[2Pl.1Sg]:pesinga    Enclitic; ^[2Pl.1Pl]:pesikut    Enclitic; ^[2Pl.1Du]:pesikung    Enclitic;
 ^[2Du.1Sg]:petegnenga Enclitic; ^[2Du.1Pl]:petegnekut Enclitic; ^[2Du.1Du]:petegnekung Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.2Sg]:aten       Enclitic; ^[3Sg.2Pl]:isi        Enclitic; ^[3Sg.2Du]:itek        Enclitic;
 ^[3Pl.2Sg]:aten       Enclitic; ^[3Pl.2Pl]:isi        Enclitic; ^[3Pl.2Du]:itek        Enclitic;
 ^[3Du.2Sg]:aten       Enclitic; ^[3Du.2Pl]:isi        Enclitic; ^[3Du.2Du]:itek        Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.2Sg]:mken       Enclitic; ^[1Sg.2Pl]:msi        Enclitic; ^[1Sg.2Du]:mtek        Enclitic;
 ^[1Pl.2Sg]:mken       Enclitic; ^[1Pl.2Pl]:msi        Enclitic; ^[1Pl.2Du]:mtek        Enclitic;
 ^[1Du.2Sg]:mken       Enclitic; ^[1Du.2Pl]:msi        Enclitic; ^[1Du.2Du]:mtek        Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 
 !==========================================
 LEXICON TransitiveParticipialFutureOptative
 !==========================================
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.3Sg]:nga        Enclitic; ^[3Sg.3Pl]:ngi        Enclitic; ^[3Sg.3Du]:k           Enclitic;
 ^[3Pl.3Sg]:ngat       Enclitic; ^[3Pl.3Pl]:ngit       Enclitic; ^[3Pl.3Du]:gket        Enclitic;
 ^[3Du.3Sg]:ngit       Enclitic; ^[3Du.3Pl]:ngik       Enclitic; ^[3Du.3Du]:gket        Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.3Sg]:gka        Enclitic; ^[1Sg.3Pl]:nka        Enclitic; ^[1Sg.3Du]:gka         Enclitic;
 ^[1Pl.3Sg]:vut        Enclitic; ^[1Pl.3Pl]:vut        Enclitic; ^[1Pl.3Du]:gput        Enclitic;
 ^[1Du.3Sg]:vung       Enclitic; ^[1Du.3Pl]:vung       Enclitic; ^[1Du.3Du]:gpung       Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.3Sg]:n          Enclitic; ^[2Sg.3Pl]:ten        Enclitic; ^[2Sg.3Du]:gken        Enclitic;
 ^[2Pl.3Sg]:zi         Enclitic; ^[2Pl.3Pl]:si         Enclitic; ^[2Pl.3Du]:gsi         Enclitic;
 ^[2Du.3Sg]:yek        Enclitic; ^[2Du.3Pl]:tek        Enclitic; ^[2Du.3Du]:gtek        Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.1Sg]:nganga     Enclitic; ^[3Sg.1Pl]:nginkut    Enclitic; ^[3Sg.1Du]:nginkung    Enclitic;
 ^[3Pl.1Sg]:ngatnga    Enclitic; ^[3Pl.1Pl]:nginkut    Enclitic; ^[3Pl.1Du]:nginkung    Enclitic;
 ^[3Du.1Sg]:ngagnenga  Enclitic; ^[3Du.1Pl]:nginkut    Enclitic; ^[3Du.1Du]:nginkung    Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
+! no [1--.1--] forms          |                               |                                |
+!-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.1Sg]:vnga       Enclitic; ^[2Sg.1Pl]:fkut       Enclitic; ^[2Sg.1Du]:pekung      Enclitic;
 ^[2Pl.1Sg]:fsinga     Enclitic; ^[2Pl.1Pl]:pesikut    Enclitic; ^[2Pl.1Du]:pesikung    Enclitic;
 ^[2Du.1Sg]:petegnenga Enclitic; ^[2Du.1Pl]:petegnekut Enclitic; ^[2Du.1Du]:petegnekung Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.2Sg]:ngaten     Enclitic; ^[3Sg.2Pl]:ngisi      Enclitic; ^[3Sg.2Du]:ngitek      Enclitic;
 ^[3Pl.2Sg]:ngaten     Enclitic; ^[3Pl.2Pl]:ngisi      Enclitic; ^[3Pl.2Du]:ngitek      Enclitic;
 ^[3Du.2Sg]:ngaten     Enclitic; ^[3Du.2Pl]:ngisi      Enclitic; ^[3Du.2Du]:ngitek      Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.2Sg]:mken       Enclitic; ^[1Sg.2Pl]:msi        Enclitic; ^[1Sg.2Du]:mtek        Enclitic;
 ^[1Pl.2Sg]:mken       Enclitic; ^[1Pl.2Pl]:msi        Enclitic; ^[1Pl.2Du]:mtek        Enclitic;
 ^[1Du.2Sg]:mken       Enclitic; ^[1Du.2Pl]:msi        Enclitic; ^[1Du.2Du]:mtek        Enclitic;
-!----------------------------------|------------------------------------|-------------------------------------|
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!                                  |                                    |                                     |
-!----------------------------------|------------------------------------|-------------------------------------|
+!-----------------------------|-------------------------------|--------------------------------|
+! no [2--.2--] forms          |                               |                                |
+!-----------------------------|-------------------------------|--------------------------------|
 
 
 !================================
 LEXICON IntransitiveInterrogative
 !================================
-!-----------------------------|---------------------------------|--------------------------------|
+!-------------------------|-----------------------------|----------------------------|
 ^[3Sg]:~f(g/t)a   Enclitic; ^[1Sg]:~f(t)zinga   Enclitic; ^[2Sg]:~f(t)zin    Enclitic;
 ^[3Sg]:~f(g/t)aa  Enclitic; ^[1Sg]:~f(t)zingaa  Enclitic; ^[2Sg]:~f(t)ziin   Enclitic;
-
 ^[3Pl]:~f(g/t)at  Enclitic; ^[1Pl]:~sf(e)sta    Enclitic; ^[2Pl]:~sf(e)tsi   Enclitic;
 ^[3Pl]:~f(g/t)aat Enclitic; ^[1Pl]:~sf(e)staa   Enclitic; ^[2Pl]:~sf(e)tsii  Enclitic;
-
 ^[3Du]:~f(g/t)ak  Enclitic; ^[1Du]:~sf(e)stung  Enclitic; ^[2Du]:~sf(e)stek  Enclitic;
 ^[3Du]:~f(g/t)aak Enclitic; ^[1Du]:~sf(e)stuung Enclitic; ^[2Du]:~sf(e)staak Enclitic;
-!-----------------------------|---------------------------------|--------------------------------|
+!-------------------------|-----------------------------|----------------------------|
 
 !==============================
 LEXICON TransitiveInterrogative
 !==============================
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!---------------------------------|-----------------------------------|------------------------------------|
 ^[3Sg.3Sg]:~f(g/t)agu     Enclitic; ^[3Sg.3Pl]:~f(g/t)aki     Enclitic; ^[3Sg.3Du]:~f(g/t)akek     Enclitic;
 ^[3Sg.3Sg]:~f(g/t)aguu    Enclitic;
 ^[3Pl.3Sg]:~f(g/t)atgu    Enclitic; ^[3Pl.3Pl]:~f(g/t)atki    Enclitic; ^[3Pl.3Du]:~f(g/t)atkek    Enclitic;
 ^[3Du.3Sg]:~f(g/t)agnegu  Enclitic; ^[3Du.3Pl]:~f(g/t)agneki  Enclitic; ^[3Du.3Du]:~f(g/t)agnekek  Enclitic;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!---------------------------------|-----------------------------------|------------------------------------|
 ^[1Sg.3Sg]:~f(t)zikun     Enclitic; ^[1Sg.3Pl]:~f(t)zingi     Enclitic; ^[1Sg.3Du]:~f(t)zigngek    Enclitic;
 ^[1Pl.3Sg]:~sf(e)steggu   Enclitic; ^[1Pl.3Pl]:~sf(e)steki    Enclitic; ^[1Pl.3Du]:~sf(e)stekek    Enclitic;
 ^[1Du.3Sg]:~sf(e)stegnegu Enclitic; ^[1Du.3Pl]:~sf(e)stegneki Enclitic; ^[1Du.3Du]:~sf(e)stegnekek Enclitic;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!---------------------------------|-----------------------------------|------------------------------------|
 ^[2Sg.3Sg]:~f(t)zigu      Enclitic; ^[2Sg.3Pl]:~f(t)ziki      Enclitic; ^[2Sg.3Du]:~f(t)zikek      Enclitic;
 ^[2Pl.3Sg]:~sf(e)ggu      Enclitic; ^[2Pl.3Pl]:~sf(e)ki       Enclitic; ^[2Pl.3Du]:~sf(g)kek       Enclitic;
 ^[2Du.3Sg]:~sf(e)gnegu    Enclitic; ^[2Du.3Pl]:~sf(e)gneki    Enclitic; ^[2Du.3Du]:~sf(g)gnekek    Enclitic;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!---------------------------------|-----------------------------------|------------------------------------|
 ^[3Sg.1Sg]:~f(g/t)anga    Enclitic; ^[3Sg.1Pl]:~f(g/t)inkut   Enclitic; ^[3Sg.1Du]:~f(g/t)inkung   Enclitic;
 ^[3Pl.1Sg]:~f(g/t)atnga   Enclitic; ^[3Pl.1Pl]:~f(g/t)inkut   Enclitic; ^[3Pl.1Du]:~f(g/t)inkung   Enclitic;
 ^[3Du.1Sg]:~f(g/t)agnenga Enclitic; ^[3Du.1Pl]:~f(g/t)inkut   Enclitic; ^[3Du.1Du]:~f(g/t)inkung   Enclitic;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!---------------------------------|-----------------------------------|------------------------------------|
+! no [1--.1--] forms              |                                   |                                    | 
+!---------------------------------|-----------------------------------|------------------------------------|
 ^[2Sg.1Sg]:~f(t)zinga     Enclitic; ^[2Sg.1Pl]:~f(t)zikut     Enclitic; ^[2Sg.1Du]:~f(t)zikung     Enclitic;
 ^[2Pl.1Sg]:~sf(e)ngnga    Enclitic; ^[2Pl.1Pl]:~sf(e)kut      Enclitic; ^[2Pl.1Du]:~sf(e)kung      Enclitic;
 ^[2Du.1Sg]:~sf(e)gnenga   Enclitic; ^[2Du.1Pl]:~sf(e)gneku    Enclitic; ^[2Du.1Du]:~sf(e)gnekung   Enclitic;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!---------------------------------|-----------------------------------|------------------------------------|
 ^[3Sg.2Sg]:~f(g/t)aten    Enclitic; ^[3Sg.2Pl]:~f(g/t)isi     Enclitic; ^[3Sg.2Du]:~f(g/t)istek    Enclitic;
 ^[3Pl.2Sg]:~f(g/t)aten    Enclitic; ^[3Pl.2Pl]:~f(g/t)isi     Enclitic; ^[3Pl.2Du]:~f(g/t)istek    Enclitic;
 ^[3Du.2Sg]:~f(g/t)aten    Enclitic; ^[3Du.2Pl]:~f(g/t)isi     Enclitic; ^[3Du.2Du]:~f(g/t)istek    Enclitic;
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-^[1Sg.2Sg]:~f(t)ziken     Enclitic;                                        |                                         |
-^[1Pl.2Sg]:~sf(e)steken   Enclitic;                                        |                                         |
-^[1Du.2Sg]:~sf(e)steken   Enclitic;                                        |                                         |
-!--------------------------------------|----------------------------------------|-----------------------------------------|
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!                                      |                                        |                                         | 
-!--------------------------------------|----------------------------------------|-----------------------------------------|
+!---------------------------------|-----------------------------------|------------------------------------|
+^[1Sg.2Sg]:~f(t)ziken     Enclitic;                                   |                                    |
+^[1Pl.2Sg]:~sf(e)steken   Enclitic;                                   |                                    |
+^[1Du.2Sg]:~sf(e)steken   Enclitic;                                   |                                    |
+!---------------------------------|-----------------------------------|------------------------------------|
+! no [2--.2--] forms              |                                   |                                    | 
+!---------------------------------|-----------------------------------|------------------------------------|
 
 
 !==================================
 LEXICON IntransitivePresentOptative
 !==================================
-!--------------------------|-----------------------------------|----------------------------------|
+!----------------------|-------------------------------|-------------------------------|
 ^[3Sg]:@₁~fli  Enclitic; ^[1Sg]:@₁~flanga      Enclitic; ^[2Sg]:^[Opt_PRS_2Sg] Enclitic;
-^[3Pl]:@₁~flit Enclitic; ^[1Pl]:~sf%:(e)lta    Enclitic; ^[2Pl]:@₁(i₂)tek     Enclitic;
-^[3Du]:@₁~flik Enclitic; ^[1Du]:~sf%:(e)ltung  Enclitic; ^[2Du]:@₁(i₂)tek     Enclitic;
-!--------------------------|-----------------------------------|----------------------------------|
+^[3Pl]:@₁~flit Enclitic; ^[1Pl]:~sf%:(e)lta    Enclitic; ^[2Pl]:@₁(i₂)tek      Enclitic;
+^[3Du]:@₁~flik Enclitic; ^[1Du]:~sf%:(e)ltung  Enclitic; ^[2Du]:@₁(i₂)tek      Enclitic;
+!----------------------|-------------------------------|-------------------------------|
 
 !================================
 LEXICON TransitivePresentOptative
 !================================
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
+!--------------------------------------|-------------------------------------|--------------------------------------|
 ^[3Sg.3Sg]:@₁~fligu            Enclitic; ^[3Sg.3Pl]:@₁~fliki         Enclitic; ^[3Sg.3Du]:@₁~flikek         Enclitic;
 ^[3Pl.3Sg]:@₁~flitgu           Enclitic; ^[3Pl.3Pl]:@₁~flitki        Enclitic; ^[3Pl.3Du]:@₁~flitkek        Enclitic;
 ^[3Du.3Sg]:@₁~flignegu         Enclitic; ^[3Du.3Pl]:@₁~fligneki      Enclitic; ^[3Du.3Du]:@₁~flignekek      Enclitic;
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
+!--------------------------------------|-------------------------------------|--------------------------------------|
 ^[1Sg.3Sg]:@₁~flakun           Enclitic; ^[1Sg.3Pl]:@₁~flangi        Enclitic; ^[1Sg.3Du]:@₁~flangak        Enclitic;
 ^[1Pl.3Sg]:~sf%:(e)lteggu      Enclitic; ^[1Pl.3Pl]:~sf%:(e)lteki    Enclitic; ^[1Pl.3Du]:~sf%:(e)ltekek    Enclitic;
 ^[1Du.3Sg]:~sf%:(e)ltegnegu    Enclitic; ^[1Du.3Pl]:~sf%:(e)ltegneki Enclitic; ^[1Du.3Du]:~sf%:(e)ltegnekek Enclitic;
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
-^[2Sg.3Sg]:^[Opt_PRS_2Sg_3Sg]   Enclitic; ^[2Sg.3Pl]:~f(i₁)ki         Enclitic; ^[2Sg.3Du]:~f(i₁)kek         Enclitic;
+!--------------------------------------|-------------------------------------|--------------------------------------|
+^[2Sg.3Sg]:^[Opt_PRS_2Sg_3Sg]  Enclitic; ^[2Sg.3Pl]:~f(i₁)ki         Enclitic; ^[2Sg.3Du]:~f(i₁)kek         Enclitic;
 ^[2Pl.3Sg]:@₁(i₁)teggu         Enclitic; ^[2Pl.3Pl]:@₁(i₁)teki       Enclitic; ^[2Pl.3Du]:@₁(i₁)tekek       Enclitic;
 ^[2Du.3Sg]:@₁(i₁)tegnegu       Enclitic; ^[2Du.3Pl]:@₁(i₁)tegneki    Enclitic; ^[2Du.3Du]:@₁(i₁)tegnekek    Enclitic;
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
+!--------------------------------------|-------------------------------------|--------------------------------------|
 ^[3Sg.1Sg]:@₁~flinga           Enclitic; ^[3Sg.1Pl]:@₁~flikut        Enclitic; ^[3Sg.1Du]:@₁~flikung        Enclitic;
 ^[3Pl.1Sg]:@₁~flitnga          Enclitic; ^[3Pl.1Pl]:@₁~flinkut       Enclitic; ^[3Pl.1Du]:@₁~flinkung       Enclitic;
 ^[3Du.1Sg]:@₁~flignenga        Enclitic; ^[3Du.1Pl]:@₁~flinkut       Enclitic; ^[3Du.1Du]:@₁~flinkung       Enclitic;
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
-!                                           |                                          |                                           |
-!                                           |                                          |                                           |
-!                                           |                                          |                                           |
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
+!--------------------------------------|-------------------------------------|--------------------------------------|
+! no [1--.1--] forms                   |                                     |                                      |
+!--------------------------------------|-------------------------------------|--------------------------------------|
 ^[2Sg.1Sg]:~f(i₁)nga           Enclitic; ^[2Sg.1Pl]:~f(i₁)kut        Enclitic; ^[2Sg.1Du]:~f(i₁)kung        Enclitic;
 ^[2Pl.1Sg]:@₁(i₁)tengnga       Enclitic; ^[2Pl.1Pl]:@₁(i₁)tekut      Enclitic; ^[2Pl.1Du]:@₁(i₁)tekung      Enclitic;
 ^[2Du.1Sg]:@₁(i₁)tegnenga      Enclitic; ^[2Du.1Pl]:@₁(i₁)tegnekut   Enclitic; ^[2Du.1Du]:@₁(i₁)tegnekung   Enclitic;
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
+!--------------------------------------|-------------------------------------|--------------------------------------|
 ^[3Sg.2Sg]:~flaten             Enclitic; ^[3Sg.2Pl]:~flisi           Enclitic; ^[3Sg.2Du]:~flistek          Enclitic;
 ^[3Pl.2Sg]:~flaten             Enclitic; ^[3Pl.2Pl]:~flisi           Enclitic; ^[3Pl.2Du]:~flistek          Enclitic;
 ^[3Du.2Sg]:~flaten             Enclitic; ^[3Du.2Pl]:~flisi           Enclitic; ^[3Du.2Du]:~flistek          Enclitic;
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
+!--------------------------------------|-------------------------------------|--------------------------------------|
 ^[1Sg.2Sg]:~flaken             Enclitic; ^[1Sg.2Pl]:~flamsi          Enclitic; ^[1Sg.2Du]:~flamtek          Enclitic;
 ^[1Pl.2Sg]:~flaken             Enclitic; ^[1Pl.2Pl]:~flamsi          Enclitic; ^[1Pl.2Du]:~flamtek          Enclitic;
 ^[1Du.2Sg]:~flaken             Enclitic; ^[1Du.2Pl]:~flamsi          Enclitic; ^[1Du.2Du]:~flamtek          Enclitic;
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
-!                                           |                                          |                                           |
-!                                           |                                          |                                           |
-!                                           |                                          |                                           |
-!-------------------------------------------|------------------------------------------|-------------------------------------------|
+!--------------------------------------|-------------------------------------|--------------------------------------|
+! no [2--.2--] forms                   |                                     |                                      |
+!--------------------------------------|-------------------------------------|--------------------------------------|
 
 !===================================
 LEXICON IntransitiveNegativeOptative
 !===================================
-!--------------|--------------|--------------------------|
-                                ^[2Sg]:vek   Enclitic;
-                                ^[2Pl]:fsi   Enclitic;
-                                ^[2Du]:ftek  Enclitic;
-!--------------|--------------|--------------------------|
+!--------------------|
+^[2Sg]:vek   Enclitic;
+^[2Pl]:fsi   Enclitic;
+^[2Du]:ftek  Enclitic;
+!--------------------|
 
 !=================================
 LEXICON TransitiveNegativeOptative
 !=================================
-!-------------------------------|----------------------------------|-------------------------------------|
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!-------------------------------|----------------------------------|-------------------------------------|
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!-------------------------------|----------------------------------|-------------------------------------|
+!--------------------------|-----------------------------|--------------------------------|
 ^[2Sg.3Sg]:–fqaan  Enclitic; ^[2Sg.3Pl]:–fqiita  Enclitic; ^[2Sg.3Du]:–fqaagkenka Enclitic;
 ^[2Pl.3Sg]:–fqaan  Enclitic; ^[2Pl.3Pl]:–fqiita  Enclitic; ^[2Pl.3Du]:–fqaagkenka Enclitic;
 ^[2Du.3Sg]:–fqaan  Enclitic; ^[2Du.3Pl]:–fqiita  Enclitic; ^[2Du.3Du]:–fqaagkenka Enclitic;
-!-------------------------------|----------------------------------|-------------------------------------|
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!-------------------------------|----------------------------------|-------------------------------------|
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!-------------------------------|----------------------------------|-------------------------------------|
+!--------------------------|-----------------------------|--------------------------------|
 ^[2Sg.1Sg]:–fqaama Enclitic; ^[2Sg.1Pl]:–fqaamta Enclitic; ^[2Sg.1Du]:–fqaamtung  Enclitic;
 ^[2Pl.1Sg]:–fqaama Enclitic; ^[2Pl.1Pl]:–fqaamta Enclitic; ^[2Pl.1Du]:–fqaamtung  Enclitic;
 ^[2Du.1Sg]:–fqaama Enclitic; ^[2Du.1Pl]:–fqaamta Enclitic; ^[2Du.1Du]:–fqaamtung  Enclitic;
-!-------------------------------|----------------------------------|-------------------------------------|
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!-------------------------------|----------------------------------|-------------------------------------|
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!-------------------------------|----------------------------------|-------------------------------------|
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!                               |                                  |                                     |
-!-------------------------------|----------------------------------|-------------------------------------|
+!--------------------------|-----------------------------|--------------------------------|
 
 
 !=========================================
 LEXICON IntransitiveNegativeFutureOptative
 !=========================================
-!-----------|-----------|------------------------|
-                          ^[2Sg]:ng  Enclitic;
-                          ^[2Pl]:si  Enclitic;
-                          ^[2Du]:0   Enclitic;
-!-----------|-----------|------------------------|
+|------------------|
+^[2Sg]:ng  Enclitic;
+^[2Pl]:si  Enclitic;
+^[2Du]:0   Enclitic;
+|------------------|
 
 !=======================================
 LEXICON TransitiveNegativeFutureOptative
 !=======================================
-!---------------------------|-----------------------------|--------------------------------|
-!                           |                             |                                |
-!                           |                             |                                |
-!                           |                             |                                |
-!---------------------------|-----------------------------|--------------------------------|
-!                           |                             |                                |
-!                           |                             |                                |
-!                           |                             |                                |
-!---------------------------|-----------------------------|--------------------------------|
+!----------------------|------------------------|---------------------------|
 ^[2Sg.3Sg]:an  Enclitic; ^[2Sg.3Pl]:ki  Enclitic; ^[2Sg.3Du]:kek    Enclitic;
 ^[2Pl.3Sg]:an  Enclitic; ^[2Pl.3Pl]:ki  Enclitic; ^[2Pl.3Du]:kek    Enclitic;
 ^[2Du.3Sg]:an  Enclitic; ^[2Du.3Pl]:ki  Enclitic; ^[2Du.3Du]:kek    Enclitic;
-!---------------------------|-----------------------------|--------------------------------|
-!                           |                             |                                |
-!                           |                             |                                |
-!                           |                             |                                |
-!---------------------------|-----------------------------|--------------------------------|
-!                           |                             |                                |
-!                           |                             |                                |
-!                           |                             |                                |
-!---------------------------|-----------------------------|--------------------------------|
+!----------------------|------------------------|---------------------------|
 ^[2Sg.1Sg]:nga Enclitic; ^[2Sg.1Pl]:mta Enclitic; ^[2Sg.1Du]:mtung  Enclitic;
 ^[2Pl.1Sg]:nga Enclitic; ^[2Pl.1Pl]:mta Enclitic; ^[2Pl.1Du]:mtung  Enclitic;
 ^[2Du.1Sg]:nga Enclitic; ^[2Du.1Pl]:mta Enclitic; ^[2Du.1Du]:mtung  Enclitic;
-!---------------------------|-----------------------------|--------------------------------|
-!                           |                             |                                |
-!                           |                             |                                |
-!                           |                             |                                |
-!---------------------------|-----------------------------|--------------------------------|
-!                           |                             |                                |
-!                           |                             |                                |
-!                           |                             |                                |
-!---------------------------|-----------------------------|--------------------------------|
-!                           |                             |                                |
-!                           |                             |                                |
-!                           |                             |                                |
-!---------------------------|-----------------------------|--------------------------------|
+!----------------------|------------------------|---------------------------|
 
 
 !=====================================
 LEXICON IntransitiveParticipialOblique
 !=====================================
-!-----------------------|------------------------|-------------------------|
+!-------------------|--------------------|---------------------|
 ^[1Sg]:nga  Enclitic; ^[2Sg]:ten Enclitic; ^[4Sg]:mi   Enclitic;
 ^[1Pl]:kut  Enclitic; ^[2Pl]:si  Enclitic; ^[4Pl]:meng Enclitic;
 ^[1Du]:kung Enclitic; ^[2Du]:tek Enclitic; ^[4Du]:mek  Enclitic;
-!-----------------------|------------------------|-------------------------|
+!-------------------|--------------------|---------------------|
 
 !===================================
 LEXICON TransitiveParticipialOblique
 !===================================
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.3Sg]:0          Enclitic; ^[1Sg.3Pl]:nka        Enclitic; ^[1Sg.3Du]:gka         Enclitic;
 ^[1Pl.3Sg]:vut        Enclitic; ^[1Pl.3Pl]:vut        Enclitic; ^[1Pl.3Du]:gput        Enclitic;
 ^[1Du.3Sg]:vung       Enclitic; ^[1Du.3Pl]:vung       Enclitic; ^[1Du.3Du]:gpung       Enclitic;
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.3Sg]:n          Enclitic; ^[2Sg.3Pl]:yen        Enclitic; ^[2Sg.3Du]:gkenn       Enclitic;
 ^[2Pl.3Sg]:zi         Enclitic; ^[2Pl.3Pl]:zi         Enclitic; ^[2Pl.3Du]:gsi         Enclitic;
 ^[2Du.3Sg]:yek        Enclitic; ^[2Du.3Pl]:yek        Enclitic; ^[2Du.3Du]:gtek        Enclitic;
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[4Sg.3Sg]:minigu     Enclitic; ^[4Sg.3Pl]:miniki     Enclitic; ^[4Sg.3Du]:minikek     Enclitic;
 ^[4Pl.3Sg]:megteggu   Enclitic; ^[4Pl.3Pl]:megtek     Enclitic; ^[4Pl.3Du]:megtekek    Enclitic;
 ^[4Du.3Sg]:megnegu    Enclitic; ^[4Du.3Pl]:megneki    Enclitic; ^[4Du.3Du]:megnekek    Enclitic;
-|----------------------------------|------------------------------------|-------------------------------------|
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
+| no [1--.1--] forms          |                               |                                |
+|-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.1Sg]:vnga       Enclitic; ^[2Sg.1Pl]:fkut       Enclitic; ^[2Sg.1Du]:pekung      Enclitic;
 ^[2Pl.1Sg]:fsinga     Enclitic; ^[2Pl.1Pl]:pesikut    Enclitic; ^[2Pl.1Du]:pesikung    Enclitic;
 ^[2Du.1Sg]:petegnenga Enclitic; ^[2Du.1Pl]:petegnekut Enclitic; ^[2Du.1Du]:petegnekung Enclitic;
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[4Sg.1Sg]:mininga    Enclitic; ^[4Sg.1Pl]:minikut    Enclitic; ^[4Sg.1Du]:minikung    Enclitic;
 ^[4Pl.1Sg]:megtengnga Enclitic; ^[4Pl.1Pl]:megtekut   Enclitic; ^[4Pl.1Du]:megtekung   Enclitic;
 ^[4Du.1Sg]:megnenga   Enclitic; ^[4Du.1Pl]:megnekut   Enclitic; ^[4Du.1Du]:megnekung   Enclitic;
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.2Sg]:mken       Enclitic; ^[1Sg.2Pl]:msi        Enclitic; ^[1Sg.2Du]:mtek        Enclitic;
 ^[1Pl.2Sg]:mken       Enclitic; ^[1Pl.2Pl]:msi        Enclitic; ^[1Pl.2Du]:mtek        Enclitic;
 ^[1Du.2Sg]:mken       Enclitic; ^[1Du.2Pl]:msi        Enclitic; ^[1Du.2Du]:mtek        Enclitic;
-|----------------------------------|------------------------------------|-------------------------------------|
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
+| no [2--.2--] forms          |                               |                                |
+|-----------------------------|-------------------------------|--------------------------------|
 ^[4Sg.2Sg]:miniten    Enclitic; ^[4Sg.2Pl]:minisi     Enclitic; ^[4Sg.2Du]:minitek  Enclitic;  |
 ^[4Pl.2Sg]:miniten    Enclitic; ^[4Pl.2Pl]:minisi     Enclitic; ^[4Pl.2Du]:minitek  Enclitic;  |
 ^[4Du.2Sg]:miniten    Enclitic; ^[4Du.2Pl]:minisi     Enclitic; ^[4Du.2Du]:minitek  Enclitic;  |
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 
 
 !==========================================
 LEXICON IntransitivePrecessiveConsequential
 !==========================================
-|-------------------------|--------------------------|-------------------------|-------------------------|
+|---------------------|----------------------|---------------------|---------------------|
 ^[3Sg]:n      Enclitic; ^[1Sg]:ma    Enclitic; ^[2Sg]:vek  Enclitic; ^[4Sg]:mi   Enclitic;
 ^[3Pl]:ta     Enclitic; ^[1Pl]:mta   Enclitic; ^[2Pl]:fsi  Enclitic; ^[4Pl]:meng Enclitic;
 ^[3Du]:yek    Enclitic; ^[1Du]:mtung Enclitic; ^[2Du]:ftek Enclitic; ^[4Du]:mek  Enclitic;
-|-------------------------|--------------------------|-------------------------|-------------------------|
+|---------------------|----------------------|---------------------|---------------------|
 
 !========================================
 LEXICON TransitivePrecessiveConsequential
 !========================================
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[3Sg.3Sg]:gu         Enclitic; ^[3Sg.3Pl]:ki        Enclitic; ^[3Sg.3Du]:kek        Enclitic;
 ^[3Pl.3Sg]:tgu        Enclitic; ^[3Pl.3Pl]:tki       Enclitic; ^[3Pl.3Du]:tkek       Enclitic;
 ^[3Du.3Sg]:gnegu      Enclitic; ^[3Du.3Pl]:gneki     Enclitic; ^[3Du.3Du]:gnekek     Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[1Sg.3Sg]:mkun       Enclitic; ^[1Sg.3Pl]:mki       Enclitic; ^[1Sg.3Du]:mkek       Enclitic;
 ^[1Pl.3Sg]:mteggu     Enclitic; ^[1Pl.3Pl]:mteki     Enclitic; ^[1Pl.3Du]:mtekek     Enclitic;
 ^[1Du.3Sg]:mtegnegu   Enclitic; ^[1Du.3Pl]:mtegneki  Enclitic; ^[1Du.3Du]:mtegnekek  Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[2Sg.3Sg]:vgu        Enclitic; ^[2Sg.3Pl]:fki       Enclitic; ^[2Sg.3Du]:fkek       Enclitic;
 ^[2Pl.3Sg]:fsigu      Enclitic; ^[2Pl.3Pl]:fsiki     Enclitic; ^[2Pl.3Du]:fsikek     Enclitic;
 ^[2Du.3Sg]:ftegnegu   Enclitic; ^[2Du.3Pl]:ftegneki  Enclitic; ^[2Du.3Du]:ftegnekek  Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[4Sg.3Sg]:migu       Enclitic; ^[4Sg.3Pl]:miki      Enclitic; ^[4Sg.3Du]:mikek      Enclitic;
 ^[4Pl.3Sg]:megteggu   Enclitic; ^[4Pl.3Pl]:megteki   Enclitic; ^[4Pl.3Du]:megtekek   Enclitic;
 ^[4Du.3Sg]:megnegu    Enclitic; ^[4Du.3Pl]:megneki   Enclitic; ^[4Du.3Du]:megnekek   Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[3Sg.1Sg]:nga        Enclitic; ^[3Sg.1Pl]:nkut      Enclitic; ^[3Sg.1Du]:nkung      Enclitic;
 ^[3Pl.1Sg]:tnga       Enclitic; ^[3Pl.1Pl]:nkut      Enclitic; ^[3Pl.1Du]:nkung      Enclitic;
 ^[3Du.1Sg]:gnenga     Enclitic; ^[3Du.1Pl]:nkut      Enclitic; ^[3Du.1Du]:nkung      Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
-!                                  |                                   |                                    |
-!                                  |                                   |                                    |
-!                                  |                                   |                                    |
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
+! no [1--.1--] forms          |                              |                               |
+|-----------------------------|------------------------------|-------------------------------|
 ^[2Sg.1Sg]:vnga       Enclitic; ^[2Sg.1Pl]:fkut      Enclitic; ^[2Sg.1Du]:fkung      Enclitic;
 ^[2Pl.1Sg]:fsinga     Enclitic; ^[2Pl.1Pl]:fsikut    Enclitic; ^[2Pl.1Du]:fsikung    Enclitic;
 ^[2Du.1Sg]:ftegnenga  Enclitic; ^[2Du.1Pl]:ftegnekut Enclitic; ^[2Du.1Du]:ftegnekung Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[4Sg.1Sg]:minga      Enclitic; ^[4Sg.1Pl]:mikut     Enclitic; ^[4Sg.1Du]:mikung     Enclitic;
 ^[4Pl.1Sg]:megtengnga Enclitic; ^[4Pl.1Pl]:megtekut  Enclitic; ^[4Pl.1Du]:megtekung  Enclitic;
 ^[4Du.1Sg]:megnenga   Enclitic; ^[4Du.1Pl]:megnekut  Enclitic; ^[4Du.1Du]:megnekung  Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[3Sg.2Sg]:ten        Enclitic; ^[3Sg.2Pl]:si        Enclitic; ^[3Sg.2Du]:stek       Enclitic;
 ^[3Pl.2Sg]:ten        Enclitic; ^[3Pl.2Pl]:si        Enclitic; ^[3Pl.2Du]:stek       Enclitic;
 ^[3Du.2Sg]:ten        Enclitic; ^[3Du.2Pl]:si        Enclitic; ^[3Du.2Du]:stek       Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[1Sg.2Sg]:mken       Enclitic; ^[1Sg.2Pl]:msi       Enclitic; ^[1Sg.2Du]:mtek       Enclitic;
 ^[1Pl.2Sg]:mken       Enclitic; ^[1Pl.2Pl]:msi       Enclitic; ^[1Pl.2Du]:mtek       Enclitic;
 ^[1Du.2Sg]:mken       Enclitic; ^[1Du.2Pl]:msi       Enclitic; ^[1Du.2Du]:mtek       Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
-!                                  |                                   |                                    |
-!                                  |                                   |                                    |
-!                                  |                                   |                                    |
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
+! no [2--.2--] forms          |                              |                               |
+|-----------------------------|------------------------------|-------------------------------|
 ^[4Sg.2Sg]:miten      Enclitic; ^[4Sg.2Pl]:misi      Enclitic; ^[4Sg.2Du]:mitek      Enclitic;
 ^[4Pl.2Sg]:miten      Enclitic; ^[4Pl.2Pl]:misi      Enclitic; ^[4Pl.2Du]:mitek      Enclitic;
 ^[4Du.2Sg]:miten      Enclitic; ^[4Du.2Pl]:misi      Enclitic; ^[4Du.2Du]:mitek      Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[3Sg.4Sg]:tni        Enclitic; ^[3Sg.4Pl]:steng     Enclitic; ^[3Sg.4Du]:stek       Enclitic;
 ^[3Pl.4Sg]:tni        Enclitic; ^[3Pl.4Pl]:steng     Enclitic; ^[3Pl.4Du]:stek       Enclitic;
 ^[3Du.4Sg]:tni        Enclitic; ^[3Du.4Pl]:steng     Enclitic; ^[3Du.4Du]:stek       Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[1Sg.4Sg]:mni        Enclitic; ^[1Sg.4Pl]:mteng     Enclitic; ^[1Sg.4Du]:mtek       Enclitic;
 ^[1Pl.4Sg]:mnni       Enclitic; ^[1Pl.4Pl]:mteng     Enclitic; ^[1Pl.4Du]:mtek       Enclitic;
 ^[1Du.4Sg]:mtegnegu   Enclitic; ^[1Du.4Pl]:mtegneki  Enclitic; ^[1Du.4Du]:mtegnekek  Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
 ^[2Sg.4Sg]:vgu        Enclitic; ^[2Sg.4Pl]:fki       Enclitic; ^[2Sg.4Du]:fkek       Enclitic;
 ^[2Pl.4Sg]:fsigu      Enclitic; ^[2Pl.4Pl]:fsiki     Enclitic; ^[2Pl.4Du]:fsikek     Enclitic;
 ^[2Du.4Sg]:ftegnegu   Enclitic; ^[2Du.4Pl]:ftegneki  Enclitic; ^[2Du.4Du]:ftegnekek  Enclitic;
-|----------------------------------|-----------------------------------|------------------------------------|
-!                                  |                                   |                                    |
-!                                  |                                   |                                    |
-!                                  |                                   |                                    |
-|----------------------------------|-----------------------------------|------------------------------------|
+|-----------------------------|------------------------------|-------------------------------|
+! no [4--.4--] forms          |                              |                               |
+|-----------------------------|------------------------------|-------------------------------|
 
 !=============================
 LEXICON IntransitiveConcessive
 !=============================
-|------------------------|----------------------------|----------------------------|----------------------------|
+|--------------------|------------------------|------------------------|------------------------|
 ^[3Sg]:an    Enclitic; ^[1Sg]:aghma   Enclitic; ^[2Sg]:aghpek  Enclitic; ^[4Sg]:aghmi   Enclitic;
 ^[3Pl]:ita   Enclitic; ^[1Pl]:amta    Enclitic; ^[2Pl]:aghfsi  Enclitic; ^[4Pl]:aghmeng Enclitic;
 ^[3Du]:ayek  Enclitic; ^[1Du]:amtung  Enclitic; ^[2Du]:aghftek Enclitic; ^[4Du]:aghmek  Enclitic;
-|------------------------|----------------------------|----------------------------|----------------------------|
+|--------------------|------------------------|------------------------|------------------------|
 
 !===========================
 LEXICON TransitiveConcessive
 !===========================
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[3Sg.3Sg]:agu           Enclitic; ^[3Sg.3Pl]:aki           Enclitic; ^[3Sg.3Du]:akek           Enclitic;
 ^[3Pl.3Sg]:itgu          Enclitic; ^[3Pl.3Pl]:itki          Enclitic; ^[3Pl.3Du]:itkek          Enclitic;
 ^[3Du.3Sg]:agnegu        Enclitic; ^[3Du.3Pl]:agneki        Enclitic; ^[3Du.3Du]:agnekek        Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[1Sg.3Sg]:amkun         Enclitic; ^[1Sg.3Pl]:amki          Enclitic; ^[1Sg.3Du]:amkek          Enclitic;
 ^[1Pl.3Sg]:amteggu       Enclitic; ^[1Pl.3Pl]:amteki        Enclitic; ^[1Pl.3Du]:amtekek        Enclitic;
 ^[1Du.3Sg]:amtegnegu     Enclitic; ^[1Du.3Pl]:amtegneki     Enclitic; ^[1Du.3Du]:amtegnekek     Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[2Sg.3Sg]:aghpegu       Enclitic; ^[2Sg.3Pl]:aghpeki       Enclitic; ^[2Sg.3Du]:aghpekek       Enclitic;
 ^[2Pl.3Sg]:aghpesigu     Enclitic; ^[2Pl.3Pl]:aghpesiki     Enclitic; ^[2Pl.3Du]:aghpesikek     Enclitic;
 ^[2Du.3Sg]:aghpetegnegu  Enclitic; ^[2Du.3Pl]:aghpetegneki  Enclitic; ^[2Du.3Du]:aghpetegnekek  Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[4Sg.3Sg]:aghmigu       Enclitic; ^[4Sg.3Pl]:aghmiki       Enclitic; ^[4Sg.3Du]:aghmikek       Enclitic;
 ^[4Pl.3Sg]:aghmegteggu   Enclitic; ^[4Pl.3Pl]:aghmegteki    Enclitic; ^[4Pl.3Du]:aghmegtekek    Enclitic;
 ^[4Du.3Sg]:aghmegnegu    Enclitic; ^[4Du.3Pl]:aghmegneki    Enclitic; ^[4Du.3Du]:aghmegnekek    Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[3Sg.1Sg]:anga          Enclitic; ^[3Sg.1Pl]:inkut         Enclitic; ^[3Sg.1Du]:inkung         Enclitic;
 ^[3Pl.1Sg]:atnga         Enclitic; ^[3Pl.1Pl]:inkut         Enclitic; ^[3Pl.1Du]:inkung         Enclitic;
 ^[3Du.1Sg]:agnenga       Enclitic; ^[3Du.1Pl]:inkut         Enclitic; ^[3Du.1Du]:inkung         Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
-!                                     |                                       |                                        |
-!                                     |                                       |                                        |
-!                                     |                                       |                                        |
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
+! no [1--.1--] forms             |                                  |                                   |
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[2Sg.1Sg]:aghpenga      Enclitic; ^[2Sg.1Pl]:aghpekut      Enclitic; ^[2Sg.1Du]:aghpekung      Enclitic;
 ^[2Pl.1Sg]:aghpesinga    Enclitic; ^[2Pl.1Pl]:aghpesikut    Enclitic; ^[2Pl.1Du]:aghpesikung    Enclitic;
 ^[2Du.1Sg]:aghpetegnenga Enclitic; ^[2Du.1Pl]:aghpetegnekut Enclitic; ^[2Du.1Du]:aghpetegnekung Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[4Sg.1Sg]:aghminga      Enclitic; ^[4Sg.1Pl]:aghmikut      Enclitic; ^[4Sg.1Du]:aghmikung      Enclitic;
 ^[4Pl.1Sg]:aghmegtengnga Enclitic; ^[4Pl.1Pl]:aghmegtekut   Enclitic; ^[4Pl.1Du]:aghmegtekung   Enclitic;
 ^[4Du.1Sg]:aghmegnenga   Enclitic; ^[4Du.1Pl]:aghmegnekut   Enclitic; ^[4Du.1Du]:aghmegnekung   Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[3Sg.2Sg]:aten          Enclitic; ^[3Sg.2Pl]:isi           Enclitic; ^[3Sg.2Du]:istek          Enclitic; 
 ^[3Pl.2Sg]:aten          Enclitic; ^[3Pl.2Pl]:isi           Enclitic; ^[3Pl.2Du]:istek          Enclitic;
 ^[3Du.2Sg]:aten          Enclitic; ^[3Du.2Pl]:isi           Enclitic; ^[3Du.2Du]:istek          Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[1Sg.2Sg]:amken         Enclitic; ^[1Sg.2Pl]:amsi          Enclitic; ^[1Sg.2Du]:amtek          Enclitic;
 ^[1Pl.2Sg]:amken         Enclitic; ^[1Pl.2Pl]:amsi          Enclitic; ^[1Pl.2Du]:amtek          Enclitic;
 ^[1Du.2Sg]:amken         Enclitic; ^[1Du.2Pl]:amsi          Enclitic; ^[1Du.2Du]:amtek          Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
-!                                     |                                       |                                        |
-!                                     |                                       |                                        |
-!                                     |                                       |                                        |
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
+! no [2--.2--] forms             |                                  |                                   |
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[4Sg.2Sg]:aghmiten      Enclitic; ^[4Sg.2Pl]:aghmisi       Enclitic; ^[4Sg.2Du]:aghmitek       Enclitic;
 ^[4Pl.2Sg]:aghmiten      Enclitic; ^[4Pl.2Pl]:aghmisi       Enclitic; ^[4Pl.2Du]:aghmitek       Enclitic;
 ^[4Du.2Sg]:aghmiten      Enclitic; ^[4Du.2Pl]:aghmisi       Enclitic; ^[4Du.2Du]:aghmitek       Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[3Sg.4Sg]:atni          Enclitic; ^[3Sg.4Pl]:isteng        Enclitic; ^[3Sg.4Du]:istek          Enclitic;
 ^[3Pl.4Sg]:atni          Enclitic; ^[3Pl.4Pl]:isteng        Enclitic; ^[3Pl.4Du]:istek          Enclitic;
 ^[3Du.4Sg]:atni          Enclitic; ^[3Du.4Pl]:isteng        Enclitic; ^[3Du.4Du]:istek          Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[1Sg.4Sg]:amni          Enclitic; ^[1Sg.4Pl]:amteng        Enclitic; ^[1Sg.4Du]:amtek          Enclitic;
 ^[1Pl.4Sg]:amnni         Enclitic; ^[1Pl.4Pl]:amteng        Enclitic; ^[1Pl.4Du]:amtek          Enclitic;
 ^[1Du.4Sg]:amtegnegu     Enclitic; ^[1Du.4Pl]:amteng        Enclitic; ^[1Du.4Du]:amtek          Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
 ^[2Sg.4Sg]:aghpegu       Enclitic; ^[2Sg.4Pl]:aghpeki       Enclitic; ^[2Sg.4Du]:aghpekek       Enclitic;
 ^[2Pl.4Sg]:aghpesigu     Enclitic; ^[2Pl.4Pl]:aghpesiki     Enclitic; ^[2Pl.4Du]:aghpesikek     Enclitic;
 ^[2Du.4Sg]:aghpetegnegu  Enclitic; ^[2Du.4Pl]:aghpetegneki  Enclitic; ^[2Du.4Du]:aghpetegnekek  Enclitic;
-!-------------------------------------|---------------------------------------|----------------------------------------|
-!                                     |                                       |                                        |
-!                                     |                                       |                                        |
-!                                     |                                       |                                        |
-!-------------------------------------|---------------------------------------|----------------------------------------|
+!--------------------------------|----------------------------------|-----------------------------------|
+! no [4--.4--] forms             |                                  |                                   |
+!--------------------------------|----------------------------------|-----------------------------------|
 
 !=================================
 LEXICON IntransitiveContemporative
 !=================================
-|-----------------------|--------------------------|-------------------------|-------------------------|
+|-------------------|----------------------|---------------------|---------------------|
 ^[3Sg]:ani  Enclitic; ^[1Sg]:ma    Enclitic; ^[2Sg]:pek  Enclitic; ^[4Sg]:mini Enclitic; 
 ^[3Sg]:aani Enclitic;
 ^[3Pl]:ata  Enclitic; ^[1Pl]:mta   Enclitic; ^[2Pl]:fsi  Enclitic; ^[4Pl]:meng Enclitic; 
 ^[3Du]:ayek Enclitic; ^[1Du]:mtung Enclitic; ^[2Du]:ftek Enclitic; ^[4Du]:mek  Enclitic; 
-|-----------------------|--------------------------|-------------------------|-------------------------|
+|-------------------|----------------------|---------------------|---------------------|
 
 !===============================
 LEXICON TransitiveContemporative
 !===============================
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.3Sg]:agu        Enclitic; ^[3Sg.3Pl]:aki        Enclitic; ^[3Sg.3Du]:akek        Enclitic; 
 ^[3Pl.3Sg]:atgu       Enclitic; ^[3Pl.3Pl]:atki       Enclitic; ^[3Pl.3Du]:atkek       Enclitic; 
 ^[3Du.3Sg]:agnegu     Enclitic; ^[3Du.3Pl]:agneki     Enclitic; ^[3Du.3Du]:agnekek     Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.3Sg]:mkun       Enclitic; ^[1Sg.3Pl]:mki        Enclitic; ^[1Sg.3Du]:mkek        Enclitic; 
 ^[1Pl.3Sg]:mteggu     Enclitic; ^[1Pl.3Pl]:mteki      Enclitic; ^[1Pl.3Du]:mtekek      Enclitic; 
 ^[1Du.3Sg]:mtegnegu   Enclitic; ^[1Du.3Pl]:mtegneki   Enclitic; ^[1Du.3Du]:mtegnekek   Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.3Sg]:pegu       Enclitic; ^[2Sg.3Pl]:peki       Enclitic; ^[2Sg.3Du]:pekek       Enclitic; 
 ^[2Pl.3Sg]:pesigu     Enclitic; ^[2Pl.3Pl]:pesiki     Enclitic; ^[2Pl.3Du]:pesikek     Enclitic; 
 ^[2Du.3Sg]:petegnegu  Enclitic; ^[2Du.3Pl]:petegneki  Enclitic; ^[2Du.3Du]:petegnekek  Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[4Sg.3Sg]:minigu     Enclitic; ^[4Sg.3Pl]:miniki     Enclitic; ^[4Sg.3Du]:minikek     Enclitic; 
 ^[4Pl.3Sg]:megteggu   Enclitic; ^[4Pl.3Pl]:megteki    Enclitic; ^[4Pl.3Du]:megtekek    Enclitic; 
 ^[4Du.3Sg]:megnegu    Enclitic; ^[4Du.3Pl]:megneki    Enclitic; ^[4Du.3Du]:megnekek    Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.1Sg]:anga       Enclitic; ^[3Sg.1Pl]:ankut      Enclitic; ^[3Sg.1Du]:ankung      Enclitic; 
 ^[3Pl.1Sg]:atnga      Enclitic; ^[3Pl.1Pl]:ankut      Enclitic; ^[3Pl.1Du]:ankung      Enclitic; 
 ^[3Du.1Sg]:agnenga    Enclitic; ^[3Du.1Pl]:ankut      Enclitic; ^[3Du.1Du]:ankung      Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
+| no [1--.1--] forms          |                               |                                |
+|-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.1Sg]:penga      Enclitic; ^[2Sg.1Pl]:pekut      Enclitic; ^[2Sg.1Du]:pekung      Enclitic; 
 ^[2Pl.1Sg]:pesinga    Enclitic; ^[2Pl.1Pl]:pesikut    Enclitic; ^[2Pl.1Du]:pesikung    Enclitic; 
 ^[2Du.1Sg]:petegnenga Enclitic; ^[2Du.1Pl]:petegnekut Enclitic; ^[2Du.1Du]:petegnekung Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[4Sg.1Sg]:mininga    Enclitic; ^[4Sg.1Pl]:minikut    Enclitic; ^[4Sg.1Du]:minikung    Enclitic; 
 ^[4Pl.1Sg]:megtengnga Enclitic; ^[4Pl.1Pl]:megtekut   Enclitic; ^[4Pl.1Du]:megtekung   Enclitic; 
 ^[4Du.1Sg]:megnenga   Enclitic; ^[4Du.1Pl]:megnekut   Enclitic; ^[4Du.1Du]:megnekung   Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.2Sg]:aten       Enclitic; ^[3Sg.2Pl]:asi        Enclitic; ^[3Sg.2Du]:astek       Enclitic; 
 ^[3Pl.2Sg]:aten       Enclitic; ^[3Pl.2Pl]:asi        Enclitic; ^[3Pl.2Du]:astek       Enclitic; 
 ^[3Du.2Sg]:aten       Enclitic; ^[3Du.2Pl]:asi        Enclitic; ^[3Du.2Du]:astek       Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.2Sg]:mken       Enclitic; ^[1Sg.2Pl]:msi        Enclitic; ^[1Sg.2Du]:mtek        Enclitic; 
 ^[1Pl.2Sg]:mken       Enclitic; ^[1Pl.2Pl]:msi        Enclitic; ^[1Pl.2Du]:mtek        Enclitic; 
 ^[1Du.2Sg]:mken       Enclitic; ^[1Du.2Pl]:msi        Enclitic; ^[1Du.2Du]:mtek        Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
+| no [2--.2--] forms          |                               |                                |
+|-----------------------------|-------------------------------|--------------------------------|
 ^[4Sg.2Sg]:miniten    Enclitic; ^[4Sg.2Pl]:minisi     Enclitic; ^[4Sg.2Du]:minitek     Enclitic; 
 ^[4Pl.2Sg]:miniten    Enclitic; ^[4Pl.2Pl]:minisi     Enclitic; ^[4Pl.2Du]:minitek     Enclitic; 
 ^[4Du.2Sg]:miniten    Enclitic; ^[4Du.2Pl]:minisi     Enclitic; ^[4Du.2Du]:minitek     Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[3Sg.4Sg]:atni       Enclitic; ^[3Sg.4Pl]:asteng     Enclitic; ^[3Sg.4Du]:astek       Enclitic; 
 ^[3Pl.4Sg]:atni       Enclitic; ^[3Pl.4Pl]:asteng     Enclitic; ^[3Pl.4Du]:astek       Enclitic; 
 ^[3Du.4Sg]:atni       Enclitic; ^[3Du.4Pl]:asteng     Enclitic; ^[3Du.4Du]:astek       Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[1Sg.4Sg]:mni        Enclitic; ^[1Sg.4Pl]:mteng      Enclitic; ^[1Sg.4Du]:mtek        Enclitic; 
 ^[1Pl.4Sg]:mnni       Enclitic; ^[1Pl.4Pl]:mteng      Enclitic; ^[1Pl.4Du]:mtek        Enclitic; 
 ^[1Du.4Sg]:mtegnegu   Enclitic; ^[1Du.4Pl]:mteng      Enclitic; ^[1Du.4Du]:mtek        Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
 ^[2Sg.4Sg]:pegu       Enclitic; ^[2Sg.4Pl]:peki       Enclitic; ^[2Sg.4Du]:pekek       Enclitic; 
 ^[2Pl.4Sg]:pesigu     Enclitic; ^[2Pl.4Pl]:pesiki     Enclitic; ^[2Pl.4Du]:pesikek     Enclitic; 
 ^[2Du.4Sg]:petegnegu  Enclitic; ^[2Du.4Pl]:petegneki  Enclitic; ^[2Du.4Du]:petegnekek  Enclitic; 
-|----------------------------------|------------------------------------|-------------------------------------|
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|                                  |                                    |                                     |
-|----------------------------------|------------------------------------|-------------------------------------|
+|-----------------------------|-------------------------------|--------------------------------|
+| no [4--.4--] forms          |                               |                                |
+|-----------------------------|-------------------------------|--------------------------------|
 
 
 !==============================
 LEXICON IntransitiveConditional
 !==============================
-|-----------------------|---------------------------|--------------------------|---------------------------|
+|-------------------|-----------------------|----------------------|-----------------------|
 ^[3Sg]:an   Enclitic; ^[1Sg]:uma    Enclitic; ^[2Sg]:uvek  Enclitic; ^[4Sg]:umi    Enclitic;
-                                                                                 ^[4Sg]:uni    Enclitic;
-|-----------------------|---------------------------|--------------------------|---------------------------|
+                                                                     ^[4Sg]:uni    Enclitic;
+|-------------------|-----------------------|----------------------|-----------------------|
 ^[3Pl]:ata  Enclitic; ^[1Pl]:umta   Enclitic; ^[2Pl]:ufsi  Enclitic; ^[4Pl]:umeng  Enclitic;
-                                                                                 ^[4Pl]:uyeng  Enclitic;
-|-----------------------|---------------------------|--------------------------|---------------------------|
+                                                                     ^[4Pl]:uyeng  Enclitic;
+|-------------------|-----------------------|----------------------|-----------------------|
 ^[3Du]:ayek Enclitic; ^[1Du]:umtung Enclitic; ^[2Du]:uftek Enclitic; ^[4Du]:umek   Enclitic;
-                                                                                 ^[4Du]:uyek   Enclitic;
-|-----------------------|---------------------------|--------------------------|---------------------------|
+                                                                     ^[4Du]:uyek   Enclitic;
+|-------------------|-----------------------|----------------------|-----------------------|
 
 !============================
 LEXICON TransitiveConditional
 !============================
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[3Sg.3Sg]:agu         Enclitic; ^[3Sg.3Pl]:aki        Enclitic; ^[3Sg.3Du]:akek        Enclitic; 
 ^[3Pl.3Sg]:atgu        Enclitic; ^[3Pl.3Pl]:atki       Enclitic; ^[3Pl.3Du]:atkek       Enclitic; 
 ^[3Du.3Sg]:agnegu      Enclitic; ^[3Du.3Pl]:agneki     Enclitic; ^[3Du.3Du]:agnekek     Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[1Sg.3Sg]:umkun       Enclitic; ^[1Sg.3Pl]:umki       Enclitic; ^[1Sg.3Du]:umkek       Enclitic; 
 ^[1Pl.3Sg]:umteggu     Enclitic; ^[1Pl.3Pl]:umteki     Enclitic; ^[1Pl.3Du]:umtekek     Enclitic; 
 ^[1Du.3Sg]:umtegnegu   Enclitic; ^[1Du.3Pl]:umtegneki  Enclitic; ^[1Du.3Du]:umtegnekek  Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[2Sg.3Sg]:uvgu        Enclitic; ^[2Sg.3Pl]:ufki       Enclitic; ^[2Sg.3Du]:ufkek       Enclitic; 
 ^[2Pl.3Sg]:ufsigu      Enclitic; ^[2Pl.3Pl]:ufsiki     Enclitic; ^[2Pl.3Du]:ufsikek     Enclitic; 
 ^[2Du.3Sg]:uftegnegu   Enclitic; ^[2Du.3Pl]:uftegneki  Enclitic; ^[2Du.3Du]:uftegnekek  Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[4Sg.3Sg]:umigu       Enclitic; ^[4Sg.3Pl]:umiki      Enclitic; ^[4Sg.3Du]:umikek      Enclitic; 
 ^[4Sg.3Sg]:unigu       Enclitic; ^[4Sg.3Pl]:uniki      Enclitic; ^[4Sg.3Du]:unikek      Enclitic; 
 ^[4Pl.3Sg]:umegteggu   Enclitic; ^[4Pl.3Pl]:umegteki   Enclitic; ^[4Pl.3Du]:umegtekek   Enclitic; 
 ^[4Pl.3Sg]:uyigteggu   Enclitic; ^[4Pl.3Pl]:uyigteki   Enclitic; ^[4Pl.3Du]:uyigtekek   Enclitic; 
 ^[4Du.3Sg]:umegnegu    Enclitic; ^[4Du.3Pl]:umegneki   Enclitic; ^[4Du.3Du]:umegnekek   Enclitic; 
 ^[4Du.3Sg]:uyignegu    Enclitic; ^[4Du.3Pl]:uyigneki   Enclitic; ^[4Du.3Du]:uyignekek   Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[3Sg.1Sg]:anga        Enclitic; ^[3Sg.1Pl]:ankut      Enclitic; ^[3Sg.1Du]:ankung      Enclitic; 
 ^[3Pl.1Sg]:atnga       Enclitic; ^[3Pl.1Pl]:ankut      Enclitic; ^[3Pl.1Du]:ankung      Enclitic; 
 ^[3Du.1Sg]:agnenga     Enclitic; ^[3Du.1Pl]:ankut      Enclitic; ^[3Du.1Du]:ankung      Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
+| no [1--.1--] forms           |                               |                                |
+|------------------------------|-------------------------------|--------------------------------|
 ^[2Sg.1Sg]:uvnga       Enclitic; ^[2Sg.1Pl]:ufkut      Enclitic; ^[2Sg.1Du]:ufkung      Enclitic; 
 ^[2Pl.1Sg]:ufsinga     Enclitic; ^[2Pl.1Pl]:ufsikut    Enclitic; ^[2Pl.1Du]:ufsikung    Enclitic; 
 ^[2Du.1Sg]:uftegnenga  Enclitic; ^[2Du.1Pl]:uftegnekut Enclitic; ^[2Du.1Du]:uftegnekung Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[4Sg.1Sg]:uminga      Enclitic; ^[4Sg.1Pl]:umikut     Enclitic; ^[4Sg.1Du]:umikung     Enclitic; 
 ^[4Sg.1Sg]:uninga      Enclitic; ^[4Sg.1Pl]:unikut     Enclitic; ^[4Sg.1Du]:unikung     Enclitic; 
 ^[4Pl.1Sg]:umegtengnga Enclitic; ^[4Pl.1Pl]:umegtekut  Enclitic; ^[4Pl.1Du]:umegtekung  Enclitic; 
 ^[4Pl.1Sg]:uyigtengnga Enclitic; ^[4Pl.1Pl]:uyigtekut  Enclitic; ^[4Pl.1Du]:uyigtekung  Enclitic; 
 ^[4Du.1Sg]:umegnenga   Enclitic; ^[4Du.1Pl]:umegnekut  Enclitic; ^[4Du.1Du]:umegnekung  Enclitic; 
 ^[4Du.1Sg]:uyignenga   Enclitic; ^[4Du.1Pl]:uyignekut  Enclitic; ^[4Du.1Du]:uyignekung  Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[3Sg.2Sg]:aten        Enclitic; ^[3Sg.2Pl]:asi        Enclitic; ^[3Sg.2Du]:astek       Enclitic; 
 ^[3Pl.2Sg]:aten        Enclitic; ^[3Pl.2Pl]:asi        Enclitic; ^[3Pl.2Du]:astek       Enclitic; 
 ^[3Du.2Sg]:aten        Enclitic; ^[3Du.2Pl]:asi        Enclitic; ^[3Du.2Du]:astek       Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[1Sg.2Sg]:umken       Enclitic; ^[1Sg.2Pl]:umsi       Enclitic; ^[1Sg.2Du]:umtek       Enclitic; 
 ^[1Pl.2Sg]:umken       Enclitic; ^[1Pl.2Pl]:umsi       Enclitic; ^[1Pl.2Du]:umtek       Enclitic; 
 ^[1Du.2Sg]:umken       Enclitic; ^[1Du.2Pl]:umsi       Enclitic; ^[1Du.2Du]:umtek       Enclitic; 
 ^[4Sg.2Sg]:umiten      Enclitic; ^[4Sg.2Pl]:umisi      Enclitic; ^[4Sg.2Du]:umitek      Enclitic; 
 ^[4Sg.2Sg]:uniten      Enclitic; ^[4Sg.2Pl]:unisi      Enclitic; ^[4Sg.2Du]:unitek      Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
+| no [2--.2--] forms           |                               |                                |
+|------------------------------|-------------------------------|--------------------------------|
 ^[4Pl.2Sg]:umiten      Enclitic; ^[4Pl.2Pl]:umisi      Enclitic; ^[4Pl.2Du]:umitek      Enclitic; 
 ^[4Pl.2Sg]:uniten      Enclitic; ^[4Pl.2Pl]:unisi      Enclitic; ^[4Pl.2Du]:unitek      Enclitic; 
 ^[4Du.2Sg]:umiten      Enclitic; ^[4Du.2Pl]:umisi      Enclitic; ^[4Du.2Du]:umitek      Enclitic; 
 ^[4Du.2Sg]:uniten      Enclitic; ^[4Du.2Pl]:unisi      Enclitic; ^[4Du.2Du]:unitek      Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[3Sg.4Sg]:atni        Enclitic; ^[3Sg.4Pl]:asteng     Enclitic; ^[3Sg.4Du]:astek       Enclitic; 
 ^[3Pl.4Sg]:atni        Enclitic; ^[3Pl.4Pl]:asteng     Enclitic; ^[3Pl.4Du]:astek       Enclitic;
 ^[3Du.4Sg]:atni        Enclitic; ^[3Du.4Pl]:asteng     Enclitic; ^[3Du.4Du]:astek       Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[1Sg.4Sg]:umni        Enclitic; ^[1Sg.4Pl]:umteng     Enclitic; ^[1Sg.4Du]:umtek       Enclitic; 
 ^[1Pl.4Sg]:umnni       Enclitic; ^[1Pl.4Pl]:umteng     Enclitic; ^[1Pl.4Du]:umtek       Enclitic; 
 ^[1Du.4Sg]:umtegnegu   Enclitic; ^[1Du.4Pl]:umteng     Enclitic; ^[1Du.4Du]:umtek       Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
 ^[2Sg.4Sg]:uvgu        Enclitic; ^[2Sg.4Pl]:ufki       Enclitic; ^[2Sg.4Du]:ufkek       Enclitic; 
 ^[2Pl.4Sg]:ufsigu      Enclitic; ^[2Pl.4Pl]:ufsiki     Enclitic; ^[2Pl.4Du]:ufsikek     Enclitic; 
 ^[2Du.4Sg]:uftegnegu   Enclitic; ^[2Du.4Pl]:uftegneki  Enclitic; ^[2Du.4Du]:uftegnekek  Enclitic; 
-|-----------------------------------|------------------------------------|-------------------------------------|
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|                                   |                                    |                                     |
-|-----------------------------------|------------------------------------|-------------------------------------|
+|------------------------------|-------------------------------|--------------------------------|
+| no [4--.4--] forms           |                               |                                |
+|------------------------------|-------------------------------|--------------------------------|
 
 
 !================================
 LEXICON IntransitiveSubordinative
 !================================
-!-----------------------|-------------------------|-------------------------|
+!-------------------|---------------------|---------------------|
 ^[4Sg]:ni   Enclitic; ^[1Sg]:nga  Enclitic; ^[2Sg]:ten  Enclitic; 
 ^[4Pl]:teng Enclitic; ^[1Pl]:ta   Enclitic; ^[2Pl]:si   Enclitic; 
 ^[4Du]:tek  Enclitic; ^[1Du]:tung Enclitic; ^[2Du]:tek  Enclitic; 
-!-----------------------|-------------------------|-------------------------|
+!-------------------|---------------------|---------------------|
 
 !==============================
 LEXICON TransitiveSubordinative
 !==============================
-|-------------------------|--------------------------|----------------------------|
+|--------------------|---------------------|-----------------------|
 ^[_.3Sg]:ku  Enclitic; ^[_.3Pl]:ki Enclitic; ^[_.3Du]:kek  Enclitic; 
 ^[_.1Sg]:nga Enclitic; ^[_.1Pl]:ta Enclitic; ^[_.1Du]:tung Enclitic; 
 ^[_.2Sg]:ten Enclitic; ^[_.2Pl]:si Enclitic; ^[_.2Du]:tek  Enclitic; 
-|-------------------------|--------------------------|----------------------------|
+|--------------------|---------------------|-----------------------|
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -10546,6 +10451,7 @@ LEXICON PosturalRootPostbase
 ^+te(POS→ACTIVE):te      QuantQualInfl; ! to get or put into the R posture or V state (transitive or intransitive)
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                                !!!!!!
@@ -10573,25 +10479,23 @@ LEXICON QuantQualTag
 !====================
 LEXICON QuantQualInfl
 !====================
-!-------------------------------|
-!  Quantifier-Qualifier Endings |
-!-------------------------------|
+!--------------------------|
 [3Sg]:~%:(ng₁)an   Enclitic;
 [3Pl]:~%:(ng₁)ita  Enclitic;                
 [3Du]:~%:(ng₁)ita  Enclitic;
-!-------------------------------|
+!--------------------------|
 [1Sg]:~f-wma       Enclitic;
 [1Pl]:%:emta       Enclitic;
 [1Du]:%:emtung     Enclitic;
-!-------------------------------|
+!--------------------------|
 [2Sg]:–gpek        Enclitic;
 [2Pl]:–gpesi       Enclitic;
 [2Du]:–gpetek      Enclitic;
-!-------------------------------|
+!--------------------------|
 [4Sg]:~f-wmi       Enclitic;
 [4Pl]:~f-wmeng     Enclitic;
 [4Du]:%:egmek      Enclitic;
-!-------------------------------|
+!--------------------------|
 
 
 
@@ -10672,6 +10576,7 @@ LEXICON EmotionalRootPostbase
 ^@~nagh(EMO→N):@₁~nagh      NounPostbase; ! one that causes pepole to feel or be R
 ^tagh(EMO→N):tagh           NounPostbase; ! one who often feels R by disposition
 ^–ketagh(EMO→N):–ketagh     NounPostbase; ! one who often feels R by disposition
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -10984,6 +10889,7 @@ LEXICON DemInfl
 [Loc]-ete:~f-wnte**  VerbInfl;
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                           !!!!!!
@@ -11032,6 +10938,7 @@ LEXICON PronounTag
 (PRO):0  Enclitic;
 
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 !!!!!!                     !!!!!!
@@ -11055,6 +10962,7 @@ LEXICON Enclitic
 =ta:^ta      Enclitic;
 =tuq:^tuq    Enclitic;
 =wha:^wha    Enclitic;
+
 
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
