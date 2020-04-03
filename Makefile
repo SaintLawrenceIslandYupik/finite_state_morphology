@@ -29,4 +29,4 @@ test-%-postbases: tests/badten_examples/%-postbases.tsv ess.fomabin
 	@cut -f 1 tests/badten_examples/$*-postbases.tsv | sort -d -f | uniq | flookup -i -w "" ess.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/$*-postbases.tsv)' && echo "Badten (2008) $*-Postbases - PASS" || echo "Badten (2008) $*-Postbases - FAIL"
 
 clean:
-	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin *.lexc
+	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin

@@ -1,0 +1,76 @@
+=======
+ ABOUT
+=======
+  these are all of the test cases that v1 fails to pass, but are handled in v2.
+
+-------------------
+Jacobson (2001) Ch5
+-------------------
+aane(V)^@~fnaqe(V→V)^[Ind.Intr]^[3Sg] aannaquq
+qikmigh(N)^~:(ng)u(N→V)^~(g)aqe(V→V)^[Ind.Intr]^[3Sg] qikmiiwaquq
+tume(N)^[Loc.Pl]  tumeni
+vegaagh(N)^[Prl.Pl]   vegaaghteggun
+
+-------------------
+Jacobson (2001) Ch6
+-------------------
+ggute(N)^[Abs.3SgPoss.Sg] ggutanga
+tume(N)^[Abs.3SgPoss.Sg]  tumanga
+
+-------------------
+Jacobson (2001) Ch9
+-------------------
+ingaghte(V)^@~–(g)kagh(V→N)^[Abs.Sg]  ingaghtegkaq
+tuqute(V)^@~–(g)kagh(V→N)^[Abs.Sg]    tuqutegkaq
+naligh(WH)^[Rel.Sg]   naliim
+
+--------------------
+Jacobson (2001) Ch10
+--------------------
+gaagh(V)^~sf:(e)sqe(CmpdVbl)^[Ind.Trns]^[3Sg.3Sg] gaaghesqaa
+
+--------------------
+Jacobson (2001) Ch11
+--------------------
+this chapter was a mess tbh. jacobson introduces an alternative participial,
+but gives few examples, so i suspect there's quite a bit of overgeneration,
+which is then reflected in the test cases. the following test case is the
+only one i'm sure that v1 gets wrong.
+for this chapter and some other chapters, i deleted all of the test cases whose
+surface forms are...questionable (see "contemporative" and "subordinative"),
+but left them alone in the test case folder for v2.
+
+kaate(V)^@~:(u)te(V→V)^[Ind.Trns]^[3Sg.3Sg] kaatutaa
+
+--------------------
+Jacobson (2001) Ch15
+--------------------
+see chapter 11 disclaimer.
+
+kayusigh(V)^~sf:(e)sqe(V→V)^[Sbrd.Trns]^[_.1Sg] kayusiisqellunga
+neghe(V)^@~fnaanghite(V→V)^@ngugh(V→N)^[Abs.Sg]	neghnaanghilnguq
+sukangite(V)^@ngugh(V→N)^[Abs.Sg]   sukangilnguq
+
+--------------------
+Jacobson (2001) Ch17
+--------------------
+kaate(V)^@~:(i/u)ma(V→V)^@~:(u)te(V→N)^[Abs.3SgPoss.Sg]	kaasimatanga
+neghe(V)^@~:(i/u)ma(V→V)^@~:(u)te(V→N)^[Abs.3SgPoss.Sg]	neghumatanga
+kiyaghte(V)^[Opt.Fut.Intr]^[1Sg]	kiyaghlleghhiinga
+
+--------------------
+Jacobson (2001) Ch18
+--------------------
+tuqu(V)^[Volitive.Of.Fear]^[1Sg]    tuqunayukama
+qapragllag(V)^[Volitive.Of.Fear]^[3Sg]  qapragllagnayukan
+naavuma(V)^[Volitive.Of.Fear]^[3Pl] naavumanayukata
+tawani(DEM)^+staaghhagh(N→N)    tawanistaaghhaq
+tawaten(DEM)^+staaghhagh(N→N)^~:(ng)inagh(N→N)  tawatestaaghhiinaq
+asi(AREA)^[All.Sg]  asitmun
+kelu(AREA)^[All.Sg] kelutmun
+sivu(AREA)^[All.Sg] sivutmun
+qule(AREA)^[All.Sg] quulmun
+kete(AREA)^[All.Sg] ketmun
+asi(AREA)^[All.Sg]  asimun
+kelu(AREA)^[All.Sg] kelumun
+sivu(AREA)^[All.Sg] sivumun
