@@ -252,8 +252,8 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       -> %{%.m%.%} g p e "^" n a "^" a m t a     .o.
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g   -> %{%.m%.%} g p e "^" n a "^" a m t u n g .o.
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> %{%.m%.%} g p e "^" n a                 .o.
-                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l u                ,,
-                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l l u              ;
+                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l u                ;
+!                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l l u              ;
 
 
 !------------------
@@ -296,7 +296,7 @@ define ApicalTE y   -> s                                                       ,
                 g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]           .o.
                 l   -> l l     ||       %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
                 g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _               .o. ! for postbase @–lghii
-			   [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h h         .o. ! for postbase @–nghhagh
+			   [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h           .o. ! for postbase @–nghhagh, contemporative mood
 			   [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q             ;   ! for postbase @–nqigte
 
 

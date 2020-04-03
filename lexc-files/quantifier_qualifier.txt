@@ -2,13 +2,13 @@
 LEXICON QuantifierQualifier
 !==========================
 
-allakagh      QuantQualTag; ! separately from others
-ellnginagh    QuantQualTag; ! only; alone
-kezeghhagh    QuantQualTag; ! alone; only
-kezemaghhagh  QuantQualTag; ! only; alone; by oneself
-iingunagh     QuantQualTag; ! all; whole
-qerngagh      QuantQualTag; ! together
-tamaghhagh    QuantQualTag; ! all, every, both (for dual)
+allakagh*:allakagh          QuantQualTag; ! separately from others
+ellnginagh*:ellnginagh      QuantQualTag; ! only; alone
+kezeghhagh*:kezeghhagh      QuantQualTag; ! alone; only
+kezemaghhagh*:kezemaghhagh  QuantQualTag; ! only; alone; by oneself
+iingunagh*:iingunagh        QuantQualTag; ! all; whole
+qerngagh*:qerngagh          QuantQualTag; ! together
+tamaghhagh*:tamaghhagh      QuantQualTag; ! all, every, both (for dual)
 
 
 !===================

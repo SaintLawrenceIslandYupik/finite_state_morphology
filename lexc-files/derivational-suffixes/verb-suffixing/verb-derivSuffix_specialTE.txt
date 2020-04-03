@@ -33,7 +33,7 @@ LEXICON VerbPostbaseVI
 ^~i(V→V):^%{.f.%}i                              VerbPostbaseI;   ! to V something; to suffer something's V-ing
 ^@~–(g)kau(V→V):^%{.at.%}kau                    VerbPostbaseI;   ! to have V-ed; to have been V-ed
 ^@~–(g)kayugu(V→V):^%{.at.%}kayugu              VerbPostbaseI;   ! to be able to V; can V
-^@~fni(V→V):^%{.at.%}ni                         VerbPostbaseI;   ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
+^@~fni(CmpdVbl):^%{.at.%}ni                     VerbPostbaseI;   ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
 ^~(g)aqe(V→V):^%{.f.%}aqe                       VerbPostbaseII;  ! to be currently V-ing; to V now and then; to always V
 ^––iqe(V→V):^%{.mm.%}iqe                        VerbPostbaseII;  ! to have trouble with one's V-ing over a period of time
 ^–lgutke(V→V):^lgutke                           VerbPostbaseII;  ! to V together with; to help (object) V
@@ -53,10 +53,10 @@ LEXICON VerbPostbaseVI
 ^@~f–yiilliqe(V→V):^%{.at.%}yiilliqe            VerbPostbaseII;  ! to have trouble V-ing
 ^@~–(g)kaqe(V→V):^%{.at.%}kaqe                  VerbPostbaseII;  ! to have V-ed (him/it) 
 ^@~fnayuke(V→V):^%{.at.%}nayuke                 VerbPostbaseII;  ! to think that one might V
-^@~fmiqe(V→V):^%{.at.%}miqe                     VerbPostbaseII;  ! to compel one to V; to make one V
+^@~fmiqe(CmpdVbl):^%{.at.%}miqe                 VerbPostbaseII;  ! to compel one to V; to make one V
 ^@~fyuke(V→V):^%{.at.%}yuke                     VerbPostbaseII;  ! to think that one is V-ing or has V-ed
 ^+qe(V→V):^qe                                   VerbPostbaseII;  ! to act on so as to cause to V
-^~sf%:(e)sqe(V→V):^sqe                          VerbPostbaseII;  ! to ask one to V; to tell one to V
+^~sf%:(e)sqe(CmpdVbl):^sqe                      VerbPostbaseII;  ! to ask one to V; to tell one to V
 ^+te(V→V):^%{t%}e                               VerbPostbaseII;  ! to act on so as to cause to V
 ^–ghllag(V→V):^ghllag                           VerbPostbaseIII; ! to V or be V in a big way; to V for a long time
 ^–ghraag(V→V):^ghraag                           VerbPostbaseIII; ! to do some V-ing; to gradually V; to get V-er; to be somewhat V
@@ -264,6 +264,6 @@ LEXICON VerbPostbaseVI
 ^@~fnaqe(V→N):^%{.at.%}naqe                 NounPostbaseVIII; ! one who is going to V
 ^@~–(g)ke(V→N):^%{.at.%}ke                  NounPostbaseVIII; ! the ones possessor is V-ing
 
-^@~%:(i/u)magh(V→QUANTQUAL):^%{.at.%}imagh  QuantQualInfl; ! while V-ing
+^@~%:(i/u)magh*(V→QUANTQUAL):^%{.at.%}imagh QuantQualInfl; ! while V-ing
 
 

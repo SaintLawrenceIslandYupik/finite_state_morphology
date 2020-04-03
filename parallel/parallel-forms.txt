@@ -2,6 +2,8 @@
 LEXICON ParallelForm
 !===================
 
+seghlegh(N)^[Equ.Sg]:seghletun  #; ! [Jacobson (2001) Ch18]
+
 !---------------------------------------
 ! parallel forms found in Badten (2008)
 !---------------------------------------
@@ -33,17 +35,6 @@ tume(N)^~%:(ng)igh(N→V):tumangi%{g%}h        VerbPostbaseIV;
 aqlaghaghte(V)^+(te)ste(CmpdVbl)^@–nghite(V→V)^[Sbrd.Trns]^[_.3Sg]:aqlaghagtestengngunaan  #;
 neghe(V)^+(te)ste(V→V)^@–nghite(V→V)^[Sbrd.Trns][_.3Pl]:neghestengngunaki              #;
 sukangite(V)^[Sbrd.Intr]^[4Sg]:sukangunani                                             #;
-
-!--------------------------------------------------------------------------
-! certain verb bases in certain circumstances may be used with unpossessed
-! oblique case endings as if they were noun bases [Jacobson (2001) p.119]
-!   not sure how many other instances like these there are.
-!   implementing these words in any other way would SEVERELY overgenerate.
-!--------------------------------------------------------------------------
-pinigh(V)^[Equ.Sg]:pinitun                    #;
-neghe(V)^@–nghite(V→V)^[Rel.Sg]:neghenghitem  #;
-seghlegh(N)^[Equ.Sg]:seghletun                #;
-aqlaghaghte(V)^[Loc.Sg]:aqlaghaghtemmi        #;
 
 !-----------------------------------------------------------
 ! there's a lot of discrepancies in the "~–(g)k" postbases,
