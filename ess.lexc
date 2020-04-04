@@ -10601,11 +10601,11 @@ LEXICON EmotionalRootPostbase
 ^~–ke(EMO→V):~–ke           VerbPostbase; ! to feel R toward object; to find tha tobject is making one R 
 ^@~yuke(EMO→V):@₁~yuke      VerbPostbase; ! to feel R toward object; to find tha tobject is making one R 
 ^~–ketagh(EMO→V):~–ketagh   VerbPostbase; ! to often feel R by one's disposition
-^tagh(EMO→V):tagh           VerbPostbase; ! to often feel R by one's disposition
+^+tagh(EMO→V):tagh          VerbPostbase; ! to often feel R by one's disposition
 ^@~yagute(EMO→V):@₁~yagute  VerbPostbase; ! to come to feel R toward object
 
 ^@~fnagh(EMO→N):@₁~fnagh    NounPostbase; ! one that causes pepole to feel or be R
-^tagh(EMO→N):tagh           NounPostbase; ! one who often feels R by disposition
+^+tagh(EMO→N):tagh          NounPostbase; ! one who often feels R by disposition
 ^~–ketagh(EMO→N):~–ketagh   NounPostbase; ! one who often feels R by disposition
 
 
@@ -10874,7 +10874,7 @@ maagun       DemTag;  whagun        DemTag;  imagun        DemTag;  ! Via Adv   
                                                            iimgun        DemTag;  ! Via Adv                |
 maaken       DemTag;  whaken        DemTag;  imaken        DemTag;  ! Abl_Mod Adv            |
                                                            iimken        DemTag;  ! Abl_Mod Adv            |
-                             whaten        DemTag;                                ! Equ Adv                |
+                      whaten        DemTag;                                ! Equ Adv                |
 tamaa        DemTag;  tawa          DemTag;  tazima        DemTag;  ! Anaph Adv Ptcl         |
 tamaani      DemTag;  tawani        DemTag;  tazimani      DemTag;  ! Anaph Loc Adv          |
 tamaavek     DemTag;  tawavek       DemTag;  tazimavek     DemTag;  ! Anaph Ter Adv          |
@@ -10987,7 +10987,7 @@ LEXICON Enclitic
 =mi:^mi      Enclitic;
 =ngam:^ngam  Enclitic;
 =nguq:^nguq  Enclitic;
-=qaa:^qaa    Enclitic;
+=qa:^qa      Enclitic;
 =qun:^qun    Enclitic;
 =sa:^sa      Enclitic;
 =ta:^ta      Enclitic;

@@ -299,24 +299,8 @@ ngngw ngng ghhw ghh ghw ngw gg gh kw ll mm ng nn rr qw wh
 !===========
 LEXICON Root
 !===========
-  DemonstrativeException;
   NounException;
   VerbException;
-
-
-
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!                           !!!!!!
-!!!!!!      Noun Exceptions      !!!!!! 
-!!!!!!                           !!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-!=============================
-LEXICON DemonstrativeException 
-!=============================
-whani(DEM)^ete:whaante VerbInfl;
 
 
 
@@ -331,14 +315,8 @@ whani(DEM)^ete:whaante VerbInfl;
 !====================
 LEXICON NounException
 !====================
-yug(N)^[Abs.Sg]:yuuk                            Enclitic;
-alangqugh(N)^[Abs.3SgPoss.Sg]:alangqghwa        Enclitic;
-naasqugh(N)^[Abs.3SgPoss.Sg]:naasqwa            Enclitic;
-uyaqugh(N)^[Abs.3SgPoss.Sg]:uyaqghwa            Enclitic;
-Sivuqagh(N)^~fmii(N→N):Sivuqaghhmii             NounPostbase;
-Laluramke(N)^tagh(N→N):laluramkatagh            NounPostbase;
-sa(N)^~%:(ng)u(N→V)^[Intrg.Intr.3Sg]:sangaawa   #;
-sa(N)^~%:(ng)u(N→V)^[Intrg.Intr.3Pl]:sangaawat  #;
+yug(N)^[Abs.Sg]:yuuk                  Enclitic;
+Laluramke(N)^tagh(N→N):laluramkatagh  NounPostbase;
 
 
 
@@ -363,10 +341,6 @@ kukegte^~%:(u)sigh(V→V):kuukgg^usigh^         NounPostbase;
 kuukgute^~%:(u)sigh(V→V):kuukggut^usigh^      NounPostbase;
 egtugute^@~%:(u)tke(V→V):egtugut^utke^        VerbPostbase;
 qeneghte^@~%:(u)tke(V→V):qeneght^utke^        VerbPostbase;
-aqlaghaghte(V)^[Loc.Sg]:aqlaghaghtemmi        #;
-pinigh(V)^[Equ.Sg]:pinitun                    #;
-neghe(V)^@–nghite(V→V)^[Rel.Sg]:neghenghitem  #;
-
 
 |------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------|
 pi(V)^[PtcpObl.Trns]^[4Sg.3Sg]:piyaqminigu     Enclitic; pi(V)^[PtcpObl.Trns]^[4Sg.3Pl]:piyaqminiki   Enclitic; pi(V)^[PtcpObl.Trns]^[4Sg.3Du]:piyaqminikek   Enclitic;
