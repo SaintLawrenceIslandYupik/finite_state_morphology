@@ -12,10 +12,20 @@ import string
 from foma import *
 
 
-def generate_output_file(allAnalyses, filename):
+def generate_output_file(allAnalyses, filename, outputdir):
     '''
+	:param allAnalyses: all of the analyses for each word in a text
+	:type  allAnalyses: list of lists
+	:param filename: name of the text
+	:type  filename: str
+	:param outputdir: name of the directory to which to write the output
+	:type  outputdir: str 
+
+	Writes the predicted analyses for a text to a file that is placed
+	in the specified output directory.
+
     '''
-    with open(filename, 'w') as f:
+    with open(outputdir+"/"+filename, 'w') as f:
         for elem in allAnalyses:
 
             # analyzer found analyses
@@ -59,77 +69,80 @@ def analyze_input_file(t, input):
 
         for sentence in f:
             if sentence != "\n":
-                words = sentence.rstrip("\n").lower().split(" ")
+                words = sentence.strip("\n ").lower().split(" ")
 
                 for w in words:
+                    if not w.lower():
+                        print("check for spacing issues")
+  
+                    else:	
+                        # strip any punctuation and analyze
+                        word = w.translate(None, string.punctuation)
+        
+                        analyses = list(t.apply_up(word))
     
-                    # strip any punctuation and analyze
-                    word = w.translate(None, string.punctuation)
-    
-                    analyses = list(t.apply_up(word))
-
-                    ''' 
-                    some additional processing in case the
-                    analyzer can't analyze the word as is
-                    '''
-                    # handle vowel lengthening in yes-no questions
-                    if not analyses:
-                        if word[-3:-1] == "aa":
-                            # e.g. ighneghaan -> ighneghan
-                            tryThis = word[:-3] + "a" + word[-1]
-                            analyses = list(t.apply_up(tryThis))
-        
-                            # e.g. qiyastaak -> qiyastek
-                            tryThis = word[:-3] + "e" + word[-1]
-                            analyses = list(t.apply_up(tryThis))
-        
-                        elif word[-2:] == "aa":
-                            tryThis = word[:-2] + "a"
-                            analyses = list(t.apply_up(tryThis))
-        
-                        elif word[-3:-1] == "ii":
-                            # e.g. qiyaziin -> qiyazin
-                            tryThis = word[:-3] + "i" + word[-1]
-                            analyses = list(t.apply_up(tryThis))
-        
-                        elif word[-2:] == "ii":
-                            # e.g. qiyatsii -> qiyatsi
-                            tryThis = word[:-2] + "i"
-                            analyses = list(t.apply_up(tryThis))
-        
-                        elif word[-3:-1] == "uu":
-                            tryThis = word[:-3] + "u" + word[-1]
-                            analyses = list(t.apply_up(tryThis))
-        
-                        elif word[-2:] == "uu":
-                            tryThis = word[:-2] + "u"
-                            analyses = list(t.apply_up(tryThis))
-        
-                    # s -> t, g -> k, gh -> q 
-                    if not analyses:
-                        if word[-1] == "s":
-                            tryThis = word[:-1] + "t"
-                            analyses = list(t.apply_up(tryThis))
-                        elif word[-1] == "g" and word[-2] != "n":
-                            tryThis = word[:-1] + "k"
-                            analyses = list(t.apply_up(tryThis))
-                        elif ''.join(word[-2:]) == "gh":
-                            tryThis = word[:-2] + "q"
-                            analyses = list(t.apply_up(tryThis))
-        
-                    # gw -> g or gw -> w
-                    if not analyses:
-                        if "gw" in word:
-                            tryThis = word.replace("gw", "g") 
-                            analyses = list(t.apply_up(tryThis))
-        
-                            tryThis = word.replace("gw", "w")
-                            analyses.extend(t.apply_up(tryThis))
-           
-                    if not analyses:
-                        allAnalyses.append(word)
-                    else:
-                        allAnalyses.append(analyses)
+                        ''' 
+                        some additional processing in case the
+                        analyzer can't analyze the word as is
+                        '''
+                        # handle vowel lengthening in yes-no questions
+                        if not analyses:
+                            if word[-3:-1] == "aa":
+                                # e.g. ighneghaan -> ighneghan
+                                tryThis = word[:-3] + "a" + word[-1]
+                                analyses = list(t.apply_up(tryThis))
+            
+                                # e.g. qiyastaak -> qiyastek
+                                tryThis = word[:-3] + "e" + word[-1]
+                                analyses = list(t.apply_up(tryThis))
+            
+                            elif word[-2:] == "aa":
+                                tryThis = word[:-2] + "a"
+                                analyses = list(t.apply_up(tryThis))
+            
+                            elif word[-3:-1] == "ii":
+                                # e.g. qiyaziin -> qiyazin
+                                tryThis = word[:-3] + "i" + word[-1]
+                                analyses = list(t.apply_up(tryThis))
+            
+                            elif word[-2:] == "ii":
+                                # e.g. qiyatsii -> qiyatsi
+                                tryThis = word[:-2] + "i"
+                                analyses = list(t.apply_up(tryThis))
+            
+                            elif word[-3:-1] == "uu":
+                                tryThis = word[:-3] + "u" + word[-1]
+                                analyses = list(t.apply_up(tryThis))
+            
+                            elif word[-2:] == "uu":
+                                tryThis = word[:-2] + "u"
+                                analyses = list(t.apply_up(tryThis))
+            
+                        # s -> t, g -> k, gh -> q 
+                        if not analyses:
+                            if word[-1] == "s":
+                                tryThis = word[:-1] + "t"
+                                analyses = list(t.apply_up(tryThis))
+                            elif word[-1] == "g" and word[-2] != "n":
+                                tryThis = word[:-1] + "k"
+                                analyses = list(t.apply_up(tryThis))
+                            elif ''.join(word[-2:]) == "gh":
+                                tryThis = word[:-2] + "q"
+                                analyses = list(t.apply_up(tryThis))
+            
+                        # gw -> g or gw -> w
+                        if not analyses:
+                            if "gw" in word:
+                                tryThis = word.replace("gw", "g") 
+                                analyses = list(t.apply_up(tryThis))
+            
+                                tryThis = word.replace("gw", "w")
+                                analyses.extend(t.apply_up(tryThis))
+               
+                        if not analyses:
+                            allAnalyses.append(word)
+                        else:
+                            allAnalyses.append(analyses)
     
                 allAnalyses.append("<br>")
 
@@ -140,6 +153,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('analyzer', help='path to foma analyzer')
     parser.add_argument('texts', help='path to directory containing texts to analyze')
+    parser.add_argument('outputdir', help='path to output directory')
     args = parser.parse_args()
 
     # load the analyzer's .fomabin file
@@ -147,9 +161,8 @@ def main():
 
     # run the analyzer over each file in the input directory
     for filename in glob.glob(args.texts + "/*"):
-        print(filename)
         analyses = analyze_input_file(t, filename)
-        generate_output_file(analyses, os.path.basename(filename))
+        generate_output_file(analyses, os.path.basename(filename), args.outputdir)
 
 
 if __name__ == "__main__":
