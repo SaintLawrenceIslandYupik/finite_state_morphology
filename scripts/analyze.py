@@ -72,13 +72,13 @@ def analyze_input_file(t, input):
                 words = sentence.strip("\n ").lower().split(" ")
 
                 for w in words:
-                    if not w.lower():
+                    # strip any punctuation and analyze
+                    word = w.translate(None, string.punctuation)
+                    print(word)
+
+                    if not word.isalpha():
                         print("check for spacing issues")
-  
                     else:	
-                        # strip any punctuation and analyze
-                        word = w.translate(None, string.punctuation)
-        
                         analyses = list(t.apply_up(word))
     
                         ''' 
