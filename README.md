@@ -22,9 +22,11 @@ the header for the `lexc` file is pretty well-documented. it defines all of the 
 
 ### demonstratives 
 
+-
+
 ### emotional roots
 
--
+the list of emotional roots was taken from one of the appendices in Badten(2008), and the list of emotional root postbases from Jacobson (2001) chapter 13. they're all organized by inflection class. if i remember correctly, Badten (2008) also has a list of emotional root postbases, but there were a lot of discrepancies between Badten (2008) and Jacobson (2001) in regards to the correct Jacobson (2001) Notation for each postbase. i ended up coding the set of symbols that had the most examples supporting it. lastly, according to Badten (2008), there are a number of emotioanl root postbases that can be used with verb roots that express emotion (p.629, 631, 648, 649).
 
 ### enclitics
 
@@ -44,23 +46,25 @@ also very straightforward! practically on par with enclitics. the reader should 
 
 ### positionals
 
--
+this list was taken from...Jacobson (2001) chapter 18? 17? in any case, there aren't many positionals and they don't appear to function all that differently from nominal roots. on p.113 though in Jacobson (2001), he does mention that positionals can inflect for an alternative allative (terminalis), which is handled in this file.
 
 ### postinflectional morphology
 
--
-
 ### postural roots
 
--
+like the emotional roots, this list of postural roots was taken from one of the appendices in Badten (2008), and i deferred to the previous analyzer to figure out which -gh's were strong and which were weak. that being said, there might be errors. also according to Jacobson (2001), there are a few verb roots that can function like postural roots, and according to Badten (2008), there are postural root postbases that can suffix to "certain other verb roots" (p.648). the files handles these edge cases.
 
 ### pronouns
+
+-
 
 ### quantifer-qualifier roots
 
 -
 
 ### obsolete verb-root ete-
+
+-
 
 ## exceptions
 
