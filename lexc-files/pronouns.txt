@@ -2,35 +2,37 @@
 LEXICON PersonalPronoun
 !======================
 
-!------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
-! singular                                 | plural                                           | dual                                                 |                |
-!------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
-!                                          |                                                  |                                                      |  ! 1st Person  |
-whanga(PRO.AbsRel.1Sg):whanga      Enclitic; whangkuta(PRO.AbsRel.1Pl):whangkuta      Enclitic; whangkutung(PRO.AbsRel.1Du):whangkutung      Enclitic;  ! Abs/Rel     |
-whangamnun(PRO.All.1Sg):whangamnun Enclitic; whangamnun(PRO.All.1Pl):whangamnun       Enclitic; whangkutegnun(PRO.All.1Du):whangkutegnun     Enclitic;  ! All         |
-whangamkun(PRO.Prl.1Sg):whangamkun Enclitic; whangkutgun(PRO.Prl.1Pl):whangkutgun     Enclitic; whangkutegnegun(PRO.Prl.1Du):whangkutegnegun Enclitic;  ! Prl         |
-whangamtun(PRO.Equ.1Sg):whangamtun Enclitic; whangkutestun(PRO.Equ.1Pl):whangkutestun Enclitic; whangkutegestun(PRO.Equ.1Du):whangkutegestun Enclitic;  ! Equ         |
-!------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
-!                                          |                                                  |                                                      |  ! 2nd Person  |
-elpek(PRO.AbsRel.2Sg):elpek        Enclitic; elpesi(PRO.AbsRel.2Pl):elpesi            Enclitic; elpetek(PRO.AbsRel.2Du):elpetek              Enclitic;  ! Abs/Erg     |
-elpenun(PRO.All.2Sg):elpenun       Enclitic; elpesinun(PRO.All.2Pl):elpesinun         Enclitic; elpetegnun(PRO.All.2Du):elpetegnun           Enclitic;  ! All         |
-elpegun(PRO.Prl.2Sg):elpegun       Enclitic; elpesigun(PRO.Prl.2Pl):elpesigun         Enclitic; elpetegnegun(PRO.Prl.2Du):elpetegnegun       Enclitic;  ! Per         |
-elpetun(PRO.Equ.2Sg):elpetun       Enclitic; elpesistun(PRO.Equ.2Pl):elpesistun       Enclitic; elpetegestun(PRO.Equ.2Du):elpetegestun       Enclitic;  ! Equ         |
-!------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
-!                                          |                                                  |                                                      |  ! 3rd Person  |
-ellnga(PRO.Abs.3Sg):ellnga         Enclitic; ellngit(PRO.Abs.3Pl):ellngit             Enclitic; elkek(PRO.Abs.3Du):elkek                     Enclitic;  ! Abs         |
-ellngan(PRO.Rel.3Sg):ellngan       Enclitic; ellgita(PRO.Rel.3Pl):ellgita             Enclitic; elkek(PRO.Rel.3Du):elkek                     Enclitic;  ! Rel         |
-ellnganun(PRO.All.3Sg):ellnganun   Enclitic; ellngitnun(PRO.All.3Pl):ellngitnun       Enclitic; elkegkenun(PRO.All.3Du):elkegkenun           Enclitic;  ! All         |
-ellngakun(PRO.Prl.3Sg):ellngakun   Enclitic; ellngitgun(PRO.Prl.3Pl):ellngitgun       Enclitic; elekegkenkun(PRO.Prl.3Du):elekegkenkun       Enclitic;  ! Prl         |
-ellngatun(PRO.Equ.3Sg):ellngatun   Enclitic; ellngistun(PRO.Equ.3Pl):ellngistun       Enclitic; elkegestun(PRO.Equ.3Du):elkegestun           Enclitic;  ! Equ         |
-                                             ellngitestun(PRO.Equ.3Pl):ellngitestun   Enclitic;                                                         ! Equ         |
-!------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
-!                                          |                                                  |                                                      |  ! 4th Person  |
-ellmi(PRO.AbsRel.4Sg):ellmi        Enclitic;  ellmeng(PRO.AbsRel.4Pl):ellmeng         Enclitic; ellmeng(PRO.AbsRel.4Du):ellmeng              Enclitic;  ! Abs/Rel     |
-ellminun(PRO.All.4Sg):ellminun     Enclitic;  ellmeggnun(PRO.All.4Pl):ellmeggnun      Enclitic; ellmegnun(PRO.All.4Du):ellmegnun             Enclitic;  ! All         |
-                                                                                                ellmegtenun(PRO.All.4Du):ellmegtenun         Enclitic;  ! All         |
-ellmikun(PRO.Prl.4Sg):ellmikun     Enclitic;  ellmegteggun(PRO.Prl.4Pl):ellmegteggun  Enclitic; ellmegtegnegun(PRO.Prl.4Du):ellmegtegnegun   Enclitic;  ! Prl         |
-ellmitun(PRO.Equ.4Sg):ellmitun     Enclitic;  ellmegestun(PRO.Equ.4Pl):ellmegestun    Enclitic; elmegestun(PRO.Equ.4Du):elmegestun           Enclitic;  ! Equ         |
-!------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
+!--------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
+! singular                                   | plural                                           | dual                                                 |                |
+!--------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
+!                                            |                                                  |                                                      |  ! 1st Person  |
+whanga(PRO.AbsRel.1Sg):whanga        Enclitic; whangkuta(PRO.AbsRel.1Pl):whangkuta      Enclitic; whangkutung(PRO.AbsRel.1Du):whangkutung      Enclitic;  ! Abs/Rel     |
+whangamnun(PRO.All.1Sg):whangamnun   Enclitic; whangamnun(PRO.All.1Pl):whangamnun       Enclitic; whangkutegnun(PRO.All.1Du):whangkutegnun     Enclitic;  ! All         |
+whangamkun(PRO.Prl.1Sg):whangamkun   Enclitic; whangkutgun(PRO.Prl.1Pl):whangkutgun     Enclitic; whangkutegnegun(PRO.Prl.1Du):whangkutegnegun Enclitic;  ! Prl         |
+whangamtun(PRO.Equ.1Sg):whangamtun   Enclitic; whangkutestun(PRO.Equ.1Pl):whangkutestun Enclitic; whangkutegestun(PRO.Equ.1Du):whangkutegestun Enclitic;  ! Equ         |
+!--------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
+!                                            |                                                  |                                                      |  ! 2nd Person  |
+elpek(PRO.AbsRel.2Sg):elpek          Enclitic; elpesi(PRO.AbsRel.2Pl):elpesi            Enclitic; elpetek(PRO.AbsRel.2Du):elpetek              Enclitic;  ! Abs/Erg     |
+elpeneng(PRO.Abl_Mod.2Sg):elpeneng   Enclitic;                                                                                                            ! Abl_Mod     |
+elpenun(PRO.All.2Sg):elpenun         Enclitic; elpesinun(PRO.All.2Pl):elpesinun         Enclitic; elpetegnun(PRO.All.2Du):elpetegnun           Enclitic;  ! All         |
+elpegun(PRO.Prl.2Sg):elpegun         Enclitic; elpesigun(PRO.Prl.2Pl):elpesigun         Enclitic; elpetegnegun(PRO.Prl.2Du):elpetegnegun       Enclitic;  ! Per         |
+elpetun(PRO.Equ.2Sg):elpetun         Enclitic; elpesistun(PRO.Equ.2Pl):elpesistun       Enclitic; elpetegestun(PRO.Equ.2Du):elpetegestun       Enclitic;  ! Equ         |
+!--------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
+!                                            |                                                  |                                                      |  ! 3rd Person  |
+ellnga(PRO.Abs.3Sg):ellnga           Enclitic; ellngit(PRO.Abs.3Pl):ellngit             Enclitic; elkek(PRO.Abs.3Du):elkek                     Enclitic;  ! Abs         |
+ellngan(PRO.Rel.3Sg):ellngan         Enclitic; ellgita(PRO.Rel.3Pl):ellgita             Enclitic; elkek(PRO.Rel.3Du):elkek                     Enclitic;  ! Rel         |
+ellnganun(PRO.All.3Sg):ellnganun     Enclitic; ellngitnun(PRO.All.3Pl):ellngitnun       Enclitic; elkegkenun(PRO.All.3Du):elkegkenun           Enclitic;  ! All         |
+ellngakun(PRO.Prl.3Sg):ellngakun     Enclitic; ellngitgun(PRO.Prl.3Pl):ellngitgun       Enclitic; elekegkenkun(PRO.Prl.3Du):elekegkenkun       Enclitic;  ! Prl         |
+ellngatun(PRO.Equ.3Sg):ellngatun     Enclitic; ellngistun(PRO.Equ.3Pl):ellngistun       Enclitic; elkegestun(PRO.Equ.3Du):elkegestun           Enclitic;  ! Equ         |
+                                               ellngitestun(PRO.Equ.3Pl):ellngitestun   Enclitic;                                                         ! Equ         |
+!--------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
+!                                            |                                                  |                                                      |  ! 4th Person  |
+ellmi(PRO.AbsRel.4Sg):ellmi          Enclitic;  ellmeng(PRO.AbsRel.4Pl):ellmeng         Enclitic; ellmeng(PRO.AbsRel.4Du):ellmeng              Enclitic;  ! Abs/Rel     |
+ellmineng(PRO.Abl_Mod.4Sg):ellmineng Enclitic;                                                                                                            ! Abl_Mod     |
+ellminun(PRO.All.4Sg):ellminun       Enclitic;  ellmeggnun(PRO.All.4Pl):ellmeggnun      Enclitic; ellmegnun(PRO.All.4Du):ellmegnun             Enclitic;  ! All         |
+                                                                                                  ellmegtenun(PRO.All.4Du):ellmegtenun         Enclitic;  ! All         |
+ellmikun(PRO.Prl.4Sg):ellmikun       Enclitic;  ellmegteggun(PRO.Prl.4Pl):ellmegteggun  Enclitic; ellmegtegnegun(PRO.Prl.4Du):ellmegtegnegun   Enclitic;  ! Prl         |
+ellmitun(PRO.Equ.4Sg):ellmitun       Enclitic;  ellmegestun(PRO.Equ.4Pl):ellmegestun    Enclitic; elmegestun(PRO.Equ.4Du):elmegestun           Enclitic;  ! Equ         |
+!--------------------------------------------|--------------------------------------------------|------------------------------------------------------|----------------|
 
 
