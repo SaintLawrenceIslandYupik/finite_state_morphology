@@ -92,7 +92,9 @@ define CleanupMorphBoundary MorphemeBoundary -> 0 || WordBoundary Alphabet+ _ ;
 !!!                   !!!
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-define PostbaseFilter ~[ ?* "@₁" "~" ":" "(u)" {te} "[V→V]" "-" "@₁" "~" ":" "(u)" {te} ?* ];
+define PostbaseFilter ~[ ?* "@₁" "~" ":" "(u)" {te} "(V→V)" "^" "@₁" "~" ":" "(u)" {te} ?* .o.
+                         ?* "~" i "(V→V)" "^" "~" i ?*
+                       ];
 
 define Filters [
 	PostbaseFilter
