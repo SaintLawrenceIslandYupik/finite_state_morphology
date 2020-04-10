@@ -325,22 +325,53 @@ Multichar_Symbols
 (PRO.Prl.4Sg)      (PRO.Prl.4Pl)      (PRO.Prl.4Du)
 (PRO.Equ.4Sg)      (PRO.Equ.4Pl)      (PRO.Equ.4Du)
 
+!--------------------
+! demonstrative tags
+!--------------------
+(DEM→N)        ! demonstrative to noun stem
+(DEM→V)        ! demonstrative to verb stem
+(VOC)          ! vocative
+[Anaphor]      ! for the anaphoric prefix
+(DEM.PRO.Abs.Sg)      (DEM.PRO.AbsRel.Pl)   (DEM.PRO.AbsRel.Du)
+(DEM.PRO.Rel.Sg)
+(DEM.PRO.Loc.Sg)      (DEM.PRO.Loc.Pl)      (DEM.PRO.Loc.Du)
+(DEM.PRO.All.Sg)      (DEM.PRO.All.Pl)      (DEM.PRO.All.Du)
+(DEM.PRO.Prl.Sg)      (DEM.PRO.Prl.Pl)      (DEM.PRO.Prl.Du)
+(DEM.PRO.Equ.Sg)      (DEM.PRO.Equ.Pl)      (DEM.PRO.Equ.Du)
+(DEM.PRO.Abl_Mod.Sg)  (DEM.PRO.Abl_Mod.Pl)  (DEM.PRO.Abl_Mod.Du)
+(VOC.Sg)
+(VOC.Pl)
+(DEM.ADV)
+(DEM.ADV.Loc)
+(DEM.ADV.All)
+(DEM.ADV.Prl)
+(DEM.ADV.Abl_Mod)
+(DEM.ADV.Equ)
+
+!---------------
+! question tags
+!---------------
+(WH)
+(WH.Abs.Sg)      (WH.AbsRel.Pl)   (WH.AbsRel.Du)
+(WH.Rel.Sg)
+(WH.Loc.Sg)      (WH.Loc.Pl)      (WH.Loc.Du)
+(WH.All.Sg)      (WH.All.Pl)      (WH.All.Du)
+(WH.Prl.Sg)      (WH.Prl.Pl)      (WH.Prl.Du)
+(WH.Equ.Sg)      (WH.Equ.Pl)      (WH.Equ.Du)
+(WH.Abl_Mod.Sg)  (WH.Abl_Mod.Pl)  (WH.Abl_Mod.Du)
+
 !-------------------------
 ! misc morphological tags
 !-------------------------
-(DEM)          ! demonstrative
-(DEM→N)        ! demonstrative to noun stem
 (NUM)          ! numeral
 (NUM→N)        ! numeral to noun stem
 (NUM→V)        ! numeral to verb stem
 (PTCL)         ! particle
-(WH)           ! question word
 (QUANTQUAL)    ! for quantifier-qualifier constructions
 (N→QUANTQUAL)  ! noun stem to quantifier-qualifier postbase
 (V→QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
 (N→XCLM)       ! noun stem to exclamation
 (V→XCLM)       ! verb stem to exclamation
-(VOC)          ! vocative
 [Volitive.Of.Fear]  ! for volitive of fear mood [Jacobson (2001) p.129] 
 
 
@@ -368,7 +399,7 @@ VerbRootV;     ! ends in -te
 VerbRootVI;    ! ends in special -te 
 VerbRootVII;   ! has semi-final -e
 
-Demonstrative;
+DemPrefix;
 EmotionalRoot;
 Interrogative;
 Numeral;

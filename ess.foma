@@ -15,7 +15,6 @@ define Lexicon
 !==============
 ! "^"      morpheme boundary
 ! .#.      word boundary
-! %{g%} h  weak gh
 
 
 !======
@@ -58,15 +57,15 @@ define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
 
 define Lowercase [ A:a | I:i | U:u | E:e |
                    P:p | T:t | K:k | Q:q |
-				   L:l | Z:z | Y:y | R:r |
-				   G:g | W:w | S:s | F:f |
-				   S:s | M:m | N:n | "V":v ] ?* | ?* ;
+                   L:l | Z:z | Y:y | R:r |
+                   G:g | W:w | S:s | F:f |
+                   S:s | M:m | N:n | "V":v ] ?* | ?* ;
 
 define Uppercase [ a:A | i:I | u:U | e:E |
                    p:P | t:T | k:K | q:Q |
-				   l:L | z:Z | y:Y | r:R |
-				   g:G | w:W | s:S | f:F |
-				   s:S | m:M | n:N | v:"V" ] ?* | ?* ;
+                   l:L | z:Z | y:Y | r:R |
+                   g:G | w:W | s:S | f:F |
+                   s:S | m:M | n:N | v:"V" ] ?* | ?* ;
 
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
@@ -108,7 +107,7 @@ define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ] 
                       k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -ghw
                       k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -gh
                       k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -w
-					  q -> k     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate q-  onset to dropped -g
+                      q -> k     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate q-  onset to dropped -g
                     g g -> g h h ||             g h "^" %{%.m%.%} _                   .o. ! assimilate gg- onset to dropped -gh [Jacobson (2001) p.66]
     [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
     [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop -g in root-final -gh, -gh in -ghw
@@ -253,7 +252,15 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g   -> %{%.m%.%} g p e "^" n a "^" a m t u n g .o.
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> %{%.m%.%} g p e "^" n a                 .o.
                                                                          %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l u                ;
-!                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l l u              ;
+
+
+define ResolveDemAnaphor "[Anaphor]" -> t a z || _ "^" i       .o.
+                         "[Anaphor]" -> t     || _ "^" V V     .o.
+                         "[Anaphor]" -> t a   || _ "^" [V | m] .o.
+						 "[Anaphor]" -> t e   || _ "^" s       ,,
+						 "[Anaphor]" ->   e   || _ "^" s       .o.
+						 "[Anaphor]" -> t e s || _ "^" C       ,,
+						 "[Anaphor]" ->   e s || _ "^" C       ;
 
 
 !------------------
@@ -296,8 +303,8 @@ define ApicalTE y   -> s                                                       ,
                 g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]           .o.
                 l   -> l l     ||       %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
                 g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _               .o. ! for postbase @–lghii
-			   [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h           .o. ! for postbase @–nghhagh, contemporative mood
-			   [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q             ;   ! for postbase @–nqigte
+               [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h           .o. ! for postbase @–nghhagh, contemporative mood
+               [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q             ;   ! for postbase @–nqigte
 
 
 define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq
@@ -338,7 +345,7 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,
 
 define PreventGemination n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
                          n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
-						 v -> 0 || .#. n u u _ "^" v ;   ! nuuve+vig [Badten (2008) p.693]
+                         v -> 0 || .#. n u u _ "^" v ;   ! nuuve+vig [Badten (2008) p.693]
 
 
 define CleanupDigraph %{k%}   -> 0   .o.
@@ -409,6 +416,7 @@ define Rules [
     ResolveG             .o.
     ResolveI             .o.
     OptativeAllomorphs   .o.
+	ResolveDemAnaphor    .o.
     !-------------------------------
     ! clean up
     !-------------------------------

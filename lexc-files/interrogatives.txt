@@ -35,12 +35,11 @@ sameng   WHTag; ! what
 ! "The word for 'who' inflects but not in the regular manner that nouns
 ! inflect several forms (kina, kitum, kinkut) are given in the vocabulary
 ! above" [Jacobson (2001) p.53].
-!
-! What's the word for 'who'...?
+! It inflects somewhat like a demonstrative pronoun [Jacobson (2001) p.113]
 
-kina    WHTag; ! who (SG)
-kinkut  WHTag; ! who (PL)
-kitum   WHTag; ! whose
+kina(WH.Abs.Sg):kina  #; ! who (SG)
+kitu(WH.:kitu         DemProSg;
+kinku(WH.:kinku       DemProPD;
 
 !------------------------------------------------------------------------
 

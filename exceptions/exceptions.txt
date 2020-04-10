@@ -5,15 +5,29 @@ LEXICON  Exception
 !--------------------------
 ! Demonstrative Exceptions
 !--------------------------
-maakut(DEM)^+ghsi(VOC):maakughsi                    #;
-ukut(DEM)^+ghsi(VOC):ukughsi                        #;
-aawhkan(DEM)^–lqusigh(N→PTCL):aawhkalqusiq          #; ! [Badten (2008) p.642]
-ighvigaq(DEM)^–lqusigh(N→PTCL):ighivgalqusiq        #; ! [Badten (2008) p.642]
-unuk(DEM)^–lqusigh(N→PTCL):unulqusiq                #; ! [Badten (2008) p.642]
-tawaten(DEM)^+staaghhagh(N→N):tawatestaaghha%{g%}h  PostInflIII;
-whani(DEM)^ete:whaan%{t%}e                          VerbPostbaseV; ! [Jacobson (2001) p.79]
-whani(DEM)^~fmig(N→N)^[Abs.Sg]:whaamik              #;
-pika(DEM)^ete:pikan%{t%}e                           VerbPostbaseV; ! [Badten (2008) p.659]
+[Anaphor]^iigna(DEM.PRO.Abs.Sg):tazigna    Enclitic;  ! [Jacobson (2001) p.111]
+[Anaphor]^uka(DEM.ADV):taakwa              DemAdvPB;  ! [Jacobson (2001) p.111]
+[Anaphor]^uukna(DEM.PRO.Abs.Sg):taakwna    Enclitic;  ! [Jacobson (2001) p.111]
+[Anaphor]^maana(DEM.PRO.Abs.Sg):tamana     Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^whaa(DEM.PRO.Abs.Sg):taana       Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^whaa(DEM.ADV.Loc):tawani         PostInflI; ! [Jacobson (2001) p.129]
+[Anaphor]^whaa(DEM.ADV.Equ):tawaten        Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^uugna(DEM.PRO.Abs.Sg):taawna     Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^paagna(DEM.PRO.Abs.Sg):tespagna  Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^paagna(DEM.PRO.Abs.Sg):espagna   Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^qaagna(DEM.PRO.Abs.Sg):tesqagna  Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^qaagna(DEM.PRO.Abs.Sg):esqagna   Enclitic;  ! [Jacobson (2001) p.112]
+
+whaa(DEM.ADV)^~fmig(N→N):whaamig           NounPostbaseII; ! it's rare for postbases to
+                                                           ! suffix directly to demonstratives
+                                                           ! [Jacobson (2001) Ch16 & Speaker 14]
+whaa(DEM.ADV)^[Loc.Pl]^ete:whaan%{t%}e     VerbPostbaseV;  ! [Jacobson (2001) p.79]
+pika(DEM.ADV)^[Loc.Pl]^ete:pikan%{t%}e     VerbPostbaseV;
+
+! wat are these
+!aawhkan(PTCL)^–lqusigh(N→PTCL):aawhkalqusiq   #; ! [Badten (2008) p.642]
+!ighvigaq(DEM)^–lqusigh(N→PTCL):ighivgalqusiq  #; ! [Badten (2008) p.642]
+!unuk(DEM)^–lqusigh(N→PTCL):unulqusiq          #; ! [Badten (2008) p.642]
 
 !-----------------
 ! Noun Exceptions
@@ -46,11 +60,11 @@ aqlaghaghte(V)^[Loc.Sg]:aqlaghaghtemmi        #;
 ! Interrogative Exceptions
 !--------------------------
 kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Sg]:kinanguzin       Enclitic;
-kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Pl]:kinkungutsi      Enclitic;
+kinku(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Pl]:kinkungutsi     Enclitic;
 qafsina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Pl]:qafsin'gutsi  Enclitic;
 qafsina(WH)^~–kaghte(N→V)^[Intrg.Intr.3Sg]:qafsinkaghta  Enclitic;
 kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.3Sg]:kinangaawa       Enclitic;
-kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.3Pl]:kinkungaawat     Enclitic;
+kinku(WH)^~%:(ng)u(N→V)^[Intrg.Intr.3Pl]:kinkungaawat    Enclitic;
 sa(N)^~%:(ng)u(N→V)^[Intrg.Intr.3Sg]:sangaawa            Enclitic;
 sa(N)^~%:(ng)u(N→V)^[Intrg.Intr.3Pl]:sangaawat           Enclitic;
 
