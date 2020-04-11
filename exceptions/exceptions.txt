@@ -18,16 +18,16 @@ LEXICON  Exception
 [Anaphor]^qaagna(DEM.PRO.Abs.Sg):tesqagna  Enclitic;  ! [Jacobson (2001) p.112]
 [Anaphor]^qaagna(DEM.PRO.Abs.Sg):esqagna   Enclitic;  ! [Jacobson (2001) p.112]
 
+maakughsi(VOC.Pl):maakughsi                Enclitic;       ! [from Badten (2008) p.615,
+                                                           ! but Jacobson (2001) Ch16
+                                                           ! states that this demonstrative
+                                                           ! "maana" doesn't have a vocative
 whaa(DEM.ADV)^~fmig(N→N):whaamig           NounPostbaseII; ! it's rare for postbases to
                                                            ! suffix directly to demonstratives
                                                            ! [Jacobson (2001) Ch16 & Speaker 14]
+aawhkun(DEM.ADV.Prl)^–lqusigh(N→PTCL):aawhkalqusiq     #;  ! [Badten (2008) p.642]
 whaa(DEM.ADV)^[Loc.Pl]^ete:whaan%{t%}e     VerbPostbaseV;  ! [Jacobson (2001) p.79]
 pika(DEM.ADV)^[Loc.Pl]^ete:pikan%{t%}e     VerbPostbaseV;
-
-! wat are these
-!aawhkan(PTCL)^–lqusigh(N→PTCL):aawhkalqusiq   #; ! [Badten (2008) p.642]
-!ighvigaq(DEM)^–lqusigh(N→PTCL):ighivgalqusiq  #; ! [Badten (2008) p.642]
-!unuk(DEM)^–lqusigh(N→PTCL):unulqusiq          #; ! [Badten (2008) p.642]
 
 !-----------------
 ! Noun Exceptions
@@ -85,6 +85,7 @@ gheve(V)^–ghraag(V→V):ghevraag                         VerbPostbaseIII;
 ipeg(V)^~sf–ghhaleg(V→XCLM):iipghalek                  #;
 ggute(V)^––iqe(V→V):ggusiqe                            VerbPostbaseII;
 pi(V)^@~%:(i/u)manginagh(V→V)^[Abs.Sg]:pimanginaq      #;
+ighvigaq(PTCL)^–lqusigh(N→PTCL):ighivgalqusiq          #;              ! [Badten (2008) p.642]
 egge(N)^~fmiigh(N→V):eggmiigh                          VerbPostbaseIV;
 egge(N)^~fmiigh(N→N):eggmiigh                          NounPostbaseV;
 aange(V)^@~f–negh(V→N):aangengh                        NounPostbaseV;

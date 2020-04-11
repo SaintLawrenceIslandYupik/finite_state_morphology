@@ -39,7 +39,7 @@ def generate_output_file(allAnalyses, filename, outputdir):
 
             # analyzer did not find analyses
             else:
-                f.write(elem)
+                f.write(elem + "\n")
 
 
 def analyze_input_file(t, input):
@@ -73,6 +73,7 @@ def analyze_input_file(t, input):
 
                 for w in words:
                     # strip any punctuation and analyze
+                    # TODO: this needs to not strip apostrophes
                     word = w.translate(None, string.punctuation)
                     print(word)
 

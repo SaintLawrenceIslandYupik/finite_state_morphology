@@ -71,7 +71,7 @@ define Uppercase [ a:A | i:I | u:U | e:E |
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
 
-define FinalE %{%.f%.%} -> 0 || [ C C & ~MultiCharC & ~[h h] & ~[h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not drop -e if it results in a CCC cluster
+define FinalE %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC & ~[h h] & ~[(h) h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not drop -e if it results in a CCC cluster
                                                                                                        ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten p.657]
                                                                                                        ! ~[h w] for aaghhwe(V)^@~fyug(V→V)
                    [..] -> e ||              .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}  .o. ! hop final -e
