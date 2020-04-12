@@ -14,23 +14,37 @@ the header for the `lexc` file is pretty well-documented. it defines all of the 
 
 ### roots
 
+roots! these are all of the noun roots and verb roots from Jacobson (2001) and Badten (2008). i manually added a few when i came across them in the postbase examples given in Badten (2008). unclear if those roots are true roots since they aren't listed as lexical entries in the dictionary, but what do i know. the noun roots are classified into nine inflection classes and the verb roots are classified into seven. one thing worth noting for noun roots is that *weak -gh* is written as **{g}h** in the intermediate form to distinguish it from *marked strong* and *strong -gh*. for verb roots, *special -te* is considered its own inflection class and is written as **{t}e\*** in the intermediate form to distinguish it from ordinary *-te*. lastly, roots that contain untraditional endings like *-ghh* or *-l* are grouped with roots that end in *-g*, *-w*, and *-ghw* for now, and any root that ends in *-eg* is considered a member of the *semi-final -e* inflection class.
+
 ### derivational suffixes (postbases)
+
+i coded a list of postbases for *each* inflection class. this is significant, since it allows me to code only the morphophonological rules relevant for that particular class. for instance, since uvular dropping affects all roots that end in *-gh*, the uvular dropping symbol **{.c.}** appears in the postbase lists for all of the inflection classes whose roots end in *-gh*. the symbol will not, however, appear in the postbase lists for all other inflection classes, e.g. roots that end in a vowel, say.
+
+with respect to maintenance, this is a pain and i hate it. but it's allowed for simpler `foma` rewrite rules and appears to handle exceptions much better than the previous analyzer that does not organize the roots into their respective inflection classes.
 
 ### inflectional suffixes
 
+the same holds true for the inflectional suffixes, in that there exists a unique inflectional paradigm for each inflection class, and only the morphophonological rules relevant to that class are coded in the inflectional paradigm. again, very annoying for maintenance, but it seems to work well.
+
+one thing to observe about the inflectional paradigms is that in some verb moods, there is less consistency than in others. for instance, for the indicative mood, there's a single morpheme that marks transitivity and mood and then the morphemes that mark person/number. this is not true for the interrogative and optative moods. the morpheme that marks transitivity and mood for these two moods vary depending on the person/number. that being said, it was easier to code the entire inflectional paradigm, including person/number markers, for the interrogative and optative moods here in this part of the `lexc` file. for more "consistent" moods like the indicative, the person/number markers are coded in [a different directory]{#person-/-number-markers}.
+
 ### person / number markers
+
+i coded a table of person/number morphemes for each mood. these files are pretty straightforward and self-explanatory.
 
 ### demonstratives 
 
--
+this took a couple of tries to get right, but after rereading Jacobson (2001) chapter 16 a few times, i think it's OK now? there's a note inside the *demonstratives.txt* file that explains my interpretation of Jacobson's documentation on demonstratives, and how the `lexc` file reflects that interpretation. generally-speaking though, there are four types of demonstratives: (1) demonstrative pronouns, (2) vocatives, (3) demonstrative adverbs, and (4) anaphoric forms. vocatives and demonstrative adverbs were hard-coded for the sake of simplicity, while demonstrative adverbs and the anaphoric forms are constructed in `lexc` via continuation classes. the anaphoric forms are constructed using the only prefix attested in Yupik, and i use the placeholder `[Anaphor]` to represent this prefix, since it has several allomorphs. a [`foma` rewrite rule](#ResolveDemAnaphor) handles this allomorphy. the reader should also note that while Appendix III in Jacobson (2001) lists a number of inflected demonstratives, that list is not complete.
+
+as for any postbases that can suffix to demonstratives, they can presumably only suffix to a demonstrative's adverbial particle form, and can all be found in Badten (2008). these postbases are listed in the *dem-suffixes.txt* file under the `DemAdvPB` lexicon. fieldwork conducted in July 2018 with Speaker 14 found that the empty base **pi** and obsolete verb-root **ete** may also suffix to a demonstrative's adverbial particle form, as in **pikapiyaqunaasi ** and **amantuq** respectively.
 
 ### emotional roots
 
-the list of emotional roots was taken from one of the appendices in Badten(2008), and the list of emotional root postbases from Jacobson (2001) chapter 13. they're all organized by inflection class. if i remember correctly, Badten (2008) also has a list of emotional root postbases, but there were a lot of discrepancies between Badten (2008) and Jacobson (2001) in regards to the correct Jacobson (2001) Notation for each postbase. i ended up coding the set of symbols that had the most examples supporting it. lastly, according to Badten (2008), there are a number of emotioanl root postbases that can be used with verb roots that express emotion (p.629, 631, 648, 649).
+the list of emotional roots was taken from one of the appendices in Badten (2008), and the list of emotional root postbases from Jacobson (2001) chapter 13. they're all organized by inflection class. if i remember correctly, Badten (2008) also has a list of emotional root postbases, but there were a lot of discrepancies between Badten (2008) and Jacobson (2001) in regards to the correct Jacobson (2001) Notation for each postbase. i ended up coding the set of symbols that had the most examples supporting it. lastly, according to Badten (2008), there are a number of emotioanl root postbases that can be used with verb roots that express emotion (p.629, 631, 648, 649).
 
 ### enclitics
 
-actually the most straightforward file in this monster of a project. i followed the Badten (2008) tradition of demarcating enclitics with an __=__ sign, e.g. *=llu*. interestingly, there are quite a few assimilation patterns that occur when suffixing an enclitic, described in [AssimilateEnclitic](#assimilate-enclitic), all of them gleaned from examples given in Badten (2008). i don't believe that these patterns are formally documented anywhere else.
+actually the most straightforward file in this monster of a project. i followed the Badten (2008) tradition of demarcating enclitics with an __=__ sign, e.g. *=llu*. interestingly, there are quite a few assimilation patterns that occur when suffixing an enclitic, described in [AssimilateEnclitic](#assimilateenclitic), all of them gleaned from examples given in Badten (2008). i don't believe that these patterns are formally documented anywhere else.
 
 ### interrogatives
 
@@ -56,22 +70,30 @@ like the emotional roots, this list of postural roots was taken from one of the 
 
 ### pronouns
 
--
+Appendix II of Jacobson (2001) lists nearly all of the attested pronouns in Yupik, but i think it's missing the ablative-modalis forms? not sure tbh, but there a couple of lexical items that appear in the elementary primers that are definitely pronouns, but aren't listed in Appendix II, e.g. **ellmineng* and **elpeneng**.
 
 ### quantifer-qualifier roots
 
--
+these were coded according to the description given in chapter 12 of Jacobson (2001). in the previous iteration of the analyzer, all of the quantifier-qualifier roots were marked as ending in a strong *gh*. given the morphophonological rules in the quantifier-qualifier inflectional paradigm, however, i don't think this distinction actually matters. i left it as is though, since i'm assuming there was a good reason for marking these as strong *gh* to begin with.
 
 ### obsolete verb-root ete-
 
--
+this verb root was also introduced, alongside quantifier-qualifier roots in chapter 12, of Jacobson (2001). it maps to a really wonky-looking intermediate form *{I}te\** because (1) it has two forms: **ete** and **ite**, hence the allomorph symbol {I} and (2) it ends in *special -te*. there is a `foma` rewrite rule that handles [{I}]{resolvei}.
 
 ## exceptions
 
+these are what they sound like. they're surface forms that deviate from what's expected to surface after carrying out each morphophonological rule. i did my best to keep this list organized, so they're grouped by "type", e.g. demonstrative exceptions, noun exceptions, verb exceptions, etc. hopefully, by the time you're reading this, i've also gone in and noted the source of each of these exceptions, e.g. from Jacobson (2001), Badten (2008, etc. the header file for `exceptions.lexc` is identical to that of `ess.lexc` save for the `Root` lexicon.
+
 ## parallel forms
+
+also what they sound like. these are valid surface forms that exist in Yupik in addition to the expected surface form. again, i tried to keep this file organized, noting the source of each of these parallel forms. the header file is also identical to that of `ess.lexc` save for the `Root` lexicon.
 
 ---
 
 ## foma rewrite rules
+
+### ResolveI
+
+### ResolveDemAnaphor
 
 ### AssimilateEnclitic
