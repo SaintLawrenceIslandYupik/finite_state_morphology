@@ -6,48 +6,18 @@
 import argparse
 import glob
 import os
-import pprint
 import string
+import re
 
 from foma import *
-
-
-def generate_output_file(allAnalyses, filename, outputdir):
-    '''
-	:param allAnalyses: all of the analyses for each word in a text
-	:type  allAnalyses: list of lists
-	:param filename: name of the text
-	:type  filename: str
-	:param outputdir: name of the directory to which to write the output
-	:type  outputdir: str 
-
-	Writes the predicted analyses for a text to a file that is placed
-	in the specified output directory.
-
-    '''
-    with open(outputdir+"/"+filename, 'w') as f:
-        for elem in allAnalyses:
-
-            # analyzer found analyses
-            if isinstance(elem, list):
-                for analysis in elem:
-                    f.write(analysis.decode("utf-8").encode("utf-8") + "\n")
-
-            # newline element
-            elif elem == "<br>":
-                f.write("\n")
-
-            # analyzer did not find analyses
-            else:
-                f.write(elem + "\n")
 
 
 def analyze_input_file(t, input):
     '''
     :param t: the 'foma' analyzer
     :type  t: not sure tbh
-    :param input: path to a file containing
-                  the words to be analyzed
+    :param input: file containing
+                  words to be analyzed
     :type  input: str
 
     :return: a list of lists, where each sublist
@@ -65,89 +35,137 @@ def analyze_input_file(t, input):
     # print status update
     print("working on " + input + "...")
 
-    with open(input, 'r') as f:
+    allWords    = prep_input(input)
+    allAnalyses = []
 
+    for word in allWords:
+        analyses = list(t.apply_up(word))
+    
+        ''' 
+        some additional processing in case the
+        analyzer can't analyze the word as is
+        '''
+        # handle vowel lengthening in yes-no questions
+        if not analyses and len(word) > 2:
+            if word[-3:-1] == "aa":
+                # e.g. ighneghaan -> ighneghan
+                tryThis = word[:-3] + "a" + word[-1]
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+                # e.g. qiyastaak -> qiyastek
+                tryThis = word[:-3] + "e" + word[-1]
+                analyses = list(t.apply_up(tryThis))
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-2:] == "aa":
+                tryThis = word[:-2] + "a"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-3:-1] == "ii":
+                # e.g. qiyaziin -> qiyazin
+                tryThis = word[:-3] + "i" + word[-1]
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-2:] == "ii":
+                # e.g. qiyatsii -> qiyatsi
+                tryThis = word[:-2] + "i"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-3:-1] == "uu":
+                tryThis = word[:-3] + "u" + word[-1]
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-2:] == "uu":
+                tryThis = word[:-2] + "u"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+        # s -> t, g -> k, gh -> q 
+        if not analyses and len(word) > 1:
+            if word[-1] == "s":
+                tryThis = word[:-1] + "t"
+                analyses.extend(list(t.apply_up(tryThis)))
+            elif word[-1] == "g" and word[-2] != "n":
+                tryThis = word[:-1] + "k"
+                analyses.extend(list(t.apply_up(tryThis)))
+            elif ''.join(word[-2:]) == "gh":
+                tryThis = word[:-2] + "q"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+        # gw -> g or gw -> 
+        if not analyses:
+            if "gw" in word:
+                tryThis = word.replace("gw", "g") 
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+                tryThis = word.replace("gw", "w")
+                analyses.extend(list(t.apply_up(tryThis)))
+       
+               
+        if not analyses:
+            allAnalyses.append("?" + word)
+        else:
+            allAnalyses.append(analyses)
+    
+        allAnalyses.append("<br>")
+
+    return allAnalyses
+
+
+def prep_input(inputfile):
+    '''
+    :param inputfile: file containing words
+                     to be analyzed
+    :type  inputfile: str
+
+    :return: a list of words, stripped of punctuation,
+             ready for analysis
+
+    '''
+    allWords = []
+
+    with open(inputfile, 'r') as f:
         for sentence in f:
             if sentence != "\n":
                 words = sentence.strip("\n ").lower().split(" ")
 
                 for w in words:
-                    # strip any punctuation and analyze
-                    # TODO: this needs to not strip apostrophes
-                    word = w.translate(None, string.punctuation)
-                    print(word)
+                    # strip punctuation except apostrophes
+                    word = re.sub(ur"[^\w\d'\s]+", '', w)
 
-                    if not word.isalpha():
-                        print("check for spacing issues")
-                    else:	
-                        analyses = list(t.apply_up(word))
-    
-                        ''' 
-                        some additional processing in case the
-                        analyzer can't analyze the word as is
-                        '''
-                        # handle vowel lengthening in yes-no questions
-                        if not analyses:
-                            if word[-3:-1] == "aa":
-                                # e.g. ighneghaan -> ighneghan
-                                tryThis = word[:-3] + "a" + word[-1]
-                                analyses = list(t.apply_up(tryThis))
-            
-                                # e.g. qiyastaak -> qiyastek
-                                tryThis = word[:-3] + "e" + word[-1]
-                                analyses = list(t.apply_up(tryThis))
-            
-                            elif word[-2:] == "aa":
-                                tryThis = word[:-2] + "a"
-                                analyses = list(t.apply_up(tryThis))
-            
-                            elif word[-3:-1] == "ii":
-                                # e.g. qiyaziin -> qiyazin
-                                tryThis = word[:-3] + "i" + word[-1]
-                                analyses = list(t.apply_up(tryThis))
-            
-                            elif word[-2:] == "ii":
-                                # e.g. qiyatsii -> qiyatsi
-                                tryThis = word[:-2] + "i"
-                                analyses = list(t.apply_up(tryThis))
-            
-                            elif word[-3:-1] == "uu":
-                                tryThis = word[:-3] + "u" + word[-1]
-                                analyses = list(t.apply_up(tryThis))
-            
-                            elif word[-2:] == "uu":
-                                tryThis = word[:-2] + "u"
-                                analyses = list(t.apply_up(tryThis))
-            
-                        # s -> t, g -> k, gh -> q 
-                        if not analyses:
-                            if word[-1] == "s":
-                                tryThis = word[:-1] + "t"
-                                analyses = list(t.apply_up(tryThis))
-                            elif word[-1] == "g" and word[-2] != "n":
-                                tryThis = word[:-1] + "k"
-                                analyses = list(t.apply_up(tryThis))
-                            elif ''.join(word[-2:]) == "gh":
-                                tryThis = word[:-2] + "q"
-                                analyses = list(t.apply_up(tryThis))
-            
-                        # gw -> g or gw -> w
-                        if not analyses:
-                            if "gw" in word:
-                                tryThis = word.replace("gw", "g") 
-                                analyses = list(t.apply_up(tryThis))
-            
-                                tryThis = word.replace("gw", "w")
-                                analyses.extend(t.apply_up(tryThis))
-               
-                        if not analyses:
-                            allAnalyses.append(word)
-                        else:
-                            allAnalyses.append(analyses)
-    
-                allAnalyses.append("<br>")
+                    if any(char.isalpha() for char in word):
+                        allWords.append(word)
 
-    return allAnalyses
+    return allWords
+
+
+def generate_output_file(allAnalyses, filename, outputdir):
+    '''
+    :param allAnalyses: all of the analyses for each word in a text
+    :type  allAnalyses: list of lists
+    :param filename: name of the text
+    :type  filename: str
+    :param outputdir: name of the directory to which to write the output
+    :type  outputdir: str 
+
+    Writes the predicted analyses for a text to a file that is placed
+    in the specified output directory.
+
+    '''
+    with open(outputdir+"/"+filename, 'w') as f:
+        for elem in allAnalyses:
+
+            # analyzer found analyses
+            if isinstance(elem, list):
+                for analysis in elem:
+                    f.write(analysis.decode("utf-8").encode("utf-8") + "\n")
+
+            # newline element
+            elif elem == "<br>":
+                f.write("\n")
+
+            # analyzer did not find analyses
+            else:
+                f.write(elem + "\n")
 
 
 def main():

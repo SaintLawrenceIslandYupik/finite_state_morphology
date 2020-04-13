@@ -2,12 +2,12 @@
 LEXICON DemAdvPB
 !===============
 0:0                              Enclitic;
-^pi:^pi                          VerbSuffixI; ! empty base pi- [Jacobson (1984), Woodbury (2004)]
-^+kaghtagh(DEM→N):^kaghta%{g%}h  NounInflIII; ! one from N
-^+keghtagh(DEM→N):^keghta%{g%}h  NounInflIII; ! one from N
-^+ta(DEM→N):%ta                  NounInflI;   ! N area of possessor
-^+tmiigh(DEM→V):^tmiigh          VerbInflIV;  ! to go in the N direction
-^[All.Sg]:^tmun                  #;           ! second terminalis [Jacobson (2001) p.113]
+^pi:^pi                          VerbPostbaseI; ! empty base pi- [Jacobson (1984), Woodbury (2004)]
+^+kaghtagh(DEM→N):^kaghta%{g%}h  NounInflIII;   ! one from N
+^+keghtagh(DEM→N):^keghta%{g%}h  NounInflIII;   ! one from N
+^+ta(DEM→N):^ta                  NounInflI;     ! N area of possessor
+^+tmiigh(DEM→V):^tmiigh          VerbInflIV;    ! to go in the N direction
+^[All.Sg]:^tmun                  #;             ! second terminalis [Jacobson (2001) p.113]
 
 ^[Loc.Sg]:^m   VerbRootEte;
 ^[Loc.Pl]:^n   VerbRootEte;

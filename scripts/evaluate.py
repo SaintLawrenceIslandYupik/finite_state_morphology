@@ -9,14 +9,14 @@ Given a directory of files with test items and a
 corresponding directory of gold standard analyses,
 the report will include:
     * precision, recall, f-measure, coverage
-	* a list of words that could not be analyzed
-	* a list of incorrect analyses paired with their
-	  target analyses
+    * a list of words that could not be analyzed
+    * a list of incorrect analyses paired with their
+      target analyses
 
 Otherwise, given just a directory of files with test
 items, the report will include:
     * coverage 
-	* a list of words that could not be analyzed
+    * a list of words that could not be analyzed
 
 IMPORTANT:
   * evaluate.py must be run in python 2.7
@@ -33,23 +33,18 @@ import argparse
 import csv
 import glob
 import os
-import pprint
-import time
+import re
 
 from foma import *
 from print_func import *
-
-
-# def generate_output_files():
-#     print(analysis.decode("utf-8"))
 
 
 def get_predicted_analyses(t, testfile):
     '''
     :param t: the 'foma' analyzer
     :type  t: not sure tbh
-    :param testfile: path to a file containing
-                     the words to be analyzed
+    :param testfile: file containing words
+                     to be analyzed
     :type  testfile: str
 
     :return: a tuple, where the first element is
@@ -63,98 +58,104 @@ def get_predicted_analyses(t, testfile):
     list if a morphological analysis cannot be found.
 
     '''
-    allWords    = []
-    allAnalyses = []
-
     # print status update
     print("working on " + testfile + "...")
 
-    with open(testfile) as csvfile:
-        items = csv.reader(csvfile, delimiter="\t")
+    allWords    = prep_input(testfile)
+    allAnalyses = []
 
-        for row in items:
-            for word in row:
-                allWords.append(word)
-
-                analyses = list(t.apply_up(word))
-
-                # TODO: clean up all this additional processing
-                #       this is not well done D:
-                # attempt to analyze the lowercased form
-                if not analyses and word != word.lower():
-                    surfaceForm = word.lower()
-                    analyses = list(t.apply_up(surfaceForm))
+    for word in allWords:
+        analyses = list(t.apply_up(word))
     
-                # handle vowel lengthening in yes-no questions
-                if not analyses:
-                    if word[-3:-1] == "aa":
-                        # e.g. ighneghaan -> ighneghan
-                        surfaceForm = word[:-3] + "a" + word[-1]
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                        # e.g. qiyastaak -> qiyastek
-                        surfaceForm = word[:-3] + "e" + word[-1]
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                    elif word[-2:] == "aa":
-                        surfaceForm = word[:-2] + "a"
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                    elif word[-3:-1] == "ii":
-                        # e.g. qiyaziin -> qiyazin
-                        surfaceForm = word[:-3] + "i" + word[-1]
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                    elif word[-2:] == "ii":
-                        # e.g. qiyatsii -> qiyatsi
-                        surfaceForm = word[:-2] + "i"
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                    elif word[-3:-1] == "uu":
-                        surfaceForm = word[:-3] + "u" + word[-1]
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                    elif word[-2:] == "uu":
-                        surfaceForm = word[:-2] + "u"
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                # s -> t, g -> k, gh -> q 
-                if not analyses:
-                    if word[-1] == "s":
-                        surfaceForm = word[:-1] + "t"
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-                    elif word[-1] == "g" and word[-2] != "n":
-                        surfaceForm = word[:-1] + "k"
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-                    elif ''.join(word[-2:]) == "gh":
-                        surfaceForm = word[:-2] + "q"
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                # gw -> g or gw -> 
-                if not analyses:
-                    if "gw" in word:
-                        surfaceForm = word.replace("gw", "g") 
-                        analyses = list(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-
-                        surfaceForm = word.replace("gw", "w")
-                        analyses.extend(t.apply_up(surfaceForm))
-                        analyses.extend(list(t.apply_up(surfaceForm.lower())))
-                # TODO: additional processing ends here 
-   
-                allAnalyses.append(analyses)
+        ''' 
+        some additional processing in case the
+        analyzer can't analyze the word as is
+        '''
+        # handle vowel lengthening in yes-no questions
+        if not analyses and len(word) > 2:
+            if word[-3:-1] == "aa":
+                # e.g. ighneghaan -> ighneghan
+                tryThis = word[:-3] + "a" + word[-1]
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+                # e.g. qiyastaak -> qiyastek
+                tryThis = word[:-3] + "e" + word[-1]
+                analyses = list(t.apply_up(tryThis))
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-2:] == "aa":
+                tryThis = word[:-2] + "a"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-3:-1] == "ii":
+                # e.g. qiyaziin -> qiyazin
+                tryThis = word[:-3] + "i" + word[-1]
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-2:] == "ii":
+                # e.g. qiyatsii -> qiyatsi
+                tryThis = word[:-2] + "i"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-3:-1] == "uu":
+                tryThis = word[:-3] + "u" + word[-1]
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+            elif word[-2:] == "uu":
+                tryThis = word[:-2] + "u"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+        # s -> t, g -> k, gh -> q 
+        if not analyses and len(word) > 1:
+            if word[-1] == "s":
+                tryThis = word[:-1] + "t"
+                analyses.extend(list(t.apply_up(tryThis)))
+            elif word[-1] == "g" and word[-2] != "n":
+                tryThis = word[:-1] + "k"
+                analyses.extend(list(t.apply_up(tryThis)))
+            elif ''.join(word[-2:]) == "gh":
+                tryThis = word[:-2] + "q"
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+        # gw -> g or gw -> 
+        if not analyses:
+            if "gw" in word:
+                tryThis = word.replace("gw", "g") 
+                analyses.extend(list(t.apply_up(tryThis)))
+    
+                tryThis = word.replace("gw", "w")
+                analyses.extend(list(t.apply_up(tryThis)))
+       
+        allAnalyses.append(analyses)
 
     return allWords, allAnalyses
+
+
+def prep_input(testfile):
+    '''
+    :param testfile: file containing words
+                     to be analyzed
+    :type  testfile: str
+
+    :return: a list of words, stripped of punctuation,
+	         ready for analysis
+
+    '''
+    allWords = []
+
+    with open(testfile, 'r') as f:
+        for sentence in f:
+            if sentence != "\n":
+                words = sentence.strip("\n ").lower().split(" ")
+
+                for w in words:
+                    # strip punctuation except apostrophes
+                    word = re.sub(ur"[^\w\d'\s]+", '', w)
+
+                    if any(char.isalpha() for char in word):
+                        allWords.append(word)
+
+    return allWords
 
 
 def main():
@@ -211,7 +212,6 @@ def main():
                              "  # gold = " + str(len(target)))
 
     else:
-        # start = time.time()
         for testfile in glob.glob(args.test + "/*"):
             # get the 'foma' analyzer's predicted analyses
             words, analyses = get_predicted_analyses(t, testfile)
@@ -222,10 +222,6 @@ def main():
                     unanalyzed.append(words[idx])
 
                 output[words[idx]] = analyses[idx]
-
-        # end = time.time()
-        # print(end - start)
-        # pprint.pprint(output)
 
     # print the full evaluation report
     if args.gold:
