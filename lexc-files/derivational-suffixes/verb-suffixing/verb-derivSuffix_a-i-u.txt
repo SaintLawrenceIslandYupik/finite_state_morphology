@@ -4,16 +4,13 @@ LEXICON VerbPostbaseI
 !  when suffixing to verb roots that end in a, -i, -u
 !======================================================
 
-0:0  VerbInflI;
+0:0  ModalI;
 
 ^~sf–ghhaleg(V→XCLM):^ghhalek               #;               ! how V! (exclamation)
 
 ^–ghllagu(V→V):^ghllagu                     VerbPostbaseI;   ! to be very V; to be busy V-ing
-^@~%:(i/u)ma(V→V):^ma                       VerbPostbaseI;   ! to have V-ed or been V-ed; to be in a state of having V-ed or been V-ed; to evidently have V-ed or been V-ed
 ^@laataqu(V→V):^laataqu                     VerbPostbaseI;   ! to luckily have V-ed well
 ^–llgu(V→V):^llgu                           VerbPostbaseI;   ! to V well 
-^@~fna(V→V):^na                             VerbPostbaseI;   ! in order to V; to V 
-^@~fnaqngu(V→V):^naqngu                     VerbPostbaseI;   ! to have to V
 ^@~f–neghtu(V→V):^neghtu                    VerbPostbaseI;   ! to V habitually; to V frequently
 ^~fnga(V→V):^nga                            VerbPostbaseI;   ! to be in a state of V or of having V-ed
 ^~%:(ng)u(V→V):^ngu                         VerbPostbaseI;   ! to be V-ing; to be V-habitually or as an occupation; while in the process of V-ing
@@ -25,36 +22,23 @@ LEXICON VerbPostbaseI
 ^–tu(V→V):^tu                               VerbPostbaseI;   ! to V habitually
 ^+tulli(V→V):^tulli                         VerbPostbaseI;   ! for it to be getting feasible to go V-ing b
 ^+tutka(V→V):^tutka                         VerbPostbaseI;   ! to be V to an indicated degree
-^@~fyaghqaa(V→V):^yaghqaa                   VerbPostbaseI;   ! to need to V; to be supposed to V; to V in the future
-^@~fyaghqau(V→V):^yaghqau                   VerbPostbaseI;   ! to need to V; to be supposed to V; to V in the future
 ^@~f–yu(V→V):^yu                            VerbPostbaseI;   ! to be good at V-ing; to generally V well
 ^@~fyuguma(V→V):^yuguma                     VerbPostbaseI;   ! to be easy to V
 ^@~fyuneghtu(V→V):^yuneghtu                 VerbPostbaseI;   ! to love to V
 ^~i(V→V):^i                                 VerbPostbaseI;   ! to V something; to suffer something's V-ing
-^@~–(g)kau(V→V):^kau                        VerbPostbaseI;   ! to have V-ed; to have been V-ed
-^@~–(g)kayugu(V→V):^kayugu                  VerbPostbaseI;   ! to be able to V; can V
-^@~fni(CmpdVbl):^ni                         VerbPostbaseI;   ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
-^~(g)aqe(V→V):^%{G%}aqe                     VerbPostbaseII;  ! to be currently V-ing; to V now and then; to always V
 ^––iqe(V→V):^%{.mm.%}iqe                    VerbPostbaseII;  ! to have trouble with one's V-ing over a period of time
 ^–lgutke(V→V):^lgutke                       VerbPostbaseII;  ! to V together with; to help (object) V
-^@lleqe(V→V):^lleqe                         VerbPostbaseII;  ! to V in the future; will V
 ^–llgilliqe(V→V):^llgilliqe                 VerbPostbaseII;  ! to experience trouble in V-ing 
 ^+lliqe(V→V):^lliqe                         VerbPostbaseII;  ! to have trouble V-ing
 ^–lliqe(V→V):^lliqe                         VerbPostbaseII;  ! to have trouble V-ing
 ^@~fnanighqe(V→V):^nanighqe                 VerbPostbaseII;  ! to make one cease V-ing
-^@~fnaqe(V→V):^naqe                         VerbPostbaseII;  ! to be going to V in the near future; to try to V
 ^@~fnaqutke(V→V):^naqutke                   VerbPostbaseII;  ! to try to V (it)
 ^@~fnatke(V→V):^natke                       VerbPostbaseII;  ! to use or have (it) in order to V
 ^~–qaghaqe(V→V):^qaghaqe                    VerbPostbaseII;  ! to intermittently V; to V now and then
-^–qaghnaqe(V→V):^qaghnaqe                   VerbPostbaseII;  ! to be about to V for a moment 
 ^@~%:(u)tke(V→V):^tke                       VerbPostbaseII;  ! to V over or on account of
 ^@~fvike(V→V):^vike                         VerbPostbaseII;  ! to have as a place or as object of one's V-ing
-^@~fyaghqaqe(V→V):^yaghqaqe                 VerbPostbaseII;  ! to need to V; to be supposed to V; to V in the future
 ^@~f–yiilliqe(V→V):^yiilliqe                VerbPostbaseII;  ! to have trouble V-ing
-^@~–(g)kaqe(V→V):^kaqe                      VerbPostbaseII;  ! to have V-ed (him/it) 
-^@~fnayuke(V→V):^nayuke                     VerbPostbaseII;  ! to think that one might V
 ^@~fmiqe(CmpdVbl):^miqe                     VerbPostbaseII;  ! to compel one to V; to make one V
-^@~fyuke(CmpdVbl):^yuke                     VerbPostbaseII;  ! to think that one is V-ing or has V-ed
 ^+qe(V→V):^qe                               VerbPostbaseII;  ! to act on so as to cause to V
 ^~sf%:(e)sqe(CmpdVbl):^sqe                  VerbPostbaseII;  ! to ask one to V; to tell one to V
 ^+te(V→V):^%{t%}e                           VerbPostbaseII;  ! to act on so as to cause to V
@@ -107,12 +91,9 @@ LEXICON VerbPostbaseI
 ^–vleghagh(V→V):^vleghagh                   VerbPostbaseIV;  ! to V a little
 ^–msiigh(V→V):^msiigh                       VerbPostbaseIV;  ! to V ineffectively or without putting effort into it; to V under conditions of hardship
 ^@~fnagh(V→V):^nagh                         VerbPostbaseIV;  ! to cause V-ing
-^@~fnaagh(V→V):^naagh                       VerbPostbaseIV;  ! to be going to V eventually
 ^@~fnanigh(V→V):^nanigh                     VerbPostbaseIV;  ! to cease V-ing; to stop V-ing; to quit V-ing
 ^@~fnaqelqusiigh(V→V):^naqelqusiigh         VerbPostbaseIV;  ! to stall or delay at V-ing.
-^@~fnaqlaatagh(V→V):^naqlaatagh             VerbPostbaseIV;  ! to V again be going to V
 ^@~fnasiigh(V→V):^nasiigh                   VerbPostbaseIV;  ! to put off V-ing; to stall at V-ing; to V angrily
-^@~fnayagh(V→V):^nayagh                     VerbPostbaseIV;  ! could V; might V; should V; would V
 ^@~f–neghsigh(V→V):^neghsigh                VerbPostbaseIV;  ! to wait for (it) to V; to wait for (it) to be V or to become V
 ^–ngeltagh(V→V):^ngeltagh                   VerbPostbaseIV;  ! to V in a small way
 ^–ngertagh(V→V):^ngertagh                   VerbPostbaseIV;  ! to V in a small way
@@ -127,7 +108,6 @@ LEXICON VerbPostbaseI
 ^–pigagh(V→V):^pigagh                       VerbPostbaseIV;  ! to be V exaclty (location)
 ^–pigesnagh(V→V):^pigesnagh                 VerbPostbaseIV;  ! to V in vain; to V for naught; to finally V
 ^~–qagh(V→V):^qagh                          VerbPostbaseIV;  ! please V; just V; suddenly V; briefly
-^–qaghnayagh(V→V):^qaghnayagh               VerbPostbaseIV;  ! would V for a short time
 ^~–qaghtagh(V→V):^qaghtagh                  VerbPostbaseIV;  ! to continuously V with back and forth or up and down movement
 ^–qragh(V→V):^qragh                         VerbPostbaseIV;  ! to do fancy V-ing; to V a new thing
 ^@qugh(V→V):^qugh                           VerbPostbaseIV;  ! to V all things available; to V completely
@@ -150,7 +130,6 @@ LEXICON VerbPostbaseI
 ^–vzigh(V→V):^vzigh                         VerbPostbaseIV;  ! to almost V; to V to the extent that one is able
 ^–vyiigh(V→V):^vyiigh                       VerbPostbaseIV;  ! to V carelessly; to V in a rough way 
 ^–vziigh(V→V):^vziigh                       VerbPostbaseIV;  ! to V carelessly; to V in a rough way
-^@~fyagh(V→V):^yagh                         VerbPostbaseIV;  ! to go somewhere in order to V; to go V-ing
 ^@~fyaghagh(V→V):^yaghagh                   VerbPostbaseIV;  ! to V early
 ^@~fyaaghagh(V→V):^yaaghagh                 VerbPostbaseIV;  ! to readily V
 ^@~fyaghtugh(V→V):^yaghtugh                 VerbPostbaseIV;  ! to be about to V; to go somewhere to V
@@ -208,7 +187,6 @@ LEXICON VerbPostbaseI
 ^@~–(g)kayugughte(V→V):^kayugugh%{t%}e      VerbPostbaseV;   ! to become able to V
 ^+(te)snaanghite(CmpdVbl):^snaanghi%{t%}e   VerbPostbaseV;   ! to tell one not to V in the future; to forbid one from V-ing in the future
 ^+(te)ste(CmpdVbl):^s%{t%}e                 VerbPostbaseV;   ! to cause one to V; to allow one to V; to make one V; to let one V; to have one V
-^+(pete)fte(V→V):^f%{t%}e                   VerbPostbaseV;   ! to evidently V or have V-ed
 ^–llghite(V→V):^llghi%{t%}e*                VerbPostbaseVI;  ! to not V
 ^@~fnaanghite(V→V):^naanghi%{t%}e*          VerbPostbaseVI;  ! to not V in the future; won't V
 ^@–nghite(V→V):^nghi%{t%}e**                VerbPostbaseVI;  ! to not V
@@ -264,5 +242,61 @@ LEXICON VerbPostbaseI
 ^@~–(g)ke(V→N):^ke                   NounPostbaseVIII; ! the ones possessor is V-ing
 
 ^@~%:(i/u)magh*(V→QUANTQUAL):^magh   QuantQualInfl; ! while V-ing
+
+
+!--------------------
+! the auxiliary node
+!--------------------
+
+!=============
+LEXICON ModalI
+!=============
+0:0                              PastTenseI;
+^@~–(g)kayugu(V→V):^kayugu       PastTenseI;  ! to be able to V; can V
+^@~fnaqe(V→V):^naqe              PastTenseII; ! to be going to V in the near future; to try to V
+^@~fnaqlaatagh(V→V):^naqlaatagh  PastTenseIV; ! to V again be going to V
+^–qaghnaqe(V→V):^qaghnaqe        PastTenseII; ! to be about to V for a moment 
+^@~fna(V→V):^na                  PastTenseI;  ! in order to V; to V 
+^@~fnaqngu(V→V):^naqngu          PastTenseI;  ! to have to V
+^@~fyaghqaqe(V→V):^yaghqaqe      PastTenseII; ! to need to V; to be supposed to V; to V in the future
+^@~fyaghqau(V→V):^yaghqau        PastTenseI;  ! to need to V; to be supposed to V; to V in the future
+^@~fnayagh(V→V):^nayagh          PastTenseIV; ! could V; might V; should V; would V
+^–qaghnayagh(V→V):^qaghnayagh    PastTenseIV; ! would V for a short time
+
+!=================
+LEXICON PastTenseI
+!=================
+0:0                     ProgressiveAspectI;
+^@~–(g)kaqe(V→V):^kaqe  ProgressiveAspectII; ! to have V-ed (him/it) 
+^@~–(g)kau(V→V):^kau    ProgressiveAspectI;  ! to have V-ed; to have been V-ed
+^@~%:(i/u)ma(V→V):^ma   ProgressiveAspectI;  ! to have V-ed or been V-ed; to be in a state of having V-ed or been V-ed; to evidently have V-ed or been V-ed
+
+
+!=========================
+LEXICON ProgressiveAspectI
+!=========================
+0:0                                  FutureFrustrativeI;
+^~(g)aqe(V→V):^%{G%}aqe              FutureFrustrativeII; ! to be currently V-ing; to V now and then; to always V
+^~(g)aqlaatagh(V→V):^%{G%}aqlaatagh  FutureFrustrativeIV; ! to be V-ing again, one more time 
+
+
+!=========================
+LEXICON FutureFrustrativeI
+!=========================
+0:0                    EvidentialImputativeI;
+^@lleqe(V→V):^lleqe    EvidentialImputativeII; ! to V in the future; will V
+^@~fnaagh(V→V):^naagh  EvidentialImputativeIV; ! to be going to V eventually
+^@~fyagh(V→V):^yagh    EvidentialImputativeIV; ! to V but...; to V in vain; to V without the desired results 
+
+
+!============================
+LEXICON EvidentialImputativeI
+!============================
+0:0                         VerbInflI;
+^+(pete)fte(V→V):^f%{t%}e   VerbInflV;  ! to evidently V or have V-ed
+^+yengagh(V→V):^yengagh     VerbInflI;  ! it loks like V (from the evidence I have heard or seen)
+^@~fni(CmpdVbl):^ni         VerbInflI;  ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
+^@~fyuke(CmpdVbl):^yuke     VerbInflII; ! to think that one is V-ing or has V-ed
+^@~fnayuke(V→V):^nayuke     VerbInflII; ! to think that one might V
 
 

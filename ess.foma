@@ -13,8 +13,8 @@ define Lexicon
 !==============
 ! MISC SYMBOLS
 !==============
-! "^"      morpheme boundary
-! .#.      word boundary
+! "^"  morpheme boundary
+! .#.  word boundary
 
 
 !======
@@ -49,6 +49,59 @@ define FullVowel  [ a | i | u ];
 define V          [ e | FullVowel ];
 
 define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
+
+
+!===============================
+! FILTERS
+!   [de Reuse (1994) p.116-123]
+!===============================
+
+define ModalPast ~[ ?* "^@~–(g)kayugu(V→V)^@~–(g)kau(V→V)"   ?* |
+                    ?* "^@~–(g)kayugu(V→V)^@~–(g)kaqe(V→V)"  ?* |
+                    ?* "^@~fnaqe(V→V)^@~–(g)kau(V→V)"        ?* |
+                    ?* "^@~fnaqe(V→V)^@~–(g)kaqe(V→V)"       ?* |
+                    ?* "^@~fnaqlaatagh(V→V)^@~–(g)kau(V→V)"  ?* |
+                    ?* "^@~fnaqlaatagh(V→V)^@~–(g)kaqe(V→V)" ?* |
+                    ?* "^–qaghnaqe(V→V)^@~–(g)kau(V→V)"      ?* |
+                    ?* "^–qaghnaqe(V→V)^@~–(g)kaqe(V→V)"     ?* |
+                    ?* "^@~fna(V→V)^@~–(g)kau(V→V)"          ?* |
+                    ?* "^@~fna(V→V)^@~–(g)kaqe(V→V)"         ?* |
+                    ?* "^@~fnaqngu(V→V)^@~–(g)kau(V→V)"      ?* |
+                    ?* "^@~fnaqngu(V→V)^@~–(g)kaqe(V→V)"     ?* |
+                    ?* "^@~fyaghqaqe(V→V)^@~–(g)kau(V→V)"    ?* |
+                    ?* "^@~fyaghqaqe(V→V)^@~–(g)kaqe(V→V)"   ?* |
+                    ?* "^@~fyaghqau(V→V)^@~–(g)kau(V→V)"     ?* |
+                    ?* "^@~fyaghqau(V→V)^@~–(g)kaqe(V→V)"    ?* |
+                    ?* "^@~fnayagh(V→V)^@~–(g)kau(V→V)"      ?* |
+                    ?* "^@~fnayagh(V→V)^@~–(g)kaqe(V→V)"     ?* |
+                    ?* "^–qaghnayagh(V→V)^@~–(g)kau(V→V)"    ?* |
+                    ?* "^–qaghnayagh(V→V)^@~–(g)kaqe(V→V)"   ?*
+                  ];
+
+define ModalProgressive ~[ ?* "^@~fnayagh(V→V)^~(g)aqe(V→V)"       ? * |
+                           ?* "^@~fnayagh(V→V)^~(g)aqlaatagh(V→V)" ?*
+                         ];
+
+define ModalFutureFrustrative ~[ ?* "^@~fnayagh(V→V)^@lleqe(V→V)"   ?* |
+                                 ?* "^@~fnayagh(V→V)^@~fnaagh(V→V)" ?* |
+                                 ?* "^@~fnayagh(V→V)^@~fyagh(V→V)"  ?*
+                               ];
+
+define ModalEvidential ~[ ?* "^@~fnayagh(V→V)^+(pete)fte(V→V)" ?* ];
+
+define ModalMood ~[ ?* "^@~fnayagh(V→V)" ?* "^[Sbrd.Intr]" ?* |
+                    ?* "^@~fnayagh(V→V)" ?* "^[Sbrd.Trns]" ?*
+                  ];
+
+define ModalFilters [ ModalPast              .o.
+                      ModalProgressive       .o.
+                      ModalFutureFrustrative .o.
+					  ModalEvidential        
+!					  ModalMood
+					];
+
+define Filters [ ModalFilters
+               ];
 
 
 !=======
@@ -200,7 +253,7 @@ define Uteta e -> a || "^" [ %{%.at%.%} | %{%.sf%.%} | %{%.f%.%} | %{%.c%.%} ] u
 
 
 ! what is %{SUBR%}?
-!   in the context of the subordinative mood, postbasees @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
+!   in the context of the subordinative mood, postbases @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
 !   the subordinative mood marker is also +na for these strongly special -te stems, hence a placeholder %{SUBR%}, while the ordinary
 !   subordinative mood marker @~flu (or @~fllu) is used with all other special -te stems. lastly, some of the person/number markers
 !   are also different for strongly special -te stems, using the subordinative mood marker +na [Jacobson (2001) p.102].
@@ -257,10 +310,10 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
 define ResolveDemAnaphor "[Anaphor]" -> t a z || _ "^" i       .o.
                          "[Anaphor]" -> t     || _ "^" V V     .o.
                          "[Anaphor]" -> t a   || _ "^" [V | m] .o.
-						 "[Anaphor]" -> t e   || _ "^" s       ,,
-						 "[Anaphor]" ->   e   || _ "^" s       .o.
-						 "[Anaphor]" -> t e s || _ "^" C       ,,
-						 "[Anaphor]" ->   e s || _ "^" C       ;
+                         "[Anaphor]" -> t e   || _ "^" s       ,,
+                         "[Anaphor]" ->   e   || _ "^" s       .o.
+                         "[Anaphor]" -> t e s || _ "^" C       ,,
+                         "[Anaphor]" ->   e s || _ "^" C       ;
 
 
 !------------------
@@ -416,7 +469,7 @@ define Rules [
     ResolveG             .o.
     ResolveI             .o.
     OptativeAllomorphs   .o.
-	ResolveDemAnaphor    .o.
+    ResolveDemAnaphor    .o.
     !-------------------------------
     ! clean up
     !-------------------------------
@@ -432,5 +485,5 @@ define Rules [
     Undoubling
 ];
 
-define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | [ParallelForms .o. Rules] ] ];
+define GrammarLower [ [Exceptions .o. Rules] .P. [ [Filters .o. Lexicon .o. Rules] | [ParallelForms .o. Rules] ] ];
 define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Rules .o. Uppercase] ] ];
