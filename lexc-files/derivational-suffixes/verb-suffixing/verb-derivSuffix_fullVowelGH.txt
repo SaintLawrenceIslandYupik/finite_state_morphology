@@ -4,7 +4,7 @@ LEXICON VerbPostbaseIV
  !  when suffixing to verb roots that end in -agh, -igh, -ugh 
  !===========================================================
 
-0:0  ModalIV;
+0:0  NegationIV;
 
 ^~sf–ghhaleg(V→XCLM):^%{.m.%}ghhalek           #;               ! how V! (exclamation)
 
@@ -149,28 +149,16 @@ LEXICON VerbPostbaseIV
 ^–ghraagte(V→V):^%{.m.%}ghraag%{t%}e           VerbPostbaseV;   ! to be somewhat V-er; to be partly V 
 ^–ghte(V→V):^%{.m.%}gh%{t%}e                   VerbPostbaseV;   ! to become V 
 ^@~%:(i/u)mafte(V→V):^%{.c.%}umaf%{t%}e        VerbPostbaseV;   ! how much subject evidently has V-ed!
-^@~%:(i/u)mangite(V→V):^%{.c.%}umangi%{t%}e    VerbPostbaseV;   ! to not have V-ed
 ^~f–laghate(V→V):^%{.m.%}lagha%{t%}e           VerbPostbaseV;   ! to have already V-ed together; to V as a group
-^@laaghigate(V→V):^laaghiga%{t%}e              VerbPostbaseV;   ! to seldom V; to infrequently V; to not V enough; inadequately V
 ^–lgute(V→V):^%{.m.%}lgu%{t%}e                 VerbPostbaseV;   ! to V together with; to help (object) V
-^–llgite(V→V):^%{.m.%}llgi%{t%}e               VerbPostbaseV;   ! to V poorly
-^–llgiite(V→V):^%{.m.%}llgii%{t%}e             VerbPostbaseV;   ! to become a poor V-er
 ^–mrugnite(V→V):^%{.m.%}mrugni%{t%}e           VerbPostbaseV;   ! to seem to be somewhat V 
 ^@~fnaqute(V→V):^naqu%{t%}e                    VerbPostbaseV;   ! to try to V
 ^@~f–neghllugte(V→V):^%{.m.%}neghllug%{t%}e    VerbPostbaseV;   ! to V wrongly or with difficulty
 ^@–nghiighte(V→V):^%{.m.%}nghiigh%{t%}e        VerbPostbaseV;   ! to V to a large extent; to V in a big way
-^@~fniite(V→V):^nii%{t%}e                      VerbPostbaseV;   ! to not cause one to V
 ^@–nqegte(V→V):^%{.m.%}nqeg%{t%}e              VerbPostbaseV;   ! to V easily; to V readily
 ^@–nqigte(V→V):^%{.m.%}nqig%{t%}e              VerbPostbaseV;   ! to V again
-^–pagite(V→V):^%{.m.%}pagi%{t%}e               VerbPostbaseV;   ! for there not to be much V-ness
-^–pagnaanghite(V→V):^%{.m.%}pagnaanghi%{t%}e   VerbPostbaseV;   ! to not V too much, very much in the future 
-^+pagningite(V→V):^pagningi%{t%}e              VerbPostbaseV;   ! to not be able to V; cannot V
-^–pagumangite(V→V):^%{.m.%}pagumangi%{t%}e     VerbPostbaseV;   ! to not have V-ed so much
-^+panghite(V→V):^panghi%{t%}e                  VerbPostbaseV;   ! to insufficiently V; to not V enough
-^–panghite(V→V):^%{.m.%}panghi%{t%}e           VerbPostbaseV;   ! to insufficiently V; to not V enough
 ^–pigte(V→V):^%{.m.%}pig%{t%}e                 VerbPostbaseV;   ! to be very V
 ^~–qaghte(V→V):^%{.m.%}qagh%{t%}e              VerbPostbaseV;   ! to suddenly V
-^–qiigate(V→V):^%{.m.%}qiiga%{t%}e             VerbPostbaseV;   ! to never briefly V
 ^~–qite(V→V):^%{.m.%}qi%{t%}e                  VerbPostbaseV;   ! to encounter V
 ^~(q/t)uute(V→V):^tuu%{t%}e                    VerbPostbaseV;   ! to V as a group; to V together
 ^@~f–ragkiighute(V→V):^%{.m.%}ragkiighu%{t%}e  VerbPostbaseV;   ! to V quickly
@@ -179,21 +167,11 @@ LEXICON VerbPostbaseIV
 ^@~%:(u)te(V→V):^%{.c.%}u%{t%}e                VerbPostbaseV;   ! to V for; to V together with; to V each other
 ^@~fyaghpete(V→V):^yaghpe%{t%}e                VerbPostbaseV;   ! to evidently have V-ed but in vain
 ^@~fyaghqaaghte(V→V):^yaghqaagh%{t%}e          VerbPostbaseV;   ! to become necessary to V; to have to V now
-^+yaghqiite(V→V):^yaghqii%{t%}e                VerbPostbaseV;   ! to not to have to V
 ^@~fyaaghte(V→V):^yaagh%{t%}e                  VerbPostbaseV;   ! to learn to V
 ^@~fyagute(V→V):^yagu%{t%}e                    VerbPostbaseV;   ! to reach a state of V-ing
-^@~f–yiite(V→V):^%{.m.%}yii%{t%}e              VerbPostbaseV;   ! to poorly V habitually
-^+yugniite(V→V):^yugnii%{t%}e                  VerbPostbaseV;   ! to not find it easy to V; to not want to V
 ^@~–(g)kayugughte(V→V):^%{.m.%}kayugugh%{t%}e  VerbPostbaseV;   ! to become able to V
 ^+(te)snaanghite(CmpdVbl):^tesnaanghi%{t%}e    VerbPostbaseV;   ! to tell one not to V in the future; to forbid one from V-ing in the future
 ^+(te)ste(CmpdVbl):^tes%{t%}e                  VerbPostbaseV;   ! to cause one to V; to allow one to V; to make one V; to let one V; to have one V
-^–llghite(V→V):^%{.m.%}llghi%{t%}e*            VerbPostbaseVI;  ! to not V
-^@~fnaanghite(V→V):^naanghi%{t%}e*             VerbPostbaseVI;  ! to not V in the future; won't V
-^@–nghite(V→V):^%{.m.%}nghi%{t%}e**            VerbPostbaseVI;  ! to not V
-^@~%:(ng)igate(V→V):^%{.c.%}iga%{t%}e*         VerbPostbaseVI;  ! to never V; to not be V-ing at the present time
-^–pagigate(V→V):^%{.m.%}pagiga%{t%}e*          VerbPostbaseVI;  ! to V infrequently; to seldom V 
-^+pagunghite(V→V):^pagunghi%{t%}e**            VerbPostbaseVI;  ! to not be sufficiently V
-^–pagunghite(V→V):^%{.m.%}pagunghi%{t%}e**     VerbPostbaseVI;  ! to not be sufficiently V
 ^+(te)sigate(CmpdVbl):^tesiga%{t%}e**          VerbPostbaseVI;  ! to prevent or keep one from V-ing; to not allow one to V; to not let one V
 
 ^@~%:(i/u)ma(V→N):^%{.c.%}uma               NounPostbaseI;    ! one who V-s
@@ -244,6 +222,38 @@ LEXICON VerbPostbaseIV
 ^@~%:(i/u)magh*(V→QUANTQUAL):^%{.c.%}umagh  QuantQualInfl; ! while V-ing
 
 
+!=================
+LEXICON NegationIV
+!=================
+0:0                                             ModalIV;
+^@~%:(ng)igate(V→V):^%{.c.%}iga%{t%}e**         ModalVI; ! to never V; to not be V-ing at the present time
+^@laaghigate(V→V):^laaghiga%{t%}e**             ModalVI; ! to seldom V; to infrequently V; to not V enough; inadequately V
+^–pagigate(V→V):^%{.m.%}pagiga%{t%}e**          ModalVI; ! to V infrequently; to seldom V 
+^–qiigate(V→V):^%{.m.%}qiiga%{t%}e**            ModalVI; ! to never briefly V
+^~%:(ng)ite(V→V):^%{.c.%}i%{t%}e**              ModalVI; ! to lack the quality of V 
+^–pagite(V→V):^%{.m.%}pagi%{t%}e**              ModalVI; ! for there not to be much V-ness
+^–ketiite(V→V):^ketii%{t%}e**                   ModalVI; ! to not tend to V 
+^–llgite(V→V):^%{.m.%}llgi%{t%}e**              ModalVI; ! to V poorly
+^–llgiite(V→V):^%{.m.%}llgii%{t%}e**            ModalVI; ! to become a poor V-er
+^@~%:(i/u)mangite(V→V):^%{.c.%}umangi%{t%}e**   ModalVI; ! to not have V-ed
+^–pagumangite(V→V):^%{.m.%}pagumangi%{t%}e**    ModalVI; ! to not have V-ed so much
+^@~fniite(V→V):^nii%{t%}e**                     ModalVI; ! to not cause one to V
+^@~fnaanghite(V→V):^naanghi%{t%}e*              ModalVI; ! to not V in the future; won't V
+^–pagnaanghite(V→V):^%{.m.%}pagnaanghi%{t%}e**  ModalVI; ! to not V too much, very much in the future 
+^@–nghite(V→V):^%{.m.%}nghi%{t%}e**             ModalVI; ! to not V
+^+panghite(V→V):^panghi%{t%}e**                 ModalVI; ! to insufficiently V; to not V enough
+^–panghite(V→V):^%{.m.%}panghi%{t%}e**          ModalVI; ! to insufficiently V; to not V enough
+^+pagunghite(V→V):^pagunghi%{t%}e**             ModalVI; ! to not be sufficiently V
+^–pagunghite(V→V):^%{.m.%}pagunghi%{t%}e**      ModalVI; ! to not be sufficiently V
+^–llghite(V→V):^%{.m.%}llghi%{t%}e**            ModalVI; ! to not V
+^+pagningite(V→V):^pagningi%{t%}e**             ModalVI; ! to not be able to V; cannot V
+^+yaghqiite(V→V):^yaghqii%{t%}e**               ModalVI; ! to not to have to V
+^@~f–yiite(V→V):^%{.m.%}yii%{t%}e**             ModalVI; ! to poorly V habitually
+^+yugniite(V→V):^yugnii%{t%}e**                 ModalVI; ! to not find it easy to V; to not want to V
+^@~fnanigh(V→V):^nanigh                         ModalIV; ! to cease V-ing; to stop V-ing; to quit V-ing
+^@~fnanighqe(V→V):^nanighqe                     ModalII; ! to make one cease V-ing
+
+
 !--------------------
 ! the auxiliary node
 !--------------------
@@ -251,34 +261,131 @@ LEXICON VerbPostbaseIV
 !==============
 LEXICON ModalIV
 !==============
-0:0                                   PastTenseIV;
-^@~–(g)kayugu(V→V):^%{.m.%}kayugu     PastTenseI;   ! to be able to V; can V
-^@~fnaqe(V→V):^naqe                   PastTenseII;  ! to be going to V in the near future; to try to V
-^@~fnaqlaatagh(V→V):^naqlaatagh       PastTenseIV;  ! to V again be going to V
-^–qaghnaqe(V→V):^%{.m.%}qaghnaqe      PastTenseII;  ! to be about to V for a moment 
-^@~fna(V→V):^na                       PastTenseI;   ! in order to V; to V 
-^@~fnaqngu(V→V):^naqngu               PastTenseI;   ! to have to V
-^@~fyaghqaqe(V→V):^yaghqaqe           PastTenseII;  ! to need to V; to be supposed to V; to V in the future
-^@~fyaghqau(V→V):^yaghqau             PastTenseI;   ! to need to V; to be supposed to V; to V in the future
-^@~fnayagh(V→V):^nayagh               PastTenseIV;  ! could V; might V; should V; would V
-^–qaghnayagh(V→V):^%{.m.%}qaghnayagh  PastTenseIV;  ! would V for a short time
+0:0                                   InterModalPastIV;
+^@~–(g)kayugu(V→V):^%{.m.%}kayugu     InterModalPastI;  ! to be able to V; can V
+^@~fnaqe(V→V):^naqe                   InterModalPastII; ! to be going to V in the near future; to try to V
+^@~fnaqlaatagh(V→V):^naqlaatagh       InterModalPastIV; ! to V again be going to V
+^–qaghnaqe(V→V):^%{.m.%}qaghnaqe      InterModalPastII; ! to be about to V for a moment 
+^@~fna(V→V):^na                       InterModalPastI;  ! in order to V; to V 
+^@~fnaqngu(V→V):^naqngu               InterModalPastI;  ! to have to V
+^@~fyaghqaqe(V→V):^yaghqaqe           InterModalPastII; ! to need to V; to be supposed to V; to V in the future
+^@~fyaghqaa(V→V):^yaghqaa             InterModalPastI;  ! to need to V; to be supposed to V; to V in the future
+^@~fyaghqau(V→V):^yaghqau             InterModalPastI;  ! to need to V; to be supposed to V; to V in the future
+^@~fnayagh(V→V):^nayagh               InterModalPastIV; ! could V; might V; should V; would V
+^–qaghnayagh(V→V):^%{.m.%}qaghnayagh  InterModalPastIV; ! would V for a short time
+
+
+!=======================
+LEXICON InterModalPastIV
+!=======================
+0:0                                             PastTenseIV;
+^@~%:(ng)igate(V→V):^%{.c.%}iga%{t%}e**         PastTenseVI; ! to never V; to not be V-ing at the present time
+^@laaghigate(V→V):^laaghiga%{t%}e**             PastTenseVI; ! to seldom V; to infrequently V; to not V enough; inadequately V
+^–pagigate(V→V):^%{.m.%}pagiga%{t%}e**          PastTenseVI; ! to V infrequently; to seldom V 
+^–qiigate(V→V):^%{.m.%}qiiga%{t%}e**            PastTenseVI; ! to never briefly V
+^~%:(ng)ite(V→V):^%{.c.%}i%{t%}e**              PastTenseVI; ! to lack the quality of V 
+^–pagite(V→V):^%{.m.%}pagi%{t%}e**              PastTenseVI; ! for there not to be much V-ness
+^–ketiite(V→V):^ketii%{t%}e**                   PastTenseVI; ! to not tend to V 
+^–llgite(V→V):^%{.m.%}llgi%{t%}e**              PastTenseVI; ! to V poorly
+^–llgiite(V→V):^%{.m.%}llgii%{t%}e**            PastTenseVI; ! to become a poor V-er
+^@~%:(i/u)mangite(V→V):^%{.c.%}umangi%{t%}e**   PastTenseVI; ! to not have V-ed
+^–pagumangite(V→V):^%{.m.%}pagumangi%{t%}e**    PastTenseVI; ! to not have V-ed so much
+^@~fniite(V→V):^nii%{t%}e**                     PastTenseVI; ! to not cause one to V
+^@~fnaanghite(V→V):^naanghi%{t%}e*              PastTenseVI; ! to not V in the future; won't V
+^–pagnaanghite(V→V):^%{.m.%}pagnaanghi%{t%}e**  PastTenseVI; ! to not V too much, very much in the future 
+^@–nghite(V→V):^%{.m.%}nghi%{t%}e**             PastTenseVI; ! to not V
+^+panghite(V→V):^panghi%{t%}e**                 PastTenseVI; ! to insufficiently V; to not V enough
+^–panghite(V→V):^%{.m.%}panghi%{t%}e**          PastTenseVI; ! to insufficiently V; to not V enough
+^+pagunghite(V→V):^pagunghi%{t%}e**             PastTenseVI; ! to not be sufficiently V
+^–pagunghite(V→V):^%{.m.%}pagunghi%{t%}e**      PastTenseVI; ! to not be sufficiently V
+^–llghite(V→V):^%{.m.%}llghi%{t%}e**            PastTenseVI; ! to not V
+^+pagningite(V→V):^pagningi%{t%}e**             PastTenseVI; ! to not be able to V; cannot V
+^+yaghqiite(V→V):^yaghqii%{t%}e**               PastTenseVI; ! to not to have to V
+^@~f–yiite(V→V):^%{.m.%}yii%{t%}e**             PastTenseVI; ! to poorly V habitually
+^+yugniite(V→V):^yugnii%{t%}e**                 PastTenseVI; ! to not find it easy to V; to not want to V
+^@~fnanigh(V→V):^nanigh                         PastTenseIV; ! to cease V-ing; to stop V-ing; to quit V-ing
+^@~fnanighqe(V→V):^nanighqe                     PastTenseII; ! to make one cease V-ing
 
 
 !==================
 LEXICON PastTenseIV
 !==================
-0:0                            ProgressiveAspectIV;
-^@~–(g)kaqe(V→V):^%{.m.%}kaqe  ProgressiveAspectII; ! to have V-ed (him/it) 
-^@~–(g)kau(V→V):^%{.m.%}kau    ProgressiveAspectI;  ! to have V-ed; to have been V-ed
-^@~%:(i/u)ma(V→V):^%{.c.%}uma  ProgressiveAspectI;  ! to have V-ed or been V-ed; to be in a state of having V-ed or been V-ed; to evidently have V-ed or been V-ed
+0:0                            InterPastProgIV;
+^@~–(g)kaqe(V→V):^%{.m.%}kaqe  InterPastProgII; ! to have V-ed (him/it) 
+^@~–(g)kau(V→V):^%{.m.%}kau    InterPastProgI;  ! to have V-ed; to have been V-ed
+^@~%:(i/u)ma(V→V):^%{.c.%}uma  InterPastProgI;  ! to have V-ed or been V-ed; to be in a state of having V-ed or been V-ed; to evidently have V-ed or been V-ed
+
+
+!======================
+LEXICON InterPastProgIV
+!======================
+0:0                                             ProgressiveAspectIV;
+^@~%:(ng)igate(V→V):^%{.c.%}iga%{t%}e**         ProgressiveAspectVI; ! to never V; to not be V-ing at the present time
+^@laaghigate(V→V):^laaghiga%{t%}e**             ProgressiveAspectVI; ! to seldom V; to infrequently V; to not V enough; inadequately V
+^–pagigate(V→V):^%{.m.%}pagiga%{t%}e**          ProgressiveAspectVI; ! to V infrequently; to seldom V 
+^–qiigate(V→V):^%{.m.%}qiiga%{t%}e**            ProgressiveAspectVI; ! to never briefly V
+^~%:(ng)ite(V→V):^%{.c.%}i%{t%}e**              ProgressiveAspectVI; ! to lack the quality of V 
+^–pagite(V→V):^%{.m.%}pagi%{t%}e**              ProgressiveAspectVI; ! for there not to be much V-ness
+^–ketiite(V→V):^ketii%{t%}e**                   ProgressiveAspectVI; ! to not tend to V 
+^–llgite(V→V):^%{.m.%}llgi%{t%}e**              ProgressiveAspectVI; ! to V poorly
+^–llgiite(V→V):^%{.m.%}llgii%{t%}e**            ProgressiveAspectVI; ! to become a poor V-er
+^@~%:(i/u)mangite(V→V):^%{.c.%}umangi%{t%}e**   ProgressiveAspectVI; ! to not have V-ed
+^–pagumangite(V→V):^%{.m.%}pagumangi%{t%}e**    ProgressiveAspectVI; ! to not have V-ed so much
+^@~fniite(V→V):^nii%{t%}e**                     ProgressiveAspectVI; ! to not cause one to V
+^@~fnaanghite(V→V):^naanghi%{t%}e*              ProgressiveAspectVI; ! to not V in the future; won't V
+^–pagnaanghite(V→V):^%{.m.%}pagnaanghi%{t%}e**  ProgressiveAspectVI; ! to not V too much, very much in the future 
+^@–nghite(V→V):^%{.m.%}nghi%{t%}e**             ProgressiveAspectVI; ! to not V
+^+panghite(V→V):^panghi%{t%}e**                 ProgressiveAspectVI; ! to insufficiently V; to not V enough
+^–panghite(V→V):^%{.m.%}panghi%{t%}e**          ProgressiveAspectVI; ! to insufficiently V; to not V enough
+^+pagunghite(V→V):^pagunghi%{t%}e**             ProgressiveAspectVI; ! to not be sufficiently V
+^–pagunghite(V→V):^%{.m.%}pagunghi%{t%}e**      ProgressiveAspectVI; ! to not be sufficiently V
+^–llghite(V→V):^%{.m.%}llghi%{t%}e**            ProgressiveAspectVI; ! to not V
+^+pagningite(V→V):^pagningi%{t%}e**             ProgressiveAspectVI; ! to not be able to V; cannot V
+^+yaghqiite(V→V):^yaghqii%{t%}e**               ProgressiveAspectVI; ! to not to have to V
+^@~f–yiite(V→V):^%{.m.%}yii%{t%}e**             ProgressiveAspectVI; ! to poorly V habitually
+^+yugniite(V→V):^yugnii%{t%}e**                 ProgressiveAspectVI; ! to not find it easy to V; to not want to V
+^@~fnanigh(V→V):^nanigh                         ProgressiveAspectIV; ! to cease V-ing; to stop V-ing; to quit V-ing
+^@~fnanighqe(V→V):^nanighqe                     ProgressiveAspectII; ! to make one cease V-ing
 
 
 !==========================
 LEXICON ProgressiveAspectIV
 !==========================
-0:0                             FutureFrustrativeIV;
-^~(g)aqe(V→V):^aqe              FutureFrustrativeII; ! to be currently V-ing; to V now and then; to always V
-^~(g)aqlaatagh(V→V):^aqlaatagh  FutureFrustrativeIV; ! to be V-ing again, one more time 
+0:0                             InterProgFutIV;
+^~(g)aqe(V→V):^aqe              InterProgFutII; ! to be currently V-ing; to V now and then; to always V
+^~(g)aqlaatagh(V→V):^aqlaatagh  InterProgFutIV; ! to be V-ing again, one more time 
+
+
+!=====================
+LEXICON InterProgFutIV
+!=====================
+0:0                                             FutureFrustrativeIV;
+^@~%:(ng)igate(V→V):^%{.c.%}iga%{t%}e**         EvidentialImputativeVI; ! to never V; to not be V-ing at the present time
+^@laaghigate(V→V):^laaghiga%{t%}e**             EvidentialImputativeVI; ! to seldom V; to infrequently V; to not V enough; inadequately V
+^–pagigate(V→V):^%{.m.%}pagiga%{t%}e**          EvidentialImputativeVI; ! to V infrequently; to seldom V 
+^–qiigate(V→V):^%{.m.%}qiiga%{t%}e**            EvidentialImputativeVI; ! to never briefly V
+^~%:(ng)ite(V→V):^%{.c.%}i%{t%}e**              EvidentialImputativeVI; ! to lack the quality of V 
+^–pagite(V→V):^%{.m.%}pagi%{t%}e**              EvidentialImputativeVI; ! for there not to be much V-ness
+^–ketiite(V→V):^ketii%{t%}e**                   EvidentialImputativeVI; ! to not tend to V 
+^–llgite(V→V):^%{.m.%}llgi%{t%}e**              EvidentialImputativeVI; ! to V poorly
+^–llgiite(V→V):^%{.m.%}llgii%{t%}e**            EvidentialImputativeVI; ! to become a poor V-er
+^@~%:(i/u)mangite(V→V):^%{.c.%}umangi%{t%}e**   EvidentialImputativeVI; ! to not have V-ed
+^–pagumangite(V→V):^%{.m.%}pagumangi%{t%}e**    EvidentialImputativeVI; ! to not have V-ed so much
+^@~fniite(V→V):^nii%{t%}e**                     EvidentialImputativeVI; ! to not cause one to V
+^@~fnaanghite(V→V):^naanghi%{t%}e*              EvidentialImputativeVI; ! to not V in the future; won't V
+^–pagnaanghite(V→V):^%{.m.%}pagnaanghi%{t%}e**  EvidentialImputativeVI; ! to not V too much, very much in the future 
+^@–nghite(V→V):^%{.m.%}nghi%{t%}e**             EvidentialImputativeVI; ! to not V
+^+panghite(V→V):^panghi%{t%}e**                 EvidentialImputativeVI; ! to insufficiently V; to not V enough
+^–panghite(V→V):^%{.m.%}panghi%{t%}e**          EvidentialImputativeVI; ! to insufficiently V; to not V enough
+^+pagunghite(V→V):^pagunghi%{t%}e**             EvidentialImputativeVI; ! to not be sufficiently V
+^–pagunghite(V→V):^%{.m.%}pagunghi%{t%}e**      EvidentialImputativeVI; ! to not be sufficiently V
+^–llghite(V→V):^%{.m.%}llghi%{t%}e**            EvidentialImputativeVI; ! to not V
+^+pagningite(V→V):^pagningi%{t%}e**             EvidentialImputativeVI; ! to not be able to V; cannot V
+^+yaghqiite(V→V):^yaghqii%{t%}e**               EvidentialImputativeVI; ! to not to have to V
+^@~f–yiite(V→V):^%{.m.%}yii%{t%}e**             EvidentialImputativeVI; ! to poorly V habitually
+^+yugniite(V→V):^yugnii%{t%}e**                 EvidentialImputativeVI; ! to not find it easy to V; to not want to V
+^@~fnanigh(V→V):^nanigh                         EvidentialImputativeIV; ! to cease V-ing; to stop V-ing; to quit V-ing
+^@~fnanighqe(V→V):^nanighqe                     EvidentialImputativeII; ! to make one cease V-ing
 
 
 !==========================
