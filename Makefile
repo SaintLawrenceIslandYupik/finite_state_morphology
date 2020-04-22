@@ -20,7 +20,7 @@ interactive: ess.foma ess.lexc exceptions.lexc parallel.lexc
 	foma -l ess.foma -e "push GrammarUpper"
 
 
-test: $(foreach n,2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18,test-ch$n) test-emotionalroots test-posturalroots test-enclitics test-postbases
+test: $(foreach n,2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18,test-ch$n) test-emotionalroots test-posturalroots test-enclitics test-postbases test-dereuse
 
 test-ch%: tests/jacobson_examples/jacobson_ch%.tsv lower.fomabin
 	@cut -f 1 $< | sort -d -f | uniq | flookup -i -w "" lower.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f $<)' && echo "Jacobson (2001) Ch$*  - PASS" || echo "Jacobson (2001) Ch$* - FAIL"
@@ -38,6 +38,10 @@ test-postbases: $(foreach n,A E F G I K L M N P Q R S T U V Y,test-$n-postbases)
 
 test-%-postbases: tests/badten_examples/%-postbases.tsv lower.fomabin
 	@cut -f 1 tests/badten_examples/$*-postbases.tsv | sort -d -f | uniq | flookup -i -w "" lower.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f tests/badten_examples/$*-postbases.tsv)' && echo "Badten (2008) $*-Postbases - PASS" || echo "Badten (2008) $*-Postbases - FAIL"
+
+test-dereuse: tests/other/deReuse1994_ch2.tsv lower.fomabin
+	@cut -f 1 $< | sort -d -f | uniq | flookup -i -w "" lower.fomabin | sort -d -f | bash -c 'diff - <(sort -d -f $<)' && echo "de Reuse (1994) Ch2  - PASS" || echo "de Reuse (1994) Ch2 - FAIL"
+
 
 clean:
 	rm -f ess.dot ess.pdf *.pairs *.pairs.tsv *.fomabin *.lexc
