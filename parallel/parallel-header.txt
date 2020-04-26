@@ -8,6 +8,11 @@ Multichar_Symbols
 !-----------
 ! allomorphs 
 !-----------
+(a)   (e)   (i)   (u)
+(g)   (s)   (t)
+(at)  (ng)  (te)  (pete)
+(g/t) (p/v) (t/y) (s/z) (i/u) (q/t)
+
 %{E%}     ! for (e)
 %{G%}     ! for (g) 
 %{I%}     ! for (e) in ~sf:(e)sqe [Jacobson (2001) p.64]
@@ -19,6 +24,11 @@ Multichar_Symbols
 !---------------------------
 ! morphophonological symbols 
 !---------------------------
+-w        ! drop weak -gh
+~f        ! drop and hop final -e
+~sf       ! drop and hop semi-final -e
+––        ! drop root-final vowel + consonant
+
 %{.w.%}   ! drop weak -gh
 %{.c.%}   ! drop uvular (-gh) between single vowels
 %{.f.%}   ! drop and hop final -e

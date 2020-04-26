@@ -51,57 +51,103 @@ define V          [ e | FullVowel ];
 define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
 
 
-!===============================
+!=========
 ! FILTERS
-!   [de Reuse (1994) p.116-123]
-!===============================
+!=========
 
-!define ModalPast ~[ ?* "^@~–(g)kayugu(V→V)^@~–(g)kau(V→V)"   ?* |
-!                    ?* "^@~–(g)kayugu(V→V)^@~–(g)kaqe(V→V)"  ?* |
-!                    ?* "^@~fnaqe(V→V)^@~–(g)kau(V→V)"        ?* |
-!                    ?* "^@~fnaqe(V→V)^@~–(g)kaqe(V→V)"       ?* |
-!                    ?* "^@~fnaqlaatagh(V→V)^@~–(g)kau(V→V)"  ?* |
-!                    ?* "^@~fnaqlaatagh(V→V)^@~–(g)kaqe(V→V)" ?* |
-!                    ?* "^–qaghnaqe(V→V)^@~–(g)kau(V→V)"      ?* |
-!                    ?* "^–qaghnaqe(V→V)^@~–(g)kaqe(V→V)"     ?* |
-!                    ?* "^@~fna(V→V)^@~–(g)kau(V→V)"          ?* |
-!                    ?* "^@~fna(V→V)^@~–(g)kaqe(V→V)"         ?* |
-!                    ?* "^@~fnaqngu(V→V)^@~–(g)kau(V→V)"      ?* |
-!                    ?* "^@~fnaqngu(V→V)^@~–(g)kaqe(V→V)"     ?* |
-!                    ?* "^@~fyaghqaqe(V→V)^@~–(g)kau(V→V)"    ?* |
-!                    ?* "^@~fyaghqaqe(V→V)^@~–(g)kaqe(V→V)"   ?* |
-!                    ?* "^@~fyaghqau(V→V)^@~–(g)kau(V→V)"     ?* |
-!                    ?* "^@~fyaghqau(V→V)^@~–(g)kaqe(V→V)"    ?* |
-!                    ?* "^@~fnayagh(V→V)^@~–(g)kau(V→V)"      ?* |
-!                    ?* "^@~fnayagh(V→V)^@~–(g)kaqe(V→V)"     ?* |
-!                    ?* "^–qaghnayagh(V→V)^@~–(g)kau(V→V)"    ?* |
-!                    ?* "^–qaghnayagh(V→V)^@~–(g)kaqe(V→V)"   ?*
-!                  ];
-!
-!define ModalProgressive ~[ ?* "^@~fnayagh(V→V)^~(g)aqe(V→V)"       ? * |
-!                           ?* "^@~fnayagh(V→V)^~(g)aqlaatagh(V→V)" ?*
-!                         ];
-!
-!define ModalFutureFrustrative ~[ ?* "^@~fnayagh(V→V)^@lleqe(V→V)"   ?* |
-!                                 ?* "^@~fnayagh(V→V)^@~fnaagh(V→V)" ?* |
-!                                 ?* "^@~fnayagh(V→V)^@~fyagh(V→V)"  ?*
-!                               ];
-!
-!define ModalEvidential ~[ ?* "^@~fnayagh(V→V)^+(pete)fte(V→V)" ?* ];
-!
-!define ModalMood ~[ ?* "^@~fnayagh(V→V)" ?* "^[Sbrd.Intr]" ?* |
-!                    ?* "^@~fnayagh(V→V)" ?* "^[Sbrd.Trns]" ?*
-!                  ];
-!
-!define ModalFilters [ ModalPast              .o.
-!                      ModalProgressive       .o.
-!                      ModalFutureFrustrative .o.
-!					  ModalEvidential        
-!					  ModalMood
-!					];
-!
-!define Filters [ ModalFilters
-!               ];
+!--------------------
+! optative mood tags
+!--------------------
+define OptativeMoodTags ["[Opt.Pres.Intr.3Sg]" | "[Opt.Pres.Intr.1Sg]" | "[Opt.Pres.Intr.2Sg]" |
+                         "[Opt.Pres.Intr.3Pl]" | "[Opt.Pres.Intr.1Pl]" | "[Opt.Pres.Intr.2Pl]" |
+                         "[Opt.Pres.Intr.3Du]" | "[Opt.Pres.Intr.1Du]" | "[Opt.Pres.Intr.2Du]" |
+                         "[Opt.Pres.Trns.3Sg.3Sg]" | "[Opt.Pres.Trns.3Sg.3Pl]" | "[Opt.Pres.Trns.3Sg.3Du]" |
+                         "[Opt.Pres.Trns.3Pl.3Sg]" | "[Opt.Pres.Trns.3Pl.3Pl]" | "[Opt.Pres.Trns.3Pl.3Du]" |
+                         "[Opt.Pres.Trns.3Du.3Sg]" | "[Opt.Pres.Trns.3Du.3Pl]" | "[Opt.Pres.Trns.3Du.3Du]" |
+                         "[Opt.Pres.Trns.1Sg.3Sg]" | "[Opt.Pres.Trns.1Sg.3Pl]" | "[Opt.Pres.Trns.1Sg.3Du]" |
+                         "[Opt.Pres.Trns.1Pl.3Sg]" | "[Opt.Pres.Trns.1Pl.3Pl]" | "[Opt.Pres.Trns.1Pl.3Du]" |
+                         "[Opt.Pres.Trns.1Du.3Sg]" | "[Opt.Pres.Trns.1Du.3Pl]" | "[Opt.Pres.Trns.1Du.3Du]" |
+                         "[Opt.Pres.Trns.2Sg.3Sg]" | "[Opt.Pres.Trns.2Sg.3Pl]" | "[Opt.Pres.Trns.2Sg.3Du]" |
+                         "[Opt.Pres.Trns.2Pl.3Sg]" | "[Opt.Pres.Trns.2Pl.3Pl]" | "[Opt.Pres.Trns.2Pl.3Du]" |
+                         "[Opt.Pres.Trns.2Du.3Sg]" | "[Opt.Pres.Trns.2Du.3Pl]" | "[Opt.Pres.Trns.2Du.3Du]" |
+                         "[Opt.Pres.Trns.3Sg.1Sg]" | "[Opt.Pres.Trns.3Sg.1Pl]" | "[Opt.Pres.Trns.3Sg.1Du]" |
+                         "[Opt.Pres.Trns.3Pl.1Sg]" | "[Opt.Pres.Trns.3Pl.1Pl]" | "[Opt.Pres.Trns.3Pl.1Du]" |
+                         "[Opt.Pres.Trns.3Du.1Sg]" | "[Opt.Pres.Trns.3Du.1Pl]" | "[Opt.Pres.Trns.3Du.1Du]" |
+                         "[Opt.Pres.Trns.2Sg.1Sg]" | "[Opt.Pres.Trns.2Sg.1Pl]" | "[Opt.Pres.Trns.2Sg.1Du]" |
+                         "[Opt.Pres.Trns.2Pl.1Sg]" | "[Opt.Pres.Trns.2Pl.1Pl]" | "[Opt.Pres.Trns.2Pl.1Du]" |
+                         "[Opt.Pres.Trns.2Du.1Sg]" | "[Opt.Pres.Trns.2Du.1Pl]" | "[Opt.Pres.Trns.2Du.1Du]" |
+                         "[Opt.Pres.Trns.3Sg.2Sg]" | "[Opt.Pres.Trns.3Sg.2Pl]" | "[Opt.Pres.Trns.3Sg.2Du]" |
+                         "[Opt.Pres.Trns.3Pl.2Sg]" | "[Opt.Pres.Trns.3Pl.2Pl]" | "[Opt.Pres.Trns.3Pl.2Du]" |
+                         "[Opt.Pres.Trns.3Du.2Sg]" | "[Opt.Pres.Trns.3Du.2Pl]" | "[Opt.Pres.Trns.3Du.2Du]" |
+                         "[Opt.Pres.Trns.1Sg.2Sg]" | "[Opt.Pres.Trns.1Sg.2Pl]" | "[Opt.Pres.Trns.1Sg.2Du]" |
+                         "[Opt.Pres.Trns.1Pl.2Sg]" | "[Opt.Pres.Trns.1Pl.2Pl]" | "[Opt.Pres.Trns.1Pl.2Du]" |
+                         "[Opt.Pres.Trns.1Du.2Sg]" | "[Opt.Pres.Trns.1Du.2Pl]" | "[Opt.Pres.Trns.1Du.2Du]" |
+                         "[Opt.Neg.Pres.Trns.2Sg.3Pl]" | "[Opt.Neg.Pres.Trns.2Pl.3Pl]" | "[Opt.Neg.Pres.Trns.2Du.3Pl]" |
+                         "[Opt.Neg.Pres.Intr]"     | "[Opt.Neg.Pres.Trns]"     |
+                         "[Opt.Fut.Intr]"          | "[Opt.Fut.Trns]"          |
+						 "[Opt.Fut.Neg.Intr]"      | "[Opt.Fut.Neg.Trns]"      ];
+
+!-----------------
+! modal postbases
+!-----------------
+define Kayugu     [ "^" "@" "~" "–" "(g)" {kayugu} "(V→V)" ];
+define ModalNaqe  [ "^" "~f" {naqe} "(V→V)" ];
+define Naqlaatagh [ "^" "~f" {naqlaatagh} "(V→V)" ];
+define Qaghnaqe   [ "^" "–" {qaghnaqe} "(V→V)" ];
+define Na         [ "^" "@" "~f" {na} "(V→V)" ];
+define Naqngu     [ "^" "@" "~f" {naqngu} "(V→V)" ];
+define Yaghqaqe   [ "^" "@" "~f" {yaghqaqe} "(V→V)" ];
+define Yaghqau    [ "^" "@" "~f" {yaghqau} "(V→V)" ];
+define Nayagh     [ "^" "@" "~f" {nayagh} "(V→V)" ];
+define Qaghnayagh [ "^" "–" {qaghnagyh} "(V→V)" ];
+
+define ModalPostbase [ Kayugu   | ModalNaqe   | Naqlaatagh |
+                       Qaghnaqe | Na | Naqngu | Yaghqaqe   |
+                       Yaghqau  | Nayagh      | Qaghnayagh ];
+
+!---------------------
+! past tense postbases
+!---------------------
+define Kau  [ "^" "@" "~" "–" "(g)" {kau}  "(V→V)" ]; 
+define Kaqe [ "^" "@" "~" "–" "(g)" {kaqe} "(V→V)" ];
+define Ma   [ "^" "@" "~" ":" "(i/u)" {ma} "(V→V)" ];
+
+define PastTensePostbase [ Kau | Kaqe | Ma ];
+
+!------------------------------
+! progressive aspect postbases
+!------------------------------
+define Aqe       [ "^" "~" "(g)" {aqe} "(V→V)" ]; 
+define Aqlaatagh [ "^" "~" "(g)" {aqlaatagh} "(V→V)" ];
+
+!--------------------------------
+! future / frustrative postbases
+!--------------------------------
+define Lleqe [ "^" "@" {lleqe} "(V→V)" ];
+define Naagh [ "^" "@" "~f" {naagh} "(V→V)" ];
+define Yagh  [ "^" "@" "~f" {yagh} "(V→V)" ];
+
+!-----------------------------------
+! evidential / imputative postbases
+!-----------------------------------
+define PeteFte [ "^" "+" "(pete)" {fte} "(V→V)" ];
+
+define ModalPast              ~[ ?* ModalPostbase ?* [Kau | Kaqe] ?* |
+                                 ?* [Kayugu | Yaghqau | Yaghqaqe] ?* Ma ?* ];
+define ModalProgressive       ~[ ?* Nayagh ?* [Aqe | Aqlaatagh] ?* ];
+define ModalFutureFrustrative ~[ ?* Nayagh ?* [Lleqe | Naagh | Yagh] ?* ];
+define ModalEvidential        ~[ ?* Nayagh ?* PeteFte ?* ];
+define ModalMood              ~[ ?* Nayagh ?* "^" ["[Sbrd.Intr]" | "[Sbrd.Trns]"] ?* |
+                                 ?* [Kayugu | Nayagh | Yaghqau | Yaghqaqe] ?* "^" [OptativeMoodTags | "[Volitive.Of.Fear]" ?*] ];
+
+define ModalFilters [ ModalPast              .o.
+                      ModalProgressive       .o.
+                      ModalFutureFrustrative .o.
+                      ModalEvidential        .o.
+                      ModalMood              ];
+
+define Filters [ ModalFilters
+               ];
 
 
 !=======
@@ -485,5 +531,7 @@ define Rules [
     Undoubling
 ];
 
-define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | [ParallelForms .o. Rules] ] ];
-define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Rules .o. Uppercase] ] ];
+
+define FilteredLex [ Filters .o. Lexicon ];
+define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
+define GrammarUpper [ [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ] .o. Uppercase ];
