@@ -51,47 +51,72 @@ define V          [ e | FullVowel ];
 define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
 
 
-!=========
+!================
 ! FILTERS
-!=========
+!
+!   Description.
+!================
 
-!--------------------
-! optative mood tags
-!--------------------
-define OptativeMoodTags ["[Opt.Pres.Intr.3Sg]" | "[Opt.Pres.Intr.1Sg]" | "[Opt.Pres.Intr.2Sg]" |
-                         "[Opt.Pres.Intr.3Pl]" | "[Opt.Pres.Intr.1Pl]" | "[Opt.Pres.Intr.2Pl]" |
-                         "[Opt.Pres.Intr.3Du]" | "[Opt.Pres.Intr.1Du]" | "[Opt.Pres.Intr.2Du]" |
-                         "[Opt.Pres.Trns.3Sg.3Sg]" | "[Opt.Pres.Trns.3Sg.3Pl]" | "[Opt.Pres.Trns.3Sg.3Du]" |
-                         "[Opt.Pres.Trns.3Pl.3Sg]" | "[Opt.Pres.Trns.3Pl.3Pl]" | "[Opt.Pres.Trns.3Pl.3Du]" |
-                         "[Opt.Pres.Trns.3Du.3Sg]" | "[Opt.Pres.Trns.3Du.3Pl]" | "[Opt.Pres.Trns.3Du.3Du]" |
-                         "[Opt.Pres.Trns.1Sg.3Sg]" | "[Opt.Pres.Trns.1Sg.3Pl]" | "[Opt.Pres.Trns.1Sg.3Du]" |
-                         "[Opt.Pres.Trns.1Pl.3Sg]" | "[Opt.Pres.Trns.1Pl.3Pl]" | "[Opt.Pres.Trns.1Pl.3Du]" |
-                         "[Opt.Pres.Trns.1Du.3Sg]" | "[Opt.Pres.Trns.1Du.3Pl]" | "[Opt.Pres.Trns.1Du.3Du]" |
-                         "[Opt.Pres.Trns.2Sg.3Sg]" | "[Opt.Pres.Trns.2Sg.3Pl]" | "[Opt.Pres.Trns.2Sg.3Du]" |
-                         "[Opt.Pres.Trns.2Pl.3Sg]" | "[Opt.Pres.Trns.2Pl.3Pl]" | "[Opt.Pres.Trns.2Pl.3Du]" |
-                         "[Opt.Pres.Trns.2Du.3Sg]" | "[Opt.Pres.Trns.2Du.3Pl]" | "[Opt.Pres.Trns.2Du.3Du]" |
-                         "[Opt.Pres.Trns.3Sg.1Sg]" | "[Opt.Pres.Trns.3Sg.1Pl]" | "[Opt.Pres.Trns.3Sg.1Du]" |
-                         "[Opt.Pres.Trns.3Pl.1Sg]" | "[Opt.Pres.Trns.3Pl.1Pl]" | "[Opt.Pres.Trns.3Pl.1Du]" |
-                         "[Opt.Pres.Trns.3Du.1Sg]" | "[Opt.Pres.Trns.3Du.1Pl]" | "[Opt.Pres.Trns.3Du.1Du]" |
-                         "[Opt.Pres.Trns.2Sg.1Sg]" | "[Opt.Pres.Trns.2Sg.1Pl]" | "[Opt.Pres.Trns.2Sg.1Du]" |
-                         "[Opt.Pres.Trns.2Pl.1Sg]" | "[Opt.Pres.Trns.2Pl.1Pl]" | "[Opt.Pres.Trns.2Pl.1Du]" |
-                         "[Opt.Pres.Trns.2Du.1Sg]" | "[Opt.Pres.Trns.2Du.1Pl]" | "[Opt.Pres.Trns.2Du.1Du]" |
-                         "[Opt.Pres.Trns.3Sg.2Sg]" | "[Opt.Pres.Trns.3Sg.2Pl]" | "[Opt.Pres.Trns.3Sg.2Du]" |
-                         "[Opt.Pres.Trns.3Pl.2Sg]" | "[Opt.Pres.Trns.3Pl.2Pl]" | "[Opt.Pres.Trns.3Pl.2Du]" |
-                         "[Opt.Pres.Trns.3Du.2Sg]" | "[Opt.Pres.Trns.3Du.2Pl]" | "[Opt.Pres.Trns.3Du.2Du]" |
-                         "[Opt.Pres.Trns.1Sg.2Sg]" | "[Opt.Pres.Trns.1Sg.2Pl]" | "[Opt.Pres.Trns.1Sg.2Du]" |
-                         "[Opt.Pres.Trns.1Pl.2Sg]" | "[Opt.Pres.Trns.1Pl.2Pl]" | "[Opt.Pres.Trns.1Pl.2Du]" |
-                         "[Opt.Pres.Trns.1Du.2Sg]" | "[Opt.Pres.Trns.1Du.2Pl]" | "[Opt.Pres.Trns.1Du.2Du]" |
-                         "[Opt.Neg.Pres.Trns.2Sg.3Pl]" | "[Opt.Neg.Pres.Trns.2Pl.3Pl]" | "[Opt.Neg.Pres.Trns.2Du.3Pl]" |
-                         "[Opt.Neg.Pres.Intr]"     | "[Opt.Neg.Pres.Trns]"     |
-                         "[Opt.Fut.Intr]"          | "[Opt.Fut.Trns]"          |
-						 "[Opt.Fut.Neg.Intr]"      | "[Opt.Fut.Neg.Trns]"      ];
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+! 1. SHORTHAND DEFINITIONS 
+!
+!    Description.
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!-----------
+! mood tags
+!-----------
+define Concessive         [ "^" ["[Conc.Intr]" | "[Cond.Trns]"] ];
+
+define Conditional        [ "^" ["[Cond.Intr]" | "[Cond.Trns]"] ];
+
+define Consequential      [ "^" ["[Cnsq1.Intr]" | "[Cnsq1.Trns]" | "[Cnsq2.Intr]" | "[Cnsq2.Trns]"] ];
+
+define Contemporative     [ "^" ["[Ctmp.Intr]" | "[Ctmp.Trns]"] ];
+
+define Participial        [ "^" ["[Ptcp.Intr]" | "[Ptcp.Trns]"] ];
+
+define ParticipialOblique [ "^" ["[PtcpObl.Intr]" | "[PtcpObl.Trns]"] ];
+
+define Subordinative      [ "^" ["[Sbrd.Intr]" | "[Sbrd.Trns]"] ];
+
+define VolitiveOfFear     [ "^" "[Volitive.Of.Fear]" ];
+
+define Optative [ "^" ["[Opt.Pres.Intr.3Sg]"     | "[Opt.Pres.Intr.1Sg]"     | "[Opt.Pres.Intr.2Sg]"     |
+                       "[Opt.Pres.Intr.3Pl]"     | "[Opt.Pres.Intr.1Pl]"     | "[Opt.Pres.Intr.2Pl]"     |
+                       "[Opt.Pres.Intr.3Du]"     | "[Opt.Pres.Intr.1Du]"     | "[Opt.Pres.Intr.2Du]"     |
+                       "[Opt.Pres.Trns.3Sg.3Sg]" | "[Opt.Pres.Trns.3Sg.3Pl]" | "[Opt.Pres.Trns.3Sg.3Du]" |
+                       "[Opt.Pres.Trns.3Pl.3Sg]" | "[Opt.Pres.Trns.3Pl.3Pl]" | "[Opt.Pres.Trns.3Pl.3Du]" |
+                       "[Opt.Pres.Trns.3Du.3Sg]" | "[Opt.Pres.Trns.3Du.3Pl]" | "[Opt.Pres.Trns.3Du.3Du]" |
+                       "[Opt.Pres.Trns.1Sg.3Sg]" | "[Opt.Pres.Trns.1Sg.3Pl]" | "[Opt.Pres.Trns.1Sg.3Du]" |
+                       "[Opt.Pres.Trns.1Pl.3Sg]" | "[Opt.Pres.Trns.1Pl.3Pl]" | "[Opt.Pres.Trns.1Pl.3Du]" |
+                       "[Opt.Pres.Trns.1Du.3Sg]" | "[Opt.Pres.Trns.1Du.3Pl]" | "[Opt.Pres.Trns.1Du.3Du]" |
+                       "[Opt.Pres.Trns.2Sg.3Sg]" | "[Opt.Pres.Trns.2Sg.3Pl]" | "[Opt.Pres.Trns.2Sg.3Du]" |
+                       "[Opt.Pres.Trns.2Pl.3Sg]" | "[Opt.Pres.Trns.2Pl.3Pl]" | "[Opt.Pres.Trns.2Pl.3Du]" |
+                       "[Opt.Pres.Trns.2Du.3Sg]" | "[Opt.Pres.Trns.2Du.3Pl]" | "[Opt.Pres.Trns.2Du.3Du]" |
+                       "[Opt.Pres.Trns.3Sg.1Sg]" | "[Opt.Pres.Trns.3Sg.1Pl]" | "[Opt.Pres.Trns.3Sg.1Du]" |
+                       "[Opt.Pres.Trns.3Pl.1Sg]" | "[Opt.Pres.Trns.3Pl.1Pl]" | "[Opt.Pres.Trns.3Pl.1Du]" |
+                       "[Opt.Pres.Trns.3Du.1Sg]" | "[Opt.Pres.Trns.3Du.1Pl]" | "[Opt.Pres.Trns.3Du.1Du]" |
+                       "[Opt.Pres.Trns.2Sg.1Sg]" | "[Opt.Pres.Trns.2Sg.1Pl]" | "[Opt.Pres.Trns.2Sg.1Du]" |
+                       "[Opt.Pres.Trns.2Pl.1Sg]" | "[Opt.Pres.Trns.2Pl.1Pl]" | "[Opt.Pres.Trns.2Pl.1Du]" |
+                       "[Opt.Pres.Trns.2Du.1Sg]" | "[Opt.Pres.Trns.2Du.1Pl]" | "[Opt.Pres.Trns.2Du.1Du]" |
+                       "[Opt.Pres.Trns.3Sg.2Sg]" | "[Opt.Pres.Trns.3Sg.2Pl]" | "[Opt.Pres.Trns.3Sg.2Du]" |
+                       "[Opt.Pres.Trns.3Pl.2Sg]" | "[Opt.Pres.Trns.3Pl.2Pl]" | "[Opt.Pres.Trns.3Pl.2Du]" |
+                       "[Opt.Pres.Trns.3Du.2Sg]" | "[Opt.Pres.Trns.3Du.2Pl]" | "[Opt.Pres.Trns.3Du.2Du]" |
+                       "[Opt.Pres.Trns.1Sg.2Sg]" | "[Opt.Pres.Trns.1Sg.2Pl]" | "[Opt.Pres.Trns.1Sg.2Du]" |
+                       "[Opt.Pres.Trns.1Pl.2Sg]" | "[Opt.Pres.Trns.1Pl.2Pl]" | "[Opt.Pres.Trns.1Pl.2Du]" |
+                       "[Opt.Pres.Trns.1Du.2Sg]" | "[Opt.Pres.Trns.1Du.2Pl]" | "[Opt.Pres.Trns.1Du.2Du]" |
+                       "[Opt.Neg.Pres.Trns.2Sg.3Pl]" | "[Opt.Neg.Pres.Trns.2Pl.3Pl]" | "[Opt.Neg.Pres.Trns.2Du.3Pl]" |
+                       "[Opt.Neg.Pres.Intr]"     | "[Opt.Neg.Pres.Trns]"     |
+                       "[Opt.Fut.Intr]"          | "[Opt.Fut.Trns]"          |
+                       "[Opt.Fut.Neg.Intr]"      | "[Opt.Fut.Neg.Trns]"]
+                ];
 
 !-----------------
 ! modal postbases
 !-----------------
 define Kayugu     [ "^" "@" "~" "–" "(g)" {kayugu} "(V→V)" ];
-define ModalNaqe  [ "^" "~f" {naqe} "(V→V)" ];
+!define ModalNaqe  [ "^" "~f" {naqe} "(V→V)" ];
 define Naqlaatagh [ "^" "~f" {naqlaatagh} "(V→V)" ];
 define Qaghnaqe   [ "^" "–" {qaghnaqe} "(V→V)" ];
 define Na         [ "^" "@" "~f" {na} "(V→V)" ];
@@ -100,8 +125,7 @@ define Yaghqaqe   [ "^" "@" "~f" {yaghqaqe} "(V→V)" ];
 define Yaghqau    [ "^" "@" "~f" {yaghqau} "(V→V)" ];
 define Nayagh     [ "^" "@" "~f" {nayagh} "(V→V)" ];
 define Qaghnayagh [ "^" "–" {qaghnagyh} "(V→V)" ];
-
-define ModalPostbase [ Kayugu   | ModalNaqe   | Naqlaatagh |
+define ModalPostbase [ Kayugu   |             | Naqlaatagh |
                        Qaghnaqe | Na | Naqngu | Yaghqaqe   |
                        Yaghqau  | Nayagh      | Qaghnayagh ];
 
@@ -111,7 +135,6 @@ define ModalPostbase [ Kayugu   | ModalNaqe   | Naqlaatagh |
 define Kau  [ "^" "@" "~" "–" "(g)" {kau}  "(V→V)" ]; 
 define Kaqe [ "^" "@" "~" "–" "(g)" {kaqe} "(V→V)" ];
 define Ma   [ "^" "@" "~" ":" "(i/u)" {ma} "(V→V)" ];
-
 define PastTensePostbase [ Kau | Kaqe | Ma ];
 
 !------------------------------
@@ -119,6 +142,7 @@ define PastTensePostbase [ Kau | Kaqe | Ma ];
 !------------------------------
 define Aqe       [ "^" "~" "(g)" {aqe} "(V→V)" ]; 
 define Aqlaatagh [ "^" "~" "(g)" {aqlaatagh} "(V→V)" ];
+define ProgressiveAspectPostbase [ Aqe | Aqlaatagh ];
 
 !--------------------------------
 ! future / frustrative postbases
@@ -131,22 +155,81 @@ define Yagh  [ "^" "@" "~f" {yagh} "(V→V)" ];
 ! evidential / imputative postbases
 !-----------------------------------
 define PeteFte [ "^" "+" "(pete)" {fte} "(V→V)" ];
+define Ni      [ "^" "@" "~f" {ni} "(CmpdVbl)" ];
 
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! 2. CO-OCCURRENCE RESTRICTIONS 
+!
+!    Description.
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!-------------------------------------------------------------
+! modal co-occurrence restrictions [de Reuse (1994) p.116-117]
+!-------------------------------------------------------------
 define ModalPast              ~[ ?* ModalPostbase ?* [Kau | Kaqe] ?* |
                                  ?* [Kayugu | Yaghqau | Yaghqaqe] ?* Ma ?* ];
+
 define ModalProgressive       ~[ ?* Nayagh ?* [Aqe | Aqlaatagh] ?* ];
+
 define ModalFutureFrustrative ~[ ?* Nayagh ?* [Lleqe | Naagh | Yagh] ?* ];
+
 define ModalEvidential        ~[ ?* Nayagh ?* PeteFte ?* ];
-define ModalMood              ~[ ?* Nayagh ?* "^" ["[Sbrd.Intr]" | "[Sbrd.Trns]"] ?* |
-                                 ?* [Kayugu | Nayagh | Yaghqau | Yaghqaqe] ?* "^" [OptativeMoodTags | "[Volitive.Of.Fear]" ?*] ];
 
-define ModalFilters [ ModalPast              .o.
-                      ModalProgressive       .o.
-                      ModalFutureFrustrative .o.
-                      ModalEvidential        .o.
-                      ModalMood              ];
+define ModalMood              ~[ ?* Nayagh ?* Subordinative ?* |
+                                 ?* [Kayugu | Nayagh | Yaghqau | Yaghqaqe] ?* [Optative | VolitiveOfFear] ?* ];
 
-define Filters [ ModalFilters
+define ModalFilters [ ModalPast .o. ModalProgressive .o. ModalFutureFrustrative .o. ModalEvidential .o. ModalMood ];
+
+!------------------------------------------------------------------
+! past tense co-occurrence restrictions [de Reuse (1994) p.118-119]
+!------------------------------------------------------------------
+define PastFuture ~[ ?* PastTensePostbase ?* [Lleqe | Naagh] ?* ]; 
+
+define PastMood   ~[ ?* [Kau | Kaqe] ?* [Optative | Conditional] ?* |
+                     ?* Ma ?* Concessive ?* ];
+
+define PastTenseFilters [ PastFuture .o. PastMood ];
+
+!----------------------------------------------------------------------
+! progressive aspect co-occurrence restrictions [de Reuse (1994) p.119]
+!----------------------------------------------------------------------
+define ProgressiveMood ~[ ?* ProgressiveAspectPostbase ?* [Optative | Conditional] ?* ]; 
+
+define ProgressiveAspectFilters [ ProgressiveMood ];
+
+!------------------------------------------------------------------------
+! future / frustrative co-occurrence restrictions [de Reuse (1994) p.120]
+!------------------------------------------------------------------------
+define FutureEvidential ~[ ?* Naagh ?* PeteFte ?* ];
+
+define FutureMood ~[ ?* Lleqe ?* [Subordinative | Conditional    | Consequential      |
+                                  Concessive    | Contemporative | ParticipialOblique |
+                                  Optative      | VolitiveOfFear ] ?* ];
+define FrustrativeMood ~[ ?* Yagh ?* [Consequential | Contemporative | ParticipialOblique | Optative | VolitiveOfFear] ?* ]; 
+
+define FutureFrustrativeFilters [ FutureEvidential .o. FutureMood .o. FrustrativeMood ];
+
+!-------------------------------------------------------------------------------
+! evidential / imputative co-occurrence restrictions [de Reuse (1994) p.120-121]
+!-------------------------------------------------------------------------------
+define EvidentialMood ~[ ?* PeteFte ?* [Subordinative      | Conditional    | Consequential |
+                                        Concessive         | Contemporative | Participial   |
+                                        ParticipialOblique | Optative       | VolitiveOfFear] ?* ];
+
+define ImputativeMood ~[ ?* Ni ?* [Conditional | Contemporative | ParticipialOblique | Optative | VolitiveOfFear] ?* ];
+
+define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
+
+
+!~~~~~~~~~~~~~~~~~~~~~~~
+! 3. FILTER COMPOSITION
+!~~~~~~~~~~~~~~~~~~~~~~~
+define Filters [ ModalFilters             .o.
+                 PastTenseFilters         .o.
+                 ProgressiveAspectFilters .o.
+                 FutureFrustrativeFilters .o.
+                 EvidentialImputativeFilters
                ];
 
 
