@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 '''
 :author Emily Chen:
 :date   2020:
@@ -198,7 +200,7 @@ def generate_output_file(allAnalyses, filename, outputdir):
 
             # new sentence
             elif len(elem) > 5 and elem[:5] == "SENT:":
-                f.write(elem.split(":")[1])
+                f.write("π ".decode("utf-8").encode("utf-8") + elem.split(":")[1])
 
             # analyzer did not find analyses
             else:

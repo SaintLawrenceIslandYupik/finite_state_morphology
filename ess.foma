@@ -74,9 +74,13 @@ define Consequential      [ "^" ["[Cnsq1.Intr]" | "[Cnsq1.Trns]" | "[Cnsq2.Intr]
 
 define Contemporative     [ "^" ["[Ctmp.Intr]" | "[Ctmp.Trns]"] ];
 
+define Indicative         [ "^" ["[Ind.Intr]" | "[Ind.Trns]"] ];
+
 define Participial        [ "^" ["[Ptcp.Intr]" | "[Ptcp.Trns]"] ];
 
 define ParticipialOblique [ "^" ["[PtcpObl.Intr]" | "[PtcpObl.Trns]"] ];
+
+define Precessive         [ "^" ["[Prec.Intr]" | "[Prec.Trns]"] ];
 
 define Subordinative      [ "^" ["[Sbrd.Intr]" | "[Sbrd.Trns]"] ];
 
@@ -112,11 +116,43 @@ define Optative [ "^" ["[Opt.Pres.Intr.3Sg]"     | "[Opt.Pres.Intr.1Sg]"     | "
                        "[Opt.Fut.Neg.Intr]"      | "[Opt.Fut.Neg.Trns]"]
                 ];
 
+!-------------------- 
+! negative postbases
+!-------------------- 
+define Nghite   [ "^" "@" "–" {nghite} "(V→V)" ];
+define Negative [ "^" [ "@" "~" ":" "(ng)" {igate} "(V→V)"    |
+                        "@" {laaghigate} "(V→V)"              |
+                        "–" {pagigate} "(V→V)"                |
+                        "–" {qiigate} "(V→V)"                 |
+                        "~" ":" "(ng)" {ite} "(V→V)"          |
+                        "–" {pagite} "(V→V)"                  | 
+                        "–" {ketiite} "(V→V)"                 |
+                        "–" {llgite} "(V→V)"                  |
+                        "–" {llgiite} "(V→V)"                 |
+                        "@" "~" ":" "(i/u)" {mangite} "(V→V)" |
+                        "–" {pagumangite} "(V→V)"             |
+                        "@" "~f" {niite} "(V→V)"              |
+                        "@" "~f" {naanghite} "(V→V)"          |
+                        "–" {pagnaanghite} "(V→V)"            |
+                        "@" "–" {nghite} "(V→V)"              |
+                        "+" {panghite} "(V→V)"                |
+                        "–" {panghite} "(V→V)"                |
+                        "+" {pagunghite} "(V→V)"              |
+                        "–" {pagunghite} "(V→V)"              |
+                        "–" {llghite} "(V→V)"                 |
+                        "+" {pagningite} "(V→V)"              |
+                        "+" {yaghqiite} "(V→V)"               |
+                        "@" "~f" "–" {yiite} "(V→V)"          |
+                        "+" {yugniite} "(V→V)"                |
+                        "@" "~f" {nanigh} "(V→V)"             |
+                        "@" "~f" {nanighqe} "(V→V)"           ]
+                ];
+
 !-----------------
 ! modal postbases
 !-----------------
 define Kayugu     [ "^" "@" "~" "–" "(g)" {kayugu} "(V→V)" ];
-!define ModalNaqe  [ "^" "~f" {naqe} "(V→V)" ];
+define Naqe       [ "^" "~f" {naqe} "(V→V)" ];
 define Naqlaatagh [ "^" "~f" {naqlaatagh} "(V→V)" ];
 define Qaghnaqe   [ "^" "–" {qaghnaqe} "(V→V)" ];
 define Na         [ "^" "@" "~f" {na} "(V→V)" ];
@@ -125,7 +161,7 @@ define Yaghqaqe   [ "^" "@" "~f" {yaghqaqe} "(V→V)" ];
 define Yaghqau    [ "^" "@" "~f" {yaghqau} "(V→V)" ];
 define Nayagh     [ "^" "@" "~f" {nayagh} "(V→V)" ];
 define Qaghnayagh [ "^" "–" {qaghnagyh} "(V→V)" ];
-define ModalPostbase [ Kayugu   |             | Naqlaatagh |
+define ModalPostbase [ Kayugu   | Naqe        | Naqlaatagh |
                        Qaghnaqe | Na | Naqngu | Yaghqaqe   |
                        Yaghqau  | Nayagh      | Qaghnayagh ];
 
@@ -163,6 +199,18 @@ define Ni      [ "^" "@" "~f" {ni} "(CmpdVbl)" ];
 !
 !    Description.
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!---------------------------------------------
+! negative postbase co-occurence restrictions
+!---------------------------------------------
+define OnlyOneNeg ~[ ?* Negative ?* Nghite ?* ];
+
+define HasLexicalizedForm ~[ ?* [Ma | Aqe | Lleqe] ?* Nghite ?* [ Concessive | Consequential | Contemporative     |
+                                                                  Indicative | Participial   | ParticipialOblique |
+                                                                  Precessive | Subordinative | Optative           ]
+                           ];
+
+define NegativeFilters [ OnlyOneNeg .o. HasLexicalizedForm ];
 
 !-------------------------------------------------------------
 ! modal co-occurrence restrictions [de Reuse (1994) p.116-117]
@@ -225,10 +273,11 @@ define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
 !~~~~~~~~~~~~~~~~~~~~~~~
 ! 3. FILTER COMPOSITION
 !~~~~~~~~~~~~~~~~~~~~~~~
-define Filters [ ModalFilters             .o.
-                 PastTenseFilters         .o.
-                 ProgressiveAspectFilters .o.
-                 FutureFrustrativeFilters .o.
+define Filters [ NegativeFilters             .o.
+	             ModalFilters                .o.
+                 PastTenseFilters            .o.
+                 ProgressiveAspectFilters    .o.
+                 FutureFrustrativeFilters    .o.
                  EvidentialImputativeFilters
                ];
 
@@ -512,7 +561,7 @@ define MatchVoicing t [z | y] -> s                                              
                           g h -> 0   ||                   C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
                             v -> f   ||                     _ ("^") Stop        .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
                             v -> f   ||          Stop ("^") _                   .o. ! e.g. taaqfik
-                            w -> w h ||                     _ t                 ;   ! [Badten (2008) p.682] 
+                            w -> w h ||       [ C - h | V ] _ t                 ;   ! [Badten (2008) p.682] 
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
