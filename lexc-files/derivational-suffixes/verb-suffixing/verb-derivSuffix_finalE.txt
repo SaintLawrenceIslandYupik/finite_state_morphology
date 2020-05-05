@@ -4,7 +4,7 @@ LEXICON VerbPostbaseII
 !  to verb stems that end in -e
 !==========================================
 
-0:0  NegationII;
+0:0  ModalII;
 
 ^~sf–ghhaleg(V→XCLM):^ghhalek              #;             ! how V! (exclamation)
 ^@~%:(i/u)magh*(V→QUANTQUAL):^%{.f.%}umagh QuantQualInfl; ! while V-ing
@@ -231,98 +231,96 @@ LEXICON VerbPostbaseII
 ^+(te)ste(CmpdVbl):^s%{t%}e                    VerbPostbaseV;   ! to cause one to V; to allow one to V; to make one V; to let one V; to have one V
 ^+(te)sigate(CmpdVbl):^siga%{t%}e**            VerbPostbaseVI;  ! to prevent or keep one from V-ing; to not allow one to V; to not let one V
 
-!=================
-LEXICON NegationII
-!=================
-0:0                                            ClassFreeII;
-^@~%:(ng)igate(V→V):^%{.f.%}iga%{t%}e**        ClassFreeVI; ! to never V; to not be V-ing at the present time
-^@laaghigate(V→V):^laaghiga%{t%}e**            ClassFreeVI; ! to seldom V; to infrequently V; to not V enough; inadequately V
-^–pagigate(V→V):^pagiga%{t%}e**                ClassFreeVI; ! to V infrequently; to seldom V 
-^–qiigate(V→V):^qiiga%{t%}e**                  ClassFreeVI; ! to never briefly V
-^~%:(ng)ite(V→V):^%{.f.%}ngi%{t%}e**           ClassFreeVI; ! to lack the quality of V 
-^–pagite(V→V):^pagi%{t%}e**                    ClassFreeVI; ! for there not to be much V-ness
-^–ketiite(V→V):^ketii%{t%}e**                  ClassFreeVI; ! to not tend to V 
-^–llgite(V→V):^llgi%{t%}e**                    ClassFreeVI; ! to V poorly
-^–llgiite(V→V):^llgii%{t%}e**                  ClassFreeVI; ! to become a poor V-er
-^@~%:(i/u)mangite(V→V):^%{.f.%}umangi%{t%}e**  ClassFreeVI; ! to not have V-ed
-^–pagumangite(V→V):^pagumangi%{t%}e**          ClassFreeVI; ! to not have V-ed so much
-^@~fniite(V→V):^%{.f.%}nii%{t%}e**             ClassFreeVI; ! to not cause one to V
-^@~fnaanghite(V→V):^%{.f.%}naanghi%{t%}e*      ClassFreeVI; ! to not V in the future; won't V
-^–pagnaanghite(V→V):^pagnaanghi%{t%}e**        ClassFreeVI; ! to not V too much, very much in the future 
-^@–nghite(V→V):^nghi%{t%}e**                   ClassFreeVI; ! to not V
-^+panghite(V→V):^panghi%{t%}e**                ClassFreeVI; ! to insufficiently V; to not V enough
-^–panghite(V→V):^panghi%{t%}e**                ClassFreeVI; ! to insufficiently V; to not V enough
-^+pagunghite(V→V):^pagunghi%{t%}e**            ClassFreeVI; ! to not be sufficiently V
-^–pagunghite(V→V):^pagunghi%{t%}e**            ClassFreeVI; ! to not be sufficiently V
-^–llghite(V→V):^llghi%{t%}e**                  ClassFreeVI; ! to not V
-^+pagningite(V→V):^pagningi%{t%}e**            ClassFreeVI; ! to not be able to V; cannot V
-^+yaghqiite(V→V):^yaghqii%{t%}e**              ClassFreeVI; ! to not to have to V
-^@~f–yiite(V→V):^%{.f.%}yii%{t%}e**            ClassFreeVI; ! to poorly V habitually
-^+yugniite(V→V):^yugnii%{t%}e**                ClassFreeVI; ! to not find it easy to V; to not want to V
-^@~fnanigh(V→V):^%{.f.%}nanigh                 ClassFreeIV; ! to cease V-ing; to stop V-ing; to quit V-ing
-^@~fnanighqe(V→V):^%{.f.%}nanighqe             ClassFreeII; ! to make one cease V-ing
-
-!==================
-LEXICON ClassFreeII
-!==================
-0:0                                      ModalII;
-^–ghllag(V→V):^ghllag                    ModalIII; ! to V or be V in a big way; to V for a long time
-^–ghllagu(V→V):^ghllagu                  ModalI;   ! to be very V; to be busy V-ing
-^~f–vag(V→V):^%{.f.%}vag                 ModalIII; ! to V in a big way; to V hard; to V intensely
-^+pag(V→V):^pag                          ModalIII; ! to V in a big way; to V intensively; to V excessively
-^–pag(V→V):^pag                          ModalIII; ! to V in a big way; to V intensively; to V excessively
-^–pagllag(V→V):^pagllag                  ModalIII; ! to V too much, so much, intensively, excessively
-^–ghrukutaagh(V→V):^ghrukutaagh          ModalIV;  ! for very large, huge one to V 
-^@lugh(V→V):^lugh                        ModalIV;  ! to V angrily
-^–ngeltagh(V→V):^ngeltagh                ModalIV;  ! to V in a small way
-^–ngertagh(V→V):^ngertagh                ModalIV;  ! to V in a small way
-^–ngestagh(V→V):^ngestagh                ModalIV;  ! to V in a small way
-^–mlaagh(V→V):^mlaagh                    ModalIV;  ! to V a little
-^–mraagh(V→V):^mraagh                    ModalIV;  ! to V a little
-^–mzaagh(V→V):^mzaagh                    ModalIV;  ! to V a little
-^–vlaagh(V→V):^vlaagh                    ModalIV;  ! to V a little
-^–vraagh(V→V):^vraagh                    ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^–vzaagh(V→V):^vzaagh                    ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^–mleghagh(V→V):^mleghagh                ModalIV;  ! to V a little
-^–mreghagh(V→V):^mreghagh                ModalIV;  ! to V a little
-^–mzegagh(V→V):^mzegagh                  ModalIV;  ! to V a little
-^–vleghagh(V→V):^vleghagh                ModalIV;  ! to V a little
-^–vreghagh(V→V):^vreghagh                ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^–vzeghagh(V→V):^vzeghagh                ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^+reghagh(V→V):^reghagh                  ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^–msegagh(V→V):^msegagh                  ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^–vyeghagh(V→V):^vyeghagh                ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^–vlegagh(V→V):^vlegagh                  ModalIV;  ! to V a little
-^–vregagh(V→V):^vregagh                  ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^+regagh(V→V):^regagh                    ModalIV;  ! to V a little [de Reuse (1994), p.162]
-^%:(ng)inagh(V→V):^nginagh               ModalIV;  ! to only V; to go right on V-ing
-^–ghhiinagh(V→V):^ghhiinagh              ModalIV;  ! to only a little V [de Reuse (1994) p.162]
-^~f(a)ghesnagh(V→V):^%{.f.%}aghesnagh    ModalIV;  ! to just V; to V just now; to only V (and perhaps in vain)
-^–pigesnagh(V→V):^pigesnagh              ModalIV;  ! to V in vain; to V for naught; to finally V
-^–raaghinagh(V→V):^raaghinagh            ModalIV;  ! to only V; to do nothing but V (ironically?) 
-^~–(ghw/ngw/w)aagh(V→V):^%{.f.%}ngwaagh  ModalIV;  ! to diligently V; to thoroughly V; to V at the proper time; to V attentively
-^~–kanigh(V→V):^%{.f.%}kanigh            ModalIV;  ! to be rather V; to be fairly V; to V more and more
-^–msiigh(V→V):^msiigh                    ModalIV;  ! to V ineffectively or without putting effort into it; to V under conditions of hardship
-^–vyiigh(V→V):^vyiigh                    ModalIV;  ! to V carelessly; to V in a rough way 
-^–vziigh(V→V):^vziigh                    ModalIV;  ! to V carelessly; to V in a rough way
-^–llaag(V→V):^llaag                      ModalIII; ! to V in a crude or clumsy way; crude one V-s
-^–llegagh(V→V):^llegagh                  ModalIV;  ! to V crudely
-^+llug(V→V):^llug                        ModalIII; ! to V in an undesirable or bad way; for undesirable or bad one to V
-^–llug(V→V):^llug                        ModalIII; ! to V in an undesirable or bad way; for undesirable or bad one to V
-^–qrug(V→V):^qrug                        ModalIII; ! for troublesome one to V 
-^–pigte(V→V):^pig%{t%}e                  ModalV;   ! to be very V
-^–pigagh(V→V):^pigagh                    ModalIV;  ! to be V exactly (location)
-^–pigllag(V→V):^pigllag                  ModalIII; ! to really, really V; to V all the way 
-^–pigu(V→V):^pigu                        ModalI;   ! to be so V
-^–qragh(V→V):^qragh                      ModalIV;  ! to do fancy V-ing; to V a new thing
-^+rragh(V→V):^rragh                      ModalIV;  ! to V in a fancy way
-^+sugnite(V→V):^sugni%{t%}e              ModalV;   ! to seem to be V-ing
-^–mrugnite(V→V):^mrugni%{t%}e            ModalV;   ! to seem to be somewhat V 
-^–pestaagh(V→V):^pestaagh                ModalIV;  ! to truly V
+!----------------------
+! class-free postbases
+!----------------------
+^–ghllag(V→V):^ghllag                    VerbPostbaseIII; ! to V or be V in a big way; to V for a long time
+^–ghllagu(V→V):^ghllagu                  VerbPostbaseI;   ! to be very V; to be busy V-ing
+^~f–vag(V→V):^%{.f.%}vag                 VerbPostbaseIII; ! to V in a big way; to V hard; to V intensely
+^+pag(V→V):^pag                          VerbPostbaseIII; ! to V in a big way; to V intensively; to V excessively
+^–pag(V→V):^pag                          VerbPostbaseIII; ! to V in a big way; to V intensively; to V excessively
+^–pagllag(V→V):^pagllag                  VerbPostbaseIII; ! to V too much, so much, intensively, excessively
+^–ghrukutaagh(V→V):^ghrukutaagh          VerbPostbaseIV;  ! for very large, huge one to V 
+^@lugh(V→V):^lugh                        VerbPostbaseIV;  ! to V angrily
+^–ngeltagh(V→V):^ngeltagh                VerbPostbaseIV;  ! to V in a small way
+^–ngertagh(V→V):^ngertagh                VerbPostbaseIV;  ! to V in a small way
+^–ngestagh(V→V):^ngestagh                VerbPostbaseIV;  ! to V in a small way
+^–mlaagh(V→V):^mlaagh                    VerbPostbaseIV;  ! to V a little
+^–mraagh(V→V):^mraagh                    VerbPostbaseIV;  ! to V a little
+^–mzaagh(V→V):^mzaagh                    VerbPostbaseIV;  ! to V a little
+^–vlaagh(V→V):^vlaagh                    VerbPostbaseIV;  ! to V a little
+^–vraagh(V→V):^vraagh                    VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^–vzaagh(V→V):^vzaagh                    VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^–mleghagh(V→V):^mleghagh                VerbPostbaseIV;  ! to V a little
+^–mreghagh(V→V):^mreghagh                VerbPostbaseIV;  ! to V a little
+^–mzegagh(V→V):^mzegagh                  VerbPostbaseIV;  ! to V a little
+^–vleghagh(V→V):^vleghagh                VerbPostbaseIV;  ! to V a little
+^–vreghagh(V→V):^vreghagh                VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^–vzeghagh(V→V):^vzeghagh                VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^+reghagh(V→V):^reghagh                  VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^–msegagh(V→V):^msegagh                  VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^–vyeghagh(V→V):^vyeghagh                VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^–vlegagh(V→V):^vlegagh                  VerbPostbaseIV;  ! to V a little
+^–vregagh(V→V):^vregagh                  VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^+regagh(V→V):^regagh                    VerbPostbaseIV;  ! to V a little [de Reuse (1994), p.162]
+^%:(ng)inagh(V→V):^nginagh               VerbPostbaseIV;  ! to only V; to go right on V-ing
+^–ghhiinagh(V→V):^ghhiinagh              VerbPostbaseIV;  ! to only a little V [de Reuse (1994) p.162]
+^~f(a)ghesnagh(V→V):^%{.f.%}aghesnagh    VerbPostbaseIV;  ! to just V; to V just now; to only V (and perhaps in vain)
+^–pigesnagh(V→V):^pigesnagh              VerbPostbaseIV;  ! to V in vain; to V for naught; to finally V
+^–raaghinagh(V→V):^raaghinagh            VerbPostbaseIV;  ! to only V; to do nothing but V (ironically?) 
+^~–(ghw/ngw/w)aagh(V→V):^%{.f.%}ngwaagh  VerbPostbaseIV;  ! to diligently V; to thoroughly V; to V at the proper time; to V attentively
+^~–kanigh(V→V):^%{.f.%}kanigh            VerbPostbaseIV;  ! to be rather V; to be fairly V; to V more and more
+^–msiigh(V→V):^msiigh                    VerbPostbaseIV;  ! to V ineffectively or without putting effort into it; to V under conditions of hardship
+^–vyiigh(V→V):^vyiigh                    VerbPostbaseIV;  ! to V carelessly; to V in a rough way 
+^–vziigh(V→V):^vziigh                    VerbPostbaseIV;  ! to V carelessly; to V in a rough way
+^–llaag(V→V):^llaag                      VerbPostbaseIII; ! to V in a crude or clumsy way; crude one V-s
+^–llegagh(V→V):^llegagh                  VerbPostbaseIV;  ! to V crudely
+^+llug(V→V):^llug                        VerbPostbaseIII; ! to V in an undesirable or bad way; for undesirable or bad one to V
+^–llug(V→V):^llug                        VerbPostbaseIII; ! to V in an undesirable or bad way; for undesirable or bad one to V
+^–qrug(V→V):^qrug                        VerbPostbaseIII; ! for troublesome one to V 
+^–pigte(V→V):^pig%{t%}e                  VerbPostbaseV;   ! to be very V
+^–pigagh(V→V):^pigagh                    VerbPostbaseIV;  ! to be V exactly (location)
+^–pigllag(V→V):^pigllag                  VerbPostbaseIII; ! to really, really V; to V all the way 
+^–pigu(V→V):^pigu                        VerbPostbaseI;   ! to be so V
+^–qragh(V→V):^qragh                      VerbPostbaseIV;  ! to do fancy V-ing; to V a new thing
+^+rragh(V→V):^rragh                      VerbPostbaseIV;  ! to V in a fancy way
+^+sugnite(V→V):^sugni%{t%}e              VerbPostbaseV;   ! to seem to be V-ing
+^–mrugnite(V→V):^mrugni%{t%}e            VerbPostbaseV;   ! to seem to be somewhat V 
+^–pestaagh(V→V):^pestaagh                VerbPostbaseIV;  ! to truly V
 
 !--------------------
+! negation postbases
+!--------------------
+^@~%:(ng)igate(V→V):^%{.f.%}iga%{t%}e**        VerbPostbaseVI; ! to never V; to not be V-ing at the present time
+^@laaghigate(V→V):^laaghiga%{t%}e**            VerbPostbaseVI; ! to seldom V; to infrequently V; to not V enough; inadequately V
+^–pagigate(V→V):^pagiga%{t%}e**                VerbPostbaseVI; ! to V infrequently; to seldom V 
+^–qiigate(V→V):^qiiga%{t%}e**                  VerbPostbaseVI; ! to never briefly V
+^~%:(ng)ite(V→V):^%{.f.%}ngi%{t%}e**           VerbPostbaseVI; ! to lack the quality of V 
+^–pagite(V→V):^pagi%{t%}e**                    VerbPostbaseVI; ! for there not to be much V-ness
+^–ketiite(V→V):^ketii%{t%}e**                  VerbPostbaseVI; ! to not tend to V 
+^–llgite(V→V):^llgi%{t%}e**                    VerbPostbaseVI; ! to V poorly
+^–llgiite(V→V):^llgii%{t%}e**                  VerbPostbaseVI; ! to become a poor V-er
+^@~%:(i/u)mangite(V→V):^%{.f.%}umangi%{t%}e**  VerbPostbaseVI; ! to not have V-ed
+^–pagumangite(V→V):^pagumangi%{t%}e**          VerbPostbaseVI; ! to not have V-ed so much
+^@~fniite(V→V):^%{.f.%}nii%{t%}e**             VerbPostbaseVI; ! to not cause one to V
+^@~fnaanghite(V→V):^%{.f.%}naanghi%{t%}e*      VerbPostbaseVI; ! to not V in the future; won't V
+^–pagnaanghite(V→V):^pagnaanghi%{t%}e**        VerbPostbaseVI; ! to not V too much, very much in the future 
+^@–nghite(V→V):^nghi%{t%}e**                   VerbPostbaseVI; ! to not V
+^+panghite(V→V):^panghi%{t%}e**                VerbPostbaseVI; ! to insufficiently V; to not V enough
+^–panghite(V→V):^panghi%{t%}e**                VerbPostbaseVI; ! to insufficiently V; to not V enough
+^+pagunghite(V→V):^pagunghi%{t%}e**            VerbPostbaseVI; ! to not be sufficiently V
+^–pagunghite(V→V):^pagunghi%{t%}e**            VerbPostbaseVI; ! to not be sufficiently V
+^–llghite(V→V):^llghi%{t%}e**                  VerbPostbaseVI; ! to not V
+^+pagningite(V→V):^pagningi%{t%}e**            VerbPostbaseVI; ! to not be able to V; cannot V
+^+yaghqiite(V→V):^yaghqii%{t%}e**              VerbPostbaseVI; ! to not to have to V
+^@~f–yiite(V→V):^%{.f.%}yii%{t%}e**            VerbPostbaseVI; ! to poorly V habitually
+^+yugniite(V→V):^yugnii%{t%}e**                VerbPostbaseVI; ! to not find it easy to V; to not want to V
+^@~fnanigh(V→V):^%{.f.%}nanigh                 VerbPostbaseIV; ! to cease V-ing; to stop V-ing; to quit V-ing
+^@~fnanighqe(V→V):^%{.f.%}nanighqe             VerbPostbaseII; ! to make one cease V-ing
+
+!~~~~~~~~~~~~~~~~~~~~
 ! the auxiliary node
-!--------------------
+!~~~~~~~~~~~~~~~~~~~~
 !==============
 LEXICON ModalII
 !==============
