@@ -120,7 +120,7 @@ LEXICON NounInflV
 !----------------------------------------------|
 !             PERLATIVE (vialis)               |
 !----------------------------------------------|------------------------------------------------|-------------------------------------------|
-^[Prl.Sg]:^kun                        PostInflV; ^[Prl.Pl]:^etgun                      PostInflV; ^[Prl.Du]:^egnegun               PostInflV;
+^[Prl.Sg]:^kun                        PostInflV; ^[Prl.Pl]:^etgun                      PostInflV; ^[Prl.Du]:^egnekun               PostInflV;
                                                  ^[Prl.Pl]:^teggun                     PostInflV;                                           |
 !----------------------------------------------|------------------------------------------------|-------------------------------------------|
 ^[Prl.1SgPoss.Sg]:^%{.m.%}mkun        PostInflV; ^[Prl.1SgPoss.Pl]:^%{.m.%}mkun        PostInflV; ^[Prl.1SgPoss.Du]:^egemkun       PostInflV;

@@ -120,7 +120,7 @@ LEXICON NounInflIV
 !------------------------------------------------|
 !               PERLATIVE (vialis)               |
 !------------------------------------------------|-------------------------------------------------|-------------------------------------------------------|
-^[Prl.Sg]:^kun                         PostInflIV; ^[Prl.Pl]:^%{.c.%}%{E%}tgun           PostInflIV; ^[Prl.Du]:^%{.c.%}%{E%}gnegun               PostInflIV;
+^[Prl.Sg]:^kun                         PostInflIV; ^[Prl.Pl]:^%{.c.%}%{E%}tgun           PostInflIV; ^[Prl.Du]:^%{.c.%}%{E%}gnekun               PostInflIV;
                                                    ^[Prl.Pl]:^teggun                     PostInflIV;
 !------------------------------------------------|-------------------------------------------------|-------------------------------------------------------|
 ^[Prl.1SgPoss.Sg]:^%{.m.%}mkun         PostInflIV; ^[Prl.1SgPoss.Pl]:^%{.m.%}mkun        PostInflIV; ^[Prl.1SgPoss.Du]:^%{.c.%}%{E%}gemkun       PostInflIV;

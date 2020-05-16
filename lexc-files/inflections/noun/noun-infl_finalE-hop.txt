@@ -124,7 +124,7 @@ LEXICON NounInflIX
 !-----------------------------------------------|
 !             PERLATIVE (vialis)                |
 !-----------------------------------------------|-------------------------------------------------|----------------------------------------------|
-^[Prl.Sg]:^%{.f.%}kun                 PostInflIX; ^[Prl.Pl]:^tgun                       PostInflIX; ^[Prl.Du]:^gnegun                  PostInflIX;
+^[Prl.Sg]:^%{.f.%}kun                 PostInflIX; ^[Prl.Pl]:^tgun                       PostInflIX; ^[Prl.Du]:^gnekun                  PostInflIX;
 !-----------------------------------------------|-------------------------------------------------|----------------------------------------------|
 ^[Prl.1SgPoss.Sg]:^mkun               PostInflIX; ^[Prl.1SgPoss.Pl]:^mkun               PostInflIX; ^[Prl.1SgPoss.Du]:^gemkun          PostInflIX;
 ^[Prl.1PlPoss.Sg]:^mteggun            PostInflIX; ^[Prl.1PlPoss.Pl]:^mteggun            PostInflIX; ^[Prl.1PlPoss.Du]:^gemteggun       PostInflIX;

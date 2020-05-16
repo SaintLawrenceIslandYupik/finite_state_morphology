@@ -576,7 +576,8 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. ,
 
 define PreventGemination n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
                          n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
-                         v -> 0 || .#. n u u _ "^" v ;   ! nuuve+vig [Badten (2008) p.693]
+                         v -> 0 || .#. n u u _ "^" v .o. ! nuuve+vig [Badten (2008) p.693]
+						 s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
 
 
 define CleanupDigraph %{k%}   -> 0   .o.

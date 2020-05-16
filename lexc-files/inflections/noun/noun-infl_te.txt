@@ -128,7 +128,7 @@ LEXICON NounInflVI
 !-----------------------------------------------|
 !              PERLATIVE (vialis)               |
 !-----------------------------------------------|-------------------------------------------------|---------------------------------------------|
-^[Prl.Sg]:^%{.f.%}kun                 PostInflVI; ^[Prl.Pl]:^tgun                       PostInflVI; ^[Prl.Du]:^gnegun                 PostInflVI;
+^[Prl.Sg]:^%{.f.%}kun                 PostInflVI; ^[Prl.Pl]:^tgun                       PostInflVI; ^[Prl.Du]:^gnekun                 PostInflVI;
 !-----------------------------------------------|-------------------------------------------------|---------------------------------------------|
 ^[Prl.1SgPoss.Sg]:^mkun               PostInflVI; ^[Prl.1SgPoss.Pl]:^mkun               PostInflVI; ^[Prl.1SgPoss.Du]:^gemkun         PostInflVI;
 ^[Prl.1PlPoss.Sg]:^mteggun            PostInflVI; ^[Prl.1PlPoss.Pl]:^mteggun            PostInflVI; ^[Prl.1PlPoss.Du]:^gemteggun      PostInflVI;

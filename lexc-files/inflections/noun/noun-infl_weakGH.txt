@@ -121,7 +121,7 @@ LEXICON NounInflIII
 !------------------------------------------------|
 !              PERLATIVE (vialis)                |
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
-^[Prl.Sg]:^%{.w.%}kun                 PostInflIII; ^[Prl.Pl]:^%{.w.%}tgun                PostInflIII; ^[Prl.Du]:^%{.w.%}gnegun               PostInflIII;
+^[Prl.Sg]:^%{.w.%}kun                 PostInflIII; ^[Prl.Pl]:^%{.w.%}tgun                PostInflIII; ^[Prl.Du]:^%{.w.%}gnekun               PostInflIII;
 !------------------------------------------------|--------------------------------------------------|---------------------------------------------------|
 ^[Prl.1SgPoss.Sg]:^%{.m.%}mkun        PostInflIII; ^[Prl.1SgPoss.Pl]:^%{.m.%}mkun        PostInflIII; ^[Prl.1SgPoss.Du]:^%{.w.%}gemkun       PostInflIII;
 ^[Prl.1PlPoss.Sg]:^%{.m.%}mteggun     PostInflIII; ^[Prl.1PlPoss.Pl]:^%{.m.%}mteggun     PostInflIII; ^[Prl.1PlPoss.Du]:^%{.w.%}gemteggun    PostInflIII;
