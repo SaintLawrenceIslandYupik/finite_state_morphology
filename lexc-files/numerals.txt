@@ -2,38 +2,77 @@
 LEXICON Numeral
 !==============
 
-ataasigh         NumeralTag; ! one
-maalghug         NumeralTag; ! two
-malghug          NumeralTag; ! two
-pingayut         NumeralTag; ! three
-estamat          NumeralTag; ! four
-tallimat         NumeralTag; ! five
-aghvinleg        NumeralTag; ! six
-maaghraghvinleg  NumeralTag; ! seven
-pingayuneng      NumeralTag; ! eight
-estamaneng       NumeralTag; ! nine
-ingluleg         NumeralTag; ! one having a complement
-qula             NumeralTag; ! ten 
-siipneqluku      NumeralTag; ! having a remainder of one
-siipneqlukeg     NumeralTag; ! having a remainder of two
-siipneqluki      NumeralTag; ! having a remainder
-akimigagh        NumeralTag; ! fifteen
-yuginagh         NumeralTag; ! twenty
-pingayuneng      NumeralTag; ! 'qula pingayuneng inglulek siipneqluku'
-estamaneng       NumeralTag; ! 'qula estamaneng inglulek siipneqluku'
+ataasigh:ataasi%{g%}h    NumeralTagIII; ! one
+maalghug                 NumeralTagII;  ! two
+malghug                  NumeralTagII;  ! two
+pingayut                 NumeralTagII;  ! three
+estamat                  NumeralTagII;  ! four
+tallimat                 NumeralTagII;  ! five
+aghvinleg                NumeralTagVII; ! six
+maaghraghvinleg          NumeralTagVII; ! seven
+pingayuneng              NumeralTagII;  ! eight
+estamaneng               NumeralTagII;  ! nine
+ingluleg                 NumeralTagVII; ! one having a complement
+qula                     NumeralTagI;   ! ten 
+siipneqluku              NumeralTagI;   ! having a remainder of one
+siipneqlukeg             NumeralTagVII; ! having a remainder of two
+siipneqluki              NumeralTagI;   ! having a remainder
+akimigagh:akimiga%{g%}h  NumeralTagIII; ! fifteen
+yuginagh                 NumeralTagIII; ! twenty
+pingayuneng              NumeralTagII;  ! 'qula pingayuneng inglulek siipneqluku'
+estamaneng               NumeralTagII;  ! 'qula estamaneng inglulek siipneqluku'
 
 
-!=================
-LEXICON NumeralTag
-!=================
+!==================
+LEXICON NumeralTagI
+!==================
+(NUM):0  NumeralPostbaseI;
 
-(NUM):0  NumeralPostbase;
+!===================
+LEXICON NumeralTagII
+!===================
+(NUM):0  NumeralPostbaseII;
+
+!====================
+LEXICON NumeralTagIII
+!====================
+(NUM):0  NumeralPostbaseIII;
+
+!====================
+LEXICON NumeralTagVII
+!====================
+(NUM):0  NumeralPostbaseVII;
 
 
-!======================
-LEXICON NumeralPostbase
-!======================
+!=======================
+LEXICON NumeralPostbaseI
+!=======================
+0:0                    NounInflI;
+0:0                    Enclitic;
+^–ghqe(NUM→V):^ghqe    VerbPostbaseII;  ! to divide into N groups 
+^–gnegh(NUM→N):^gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 
+!========================
+LEXICON NumeralPostbaseII
+!========================
+0:0                           NounInflII;
+0:0                           Enclitic;
+^–ghqe(NUM→V):^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
+^–gnegh(NUM→N):^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
+
+!=========================
+LEXICON NumeralPostbaseIII
+!=========================
+0:0                           NounInflIII;
+0:0                           Enclitic;
+^–ghqe(NUM→V):^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
+^–gnegh(NUM→N):^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
+
+!=========================
+LEXICON NumeralPostbaseVII
+!=========================
+0:0                           NounInflVII;
+0:0                           Enclitic;
 ^–ghqe(NUM→V):^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
 ^–gnegh(NUM→N):^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 

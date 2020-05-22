@@ -354,15 +354,15 @@ define DropUvular %{g%} h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Al
                 %{%.c%.%} -> 0                                                            ;   ! or an allomorph
  
 
-define VelarUvularRounding       g -> w         ||   [ i | a ] u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30]
-                           n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ]   .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
-                               n g -> n g w     || [ C | V - u ] _ u [ i | a ]   .o. ! needs to occur before vowel dominance
-                             g h h -> g h h w   || [ C | V - u ] _ u [ i | a ]   .o.
-                               g h -> g h w     || [ C | V - u ] _ u [ i | a ]   .o.
-                               g g -> w h       || [ C | V - u ] _ u [ i | a ]   .o.
-                                 k -> k w       || [ C | V - u ] _ u [ i | a ]   .o.
-                                 g -> w         || [ C | V - u ] _ u [ i | a ]   .o.
-                                 q -> q w       || [ C | V - u ] _ u [ i | a ]   ;
+define VelarUvularRounding       g -> w         ||   [ i | a ] ("^") u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30 footnote]
+                           n g n g -> n g n g w || [ C | V - u ] _ u ("^") [ i | a ]   .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
+                               n g -> n g w     || [ C | V - u ] _ u ("^") [ i | a ]   .o. ! needs to occur before vowel dominance
+                             g h h -> g h h w   || [ C | V - u ] _ u ("^") [ i | a ]   .o.
+                               g h -> g h w     || [ C | V - u ] _ u ("^") [ i | a ]   .o.
+                               g g -> w h       || [ C | V - u ] _ u ("^") [ i | a ]   .o.
+                                 k -> k w       || [ C | V - u ] _ u ("^") [ i | a ]   .o.
+                                 g -> w         || [ C | V - u ] _ u ("^") [ i | a ]   .o.
+                                 q -> q w       || [ C | V - u ] _ u ("^") [ i | a ]   ;
 
 
 define DropFinalVC V (C) (h) -> 0 || _ "^" %{%.mm%.%} .o. 
@@ -373,15 +373,15 @@ define DropFinalVC V (C) (h) -> 0 || _ "^" %{%.mm%.%} .o.
 ! OTHER / MISC MORPHOPHONOLOGICAL RULES
 !---------------------------------------
 
-define VowelDominance a i -> i i  .o.
-                      i a -> i i  .o.
-                      u i -> i i  .o.
-                      i u -> i i  .o.
-                      a u -> a a  .o.
-                      u a -> a a  .o.
-                      i e -> i i  .o. ! e-hopping
-                      a e -> a a  .o.
-                      u e -> u u  ;
+define VowelDominance a ("^") i -> i i  .o.
+                      i ("^") a -> i i  .o.
+                      u ("^") i -> i i  .o.
+                      i ("^") u -> i i  .o.
+                      a ("^") u -> a a  .o.
+                      u ("^") a -> a a  .o.
+                      i ("^") e -> i i  .o. ! e-hopping
+                      a ("^") e -> a a  .o.
+                      u ("^") e -> u u  ;
 
 
 define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
@@ -389,7 +389,7 @@ define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a ->
                           e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
 
 
-define DropMiddleVowel a -> 0 || V _ V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
+define DropMiddleVowel a -> 0 || V ("^") _ ("^") V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
 
 
 !-------------------
@@ -553,15 +553,16 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 ! CLEAN-UP RULES
 !----------------
 
+! NOTE: morpheme boundaries are probably extraneous
 define MatchVoicing t [z | y] -> s                                              .o. ! tz / ty = s
-                            y -> s   ||                     _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                            y -> s   || [ k | q | g h h w ] _                   .o.
+                            y -> s   ||               _ ("^") [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
+                            y -> s   || [ k | q | g h h w ] ("^") _             .o.
                             z -> s   ||          Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
-                            k -> q   ||                 g h _                   .o.
-                          g h -> 0   ||                   C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
+                            k -> q   ||                 g h ("^") _             .o.
+                          g h -> 0   ||                   C ("^") _ ("^") q     .o. ! e.g. itegh[Cond.Intr][3Sg]:iitghqan -> iitqan
                             v -> f   ||                     _ ("^") Stop        .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
                             v -> f   ||          Stop ("^") _                   .o. ! e.g. taaqfik
-                            w -> w h ||       [ C - h | V ] _ t                 ;   ! [Badten (2008) p.682] 
+                            w -> w h ||       [ C - h | V ] ("^") _ ("^") t     ;   ! [Badten (2008) p.682] 
 
 
 define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
@@ -597,12 +598,12 @@ define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since 
 define CleanupMorphBoundary "^" -> 0 ;
 
 
-define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ [ Stop | f |  s]                      .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] _ .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ l l                                   .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l | r r | g g | g h h | g h h w ] _ .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] _      .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l | r r | g g | g h h | g h h w ] _ ;
+define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ("^") [ Stop | f |  s]                      .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] ("^") _      .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ("^") l l                                   .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l | r r | g g | g h h | g h h w ] ("^") _ .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] ("^") _      .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l | r r | g g | g h h | g h h w ] ("^") _ ;
 
 
 !==============
@@ -656,14 +657,13 @@ define Rules [
     PreventGemination    .o.
     CleanupDigraph       .o.
     AssimilateEnclitic   .o.
-    CleanupMorphBoundary .o.
+!    CleanupMorphBoundary .o.
     VelarUvularRounding  .o.
     DropMiddleVowel      .o.
     VowelDominance       .o.
     MatchVoicing         .o.
     Undoubling
 ];
-
 
 define FilteredLex [ Filters .o. Lexicon ];
 define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
