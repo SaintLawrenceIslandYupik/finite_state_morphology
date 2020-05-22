@@ -667,4 +667,4 @@ define Rules [
 
 define FilteredLex [ Filters .o. Lexicon ];
 define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
-define GrammarUpper [ [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ] .o. Uppercase ];
+define GrammarUpper [ GrammarLower .o. Uppercase ];
