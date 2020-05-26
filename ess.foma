@@ -656,8 +656,10 @@ define Rules [
     BaseFinalEndings     .o.
     PreventGemination    .o.
     CleanupDigraph       .o.
-    AssimilateEnclitic   .o.
-!    CleanupMorphBoundary .o.
+    AssimilateEnclitic   
+];
+
+define PhonologicalRules [
     VelarUvularRounding  .o.
     DropMiddleVowel      .o.
     VowelDominance       .o.
@@ -666,5 +668,15 @@ define Rules [
 ];
 
 define FilteredLex [ Filters .o. Lexicon ];
-define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
-define GrammarUpper [ GrammarLower .o. Uppercase ];
+
+define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
+define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
+
+define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules ];
+
+define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
+
+! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
+! define GrammarUpper [ GrammarLower .o. Uppercase ];
+
+define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
