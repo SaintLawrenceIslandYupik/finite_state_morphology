@@ -298,6 +298,8 @@ define Uppercase [ a:A | i:I | u:U | e:E |
                    g:G | w:W | s:S | f:F |
                    s:S | m:M | n:N | v:"V" ] ?* | ?* ;
 
+define AsciiArrow "→" -> "->" ;
+
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
@@ -666,5 +668,5 @@ define Rules [
 
 
 define FilteredLex [ Filters .o. Lexicon ];
-define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
-define GrammarUpper [ [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ] .o. Uppercase ];
+define GrammarLowercase [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
+define GrammarUppercase [ GrammarLowercase o. Uppercase ];
