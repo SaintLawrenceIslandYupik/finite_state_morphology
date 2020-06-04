@@ -68,6 +68,7 @@ LEXICON NounInflIII
 !---------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^%{.w.%}mineng     PostInflIII; ^[Abl_Mod.4SgPoss.Pl]:^%{.w.%}mineng     PostInflIII; ^[Abl_Mod.4SgPoss.Du]:^%{.w.%}gmineng    PostInflIII;
 ^[Abl_Mod.4PlPoss.Sg]:^%{.w.%}meggneng   PostInflIII; ^[Abl_Mod.4PlPoss.Pl]:^%{.w.%}meggneng   PostInflIII; ^[Abl_Mod.4PlPoss.Du]:^%{.w.%}gmeggneng  PostInflIII;
+^[Abl_Mod.4DuPoss.Sg]:^%{.w.%}megneng    PostInflIII; ^[Abl_Mod.4DuPoss.Pl]:^%{.w.%}megneng    PostInflIII; ^[Abl_Mod.4DuPoss.Du]:^%{.w.%}gmegneng   PostInflIII;
 ^[Abl_Mod.4DuPoss.Sg]:^%{.w.%}megteneng  PostInflIII; ^[Abl_Mod.4DuPoss.Pl]:^%{.w.%}megteneng  PostInflIII; ^[Abl_Mod.4DuPoss.Du]:^%{.w.%}gmegteneng PostInflIII;
 !---------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|
 
@@ -115,6 +116,7 @@ LEXICON NounInflIII
 !----------------------------------------------|------------------------------------------------|------------------------------------------------|
 ^[All.4SgPoss.Sg]:^%{.w.%}minun     PostInflIII; ^[All.4SgPoss.Pl]:^%{.w.%}minun     PostInflIII; ^[All.4SgPoss.Du]:^%{.w.%}gminun    PostInflIII;
 ^[All.4PlPoss.Sg]:^%{.w.%}meggnun   PostInflIII; ^[All.4PlPoss.Pl]:^%{.w.%}meggnun   PostInflIII; ^[All.4PlPoss.Du]:^%{.w.%}gmeggnun  PostInflIII;
+^[All.4DuPoss.Sg]:^%{.w.%}megnun    PostInflIII; ^[All.4DuPoss.Pl]:^%{.w.%}megnun    PostInflIII; ^[All.4DuPoss.Du]:^%{.w.%}gmegnun   PostInflIII;
 ^[All.4DuPoss.Sg]:^%{.w.%}megtenun  PostInflIII; ^[All.4DuPoss.Pl]:^%{.w.%}megtenun  PostInflIII; ^[All.4DuPoss.Du]:^%{.w.%}gmegtenun PostInflIII;
 !----------------------------------------------|------------------------------------------------|------------------------------------------------|
 

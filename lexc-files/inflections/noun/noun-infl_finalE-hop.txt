@@ -71,6 +71,7 @@ LEXICON NounInflIX
 !-------------------------------------------------|---------------------------------------------------|--------------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^%{.f.%}mineng    PostInflIX; ^[Abl_Mod.4SgPoss.Pl]:^%{.f.%}mineng    PostInflIX; ^[Abl_Mod.4SgPoss.Du]:^gmineng         PostInflIX;
 ^[Abl_Mod.4PlPoss.Sg]:^%{.f.%}meggneng  PostInflIX; ^[Abl_Mod.4PlPoss.Pl]:^%{.f.%}meggneng  PostInflIX; ^[Abl_Mod.4PlPoss.Du]:^gmeggneng       PostInflIX;
+^[Abl_Mod.4DuPoss.Sg]:^%{.f.%}megneng   PostInflIX; ^[Abl_Mod.4DuPoss.Pl]:^%{.f.%}megneng   PostInflIX; ^[Abl_Mod.4DuPoss.Du]:^gmegneng        PostInflIX;
 ^[Abl_Mod.4DuPoss.Sg]:^%{.f.%}megteneng PostInflIX; ^[Abl_Mod.4DuPoss.Pl]:^%{.f.%}megteneng PostInflIX; ^[Abl_Mod.4DuPoss.Du]:^gmegteneng      PostInflIX;
 !-------------------------------------------------|---------------------------------------------------|--------------------------------------------------|
 
@@ -118,6 +119,7 @@ LEXICON NounInflIX
 !--------------------------------------------|----------------------------------------------|---------------------------------------------|
 ^[All.4SgPoss.Sg]:^%{.f.%}munnun   PostInflIX; ^[All.4SgPoss.Pl]:^%{.f.%}munnun   PostInflIX; ^[All.4SgPoss.Du]:^gmunnun        PostInflIX;
 ^[All.4PlPoss.Sg]:^%{.f.%}meggnun  PostInflIX; ^[All.4PlPoss.Pl]:^%{.f.%}meggnun  PostInflIX; ^[All.4PlPoss.Du]:^gmeggnun       PostInflIX;
+^[All.4DuPoss.Sg]:^%{.f.%}megnun   PostInflIX; ^[All.4DuPoss.Pl]:^%{.f.%}megnun   PostInflIX; ^[All.4DuPoss.Du]:^gmegnun        PostInflIX;
 ^[All.4DuPoss.Sg]:^%{.f.%}megtenun PostInflIX; ^[All.4DuPoss.Pl]:^%{.f.%}megtenun PostInflIX; ^[All.4DuPoss.Du]:^gmegtenun      PostInflIX;
 !--------------------------------------------|----------------------------------------------|---------------------------------------------|
 

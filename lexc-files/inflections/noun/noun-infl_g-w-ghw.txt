@@ -67,6 +67,7 @@ LEXICON NounInflII
 !--------------------------------------------------|----------------------------------------------------|----------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^mineng            PostInflII; ^[Abl_Mod.4SgPoss.Pl]:^mineng            PostInflII; ^[Abl_Mod.4SgPoss.Du]:^egmineng    PostInflII;
 ^[Abl_Mod.4PlPoss.Sg]:^meggneng          PostInflII; ^[Abl_Mod.4PlPoss.Pl]:^meggneng          PostInflII; ^[Abl_Mod.4PlPoss.Du]:^egmeggneng  PostInflII;
+^[Abl_Mod.4DuPoss.Sg]:^megneng           PostInflII; ^[Abl_Mod.4DuPoss.Pl]:^megneng           PostInflII; ^[Abl_Mod.4DuPoss.Du]:^egmegneng   PostInflII;
 ^[Abl_Mod.4DuPoss.Sg]:^megteneng         PostInflII; ^[Abl_Mod.4DuPoss.Pl]:^megteneng         PostInflII; ^[Abl_Mod.4DuPoss.Du]:^egmegteneng PostInflII;
 !--------------------------------------------------|----------------------------------------------------|----------------------------------------------|
 
@@ -114,6 +115,7 @@ LEXICON NounInflII
 !---------------------------------------------|-----------------------------------------------|-----------------------------------------|
 ^[All.4SgPoss.Sg]:^minun            PostInflII; ^[All.4SgPoss.Pl]:^minun            PostInflII; ^[All.4SgPoss.Du]:^egminun    PostInflII;
 ^[All.4PlPoss.Sg]:^meggnun          PostInflII; ^[All.4PlPoss.Pl]:^meggnun          PostInflII; ^[All.4PlPoss.Du]:^egmeggnun  PostInflII;
+^[All.4DuPoss.Sg]:^megnun           PostInflII; ^[All.4DuPoss.Pl]:^megnun           PostInflII; ^[All.4DuPoss.Du]:^egmegnun   PostInflII;
 ^[All.4DuPoss.Sg]:^megtenun         PostInflII; ^[All.4DuPoss.Pl]:^megtenun         PostInflII; ^[All.4DuPoss.Du]:^egmegtenun PostInflII;
 !---------------------------------------------|-----------------------------------------------|-----------------------------------------|
 

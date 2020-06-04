@@ -72,6 +72,7 @@ LEXICON NounInflVI
 !-------------------------------------------------|---------------------------------------------------|--------------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^%{.f.%}mineng    PostInflVI; ^[Abl_Mod.4SgPoss.Pl]:^%{.f.%}mineng    PostInflVI; ^[Abl_Mod.4SgPoss.Du]:^gmineng         PostInflVI;
 ^[Abl_Mod.4PlPoss.Sg]:^%{.f.%}meggneng  PostInflVI; ^[Abl_Mod.4PlPoss.Pl]:^%{.f.%}meggneng  PostInflVI; ^[Abl_Mod.4PlPoss.Du]:^gmeggneng       PostInflVI;
+^[Abl_Mod.4DuPoss.Sg]:^%{.f.%}megneng   PostInflVI; ^[Abl_Mod.4DuPoss.Pl]:^%{.f.%}megneng   PostInflVI; ^[Abl_Mod.4DuPoss.Du]:^gmegneng        PostInflVI;
 ^[Abl_Mod.4DuPoss.Sg]:^%{.f.%}megteneng PostInflVI; ^[Abl_Mod.4DuPoss.Pl]:^%{.f.%}megteneng PostInflVI; ^[Abl_Mod.4DuPoss.Du]:^gmegteneng      PostInflVI;
 !-------------------------------------------------|---------------------------------------------------|--------------------------------------------------|
 ! %{%.fL%.%} ^[Jacobson (2001) p.38]
@@ -121,6 +122,7 @@ LEXICON NounInflVI
 !--------------------------------------------|----------------------------------------------|---------------------------------------------|
 ^[All.4SgPoss.Sg]:^%{.f.%}minun    PostInflVI; ^[All.4SgPoss.Pl]:^%{.f.%}minun    PostInflVI; ^[All.4SgPoss.Du]:^gminun         PostInflVI;
 ^[All.4PlPoss.Sg]:^%{.f.%}meggnun  PostInflVI; ^[All.4PlPoss.Pl]:^%{.f.%}meggnun  PostInflVI; ^[All.4PlPoss.Du]:^gmeggnun       PostInflVI;
+^[All.4DuPoss.Sg]:^%{.f.%}megnun   PostInflVI; ^[All.4DuPoss.Pl]:^%{.f.%}megnun   PostInflVI; ^[All.4DuPoss.Du]:^gmegnun        PostInflVI;
 ^[All.4DuPoss.Sg]:^%{.f.%}megtenun PostInflVI; ^[All.4DuPoss.Pl]:^%{.f.%}megtenun PostInflVI; ^[All.4DuPoss.Du]:^gmegtenun      PostInflVI;
 !--------------------------------------------|----------------------------------------------|---------------------------------------------|
 ! %{%.fL%.%} ^[Jacobson (2001) p.38]

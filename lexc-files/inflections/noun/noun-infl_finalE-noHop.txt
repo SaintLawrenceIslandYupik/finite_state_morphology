@@ -69,6 +69,7 @@ LEXICON NounInflVIII
 !---------------------------------------------------|-----------------------------------------------------|----------------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^%{.f.%}mineng    PostInflVIII; ^[Abl_Mod.4SgPoss.Pl]:^%{.f.%}mineng    PostInflVIII; ^[Abl_Mod.4SgPoss.Du]:^gmineng         PostInflVIII;
 ^[Abl_Mod.4PlPoss.Sg]:^%{.f.%}meggneng  PostInflVIII; ^[Abl_Mod.4PlPoss.Pl]:^%{.f.%}meggneng  PostInflVIII; ^[Abl_Mod.4PlPoss.Du]:^gmeggneng       PostInflVIII;
+^[Abl_Mod.4DuPoss.Sg]:^%{.f.%}megneng   PostInflVIII; ^[Abl_Mod.4DuPoss.Pl]:^%{.f.%}megneng   PostInflVIII; ^[Abl_Mod.4DuPoss.Du]:^gmegneng        PostInflVIII;
 ^[Abl_Mod.4DuPoss.Sg]:^%{.f.%}megteneng PostInflVIII; ^[Abl_Mod.4DuPoss.Pl]:^%{.f.%}megteneng PostInflVIII; ^[Abl_Mod.4DuPoss.Du]:^gmegteneng      PostInflVIII;
 !---------------------------------------------------|-----------------------------------------------------|----------------------------------------------------|
 ! %{%.fL%.%} ^[Jacobson (2001) p.38]
@@ -118,6 +119,7 @@ LEXICON NounInflVIII
 !----------------------------------------------|------------------------------------------------|-----------------------------------------------|
 ^[All.4SgPoss.Sg]:^%{.f.%}minun    PostInflVIII; ^[All.4SgPoss.Pl]:^%{.f.%}minun    PostInflVIII; ^[All.4SgPoss.Du]:^gminun         PostInflVIII;
 ^[All.4PlPoss.Sg]:^%{.f.%}meggnun  PostInflVIII; ^[All.4PlPoss.Pl]:^%{.f.%}meggnun  PostInflVIII; ^[All.4PlPoss.Du]:^gmeggnun       PostInflVIII;
+^[All.4DuPoss.Sg]:^%{.f.%}megnun   PostInflVIII; ^[All.4DuPoss.Pl]:^%{.f.%}megnun   PostInflVIII; ^[All.4DuPoss.Du]:^gmegnun        PostInflVIII;
 ^[All.4DuPoss.Sg]:^%{.f.%}megtenun PostInflVIII; ^[All.4DuPoss.Pl]:^%{.f.%}megtenun PostInflVIII; ^[All.4DuPoss.Du]:^gmegtenun      PostInflVIII;
 !----------------------------------------------|------------------------------------------------|-----------------------------------------------|
 ! %{%.fL%.%} ^[Jacobson (2001) p.38]

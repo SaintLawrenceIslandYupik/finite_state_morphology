@@ -86,34 +86,12 @@ define Subordinative      [ "^" ["[Sbrd.Intr]" | "[Sbrd.Trns]"] ];
 
 define VolitiveOfFear     [ "^" "[Volitive.Of.Fear]" ];
 
-define Optative [ "^" ["[Opt.Pres.Intr.3Sg]"     | "[Opt.Pres.Intr.1Sg]"     | "[Opt.Pres.Intr.2Sg]"     |
-                       "[Opt.Pres.Intr.3Pl]"     | "[Opt.Pres.Intr.1Pl]"     | "[Opt.Pres.Intr.2Pl]"     |
-                       "[Opt.Pres.Intr.3Du]"     | "[Opt.Pres.Intr.1Du]"     | "[Opt.Pres.Intr.2Du]"     |
-                       "[Opt.Pres.Trns.3Sg.3Sg]" | "[Opt.Pres.Trns.3Sg.3Pl]" | "[Opt.Pres.Trns.3Sg.3Du]" |
-                       "[Opt.Pres.Trns.3Pl.3Sg]" | "[Opt.Pres.Trns.3Pl.3Pl]" | "[Opt.Pres.Trns.3Pl.3Du]" |
-                       "[Opt.Pres.Trns.3Du.3Sg]" | "[Opt.Pres.Trns.3Du.3Pl]" | "[Opt.Pres.Trns.3Du.3Du]" |
-                       "[Opt.Pres.Trns.1Sg.3Sg]" | "[Opt.Pres.Trns.1Sg.3Pl]" | "[Opt.Pres.Trns.1Sg.3Du]" |
-                       "[Opt.Pres.Trns.1Pl.3Sg]" | "[Opt.Pres.Trns.1Pl.3Pl]" | "[Opt.Pres.Trns.1Pl.3Du]" |
-                       "[Opt.Pres.Trns.1Du.3Sg]" | "[Opt.Pres.Trns.1Du.3Pl]" | "[Opt.Pres.Trns.1Du.3Du]" |
-                       "[Opt.Pres.Trns.2Sg.3Sg]" | "[Opt.Pres.Trns.2Sg.3Pl]" | "[Opt.Pres.Trns.2Sg.3Du]" |
-                       "[Opt.Pres.Trns.2Pl.3Sg]" | "[Opt.Pres.Trns.2Pl.3Pl]" | "[Opt.Pres.Trns.2Pl.3Du]" |
-                       "[Opt.Pres.Trns.2Du.3Sg]" | "[Opt.Pres.Trns.2Du.3Pl]" | "[Opt.Pres.Trns.2Du.3Du]" |
-                       "[Opt.Pres.Trns.3Sg.1Sg]" | "[Opt.Pres.Trns.3Sg.1Pl]" | "[Opt.Pres.Trns.3Sg.1Du]" |
-                       "[Opt.Pres.Trns.3Pl.1Sg]" | "[Opt.Pres.Trns.3Pl.1Pl]" | "[Opt.Pres.Trns.3Pl.1Du]" |
-                       "[Opt.Pres.Trns.3Du.1Sg]" | "[Opt.Pres.Trns.3Du.1Pl]" | "[Opt.Pres.Trns.3Du.1Du]" |
-                       "[Opt.Pres.Trns.2Sg.1Sg]" | "[Opt.Pres.Trns.2Sg.1Pl]" | "[Opt.Pres.Trns.2Sg.1Du]" |
-                       "[Opt.Pres.Trns.2Pl.1Sg]" | "[Opt.Pres.Trns.2Pl.1Pl]" | "[Opt.Pres.Trns.2Pl.1Du]" |
-                       "[Opt.Pres.Trns.2Du.1Sg]" | "[Opt.Pres.Trns.2Du.1Pl]" | "[Opt.Pres.Trns.2Du.1Du]" |
-                       "[Opt.Pres.Trns.3Sg.2Sg]" | "[Opt.Pres.Trns.3Sg.2Pl]" | "[Opt.Pres.Trns.3Sg.2Du]" |
-                       "[Opt.Pres.Trns.3Pl.2Sg]" | "[Opt.Pres.Trns.3Pl.2Pl]" | "[Opt.Pres.Trns.3Pl.2Du]" |
-                       "[Opt.Pres.Trns.3Du.2Sg]" | "[Opt.Pres.Trns.3Du.2Pl]" | "[Opt.Pres.Trns.3Du.2Du]" |
-                       "[Opt.Pres.Trns.1Sg.2Sg]" | "[Opt.Pres.Trns.1Sg.2Pl]" | "[Opt.Pres.Trns.1Sg.2Du]" |
-                       "[Opt.Pres.Trns.1Pl.2Sg]" | "[Opt.Pres.Trns.1Pl.2Pl]" | "[Opt.Pres.Trns.1Pl.2Du]" |
-                       "[Opt.Pres.Trns.1Du.2Sg]" | "[Opt.Pres.Trns.1Du.2Pl]" | "[Opt.Pres.Trns.1Du.2Du]" |
+define Optative [ "^" ["[Opt.Pres.Intr]"     | "[Opt.Pres.Trns]"         |
+                       "[Opt.Pres.Intr.2Sg]" | "[Opt.Pres.Trns.2Sg.3Sg]" |
                        "[Opt.Neg.Pres.Trns.2Sg.3Pl]" | "[Opt.Neg.Pres.Trns.2Pl.3Pl]" | "[Opt.Neg.Pres.Trns.2Du.3Pl]" |
-                       "[Opt.Neg.Pres.Intr]"     | "[Opt.Neg.Pres.Trns]"     |
-                       "[Opt.Fut.Intr]"          | "[Opt.Fut.Trns]"          |
-                       "[Opt.Fut.Neg.Intr]"      | "[Opt.Fut.Neg.Trns]"]
+                       "[Opt.Neg.Pres.Intr]" | "[Opt.Neg.Pres.Trns]"     |
+                       "[Opt.Fut.Intr]"      | "[Opt.Fut.Trns]"          |
+                       "[Opt.Fut.Neg.Intr]"  | "[Opt.Fut.Neg.Trns]"]
                 ];
 
 !-------------------- 
@@ -298,7 +276,11 @@ define Uppercase [ a:A | i:I | u:U | e:E |
                    g:G | w:W | s:S | f:F |
                    s:S | m:M | n:N | v:"V" ] ?* | ?* ;
 
-define AsciiArrow "→" -> "->" ;
+define AsciiArrow "(N→N)" (->) "(N->N)" ,,
+                  "(N→V)" (->) "(N->V)" ,,
+                  "(V→V)" (->) "(V->V)" ,,
+                  "(V→N)" (->) "(V->N)" ;
+	               
 
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
@@ -668,5 +650,13 @@ define Rules [
 
 
 define FilteredLex [ Filters .o. Lexicon ];
+
+! only analyzes and generates lowercased forms
 define GrammarLowercase [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
-define GrammarUppercase [ GrammarLowercase o. Uppercase ];
+
+! analyzes and generates uppercased and lowercased forms
+define GrammarUppercase [ GrammarLowercase .o. Uppercase ];
+
+! allows the user to type ASCII arrows
+define AllowAsciiArrow [ GrammarLowercase.i .o. AsciiArrow ];
+define GrammarAscii [ AllowAsciiArow.i ];

@@ -67,6 +67,7 @@ LEXICON NounInflVII
 !---------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^mineng            PostInflVII; ^[Abl_Mod.4SgPoss.Pl]:^mineng            PostInflVII; ^[Abl_Mod.4SgPoss.Du]:^%{.sf.%}egmineng    PostInflVII;
 ^[Abl_Mod.4PlPoss.Sg]:^meggneng          PostInflVII; ^[Abl_Mod.4PlPoss.Pl]:^meggneng          PostInflVII; ^[Abl_Mod.4PlPoss.Du]:^%{.sf.%}egmeggneng  PostInflVII;
+^[Abl_Mod.4DuPoss.Sg]:^megneng           PostInflVII; ^[Abl_Mod.4DuPoss.Pl]:^megneng           PostInflVII; ^[Abl_Mod.4DuPoss.Du]:^%{.sf.%}egmegneng   PostInflVII;
 ^[Abl_Mod.4DuPoss.Sg]:^megteneng         PostInflVII; ^[Abl_Mod.4DuPoss.Pl]:^megteneng         PostInflVII; ^[Abl_Mod.4DuPoss.Du]:^%{.sf.%}egmegteneng PostInflVII;
 !---------------------------------------------------|-----------------------------------------------------|-------------------------------------------------------|
 
@@ -114,6 +115,7 @@ LEXICON NounInflVII
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
 ^[All.4SgPoss.Sg]:^minun            PostInflVII; ^[All.4SgPoss.Pl]:^minun            PostInflVII; ^[All.4SgPoss.Du]:^%{.sf.%}egminun    PostInflVII;
 ^[All.4PlPoss.Sg]:^meggnun          PostInflVII; ^[All.4PlPoss.Pl]:^meggnun          PostInflVII; ^[All.4PlPoss.Du]:^%{.sf.%}egmeggnun  PostInflVII;
+^[All.4DuPoss.Sg]:^megnun           PostInflVII; ^[All.4DuPoss.Pl]:^megnun           PostInflVII; ^[All.4DuPoss.Du]:^%{.sf.%}egmegnun  PostInflVII;
 ^[All.4DuPoss.Sg]:^megtenun         PostInflVII; ^[All.4DuPoss.Pl]:^megtenun         PostInflVII; ^[All.4DuPoss.Du]:^%{.sf.%}egmegtenun PostInflVII;
 !----------------------------------------------|------------------------------------------------|--------------------------------------------------|
 
