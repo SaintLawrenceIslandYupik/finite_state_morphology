@@ -19,7 +19,6 @@ LEXICON VerbPostbaseII
 ^@~%:(i/u)ma(V→N):^%{.f.%}uma               NounPostbaseI;    ! one who V-s
 ^@–lghii(V→N):^lghii                        NounPostbaseI;    ! the one that V-ed
 ^@~f–yu(V→N):^%{.f.%}yu                     NounPostbaseI;    ! one who is good at V-ing
-^–ghllag(V→N):^ghllag                       NounInflII;       ! big N (augmentive)
 ^@~f–neghllug(V→N):^%{.f.%}neghllug         NounPostbaseII;   ! something that is difficult or hard to V; one who hardly needs to V
 ^–rkapig(V→N):^rkapig                       NounPostbaseII;   ! one that is very V
 ^–sag(V→N):^sag                             NounPostbaseII;   ! one who V-s; habitual V-er
@@ -366,7 +365,40 @@ LEXICON PostAuxiliaryNegII
 !=========================
 0:0                              VerbInflII;
 ^@–nghite(V→V):^nghi%{t%}e**     VerbInflVI; ! to not V
-!^@~%:(u)te(V→V):^%{.f.%}u%{t%}e  VerbInflV;  ! to V for; to V together with; to V each other
-!^@~%:(u)te(V→N):^%{.f.%}u%{t%}e  NounInflVI; ! condition with respect to V-ing
+^@~%:(u)te(V→V):^%{.f.%}u%{t%}e  VerbInflV;  ! to V for; to V together with; to V each other
 
+!~~~~~~~~~~~~~~~~~
+! (V→N) postbases
+!~~~~~~~~~~~~~~~~~
+^@~%:(i/u)ma(V→N):^%{.f.%}uma               NounInflI;    ! one who V-s
+^@–lghii(V→N):^lghii                        NounInflI;    ! the one that V-ed
+^@~f–yu(V→N):^%{.f.%}yu                     NounInflI;    ! one who is good at V-ing
+^–ghllag(V→N):^ghllag                       NounInflII;   ! something that is very V
+^@~f–neghllug(V→N):^%{.f.%}neghllug         NounInflII;   ! something that is difficult or hard to V; one who hardly needs to V
+^–rkapig(V→N):^rkapig                       NounInflII;   ! one that is very V
+^–sag(V→N):^sag                             NounInflII;   ! one who V-s; habitual V-er
+^@~fvig(V→N):^%{.f.%}vig                    NounInflII;   ! place to V; time to V (esp. in month names)
+^~–kayug(V→N):^%{.f.%}gkayug                NounInflII;   ! one that V-s readily; one who is able to V
+^–lleghpigagh(V→N):^lleghpiga%{g%}h         NounInflIII;  ! most V one
+^@–nghhagh(V→N):^nghha%{g%}h                NounInflIII;  ! one that has recently V-ed
+^@–nqegtagh(V→N):^nqegta%{g%}h              NounInflIII;  ! one that V-s easily; one that V-s readily
+^@~f–rakegtagh(V→N):^%{.f.%}rakegta%{g%}h   NounInflIII;  ! one that Vs quickly 
+^–rkaggagh(V→N):^rkagga%{g%}h               NounInflIII;  ! one that is a little bit V; one that is slightly V
+^+tuqagh(V→N):^tuqa%{g%}h                   NounInflIII;  ! one that V-s habitually
+^–tuqagh(V→N):^tuqa%{g%}h                   NounInflIII;  ! one that V-s habitually
+^@~fyaghqagh(V→N):^%{.f.%}yaghqa%{g%}h      NounInflIII;  ! something that will V or be V-ed
+^@~f–yuqagh(V→N):^%{.f.%}yuqa%{g%}h         NounInflIII;  ! one who is good at V-ing; proficient V-er
+^@~–(g)kagh(V→N):^%{.f.%}ka%{g%}h           NounInflIII;  ! one that has V-ed or been V-ed
+^@~–(g)kagh(V→N):^gka%{g%}h                 NounInflIII;  ! one that has V-ed or been V-ed
+^–perewaagh(V→N):^perewaagh                 NounInflV;    ! all, only, or totally V
+^~–qumtaagh(V→N):^%{.f.%}qumtaagh           NounInflV;    ! frequently V-ed thing; usually V-ed thing; commonly V-ed thing
+^@~fyuggaagh(V→N):^%{.f.%}yuggaagh          NounInflV;    ! first one to V
+^@~fyuwhaagh(V→N):^%{.f.%}yuwhaagh          NounInflV;    ! first one to V
+^+(s)ta(V→N):^s%{t%}e                       NounInflVI;   ! habitual V-er; one who V-s as an occupation
+^@~%:(u)te(V→N):^%{.f.%}u%{t%}e             NounInflVI;   ! condition with respect to V-ing
+^–llegh(V→N):^llegh                         NounInflVII;  ! one that has V-ed or been V-ed; act of V-ing; activity of V-ing; the one the possessor V-ed; one or ones which are V to the greatest extent; most V ones; more V ones
+^–lleg(V→N):^lleg                           NounInflVII;  ! one who V-s well; proficient V-er; good V-er
+^@~fnaqe(V→N):^%{.f.%}naqe                  NounInflVIII; ! one who is going to V
+^@~–(g)ke(V→N):^%{.f.%}ke                   NounInflVIII; ! the ones possessor is V-ing
+^@~–(g)ke(V→N):^gke                         NounInflVIII; ! the ones possessor is V-ing
 

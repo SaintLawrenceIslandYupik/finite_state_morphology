@@ -19,7 +19,6 @@ LEXICON VerbPostbaseVII
 ^@~%:(i/u)ma(V→N):^%{.sf.%}uma               NounPostbaseI;    ! one who V-s
 ^@–lghii(V→N):^%{.m.%}lghii                  NounPostbaseI;    ! the one that V-ed
 ^@~f–yu(V→N):^%{.m.%}yu                      NounPostbaseI;    ! one who is good at V-ing
-^–ghllag:^%{.m.%}ghllag                      NounInflII;       ! big N (augmentive)
 ^@~f–neghllug(V→N):^%{.m.%}neghllug          NounPostbaseII;   ! something that is difficult or hard to V; one who hardly needs to V
 ^–rkapig(V→N):^%{.m.%}rkapig                 NounPostbaseII;   ! one that is very V
 ^–sag(V→N):^%{.m.%}sag                       NounPostbaseII;   ! one who V-s; habitual V-er
@@ -360,7 +359,40 @@ LEXICON PostAuxiliaryNegVII
 !==========================
 0:0                                  VerbInflVII;
 ^@–nghite(V→V):^%{.m.%}nghi%{t%}e**  VerbInflVI;  ! to not V
-!^@~%:(u)te(V→V):^%{.sf.%}u%{t%}e     VerbInflV;   ! to V for; to V together with; to V each other
-!^@~%:(u)te(V→N):^%{.sf.%}u%{t%}e     NounInflVI;  ! condition with respect to V-ing
+^@~%:(u)te(V→V):^%{.sf.%}u%{t%}e     VerbInflV;   ! to V for; to V together with; to V each other
+
+!~~~~~~~~~~~~~~~~~
+! (V→N) postbases
+!~~~~~~~~~~~~~~~~~
+^@~%:(i/u)ma(V→N):^%{.sf.%}uma               NounInflI;    ! one who V-s
+^@–lghii(V→N):^%{.m.%}lghii                  NounInflI;    ! the one that V-ed
+^@~f–yu(V→N):^%{.m.%}yu                      NounInflI;    ! one who is good at V-ing
+^–ghllag:^%{.m.%}ghllag                      NounInflII;   ! something that is very V 
+^@~f–neghllug(V→N):^%{.m.%}neghllug          NounInflII;   ! something that is difficult or hard to V; one who hardly needs to V
+^–rkapig(V→N):^%{.m.%}rkapig                 NounInflII;   ! one that is very V
+^–sag(V→N):^%{.m.%}sag                       NounInflII;   ! one who V-s; habitual V-er
+^@~fvig(V→N):^vig                            NounInflII;   ! place to V; time to V (esp. in month names)
+^~–kayug(V→N):^%{.sf.%}%{.m.%}kayug          NounInflII;   ! one that V-s readily; one who is able to V
+^–lleghpigagh(V→N):^%{.m.%}lleghpiga%{g%}h   NounInflIII;  ! most V one
+^@–nghhagh(V→N):^%{.m.%}nghha%{g%}h          NounInflIII;  ! one that has recently V-ed
+^@–nqegtagh(V→N):^%{.m.%}nqegta%{g%}h        NounInflIII;  ! one that V-s easily; one that V-s readily
+^@~f–rakegtagh(V→N):^%{.m.%}rakegta%{g%}h    NounInflIII;  ! one that Vs quickly 
+^–rkaggagh(V→N):^%{.m.%}rkagga%{g%}h         NounInflIII;  ! one that is a little bit V; one that is slightly V
+^+tuqagh(V→N):^tuqa%{g%}h                    NounInflIII;  ! one that V-s habitually
+^–tuqagh(V→N):^%{.m.%}tuqa%{g%}h             NounInflIII;  ! one that V-s habitually
+^@~fyaghqagh(V→N):^yaghqa%{g%}h              NounInflIII;  ! something that will V or be V-ed
+^@~f–yuqagh(V→N):^%{.m.%}yuqa%{g%}h          NounInflIII;  ! one who is good at V-ing; proficient V-er
+^@~–(g)kagh(V→N):^%{.sf.%}%{.m.%}ka%{g%}h    NounInflIII;  ! one that has V-ed; one that has been V-ed
+^@ngugh(V→N):^ngugh                          NounInflIV;   ! one that is V
+^–perewaagh(V→N):^%{.m.%}perewaagh           NounInflV;    ! all, only, or totally V
+^~–qumtaagh(V→N):^%{.sf.%}%{.m.%}qumtaagh    NounInflV;    ! frequently V-ed thing; usually V-ed thing; commonly V-ed thing
+^@~fyuggaagh(V→N):^yuggaagh                  NounInflV;    ! first one to V
+^@~fyuwhaagh(V→N):^yuwhaagh                  NounInflV;    ! first one to V
+^+(s)ta(V→N):^%{t%}e                         NounInflVI;   ! habitual V-er; one who V-s as an occupation
+^@~%:(u)te(V→N):^%{.sf.%}u%{t%}e             NounInflVI;   ! condition with respect to V-ing
+^–llegh(V→N):^%{.m.%}llegh                   NounInflVII;  ! one that has V-ed or been V-ed; act of V-ing; activity of V-ing; the one the possessor V-ed; one or ones which are V to the greatest extent; most V one; more V one
+^–lleg(V→N):^%{.m.%}lleg                     NounInflVII;  ! one who V-s well; proficient V-er; good V-er
+^@~–(g)ke(V→N):^%{.sf.%}%{.m.%}ke            NounInflVIII; ! the one possessor is V-ing
+^@~fnaqe(V→N):^naqe                          NounInflVIII; ! one who is going to V
 
 
