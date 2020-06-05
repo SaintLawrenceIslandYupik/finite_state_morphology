@@ -1,16 +1,7 @@
 #!/usr/bin/env foma -f
 
-read lexc exceptions.lexc
-eliminate flag AUX
-define ExceptionsNoFlags;
-define Exceptions ExceptionsNoFlags;
+read lexc toy.lexc
 
-read lexc parallel.lexc
-eliminate flag AUX
-define ParallelNoFlags;
-define ParallelForms ParallelNoFlags;
-
-read lexc ess.lexc
 eliminate flag AUX
 define LexiconNoFlags;
 define Lexicon LexiconNoFlags;
