@@ -664,5 +664,4 @@ define GrammarLowercase [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. R
 define GrammarUppercase [ GrammarLowercase .o. Uppercase ];
 
 ! allows the user to type ASCII arrows
-define AllowAsciiArrow [ GrammarLowercase.i .o. AsciiArrow ];
-define GrammarAscii [ AllowAsciiArow.i ];
+define GrammarAscii [ GrammarLowercase.i .o. AsciiArrow ].i;
