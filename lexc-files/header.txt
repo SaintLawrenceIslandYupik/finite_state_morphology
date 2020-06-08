@@ -392,7 +392,10 @@ Multichar_Symbols
 (GuessPredictablyStrongGH)  ! Guessed Yupik root ending in a predictably strong gh preceeded by aa, ii, or uu
 (GuessWeakGH)               ! Guessed Yupik root ending in weak gh
 (GuessSemiFinalE) ! Guessed Yupik root ending with semi-final e
-(GuessTE)      ! Guessed Yupik root ending in te
+(GuessTE)         ! Guessed Yupik root ending in te
+(GuessSpecialTE)  ! Guessed Yupik root ending in special te
+(GuessFinalE)  ! Guessed Yupik root ending with final e
+(GuessFullVGH) ! Guessed Yupik root ending in -agh, -igh, -ugh
 (FOREIGN)      ! Guessed foreign root
 
 !===========

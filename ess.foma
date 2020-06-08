@@ -50,18 +50,25 @@ define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
 define AnyC [ UnvoicedC | VoicedC ];
 define AnyV [ a | a a | i | i i | u | u u | e ];
 
-define GuessedRootAIU                  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a a | i i | u u | a | i | u ] ;
-define GuessedRootGWGHW                [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC        AnyV            [ g | w | g h w ];
-define GuessedRootPredictablyStrongGH  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a a | i i | u u ]    [ g h ] ;
-define GuessedRootUnexpectedlyStrongGH [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a | i | u       ]    [ g h "*" ]:[   g   h ] ;
-define GuessedRootWeakGH               [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a | i | u       ]    [ g h     ]:[ %{g%} h ] ;
-define GuessedRootEDrop                [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]+                              AnyC e ]  |
-                                                                                        [ [ (AnyC) [a a | i i | u u | e ] AnyC e ] ;
-define GuessedRootEHop                 [ "(GUESS)":0 ]                                      (AnyC)     FullVowel          AnyC e ;
-define GuessedRootSemiFinalE           [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC                     e  [ g | g h ] ;
-define GuessedTE                       [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e ] .o. 
-                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+define GuessedRootAIU                  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a a | i i | u u | a | i | u ] ;
+define GuessedRootGWGHW                [ "(GUESS)":0 ] ( (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC )      AnyV            [ g | w | g h w ] .o.
+                                                                       [                       ?*         ? ?               ? ]; ! Ensure that the root is at least 3 characters long
 
+define GuessedRootPredictablyStrongGH  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a a | i i | u u ]    [ g h ] ;
+define GuessedRootUnexpectedlyStrongGH [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]    [ g h "*" ]:[   g   h ] ;
+define GuessedRootWeakGH               [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]    [ g h     ]:[ %{g%} h ] ; 
+define GuessedRootFullVGH              [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]      g h      ; 
+define GuessedRootEDrop                [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]+                              AnyC e ]  |
+                                                                                         [ [ (AnyC) [a a | i i | u u | e ] AnyC e ] ;
+define GuessedRootEHop                 [ "(GUESS)":0 ]                                       (AnyC)     FullVowel          AnyC e ;
+define GuessedRootSemiFinalE           [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC                     e  [ g | g h ] ;
+define GuessedRootTE                   [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e ] .o. 
+                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+define GuessedRootSpecialTE            [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e [ "*" ]:0 ] .o. 
+                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+define GuessedRootFinalE               [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC                     e ] .o.
+                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+                                                                       
 !===============
 ! READ LEXICONS
 !===============
@@ -81,7 +88,10 @@ substitute defined GuessedRootUnexpectedlyStrongGH for "(GuessUnexpectedlyStrong
 substitute defined GuessedRootPredictablyStrongGH for "(GuessPredictablyStrongGH)"
 substitute defined GuessedRootWeakGH for "(GuessWeakGH)"
 substitute defined GuessedRootSemiFinalE for "(GuessSemiFinalE)"
-substitute defined GuessedTE for "(GuessTE)"
+substitute defined GuessedRootTE for "(GuessTE)"
+substitute defined GuessedRootSpecialTE for "(GuessSpecialTE)"
+substitute defined GuessedRootFinalE for "(GuessFinalE)"
+substitute defined GuessedRootFullVGH for "(GuessFullVGH)"
 define Lexicon
 
 
