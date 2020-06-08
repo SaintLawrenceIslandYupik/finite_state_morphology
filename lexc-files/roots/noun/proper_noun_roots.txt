@@ -3,6 +3,20 @@ LEXICON ProperNoun
 !=================
 
 !--------------------
+! Guessed Names
+!--------------------
+(GuessNameAIU)                  NounTagI;    ! Guessed Yupik name ending in a, i, or u
+(GuessNameGWGHW)                NounTagII;   ! Guessed Yupik name ending in g, w, or ghw
+(GuessNameWeakGH)               NounTagIII;  ! Guessed Yupik name ending in weak gh
+(GuessNameUnexpectedlyStrongGH) NounTagIV;   ! Guessed Yupik name ending in an unexpectedly strong gh
+(GuessNamePredictablyStrongGH)  NounTagV;    ! Guessed Yupik name ending in a predictably strong gh preceeded by aa, ii, or uu
+(GuessNameTE)                   NounTagVI;   ! Guessed Yupik name ending in te
+(GuessNameSemiFinalE)           NounTagVII;  ! Guessed Yupik name ending with semi-final e
+(GuessNameEDrop)                NounTagVIII; ! Guessed Yupik name ending e that can be dropped but not hopped
+(GuessNameEHop)                 NounTagIX;   ! Guessed Yupik name ending e that can be hopped
+
+
+!--------------------
 ! Inflection Class I
 !--------------------
 Aasa                     NounTagI; ! Singikpak Pt. site east of Southwest Cape on St. Lawrence Island

@@ -37,7 +37,7 @@ define MultiCharC [ n g n g w |
                     g g       | g h     | k w   | l l | m m |
                     n g       | n n     | r r   | q w | w h ];
 
-define FullVowel  [ a | i | u ];
+define FullVowel  [ a | i | u | A | I | U ];
 define V          [ e | FullVowel ];
 
 define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
@@ -54,20 +54,45 @@ define GuessedRootAIU                  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC An
 define GuessedRootGWGHW                [ "(GUESS)":0 ] ( (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC )      AnyV            [ g | w | g h w ] .o.
                                                                        [                       ?*         ? ?               ? ]; ! Ensure that the root is at least 3 characters long
 
-define GuessedRootPredictablyStrongGH  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a a | i i | u u ]    [ g h ] ;
+define GuessedRootPredictablyStrongGH  [ "(GUESS)":0 ]  ((AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC)[ a a | i i | u u ]    [ g h ] ;
 define GuessedRootUnexpectedlyStrongGH [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]    [ g h "*" ]:[   g   h ] ;
-define GuessedRootWeakGH               [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]    [ g h     ]:[ %{g%} h ] ; 
-define GuessedRootFullVGH              [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]      g h      ; 
-define GuessedRootEDrop                [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]+                              AnyC e ]  |
-                                                                                         [ [ (AnyC) [a a | i i | u u | e ] AnyC e ] ;
+define GuessedRootWeakGH               [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]    [ g h     ]:[ %{g%} h ] ;
+define GuessedRootFullVGH              [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]      g h      ;
+define GuessedRootEDrop                [ "(GUESS)":0 ] [[(AnyV (AnyC)) [ AnyC AnyV (AnyC) ]+                              AnyC e ]  |
+                                                                                          [ (AnyC) [a a | i i | u u | e ] AnyC e ]] ;
 define GuessedRootEHop                 [ "(GUESS)":0 ]                                       (AnyC)     FullVowel          AnyC e ;
 define GuessedRootSemiFinalE           [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC                     e  [ g | g h ] ;
 define GuessedRootTE                   [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e ] .o. 
                                                                        [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
 define GuessedRootSpecialTE            [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e [ "*" ]:0 ] .o. 
                                                                        [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
-define GuessedRootFinalE               [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC                     e ] .o.
-                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+define GuessedRootFinalE               [ "(GUESS)":0 ] [[ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC                     e ] .o.
+                                                                        [  ?*   ?               ?                       ? ] ]; ! Ensure that the root is at least 3 characters long
+
+define UppercaseName          A <- a , I <- i , U <- u , E <- e ,
+                              P <- p , T <- t , K <- k , Q <- q ,
+                              L <- l , Z <- z , Y <- y , R <- r ,
+                              G <- g , W <- w , S <- s , F <- f ,
+                              S <- s , M <- m , N <- n , "V" <- v  || "(NAME)" _ ;
+                              
+define UppercaseFirstLetter   a -> A , i -> I , u -> U , e -> E ,
+                              p -> P , t -> T , k -> K , q -> Q ,
+                              l -> L , z -> Z , y -> Y , r -> R ,
+                              g -> G , w -> W , s -> S , f -> F ,
+                              s -> S , m -> M , n -> N , v -> "V"  || .#. _ ;
+                              
+define GuessedName [ "(GUESS)" "(NAME)" <- "(GUESS)" ];
+                     
+define GuessedNameAIU                  [ UppercaseName .o. GuessedName .o. GuessedRootAIU                  .o. UppercaseFirstLetter ];
+define GuessedNameGWGHW                [ UppercaseName .o. GuessedName .o. GuessedRootGWGHW                .o. UppercaseFirstLetter ];
+define GuessedNameWeakGH               [ UppercaseName .o. GuessedName .o. GuessedRootWeakGH               .o. UppercaseFirstLetter ];
+define GuessedNameUnexpectedlyStrongGH [ UppercaseName .o. GuessedName .o. GuessedRootUnexpectedlyStrongGH .o. UppercaseFirstLetter ];
+define GuessedNamePredictablyStrongGH  [ UppercaseName .o. GuessedName .o. GuessedRootPredictablyStrongGH  .o. UppercaseFirstLetter ];
+define GuessedNameTE                   [ UppercaseName .o. GuessedName .o. GuessedRootTE                   .o. UppercaseFirstLetter ];
+define GuessedNameSemiFinalE           [ UppercaseName .o. GuessedName .o. GuessedRootSemiFinalE           .o. UppercaseFirstLetter ];
+define GuessedNameEDrop                [ UppercaseName .o. GuessedName .o. GuessedRootEDrop                .o. UppercaseFirstLetter ];
+define GuessedNameEHop                 [ UppercaseName .o. GuessedName .o. GuessedRootEHop                 .o. UppercaseFirstLetter ];
+
                                                                        
 !===============
 ! READ LEXICONS
@@ -92,8 +117,16 @@ substitute defined GuessedRootTE for "(GuessTE)"
 substitute defined GuessedRootSpecialTE for "(GuessSpecialTE)"
 substitute defined GuessedRootFinalE for "(GuessFinalE)"
 substitute defined GuessedRootFullVGH for "(GuessFullVGH)"
+substitute defined GuessedNameAIU                  for "(GuessNameAIU)"
+substitute defined GuessedNameGWGHW                for "(GuessNameGWGHW)"
+substitute defined GuessedNameWeakGH               for "(GuessNameWeakGH)"
+substitute defined GuessedNameUnexpectedlyStrongGH for "(GuessNameUnexpectedlyStrongGH)"
+substitute defined GuessedNamePredictablyStrongGH  for "(GuessNamePredictablyStrongGH)"
+substitute defined GuessedNameTE                   for "(GuessNameTE)"
+substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
+substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
+substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
 define Lexicon
-
 
 
 !================
@@ -349,6 +382,7 @@ define Uppercase [ a:A | i:I | u:U | e:E |
                    g:G | w:W | s:S | f:F |
                    s:S | m:M | n:N | v:"V" ] ?* | ?* ;
 
+
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
@@ -432,7 +466,16 @@ define VowelDominance a ("^") i -> i i  .o.
                       u ("^") a -> a a  .o.
                       i ("^") e -> i i  .o. ! e-hopping
                       a ("^") e -> a a  .o.
-                      u ("^") e -> u u  ;
+                      u ("^") e -> u u  .o. 
+                      A ("^") i -> I i  .o.
+                      I ("^") a -> I i  .o.
+                      U ("^") i -> I i  .o.
+                      I ("^") u -> I i  .o.
+                      A ("^") u -> A a  .o.
+                      U ("^") a -> A a  .o.
+                      I ("^") e -> I i  .o. ! e-hopping
+                      A ("^") e -> A a  .o.
+                      U ("^") e -> U u  ;
 
 
 define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a

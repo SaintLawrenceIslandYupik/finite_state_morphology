@@ -396,6 +396,16 @@ Multichar_Symbols
 (GuessSpecialTE)  ! Guessed Yupik root ending in special te
 (GuessFinalE)  ! Guessed Yupik root ending with final e
 (GuessFullVGH) ! Guessed Yupik root ending in -agh, -igh, -ugh
+(GuessNameAIU)                  ! Guessed Yupik name ending in a, i, or u
+(GuessNameGWGHW)                ! Guessed Yupik name ending in g, w, or ghw
+(GuessNameWeakGH)               ! Guessed Yupik name ending in weak gh
+(GuessNameUnexpectedlyStrongGH) ! Guessed Yupik name ending in an unexpectedly strong gh
+(GuessNamePredictablyStrongGH)  ! Guessed Yupik name ending in a predictably strong gh preceeded by aa, ii, or uu
+(GuessNameTE)                   ! Guessed Yupik name ending in te
+(GuessNameSemiFinalE)           ! Guessed Yupik name ending with semi-final e
+(GuessNameEDrop)                ! Guessed Yupik name ending e that can be dropped but not hopped
+(GuessNameEHop)                 ! Guessed Yupik name ending e that can be hopped
+(Name)         ! Proper name
 (FOREIGN)      ! Guessed foreign root
 
 !===========
