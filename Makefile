@@ -1,4 +1,4 @@
-all: clean ess.lexc lower.fomabin ess.fomabin test
+all: clean ess.lexc lower.fomabin ess.fomabin l2s.fomabin i2s.fomabin l2i.fomabin l2is.fomabin test
 
 ess.lexc: lexc-files/header.txt lexc-files/demonstratives.txt lexc-files/dem-suffixes.txt lexc-files/emotional_roots.txt lexc-files/interrogatives.txt lexc-files/numerals.txt lexc-files/particles.txt lexc-files/positionals.txt lexc-files/postural_roots.txt lexc-files/pronouns.txt lexc-files/quantifier_qualifier.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/verb_root_ete.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt
 	@cat $^ > $@
@@ -18,6 +18,9 @@ lower.fomabin: ess.fomabin
 upper.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToInitialCapsSurfaceGrammar" -e "save stack $@" -s
 
+l2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "save stack $@" -s
+
 i2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push IntermediateToSurfaceGrammar" -e "save stack $@" -s
 
@@ -26,6 +29,10 @@ l2i.fomabin: ess.fomabin
 
 l2is.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToIntermediateWithPhonology" -e "save stack $@" -s
+
+g2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
+
 
 %.interactive: %.fomabin
 	foma -e "load stack $<"

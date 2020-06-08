@@ -383,7 +383,17 @@ Multichar_Symbols
 (N→XCLM)       ! noun stem to exclamation
 (V→XCLM)       ! verb stem to exclamation
 [Volitive.Of.Fear]  ! for volitive of fear mood [Jacobson (2001) p.129] 
-
+(GUESS)        ! Guessed root
+(GuessAIU)     ! Guessed root that ends in a, i, or u
+(GuessEHop)    ! Guessed root ending in e that can be hopped
+(GuessEDrop)   ! Guessed Yupik root ending e that can be dropped but not hopped
+(GuessGWGHW)   ! Guessed Yupik root ending in g, w, or ghw
+(GuessUnexpectedlyStrongGH) ! Guessed Yupik root ending in an unexpectedly strong gh
+(GuessPredictablyStrongGH)  ! Guessed Yupik root ending in a predictably strong gh preceeded by aa, ii, or uu
+(GuessWeakGH)               ! Guessed Yupik root ending in weak gh
+(GuessSemiFinalE) ! Guessed Yupik root ending with semi-final e
+(GuessTE)      ! Guessed Yupik root ending in te
+(FOREIGN)      ! Guessed foreign root
 
 !===========
 LEXICON Root

@@ -1,13 +1,5 @@
 #!/usr/bin/env foma -f
 
-read lexc exceptions.lexc
-define Exceptions
-
-read lexc parallel.lexc
-define ParallelForms
-
-read lexc ess.lexc
-define Lexicon
 
 
 !==============
@@ -49,6 +41,49 @@ define FullVowel  [ a | i | u ];
 define V          [ e | FullVowel ];
 
 define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
+
+
+!================
+! GUESSED ROOTS
+!================
+
+define AnyC [ UnvoicedC | VoicedC ];
+define AnyV [ a | a a | i | i i | u | u u | e ];
+
+define GuessedRootAIU                  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a a | i i | u u | a | i | u ] ;
+define GuessedRootGWGHW                [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC        AnyV            [ g | w | g h w ];
+define GuessedRootPredictablyStrongGH  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a a | i i | u u ]    [ g h ] ;
+define GuessedRootUnexpectedlyStrongGH [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a | i | u       ]    [ g h "*" ]:[   g   h ] ;
+define GuessedRootWeakGH               [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC [ a | i | u       ]    [ g h     ]:[ %{g%} h ] ;
+define GuessedRootEDrop                [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]+                              AnyC e ]  |
+                                                                                        [ [ (AnyC) [a a | i i | u u | e ] AnyC e ] ;
+define GuessedRootEHop                 [ "(GUESS)":0 ]                                      (AnyC)     FullVowel          AnyC e ;
+define GuessedRootSemiFinalE           [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* AnyC                     e  [ g | g h ] ;
+define GuessedTE                       [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e ] .o. 
+                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+
+!===============
+! READ LEXICONS
+!===============
+
+read lexc exceptions.lexc
+define Exceptions
+
+read lexc parallel.lexc
+define ParallelForms
+
+read lexc ess.lexc
+substitute defined GuessedRootAIU for "(GuessAIU)"
+substitute defined GuessedRootEHop for "(GuessEHop)"
+substitute defined GuessedRootEDrop for "(GuessEDrop)"
+substitute defined GuessedRootGWGHW for "(GuessGWGHW)"
+substitute defined GuessedRootUnexpectedlyStrongGH for "(GuessUnexpectedlyStrongGH)"
+substitute defined GuessedRootPredictablyStrongGH for "(GuessPredictablyStrongGH)"
+substitute defined GuessedRootWeakGH for "(GuessWeakGH)"
+substitute defined GuessedRootSemiFinalE for "(GuessSemiFinalE)"
+substitute defined GuessedTE for "(GuessTE)"
+define Lexicon
+
 
 
 !================
@@ -269,6 +304,12 @@ define ImputativeMood ~[ ?* Ni ?* [Conditional | Contemporative | ParticipialObl
 
 define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
 
+!----------
+! guesses
+!----------
+
+define NoGuesses ~[ ?* "(GUESS)" ?* ];
+define   Guesses  [ ?* "(GUESS)" ?* ];
 
 !~~~~~~~~~~~~~~~~~~~~~~~
 ! 3. FILTER COMPOSITION
@@ -597,6 +638,7 @@ define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since 
 
 define CleanupMorphBoundary "^" -> 0 ;
 
+! define DisallowEmptySurfaceMorpheme ~[ ?* "^" "^" ?* ];
 
 define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ("^") [ Stop | f |  s]                      .o.
                   l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] ("^") _      .o.
@@ -656,7 +698,7 @@ define Rules [
     BaseFinalEndings     .o.
     PreventGemination    .o.
     CleanupDigraph       .o.
-    AssimilateEnclitic   
+    AssimilateEnclitic   ! .o. DisallowEmptySurfaceMorpheme
 ];
 
 define PhonologicalRules [
@@ -667,14 +709,20 @@ define PhonologicalRules [
     Undoubling
 ];
 
-define FilteredLex [ Filters .o. Lexicon ];
+!define FilteredLex [ Filters .o. Lexicon ];
+define FilteredLex [ NoGuesses .o. Filters .o. Lexicon ];
+define GuessLex [ Guesses .o. Filters .o. Lexicon ];
 
 define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
-
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules ];
-
 define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
+
+define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
+define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
+define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules ];
+
+! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar ];
 
 ! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 ! define GrammarUpper [ GrammarLower .o. Uppercase ];
