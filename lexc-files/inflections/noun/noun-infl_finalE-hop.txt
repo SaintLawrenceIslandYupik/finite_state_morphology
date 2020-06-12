@@ -6,7 +6,7 @@ LEXICON NounInflIX
 !-----------------------------------------|
 !               ABSOLUTIVE                |
 !-----------------------------------------|--------------------------------------------|-----------------------------------------|
-^[Abs.Sg]:^%{NULL%}             PostInflIX; ^[Abs.Pl]:^t                     PostInflIX; ^[Abs.Du]:^k                  PostInflIX;
+^[Abs.Sg]:^%{%0%}             PostInflIX; ^[Abs.Pl]:^t                     PostInflIX; ^[Abs.Du]:^k                  PostInflIX;
 !-----------------------------------------|--------------------------------------------|-----------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.f.%}ka    PostInflIX; ^[Abs.1SgPoss.Pl]:^nka           PostInflIX; ^[Abs.1SgPoss.Du]:^gka        PostInflIX;
 ^[Abs.1PlPoss.Sg]:^vut          PostInflIX; ^[Abs.1PlPoss.Pl]:^put           PostInflIX; ^[Abs.1PlPoss.Du]:^gput       PostInflIX;

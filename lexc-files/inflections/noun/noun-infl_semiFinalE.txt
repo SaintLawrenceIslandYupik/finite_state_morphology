@@ -6,7 +6,7 @@ LEXICON NounInflVII
 !-----------------------------------------------|
 !                  ABSOLUTIVE                   |
 !-----------------------------------------------|--------------------------------------------|----------------------------------------------|
-^[Abs.Sg]:^%{NULL%}                  PostInflVII; ^[Abs.Pl]:^%{.sf.%}et           PostInflVII; ^[Abs.Du]:^%{.sf.%}ek             PostInflVII;
+^[Abs.Sg]:^%{%0%}                  PostInflVII; ^[Abs.Pl]:^%{.sf.%}et           PostInflVII; ^[Abs.Du]:^%{.sf.%}ek             PostInflVII;
 !-----------------------------------------------|--------------------------------------------|----------------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.sf.%}%{.m.%}ka PostInflVII; ^[Abs.1SgPoss.Pl]:^%{.sf.%}enka PostInflVII; ^[Abs.1SgPoss.Du]:^%{.sf.%}egka   PostInflVII;
 ^[Abs.1PlPoss.Sg]:^put               PostInflVII; ^[Abs.1PlPoss.Pl]:^%{.m.%}put   PostInflVII; ^[Abs.1PlPoss.Du]:^%{.sf.%}egput  PostInflVII;
