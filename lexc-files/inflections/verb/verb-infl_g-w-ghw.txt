@@ -23,7 +23,7 @@ LEXICON VerbInflIII
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !----------------------------------|----------------------------------------|-----------------------------------|
-^[Intrg.Intr]^[3Sg]:^ta^   Enclitic; ^[Intrg.Intr]^[1Sg]:^tzi^nga   Enclitic; ^[Intrg.Intr.2Sg]:^tzin   Enclitic;
+^[Intrg.Intr]^[3Sg]:^ta^%{NULL%}   Enclitic; ^[Intrg.Intr]^[1Sg]:^tzi^nga   Enclitic; ^[Intrg.Intr.2Sg]:^tzin   Enclitic;
 ^[Intrg.Intr]^[3Pl]:^ta^t  Enclitic; ^[Intrg.Intr]^[1Pl]:^este^a    Enclitic; ^[Intrg.Intr.2Pl]:^etsi   Enclitic;
 ^[Intrg.Intr]^[3Du]:^ta^k  Enclitic; ^[Intrg.Intr]^[1Du]:^este^ung  Enclitic; ^[Intrg.Intr.2Du]:^estek  Enclitic;
 !----------------------------------|----------------------------------------|-----------------------------------|
@@ -68,7 +68,7 @@ LEXICON VerbInflIII
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !------------------------------------|------------------------------------------|--------------------------------------|
-^[Opt.Pres.Intr]^[3Sg]:^li^  Enclitic; ^[Opt.Pres.Intr]^[1Sg]:^la^nga   Enclitic; ^[Opt.Pres.Intr.2Sg]:^i      Enclitic;
+^[Opt.Pres.Intr]^[3Sg]:^li^%{NULL%}  Enclitic; ^[Opt.Pres.Intr]^[1Sg]:^la^nga   Enclitic; ^[Opt.Pres.Intr.2Sg]:^i      Enclitic;
 ^[Opt.Pres.Intr]^[3Pl]:^li^t Enclitic; ^[Opt.Pres.Intr]^[1Pl]:^elte^a   Enclitic; ^[Opt.Pres.Intr]^[2Pl]:^te^k Enclitic;
 ^[Opt.Pres.Intr]^[3Du]:^li^k Enclitic; ^[Opt.Pres.Intr]^[1Du]:^elte^ung Enclitic; ^[Opt.Pres.Intr]^[2Du]:^te^k Enclitic;
 !------------------------------------|------------------------------------------|--------------------------------------|
@@ -82,7 +82,7 @@ LEXICON VerbInflIII
 ^[Opt.Pres.Trns]^[1Pl.3Sg]:^elte^ggu   Enclitic; ^[Opt.Pres.Trns]^[1Pl.3Pl]:^elte^ki    Enclitic; ^[Opt.Pres.Trns]^[1Pl.3Du]:^elte^kek    Enclitic;
 ^[Opt.Pres.Trns]^[1Du.3Sg]:^elte^gnegu Enclitic; ^[Opt.Pres.Trns]^[1Du.3Pl]:^elte^gneki Enclitic; ^[Opt.Pres.Trns]^[1Du.3Du]:^elte^gnekek Enclitic;
 !----------------------------------------------|------------------------------------------------|-------------------------------------------------|
-^[Opt.Pres.Trns.2Sg.3Sg]:^%{.m.%}ggu   Enclitic; ^[Opt.Pres.Trns]^[2Sg.3Pl]:^^ki        Enclitic; ^[Opt.Pres.Trns]^[2Sg.3Du]:^^kek        Enclitic;
+^[Opt.Pres.Trns.2Sg.3Sg]:^%{.m.%}ggu   Enclitic; ^[Opt.Pres.Trns]^[2Sg.3Pl]:^%{NULL%}^ki        Enclitic; ^[Opt.Pres.Trns]^[2Sg.3Du]:^%{NULL%}^kek        Enclitic;
 ^[Opt.Pres.Trns]^[2Pl.3Sg]:^te^ggu     Enclitic; ^[Opt.Pres.Trns]^[2Pl.3Pl]:^te^ki      Enclitic; ^[Opt.Pres.Trns]^[2Pl.3Du]:^te^kek      Enclitic;
 ^[Opt.Pres.Trns]^[2Du.3Sg]:^te^gnegu   Enclitic; ^[Opt.Pres.Trns]^[2Du.3Pl]:^te^gneki   Enclitic; ^[Opt.Pres.Trns]^[2Du.3Du]:^te^gnekek   Enclitic;
 !----------------------------------------------|------------------------------------------------|-------------------------------------------------|
@@ -92,7 +92,7 @@ LEXICON VerbInflIII
 !----------------------------------------------|------------------------------------------------|-------------------------------------------------|
 ! no ^[1--.1--] forms                                                                                                                             |
 !----------------------------------------------|------------------------------------------------|-------------------------------------------------|
-^[Opt.Pres.Trns]^[2Sg.1Sg]:^^nga       Enclitic; ^[Opt.Pres.Trns]^[2Sg.1Pl]:^^kut       Enclitic; ^[Opt.Pres.Trns]^[2Sg.1Du]:^^kung       Enclitic;
+^[Opt.Pres.Trns]^[2Sg.1Sg]:^%{NULL%}^nga       Enclitic; ^[Opt.Pres.Trns]^[2Sg.1Pl]:^%{NULL%}^kut       Enclitic; ^[Opt.Pres.Trns]^[2Sg.1Du]:^%{NULL%}^kung       Enclitic;
 ^[Opt.Pres.Trns]^[2Pl.1Sg]:^te^ngnga   Enclitic; ^[Opt.Pres.Trns]^[2Pl.1Pl]:^te^kut     Enclitic; ^[Opt.Pres.Trns]^[2Pl.1Du]:^te^kung     Enclitic;
 ^[Opt.Pres.Trns]^[2Du.1Sg]:^te^gnenga  Enclitic; ^[Opt.Pres.Trns]^[2Du.1Pl]:^te^gnekut  Enclitic; ^[Opt.Pres.Trns]^[2Du.1Du]:^te^gnekung  Enclitic;
 !----------------------------------------------|------------------------------------------------|-------------------------------------------------|

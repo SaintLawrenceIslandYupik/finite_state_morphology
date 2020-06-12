@@ -5,9 +5,10 @@ Multichar_Symbols
 @R.AUX.TRUE@
 @D.AUX.TRUE@
 
-%{g%}  ! for digraph -gh
-%{k%}  ! for digraph -kw
-%{t%}  ! for -te
+%{NULL%}  ! for null morphemes
+%{g%}     ! for digraph -gh
+%{k%}     ! for digraph -kw
+%{t%}     ! for -te
 
 !-----------
 ! allomorphs 

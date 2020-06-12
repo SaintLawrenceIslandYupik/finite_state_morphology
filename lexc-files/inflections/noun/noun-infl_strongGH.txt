@@ -7,7 +7,7 @@ LEXICON NounInflV
 !-------------------------------------|
 !            ABSOLUTIVE               |
 !-------------------------------------|-----------------------------------------|------------------------------------|
-^[Abs.Sg]:^                  PostInflV; ^[Abs.Pl]:^et                  PostInflV; ^[Abs.Du]:^ek             PostInflV;
+^[Abs.Sg]:^%{NULL%}          PostInflV; ^[Abs.Pl]:^et                  PostInflV; ^[Abs.Du]:^ek             PostInflV;
 !-------------------------------------|-----------------------------------------|------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.m.%}ka PostInflV; ^[Abs.1SgPoss.Pl]:^enka        PostInflV; ^[Abs.1SgPoss.Du]:^egka   PostInflV;
 ^[Abs.1PlPoss.Sg]:^put       PostInflV; ^[Abs.1PlPoss.Pl]:^%{.m.%}put  PostInflV; ^[Abs.1PlPoss.Du]:^egput  PostInflV;

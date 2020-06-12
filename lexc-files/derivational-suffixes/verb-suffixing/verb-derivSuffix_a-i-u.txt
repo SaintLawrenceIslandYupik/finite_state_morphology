@@ -13,9 +13,13 @@ LEXICON VerbPostbaseI
 !==================
 LEXICON VNPostbaseI 
 !==================
+[Badten p.625]
+^@~%:(i/u)mate(V→N)^[Prl.Sg]:^matkun           #;   ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Pl]:^matetgun         #;   ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Du]:^mategnegun       #;   ! the time while V-ing; the course of V-ing
+
 ^–lleghqagh(V→N):^lleghqa%{g%}h      NounInflIII;  ! future act of V-ing
 ^@~f–negh(V→N):^negh                 NounInflVII;  ! the act of V-ing; the activity of V-ing; the state of being V
-^@~%:(i/u)mate(V→N):^ma%{t%}e        NounInflVI;   ! the time while V-ing; the course of V-ing
 
 ^@~%:(i/u)ma(V→N):^ma                CheckAUXFlagI;    ! one who V-s
 ^@–lghii(V→N):^lghii                 CheckAUXFlagI;    ! the one that V-ed
@@ -333,7 +337,7 @@ LEXICON EvidentialImputativeI
 !============================
 0:0                         PostAuxiliaryI;
 ^+(pete)fte(V→V):^f%{t%}e   SetAUXFlagEvidentialImputativeV;  ! to evidently V or have V-ed
-^+yengagh(V→V):^yengagh     SetAUXFlagEvidentialImputativeI;  ! it loks like V (from the evidence I have heard or seen)
+^+yengagh(V→V):^yengagh     SetAUXFlagEvidentialImputativeI;  ! it looks like V (from the evidence I have heard or seen)
 ^@~fni(CmpdVbl):^ni         SetAUXFlagEvidentialImputativeI;  ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
 ^@~fyuke(CmpdVbl):^yuke     SetAUXFlagEvidentialImputativeII; ! to think that one is V-ing or has V-ed
 ^@~fnayuke(V→V):^nayuke     SetAUXFlagEvidentialImputativeII; ! to think that one might V

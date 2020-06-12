@@ -177,6 +177,11 @@ define Yagh  [ "^" "@" "~f" {yagh} "(V→V)" ];
 define PeteFte [ "^" "+" "(pete)" {fte} "(V→V)" ];
 define Ni      [ "^" "@" "~f" {ni} "(CmpdVbl)" ];
 
+!-------------------------
+! miscellaneous postbases
+!-------------------------
+define Ute [ "^" "@" "~" ":" "(u)" [ "(V→N)" | "(V→V)" ] ];
+
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! 2. CO-OCCURRENCE RESTRICTIONS 
@@ -253,16 +258,21 @@ define ImputativeMood ~[ ?* Ni ?* [Conditional | Contemporative | ParticipialObl
 
 define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
 
+!-----------------------
+! miscellaneous filters
+!-----------------------
+define DuplicateUteFilter ~[ ?* Ute ?* Ute ];
 
 !~~~~~~~~~~~~~~~~~~~~~~~
 ! 3. FILTER COMPOSITION
 !~~~~~~~~~~~~~~~~~~~~~~~
 define Filters [ NegativeFilters             .o.
-	             ModalFilters                .o.
+                 ModalFilters                .o.
                  PastTenseFilters            .o.
                  ProgressiveAspectFilters    .o.
                  FutureFrustrativeFilters    .o.
-                 EvidentialImputativeFilters
+                 EvidentialImputativeFilters .o.
+                 DuplicateUteFilter
                ];
 
 
@@ -286,7 +296,7 @@ define AsciiArrow "(N→N)" (->) "(N->N)" ,,
                   "(N→V)" (->) "(N->V)" ,,
                   "(V→V)" (->) "(V->V)" ,,
                   "(V→N)" (->) "(V->N)" ;
-	               
+                   
 
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
@@ -355,8 +365,8 @@ define VelarUvularRounding       g -> w         ||   [ i | a ] u _ [ C | V - u ]
                                  q -> q w       || [ C | V - u ] _ u [ i | a ]   ;
 
 
-define DropFinalVC V (C) (h) -> 0 || _ "^" %{%.mm%.%} .o. 
-                  %{%.mm%.%} -> 0                     ;
+define DropFinalVC V (C) (h) -> 0 || [? -"^"] _ "^" %{%.mm%.%} .o. 
+                  %{%.mm%.%} -> 0                              ;
 
 
 !---------------------------------------
@@ -554,25 +564,27 @@ define MatchVoicing t [z | y] -> s                                              
                             w -> w h ||       [ C - h | V ] _ t                 ;   ! [Badten (2008) p.682] 
 
 
-define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
-                        %{t%} e -> t a                                  .o.
-                              e -> a   ||                 _     "^" .#. .o.
-                              w -> k w || [C - h | %{k%}] _     "^" .#. .o.
-                            g h -> q   ||                 _ (w) "^" .#. .o.
-                        %{g%} h -> q   ||                 _     "^" .#. .o.
-                              g -> k   ||                 _     "^" .#. .o.
-          [ %{t%} | t ] ("^") z -> s                                    ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
+define BaseFinalEndings %{t%} e -> n   ||               V _     ("^" %{NULL%}) .#. , 
+                        %{t%} e -> t a                                             .o.
+                              e -> a   ||                 _     ("^" %{NULL%}) .#. .o.
+                              w -> k w || [C - h | %{k%}] _     ("^" %{NULL%}) .#. .o.
+                            g h -> q   ||                 _ (w) ("^" %{NULL%}) .#. .o.
+                        %{g%} h -> q   ||                 _     ("^" %{NULL%}) .#. .o.
+                              g -> k   ||         [? - n] _     ("^" %{NULL%}) .#. .o.
+          [ %{t%} | t ] ("^") z -> s                                               ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
-define PreventGemination n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
+define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
+                         n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
                          n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
                          v -> 0 || .#. n u u _ "^" v .o. ! nuuve+vig [Badten (2008) p.693]
-						 s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
+                         s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
 
 
-define CleanupDigraph %{k%}   -> 0   .o.
-                      %{g%} h -> g h .o.
-                      %{t%}   -> t   ;
+define CleanupPlaceholders %{NULL%} -> 0   .o.
+                           %{k%}    -> 0   .o.
+                           %{g%} h  -> g h .o.
+                           %{t%}    -> t   ;
 
 
 define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
@@ -644,7 +656,7 @@ define Rules [
     !-------------------------------
     BaseFinalEndings     .o.
     PreventGemination    .o.
-    CleanupDigraph       .o.
+    CleanupPlaceholders  .o.
     AssimilateEnclitic   .o.
     CleanupMorphBoundary .o.
     VelarUvularRounding  .o.

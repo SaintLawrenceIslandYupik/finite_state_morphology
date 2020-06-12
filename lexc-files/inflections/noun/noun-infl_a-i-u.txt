@@ -6,7 +6,7 @@ LEXICON NounInflI
 !--------------------------------|
 !          ABSOLUTIVE            |
 !--------------------------------|----------------------------------|-----------------------------------|
-^[Abs.Sg]:^             PostInflI; ^[Abs.Pl]:^t            PostInflI; ^[Abs.Du]:^k             PostInflI;
+^[Abs.Sg]:^%{NULL%}     PostInflI; ^[Abs.Pl]:^t            PostInflI; ^[Abs.Du]:^k             PostInflI;
 !--------------------------------|----------------------------------|-----------------------------------|
 ^[Abs.1SgPoss.Sg]:^ka   PostInflI; ^[Abs.1SgPoss.Pl]:^nka  PostInflI; ^[Abs.1SgPoss.Du]:^gka   PostInflI;
 ^[Abs.1PlPoss.Sg]:^vut  PostInflI; ^[Abs.1PlPoss.Pl]:^put  PostInflI; ^[Abs.1PlPoss.Du]:^gput  PostInflI;
