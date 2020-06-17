@@ -1,4 +1,4 @@
-all: clean ess.lexc lowercase.fomabin uppercase.fomabin asciiarrow.fomabin test
+all: clean ess.lexc ess.fomabin l2s.fomabin i2s.fomabin l2i.fomabin l2is.fomabin lowercase.fomabin uppercase.fomabin asciiarrow.fomabin test
 
 ess.lexc: lexc-files/header.txt lexc-files/demonstratives.txt lexc-files/dem-suffixes.txt lexc-files/emotional_roots.txt lexc-files/interrogatives.txt lexc-files/numerals.txt lexc-files/particles.txt lexc-files/positionals.txt lexc-files/postural_roots.txt lexc-files/pronouns.txt lexc-files/quantifier_qualifier.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/verb_root_ete.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt
 	@cat $^ > $@
@@ -9,19 +9,42 @@ exceptions.lexc: exceptions/exceptions-header.txt exceptions/exceptions.txt lexc
 parallel.lexc: parallel/parallel-header.txt parallel/parallels.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
 	@cat $^ > $@
 
-lowercase.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
-	foma -l ess.foma -e "push GrammarLowercase" -e "save stack lowercase.fomabin" -s
+ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
+	foma -l ess.foma -e "save defined $@" -s
 
-uppercase.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
-	foma -l ess.foma -e "push GrammarUppercase" -e "save stack uppercase.fomabin" -s
+lowercase.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "save stack $@" -s
+
+uppercase.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToInitialCapsSurfaceGrammar" -e "save stack $@" -s
+
+l2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "save stack $@" -s
+
+i2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push IntermediateToSurfaceGrammar" -e "save stack $@" -s
+
+l2i.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToIntermediateGrammar" -e "save stack $@" -s
+
+l2is.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToIntermediateWithPhonology" -e "save stack $@" -s
+
+g2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
+
+f2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push ForeignGuessGrammar" -e "save stack $@" -s
 
 asciiarrow.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
 	foma -l ess.foma -e "push GrammarAscii" -e "save stack asciiarrow.fomabin" -s
 
+%.interactive: %.fomabin
+	foma -e "load stack $<"
 
-interactive: ess.foma ess.lexc exceptions.lexc parallel.lexc
-	foma -l ess.foma -e "push GrammarUppercase"
+interactive: lowercase.interactive
 
+.PRECIOUS: %.fomabin
 
 test: $(foreach n,2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18,test-ch$n) test-emotionalroots test-posturalroots test-enclitics test-postbases #test-dereuse
 
