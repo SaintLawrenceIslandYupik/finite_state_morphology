@@ -107,8 +107,11 @@ define PossibleYupikName  [ GuessedNameAIU.l                  |
 define GuessedForeignName [ "(GUESS)" "(NAME)" "(FOREIGN)" ]:0 [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ]   [
                           [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ] |
                           [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z ] |
-                          [ "\u02BC" ] ]* ;
-                                                                      ! If name is a possible Yupik name, do not allow it to be analyzed as foreign
+                          [ "\u02BC" ] ]* ("-");
+
+define GuessedForeignWord [ "(GUESS)" "(FOREIGN)" ]:0 [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z | "\u02BC" ] [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z | "\u02BC" ]* ("-");
+
+define GuessedForeign [ GuessedForeignName | GuessedForeignWord ];
 
 !===============
 ! READ LEXICONS
@@ -146,7 +149,7 @@ substitute defined GuessedNameTE                   for "(GuessNameTE)"
 substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
 substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
 substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
-substitute defined GuessedForeignName              for "(GuessForeignName)"
+substitute defined GuessedForeign                  for "(GuessForeign)"
 eliminate flag AUX
 define LexiconNoFlags;
 define Lexicon LexiconNoFlags;
@@ -360,6 +363,7 @@ define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
 
 define NoGuesses ~[ ?* "(GUESS)" ?* ];
 define   Guesses  [ ?* "(GUESS)" ?* ];
+define   Foreign  [ ?* "(FOREIGN)" ?* ];
 
 !-----------------------
 ! miscellaneous filters
@@ -783,7 +787,6 @@ define PhonologicalRules [
     Undoubling
 ];
 
-!define FilteredLex [ Filters .o. Lexicon ];
 define FilteredLex [ NoGuesses .o. Filters .o. Lexicon ];
 define GuessLex [ Guesses .o. Filters .o. Lexicon ];
 
@@ -792,10 +795,10 @@ define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBo
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules ];
 define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
 
-! define Foreign [ *? "(Foreign)" *? ] .o. Guesses .o. Lexicon ;
+define ForeignGuessGrammar [ Foreign .o. Guesses .o. Lexicon .o. CleanupPlaceholders .o. CleanupMorphBoundary ];
 
 define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
-define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ] ;
+define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
 define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules ];
 
 ! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar ];

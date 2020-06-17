@@ -18,7 +18,7 @@ LEXICON ProperNoun
 !-----------------------
 ! Guessed Foreign Names
 !-----------------------
-(GuessForeignName)              GuessedForeignName ;
+(GuessForeign)              GuessedForeign ;
 
 !--------------------
 ! Inflection Class I
@@ -385,7 +385,7 @@ Laluramke  NounTagVIII; ! white person; Caucasian
 Naalle     NounTagVIII; ! North Beach at Gambell
 
 
-LEXICON GuessedForeignName
+LEXICON GuessedForeign
 0:0     NounInflI ;
 0:-     NounTagI;    ! Guessed foreign name
 0:-     NounTagII;   ! Guessed foreign name
