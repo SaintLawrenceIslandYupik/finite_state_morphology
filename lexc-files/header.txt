@@ -1,9 +1,14 @@
 !================
 Multichar_Symbols
 !================
-%{g%}  ! for digraph -gh
-%{k%}  ! for digraph -kw
-%{t%}  ! for -te
+@P.AUX.TRUE@
+@R.AUX.TRUE@
+@D.AUX.TRUE@
+
+%{%0%}  ! for null morphemes
+%{g%}   ! for digraph -gh
+%{k%}   ! for digraph -kw
+%{t%}   ! for -te
 
 !-----------
 ! allomorphs 
@@ -181,79 +186,40 @@ Multichar_Symbols
 (POS→QUANTQUAL) ! postural root to quantifier-qualifier construction
 
 [Ind.Intr]      ! intransitive indicative mood
-[Ind.Trns]      ! transitive indicative mood
+[Ind.Trns]      !   transitive indicative mood
 [Ptcp.Intr]     ! intransitive participial mood
-[Ptcp.Trns]     ! transitive participial mood
+[Ptcp.Trns]     !   transitive participial mood
+[Intrg.Intr]    ! intransitive interrogative mood
+[Intrg.Trns]    !   transitive interrogative mood
 [PtcpObl.Intr]  ! intransitive participial-oblique mood
-[PtcpObl.Trns]  ! transitive participial-oblique mood
+[PtcpObl.Trns]  !   transitive participial-oblique mood
 [Prec.Intr]     ! intransitive precessive mood
-[Prec.Trns]     ! transitive precessive mood
+[Prec.Trns]     !   transitive precessive mood
 [Conc.Intr]     ! intransitive concessive mood
-[Conc.Trns]     ! transitive concessive mood
+[Conc.Trns]     !   transitive concessive mood
 [Cnsq1.Intr]    ! intransitive consequential I mood
-[Cnsq1.Trns]    ! transitive consequential I mood
+[Cnsq1.Trns]    !   transitive consequential I mood
 [Cnsq2.Intr]    ! intransitive consequential II mood
-[Cnsq2.Trns]    ! transitive consequential II mood
+[Cnsq2.Trns]    !   transitive consequential II mood
 [Cond.Intr]     ! intransitive conditional mood
-[Cond.Trns]     ! transitive conditional mood
+[Cond.Trns]     !   transitive conditional mood
 [Ctmp.Intr]     ! intransitive contemporative mood
-[Ctmp.Trns]     ! transitive contemporative mood
+[Ctmp.Trns]     !   transitive contemporative mood
 [Sbrd.Intr]     ! intransitive subordinative mood
-[Sbrd.Trns]     ! transitive subordinative mood
+[Sbrd.Trns]     !   transitive subordinative mood
 !~~~~~~~~~~~~~~~~~~~
 ! interrogative mood 
 !~~~~~~~~~~~~~~~~~~~
-[Intrg.Intr.3Sg]  [Intrg.Intr.1Sg]  [Intrg.Intr.2Sg]
-[Intrg.Intr.3Pl]  [Intrg.Intr.1Pl]  [Intrg.Intr.2Pl]
-[Intrg.Intr.3Du]  [Intrg.Intr.1Du]  [Intrg.Intr.2Du]
-[Intrg.Trns.3Sg.3Sg]  [Intrg.Trns.3Sg.3Pl]  [Intrg.Trns.3Sg.3Du]
-[Intrg.Trns.3Pl.3Sg]  [Intrg.Trns.3Pl.3Pl]  [Intrg.Trns.3Pl.3Du]
-[Intrg.Trns.3Du.3Sg]  [Intrg.Trns.3Du.3Pl]  [Intrg.Trns.3Du.3Du]
-[Intrg.Trns.1Sg.3Sg]  [Intrg.Trns.1Sg.3Pl]  [Intrg.Trns.1Sg.3Du]
-[Intrg.Trns.1Pl.3Sg]  [Intrg.Trns.1Pl.3Pl]  [Intrg.Trns.1Pl.3Du]
-[Intrg.Trns.1Du.3Sg]  [Intrg.Trns.1Du.3Pl]  [Intrg.Trns.1Du.3Du]
-[Intrg.Trns.2Sg.3Sg]  [Intrg.Trns.2Sg.3Pl]  [Intrg.Trns.2Sg.3Du]
-[Intrg.Trns.2Pl.3Sg]  [Intrg.Trns.2Pl.3Pl]  [Intrg.Trns.2Pl.3Du]
-[Intrg.Trns.2Du.3Sg]  [Intrg.Trns.2Du.3Pl]  [Intrg.Trns.2Du.3Du]
-[Intrg.Trns.3Sg.1Sg]  [Intrg.Trns.3Sg.1Pl]  [Intrg.Trns.3Sg.1Du]
-[Intrg.Trns.3Pl.1Sg]  [Intrg.Trns.3Pl.1Pl]  [Intrg.Trns.3Pl.1Du]
-[Intrg.Trns.3Du.1Sg]  [Intrg.Trns.3Du.1Du]
-[Intrg.Trns.2Sg.1Sg]  [Intrg.Trns.2Sg.1Du]
-[Intrg.Trns.2Pl.1Sg]  [Intrg.Trns.2Pl.1Du]
-[Intrg.Trns.2Du.1Sg]  [Intrg.Trns.2Du.1Du]
-[Intrg.Trns.3Sg.2Sg]  [Intrg.Trns.3Sg.2Du]
-[Intrg.Trns.3Pl.2Sg]  [Intrg.Trns.3Pl.2Du]
-[Intrg.Trns.3Du.2Sg]  [Intrg.Trns.3Du.2Du]
-[Intrg.Trns.1Sg.2Sg]
-[Intrg.Trns.1Pl.2Sg]
-[Intrg.Trns.1Du.2Sg]
+[Intrg.Intr.2Sg]
+[Intrg.Intr.2Pl]
+[Intrg.Intr.2Du]
 !~~~~~~~~~~~~~~
 ! optative mood 
 !~~~~~~~~~~~~~~
-[Opt.Pres.Intr.3Sg]  [Opt.Pres.Intr.1Sg]  [Opt.Pres.Intr.2Sg]
-[Opt.Pres.Intr.3Pl]  [Opt.Pres.Intr.1Pl]  [Opt.Pres.Intr.2Pl]
-[Opt.Pres.Intr.3Du]  [Opt.Pres.Intr.1Du]  [Opt.Pres.Intr.2Du]
-[Opt.Pres.Trns.3Sg.3Sg]  [Opt.Pres.Trns.3Sg.3Pl]  [Opt.Pres.Trns.3Sg.3Du]
-[Opt.Pres.Trns.3Pl.3Sg]  [Opt.Pres.Trns.3Pl.3Pl]  [Opt.Pres.Trns.3Pl.3Du]
-[Opt.Pres.Trns.3Du.3Sg]  [Opt.Pres.Trns.3Du.3Pl]  [Opt.Pres.Trns.3Du.3Du]
-[Opt.Pres.Trns.1Sg.3Sg]  [Opt.Pres.Trns.1Sg.3Pl]  [Opt.Pres.Trns.1Sg.3Du]
-[Opt.Pres.Trns.1Pl.3Sg]  [Opt.Pres.Trns.1Pl.3Pl]  [Opt.Pres.Trns.1Pl.3Du]
-[Opt.Pres.Trns.1Du.3Sg]  [Opt.Pres.Trns.1Du.3Pl]  [Opt.Pres.Trns.1Du.3Du]
-[Opt.Pres.Trns.2Sg.3Sg]  [Opt.Pres.Trns.2Sg.3Pl]  [Opt.Pres.Trns.2Sg.3Du]
-[Opt.Pres.Trns.2Pl.3Sg]  [Opt.Pres.Trns.2Pl.3Pl]  [Opt.Pres.Trns.2Pl.3Du]
-[Opt.Pres.Trns.2Du.3Sg]  [Opt.Pres.Trns.2Du.3Pl]  [Opt.Pres.Trns.2Du.3Du]
-[Opt.Pres.Trns.3Sg.1Sg]  [Opt.Pres.Trns.3Sg.1Pl]  [Opt.Pres.Trns.3Sg.1Du]
-[Opt.Pres.Trns.3Pl.1Sg]  [Opt.Pres.Trns.3Pl.1Pl]  [Opt.Pres.Trns.3Pl.1Du]
-[Opt.Pres.Trns.3Du.1Sg]  [Opt.Pres.Trns.3Du.1Pl]  [Opt.Pres.Trns.3Du.1Du]
-[Opt.Pres.Trns.2Sg.1Sg]  [Opt.Pres.Trns.2Sg.1Pl]  [Opt.Pres.Trns.2Sg.1Du]
-[Opt.Pres.Trns.2Pl.1Sg]  [Opt.Pres.Trns.2Pl.1Pl]  [Opt.Pres.Trns.2Pl.1Du]
-[Opt.Pres.Trns.2Du.1Sg]  [Opt.Pres.Trns.2Du.1Pl]  [Opt.Pres.Trns.2Du.1Du]
-[Opt.Pres.Trns.3Sg.2Sg]  [Opt.Pres.Trns.3Sg.2Pl]  [Opt.Pres.Trns.3Sg.2Du]
-[Opt.Pres.Trns.3Pl.2Sg]  [Opt.Pres.Trns.3Pl.2Pl]  [Opt.Pres.Trns.3Pl.2Du]
-[Opt.Pres.Trns.3Du.2Sg]  [Opt.Pres.Trns.3Du.2Pl]  [Opt.Pres.Trns.3Du.2Du]
-[Opt.Pres.Trns.1Sg.2Sg]  [Opt.Pres.Trns.1Sg.2Pl]  [Opt.Pres.Trns.1Sg.2Du]
-[Opt.Pres.Trns.1Pl.2Sg]  [Opt.Pres.Trns.1Pl.2Pl]  [Opt.Pres.Trns.1Pl.2Du]
-[Opt.Pres.Trns.1Du.2Sg]  [Opt.Pres.Trns.1Du.2Pl]  [Opt.Pres.Trns.1Du.2Du]
+[Opt.Pres.Intr]
+[Opt.Pres.Trns]
+[Opt.Pres.Intr.2Sg]
+[Opt.Pres.Trns.2Sg.3Sg]
 [Opt.Neg.Pres.Intr]
 [Opt.Neg.Pres.Trns]
 [Opt.Neg.Pres.Trns.2Sg.3Pl]

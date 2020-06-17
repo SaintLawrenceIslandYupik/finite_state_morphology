@@ -6,7 +6,7 @@ LEXICON NounInflI
 !--------------------------------|
 !          ABSOLUTIVE            |
 !--------------------------------|----------------------------------|-----------------------------------|
-^[Abs.Sg]:^             PostInflI; ^[Abs.Pl]:^t            PostInflI; ^[Abs.Du]:^k             PostInflI;
+^[Abs.Sg]:^%{%0%}     PostInflI; ^[Abs.Pl]:^t            PostInflI; ^[Abs.Du]:^k             PostInflI;
 !--------------------------------|----------------------------------|-----------------------------------|
 ^[Abs.1SgPoss.Sg]:^ka   PostInflI; ^[Abs.1SgPoss.Pl]:^nka  PostInflI; ^[Abs.1SgPoss.Du]:^gka   PostInflI;
 ^[Abs.1PlPoss.Sg]:^vut  PostInflI; ^[Abs.1PlPoss.Pl]:^put  PostInflI; ^[Abs.1PlPoss.Du]:^gput  PostInflI;
@@ -68,6 +68,7 @@ LEXICON NounInflI
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^mineng     PostInflI; ^[Abl_Mod.4SgPoss.Pl]:^mineng     PostInflI; ^[Abl_Mod.4SgPoss.Du]:^gmineng    PostInflI;
 ^[Abl_Mod.4PlPoss.Sg]:^meggneng   PostInflI; ^[Abl_Mod.4PlPoss.Pl]:^meggneng   PostInflI; ^[Abl_Mod.4PlPoss.Du]:^gmeggneng  PostInflI;
+^[Abl_Mod.4DuPoss.Sg]:^megneng    PostInflI; ^[Abl_Mod.4DuPoss.Pl]:^megneng    PostInflI; ^[Abl_Mod.4DuPoss.Du]:^gmegneng   PostInflI;
 ^[Abl_Mod.4DuPoss.Sg]:^megteneng  PostInflI; ^[Abl_Mod.4DuPoss.Pl]:^megteneng  PostInflI; ^[Abl_Mod.4DuPoss.Du]:^gmegteneng PostInflI;
 !------------------------------------------|--------------------------------------------|--------------------------------------------|
 
@@ -117,6 +118,7 @@ LEXICON NounInflI
 !-------------------------------------|---------------------------------------|---------------------------------------|
 ^[All.4SgPoss.Sg]:^munnun    PostInflI; ^[All.4SgPoss.Pl]:^munnun    PostInflI; ^[All.4SgPoss.Du]:^gmunnun   PostInflI;
 ^[All.4PlPoss.Sg]:^meggnun   PostInflI; ^[All.4PlPoss.Pl]:^meggnun   PostInflI; ^[All.4PlPoss.Du]:^gmeggnun  PostInflI;
+^[All.4DuPoss.Sg]:^megnun    PostInflI; ^[All.4DuPoss.Pl]:^megnun    PostInflI; ^[All.4DuPoss.Du]:^gmegnun   PostInflI;
 ^[All.4DuPoss.Sg]:^megtenun  PostInflI; ^[All.4DuPoss.Pl]:^megtenun  PostInflI; ^[All.4DuPoss.Du]:^gmegtenun PostInflI;
 !-------------------------------------|---------------------------------------|---------------------------------------|
 

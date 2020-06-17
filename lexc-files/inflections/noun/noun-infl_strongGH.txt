@@ -7,7 +7,7 @@ LEXICON NounInflV
 !-------------------------------------|
 !            ABSOLUTIVE               |
 !-------------------------------------|-----------------------------------------|------------------------------------|
-^[Abs.Sg]:^                  PostInflV; ^[Abs.Pl]:^et                  PostInflV; ^[Abs.Du]:^ek             PostInflV;
+^[Abs.Sg]:^%{%0%}          PostInflV; ^[Abs.Pl]:^et                  PostInflV; ^[Abs.Du]:^ek             PostInflV;
 !-------------------------------------|-----------------------------------------|------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.m.%}ka PostInflV; ^[Abs.1SgPoss.Pl]:^enka        PostInflV; ^[Abs.1SgPoss.Du]:^egka   PostInflV;
 ^[Abs.1PlPoss.Sg]:^put       PostInflV; ^[Abs.1PlPoss.Pl]:^%{.m.%}put  PostInflV; ^[Abs.1PlPoss.Du]:^egput  PostInflV;
@@ -68,6 +68,7 @@ LEXICON NounInflV
 !-------------------------------------------------|---------------------------------------------------|---------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^mineng            PostInflV; ^[Abl_Mod.4SgPoss.Pl]:^mineng            PostInflV; ^[Abl_Mod.4SgPoss.Du]:^egmineng    PostInflV;
 ^[Abl_Mod.4PlPoss.Sg]:^meggneng          PostInflV; ^[Abl_Mod.4PlPoss.Pl]:^meggneng          PostInflV; ^[Abl_Mod.4PlPoss.Du]:^egmeggneng  PostInflV;
+^[Abl_Mod.4DuPoss.Sg]:^megneng           PostInflV; ^[Abl_Mod.4DuPoss.Pl]:^megneng           PostInflV; ^[Abl_Mod.4DuPoss.Du]:^egmegneng   PostInflV;
 ^[Abl_Mod.4DuPoss.Sg]:^megteneng         PostInflV; ^[Abl_Mod.4DuPoss.Pl]:^megteneng         PostInflV; ^[Abl_Mod.4DuPoss.Du]:^egmegteneng PostInflV;
 !-------------------------------------------------|---------------------------------------------------|---------------------------------------------|
 
@@ -91,6 +92,7 @@ LEXICON NounInflV
 !-------------------------------------------|---------------------------------------------|---------------------------------------|
 ^[Loc.4SgPoss.Sg]:^mini            PostInflV; ^[Loc.4SgPoss.Pl]:^mini            PostInflV; ^[Loc.4SgPoss.Du]:^egmini    PostInflV;
 ^[Loc.4PlPoss.Sg]:^meggni          PostInflV; ^[Loc.4PlPoss.Pl]:^meggni          PostInflV; ^[Loc.4PlPoss.Du]:^egmeggni  PostInflV;
+^[Loc.4DuPoss.Sg]:^megni           PostInflV; ^[Loc.4DuPoss.Pl]:^megni           PostInflV; ^[Loc.4DuPoss.Du]:^egmegni   PostInflV;
 ^[Loc.4DuPoss.Sg]:^megteni         PostInflV; ^[Loc.4DuPoss.Pl]:^megteni         PostInflV; ^[Loc.4DuPoss.Du]:^egmegteni PostInflV;
 !-------------------------------------------|---------------------------------------------|---------------------------------------|
 
@@ -114,6 +116,7 @@ LEXICON NounInflV
 !--------------------------------------------|----------------------------------------------|----------------------------------------|
 ^[All.4SgPoss.Sg]:^minun            PostInflV; ^[All.4SgPoss.Pl]:^minun            PostInflV; ^[All.4SgPoss.Du]:^egminun    PostInflV;
 ^[All.4PlPoss.Sg]:^meggnun          PostInflV; ^[All.4PlPoss.Pl]:^meggnun          PostInflV; ^[All.4PlPoss.Du]:^egmeggnun  PostInflV;
+^[All.4DuPoss.Sg]:^megnun           PostInflV; ^[All.4DuPoss.Pl]:^megnun           PostInflV; ^[All.4DuPoss.Du]:^egmegnun   PostInflV;
 ^[All.4DuPoss.Sg]:^megtenun         PostInflV; ^[All.4DuPoss.Pl]:^megtenun         PostInflV; ^[All.4DuPoss.Du]:^egmegtenun PostInflV;
 !--------------------------------------------|----------------------------------------------|----------------------------------------|
 
