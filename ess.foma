@@ -801,12 +801,12 @@ define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
 define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
 define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules ];
 
-! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar ];
-
 ! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 ! define GrammarUpper [ GrammarLower .o. Uppercase ];
 
 define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
+
+! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar .p. ForeignGuessGrammar ];
 
 ! allows the user to type ASCII arrows
 define GrammarAscii [ LexicalToSurfaceGrammar.i .o. AsciiArrow ].i;
