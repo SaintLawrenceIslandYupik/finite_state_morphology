@@ -93,7 +93,22 @@ define GuessedNameSemiFinalE           [ UppercaseName .o. GuessedName .o. Guess
 define GuessedNameEDrop                [ UppercaseName .o. GuessedName .o. GuessedRootEDrop                .o. UppercaseFirstLetter ];
 define GuessedNameEHop                 [ UppercaseName .o. GuessedName .o. GuessedRootEHop                 .o. UppercaseFirstLetter ];
 
-                                                                       
+define PossibleYupikName  [ GuessedNameAIU.l                  |
+                            GuessedNameGWGHW.l                |
+                            GuessedNameWeakGH.l               |
+                            GuessedNameUnexpectedlyStrongGH.l |
+                            GuessedNamePredictablyStrongGH.l  |
+                            GuessedNameTE.l                   |
+                            GuessedNameSemiFinalE.l           |
+                            GuessedNameEDrop.l                |
+                            GuessedNameEHop.l                 ];
+
+define GuessedForeignName [ "(GUESS)" "(NAME)" "(FOREIGN)" ]:0 [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ]   [
+                          [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ] |
+                          [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z ] |
+                          [ "\u02BC" ] ]* ;
+                                                                      ! If name is a possible Yupik name, do not allow it to be analyzed as foreign
+
 !===============
 ! READ LEXICONS
 !===============
@@ -126,6 +141,7 @@ substitute defined GuessedNameTE                   for "(GuessNameTE)"
 substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
 substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
 substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
+substitute defined GuessedForeignName              for "(GuessForeignName)"
 define Lexicon
 
 
@@ -771,8 +787,10 @@ define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBo
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules ];
 define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
 
+! define Foreign [ *? "(Foreign)" *? ] .o. Guesses .o. Lexicon ;
+
 define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
-define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
+define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ] ;
 define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules ];
 
 ! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar ];

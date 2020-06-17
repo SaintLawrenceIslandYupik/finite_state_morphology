@@ -15,6 +15,10 @@ LEXICON ProperNoun
 (GuessNameEDrop)                NounTagVIII; ! Guessed Yupik name ending e that can be dropped but not hopped
 (GuessNameEHop)                 NounTagIX;   ! Guessed Yupik name ending e that can be hopped
 
+!-----------------------
+! Guessed Foreign Names
+!-----------------------
+(GuessForeignName)              GuessedForeignName ;
 
 !--------------------
 ! Inflection Class I
@@ -381,3 +385,14 @@ Laluramke  NounTagVIII; ! white person; Caucasian
 Naalle     NounTagVIII; ! North Beach at Gambell
 
 
+LEXICON GuessedForeignName
+0:0     NounInflI ;
+0:-     NounTagI;    ! Guessed foreign name
+0:-     NounTagII;   ! Guessed foreign name
+0:-     NounTagIII;  ! Guessed foreign name
+0:-     NounTagIV;   ! Guessed foreign name
+0:-     NounTagV;    ! Guessed foreign name
+0:-     NounTagVI;   ! Guessed foreign name
+0:-     NounTagVII;  ! Guessed foreign name
+0:-     NounTagVIII; ! Guessed foreign name
+0:-     NounTagIV;   ! Guessed foreign name
