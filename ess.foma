@@ -2,6 +2,7 @@
 
 
 
+
 !==============
 ! MISC SYMBOLS
 !==============
@@ -99,10 +100,14 @@ define GuessedNameEHop                 [ UppercaseName .o. GuessedName .o. Guess
 !===============
 
 read lexc exceptions.lexc
-define Exceptions
+eliminate flag AUX
+define ExceptionsNoFlags;
+define Exceptions ExceptionsNoFlags;
 
 read lexc parallel.lexc
-define ParallelForms
+eliminate flag AUX
+define ParallelNoFlags;
+define ParallelForms ParallelNoFlags;
 
 read lexc ess.lexc
 substitute defined GuessedRootAIU for "(GuessAIU)"
@@ -126,7 +131,9 @@ substitute defined GuessedNameTE                   for "(GuessNameTE)"
 substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
 substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
 substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
-define Lexicon
+eliminate flag AUX
+define LexiconNoFlags;
+define Lexicon LexiconNoFlags;
 
 
 !================
@@ -164,34 +171,12 @@ define Subordinative      [ "^" ["[Sbrd.Intr]" | "[Sbrd.Trns]"] ];
 
 define VolitiveOfFear     [ "^" "[Volitive.Of.Fear]" ];
 
-define Optative [ "^" ["[Opt.Pres.Intr.3Sg]"     | "[Opt.Pres.Intr.1Sg]"     | "[Opt.Pres.Intr.2Sg]"     |
-                       "[Opt.Pres.Intr.3Pl]"     | "[Opt.Pres.Intr.1Pl]"     | "[Opt.Pres.Intr.2Pl]"     |
-                       "[Opt.Pres.Intr.3Du]"     | "[Opt.Pres.Intr.1Du]"     | "[Opt.Pres.Intr.2Du]"     |
-                       "[Opt.Pres.Trns.3Sg.3Sg]" | "[Opt.Pres.Trns.3Sg.3Pl]" | "[Opt.Pres.Trns.3Sg.3Du]" |
-                       "[Opt.Pres.Trns.3Pl.3Sg]" | "[Opt.Pres.Trns.3Pl.3Pl]" | "[Opt.Pres.Trns.3Pl.3Du]" |
-                       "[Opt.Pres.Trns.3Du.3Sg]" | "[Opt.Pres.Trns.3Du.3Pl]" | "[Opt.Pres.Trns.3Du.3Du]" |
-                       "[Opt.Pres.Trns.1Sg.3Sg]" | "[Opt.Pres.Trns.1Sg.3Pl]" | "[Opt.Pres.Trns.1Sg.3Du]" |
-                       "[Opt.Pres.Trns.1Pl.3Sg]" | "[Opt.Pres.Trns.1Pl.3Pl]" | "[Opt.Pres.Trns.1Pl.3Du]" |
-                       "[Opt.Pres.Trns.1Du.3Sg]" | "[Opt.Pres.Trns.1Du.3Pl]" | "[Opt.Pres.Trns.1Du.3Du]" |
-                       "[Opt.Pres.Trns.2Sg.3Sg]" | "[Opt.Pres.Trns.2Sg.3Pl]" | "[Opt.Pres.Trns.2Sg.3Du]" |
-                       "[Opt.Pres.Trns.2Pl.3Sg]" | "[Opt.Pres.Trns.2Pl.3Pl]" | "[Opt.Pres.Trns.2Pl.3Du]" |
-                       "[Opt.Pres.Trns.2Du.3Sg]" | "[Opt.Pres.Trns.2Du.3Pl]" | "[Opt.Pres.Trns.2Du.3Du]" |
-                       "[Opt.Pres.Trns.3Sg.1Sg]" | "[Opt.Pres.Trns.3Sg.1Pl]" | "[Opt.Pres.Trns.3Sg.1Du]" |
-                       "[Opt.Pres.Trns.3Pl.1Sg]" | "[Opt.Pres.Trns.3Pl.1Pl]" | "[Opt.Pres.Trns.3Pl.1Du]" |
-                       "[Opt.Pres.Trns.3Du.1Sg]" | "[Opt.Pres.Trns.3Du.1Pl]" | "[Opt.Pres.Trns.3Du.1Du]" |
-                       "[Opt.Pres.Trns.2Sg.1Sg]" | "[Opt.Pres.Trns.2Sg.1Pl]" | "[Opt.Pres.Trns.2Sg.1Du]" |
-                       "[Opt.Pres.Trns.2Pl.1Sg]" | "[Opt.Pres.Trns.2Pl.1Pl]" | "[Opt.Pres.Trns.2Pl.1Du]" |
-                       "[Opt.Pres.Trns.2Du.1Sg]" | "[Opt.Pres.Trns.2Du.1Pl]" | "[Opt.Pres.Trns.2Du.1Du]" |
-                       "[Opt.Pres.Trns.3Sg.2Sg]" | "[Opt.Pres.Trns.3Sg.2Pl]" | "[Opt.Pres.Trns.3Sg.2Du]" |
-                       "[Opt.Pres.Trns.3Pl.2Sg]" | "[Opt.Pres.Trns.3Pl.2Pl]" | "[Opt.Pres.Trns.3Pl.2Du]" |
-                       "[Opt.Pres.Trns.3Du.2Sg]" | "[Opt.Pres.Trns.3Du.2Pl]" | "[Opt.Pres.Trns.3Du.2Du]" |
-                       "[Opt.Pres.Trns.1Sg.2Sg]" | "[Opt.Pres.Trns.1Sg.2Pl]" | "[Opt.Pres.Trns.1Sg.2Du]" |
-                       "[Opt.Pres.Trns.1Pl.2Sg]" | "[Opt.Pres.Trns.1Pl.2Pl]" | "[Opt.Pres.Trns.1Pl.2Du]" |
-                       "[Opt.Pres.Trns.1Du.2Sg]" | "[Opt.Pres.Trns.1Du.2Pl]" | "[Opt.Pres.Trns.1Du.2Du]" |
+define Optative [ "^" ["[Opt.Pres.Intr]"     | "[Opt.Pres.Trns]"         |
+                       "[Opt.Pres.Intr.2Sg]" | "[Opt.Pres.Trns.2Sg.3Sg]" |
                        "[Opt.Neg.Pres.Trns.2Sg.3Pl]" | "[Opt.Neg.Pres.Trns.2Pl.3Pl]" | "[Opt.Neg.Pres.Trns.2Du.3Pl]" |
-                       "[Opt.Neg.Pres.Intr]"     | "[Opt.Neg.Pres.Trns]"     |
-                       "[Opt.Fut.Intr]"          | "[Opt.Fut.Trns]"          |
-                       "[Opt.Fut.Neg.Intr]"      | "[Opt.Fut.Neg.Trns]"]
+                       "[Opt.Neg.Pres.Intr]" | "[Opt.Neg.Pres.Trns]"     |
+                       "[Opt.Fut.Intr]"      | "[Opt.Fut.Trns]"          |
+                       "[Opt.Fut.Neg.Intr]"  | "[Opt.Fut.Neg.Trns]"]
                 ];
 
 !-------------------- 
@@ -271,6 +256,11 @@ define Yagh  [ "^" "@" "~f" {yagh} "(V→V)" ];
 define PeteFte [ "^" "+" "(pete)" {fte} "(V→V)" ];
 define Ni      [ "^" "@" "~f" {ni} "(CmpdVbl)" ];
 
+!-------------------------
+! miscellaneous postbases
+!-------------------------
+define Ute [ "^" "@" "~" ":" "(u)" [ "(V→N)" | "(V→V)" ] ];
+
 
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ! 2. CO-OCCURRENCE RESTRICTIONS 
@@ -347,6 +337,7 @@ define ImputativeMood ~[ ?* Ni ?* [Conditional | Contemporative | ParticipialObl
 
 define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
 
+
 !----------
 ! guesses
 !----------
@@ -354,15 +345,22 @@ define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
 define NoGuesses ~[ ?* "(GUESS)" ?* ];
 define   Guesses  [ ?* "(GUESS)" ?* ];
 
+!-----------------------
+! miscellaneous filters
+!-----------------------
+define DuplicateUteFilter ~[ ?* Ute ?* Ute ];
+
+
 !~~~~~~~~~~~~~~~~~~~~~~~
 ! 3. FILTER COMPOSITION
 !~~~~~~~~~~~~~~~~~~~~~~~
 define Filters [ NegativeFilters             .o.
-	             ModalFilters                .o.
+                 ModalFilters                .o.
                  PastTenseFilters            .o.
                  ProgressiveAspectFilters    .o.
                  FutureFrustrativeFilters    .o.
-                 EvidentialImputativeFilters
+                 EvidentialImputativeFilters .o.
+                 DuplicateUteFilter
                ];
 
 
@@ -382,6 +380,11 @@ define Uppercase [ a:A | i:I | u:U | e:E |
                    g:G | w:W | s:S | f:F |
                    s:S | m:M | n:N | v:"V" ] ?* | ?* ;
 
+define AsciiArrow "(N→N)" (->) "(N->N)" ,,
+                  "(N→V)" (->) "(N->V)" ,,
+                  "(V→V)" (->) "(V->V)" ,,
+                  "(V→N)" (->) "(V->N)" ;
+                   
 
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
@@ -450,8 +453,8 @@ define VelarUvularRounding       g -> w         ||   [ i | a ] ("^") u _ [ C | V
                                  q -> q w       || [ C | V - u ] _ u ("^") [ i | a ]   ;
 
 
-define DropFinalVC V (C) (h) -> 0 || _ "^" %{%.mm%.%} .o. 
-                  %{%.mm%.%} -> 0                     ;
+define DropFinalVC V (C) (h) -> 0 || [? -"^"] _ "^" %{%.mm%.%} .o. 
+                  %{%.mm%.%} -> 0                              ;
 
 
 !---------------------------------------
@@ -659,25 +662,27 @@ define MatchVoicing t [z | y] -> s                                              
                             w -> w h ||       [ C - h | V ] ("^") _ ("^") t     ;   ! [Badten (2008) p.682] 
 
 
-define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
-                        %{t%} e -> t a                                  .o.
-                              e -> a   ||                 _     "^" .#. .o.
-                              w -> k w || [C - h | %{k%}] _     "^" .#. .o.
-                            g h -> q   ||                 _ (w) "^" .#. .o.
-                        %{g%} h -> q   ||                 _     "^" .#. .o.
-                              g -> k   ||                 _     "^" .#. .o.
-          [ %{t%} | t ] ("^") z -> s                                    ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
+define BaseFinalEndings %{t%} e -> n   ||               V _     ("^" %{%0%}) .#. , 
+                        %{t%} e -> t a                                           .o.
+                              e -> a   ||                 _     ("^" %{%0%}) .#. .o.
+                              w -> k w || [C - h | %{k%}] _     ("^" %{%0%}) .#. .o.
+                            g h -> q   ||                 _ (w) ("^" %{%0%}) .#. .o.
+                        %{g%} h -> q   ||                 _     ("^" %{%0%}) .#. .o.
+                              g -> k   ||         [? - n] _     ("^" %{%0%}) .#. .o.
+          [ %{t%} | t ] ("^") z -> s                                             ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
-define PreventGemination n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
+define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
+                         n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
                          n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
                          v -> 0 || .#. n u u _ "^" v .o. ! nuuve+vig [Badten (2008) p.693]
-						 s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
+                         s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
 
 
-define CleanupDigraph %{k%}   -> 0   .o.
-                      %{g%} h -> g h .o.
-                      %{t%}   -> t   ;
+define CleanupPlaceholders %{%0%}   -> 0   .o.
+                           %{k%}    -> 0   .o.
+                           %{g%} h  -> g h .o.
+                           %{t%}    -> t   ;
 
 
 define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
@@ -750,8 +755,8 @@ define Rules [
     !-------------------------------
     BaseFinalEndings     .o.
     PreventGemination    .o.
-    CleanupDigraph       .o.
-    AssimilateEnclitic   ! .o. DisallowEmptySurfaceMorpheme
+    CleanupPlaceholders  .o.
+    AssimilateEnclitic   
 ];
 
 define PhonologicalRules [
@@ -781,3 +786,6 @@ define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. Phonolo
 ! define GrammarUpper [ GrammarLower .o. Uppercase ];
 
 define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
+
+! allows the user to type ASCII arrows
+define GrammarAscii [ LexicalToSurfaceGrammar.i .o. AsciiArrow ].i;
