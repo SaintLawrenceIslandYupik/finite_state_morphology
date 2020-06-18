@@ -30,9 +30,11 @@ l2i.fomabin: ess.fomabin
 l2is.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToIntermediateWithPhonology" -e "save stack $@" -s
 
+# Guessed Yupik words
 g2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
 
+# Foreign words and names
 f2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push ForeignGuessGrammar" -e "save stack $@" -s
 
