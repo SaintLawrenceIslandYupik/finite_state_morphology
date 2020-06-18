@@ -518,7 +518,7 @@ define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for postbase ~sf:(e)sqe [Jac
 
 
 define OptativeAllomorphs %{GI%} -> g i   || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u stems vs. -aa, -ii, -uu roots [Jacobson (2001) p.65]
-                          %{GI%} -> 0                                        .o.
+                          %{GI%} -> %{%0%}                                   .o.
                           %{AI%} -> i     ||                       g h "^" _ .o. ! -agh, -igh, -ugh stems vs. -aagh, -iigh, -uugh stems [Jacobson (2001) p.65]
                           %{AI%} -> a     ||                 FullVowel "^" _ ;
 
@@ -685,19 +685,19 @@ define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
                          s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
 
 
-define CleanupPlaceholders %{%0%}   -> 0   .o.
-                           %{k%}    -> 0   .o.
-                           %{g%} h  -> g h .o.
-                           %{t%}    -> t   ;
+define AssimilateEnclitic [ g | %{g%} ] h -> q || _ ("^" %{%0%}) "^" l l u   .#. .o. ! ("^") since [Abs.Sg]+{encl} maps to ^^{encl}
+                                      n g -> 0                                   ,   ! [Jacobson (2001) p.91]
+                                      l l -> l                                   ,   ! [Badten (2008) Appendix p.705]
+                                        t -> n                                   ,
+                                        k -> g || _ ("^" %{%0%}) "^" n g u q .#. .o.
+                          [ g | %{g%} ] h -> q || _ ("^" %{%0%}) "^" s a     .#. .o.
+                                        t -> s || _ ("^" %{%0%}) "^" t a     .#. ;
 
 
-define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
-                          n g -> 0                            ,   ! [Jacobson (2001) p.91]
-                          l l -> l                            ,   ! [Badten (2008) Appendix p.705]
-                            t -> n                            ,
-                            k -> g || _ ("^") "^" n g u q .#. .o.
-                          g h -> q || _ ("^") "^" s a     .#. .o.
-                            t -> s || _ ("^") "^" t a     .#. ;
+define CleanupPlaceholders %{%0%}  -> 0   .o.
+                           %{k%}   -> 0   .o.
+                           %{g%} h -> g h .o.
+                           %{t%}   -> t   ;
 
 
 define CleanupMorphBoundary "^" -> 0 ;
@@ -761,8 +761,8 @@ define Rules [
     !-------------------------------
     BaseFinalEndings     .o.
     PreventGemination    .o.
-    CleanupPlaceholders  .o.
-    AssimilateEnclitic   
+    AssimilateEnclitic   .o.
+    CleanupPlaceholders
 ];
 
 define PhonologicalRules [
