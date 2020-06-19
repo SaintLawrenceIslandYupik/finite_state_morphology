@@ -492,7 +492,7 @@ define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a ->
                           e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
 
 
-define DropMiddleVowel a -> 0 || V ("^") _ ("^") V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
+define DropMiddleVowel a -> %{%0%} || V ("^") _ ("^") V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
 
 
 !-------------------
