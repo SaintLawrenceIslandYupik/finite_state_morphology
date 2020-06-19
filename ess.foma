@@ -467,24 +467,18 @@ define DropFinalVC V (C) (h) -> 0 || [? -"^"] _ "^" %{%.mm%.%} .o.
 ! OTHER / MISC MORPHOPHONOLOGICAL RULES
 !---------------------------------------
 
-define VowelDominance a ("^") i -> i i  .o.
-                      i ("^") a -> i i  .o.
-                      u ("^") i -> i i  .o.
-                      i ("^") u -> i i  .o.
-                      a ("^") u -> a a  .o.
-                      u ("^") a -> a a  .o.
-                      i ("^") e -> i i  .o. ! e-hopping
-                      a ("^") e -> a a  .o.
-                      u ("^") e -> u u  .o. 
-                      A ("^") i -> I i  .o.
-                      I ("^") a -> I i  .o.
-                      U ("^") i -> I i  .o.
-                      I ("^") u -> I i  .o.
-                      A ("^") u -> A a  .o.
-                      U ("^") a -> A a  .o.
-                      I ("^") e -> I i  .o. ! e-hopping
-                      A ("^") e -> A a  .o.
-                      U ("^") e -> U u  ;
+define VowelDominance A -> I ||   _   ("^") i .o.
+                      a -> i ||   _   ("^") i .o.
+                      a -> i || [I|i] ("^") _ .o.
+                      U -> I ||   _   ("^") i .o.
+                      u -> i ||   _   ("^") i .o.
+                      u -> i || [I|i] ("^") _ .o.
+                      U -> A ||   _   ("^") a .o.
+                      u -> a ||   _   ("^") a .o.
+                      u -> a || [A|a] ("^") _ .o.
+                      e -> i || [I|i] ("^") _ .o. ! e-hopping
+                      e -> a || [A|a] ("^") _ .o.
+                      e -> u || [U|u] ("^") _ ;
 
 
 define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
