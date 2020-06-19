@@ -6,7 +6,7 @@ LEXICON NounInflIII
 !---------------------------------------|
 !              ABSOLUTIVE               |
 !---------------------------------------|-------------------------------------------|--------------------------------------------|
-^[Abs.Sg]:^%{%0%}            PostInflIII; ^[Abs.Pl]:^%{.w.%}t            PostInflIII; ^[Abs.Du]:^%{.w.%}k             PostInflIII;
+^[Abs.Sg]:^0            PostInflIII; ^[Abs.Pl]:^%{.w.%}t            PostInflIII; ^[Abs.Du]:^%{.w.%}k             PostInflIII;
 !---------------------------------------|-------------------------------------------|--------------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.m.%}ka PostInflIII; ^[Abs.1SgPoss.Pl]:^%{.w.%}nka  PostInflIII; ^[Abs.1SgPoss.Du]:^%{.w.%}gka   PostInflIII;
 ^[Abs.1PlPoss.Sg]:^put       PostInflIII; ^[Abs.1PlPoss.Pl]:^%{.m.%}put  PostInflIII; ^[Abs.1PlPoss.Du]:^%{.w.%}gput  PostInflIII;

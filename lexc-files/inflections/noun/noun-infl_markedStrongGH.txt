@@ -6,7 +6,7 @@ LEXICON NounInflIV
 !------------------------------------------|
 !               ABSOLUTIVE                 |
 !------------------------------------------|----------------------------------------------|------------------------------------------------|
-^[Abs.Sg]:^%{%0%}                PostInflIV; ^[Abs.Pl]:^%{.c.%}%{E%}t           PostInflIV; ^[Abs.Du]:^%{.c.%}%{E%}k             PostInflIV;
+^[Abs.Sg]:^0                PostInflIV; ^[Abs.Pl]:^%{.c.%}%{E%}t           PostInflIV; ^[Abs.Du]:^%{.c.%}%{E%}k             PostInflIV;
 !------------------------------------------|----------------------------------------------|------------------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.m.%}ka     PostInflIV; ^[Abs.1SgPoss.Pl]:^%{.c.%}%{E%}nka PostInflIV; ^[Abs.1SgPoss.Du]:^%{.c.%}%{E%}gka   PostInflIV;
 ^[Abs.1PlPoss.Sg]:^put           PostInflIV; ^[Abs.1PlPoss.Pl]:^%{.m.%}put      PostInflIV; ^[Abs.1PlPoss.Du]:^%{.c.%}%{E%}gput  PostInflIV;

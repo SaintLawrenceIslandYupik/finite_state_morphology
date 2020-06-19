@@ -6,7 +6,7 @@ LEXICON NounInflII
 !--------------------------------------|
 !             ABSOLUTIVE               |
 !--------------------------------------|------------------------------------------|-------------------------------------|
-^[Abs.Sg]:^%{%0%}            PostInflII; ^[Abs.Pl]:^et                  PostInflII; ^[Abs.Du]:^ek             PostInflII;
+^[Abs.Sg]:^0            PostInflII; ^[Abs.Pl]:^et                  PostInflII; ^[Abs.Du]:^ek             PostInflII;
 !--------------------------------------|------------------------------------------|-------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.m.%}ka PostInflII; ^[Abs.1SgPoss.Pl]:^enka        PostInflII; ^[Abs.1SgPoss.Du]:^egka   PostInflII;
 ^[Abs.1PlPoss.Sg]:^put       PostInflII; ^[Abs.1PlPoss.Pl]:^%{.m.%}put  PostInflII; ^[Abs.1PlPoss.Du]:^egput  PostInflII;

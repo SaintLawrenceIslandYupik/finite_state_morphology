@@ -23,7 +23,7 @@ LEXICON VerbInflVI
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !----------------------------------------|---------------------------------------------|---------------------------------------|
-^[Intrg.Intr]^[3Sg]:^%{.f.%}a^%{%0%}   Enclitic; ^[Intrg.Intr]^[1Sgl]:^%{.f.%}zi^nga Enclitic; ^[Intrg.Intr.2Sg]:^%{.f.%}zin Enclitic;
+^[Intrg.Intr]^[3Sg]:^%{.f.%}a^0   Enclitic; ^[Intrg.Intr]^[1Sgl]:^%{.f.%}zi^nga Enclitic; ^[Intrg.Intr.2Sg]:^%{.f.%}zin Enclitic;
 ^[Intrg.Intr]^[3Pl]:^%{.f.%}a^t  Enclitic; ^[Intrg.Intr]^[1Pl]:^ste^a          Enclitic; ^[Intrg.Intr.2Pl]:^tsi        Enclitic;
 ^[Intrg.Intr]^[3Du]:^%{.f.%}a^k  Enclitic; ^[Intrg.Intr]^[1Du]:^ste^ung        Enclitic; ^[Intrg.Intr.2Du]:^stek       Enclitic;
 !----------------------------------------|---------------------------------------------|---------------------------------------|
@@ -38,8 +38,8 @@ LEXICON VerbInflVI
 ^[Intrg.Trns]^[1Du.3Sg]:^ste^gnegu       Enclitic; ^[Intrg.Trns]^[1Du.3Pl]:^ste^gneki      Enclitic; ^[Intrg.Trns]^[1Du.3Du]:^ste^gnekek      Enclitic;
 !------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
 ^[Intrg.Trns]^[2Sg.3Sg]:^%{.f.%}zi^gu    Enclitic; ^[Intrg.Trns]^[2Sg.3Pl]:^%{.f.%}zi^ki   Enclitic; ^[Intrg.Trns]^[2Sg.3Du]:^%{.f.%}zi^kek   Enclitic;
-^[Intrg.Trns]^[2Pl.3Sg]:^%{%0%}^ggu            Enclitic; ^[Intrg.Trns]^[2Pl.3Pl]:^%{%0%}^ki            Enclitic; ^[Intrg.Trns]^[2Pl.3Du]:^%{%0%}^kek            Enclitic;
-^[Intrg.Trns]^[2Du.3Sg]:^%{%0%}^gnegu          Enclitic; ^[Intrg.Trns]^[2Du.3Pl]:^%{%0%}^gneki         Enclitic; ^[Intrg.Trns]^[2Du.3Du]:^%{%0%}^gnekek         Enclitic;
+^[Intrg.Trns]^[2Pl.3Sg]:^0^ggu            Enclitic; ^[Intrg.Trns]^[2Pl.3Pl]:^0^ki            Enclitic; ^[Intrg.Trns]^[2Pl.3Du]:^0^kek            Enclitic;
+^[Intrg.Trns]^[2Du.3Sg]:^0^gnegu          Enclitic; ^[Intrg.Trns]^[2Du.3Pl]:^0^gneki         Enclitic; ^[Intrg.Trns]^[2Du.3Du]:^0^gnekek         Enclitic;
 !------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
 ^[Intrg.Trns]^[3Sg.1Sg]:^%{.f.%}a^nga    Enclitic; ^[Intrg.Trns]^[3Sg.1Pl]:^%{.f.%}i^nkut  Enclitic; ^[Intrg.Trns]^[3Sg.1Du]:^%{.f.%}i^nkung  Enclitic;
 ^[Intrg.Trns]^[3Pl.1Sg]:^%{.f.%}a^tnga   Enclitic; ^[Intrg.Trns]^[3Pl.1Pl]:^%{.f.%}i^nkut  Enclitic; ^[Intrg.Trns]^[3Pl.1Du]:^%{.f.%}i^nkung  Enclitic;
@@ -48,8 +48,8 @@ LEXICON VerbInflVI
 ! no ^[1--.1--] forms                                                                                                                                 |
 !------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
 ^[Intrg.Trns]^[2Sg.1Sg]:^%{.f.%}zi^nga   Enclitic; ^[Intrg.Trns]^[2Sg.1Pl]:^%{.f.%}zi^kut  Enclitic; ^[Intrg.Trns]^[2Sg.1Du]:^%{.f.%}zi^kung  Enclitic;
-^[Intrg.Trns]^[2Pl.1Sg]:^%{%0%}^ngnga          Enclitic; ^[Intrg.Trns]^[2Pl.1Pl]:^%{%0%}^kut           Enclitic; ^[Intrg.Trns]^[2Pl.1Du]:^%{%0%}^kung           Enclitic;
-^[Intrg.Trns]^[2Du.1Sg]:^%{%0%}^gnenga         Enclitic; ^[Intrg.Trns]^[2Du.1Pl]:^%{%0%}^gneku         Enclitic; ^[Intrg.Trns]^[2Du.1Du]:^%{%0%}^gnekung        Enclitic;
+^[Intrg.Trns]^[2Pl.1Sg]:^0^ngnga          Enclitic; ^[Intrg.Trns]^[2Pl.1Pl]:^0^kut           Enclitic; ^[Intrg.Trns]^[2Pl.1Du]:^0^kung           Enclitic;
+^[Intrg.Trns]^[2Du.1Sg]:^0^gnenga         Enclitic; ^[Intrg.Trns]^[2Du.1Pl]:^0^gneku         Enclitic; ^[Intrg.Trns]^[2Du.1Du]:^0^gnekung        Enclitic;
 !------------------------------------------------|-------------------------------------------------|--------------------------------------------------|
 ^[Intrg.Trns]^[3Sg.2Sg]:^%{.f.%}a^ten    Enclitic; ^[Intrg.Trns]^[3Sg.2Pl]:^%{.f.%}i^si    Enclitic; ^[Intrg.Trns]^[3Sg.2Du]:^%{.f.%}i^stek   Enclitic;
 ^[Intrg.Trns]^[3Pl.2Sg]:^%{.f.%}a^ten    Enclitic; ^[Intrg.Trns]^[3Pl.2Pl]:^%{.f.%}i^si    Enclitic; ^[Intrg.Trns]^[3Pl.2Du]:^%{.f.%}i^stek   Enclitic;
@@ -68,7 +68,7 @@ LEXICON VerbInflVI
 !   so the full paradigms are given here
 !~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 !--------------------------------------------|------------------------------------------------|----------------------------------------------|
-^[Opt.Pres.Intr]^[3Sg]:^%{.at.%}li^%{%0%}  Enclitic; ^[Opt.Pres.Intr]^[1Sg]:^%{.at.%}la^nga Enclitic; ^[Opt.Pres.Intr.2Sg]:^n              Enclitic;
+^[Opt.Pres.Intr]^[3Sg]:^%{.at.%}li^0  Enclitic; ^[Opt.Pres.Intr]^[1Sg]:^%{.at.%}la^nga Enclitic; ^[Opt.Pres.Intr.2Sg]:^n              Enclitic;
 ^[Opt.Pres.Intr]^[3Pl]:^%{.at.%}li^t Enclitic; ^[Opt.Pres.Intr]^[1Pl]:^lte^a          Enclitic; ^[Opt.Pres.Intr]^[2Pl]:^%{.at.%}te^k Enclitic;
 ^[Opt.Pres.Intr]^[3Du]:^%{.at.%}li^k Enclitic; ^[Opt.Pres.Intr]^[1Du]:^lte^ung        Enclitic; ^[Opt.Pres.Intr]^[2Du]:^%{.at.%}te^k Enclitic;
 !--------------------------------------------|------------------------------------------------|----------------------------------------------|

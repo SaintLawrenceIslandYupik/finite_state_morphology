@@ -486,7 +486,7 @@ define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a ->
                           e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
 
 
-define DropMiddleVowel a -> %{%0%} || V ("^") _ ("^") V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
+define DropMiddleVowel a -> 0 || V ("^") _ ("^") V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
 
 
 !-------------------
@@ -512,7 +512,7 @@ define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for postbase ~sf:(e)sqe [Jac
 
 
 define OptativeAllomorphs %{GI%} -> g i   || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u stems vs. -aa, -ii, -uu roots [Jacobson (2001) p.65]
-                          %{GI%} -> %{%0%}                                   .o.
+                          %{GI%} -> 0                                   .o.
                           %{AI%} -> i     ||                       g h "^" _ .o. ! -agh, -igh, -ugh stems vs. -aagh, -iigh, -uugh stems [Jacobson (2001) p.65]
                           %{AI%} -> a     ||                 FullVowel "^" _ ;
 
@@ -662,13 +662,13 @@ define MatchVoicing t [z | y] -> s                                              
                             w -> w h ||       [ C - h | V ] ("^") _ ("^") t     ;   ! [Badten (2008) p.682] 
 
 
-define BaseFinalEndings %{t%} e -> n   ||               V _     ("^" %{%0%}) .#. , 
+define BaseFinalEndings %{t%} e -> n   ||               V _     ("^") .#. , 
                         %{t%} e -> t a                                           .o.
-                              e -> a   ||                 _     ("^" %{%0%}) .#. .o.
-                              w -> k w || [C - h | %{k%}] _     ("^" %{%0%}) .#. .o.
-                            g h -> q   ||                 _ (w) ("^" %{%0%}) .#. .o.
-                        %{g%} h -> q   ||                 _     ("^" %{%0%}) .#. .o.
-                              g -> k   ||         [? - n] _     ("^" %{%0%}) .#. .o.
+                              e -> a   ||                 _     ("^") .#. .o.
+                              w -> k w || [C - h | %{k%}] _     ("^") .#. .o.
+                            g h -> q   ||                 _ (w) ("^") .#. .o.
+                        %{g%} h -> q   ||                 _     ("^") .#. .o.
+                              g -> k   ||         [? - n] _     ("^") .#. .o.
           [ %{t%} | t ] ("^") z -> s                                             ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
@@ -679,22 +679,26 @@ define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
                          s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
 
 
-define AssimilateEnclitic [ g | %{g%} ] h -> q || _ ("^" %{%0%}) "^" l l u   .#. .o. ! ("^") since [Abs.Sg]+{encl} maps to ^^{encl}
+define AssimilateEnclitic [ g | %{g%} ] h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs.Sg]+{encl} maps to ^^{encl}
                                       n g -> 0                                   ,   ! [Jacobson (2001) p.91]
                                       l l -> l                                   ,   ! [Badten (2008) Appendix p.705]
                                         t -> n                                   ,
-                                        k -> g || _ ("^" %{%0%}) "^" n g u q .#. .o.
-                          [ g | %{g%} ] h -> q || _ ("^" %{%0%}) "^" s a     .#. .o.
-                                        t -> s || _ ("^" %{%0%}) "^" t a     .#. ;
+                                        k -> g || _ ("^") "^" n g u q .#. .o.
+                          [ g | %{g%} ] h -> q || _ ("^") "^" s a     .#. .o.
+                                        t -> s || _ ("^") "^" t a     .#. ;
 
 
-define CleanupPlaceholders %{%0%}  -> 0   .o.
-                           %{k%}   -> 0   .o.
+define CleanupPlaceholders %{k%}   -> 0   .o.
                            %{g%} h -> g h .o.
                            %{t%}   -> t   ;
 
 
 define CleanupMorphBoundary "^" -> 0 ;
+
+define MarkNullMorpheme [..] -> %{%0%} || "^" _ "^" , 
+                                          "^" _ .#. ;
+                                          
+define CleanupNullMorpheme %{%0%} -> 0 ;                                              
 
 ! define DisallowEmptySurfaceMorpheme ~[ ?* "^" "^" ?* ];
 
@@ -780,14 +784,14 @@ define GuessLex [ Guesses .o. Filters .o. Lexicon ];
 
 define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
-define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules ];
+define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
 define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
 
 define ForeignGuessGrammar [ Foreign .o. Guesses .o. Lexicon .o. CleanupPlaceholders .o. CleanupMorphBoundary ];
 
 define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
 define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
-define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules ];
+define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
 
 ! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 ! define GrammarUpper [ GrammarLower .o. Uppercase ];
