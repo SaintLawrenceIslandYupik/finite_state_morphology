@@ -448,15 +448,15 @@ define DropUvular %{g%} h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Al
                 %{%.c%.%} -> 0                                                            ;   ! or an allomorph
  
 
-define VelarUvularRounding       g -> w         ||   [ i | a ] ("^") u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30 footnote]
-                           n g n g -> n g n g w || [ C | V - u ] _ u ("^") [ i | a ]   .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
-                               n g -> n g w     || [ C | V - u ] _ u ("^") [ i | a ]   .o. ! needs to occur before vowel dominance
-                             g h h -> g h h w   || [ C | V - u ] _ u ("^") [ i | a ]   .o.
-                               g h -> g h w     || [ C | V - u ] _ u ("^") [ i | a ]   .o.
-                               g g -> w h       || [ C | V - u ] _ u ("^") [ i | a ]   .o.
-                                 k -> k w       || [ C | V - u ] _ u ("^") [ i | a ]   .o.
-                                 g -> w         || [ C | V - u ] _ u ("^") [ i | a ]   .o.
-                                 q -> q w       || [ C | V - u ] _ u ("^") [ i | a ]   ;
+define VelarUvularRounding       g -> w         ||   [ i | a ] ["^"]* u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30 footnote]
+                           n g n g -> n g n g w || [ C | V - u ] _ u ["^"]* [ i | a ]   .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
+                               n g -> n g w     || [ C | V - u ] _ u ["^"]* [ i | a ]   .o. ! needs to occur before vowel dominance
+                             g h h -> g h h w   || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                               g h -> g h w     || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                               g g -> w h       || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                                 k -> k w       || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                                 g -> w         || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                                 q -> q w       || [ C | V - u ] _ u ["^"]* [ i | a ]   ;
 
 
 define DropFinalVC V (C) (h) -> 0 || [? -"^"] _ "^" %{%.mm%.%} .o. 
@@ -467,18 +467,18 @@ define DropFinalVC V (C) (h) -> 0 || [? -"^"] _ "^" %{%.mm%.%} .o.
 ! OTHER / MISC MORPHOPHONOLOGICAL RULES
 !---------------------------------------
 
-define VowelDominance A -> I ||   _   ("^") i .o.
-                      a -> i ||   _   ("^") i .o.
-                      a -> i || [I|i] ("^") _ .o.
-                      U -> I ||   _   ("^") i .o.
-                      u -> i ||   _   ("^") i .o.
-                      u -> i || [I|i] ("^") _ .o.
-                      U -> A ||   _   ("^") a .o.
-                      u -> a ||   _   ("^") a .o.
-                      u -> a || [A|a] ("^") _ .o.
-                      e -> i || [I|i] ("^") _ .o. ! e-hopping
-                      e -> a || [A|a] ("^") _ .o.
-                      e -> u || [U|u] ("^") _ ;
+define VowelDominance A -> I ||   _   ["^"]* i .o.
+                      a -> i ||   _   ["^"]* i .o.
+                      a -> i || [I|i] ["^"]* _ .o.
+                      U -> I ||   _   ["^"]* i .o.
+                      u -> i ||   _   ["^"]* i .o.
+                      u -> i || [I|i] ["^"]* _ .o.
+                      U -> A ||   _   ["^"]* a .o.
+                      u -> a ||   _   ["^"]* a .o.
+                      u -> a || [A|a] ["^"]* _ .o.
+                      e -> i || [I|i] ["^"]* _ .o. ! e-hopping
+                      e -> a || [A|a] ["^"]* _ .o.
+                      e -> u || [U|u] ["^"]* _ ;
 
 
 define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
@@ -486,7 +486,7 @@ define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a ->
                           e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
 
 
-define DropMiddleVowel a -> 0 || V ("^") _ ("^") V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
+define DropMiddleVowel a -> 0 || V ["^"]* _ ["^"]* V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
 
 
 !-------------------
@@ -500,7 +500,7 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _ .o.
+define ResolveG %{G%} -> g || FullVowel ["^"]* FullVowel "^" _ .o.
                 %{G%} -> 0                                    ;
 
 
@@ -511,7 +511,7 @@ define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for postbase ~sf:(e)sqe [Jac
                 %{I%} -> 0                    ;
 
 
-define OptativeAllomorphs %{GI%} -> g i   || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u stems vs. -aa, -ii, -uu roots [Jacobson (2001) p.65]
+define OptativeAllomorphs %{GI%} -> g i   || FullVowel ["^"]* FullVowel "^" _ .o. ! -a, -i, -u stems vs. -aa, -ii, -uu roots [Jacobson (2001) p.65]
                           %{GI%} -> 0                                   .o.
                           %{AI%} -> i     ||                       g h "^" _ .o. ! -agh, -igh, -ugh stems vs. -aagh, -iigh, -uugh stems [Jacobson (2001) p.65]
                           %{AI%} -> a     ||                 FullVowel "^" _ ;
@@ -652,24 +652,24 @@ define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
 
 ! NOTE: morpheme boundaries are probably extraneous
 define MatchVoicing t [z | y] -> s                                              .o. ! tz / ty = s
-                            y -> s   ||               _ ("^") [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                            y -> s   || [ k | q | g h h w ] ("^") _             .o.
-                            z -> s   ||          Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
-                            k -> q   ||                 g h ("^") _             .o.
-                          g h -> 0   ||                   C ("^") _ ("^") q     .o. ! e.g. itegh[Cond.Intr][3Sg]:iitghqan -> iitqan
-                            v -> f   ||                     _ ("^") Stop        .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
-                            v -> f   ||          Stop ("^") _                   .o. ! e.g. taaqfik
-                            w -> w h ||       [ C - h | V ] ("^") _ ("^") t     ;   ! [Badten (2008) p.682] 
+                            y -> s   ||               _ ["^"]* [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
+                            y -> s   || [ k | q | g h h w ] ["^"]* _             .o.
+                            z -> s   ||          Stop ["^"]* _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
+                            k -> q   ||                 g h ["^"]* _             .o.
+                          g h -> 0   ||                   C ["^"]* _ ["^"]* q     .o. ! e.g. itegh[Cond.Intr][3Sg]:iitghqan -> iitqan
+                            v -> f   ||                     _ ["^"]* Stop        .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
+                            v -> f   ||          Stop ["^"]* _                   .o. ! e.g. taaqfik
+                            w -> w h ||       [ C - h | V ] ["^"]* _ ["^"]* t     ;   ! [Badten (2008) p.682]
 
 
-define BaseFinalEndings %{t%} e -> n   ||               V _     ("^") .#. , 
+define BaseFinalEndings %{t%} e -> n   ||               V _     ["^"]* .#. ,
                         %{t%} e -> t a                                           .o.
-                              e -> a   ||                 _     ("^") .#. .o.
-                              w -> k w || [C - h | %{k%}] _     ("^") .#. .o.
-                            g h -> q   ||                 _ (w) ("^") .#. .o.
-                        %{g%} h -> q   ||                 _     ("^") .#. .o.
-                              g -> k   ||         [? - n] _     ("^") .#. .o.
-          [ %{t%} | t ] ("^") z -> s                                             ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
+                              e -> a   ||                 _     ["^"]* .#. .o.
+                              w -> k w || [C - h | %{k%}] _     ["^"]* .#. .o.
+                            g h -> q   ||                 _ (w) ["^"]* .#. .o.
+                        %{g%} h -> q   ||                 _     ["^"]* .#. .o.
+                              g -> k   ||         [? - n] _     ["^"]* .#. .o.
+          [ %{t%} | t ] ["^"]* z -> s                                             ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
 define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
@@ -679,13 +679,13 @@ define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
                          s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
 
 
-define AssimilateEnclitic [ g | %{g%} ] h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs.Sg]+{encl} maps to ^^{encl}
+define AssimilateEnclitic [ g | %{g%} ] h -> q || _ ["^"]* "^" l l u   .#. .o. ! ["^"]* since [Abs.Sg]+{encl} maps to ^^{encl}
                                       n g -> 0                                   ,   ! [Jacobson (2001) p.91]
                                       l l -> l                                   ,   ! [Badten (2008) Appendix p.705]
                                         t -> n                                   ,
-                                        k -> g || _ ("^") "^" n g u q .#. .o.
-                          [ g | %{g%} ] h -> q || _ ("^") "^" s a     .#. .o.
-                                        t -> s || _ ("^") "^" t a     .#. ;
+                                        k -> g || _ ["^"]* "^" n g u q .#. .o.
+                          [ g | %{g%} ] h -> q || _ ["^"]* "^" s a     .#. .o.
+                                        t -> s || _ ["^"]* "^" t a     .#. ;
 
 
 define CleanupPlaceholders %{k%}   -> 0   .o.
@@ -702,12 +702,12 @@ define CleanupNullMorpheme %{%0%} -> 0 ;
 
 ! define DisallowEmptySurfaceMorpheme ~[ ?* "^" "^" ?* ];
 
-define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ("^") [ Stop | f |  s]                      .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] ("^") _      .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ("^") l l                                   .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l | r r | g g | g h h | g h h w ] ("^") _ .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] ("^") _      .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l | r r | g g | g h h | g h h w ] ("^") _ ;
+define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ["^"]* [ Stop | f |  s]                      .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] ["^"]* _      .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ["^"]* l l                                   .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l | r r | g g | g h h | g h h w ] ["^"]* _ .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] ["^"]* _      .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l | r r | g g | g h h | g h h w ] ["^"]* _ ;
 
 
 !==============
