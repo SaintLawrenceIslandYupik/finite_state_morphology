@@ -6,7 +6,7 @@ LEXICON NounInflVI
 !-----------------------------------------|
 !               ABSOLUTIVE                |
 !-----------------------------------------|------------------------------------------|-----------------------------------------|
-^[Abs.Sg]:^0               PostInflVI; ^[Abs.Pl]:^t                   PostInflVI; ^[Abs.Du]:^k                  PostInflVI;
+^[Abs.Sg]:^0                    PostInflVI; ^[Abs.Pl]:^t                   PostInflVI; ^[Abs.Du]:^k                  PostInflVI;
 !-----------------------------------------|------------------------------------------|-----------------------------------------|
 ^[Abs.1SgPoss.Sg]:^%{.f.%}ka    PostInflVI; ^[Abs.1SgPoss.Pl]:^nka         PostInflVI; ^[Abs.1SgPoss.Du]:^gka        PostInflVI;
 ^[Abs.1PlPoss.Sg]:^vut          PostInflVI; ^[Abs.1PlPoss.Pl]:^put         PostInflVI; ^[Abs.1PlPoss.Du]:^gput       PostInflVI;
