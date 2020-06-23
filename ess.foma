@@ -642,8 +642,8 @@ define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h
             %{%.at%.%} -> 0  || C %{t%} e "^" _ k                                ;   ! e.g. qelpeghtekuvgu
 
 
-define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
-            %{%.at%.%} -> 0                    ;
+define DropTE %{t%} e -> 0  || [? - "^"] _ "^" %{%.at%.%} .o.
+           %{%.at%.%} -> 0                                ;
 
 
 !----------------
