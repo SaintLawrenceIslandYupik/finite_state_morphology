@@ -390,6 +390,8 @@ define AsciiArrow "(N→N)" (->) "(N->N)" ,,
                   "(N→V)" (->) "(N->V)" ,,
                   "(V→V)" (->) "(V->V)" ,,
                   "(V→N)" (->) "(V->N)" ;
+
+define Minus2Hyphen "–" (->) "-" ;
                    
 
 !------------------------------
@@ -801,4 +803,4 @@ define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercas
 ! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar .p. ForeignGuessGrammar ];
 
 ! allows the user to type ASCII arrows
-define GrammarAscii [ LexicalToSurfaceGrammar.i .o. AsciiArrow ].i;
+define GrammarAscii [ LexicalToSurfaceGrammar.i .o. AsciiArrow .o. Minus2Hyphen ].i;

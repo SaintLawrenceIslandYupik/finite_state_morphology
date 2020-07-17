@@ -47,7 +47,7 @@ LEXICON VNPostbaseVI
 ^@~fyuggaagh(V→N):^%{.at.%}yuggaagh         CheckAUXFlagV;    ! first one to V
 ^@~fyuwhaagh(V→N):^%{.at.%}yuwhaagh         CheckAUXFlagV;    ! first one to V
 ^@~%:(u)te(V→N):^%{.at.%}u%{t%}e            CheckAUXFlagVI;   ! condition with respect to V-ing 
-^(s)ta(V→N):^s%{t%}e                        CheckAUXFlagVI;   ! habitual V-er; one who V-s as an occupation
+^+(s)ta(V→N):^s%{t%}e                       CheckAUXFlagVI;   ! habitual V-er; one who V-s as an occupation
 ^–llegh(V→N):^llegh                         CheckAUXFlagVII;  ! one that has V-ed or been V-ed; act of V-ing; activity of V-ing; the one the possessor V-ed; one or ones which are V to the greatest extent; most V ones; more V ones
 ^–lleg(V→N):^lleg                           CheckAUXFlagVII;  ! one who V-s well; proficient V-er; good V-er
 ^@~fnaqe(V→N):^%{.at.%}naqe                 CheckAUXFlagVIII; ! one who is going to V
