@@ -5,10 +5,29 @@ LEXICON  Exception
 !--------------------------
 ! Demonstrative Exceptions
 !--------------------------
-maakut(DEM)^+ghsi(VOC):maakughsi                         #;
-ukut(DEM)^+ghsi(VOC):ukughsi                             #;
-tawaten(DEM)^+staaghhagh(N→N):tawatestaaghha%{g%}h  PostInflIII;
-whani(DEM)^ete:whaante                             VerbPostbaseVI;
+[Anaphor]^iigna(DEM.PRO.Abs.Sg):tazigna    Enclitic;  ! [Jacobson (2001) p.111]
+[Anaphor]^uka(DEM.ADV):taakwa              DemAdvPB;  ! [Jacobson (2001) p.111]
+[Anaphor]^uukna(DEM.PRO.Abs.Sg):taakwna    Enclitic;  ! [Jacobson (2001) p.111]
+[Anaphor]^maana(DEM.PRO.Abs.Sg):tamana     Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^whaa(DEM.PRO.Abs.Sg):taana       Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^whaa(DEM.ADV.Loc):tawani         PostInflI; ! [Jacobson (2001) p.129]
+[Anaphor]^whaa(DEM.ADV.Equ):tawaten        Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^uugna(DEM.PRO.Abs.Sg):taawna     Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^paagna(DEM.PRO.Abs.Sg):tespagna  Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^paagna(DEM.PRO.Abs.Sg):espagna   Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^qaagna(DEM.PRO.Abs.Sg):tesqagna  Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^qaagna(DEM.PRO.Abs.Sg):esqagna   Enclitic;  ! [Jacobson (2001) p.112]
+
+maakughsi(VOC.Pl):maakughsi                Enclitic;       ! [from Badten (2008) p.615,
+                                                           ! but Jacobson (2001) Ch16
+                                                           ! states that this demonstrative
+                                                           ! "maana" doesn't have a vocative
+whaa(DEM.ADV)^~fmig(N→N):whaamig           NounPostbaseII; ! it's rare for postbases to
+                                                           ! suffix directly to demonstratives
+                                                           ! [Jacobson (2001) Ch16 & Speaker 14]
+aawhkun(DEM.ADV.Prl)^–lqusigh(N→PTCL):aawhkalqusiq     #;  ! [Badten (2008) p.642]
+whaa(DEM.ADV)^[Loc.Pl]^ete:whaan%{t%}e     VerbPostbaseV;  ! [Jacobson (2001) p.79]
+pika(DEM.ADV)^[Loc.Pl]^ete:pikan%{t%}e     VerbPostbaseV;
 
 !-----------------
 ! Noun Exceptions
@@ -23,30 +42,87 @@ Sivuqagh(N)^~fmii(N→N):Sivuqaghhmii  NounPostbaseI;
 qule(AREA)^[All.Sg]:quulmun  #;
 kete(AREA)^[All.Sg]:ketmun   #;
 
-!---------------------------
-! Interrogtative Exceptions
-!---------------------------
-kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Sg]:kinanguzin       Enclitic;
-kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Pl]:kinkungutsi       Enclitic;
-qafsina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Pl]:qafsin'gutsi  Enclitic;
-kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.3Sg]:kinangaawa       Enclitic;
-kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.3Pl]:kinkungaawat     Enclitic;
-sa(N)^~%:(ng)u(N→V)^[Intrg.Intr.3Sg]:sangaawa            Enclitic;
-sa(N)^~%:(ng)u(N→V)^[Intrg.Intr.3Pl]:sangaawat           Enclitic;
+!----------------
+! Verb Exceptions
+!----------------
+!--------------------------------------------------------------------------
+! certain verb bases in certain circumstances may be used with unpossessed
+! oblique case endings as if they were noun bases [Jacobson (2001) p.119]
+!   not sure how many other instances like these there are.
+!   implementing these words in any other way would SEVERELY overgenerate.
+!--------------------------------------------------------------------------
+pinigh(V)^[Equ.Sg]:pinitun                    #;
+neghe(V)^@–nghite(V→V)^[Rel.Sg]:neghenghitem  #;
+aqlaghaghte(V)^[Loc.Sg]:aqlaghaghtemmi        #;
 
-!--------------------
+
+!--------------------------
+! Interrogative Exceptions
+!--------------------------
+kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Sg]:kinanguzin       Enclitic;
+kinku(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Pl]:kinkungutsi     Enclitic;
+qafsina(WH)^~%:(ng)u(N→V)^[Intrg.Intr.2Pl]:qafsin'gutsi  Enclitic;
+qafsina(WH)^~–kaghte(N→V)^[Intrg.Intr]^[3Sg]:qafsinkaghta  Enclitic;
+kina(WH)^~%:(ng)u(N→V)^[Intrg.Intr]^[3Sg]:kinangaawa       Enclitic;
+kinku(WH)^~%:(ng)u(N→V)^[Intrg.Intr]^[3Pl]:kinkungaawat    Enclitic;
+sa(N)^~%:(ng)u(N→V)^[Intrg.Intr]^[3Sg]:sangaawa            Enclitic;
+sa(N)^~%:(ng)u(N→V)^[Intrg.Intr]^[3Pl]:sangaawat           Enclitic;
+
+
+!----------------------
 ! Postbase Exceptions
-!--------------------
+!   from Badten (2008)
+!----------------------
 kaatute(V)^~f(a)ghesnagh(V→V)^[Abs.Sg]:kaatutaghesnaq  #;
-amqeghte(V)^@–ghpagte(V→V):amqeghpag%{t%}e            VerbPostbaseV;
-nenge(V)^@–ghpagte(V→V):nengpag%{t%}e                 VerbPostbaseV;
-nuugte(V)^@–ghpagte(V→V):nuugpag%{t%}e                VerbPostbaseV;
-qanigh(N)^–ghquute(N→V):qanighquu%{t%}e               VerbPostbaseV; ! used with weather nouns 
-megh(N)^–ghquute(N→V):meghquu%{t%}e                   VerbPostbaseV; ! and some others
-alla(N)^–ghquute(N→V):allaghquu%{t%}e                 VerbPostbaseV; ! [Badten (2008) p.614]
-eslallug(N)^–ghquute(N→V):eslallughquu%{t%}e          VerbPostbaseV;
-gheve(V)^–ghraag(V→V):ghevraag                        VerbPostbaseIII;
-ggute(V)^––iqe(V→V):ggusiqe                           VerbPostbaseII;
+amqeghte(V)^@–ghpagte(V→V):amqeghpag%{t%}e             VerbPostbaseV;
+nenge(V)^@–ghpagte(V→V):nengpag%{t%}e                  VerbPostbaseV;
+nuugte(V)^@–ghpagte(V→V):nuugpag%{t%}e                 VerbPostbaseV;
+qanigh(N)^–ghquute(N→V):qanighquu%{t%}e                VerbPostbaseV; ! used with weather nouns 
+megh(N)^–ghquute(N→V):meghquu%{t%}e                    VerbPostbaseV; ! and some others
+alla(N)^–ghquute(N→V):allaghquu%{t%}e                  VerbPostbaseV; ! [Badten (2008) p.614]
+eslallug(N)^–ghquute(N→V):eslallughquu%{t%}e           VerbPostbaseV;
+gheve(V)^–ghraag(V→V):ghevraag                         VerbPostbaseIII;
+ipeg(V)^~sf–ghhaleg(V→XCLM):iipghalek                  #;
+ggute(V)^––iqe(V→V):ggusiqe                            VerbPostbaseII;
 pi(V)^@~%:(i/u)manginagh(V→V)^[Abs.Sg]:pimanginaq      #;
+ighvigaq(PTCL)^–lqusigh(N→PTCL):ighivgalqusiq          #;              ! [Badten (2008) p.642]
+egge(N)^~fmiigh(N→V):eggmiigh                          VerbPostbaseIV;
+egge(N)^~fmiigh(N→N):eggmiigh                          NounPostbaseV;
+aange(V)^@~f–negh(V→N):aangengh                        NounPostbaseV;
+aange(V)^@~f–negh(V→N):aangengh                        NounPostbaseV;
+kuuve(V)^@~f–negh(V→N):kuuvenegh                       NounPostbaseVII;
+piifte(V)^~fnga(POS→STATIVE):piivnga                   VerbPostbaseI;
+piiste(V)^~fnga(POS→STATIVE):piiznga                   VerbPostbaseI;
+yakugh(EMO)^@~fniite(V→V):yakughnii%{t%}e              VerbPostbaseV;
+unaagh(N)^~%:(ng)u(N→V):unaangu                        VerbPostbaseI;
+puqig(V)^~%:(ng)ite(V→V):puqigi%{t%}e                  VerbPostbaseV;
+kaksagte(V)^~f(p/v)agaatagh(V→V):kaksagpagaatagh       VerbPostbaseIV;
+tagite(V)^~(q/t)uute(V→V):tagiquu%{t%}e                VerbPostbaseV;
+pellghute(V)^~(q/t)uute(V→V):pellghuquu%{t%}e          VerbPostbaseV;
+sasigh(N)^~–qumtaagh(V→N):sasiqumtaagh                 NounPostbaseIV;
+aksa(N)^~–qumtaagh(V→N):aksaqumtaagh                   NounPostbaseIV;
+esneg(N)^@~f–rakegte(N→V):esnegrakeg%{t%}e             VerbPostbaseV;
+pinigh(V)^–raaghinagh*(N→N):piniraaghina%{g%}h         NounPostbaseIII;
+aqlagha(N)^+sugh(V→V):aqlaghasugh                      VerbPostbaseIV;
+matnegh(N)^+sugh(V→V):matneghsugh                      VerbPostbaseIV;
+kina(WH)^+sugnite(N→V):kinasugni%{t%}e                 VerbPostbaseV;
+ange(V)^+tala(V→N):angtala                             NounPostbaseI;
+ange(V)^+tutka(V→V):angtutka                           VerbPostbaseI;
+iigge(V)^+tugh(V→V):iigtugh                            VerbPostbaseIV;
+ingagh(POS)^+(te)ste(CmpdVbl):ingaghtes%{t%}e          VerbPostbaseV;
+qavngaq(WH)^+tagh(N→N)^[Abs.Sg]:qavngaghtaq            #;
+nani(WH)^[All.Sg]:natmun                               #;
+Laluramke(N)^+tagh(N→N):Laluramkata%{g%}h              NounPostbaseIII;
+saqfigh(POS)^–tuqagh(V→N):saqfituqa%{g%}h              NounPostbaseIII;
+saqfigh(POS)^–tu(V→V):saqfitu                          VerbPostbaseI;
+take(V)^+tutka(V→V):tagtutka                           VerbPostbaseI;
+anegh(N)^+uute(N→V):aanghu%{t%}e                       VerbPostbaseV;
+tamaghhagh(QUANTQUAL)^+yage(N→N):tamaghhaghyage        NounPostbaseVIII;
+qafsineg(WH)^+yage(N→N):qafsinegyage                   NounPostbaseVIII;
+llaaghan(PTCL)^@~fyugnagh(V→V):llaaghaaghyugnagh       VerbPostbaseIV;
+iinqe(V)^@~fyuke(CmpdVbl):ineqsuke                     VerbPostbaseII; 
+pike(V)^@~fyagute(V→V)^[Abs.1SgPoss.Sg]:piksagutaqa    #;
+
+ellnga(PRO)^–qrug(N→N):ellngaqrug  NounPostbaseII; ! confirm whether this is possible for all pronouns
 
 

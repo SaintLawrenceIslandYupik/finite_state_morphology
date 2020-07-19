@@ -4,54 +4,54 @@ LEXICON NounInflV
 !    -aagh, -iigh, -uugh
 !========================================
 
-!--------------------------------------|
-!             ABSOLUTIVE               |
-!--------------------------------------|------------------------------------------|-------------------------------------|
-^[Abs.Sg]:^                    PostInflV; ^[Abs.Pl]:^et                    PostInflV; ^[Abs.Du]:^ek               PostInflV;
-!--------------------------------------|------------------------------------------|-------------------------------------|
-^[Abs.1SgPoss.Sg]:^%{.m.%}ka  PostInflV; ^[Abs.1SgPoss.Pl]:^enka         PostInflV; ^[Abs.1SgPoss.Du]:^egka    PostInflV;
-^[Abs.1PlPoss.Sg]:^put        PostInflV; ^[Abs.1PlPoss.Pl]:^%{.m.%}put   PostInflV; ^[Abs.1PlPoss.Du]:^egput   PostInflV;
-^[Abs.1DuPoss.Sg]:^pung       PostInflV; ^[Abs.1DuPoss.Pl]:^%{.m.%}pung  PostInflV; ^[Abs.1DuPoss.Du]:^egpung  PostInflV;
-!--------------------------------------|------------------------------------------|-------------------------------------|
-^[Abs.2SgPoss.Sg]:^en         PostInflV; ^[Abs.2SgPoss.Pl]:^ten          PostInflV; ^[Abs.2SgPoss.Du]:^egken   PostInflV;
-^[Abs.2PlPoss.Sg]:^si         PostInflV; ^[Abs.2PlPoss.Pl]:^%{.m.%}si    PostInflV; ^[Abs.2PlPoss.Du]:^egsi    PostInflV;
-^[Abs.2DuPoss.Sg]:^tek        PostInflV; ^[Abs.2DuPoss.Pl]:^%{.m.%}tek   PostInflV; ^[Abs.2DuPoss.Du]:^egtek   PostInflV;
-!--------------------------------------|------------------------------------------|-------------------------------------|
-^[Abs.3SgPoss.Sg]:^a          PostInflV; ^[Abs.3SgPoss.Pl]:^i            PostInflV; ^[Abs.3SgPoss.Du]:^kek     PostInflV;
-^[Abs.3PlPoss.Sg]:^at         PostInflV; ^[Abs.3PlPoss.Pl]:^it           PostInflV; ^[Abs.3PlPoss.Du]:^egket   PostInflV;
-^[Abs.3DuPoss.Sg]:^ak         PostInflV; ^[Abs.3DuPoss.Pl]:^ik           PostInflV; ^[Abs.3DuPoss.Du]:^egkek   PostInflV;
-!--------------------------------------|------------------------------------------|-------------------------------------|
-^[Abs.4SgPoss.Sg]:^%{.m.%}ni  PostInflV; ^[Abs.4SgPoss.Pl]:^%{.m.%}ni    PostInflV; ^[Abs.4SgPoss.Du]:^egni    PostInflV;
-^[Abs.4PlPoss.Sg]:^teng       PostInflV; ^[Abs.4PlPoss.Pl]:^%{.m.%}teng  PostInflV; ^[Abs.4PlPoss.Du]:^egteng  PostInflV;
-^[Abs.4DuPoss.Sg]:^tek        PostInflV; ^[Abs.4DuPoss.Pl]:^%{.m.%}tek   PostInflV; ^[Abs.4DuPoss.Du]:^egtek   PostInflV;
-!--------------------------------------|------------------------------------------|-------------------------------------|
+!-------------------------------------|
+!            ABSOLUTIVE               |
+!-------------------------------------|-----------------------------------------|------------------------------------|
+^[Abs.Sg]:^0                 PostInflV; ^[Abs.Pl]:^et                  PostInflV; ^[Abs.Du]:^ek             PostInflV;
+!-------------------------------------|-----------------------------------------|------------------------------------|
+^[Abs.1SgPoss.Sg]:^%{.m.%}ka PostInflV; ^[Abs.1SgPoss.Pl]:^enka        PostInflV; ^[Abs.1SgPoss.Du]:^egka   PostInflV;
+^[Abs.1PlPoss.Sg]:^put       PostInflV; ^[Abs.1PlPoss.Pl]:^%{.m.%}put  PostInflV; ^[Abs.1PlPoss.Du]:^egput  PostInflV;
+^[Abs.1DuPoss.Sg]:^pung      PostInflV; ^[Abs.1DuPoss.Pl]:^%{.m.%}pung PostInflV; ^[Abs.1DuPoss.Du]:^egpung PostInflV;
+!-------------------------------------|-----------------------------------------|------------------------------------|
+^[Abs.2SgPoss.Sg]:^en        PostInflV; ^[Abs.2SgPoss.Pl]:^ten         PostInflV; ^[Abs.2SgPoss.Du]:^egken  PostInflV;
+^[Abs.2PlPoss.Sg]:^si        PostInflV; ^[Abs.2PlPoss.Pl]:^%{.m.%}si   PostInflV; ^[Abs.2PlPoss.Du]:^egsi   PostInflV;
+^[Abs.2DuPoss.Sg]:^tek       PostInflV; ^[Abs.2DuPoss.Pl]:^%{.m.%}tek  PostInflV; ^[Abs.2DuPoss.Du]:^egtek  PostInflV;
+!-------------------------------------|-----------------------------------------|------------------------------------|
+^[Abs.3SgPoss.Sg]:^a         PostInflV; ^[Abs.3SgPoss.Pl]:^i           PostInflV; ^[Abs.3SgPoss.Du]:^kek    PostInflV;
+^[Abs.3PlPoss.Sg]:^at        PostInflV; ^[Abs.3PlPoss.Pl]:^it          PostInflV; ^[Abs.3PlPoss.Du]:^egket  PostInflV;
+^[Abs.3DuPoss.Sg]:^ak        PostInflV; ^[Abs.3DuPoss.Pl]:^ik          PostInflV; ^[Abs.3DuPoss.Du]:^egkek  PostInflV;
+!-------------------------------------|-----------------------------------------|------------------------------------|
+^[Abs.4SgPoss.Sg]:^%{.m.%}ni PostInflV; ^[Abs.4SgPoss.Pl]:^%{.m.%}ni   PostInflV; ^[Abs.4SgPoss.Du]:^egni   PostInflV;
+^[Abs.4PlPoss.Sg]:^teng      PostInflV; ^[Abs.4PlPoss.Pl]:^%{.m.%}teng PostInflV; ^[Abs.4PlPoss.Du]:^egteng PostInflV;
+^[Abs.4DuPoss.Sg]:^tek       PostInflV; ^[Abs.4DuPoss.Pl]:^%{.m.%}tek  PostInflV; ^[Abs.4DuPoss.Du]:^egtek  PostInflV;
+!-------------------------------------|-----------------------------------------|------------------------------------|
 
-!------------------------------------------|
-!      RELATIVE (ergative & genitive)      |
-!------------------------------------------|--------------------------------------------|--------------------------------------|
-^[Rel.Sg]:^em                      PostInflV; ^[Rel.Pl]:^et                      PostInflV; ^[Rel.Du]:^ek                PostInflV;
-!------------------------------------------|--------------------------------------------|--------------------------------------|
-^[Rel.1SgPoss.Sg]:^ma             PostInflV; ^[Rel.1SgPoss.Pl]:^ma             PostInflV; ^[Rel.1SgPoss.Du]:^egma     PostInflV;
-^[Rel.1PlPoss.Sg]:^%{.m.%}mta     PostInflV; ^[Rel.1PlPoss.Pl]:^%{.m.%}mta     PostInflV; ^[Rel.1PlPoss.Du]:^egemta   PostInflV;
-^[Rel.1DuPoss.Sg]:^%{.m.%}mtung   PostInflV; ^[Rel.1DuPoss.Pl]:^%{.m.%}mtung   PostInflV; ^[Rel.1DuPoss.Du]:^egemtung PostInflV;
-!------------------------------------------|--------------------------------------------|--------------------------------------|
-^[Rel.2SgPoss.Sg]:^%{.m.%}gpek    PostInflV; ^[Rel.2SgPoss.Pl]:^%{.m.%}gpek    PostInflV; ^[Rel.2SgPoss.Du]:^egpek    PostInflV;
-^[Rel.2PlPoss.Sg]:^%{.m.%}gpesi   PostInflV; ^[Rel.2PlPoss.Pl]:^%{.m.%}gpesi   PostInflV; ^[Rel.2PlPoss.Du]:^egpesi   PostInflV;
-^[Rel.2DuPoss.Sg]:^%{.m.%}gpetek  PostInflV; ^[Rel.2DuPoss.Pl]:^%{.m.%}gpetek  PostInflV; ^[Rel.2DuPoss.Du]:^egpetek  PostInflV;
-!------------------------------------------|--------------------------------------------|--------------------------------------|
-^[Rel.3SgPoss.Sg]:^an             PostInflV; ^[Rel.3SgPoss.Pl]:^an             PostInflV; ^[Rel.3SgPoss.Du]:^egkenka  PostInflV;
-^[Rel.3PlPoss.Sg]:^ita            PostInflV; ^[Rel.3PlPoss.Pl]:^ita            PostInflV; ^[Rel.3PlPoss.Du]:^egkenka  PostInflV;
-^[Rel.3DuPoss.Sg]:^ita            PostInflV; ^[Rel.3DuPoss.Pl]:^ita            PostInflV; ^[Rel.3DuPoss.Du]:^egkenka  PostInflV;
-!------------------------------------------|--------------------------------------------|--------------------------------------|
-^[Rel.4SgPoss.Sg]:^mi             PostInflV; ^[Rel.4SgPoss.Pl]:^mi             PostInflV; ^[Rel.4SgPoss.Du]:^egmi     PostInflV;
-^[Rel.4PlPoss.Sg]:^meng           PostInflV; ^[Rel.4PlPoss.Pl]:^meng           PostInflV; ^[Rel.4PlPoss.Du]:^egmeng   PostInflV;
-^[Rel.4DuPoss.Sg]:^meng           PostInflV; ^[Rel.4DuPoss.Pl]:^meng           PostInflV; ^[Rel.4DuPoss.Du]:^egmeng   PostInflV;
-!------------------------------------------|--------------------------------------------|--------------------------------------|
+!-----------------------------------------|
+!      RELATIVE (ergative & genitive)     |
+!-----------------------------------------|-------------------------------------------|--------------------------------------|
+^[Rel.Sg]:^em                    PostInflV; ^[Rel.Pl]:^et                    PostInflV; ^[Rel.Du]:^ek               PostInflV;
+!-----------------------------------------|-------------------------------------------|--------------------------------------|
+^[Rel.1SgPoss.Sg]:^ma            PostInflV; ^[Rel.1SgPoss.Pl]:^ma            PostInflV; ^[Rel.1SgPoss.Du]:^egma     PostInflV;
+^[Rel.1PlPoss.Sg]:^%{.m.%}mta    PostInflV; ^[Rel.1PlPoss.Pl]:^%{.m.%}mta    PostInflV; ^[Rel.1PlPoss.Du]:^egemta   PostInflV;
+^[Rel.1DuPoss.Sg]:^%{.m.%}mtung  PostInflV; ^[Rel.1DuPoss.Pl]:^%{.m.%}mtung  PostInflV; ^[Rel.1DuPoss.Du]:^egemtung PostInflV;
+!-----------------------------------------|-------------------------------------------|--------------------------------------|
+^[Rel.2SgPoss.Sg]:^%{.m.%}gpek   PostInflV; ^[Rel.2SgPoss.Pl]:^%{.m.%}gpek   PostInflV; ^[Rel.2SgPoss.Du]:^egpek    PostInflV;
+^[Rel.2PlPoss.Sg]:^%{.m.%}gpesi  PostInflV; ^[Rel.2PlPoss.Pl]:^%{.m.%}gpesi  PostInflV; ^[Rel.2PlPoss.Du]:^egpesi   PostInflV;
+^[Rel.2DuPoss.Sg]:^%{.m.%}gpetek PostInflV; ^[Rel.2DuPoss.Pl]:^%{.m.%}gpetek PostInflV; ^[Rel.2DuPoss.Du]:^egpetek  PostInflV;
+!-----------------------------------------|-------------------------------------------|--------------------------------------|
+^[Rel.3SgPoss.Sg]:^an            PostInflV; ^[Rel.3SgPoss.Pl]:^an            PostInflV; ^[Rel.3SgPoss.Du]:^egkenka  PostInflV;
+^[Rel.3PlPoss.Sg]:^ita           PostInflV; ^[Rel.3PlPoss.Pl]:^ita           PostInflV; ^[Rel.3PlPoss.Du]:^egkenka  PostInflV;
+^[Rel.3DuPoss.Sg]:^ita           PostInflV; ^[Rel.3DuPoss.Pl]:^ita           PostInflV; ^[Rel.3DuPoss.Du]:^egkenka  PostInflV;
+!-----------------------------------------|-------------------------------------------|--------------------------------------|
+^[Rel.4SgPoss.Sg]:^mi            PostInflV; ^[Rel.4SgPoss.Pl]:^mi            PostInflV; ^[Rel.4SgPoss.Du]:^egmi     PostInflV;
+^[Rel.4PlPoss.Sg]:^meng          PostInflV; ^[Rel.4PlPoss.Pl]:^meng          PostInflV; ^[Rel.4PlPoss.Du]:^egmeng   PostInflV;
+^[Rel.4DuPoss.Sg]:^meng          PostInflV; ^[Rel.4DuPoss.Pl]:^meng          PostInflV; ^[Rel.4DuPoss.Du]:^egmeng   PostInflV;
+!-----------------------------------------|-------------------------------------------|--------------------------------------|
 
 !-------------------------------------------------|
 !                ABLATIVE MODALIS                 |
 !-------------------------------------------------|---------------------------------------------------|---------------------------------------------|
-^[Abl_Mod.Sg]:^meng                       PostInflV; ^[Abl_Mod.Pl]:^neng                       PostInflV; ^[Abl_Mod.Du]:^egneng               PostInflV;
+^[Abl_Mod.Sg]:^meng                      PostInflV; ^[Abl_Mod.Pl]:^neng                      PostInflV; ^[Abl_Mod.Du]:^egneng              PostInflV;
 !-------------------------------------------------|---------------------------------------------------|---------------------------------------------|
 ^[Abl_Mod.1SgPoss.Sg]:^%{.m.%}mneng      PostInflV; ^[Abl_Mod.1SgPoss.Pl]:^%{.m.%}mneng      PostInflV; ^[Abl_Mod.1SgPoss.Du]:^egemneng    PostInflV;
 ^[Abl_Mod.1PlPoss.Sg]:^%{.m.%}mnneng     PostInflV; ^[Abl_Mod.1PlPoss.Pl]:^%{.m.%}mnneng     PostInflV; ^[Abl_Mod.1PlPoss.Du]:^egemnneng   PostInflV;
@@ -68,13 +68,14 @@ LEXICON NounInflV
 !-------------------------------------------------|---------------------------------------------------|---------------------------------------------|
 ^[Abl_Mod.4SgPoss.Sg]:^mineng            PostInflV; ^[Abl_Mod.4SgPoss.Pl]:^mineng            PostInflV; ^[Abl_Mod.4SgPoss.Du]:^egmineng    PostInflV;
 ^[Abl_Mod.4PlPoss.Sg]:^meggneng          PostInflV; ^[Abl_Mod.4PlPoss.Pl]:^meggneng          PostInflV; ^[Abl_Mod.4PlPoss.Du]:^egmeggneng  PostInflV;
+^[Abl_Mod.4DuPoss.Sg]:^megneng           PostInflV; ^[Abl_Mod.4DuPoss.Pl]:^megneng           PostInflV; ^[Abl_Mod.4DuPoss.Du]:^egmegneng   PostInflV;
 ^[Abl_Mod.4DuPoss.Sg]:^megteneng         PostInflV; ^[Abl_Mod.4DuPoss.Pl]:^megteneng         PostInflV; ^[Abl_Mod.4DuPoss.Du]:^egmegteneng PostInflV;
 !-------------------------------------------------|---------------------------------------------------|---------------------------------------------|
 
 !-------------------------------------------|
 !           LOCATIVE (localis)              |
 !-------------------------------------------|---------------------------------------------|---------------------------------------|
-^[Loc.Sg]:^mi                       PostInflV; ^[Loc.Pl]:^ni                       PostInflV; ^[Loc.Du]:^egni               PostInflV;
+^[Loc.Sg]:^mi                      PostInflV; ^[Loc.Pl]:^ni                      PostInflV; ^[Loc.Du]:^egni              PostInflV;
 !-------------------------------------------|---------------------------------------------|---------------------------------------|
 ^[Loc.1SgPoss.Sg]:^%{.m.%}mni      PostInflV; ^[Loc.1SgPoss.Pl]:^%{.m.%}mni      PostInflV; ^[Loc.1SgPoss.Du]:^egemni    PostInflV;
 ^[Loc.1PlPoss.Sg]:^%{.m.%}mnni     PostInflV; ^[Loc.1PlPoss.Pl]:^%{.m.%}mnni     PostInflV; ^[Loc.1PlPoss.Du]:^egemnni   PostInflV;
@@ -91,13 +92,14 @@ LEXICON NounInflV
 !-------------------------------------------|---------------------------------------------|---------------------------------------|
 ^[Loc.4SgPoss.Sg]:^mini            PostInflV; ^[Loc.4SgPoss.Pl]:^mini            PostInflV; ^[Loc.4SgPoss.Du]:^egmini    PostInflV;
 ^[Loc.4PlPoss.Sg]:^meggni          PostInflV; ^[Loc.4PlPoss.Pl]:^meggni          PostInflV; ^[Loc.4PlPoss.Du]:^egmeggni  PostInflV;
+^[Loc.4DuPoss.Sg]:^megni           PostInflV; ^[Loc.4DuPoss.Pl]:^megni           PostInflV; ^[Loc.4DuPoss.Du]:^egmegni   PostInflV;
 ^[Loc.4DuPoss.Sg]:^megteni         PostInflV; ^[Loc.4DuPoss.Pl]:^megteni         PostInflV; ^[Loc.4DuPoss.Du]:^egmegteni PostInflV;
 !-------------------------------------------|---------------------------------------------|---------------------------------------|
 
 !--------------------------------------------|
 !          ALLATIVE (terminalis)             |
 !--------------------------------------------|----------------------------------------------|----------------------------------------|
-^[All.Sg]:^mun                       PostInflV; ^[All.Pl]:^nun                       PostInflV; ^[All.Du]:^egnun               PostInflV;
+^[All.Sg]:^mun                      PostInflV; ^[All.Pl]:^nun                      PostInflV; ^[All.Du]:^egnun              PostInflV;
 !--------------------------------------------|----------------------------------------------|----------------------------------------|
 ^[All.1SgPoss.Sg]:^%{.m.%}mnun      PostInflV; ^[All.1SgPoss.Pl]:^%{.m.%}mnun      PostInflV; ^[All.1SgPoss.Du]:^egemnun    PostInflV;
 ^[All.1PlPoss.Sg]:^%{.m.%}mnnun     PostInflV; ^[All.1PlPoss.Pl]:^%{.m.%}mnnun     PostInflV; ^[All.1PlPoss.Du]:^egemnnun   PostInflV;
@@ -114,14 +116,15 @@ LEXICON NounInflV
 !--------------------------------------------|----------------------------------------------|----------------------------------------|
 ^[All.4SgPoss.Sg]:^minun            PostInflV; ^[All.4SgPoss.Pl]:^minun            PostInflV; ^[All.4SgPoss.Du]:^egminun    PostInflV;
 ^[All.4PlPoss.Sg]:^meggnun          PostInflV; ^[All.4PlPoss.Pl]:^meggnun          PostInflV; ^[All.4PlPoss.Du]:^egmeggnun  PostInflV;
+^[All.4DuPoss.Sg]:^megnun           PostInflV; ^[All.4DuPoss.Pl]:^megnun           PostInflV; ^[All.4DuPoss.Du]:^egmegnun   PostInflV;
 ^[All.4DuPoss.Sg]:^megtenun         PostInflV; ^[All.4DuPoss.Pl]:^megtenun         PostInflV; ^[All.4DuPoss.Du]:^egmegtenun PostInflV;
 !--------------------------------------------|----------------------------------------------|----------------------------------------|
 
 !----------------------------------------------|
 !             PERLATIVE (vialis)               |
 !----------------------------------------------|------------------------------------------------|-------------------------------------------|
-^[Prl.Sg]:^kun                         PostInflV; ^[Prl.Pl]:^etgun                       PostInflV; ^[Prl.Du]:^egnegun                PostInflV;
-                                           ^[Prl.Pl]:^teggun                      PostInflV;
+^[Prl.Sg]:^kun                        PostInflV; ^[Prl.Pl]:^etgun                      PostInflV; ^[Prl.Du]:^egnekun               PostInflV;
+                                                 ^[Prl.Pl]:^teggun                     PostInflV;                                           |
 !----------------------------------------------|------------------------------------------------|-------------------------------------------|
 ^[Prl.1SgPoss.Sg]:^%{.m.%}mkun        PostInflV; ^[Prl.1SgPoss.Pl]:^%{.m.%}mkun        PostInflV; ^[Prl.1SgPoss.Du]:^egemkun       PostInflV;
 ^[Prl.1PlPoss.Sg]:^%{.m.%}mteggun     PostInflV; ^[Prl.1PlPoss.Pl]:^%{.m.%}mteggun     PostInflV; ^[Prl.1PlPoss.Du]:^egemteggun    PostInflV;
@@ -143,7 +146,7 @@ LEXICON NounInflV
 !---------------------------------------------|
 !             EQUATIVE (equalis)              |
 !---------------------------------------------|-----------------------------------------------|------------------------------------------|
-^[Equ.Sg]:^tun                        PostInflV; ^[Equ.Pl]:^estun                      PostInflV; ^[Equ.Du]:^egestun               PostInflV;
+^[Equ.Sg]:^tun                       PostInflV; ^[Equ.Pl]:^estun                     PostInflV; ^[Equ.Du]:^egestun              PostInflV;
 !---------------------------------------------|-----------------------------------------------|------------------------------------------|
 ^[Equ.1SgPoss.Sg]:^%{.m.%}mtun       PostInflV; ^[Equ.1SgPoss.Pl]:^%{.m.%}mtun       PostInflV; ^[Equ.1SgPoss.Du]:^egemtun      PostInflV;
 ^[Equ.1PlPoss.Sg]:^%{.m.%}mtestun    PostInflV; ^[Equ.1PlPoss.Pl]:^%{.m.%}mtestun    PostInflV; ^[Equ.1PlPoss.Du]:^egemtestun   PostInflV;
@@ -162,28 +165,28 @@ LEXICON NounInflV
 ^[Equ.4DuPoss.Sg]:^megestun          PostInflV; ^[Equ.4DuPoss.Pl]:^megestun          PostInflV; ^[Equ.4DuPoss.Du]:^egmegestun   PostInflV;
 !---------------------------------------------|-----------------------------------------------|------------------------------------------|
 
-!---------------------------------------------|
-! Obsolete Verb Root -ete                     |
-!   ^[Jacobson (2001) p.78]                    |
-!---------------------------------------------|-----------------------------------------------|-----------------------------------------|
-^[Loc.Sg]:^m                       VerbRootEte; ^[Loc.Pl]:^n                       VerbRootEte; ^[Loc.Du]:^egn               VerbRootEte;
-!---------------------------------------------|-----------------------------------------------|-----------------------------------------|
+!--------------------------------------------|
+! Obsolete Verb Root -ete                    |
+!   ^[Jacobson (2001) p.78]                  |
+!--------------------------------------------|----------------------------------------------|----------------------------------------|
+^[Loc.Sg]:^m                      VerbRootEte; ^[Loc.Pl]:^n                      VerbRootEte; ^[Loc.Du]:^egn              VerbRootEte;
+!--------------------------------------------|----------------------------------------------|----------------------------------------|
 ^[Loc.1SgPoss.Sg]:^%{.m.%}mn      VerbRootEte; ^[Loc.1SgPoss.Pl]:^%{.m.%}mn      VerbRootEte; ^[Loc.1SgPoss.Du]:^egemn    VerbRootEte;
 ^[Loc.1PlPoss.Sg]:^%{.m.%}mnn     VerbRootEte; ^[Loc.1PlPoss.Pl]:^%{.m.%}mnn     VerbRootEte; ^[Loc.1PlPoss.Du]:^egemnn   VerbRootEte;
 ^[Loc.1DuPoss.Sg]:^%{.m.%}mtegn   VerbRootEte; ^[Loc.1DuPoss.Pl]:^%{.m.%}mtegn   VerbRootEte; ^[Loc.1DuPoss.Du]:^egemtegn VerbRootEte;
-!---------------------------------------------|-----------------------------------------------|-----------------------------------------|
+!--------------------------------------------|----------------------------------------------|----------------------------------------|
 ^[Loc.2SgPoss.Sg]:^%{.m.%}gpen    VerbRootEte; ^[Loc.2SgPoss.Pl]:^%{.m.%}gpen    VerbRootEte; ^[Loc.2SgPoss.Du]:^egpen    VerbRootEte;
 ^[Loc.2SgPoss.Sg]:^%{.m.%}gpegn   VerbRootEte; ^[Loc.2SgPoss.Pl]:^%{.m.%}gpegn   VerbRootEte; ^[Loc.2SgPoss.Du]:^egpegn   VerbRootEte;
 ^[Loc.2PlPoss.Sg]:^%{.m.%}gpesin  VerbRootEte; ^[Loc.2PlPoss.Pl]:^%{.m.%}gpesin  VerbRootEte; ^[Loc.2PlPoss.Du]:^egpesin  VerbRootEte;
 ^[Loc.2DuPoss.Sg]:^%{.m.%}gpetegn VerbRootEte; ^[Loc.2DuPoss.Pl]:^%{.m.%}gpetegn VerbRootEte; ^[Loc.2DuPoss.Du]:^egpetegn VerbRootEte;
-!---------------------------------------------|-----------------------------------------------|-----------------------------------------|
+!--------------------------------------------|----------------------------------------------|----------------------------------------|
 ^[Loc.3SgPoss.Sg]:^an             VerbRootEte; ^[Loc.3SgPoss.Pl]:^an             VerbRootEte; ^[Loc.3SgPoss.Du]:^egken    VerbRootEte;
 ^[Loc.3PlPoss.Sg]:^itn            VerbRootEte; ^[Loc.3PlPoss.Pl]:^itn            VerbRootEte; ^[Loc.3PlPoss.Du]:^itn      VerbRootEte;
 ^[Loc.3DuPoss.Sg]:^egken          VerbRootEte; ^[Loc.3DuPoss.Pl]:^itn            VerbRootEte; ^[Loc.3DuPoss.Du]:^itn      VerbRootEte;
-!---------------------------------------------|-----------------------------------------------|-----------------------------------------|
+!--------------------------------------------|----------------------------------------------|----------------------------------------|
 ^[Loc.4SgPoss.Sg]:^min            VerbRootEte; ^[Loc.4SgPoss.Pl]:^min            VerbRootEte; ^[Loc.4SgPoss.Du]:^egmin    VerbRootEte;
 ^[Loc.4PlPoss.Sg]:^meggn          VerbRootEte; ^[Loc.4PlPoss.Pl]:^meggn          VerbRootEte; ^[Loc.4PlPoss.Du]:^egmeggn  VerbRootEte;
 ^[Loc.4DuPoss.Sg]:^megten         VerbRootEte; ^[Loc.4DuPoss.Pl]:^megten         VerbRootEte; ^[Loc.4DuPoss.Du]:^egmegten VerbRootEte;
-!---------------------------------------------|-----------------------------------------------|-----------------------------------------|
+!--------------------------------------------|----------------------------------------------|----------------------------------------|
 
 

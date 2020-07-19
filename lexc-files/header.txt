@@ -1,15 +1,23 @@
 !================
-!
 Multichar_Symbols
-!
 !================
-%{g%}  ! for digraph -gh
-%{k%}  ! for digraph -kw
-%{t%}  ! for -te
+@P.AUX.TRUE@
+@R.AUX.TRUE@
+@D.AUX.TRUE@
+
+%{%0%}  ! for null morphemes
+%{g%}   ! for digraph -gh
+%{k%}   ! for digraph -kw
+%{t%}   ! for -te
 
 !-----------
 ! allomorphs 
 !-----------
+(a)   (e)   (i)   (u)
+(g)   (s)   (t)
+(at)  (ng)  (te)  (pete)
+(g/t) (p/v) (t/y) (s/z) (i/u) (q/t)
+
 %{E%}     ! for (e)
 %{G%}     ! for (g) 
 %{I%}     ! for (e) in ~sf:(e)sqe [Jacobson (2001) p.64]
@@ -21,23 +29,28 @@ Multichar_Symbols
 !---------------------------
 ! morphophonological symbols 
 !---------------------------
-%{.w.%}     ! drop weak -gh
-%{.c.%}     ! drop uvular (-gh) between single vowels
-%{.f.%}     ! drop and hop final -e
-%{.fS.%}    ! treat final -e like -a if root has two syllables or less [Jacobson (2001) p.38]
-%{.fL.%}    ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
-%{.sf.%}    ! drop and hop semi-final -e
-%{.m.%}     ! drop root-final consonants
-%{.mm.%}    ! drop root-final vowel + consonant
-%{.at.%}    ! modify root-final -te 
+-w        ! drop weak -gh
+~f        ! drop and hop final -e
+~sf       ! drop and hop semi-final -e
+––        ! drop root-final vowel + consonant
+
+%{.w.%}   ! drop weak -gh
+%{.c.%}   ! drop uvular (-gh) between single vowels
+%{.f.%}   ! drop and hop final -e
+%{.fS.%}  ! treat final -e like -a if root has two syllables or less [Jacobson (2001) p.38]
+%{.fL.%}  ! drop and hop final -e if root exceeds two syllables [Jacobson (2001) p.32]
+%{.sf.%}  ! drop and hop semi-final -e
+%{.m.%}   ! drop root-final consonants
+%{.mm.%}  ! drop root-final vowel + consonant
+%{.at.%}  ! modify root-final -te 
 
 !-----------------------------
 ! morphological tags for nouns
 !-----------------------------
-(N)        ! noun root
+(N)   ! noun root
 
-(N→N)      ! noun-elaborating postbase
-(N→V)      ! verbalizing postbase
+(N→N) ! noun-elaborating postbase
+(N→V) ! verbalizing postbase
 
 !~~~~~~~~~~~~~~~~
 ! absolutive case
@@ -165,6 +178,7 @@ Multichar_Symbols
 
 (V→V)           ! verb-elaborating postbase
 (V→N)           ! nominalizing postbase
+(CmpdVbl)       ! compound-verbal postbase
 (EMO→N)         ! emotional root to noun stem postbase
 (EMO→V)         ! emotional root to verb stem postbase
 (POS→STATIVE)   ! postural root to stative form postbase
@@ -172,79 +186,40 @@ Multichar_Symbols
 (POS→QUANTQUAL) ! postural root to quantifier-qualifier construction
 
 [Ind.Intr]      ! intransitive indicative mood
-[Ind.Trns]      ! transitive indicative mood
+[Ind.Trns]      !   transitive indicative mood
 [Ptcp.Intr]     ! intransitive participial mood
-[Ptcp.Trns]     ! transitive participial mood
+[Ptcp.Trns]     !   transitive participial mood
+[Intrg.Intr]    ! intransitive interrogative mood
+[Intrg.Trns]    !   transitive interrogative mood
 [PtcpObl.Intr]  ! intransitive participial-oblique mood
-[PtcpObl.Trns]  ! transitive participial-oblique mood
+[PtcpObl.Trns]  !   transitive participial-oblique mood
 [Prec.Intr]     ! intransitive precessive mood
-[Prec.Trns]     ! transitive precessive mood
+[Prec.Trns]     !   transitive precessive mood
 [Conc.Intr]     ! intransitive concessive mood
-[Conc.Trns]     ! transitive concessive mood
+[Conc.Trns]     !   transitive concessive mood
 [Cnsq1.Intr]    ! intransitive consequential I mood
-[Cnsq1.Trns]    ! transitive consequential I mood
+[Cnsq1.Trns]    !   transitive consequential I mood
 [Cnsq2.Intr]    ! intransitive consequential II mood
-[Cnsq2.Trns]    ! transitive consequential II mood
+[Cnsq2.Trns]    !   transitive consequential II mood
 [Cond.Intr]     ! intransitive conditional mood
-[Cond.Trns]     ! transitive conditional mood
+[Cond.Trns]     !   transitive conditional mood
 [Ctmp.Intr]     ! intransitive contemporative mood
-[Ctmp.Trns]     ! transitive contemporative mood
+[Ctmp.Trns]     !   transitive contemporative mood
 [Sbrd.Intr]     ! intransitive subordinative mood
-[Sbrd.Trns]     ! transitive subordinative mood
+[Sbrd.Trns]     !   transitive subordinative mood
 !~~~~~~~~~~~~~~~~~~~
 ! interrogative mood 
 !~~~~~~~~~~~~~~~~~~~
-[Intrg.Intr.3Sg]  [Intrg.Intr.1Sg]  [Intrg.Intr.2Sg]
-[Intrg.Intr.3Pl]  [Intrg.Intr.1Pl]  [Intrg.Intr.2Pl]
-[Intrg.Intr.3Du]  [Intrg.Intr.1Du]  [Intrg.Intr.2Du]
-[Intrg.Trns.3Sg.3Sg]  [Intrg.Trns.3Sg.3Pl]  [Intrg.Trns.3Sg.3Du]
-[Intrg.Trns.3Pl.3Sg]  [Intrg.Trns.3Pl.3Pl]  [Intrg.Trns.3Pl.3Du]
-[Intrg.Trns.3Du.3Sg]  [Intrg.Trns.3Du.3Pl]  [Intrg.Trns.3Du.3Du]
-[Intrg.Trns.1Sg.3Sg]  [Intrg.Trns.1Sg.3Pl]  [Intrg.Trns.1Sg.3Du]
-[Intrg.Trns.1Pl.3Sg]  [Intrg.Trns.1Pl.3Pl]  [Intrg.Trns.1Pl.3Du]
-[Intrg.Trns.1Du.3Sg]  [Intrg.Trns.1Du.3Pl]  [Intrg.Trns.1Du.3Du]
-[Intrg.Trns.2Sg.3Sg]  [Intrg.Trns.2Sg.3Pl]  [Intrg.Trns.2Sg.3Du]
-[Intrg.Trns.2Pl.3Sg]  [Intrg.Trns.2Pl.3Pl]  [Intrg.Trns.2Pl.3Du]
-[Intrg.Trns.2Du.3Sg]  [Intrg.Trns.2Du.3Pl]  [Intrg.Trns.2Du.3Du]
-[Intrg.Trns.3Sg.1Sg]  [Intrg.Trns.3Sg.1Pl]  [Intrg.Trns.3Sg.1Du]
-[Intrg.Trns.3Pl.1Sg]  [Intrg.Trns.3Pl.1Pl]  [Intrg.Trns.3Pl.1Du]
-[Intrg.Trns.3Du.1Sg]  [Intrg.Trns.3Du.1Du]
-[Intrg.Trns.2Sg.1Sg]  [Intrg.Trns.2Sg.1Du]
-[Intrg.Trns.2Pl.1Sg]  [Intrg.Trns.2Pl.1Du]
-[Intrg.Trns.2Du.1Sg]  [Intrg.Trns.2Du.1Du]
-[Intrg.Trns.3Sg.2Sg]  [Intrg.Trns.3Sg.2Du]
-[Intrg.Trns.3Pl.2Sg]  [Intrg.Trns.3Pl.2Du]
-[Intrg.Trns.3Du.2Sg]  [Intrg.Trns.3Du.2Du]
-[Intrg.Trns.1Sg.2Sg]
-[Intrg.Trns.1Pl.2Sg]
-[Intrg.Trns.1Du.2Sg]
+[Intrg.Intr.2Sg]
+[Intrg.Intr.2Pl]
+[Intrg.Intr.2Du]
 !~~~~~~~~~~~~~~
 ! optative mood 
 !~~~~~~~~~~~~~~
-[Opt.Pres.Intr.3Sg]  [Opt.Pres.Intr.1Sg]  [Opt.Pres.Intr.2Sg]
-[Opt.Pres.Intr.3Pl]  [Opt.Pres.Intr.1Pl]  [Opt.Pres.Intr.2Pl]
-[Opt.Pres.Intr.3Du]  [Opt.Pres.Intr.1Du]  [Opt.Pres.Intr.2Du]
-[Opt.Pres.Trns.3Sg.3Sg]  [Opt.Pres.Trns.3Sg.3Pl]  [Opt.Pres.Trns.3Sg.3Du]
-[Opt.Pres.Trns.3Pl.3Sg]  [Opt.Pres.Trns.3Pl.3Pl]  [Opt.Pres.Trns.3Pl.3Du]
-[Opt.Pres.Trns.3Du.3Sg]  [Opt.Pres.Trns.3Du.3Pl]  [Opt.Pres.Trns.3Du.3Du]
-[Opt.Pres.Trns.1Sg.3Sg]  [Opt.Pres.Trns.1Sg.3Pl]  [Opt.Pres.Trns.1Sg.3Du]
-[Opt.Pres.Trns.1Pl.3Sg]  [Opt.Pres.Trns.1Pl.3Pl]  [Opt.Pres.Trns.1Pl.3Du]
-[Opt.Pres.Trns.1Du.3Sg]  [Opt.Pres.Trns.1Du.3Pl]  [Opt.Pres.Trns.1Du.3Du]
-[Opt.Pres.Trns.2Sg.3Sg]  [Opt.Pres.Trns.2Sg.3Pl]  [Opt.Pres.Trns.2Sg.3Du]
-[Opt.Pres.Trns.2Pl.3Sg]  [Opt.Pres.Trns.2Pl.3Pl]  [Opt.Pres.Trns.2Pl.3Du]
-[Opt.Pres.Trns.2Du.3Sg]  [Opt.Pres.Trns.2Du.3Pl]  [Opt.Pres.Trns.2Du.3Du]
-[Opt.Pres.Trns.3Sg.1Sg]  [Opt.Pres.Trns.3Sg.1Pl]  [Opt.Pres.Trns.3Sg.1Du]
-[Opt.Pres.Trns.3Pl.1Sg]  [Opt.Pres.Trns.3Pl.1Pl]  [Opt.Pres.Trns.3Pl.1Du]
-[Opt.Pres.Trns.3Du.1Sg]  [Opt.Pres.Trns.3Du.1Pl]  [Opt.Pres.Trns.3Du.1Du]
-[Opt.Pres.Trns.2Sg.1Sg]  [Opt.Pres.Trns.2Sg.1Pl]  [Opt.Pres.Trns.2Sg.1Du]
-[Opt.Pres.Trns.2Pl.1Sg]  [Opt.Pres.Trns.2Pl.1Pl]  [Opt.Pres.Trns.2Pl.1Du]
-[Opt.Pres.Trns.2Du.1Sg]  [Opt.Pres.Trns.2Du.1Pl]  [Opt.Pres.Trns.2Du.1Du]
-[Opt.Pres.Trns.3Sg.2Sg]  [Opt.Pres.Trns.3Sg.2Pl]  [Opt.Pres.Trns.3Sg.2Du]
-[Opt.Pres.Trns.3Pl.2Sg]  [Opt.Pres.Trns.3Pl.2Pl]  [Opt.Pres.Trns.3Pl.2Du]
-[Opt.Pres.Trns.3Du.2Sg]  [Opt.Pres.Trns.3Du.2Pl]  [Opt.Pres.Trns.3Du.2Du]
-[Opt.Pres.Trns.1Sg.2Sg]  [Opt.Pres.Trns.1Sg.2Pl]  [Opt.Pres.Trns.1Sg.2Du]
-[Opt.Pres.Trns.1Pl.2Sg]  [Opt.Pres.Trns.1Pl.2Pl]  [Opt.Pres.Trns.1Pl.2Du]
-[Opt.Pres.Trns.1Du.2Sg]  [Opt.Pres.Trns.1Du.2Pl]  [Opt.Pres.Trns.1Du.2Du]
+[Opt.Pres.Intr]
+[Opt.Pres.Trns]
+[Opt.Pres.Intr.2Sg]
+[Opt.Pres.Trns.2Sg.3Sg]
 [Opt.Neg.Pres.Intr]
 [Opt.Neg.Pres.Trns]
 [Opt.Neg.Pres.Trns.2Sg.3Pl]
@@ -298,24 +273,109 @@ Multichar_Symbols
 [_.1Sg]    [_.1Pl]    [_.1Du]
 [_.2Sg]    [_.2Pl]    [_.2Du]
 
+!----------
+! pronouns
+!----------
+(PRO.AbsRel.1Sg)   (PRO.AbsRel.1Pl)   (PRO.AbsRel.1Du)
+(PRO.Abl_Mod.1Sg)  (PRO.Abl_Mod.1Pl)  (PRO.Abl_Mod.1Du)
+(PRO.All.1Sg)      (PRO.All.1Pl)      (PRO.All.1Du)
+(PRO.Prl.1Sg)      (PRO.Prl.1Pl)      (PRO.Prl.1Du)
+(PRO.Equ.1Sg)      (PRO.Equ.1Pl)      (PRO.Equ.1Du)
+
+(PRO.AbsRel.2Sg)   (PRO.AbsRel.2Pl)   (PRO.AbsRel.2Du)
+(PRO.Abl_Mod.2Sg)  (PRO.Abl_Mod.2Pl)  (PRO.Abl_Mod.2Du)
+(PRO.All.2Sg)      (PRO.All.2Pl)      (PRO.All.2Du)
+(PRO.Prl.2Sg)      (PRO.Prl.2Pl)      (PRO.Prl.2Du)
+(PRO.Equ.2Sg)      (PRO.Equ.2Pl)      (PRO.Equ.2Du)
+
+(PRO.Abs.3Sg)      (PRO.Abs.3Pl)      (PRO.Abs.3Du)
+(PRO.Abl_Mod.3Sg)  (PRO.Abl_Mod.3Pl)  (PRO.Abl_Mod.3Du)
+(PRO.Rel.3Sg)      (PRO.Rel.3Pl)      (PRO.Rel.3Du)
+(PRO.All.3Sg)      (PRO.All.3Pl)      (PRO.All.3Du)
+(PRO.Prl.3Sg)      (PRO.Prl.3Pl)      (PRO.Prl.3Du)
+(PRO.Equ.3Sg)      (PRO.Equ.3Pl)      (PRO.Equ.3Du)
+
+(PRO.AbsRel.4Sg)   (PRO.AbsRel.4Pl)   (PRO.AbsRel.4Du)
+(PRO.Abl_Mod.4Sg)  (PRO.Abl_Mod.4Pl)  (PRO.Abl_Mod.4Du)
+(PRO.All.4Sg)      (PRO.All.4Pl)      (PRO.All.4Du)
+(PRO.Prl.4Sg)      (PRO.Prl.4Pl)      (PRO.Prl.4Du)
+(PRO.Equ.4Sg)      (PRO.Equ.4Pl)      (PRO.Equ.4Du)
+
+!--------------------
+! demonstrative tags
+!--------------------
+(DEM→N)        ! demonstrative to noun stem
+(DEM→V)        ! demonstrative to verb stem
+(VOC)          ! vocative
+[Anaphor]      ! for the anaphoric prefix
+(DEM.PRO.Abs.Sg)      (DEM.PRO.AbsRel.Pl)   (DEM.PRO.AbsRel.Du)
+(DEM.PRO.Rel.Sg)
+(DEM.PRO.Loc.Sg)      (DEM.PRO.Loc.Pl)      (DEM.PRO.Loc.Du)
+(DEM.PRO.All.Sg)      (DEM.PRO.All.Pl)      (DEM.PRO.All.Du)
+(DEM.PRO.Prl.Sg)      (DEM.PRO.Prl.Pl)      (DEM.PRO.Prl.Du)
+(DEM.PRO.Equ.Sg)      (DEM.PRO.Equ.Pl)      (DEM.PRO.Equ.Du)
+(DEM.PRO.Abl_Mod.Sg)  (DEM.PRO.Abl_Mod.Pl)  (DEM.PRO.Abl_Mod.Du)
+(VOC.Sg)
+(VOC.Pl)
+(DEM.ADV)
+(DEM.ADV.Loc)
+(DEM.ADV.All)
+(DEM.ADV.Prl)
+(DEM.ADV.Abl_Mod)
+(DEM.ADV.Equ)
+
+!---------------
+! question tags
+!---------------
+(WH)
+(WH.Abs.Sg)      (WH.AbsRel.Pl)   (WH.AbsRel.Du)
+(WH.Rel.Sg)
+(WH.Loc.Sg)      (WH.Loc.Pl)      (WH.Loc.Du)
+(WH.All.Sg)      (WH.All.Pl)      (WH.All.Du)
+(WH.Prl.Sg)      (WH.Prl.Pl)      (WH.Prl.Du)
+(WH.Equ.Sg)      (WH.Equ.Pl)      (WH.Equ.Du)
+(WH.Abl_Mod.Sg)  (WH.Abl_Mod.Pl)  (WH.Abl_Mod.Du)
+
 !-------------------------
 ! misc morphological tags
 !-------------------------
-(DEM)          ! demonstrative
 (NUM)          ! numeral
 (NUM→N)        ! numeral to noun stem
 (NUM→V)        ! numeral to verb stem
 (PTCL)         ! particle
-(PRO)          ! pronoun
-(WH)           ! question word
 (QUANTQUAL)    ! for quantifier-qualifier constructions
 (N→QUANTQUAL)  ! noun stem to quantifier-qualifier postbase
 (V→QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
 (N→XCLM)       ! noun stem to exclamation
 (V→XCLM)       ! verb stem to exclamation
-(VOC)          ! vocative
 [Volitive.Of.Fear]  ! for volitive of fear mood [Jacobson (2001) p.129] 
-
+(GUESS)        ! Guessed root
+(GuessAIU)     ! Guessed root that ends in a, i, or u
+(GuessEHop)    ! Guessed root ending in e that can be hopped
+(GuessEDrop)   ! Guessed Yupik root ending e that can be dropped but not hopped
+(GuessGWGHW)   ! Guessed Yupik root ending in g, w, or ghw
+(GuessUnexpectedlyStrongGH) ! Guessed Yupik root ending in an unexpectedly strong gh
+(GuessPredictablyStrongGH)  ! Guessed Yupik root ending in a predictably strong gh preceeded by aa, ii, or uu
+(GuessWeakGH)               ! Guessed Yupik root ending in weak gh
+(GuessSemiFinalE) ! Guessed Yupik root ending with semi-final e
+(GuessTE)         ! Guessed Yupik root ending in te
+(GuessSpecialTE)  ! Guessed Yupik root ending in special te
+(GuessFinalE)  ! Guessed Yupik root ending with final e
+(GuessFullVGH) ! Guessed Yupik root ending in -agh, -igh, -ugh
+(GuessNameAIU)                  ! Guessed Yupik name ending in a, i, or u
+(GuessNameGWGHW)                ! Guessed Yupik name ending in g, w, or ghw
+(GuessNameWeakGH)               ! Guessed Yupik name ending in weak gh
+(GuessNameUnexpectedlyStrongGH) ! Guessed Yupik name ending in an unexpectedly strong gh
+(GuessNamePredictablyStrongGH)  ! Guessed Yupik name ending in a predictably strong gh preceeded by aa, ii, or uu
+(GuessNameTE)                   ! Guessed Yupik name ending in te
+(GuessNameSemiFinalE)           ! Guessed Yupik name ending with semi-final e
+(GuessNameEDrop)                ! Guessed Yupik name ending e that can be dropped but not hopped
+(GuessNameEHop)                 ! Guessed Yupik name ending e that can be hopped
+(Name)         ! Proper name
+(GuessForeign)
+(FOREIGN)      ! Guessed foreign root
+(NAME)
+(PUNCT)
 
 !===========
 LEXICON Root
@@ -341,7 +401,7 @@ VerbRootV;     ! ends in -te
 VerbRootVI;    ! ends in special -te 
 VerbRootVII;   ! has semi-final -e
 
-Demonstrative;
+DemPrefix;
 EmotionalRoot;
 Interrogative;
 Numeral;
@@ -351,4 +411,4 @@ Positional;
 PosturalRoot;
 QuantifierQualifier;
 
-
+Punctuation;

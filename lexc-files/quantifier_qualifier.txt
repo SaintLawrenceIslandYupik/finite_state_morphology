@@ -2,13 +2,13 @@
 LEXICON QuantifierQualifier
 !==========================
 
-allakagh      QuantQualTag; ! separately from others
-ellnginagh    QuantQualTag; ! only; alone
-kezeghhagh    QuantQualTag; ! alone; only
-kezemaghhagh  QuantQualTag; ! only; alone; by oneself
-iingunagh     QuantQualTag; ! all; whole
-qerngagh      QuantQualTag; ! together
-tamaghhagh    QuantQualTag; ! all, every, both (for dual)
+allakagh*:allakagh          QuantQualTag; ! separately from others
+ellnginagh*:ellnginagh      QuantQualTag; ! only; alone
+kezeghhagh*:kezeghhagh      QuantQualTag; ! alone; only
+kezemaghhagh*:kezemaghhagh  QuantQualTag; ! only; alone; by oneself
+iingunagh*:iingunagh        QuantQualTag; ! all; whole
+qerngagh*:qerngagh          QuantQualTag; ! together
+tamaghhagh*:tamaghhagh      QuantQualTag; ! all, every, both (for dual)
 
 
 !===================
@@ -22,24 +22,24 @@ LEXICON QuantQualTag
 LEXICON QuantQualInfl
 !====================
 
-!--------------------------|
+^[4Sg]:^m  VerbRootEte;  ! [Jacobson (2001) p.78] 
+
+!---------------------------|
 ^[3Sg]:^%{.c.%}an          #;
 ^[3Pl]:^%{.c.%}ita         #;
 ^[3Du]:^%{.c.%}ita         #;
-!--------------------------|
+!---------------------------|
 ^[1Sg]:^ma                 #;
 ^[1Pl]:^%{.c.%}%{E%}mta    #;
 ^[1Du]:^%{.c.%}%{E%}mtung  #;
-!--------------------------|
+!---------------------------|
 ^[2Sg]:^%{.m.%}gpek        #;
 ^[2Pl]:^%{.m.%}gpesi       #;
 ^[2Du]:^%{.m.^}gpetek      #;
-!--------------------------|
+!---------------------------|
 ^[4Sg]:^mi                 #;
 ^[4Pl]:^meng               #;
 ^[4Du]:^%{.c.%}%{E%}gmek   #;
-!--------------------------|
-
-^[4Sg]:^m  VerbRootEte;  ! [Jacobson (2001) p.78] 
+!---------------------------|
 
 

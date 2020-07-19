@@ -1,0 +1,57 @@
+!===================
+LEXICON ParallelForm
+!===================
+
+seghlegh(N)^[Equ.Sg]:seghletun  #; ! [Jacobson (2001) Ch18]
+
+!---------------------------------------
+! parallel forms found in Badten (2008)
+!---------------------------------------
+kuuve(V)^@~%:(i/u)ma(V→V):kuvuma                     VerbPostbaseI;
+yug(N)^~–kegte(N→V):yuukeg%{t%}e                     VerbPostbaseV;
+uqugh(N)^+kwaagh(N→N):uquqwaagh                      NounPostbaseV;
+negh(V)^%:(ng)inagh(V→V):neghngina%{g%}h             VerbPostbaseIII;
+sukate(V)^@~f–ragkiighute(V→V):sukarragkiighu%{t%}e  VerbPostbaseV;
+awa(DEM)^+ta(DEM→N)^[Loc.3SgPoss.Sg]:awatngani       #;
+uka(DEM)^+ta(DEM→N)^[Loc.3SgPoss.Sg]:ukatngani       #;
+tagtala(N)^[Abs.3SgPoss.Sg]:tagtalgna                #;
+qeneghte(V)^@~%:(u)tke(V→V):qenghutke                VerbPostbaseII;
+nuuve(V)^@~fvig(V→N):nuufig                          NounPostbaseIII;
+atugh(V)^@~fyug(V→V):atuqsug                         VerbPostbaseIII;
+
+!-----------------------------------------------------------------------------
+! final -e may become -a??
+! Jacobson (2001) p.38 documents this, but only for "short" bases and before
+! an inflectional ending in particular. aside from these cases, it's not clear
+! when else this can occur
+!-----------------------------------------------------------------------------
+sigute(N)^~%:(ng)ite(N→V):sigutangi%{t%}e**  VerbPostbaseVI;
+tume(N)^~%:(ng)ite(N→V):tumangi%{t%}e**      VerbPostbaseVI;
+tume(N)^~%:(ng)igh(N→V):tumangi%{g%}h        VerbPostbaseIV;
+
+!-------------------------
+! [Jacobson (2001) p.105]
+!-------------------------
+aqlaghaghte(V)^+(te)ste(CmpdVbl)^@–nghite(V→V)^[Sbrd.Trns]^[_.3Sg]:aqlaghagtestengngunaan  #;
+neghe(V)^+(te)ste(V→V)^@–nghite(V→V)^[Sbrd.Trns][_.3Pl]:neghestengngunaki              #;
+sukangite(V)^[Sbrd.Intr]^[4Sg]:sukangunani                                             #;
+
+!-----------------------------------------------------------
+! there's a lot of discrepancies in the "~–(g)k" postbases,
+! specifically in regards to when (g) surfaces, and
+! whether they should also include "@" [Badten (2008) p.617]
+!-----------------------------------------------------------
+amqeghte(V)^@~–(g)ke(V→N):amqeghtegke  VerbPostbaseII;
+
+!-------------------------------------------------------------
+! non-initial vowels on the base are optionally changed to e,
+! perhaps to emphasize the smallness [Badten (2008) p.653]
+!-------------------------------------------------------------
+angyagh(N)^–ngestagh(N→N):angyengestagh          NounPostbaseIII;
+mangteghagh(N)^–ngestagh(N→N):mangteghengestagh  NounPostbaseIII;
+saguyagh(N)^–ngestagh(N→N):saguyengestagh        NounPostbaseIII;
+saguyagh(N)^–ngestagh(N→N):segeyengestagh        NounPostbaseIII;
+nenglagh(V)^–ngestagh(V→V):nenglengestagh        VerbPostbaseIV;
+qayugh(V)^–ngestagh(V→V):qayengestagh            VerbPostbaseIV;
+
+

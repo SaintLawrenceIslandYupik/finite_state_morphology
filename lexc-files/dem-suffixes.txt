@@ -1,0 +1,44 @@
+!===============
+LEXICON DemAdvPB
+!===============
+0:0                              Enclitic;
+^pi:^pi                          VerbPostbaseI; ! empty base pi- [Jacobson (1984), Woodbury (2004)]
+^+kaghtagh(DEM→N):^kaghta%{g%}h  NounInflIII;   ! one from N
+^+keghtagh(DEM→N):^keghta%{g%}h  NounInflIII;   ! one from N
+^+ta(DEM→N):^ta                  NounInflI;     ! N area of possessor
+^+tmiigh(DEM→V):^tmiigh          VerbInflIV;    ! to go in the N direction
+^[All.Sg]:^tmun                  #;             ! second terminalis [Jacobson (2001) p.113]
+
+^[Loc.Sg]:^m   VerbRootEte;
+^[Loc.Pl]:^n   VerbRootEte;
+^[Loc.Du]:^gn  VerbRootEte;
+
+
+!===============
+LEXICON DemProSg
+!===============
+
+!----------------------------|
+^[Rel.Sg]:^m         Enclitic;
+^[Abl_Mod.Sg]:^meng  Enclitic;
+^[Loc.Sg]:^mi        Enclitic;
+^[All.Sg]:^mun       Enclitic;
+^[Prl.Sg]:^kun       Enclitic;
+^[Equ.Sg]:^tun       Enclitic;
+!----------------------------|
+
+
+!===============
+LEXICON DemProPD
+!===============
+
+!----------------------------|--------------------------------|
+^[AbsRel.Pl]:^t      Enclitic;  ^[AbsRel.Du]:^k       Enclitic;
+^[Abl_Mod.Pl]:^neng  Enclitic;  ^[Abl_Mod.Du]:^gneng  Enclitic;
+^[Loc.Pl]:^ni        Enclitic;  ^[Loc.Du]:^gni        Enclitic;
+^[All.Pl]:^nun       Enclitic;  ^[All.Du]:^ginun      Enclitic;
+^[Prl.Pl]:^tgun      Enclitic;  ^[Prl.Du]:^gnegun     Enclitic;
+^[Equ.Pl]:^stun      Enclitic;  ^[Equ.Du]:^gestun     Enclitic;
+!----------------------------|--------------------------------|
+
+

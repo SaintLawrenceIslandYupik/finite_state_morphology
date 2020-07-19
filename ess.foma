@@ -1,21 +1,10 @@
 #!/usr/bin/env foma -f
 
-read lexc exceptions.lexc
-define Exceptions
-
-read lexc parallel.lexc
-define ParallelForms
-
-read lexc ess.lexc
-define Lexicon
-
-
 !==============
 ! MISC SYMBOLS
 !==============
-! "^"    morpheme boundary
-! .#.    word boundary
-! %{g%} h  weak gh
+! "^"  morpheme boundary
+! .#.  word boundary
 
 
 !======
@@ -25,20 +14,20 @@ define Lexicon
 define C          [ f | g | h | k | l | m |
                     n | p | q | r | s | t |
                     v | w | y | z |
-                    %{t%} | %{g%} | %{k%} ] ;
+                    %{t%} | %{g%} | %{k%} ];
 
 define Stop       [ p   | t   | k   | q   |
                     k w | q w ];
 
 define VoicedC    [ g h w | g h |
                     v | l | z   | y | r | g | w |
-                    m | n | n g | n g w ] ;
+                    m | n | n g | n g w ];
 
 define UnvoicedC  [ p   | t   | k   | q   |
                     k w | q w |
                     f   | s   | h   |
                     l l | r r | g g | w h | g h h | g h h w |
-                    m m | n n | n g n g   | n g n g w ] ;
+                    m m | n n | n g n g   | n g n g w ];
 
 define MultiCharC [ n g n g w |
                     n g n g   | g h h w | g h h |
@@ -46,10 +35,339 @@ define MultiCharC [ n g n g w |
                     g g       | g h     | k w   | l l | m m |
                     n g       | n n     | r r   | q w | w h ];
 
-define FullVowel  [ a | i | u ]     ;
-define V          [ e | FullVowel ] ;
+define FullVowel  [ a | i | u | A | I | U ];
+define V          [ e | FullVowel ];
 
-define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ] ;
+define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ];
+
+
+!================
+! GUESSED ROOTS
+!================
+
+define AnyC [ UnvoicedC | VoicedC ];
+define AnyV [ a | a a | i | i i | u | u u | e ];
+
+define GuessedRootAIU                  [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a a | i i | u u | a | i | u ] ;
+define GuessedRootGWGHW                [ "(GUESS)":0 ] ( (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC )      AnyV            [ g | w | g h w ] .o.
+                                                                       [                       ?*         ? ?               ? ]; ! Ensure that the root is at least 3 characters long
+
+define GuessedRootPredictablyStrongGH  [ "(GUESS)":0 ]  ((AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC)[ a a | i i | u u ]    [ g h ] ;
+define GuessedRootUnexpectedlyStrongGH [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]    [ g h "*" ]:[   g   h ] ;
+define GuessedRootWeakGH               [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]    [ g h     ]:[ %{g%} h ] ;
+define GuessedRootFullVGH              [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC [ a | i | u       ]      g h      ;
+define GuessedRootEDrop                [ "(GUESS)":0 ] [[(AnyV (AnyC)) [ AnyC AnyV (AnyC) ]+                              AnyC e ]  |
+                                                                                          [ (AnyC) [a a | i i | u u | e ] AnyC e ]] ;
+define GuessedRootEHop                 [ "(GUESS)":0 ]                                       (AnyC)     FullVowel          AnyC e ;
+define GuessedRootSemiFinalE           [ "(GUESS)":0 ]   (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC                     e  [ g | g h ] ;
+define GuessedRootTE                   [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e ] .o. 
+                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+define GuessedRootSpecialTE            [ "(GUESS)":0 ] [ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]* [ t ]:[ %{t%} ]          e [ "*" ]:0 ] .o. 
+                                                                       [  ?*   ?               ?                      ? ]; ! Ensure that the root is at least 3 characters long
+define GuessedRootFinalE               [ "(GUESS)":0 ] [[ (AnyV (AnyC)) [ AnyC AnyV (AnyC) ]*  AnyC                     e ] .o.
+                                                                        [  ?*   ?               ?                       ? ] ]; ! Ensure that the root is at least 3 characters long
+
+define UppercaseName          A <- a , I <- i , U <- u , E <- e ,
+                              P <- p , T <- t , K <- k , Q <- q ,
+                              L <- l , Z <- z , Y <- y , R <- r ,
+                              G <- g , W <- w , S <- s , F <- f ,
+                              S <- s , M <- m , N <- n , "V" <- v  || "(NAME)" _ ;
+                              
+define UppercaseFirstLetter   a -> A , i -> I , u -> U , e -> E ,
+                              p -> P , t -> T , k -> K , q -> Q ,
+                              l -> L , z -> Z , y -> Y , r -> R ,
+                              g -> G , w -> W , s -> S , f -> F ,
+                              s -> S , m -> M , n -> N , v -> "V"  || .#. _ ;
+                              
+define GuessedName [ "(GUESS)" "(NAME)" <- "(GUESS)" ];
+                     
+define GuessedNameAIU                  [ UppercaseName .o. GuessedName .o. GuessedRootAIU                  .o. UppercaseFirstLetter ];
+define GuessedNameGWGHW                [ UppercaseName .o. GuessedName .o. GuessedRootGWGHW                .o. UppercaseFirstLetter ];
+define GuessedNameWeakGH               [ UppercaseName .o. GuessedName .o. GuessedRootWeakGH               .o. UppercaseFirstLetter ];
+define GuessedNameUnexpectedlyStrongGH [ UppercaseName .o. GuessedName .o. GuessedRootUnexpectedlyStrongGH .o. UppercaseFirstLetter ];
+define GuessedNamePredictablyStrongGH  [ UppercaseName .o. GuessedName .o. GuessedRootPredictablyStrongGH  .o. UppercaseFirstLetter ];
+define GuessedNameTE                   [ UppercaseName .o. GuessedName .o. GuessedRootTE                   .o. UppercaseFirstLetter ];
+define GuessedNameSemiFinalE           [ UppercaseName .o. GuessedName .o. GuessedRootSemiFinalE           .o. UppercaseFirstLetter ];
+define GuessedNameEDrop                [ UppercaseName .o. GuessedName .o. GuessedRootEDrop                .o. UppercaseFirstLetter ];
+define GuessedNameEHop                 [ UppercaseName .o. GuessedName .o. GuessedRootEHop                 .o. UppercaseFirstLetter ];
+
+define PossibleYupikName  [ GuessedNameAIU.l                  |
+                            GuessedNameGWGHW.l                |
+                            GuessedNameWeakGH.l               |
+                            GuessedNameUnexpectedlyStrongGH.l |
+                            GuessedNamePredictablyStrongGH.l  |
+                            GuessedNameTE.l                   |
+                            GuessedNameSemiFinalE.l           |
+                            GuessedNameEDrop.l                |
+                            GuessedNameEHop.l                 ];
+
+define GuessedForeignName [ "(GUESS)" "(NAME)" "(FOREIGN)" ]:0 [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ]   [
+                          [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ] |
+                          [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z ] |
+                          [ "\u02BC" ] ]* ("-");
+
+define GuessedForeignWord [ "(GUESS)" "(FOREIGN)" ]:0 [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z | "\u02BC" ] [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z | "\u02BC" ]* ("-");
+
+define GuessedForeign [ GuessedForeignName | GuessedForeignWord ];
+
+!===============
+! READ LEXICONS
+!===============
+
+read lexc exceptions.lexc
+eliminate flag AUX
+define ExceptionsNoFlags;
+define Exceptions ExceptionsNoFlags;
+
+read lexc parallel.lexc
+eliminate flag AUX
+define ParallelNoFlags;
+define ParallelForms ParallelNoFlags;
+
+read lexc ess.lexc
+substitute defined GuessedRootAIU for "(GuessAIU)"
+substitute defined GuessedRootEHop for "(GuessEHop)"
+substitute defined GuessedRootEDrop for "(GuessEDrop)"
+substitute defined GuessedRootGWGHW for "(GuessGWGHW)"
+substitute defined GuessedRootUnexpectedlyStrongGH for "(GuessUnexpectedlyStrongGH)"
+substitute defined GuessedRootPredictablyStrongGH for "(GuessPredictablyStrongGH)"
+substitute defined GuessedRootWeakGH for "(GuessWeakGH)"
+substitute defined GuessedRootSemiFinalE for "(GuessSemiFinalE)"
+substitute defined GuessedRootTE for "(GuessTE)"
+substitute defined GuessedRootSpecialTE for "(GuessSpecialTE)"
+substitute defined GuessedRootFinalE for "(GuessFinalE)"
+substitute defined GuessedRootFullVGH for "(GuessFullVGH)"
+substitute defined GuessedNameAIU                  for "(GuessNameAIU)"
+substitute defined GuessedNameGWGHW                for "(GuessNameGWGHW)"
+substitute defined GuessedNameWeakGH               for "(GuessNameWeakGH)"
+substitute defined GuessedNameUnexpectedlyStrongGH for "(GuessNameUnexpectedlyStrongGH)"
+substitute defined GuessedNamePredictablyStrongGH  for "(GuessNamePredictablyStrongGH)"
+substitute defined GuessedNameTE                   for "(GuessNameTE)"
+substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
+substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
+substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
+substitute defined GuessedForeign                  for "(GuessForeign)"
+eliminate flag AUX
+define LexiconNoFlags;
+define Lexicon LexiconNoFlags;
+
+
+!==========================================
+! FILTERS
+!  Filters out invalid strings according to
+!  de Reuse (1994) and awareness of common
+!  analyzer mistakes.
+!==========================================
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+! 1. SHORTHAND DEFINITIONS 
+!~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!-----------
+! mood tags
+!-----------
+define Concessive         [ "^" ["[Conc.Intr]" | "[Cond.Trns]"] ];
+
+define Conditional        [ "^" ["[Cond.Intr]" | "[Cond.Trns]"] ];
+
+define Consequential      [ "^" ["[Cnsq1.Intr]" | "[Cnsq1.Trns]" | "[Cnsq2.Intr]" | "[Cnsq2.Trns]"] ];
+
+define Contemporative     [ "^" ["[Ctmp.Intr]" | "[Ctmp.Trns]"] ];
+
+define Indicative         [ "^" ["[Ind.Intr]" | "[Ind.Trns]"] ];
+
+define Participial        [ "^" ["[Ptcp.Intr]" | "[Ptcp.Trns]"] ];
+
+define ParticipialOblique [ "^" ["[PtcpObl.Intr]" | "[PtcpObl.Trns]"] ];
+
+define Precessive         [ "^" ["[Prec.Intr]" | "[Prec.Trns]"] ];
+
+define Subordinative      [ "^" ["[Sbrd.Intr]" | "[Sbrd.Trns]"] ];
+
+define VolitiveOfFear     [ "^" "[Volitive.Of.Fear]" ];
+
+define Optative [ "^" ["[Opt.Pres.Intr]"     | "[Opt.Pres.Trns]"         |
+                       "[Opt.Pres.Intr.2Sg]" | "[Opt.Pres.Trns.2Sg.3Sg]" |
+                       "[Opt.Neg.Pres.Trns.2Sg.3Pl]" | "[Opt.Neg.Pres.Trns.2Pl.3Pl]" | "[Opt.Neg.Pres.Trns.2Du.3Pl]" |
+                       "[Opt.Neg.Pres.Intr]" | "[Opt.Neg.Pres.Trns]"     |
+                       "[Opt.Fut.Intr]"      | "[Opt.Fut.Trns]"          |
+                       "[Opt.Fut.Neg.Intr]"  | "[Opt.Fut.Neg.Trns]"]
+                ];
+
+!-------------------- 
+! negative postbases
+!-------------------- 
+define Nghite   [ "^" "@" "–" {nghite} "(V→V)" ];
+define Negative [ "^" [ "@" "~" ":" "(ng)" {igate} "(V→V)"    |
+                        "@" {laaghigate} "(V→V)"              |
+                        "–" {pagigate} "(V→V)"                |
+                        "–" {qiigate} "(V→V)"                 |
+                        "~" ":" "(ng)" {ite} "(V→V)"          |
+                        "–" {pagite} "(V→V)"                  | 
+                        "–" {ketiite} "(V→V)"                 |
+                        "–" {llgite} "(V→V)"                  |
+                        "–" {llgiite} "(V→V)"                 |
+                        "@" "~" ":" "(i/u)" {mangite} "(V→V)" |
+                        "–" {pagumangite} "(V→V)"             |
+                        "@" "~f" {niite} "(V→V)"              |
+                        "@" "~f" {naanghite} "(V→V)"          |
+                        "–" {pagnaanghite} "(V→V)"            |
+                        "@" "–" {nghite} "(V→V)"              |
+                        "+" {panghite} "(V→V)"                |
+                        "–" {panghite} "(V→V)"                |
+                        "+" {pagunghite} "(V→V)"              |
+                        "–" {pagunghite} "(V→V)"              |
+                        "–" {llghite} "(V→V)"                 |
+                        "+" {pagningite} "(V→V)"              |
+                        "+" {yaghqiite} "(V→V)"               |
+                        "@" "~f" "–" {yiite} "(V→V)"          |
+                        "+" {yugniite} "(V→V)"                |
+                        "@" "~f" {nanigh} "(V→V)"             |
+                        "@" "~f" {nanighqe} "(V→V)"           ]
+                ];
+
+!-----------------
+! modal postbases
+!-----------------
+define Kayugu     [ "^" "@" "~" "–" "(g)" {kayugu} "(V→V)" ];
+define Naqe       [ "^" "~f" {naqe} "(V→V)" ];
+define Naqlaatagh [ "^" "~f" {naqlaatagh} "(V→V)" ];
+define Qaghnaqe   [ "^" "–" {qaghnaqe} "(V→V)" ];
+define Na         [ "^" "@" "~f" {na} "(V→V)" ];
+define Naqngu     [ "^" "@" "~f" {naqngu} "(V→V)" ];
+define Yaghqaqe   [ "^" "@" "~f" {yaghqaqe} "(V→V)" ];
+define Yaghqau    [ "^" "@" "~f" {yaghqau} "(V→V)" ];
+define Nayagh     [ "^" "@" "~f" {nayagh} "(V→V)" ];
+define Qaghnayagh [ "^" "–" {qaghnagyh} "(V→V)" ];
+define ModalPostbase [ Kayugu   | Naqe        | Naqlaatagh |
+                       Qaghnaqe | Na | Naqngu | Yaghqaqe   |
+                       Yaghqau  | Nayagh      | Qaghnayagh ];
+
+!---------------------
+! past tense postbases
+!---------------------
+define Kau  [ "^" "@" "~" "–" "(g)" {kau}  "(V→V)" ]; 
+define Kaqe [ "^" "@" "~" "–" "(g)" {kaqe} "(V→V)" ];
+define Ma   [ "^" "@" "~" ":" "(i/u)" {ma} "(V→V)" ];
+define PastTensePostbase [ Kau | Kaqe | Ma ];
+
+!------------------------------
+! progressive aspect postbases
+!------------------------------
+define Aqe       [ "^" "~" "(g)" {aqe} "(V→V)" ]; 
+define Aqlaatagh [ "^" "~" "(g)" {aqlaatagh} "(V→V)" ];
+define ProgressiveAspectPostbase [ Aqe | Aqlaatagh ];
+
+!--------------------------------
+! future / frustrative postbases
+!--------------------------------
+define Lleqe [ "^" "@" {lleqe} "(V→V)" ];
+define Naagh [ "^" "@" "~f" {naagh} "(V→V)" ];
+define Yagh  [ "^" "@" "~f" {yagh} "(V→V)" ];
+
+!-----------------------------------
+! evidential / imputative postbases
+!-----------------------------------
+define PeteFte [ "^" "+" "(pete)" {fte} "(V→V)" ];
+define Ni      [ "^" "@" "~f" {ni} "(CmpdVbl)" ];
+
+!-------------------------
+! miscellaneous postbases
+!-------------------------
+define Ute [ "^" "@" "~" ":" "(u)" [ "(V→N)" | "(V→V)" ] ];
+
+
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+! 2. CO-OCCURRENCE RESTRICTIONS 
+!    [ de Reuse (1994) p.116-123]
+!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+!---------------------------------------------
+! negative postbase co-occurence restrictions
+!---------------------------------------------
+define OnlyOneNeg ~[ ?* Negative ?* Nghite ?* ];
+
+define HasLexicalizedForm ~[ ?* [Ma | Aqe | Lleqe] ?* Nghite ?* [ Concessive | Consequential | Contemporative     |
+                                                                  Indicative | Participial   | ParticipialOblique |
+                                                                  Precessive | Subordinative | Optative           ]
+                           ];
+
+define NegativeFilters [ OnlyOneNeg .o. HasLexicalizedForm ];
+
+!-------------------------------------------------------------
+! modal co-occurrence restrictions [de Reuse (1994) p.116-117]
+!-------------------------------------------------------------
+define ModalPast              ~[ ?* ModalPostbase ?* [Kau | Kaqe] ?* |
+                                 ?* [Kayugu | Yaghqau | Yaghqaqe] ?* Ma ?* ];
+
+define ModalProgressive       ~[ ?* Nayagh ?* [Aqe | Aqlaatagh] ?* ];
+
+define ModalFutureFrustrative ~[ ?* Nayagh ?* [Lleqe | Naagh | Yagh] ?* ];
+
+define ModalEvidential        ~[ ?* Nayagh ?* PeteFte ?* ];
+
+define ModalMood              ~[ ?* Nayagh ?* Subordinative ?* |
+                                 ?* [Kayugu | Nayagh | Yaghqau | Yaghqaqe] ?* [Optative | VolitiveOfFear] ?* ];
+
+define ModalFilters [ ModalPast .o. ModalProgressive .o. ModalFutureFrustrative .o. ModalEvidential .o. ModalMood ];
+
+!------------------------------------------------------------------
+! past tense co-occurrence restrictions [de Reuse (1994) p.118-119]
+!------------------------------------------------------------------
+define PastFuture ~[ ?* PastTensePostbase ?* [Lleqe | Naagh] ?* ]; 
+
+define PastMood   ~[ ?* [Kau | Kaqe] ?* [Optative | Conditional] ?* |
+                     ?* Ma ?* Concessive ?* ];
+
+define PastTenseFilters [ PastFuture .o. PastMood ];
+
+!----------------------------------------------------------------------
+! progressive aspect co-occurrence restrictions [de Reuse (1994) p.119]
+!----------------------------------------------------------------------
+define ProgressiveMood ~[ ?* ProgressiveAspectPostbase ?* [Optative | Conditional] ?* ]; 
+
+define ProgressiveAspectFilters [ ProgressiveMood ];
+
+!------------------------------------------------------------------------
+! future / frustrative co-occurrence restrictions [de Reuse (1994) p.120]
+!------------------------------------------------------------------------
+define FutureEvidential ~[ ?* Naagh ?* PeteFte ?* ];
+
+define FutureMood ~[ ?* Lleqe ?* [Subordinative | Conditional    | Consequential      |
+                                  Concessive    | Contemporative | ParticipialOblique |
+                                  Optative      | VolitiveOfFear ] ?* ];
+define FrustrativeMood ~[ ?* Yagh ?* [Consequential | Contemporative | ParticipialOblique | Optative | VolitiveOfFear] ?* ]; 
+
+define FutureFrustrativeFilters [ FutureEvidential .o. FutureMood .o. FrustrativeMood ];
+
+!-------------------------------------------------------------------------------
+! evidential / imputative co-occurrence restrictions [de Reuse (1994) p.120-121]
+!-------------------------------------------------------------------------------
+define EvidentialMood ~[ ?* PeteFte ?* [Subordinative      | Conditional    | Consequential |
+                                        Concessive         | Contemporative | Participial   |
+                                        ParticipialOblique | Optative       | VolitiveOfFear] ?* ];
+
+define ImputativeMood ~[ ?* Ni ?* [Conditional | Contemporative | ParticipialOblique | Optative | VolitiveOfFear] ?* ];
+
+define EvidentialImputativeFilters [ EvidentialMood .o. ImputativeMood ];
+
+!-----------------------
+! miscellaneous filters
+!-----------------------
+define DuplicateUteFilter ~[ ?* Ute ?* Ute ];
+
+
+!~~~~~~~~~~~~~~~~~~~~~~~
+! 3. FILTER COMPOSITION
+!~~~~~~~~~~~~~~~~~~~~~~~
+define Filters [ NegativeFilters             .o.
+                 ModalFilters                .o.
+                 PastTenseFilters            .o.
+                 ProgressiveAspectFilters    .o.
+                 FutureFrustrativeFilters    .o.
+                 EvidentialImputativeFilters .o.
+                 DuplicateUteFilter
+               ];
 
 
 !=======
@@ -58,27 +376,34 @@ define Allomorph  [ %{E%} | %{I%} | %{GI%} | %{AI%} ] ;
 
 define Lowercase [ A:a | I:i | U:u | E:e |
                    P:p | T:t | K:k | Q:q |
-				   L:l | Z:z | Y:y | R:r |
-				   G:g | W:w | S:s | F:f |
-				   S:s | M:m | N:n | "V":v ] ?* | ?* ;
+                   L:l | Z:z | Y:y | R:r |
+                   G:g | W:w | S:s | F:f |
+                   S:s | M:m | N:n | "V":v ] ?* | ?* ;
 
 define Uppercase [ a:A | i:I | u:U | e:E |
                    p:P | t:T | k:K | q:Q |
-				   l:L | z:Z | y:Y | r:R |
-				   g:G | w:W | s:S | f:F |
-				   s:S | m:M | n:N | v:"V" ] ?* | ?* ;
+                   l:L | z:Z | y:Y | r:R |
+                   g:G | w:W | s:S | f:F |
+                   s:S | m:M | n:N | v:"V" ] ?* | ?* ;
+
+define AsciiArrow "(N→N)" (->) "(N->N)" ,,
+                  "(N→V)" (->) "(N->V)" ,,
+                  "(V→V)" (->) "(V->V)" ,,
+                  "(V→N)" (->) "(V->N)" ;
+
+define Minus2Hyphen "–" (->) "-" ;
+                   
 
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
 
-define FinalE %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC ] e "^" _ [ MultiCharC | C ] .o. ! do not hop or drop final e if doing so results
-                                                                                         ! in a cluster of three consonants e.g.
-                                                                                         ! riigte[Abl.Mod][Sg] -> riigtmeng
-                                                                                         ! [Jacobson (2001) p.21]
-                  [..] -> e || .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}  .o. ! hop final -e
-                     e -> 0 || [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}         .o. ! drop final -e as long it isn't in the first syllable
-               %{%.f%.%} -> 0                                                        ;
+define FinalE %{%.f%.%} -> 0 || [ (C) C C & ~MultiCharC & ~[h h] & ~[(h) h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not drop -e if it results in a CCC cluster
+                                                                                                       ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten p.657]
+                                                                                                       ! ~[h w] for aaghhwe(V)^@~fyug(V→V)
+                   [..] -> e ||              .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}  .o. ! hop final -e
+                      e -> 0 ||                 [ ? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}      .o. ! drop final -e if it isn't in the first syllable
+              %{%.f%.%} -> 0                                                                       ;
 
 
 define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _                                           .o.
@@ -88,11 +413,11 @@ define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _    
 
 
 define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%} .o. ! [Jacobson (2001) p.38]
-              %{%.fS%.%} -> 0                                       ;
+              %{%.fS%.%} -> %{%.f%.%}                               ;
 
 
-define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not hop if root exceeds two syllables
-             %{%.fL%.%} -> 0                     ;   ! [Jacobson (2001) p.32]
+define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! [Jacobson (2001) p.32] 
+             %{%.fL%.%} -> 0                     ;
 
 
 !-------------------------
@@ -100,18 +425,19 @@ define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! drop final -e but do not 
 !-------------------------
 
 define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate ghh- onset to dropped -w
+                  g h h -> g g   || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! Intr.Opt.Fut [Jacobson (2001) p.119]
                     g h -> g     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -g
                     g h -> g h w || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate gh- onset to dropped -ghw
                     g h -> w h   || %{k%} w         "^" %{%.m%.%} _ UnvoicedC         .o. ! assimilate gh- onset to dropped -w
                     g h -> w     || %{k%} w         "^" %{%.m%.%} _ VoicedC           .o. ! assimilate gh- onset to dropped -w
-                      g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ] .o. ! assimilate g- onset to dropped -gh
+                      g -> g h   || [ g | %{g%} ] h "^" %{%.m%.%} _ [ V | C - g - h ] .o. ! assimilate g-  onset to dropped -gh
                       k -> q w   || g h w           "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -ghw
                       k -> q     || [ g | %{g%} ] h "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -gh
                       k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -w
+                      q -> k     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate q-  onset to dropped -g
                     g g -> g h h ||             g h "^" %{%.m%.%} _                   .o. ! assimilate gg- onset to dropped -gh [Jacobson (2001) p.66]
     [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
     [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop -g in root-final -gh, -gh in -ghw
-             MultiCharC -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
               %{%.m%.%} -> 0                                                          ;
 
 
@@ -122,37 +448,39 @@ define DropWeakC %{g%} h -> 0 || _ "^" %{%.w%.%} .o. ! drop weak -gh from the ro
 define DropUvular %{g%} h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Allomorph ] .o. ! drop uvular -gh between two single vowels
                       g h -> 0   || C FullVowel _ "^" %{%.c%.%} [ FullVowel | Allomorph ] .o. ! where the second vowel can be a full vowel
                 %{%.c%.%} -> 0                                                            ;   ! or an allomorph
+ 
+
+define VelarUvularRounding       g -> w         ||   [ i | a ] ["^"]* u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30 footnote]
+                           n g n g -> n g n g w || [ C | V - u ] _ u ["^"]* [ i | a ]   .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
+                               n g -> n g w     || [ C | V - u ] _ u ["^"]* [ i | a ]   .o. ! needs to occur before vowel dominance
+                             g h h -> g h h w   || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                               g h -> g h w     || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                               g g -> w h       || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                                 k -> k w       || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                                 g -> w         || [ C | V - u ] _ u ["^"]* [ i | a ]   .o.
+                                 q -> q w       || [ C | V - u ] _ u ["^"]* [ i | a ]   ;
 
 
-define VelarUvularRounding       g -> w         || [ i | a ] u _ [ C | V - u ] .o. ! velar/uvular rounding [Jacobson (2001) p.30]
-                                                                                   ! unclear if this affects other phonemes besides -g
-                           n g n g -> n g n g w || [ C | V - u ] _ u [ i | a ] .o. ! velar/uvular rounding [Jacobson (2001) p.36-37]
-                               n g -> n g w     || [ C | V - u ] _ u [ i | a ] .o. ! needs to occur before vowel dominance
-                             g h h -> g h h w   || [ C | V - u ] _ u [ i | a ] .o.
-                               g h -> g h w     || [ C | V - u ] _ u [ i | a ] .o.
-                               g g -> w h       || [ C | V - u ] _ u [ i | a ] .o.
-                                 k -> k w       || [ C | V - u ] _ u [ i | a ] .o.
-                                 g -> w         || [ C | V - u ] _ u [ i | a ] .o.
-                                 q -> q w       || [ C | V - u ] _ u [ i | a ] ;
-
-
-define DropFinalVC V (C) (h) -> 0 || _ "^" %{%.mm%.%} .o. 
-                  %{%.mm%.%} -> 0                     ;
+define DropFinalVC V (C) (h) -> 0 || [? -"^"] _ "^" %{%.mm%.%} .o. 
+                  %{%.mm%.%} -> 0                              ;
 
 
 !---------------------------------------
 ! OTHER / MISC MORPHOPHONOLOGICAL RULES
 !---------------------------------------
 
-define VowelDominance a i -> i i  .o.
-                      i a -> i i  .o.
-                      u i -> i i  .o.
-                      i u -> i i  .o.
-                      a u -> a a  .o.
-                      u a -> a a  .o.
-                      i e -> i i  .o. ! e-hopping
-                      a e -> a a  .o.
-                      u e -> u u  ;
+define VowelDominance A -> I ||   _   ["^"]* i .o.
+                      a -> i ||   _   ["^"]* i .o.
+                      a -> i || [I|i] ["^"]* _ .o.
+                      U -> I ||   _   ["^"]* i .o.
+                      u -> i ||   _   ["^"]* i .o.
+                      u -> i || [I|i] ["^"]* _ .o.
+                      U -> A ||   _   ["^"]* a .o.
+                      u -> a ||   _   ["^"]* a .o.
+                      u -> a || [A|a] ["^"]* _ .o.
+                      e -> i || [I|i] ["^"]* _ .o. ! e-hopping
+                      e -> a || [A|a] ["^"]* _ .o.
+                      e -> u || [U|u] ["^"]* _ ;
 
 
 define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
@@ -160,7 +488,7 @@ define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a ->
                           e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
 
 
-define DropMiddleVowel a -> 0 || V _ V ; ! occurs something with the transitive indicative [Jacobson (2001) p.44]
+define DropMiddleVowel a -> 0 || V ["^"]* _ ["^"]* V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
 
 
 !-------------------
@@ -174,35 +502,38 @@ define AddE %{E%} -> a || a "^" _ .o.
             %{E%} -> 0            ;
 
 
-define ResolveG %{G%} -> g || FullVowel ("^") FullVowel "^" _     .o.
-                %{G%} -> 0                                        ;
+define ResolveG %{G%} -> g || FullVowel ["^"]* FullVowel "^" _ .o.
+                %{G%} -> 0                                    ;
 
 
-define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for derivational suffix ~sf:(e)sqe [Jacobson (2001) p.64]
+define ResolveI %{I%} -> e ||       g h "^" _ .o. ! for postbase ~sf:(e)sqe [Jacobson (2001) p.64]
                 %{I%} -> i || FullVowel "^" _ .o.
                 %{I%} -> e || m "^" _         .o. ! for obsolete verb root -ete [Jacobson (2001) p.78]
                 %{I%} -> i || n "^" _         .o.
                 %{I%} -> 0                    ;
 
 
-define OptativeAllomorphs %{GI%} -> g i || FullVowel ("^") FullVowel "^" _ .o. ! -a, -i, -u vs. -aa, -ii, -uu [Jacobson (2001) p.65]
-                          %{AI%} -> i   ||                       g h "^" _ .o. ! -agh, -igh, -ugh vs. -aagh, -iigh, -uugh [Jacobson (2001) p.65]
-                          %{AI%} -> a   ||                 FullVowel "^" _ .o.
-                          %{GI%} -> 0                                      ;
+define OptativeAllomorphs %{GI%} -> g i   || FullVowel ["^"]* FullVowel "^" _ .o. ! -a, -i, -u stems vs. -aa, -ii, -uu roots [Jacobson (2001) p.65]
+                          %{GI%} -> 0                                   .o.
+                          %{AI%} -> i     ||                       g h "^" _ .o. ! -agh, -igh, -ugh stems vs. -aagh, -iigh, -uugh stems [Jacobson (2001) p.65]
+                          %{AI%} -> a     ||                 FullVowel "^" _ ;
+
 
 define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g   ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
 !            [..] -> g || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] e "^" _ k a ;   ! @~sf–(g)ke/ka [Badten (2008) p.617]
 
 
 define Uteta e -> a || "^" [ %{%.at%.%} | %{%.sf%.%} | %{%.f%.%} | %{%.c%.%} ] u %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o. ! @~:(u)te [Jacobson (2001) p.116]
-             e -> a || "^"                                                       %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g ;
+             e -> a || "^"                                                       %{t%} _ "^" [ %{%.f%.%} | %{%.fS%.%} ] n g .o.
+    %{%.at%.%} -> 0 ||                                             [? - g] %{t%} e "^" _ u %{t%} [ e | a ]                  .o. ! drop -te if -gte, otherwise -e [Badten (2008) p.691]
+    %{%.at%.%} -> 0 ||                                             [? - g] %{t%} e "^" _ u t k e                            ;   ! also true for postbase ~:(u)tke [Badten (2008) p.691]
 
 
 ! what is %{SUBR%}?
-!   in the context of the subordinative mood, derivational suffixes @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
-!   the subordinative mood marker is also +na for these strongly special -te roots, hence a placeholder %{SUBR%}, while the ordinary
-!   subordinative mood marker @~flu (or @~fllu) is used with all other special -te roots. lastly, some of the person/number markers
-!   are also different for strongly special -te roots, using the subordinative mood marker +na [Jacobson (2001) p.102].
+!   in the context of the subordinative mood, postbases @–nghite and ~:(ng)ite rewrite as –gpe and ~f–ngu, respectively.
+!   the subordinative mood marker is also +na for these strongly special -te stems, hence a placeholder %{SUBR%}, while the ordinary
+!   subordinative mood marker @~flu (or @~fllu) is used with all other special -te stems. lastly, some of the person/number markers
+!   are also different for strongly special -te stems, using the subordinative mood marker +na [Jacobson (2001) p.102].
 ! there's probably a better way to write this tbh, especially the "t e n ^" -> "n g". how do we differentiate "ten" versus "teng"?
 
 define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u       -> %{%.m%.%} n g u "^" n a "^" a n         .o. 
@@ -220,6 +551,11 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
                              %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       -> %{%.m%.%} n g u "^" n a "^" a m t a     .o. 
                              %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g   -> %{%.m%.%} n g u "^" n a "^" a m t u n g .o. 
                              %{%.c%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> %{%.m%.%} n g u "^" n a                 .o.
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" k u       -> "^" %{%.m%.%} n g u "^" n a "^" a n         .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n "^" -> "^" %{%.m%.%} n g u "^" n a "^" n g         .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       -> "^" %{%.m%.%} n g u "^" n a "^" a m t a     .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g   -> "^" %{%.m%.%} n g u "^" n a "^" a m t u n g .o. 
+                               "^" i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> "^" %{%.m%.%} n g u "^" n a                 .o.
                                    n g i %{t%} e "*" "*" "^" %{SUBR%} "^" k u       ->           n g u "^" n a "^" a n         .o. 
                                    n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n "^" ->           n g u "^" n a "^" n g         .o. 
                                    n g i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       ->           n g u "^" n a "^" a m t a     .o. 
@@ -245,8 +581,16 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t a       -> %{%.m%.%} g p e "^" n a "^" a m t a     .o.
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^" t u n g   -> %{%.m%.%} g p e "^" n a "^" a m t u n g .o.
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> %{%.m%.%} g p e "^" n a                 .o.
-                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l u                ,,
-                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l l u              ;
+                                                                         %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l u                ;
+
+
+define ResolveDemAnaphor "[Anaphor]" -> t a z || _ "^" i       .o.
+                         "[Anaphor]" -> t     || _ "^" V V     .o.
+                         "[Anaphor]" -> t a   || _ "^" [V | m] .o.
+                         "[Anaphor]" -> t e   || _ "^" s       ,,
+                         "[Anaphor]" ->   e   || _ "^" s       .o.
+                         "[Anaphor]" -> t e s || _ "^" C       ,,
+                         "[Anaphor]" ->   e s || _ "^" C       ;
 
 
 !------------------
@@ -274,83 +618,98 @@ define ISuffixTE e -> 0 || %{t%} _ "^" %{%.at%.%} i .o.
 
 
 define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial -m and -v 
-                n   -> n n   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -e if -Vte
-                l   -> l l   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   deletes -te if -Cte
+                n   -> n n   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   delete -e if -Vte
+                l   -> l l   ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   delete -te if -Cte
                 g h -> g h h ||         _ %{t%} e "^" %{%.at%.%} m  .o. !   and the resulting
-                  v -> f     ||         C %{t%} e "^" %{%.at%.%} _  .o. !   consonant cluster devoices
+                  v -> f     || C %{t%} e "^" %{%.at%.%} _          .o. !   consonant cluster devoices
             %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
-define ApicalTE y   -> s                                                 ,   ! apical -y [Jacobson (2001) p.177]
-                n   -> n n                                               ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
-                r   -> r r     || %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
-                g   -> g g                                               ,   !   to show voicelessness are -g, -l, -gh
-                l   -> l l                                               ,
-                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]     .o.
-                l   -> l l     || %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
-                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _         ;   ! for suffix @–lghii
+define ApicalTE y   -> s                                                       ,   ! apical -y [Jacobson (2001) p.177]
+                n   -> n n                                                     ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
+                r   -> r r     ||       %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
+                g   -> g g                                                     ,   !   to show voicelessness are -g, -l, -gh
+                l   -> l l                                                     ,
+                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]           .o.
+                l   -> l l     ||       %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
+                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _               .o. ! for postbase @–lghii
+               [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h           .o. ! for postbase @–nghhagh, contemporative mood
+               [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q             ;   ! for postbase @–nqigte
 
 
-define VelarTE  e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k .o. ! [Jacobson (2001) p.177]
-            %{t%} -> t,
-            %{t%} -> s  ||             V _ "^" %{%.at%.%} k .o. ! e.g. tuqutkuvgu, tuquskuvgu
-       %{%.at%.%} -> 0  || C %{t%} e "^" _ k                ;   ! e.g. qelpeghtekuvgu
+define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq
+                     e -> 0  ||       V %{t%} _ "^" %{%.at%.%} k                 .o. ! [Jacobson (2001) p.177]
+                 %{t%} -> t,
+                 %{t%} -> s  ||             V _ "^" %{%.at%.%} k                 .o. ! e.g. tuqutkuvgu, tuquskuvgu
+            %{%.at%.%} -> 0  || C %{t%} e "^" _ k                                ;   ! e.g. qelpeghtekuvgu
 
 
-define DropTE %{t%} e -> 0 || _ "^" %{%.at%.%} .o.
-           %{%.at%.%} -> 0                     ;
+define DropTE %{t%} e -> 0  || [? - "^"] _ "^" %{%.at%.%} .o.
+           %{%.at%.%} -> 0                                ;
 
 
 !----------------
 ! CLEAN-UP RULES
 !----------------
 
-define MatchVoicing t [z | y] -> s                                   .o. ! tz / ty = s
-                            y -> s ||            _ [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                            y -> s ||  [ k | q ] _                   .o.
-                            z -> s || Stop ("^") _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
-                            k -> q ||        g h _                   .o.
-                          g h -> 0 ||          C _ q                 .o. ! e.g. itegh[Intr][Cond][3Sg]:iitghqan -> iitqan
-                            v -> f || _ ("^") Stop                   .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
-                            v -> f || [ k | t ] _                    ;
+! NOTE: morpheme boundaries are probably extraneous
+define MatchVoicing t [z | y] -> s                                              .o. ! tz / ty = s
+                            y -> s   ||               _ ["^"]* [ k | q | g h h ] .o. ! [Jacobson (2001) p.66] e.g. paasghu
+                            y -> s   || [ k | q | g h h w ] ["^"]* _             .o.
+                            z -> s   ||          Stop ["^"]* _                   .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
+                            k -> q   ||                 g h ["^"]* _             .o.
+                          g h -> 0   ||                   C ["^"]* _ ["^"]* q     .o. ! e.g. itegh[Cond.Intr][3Sg]:iitghqan -> iitqan
+                            v -> f   ||                     _ ["^"]* Stop        .o. ! [Jacobson (2001) p.58] e.g. kuufkaq
+                            v -> f   ||          Stop ["^"]* _                   .o. ! e.g. taaqfik
+                            w -> w h ||       [ C - h | V ] ["^"]* _ ["^"]* t     ;   ! [Badten (2008) p.682]
 
 
-define BaseFinalEndings %{t%} e -> n   ||               V _     "^" .#. , 
-                        %{t%} e -> t a                                  .o.
-                              e -> a   ||                 _     "^" .#. .o.
-                              w -> k w || [C - h | %{k%}] _     "^" .#. .o.
-                            g h -> q   ||                 _ (w) "^" .#. .o.
-                        %{g%} h -> q   ||                 _     "^" .#. .o.
-                              g -> k   ||                 _     "^" .#. .o.
-          [ %{t%} | t ] ("^") z -> s                                    ; ! [Jacobson (2001) p.51] e.g. ~f(t)zin
+define BaseFinalEndings %{t%} e -> n   ||               V _     ["^"]* .#. ,
+                        %{t%} e -> t a                                           .o.
+                              e -> a   ||                 _     ["^"]* .#. .o.
+                              w -> k w || [C - h | %{k%}] _     ["^"]* .#. .o.
+                            g h -> q   ||                 _ (w) ["^"]* .#. .o.
+                        %{g%} h -> q   ||                 _     ["^"]* .#. .o.
+                              g -> k   ||         [? - n] _     ["^"]* .#. .o.
+          [ %{t%} | t ] ["^"]* z -> s                                             ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
-define PreventGemination n -> 0 || .#. a a _ "^" n ; ! is aane the only root involved in cases of accidental gemination? [Jacobson (2001) p.31]
+define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
+                         n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
+                         n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
+                         v -> 0 || .#. n u u _ "^" v .o. ! nuuve+vig [Badten (2008) p.693]
+                         s -> 0 || .         _ s     ;   ! +(te)ste+@~:(i/u)ma [Kiiluuq]
 
 
-define CleanupDigraph %{k%}   -> 0   .o.
-                      %{g%} h -> g h .o.
-                      %{t%}   -> t   ;
+define AssimilateEnclitic [ g | %{g%} ] h -> q || _ ["^"]* "^" l l u   .#. .o. ! ["^"]* since [Abs.Sg]+{encl} maps to ^^{encl}
+                                      n g -> 0                                   ,   ! [Jacobson (2001) p.91]
+                                      l l -> l                                   ,   ! [Badten (2008) Appendix p.705]
+                                        t -> n                                   ,
+                                        k -> g || _ ["^"]* "^" n g u q .#. .o.
+                          [ g | %{g%} ] h -> q || _ ["^"]* "^" s a     .#. .o.
+                                        t -> s || _ ["^"]* "^" t a     .#. ;
 
 
-define AssimilateEnclitic g h -> q || _ ("^") "^" l l u   .#. .o. ! ("^") since [Abs][Sg]+{encl} maps to ^^{encl}
-                          n g -> 0                            ,   ! [Jacobson (2001) p.91]
-                          l l -> l                            ,   ! [Badten (2008) Appendix p.705]
-                            t -> n                            ,
-                            k -> g || _ ("^") "^" n g u q .#. .o.
-                          g h -> q || _ ("^") "^" s a     .#. .o.
-                            t -> s || _ ("^") "^" t a     .#. ;
+define CleanupPlaceholders %{k%}   -> 0   .o.
+                           %{g%} h -> g h .o.
+                           %{t%}   -> t   ;
 
 
 define CleanupMorphBoundary "^" -> 0 ;
 
+define MarkNullMorpheme [..] -> %{%0%} || "^" _ "^" , 
+                                          "^" _ .#. ;
+                                          
+define CleanupNullMorpheme %{%0%} -> 0 ;                                              
 
-define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ [ Stop | f |  s]                      .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] _ .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ l l                                   .o.
-                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l | r r | g g | g h h | g h h w ] _ .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] _      .o.
-                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l | r r | g g | g h h | g h h w ] _ ;
+! define DisallowEmptySurfaceMorpheme ~[ ?* "^" "^" ?* ];
+
+define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ["^"]* [ Stop | f |  s]                      .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ Stop | f | s | [C - g - w] h ] ["^"]* _      .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || _ ["^"]* l l                                   .o.
+                  l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w || [ l l | r r | g g | g h h | g h h w ] ["^"]* _ .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ Stop | f | s | [C - g - w] h ] ["^"]* _      .o.
+                  m m -> m, n n -> n, n g n g -> n g, n g n g w -> n g w       || [ l l | r r | g g | g h h | g h h w ] ["^"]* _ ;
 
 
 !==============
@@ -396,14 +755,17 @@ define Rules [
     ResolveG             .o.
     ResolveI             .o.
     OptativeAllomorphs   .o.
+    ResolveDemAnaphor    .o.
     !-------------------------------
     ! clean up
     !-------------------------------
     BaseFinalEndings     .o.
     PreventGemination    .o.
-    CleanupDigraph       .o.
     AssimilateEnclitic   .o.
-    CleanupMorphBoundary .o.
+    CleanupPlaceholders
+];
+
+define PhonologicalRules [
     VelarUvularRounding  .o.
     DropMiddleVowel      .o.
     VowelDominance       .o.
@@ -411,5 +773,34 @@ define Rules [
     Undoubling
 ];
 
-define GrammarLower [ [Exceptions .o. Rules] .P. [ [Lexicon .o. Rules] | ParallelForms ] ] ;
-define GrammarUpper [ [Exceptions .o. Rules .o. Uppercase] .P. [ [Lexicon .o. Rules .o. Uppercase] | [ParallelForms .o. Uppercase] ] ] ;
+
+!----------
+! guesses
+!----------
+define NoGuesses ~[ ?* "(GUESS)" ?* ];
+define   Guesses  [ ?* "(GUESS)" ?* ];
+define   Foreign  [ ?* "(FOREIGN)" ?* ];
+
+define FilteredLex [ NoGuesses .o. Filters .o. Lexicon ];
+define GuessLex [ Guesses .o. Filters .o. Lexicon ];
+
+define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
+define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
+define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
+define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
+
+define ForeignGuessGrammar [ Foreign .o. Guesses .o. Lexicon .o. CleanupPlaceholders .o. CleanupMorphBoundary ];
+
+define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
+define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
+define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
+
+! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
+! define GrammarUpper [ GrammarLower .o. Uppercase ];
+
+define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
+
+! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar .p. ForeignGuessGrammar ];
+
+! allows the user to type ASCII arrows
+define GrammarAscii [ LexicalToSurfaceGrammar.i .o. AsciiArrow .o. Minus2Hyphen ].i;

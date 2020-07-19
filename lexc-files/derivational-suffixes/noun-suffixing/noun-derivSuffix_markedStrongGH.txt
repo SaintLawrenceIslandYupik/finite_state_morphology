@@ -1,3 +1,9 @@
+!=====================
+LEXICON CheckAUXFlagIV
+!=====================
+0:0           NounPostbaseIV;
+@R.AUX.TRUE@  NounInflIV;
+
 !================================================================
 LEXICON NounPostbaseIV
 !  noun-elaborating [NN] and verbalizing [NV] suffixes
@@ -6,158 +12,193 @@ LEXICON NounPostbaseIV
 
 0:0  NounInflIV;
 
-^~sf–ghhaleg(N→XCLM):^%{.m.%}ghhalek            #;               ! how N! (exclamation)
-^~sf-w%:(e)nkut(N→N):^%{.c.%}%{E%}nkut          Enclitic;        ! N and company (or family)
-^~sf-w%:(e)nkuk(N→N):^%{.c.%}%{E%}nkuk          Enclitic;        ! N and partner (or spouse)
+^~sf–ghhaleg(N→XCLM):^%{.m.%}ghhalek  #;             ! how N! (exclamation)
+^–lqusigh(N→PTCL):^%{.m.%}lqusiq      #;             ! all N; throughout the N; since last N; big N
+^+tuumagh*(N→QUANTQUAL):^tuumagh      QuantQualInfl; ! together with one's Ns
 
-^~fmii(N→N):^mii                                NounPostbaseI;   ! resident of N; inhabitant of N
-^+ni(N→N):^ni                                   NounPostbaseI;   ! the smell of N; the odor of N; the taste of N
-^+yaga(N→N):^yaga                               NounPostbaseI;   ! multitude of N; abundance of N; lots of N
+!~~~~~~~~~~~~~~~~~
+! (N→N) postbases
+!~~~~~~~~~~~~~~~~~
+!--------------------------
+! adjectival qualification
+!    [ Miyaoka 20.1.1 ]
+!--------------------------
 ^–ghllag(N→N):^%{.m.%}ghllag                    NounPostbaseII;  ! big N; large N; lots of N
 ^–ghrugllag(N→N):^%{.m.%}ghrugllag              NounPostbaseII;  ! big N; large N
-^–ghrug(N→N):^%{.m.%}ghrug                      NounPostbaseII;  ! big old N; poor old N
+^–ghnaggagh*(N→N):^%{.m.%}ghnaggagh             NounPostbaseIV;  ! big N
 ^–ghrukutaaghllag(N→N):^%{.m.%}ghrukutaaghllag  NounPostbaseII;  ! huge N; gigantic N
-^–ghrupag(N→N):^%{.m.%}ghrupag                  NounPostbaseII;  ! darned old N
-^–krag(N→N):^%{.m.%}krag                        NounPostbaseII;  ! fancy piece of of N
+^–ghrukutaagh(N→N):^%{.m.%}ghrukutaagh          NounPostbaseV;   ! big N; large N; huge N
+
+^–ngeltagh(N→N):^%{.m.%}ngelta%{g%}h            NounPostbaseIII; ! small N; little N
+^–ngertagh(N→N):^%{.m.%}ngerta%{g%}h            NounPostbaseIII; ! small N; little N
+^–ngestagh(N→N):^%{.m.%}ngesta%{g%}h            NounPostbaseIII; ! small N; little N
+^–sluvegagh(N→N):^%{.m.%}sluvega%{g%}h          NounPostbaseIII; ! little N
+^–sngwaaghagh(N→N):^%{.m.%}sngwaagha%{g%}h      NounPostbaseIII; ! tiny N; very small N; very little N
+^–squgh(N→N):^%{.m.%}squ%{g%}h                  NounPostbaseIII; ! small N; little N
+^–squghhagh*(N→N):^%{.m.%}squghhagh             NounPostbaseIV;  ! very small N; very little N; tiny N
+
+^–lghute(N→N):^%{.m.%}lghu%{t%}e                NounPostbaseVI;  ! lots of N; a number of N; several N; a group of N
+^+yage(N→N):^yage                               NounPostbaseVIII; ! multitude of N; abundance of N; lots of N
+^–msuggagh*(N→N):^%{.m.%}msuggagh               NounPostbaseIV;  ! no N; virtually no N
+
+^~%:(ng)inagh*(N→N):^%{.c.%}inagh               NounPostbaseIV;  ! only N; just N; exactly N
+^–raaghinagh*(N→N):^%{.m.%}raaghinagh           NounPostbaseIV;  ! nothing but N; just N; only N
+^–staghhiinagh*(N→N):^%{.m.%}staghhiinagh       NounPostbaseIV;  ! only N; each one an N 
+
+^–pig(N→N):^%{.m.%}pig                          NounPostbaseII;  ! real N; genuine N; authentic N; old-fashioned N
+
+^~–(ghw/ngw/w)aagh(N→N):^%{.sf.%}%{.m.%}waagh   NounPostbaseV;   ! imitation N; artificial N; model N; toy N; pretend N; little bit of N or little thing like N; thing like N
+
 ^–llaag(N→N):^%{.m.%}llaag                      NounPostbaseII;  ! crude N; clumsy N; bad N
 ^+llug(N→N):^llug                               NounPostbaseII;  ! poor quality N; bad N; undesirable N; N not in its ideal state
 ^–llug(N→N):^%{.m.%}llug                        NounPostbaseII;  ! poor quality N; bad N; undesirable N; N not in its ideal state
 ^–lug(N→N):^%{.m.%}lug                          NounPostbaseII;  ! old (in age) N
-^~fmig(N→N):^mig                                NounPostbaseII;  ! thing held in one's N 
-^–perug(N→N):^%{.m.%}perug                      NounPostbaseII;  ! one like N
-^–pig(N→N):^%{.m.%}pig                          NounPostbaseII;  ! real N; genuine N; authentic N; old-fashioned N
-^–qrug(N→N):^%{.m.%}qrug                        NounPostbaseII;  ! good old N; bad old N (paradoxically); troublesome N
-^+raag(N→N):^raag                               NounPostbaseII;  ! thing like N
-^–rraag(N→N):^%{.m.%}rraag                      NounPostbaseII;  ! crude N; clumsy N; bad N; shabby N; discarded N
-^@kaghagh(N→N):^kagha%{g%}h                     NounPostbaseIII; ! small N
+^–peragh(N→N):^%{.m.%}pera%{g%}h                NounPostbaseIII; ! small N; makeshift N; not quite correct N
+^–llegagh*(N→N):^%{.m.%}llegagh                 NounPostbaseIV;  ! crudely made N 
+^–vyiigh(N→N):^%{.m.%}vyiigh                    NounPostbaseV;   ! crude N; makeshift N
+^–vziigh(N→N):^%{.m.%}vziigh                    NounPostbaseV;   ! crude N; makeshift N
+
 ^~–kaghqagh(N→N):^%{.m.%}kaghqa%{g%}h           NounPostbaseIII; ! something to be used as N; future N
-^+kagh(N→N):^ka%{g%}h                           NounPostbaseIII; ! raw material for N
+
+^+raghagh(N→N):^ragha%{g%}h                     NounPostbaseIII; ! brand new N
+^+raaghagh(N→N):^raagha%{g%}h                   NounPostbaseIII; ! new N
+^~–kenghhagh*(N→N):^%{.m.%}kenghhagh            NounPostbaseIV;  ! newly made or newly acquired N
+^–raagh(N→N):^%{.m.%}raagh                      NounPostbaseV;   ! new-fangled N (as opposed to traditional style N); modern N
+
+!--------------------
+!     belonging 
+! [ Miyaoka 20.1.2 ]
+!--------------------
+^+tagh(N→N):^ta%{g%}h                           NounPostbaseIII; ! the N part of something; thing of N; acquired N; caught N
+^–linghagh*(N→N):^%{.m.%}linghagh               NounPostbaseIV;  ! thing of N
+^–qinghagh(N→N):^%{.m.%}qingha%{g%}h            NounPostbaseIII; ! thing of N
+
+^~fmii(N→N):^mii                                NounPostbaseI;   ! resident of N; inhabitant of N
+^~sf-w%:(e)nkut(N→N):^%{.c.%}%{E%}nkut          Enclitic;        ! N and company (or family)
+^~sf-w%:(e)nkuk(N→N):^%{.c.%}%{E%}nkuk          Enclitic;        ! N and partner (or spouse)
+
 ^~–kegtagh(N→N):^%{.m.%}kegta%{g%}h             NounPostbaseIII; ! one with good N
-^–kuvinghagh(N→N):^%{.m.%}kuvingha%{g%}h        NounPostbaseIII; ! remains of N
-^–lghutagh(N→N):^%{.m.%}lghuta%{g%}h            NounPostbaseIII; ! place for N; container for N
 ^–llgagh(N→N):^%{.m.%}llga%{g%}h                NounPostbaseIII; ! one with small N; little one with N
-^+lluggagh(N→N):^llugga%{g%}h                   NounPostbaseIII; ! dear little meek N
-^–lluggagh(N→N):^%{.m.%}llugga%{g%}h            NounPostbaseIII; ! dear little meek N
-^–lugpigagh(N→N):^%{.m.%}lugpiga%{g%}h          NounPostbaseIII; ! fine old N
+^~f(p/v)allugh(N→N):^pallu%{g%}h                NounPostbaseIII; ! one with big N; mostly N
+^–squllgagh(N→N):^%{.m.%}squllga%{g%}h          NounPostbaseIII; ! one with small N
+^–lgute(N→N):^%{.m.%}lgu%{t%}e                  NounPostbaseVI;  ! one with the same N
+^–leg(N→N):^%{.m.%}leg                          NounPostbaseVII; ! one having N; one with N
+^+tuqagh(N→N):^tuqa%{g%}h                       NounPostbaseIII; ! one that has lots of N
+^–tuqagh(N→N):^%{.m.%}tuqa%{g%}h                NounPostbaseIII; ! one that has lots of N
+
+^–kuvinghagh(N→N):^%{.m.%}kuvingha%{g%}h        NounPostbaseIII; ! remains of N
+^+kwaagh(N→N):^kwaagh                           NounPostbaseV;   ! leftover N
+
 ^–mleghagh(N→N):^%{.m.%}mlegha%{g%}h            NounPostbaseIII; ! little bit of N or little thing like N 
 ^–mreghagh(N→N):^%{.m.%}mregha%{g%}h            NounPostbaseIII; ! little bit of N or little thing like N
 ^–mzeghagh(N→N):^%{.m.%}mzegha%{g%}h            NounPostbaseIII; ! little bit of N or little thing like N
 ^–vleghagh(N→N):^%{.m.%}vlegha%{g%}h            NounPostbaseIII; ! little bit of N or little thing like N
 ^–vreghagh(N→N):^%{.m.%}vregha%{g%}h            NounPostbaseIII; ! little bit of N or little thing like N
 ^–vzeghagh(N→N):^%{.m.%}vzegha%{g%}h            NounPostbaseIII; ! little bit of N or little thing like N
-^–ngeltagh(N→N):^%{.m.%}ngelta%{g%}h            NounPostbaseIII; ! small N; little N
-^–ngertagh(N→N):^%{.m.%}ngerta%{g%}h            NounPostbaseIII; ! small N; little N
-^–ngestagh(N→N):^%{.m.%}ngesta%{g%}h            NounPostbaseIII; ! small N; little N
-^~(ng)iitagh(N→N):^iita%{g%}h                   NounPostbaseIII; ! protective device for or like N
-^~f(p/v)allugh(N→N):^pallu%{g%}h                NounPostbaseIII; ! one with big N; mostly N
-^–peragh(N→N):^%{.m.%}pera%{g%}h                NounPostbaseIII; ! small N; makeshift N; not quite correct N
-^+qagh(N→N):^qa%{g%}h                           NounPostbaseIII; ! one to the N
-^–qinghagh(N→N):^%{.m.%}qingha%{g%}h            NounPostbaseIII; ! thing of N
-^–qragh(N→N):^%{.m.%}qra%{g%}h                  NounPostbaseIII; ! small N; thing like N
-^+qutagh(N→N):^quta%{g%}h                       NounPostbaseIII; ! device associated with N
-^+raghagh(N→N):^ragha%{g%}h                     NounPostbaseIII; ! brand new N
-^+raaghagh(N→N):^raagha%{g%}h                   NounPostbaseIII; ! new N
-^–sluvegagh(N→N):^%{.m.%}sluvega%{g%}h          NounPostbaseIII; ! little N
-^–sngwaaghagh(N→N):^%{.m.%}sngwaagha%{g%}h      NounPostbaseIII; ! tiny N; very small N; very little N
-^–squllgagh(N→N):^%{.m.%}squllga%{g%}h          NounPostbaseIII; ! one with small N
-^–squgh(N→N):^%{.m.%}squ%{g%}h                  NounPostbaseIII; ! small N; little N
-^+tagh(N→N):^ta%{g%}h                           NounPostbaseIII; ! the N part of something; thing of N; acquired N; caught N
-^+tuqagh(N→N):^tuqa%{g%}h                       NounPostbaseIII; ! one that has lots of N
-^–tuqagh(N→N):^%{.m.%}tuqa%{g%}h                NounPostbaseIII; ! one that has lots of N
-^–ghhagh(N→N):^%{.m.%}ghhagh                    NounPostbaseIV;  ! little N; small N; bit of N
-^–ghnaggagh(N→N):^%{.m.%}ghnaggagh              NounPostbaseIV;  ! big N
-^~–kenghhagh(N→N):^%{.m.%}kenghhagh             NounPostbaseIV;  ! newly made or newly acquired N
-^–linghagh(N→N):^%{.m.%}linghagh                NounPostbaseIV;  ! thing of N
-^–llegagh(N→N):^%{.m.%}llegagh                  NounPostbaseIV;  ! crudely made N 
-^–msuggagh(N→N):^%{.m.%}msuggagh                NounPostbaseIV;  ! no N; virtually no N
-^~:(ng)inagh(N→N):^%{.c.%}inagh                 NounPostbaseIV;  ! only N; just N; exactly N
-^–qligh(N→N):^%{.m.%}qligh                      NounPostbaseIV;  ! thing that is far to the N direction
-^–raaghinagh(N→N):^%{.m.%}raaghinagh            NounPostbaseIV;  ! nothing but N; just N; only N
-^–squghhagh(N→N):^%{.m.%}squghhagh              NounPostbaseIV;  ! very small N; very little N; tiny N
-^–staghhiinagh(N→N):^%{.m.%}staghhiinagh        NounPostbaseIV;  ! only N; each one an N 
-^–ghrukutaagh(N→N):^%{.m.%}ghrukutaagh          NounPostbaseV;   ! big N; large N; huge N
-^~–(ghw/ngw/w)aagh(N→N):^%{.m.%}ghwaagh         NounPostbaseV;   ! imitation N; artificial N; model N; toy N; pretend N; little bit of N or little thing like N; thing like N
-^+kwaagh(N→N):^kwaagh                           NounPostbaseV;   ! leftover N
-^~fmiigh(N→N):^miigh                            NounPostbaseV;   ! thing held in one's N
+^–ghhagh*(N→N):^%{.m.%}ghhagh                   NounPostbaseIV;  ! little N; small N; bit of N
 ^–mlaagh(N→N):^%{.m.%}mlaagh                    NounPostbaseV;   ! little bit of N or little thing like N
 ^–mraagh(N→N):^%{.m.%}mraagh                    NounPostbaseV;   ! little bit of N or little thing like N
 ^–mzaagh(N→N):^%{.m.%}mzaagh                    NounPostbaseV;   ! little bit of N or little thing like N
 ^–vlaagh(N→N):^%{.m.%}vlaagh                    NounPostbaseV;   ! little bit of N or little thing like N
 ^–vraagh(N→N):^%{.m.%}vraagh                    NounPostbaseV;   ! little bit of N or little thing like N
 ^–vzaagh(N→N):^%{.m.%}vzaagh                    NounPostbaseV;   ! little bit of N or little thing like N
+
+^+ni(N→N):^ni                                   NounPostbaseI;   ! the smell of N; the odor of N; the taste of N
+^–krag(N→N):^%{.m.%}krag                        NounPostbaseII;  ! fancy piece of of N
+
+!------------------
+!   associative 
+! [ Miyaoka 20.2 ]
+!------------------
+^–perug(N→N):^%{.m.%}perug                      NounPostbaseII;  ! one like N
+^+raag(N→N):^raag                               NounPostbaseII;  ! thing like N
 ^–msiigh(N→N):^%{.m.%}msiigh                    NounPostbaseV;   ! something like N
+^–siigh(N→N):^%{.m.%}siigh                      NounPostbaseV;   ! something like N
+^–qragh(N→N):^%{.m.%}qra%{g%}h                  NounPostbaseIII; ! small N; thing like N
+
+!------------------
+!  dishonorifics 
+! [ Miyaoka 20.3 ]
+!------------------
+^+lluggagh(N→N):^llugga%{g%}h                   NounPostbaseIII; ! dear little meek N
+^–lluggagh(N→N):^%{.m.%}llugga%{g%}h            NounPostbaseIII; ! dear little meek N
+^–lugpigagh(N→N):^%{.m.%}lugpiga%{g%}h          NounPostbaseIII; ! fine old N
+^–qrug(N→N):^%{.m.%}qrug                        NounPostbaseII;  ! good old N; bad old N (paradoxically); troublesome N
+^–ghrug(N→N):^%{.m.%}ghrug                      NounPostbaseII;  ! big old N; poor old N
+^–ghrupag(N→N):^%{.m.%}ghrupag                  NounPostbaseII;  ! darned old N
+^–rraag(N→N):^%{.m.%}rraag                      NounPostbaseII;  ! crude N; clumsy N; bad N; shabby N; discarded N
 ^–penaagh(N→N):^%{.m.%}penaagh                  NounPostbaseV;   ! homely N; shabby N; dilapidated N; ugly N
+
+!---------------
+! miscellaneous
+!---------------
+^–lghutagh(N→N):^%{.m.%}lghuta%{g%}h            NounPostbaseIII; ! place for N; container for N
 ^–perewaagh(N→N):^%{.m.%}perewaagh              NounPostbaseV;   ! all, only or totally N
 ^–pestaagh(N→N):^%{.m.%}pestaagh                NounPostbaseV;   ! truly N
-^–raagh(N→N):^%{.m.%}raagh                      NounPostbaseV;   ! new-fangled N (as opposed to traditional style N); modern N
-^–siigh(N→N):^%{.m.%}siigh                      NounPostbaseV;   ! to get lots of N; to gather lots of N
-^–vyiigh(N→N):^%{.m.%}vyiigh                    NounPostbaseV;   ! crude N; makeshift N
-^–vziigh(N→N):^%{.m.%}vziigh                    NounPostbaseV;   ! crude N; makeshift N
-^–yaagh(N→N):^%{.m.%}yaagh                      NounPostbaseV;   ! short or small N (article of clothing)
-^–lghun(N→N):^%{.m.%}lghu%{t%}e                 NounPostbaseVI; ! lots of N; a number of N; several N; a group of N
-^–lgun(N→N):^%{.m.%}lgu%{t%}e                   NounPostbaseVI; ! one with the same N
-^–leg(N→N):^%{.m.%}leg                          NounPostbaseVII; ! one having N; one with N
 
-^–ghqu(N→V):^%{.m.%}ghqu                VerbPostbaseI;   ! to go to get N or to get something from N
-^––ii(N→V):^%{.mm.%}ii                  VerbPostbaseI;   ! to cut up N; to butcher N; to prepare N 
-^–lgu(N→V):^%{.m.%}lgu                  VerbPostbaseI;   ! to have an Nor have N-s; to possess N
-^~%:(ng)u(N→V):^%{.c.%}u                VerbPostbaseI;   ! to be N; is N; for there to be N (weather condition)
-^–pigu(N→V):^%{.m.%}pigu                VerbPostbaseI;   ! to be very much an N
-^+qu(N→V):^qu                           VerbPostbaseI;   ! to hunt N; to hunt with (using) N
-^+si(N→V):^si                           VerbPostbaseI;   ! to work on or with N; to acquire lots of N; to get lots of N
-^+ti(N→V):^ti                           VerbPostbaseI;   ! to speak the language of N
-^+tu(N→V):^tu                           VerbPostbaseI;   ! to have a lot of N 
-^–tu(N→V):^%{.m.%}tu                    VerbPostbaseI;   ! to have a lot of N
-^+tulli(N→V):^tulli                     VerbPostbaseI;   ! for it to be getting feasible to use N 
-^+tutka(N→V):^tutka                     VerbPostbaseI;   ! to have N to an indicated degree
-^––iqe(N→V):^%{.mm.%}iqe                VerbPostbaseII;  ! to deal with N; to work with N; to have pain in one's N; to have trouble with one's N;
-^~–ke(N→V):^%{.m.%}ke                   VerbPostbaseII;  ! have as one's N; object is subject's N; have N
-^–liqe(N→V):^%{.m.%}liqe                VerbPostbaseII;  ! to deal with N; to work with N; to have pain in one's N; to have trouble with one's N
-^+lliqe(N→V):^lliqe                     VerbPostbaseII;  ! to have trouble with one's N
-^–lliqe(N→V):^%{.m.%}lliqe              VerbPostbaseII;  ! to have trouble with one's N
-^–nge(N→V):^%{.m.%}nge                  VerbPostbaseII;  ! to acquire N; to get N (permanently); to obtain N (permanently); to catch N (game)
-^–ghraag(N→V):^%{.m.%}ghraag            VerbPostbaseIII; ! to be somewhat like N
-^–ghrug(N→V):^%{.m.%}ghrug              VerbPostbaseIII; ! big old one V-s 
-^–lipag(N→V):^%{.m.%}lipag              VerbPostbaseIII; ! to put in too much N
-^~fmig(N→V):^mig                        VerbPostbaseIII; ! to hold in one's N; to put in one's N
-^~%:(ng)isag(N→V):^%{.c.%}isag          VerbPostbaseIII; ! to lack N; to need N
-^~%:(ng)isug(N→V):^%{.c.%}isug          VerbPostbaseIII; ! to have insufficient N
-^+tupag(N→V):^tupag                     VerbPostbaseIII; ! to eat or use too much N
-^+yag(N→V):^yag                         VerbPostbaseIII; ! for the number of N to increase
-^@~fyug(N→V):^yug                       VerbPostbaseIII; ! to want some N
-^––igh(N→V):^%{.mm.%}igh                VerbPostbaseIV;  ! provide with N
-^––iigh(N→V):^%{.mm.%}iigh              VerbPostbaseIV;  ! to fix N; to make N; to prepare N; to cook N
-^~fiiraagh(N→V):^iiraagh                VerbPostbaseIV;  ! to pretend by using N
-^–lgigh(N→V):^%{.m.%}lgigh              VerbPostbaseIV;  ! to travel using N
-^–ligh(N→V):^%{.m.%}ligh                VerbPostbaseIV;  ! to provide with N; to put N in
-^–liigh(N→V):^%{.m.%}liigh              VerbPostbaseIV;  ! to fix N; to make N; to prepare N; to cook N
-^~fmiigh(N→V):^miigh                    VerbPostbaseIV;  ! to hold in one's N; to put in one's N
-^~%:(ng)igh(N→V):^%{.c.%}igh            VerbPostbaseIV;  ! to lose N; to be injured in one's N; to remove N
-^–ngllagh(N→V):^%{.m.%}ngllagh          VerbPostbaseIV;  ! to make N (for (him) or out of (it))
-^@~fniigh(N→V):^niigh                   VerbPostbaseIV;  ! to hunt for N; to search for N; to ask for N; to endeavor or to obtain N
-^+saghtugh(N→V):^saghtugh               VerbPostbaseIV;  ! to hunt N
-^+siigh(N→V):^siigh                     VerbPostbaseIV;  ! to get lots of N; to gather lots of N 
-^+tagh(N→V):^tagh                       VerbPostbaseIV;  ! for N to continously occur; for N to repeatedly occur 
-^+tugh(N→V):^tugh                       VerbPostbaseIV;  ! to eat N
-^@~fyagh(N→V):^yagh                     VerbPostbaseIV;  ! to go to celebrate N; to hunt N
-^–ghte(N→V):^%{.m.%}gh%{t%}e            VerbPostbaseV;   ! to acquire the quality of n
-^~–kaghte(N→V):^%{.m.%}kagh%{t%}e       VerbPostbaseV;   ! to get N; to catch N
-^~–kegte(N→V):^%{.m.%}keg%{t%}e         VerbPostbaseV;   ! to have good N
-^–ksagute(N→V):^%{.m.%}ksagu%{t%}e      VerbPostbaseV;   ! to acquire as one's N
-^–liite(N→V):^%{.m.%}lii%{t%}e          VerbPostbaseV;   ! to have obtained (object) as one's N
-^~fmete(N→V):^me%{t%}e                  VerbPostbaseV;   ! to be at N; to be in N
-^–msuggiite(N→V):^%{.m.%}msuggii%{t%}e  VerbPostbaseV;   ! to completely lack N
-^~%:(ng)ughte(N→V):^%{.c.%}ugh%{t%}e    VerbPostbaseV;   ! to become N; for there to start to be N (weather condition)
-^+nite(N→V):^ni%{t%}e                   VerbPostbaseV;   ! to taste of N
-^–pagite(N→V):^%{.m.%}pagi%{t%}e        VerbPostbaseV;   ! for there not to be much N; to have few N
-^+pagnite(N→V):^pagni%{t%}e             VerbPostbaseV;   ! to smell like N; to taste like N
-^~–qite(N→V):^%{.m.%}qi%{t%}e           VerbPostbaseV;   ! to encounter N
-^@~f–rakegte(N→V):^%{.m.%}rakeg%{t%}e   VerbPostbaseV;   ! to be very much an N
-^+te(N→V):^%{t%}e                       VerbPostbaseV;   ! to go to N; to catch N; to obtain N; to spend N (time)
-^+uute(N→V):^uu%{t%}e                   VerbPostbaseV;   ! to make the N sound 
-^~%:(ng)ite(N→V):^%{.c.%}i%{t%}e**      VerbPostbaseVI;  ! to lack N; to not have N
-^+sugnite(N→V):^sugni%{t%}e*            VerbPostbaseVI;  ! to resemble N; to be like N
-
-^+tuumagh(N→QUANTQUAL):^tuumagh         QuantQualInfl; ! together with one's Ns
+!~~~~~~~~~~~~~~~~~
+! (N→V) postbases
+!~~~~~~~~~~~~~~~~~
+^–ghqu(N→V):^%{.m.%}ghqu                  VerbPostbaseI;   ! to go to get N or to get something from N
+^––ii(N→V):^%{.mm.%}ii                    VerbPostbaseI;   ! to cut up N; to butcher N; to prepare N 
+^–lgu(N→V):^%{.m.%}lgu                    VerbPostbaseI;   ! to have an Nor have N-s; to possess N
+^~%:(ng)u(N→V):^%{.c.%}u                  VerbPostbaseI;   ! to be N; is N; for there to be N (weather condition)
+^–pigu(N→V):^%{.m.%}pigu                  VerbPostbaseI;   ! to be very much an N
+^+qu(N→V):^qu                             VerbPostbaseI;   ! to hunt N; to hunt with (using) N
+^+si(N→V):^si                             VerbPostbaseI;   ! to work on or with N; to acquire lots of N; to get lots of N
+^+ti(N→V):^ti                             VerbPostbaseI;   ! to speak the language of N
+^+tu(N→V):^tu                             VerbPostbaseI;   ! to have a lot of N 
+^–tu(N→V):^%{.m.%}tu                      VerbPostbaseI;   ! to have a lot of N
+^+tulli(N→V):^tulli                       VerbPostbaseI;   ! for it to be getting feasible to use N 
+^+tutka(N→V):^tutka                       VerbPostbaseI;   ! to have N to an indicated degree
+^––iqe(N→V):^%{.mm.%}iqe                  VerbPostbaseII;  ! to deal with N; to work with N; to have pain in one's N; to have trouble with one's N;
+^~–ke(N→V):^%{.m.%}ke                     VerbPostbaseII;  ! have as one's N; object is subject's N; have N
+^–liqe(N→V):^%{.m.%}liqe                  VerbPostbaseII;  ! to deal with N; to work with N; to have pain in one's N; to have trouble with one's N
+^+lliqe(N→V):^lliqe                       VerbPostbaseII;  ! to have trouble with one's N
+^–lliqe(N→V):^%{.m.%}lliqe                VerbPostbaseII;  ! to have trouble with one's N
+^–nge(N→V):^%{.m.%}nge                    VerbPostbaseII;  ! to acquire N; to get N (permanently); to obtain N (permanently); to catch N (game)
+^+te(N→V):^%{t%}e                         VerbPostbaseII;  ! to go to N; to catch N; to obtain N; to spend N (time)
+^–ghraag(N→V):^%{.m.%}ghraag              VerbPostbaseIII; ! to be somewhat like N
+^–ghrug(N→V):^%{.m.%}ghrug                VerbPostbaseIII; ! big old one V-s 
+^–lipag(N→V):^%{.m.%}lipag                VerbPostbaseIII; ! to put in too much N
+^~fmig(N→V):^mig                          VerbPostbaseIII; ! to hold in one's N; to put in one's N
+^~%:(ng)isag(N→V):^%{.c.%}isag            VerbPostbaseIII; ! to lack N; to need N
+^~%:(ng)isug(N→V):^%{.c.%}isug            VerbPostbaseIII; ! to have insufficient N
+^+tupag(N→V):^tupag                       VerbPostbaseIII; ! to eat or use too much N
+^+yag(N→V):^yag                           VerbPostbaseIII; ! for the number of N to increase
+^@~fyug(N→V):^yug                         VerbPostbaseIII; ! to want some N
+^––igh(N→V):^%{.mm.%}igh                  VerbPostbaseIV;  ! provide with N
+^––iigh(N→V):^%{.mm.%}iigh                VerbPostbaseIV;  ! to fix N; to make N; to prepare N; to cook N
+^~fiiraagh(N→V):^iiraagh                  VerbPostbaseIV;  ! to pretend by using N
+^–lgigh(N→V):^%{.m.%}lgigh                VerbPostbaseIV;  ! to travel using N
+^–ligh(N→V):^%{.m.%}ligh                  VerbPostbaseIV;  ! to provide with N; to put N in
+^–liigh(N→V):^%{.m.%}liigh                VerbPostbaseIV;  ! to fix N; to make N; to prepare N; to cook N
+^~fmiigh(N→V):^miigh                      VerbPostbaseIV;  ! to hold in one's N; to put in one's N
+^~%:(ng)igh(N→V):^%{.c.%}igh              VerbPostbaseIV;  ! to lose N; to be injured in one's N; to remove N
+^–ngllagh(N→V):^%{.m.%}ngllagh            VerbPostbaseIV;  ! to make N (for (him) or out of (it))
+^@~fniigh(N→V):^niigh                     VerbPostbaseIV;  ! to hunt for N; to search for N; to ask for N; to endeavor or to obtain N
+^+saghtugh(N→V):^saghtugh                 VerbPostbaseIV;  ! to hunt N
+^+siigh(N→V):^siigh                       VerbPostbaseIV;  ! to get lots of N; to gather lots of N 
+^+tagh(N→V):^tagh                         VerbPostbaseIV;  ! for N to continously occur; for N to repeatedly occur 
+^+tugh(N→V):^tugh                         VerbPostbaseIV;  ! to eat N
+^+tutkaligh(N→V):^tutkaligh               VerbPostbaseIV;  ! to measure the approximate the N of (it)
+^@~fyagh(N→V):^yagh                       VerbPostbaseIV;  ! to go to celebrate N; to hunt N
+^–ghte(N→V):^%{.m.%}gh%{t%}e              VerbPostbaseV;   ! to acquire the quality of n
+^~–kaghte(N→V):^%{.m.%}kagh%{t%}e         VerbPostbaseV;   ! to get N; to catch N
+^~–kegte(N→V):^%{.m.%}keg%{t%}e           VerbPostbaseV;   ! to have good N
+^–ksagute(N→V):^%{.m.%}ksagu%{t%}e        VerbPostbaseV;   ! to acquire as one's N
+^–liite(N→V):^%{.m.%}lii%{t%}e            VerbPostbaseV;   ! to have obtained (object) as one's N
+^~fmete(N→V):^me%{t%}e                    VerbPostbaseV;   ! to be at N; to be in N
+^–msuggiite(N→V):^%{.m.%}msuggii%{t%}e    VerbPostbaseV;   ! to completely lack N
+^~%:(ng)i%:ghute(N→V):^%{.c.%}ighu%{t%}e  VerbPostbaseV;   ! to become N-less; to have lost one's N
+^~%:(ng)ughte(N→V):^%{.c.%}ugh%{t%}e      VerbPostbaseV;   ! to become N; for there to start to be N (weather condition)
+^+nite(N→V):^ni%{t%}e                     VerbPostbaseV;   ! to taste of N
+^–pagite(N→V):^%{.m.%}pagi%{t%}e          VerbPostbaseV;   ! for there not to be much N; to have few N
+^+pagnite(N→V):^pagni%{t%}e               VerbPostbaseV;   ! to smell like N; to taste like N
+^~–qite(N→V):^%{.m.%}qi%{t%}e             VerbPostbaseV;   ! to encounter N
+^@~f–rakegte(N→V):^%{.m.%}rakeg%{t%}e     VerbPostbaseV;   ! to be very much an N
+^+uute(N→V):^uu%{t%}e                     VerbPostbaseV;   ! to make the N sound 
+^~%:(ng)ite(N→V):^%{.c.%}i%{t%}e**        VerbPostbaseVI;  ! to lack N; to not have N
+^+sugnite(N→V):^sugni%{t%}e*              VerbPostbaseVI;  ! to resemble N; to be like N
 
 

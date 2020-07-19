@@ -2,60 +2,75 @@
 LEXICON PosturalRoot
 !===================
 
-aaghw        PosturalRootTag; ! upside down
-agagh        PosturalRootTag; ! hanging
-agitagh      PosturalRootTag; ! open-mouthed
-agugh        PosturalRootTag; ! bending; turning
-amsikagh     PosturalRootTag; ! undressed; naked
-asigh        PosturalRootTag; ! tied in a bundle
-avlegh       PosturalRootTag; ! with legs spread; with parts which are joined at one end spread apart at the other end
-enleg        PosturalRootTag; ! attached or fastened to something secure
-estugh       PosturalRootTag; ! with legs stretched out
-guugh        PosturalRootTag; ! bent forward with head downward
-iggag        PosturalRootTag; ! tilting
-ighigh       PosturalRootTag; ! tilting (especially the head)
-ikigh        PosturalRootTag; ! open
-ingagh       PosturalRootTag; ! lying down
-iqrag        PosturalRootTag; ! uneven; distorted
-kagtagh      PosturalRootTag; ! concealed; secluded
-kallngugh    PosturalRootTag; ! assembled; gathered
-kiimllug     PosturalRootTag; ! dim
-matagh       PosturalRootTag; ! undressed; parka-less; coatless
-matangghagh  PosturalRootTag;
-mayagh       PosturalRootTag; ! being or becoming thin
-mumig        PosturalRootTag; ! turned over; translated
-naghllug     PosturalRootTag; ! head downwards
-nakugh       PosturalRootTag; ! eyes crossed
-nanugh       PosturalRootTag; ! hanging lengthwise
-napagh       PosturalRootTag; ! erect; upright
-neghllugh    PosturalRootTag; ! head first
-nekeg        PosturalRootTag; ! put in place; having a good home; quieted down 
-nevagh       PosturalRootTag; ! lying on the back
-nevegh       PosturalRootTag; ! lying on the back
-qanimigh     PosturalRootTag; ! finished; worked on towardcompletion
-qavigh       PosturalRootTag; ! slanted; diagonal
-qetegh       PosturalRootTag; ! bending backwards
-qunagh       PosturalRootTag; ! eyes closed
-qunegh       PosturalRootTag; ! eyes closed
-qutngugh     PosturalRootTag; ! bending over forward with head down while in a sitting position
-sanigh       PosturalRootTag; ! sideways
-saqfigh      PosturalRootTag; ! toes out turned out
-segesqugh    PosturalRootTag; ! kneeling
-sivug        PosturalRootTag; ! head tilted up
-suflitagh    PosturalRootTag; ! lying on stomach
-supag        PosturalRootTag; ! tilted; slanted; leaning; at an angle
-suqlugh      PosturalRootTag; ! crumpled; folded in to narow an opening; bent
-taklagh      PosturalRootTag; ! spread out; stretched out
-teghleg      PosturalRootTag; ! fastened securely over something
-tutugh       PosturalRootTag; ! folded over with a crease
-ulmig        PosturalRootTag; ! turned over; inside out
-ulpeg        PosturalRootTag; ! folded back on self
+aaghw                    PosturalRootTag; ! upside down
+agagh:aga%{g%}h          PosturalRootTag; ! hanging
+agitagh:agita%{g%}h      PosturalRootTag; ! open-mouthed
+agugh:agu%{g%}h          PosturalRootTag; ! bending; turning
+amsikagh*:amsikagh       PosturalRootTag; ! undressed; naked
+asigh:asi%{g%}h          PosturalRootTag; ! tied in a bundle
+avlegh                   PosturalRootTag; ! with legs spread; with parts which are joined at one end spread apart at the other end
+enleg                    PosturalRootTag; ! attached or fastened to something secure
+estugh:estu%{g%}h        PosturalRootTag; ! with legs stretched out
+guugh                    PosturalRootTag; ! bent forward with head downward
+iggag                    PosturalRootTag; ! tilting
+ighigh:ighi%{g%}h        PosturalRootTag; ! tilting (especially the head)
+ikigh:iki%{g%}h          PosturalRootTag; ! open
+ingagh*:ingagh           PosturalRootTag; ! lying down
+iqrag                    PosturalRootTag; ! uneven; distorted
+kagtagh:kagta%{g%}h      PosturalRootTag; ! concealed; secluded
+kallngugh:kallngu%{g%}h  PosturalRootTag; ! assembled; gathered
+kiimllug                 PosturalRootTag; ! dim
+matagh*:matagh           PosturalRootTag; ! undressed; parka-less; coatless
+matangghagh*:matangghagh PosturalRootTag;
+mayagh:maya%{g%}h        PosturalRootTag; ! being or becoming thin
+mumig                    PosturalRootTag; ! turned over; translated
+naghllug                 PosturalRootTag; ! head downwards
+nakugh:naku%{g%}h        PosturalRootTag; ! eyes crossed
+nanugh:nanu%{g%}h        PosturalRootTag; ! hanging lengthwise
+napagh:napa%{g%}h        PosturalRootTag; ! erect; upright
+neghllugh:neghllu%{g%}h  PosturalRootTag; ! head first
+nekeg                    PosturalRootTag; ! put in place; having a good home; quieted down 
+nevagh:neva%{g%}h        PosturalRootTag; ! lying on the back
+nevegh                   PosturalRootTag; ! lying on the back
+qanimigh:qanimi%{g%}h    PosturalRootTag; ! finished; worked on towardcompletion
+qavigh:qavi%{g%}h        PosturalRootTag; ! slanted; diagonal
+qetegh                   PosturalRootTag; ! bending backwards
+qunagh:quna%{g%}h        PosturalRootTag; ! eyes closed
+qunegh                   PosturalRootTag; ! eyes closed
+qutngugh:qutngu%{g%}h    PosturalRootTag; ! bending over forward with head down while in a sitting position
+sanigh:sani%{g%}h        PosturalRootTag; ! sideways
+saqfigh:saqfi%{g%}h      PosturalRootTag; ! toes out turned out
+segesqugh:segesgqu%{g%}h PosturalRootTag; ! kneeling
+sivug                    PosturalRootTag; ! head tilted up
+suflitagh:suflita%{g%}h  PosturalRootTag; ! lying on stomach
+supag                    PosturalRootTag; ! tilted; slanted; leaning; at an angle
+suqlugh:suqlu%{g%}h      PosturalRootTag; ! crumpled; folded in to narow an opening; bent
+taklagh:takla%{g%}h      PosturalRootTag; ! spread out; stretched out
+teghleg                  PosturalRootTag; ! fastened securely over something
+tutugh:tutu%{g%}h        PosturalRootTag; ! folded over with a crease
+ulmig                    PosturalRootTag; ! turned over; inside out
+ulpeg                    PosturalRootTag; ! folded back on self
 
+!--------------------------------------------
 ! verb bases that behave like postural roots 
-aqumga       PosturalRootTag; ! to be sitting
-aqumgagh     PosturalRootTag;
-nekevgha     PosturalRootTag; ! to be standing
-nekevghagh   PosturalRootTag;
+!--------------------------------------------
+aqumga                   PosturalRootTag; ! to be sitting
+aqumgagh*:aqumgagh       PosturalRootTag;
+nekevgha                 PosturalRootTag; ! to be standing
+nekevghagh*:nekevghagh   PosturalRootTag;
+
+!----------------------------------------------
+! postbases associated with postural roots may
+! be used with some verb roots [Badten p.648]
+!----------------------------------------------
+atkug(V):atkug           PosturalRootPostbase; ! to put on a parka
+aveg(V):aveg             PosturalRootPostbase; ! to divide in two
+kepe(V):kepe             PosturalRootPostbase; ! to sever
+liite(V):liite           PosturalRootPostbase; ! to learn
+nasaperagh(V):nasaperagh PosturalRootPostbase; ! to put on a hat
+piifte(V):piif%{t%}e     PosturalRootPostbase; ! to set out for use
+piiste(V):piis%{t%}e     PosturalRootPostbase; ! to stick out; to project
+qiwaagh(V):qiwaagh       PosturalRootPostbase; ! to shear fur short
 
 
 !======================
@@ -70,7 +85,9 @@ LEXICON PosturalRootTag
 LEXICON PosturalRootPostbase
 !===========================
 
-^+nga(POS→STATIVE):^nga    VerbPostbaseI; ! to be in the R posture
-^+te(POS→ACTIVE):^%{t%}e   VerbPostbaseV; ! to get into the R posture; to put into the R posture
+^~fnga(POS→STATIVE):^%{.f.%}nga  VerbPostbaseI; ! to be in the R posture
+^~fnga(POS→STATIVE):^%{.f.%}nga  QuantQualInfl; ! to be in the R posture
+^+te(POS→ACTIVE):^%{t%}e         VerbPostbaseV; ! to get into the R posture; to put into the R posture
+^+te(POS→ACTIVE):^%{t%}e         QuantQualInfl; ! to get into the R posture; to put into the R posture
 
 
