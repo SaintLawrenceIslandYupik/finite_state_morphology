@@ -1,4 +1,18 @@
-# yupik-foma-v2
+# Finite state morphological analyzer for St. Lawrence Island Yupik
+
+**This resource is part of the linguistic and cultural heritage of the St. Lawrence Island Yupik people. By accessing this resource, you agree to treat this resource, the St. Lawrence Island Yupik language, the St. Lawrence Island Yupik culture, and the St. Lawrence Island Yupik people with dignity and respect. If you do not agree to these conditions, you may not access this resource and you may not make copies of this resource.**
+
+If you agree to these conditions, you may access this resource under the terms of the Creative Commons Attribution No-Commercial 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).
+
+
+## Version
+
+This is version 2.1 of the St. Lawrence Island Yupik finite-state morphological analyzer.
+
+This version incorporates changes made between the publication of version 2.0 in [A Morphological Analyzer for St. Lawrence Island / Central Siberian Yupik](https://www.aclweb.org/anthology/L18-1416) by Emily Chen and Lane Schwartz (LREC 2020) and 19 July 2020.
+
+
+## Overview
 
 hello! this was my second attempt at implementing a morphological analyzer for Yupik using the `foma` FST toolkit. this README was written to document and describe some of the methods to my madness, and to assist anyone looking at this repo in understanding why certain things were implemented the way that they were. it's also a means for me to complain and vent about some aspects of the implementation that i'm not thrilled with, but didn't know how else to handle. hopefully, this README is sufficiently informative all on its own and withstands the test of time, idk we'll see! (emily, april 2, 2020).
 
