@@ -1,0 +1,168 @@
+!====================
+LEXICON EmotionalRoot
+!====================
+
+alangghu(EMO):alangghu    EmotionalRootPostbaseI;   ! missing something; at a loss
+anumi(EMO):anumi          EmotionalRootPostbaseI;   ! favoring; concerned for
+efsi(EMO):efsi            EmotionalRootPostbaseI;   ! sick and tired of someone or something; rejecting; disliking
+esliga(EMO):esliga        EmotionalRootPostbaseI;   ! awkward; out of place
+igalnga(EMO):igalnga      EmotionalRootPostbaseI;   ! utilizing an unexpected opportunity or inviting situation
+igamsiqa(EMO):igamsiqa    EmotionalRootPostbaseI;   ! thankful; grateful
+igha(EMO):igha            EmotionalRootPostbaseI;   ! disgusted; feeling aversion
+igherngu(EMO):igherngu    EmotionalRootPostbaseI;   ! uncomfortable
+iyamsiqa(EMO):iyamsiqa    EmotionalRootPostbaseI;   ! thankful; grateful
+kayngu(EMO):kayngu        EmotionalRootPostbaseI;   ! embarrassed; ashamed
+kelli(EMO):kelli          EmotionalRootPostbaseI;   ! lustful; desiring
+megnu(EMO):megnu          EmotionalRootPostbaseI;   ! caring deeply; valuing; holding as important
+mighu(EMO):mighu          EmotionalRootPostbaseI;   ! unappetizing
+nanggha(EMO):nanggha      EmotionalRootPostbaseI;   ! interesting; exciting
+paqna(EMO):paqna          EmotionalRootPostbaseI;   ! apprehensive; wary of danger; worried; concerned
+peghtu(EMO):peghtu        EmotionalRootPostbaseI;   ! overwhelmed
+qugina(EMO):qugina        EmotionalRootPostbaseI;   ! ticklish
+saghiigha(EMO):saghiigha  EmotionalRootPostbaseI;   ! astonished; amazed
+sikna(EMO):sikna          EmotionalRootPostbaseI;   ! selfish; possessive; valuing; conserving
+tengghu(EMO):tengghu      EmotionalRootPostbaseI;   ! enthusiastic
+ugumi(EMO):ugumi          EmotionalRootPostbaseI;   ! hateful; angry; frustrated; finding something cute
+vighvi(EMO):vighvi        EmotionalRootPostbaseI;   ! annoyed at ones hyperactivity'
+yimi(EMO):yimi            EmotionalRootPostbaseI;   ! shy; intimidated; cowering
+yumi(EMO):yumi            EmotionalRootPostbaseI;   ! shy; intimidated; cowering
+(EMO):
+kusge(EMO):kusge          EmotionalRootPostbaseII;  ! squeamish; finicky
+(EMO):
+egtug(EMO):egtug          EmotionalRootPostbaseIII; ! anxious
+nellug(EMO):nellug        EmotionalRootPostbaseIII; ! uncomortable; claustrophobic; ill at ease
+qesug(EMO):qesug          EmotionalRootPostbaseIII; ! happy; excited; enjoying
+quginag(EMO):quginag      EmotionalRootPostbaseIII; ! terrified especially of the supernatural; spooked; scared
+taayug(EMO):taayug        EmotionalRootPostbaseIII; ! hurried; pressed for time
+teghig(EMO):teghig        EmotionalRootPostbaseIII; ! having fun; enjoying
+(EMO):
+aghliigh(EMO):aghliigh    EmotionalRootPostbaseIV;  ! overwhelmed
+efqugh(EMO):efqugh        EmotionalRootPostbaseIV;  ! pleased; satisfied
+imugh(EMO):imugh          EmotionalRootPostbaseIV;  ! on the verge of crying; tearful
+iisqugh(EMO):iisqugh      EmotionalRootPostbaseIV;  ! intimidated; hesitant to look another in the eye; considerate of the feelings
+pellagh(EMO):pellagh      EmotionalRootPostbaseIV;  ! lonely; bored
+pesugh(EMO):pesugh        EmotionalRootPostbaseIV;  ! stuffy; suffocating
+qaazugh(EMO):qaazugh      EmotionalRootPostbaseIV;  ! out of place or out of sorts; odd
+qiliigh(EMO):qiliigh      EmotionalRootPostbaseIV;  ! coveting; desiring
+takagh(EMO):takagh        EmotionalRootPostbaseIV;  ! inhibited; shy; respectful
+tallugh(EMO):tallugh      EmotionalRootPostbaseIV;  ! shy; intimidated; cowed; timid
+yakugh(EMO):yakugh        EmotionalRootPostbaseIV;  ! in danger; fearful of danger"
+(EMO):
+eflegh(EMO):eflegh        EmotionalRootPostbaseVII; ! uncomfortable from wetness
+elpeg(EMO):elpeg          EmotionalRootPostbaseVII; ! sensing something; being aware of something; edgy
+nanglleg(EMO):nanglleg    EmotionalRootPostbaseVII; ! compassionate; feeling pity
+
+
+!=============================
+LEXICON EmotionalRootPostbaseI
+!=============================
+
+^~–ketagh(EMO→N):^keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+^@~fnagh(EMO→N):^na%{g%}h     NounPostbaseIII; ! something that causes one to feel R
+^+tagh(EMO→N):^ta%{g%}h       NounPostbaseIII; ! one who tends to often feel R
+
+^~–ke(EMO→V):^ke              VerbPostbaseII;  ! to feel R toward object
+^@~yuke(EMO→V):^yuke          VerbPostbaseII;  ! to feel R toward object
+^@~fyug(EMO→V):^yug           VerbPostbaseIII; ! to feel R, to be R
+^~–ketagh(EMO→V):^ketagh      VerbPostbaseIV;  ! to tend to often feel R
+^@~fnagh(EMO→V):^nagh         VerbPostbaseIV;  ! to tend to cause one to feel R
+^tagh(EMO→V):^tagh            VerbPostbaseIV;  ! to tend to often feel R
+^@~yagute(EMO→V):^yagu%{t%}e  VerbPostbaseV;   ! to come to feel R toward object
+
+!==============================
+LEXICON EmotionalRootPostbaseII
+!==============================
+
+^~–ketagh(EMO→N):^%{.f.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+^@~fnagh(EMO→N):^%{.f.%}na%{g%}h     NounPostbaseIII; ! something that causes one to feel R
+^+tagh(EMO→N):^ta%{g%}h              NounPostbaseIII; ! one who tends to often feel R
+
+^~–ke(EMO→V):^%{.f.%}ke              VerbPostbaseII;  ! to feel R toward object
+^@~yuke(EMO→V):^%{.f.%}yuke          VerbPostbaseII;  ! to feel R toward object
+^@~fyug(EMO→V):^%{.f.%}yug           VerbPostbaseIII; ! to feel R, to be R
+^~–ketagh(EMO→V):^%{.f.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+^@~fnagh(EMO→V):^%{.f.%}nagh         VerbPostbaseIV;  ! to tend to cause one to feel R
+^+tagh(EMO→V):^tagh                  VerbPostbaseIV;  ! to tend to often feel R
+^@~yagute(EMO→V):^%{.f.%}yagu%{t%}e  VerbPostbaseV;   ! to come to feel R toward object
+
+!===============================
+LEXICON EmotionalRootPostbaseIII
+!===============================
+
+^~–ketagh(EMO→N):^%{.m.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+^@~fnagh(EMO→N):^na%{g%}h            NounPostbaseIII; ! something that causes one to feel R
+^+tagh(EMO→N):^ta%{g%}h              NounPostbaseIII; ! one who tends to often feel R
+
+^~–ke(EMO→V):^%{.m.%}ke              VerbPostbaseII;  ! to feel R toward object
+^@~yuke(EMO→V):^yuke                 VerbPostbaseII;  ! to feel R toward object
+^@~fyug(EMO→V):^yug                  VerbPostbaseIII; ! to feel R, to be R
+^~–ketagh(EMO→V):^%{.m.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+^@~fnagh(EMO→V):^nagh                VerbPostbaseIV;  ! to tend to cause one to feel R
+^+tagh(EMO→V):^tagh                  VerbPostbaseIV;  ! to tend to often feel R
+^@~yagute(EMO→V):^yagu%{t%}e         VerbPostbaseV;   ! to come to feel R toward object
+
+!==============================
+LEXICON EmotionalRootPostbaseIV
+!==============================
+
+^~–ketagh(EMO→N):^%{.m.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+^@~fnagh(EMO→N):^na%{g%}h            NounPostbaseIII; ! something that causes one to feel R
+^+tagh(EMO→N):^ta%{g%}h              NounPostbaseIII; ! one who tends to often feel R
+
+^~–ke(EMO→V):^%{.m.%}ke              VerbPostbaseII;  ! to feel R toward object
+^@~yuke(EMO→V):^%{.at.%}yuke         VerbPostbaseII;  ! to feel R toward object
+^@~fyug(EMO→V):^yug                  VerbPostbaseIII; ! to feel R, to be R
+^~–ketagh(EMO→V):^%{.m.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+^@~fnagh(EMO→V):^nagh                VerbPostbaseIV;  ! to tend to cause one to feel R
+^+tagh(EMO→V):^tagh                  VerbPostbaseIV;  ! to tend to often feel R
+^@~yagute(EMO→V):^yagu%{t%}e         VerbPostbaseV;   ! to come to feel R toward object
+
+!=============================
+LEXICON EmotionalRootPostbaseV
+!=============================
+
+^~–ketagh(EMO→N):^%{.f.%}keta%{g%}h   NounPostbaseIII; ! one who tends to often feel R
+^@~fnagh(EMO→N):^%{.at.%}na%{g%}h     NounPostbaseIII; ! something that causes one to feel R
+^+tagh(EMO→N):^ta%{g%}h               NounPostbaseIII; ! one who tends to often feel R
+
+^~–ke(EMO→V):^%{.f.%}ke               VerbPostbaseII;  ! to feel R toward object
+^@~yuke(EMO→V):^%{.at.%}yuke          VerbPostbaseII;  ! to feel R toward object
+^@~fyug(EMO→V):^%{.at.%}yug           VerbPostbaseIII; ! to feel R, to be R
+^~–ketagh(EMO→V):^%{.f.%}ketagh       VerbPostbaseIV;  ! to tend to often feel R
+^@~fnagh(EMO→V):^%{.at.%}nagh         VerbPostbaseIV;  ! to tend to cause one to feel R
+^+tagh(EMO→V):^tagh                   VerbPostbaseIV;  ! to tend to often feel R
+^@~yagute(EMO→V):^%{.at.%}yagu%{t%}e  VerbPostbaseV;   ! to come to feel R toward object
+
+!==============================
+LEXICON EmotionalRootPostbaseVI
+!==============================
+
+^~–ketagh(EMO→N):^%{.f.%}keta%{g%}h   NounPostbaseIII; ! one who tends to often feel R
+^@~fnagh(EMO→N):^%{.at.%}na%{g%}h     NounPostbaseIII; ! something that causes one to feel R
+^+tagh(EMO→N):^ta%{g%}h               NounPostbaseIII; ! one who tends to often feel R
+
+^~–ke(EMO→V):^%{.f.%}ke               VerbPostbaseII;  ! to feel R toward object
+^@~yuke(EMO→V):^%{.at.%}yuke          VerbPostbaseII;  ! to feel R toward object
+^@~fyug(EMO→V):^%{.at.%}yug           VerbPostbaseIII; ! to feel R, to be R
+^~–ketagh(EMO→V):^%{.f.%}ketagh       VerbPostbaseIV;  ! to tend to often feel R
+^@~fnagh(EMO→V):^%{.at.%}nagh         VerbPostbaseIV;  ! to tend to cause one to feel R
+^+tagh(EMO→V):^tagh                   VerbPostbaseIV;  ! to tend to often feel R
+^@~yagute(EMO→V):^%{.at.%}yagu%{t%}e  VerbPostbaseV;   ! to come to feel R toward object
+
+!===============================
+LEXICON EmotionalRootPostbaseVII
+!===============================
+
+^~–ketagh(EMO→N):^%{.sf.%}keta%{g%}h  NounPostbaseIII; ! one who tends to often feel R
+^@~fnagh(EMO→N):^na%{g%}h             NounPostbaseIII; ! something that causes one to feel R
+^+tagh(EMO→N):^ta%{g%}h               NounPostbaseIII; ! one who tends to often feel R
+^
+^~–ke(EMO→V):^%{.sf.%}ke              VerbPostbaseII;  ! to feel R toward object
+^@~yuke(EMO→V):^%{.sf.%}yuke          VerbPostbaseII;  ! to feel R toward object
+^@~fyug(EMO→V):^yug                   VerbPostbaseIII; ! to feel R, to be R
+^~–ketagh(EMO→V):^%{.sf.%}ketagh      VerbPostbaseIV;  ! to tend to often feel R
+^@~fnagh(EMO→V):^nagh                 VerbPostbaseIV;  ! to tend to cause one to feel R
+^+tagh(EMO→V):^tagh                   VerbPostbaseIV;  ! to tend to often feel R
+^@~yagute(EMO→V):^%{.sf.%}yagu%{t%}e  VerbPostbaseV;   ! to come to feel R toward object
+
+

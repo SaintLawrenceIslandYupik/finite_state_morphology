@@ -1,0 +1,29 @@
+!===========================================
+LEXICON IntrOptNEG
+!  person/number markers for
+!     intransitive negative present optative 
+!===========================================
+!------------|
+^[2Sg]:^vek  Enclitic;
+^[2Pl]:^fsi  Enclitic;
+^[2Du]:^ftek Enclitic;
+!------------|
+
+!=========================================
+LEXICON TrnsOptNEG
+!  person/number markers for
+!     transitive negative present optative 
+!=========================================
+
+! exceptions for ^[Trns.Opt.NEG.2--.3Pl] forms
+!---------------|------------------|---------------------|
+^[2Sg.3Sg]:^n  Enclitic;                    ^[2Sg.3Du]:^gkenka Enclitic;
+^[2Pl.3Sg]:^n  Enclitic;                    ^[2Pl.3Du]:^gkenka Enclitic;
+^[2Du.3Sg]:^n  Enclitic;                    ^[2Du.3Du]:^gkenka Enclitic;
+!---------------|------------------|---------------------|
+^[2Sg.1Sg]:^ma Enclitic; ^[2Sg.1Pl]:^mta Enclitic; ^[2Sg.1Du]:^mtung  Enclitic;
+^[2Pl.1Sg]:^ma Enclitic; ^[2Pl.1Pl]:^mta Enclitic; ^[2Pl.1Du]:^mtung  Enclitic;
+^[2Du.1Sg]:^ma Enclitic; ^[2Du.1Pl]:^mta Enclitic; ^[2Du.1Du]:^mtung  Enclitic;
+!---------------|------------------|---------------------|
+
+

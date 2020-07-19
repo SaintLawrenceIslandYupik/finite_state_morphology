@@ -1,0 +1,23 @@
+!===============================
+LEXICON IntrSubr
+!  person/number markers for
+!    intransitive subordinative 
+!===============================
+!-------------|---------------|---------------|
+^[4Sg]:^ni    Enclitic; ^[1Sg]:^nga   Enclitic; ^[2Sg]:^ten^  Enclitic; ! a bit hacky...
+^[4Pl]:^teng  Enclitic; ^[1Pl]:^ta    Enclitic; ^[2Pl]:^si    Enclitic; ! not sure how else to differentiate
+^[4Du]:^tek   Enclitic; ^[1Du]:^tung  Enclitic; ^[2Du]:^tek   Enclitic; ! between "ten" (2SG) and "teng" (4PL)
+!-------------|---------------|---------------|
+
+!=============================
+LEXICON TrnsSubr
+!  person/number markers for
+!    transitive subordinative 
+!=============================
+|----------------|----------------|------------------|
+^[_.3Sg]:^ku    Enclitic; ^[_.3Pl]:^ki  Enclitic; ^[_.3Du]:^kek   Enclitic;
+^[_.1Sg]:^nga   Enclitic; ^[_.1Pl]:^ta  Enclitic; ^[_.1Du]:^tung  Enclitic;
+^[_.2Sg]:^ten^  Enclitic; ^[_.2Pl]:^si  Enclitic; ^[_.2Du]:^tek   Enclitic;
+|----------------|----------------|------------------|
+
+

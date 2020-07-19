@@ -1,0 +1,43 @@
+!======================
+LEXICON PersonalPronoun
+!======================
+
+!---------------------|---------------------------|-----------------------------|----------------|
+!      singular       |           plural          |             dual            |                |
+!---------------------|---------------------------|-----------------------------|----------------|
+!                     |                           |                             |  ! 1st Person  |
+whanga      PronounTag;  whangkuta      PronounTag;  whangkutung      PronounTag;  ! Abs/Erg     |
+whangamnun  PronounTag;  whangamnun     PronounTag;  whangkutegnun    PronounTag;  ! All         |
+whangamkun  PronounTag;  whangkutgun    PronounTag;  whangkutegnegun  PronounTag;  ! Per         |
+whangamtun  PronounTag;  whangkutestun  PronounTag;  whangkutegestun  PronounTag;  ! Equ         |
+!---------------------|---------------------------|-----------------------------|----------------|
+!                     |                           |                             |  ! 2nd Person  |
+elpek       PronounTag;  elpesi         PronounTag;  elpetek          PronounTag;  ! Abs/Erg     |
+elpenun     PronounTag;  elpesinun      PronounTag;  elpetegnun       PronounTag;  ! All         |
+elpegun     PronounTag;  elpesigun      PronounTag;  elpetegnegun     PronounTag;  ! Per         |
+elpetun     PronounTag;  elpesistun     PronounTag;  elpetegestun     PronounTag;  ! Equ         |
+!---------------------|---------------------------|-----------------------------|----------------|
+!                     |                           |                             |  ! 3rd Person  |
+ellnga      PronounTag;  ellngit        PronounTag;  elkek            PronounTag;  ! Abs/Erg     |
+ellngan     PronounTag;  ellgita        PronounTag;  elkek            PronounTag;  ! Erg         |
+ellnganun   PronounTag;  ellngitnun     PronounTag;  elkegkenun       PronounTag;  ! All         |
+ellngakun   PronounTag;  ellngitgun     PronounTag;  elekegkenkun     PronounTag;  ! Per         |
+ellngatun   PronounTag;  ellngistun     PronounTag;  elkegestun       PronounTag;  ! Equ         |
+                         ellngitestun   PronounTag;                                ! Equ         |
+!---------------------|---------------------------|-----------------------------|----------------|
+!                     |                           |                             |  ! 4th Person  |
+ellmi       PronounTag;  ellmeng        PronounTag;  ellmeng          PronounTag;  ! Abs/Erg     |
+ellminun    PronounTag;  ellmeggnun     PronounTag;  ellmegnun        PronounTag;  ! All         |
+                                                     ellmegtenun      PronounTag;  ! All         |
+ellmikun    PronounTag;  ellmegteggun   PronounTag;  ellmegtegnegun   PronounTag;  ! Per         |
+ellmitun    PronounTag;  ellmegestun    PronounTag;  elmegestun       PronounTag;  ! Equ         |
+!---------------------|---------------------------|-----------------------------|----------------|
+
+
+!=================
+LEXICON PronounTag
+!=================
+
+(PRO):0  Enclitic;
+
+

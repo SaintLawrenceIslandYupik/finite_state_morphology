@@ -1,0 +1,82 @@
+!===================================
+LEXICON Interrogative
+!  this section needs some help and
+!  love ):
+!===================================
+
+naken    WHTag; ! (from) where
+nani     WHTag; ! (at) where
+naten    WHTag; ! how 
+navek    WHTag; ! (to) where
+qakun    WHTag; ! when (in the future)
+qavngaq  WHTag; ! when (in the past)
+sameng   WHTag; ! what
+
+!------------------------------------------------------------------------
+
+! WARNING: This is where things fall apart...
+!   Jacobson (2001) states that some Yupik question words
+!   inflect like nouns and take derivational suffixes.
+!   The examples given only ever show these question words
+!   affixing to the derivational suffix ~:(ng)u 'to be N'
+!   however, and some strange root form of the question word
+!   is used, to never appear again in other derivations.
+!   e.g. The root of 'kinkungutsi' is 'kinku-' but we don't 
+!        know anything else about the productivity of 'kinku-'.
+!
+!   Since this is the case, we're going to disregard these
+!   one-time-use roots and encode these "question-word + ~:(ng)u"
+!   derivations as exceptions.
+!
+!   -Emily (2019)
+
+!------------------------------------------------------------------------
+
+! "The word for 'who' inflects but not in the regular manner that nouns
+! inflect several forms (kina, kitum, kinkut) are given in the vocabulary
+! above" [Jacobson (2001) p.53].
+!
+! What's the word for 'who'...?
+
+kina    WHTag; ! who (SG)
+kinkut  WHTag; ! who (PL)
+kitum   WHTag; ! whose
+
+!------------------------------------------------------------------------
+
+! Question word 'qafsina' appears to inflect like other noun roots,
+! although it is "of necessity always plural exception in [its]
+! citation form" [Jacobson (2001) p.53], so some overgeneration is
+! to be expected.
+
+qafsina(WH):qafsina  NounInflI;
+
+!------------------------------------------------------------------------
+
+! Question words meaning 'why' follow their own inflectional paradigm
+
+sangavek   WHTag; why (focused on 2SG SBJ)
+sangafsi   WHTag; why (focused on 2PL SBJ)
+sangami    WHTag; why (focused on 3SG SBJ)
+sangameng  WHTag; why (focused on 3PL SBJ)
+
+sangama    WHTag; why (focused on 1SG OBJ)
+sangamta   WHTag; why (focused on 1PL OBJ)
+sangan     WHTag; why (focused on 3SG OBJ)
+sangita    WHTag; why (focused on 3PL OBJ)
+sangankek  WHTag; why (focused on 3DU OBJ)
+
+!------------------------------------------------------------------------
+
+! Question word 'naligh*' appears to inflect like other noun roots
+
+naligh(WH):naligh  NounInflIV;
+
+
+!============
+LEXICON WHTag
+!============
+
+(WH):0  Enclitic;
+
+
