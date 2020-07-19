@@ -4,6 +4,11 @@
 
 If you agree to these conditions, you may access this resource under the terms of the Creative Commons Attribution No-Commercial 4.0 license (https://creativecommons.org/licenses/by-nc/4.0/).
 
+## Version
+
+This is version 1.0 of the St. Lawrence Island Yupik finite-state morphological analyzer.
+
+This version should roughly correspond to the version that was used in the experiments reported in [A Morphological Analyzer for St. Lawrence Island / Central Siberian Yupik](https://www.aclweb.org/anthology/L18-1416) by Emily Chen and Lane Schwartz (LREC 2020).
 
 ## Links
 
