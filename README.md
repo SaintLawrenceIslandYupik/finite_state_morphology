@@ -7,9 +7,9 @@ If you agree to these conditions, you may access this resource under the terms o
 
 ## Version
 
-This is version 2.1 of the St. Lawrence Island Yupik finite-state morphological analyzer.
+This is the development version of the St. Lawrence Island Yupik finite-state morphological analyzer.
 
-This version incorporates changes made between the publication of version 2.0 in [A Morphological Analyzer for St. Lawrence Island / Central Siberian Yupik](https://www.aclweb.org/anthology/L18-1416) by Emily Chen and Lane Schwartz (LREC 2020) and 19 July 2020.
+This version incorporates changes made after the release of version 2.1 on 19 July 2020 at 13:01:49 2020 -0500.
 
 
 ## Overview
