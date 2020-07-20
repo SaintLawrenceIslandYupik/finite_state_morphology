@@ -794,6 +794,7 @@ define ForeignGuessGrammar [ Foreign .o. Guesses .o. Lexicon .o. CleanupPlacehol
 define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
 define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
 define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
+define GuessIntermediateToSurfaceGrammar [ [ GuessToIntermediateGrammar .o. PhonologicalRules ].i .o. GuessToSurfaceGrammar ];
 
 ! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 ! define GrammarUpper [ GrammarLower .o. Uppercase ];
