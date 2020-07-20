@@ -791,7 +791,12 @@ define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. Phonolo
 
 define ForeignGuessGrammar [ Foreign .o. Guesses .o. Lexicon .o. CleanupPlaceholders .o. CleanupMorphBoundary ];
 
-define GuessToIntermediateGrammar [ Guesses .o. Filters .o. Lexicon .o. Rules ];
+define ForeignToIntermediateGrammar [ Foreign .o. GuessLex .o. Rules ];
+define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
+define ForeignToIntermediateWithPhonology [ ForeignToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
+define ForeignIntermediateToSurfaceGrammar [ [ ForeignToIntermediateGrammar .o. PhonologicalRules ].i .o. ForeignToSurfaceGrammar ];
+
+define GuessToIntermediateGrammar [ GuessLex .o. Rules ];
 define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
 define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
 define GuessIntermediateToSurfaceGrammar [ [ GuessToIntermediateGrammar .o. PhonologicalRules ].i .o. GuessToSurfaceGrammar ];
