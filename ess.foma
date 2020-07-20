@@ -789,8 +789,6 @@ define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBo
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
 define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
 
-define ForeignGuessGrammar [ Foreign .o. Guesses .o. Lexicon .o. CleanupPlaceholders .o. CleanupMorphBoundary ];
-
 define ForeignToIntermediateGrammar [ Foreign .o. GuessLex .o. Rules ];
 define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
 define ForeignToIntermediateWithPhonology [ ForeignToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
