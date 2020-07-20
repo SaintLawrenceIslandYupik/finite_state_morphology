@@ -38,8 +38,8 @@ g2s.fomabin: ess.fomabin
 f2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push ForeignGuessGrammar" -e "save stack $@" -s
 
-asciiarrow.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
-	foma -l ess.foma -e "push GrammarAscii" -e "save stack asciiarrow.fomabin" -s
+asciiarrow.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push GrammarAscii" -e "save stack $@" -s
 
 %.interactive: %.fomabin
 	foma -e "load stack $<"
