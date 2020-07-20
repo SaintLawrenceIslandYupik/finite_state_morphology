@@ -136,8 +136,8 @@ LEXICON NounInflIX
 ^[Prl.2PlPoss.Sg]:^gpesigun           PostInflIX; ^[Prl.2PlPoss.Pl]:^gpesigun           PostInflIX; ^[Prl.2PlPoss.Du]:^gpesigun        PostInflIX;
 ^[Prl.2DuPoss.Sg]:^gpetegnegun        PostInflIX; ^[Prl.2DuPoss.Pl]:^gpetegnegun        PostInflIX; ^[Prl.2DuPoss.Du]:^gpetegnegun     PostInflIX;
 !-----------------------------------------------|-------------------------------------------------|----------------------------------------------|
-^[Prl.3SgPoss.Sg]:^%{.f.%}%ngakun     PostInflIX; ^[Prl.Sg.3SgPoss]:^%{.f.%}%ngakun     PostInflIX; ^[Prl.3SgPoss.Du]:^gkenkun         PostInflIX;
-^[Prl.3PlPoss.Sg]:^%{.f.%}%ngitgun    PostInflIX; ^[Prl.Sg.3PlPoss]:^%{.f.%}%ngitgun    PostInflIX; ^[Prl.3PlPoss.Du]:^%{.f.%}%ngitgun PostInflIX;
+^[Prl.3SgPoss.Sg]:^%{.f.%}%ngakun     PostInflIX; ^[Prl.3SgPoss.Pl]:^%{.f.%}%ngakun     PostInflIX; ^[Prl.3SgPoss.Du]:^gkenkun         PostInflIX;
+^[Prl.3PlPoss.Sg]:^%{.f.%}%ngitgun    PostInflIX; ^[Prl.3PlPoss.Pl]:^%{.f.%}%ngitgun    PostInflIX; ^[Prl.3PlPoss.Du]:^%{.f.%}%ngitgun PostInflIX;
 ^[Prl.3DuPoss.Sg]:^gkenkun            PostInflIX; ^[Prl.3DuPoss.Pl]:^%{.f.%}%ngakun     PostInflIX; ^[Prl.3PlPoss.Du]:^%{.f.%}%ngitgun PostInflIX;
 !-----------------------------------------------|-------------------------------------------------|----------------------------------------------|
 ^[Prl.4SgPoss.Sg]:^%{.f.%}mikun       PostInflIX; ^[Prl.4SgPoss.Pl]:^%{.f.%}mikun       PostInflIX; ^[Prl.4SgPoss.Du]:^gmikun          PostInflIX;
