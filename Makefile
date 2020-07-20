@@ -1,4 +1,4 @@
-all: clean ess.lexc ess.fomabin l2s.fomabin i2s.fomabin l2i.fomabin l2is.fomabin lowercase.fomabin uppercase.fomabin asciiarrow.fomabin test
+all: ess.lexc ess.fomabin l2s.fomabin i2s.fomabin l2i.fomabin l2is.fomabin lowercase.fomabin uppercase.fomabin asciiarrow.fomabin test
 
 ess.lexc: lexc-files/header.txt lexc-files/emotional_roots.txt lexc-files/interrogatives.txt lexc-files/demonstratives.txt lexc-files/dem-suffixes.txt lexc-files/numerals.txt lexc-files/particles.txt lexc-files/positionals.txt lexc-files/postural_roots.txt lexc-files/pronouns.txt lexc-files/quantifier_qualifier.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/verb_root_ete.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt lexc-files/punctuation.txt
 	@cat $^ > $@
