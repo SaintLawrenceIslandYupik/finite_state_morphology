@@ -172,10 +172,8 @@ LEXICON VerbInflI
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-^[Ctmp.Intr]:^negh  IntrCtmp;
-^[Ctmp.Trns]:^negh  TrnsCtmp; 
-^[Ctmp.Intr]:^ngh   IntrCtmp; ! sometimes -e is absent, idk why
-^[Ctmp.Trns]:^ngh   TrnsCtmp; ! e.g. amsanaanghani ^['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
+^[Ctmp.Intr]:^ngh   IntrCtmp; ! -e is absent, i *think*, when the stem ends in a full vowel
+^[Ctmp.Trns]:^ngh   TrnsCtmp; ! e.g. amsanaanghani ['Sivuqam Kiyaghtaallgha Ayumiq' from Lore Vol1]
 
 !~~~~~~~~~~~~~~~
 ! subordinative
