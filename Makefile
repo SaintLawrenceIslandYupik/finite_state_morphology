@@ -1,4 +1,4 @@
-all: ess.lexc $(foreach x,asciiarrow ess f2i f2is f2s fi2s g2i g2is g2s gi2s l2i l2is l2s li2s lowercase uppercase,$x.fomabin) test
+all: ess.lexc $(foreach x,asciiarrow ess f2i f2is f2s fi2s g2i g2is g2s gi2s l2i l2is l2s li2s a2s lowercase uppercase,$x.fomabin) test
 # all: ess.lexc $(foreach x,asciiarrow ess l2i l2is l2s li2s lowercase uppercase,$x.fomabin) test
 
 ess.lexc: lexc-files/header.txt lexc-files/emotional_roots.txt lexc-files/interrogatives.txt lexc-files/demonstratives.txt lexc-files/dem-suffixes.txt lexc-files/numerals.txt lexc-files/particles.txt lexc-files/positionals.txt lexc-files/postural_roots.txt lexc-files/pronouns.txt lexc-files/quantifier_qualifier.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/verb_root_ete.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt lexc-files/punctuation.txt
@@ -58,6 +58,8 @@ f2is.fomabin: ess.fomabin
 fi2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push ForeignIntermediateToSurfaceGrammar" -e "save stack $@" -s
 
+a2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "re LexicalToSurfaceGrammar .o. AllowUppercase ;" -e "push ForeignToSurfaceGrammar" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
 
 asciiarrow.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push GrammarAscii" -e "save stack $@" -s
