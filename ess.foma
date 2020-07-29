@@ -413,7 +413,7 @@ define SemiFinalE %{%.sf%.%} -> 0 || [ (C) C C & ~MultiCharC ] e g (h) "^" _    
 
 
 define ShortRootFinalE e -> a || .#. C (C) V C (C) _ "^" %{%.fS%.%} .o. ! [Jacobson (2001) p.38]
-              %{%.fS%.%} -> %{%.f%.%}                               ;
+              %{%.fS%.%} -> 0                                       ;
 
 
 define LongRootFinalE e -> 0 || _ "^" %{%.fL%.%} .o. ! [Jacobson (2001) p.32] 
@@ -483,12 +483,9 @@ define VowelDominance A -> I ||   _   ["^"]* i .o.
                       e -> u || [U|u] ["^"]* _ ;
 
 
-define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intr][Intrg][1Pl]:%^ste%^a -> %^st%^a
-                          e -> 0 || _ "^" i .o. ! [Intr][Opt][2Pl/Du] drop final -e, e.g. aanitek but there is no ~f in these morphemes
-                          e -> 0 || _ "^" u ;   ! [Intr][Opt][1Du]:%^ste%u -> %^st%^u
-
-
-define DropMiddleVowel a -> 0 || V ["^"]* _ ["^"]* V ; ! occurs with the transitive indicative [Jacobson (2001) p.44]
+define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intrg.Intr][1Pl]:%^ste%^a -> %^st%^a
+                          e -> 0 || _ "^" i .o. ! [Opt.Intr][2Pl/Du] drop final -e, e.g. aanitek but there is no ~f in these morphemes
+                          e -> 0 || _ "^" u ;   ! [Opt.Intr][1Du]:%^ste%u -> %^st%^u
 
 
 !-------------------
@@ -519,7 +516,10 @@ define OptativeAllomorphs %{GI%} -> g i   || FullVowel ["^"]* FullVowel "^" _ .o
                           %{AI%} -> a     ||                 FullVowel "^" _ ;
 
 
-define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" n g   ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
+define TransitiveIndicative a -> 0 || V "^" %{G%} _ "^" [ a | i ] ; ! three vowels may occur in sequence when forming the transitive indicative [Jacobson (2001) p.44]
+
+
+define SFGKeKa e -> a || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] _ "^" ( %{%.fS%.%} ) n g ; ! @~sf–(g)ke/ka [Jacobson (2001) p.72]
 !            [..] -> g || "^" ( %{%.at%.%} | %{%.sf%.%} | %{%.m%.%} | g ) [ k | q ] e "^" _ k a ;   ! @~sf–(g)ke/ka [Badten (2008) p.617]
 
 
@@ -674,7 +674,7 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     ["^"]* .#. ,
           [ %{t%} | t ] ["^"]* z -> s                                             ;   ! [Jacobson (2001) p.51] e.g. ~f(t)zin
 
 
-define PreventGemination m -> 0 || .#. t u e _ "^" m .o. ! tume+ABL_MOD.sg
+define PreventGemination m -> 0 || .#. [C | V]+ _ "^" m .o. ! tume+ABL_MOD.sg
                          n -> 0 || .#.   a a _ "^" n .o. ! aane+naqe [Jacobson (2001) p.31]
                          n -> 0 || .#. t u u _ "^" n .o. ! tuune+naqutke [Badten (2008) p.650]
                          v -> 0 || .#. n u u _ "^" v .o. ! nuuve+vig [Badten (2008) p.693]
@@ -721,6 +721,7 @@ define Rules [
     ! lexical string rewrite
     !------------------------------
     RewriteSubordinative .o.
+	TransitiveIndicative .o.
     SFGKeKa              .o.
     Uteta                .o.
     !-------------------------------
@@ -767,7 +768,6 @@ define Rules [
 
 define PhonologicalRules [
     VelarUvularRounding  .o.
-    DropMiddleVowel      .o.
     VowelDominance       .o.
     MatchVoicing         .o.
     Undoubling

@@ -29,7 +29,8 @@ LEXICON VNPostbaseII
 ^–rkapig(V→N):^rkapig                       CheckAUXFlagII;   ! one that is very V
 ^–sag(V→N):^sag                             CheckAUXFlagII;   ! one who V-s; habitual V-er
 ^@~fvig(V→N):^%{.f.%}vig                    CheckAUXFlagII;   ! place to V; time to V (esp. in month names)
-^~–kayug(V→N):^%{.f.%}gkayug                CheckAUXFlagII;   ! one that V-s readily; one who is able to V
+^~–kayug(V→N):^%{.f.%}kayug                 CheckAUXFlagII;   ! one that V-s readily; one who is able to V
+^~–kayug(V→N):^gkayug                       CheckAUXFlagII;   ! one that V-s readily; one who is able to V
 ^–lleghpigagh(V→N):^lleghpiga%{g%}h         CheckAUXFlagIII;  ! most V one
 ^@–nghhagh(V→N):^nghha%{g%}h                CheckAUXFlagIII;  ! one that has recently V-ed
 ^@–nqegtagh(V→N):^nqegta%{g%}h              CheckAUXFlagIII;  ! one that V-s easily; one that V-s readily
