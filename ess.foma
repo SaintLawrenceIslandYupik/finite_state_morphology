@@ -779,17 +779,20 @@ define PhonologicalRules [
 !----------
 define NoGuesses ~[ ?* "(GUESS)" ?* ];
 define   Guesses  [ ?* "(GUESS)" ?* ];
+
+define NoForeign ~[ ?* "(FOREIGN)" ?* ];
 define   Foreign  [ ?* "(FOREIGN)" ?* ];
 
-define FilteredLex [ NoGuesses .o. Filters .o. Lexicon ];
-define GuessLex [ Guesses .o. Filters .o. Lexicon ];
+define FilteredLex [             NoGuesses .o. Filters .o. Lexicon ];
+define GuessLex    [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
+define ForeignLex  [   Foreign .o. Guesses .o. Filters .o. Lexicon ];
 
 define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
 define IntermediateToSurfaceGrammar [ [ LexicalToIntermediateGrammar .o. PhonologicalRules ].i .o. LexicalToSurfaceGrammar ];
 
-define ForeignToIntermediateGrammar [ Foreign .o. GuessLex .o. Rules ];
+define ForeignToIntermediateGrammar [ ForeignLex .o. Rules ];
 define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary .o. PhonologicalRules ];
 define ForeignToIntermediateWithPhonology [ ForeignToIntermediateGrammar .o. PhonologicalRules .o. MarkNullMorpheme ];
 define ForeignIntermediateToSurfaceGrammar [ [ ForeignToIntermediateGrammar .o. PhonologicalRules ].i .o. ForeignToSurfaceGrammar ];
