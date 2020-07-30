@@ -116,7 +116,7 @@ LEXICON NounInflI
 ^[All.3PlPoss.Sg]:^ngitnun   PostInflI; ^[All.3PlPoss.Pl]:^ngitnun   PostInflI; ^[All.3PlPoss.Du]:^ngitnun   PostInflI;
 ^[All.3DuPoss.Sg]:^gkenun    PostInflI; ^[All.3DuPoss.Pl]:^ngitnun   PostInflI; ^[All.3DuPoss.Du]:^ngitnun   PostInflI;
 !-------------------------------------|---------------------------------------|---------------------------------------|
-^[All.4SgPoss.Sg]:^munnun    PostInflI; ^[All.4SgPoss.Pl]:^munnun    PostInflI; ^[All.4SgPoss.Du]:^gmunnun   PostInflI;
+^[All.4SgPoss.Sg]:^minun     PostInflI; ^[All.4SgPoss.Pl]:^minun     PostInflI; ^[All.4SgPoss.Du]:^gminun    PostInflI;
 ^[All.4PlPoss.Sg]:^meggnun   PostInflI; ^[All.4PlPoss.Pl]:^meggnun   PostInflI; ^[All.4PlPoss.Du]:^gmeggnun  PostInflI;
 ^[All.4DuPoss.Sg]:^megnun    PostInflI; ^[All.4DuPoss.Pl]:^megnun    PostInflI; ^[All.4DuPoss.Du]:^gmegnun   PostInflI;
 ^[All.4DuPoss.Sg]:^megtenun  PostInflI; ^[All.4DuPoss.Pl]:^megtenun  PostInflI; ^[All.4DuPoss.Du]:^gmegtenun PostInflI;
@@ -159,8 +159,8 @@ LEXICON NounInflI
 ^[Equ.2PlPoss.Sg]:^gpesistun  PostInflI; ^[Equ.2PlPoss.Pl]:^gpesistun  PostInflI; ^[Equ.2PlPoss.Du]:^gpesistun   PostInflI;
 ^[Equ.2DuPoss.Sg]:^gpetegetun PostInflI; ^[Equ.2DuPoss.Pl]:^gpetegetun PostInflI; ^[Equ.2DuPoss.Du]:^gpetegetun  PostInflI;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
-^[Equ.3SgPoss.Sg]:^ngatun     PostInflI; ^[Equ.Sg.3SgPoss]:^ngatun     PostInflI; ^[Equ.3SgPoss.Du]:^gketun      PostInflI;
-^[Equ.3PlPoss.Sg]:^ngitun     PostInflI; ^[Equ.Sg.3PlPoss]:^ngitun     PostInflI; ^[Equ.3PlPoss.Du]:^ngitun      PostInflI;
+^[Equ.3SgPoss.Sg]:^ngatun     PostInflI; ^[Equ.3SgPoss.Pl]:^ngatun     PostInflI; ^[Equ.3SgPoss.Du]:^gketun      PostInflI;
+^[Equ.3PlPoss.Sg]:^ngitun     PostInflI; ^[Equ.3PlPoss.Pl]:^ngitun     PostInflI; ^[Equ.3PlPoss.Du]:^ngitun      PostInflI;
 ^[Equ.3DuPoss.Sg]:^gketun     PostInflI; ^[Equ.3DuPoss.Pl]:^ngitun     PostInflI; ^[Equ.3PlPoss.Du]:^ngitun      PostInflI;
 !--------------------------------------|----------------------------------------|-----------------------------------------|
 ^[Equ.4SgPoss.Sg]:^mitun      PostInflI; ^[Equ.4SgPoss.Pl]:^mitun      PostInflI; ^[Equ.4SgPoss.Du]:^gmitun      PostInflI;
