@@ -177,10 +177,10 @@ LEXICON NounInflVI
 ^[Equ.2PlPoss.Sg]:^gpesistun       PostInflVI; ^[Equ.2PlPoss.Pl]:^gpesistun       PostInflVI; ^[Equ.2PlPoss.Du]:^gpesistun      PostInflVI;
 ^[Equ.2DuPoss.Sg]:^gpetegetun      PostInflVI; ^[Equ.2DuPoss.Pl]:^gpetegetun      PostInflVI; ^[Equ.2DuPoss.Du]:^gpetegetun     PostInflVI;
 !--------------------------------------------|----------------------------------------------|---------------------------------------------|
-^[Equ.3SgPoss.Sg]:^%{.f.%}ngatun   PostInflVI; ^[Equ.3SgPoss.Sg]:^%{.f.%}ngatun   PostInflVI; ^[Equ.3SgPoss.Du]:^gketun         PostInflVI;
-^[Equ.3SgPoss.Sg]:^%{.fS.%}ngatun  PostInflVI; ^[Equ.3SgPoss.Sg]:^%{.fS.%}ngatun  PostInflVI;                                             |
-^[Equ.3PlPoss.Sg]:^%{.f.%}ngitun   PostInflVI; ^[Equ.3PlPoss.Sg]:^%{.f.%}ngitun   PostInflVI; ^[Equ.3PlPoss.Du]:^%{.f.%}ngitun  PostInflVI;
-^[Equ.3PlPoss.Sg]:^%{.fS.%}ngitun  PostInflVI; ^[Equ.3PlPoss.Sg]:^%{.fS.%}ngitun  PostInflVI; ^[Equ.3PlPoss.Du]:^%{.fS.%}ngitun PostInflVI;
+^[Equ.3SgPoss.Sg]:^%{.f.%}ngatun   PostInflVI; ^[Equ.3SgPoss.Pl]:^%{.f.%}ngatun   PostInflVI; ^[Equ.3SgPoss.Du]:^gketun         PostInflVI;
+^[Equ.3SgPoss.Sg]:^%{.fS.%}ngatun  PostInflVI; ^[Equ.3SgPoss.Pl]:^%{.fS.%}ngatun  PostInflVI;                                             |
+^[Equ.3PlPoss.Sg]:^%{.f.%}ngitun   PostInflVI; ^[Equ.3PlPoss.Pl]:^%{.f.%}ngitun   PostInflVI; ^[Equ.3PlPoss.Du]:^%{.f.%}ngitun  PostInflVI;
+^[Equ.3PlPoss.Sg]:^%{.fS.%}ngitun  PostInflVI; ^[Equ.3PlPoss.Pl]:^%{.fS.%}ngitun  PostInflVI; ^[Equ.3PlPoss.Du]:^%{.fS.%}ngitun PostInflVI;
 ^[Equ.3DuPoss.Sg]:^gketun          PostInflVI; ^[Equ.3DuPoss.Pl]:^%{.f.%}ngitun   PostInflVI; ^[Equ.3PlPoss.Du]:^%{.f.%}ngitun  PostInflVI;
                                                ^[Equ.3DuPoss.Pl]:^%{.fS.%}ngitun  PostInflVI; ^[Equ.3PlPoss.Du]:^%{.fS.%}ngitun PostInflVI;
 !--------------------------------------------|----------------------------------------------|---------------------------------------------|

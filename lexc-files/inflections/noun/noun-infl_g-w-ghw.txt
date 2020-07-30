@@ -155,8 +155,8 @@ LEXICON NounInflII
 ^[Equ.2PlPoss.Sg]:^%{.m.%}gpesistun  PostInflII; ^[Equ.2PlPoss.Pl]:^%{.m.%}gpesistun  PostInflII; ^[Equ.2PlPoss.Du]:^egpesistun   PostInflII;
 ^[Equ.2DuPoss.Sg]:^%{.m.%}gpetegetun PostInflII; ^[Equ.2DuPoss.Pl]:^%{.m.%}gpetegetun PostInflII; ^[Equ.2DuPoss.Du]:^egpetegetun  PostInflII;
 !----------------------------------------------|------------------------------------------------|-------------------------------------------|
-^[Equ.3SgPoss.Sg]:^atun              PostInflII; ^[Equ.Sg.3SgPoss]:^atun              PostInflII; ^[Equ.3SgPoss.Du]:^egketun      PostInflII;
-^[Equ.3PlPoss.Sg]:^itun              PostInflII; ^[Equ.Sg.3PlPoss]:^itun              PostInflII; ^[Equ.3PlPoss.Du]:^itun         PostInflII;
+^[Equ.3SgPoss.Sg]:^atun              PostInflII; ^[Equ.3SgPoss.Pl]:^atun              PostInflII; ^[Equ.3SgPoss.Du]:^egketun      PostInflII;
+^[Equ.3PlPoss.Sg]:^itun              PostInflII; ^[Equ.3PlPoss.Pl]:^itun              PostInflII; ^[Equ.3PlPoss.Du]:^itun         PostInflII;
 ^[Equ.3DuPoss.Sg]:^egketun           PostInflII; ^[Equ.3DuPoss.Pl]:^itun              PostInflII; ^[Equ.3PlPoss.Du]:^itun         PostInflII;
 !----------------------------------------------|------------------------------------------------|-------------------------------------------|
 ^[Equ.4SgPoss.Sg]:^mitun             PostInflII; ^[Equ.4SgPoss.Pl]:^mitun             PostInflII; ^[Equ.4SgPoss.Du]:^egmitun      PostInflII;

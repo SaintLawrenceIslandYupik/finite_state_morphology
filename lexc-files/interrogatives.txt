@@ -48,7 +48,8 @@ kinku(WH):kinku       DemProPD;
 ! citation form" [Jacobson (2001) p.53], so some overgeneration is
 ! to be expected.
 
-qafsina(WH):qafsina  NounInflI;
+qafsina(WH):qafsina    NounPostbaseI;   ! how many
+qafsineg(WH):qafsineg  NounPostbaseVII; ! how many
 
 !------------------------------------------------------------------------
 
@@ -69,7 +70,7 @@ sangankek  WHTag; why (focused on 3DU OBJ)
 
 ! Question word 'naligh*' appears to inflect like other noun roots
 
-naligh(WH):naligh  NounInflIV;
+naligh(WH):naligh  NounInflIV; ! which
 
 
 !============
