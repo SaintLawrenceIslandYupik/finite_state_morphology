@@ -3,79 +3,79 @@ LEXICON IntrCtmp
 !  person/number markers for
 !     intransitive contemporative
 !================================
-!-----------------------|-----------------------|-----------------------|------------------------|
-^[3Sg]:^ani     Enclitic; ^[1Sg]:^ma    Enclitic; ^[2Sg]:^pek   Enclitic; ^[4Sg]:^mini   Enclitic;
-^[3Pl]:^ata     Enclitic; ^[1Pl]:^mta   Enclitic; ^[2Pl]:^pesi  Enclitic; ^[4Pl]:^meggni Enclitic;
-^[3Du]:^ayek    Enclitic; ^[1Du]:^mtung Enclitic; ^[2Du]:^petek Enclitic; ^[4Du]:^mek    Enclitic;
+!-----------------------|------------------------------|-----------------------|------------------------|
+^[3Sg]:^ani     Enclitic; ^[1Sg]:^ma           Enclitic; ^[2Sg]:^pek   Enclitic; ^[4Sg]:^mini   Enclitic;
+^[3Pl]:^ata     Enclitic; ^[1Pl]:^%{.m.%}mta   Enclitic; ^[2Pl]:^pesi  Enclitic; ^[4Pl]:^meggni Enclitic;
+^[3Du]:^ayek    Enclitic; ^[1Du]:^%{.m.%}mtung Enclitic; ^[2Du]:^petek Enclitic; ^[4Du]:^mek    Enclitic;
 ^[3Du]:^agkenka Enclitic;
-!-----------------------|-----------------------|-----------------------|------------------------|
+!-----------------------|------------------------------|-----------------------|------------------------|
 
 !==============================
 LEXICON TrnsCtmp
 !  person/number markers for
 !     transitive contemporative
 !==============================
-!------------------------------|--------------------------------|---------------------------------|
-^[3Sg.3Sg]:^agu        Enclitic; ^[3Sg.3Pl]:^aki        Enclitic; ^[3Sg.3Du]:^akek        Enclitic;
-^[3Pl.3Sg]:^atgu       Enclitic; ^[3Pl.3Pl]:^atki       Enclitic; ^[3Pl.3Du]:^atkek       Enclitic;
-^[3Du.3Sg]:^agnegu     Enclitic; ^[3Du.3Pl]:^agneki     Enclitic; ^[3Du.3Du]:^agnekek     Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[1Sg.3Sg]:^mkun       Enclitic; ^[1Sg.3Pl]:^mki        Enclitic; ^[1Sg.3Du]:^mkek        Enclitic;
-^[1Pl.3Sg]:^mteggu     Enclitic; ^[1Pl.3Pl]:^mteki      Enclitic; ^[1Pl.3Du]:^mtekek      Enclitic;
-^[1Du.3Sg]:^mtegnegu   Enclitic; ^[1Du.3Pl]:^mtegneki   Enclitic; ^[1Du.3Du]:^mtegnekek   Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[2Sg.3Sg]:^pegu       Enclitic; ^[2Sg.3Pl]:^peki       Enclitic; ^[2Sg.3Du]:^pekek       Enclitic;
-                                 ^[2Sg.3Pl]:^peni       Enclitic;                                   ! unclear if this is what Jacobson (2001) p.172 means
-^[2Pl.3Sg]:^pesigu     Enclitic; ^[2Pl.3Pl]:^pesiki     Enclitic; ^[2Pl.3Du]:^pesikek     Enclitic;
-^[2Du.3Sg]:^petegnegu  Enclitic; ^[2Du.3Pl]:^petegneki  Enclitic; ^[2Du.3Du]:^petegnekek  Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[4Sg.3Sg]:^minigu     Enclitic; ^[4Sg.3Pl]:^miniki     Enclitic; ^[4Sg.3Du]:^minikek     Enclitic;
-^[4Pl.3Sg]:^megteggu   Enclitic; ^[4Pl.3Pl]:^megteki    Enclitic; ^[4Pl.3Du]:^megtekek    Enclitic;
-^[4Du.3Sg]:^megnegu    Enclitic; ^[4Du.3Pl]:^megneki    Enclitic; ^[4Du.3Du]:^megnekek    Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[3Sg.1Sg]:^anga       Enclitic; ^[3Sg.1Pl]:^ankut      Enclitic; ^[3Sg.1Du]:^ankung      Enclitic;
-^[3Pl.1Sg]:^atnga      Enclitic; ^[3Pl.1Pl]:^ankut      Enclitic; ^[3Pl.1Du]:^ankung      Enclitic;
-^[3Du.1Sg]:^agnenga    Enclitic; ^[3Du.1Pl]:^ankut      Enclitic; ^[3Du.1Du]:^ankung      Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-! no [1--.1--] forms                                                                              |
-!------------------------------|--------------------------------|---------------------------------|
-^[2Sg.1Sg]:^penga      Enclitic; ^[2Sg.1Pl]:^pekut      Enclitic; ^[2Sg.1Du]:^pekung      Enclitic;
-^[2Pl.1Sg]:^pesinga    Enclitic; ^[2Pl.1Pl]:^pesikut    Enclitic; ^[2Pl.1Du]:^pesikung    Enclitic;
-^[2Du.1Sg]:^petegnenga Enclitic; ^[2Du.1Pl]:^petegnekut Enclitic; ^[2Du.1Du]:^petegnekung Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[4Sg.1Sg]:^mininga    Enclitic; ^[4Sg.1Pl]:^minikut    Enclitic; ^[4Sg.1Du]:^minikung    Enclitic;
-^[4Pl.1Sg]:^megtengnga Enclitic; ^[4Pl.1Pl]:^megtekut   Enclitic; ^[4Pl.1Du]:^megtekung   Enclitic;
-^[4Du.1Sg]:^megnenga   Enclitic; ^[4Du.1Pl]:^megneku    Enclitic; ^[4Du.1Du]:^megnekung   Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[3Sg.2Sg]:^aten       Enclitic; ^[3Sg.2Pl]:^asi        Enclitic; ^[3Sg.2Du]:^astek       Enclitic;
-^[3Pl.2Sg]:^aten       Enclitic; ^[3Pl.2Pl]:^asi        Enclitic; ^[3Pl.2Du]:^astek       Enclitic;
-^[3Du.2Sg]:^aten       Enclitic; ^[3Du.2Pl]:^asi        Enclitic; ^[3Du.2Du]:^astek       Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[1Sg.2Sg]:^mken       Enclitic; ^[1Sg.2Pl]:^msi        Enclitic; ^[1Sg.2Du]:^mtek        Enclitic;
-^[1Pl.2Sg]:^mken       Enclitic; ^[1Pl.2Pl]:^msi        Enclitic; ^[1Pl.2Du]:^mtek        Enclitic;
-^[1Du.2Sg]:^mken       Enclitic; ^[1Du.2Pl]:^msi        Enclitic; ^[1Du.2Du]:^mtek        Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-! no [2--.2--] forms                                                                              |
-!------------------------------|--------------------------------|---------------------------------|
-^[4Sg.2Sg]:^miniten    Enclitic; ^[4Sg.2Pl]:^minisi     Enclitic; ^[4Sg.2Du]:^minitek     Enclitic;
-^[4Pl.2Sg]:^miniten    Enclitic; ^[4Pl.2Pl]:^minisi     Enclitic; ^[4Pl.2Du]:^minitek     Enclitic;
-^[4Du.2Sg]:^miniten    Enclitic; ^[4Du.2Pl]:^minisi     Enclitic; ^[4Du.2Du]:^minitek     Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[3Sg.4Sg]:^atni       Enclitic; ^[3Sg.4Pl]:^asteng     Enclitic; ^[3Sg.4Du]:^astek       Enclitic;
-^[3Pl.4Sg]:^atni       Enclitic; ^[3Pl.4Pl]:^asteng     Enclitic; ^[3Pl.4Du]:^astek       Enclitic;
-^[3Du.4Sg]:^atni       Enclitic; ^[3Du.4Pl]:^asteng     Enclitic; ^[3Du.4Du]:^astek       Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[1Sg.4Sg]:^mni        Enclitic; ^[1Sg.4Pl]:^mteng      Enclitic; ^[1Sg.4Du]:^mtek        Enclitic;
-^[1Pl.4Sg]:^mnni       Enclitic; ^[1Pl.4Pl]:^mteng      Enclitic; ^[1Pl.4Du]:^mtek        Enclitic;
-^[1Du.4Sg]:^mtegnegu   Enclitic; ^[1Du.4Pl]:^mtegneki   Enclitic; ^[1Du.4Du]:^mtegnekek   Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-^[2Sg.4Sg]:^pegu       Enclitic; ^[2Sg.4Pl]:^peki       Enclitic; ^[2Sg.4Du]:^pekek       Enclitic;
-                                 ^[2Sg.4Pl]:^peni       Enclitic;                                   ! unclear if this is what Jacobson (2001) p.172 means
-^[2Pl.4Sg]:^pesigu     Enclitic; ^[2Pl.4Pl]:^pesiki     Enclitic; ^[2Pl.4Du]:^pesikek     Enclitic;
-^[2Du.4Sg]:^petegnegu  Enclitic; ^[2Du.4Pl]:^petegneki  Enclitic; ^[2Du.4Du]:^petegnekek  Enclitic;
-!------------------------------|--------------------------------|---------------------------------|
-! no [4--.4--] forms                                                                              |
-!------------------------------|--------------------------------|---------------------------------|
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[3Sg.3Sg]:^agu             Enclitic; ^[3Sg.3Pl]:^aki             Enclitic; ^[3Sg.3Du]:^akek             Enclitic;
+^[3Pl.3Sg]:^atgu            Enclitic; ^[3Pl.3Pl]:^atki            Enclitic; ^[3Pl.3Du]:^atkek            Enclitic;
+^[3Du.3Sg]:^agnegu          Enclitic; ^[3Du.3Pl]:^agneki          Enclitic; ^[3Du.3Du]:^agnekek          Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[1Sg.3Sg]:^%{.m.%}mkun     Enclitic; ^[1Sg.3Pl]:^%{.m.%}mki      Enclitic; ^[1Sg.3Du]:^%{.m.%}mkek      Enclitic;
+^[1Pl.3Sg]:^%{.m.%}mteggu   Enclitic; ^[1Pl.3Pl]:^%{.m.%}mteki    Enclitic; ^[1Pl.3Du]:^%{.m.%}mtekek    Enclitic;
+^[1Du.3Sg]:^%{.m.%}mtegnegu Enclitic; ^[1Du.3Pl]:^%{.m.%}mtegneki Enclitic; ^[1Du.3Du]:^%{.m.%}mtegnekek Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[2Sg.3Sg]:^pegu            Enclitic; ^[2Sg.3Pl]:^peki            Enclitic; ^[2Sg.3Du]:^pekek            Enclitic;
+                                      ^[2Sg.3Pl]:^peni            Enclitic;                                      | ! unclear if this is what Jacobson (2001) p.172 means
+^[2Pl.3Sg]:^pesigu          Enclitic; ^[2Pl.3Pl]:^pesiki          Enclitic; ^[2Pl.3Du]:^pesikek          Enclitic;
+^[2Du.3Sg]:^petegnegu       Enclitic; ^[2Du.3Pl]:^petegneki       Enclitic; ^[2Du.3Du]:^petegnekek       Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[4Sg.3Sg]:^minigu          Enclitic; ^[4Sg.3Pl]:^miniki          Enclitic; ^[4Sg.3Du]:^minikek          Enclitic;
+^[4Pl.3Sg]:^megteggu        Enclitic; ^[4Pl.3Pl]:^megteki         Enclitic; ^[4Pl.3Du]:^megtekek         Enclitic;
+^[4Du.3Sg]:^megnegu         Enclitic; ^[4Du.3Pl]:^megneki         Enclitic; ^[4Du.3Du]:^megnekek         Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[3Sg.1Sg]:^anga            Enclitic; ^[3Sg.1Pl]:^ankut           Enclitic; ^[3Sg.1Du]:^ankung           Enclitic;
+^[3Pl.1Sg]:^atnga           Enclitic; ^[3Pl.1Pl]:^ankut           Enclitic; ^[3Pl.1Du]:^ankung           Enclitic;
+^[3Du.1Sg]:^agnenga         Enclitic; ^[3Du.1Pl]:^ankut           Enclitic; ^[3Du.1Du]:^ankung           Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+! no [1--.1--] forms                                                                                             |
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[2Sg.1Sg]:^penga           Enclitic; ^[2Sg.1Pl]:^pekut           Enclitic; ^[2Sg.1Du]:^pekung           Enclitic;
+^[2Pl.1Sg]:^pesinga         Enclitic; ^[2Pl.1Pl]:^pesikut         Enclitic; ^[2Pl.1Du]:^pesikung         Enclitic;
+^[2Du.1Sg]:^petegnenga      Enclitic; ^[2Du.1Pl]:^petegnekut      Enclitic; ^[2Du.1Du]:^petegnekung      Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[4Sg.1Sg]:^mininga         Enclitic; ^[4Sg.1Pl]:^minikut         Enclitic; ^[4Sg.1Du]:^minikung         Enclitic;
+^[4Pl.1Sg]:^megtengnga      Enclitic; ^[4Pl.1Pl]:^megtekut        Enclitic; ^[4Pl.1Du]:^megtekung        Enclitic;
+^[4Du.1Sg]:^megnenga        Enclitic; ^[4Du.1Pl]:^megneku         Enclitic; ^[4Du.1Du]:^megnekung        Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[3Sg.2Sg]:^aten            Enclitic; ^[3Sg.2Pl]:^asi             Enclitic; ^[3Sg.2Du]:^astek            Enclitic;
+^[3Pl.2Sg]:^aten            Enclitic; ^[3Pl.2Pl]:^asi             Enclitic; ^[3Pl.2Du]:^astek            Enclitic;
+^[3Du.2Sg]:^aten            Enclitic; ^[3Du.2Pl]:^asi             Enclitic; ^[3Du.2Du]:^astek            Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[1Sg.2Sg]:^%{.m.%}mken     Enclitic; ^[1Sg.2Pl]:%{.m.%}^msi      Enclitic; ^[1Sg.2Du]:^%{.m.%}mtek      Enclitic;
+^[1Pl.2Sg]:^%{.m.%}mken     Enclitic; ^[1Pl.2Pl]:%{.m.%}^msi      Enclitic; ^[1Pl.2Du]:^%{.m.%}mtek      Enclitic;
+^[1Du.2Sg]:^%{.m.%}mken     Enclitic; ^[1Du.2Pl]:%{.m.%}^msi      Enclitic; ^[1Du.2Du]:^%{.m.%}mtek      Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+! no [2--.2--] forms                                                                                             |
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[4Sg.2Sg]:^miniten         Enclitic; ^[4Sg.2Pl]:^minisi          Enclitic; ^[4Sg.2Du]:^minitek          Enclitic;
+^[4Pl.2Sg]:^miniten         Enclitic; ^[4Pl.2Pl]:^minisi          Enclitic; ^[4Pl.2Du]:^minitek          Enclitic;
+^[4Du.2Sg]:^miniten         Enclitic; ^[4Du.2Pl]:^minisi          Enclitic; ^[4Du.2Du]:^minitek          Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[3Sg.4Sg]:^atni            Enclitic; ^[3Sg.4Pl]:^asteng          Enclitic; ^[3Sg.4Du]:^astek            Enclitic;
+^[3Pl.4Sg]:^atni            Enclitic; ^[3Pl.4Pl]:^asteng          Enclitic; ^[3Pl.4Du]:^astek            Enclitic;
+^[3Du.4Sg]:^atni            Enclitic; ^[3Du.4Pl]:^asteng          Enclitic; ^[3Du.4Du]:^astek            Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[1Sg.4Sg]:^%{.m.%}mni      Enclitic; ^[1Sg.4Pl]:%{.m.%}^mteng    Enclitic; ^[1Sg.4Du]:^%{.m.%}mtek      Enclitic;
+^[1Pl.4Sg]:^%{.m.%}mnni     Enclitic; ^[1Pl.4Pl]:%{.m.%}^mteng    Enclitic; ^[1Pl.4Du]:^%{.m.%}mtek      Enclitic;
+^[1Du.4Sg]:^%{.m.%}mtegnegu Enclitic; ^[1Du.4Pl]:%{.m.%}^mtegneki Enclitic; ^[1Du.4Du]:^%{.m.%}mtegnekek Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+^[2Sg.4Sg]:^pegu            Enclitic; ^[2Sg.4Pl]:^peki            Enclitic; ^[2Sg.4Du]:^pekek            Enclitic;
+                                      ^[2Sg.4Pl]:^peni            Enclitic;                                      | ! unclear if this is what Jacobson (2001) p.172 means
+^[2Pl.4Sg]:^pesigu          Enclitic; ^[2Pl.4Pl]:^pesiki          Enclitic; ^[2Pl.4Du]:^pesikek          Enclitic;
+^[2Du.4Sg]:^petegnegu       Enclitic; ^[2Du.4Pl]:^petegneki       Enclitic; ^[2Du.4Du]:^petegnekek       Enclitic;
+!-----------------------------------|-------------------------------------|--------------------------------------|
+! no [4--.4--] forms                                                                                             |
+!-----------------------------------|-------------------------------------|--------------------------------------|
 ! alternative forms for 4th person subject are described on Jacobson (2001) p.93
 ! and on p.172
 

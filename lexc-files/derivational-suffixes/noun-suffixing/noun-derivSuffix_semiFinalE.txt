@@ -58,6 +58,7 @@ LEXICON NounPostbaseVII
 ^–vyiigh(N→N):^%{.m.%}vyiigh                    NounPostbaseV;   ! crude N; makeshift N
 ^–vziigh(N→N):^%{.m.%}vziigh                    NounPostbaseV;   ! crude N; makeshift N
 
+^+kagh(N→N):^ka%{g%}h                           NounPostbaseIII; ! raw material for N
 ^~–kaghqagh(N→N):^%{.sf.%}%{.m.%}kaghqa%{g%}h   NounPostbaseIII; ! something to be used as N; future N
 
 ^+raghagh(N→N):^ragha%{g%}h                     NounPostbaseIII; ! brand new N
@@ -158,7 +159,6 @@ LEXICON NounPostbaseVII
 ^–nge(N→V):^%{.m.%}nge                     VerbPostbaseII;  ! to acquire N; to get N (permanently); to obtain N (permanently); to catch N (game)
 ^+te(N→V):^te                              VerbPostbaseII;  ! to go to N; to catch N; to obtain N; to spend N (time)
 ^–ghraag(N→V):^%{.m.%}ghraag               VerbPostbaseIII; ! to be somewhat like N
-^–ghrug(N→V):^%{.m.%}ghrug                 VerbPostbaseIII; ! big old one V-s 
 ^–lipag(N→V):^%{.m.%}lipag                 VerbPostbaseIII; ! to put in too much N
 ^~fmig(N→V):^mig                           VerbPostbaseIII; ! to hold in one's N; to put in one's N
 ^~%:(ng)isag(N→V):^%{.sf.%}isag            VerbPostbaseIII; ! to lack N; to need N
@@ -189,7 +189,7 @@ LEXICON NounPostbaseVII
 ^–liite(N→V):^%{.m.%}lii%{t%}e             VerbPostbaseV;   ! to have obtained (object) as one's N
 ^~fmete(N→V):^me%{t%}e                     VerbPostbaseV;   ! to be at N; to be in N
 ^–msuggiite(N→V):^%{.m.%}msuggii%{t%}e     VerbPostbaseV;   ! to completely lack N
-^~%:(ng)i%:ghute(N→V):^ii{t%}e             VerbPostbaseV;   ! to become N-less; to have lost one's N
+^~%:(ng)i%:ghute(N→V):^%{.sf.%}ii{t%}e     VerbPostbaseV;   ! to become N-less; to have lost one's N
 ^~%:(ng)ughte(N→V):^%{.sf.%}ugh%{t%}e      VerbPostbaseV;   ! to become N; for there to start to be N (weather condition)
 ^+nite(N→V):^ni%{t%}e                      VerbPostbaseV;   ! to taste of N
 ^–pagite(N→V):^%{.m.%}pagi%{t%}e           VerbPostbaseV;   ! for there not to be much N; to have few N
