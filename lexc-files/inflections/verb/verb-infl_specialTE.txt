@@ -172,10 +172,8 @@ LEXICON VerbInflVI
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-^[Ctmp.Intr]:^%{.at.%}negh  IntrCtmp; ! not sure how the contemporative mood works
-^[Ctmp.Trns]:^%{.at.%}negh  TrnsCtmp; ! with stems that end in -te
-^[Ctmp.Intr]:^%{.at.%}ngh   IntrCtmp;
-^[Ctmp.Trns]:^%{.at.%}ngh   TrnsCtmp;
+^[Ctmp.Intr]:^%{.at.%}negh  IntrCtmp;
+^[Ctmp.Trns]:^%{.at.%}negh  TrnsCtmp;
 
 !~~~~~~~~~~~~~~~
 ! subordinative

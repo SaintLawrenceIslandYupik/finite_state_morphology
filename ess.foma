@@ -413,7 +413,7 @@ define FinalE %{%.f%.%} -> 0     || [ (C) C ("^") C & ~MultiCharC & ~[h h] & ~[(
               %{%.f%.%} -> 0                                                                                   ;
 
 
-define SemiFinalE %{%.sf%.%} -> 0     || [ (C) C C & ~MultiCharC ] e g (h) "^" _                                           .o.
+define SemiFinalE %{%.sf%.%} -> 0     || [ (C) C ("^") C & ~MultiCharC ] e g (h) "^" _                                     .o.
                         [..] -> %{E%} ||      .#. ( MultiCharC | C ) FullVowel _ [ MultiCharC | C ] e g (h) "^" %{%.sf%.%} .o.
                            e -> 0     ||        [ ? - .#. ] [ MultiCharC | C ] _ g (h) "^" %{%.sf%.%}                      .o.
                   %{%.sf%.%} -> 0                                                                                          ;
@@ -467,8 +467,8 @@ define VelarUvularRounding n g n g -> n g n g w ,  ! e.g. sikugh^[Abs.3SgPoss.Sg
                                g h -> g h w     , 
                                g g -> w h       , 
                                  k -> k w       , 
-                                 q -> q w       || [ C | V - u ] _ u ["^"]+ [ i | a ]         .o.
-                                 g -> w         || [ C - n | V - u ] _ u ["^"]+ [ i | a ]     .o. ! -g shouldn't round by itself after -n
+                                 q -> q w       || [ C | V - u ] _ u ["^"]+ [ i | a ] .o.
+                                 g -> w         || [ V - u ] _ u ["^"]+ [ i | a ]     .o. ! -g shouldn't round by itself after -n
                            n g n g -> n g n g w ,  ! e.g. retwha^qu^[Ind.Trns]^[3Pl.3Sg] -> retwha^qu^0^at -> retwhaqwaat
                                n g -> n g w     , 
                              g h h -> g h h w   , 
@@ -664,16 +664,16 @@ define LabialTE e   -> 0     || V %{t%} _ "^" %{%.at%.%} [ m | v ]  .o. ! labial
             %{t%} e -> 0     ||       C _         "^" %{%.at%.%} m  ;   ! [Jacobson (2001) p.177]
 
 
-define ApicalTE y   -> s                                                       ,   ! apical -y [Jacobson (2001) p.177]
-                n   -> n n                                                     ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
-                r   -> r r     ||       %{t%} e "^" %{%.at%.%} _               .o. !   the only consonants before -te that double
-                g   -> g g                                                     ,   !   to show voicelessness are -g, -l, -gh
-                l   -> l l                                                     ,
-                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]           .o.
-                l   -> l l     ||       %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
-                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _               .o. ! for postbase @–lghii
-               [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h           .o. ! for postbase @–nghhagh, contemporative mood
-               [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q             ;   ! for postbase @–nqigte
+define ApicalTE y   -> s                                                               ,   ! apical -y [Jacobson (2001) p.177]
+                n   -> n n                                                             ,   ! apical -n and -r [Jacobson (2001) p.31 & p.90]
+                r   -> r r     ||       %{t%} e "^" %{%.at%.%} _                       .o. !   the only consonants before -te that double
+                g   -> g g                                                             ,   !   to show voicelessness are -g, -l, -gh
+                l   -> l l                                                             ,
+                g h -> g h h   || _ %{t%} e "^" %{%.at%.%} [ n | r ]                   .o.
+                l   -> l l     || [ V | C - l ] %{t%} e "^" %{%.at%.%} _ [ V | C - l ] .o. ! apical -l [Jacobson (2001) p.70]
+                g h -> e g h h || C %{t%} e "^" %{%.at%.%} l l _                       .o. ! for postbase @–lghii
+               [..] -> e       ||   %{t%} e "^" %{%.at%.%} n n _ g h                   .o. ! for postbase @–nghhagh, contemporative mood
+               [..] -> e       || C %{t%} e "^" %{%.at%.%} n n _ q                     ;   ! for postbase @–nqigte
 
 
 define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h .o. ! postbase @kaghaq
@@ -691,8 +691,8 @@ define DropTE %{t%} e -> 0  || [? - "^"] _ "^" %{%.at%.%} .o.
 ! CLEAN-UP RULES
 !----------------
 
-define AssimilateConsonants y -> s   ||  _ "^" [ k | q | g h h ]           .o. ! [Jacobson (2001) p.66] e.g. paasghu
-                            y -> s   || [ k | q | g h h w ] "^" _          .o.
+define AssimilateConsonants y -> s   ||  _ "^" [ p | k | q | g h h ]       .o. ! [Jacobson (2001) p.66] e.g. paasghu
+                            y -> s   || [ p | k | q | g h h w ] "^" _      .o. ! e.g. taape+yaghqaa -> taapsaghqaa
                             "^" [ %{t%} | t ] [z | y] -> s                 .o. ! e.g. [Intrg.Intr.2Sg] = (t)zin
                             [ %{t%} | t ] "^" [z | y] -> s                 .o. ! e.g.kaate[Intrg.Intr.2Sg] -> kaasin
                             z -> s   ||                Stop "^" _          .o. ! [Jacobson (2001) p.51] e.g. qiyaaqsin
@@ -776,10 +776,10 @@ define Rules [
     !-------------------------------
     ! -e dropping and hopping rules
     !-------------------------------
-    SemiFinalE           .o.
     ShortRootFinalE      .o.
     LongRootFinalE       .o.
     FinalE               .o.
+    SemiFinalE           .o.
     !-------------------------------
     ! consonant-related rules
     !-------------------------------
