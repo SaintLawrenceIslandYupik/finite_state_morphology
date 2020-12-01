@@ -4,6 +4,8 @@
 :author Emily Chen:
 :date   2020:
 
+USAGE: python2.7 scripts/analyze.py [path-to-analyzer-fomabin] [input-dir] [output-dir]
+
 '''
 import argparse
 import glob
@@ -14,13 +16,13 @@ import re
 from foma import *
 
 
-def analyze_input_file(t, input):
+def analyze_input_file(t, inputfile):
     '''
     :param t: the 'foma' analyzer
     :type  t: not sure tbh
-    :param input: file containing
+    :param inputfile: file containing
                   words to be analyzed
-    :type  input: str
+    :type  inputfile: str
 
     :return: a list of lists, where each sublist
              contains all of the analyses for each
@@ -35,13 +37,13 @@ def analyze_input_file(t, input):
     allAnalyses = []
 
     # print status update
-    print("working on " + input + "...")
+    print("working on " + inputfile + "...")
 
-    allWords    = prep_input(input)
+    allWords    = prep_input(inputfile)
     allAnalyses = []
 
     for word in allWords:
-        print(word)
+        #print(word)
 
         # actually a new sentence
         if len(word) > 5 and word[:5] == "SENT:":

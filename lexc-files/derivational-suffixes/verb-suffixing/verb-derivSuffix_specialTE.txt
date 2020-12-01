@@ -164,7 +164,6 @@ LEXICON VVPostbaseVI
 ^~aghte(V→V):^%{.f.%}agh%{t%}e                  VerbPostbaseV;   ! to suddenly V
 ^@–ghpagte(V→V):^%{.at.%}ghpag%{t%}e            VerbPostbaseV;   ! to V rapidly, suddenly or in a major way
 ^–ghraagte(V→V):^ghraag%{t%}e                   VerbPostbaseV;   ! to be somewhat V-er; to be partly V 
-^–ghte(V→V):^gh%{t%}e                           VerbPostbaseV;   ! to become V 
 ^@~%:(i/u)mafte(V→V):^%{.at.%}imaf%{t%}e        VerbPostbaseV;   ! how much subject evidently has V-ed!
 ^~f–laghate(V→V):^%{.f.%}lagha%{t%}e            VerbPostbaseV;   ! to have already V-ed together; to V as a group
 ^–lgute(V→V):^lgu%{t%}e                         VerbPostbaseV;   ! to V together with; to help (object) V
@@ -341,7 +340,7 @@ LEXICON SetAUXFlagFutureFrustrativeVI
 LEXICON EvidentialImputativeVI
 !=============================
 0:0                              PostAuxiliaryVI;
-^(pete)fte(V→V):^f%{t%}e         SetAUXFlagEvidentialImputativeV;  ! to evidently V or have V-ed
+^+(pete)fte(V→V):^f%{t%}e        SetAUXFlagEvidentialImputativeV;  ! to evidently V or have V-ed
 ^+yengagh(V→V):^yengagh          SetAUXFlagEvidentialImputativeI;  ! it looks like V (from the evidence I have heard or seen)
 ^@~fni(CmpdVbl):^%{.at.%}ni      SetAUXFlagEvidentialImputativeI;  ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
 ^@~fyuke(CmpdVbl):^%{.at.%}yuke  SetAUXFlagEvidentialImputativeII; ! to think that one is V-ing or has V-ed

@@ -1,0 +1,31 @@
+!=========================================
+LEXICON IntrOptFutNEG
+!  person/number markers for
+!    intransitive future negative optative
+!=========================================
+|-------------------|
+^[2Sg]:^ng  Enclitic;
+^[2Pl]:^si  Enclitic;
+^[2Du]:^tek Enclitic;
+|-------------------|
+
+!=======================================
+LEXICON TrnsOptFutNEG
+!  person/number markers for
+!    transitive future negative optative
+!=======================================
+|-----------------------|--------------------------|----------------------------|
+^[2Sg.3Sg]:^an  Enclitic; ^[2Sg.3Pl]:^ki   Enclitic; ^[2Sg.3Du]:^kek    Enclitic;
+^[2Pl.3Sg]:^an  Enclitic; ^[2Pl.3Pl]:^ki   Enclitic; ^[2Pl.3Du]:^kek    Enclitic;
+^[2Du.3Sg]:^an  Enclitic; ^[2Du.3Pl]:^ki   Enclitic; ^[2Du.3Du]:^kek    Enclitic;
+|-----------------------|--------------------------|----------------------------|
+^[2Sg.1Sg]:^nga Enclitic; ^[2Sg.1Pl]:^amta Enclitic; ^[2Sg.1Du]:^amtung Enclitic;
+^[2Pl.1Sg]:^nga Enclitic; ^[2Pl.1Pl]:^amta Enclitic; ^[2Pl.1Du]:^amtung Enclitic;
+^[2Du.1Sg]:^nga Enclitic; ^[2Du.1Pl]:^amta Enclitic; ^[2Du.1Du]:^amtung Enclitic;
+|-----------------------|--------------------------|----------------------------|
+^[2Sg.2Sg]:^ng  Enclitic; ^[2Sg.2Pl]:^si   Enclitic; ^[2Sg.2Du]:^tek    Enclitic;
+^[2Pl.2Sg]:^ng  Enclitic; ^[2Pl.2Pl]:^si   Enclitic; ^[2Pl.2Du]:^tek    Enclitic;
+^[2Du.2Sg]:^ng  Enclitic; ^[2Du.2Pl]:^si   Enclitic; ^[2Du.2Du]:^tek    Enclitic;
+|-----------------------|--------------------------|----------------------------|
+
+
