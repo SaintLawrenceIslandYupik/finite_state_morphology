@@ -1,5 +1,5 @@
 !================================
-LEXICON IntrCtmp
+LEXICON IntrCtmp 
 !  person/number markers for
 !     intransitive contemporative
 !================================
@@ -10,11 +10,13 @@ LEXICON IntrCtmp
 ^[3Du]:^agkenka Enclitic;
 !-----------------------|------------------------------|-----------------------|------------------------|
 
+
 !==============================
-LEXICON TrnsCtmp
+LEXICON TrnsCtmp 
 !  person/number markers for
 !     transitive contemporative
 !==============================
+
 !-----------------------------------|-------------------------------------|--------------------------------------|
 ^[3Sg.3Sg]:^agu             Enclitic; ^[3Sg.3Pl]:^aki             Enclitic; ^[3Sg.3Du]:^akek             Enclitic;
 ^[3Pl.3Sg]:^atgu            Enclitic; ^[3Pl.3Pl]:^atki            Enclitic; ^[3Pl.3Du]:^atkek            Enclitic;
@@ -25,7 +27,7 @@ LEXICON TrnsCtmp
 ^[1Du.3Sg]:^%{.m.%}mtegnegu Enclitic; ^[1Du.3Pl]:^%{.m.%}mtegneki Enclitic; ^[1Du.3Du]:^%{.m.%}mtegnekek Enclitic;
 !-----------------------------------|-------------------------------------|--------------------------------------|
 ^[2Sg.3Sg]:^pegu            Enclitic; ^[2Sg.3Pl]:^peki            Enclitic; ^[2Sg.3Du]:^pekek            Enclitic;
-                                      ^[2Sg.3Pl]:^peni            Enclitic;                                      | ! unclear if this is what Jacobson (2001) p.172 means
+                                      ^[2Sg.3Pl]:^peni            Enclitic; ! unclear if this is what Jacobson (2001) p.172 means
 ^[2Pl.3Sg]:^pesigu          Enclitic; ^[2Pl.3Pl]:^pesiki          Enclitic; ^[2Pl.3Du]:^pesikek          Enclitic;
 ^[2Du.3Sg]:^petegnegu       Enclitic; ^[2Du.3Pl]:^petegneki       Enclitic; ^[2Du.3Du]:^petegnekek       Enclitic;
 !-----------------------------------|-------------------------------------|--------------------------------------|
@@ -70,13 +72,12 @@ LEXICON TrnsCtmp
 ^[1Du.4Sg]:^%{.m.%}mtegnegu Enclitic; ^[1Du.4Pl]:%{.m.%}^mtegneki Enclitic; ^[1Du.4Du]:^%{.m.%}mtegnekek Enclitic;
 !-----------------------------------|-------------------------------------|--------------------------------------|
 ^[2Sg.4Sg]:^pegu            Enclitic; ^[2Sg.4Pl]:^peki            Enclitic; ^[2Sg.4Du]:^pekek            Enclitic;
-                                      ^[2Sg.4Pl]:^peni            Enclitic;                                      | ! unclear if this is what Jacobson (2001) p.172 means
+                                      ^[2Sg.4Pl]:^peni            Enclitic; | ! unclear if this is what Jacobson (2001) p.172 means
 ^[2Pl.4Sg]:^pesigu          Enclitic; ^[2Pl.4Pl]:^pesiki          Enclitic; ^[2Pl.4Du]:^pesikek          Enclitic;
 ^[2Du.4Sg]:^petegnegu       Enclitic; ^[2Du.4Pl]:^petegneki       Enclitic; ^[2Du.4Du]:^petegnekek       Enclitic;
 !-----------------------------------|-------------------------------------|--------------------------------------|
 ! no [4--.4--] forms                                                                                             |
 !-----------------------------------|-------------------------------------|--------------------------------------|
-! alternative forms for 4th person subject are described on Jacobson (2001) p.93
-! and on p.172
+! alternative forms for 4th person subject are described on Jacobson (2001) p.93 and on p.172
 
 

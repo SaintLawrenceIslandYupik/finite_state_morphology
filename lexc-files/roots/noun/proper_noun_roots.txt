@@ -21,7 +21,7 @@ LEXICON ProperNoun
 (GuessForeign)              GuessedForeign ;
 
 !--------------------
-! Inflection Class I
+! Class I
 !--------------------
 Aasa                     NounTagI; ! Singikpak Pt. site east of Southwest Cape on St. Lawrence Island
 Aghqitaghangha           NounTagI; ! southern part of Troutman Lake which is next to Gambell
@@ -40,13 +40,8 @@ Imtugmii                 NounTagI; ! a particular clan
 Ingleghnaghmii           NounTagI; ! a particular clan
 Kaneghyengesi            NounTagI; ! December
 Kangii                   NounTagI; ! Kangee Camp or Camp Collier and Kangee Bay on St. Lawrence Island
-Kelugnaate Naayvaa       NounTagI; ! Kiloknak Lagoon at east end of St. Lawrence Island
 Kenleghaghmii            NounTagI; ! a particular clan
 Kentanga                 NounTagI; ! Kintanga Bay (and Pt.) on St. Lawrence Island
-Kiigem Aghnaa            NounTagI; ! May
-Kiigem Qukaa             NounTagI; ! August
-Kimaawitem Naayvaa       NounTagI; ! Niyrakpak (Naayvaghpak) Lake (smaller lake just east along coast from St. Lawrence Island)
-Kisiim Naayghaa          NounTagI; ! hill with VABM "White" on St. Lawrence Island
 Kisii                    NounTagI; ! projection of land into lagoon from barrier isthmus toward east end of Koozata Lagoon on St. Lawrence Island
 Kitayeghmii              NounTagI; ! Chinese person
 Kiwatangaghmii           NounTagI; ! a particular clan
@@ -58,7 +53,6 @@ Maramaku                 NounTagI; ! a particular clan
 Mayughii                 NounTagI; ! Cape Myaughee on St. Lawrence Island
 Meregtemmii              NounTagI; ! a particular clan
 Naalla                   NounTagI; ! north beach of Gambell
-Naayvam kangii           NounTagI; ! site at western end of  Koozata Lagoon on St. Lawrence Island
 Nangupagaghmii           NounTagI; ! a particular clan
 Napaqutaghmii            NounTagI; ! a particular clan
 Nasqaghmii               NounTagI; ! a particular clan
@@ -67,42 +61,120 @@ Negsipa                  NounTagI; ! site on north shore of Koozata Lagoon
 Nengiighhaghmii          NounTagI; ! a particular clan
 Ngusighmii               NounTagI; ! a particular clan
 Nunaaghmii               NounTagI; ! a particular clan
-Nunivagem Angliviga      NounTagI; ! August
-Nunivagem Palighviga     NounTagI; ! August; September
-Penniighem Qalghighviga  NounTagI; ! September; December
 Pugughileghmii           NounTagI; ! a particular clan
 Pungughmii               NounTagI; ! a particular clan
 Punguqusighmii           NounTagI; ! a particular clan
 Pureki                   NounTagI; ! African; African-American; Black person
-Qaagaam Naayvaa          NounTagI; ! lake-like widening right up from where Akfayagak Creek (Aqfayegaak) empties in to Niyrakpak Lagoon (Naayvaghpak)
 Qaaramka                 NounTagI; ! a particular clan; Even (ethnic group)
-Qawaagem Ateghviga       NounTagI; ! September
 Qigi                     NounTagI; ! former village at Cape Kygynin at eastern end of Arakamchechen Island in Chukotka
 Qiwaaghmii               NounTagI; ! a particular clan
 Qiwaa                    NounTagI; ! Kivak
 Quurkeli                 NounTagI; ! hero/trickster raven (especially in Chukotkan stories)
 Quutmii                  NounTagI; ! Chukotkan person (especially a Yupik); Siberian (mainland) person
-Quyngim Qalghighviga     NounTagI; ! September
 Ruuseghmii               NounTagI; ! Russian
 Sanighmelngughmii        NounTagI; ! a particular clan
 Santi                    NounTagI; ! Sunday
 Sapeni                   NounTagI; ! Japanese
-Sekennaam kenlanga       NounTagI; ! site with VABM  "Geena" at northwest end of Sekinak Lagoon on St. Lawrence Island
 Siqlugmii                NounTagI; ! a particular clan
 Sivughqa                 NounTagI; ! site east of Cape Stoletiia in Chukotka
 Sivugnaa                 NounTagI; ! Seevoonah Mt. on St. Lawrence Island
 Sivuqaa                  NounTagI; ! Northeast Cape on St. Lawrence Island
-Tevelqum Naayghaa        NounTagI; ! mountain slightly to the east of Myghapowit Mtn. on St. Lawrence Island
 Tevnga                   NounTagI; ! portage route from Kange Camp (Kangii) across neck of land to south side of St. Lawrence Island
-Tungtum Qalghighviga     NounTagI; ! October
 Ungazighmii              NounTagI; ! a particular clan; people from Ungaziq
 Walqela                  NounTagI; ! Uel'kal' in Chukotka (southwest of main Yupik area)
 Welqela                  NounTagI; ! Uel'kal in Chukotka (southwest of main Yupik area)
 Yaqughmii                NounTagI; ! a particular clan
 Yarga                    NounTagI; ! site on south shore of Arakamchechen Island in Chukotka
+Kelugnaate(COMPOUND):Kelugnaate      #; ! Kiloknak Lagoon at east end of St. Lawrence Island
+Naayvaa(COMPOUND):Naayvaa            NounTagI; ! Kiloknak Lagoon at east end of St. Lawrence Island
+Kiigem(COMPOUND):Kiigem              #; ! May
+Aghnaa(COMPOUND):Aghnaa              NounTagI; ! May
+Kiigem(COMPOUND):Kiigem              #; ! August
+Qukaa(COMPOUND):Qukaa                NounTagI; ! August
+Kimaawitem(COMPOUND):Kimaawitem      #; ! Niyrakpak (Naayvaghpak) Lake (smaller lake just east along coast from St. Lawrence Island)
+Naayvaa(COMPOUND):Naayvaa            NounTagI; ! Niyrakpak (Naayvaghpak) Lake (smaller lake just east along coast from St. Lawrence Island)
+Kisiim(COMPOUND):Kisiim              #; ! hill with VABM "White" on St. Lawrence Island
+Naayghaa(COMPOUND):Naayghaa          NounTagI; ! hill with VABM "White" on St. Lawrence Island
+Naayvam(COMPOUND):Naayvam            #; ! site at western end of  Koozata Lagoon on St. Lawrence Island
+Kangii(COMPOUND):Kangii              NounTagI; ! site at western end of  Koozata Lagoon on St. Lawrence Island
+Nunivagem(COMPOUND):Nunivagem        #; ! August
+Angliviga(COMPOUND):Angliviga        NounTagI; ! August
+Nunivagem(COMPOUND):Nunivagem        #; ! August; September
+Palighviga(COMPOUND):Palighviga      NounTagI; ! August; September
+Penniighem(COMPOUND):Penniighem      #; ! September; December
+Qalghighviga(COMPOUND):Qalghighviga  NounTagI; ! September; December
+Qaagaam(COMPOUND):Qaagaam            #; ! lake-like widening right up from where Akfayagak Creek (Aqfayegaak) empties in to Niyrakpak Lagoon (Naayvaghpak)
+Naayvaa(COMPOUND):Naayvaa            NounTagI; ! lake-like widening right up from where Akfayagak Creek (Aqfayegaak) empties in to Niyrakpak Lagoon (Naayvaghpak)
+Qawaagem(COMPOUND):Qawaagem          #; ! September
+Ateghviga(COMPOUND):Ateghviga        NounTagI; ! September
+Quyngim(COMPOUND):Quyngim            #; ! September
+Qalghighviga(COMPOUND):Qalghighviga  NounTagI; ! September
+Sekennaam(COMPOUND):Sekennaam        #; ! site with VABM  "Geena" at northwest end of Sekinak Lagoon on St. Lawrence Island
+Kenlanga(COMPOUND):Kenlanga          NounTagI; ! site with VABM  "Geena" at northwest end of Sekinak Lagoon on St. Lawrence Island
+Tevelqum(COMPOUND):Tevelqum          #; ! mountain slightly to the east of Myghapowit Mtn. on St. Lawrence Island
+Naayghaa(COMPOUND):Naayghaa          NounTagI; ! mountain slightly to the east of Myghapowit Mtn. on St. Lawrence Island
+Tungtum(COMPOUND):Tungtum            #; ! October
+Qalghighviga(COMPOUND):Qalghighviga  NounTagI; ! October
+
+!-------------------------------------------------
+! proper nouns in Class I from the digital corpus
+!-------------------------------------------------
+Angalqatanyaanga     NounTagI;
+Anguli               NounTagI;
+Apeteki              NounTagI;
+Arepaki              NounTagI;
+Ggiilu               NounTagI;
+Ggutlu               NounTagI;
+Gima                 NounTagI;
+Iistumii             NounTagI;
+Ipi                  NounTagI;
+Jimi                 NounTagI;
+Kanu                 NounTagI;
+Kellu                NounTagI;
+Kerita               NounTagI;
+Ketngigtumii         NounTagI;
+Kinu                 NounTagI;
+Kunooka              NounTagI;
+Linii                NounTagI;
+Maarpa               NounTagI;
+Maasu                NounTagI;
+Miri                 NounTagI;
+Paansu               NounTagI;
+Paapa                NounTagI;
+Pantu                NounTagI;
+Papiwari             NounTagI;
+Pata                 NounTagI;
+Pati                 NounTagI;
+Pertu                NounTagI;
+Petga                NounTagI;
+Qaala                NounTagI;
+Qugtuqaghtuurughmii  NounTagI;
+Raaquu               NounTagI;
+Sali                 NounTagI;
+Sima                 NounTagI;
+Sipela               NounTagI;
+Tafi                 NounTagI;
+Sivuglleghii         NounTagI;
+Tafi                 NounTagI;
+Sivuglleghii         NounTagI;
+Tafi                 NounTagI;
+Taghnelghii          NounTagI;
+Talli                NounTagI;
+Tati                 NounTagI;
+Temkeruu             NounTagI;
+Tiigwri              NounTagI;
+Tinana               NounTagI;
+Tiwla                NounTagI;
+Ullungagtuuru        NounTagI;
+Umiilgu              NounTagI;
+Unayaanga            NounTagI;
+Uulu                 NounTagI;
+Uvi                  NounTagI;
+Walanga              NounTagI;
+
 
 !---------------------
-! Inflection Class II
+! Class II
 !---------------------
 Aangqaghvig       NounTagII; ! June; July
 Aghnaghaag        NounTagII; ! Aghnak River on St. Lawrence Island
@@ -191,12 +263,27 @@ Uuyavag           NounTagII; ! area to southwest of presentday Gambell
 Yupig             NounTagII; ! Siberian / St. Lawrence Island Eskimo person; honest
 Yuughapag         NounTagII; ! Sekinak Lagoon (or the spit between it and the ocean) on St. Lawrence Island
 
+!--------------------------------------------------
+! proper nouns in Class II from the digital corpus
+!--------------------------------------------------
+Aqet      NounTagII;
+Kapig     NounTagII;
+Karvig    NounTagII;
+Masig     NounTagII;
+Otayahug  NounTagII;
+Qunglug   NounTagII;
+Quwaaren  NounTagII;
+Sulpig    NounTagII;
+Siksig    NounTagII;
+Sivel     NounTagII;
+Tallimag  NounTagII;
+Wur       NounTagII;
+
 !----------------------
-! Inflection Class III
+! Class III
 !----------------------
 Aasagh:Aasa%{g%}h                                        NounTagIII; ! former village site west of Cape Chukotskii in Chukotka
 Aasligh:Aasli%{g%}h                                      NounTagIII; ! former village on east shore of Provideniia Bay; Plover Bay in Chukotka
-Agleghnalghii Taghneghagh:Agleghnalghii Taghnegha%{g%}h  NounTagIII; ! Holy Ghost
 Angetequgh:Angetequ%{g%}h                                NounTagIII; ! former village west of Cape Stoletia in Chukotka
 Aqeftapagyagh:Aqeftapagya%{g%}h                          NounTagIII; ! point on western shore of Niyrakpak Lagoon (Naayvaghpak) on St. Lawrence Island
 Aqulakagh:Aqulaka%{g%}h                                  NounTagIII; ! Akoolokok Pt. on St. Lawrence Island
@@ -243,7 +330,6 @@ Nunlegragh:Nunlegra%{g%}h                                NounTagIII; ! Preobrazh
 Pegetkagh:Pegetka%{g%}h                                  NounTagIII; ! Kookoolik Hill on St. Lawrence Island
 Pengetaaghhagh:Pengetaaghha%{g%}h                        NounTagIII; ! small hill just north of Myghapowit Mt. with VABM "Black"
 Pengughqagh:Pengughqa%{g%}h                              NounTagIII; ! a site with a sizable mound about a mile back from Camp Collier (Kangii) on St. Lawrence Island
-Pinilghii Ungipagh:Pinilghii Ungipa%{g%}h                NounTagIII; ! Gospel
 Pugughillghagh:Pugughillgha%{g%}h                        NounTagIII; ! site on Kiveepuk Bay on St. Lawrence Island
 Punguqusigh:Punguqusi%{g%}h                              NounTagIII; ! Pongokosit Spit by Niyrakpak Lagoon (Naayvaghpak) on St. lawrence Island
 Qaasqagh:Qaasqa%{g%}h                                    NounTagIII; ! west beach of Gambell
@@ -282,17 +368,48 @@ Unguvigagh:Unguviga%{g%}h                                NounTagIII; ! Ongoveyuk
 Utngusighnagh:Utngusighna%{g%}h                          NounTagIII; ! Olngooseenuk Mtn. on St. Lawrence Island
 Yaagmelngugh:Yaagmelngu%{g%}h                            NounTagIII; ! Yaghmelngak Mtn. on St. Lawrence Island
 Yaywaalingiighhagh:Yaywaalingiighha%{g%}h                NounTagIII; ! hill with VABM "Negro" on St. Lawrence Island
+Agleghnalghii(COMPOUND):Agleghnalghii                    #; ! Holy Ghost
+Taghneghagh(COMPOUND):Taghnegha%{g%}h                    NounTagIII; ! Holy Ghost
+Pinilghii(COMPOUND):Pinilghii                            #; ! Gospel
+Ungipagh(COMPOUND):Ungipa%{g%}h                          NounTagIII; ! Gospel
+
+!---------------------------------------------------
+! proper nouns in Class III from the digital corpus
+!---------------------------------------------------
+Aghveghtugh      NounTagIII;
+Angalgagh        NounTagIII;
+Apasengagh       NounTagIII;
+Kulusigh         NounTagIII;
+Legrengiighhagh  NounTagIII;
+Paapgagh         NounTagIII;
+Paaslaqestagh    NounTagIII;
+Piisagh          NounTagIII;
+Piqalagh         NounTagIII;
+Qaneghmigugh     NounTagIII;
+Qapinagh         NounTagIII;
+Qiitagh          NounTagIII;
+Qughrughagh      NounTagIII;
+Siimiiyagh       NounTagIII;
+Tutakemsegagh    NounTagIII;
+
 
 !---------------------
-! Inflection Class IV
+! Class IV
 !---------------------
 Ayuqligh   NounTagIV; ! mainland Alaskan Eskimo
 Imaqligh   NounTagIV; ! Big Diomede Island
 Sivungagh  NounTagIV; ! Savoonga
 Sivuqagh   NounTagIV; ! Gambell; St. Lawrence Island (in general)
 
+!-------------------------------------------------
+! proper nouns in Class IV from the digital corpus
+!-------------------------------------------------
+Kiiluugh        NounTagIV;
+Kuyapegrugaagh  NounTagIV;
+Mayughaagh      NounTagIV;
+
 !--------------------
-! Inflection Class V
+! Class V
 !--------------------
 Aglughaagh      NounTagV; ! site on northern shore of Koozata Lagoon near Silook camp
 Akitfawaagh     NounTagV; ! site on Powooiliak Bay at the west end of Koozata Lagoon on St. Lawrence Island
@@ -307,8 +424,12 @@ Quyillgaagh     NounTagV; ! non-reindeer-owning (generally poor) Chukchi
 Sivaagh         NounTagV; ! Sevak Camp on St. Lawrence Island
 Tekeghaghwaagh  NounTagV; ! point on Powooiliak Bay  on St. Lawrence Island
 
+!-------------------------------------------------
+! proper nouns in Class I from the digital corpus
+!-------------------------------------------------
+
 !---------------------
-! Inflection Class VI
+! Class VI
 !---------------------
 
 Avate:Ava%{t%}e                NounTagVI; ! former village in Chukotka; East Head
@@ -325,19 +446,24 @@ Uvingete:Uvinge%{t%}e          NounTagVI; ! Anadyr in Chukotka (well southwest o
 Wingete:Winge%{t%}e            NounTagVI; ! Anadyr in Chukotka (well southwest of the usual Yupik area)
 Yugulighiste:Yugulighis%{t%}e  NounTagVI; ! the Saviour
 
+!--------------------------------------------------
+! proper nouns in Class VI from the digital corpus
+!--------------------------------------------------
+Efkangate    NounTagVI;
+Teketaate    NounTagVI; 
+Ukaamangate  NounTagVI;
+
+
 !----------------------
-! Inflection Class VII
+! Class VII
 !----------------------
-Aallgha aghnegh          NounTagVII; ! Monday
 Aghnegh                  NounTagVII; ! site in Chukotka
 Aghsughalegh             NounTagVII; ! site on the coast east of Gambell at Tiflighak Bay
 Aghvighteg               NounTagVII; ! projection of land into lagoon from near the center of the barrier isthmus of Koozata Lagoon on St. Lawrence Island
-Aghvillgha aghnegh       NounTagVII; ! Friday
 Akulkeg                  NounTagVII; ! site at point north and west of Akeftapak on St. Lawrence Island
 Ategh                    NounTagVII; ! Atuk Mtn. (and the salty lake near the summit) on St. Lawrence Island
 Ayvigtegh                NounTagVII; ! Aivichtik River and Camp Iveetok at its mouth on St. Lawrence Island; site on the coast east of Gambell; Aivichtik River and Camp Iveetok at its mouth on St. Lawrence Island
 Elqiileg                 NounTagVII; ! second point on west coast south of Gambell; Nekeelit Pt. on St. Lawrence Island
-Estamallgha aghnegh      NounTagVII; ! Wednesday
 Ikuygeg                  NounTagVII; ! Ikoygak Cr. on St. Lawrence Island
 Imegyaaleg               NounTagVII; ! Emekyalok Pt. on St. Lawrence Island
 Kagkasalegh              NounTagVII; ! Kaghkusalik Pt. on St. Lawrence Island
@@ -345,14 +471,12 @@ Kiiteg                   NounTagVII; ! Koozata River on St. Lawrence Island
 Kiiwaagheg               NounTagVII; ! Kewagek Cr. on St. Lawrence Island
 Kiyaghnegh               NounTagVII; ! way of life; God
 Kukuleg                  NounTagVII; ! Kookoolik
-Maaghraghvinleg aghnegh  NounTagVII; ! Saturday
 Maqnegh                  NounTagVII; ! Maknik Lagoon on St. Lawrence Island
 Nengluveg                NounTagVII; ! site on north shore of Koozata Lagoon
 Nunaageg                 NounTagVII; ! Stolbi Rocks off the northeast coast of St. Lawrence Island
 Nunaleg                  NounTagVII; ! Preobrazhenie Bay and Nunligran (village) in Chukotka
 Pagilegh                 NounTagVII; ! former village at Cape Yyergyn on Arakamchechen Island in Chukotka
 Peniileg                 NounTagVII; ! Punelok Bay on St. Lawrence Island
-Pingayaa aghnegh         NounTagVII; ! Tuesday
 Pugughilegh              NounTagVII; ! Powooiliak on St. Lawrence Island; Southwest Cape site on St. Lawrence Island
 Qagupaleg                NounTagVII; ! third point on west coast south of Gambell; Kaghoopalik Pt. on St. Lawrence Island
 Qaplegh                  NounTagVII; ! cliff near Sireniki in Chukotka
@@ -364,8 +488,6 @@ Sighinegh                NounTagVII; ! Sireniki
 Sighineg                 NounTagVII; ! Sireniki
 Siknegh                  NounTagVII; ! Siknik Cape and Siknik Trapping Camp on St. Lawrence Island
 Siquveg                  NounTagVII; ! Seakoovook Bay on St. Lawrence Island
-Sivuligh aghnegh         NounTagVII; ! Sunday
-Tallimaa aghnegh         NounTagVII; ! Thursday
 Tapisageg                NounTagVII; ! Tapisaghak River on St. Lawrence Island
 Tateg                    NounTagVII; ! Tatik Pt. on St. Lawrence Island
 Tepraageg                NounTagVII; ! site on Akeftapak Bay on St. Lawrence Island
@@ -374,15 +496,40 @@ Ugriilegh                NounTagVII; ! former village site near Ureliki in Chuko
 Umeyaaleg                NounTagVII; ! Oomeyaluk Bay on St. Lawrence Island
 Uulegh                   NounTagVII; ! Uelen (well north of the (Central Siberian) Yupik area)
 Uynegh                   NounTagVII; ! first point on west coast south of Gambell; Ooynik Pt. on St. Lawrence Island
-Yuug Savileg             NounTagVII; ! the constellation of Orion
+Aallgha(COMPOUND):Aallgha                  #; ! Monday
+aghnegh(COMPOUND):aghnegh                  NounTagVII; ! Monday
+Aghvillgha(COMPOUND):Aghvillgha            #; ! Friday
+aghnegh(COMPOUND):aghnegh                  NounTagVII; ! Friday
+Estamallgha(COMPOUND):Estamallgha          #; ! Wednesday
+aghnegh(COMPOUND):aghnegh                  NounTagVII; ! Wednesday
+Maaghraghvinleg(COMPOUND):Maaghraghvinleg  #; ! Saturday
+aghnegh(COMPOUND):aghnegh                  NounTagVII; ! Saturday
+Pingayaa(COMPOUND):Pingayaa                #; ! Tuesday
+aghnegh(COMPOUND):aghnegh                  NounTagVII; ! Tuesday
+Sivuligh(COMPOUND):Sivuligh                #; ! Sunday
+aghnegh(COMPOUND):aghnegh                  NounTagVII; ! Sunday
+Tallimaa(COMPOUND):Tallimaa                #; ! Thursday
+aghnegh(COMPOUND):aghnegh                  NounTagVII; ! Thursday
+Yuug(COMPOUND):Yuug                        #; ! the constellation of Orion
+Savileg(COMPOUND):Savileg                  NounTagVII; ! the constellation of Orion
 
 !-----------------------
-! Inflection Class VIII
+! Class VIII
 !-----------------------
 Karake     NounTagVIII; ! Koryak; American Indian
 Kuusme     NounTagVIII; ! Christmas
 Laluramke  NounTagVIII; ! white person; Caucasian
 Naalle     NounTagVIII; ! North Beach at Gambell
+
+!----------------------------------------------------
+! proper nouns in Class VIII from the digital corpus
+!----------------------------------------------------
+Armaramke  NounTagVIII;
+Baalalike  NounTagVIII;
+Kaambele   NounTagVIII;
+Nuume      NounTagVIII;
+Ruuse      NounTagVIII;
+Wiinge     NounTagVIII;
 
 
 LEXICON GuessedForeign

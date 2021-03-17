@@ -4,13 +4,16 @@ all: ess.lexc $(foreach x,asciiarrow ess f2i f2is f2s fi2s g2i g2is g2s gi2s l2i
 ess.lexc: lexc-files/header.txt lexc-files/emotional_roots.txt lexc-files/interrogatives.txt lexc-files/demonstratives.txt lexc-files/dem-suffixes.txt lexc-files/numerals.txt lexc-files/particles.txt lexc-files/positionals.txt lexc-files/postural_roots.txt lexc-files/pronouns.txt lexc-files/quantifier_qualifier.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/verb_root_ete.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt lexc-files/punctuation.txt
 	@cat $^ > $@
 
-exceptions.lexc: exceptions/exceptions-header.txt exceptions/exceptions.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/dem-suffixes.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
+exceptions.lexc: exceptions/header.txt exceptions/exceptions.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/dem-suffixes.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
 	@cat $^ > $@
 
-parallel.lexc: parallel/parallel-header.txt parallel/parallels.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
+parallel.lexc: parallel/header.txt parallel/parallels.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
 	@cat $^ > $@
 
-ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc
+foreign.lexc: foreign/header.txt foreign/foreign.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
+	@cat $^ > $@
+
+ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc foreign.lexc
 	foma -l ess.foma -e "save defined $@" -s
 
 lowercase.fomabin: ess.fomabin
@@ -63,6 +66,13 @@ a2s.fomabin: ess.fomabin
 
 asciiarrow.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push GrammarAscii" -e "save stack $@" -s
+
+full_l2s.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push FullLexicalToSurfaceGrammar" -e "save stack $@" -s
+
+full_l2is.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push FullLexicalToIntermediateWithPhonology" -e "save stack $@" -s
+
 
 %.interactive: %.fomabin
 	foma -e "load stack $<"

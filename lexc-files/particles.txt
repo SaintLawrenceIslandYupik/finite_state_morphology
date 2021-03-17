@@ -5,6 +5,7 @@ LEXICON Particle
 a                     PtclTag; ! oh!
 aa                    PtclTag; ! darn!; yes
 aa-a                  PtclTag; ! yes
+a-aa                  PtclTag; ! yes
 aagna                 PtclTag; ! that one over there; that one going away
 aam                   PtclTag; ! "hesitation sound like English "aah" or "um"
 aamna                 PtclTag; ! that one over there; the one across the sea; that one on the other side of something; that one over the mountains; that one in the other room
@@ -75,6 +76,7 @@ aqfaasnaq             PtclTag; ! running
 aqsaghmikun           PtclTag; ! back to back
 arekull               PtclTag; ! but it had already happened; already
 arekulnguq            PtclTag; ! but it had already happened
+arekulngam            PtclTag; ! but it had already happened
 asangsi               PtclTag; ! furthermore; even more so
 asanut                PtclTag; ! as long as; at least
 asitmun               PtclTag; ! downwards
@@ -102,6 +104,8 @@ awilleqa              PtclTag; ! so that’s how it is!
 awituwaq              PtclTag; ! probably
 awnepa                PtclTag; ! probably; maybe; must be
 ay                    PtclTag; ! what did you say?; huh?           
+aay                   PtclTag; ! what did you say?; huh?           
+a-ay                  PtclTag; ! what did you say?; huh?           
 ayumiinneghaqu        PtclTag; ! yearly; by end of the year
 ayumiqun              PtclTag; ! next year
 ayumiquyagu           PtclTag; ! next year; the following year
@@ -113,6 +117,7 @@ ellmaakwaaqun         PtclTag; ! at some later time
 ellmakwaaqun          PtclTag; ! at some later time
 elngaatall            PtclTag; ! very; very much
 elngaatatlu           PtclTag; ! very much also
+emaay                 PtclTag; ! mother! (vocative used in stories)
 emta                  PtclTag; ! this time act differently; for a change; instead; again
 en-nanaayuq           PtclTag; ! maybe; perhaps
 enan                  PtclTag; ! and then; and further; later on; when better conditions prevail
@@ -125,6 +130,7 @@ eng                   PtclTag; ! now; next
 enkaam                PtclTag; ! then (in temporal sequence); furthermore; and; also
 enkaamllu             PtclTag; ! and also
 enkaamngam            PtclTag; ! and then again
+enkaangam             PtclTag; ! and then again
 enmis                 PtclTag; ! already (surprising though it may seem); unexpectedly; even
 enngaatall            PtclTag; ! very; very much.
 enraq                 PtclTag; ! but; yet; still; however
@@ -143,15 +149,19 @@ gigik                 PtclTag; ! expression of exasperation and/or impatience
 giniwan               PtclTag; ! expression of hopeless expectation or longing
 guguk                 PtclTag; ! start!; go!
 guq                   PtclTag; ! yes
+haluu                 PtclTag; ! hello
 haam                  PtclTag; ! enough!; that's enough; all right; so be it
 haamangam             PtclTag; ! enough!; that's enough; all right; so be it
 haaw                  PtclTag; ! is anyone there?
 hay                   PtclTag; ! what did you say?; huh?
 heng                  PtclTag; ! now; next
 huk                   PtclTag; ! oops!; watch out!; oh dear!
+huy                   PtclTag; ! what did you say?; anyone there?
 huuy                  PtclTag; ! what did you say?; anyone there?
 i                     PtclTag; ! oops!
+ii                    PtclTag; ! yes
 i-ik                  PtclTag; ! expression of surprise or annoyance
+ii-ik                 PtclTag; ! expression of surprise or annoyance
 igamsiqanaghhalek     PtclTag; ! thank you very much; oh, how grateful that makes one!
 ighivgaq              PtclTag; ! yesterday; evening; yesterday evening; last night
 ighivgaqun            PtclTag; ! this evening; tonight
@@ -235,6 +245,7 @@ ketaatkin             PtclTag; ! but unfortunately
 ketamsaswha           PtclTag; ! at once; suddenly; unexpectedly; in a little while with determination
 ketanqusnaq           PtclTag; ! running fast
 ketwhelqun            PtclTag; ! still; finally
+kgwugg                PtclTag; ! interjection (Level 1.SQUIRREL)
 kii                   PtclTag; ! gee!; oh!
 kiik                  PtclTag; ! summer; last summer
 kiikun                PtclTag; ! next summer
@@ -307,12 +318,14 @@ naten                 PtclTag; ! how; which way; somehow
 natengiighhaq         PtclTag; ! a little bit; slightly; temporarily
 natentuq              PtclTag; ! what if; I wonder if
 ngaalgeliigteng       PtclTag; ! anywhere; everywhere; back an forth
+ngagull               PtclTag; ! part of a chant (Legends II.DEMONS)
 ngawaq                PtclTag; ! you know; after all
 nikim                 PtclTag; ! as if; just because
 nikimqun              PtclTag; ! as if; just because
 nunmaakw              PtclTag; ! slowly
 nunmaak               PtclTag; ! slowly
 nunmaaggaq            PtclTag; ! slowly
+nunmaawhaq            PtclTag; ! slowly
 nutaan                PtclTag; ! just now; for the first time
 nutem                 PtclTag; ! like this from the beginning; always (from the beginning)
 nuuskagllagan         PtclTag; ! suddenly
@@ -368,6 +381,8 @@ qemalngam             PtclTag; ! consequently
 qenwat                PtclTag; ! finally; as an understandable result of what has come before; pretty soon; then
 qesiqun               PtclTag; ! on the contrary; but
 qesikqun              PtclTag; ! on the contrary; but
+qghuugh               PtclTag; ! interjection (Level 1.RAVENWOLF)
+qghwaaghwq            PtclTag; ! interjection (Level 2.MOUNTAINOUTCROP)
 qitik                 PtclTag; ! not until; if not for; until finally
 qituk                 PtclTag; ! not until; if not for; until finally
 quganaghhalek         PtclTag; ! how disgraceful!; how shameful!
@@ -375,6 +390,9 @@ quganakruggaghmeng    PtclTag; ! how dare he!
 quganaqruggalek       PtclTag; ! what a reckless person!; what a bad person!
 qukiinaani            PtclTag; ! unimportant; doesn’t matter one way or the other
 qunereng              PtclTag; ! furthermore; moreover
+qung                  PtclTag; ! part of a chant (Sikiggaankuk Meteghllugenkuk)
+qughlung              PtclTag; ! part of a chant (Sikiggaankuk Meteghllugenkuk)
+quq                   PtclTag; ! raven call
 quulvani              PtclTag; ! up high
 quun                  PtclTag; ! you see; you know
 quunpeng              PtclTag; ! always; at all times
@@ -409,6 +427,7 @@ suna                  PtclTag; ! suddenly; unexpectedly
 sunami                PtclTag; ! suddenly; unexpectedly
 sunanguq              PtclTag; ! I hope so
 taagken               PtclTag; ! from there; and then; then; so; consequently
+taam                  PtclTag; ! this one
 taameng               PtclTag; ! no wonder!; so that's why!
 taawa                 PtclTag; ! here it is!; there it is!; it's ready!
 taawanginaq           PtclTag; ! but; and yet; only; however
@@ -428,6 +447,7 @@ tawatenta             PtclTag; ! fine like that
 tawatestaghhiinaq     PtclTag; ! like that all the time
 tefaay                PtclTag; ! an expression made at the end of a story
 tegtaan               PtclTag; ! working together
+tehem                 PtclTag; ! ahem
 temngi                PtclTag; ! for no real or particular reason; any old way; without plan or forethought
 tengvi                PtclTag; ! wrongly; opposite
 tumangani             PtclTag; ! on the way
@@ -458,6 +478,7 @@ uramra                PtclTag; ! while awake
 urang                 PtclTag; ! very much
 uteghmun              PtclTag; ! homeward; backward; returning; on the contrary
 uugg                  PtclTag; ! particle used with reference to something dirty 
+uhuk                  PtclTag; ! go!; start!
 uuhuk                 PtclTag; ! go!; start!
 uuhuuk                PtclTag; ! exclamatory particle said when one is about to lift a heavy object
 uuk                   PtclTag; ! oops!; watch out!; oh dear!

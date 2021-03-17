@@ -1,6 +1,7 @@
 !================
 Multichar_Symbols
 !================
+(SANDHI)
 @P.AUX.TRUE@
 @R.AUX.TRUE@
 @D.AUX.TRUE@
@@ -47,7 +48,8 @@ Multichar_Symbols
 !-----------------------------
 ! morphological tags for nouns
 !-----------------------------
-(N)    ! noun root
+(COMPOUND) ! compound noun root
+(N)        ! noun root
 
 (N→N)  ! noun-elaborating postbase
 (N→V)  ! verbalizing postbase
@@ -285,8 +287,8 @@ Multichar_Symbols
 !--------------------
 (DEM→N)        ! demonstrative to noun stem
 (DEM→V)        ! demonstrative to verb stem
-(VOC)          ! vocative
 [Anaphor]      ! for the anaphoric prefix
+(DEM.PRO)
 (DEM.PRO.Abs.Sg)      (DEM.PRO.AbsRel.Pl)   (DEM.PRO.AbsRel.Du)
 (DEM.PRO.Rel.Sg)
 (DEM.PRO.Loc.Sg)      (DEM.PRO.Loc.Pl)      (DEM.PRO.Loc.Du)

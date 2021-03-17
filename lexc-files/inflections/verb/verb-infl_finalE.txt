@@ -173,10 +173,8 @@ LEXICON VerbInflII
 !~~~~~~~~~~~~~~~~
 ! contemporative 
 !~~~~~~~~~~~~~~~~
-^[Ctmp.Intr]:^%{.f.%}negh  IntrCtmp; e.g. taaqneghaani [Speaker 14, 2018-07-19]
-^[Ctmp.Trns]:^%{.f.%}negh  TrnsCtmp; 
-^[Ctmp.Intr]:^ngh          IntrCtmp; e.g. pugimenghani [Qungluk Liillghii Pugimameng]
-^[Ctmp.Trns]:^ngh          TrnsCtmp; 
+^[Ctmp.Intr]:^n%{E%}gh  IntrCtmp;
+^[Ctmp.Trns]:^n%{E%}gh  TrnsCtmp;
 
 !~~~~~~~~~~~~~~~
 ! subordinative

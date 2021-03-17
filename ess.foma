@@ -101,14 +101,29 @@ define PossibleYupikName  [ GuessedNameAIU.l                  |
                             GuessedNameEDrop.l                |
                             GuessedNameEHop.l                 ];
 
-define GuessedForeignName [ "(GUESS)" "(NAME)" "(FOREIGN)" ]:0 [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ]   [
-                          [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ] |
-                          [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z ] |
-                          [ "\u02BC" ] ]* ("-");
+define LowercaseForeignAlphabet [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z ];
+define UppercaseForeignAlphabet [ A | B | "C" | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | "V" | W | X | Y | Z ];
 
-define GuessedForeignWord [ "(GUESS)" "(FOREIGN)" ]:0 [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z | "\u02BC" ] [ a | b | c | d | e | f | g | h | i | j | k | l | m | n | o | p | q | r | s | t | u |  v  | w | x | y | z | "\u02BC" ]* ("-");
+define GuessedForeignName [ "(GUESS)" "(NAME)" "(FOREIGN)" ]:0 UppercaseForeignAlphabet [ UppercaseForeignAlphabet | LowercaseForeignAlphabet | "\u02BC" ]* ("-");
+
+define GuessedForeignWord [ "(GUESS)" "(FOREIGN)" ]:0 LowercaseForeignAlphabet [ LowercaseForeignAlphabet | "\u02BC" ]* ("-");
 
 define GuessedForeign [ GuessedForeignName | GuessedForeignWord ];
+
+
+!=========
+! NUMBERS 
+!=========
+
+! NOTE: The Number lexicon does slightly overgenerate because of numerals.txt
+!       Digits are permitted to be followed by a dash or nothing, so "1" and "1-" are both valid forms on the lower side 
+!       Digits are also encoded to inflect as vowel-ending and consonant-ending roots. I haven't seen enough examples to make a case for one over the other
+!       (Emily 2021-03-17)
+
+define Digit [ "0" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ];
+
+define Number ("$") Digit+ ("," Digit^3) ("." Digit^2);
+
 
 !===============
 ! READ LEXICONS
@@ -123,6 +138,11 @@ read lexc parallel.lexc
 eliminate flag AUX
 define ParallelNoFlags;
 define ParallelForms ParallelNoFlags;
+
+read lexc foreign.lexc
+eliminate flag AUX
+define ForeignNoFlags;
+define ForeignWords ForeignNoFlags;
 
 read lexc ess.lexc
 substitute defined GuessedRootAIU for "(GuessAIU)"
@@ -147,6 +167,7 @@ substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
 substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
 substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
 substitute defined GuessedForeign                  for "(GuessForeign)"
+substitute defined Number for "(DIGIT)"
 eliminate flag AUX
 define LexiconNoFlags;
 define Lexicon LexiconNoFlags;
@@ -386,31 +407,69 @@ define Uppercase [ a:A | i:I | u:U | e:E |
                    g:G | w:W | s:S | f:F |
                    s:S | m:M | n:N | v:"V" ] ?* | ?* ;
 
+define AllowUppercase [ "a" (<-) "A" ] .o. [ "i" (<-) "I" ] .o. [ "u" (<-) "U" ] .o. [ "e" (<-) "E" ] .o.
+                      [ "p" (<-) "P" ] .o. [ "t" (<-) "T" ] .o. [ "k" (<-) "K" ] .o. [ "q" (<-) "Q" ] .o.
+                      [ "l" (<-) "L" ] .o. [ "z" (<-) "Z" ] .o. [ "y" (<-) "Y" ] .o. [ "r" (<-) "R" ] .o.
+                      [ "g" (<-) "G" ] .o. [ "w" (<-) "W" ] .o. [ "s" (<-) "S" ] .o. [ "f" (<-) "F" ] .o.
+                      [ "s" (<-) "S" ] .o. [ "m" (<-) "M" ] .o. [ "n" (<-) "N" ] .o. [ "v" (<-) "V" ];
+
 define AsciiArrow "(N→N)" (->) "(N->N)" ,,
                   "(N→V)" (->) "(N->V)" ,,
                   "(V→V)" (->) "(V->V)" ,,
                   "(V→N)" (->) "(V->N)" ;
 
 define Minus2Hyphen "–" (->) "-" ;
-                   
-define AllowUppercase [ "a" (<-) "A" ] .o. [ "i" (<-) "I" ] .o. [ "u" (<-) "U" ] .o. [ "e" (<-) "E" ] .o.
-                      [ "p" (<-) "P" ] .o. [ "t" (<-) "T" ] .o. [ "k" (<-) "K" ] .o. [ "q" (<-) "Q" ] .o.
-                      [ "l" (<-) "L" ] .o. [ "z" (<-) "Z" ] .o. [ "y" (<-) "Y" ] .o. [ "r" (<-) "R" ] .o.
-                      [ "g" (<-) "G" ] .o. [ "w" (<-) "W" ] .o. [ "s" (<-) "S" ] .o. [ "f" (<-) "F" ] .o.
-                      [ "s" (<-) "S" ] .o. [ "m" (<-) "M" ] .o. [ "n" (<-) "N" ] .o. [ "v" (<-) "V" ];
-                   
-                   
+
+define CurlyApostrophe "'" (->) "ʼ" ;
+
+!----------------------------
+! SANDHI & ORTHOGRAPHY RULES
+!----------------------------
+define CrossWordBoundaryGemination t   "(SANDHI)" -> s   .o.
+                                   g   "(SANDHI)" -> g   .o.
+                                   g h "(SANDHI)" -> g h ;
+
+! NOTE: This overgenerates: "ugi(N)^[Rel.3SgPoss.Sg]" generates both "ugingan" and "ugwingan"
+define GWAlternation g <- g w || V _ V ,,
+                     w <- g w || V _ V ;
+
+! NOTE: This overgenerates: "sa(N)^~:(ng)u(N→V)^[Intrg.Intr.2Sg]" generates both "sanguzin" and "sanguziin"
+define InterrogativeLengthening a (<-) a a || C _ (C) .#.           .o.
+                                i (<-) i i || C _ (C) .#.           .o.
+								u (<-) u u || C _ [(C) | (n g)] .#. .o.
+								e (<-) a a || C _ C .#.             ;
+
+! NOTE: This first implementation way overgenerates.
+!       The second implementation isn't ideal either...as of now, only noun roots ending in -a, -i, -u
+!       can form vocatives, since I haven't seen examples of how consonant-ending roots form vocatives (see noun_tags.txt)
+!       Some demonstrative forms are permitted to form this -y vocative form as well (see demonstratives.txt).
+!define Vocatives a <- a a y || _ .#. .o.
+!                 i <- i i y || _ .#. .o.
+!		          u <- u u y || _ .#. ;
+define Vocatives a "(VOC)" -> a a y || _ .#. .o.
+                 i "(VOC)" -> i i y || _ .#. .o.
+                 u "(VOC)" -> u u y || _ .#. ;
+
+define SandhiAndOrthography [ CurlyApostrophe             .o.
+                              CrossWordBoundaryGemination .o.
+							  GWAlternation               .o.
+							  InterrogativeLengthening    .o.
+							  Vocatives
+                            ];
+
+
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
 !------------------------------
 
-define FinalE %{%.f%.%} -> 0     || [ (C) C ("^") C & ~MultiCharC & ~[h h] & ~[(h) h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not drop -e if it results in a CCC cluster
-                                                                                                                         ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten p.657]
-                                                                                                                         ! ~[h w] for aaghhwe(V)^@~fyug(V→V)
-                                                                                                                         ! ("^") for ightugh(V)+qe(V→V)@~fnayuke(V→V)
-                   [..] -> %{E%} ||                            .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%}  .o. ! hop final -e
-                      e -> 0     ||                                [? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}      .o. ! drop final -e if it isn't in the first syllable
-              %{%.f%.%} -> 0                                                                                   ;
+define FinalE %{%.f%.%} -> 0 || [ (C) C ("^") C & ~MultiCharC & ~[h h] & ~[(h) h w] ] e "^" _ [ MultiCharC | C ] .o. ! do not drop -e if it results in a CCC cluster
+                                                                                                                     ! ~[h h] for puughhe(V)^@~fnaqe(V→V) [Badten p.657]
+                                                                                                                     ! ~[h w] for aaghhwe(V)^@~fyug(V→V)
+                                                                                                                     ! ("^") for ightugh(V)+qe(V→V)@~fnayuke(V→V)
+              %{%.f%.%} -> 0 || C e "^" _ C e "^" %{%.f%.%} [ MultiCharC | C ]       .o. ! neqe(N)~f–ke(N→V)[Subr.Intr]
+               [..] -> %{E%} || .#. ( MultiCharC | C ) FullVowel _ C e "^" %{%.f%.%} .o. ! hop final -e
+                  e -> 0     || [? - .#.] [ MultiCharC | C ] _ "^" %{%.f%.%}         .o. ! drop final -e if it's not in the first syllable
+          %{%.f%.%} -> 0                                                             ;
 
 
 define SemiFinalE %{%.sf%.%} -> 0     || [ (C) C ("^") C & ~MultiCharC ] e g (h) "^" _                                     .o.
@@ -443,7 +502,7 @@ define DropFinalC g h h -> w h   || %{k%} w         "^" %{%.m%.%} _ [ ? - .#. ] 
                       k -> k w   || w               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate k-  onset to dropped -w
                       q -> k     || g               "^" %{%.m%.%} _ [ ? - .#. ]       .o. ! assimilate q-  onset to dropped -g
                     g g -> g h h || g h             "^" %{%.m%.%} _                   .o. ! assimilate gg- onset to dropped -gh [Jacobson (2001) p.66]
-					  w -> g h w || g h             "^" %{%.m%.%} _                   .o. ! (ghw/ngw/w) in semi-final -eg and -egh [Badten (2008) p.618]
+                      w -> g h w || g h             "^" %{%.m%.%} _                   .o. ! (ghw/ngw/w) in semi-final -eg and -egh [Badten (2008) p.618]
     [ ~MultiCharC & C ] -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop root-final consonant
     [ g | %{g%} ] ( h ) -> 0     ||                               _ "^" %{%.m%.%}     .o. ! drop -g in root-final -gh, -gh in -ghw
               %{%.m%.%} -> 0                                                          ;
@@ -532,11 +591,11 @@ define DeleteEBeforeVowel e -> 0 || _ "^" a .o. ! [Intrg.Intr][1Pl]:%^ste%^a -> 
 ! ALLOMORPHY RULES
 !-------------------
 
-define AddE %{E%} -> a || a ("^") _ .o.
-            %{E%} -> i || i ("^") _ .o.
-            %{E%} -> u || u ("^") _ .o.
-            %{E%} -> e || C ("^") _ .o.
-            %{E%} -> 0              ;
+define AddE %{E%} -> a || a ("^") _                 .o.
+            %{E%} -> i || i ("^") _                 .o.
+            %{E%} -> u || u ("^") _                 .o.
+            %{E%} -> e || C ("^") _ ("^") C ("^") C .o.
+            %{E%} -> 0                              ;
 
 
 define ResolveG %{G%} -> g || FullVowel ["^"]* FullVowel "^" _ .o.
@@ -683,8 +742,9 @@ define VelarTE %{t%} e -> 0  ||               _ "^" %{%.at%.%} k a g h a %{g%} h
             %{%.at%.%} -> 0  || C %{t%} e "^" _ k                                ;   ! e.g. qelpeghtekuvgu
 
 
-define DropTE %{t%} e -> 0  || [? - "^"] _ "^" %{%.at%.%} .o.
-           %{%.at%.%} -> 0                                ;
+define DropTE %{%.at%.%} -> 0 || C %{t%} e "^" _ MultiCharC [ C & ~MultiCharC ] .o.
+                 %{t%} e -> 0 || [? - "^"] _ "^" %{%.at%.%}                     .o.
+              %{%.at%.%} -> 0                                                   ;
 
 
 !----------------
@@ -699,7 +759,7 @@ define AssimilateConsonants y -> s   ||  _ "^" [ p | k | q | g h h ]       .o. !
                             k -> q   ||  [ g | %{g%} ] h ["^"]+ _          .o.
                           g h -> 0   ||                       C _ "^" q    .o. ! e.g. itegh[Cond.Intr][3Sg]: iitghqan -> iitqan
                             v -> f   ||                         _ "^" Stop .o. ! [Jacobson (2001) p.58] e.g. kuuve+kagh -> kuufkaq
-                            v -> f   ||                Stop "^" _          .o. ! e.g. taaqe+vik -> taaqfik
+                            v -> f   ||      [ Stop | g g ] "^" _          .o. ! e.g. taaqe+vik -> taaqfik, iigge+vik -> iigfikegkaa
                             w -> w h ||           [ C - h | V ] _ "^" t    ;   ! [Badten (2008) p.682]
 
 
@@ -712,12 +772,15 @@ define BaseFinalEndings %{t%} e -> n   ||               V _     ["^"]* .#. ,
                               g -> k   ||         [? - n] _     ["^"]* .#. ;
 
 
+define ForeignWordEndingInE e -> a || "-" _ .#. ;
+
+
 define PreventGemination m -> 0 || .#. [C | V]+ _ "^" m .o. ! tume-ABL_MOD.sg
                          n -> 0 || .#.   a a _ "^" n    .o. ! aane-naqe [Jacobson (2001) p.31]
                          n -> 0 || .#. t u u _ "^" n    .o. ! tuune-naqutke [Badten (2008) p.650]
                          v -> 0 || .#. n u u _ "^" v    .o. ! nuuve-vig [Badten (2008) p.693]
                          s -> 0 ||         s _ "^" m a  .o. ! akmagtesimakanga: +(te)ste-@~:(i/u)ma [Kiiluuq]
-						 k -> 0 ||   n a y u _ "^" k    ;   ! ightughqennayukaata: nayuke-COND.INTR [Lvl1: Christmas]
+                         k -> 0 ||   n a y u _ "^" k    ;   ! ightughqennayukaata: nayuke-COND.INTR [Lvl1: Christmas]
 
 
 define AssimilateEnclitic [ g | %{g%} ] h -> q || _ ["^"]+ l l u   .#.  .o. ! ["^"]* since [Abs.Sg]+{encl} maps to ^^{encl}
@@ -735,6 +798,8 @@ define CleanupPlaceholders %{k%}   -> 0   .o.
 
 
 define CleanupMorphBoundary "^" -> 0 ;
+
+define MorphBoundary2Hyphen "^" (->) "-" || [ UppercaseForeignAlphabet | LowercaseForeignAlphabet ]+ _ ;
 
 define MarkNullMorpheme [..] -> %{%0%} || "^" _ "^" , 
                                           "^" _ .#. ;
@@ -755,7 +820,7 @@ define Undoubling l l -> l, r r -> r, g g -> g, g h h -> g h, g h h w -> g h w |
 ! RULE CASCADE
 !==============
 
-define Rules [
+define MorphophonologicalRules [
     !------------------------------
     ! lexical string rewrite
     !------------------------------
@@ -797,19 +862,33 @@ define Rules [
     OptativeAllomorphs   .o.
     ResolveDemAnaphor    .o.
     !-------------------------------
-	! phonological rules
+    ! phonological rules
     !-------------------------------
     AssimilateConsonants .o. 
     VelarUvularRounding  .o.
-    VowelDominance       .o.
-    !-------------------------------
-    ! clean up
-    !-------------------------------
+    VowelDominance
+];
+
+define CleanupRules [
     BaseFinalEndings     .o.
     PreventGemination    .o.
     AssimilateEnclitic   .o.
-	Undoubling           .o.
+    Undoubling           .o.
     CleanupPlaceholders
+];
+
+define Rules [
+	MorphophonologicalRules .o.
+	CleanupRules
+];
+
+define RulesforForeignWords [
+	MorphophonologicalRules .o.
+	ForeignWordEndingInE    .o.
+    PreventGemination       .o.
+    AssimilateEnclitic      .o.
+    Undoubling              .o.
+	MorphBoundary2Hyphen
 ];
 
 
@@ -822,31 +901,41 @@ define   Guesses  [ ?* "(GUESS)" ?* ];
 define NoForeign ~[ ?* "(FOREIGN)" ?* ];
 define   Foreign  [ ?* "(FOREIGN)" ?* ];
 
-define FilteredLex [             NoGuesses .o. Filters .o. Lexicon ];
-define GuessLex    [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
-define ForeignLex  [   Foreign .o. Guesses .o. Filters .o. Lexicon ];
+define FilteredLex      [             NoGuesses .o. Filters .o. Lexicon ];
+define GuessLex         [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
+define ForeignLex  [ Foreign   .o. Guesses .o. Filters .o. Lexicon ];
 
-define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
+define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ] | [ ForeignWords .o. RulesforForeignWords ];
 define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary ];
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. MarkNullMorpheme ];
 define IntermediateToSurfaceGrammar [ LexicalToIntermediateGrammar .o. LexicalToSurfaceGrammar ];
-
-define ForeignToIntermediateGrammar [ ForeignLex .o. Rules ];
-define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary ];
-define ForeignToIntermediateWithPhonology [ ForeignToIntermediateGrammar .o. MarkNullMorpheme ];
-define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. ForeignToSurfaceGrammar ];
 
 define GuessToIntermediateGrammar [ GuessLex .o. Rules ];
 define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary ];
 define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. MarkNullMorpheme ];
 define GuessIntermediateToSurfaceGrammar [ GuessToIntermediateGrammar .o. GuessToSurfaceGrammar ];
 
+define ForeignToIntermediateGrammar [ ForeignLex .o. Rules ];
+define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary ];
+define ForeignToIntermediateWithPhonology [ ForeignToIntermediateGrammar .o. MarkNullMorpheme ];
+define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. ForeignToSurfaceGrammar ];
+
 ! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 ! define GrammarUpper [ GrammarLower .o. Uppercase ];
 
-define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
+!define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
 
 ! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar .p. ForeignGuessGrammar ];
 
-! allows the user to type ASCII arrows
-define GrammarAscii [ LexicalToSurfaceGrammar.i .o. AsciiArrow .o. Minus2Hyphen ].i;
+! allows the user to type ASCII arrows and hyphens rather than minus signs
+!define GrammarAscii [ LexicalToSurfaceGrammar.i .o. AsciiArrow .o. Minus2Hyphen ].i;
+
+!----------------------------------------------------------------------------------------------------------
+! NOTE:
+! grammar that handles
+!   * foreign lexical items found in the digital corpus
+!   * orthography rules associated with sandhi phenomena, interrogatives, -gw- alternation, vocatives, etc.
+!   * numbers [0-9]+
+!----------------------------------------------------------------------------------------------------------
+define FullLexicalToSurfaceGrammar [ LexicalToSurfaceGrammar .o. SandhiAndOrthography ];
+define FullLexicalToIntermediateWithPhonology [ LexicalToIntermediateWithPhonology ] .o. SandhiAndOrthography ];

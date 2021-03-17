@@ -14,12 +14,12 @@ LEXICON VerbPostbaseVI
 LEXICON VNPostbaseVI
 !===================
 [Badten p.625]
-^@~%:(i/u)mate(V→N)^[Prl.Sg]:^%{.at.%}imatkun         #;   ! the time while V-ing; the course of V-ing
-^@~%:(i/u)mate(V→N)^[Prl.Pl]:^%{.at.%}imatetgun       #;   ! the time while V-ing; the course of V-ing
-^@~%:(i/u)mate(V→N)^[Prl.Du]:^%{.at.%}imategnegun     #;   ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Sg]:^%{.at.%}imatkun         #; ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Pl]:^%{.at.%}imatetgun       #; ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Du]:^%{.at.%}imategnegun     #; ! the time while V-ing; the course of V-ing
 
-^–lleghqagh(V→N):^lleghqa%{g%}h             NounInflIII;  ! future act of V-ing
-^@~f–negh(V→N):^%{.at.%}negh                NounInflVII;  ! the act of V-ing; the activity of V-ing; the state of being V
+^–lleghqagh(V→N):^lleghqa%{g%}h             NounInflIII; ! future act of V-ing
+^@~f–negh(V→N):^%{.at.%}negh                NounInflVII; ! the act of V-ing; the activity of V-ing; the state of being V
 
 ^@~%:(i/u)ma(V→N):^%{.at.%}ima              CheckAUXFlagI;    ! one who V-s
 ^@~f–yu(V→N):^%{.at.%}yu                    CheckAUXFlagI;    ! one who is good at V-ing
@@ -92,9 +92,9 @@ LEXICON VVPostbaseVI
 ^@~fvike(V→V):^%{.at.%}vike                     VerbPostbaseII;  ! to have as a place or as object of one's V-ing
 ^@~f–yiilliqe(V→V):^%{.at.%}yiilliqe            VerbPostbaseII;  ! to have trouble V-ing
 ^@~fmiqe(CmpdVbl):^%{.at.%}miqe                 VerbPostbaseII;  ! to compel one to V; to make one V
-^+qe(V→V):^qe                                   VerbPostbaseII;  ! to act on so as to cause to V
 ^~sf%:(e)sqe(CmpdVbl):^sqe                      VerbPostbaseII;  ! to ask one to V; to tell one to V
 ^–ghrug(V→V):^ghrug                             VerbPostbaseII;  ! big old one V-s
+^+qe(V→V):^qe                                   VerbPostbaseII;  ! to act on so as to cause to V
 ^–ghraag(V→V):^ghraag                           VerbPostbaseIII; ! to do some V-ing; to gradually V; to get V-er; to be somewhat V
 ^–msug(V→V):^%{.m.%}msug                        VerbPostbaseIII; ! to casually V; to nonchalantly V
 ^@~f–neghllug(V→V):^%{.at.%}neghllug            VerbPostbaseIII; ! to V wrongly or with difficulty
@@ -164,6 +164,7 @@ LEXICON VVPostbaseVI
 ^~aghte(V→V):^%{.f.%}agh%{t%}e                  VerbPostbaseV;   ! to suddenly V
 ^@–ghpagte(V→V):^%{.at.%}ghpag%{t%}e            VerbPostbaseV;   ! to V rapidly, suddenly or in a major way
 ^–ghraagte(V→V):^ghraag%{t%}e                   VerbPostbaseV;   ! to be somewhat V-er; to be partly V 
+^–ghte(V→V):^gh%{t%}e                           VerbPostbaseV;   ! to become V 
 ^@~%:(i/u)mafte(V→V):^%{.at.%}imaf%{t%}e        VerbPostbaseV;   ! how much subject evidently has V-ed!
 ^~f–laghate(V→V):^%{.f.%}lagha%{t%}e            VerbPostbaseV;   ! to have already V-ed together; to V as a group
 ^–lgute(V→V):^lgu%{t%}e                         VerbPostbaseV;   ! to V together with; to help (object) V

@@ -85,9 +85,9 @@ LEXICON PosturalRootTag
 LEXICON PosturalRootPostbase
 !===========================
 
-^~fnga(POS→STATIVE):^%{.f.%}nga  VerbPostbaseI;  ! to be in the R posture
-^~fnga(POS→STATIVE):^%{.f.%}nga  QuantQualInfl;  ! to be in the R posture
-^+te(POS→ACTIVE):^%{t%}e         VerbPostbaseII; ! to get into the R posture; to put into the R posture
-^+te(POS→ACTIVE):^%{t%}e         QuantQualInfl;  ! to get into the R posture; to put into the R posture
+^~fnga(POS→STATIVE):^%{.f.%}nga  VerbPostbaseI; ! to be in the R posture
+^~fnga(POS→STATIVE):^%{.f.%}nga  QuantQualInfl; ! to be in the R posture
+^+te(POS→ACTIVE):^%{t%}e         VerbPostbaseV; ! to get into the R posture; to put into the R posture
+^+te(POS→ACTIVE):^%{t%}e         QuantQualInfl; ! to get into the R posture; to put into the R posture
 
 

@@ -14,12 +14,12 @@ LEXICON VerbPostbaseIII
 LEXICON VNPostbaseIII
 !====================
 [Badten p.625]
-^@~%:(i/u)mate(V→N)^[Prl.Sg]:^umatkun                 #;   ! the time while V-ing; the course of V-ing
-^@~%:(i/u)mate(V→N)^[Prl.Pl]:^umatetgun               #;   ! the time while V-ing; the course of V-ing
-^@~%:(i/u)mate(V→N)^[Prl.Du]:^umategnegun             #;   ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Sg]:^umatkun                 #; ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Pl]:^umatetgun               #; ! the time while V-ing; the course of V-ing
+^@~%:(i/u)mate(V→N)^[Prl.Du]:^umategnegun             #; ! the time while V-ing; the course of V-ing
 
-^–lleghqagh(V→N):^%{.m.%}lleghqa%{g%}h      NounInflIII;  ! future act of V-ing
-^@~f–negh(V→N):^%{.m.%}negh                 NounInflVII;  ! the act of V-ing; the activity of V-ing; the state of being V
+^–lleghqagh(V→N):^%{.m.%}lleghqa%{g%}h      NounInflIII; ! future act of V-ing
+^@~f–negh(V→N):^%{.m.%}negh                 NounInflVII; ! the act of V-ing; the activity of V-ing; the state of being V
 
 ^@~%:(i/u)ma(V→N):^uma                      CheckAUXFlagI;    ! one who V-s
 ^@–lghii(V→N):^%{.m.%}lghii                 CheckAUXFlagI;    ! the one that V-ed
@@ -49,8 +49,8 @@ LEXICON VNPostbaseIII
 ^+(s)ta(V→N):^%{t%}e                        CheckAUXFlagVI;   ! habitual V-er; one who V-s as an occupation
 ^–llegh(V→N):^%{.m.%}llegh                  CheckAUXFlagVII;  ! one that has V-ed or been V-ed; act of V-ing; activity of V-ing; the one the possessor V-ed; one or ones which are V to the greatest extent; most V one; more V one
 ^–lleg(V→N):^%{.m.%}lleg                    CheckAUXFlagVII;  ! one who V-s well; proficient V-er; good V-er
-^@~–(g)ke(V→N):^%{.m.%}ke                   CheckAUXFlagVIII; ! the one possessor is V-ing
 ^@~fnaqe(V→N):^naqe                         CheckAUXFlagVIII; ! one who is going to V
+^@~–(g)ke(V→N):^%{.m.%}ke                   CheckAUXFlagVIII; ! the one possessor is V-ing
 
 
 !====================
@@ -90,9 +90,9 @@ LEXICON VVPostbaseIII
 ^@~fvike(V→V):^vike                            VerbPostbaseII;  ! to have as a place or as object of one's V-ing
 ^@~f–yiilliqe(V→V):^%{.m.%}yiilliqe            VerbPostbaseII;  ! to have trouble V-ing
 ^@~fmiqe(CmpdVbl):^miqe                        VerbPostbaseII;  ! to compel one to V; to make one V
-^+qe(V→V):^qe                                  VerbPostbaseII;  ! to act on so as to cause to V
 ^~sf%:(e)sqe(CmpdVbl):^esqe                    VerbPostbaseII;  ! to ask one to V; to tell one to V
 ^–ghrug(V→V):^%{.m.%}ghrug                     VerbPostbaseII;  ! big old one V-s
+^+qe(V→V):^qe                                  VerbPostbaseII;  ! to act on so as to cause to V
 ^–ghraag(V→V):^%{.m.%}ghraag                   VerbPostbaseIII; ! to do some V-ing; to gradually V; to get V-er; to be somewhat V
 ^–msug(V→V):^%{.m.%}msug                       VerbPostbaseIII; ! to casually V; to nonchalantly V
 ^@~f–neghllug(V→V):^%{.m.%}neghllug            VerbPostbaseIII; ! to V wrongly or with difficulty
@@ -162,6 +162,7 @@ LEXICON VVPostbaseIII
 ^~aghte(V→V):^agh%{t%}e                        VerbPostbaseV;   ! to suddenly V
 ^@–ghpagte(V→V):^%{.m.%}ghpag%{t%}e            VerbPostbaseV;   ! to V rapidly, suddenly or in a major way
 ^–ghraagte(V→V):^%{.m.%}ghraag%{t%}e           VerbPostbaseV;   ! to be somewhat V-er; to be partly V 
+^–ghte(V→V):^%{.m.%}gh%{t%}e                   VerbPostbaseV;   ! to become V 
 ^@~%:(i/u)mafte(V→V):^umaf%{t%}e               VerbPostbaseV;   ! how much subject evidently has V-ed!
 ^~f–laghate(V→V):^%{.m.%}lagha%{t%}e           VerbPostbaseV;   ! to have already V-ed together; to V as a group
 ^–lgute(V→V):^%{.m.%}lgu%{t%}e                 VerbPostbaseV;   ! to V together with; to help (object) V

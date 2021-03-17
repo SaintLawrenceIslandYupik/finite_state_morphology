@@ -2,6 +2,8 @@
 LEXICON Numeral
 !==============
 
+(DIGIT)                  Digit;
+(DIGIT)                  Digit;
 ataasigh:ataasi%{g%}h    NumeralTagIII; ! one
 maalghug                 NumeralTagII;  ! two
 malghug                  NumeralTagII;  ! two
@@ -22,6 +24,14 @@ yuginagh                 NumeralTagIII; ! twenty
 pingayuneng              NumeralTagII;  ! 'qula pingayuneng inglulek siipneqluku'
 estamaneng               NumeralTagII;  ! 'qula estamaneng inglulek siipneqluku'
 
+
+!============
+LEXICON Digit
+!============
+(NUM):0 NumeralPostbaseI;
+(NUM):- NumeralPostbaseI;
+(NUM):0 NumeralPostbaseII;
+(NUM):- NumeralPostbaseII;
 
 !==================
 LEXICON NumeralTagI
@@ -48,7 +58,6 @@ LEXICON NumeralTagVII
 LEXICON NumeralPostbaseI
 !=======================
 0:0                    NounInflI;
-0:0                    Enclitic;
 ^–ghqe(NUM→V):^ghqe    VerbPostbaseII;  ! to divide into N groups 
 ^–gnegh(NUM→N):^gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 
@@ -56,7 +65,6 @@ LEXICON NumeralPostbaseI
 LEXICON NumeralPostbaseII
 !========================
 0:0                           NounInflII;
-0:0                           Enclitic;
 ^–ghqe(NUM→V):^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
 ^–gnegh(NUM→N):^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 
@@ -64,7 +72,6 @@ LEXICON NumeralPostbaseII
 LEXICON NumeralPostbaseIII
 !=========================
 0:0                           NounInflIII;
-0:0                           Enclitic;
 ^–ghqe(NUM→V):^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
 ^–gnegh(NUM→N):^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 
@@ -72,7 +79,6 @@ LEXICON NumeralPostbaseIII
 LEXICON NumeralPostbaseVII
 !=========================
 0:0                           NounInflVII;
-0:0                           Enclitic;
 ^–ghqe(NUM→V):^%{.m.%}ghqe    VerbPostbaseII;  ! to divide into N groups 
 ^–gnegh(NUM→N):^%{.m.%}gnegh  NounPostbaseVII; ! N (number) of things; N (number) of groups
 
