@@ -938,4 +938,4 @@ define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. Fo
 !   * numbers [0-9]+
 !----------------------------------------------------------------------------------------------------------
 define FullLexicalToSurfaceGrammar [ LexicalToSurfaceGrammar .o. SandhiAndOrthography ];
-define FullLexicalToIntermediateWithPhonology [ LexicalToIntermediateWithPhonology ] .o. SandhiAndOrthography ];
+define FullLexicalToIntermediateWithPhonology [ LexicalToIntermediateWithPhonology .o. SandhiAndOrthography ];
