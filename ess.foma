@@ -939,3 +939,5 @@ define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. Fo
 !----------------------------------------------------------------------------------------------------------
 define FullLexicalToSurfaceGrammar [ LexicalToSurfaceGrammar .o. SandhiAndOrthography ];
 define FullLexicalToIntermediateWithPhonology [ LexicalToIntermediateWithPhonology .o. SandhiAndOrthography ];
+
+define UppercaseFullLexicalToSurfaceGrammar [ LexicalToSurfaceGrammar .o. SandhiAndOrthography .o. Uppercase ];
