@@ -426,7 +426,10 @@ define CurlyApostrophe "'" (->) "ʼ" ;
 ! SANDHI & ORTHOGRAPHY RULES
 !----------------------------
 define CrossWordBoundaryGemination t   "(SANDHI)" -> s   .o.
-                                   g   "(SANDHI)" -> g   .o.
+                                   e g "(SANDHI)" -> e g .o.
+                                   a g "(SANDHI)" -> a g .o.
+                                   i g "(SANDHI)" -> i g .o.
+                                   u g "(SANDHI)" -> u g .o.
                                    g h "(SANDHI)" -> g h ;
 
 ! NOTE: This overgenerates: "ugi(N)^[Rel.3SgPoss.Sg]" generates both "ugingan" and "ugwingan"
@@ -446,9 +449,9 @@ define InterrogativeLengthening a (<-) a a || C _ (C) .#.           .o.
 !define Vocatives a <- a a y || _ .#. .o.
 !                 i <- i i y || _ .#. .o.
 !		          u <- u u y || _ .#. ;
-define Vocatives a "(VOC)" -> a a y || _ .#. .o.
-                 i "(VOC)" -> i i y || _ .#. .o.
-                 u "(VOC)" -> u u y || _ .#. ;
+define Vocatives a "[Voc]" -> a a y || _ .#. .o.
+                 i "[Voc]" -> i i y || _ .#. .o.
+                 u "[Voc]" -> u u y || _ .#. ;
 
 define SandhiAndOrthography [ CurlyApostrophe             .o.
                               CrossWordBoundaryGemination .o.
@@ -901,11 +904,11 @@ define   Guesses  [ ?* "(GUESS)" ?* ];
 define NoForeign ~[ ?* "(FOREIGN)" ?* ];
 define   Foreign  [ ?* "(FOREIGN)" ?* ];
 
-define FilteredLex      [             NoGuesses .o. Filters .o. Lexicon ];
-define GuessLex         [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
+define FilteredLex [             NoGuesses .o. Filters .o. Lexicon ];
+define GuessLex    [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
 define ForeignLex  [ Foreign   .o. Guesses .o. Filters .o. Lexicon ];
 
-define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ] | [ ForeignWords .o. RulesforForeignWords ];
+define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary ];
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. MarkNullMorpheme ];
 define IntermediateToSurfaceGrammar [ LexicalToIntermediateGrammar .o. LexicalToSurfaceGrammar ];
@@ -937,7 +940,20 @@ define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. Fo
 !   * orthography rules associated with sandhi phenomena, interrogatives, -gw- alternation, vocatives, etc.
 !   * numbers [0-9]+
 !----------------------------------------------------------------------------------------------------------
-define FullLexicalToSurfaceGrammar [ LexicalToSurfaceGrammar .o. SandhiAndOrthography ];
-define FullLexicalToIntermediateWithPhonology [ LexicalToIntermediateWithPhonology .o. SandhiAndOrthography ];
+define ForeignCorpus [ ForeignWords .o. RulesforForeignWords ];
 
-define UppercaseFullLexicalToSurfaceGrammar [ LexicalToSurfaceGrammar .o. SandhiAndOrthography .o. Uppercase ];
+define FullLexicalToIntermediateGrammar [ [ LexicalToIntermediateGrammar ] | [ ForeignCorpus ] ]; 
+define FullLexicalToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ];
+define FullLexicalToIntermediateWithPhonology [ FullLexicalToIntermediateGrammar .o. MarkNullMorpheme ];
+define FullIntermediateToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. FullLexicalToSurfaceGrammar ];
+
+define UppercaseFullLexicalToSurfaceGrammar [ FullLexicalToSurfaceGrammar .o. SandhiAndOrthography .o. Uppercase ];
+
+!--------------------------------------------------------------
+! defining a grammar for generating data for neural experiments
+!   excludes: foreign lexical items found in the digital corpus
+!             interrogative lengthening
+!             curly apostrophes
+!--------------------------------------------------------------
+define NeuralLowercase [ LexicalToSurfaceGrammar .o. CrossWordBoundaryGemination .o. GWAlternation .o. Vocatives ];
+define NeuralUppercase [ LexicalToSurfaceGrammar .o. CrossWordBoundaryGemination .o. GWAlternation .o. Vocatives .o. Uppercase ];

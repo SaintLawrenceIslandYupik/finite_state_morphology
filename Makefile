@@ -74,6 +74,14 @@ a2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "re LexicalToSurfaceGrammar .o. AllowUppercase ;" -e "push ForeignToSurfaceGrammar" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
 
 
+# for neural experiments
+neural_lowercase.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push NeuralLowercase" -e "save stack $@" -s
+
+neural_uppercase.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push NeuralUppercase" -e "save stack $@" -s
+
+
 %.interactive: %.fomabin
 	foma -e "load stack $<"
 
