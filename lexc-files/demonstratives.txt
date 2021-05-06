@@ -40,7 +40,7 @@ LEXICON Demonstrative
 !  from either of these bases though, and is just given.
 !  
 !  Vocatives are also derived from bases, but for labeling purposes,
-!  (VOC.Sg) & (VOC.Pl), it seemed easier and more concise to hard-code.
+!  (DEM.VOC.Sg) & (DEM.VOC.Pl), it seemed easier and more concise to hard-code.
 !
 !  The demonstrative adverbs are also hard-coded, because there are
 !  several exceptions and I was confused and Appendix III lists all
@@ -58,8 +58,8 @@ LEXICON Demonstrative
                                              ingu(DEM.PRO):ingu                 DemProSg; amu(DEM.PRO):amu                   DemProSg; ! Sg Non-Abs Base  |
                                              iingku(DEM.PRO):iingku             DemProPD; aamku(DEM.PRO):aamku               DemProPD; ! Non-Sg Pron Base |
                                                                                                                                        !                  |
-                                             iingyuq(VOC.Sg):iingyuq            Enclitic; aamyuq(VOC.Sg):aamyuq              Enclitic; ! Voc Sg           |
-                                             iingkughsi(VOC.Pl):iingkughsi      Enclitic; aamkughsi(VOC.Pl):aamkughsi        Enclitic; ! Voc Pl           |
+                                             iingyuq(DEM.VOC.Sg):iingyuq        Enclitic; aamyuq(DEM.VOC.Sg):aamyuq          Enclitic; ! Voc Sg           |
+                                             iingkughsi(DEM.VOC.Pl):iingkughsi  Enclitic; aamkughsi(DEM.VOC.Pl):aamkughsi    Enclitic; ! Voc Pl           |
                                                                                                                                        !                  |
 awa(DEM.ADV):awa                   DemAdvPB; inga(DEM.ADV):inga                 DemAdvPB; ama(DEM.ADV):ama                   DemAdvPB; ! Adv Ptcl         |
 awani(DEM.ADV.Loc):awani           Enclitic; ingani(DEM.ADV.Loc):ingani         Enclitic; amani(DEM.ADV.Loc):amani           Enclitic; ! Loc Adv          |
@@ -75,8 +75,8 @@ aawhken(DEM.ADV.Abl_Mod):aawhken   Enclitic;                                    
 aagna(DEM.PRO.Abs.Sg):aagna        Enclitic; iikna(DEM.PRO.Abs.Sg):iikna        Enclitic; akemna(DEM.PRO.Abs.Sg):akemna      Enclitic; ! Abs Sg Pron      |
 agu(DEM.PRO):agu                   DemProSg; iku(DEM.PRO):iku                   DemProSg; akmu(DEM.PRO):akmu                 DemProSg; ! Sg Non-Abs Base  |
 aagku(DEM.PRO):aagku               DemProPD; ikegku(DEM.PRO):ikegku             DemProPD; akemku(DEM.PRO):akemku             DemProPD; ! Non-Sg Pron Base |
-aagyuq(VOC.Sg):aagyuq              Enclitic; iiksuq(VOC.Sg):iiksuq              Enclitic; akemyuq(VOC.Sg):akemyuq            Enclitic; ! Voc Sg           |
-aagkughsi(VOC.Pl):aagkughsi        Enclitic; ikegkughsi(VOC.Pl):ikegkughsi      Enclitic; akemkughsi(VOC.Pl):akemkughsi      Enclitic; ! Voc Pl           |
+aagyuq(DEM.VOC.Sg):aagyuq          Enclitic; iiksuq(DEM.VOC.Sg):iiksuq          Enclitic; akemyuq(DEM.VOC.Sg):akemyuq        Enclitic; ! Voc Sg           |
+aagkughsi(DEM.VOC.Pl):aagkughsi    Enclitic; ikegkughsi(DEM.VOC.Pl):ikegkughsi  Enclitic; akemkughsi(DEM.VOC.Pl):akemkughsi  Enclitic; ! Voc Pl           |
                                                                                                                                        !                  |
 aga(DEM.ADV):aga                   DemAdvPB; ika(DEM.ADV):ika                   DemAdvPB; akma(DEM.ADV):akma                 DemAdvPB; ! Adv Ptcl         |
 agani(DEM.ADV.Loc):agani           Enclitic; ikani(DEM.ADV.Loc):ikani           Enclitic; akmani(DEM.ADV.Loc):akmani         Enclitic; ! Loc Adv          |
@@ -90,8 +90,8 @@ paagna(DEM.PRO.Abs.Sg):paagna      Enclitic; piikna(DEM.PRO.Abs.Sg):piikna      
 pagu(DEM.PRO):pagu                 DemProSg; piku(DEM.PRO):piku                 DemProSg; pamu(DEM.PRO):pamu                 DemProSg; ! Sg Non-Abs Base  | 
 paagku(DEM.PRO):paagku             DemProPD; pikegku(DEM.PRO):pikegku           DemProPD; paamku(DEM.PRO):paamku             DemProPD; ! Non-Sg Pron Base |
                                                                                                                                        !                  |
-paagyuq(VOC.Sg):paagyuq            Enclitic; piiksuq(VOC.Sg):piiksuq            Enclitic; paamyuq(VOC.Sg):paamyuq            Enclitic; ! Voc Sg           |
-paagkughsi(VOC.Pl):paagkughsi      Enclitic; pikegkughsi(VOC.Pl):pikegkughsi    Enclitic; paamkughsi(VOC.Pl):paamkughsi      Enclitic; ! Voc Pl           |
+paagyuq(DEM.VOC.Sg):paagyuq        Enclitic; piiksuq(DEM.VOC.Sg):piiksuq         Enclitic; paamyuq(DEM.VOC.Sg):paamyuq       Enclitic; ! Voc Sg           |
+paagkughsi(DEM.VOC.Pl):paagkughsi  Enclitic; pikegkughsi(DEM.VOC.Pl):pikegkughsi Enclitic; paamkughsi(DEM.VOC.Pl):paamkughsi Enclitic; ! Voc Pl           |
                                                                                                                                        !                  |
 paga(DEM.ADV):paga                 DemAdvPB; pika(DEM.ADV):pika                 DemAdvPB; pama(DEM.ADV):pama                 DemAdvPB; ! Adv Ptcl         |
 pagani(DEM.ADV.Loc):pagani         Enclitic; pikani(DEM.ADV.Loc):pikani         Enclitic; pamani(DEM.ADV.Loc):pamani         Enclitic; ! Loc Adv          |
@@ -108,8 +108,8 @@ unegna(DEM.PRO.Abs.Sg):unegna      Enclitic; kaana(DEM.PRO.Abs.Sg):kaana        
 un'gu(DEM.PRO):un'gu               DemProSg; kanu(DEM.PRO):kanu                 DemProSg; samu(DEM.PRO):samu                 DemProSg; ! Sg Non-Abs Base  |
 unegku(DEM.PRO):unegku             DemProPD; kaanku(DEM.PRO):kaanku             DemProPD; saamku(DEM.PRO):saamku             DemProPD; ! Non-Sg Pron Base |
                                                                                                                                        !                  |
-unegyuq(VOC.Sg):unegyuq            Enclitic; kaanyuq(VOC.Sg):kaanyuq            Enclitic; saamyuq(VOC.Sg):saamyuq            Enclitic; ! Voc Sg           |
-unegkughsi(VOC.Pl):unegkughsi      Enclitic; kaankughsi(VOC.Pl):kaankughsi      Enclitic; saamkughsi(VOC.Pl):saamkughsi      Enclitic; ! Voc Pl           |
+unegyuq(DEM.VOC.Sg):unegyuq       Enclitic; kaanyuq(DEM.VOC.Sg):kaanyuq         Enclitic; saamyuq(DEM.VOC.Sg):saamyuq        Enclitic; ! Voc Sg           |
+unegkughsi(DEM.VOC.Pl):unegkughsi Enclitic; kaankughsi(DEM.VOC.Pl):kaankughsi   Enclitic; saamkughsi(DEM.VOC.Pl):saamkughsi  Enclitic; ! Voc Pl           |
                                                                                                                                        !                  |
 un'ga(DEM.ADV):un'ga               DemAdvPB; kana(DEM.ADV):kana                 DemAdvPB; sama(DEM.ADV):sama                 DemAdvPB; ! Adv Ptcl         |
 un'gani(DEM.ADV.Loc):un'gani       Enclitic; kanani(DEM.ADV.Loc):kanani         Enclitic; samani(DEM.ADV.Loc):samani         Enclitic; ! Loc Adv          |
@@ -125,8 +125,8 @@ unegken(DEM.ADV.Abl_Mod):unegken   Enclitic; kanaken(DEM.ADV.Abl_Mod):kanaken   
                                             ugu(DEM.PRO):ugu                    DemProSg; sakmu(DEM.PRO):sakmu               DemProSg; ! Sg Non-Abs Base  | 
                                             uugku(DEM.PRO):uugku                DemProPD; sakemku(DEM.PRO):sakemku           DemProPD; ! Non-Sg Pron Base |
                                                                                                                                        !                  |
-                                            uugyuq(VOC.Sg):uugyuq               Enclitic; sakemyuq(VOC.Sg):sakemyuq          Enclitic; ! Voc Sg           |
-                                            uugkughsi(VOC.Pl):uugkughsi         Enclitic; sakemkughsi(VOC.Pl):sakemkughsi    Enclitic; ! Voc Pl           |
+                                            uugyuq(DEM.VOC.Sg):uugyuq           Enclitic; sakemyuq(DEM.VOC.Sg):sakemyuq       Enclitic; ! Voc Sg          |
+                                            uugkughsi(DEM.VOC.Pl):uugkughsi     Enclitic; sakemkughsi(DEM.VOC.Pl):sakemkughsi Enclitic; ! Voc Pl          |
                                                                                                                                        !                  |
                                             uga(DEM.ADV):uga                    DemAdvPB; sakma(DEM.ADV):sakma               DemAdvPB; ! Adv Ptcl         |
                                             ugani(DEM.ADV.Loc):ugani            Enclitic; sakmani(DEM.ADV.Loc):sakmani       Enclitic; ! Loc Adv          |
@@ -141,8 +141,8 @@ qawa(DEM.PRO):qawa                 DemProSg; kigu(DEM.PRO):kigu                 
                                              kiwu(DEM.PRO):kiwu                 DemProSg;                                              ! Sg Non-Abs Base  |
 qaawhku(DEM.PRO):qaawhku           DemProPD; kiiwhku(DEM.PRO):kiiwhku           DemProPD; qaamku(DEM.PRO):qaamku             DemProPD; ! Non-Sg Pron Base |
                                                                                                                                        !                  |
-qaawyuq(VOC.Sg):qaawyuq            Enclitic; kiiwyuq(VOC.Sg):kiiwyuq            Enclitic; qaamyuq(VOC.Sg):qaamyuq            Enclitic; ! Voc Sg           |
-qaawhkughsi(VOC.Pl):qaawhkughsi    Enclitic; kiiwhkughsi(VOC.Pl):kiiwhkughsi    Enclitic; qaamkughsi(VOC.Pl):qaamkughsi      Enclitic; ! Voc Pl           |
+qaawyuq(DEM.VOC.Sg):qaawyuq         Enclitic; kiiwyuq(DEM.VOC.Sg):kiiwyuq         Enclitic; qaamyuq(DEM.VOC.Sg):qaamyuq       Enclitic; ! Voc Sg          |
+qaawhkughsi(DEM.VOC.Pl):qaawhkughsi Enclitic; kiiwhkughsi(DEM.VOC.Pl):kiiwhkughsi Enclitic; qaamkughsi(DEM.VOC.Pl):qaamkughsi Enclitic; ! Voc Pl          |
                                                                                                                                        !                  |
 qawa(DEM.ADV):qawa                 DemAdvPB; kiwa(DEM.ADV):kiwa                 DemAdvPB; qama(DEM.ADV):qama                 DemAdvPB; ! Adv Ptcl         |
 qawani(DEM.ADV.Loc):qawani         Enclitic; kiwani(DEM.ADV.Loc):kiwani         Enclitic; qamani(DEM.ADV.Loc):qamani         Enclitic; ! Loc Adv          |
@@ -157,8 +157,8 @@ qaagna(DEM.PRO.Abs.Sg):qaagna      Enclitic;                                    
 qaga(DEM.PRO):qaga                 DemProSg;                                              qakmu(DEM.PRO):qakmu               DemProSg; ! Sg Non-Abs Base  | 
 qaagku(DEM.PRO):qaagku             DemProPD;                                              qakemku(DEM.PRO):qakemku           DemProPD; ! Non-Sg Pron Base | 
                                                                                                                                        !                  |
-qaagyuq(VOC.Sg):qaagyuq            Enclitic;                                              qakemyuq(VOC.Sg):qakemyuq          Enclitic; ! Voc Sg           |
-qaagkughsi(VOC.Pl):qaagkughsi      Enclitic;                                              qakemkughsi(VOC.Pl):qakemkughsi    Enclitic; ! Voc Pl           |
+qaagyuq(DEM.VOC.Sg):qaagyuq        Enclitic;                                              qakemyuq(DEM.VOC.Sg):qakemyuq       Enclitic; ! Voc Sg          |
+qaagkughsi(DEM.VOC.Pl):qaagkughsi  Enclitic;                                              qakemkughsi(DEM.VOC.Pl):qakemkughsi Enclitic; ! Voc Pl          |
                                                                                                                                        !                  |
 qaga(DEM.ADV):qaga                 DemAdvPB;                                              qakma(DEM.ADV):qakma               DemAdvPB; ! Adv Ptcl         |
 qagani(DEM.ADV.Loc):qagani         Enclitic;                                              qakmani(DEM.ADV.Loc):qakmani       Enclitic; ! Loc Adv          |
@@ -172,8 +172,8 @@ maana(DEM.PRO.Abs.Sg):maana        Enclitic; una(DEM.PRO.Abs.Sg):una            
 matu(DEM.PRO):matu                 DemProSg; uu(DEM.PRO):uu                     DemProSg; imu(DEM.PRO):imu                   DemProSg; ! Sg Non-Abs Base  | 
 maaku(DEM.PRO):maaku               DemProPD; uku(DEM.PRO):uku                   DemProPD; imku(DEM.PRO):imku                 DemProPD; ! Non-Sg Pron Base |
                                                                                                                                        !                  |
-                                             uuyuq(VOC.Sg):uuyuq                Enclitic; iimyuq(VOC.Sg):iimyuq              Enclitic; ! Voc Sg           |
-                                             ukughsi(VOC.Pl):ukughsi            Enclitic; iimkughsi(VOC.Pl):iimkughsi        Enclitic; ! Voc Pl           |
+                                             uuyuq(DEM.VOC.Sg):uuyuq            Enclitic; iimyuq(DEM.VOC.Sg):iimyuq          Enclitic; ! Voc Sg           |
+                                             ukughsi(DEM.VOC.Pl):ukughsi        Enclitic; iimkughsi(DEM.VOC.Pl):iimkughsi    Enclitic; ! Voc Pl           |
                                                                                                                                        !                  |
 maa(DEM.ADV):maa                   DemAdvPB; whaa(DEM.ADV):whaa                 DemAdvPB; ima(DEM.ADV):ima                   DemAdvPB; ! Adv Ptcl         |
 maani(DEM.ADV.Loc):maani           Enclitic; whani(DEM.ADV.Loc):whani           Enclitic; imani(DEM.ADV.Loc):imani           Enclitic; ! Loc Adv          |
@@ -190,11 +190,11 @@ maaten(DEM.ADV.Equ):maaten         Enclitic; whaten(DEM.ADV.Equ):whaten         
                                              uku(DEM.PRO):uku                   DemProSg;                                              ! Sg Non-Abs Base  | 
                                              ukegku(DEM.PRO):ukegku             DemProPD;                                              ! Non-Sg Pron Base | 
                                                                                                                                        !                  |
-                                             ukuq(DEM.PRO.Abs.Sg):ukuq                 #; ! from fieldwork in 2018                     !                  |
+                                             ukuq(DEM.PRO.Abs.Sg):ukuq          Enclitic; ! from fieldwork in 2018                     !                  |
                                                                                                                                        !                  |
                                                                                                                                        !                  |
-                                             uuksuq(VOC.Sg):uuksuq              Enclitic;                                              ! Voc Sg           |
-                                             ukegkughsi(VOC.Pl):uukegkughsi     Enclitic;                                              ! Voc Pl           |
+                                             uuksuq(DEM.VOC.Sg):uuksuq          Enclitic;                                              ! Voc Sg           |
+                                             ukegkughsi(DEM.VOC.Pl):uukegkughsi Enclitic;                                              ! Voc Pl           |
                                                                                                                                        !                  |
                                              uka(DEM.ADV):uka                   DemAdvPB;                                              ! Adv Ptcl         |
                                              ukani(DEM.ADV.Loc):ukani           Enclitic;                                              ! Loc Adv          |
@@ -208,27 +208,27 @@ maaten(DEM.ADV.Equ):maaten         Enclitic; whaten(DEM.ADV.Equ):whaten         
 ! NOTE: I've only seen (some of) these demonstratives
 !       form vocatives but others may be possible
 !----------------------------------------------------
-iingkughsi(DEM)^[Voc]:iingkughsi[Voc]    #;
-aamkughsi(DEM)^[Voc]:aamkughsi[Voc]      #; 
-aagkughsi(DEM)^[Voc]:aagkughsi[Voc]      #;
-ikegkughsi(DEM)^[Voc]:ikegkughsi[Voc]    #;
-akemkughsi(DEM)^[Voc]:akemkughsi[Voc]    #;
-paagkughsi(DEM)^[Voc]:paagkughsi[Voc]    #;
-pikegkughsi(DEM)^[Voc]:pikegkughsi[Voc]  #;
-paamkughsi(DEM)^[Voc]:paamkughsi[Voc]    #;
-unegkughsi(DEM)^[Voc]:unegkughsi[Voc]    #;
-kaankughsi(DEM)^[Voc]:kaankughsi[Voc]    #;
-saamkughsi(DEM)^[Voc]:saamkughsi[Voc]    #;
-uugkughsi(DEM)^[Voc]:uugkughsi[Voc]      #;
-sakemkughsi(DEM)^[Voc]:sakemkughsi[Voc]  #;
-qaawhkughsi(DEM)^[Voc]:qaawhkughsi[Voc]  #;
-kiiwhkughsi(DEM)^[Voc]:kiiwhkughsi[Voc]  #;
-qaamkughsi(DEM)^[Voc]:qaamkughsi[Voc]    #;
-qaagkughsi(DEM)^[Voc]:qaagkughsi[Voc]    #;
-qakemkughsi(DEM)^[Voc]:qakemkughsi[Voc]  #;
-ukughsi(DEM)^[Voc]:ukughsi[Voc]          #;
-iimkughsi(DEM)^[Voc]:iimkughsi[Voc]      #;
-ukegkughsi(DEM)^[Voc]:uukegkughsi[Voc]   #;
-maakughsi(DEM)^[Voc]:maakughsi[Voc]      #; ! from exceptions.txt
+iingkughsi(DEM.VOC.Pl)^[Voc]:iingkughsi[Voc]    #;
+aamkughsi(DEM.VOC.Pl)^[Voc]:aamkughsi[Voc]      #; 
+aagkughsi(DEM.VOC.Pl)^[Voc]:aagkughsi[Voc]      #;
+ikegkughsi(DEM.VOC.Pl)^[Voc]:ikegkughsi[Voc]    #;
+akemkughsi(DEM.VOC.Pl)^[Voc]:akemkughsi[Voc]    #;
+paagkughsi(DEM.VOC.Pl)^[Voc]:paagkughsi[Voc]    #;
+pikegkughsi(DEM.VOC.Pl)^[Voc]:pikegkughsi[Voc]  #;
+paamkughsi(DEM.VOC.Pl)^[Voc]:paamkughsi[Voc]    #;
+unegkughsi(DEM.VOC.Pl)^[Voc]:unegkughsi[Voc]    #;
+kaankughsi(DEM.VOC.Pl)^[Voc]:kaankughsi[Voc]    #;
+saamkughsi(DEM.VOC.Pl)^[Voc]:saamkughsi[Voc]    #;
+uugkughsi(DEM.VOC.Pl)^[Voc]:uugkughsi[Voc]      #;
+sakemkughsi(DEM.VOC.Pl)^[Voc]:sakemkughsi[Voc]  #;
+qaawhkughsi(DEM.VOC.Pl)^[Voc]:qaawhkughsi[Voc]  #;
+kiiwhkughsi(DEM.VOC.Pl)^[Voc]:kiiwhkughsi[Voc]  #;
+qaamkughsi(DEM.VOC.Pl)^[Voc]:qaamkughsi[Voc]    #;
+qaagkughsi(DEM.VOC.Pl)^[Voc]:qaagkughsi[Voc]    #;
+qakemkughsi(DEM.VOC.Pl)^[Voc]:qakemkughsi[Voc]  #;
+ukughsi(DEM.VOC.Pl)^[Voc]:ukughsi[Voc]          #;
+iimkughsi(DEM.VOC.Pl)^[Voc]:iimkughsi[Voc]      #;
+ukegkughsi(DEM.VOC.Pl)^[Voc]:uukegkughsi[Voc]   #;
+maakughsi(DEM.VOC.Pl)^[Voc]:maakughsi[Voc]      #; ! from exceptions.txt
 
 
