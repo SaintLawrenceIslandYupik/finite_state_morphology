@@ -17,18 +17,15 @@ ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc foreign.lexc
 	foma -l ess.foma -e "save defined $@" -s
 
 
-# full grammar that handles foreign wods in the corpus, numbers, sandhi phenomena, and additional orthography rules
-full_l2s.fomabin: ess.fomabin
-	foma -e "load defined $<" -e "push FullLexicalToSurfaceGrammar" -e "save stack $@" -s
-
-full_l2is.fomabin: ess.fomabin
-	foma -e "load defined $<" -e "push FullLexicalToIntermediateWithPhonology" -e "save stack $@" -s
-
+# full grammar that handles foreign words in the corpus, numbers, sandhi phenomena, and additional orthography rules
 lowercase.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push FullLexicalToSurfaceGrammar" -e "save stack $@" -s
 
 uppercase.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push UppercaseFullLexicalToSurfaceGrammar" -e "save stack $@" -s
+
+full_l2is.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push FullLexicalToIntermediateWithPhonology" -e "save stack $@" -s
 
 
 l2s.fomabin: ess.fomabin
@@ -72,14 +69,6 @@ fi2s.fomabin: ess.fomabin
 
 a2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "re LexicalToSurfaceGrammar .o. AllowUppercase ;" -e "push ForeignToSurfaceGrammar" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
-
-
-# for neural experiments
-neural_lowercase.fomabin: ess.fomabin
-	foma -e "load defined $<" -e "push NeuralLowercase" -e "save stack $@" -s
-
-neural_uppercase.fomabin: ess.fomabin
-	foma -e "load defined $<" -e "push NeuralUppercase" -e "save stack $@" -s
 
 
 %.interactive: %.fomabin

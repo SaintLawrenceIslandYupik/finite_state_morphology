@@ -6,7 +6,7 @@ LEXICON VerbPostbaseII
 0:0           VNPostbaseII;
 @D.AUX.TRUE@  VVPostbaseII;
 
-^~sf–ghhaleg(V→XCLM):^ghhalek               #;             ! how V! (exclamation)
+^~sf–ghhaleg(V→PTCL):^ghhalek               #;             ! how V! (exclamation)
 ^@~%:(i/u)magh*(V→QUANTQUAL):^%{.f.%}umagh  QuantQualInfl; ! while V-ing
 
 
@@ -147,6 +147,7 @@ LEXICON VVPostbaseII
 ^~fughtagh(V→V):^%{.f.%}ughtagh                VerbPostbaseIV;  ! to V all things available; to V completely
 ^–vyigh(V→V):^vyigh                            VerbPostbaseIV;  ! to almost V; to V to the extent that one is able
 ^–vzigh(V→V):^vzigh                            VerbPostbaseIV;  ! to almost V; to V to the extent that one is able
+^@~fyagh(V→V):^%{.f.%}yagh                     VerbPostbaseIV;  ! to go somewhere in order to V; to go V-ing 
 ^@~fyaghagh(V→V):^%{.f.%}yaghagh               VerbPostbaseIV;  ! to V early
 ^@~fyaaghagh(V→V):^%{.f.%}yaaghagh             VerbPostbaseIV;  ! to readily V
 ^@~fyaghtugh(V→V):^%{.f.%}yaghtugh             VerbPostbaseIV;  ! to be about to V; to go somewhere to V
@@ -286,7 +287,7 @@ LEXICON ModalII
 ^@~–(g)kayugu(V→V):^gkayugu             SetAUXFlagModalI;  ! to be able to V; can V
 ^@~–(g)kayugu(V→V):^%{.f.%}kayugu       SetAUXFlagModalI;  ! to be able to V; can V
 ^@~fnaqe(V→V):^%{.f.%}naqe              SetAUXFlagModalII; ! to be going to V in the near future; to try to V
-^@~fnaqlaatagh(V→V):^%{.f.%}naqlaatagh  SetAUXFlagModalIV; ! to V again be going to V
+^@~fnaqlaatagh(V→V):^%{.f.%}naqlaatagh  SetAUXFlagModalIV; ! to V again; be going to V
 ^–qaghnaqe(V→V):^qaghnaqe               SetAUXFlagModalII; ! to be about to V for a moment 
 ^@~fna(V→V):^%{.f.%}na                  SetAUXFlagModalI;  ! in order to V; to V 
 ^@~fnaqngu(V→V):^%{.f.%}naqngu          SetAUXFlagModalI;  ! to have to V

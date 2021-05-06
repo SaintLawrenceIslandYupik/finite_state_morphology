@@ -6,7 +6,7 @@ LEXICON VerbPostbaseVII
 0:0            VNPostbaseVII;
 @D.AUX.TRUE@   VVPostbaseVII;
 
-^~sf–ghhaleg(V→XCLM):^%{.sf.%}%{.m.%}ghhalek  #;             ! how V! (exclamation)
+^~sf–ghhaleg(V→PTCL):^%{.sf.%}%{.m.%}ghhalek  #;             ! how V! (exclamation)
 ^@~%:(i/u)magh*(V→QUANTQUAL):^%{.sf.%}umagh   QuantQualInfl; ! while V-ing
 
 
@@ -143,6 +143,7 @@ LEXICON VVPostbaseVII
 ^~fughtagh(V→V):^ughtagh                               VerbPostbaseIV;  ! to V all things available; to V completely
 ^–vyigh(V→V):^%{.m.%}vyigh                             VerbPostbaseIV;  ! to almost V; to V to the extent that one is able
 ^–vzigh(V→V):^%{.m.%}vzigh                             VerbPostbaseIV;  ! to almost V; to V to the extent that one is able
+^@~fyagh(V→V):^yagh                                    VerbPostbaseIV;  ! to go somewhere in order to V; to go V-ing 
 ^@~fyaghagh(V→V):^yaghagh                              VerbPostbaseIV;  ! to V early
 ^@~fyaaghagh(V→V):^yaaghagh                            VerbPostbaseIV;  ! to readily V
 ^@~fyaghtugh(V→V):^yaghtugh                            VerbPostbaseIV;  ! to be about to V; to go somewhere to V
@@ -279,7 +280,7 @@ LEXICON ModalVII
 0:0                                        PastTenseVII;
 ^@~–(g)kayugu(V→V):^%{.sf.%}%{.m.%}kayugu  SetAUXFlagModalI;  ! to be able to V; can V
 ^@~fnaqe(V→V):^naqe                        SetAUXFlagModalII; ! to be going to V in the near future; to try to V
-^@~fnaqlaatagh(V→V):^naqlaatagh            SetAUXFlagModalIV; ! to V again be going to V
+^@~fnaqlaatagh(V→V):^naqlaatagh            SetAUXFlagModalIV; ! to V again; be going to V
 ^–qaghnaqe(V→V):^%{.m.%}qaghnaqe           SetAUXFlagModalII; ! to be about to V for a moment 
 ^@~fna(V→V):^na                            SetAUXFlagModalI;  ! in order to V; to V 
 ^@~fnaqngu(V→V):^naqngu                    SetAUXFlagModalI;  ! to have to V
@@ -325,7 +326,7 @@ LEXICON FutureFrustrativeVII
 0:0                    EvidentialImputativeVII;
 ^@lleqe(V→V):^lleqe    SetAUXFlagFutureFrustrativeII; ! to V in the future; will V
 ^@~fnaagh(V→V):^naagh  SetAUXFlagFutureFrustrativeIV; ! to be going to V eventually
-^@~fyagh(V→V):^yagh    SetAUXFlagFutureFrustrativeIV; ! to go somewhere in order to V; to go V-ing
+^@~fyagh(V→V):^yagh    SetAUXFlagFutureFrustrativeIV; ! to V but...; to V in vain; to V without the desired results
 
 !=====================================
 LEXICON SetAUXFlagFutureFrustrativeVII
@@ -337,7 +338,7 @@ LEXICON EvidentialImputativeVII
 !==============================
 0:0                              PostAuxiliaryVII;
 ^+(pete)fte(V→V):^petef%{t%}e    SetAUXFlagEvidentialImputativeV;  ! to evidently V or have V-ed
-^+(pete)fte(V→V):^pe%{t%}e       SetAUXFlagEvidentialImputativeV;  ! to evidently V or have V-ed (variation of -fte[V.V]:%^petefte)
+^+(pete)fte(V→V):^pe%{t%}e       SetAUXFlagEvidentialImputativeV;  ! to evidently V or have V-ed
 ^+yengagh(V→V):^yengagh          SetAUXFlagEvidentialImputativeI;  ! it looks like V (from the evidence I have heard or seen)
 ^@~fni(CmpdVbl):^ni              SetAUXFlagEvidentialImputativeI;  ! to say that one is V-ing or being V-ed; to think that one is V-ing or being V-ed
 ^@~fyuke(CmpdVbl):^yuke          SetAUXFlagEvidentialImputativeII; ! to think that one is V-ing or has V-ed

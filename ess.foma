@@ -947,13 +947,5 @@ define FullLexicalToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. Cleanu
 define FullLexicalToIntermediateWithPhonology [ FullLexicalToIntermediateGrammar .o. MarkNullMorpheme ];
 define FullIntermediateToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. FullLexicalToSurfaceGrammar ];
 
-define UppercaseFullLexicalToSurfaceGrammar [ FullLexicalToSurfaceGrammar .o. SandhiAndOrthography .o. Uppercase ];
-
-!--------------------------------------------------------------
-! defining a grammar for generating data for neural experiments
-!   excludes: foreign lexical items found in the digital corpus
-!             interrogative lengthening
-!             curly apostrophes
-!--------------------------------------------------------------
-define NeuralLowercase [ LexicalToSurfaceGrammar .o. CrossWordBoundaryGemination .o. GWAlternation .o. Vocatives ];
-define NeuralUppercase [ LexicalToSurfaceGrammar .o. CrossWordBoundaryGemination .o. GWAlternation .o. Vocatives .o. Uppercase ];
+define UppercaseFullLexicalToSurfaceGrammar [ FullLexicalToSurfaceGrammar .o. Uppercase ];
+!define UppercaseFullLexicalToIntermediateWithPhonologyGrammar [ FullLexicalToIntermediateWithPhonology .o. Uppercase ];
