@@ -685,13 +685,14 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
                                                                          %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l u                ;
 
 
-define ResolveDemAnaphor "[Anaphor]" -> t a z || _ "^" i       .o.
-                         "[Anaphor]" -> t     || _ "^" V V     .o.
-                         "[Anaphor]" -> t a   || _ "^" [V | m] .o.
-                         "[Anaphor]" -> t e   || _ "^" s       ,,
-                         "[Anaphor]" ->   e   || _ "^" s       .o.
-                         "[Anaphor]" -> t e s || _ "^" C       ,,
-                         "[Anaphor]" ->   e s || _ "^" C       ;
+define ResolveDemAnaphor "[Anaphor]" -> t a z     || _ "^" i       .o.
+                         "[Anaphor]" -> t         || _ "^" a a     .o.
+                         "[Anaphor]" "^" u -> t a || _ u           .o.
+                         "[Anaphor]" -> t a       || _ "^" [V | m] .o.
+                         "[Anaphor]" -> t e       || _ "^" s       ,,
+                         "[Anaphor]" ->   e       || _ "^" s       .o.
+                         "[Anaphor]" -> t e s     || _ "^" C       ,,
+                         "[Anaphor]" ->   e s     || _ "^" C       ;
 
 
 !------------------
@@ -909,9 +910,11 @@ define GuessLex    [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
 define ForeignLex  [ Foreign   .o. Guesses .o. Filters .o. Lexicon ];
 
 define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
-define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary ];
+define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ];
 define LexicalToIntermediateWithPhonology [ LexicalToIntermediateGrammar .o. MarkNullMorpheme ];
 define IntermediateToSurfaceGrammar [ LexicalToIntermediateGrammar .o. LexicalToSurfaceGrammar ];
+
+define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
 
 define GuessToIntermediateGrammar [ GuessLex .o. Rules ];
 define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBoundary ];
@@ -925,8 +928,6 @@ define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. Fo
 
 ! define GrammarLower [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 ! define GrammarUpper [ GrammarLower .o. Uppercase ];
-
-!define LexicalToInitialCapsSurfaceGrammar [ LexicalToSurfaceGrammar .o. Uppercase ];
 
 ! define BigGrammar [ LexicalToSurfaceGrammar .p. GuessToSurfaceGrammar .p. ForeignGuessGrammar ];
 
@@ -948,4 +949,3 @@ define FullLexicalToIntermediateWithPhonology [ FullLexicalToIntermediateGrammar
 define FullIntermediateToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. FullLexicalToSurfaceGrammar ];
 
 define UppercaseFullLexicalToSurfaceGrammar [ FullLexicalToSurfaceGrammar .o. Uppercase ];
-!define UppercaseFullLexicalToIntermediateWithPhonologyGrammar [ FullLexicalToIntermediateWithPhonology .o. Uppercase ];

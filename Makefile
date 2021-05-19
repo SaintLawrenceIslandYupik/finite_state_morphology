@@ -21,24 +21,27 @@ ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc foreign.lexc
 lowercase.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push FullLexicalToSurfaceGrammar" -e "save stack $@" -s
 
+l2is.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push FullLexicalToIntermediateWithPhonology" -e "save stack $@" -s
+
 uppercase.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push UppercaseFullLexicalToSurfaceGrammar" -e "save stack $@" -s
 
-full_l2is.fomabin: ess.fomabin
-	foma -e "load defined $<" -e "push FullLexicalToIntermediateWithPhonology" -e "save stack $@" -s
 
-
-l2s.fomabin: ess.fomabin
+l2s_ess_only.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "save stack $@" -s
 
-li2s.fomabin: ess.fomabin
+l2is_ess_only.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push LexicalToIntermediateWithPhonology" -e "save stack $@" -s
+
+li2s_ess_only.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push IntermediateToSurfaceGrammar" -e "save stack $@" -s
 
-l2i.fomabin: ess.fomabin
+l2i_ess_only.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToIntermediateGrammar" -e "save stack $@" -s
 
-l2is.fomabin: ess.fomabin
-	foma -e "load defined $<" -e "push LexicalToIntermediateWithPhonology" -e "save stack $@" -s
+uppercase_ess_only.fomabin: ess.fomabin
+	foma -e "load defined $<" -e "push "LexicalToInitialCapsSurfaceGrammar -e "save stack $@" -s
 
 # Guessed Yupik words
 g2s.fomabin: ess.fomabin
@@ -67,7 +70,7 @@ f2is.fomabin: ess.fomabin
 fi2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push ForeignIntermediateToSurfaceGrammar" -e "save stack $@" -s
 
-a2s.fomabin: ess.fomabin
+a2.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "re LexicalToSurfaceGrammar .o. AllowUppercase ;" -e "push ForeignToSurfaceGrammar" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
 
 

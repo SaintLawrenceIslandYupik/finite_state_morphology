@@ -10,18 +10,18 @@ LEXICON  Exception
 [Anaphor]^uukna(DEM.PRO.Abs.Sg):taakwna    Enclitic;  ! [Jacobson (2001) p.111]
 [Anaphor]^maana(DEM.PRO.Abs.Sg):tamana     Enclitic;  ! [Jacobson (2001) p.112]
 [Anaphor]^whaa(DEM.PRO.Abs.Sg):taana       Enclitic;  ! [Jacobson (2001) p.112]
-[Anaphor]^whaa(DEM.ADV.Loc):tawani         PostInflI; ! [Jacobson (2001) p.129]
-[Anaphor]^whaa(DEM.ADV.Equ):tawaten        Enclitic;  ! [Jacobson (2001) p.112]
+[Anaphor]^whaa(DEM.ADV)^[Loc.Pl]:tawani    PostInflI; ! [Jacobson (2001) p.129]
 [Anaphor]^uugna(DEM.PRO.Abs.Sg):taawna     Enclitic;  ! [Jacobson (2001) p.112]
 [Anaphor]^paagna(DEM.PRO.Abs.Sg):tespagna  Enclitic;  ! [Jacobson (2001) p.112]
 [Anaphor]^paagna(DEM.PRO.Abs.Sg):espagna   Enclitic;  ! [Jacobson (2001) p.112]
 [Anaphor]^qaagna(DEM.PRO.Abs.Sg):tesqagna  Enclitic;  ! [Jacobson (2001) p.112]
 [Anaphor]^qaagna(DEM.PRO.Abs.Sg):esqagna   Enclitic;  ! [Jacobson (2001) p.112]
 
-maakughsi(DEM.VOC.Pl):maakughsi                Enclitic;       ! [from Badten (2008) p.615,
+maakughsi(DEM.VOC.Pl):maakughsi                Enclitic;   ! [from Badten (2008) p.615,
                                                            ! but Jacobson (2001) Ch16
                                                            ! states that this demonstrative
                                                            ! "maana" doesn't have a vocative
+
 whaa(DEM.ADV)^~fmig(N→N):whaamig           NounPostbaseII; ! it's rare for postbases to
                                                            ! suffix directly to demonstratives
                                                            ! [Jacobson (2001) Ch16 & Speaker 14]
