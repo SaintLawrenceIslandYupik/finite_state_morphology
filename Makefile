@@ -18,7 +18,7 @@ ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc foreign.lexc
 
 
 # full grammar that handles foreign words in the corpus, numbers, sandhi phenomena, and additional orthography rules
-lowercase.fomabin: ess.fomabin
+l2s.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push FullLexicalToSurfaceGrammar" -e "save stack $@" -s
 
 l2is.fomabin: ess.fomabin
@@ -28,19 +28,19 @@ uppercase.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push UppercaseFullLexicalToSurfaceGrammar" -e "save stack $@" -s
 
 
-l2s_ess_only.fomabin: ess.fomabin
+l2s_ess.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "save stack $@" -s
 
-l2is_ess_only.fomabin: ess.fomabin
+l2is_ess.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToIntermediateWithPhonology" -e "save stack $@" -s
 
-li2s_ess_only.fomabin: ess.fomabin
+li2s_ess.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push IntermediateToSurfaceGrammar" -e "save stack $@" -s
 
-l2i_ess_only.fomabin: ess.fomabin
+l2i_ess.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push LexicalToIntermediateGrammar" -e "save stack $@" -s
 
-uppercase_ess_only.fomabin: ess.fomabin
+uppercase_ess.fomabin: ess.fomabin
 	foma -e "load defined $<" -e "push "LexicalToInitialCapsSurfaceGrammar -e "save stack $@" -s
 
 # Guessed Yupik words
