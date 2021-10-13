@@ -117,60 +117,12 @@ define GuessedForeign [ GuessedForeignName | GuessedForeignWord ];
 
 ! NOTE: The Number lexicon does slightly overgenerate because of numerals.txt
 !       Digits are permitted to be followed by a dash or nothing, so "1" and "1-" are both valid forms on the lower side 
-!       Digits are also encoded to inflect as vowel-ending and consonant-ending roots. I haven't seen enough examples to make a case for one over the other
+!       Digits are also encoded to inflect as vowel-ending and consonant-ending roots. I have not seen enough examples to make a case for one over the other
 !       (Emily 2021-03-17)
 
 define Digit [ "0" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 ];
 
 define Number ("$") Digit+ ("," Digit^3) ("." Digit^2);
-
-
-!===============
-! READ LEXICONS
-!===============
-
-read lexc exceptions.lexc
-eliminate flag AUX
-define ExceptionsNoFlags;
-define Exceptions ExceptionsNoFlags;
-
-read lexc parallel.lexc
-eliminate flag AUX
-define ParallelNoFlags;
-define ParallelForms ParallelNoFlags;
-
-read lexc foreign.lexc
-eliminate flag AUX
-define ForeignNoFlags;
-define ForeignWords ForeignNoFlags;
-
-read lexc ess.lexc
-substitute defined GuessedRootAIU for "(GuessAIU)"
-substitute defined GuessedRootEHop for "(GuessEHop)"
-substitute defined GuessedRootEDrop for "(GuessEDrop)"
-substitute defined GuessedRootGWGHW for "(GuessGWGHW)"
-substitute defined GuessedRootUnexpectedlyStrongGH for "(GuessUnexpectedlyStrongGH)"
-substitute defined GuessedRootPredictablyStrongGH for "(GuessPredictablyStrongGH)"
-substitute defined GuessedRootWeakGH for "(GuessWeakGH)"
-substitute defined GuessedRootSemiFinalE for "(GuessSemiFinalE)"
-substitute defined GuessedRootTE for "(GuessTE)"
-substitute defined GuessedRootSpecialTE for "(GuessSpecialTE)"
-substitute defined GuessedRootFinalE for "(GuessFinalE)"
-substitute defined GuessedRootFullVGH for "(GuessFullVGH)"
-substitute defined GuessedNameAIU                  for "(GuessNameAIU)"
-substitute defined GuessedNameGWGHW                for "(GuessNameGWGHW)"
-substitute defined GuessedNameWeakGH               for "(GuessNameWeakGH)"
-substitute defined GuessedNameUnexpectedlyStrongGH for "(GuessNameUnexpectedlyStrongGH)"
-substitute defined GuessedNamePredictablyStrongGH  for "(GuessNamePredictablyStrongGH)"
-substitute defined GuessedNameTE                   for "(GuessNameTE)"
-substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
-substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
-substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
-substitute defined GuessedForeign                  for "(GuessForeign)"
-substitute defined Number for "(DIGIT)"
-eliminate flag AUX
-define LexiconNoFlags;
-define Lexicon LexiconNoFlags;
 
 
 !==========================================
@@ -443,8 +395,8 @@ define InterrogativeLengthening a (<-) a a || C _ (C) .#.           .o.
 								e (<-) a a || C _ C .#.             ;
 
 ! NOTE: This first implementation way overgenerates.
-!       The second implementation isn't ideal either...as of now, only noun roots ending in -a, -i, -u
-!       can form vocatives, since I haven't seen examples of how consonant-ending roots form vocatives (see noun_tags.txt)
+!       The second implementation is not ideal either...as of now, only noun roots ending in -a, -i, -u
+!       can form vocatives, since I have not seen examples of how consonant-ending roots form vocatives (see noun_tags.txt)
 !       Some demonstrative forms are permitted to form this -y vocative form as well (see demonstratives.txt).
 !define Vocatives a <- a a y || _ .#. .o.
 !                 i <- i i y || _ .#. .o.
@@ -530,7 +482,7 @@ define VelarUvularRounding n g n g -> n g n g w ,  ! e.g. sikugh^[Abs.3SgPoss.Sg
                                g g -> w h       , 
                                  k -> k w       , 
                                  q -> q w       || [ C | V - u ] _ u ["^"]+ [ i | a ] .o.
-                                 g -> w         || [ V - u ] _ u ["^"]+ [ i | a ]     .o. ! -g shouldn't round by itself after -n
+                                 g -> w         || [ V - u ] _ u ["^"]+ [ i | a ]     .o. ! -g should not round by itself after -n
                            n g n g -> n g n g w ,  ! e.g. retwha^qu^[Ind.Trns]^[3Pl.3Sg] -> retwha^qu^0^at -> retwhaqwaat
                                n g -> n g w     , 
                              g h h -> g h h w   , 
@@ -538,7 +490,7 @@ define VelarUvularRounding n g n g -> n g n g w ,  ! e.g. sikugh^[Abs.3SgPoss.Sg
                                g g -> w h       , 
                                  k -> k w       , 
                                  q -> q w       || [ C | V - u ] "^" _ u ["^"]+ [ i | a ]     .o.
-                                 g -> w         || [ C - n | V - u ] "^" _ u ["^"]+ [ i | a ] .o. ! g shouldn't round by itself after -n
+                                 g -> w         || [ C - n | V - u ] "^" _ u ["^"]+ [ i | a ] .o. ! g should not round by itself after -n
                            n g n g -> n g n g w ,  ! e.g. qiya^kau^[Intrg.Intr]^[3Sg] -> qiyakau^ga -> qiyakaawa
                                n g -> n g w     , 
                              g h h -> g h h w   , 
@@ -635,7 +587,7 @@ define Uteta e -> a || "^" [ %{%.at%.%} | %{%.sf%.%} | %{%.f%.%} | %{%.c%.%} ] u
 !   the subordinative mood marker is also +na for these strongly special -te stems, hence a placeholder %{SUBR%}, while the ordinary
 !   subordinative mood marker @~flu (or @~fllu) is used with all other special -te stems. lastly, some of the person/number markers
 !   are also different for strongly special -te stems, using the subordinative mood marker +na [Jacobson (2001) p.102].
-! there's probably a better way to write this tbh, especially the "t e n ^" -> "n g". how do we differentiate "ten" versus "teng"?
+! there is probably a better way to write this tbh, especially the "t e n ^" -> "n g". how do we differentiate "ten" versus "teng"?
 
 define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u       -> %{%.m%.%} n g u "^" n a "^" a n         .o. 
                             %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" t e n "^" -> %{%.m%.%} n g u "^" n a "^" n g         .o. 
@@ -882,18 +834,65 @@ define CleanupRules [
 ];
 
 define Rules [
-	MorphophonologicalRules .o.
-	CleanupRules
+    MorphophonologicalRules .o.
+    CleanupRules
 ];
 
 define RulesforForeignWords [
-	MorphophonologicalRules .o.
-	ForeignWordEndingInE    .o.
+    MorphophonologicalRules .o.
+    ForeignWordEndingInE    .o.
     PreventGemination       .o.
     AssimilateEnclitic      .o.
     Undoubling              .o.
-	MorphBoundary2Hyphen
+    MorphBoundary2Hyphen
 ];
+
+
+!===============
+! READ LEXICONS
+!===============
+
+read lexc exceptions.lexc
+eliminate flag AUX
+define ExceptionsNoFlags;
+define Exceptions ExceptionsNoFlags;
+
+read lexc parallel.lexc
+eliminate flag AUX
+define ParallelNoFlags;
+define ParallelForms ParallelNoFlags;
+
+read lexc foreign.lexc
+eliminate flag AUX
+define ForeignNoFlags;
+define ForeignWords ForeignNoFlags;
+
+read lexc ess.lexc
+substitute defined GuessedRootAIU for "(GuessAIU)"
+substitute defined GuessedRootEHop for "(GuessEHop)"
+substitute defined GuessedRootEDrop for "(GuessEDrop)"
+substitute defined GuessedRootGWGHW for "(GuessGWGHW)"
+substitute defined GuessedRootUnexpectedlyStrongGH for "(GuessUnexpectedlyStrongGH)"
+substitute defined GuessedRootPredictablyStrongGH for "(GuessPredictablyStrongGH)"
+substitute defined GuessedRootWeakGH for "(GuessWeakGH)"
+substitute defined GuessedRootSemiFinalE for "(GuessSemiFinalE)"
+substitute defined GuessedRootTE for "(GuessTE)"
+substitute defined GuessedRootSpecialTE for "(GuessSpecialTE)"
+substitute defined GuessedRootFinalE for "(GuessFinalE)"
+substitute defined GuessedRootFullVGH for "(GuessFullVGH)"
+substitute defined GuessedNameAIU                  for "(GuessNameAIU)"
+substitute defined GuessedNameGWGHW                for "(GuessNameGWGHW)"
+substitute defined GuessedNameWeakGH               for "(GuessNameWeakGH)"
+substitute defined GuessedNameUnexpectedlyStrongGH for "(GuessNameUnexpectedlyStrongGH)"
+substitute defined GuessedNamePredictablyStrongGH  for "(GuessNamePredictablyStrongGH)"
+substitute defined GuessedNameTE                   for "(GuessNameTE)"
+substitute defined GuessedNameSemiFinalE           for "(GuessNameSemiFinalE)"
+substitute defined GuessedNameEDrop                for "(GuessNameEDrop)"
+substitute defined GuessedNameEHop                 for "(GuessNameEHop)"
+substitute defined Number for "(DIGIT)"
+eliminate flag AUX
+define LexiconNoFlags;
+define Lexicon LexiconNoFlags;
 
 
 !----------
@@ -907,7 +906,7 @@ define   Foreign  [ ?* "(FOREIGN)" ?* ];
 
 define FilteredLex [             NoGuesses .o. Filters .o. Lexicon ];
 define GuessLex    [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
-define ForeignLex  [ Foreign   .o. Guesses .o. Filters .o. Lexicon ];
+define ForeignLex  [ [ ?* "(GuessForeign)" ?* ] .o. Filters .o. Lexicon ];
 
 define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ];
@@ -921,7 +920,11 @@ define GuessToSurfaceGrammar [ GuessToIntermediateGrammar .o. CleanupMorphBounda
 define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. MarkNullMorpheme ];
 define GuessIntermediateToSurfaceGrammar [ GuessToIntermediateGrammar .o. GuessToSurfaceGrammar ];
 
-define ForeignToIntermediateGrammar [ ForeignLex .o. Rules ];
+#define ForeignToIntermediateGrammar [ ForeignLex .o. Rules ];
+re ForeignLex .o. Rules ;
+substitute defined GuessedForeign                  for "(GuessForeign)"
+define ForeignToIntermediateGrammar;
+
 define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary ];
 define ForeignToIntermediateWithPhonology [ ForeignToIntermediateGrammar .o. MarkNullMorpheme ];
 define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. ForeignToSurfaceGrammar ];
