@@ -1,4 +1,4 @@
-all: lexc $(foreach x,ess f2i f2is f2s fi2s g2i g2is g2s gi2s l2i l2is l2s li2s a2s lowercase uppercase,$x.fomabin) test
+all: lexc $(foreach x,asciiarrow ess f2i f2is f2s fi2s g2i g2is g2s gi2s l2i l2is l2s li2s a2s uppercase,$x.fomabin) test
 # all: ess.lexc $(foreach x,asciiarrow ess l2i l2is l2s li2s lowercase uppercase,$x.fomabin) test
 
 lexc: ess.lexc exceptions.lexc parallel.lexc foreign.lexc eng-noun.lexc eng-verb.lexc eng-other.lexc
@@ -31,12 +31,21 @@ ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc foreign.lexc eng-no
 	foma -l ess.foma -e "save defined $@" -s
 
 
+asciiarrow.fomabin: ess.fomabin ess.foma ess.lexc
+	foma -e "load defined $<" -e "push FullLexicalAsciiArrowToSurfaceGrammar" -e "save stack $@" -s
+
 # full grammar that handles foreign words in the corpus, numbers, sandhi phenomena, and additional orthography rules
 l2s.fomabin: ess.fomabin ess.foma ess.lexc
 	foma -e "load defined $<" -e "push FullLexicalToSurfaceGrammar" -e "save stack $@" -s
 
 l2is.fomabin: ess.fomabin ess.foma ess.lexc
 	foma -e "load defined $<" -e "push FullLexicalToIntermediateWithPhonology" -e "save stack $@" -s
+
+li2s.fomabin: ess.fomabin ess.foma ess.lexc
+	foma -e "load defined $<" -e "push FullIntermediateToSurfaceGrammar" -e "save stack $@" -s
+
+l2i.fomabin: ess.fomabin ess.foma ess.lexc
+	foma -e "load defined $<" -e "push FullLexicalToIntermediateGrammar" -e "save stack $@" -s
 
 uppercase.fomabin: ess.fomabin ess.foma ess.lexc
 	foma -e "load defined $<" -e "push UppercaseFullLexicalToSurfaceGrammar" -e "save stack $@" -s
@@ -55,7 +64,7 @@ l2i_ess.fomabin: ess.fomabin ess.foma ess.lexc
 	foma -e "load defined $<" -e "push LexicalToIntermediateGrammar" -e "save stack $@" -s
 
 uppercase_ess.fomabin: ess.fomabin ess.foma ess.lexc
-	foma -e "load defined $<" -e "push "LexicalToInitialCapsSurfaceGrammar -e "save stack $@" -s
+	foma -e "load defined $<" -e "push LexicalToInitialCapsSurfaceGrammar" -e "save stack $@" -s
 
 # Guessed Yupik words
 g2s.fomabin: ess.fomabin ess.foma ess.lexc
@@ -84,7 +93,7 @@ f2is.fomabin: ess.fomabin ess.foma ess.lexc
 fi2s.fomabin: ess.fomabin ess.foma ess.lexc
 	foma -e "load defined $<" -e "push ForeignIntermediateToSurfaceGrammar" -e "save stack $@" -s
 
-a2.fomabin: ess.fomabin ess.foma ess.lexc
+a2s.fomabin: ess.fomabin ess.foma ess.lexc
 	foma -e "load defined $<" -e "push LexicalToSurfaceGrammar" -e "re LexicalToSurfaceGrammar .o. AllowUppercase ;" -e "push ForeignToSurfaceGrammar" -e "push GuessToSurfaceGrammar" -e "save stack $@" -s
 
 

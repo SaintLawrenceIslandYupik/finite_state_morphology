@@ -365,10 +365,24 @@ define AllowUppercase [ "a" (<-) "A" ] .o. [ "i" (<-) "I" ] .o. [ "u" (<-) "U" ]
                       [ "g" (<-) "G" ] .o. [ "w" (<-) "W" ] .o. [ "s" (<-) "S" ] .o. [ "f" (<-) "F" ] .o.
                       [ "s" (<-) "S" ] .o. [ "m" (<-) "M" ] .o. [ "n" (<-) "N" ] .o. [ "v" (<-) "V" ];
 
-define AsciiArrow "(N→N)" (->) "(N->N)" ,,
-                  "(N→V)" (->) "(N->V)" ,,
-                  "(V→V)" (->) "(V->V)" ,,
-                  "(V→N)" (->) "(V->N)" ;
+define AsciiArrow "(N→N)"           (->) "(N->N)"           ,,
+                  "(N→V)"           (->) "(N->V)"           ,,
+                  "(V→V)"           (->) "(V->V)"           ,,
+                  "(V→N)"           (->) "(V->N)"           ,,
+                  "(EMO→N)"         (->) "(EMO->N)"         ,,
+                  "(EMO→V)"         (->) "(EMO->V)"         ,,
+                  "(POS→STATIVE)"   (->) "(POS->STATIVE)"   ,,
+                  "(POS→ACTIVE)"    (->) "(POS->ACTIVE)"    ,,
+                  "(POS→QUANTQUAL)" (->) "(POS->QUANTQUAL)" ,,
+                  "(DEM→N)"         (->) "(DEM->N)"         ,,
+                  "(DEM→V)"         (->) "(DEM->V)"         ,,
+                  "(NUM→N)"         (->) "(NUM->N)"         ,,
+                  "(NUM→V)"         (->) "(NUM->V)"         ,,
+                  "(N→QUANTQUAL)"   (->) "(N->QUANTQUAL)"   ,,
+                  "(V→QUANTQUAL)"   (->) "(V->QUANTQUAL)"   ,,
+                  "(N→PTCL)"        (->) "(N->PTCL)"        ,,
+                  "(V→PTCL)"        (->) "(V->PTCL)"        ;
+                  
 
 define Minus2Hyphen "–" (->) "-" ;
 
@@ -835,7 +849,7 @@ define CleanupRules [
     PreventGemination    .o.
     AssimilateEnclitic   .o.
     Undoubling           .o.
-    CleanupPlaceholders
+    CleanupPlaceholders  
 ];
 
 define Rules [
@@ -964,7 +978,8 @@ substitute defined EnglishVerbs                    for "(KnownForeignVerb)"
 define ForeignCorpus;
 
 define FullLexicalToIntermediateGrammar [ [ LexicalToIntermediateGrammar ] | [ ForeignCorpus ] ]; 
-define FullLexicalToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ];
+define FullLexicalToSurfaceGrammar             [ FullLexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ]                      ;
+define FullLexicalAsciiArrowToSurfaceGrammar [ [ FullLexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ].i .o. AsciiArrow ].i ;
 define FullLexicalToIntermediateWithPhonology [ FullLexicalToIntermediateGrammar .o. MarkNullMorpheme ];
 define FullIntermediateToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. FullLexicalToSurfaceGrammar ];
 

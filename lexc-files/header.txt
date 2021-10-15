@@ -50,8 +50,8 @@ Multichar_Symbols
 (COMPOUND) ! compound noun root
 (N)        ! noun root
 
-(N→N) ! noun-elaborating postbase
-(N→V) ! verbalizing postbase
+(N→N) (N-%>N) ! noun-elaborating postbase
+(N→V) (N-%>V) ! verbalizing postbase
 
 !~~~~~~~~~~~~~~~~
 ! absolutive case
@@ -177,14 +177,14 @@ Multichar_Symbols
 (EMO)           ! emotional roots
 (POS)           ! postural roots
 
-(V→V)           ! verb-elaborating postbase
-(V→N)           ! nominalizing postbase
-(CmpdVbl)       ! compound-verbal postbase
-(EMO→N)         ! emotional root to noun stem postbase
-(EMO→V)         ! emotional root to verb stem postbase
-(POS→STATIVE)   ! postural root to stative form postbase
-(POS→ACTIVE)    ! postural root to active form postbase
-(POS→QUANTQUAL) ! postural root to quantifier-qualifier construction
+(V→V)           (V-%>V)           ! verb-elaborating postbase
+(V→N)           (V-%>N)           ! nominalizing postbase
+(CmpdVbl)                        ! compound-verbal postbase
+(EMO→N)         (EMO-%>N)         ! emotional root to noun stem postbase
+(EMO→V)         (EMO-%>V)         ! emotional root to verb stem postbase
+(POS→STATIVE)   (POS-%>STATIVE)   ! postural root to stative form postbase
+(POS→ACTIVE)    (POS-%>ACTIVE)    ! postural root to active form postbase
+(POS→QUANTQUAL) (POS-%>QUANTQUAL) ! postural root to quantifier-qualifier construction
 
 [Ind.Intr]      ! intransitive indicative mood
 [Ind.Trns]      !   transitive indicative mood
@@ -305,8 +305,8 @@ Multichar_Symbols
 !--------------------
 ! demonstrative tags
 !--------------------
-(DEM→N)        ! demonstrative to noun stem
-(DEM→V)        ! demonstrative to verb stem
+(DEM→N) (DEM-%>N)        ! demonstrative to noun stem
+(DEM→V) (DEM-%>V)       ! demonstrative to verb stem
 [Anaphor]      ! for the anaphoric prefix
 (DEM.PRO)
 (DEM.PRO.Abs.Sg)      (DEM.PRO.AbsRel.Pl)   (DEM.PRO.AbsRel.Du)
@@ -341,16 +341,16 @@ Multichar_Symbols
 !-------------------------
 ! misc morphological tags
 !-------------------------
-(NUM)          ! numeral
-(NUM→N)        ! numeral to noun stem
-(NUM→V)        ! numeral to verb stem
-(PTCL)         ! particle
-(QUANTQUAL)    ! for quantifier-qualifier constructions
-(N→QUANTQUAL)  ! noun stem to quantifier-qualifier postbase
-(V→QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
-(N→PTCL)       ! noun stem to exclamation
-(V→PTCL)       ! verb stem to exclamation
-[Volitive.Of.Fear]  ! for volitive of fear mood [Jacobson (2001) p.129] 
+(NUM)                         ! numeral
+(NUM→N)       (NUM-%>N)        ! numeral to noun stem
+(NUM→V)       (NUM-%>V)        ! numeral to verb stem
+(PTCL)                        ! particle
+(QUANTQUAL)                   ! for quantifier-qualifier constructions
+(N→QUANTQUAL) (N-%>QUANTQUAL)  ! noun stem to quantifier-qualifier postbase
+(V→QUANTQUAL) (V-%>QUANTQUAL)  ! verb stem to quantifier-qualifier postbase
+(N→PTCL)      (N-%>PTCL)       ! noun stem to exclamation
+(V→PTCL)      (V-%>PTCL)       ! verb stem to exclamation
+[Volitive.Of.Fear]            ! for volitive of fear mood [Jacobson (2001) p.129] 
 
 (GUESS)        ! Guessed root
 (GuessAIU)     ! Guessed root that ends in a, i, or u
