@@ -1,0 +1,194 @@
+
+========================
+LEXICON ForeignAdjective
+========================
+all                    ForeignAdjectiveTag;
+any                    ForeignAdjectiveTag;
+big                    ForeignAdjectiveTag;
+blue                   ForeignAdjectiveTag;
+bronze                 ForeignAdjectiveTag;
+fast                   ForeignAdjectiveTag;
+fifth                  ForeignAdjectiveTag;
+fresh                  ForeignAdjectiveTag;
+golden                 ForeignAdjectiveTag;
+grand                  ForeignAdjectiveTag;
+high                   ForeignAdjectiveTag;
+intelligent            ForeignAdjectiveTag;
+irregular              ForeignAdjectiveTag;
+kidnapped              ForeignAdjectiveTag;
+last                   ForeignAdjectiveTag;
+little                 ForeignAdjectiveTag;
+low                    ForeignAdjectiveTag;
+new                    ForeignAdjectiveTag;
+old                    ForeignAdjectiveTag;
+own                    ForeignAdjectiveTag;
+poor                   ForeignAdjectiveTag;
+red                    ForeignAdjectiveTag;
+rewarded               ForeignAdjectiveTag;
+rocky                  ForeignAdjectiveTag;
+same                   ForeignAdjectiveTag;
+second                 ForeignAdjectiveTag;
+small                  ForeignAdjectiveTag;
+stoic                  ForeignAdjectiveTag;
+sure                   ForeignAdjectiveTag;
+tamed                  ForeignAdjectiveTag;
+tan                    ForeignAdjectiveTag;
+territorial            ForeignAdjectiveTag;
+thoughtful             ForeignAdjectiveTag;
+three-sided            ForeignAdjectiveTag;
+well                   ForeignAdjectiveTag;
+wild                   ForeignAdjectiveTag;
+worried                ForeignAdjectiveTag;
+yearly                 ForeignAdjectiveTag;
+yellow                 ForeignAdjectiveTag;
+
+===========================
+LEXICON ForeignAdjectiveTag
+===========================
+(FOREIGN)(ADJ):0  #;
+
+
+=====================
+LEXICON ForeignAdverb
+=====================
+always                 ForeignAdverbTag;
+here                   ForeignAdverbTag;
+just                   ForeignAdverbTag;
+not                    ForeignAdverbTag;
+now                    ForeignAdverbTag;
+so                     ForeignAdverbTag;
+there                  ForeignAdverbTag;
+tonight                ForeignAdverbTag;
+too                    ForeignAdverbTag;
+very                   ForeignAdverbTag;
+
+========================
+LEXICON ForeignAdverbTag
+========================
+(FOREIGN)(ADV):0  #;
+
+
+==========================
+LEXICON ForeignConjunction
+==========================
+and                    ForeignConjunctionTag;
+as                     ForeignConjunctionTag;
+but                    ForeignConjunctionTag;
+if                     ForeignConjunctionTag;
+or                     ForeignConjunctionTag;
+
+=============================
+LEXICON ForeignConjunctionTag
+=============================
+(FOREIGN)(CONJ):0  #;
+
+
+=========================
+LEXICON ForeignDeterminer
+=========================
+an                     ForeignDeterminerTag;
+every                  ForeignDeterminerTag;
+that                   ForeignDeterminerTag;
+the                    ForeignDeterminerTag;
+their                  ForeignDeterminerTag;
+this                   ForeignDeterminerTag;
+his                    ForeignDeterminerTag;
+my                     ForeignDeterminerTag;
+our                    ForeignDeterminerTag;
+your                   ForeignDeterminerTag;
+
+============================
+LEXICON ForeignDeterminerTag
+============================
+(FOREIGN)(DET):0  #;
+
+
+============================
+LEXICON ForeignMiscellaneous
+============================
+N                      #;
+E                      #;
+S                      #;
+W                      #;
+X                      #;
+didnʼt                 #;
+donʼt                  #;
+heʼs                   #;
+hereʼs                 #;
+Iʼd                    #;
+Iʼll                   #;
+Iʼm                    #;
+itʼs                   #;
+thatʼs                 #;
+theyʼll                #;
+weʼll                  #;
+whatʼs                 #;
+C-R-U-U-U-N-C-H                        #;
+Days-O-Work                            #;
+everybodyʼs                            #;
+evʼrybadis                             #;
+ah(INTERJECTION):ah                    #;
+amen(INTERJECTION):amen                #;
+ha(INTERJECTION):ha                    #;
+haa(INTERJECTION):haa                  #;
+ha-aa-aa-aa(INTERJECTION):ha-aa-aa-aa  #;
+hahaha(INTERJECTION):hahaha            #;
+hahahaha(INTERJECTION):hahahaha        #;
+Hail(INTERJECTION):Hail                #;
+Hallelujah(INTERJECTION):Hallelujah    #;
+hee(INTERJECTION):hee                  #;
+hey(INTERJECTION):hey                  #;
+hi(INTERJECTION):hi                    #;
+hm(INTERJECTION):hm                    #;
+hm-m(INTERJECTION):hm-m                #;
+hohohohohohohohohohohoho(INTERJECTION):hohohohohohohohohohohoho  #;
+goodnight(INTERJECTION):goodnight      #;
+oh(INTERJECTION):oh                    #;
+o-ho(INTERJECTION):o-ho                #;
+okay(INTERJECTION):okay                #;
+sorry(INTERJECTION):sorry              #;
+sure(INTERJECTION):sure                #;
+thank(INTERJECTION):thank              #;
+
+
+==========================
+LEXICON ForeignPreposition
+==========================
+about                  ForeignPrepositionTag;
+above                  ForeignPrepositionTag;
+after                  ForeignPrepositionTag;
+around                 ForeignPrepositionTag;
+at                     ForeignPrepositionTag;
+by                     ForeignPrepositionTag;
+for                    ForeignPrepositionTag;
+from                   ForeignPrepositionTag;
+in                     ForeignPrepositionTag;
+of                     ForeignPrepositionTag;
+on                     ForeignPrepositionTag;
+over                   ForeignPrepositionTag;
+to                     ForeignPrepositionTag;
+up                     ForeignPrepositionTag;
+with                   ForeignPrepositionTag;
+
+=============================
+LEXICON ForeignPrepositionTag
+=============================
+(FOREIGN)(PREP):0  #;
+
+
+======================
+LEXICON ForeignPronoun
+======================
+him                    ForeignPronounTag;
+me                     ForeignPronounTag;
+us                     ForeignPronounTag;
+we                     ForeignPronounTag;
+you                    ForeignPronounTag;
+what                   ForeignPronounTag;
+when                   ForeignPronounTag;
+where                  ForeignPronounTag;
+
+=========================
+LEXICON ForeignPronounTag
+=========================
+(FOREIGN)(PRO):0  #;

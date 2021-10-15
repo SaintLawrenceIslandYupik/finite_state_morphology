@@ -1,0 +1,13 @@
+==========================
+LEXICON ForeignConjunction
+==========================
+and                    ForeignConjunctionTag;
+as                     ForeignConjunctionTag;
+but                    ForeignConjunctionTag;
+if                     ForeignConjunctionTag;
+or                     ForeignConjunctionTag;
+
+=============================
+LEXICON ForeignConjunctionTag
+=============================
+(FOREIGN)(CONJ):0  #;
