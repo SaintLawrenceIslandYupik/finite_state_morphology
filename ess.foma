@@ -755,7 +755,11 @@ define CleanupPlaceholders %{k%}   -> 0   .o.
 
 define CleanupMorphBoundary "^" -> 0 ;
 
-define MorphBoundary2Hyphen "^" (->) "-" || [ UppercaseForeignAlphabet | LowercaseForeignAlphabet ]+ _ ;
+! 
+define MorphBoundary2Hyphen "^"  ->  "-" \\ [ "(KnownForeignNoun)" | "(KnownForeignVerb)" | "(GuessForeign)" ] _  \.#. ,,
+                            "^"  ->   0  \\ [ "(KnownForeignNoun)" | "(KnownForeignVerb)" | "(GuessForeign)" ] _       ;
+#                            "^"  ->  "-" || "(FOREIGN)" [ "(N)" | "(V)" | "(NAME)" | "(GUESS)" ] _                 ;
+#                           "^" (->) "-" || [ UppercaseForeignAlphabet | LowercaseForeignAlphabet ]+ _  .o.
 
 define MarkNullMorpheme [..] -> %{%0%} || "^" _ "^" , 
                                           "^" _ .#. ;
@@ -915,7 +919,7 @@ define   Foreign  [ ?* "(FOREIGN)" ?* ];
 
 define FilteredLex [             NoGuesses .o. Filters .o. Lexicon ];
 define GuessLex    [ NoForeign .o. Guesses .o. Filters .o. Lexicon ];
-define ForeignLex  [ [ ?* "(GuessForeign)" ?* ] .o. Filters .o. Lexicon ];
+define ForeignLex  [ [ ?* [ "(GuessForeign)" | "(KnownForeignNoun)" | "(KnownForeignVerb)" | "(FOREIGN)" ]?* ] .o. Filters .o. Lexicon ];
 
 define LexicalToIntermediateGrammar [ [ [Exceptions .P. FilteredLex] | ParallelForms ] .o. Rules ];
 define LexicalToSurfaceGrammar [ LexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ];
@@ -930,10 +934,8 @@ define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. MarkNul
 define GuessIntermediateToSurfaceGrammar [ GuessToIntermediateGrammar .o. GuessToSurfaceGrammar ];
 
 #define ForeignToIntermediateGrammar [ ForeignLex .o. Rules ];
-re [ ForeignLex .o. Rules ] | EnglishMiscWords;
+re ForeignLex .o. Rules;
 substitute defined GuessedForeign                  for "(GuessForeign)"
-substitute defined EnglishNouns                    for "(KnownForeignNoun)"
-substitute defined EnglishVerb                     for "(KnownForeignVerb)"
 define ForeignToIntermediateGrammar;
 
 define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary ];
@@ -955,7 +957,10 @@ define ForeignIntermediateToSurfaceGrammar [ ForeignToIntermediateGrammar .o. Fo
 !   * orthography rules associated with sandhi phenomena, interrogatives, -gw- alternation, vocatives, etc.
 !   * numbers [0-9]+
 !----------------------------------------------------------------------------------------------------------
-define ForeignCorpus [ ForeignWords .o. RulesforForeignWords ];
+re [ ForeignWords .o. RulesforForeignWords ] | EnglishMiscWords;
+substitute defined EnglishNouns                    for "(KnownForeignNoun)"
+substitute defined EnglishVerbs                    for "(KnownForeignVerb)"
+define ForeignCorpus;
 
 define FullLexicalToIntermediateGrammar [ [ LexicalToIntermediateGrammar ] | [ ForeignCorpus ] ]; 
 define FullLexicalToSurfaceGrammar [ FullLexicalToIntermediateGrammar .o. CleanupMorphBoundary .o. SandhiAndOrthography ];

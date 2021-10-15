@@ -1,5 +1,9 @@
-all: ess.lexc $(foreach x,asciiarrow ess f2i f2is f2s fi2s g2i g2is g2s gi2s l2i l2is l2s li2s a2s lowercase uppercase,$x.fomabin) test
+all: lexc $(foreach x,ess f2i f2is f2s fi2s g2i g2is g2s gi2s l2i l2is l2s li2s a2s lowercase uppercase,$x.fomabin) test
 # all: ess.lexc $(foreach x,asciiarrow ess l2i l2is l2s li2s lowercase uppercase,$x.fomabin) test
+
+lexc: ess.lexc exceptions.lexc parallel.lexc foreign.lexc eng-noun.lexc eng-verb.lexc eng-other.lexc
+
+.PHONY: all lexc interactive
 
 ess.lexc: lexc-files/header.txt lexc-files/emotional_roots.txt lexc-files/interrogatives.txt lexc-files/demonstratives.txt lexc-files/dem-suffixes.txt lexc-files/numerals.txt lexc-files/particles.txt lexc-files/positionals.txt lexc-files/postural_roots.txt lexc-files/pronouns.txt lexc-files/quantifier_qualifier.txt lexc-files/roots/noun/*.txt lexc-files/roots/verb/*.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/verb_root_ete.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt lexc-files/punctuation.txt
 	@cat $^ > $@
@@ -13,13 +17,13 @@ parallel.lexc: parallel/header.txt parallel/parallels.txt lexc-files/derivationa
 foreign.lexc: foreign/header.txt foreign/foreign.txt lexc-files/derivational-suffixes/noun-suffixing/*.txt lexc-files/derivational-suffixes/verb-suffixing/*.txt lexc-files/inflections/noun/*.txt lexc-files/inflections/verb/*.txt lexc-files/prs-num/*.txt lexc-files/postinfl-morph.txt lexc-files/enclitics.txt 
 	@cat $^ > $@
 
-eng-noun.lex: foreign/header.txt foreign/noun.txt
+eng-noun.lexc: foreign/header.txt foreign/noun.txt
 	@cat $^ > $@
 
-eng-verb.lex: foreign/header.txt foreign/verb.txt
+eng-verb.lexc: foreign/header.txt foreign/verb.txt
 	@cat $^ > $@
 
-eng-other.lex: foreign/header.txt foreign/other.txt
+eng-other.lexc: foreign/header.txt foreign/other.txt
 	@cat $^ > $@
 
 
@@ -87,7 +91,7 @@ a2.fomabin: ess.fomabin ess.foma ess.lexc
 %.interactive: %.fomabin
 	foma -e "load stack $<"
 
-interactive: lowercase.interactive
+interactive: l2s.interactive
 
 .PRECIOUS: %.fomabin
 
