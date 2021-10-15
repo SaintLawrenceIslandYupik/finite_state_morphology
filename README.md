@@ -7,10 +7,7 @@ If you agree to these conditions, you may access this resource under the terms o
 
 ## Version
 
-This is the development version of the St. Lawrence Island Yupik finite-state morphological analyzer.
-
-This version incorporates changes made after the release of version 2.3 on 29 July 2020 at 13:48:00 -0500.
-
+This is version 2.8 of the St. Lawrence Island Yupik finite-state morphological analyzer.
 
 ## Overview
 
