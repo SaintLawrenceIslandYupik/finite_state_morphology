@@ -755,11 +755,12 @@ define CleanupPlaceholders %{k%}   -> 0   .o.
 
 define CleanupMorphBoundary "^" -> 0 ;
 
-! 
-define MorphBoundary2Hyphen "^"  ->  "-" \\ [ "(KnownForeignNoun)" | "(KnownForeignVerb)" | "(GuessForeign)" ] _  \.#. ,,
-                            "^"  ->   0  \\ [ "(KnownForeignNoun)" | "(KnownForeignVerb)" | "(GuessForeign)" ] _       ;
-#                            "^"  ->  "-" || "(FOREIGN)" [ "(N)" | "(V)" | "(NAME)" | "(GUESS)" ] _                 ;
-#                           "^" (->) "-" || [ UppercaseForeignAlphabet | LowercaseForeignAlphabet ]+ _  .o.
+! In Yupik texts, when a foreign word is used with a Yupik suffix, the boundary is typically (but not always) marked with a hyphen on the surface side.
+!
+! The first clause of the following rule implements this case.
+! The second clause implements the case when the boundary is not explicitly marked with a hyphen.
+define MorphBoundary2Hyphen "^"  ->  "-" \\ [ "(KnownForeignNoun)" | "(KnownForeignVerb)" | "(GuessForeign)" ] _  \.#. ,,   ! Example: Abraham-nkut
+                            "^"  ->   0  || [ "(KnownForeignNoun)" | "(KnownForeignVerb)" | "(GuessForeign)" ] _       ;    ! Example: Abraham
 
 define MarkNullMorpheme [..] -> %{%0%} || "^" _ "^" , 
                                           "^" _ .#. ;
