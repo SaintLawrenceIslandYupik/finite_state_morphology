@@ -23,7 +23,7 @@ eng-other.lex: foreign/header.txt foreign/other.txt
 	@cat $^ > $@
 
 
-ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc foreign.lexc
+ess.fomabin: ess.foma ess.lexc exceptions.lexc parallel.lexc foreign.lexc eng-noun.lexc eng-verb.lexc eng-other.lexc
 	foma -l ess.foma -e "save defined $@" -s
 
 

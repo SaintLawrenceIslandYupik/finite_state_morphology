@@ -867,6 +867,15 @@ eliminate flag AUX
 define ForeignNoFlags;
 define ForeignWords ForeignNoFlags;
 
+read lexc eng-noun.lexc
+define EnglishNouns;
+
+read lexc eng-verb.lexc
+define EnglishVerbs;
+
+read lexc eng-other.lexc
+define EnglishMiscWords;
+
 read lexc ess.lexc
 substitute defined GuessedRootAIU for "(GuessAIU)"
 substitute defined GuessedRootEHop for "(GuessEHop)"
@@ -921,8 +930,10 @@ define GuessToIntermediateWithPhonology [ GuessToIntermediateGrammar .o. MarkNul
 define GuessIntermediateToSurfaceGrammar [ GuessToIntermediateGrammar .o. GuessToSurfaceGrammar ];
 
 #define ForeignToIntermediateGrammar [ ForeignLex .o. Rules ];
-re ForeignLex .o. Rules ;
+re [ ForeignLex .o. Rules ] | EnglishMiscWords;
 substitute defined GuessedForeign                  for "(GuessForeign)"
+substitute defined EnglishNouns                    for "(KnownForeignNoun)"
+substitute defined EnglishVerb                     for "(KnownForeignVerb)"
 define ForeignToIntermediateGrammar;
 
 define ForeignToSurfaceGrammar [ ForeignToIntermediateGrammar .o. CleanupMorphBoundary ];
