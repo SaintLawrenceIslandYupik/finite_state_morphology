@@ -176,8 +176,8 @@ LEXICON NounInflIX
 ^[Equ.3SgPoss.Sg]:^%{.fS.%}ngatun  PostInflIX; ^[Equ.3SgPoss.Pl]:^%{.fS.%}ngatun  PostInflIX;                                             |
 ^[Equ.3PlPoss.Sg]:^%{.f.%}ngitun   PostInflIX; ^[Equ.3PlPoss.Pl]:^%{.f.%}ngitun   PostInflIX; ^[Equ.3PlPoss.Du]:^%{.f.%}ngitun  PostInflIX;
 ^[Equ.3PlPoss.Sg]:^%{.fS.%}ngitun  PostInflIX; ^[Equ.3PlPoss.Pl]:^%{.fS.%}ngitun  PostInflIX; ^[Equ.3PlPoss.Du]:^%{.fS.%}ngitun PostInflIX;
-^[Equ.3DuPoss.Sg]:^gketun          PostInflIX; ^[Equ.3DuPoss.Pl]:^%{.f.%}ngitun   PostInflIX; ^[Equ.3PlPoss.Du]:^%{.f.%}ngitun  PostInflIX;
-                                               ^[Equ.3DuPoss.Pl]:^%{.fS.%}ngitun  PostInflIX; ^[Equ.3PlPoss.Du]:^%{.fS.%}ngitun PostInflIX;
+^[Equ.3DuPoss.Sg]:^gketun          PostInflIX; ^[Equ.3DuPoss.Pl]:^%{.f.%}ngitun   PostInflIX; ^[Equ.3DuPoss.Du]:^%{.f.%}ngitun  PostInflIX;
+                                               ^[Equ.3DuPoss.Pl]:^%{.fS.%}ngitun  PostInflIX; ^[Equ.3DuPoss.Du]:^%{.fS.%}ngitun PostInflIX;
 !--------------------------------------------|----------------------------------------------|---------------------------------------------|
 ^[Equ.4SgPoss.Sg]:^%{.f.%}mitun    PostInflIX; ^[Equ.4SgPoss.Pl]:^%{.f.%}mitun    PostInflIX; ^[Equ.4SgPoss.Du]:^gmitun         PostInflIX;
 ^[Equ.4PlPoss.Sg]:^%{.f.%}megestun PostInflIX; ^[Equ.4PlPoss.Pl]:^%{.f.%}megestun PostInflIX; ^[Equ.4PlPoss.Du]:^gmegestun      PostInflIX;
