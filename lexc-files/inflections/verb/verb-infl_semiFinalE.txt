@@ -6,8 +6,8 @@ LEXICON VerbInflVII
 !~~~~~~~~~~~~
 ! indicative
 !~~~~~~~~~~~~
-^[Ind.Intr]:^tu              IntrInd;
-^[Ind.Trns]:^%{.sf.%}%{G%}a  TrnsInd;
+^[Ind.Intr]:^tu         IntrInd;
+^[Ind.Trns]:^%{.sf.%}a  TrnsInd;
 
 !~~~~~~~~~~~~~
 ! participial

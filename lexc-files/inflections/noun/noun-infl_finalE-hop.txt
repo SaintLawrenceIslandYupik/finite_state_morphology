@@ -125,7 +125,7 @@ LEXICON NounInflIX
 ^[All.3SgPoss.Sg]:^%{.f.%}nganun   PostInflIX; ^[All.3SgPoss.Pl]:^%{.f.%}nganun   PostInflIX; ^[All.3SgPoss.Du]:^gkenun          PostInflIX;
 ^[All.3SgPoss.Sg]:^%{.fS.%}nganun  PostInflIX; ^[All.3SgPoss.Pl]:^%{.fS.%}nganun  PostInflIX;                                              |
 ^[All.3PlPoss.Sg]:^%{.f.%}ngitnun  PostInflIX; ^[All.3PlPoss.Pl]:^%{.f.%}ngitnun  PostInflIX; ^[All.3PlPoss.Du]:^%{.f.%}ngitnun  PostInflIX;
-^[All.3PlPoss.Sg]:^%{.fS.%}ngitnun PostInflIX; ^[All.3PlPoss.Pl]:^%{.fS.%}ngitnun PostInflIX; ^[All.3PlPoss.Du]:^%{.fS.%}ngitnun PostInflIX;
+^[All.3PlPoss.Sg]:^gkeneng         PostInflIX; ^[All.3PlPoss.Pl]:^%{.f.%}ngitnun  PostInflIX; ^[All.3PlPoss.Du]:^%{.f.%}ngitnun  PostInflIX;
                                                ^[All.3DuPoss.Pl]:^%{.fS.%}ngitnun PostInflIX; ^[All.3DuPoss.Du]:^%{.fS.%}ngitnun PostInflIX;
 !--------------------------------------------|----------------------------------------------|----------------------------------------------|
 ^[All.4SgPoss.Sg]:^%{.f.%}munnun   PostInflIX; ^[All.4SgPoss.Pl]:^%{.f.%}munnun   PostInflIX; ^[All.4SgPoss.Du]:^gmunnun         PostInflIX;
