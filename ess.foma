@@ -399,8 +399,11 @@ define CrossWordBoundaryGemination t   "(SANDHI)" -> s   .o.
                                    g h "(SANDHI)" -> g h ;
 
 ! NOTE: This overgenerates: "ugi(N)^[Rel.3SgPoss.Sg]" generates both "ugingan" and "ugwingan"
-define GWAlternation g <- g w || V _ V ,,
-                     w <- g w || V _ V ;
+define GWAlternation g     <-       w   ,
+                     g g   <-       w h ,
+                     g h   <-   g h w   ,
+                     g h h <- g h h w   || [ a | i ] u _ ~u           ,
+                                                    ~u _  u [ a | i ] ;
 
 ! NOTE: This overgenerates: "sa(N)^~:(ng)u(N→V)^[Intrg.Intr.2Sg]" generates both "sanguzin" and "sanguziin"
 define InterrogativeLengthening a (<-) a a || C _ (C) .#.           .o.
