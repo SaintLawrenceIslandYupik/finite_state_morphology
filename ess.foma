@@ -425,10 +425,10 @@ define Vocatives a "[Voc]" -> a a y || _ .#. .o.
 define SandhiAndOrthography [ CurlyApostrophe             .o.
                               CrossWordBoundaryGemination .o.
                               GWAlternation               .o.
-                              InterrogativeLengthening    .o.
                               Vocatives
                             ];
-
+! removing this rule for now:
+!                             InterrogativeLengthening    .o.
 
 !------------------------------
 ! E-DROPPING AND HOPPING RULES
