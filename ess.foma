@@ -422,7 +422,7 @@ define Vocatives a "[Voc]" -> a a y || _ .#. .o.
                  i "[Voc]" -> i i y || _ .#. .o.
                  u "[Voc]" -> u u y || _ .#. ;
 
-define SandhiAndOrthography [ CurlyApostrophe             .o.
+define SandhiAndOrthography [ ! CurlyApostrophe             .o.
                               CrossWordBoundaryGemination .o.
                               GWAlternation               .o.
                               Vocatives
