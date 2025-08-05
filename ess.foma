@@ -653,15 +653,17 @@ define RewriteSubordinative %{%.sf%.%} i %{t%} e "*" "*" "^" %{SUBR%} "^" k u   
                                  n g h i %{t%} e "*" "*" "^" %{SUBR%} "^"           -> %{%.m%.%} g p e "^" n a                 .o.
                                                                          %{SUBR%}   -> %{%.at%.%} %{%.f%.%} l u                ;
 
-
-define ResolveDemAnaphor "[Anaphor]" -> t a z     || _ "^" i       .o.
+! The following needs to be included:
+! "[Anaphor]" "^" w h -> t a w              .o.
+define ResolveDemAnaphor "[Anaphor]" "^" w h -> t a w              .o.
+                         "[Anaphor]" -> t a z     || _ "^" i       .o.
                          "[Anaphor]" -> t         || _ "^" a a     .o.
                          "[Anaphor]" "^" u -> t a || _ u           .o.
-                         "[Anaphor]" -> t a       || _ "^" [V | m] .o.
+                         "[Anaphor]" -> t a       || _ "^" [ V | m ] .o.
                          "[Anaphor]" -> t e       || _ "^" s       ,,
                          "[Anaphor]" ->   e       || _ "^" s       .o.
-                         "[Anaphor]" -> t e s     || _ "^" C       ,,
-                         "[Anaphor]" ->   e s     || _ "^" C       ;
+                         "[Anaphor]" -> t e s     || _ "^" [ C - w ]    ,,
+                         "[Anaphor]" ->   e s     || _ "^" [ C - w ]    ;
 
 
 !------------------
